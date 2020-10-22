@@ -1,4 +1,12 @@
 <meta charset="utf-8">
+{% for lng in site.languages %}
+    {% if lng == site.default_lang %}
+      {% capture langlink %}{{ site.a_rootpage }}{{ page.url }}{% endcapture %}
+    {% else %}
+      {% capture langlink %}{{ site.a_rootpage }}/{{ lng }}{{ page.url }}{% endcapture %}
+    {% endif %}
+    <link rel="alternate" hreflang="{{ lng }}" href="{{ langlink }}" />
+{% endfor %}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/assets/css/fox.min.css">
 <link rel="stylesheet" href="/assets/css/fw.css">
@@ -25,11 +33,3 @@
 <meta name="color-scheme" content="dark light">
 <link rel="author" href="/humans.txt" />
 <script src="/assets/js/nav.js"></script>
-{% for lng in site.languages %}
-    {% if lng == site.default_lang %}
-      {% capture langlink %}{{ site.a_rootpage }}{{ page.url }}{% endcapture %}
-    {% else %}
-      {% capture langlink %}{{ site.a_rootpage }}/{{ lng }}{{ page.url }}{% endcapture %}
-    {% endif %}
-    <link rel="alternate" hreflang="{{ lng }}" href="{{ langlink }}" />
-{% endfor %}
