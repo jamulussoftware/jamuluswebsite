@@ -4,7 +4,6 @@ about: Create a report to help us improve
 title: "[Bug]"
 labels: bug
 assignees: ''
-
 ---
 **URL**
 Please provide the url where you experienced the bug if there's one.

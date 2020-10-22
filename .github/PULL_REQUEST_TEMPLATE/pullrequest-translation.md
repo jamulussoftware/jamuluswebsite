@@ -5,7 +5,8 @@ title: "[Translate]"
 labels: translation
 assignees: ''
 ---
+# What language did you translate into?
 
-# Language you want to translate to
+# What did you translate (short description)
 
-# Description
+# Related issue(s)
