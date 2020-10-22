@@ -21,10 +21,10 @@
   </div>
 </footer>
 <script>
-  var bl = window.navigator.language || window.navigator.userLanguage;
-  var dl = document.documentElement.lang;
-  var sl = "[{% for lng in site.languages %}'{{ lng }}',{% endfor %}]";
-  if (bl != dl && sl.includes(bl)) {
+  var ja = window.navigator.language || window.navigator.userLanguage;
+  var mu = document.documentElement.lang;
+  var lus = "[{% for lng in site.languages %}'{{ lng }}',{% endfor %}]";
+  if (ja != mu && lus.includes(ja)) {
     document.getElementById('langselect').classList.add('chlang');
     document.getElementById('suglang').style.display = "block";
   }

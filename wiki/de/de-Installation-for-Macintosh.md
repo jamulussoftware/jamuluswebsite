@@ -20,9 +20,9 @@ Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
 
 **Wenn du Jamulus zum ersten Mal öffnen willst, wirst du wahrscheinlich eine Meldung, dass Jamulus nicht geöffnet werden kann sehen, da der Entwickler unbekannt sei.**
 
-Um Jamulus trotzdem öffnen zu können, navigiere mit dem Finder in den Programme (Applications) Ordner, doppelklicke auf Jamulus, warte die Meldung ab, klicke dann mit der rechten Maustaste (oder Strg-Klick) auf Jamulus und wähle dann "Öffnen" oben im Menü aus.
+Um Jamulus trotzdem öffnen zu können, navigiere mit dem Finder in den Programme (Applications) Ordner, doppelklicke auf Jamulus, warte die Meldung ab, klicke dann mit der rechten Maustaste (oder Strg-Klick) auf Jamulus und wähle dann „Öffnen“ oben im Menü aus.
 
-Jetzt siehst du eine leicht veränderte Version der gleichen Nachricht, die es jetzt durch einen Klick auf "Öffnen" erlaubt, Jamulus zu öffnen. Diese Warnung wird nur einmal angezeigt - Sonst kann Jamulus ganz normal über das z.B. über das Launchpad geöffnet werden.
+Jetzt siehst du eine leicht veränderte Version der gleichen Nachricht, die es jetzt durch einen Klick auf „Öffnen“ erlaubt, Jamulus zu öffnen. Diese Warnung wird nur einmal angezeigt - Sonst kann Jamulus ganz normal über das z.B. über das Launchpad geöffnet werden.
 Für weitere Informationen siehe [diese Apple Support-Seite](https://support.apple.com/de-de/guide/mac-help/mh40616/mac).
 
 **Du kannst für weitere Infos auch diese [Anleitung](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/) von [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (oder [direkt von Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/)) anschauen.**

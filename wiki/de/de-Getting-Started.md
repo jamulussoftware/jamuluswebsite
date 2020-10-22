@@ -11,9 +11,9 @@ permalink: "/wiki/Getting-Started"
 
 1. **Einen Computer** (*Windows 10*, *MacOS X* El Capitan (v10.11) oder neuer, *Linux*)
 1. **Eine kabelgebundene Internetverbindung** (LAN, *kein WLAN*. Sonst gibt es Tonprobleme). Keine LAN Buchse mehr? Versuche einen USB zu LAN Adapter! Die meisten Internetverbindungen sind ausreichend. Empfohlen mindestens 10MBit/s Download und 1MBit/s Upload ([vollständige Details hier](Quality,-delay-and-network-bandwidth)).
-1. **Kabelgebundene Kopfhörer - keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden. Die Zeitverzögerung von Bluetooth-Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
+1. **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden. Die Zeitverzögerung von Bluetooth-Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
 
-### Empfohlen: ein Audio-Interface!
+### Empfohlen: ein Audiointerface!
 
 Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Details findest du im [Hardware-Setup](Hardware-Setup).
 
@@ -58,4 +58,4 @@ Weitere Informationen darüber, wie du vermeiden kannst, auf dich selbst zu hör
 **Millionen von Menschen benutzen Jamulus um mit anderen Menschen auf der ganzen Welt in Echtzeit zu spielen, zu singen und Musik zu unterrichten. Das funktioniert ganz einfach:**
 
 ![Overview](https://user-images.githubusercontent.com/4561747/79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
-_Jamulus arbeitet nach dem Client-Server-Prinzip. Das Audiosignal von allen Teilnehmern wird an einen Server geschickt, dort gemischt und verarbeitet. Danach wird das Audio an jeden Client gesendet. Wenn ein Server öffentlich gemacht und auf einem zentralen Server registriert wird, werden seine Informationen an alle Clients gesendet._
+_Jamulus arbeitet nach dem Client-Server-Prinzip. Das Audiosignal von allen Musikern wird an einen Server geschickt, dort gemischt und verarbeitet. Danach wird das Audio an jeden Client gesendet. Wenn ein Server öffentlich gemacht und auf einem zentralen Server registriert wird, werden seine Informationen an alle Clients gesendet._
