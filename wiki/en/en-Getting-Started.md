@@ -13,6 +13,7 @@ permalink: "/wiki/Getting-Started"
 1. **A wired internet connection** (don't use Wi-Fi, it will cause sound problems). Most broadband connections will be fine ([full details here](Quality,-delay-and-network-bandwidth)). If you have 10Mbits down and 1Mbps up, you're unlikely to run into bandwidth-related issues.
 1. **Wired headphones - not speakers** to prevent echo or feedback and (particularity if singing or playing acoustic instruments) to make sure you keep in time with others (see the [note on this](Getting-Started#having-trouble-cant-keep-in-time) for why).
 
+## Maximise quality, minimise delay
 ### Highly recommended: an audio interface!
 
 Unless you are a musician with a (USB) microphone, then to avoid latency you are strongly advised to use an audio interface: a box that you can plug your instrument(s) into rather than using your computer's built-in sound card. The interface will connect to your PC usually via USB. See [Hardware Setup](Hardware-Setup).
