@@ -1,0 +1,31 @@
+---
+permalink: /404.html
+lang: en
+category: "hidden"
+---
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html lang="{{ site.active_lang }}">
+
+<head>
+  <title>404 Not found - Jamulus</title>
+  {% include headtags.html %}
+</head>
+
+<body>
+  <header class="fx-row fx-row-between-xs fx-text-center">
+    <div class="fx-col fx-text-center">
+        <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" />
+    </div>
+  </header>
+  <main class="fx-row-center-xs">
+    <div class="fx-col-center-xs fx-txt-center">
+      <h1 class="red">404. There's nothing here</h1>
+      <p>Maybe this site was moved or deleted. Did you check if there was a typo?</p>
+      <p><a href="#" class="button red-bg" onclick="history.go(-1);return false;">Try going back</a></p>
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
+
+</html>

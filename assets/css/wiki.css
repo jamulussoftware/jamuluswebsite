@@ -1,0 +1,46 @@
+.wikisite header {
+  margin-bottom: 1.2em;
+}
+
+.wikisite .title {
+  font-size: 2em;
+}
+
+.wikisite #license {
+  font-style: italic;
+}
+
+.wikisite #editsitecontent svg {
+  color: #1181a4;
+}
+
+.wikisite #editsitecontent {
+  float: right;
+}
+
+.wikisite main h1 {
+  margin-top: 0;
+}
+
+.wikisite main h1, .wikisite main h2 {
+  border-bottom: 1px solid;
+}
+
+.wikisite #license {
+  margin-top: 2.2em;
+}
+
+.wikisite #ftext {
+  margin-top: 1em;
+  border-top: solid #1181a4;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wikisite #ftext {
+    border-top-color: #0a5067;
+  }
+
+  .wikisite #editsitecontent svg {
+    color: #1b90b5;
+  }
+}

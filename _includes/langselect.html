@@ -1,0 +1,17 @@
+<div id="langselect">
+  <div lang="en" id="suglang">This site might also be available in your native language. Select your preferred language below:</div>
+  <ul>
+    {% for lng in site.languages %}
+      {% if lng == site.active_lang %}
+        <li class="selected">{{ lng }}</li>
+      {% else %}
+        {% if lng == site.default_lang %}
+          {% capture langlink %} {{ page.url }}{% endcapture %}
+        {% else %}
+          {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
+        {% endif %}
+        <li><a href="{{ langlink }}">{{ lng }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

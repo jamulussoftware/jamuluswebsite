@@ -1,0 +1,31 @@
+<footer class="fx-row fx-row-around-xs" id="footer">
+  <div class="fx-col-100-xs fx-col-33-s fx-col-center-xs">
+    <a href="https://github.com/corrados/jamulus" target="_blank" rel="noreferrer">
+      <!-- https://icongr.am/fontawesome/github.svg?size=128&color=ffffff -->
+      <img src="{{ '/assets/img/github.svg'| relative_url }}" alt="{{ site.data.general.footer.alt.github }}" loading="lazy" class="fx-center" />
+    </a>
+  </div>
+  <div class="fx-col-100-xs fx-col-33-s fx-col-center-xs">
+    <!-- https://icongr.am/fontawesome/facebook-official.svg?size=128&color=ffffff -->
+    <a href="https://www.facebook.com/groups/619274602254947/" target="_blank" rel="noreferrer">
+      <img src="{{ '/assets/img/facebook.svg' | relative_url }}" alt="{{ site.data.general.footer.alt.facebook }}" id="fb_icon" loading="lazy" class="fx-center" />
+    </a>
+  </div>
+  <div class="fx-col-100-xs fx-col-33-s fx-col-center-xs">
+    <a href="https://sourceforge.net/projects/llcon" target="_blank" rel="noreferrer">
+      <img src="https://sourceforge.net/sflogo.php?type=17&amp;group_id=158367" alt="{{ site.data.general.footer.alt.sourceforge }}" class="fx-center" id="sflogo" />
+    </a>
+  </div>
+  <div id="copyright" class="fx-col-100-xs fx-row-center-xs">
+    {% include general/{{ site.active_lang }}/copyrightfooter.html %}
+  </div>
+</footer>
+<script>
+  var bl = window.navigator.language || window.navigator.userLanguage;
+  var dl = document.documentElement.lang;
+  var sl = "[{% for lng in site.languages %}'{{ lng }}',{% endfor %}]";
+  if (bl != dl && sl.includes(bl)) {
+    document.getElementById('langselect').classList.add('chlang');
+    document.getElementById('suglang').style.display = "block";
+  }
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html lang="{{ site.active_lang }}">
+
+<head>
+  <title>{{ page.title }}</title>
+  {% include headtags.html %}
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "SoftwareApplication",
+      "name": "Jamulus",
+      "applicationCategory": "{{ page.ldjAppCategory }}",
+      "operatingSystem": "Windows, macOS, Linux",
+      "slogan": "{{ page.ldjSlogan }}",
+      "discussionUrl": "https://sourceforge.net/p/llcon/discussion/",
+      "license": "GPL",
+      "creator": "{{ page.ldjCreator }}"
+    }
+  </script>
+  <meta name="description" content="{{ page.metadescription }}">
+</head>
+
+<body class="mainsite">
+  <header class="fx-row fx-row-center-xs">
+    <div class="fx-col-100-xs">
+      <img alt="{{ page.mAltProgIcon }}" width="200" height="200" src="{{ '/assets/img/jamulus-icon-2020.svg' | relative_url }}" id="jamulusicon" />
+      <h1>Jamulus</h1>
+      <span>{{ page.mTSlogan }}</span>
+    </div>
+    <div class="fx-col-100-xs" id="actionbutton">
+      <div class="fx-row">
+        <div class="fx-col-100-xs">
+          <a href="wiki/Getting-Started" target="_blank" id="get_started_btn_top" rel="noreferrer">{{ page.mTGetStartedNow }}</a>
+        </div>
+        <div class="fx-col-100-xs" id="dl_frm_sf_container">
+          {{ page.mHTMLDownloadNow }}
+        </div>
+      </div>
+    </div>
+  </header>
+    <a href="#mnv" onclick="showNav();return false;" id="navaround" class="hide-on-dt fx-txt-center">{% include general/navbtn.html %}</a>
+  <div>
+    <div class="fx-row fx-row-center-xs">
+      {% include general/nav.html %}
+      <div id="maincontainer" class="fx-col-100-xs fx-col-50-m">
+        <noscript class="red"><strong>{{ site.data.general.tNoJSEnabled }}</strong></noscript>
+        <main lang="{{ page.lang }}">{{ content }}</main>
+      </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+plugins:
+  - jekyll-polyglot
+  - jekyll-minifier
+languages:                   ["en", "es", "de"]
+default_lang:                "en"
+exclude_from_localization:   ["assets", "images", "css", "README.md", "manifest.json", "humans.txt"]
+parallel_localization:       true
+githubrepoeditbase:          "https://github.com/gilgongo/jamulushome/edit/polyglot"
+exclude:                     ["README.md", "Gemfile.lock", "Gemfile", "CONTRIBUTING.md"]
+jekyll-minifier:
+  remove_intertag_spaces:    true
+  remove_spaces_inside_tags: true
+  remove_multi_spaces:       true
+  compress_json:             true
