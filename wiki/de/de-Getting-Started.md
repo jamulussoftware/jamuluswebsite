@@ -14,17 +14,13 @@ permalink: "/wiki/Getting-Started"
 1. **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden. Die Zeitverzögerung von Bluetooth-Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
 
 ## Qualität maximieren, Verzögerung minimieren
-
 ### Empfohlen: ein Audiointerface!
-
 Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Details findest du im [Hardware-Setup](Hardware-Setup).
 
 ### Latenz minimieren!
-
 Je geringer die Latenz, desto besser kannst du mit anderen zusammenspielen. Die Minimierung der „Latenz“ (Signalverzögerung) ist also entscheidend für ein erfolgreiches Zusammenspiel. Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC ausführen und den Internetverkehr in deinem Netzwerk gering halten. Schau keine YouTube/Netflix Videos und stoppe Virenscans.
 
-#### Ping!
-
+### Ping!
 Auch der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering, wie möglich sein. Verbinde dich immer mit den Servern mit den **niedrigsten Ping-Zeiten**. 15ms oder weniger sind perfekt. Natürlich gibt es auch andere Einflussfaktoren für gelungene Online Musikstunden, die wichtigsten Faktoren kennst du jetzt aber!
 
 ## Bereit? Installiere Jamulus!
