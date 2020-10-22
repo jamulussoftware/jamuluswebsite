@@ -1,8 +1,8 @@
 function showNav() {
-  var x = document.getElementById("mnv");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  var n = document.getElementById("mnv");
+  if (n.style.display === "block") {
+    n.style.display = "none";
   } else {
-    x.style.display = "block";
+    n.style.display = "block";
   }
 }
