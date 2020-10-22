@@ -27,7 +27,7 @@
 <script src="/assets/js/nav.js"></script>
 {% for lng in site.languages %}
     {% if lng == site.default_lang %}
-      {% capture langlink %}{{ site.a_rootpage }}/{{ page.url }}{% endcapture %}
+      {% capture langlink %}{{ site.a_rootpage }}{{ page.url }}{% endcapture %}
     {% else %}
       {% capture langlink %}{{ site.a_rootpage }}/{{ lng }}{{ page.url }}{% endcapture %}
     {% endif %}
