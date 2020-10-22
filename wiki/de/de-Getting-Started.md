@@ -10,8 +10,8 @@ permalink: "/wiki/Getting-Started"
 ## Du brauchst
 
 1. **Einen Computer** (*Windows 10*, *MacOS X* El Capitan (v10.11) oder neuer, *Linux*)
-1. **Eine kabelgebundene Internetverbindung** (LAN, *kein WLAN*. Sonst gibt es Tonprobleme). Keine LAN Buchse mehr? Versuche einen USB zu LAN Adapter! Die meisten Internetverbindungen sind ausreichend. Empfohlen mindestens 10MBit/s Download und 1MBit/s Upload ([vollständige Details hier](Network-Requirements){: target="_blank" rel="noopener noreferrer"}).
-1. **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden. Die Zeitverzögerung von Bluetooth-Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
+1. **Eine kabelgebundene Internetverbindung** (LAN, *kein WLAN*. Sonst gibt es Tonprobleme). Die meisten Internetverbindungen sind ausreichend. Empfohlen mindestens 10MBit/s Download und 1MBit/s Upload ([vollständige Details hier](Network-Requirements){: target="_blank" rel="noopener noreferrer"}). Keine LAN Buchse mehr? Versuche einen USB zu LAN Adapter!
+1. **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden. Die Zeitverzögerung von Bluetooth-Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit Anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
 
 ## Qualität maximieren, Verzögerung minimieren
 ### Empfohlen: ein Audiointerface!
@@ -29,7 +29,7 @@ Auch der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück
   <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Für macOS</a>
   <a href="Installation-for-Linux" class="button fx-col-100-xs">Für Linux</a>
 </div>
-[Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/)
+[Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/){: target="_blank" rel="noopener noreferrer"}
 
 Starte Jamulus auf jedem PC (nur 64-Bit-Systeme) nur mit einem USB-Stick! Prüft deine Hardware automatisch und stellt sie ein.
 
@@ -39,7 +39,7 @@ Wenn du Jamulus eingerichtet hast, schau dir das [Hardware-Setup](Hardware-Setup
 
 Ausführliche Informationen zur Benutzung von Jamulus findest du im [Handbuch](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
-**Auch [diese ausgezeichnete Anleitung](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/) von [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a)** (_Facebook_) kann dir weiterhelfen!
+**Auch [diese ausgezeichnete Anleitung](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} von [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"}** (_Facebook_) kann dir weiterhelfen!
 
 ## Schwierigkeiten? Probleme? Kannst du den Rhythmus nicht einhalten?
 
