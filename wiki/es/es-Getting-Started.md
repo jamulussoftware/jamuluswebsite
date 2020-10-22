@@ -9,7 +9,7 @@ permalink: "/wiki/Getting-Started"
 
 1. Un PC bien con Windows 10, MacBook/iMac OS X El Capitan (v10.11) o posterior, o Linux. Para que el software Jamulus se ejecute con estabilidad se recomienda utilizar un PC con un procesador de al menos 1.5GHz.
 1. Auriculares para evitar eco o feedback (sobre todo si se canta o toca instrumentos acústicos)
-1. Una conexión a internet **por cable** (Ethernet, no utilices Wi-Fi) con una velocidad de al menos 200Kbps (0,2Mbps) de subida y bajada; 800Kbps recomendado ([más detalles aquí](Quality,-delay-and-network-bandwidth)). Si tienes una conexión de banda ancha de 10Mbits de bajada y 1Mbps de subida, es improbable que te encuentres con problemas relacionados con el ancho de banda utilizando Jamulus.
+1. Una conexión a internet **por cable** (Ethernet, no utilices Wi-Fi) con una velocidad de al menos 200Kbps (0,2Mbps) de subida y bajada; 800Kbps recomendado ([más detalles aquí](Network-Requirements)). Si tienes una conexión de banda ancha de 10Mbits de bajada y 1Mbps de subida, es improbable que te encuentres con problemas relacionados con el ancho de banda utilizando Jamulus.
 1. Si quieres cantar (o simplemente hablar) con otros músicos, puedes utilizar un micrófono USB o uno de los que se conectan directamente al PC (ten en cuenta que los micrófonos deben tener una tasa de muestreo de 48 kHz). Pero te puedes comunicar a través de la ventana de chat si no tienes micrófono.
 
 _[¡Aquí tienes un videotutorial en castellano!](https://youtu.be/n3lsE1CCz1U)_

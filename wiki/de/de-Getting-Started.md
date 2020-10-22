@@ -10,7 +10,7 @@ permalink: "/wiki/Getting-Started"
 ## Du brauchst
 
 1. **Einen Computer** (*Windows 10*, *MacOS X* El Capitan (v10.11) oder neuer, *Linux*)
-1. **Eine kabelgebundene Internetverbindung** (LAN, *kein WLAN*. Sonst gibt es Tonprobleme). Keine LAN Buchse mehr? Versuche einen USB zu LAN Adapter! Die meisten Internetverbindungen sind ausreichend. Empfohlen mindestens 10MBit/s Download und 1MBit/s Upload ([vollständige Details hier](Quality,-delay-and-network-bandwidth)).
+1. **Eine kabelgebundene Internetverbindung** (LAN, *kein WLAN*. Sonst gibt es Tonprobleme). Keine LAN Buchse mehr? Versuche einen USB zu LAN Adapter! Die meisten Internetverbindungen sind ausreichend. Empfohlen mindestens 10MBit/s Download und 1MBit/s Upload ([vollständige Details hier](Network-Requirements)).
 1. **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden. Die Zeitverzögerung von Bluetooth-Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
 
 ## Qualität maximieren, Verzögerung minimieren

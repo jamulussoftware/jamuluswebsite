@@ -31,7 +31,7 @@ Once any issues with musicians have been solved in this way, you can then invest
 
 ### Bandwidth - do you have enough?
 
-A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs (0.8Mbps) up and down. So if you have a 10Mbits down and 1Mbps up broadband connection, **you may start running out of bandwidth if a fifth player joins**, particularly if other musicians choose settings that increase their usage. You may want to [check that you have enough speed](https://fast.com) for that. [Read more about bandwidth use](Quality,-delay-and-network-bandwidth) at different quality settings. 
+A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs (0.8Mbps) up and down. So if you have a 10Mbits down and 1Mbps up broadband connection, **you may start running out of bandwidth if a fifth player joins**, particularly if other musicians choose settings that increase their usage. You may want to [check that you have enough speed](https://fast.com) for that. [Read more about bandwidth use](Network-Requirements) at different quality settings. 
 
 ### In general
 
