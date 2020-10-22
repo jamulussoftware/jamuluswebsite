@@ -10,7 +10,7 @@ permalink: "/wiki/Getting-Started"
 ## You will need
 
 1. **A computer** running either **Windows 10**, **MacOS X** El Capitan (v10.11) or higher, or **Linux**.
-1. **A wired internet connection** (don't use Wi-Fi, it will cause sound problems). Most broadband connections will be fine ([full details here](Network-Requirements)). If you have 10Mbits down and 1Mbps up, you're unlikely to run into bandwidth-related issues.
+1. **A wired internet connection** (don't use Wi-Fi, it will cause sound problems). Most broadband connections will be fine ([full details here](Network-Requirements){: target="_blank" rel="noopener noreferrer"}). If you have 10Mbits down and 1Mbps up, you're unlikely to run into bandwidth-related issues.
 1. **Wired headphones - not speakers** to prevent echo or feedback and (particularity if singing or playing acoustic instruments) to make sure you keep in time with others (see the [note on this](Getting-Started#having-trouble-cant-keep-in-time) for why).
 
 ## Maximise quality, minimise delay
@@ -43,7 +43,7 @@ If you set up Jamulus, have a look [Hardware Setup](Hardware-Setup)
 
 For detailed information on using Jamulus, please see the [Help Manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
-**Also [this excellent guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/) by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a)** (_Facebook_)
+**Also [this excellent guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"}** (_Facebook_)
 
 ## Having trouble? Can't keep in time?
 

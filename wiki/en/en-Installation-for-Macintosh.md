@@ -9,7 +9,7 @@ permalink: "/wiki/Installation-for-Macintosh"
 
 Make sure you've already read the [Getting Started](Getting-Started) page.
 
-1. **[Download the latest version of Jamulus](https://sourceforge.net/projects/llcon/files/)**
+1. **[Download the latest version of Jamulus](https://sourceforge.net/projects/llcon/files/){: target="_blank" rel="noopener noreferrer"}**
 1. **Extract the downloaded .zip file.** Double-click on the .zip file, which will create new folder of same name. The folder contains the license file and a `.dmg` file containing the application.
 1. **Double-click the `.dmg` file** to open it. It will unpack and you will see two files (Jamulus client and server)
 1. **Drag and drop both icons into your Applications folder** to install Jamulus.
@@ -26,9 +26,9 @@ You can also [compile your own binary](Compiling) if you feel so inclined.
 To fix this, navigate to the Applications folder via Finder click on Jamulus, right-click (or control-click), and select "Open" from the top of the menu.
 
 You will then get a slightly different version of the same message, which allows you to click Open and go ahead with running it. You will not be shown this warning again - just double-click it to run after that.
-For further information see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
+For further information see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
 
-**See also [this excellent guide](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/) by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (or [directly on Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/)).**
+**See also [this excellent guide](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (or [directly on Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"}).**
 
 ## All installed?
 

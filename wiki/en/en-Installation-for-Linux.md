@@ -11,9 +11,9 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 **Right now, we don't provide official packages for Jamulus**
 
-There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918). You can also use an [all-in-one script](Linux-Client-Install-Script) if you want. 
+There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. You can also use an [all-in-one script](Linux-Client-Install-Script) if you want.
 
-Meanwhile, compiling the sources is quite easy: 
+Meanwhile, compiling the sources is quite easy:
 
 ## Get Jamulus sources
 
@@ -35,7 +35,7 @@ On **Ubuntu-based** distributions 18.04+, and on Debian 9 or 10:
 
 On **Debian** 11 (bullseye) or later, and Raspberry Pi Raspbian Buster release or later:
 
-`sudo apt-get install build-essential qtdeclarative5-dev  qt5-default qttools5-dev-tools libjack-jackd2-dev` 
+`sudo apt-get install build-essential qtdeclarative5-dev  qt5-default qttools5-dev-tools libjack-jackd2-dev`
 
 On **Fedora**:
 
@@ -69,16 +69,16 @@ sudo make install
 ## Set up your sound card
 
 ### Configure Jack with QJackCtl
-Jamulus clients need [Jack](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`. 
-1. Open the **command shell** e.g. with Crtl-Alt-T and 
+Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
+1. Open the **command shell** e.g. with Crtl-Alt-T and
 1. execute the command `qjackctl` you will see the **Jack Audio Connection Kit**
-1. Check or adapt the **settings**  in `QjackCtl` - especially select your audio input device in the `qjackctl` settings (see settings below) 
-1. Start Jack by pressing the **Start-Button** 
+1. Check or adapt the **settings**  in `QjackCtl` - especially select your audio input device in the `qjackctl` settings (see settings below)
+1. Start Jack by pressing the **Start-Button**
 You can `Stop` Jack after Quitting Jamulus)
 
 **Settings for Jack Audio Connection Kit**
 
-The exact settings for Jack will depend on what your audio interface/sound card is capable of. 
+The exact settings for Jack will depend on what your audio interface/sound card is capable of.
 
 Configure Jack in `qjackctl` in Settings and do the following:
 
@@ -88,10 +88,10 @@ Configure Jack in `qjackctl` in Settings and do the following:
 1. Restart Jack to take any new settings
 
 ### Start Jamulus
-1. Open the command shell e.g. with Crtl-Alt-T and 
+1. Open the command shell e.g. with Crtl-Alt-T and
 1. Execute the command `Jamulus` (with a capital 'J') and you will start the Jamulus Client
 
-Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from. 
+Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.
 
 If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (eg 256 frames or 3 periods) in step 3 above, or lower ones (eg 64 frames) for better performance. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
