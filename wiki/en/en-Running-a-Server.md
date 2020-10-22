@@ -49,8 +49,8 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 # All OK? Get set up!
 
 ### [For Windows or Macintosh users](Server--Windows-&-Mac)
-### [For Linux users](Server---Linux)
-### [For Raspberry Pi](Server---Raspberry-Pi)
+### [For Linux users](Server-Linux)
+### [For Raspberry Pi](Server-Raspberry-Pi)
 
 Server operators may also be interested in downloading [this set of useful tools](https://github.com/corrados/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`). 
 
