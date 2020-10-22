@@ -12,7 +12,7 @@ You can contribute to this wiki by opening a pull request with with the followin
 `W: [language code (e.g. en)] {short description of your changes}` e.g.\
 `W: [en] Fix typo on getting-started page`.
 
- The source of this wiki can be found on the [Jamulus GitHub Repo branch wiki](https://github.com/corrados/jamulus/tree/wiki).
+ The source of this wiki can be found on the [jamulussoftware wiki GitHub Repo](https://github.com/jamulussoftware/jamulussoftware.github.io/).
 
 ## Contribute to the Jamulus source
 If you want to help out with coding, have a look at the [Jamulus GitHub Repo](https://github.com/corrados/jamulus)
