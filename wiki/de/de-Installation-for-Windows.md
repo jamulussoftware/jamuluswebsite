@@ -38,7 +38,7 @@ Obwohl ASIO4All manchmal gleich ohne Setup funktioniert, kann es sein, dass du P
 Wenn nichts zu funktionieren scheint, versuche zuerst, Jamulus und/oder deinen PC **neuzustarten**.
 Danach versuche **die Ein-/Ausgänge neu einzurichten**. Aktivierte und zugängliche Ein-/Ausgänge zeigen ein leuchtendes An/Aus- und ein Play-Symbol. Wenn du ein rotes Kreuz oder ein gelbes Symbol siehst, musst du eventuell andere Anwendungen, wie deinen Browser, Zoom, ... schließen.
 
-Wirf einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI) von @trombonepizza, das ausführlichere Informationen zur Einrichtung von ASIO4All gibt (English).
+Wirf einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} von @trombonepizza, das ausführlichere Informationen zur Einrichtung von ASIO4All gibt (English).
 
 Offizielle und ausführlichere Infos zur Konfiguration von ASIO4All sind in den [FAQs auf der ASIO4All Website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"}, sowie im ASIO4All Handbuch dokumentiert. Diese findest du höchstwahrscheinlich auf deinem Desktop oder in dem Ordner, in dem das ASIO4All-Binary installiert ist (normalerweise `C:\Program Files (x86)\ASIO4ALL v2\`).
 
