@@ -15,7 +15,7 @@ Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hie
 
 ## Jamulus Sourcecode herunterladen
 
-1. Öffne ein Terminalfenster (Kommandozeile - `CTRL+ALT+t` auf Ubuntu und verwandten Distributionen)
+1. Öffne ein Terminalfenster (Kommandozeile - `Strg+Alt+t` auf Ubuntu und verwandten Distributionen)
 1. Lade den Sourcecode für die neueste Version herunter und entpacke sie:
 ~~~
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
