@@ -2,7 +2,7 @@
 layout: wiki
 title: "Using Multiple Audio Interfaces"
 lang: "en"
-permalink: "/wiki/Getting-Started"
+permalink: "/wiki/Running-Jamulus-with-Multiple-Audio-Interfaces"
 ---
 
 
