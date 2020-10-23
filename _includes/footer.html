@@ -24,7 +24,7 @@
   var ja = window.navigator.language || window.navigator.userLanguage;
   var mu = document.documentElement.lang;
   var lus = "[{% for lng in site.languages %}'{{ lng }}',{% endfor %}]";
-  if (ja != mu && lus.includes(ja)) {
+  if (ja.substring(0,2) != mu && lus.includes(ja.substring(0,2))) {
     document.getElementById('langselect').classList.add('chlang');
     document.getElementById('suglang').style.display = "block";
   }
