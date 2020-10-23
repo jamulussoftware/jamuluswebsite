@@ -17,6 +17,7 @@ _Du kannst den Ordner, der die `.dmg` Datei enthält im Downloads löschen und d
 
 Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
 
+## Jamulus kann nicht geöffnet werden, da es von einem nicht verifizierten Entwickler stammt
 
 **Wenn du Jamulus zum ersten Mal öffnen willst, wirst du wahrscheinlich eine Meldung, dass Jamulus nicht geöffnet werden kann sehen, da der Entwickler unbekannt sei.**
 
