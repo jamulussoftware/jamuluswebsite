@@ -39,9 +39,9 @@ Auf **Fedora**:
 
 `sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel`
 
-### Qjackctl: Empfohlen
+### Qjackctl: Empfohlen, aber nicht zwingend notwendig
 
-[QjackCtl](https://qjackctl.sourceforge.io) ist ein Programm, das den Jack Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere ihn z.B. wie folgt:
+[QjackCtl](https://qjackctl.sourceforge.io){: target="_blank" rel="noopener noreferrer"} ist ein Programm, das den Jack Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere ihn z.B. wie folgt:
 
 `sudo apt-get install qjackctl`
 
