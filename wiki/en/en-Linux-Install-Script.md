@@ -2,7 +2,7 @@
 layout: wiki
 title: "Jamulus Tips & Tricks - Linux Bash Installation Script"
 lang: "en"
-permalink: "/wiki/Getting-Started"
+permalink: "/wiki/Linux-Client-Install-Script"
 ---
 
 
