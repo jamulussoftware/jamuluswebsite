@@ -15,8 +15,8 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 ### Try to connect - Message in Jamulus Client on MacOSX
 If you login to a Jamulus Session the room can empty without any musicians. Most likely the device in the settings seems to set to no device instead of having the default system settings to be available there. 
 
-Trouble Shooting:
-* goto settings select a input/output device and you will be visible as musician with volume slider in the mixer with your
+Troubleshooting:
+* go to settings select a input/output device and you will be visible as musician with volume slider in the mixer with your
 * this was not the case before with the client. Without alteration of the version this problem was not there before with MacOSX.
 
 Bug Fixing Options:
