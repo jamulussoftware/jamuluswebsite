@@ -8,13 +8,13 @@ permalink: "/wiki/Getting-Started"
 ## Avrai bisogno di
 
 1. Un PC con **Windows 10**, oppure con **MacOS X El Capitan (v10.11) o versione superiore**, o **Linux**. Requisiti mini sono una CPU da 1,5GHZ.
-1. **Una connessione Ethernet via cavo e non WI-FI**(su connessione WI-FI si posso verificare difficolta di utilizzo e problemi di ascolto). Molte delle attuali linee sono sufficienti per garantire il buon funzionamento dell'applicazione([clicca qui per maggiori dettagli](Network-Requirements){: target="_blank" rel="noopener noreferrer"}). Si ricorda che una connessione con 10Mbits in down e 1Mbits in up non è sufficiente per garantire un buon funzionamento e non avere problemi di ascolto.
+1. **Una connessione Ethernet via cavo e non WI-FI**(su connessione WI-FI si posso verificare difficolta di utilizzo e problemi di ascolto). Molte delle attuali linee sono sufficienti per garantire il buon funzionamento dell'applicazione([clicca qui per maggiori dettagli](Network-Requirements)). Si ricorda che una connessione con 10Mbits in down e 1Mbits in up non è sufficiente per garantire un buon funzionamento e non avere problemi di ascolto.
 1. **E' consigliabile usare le cuffie e non le casse** per prevenire effetti di echo o larsen e (in particolare per cantanti o per chi suona strumenti acustici) per essere sicuri di andare a tempo con gli altri
-_(aprire [questo link](Primi-Passi#problemi-non-riesci-a-tenere-il-tempo) per comprendere le connessioni).
+_(aprire [questo link](Primi-Passi#Problemi?-Non-riesci-a-tenere-il-tempo?) per comprendere le connessioni).
 
 ### Altamente Raccomandato: usare un interfaccia audio USB o Firewire!
 
-A meno che tu non sia un cantante con un microfono (USB), per ottimizzare la latenza ti consigliamo vivamente di utilizzare un'interfaccia audio, alla quale puoi collegare i tuoi strumenti piuttosto che utilizzare la scheda audio incorporata del tuo computer. L'interfaccia si collegherà al tuo PC solitamente tramite USB. Vedere [Hardware Setup](Hardware-Setup){: target="_blank" rel="noopener noreferrer"}.
+A meno che tu non sia un cantante con un microfono (USB), per ottimizzare la latenza ti consigliamo vivamente di utilizzare un'interfaccia audio, alla quale puoi collegare i tuoi strumenti piuttosto che utilizzare la scheda audio incorporata del tuo computer. L'interfaccia si collegherà al tuo PC solitamente tramite USB. Vedere [Hardware Setup](Hardware-Setup).
 
 ### Riduci al minimo i disturbi!
 
@@ -41,7 +41,7 @@ Se devi configurare Jamulus puoi leggere [Hardware Setup](Hardware-Setup)
 
 Per informazioni dettagliate su come usare Jamulus puoi vedere il [Manuale](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
-**Altrimenti [questa eccellente guida in inglese](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"}** (_Facebook_)
+**Altrimenti [questa eccellente guida in inglese](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/) by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a)** (_Facebook_)
 
 ## Problemi? Non riesci a tenere il tempo?
 
