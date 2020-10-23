@@ -23,9 +23,16 @@
 <script>
   var ja = window.navigator.language || window.navigator.userLanguage;
   var mu = document.documentElement.lang;
-  var lus = "[{% for lng in site.languages %}'{{ lng }}',{% endfor %}]";
-  if (ja.substring(0,2) != mu && lus.includes(ja.substring(0,2))) {
-    document.getElementById('langselect').classList.add('chlang');
-    document.getElementById('suglang').style.display = "block";
+  var lus = [{% for lng in site.languages %}"{{ lng }}",{% endfor %}];
+  const regex = RegExp('^' + mu);
+  if (!regex.test(ja)) { // the language the browser has sent is not the language of the document
+    // check if we support the language of the browser
+    lus.forEach(function (lng, i) {
+      if (ja.match('^' + lng)) { // this language is supported. We could add a suggestion here
+        document.getElementById('langselect').classList.add('chlang');
+        document.getElementById('suglang').style.display = "block";
+        document.querySelectorAll('[data-slang='+ lng +']')[0].classList.add("proplang");
+      }
+    });
   }
 </script>

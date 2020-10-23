@@ -3,14 +3,14 @@
   <ul>
     {% for lng in site.languages %}
       {% if lng == site.active_lang %}
-        <li class="selected">{{ lng }}</li>
+        <li class="selected" data-slang="{{ lng }}">{{ lng }}</li>
       {% else %}
         {% if lng == site.default_lang %}
           {% capture langlink %} {{ page.url }}{% endcapture %}
         {% else %}
           {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
         {% endif %}
-        <li><a href="{{ langlink }}">{{ lng }}</a></li>
+        <li><a href="{{ langlink }}" data-slang="{{ lng }}">{{ lng }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
