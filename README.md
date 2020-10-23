@@ -15,9 +15,11 @@ Do you want to contribute to the Jamulus Wiki/Website? Please see the [CONTRIBUT
 Translations are handled by the [Polyglot jekyll Plug-in](https://github.com/untra/polyglot).
 If you want to translate a file, you must first know where it is located on this repo:
 
+-   General translations which e.g. are included in multiple pages can be found in the \_includes/general/yourlanguagecode and \_includes/wiki/yourlanguagecode folder. These files **must** be translated in order not to break the site.
 -   The homepage is located in the repo root and named [langcode]-index.html
--   The wiki content can be found in the wiki folder (and the navigation of the wiki in the \_data/yourlanguagecode/wiki folder). Make sure to read the README.md file in the wiki/ folder.
--   General translations which e.g. are included in multiple pages can be found in the \_includes/general/yourlanguagecode folder.
+-   The wiki content can be found in the wiki/ folder. Make sure to read the README.md file in the wiki/ folder.
+-  The navigation and general translations can be found in the \_data/yourlanguagecode folder
+
 
 To translate a file, please duplicate it and change the lang: attribute to the language you want to translate it to. If you want to translate an English page to German, you need to change the lang: "en" attribute to lang: "de". This attribute can be found at the top of the file in the front matter (right at the top in between the `---`). Do not change the permalink attribute. It links pages with the same content but different languages and enables polyglot to know which page to change to if you change the language via the language picker.
 
