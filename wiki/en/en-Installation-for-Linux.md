@@ -86,7 +86,7 @@ Restart Jack to take any new settings
 
 Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.
 
-If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (eg 256 frames or 3 periods) in step 3 above, or lower ones (eg 64 frames) for better performance. See the [troubleshooting page](Client-Troubleshooting) otherwise.
+If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (eg 256 frames or 3 periods) in step 3 above. Lower ones (eg 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
 Have a look at [Hardware Setup](Hardware-Setup).
@@ -103,7 +103,7 @@ Download the new sources as per [Get Jamulus](Installation-for-Linux#get-jamulus
 
 * To use an external shared OPUS library instead of the built-in use qmake `"CONFIG+=opus_shared_lib" Jamulus.pro`.
 
-* To use this file configure the software with `qmake "CONFIG+=noupcasename" Jamulus.pro` to make sure the output target name of this software is jamulus instead of Jamulus.
+* To use this file configure the software with `qmake "CONFIG+=noupcasename" Jamulus.pro` to make sure the output target name of this software is **j**amulus instead of **J**amulus.
 
 * Users of Raspberry Pi: You may want to compile the client on another machine and run the binary on the Raspberry Pi. In which case, the only libraries you need to run it are those for a [headless server](Server---Linux#running-a-headless-server) build, but _with_ the Jack sound packages. Especially have a look at the footnote for the headless build.
 
