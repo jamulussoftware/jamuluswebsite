@@ -70,22 +70,15 @@ sudo make install
 
 ### Configure Jack with QJackCtl
 Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
-1. Open the **command shell** e.g. with Crtl-Alt-T and
-1. execute the command `qjackctl` you will see the **Jack Audio Connection Kit**
-1. Check or adapt the **settings**  in `QjackCtl` - especially select your audio input device in the `qjackctl` settings (see settings below)
-1. Start Jack by pressing the **Start-Button**
-You can `Stop` Jack after Quitting Jamulus)
+1. Open the command shell e.g. with Crtl-Alt-T and
+1. Execute the command `qjackctl` you will see the **Jack Audio Connection Kit**
+2. Configure your audio interface as follows (the exact settings for Jack will depend on what your audio interface/sound card is capable of):
 
-**Settings for Jack Audio Connection Kit**
+- Set the audio **Interface** to the one you want (there may be several in the list)
+- Set the **Sample Rate to 48000**
+- Set the **Frames/Period to 128** and Periods/Buffer at 2 at first
 
-The exact settings for Jack will depend on what your audio interface/sound card is capable of.
-
-Configure Jack in `qjackctl` in Settings and do the following:
-
-1. Set the audio **Interface** to the one you want (there may be several in the list)
-1. Set the **Sample Rate to 48000**
-1. Set the **Frames/Period to 128** and Periods/Buffer at 2 at first
-1. Restart Jack to take any new settings
+Restart Jack to take any new settings
 
 ### Start Jamulus
 1. Open the command shell e.g. with Crtl-Alt-T and
@@ -99,7 +92,6 @@ If you get problems with sound breaking up (in particular XRUN errors reported b
 Have a look at [Hardware Setup](Hardware-Setup).
 For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
-***
 
 ## To update your installation to a new release
 
