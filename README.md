@@ -1,6 +1,6 @@
 # Jamulus Website
 
-This is the home of the Jamulus Website and Wiki.
+This is the home of the [Jamulus website](https://jamulus.io) and wiki.
 
 ## Tech
 
@@ -25,11 +25,16 @@ To translate a file, please duplicate it and change the lang: attribute to the l
 
 ### Adding a new language
 
-If you want to add a new language, you must follow the instructions on the polyglot site and add the folders/files. At least the footer, the main includes in the wiki (see \_includes/), navigation (see the \_data/ folder) and the Homepage (see the index.html file in the root of this repo) must be translated. Have a look at the README.md files in these folders. Also make sure to add your language to the \_config.yml file (in the languages array.)
+If you want to add a new language, you must follow the instructions on the polyglot site and add the folders/files. 
+- Make sure to add your language to the \_config.yml file (in the languages array.)
+- At least, the main includes for the wiki (see \_includes/wiki/) have to be translated. 
+- The navigation and general site wide strings (see the \_data/ folder) and the homepage (see the index.html file in the root of this repo) should be translated. 
+
+Have a look at the README.md files in these folders. 
 
 ## Contribute to the design/site structure
 
-Since this page uses jekyll, please have a look at the [jekyll documentation](https://jekyllrb.com/docs/).
+Since this page uses Jekyll, please have a look at the [jekyll documentation](https://jekyllrb.com/docs/).
 This project uses the fox css framework. See the [FOX-CSS documentation](http://www.fox-css.com/documents/).
 CSS files can be found in the assets/css folder.
 The \_layouts folder holds the main layouts for the page.
