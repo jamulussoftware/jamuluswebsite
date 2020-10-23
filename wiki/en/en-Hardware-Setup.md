@@ -55,7 +55,7 @@ You're done! Have fun!
 
 ## Linux: Audio interface connection with QJackCtrl
 
-Refer to the Linux [client install guide](/Installation-for-Linux#configure-jack-with-qjackctl).
+Refer to the Linux [client install guide](/wiki/Installation-for-Linux#configure-jack-with-qjackctl).
 
 ## Linux: Low Latency Kernels for Jamulus
 You might want to install Ubuntu Studio (URL: https://ubuntustudio.org/ ) it adds a second options in your boot menu for a low-latency kernel. The key of successful jamming is "low latency" between servers and connected Jamulus clients. If the underlying Linux system is started with a low-latency then it has a positive impact on latency for your Jamulus Sessions.
