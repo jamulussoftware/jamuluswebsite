@@ -15,7 +15,7 @@ Do you want to contribute to the Jamulus Wiki/Website? Please see the [CONTRIBUT
 Translations are handled by the [Polyglot jekyll Plug-in](https://github.com/untra/polyglot).
 If you want to translate a file, you must first know where it is located on this repo:
 
--   General translations which e.g. are included in multiple pages can be found in the \_includes/general/yourlanguagecode and \_includes/wiki/yourlanguagecode folder. These files **must** be translated in order not to break the site.
+-   General translations especially for the wiki can be found in \_includes/wiki/yourlanguagecode folder. These files **must** be translated in order not to break the site.
 -   The homepage is located in the repo root and named [langcode]-index.html
 -   The wiki content can be found in the wiki/ folder. Make sure to read the README.md file in the wiki/ folder.
 -  The navigation and general translations can be found in the \_data/yourlanguagecode folder
@@ -25,7 +25,7 @@ To translate a file, please duplicate it and change the lang: attribute to the l
 
 ### Adding a new language
 
-If you want to add a new language, you must follow the instructions on the polyglot site and add the folders/files. At least the footer, the main includes in the wiki (see \_includes/), the Wiki navigation (see the \_data/ folder) and the Homepage (see the index.html file in the root of this repo) must be translated. Have a look at the README.md files in these folders. Also make sure to add your language to the \_config.yml file (in the languages array.)
+If you want to add a new language, you must follow the instructions on the polyglot site and add the folders/files. At least the footer, the main includes in the wiki (see \_includes/), navigation (see the \_data/ folder) and the Homepage (see the index.html file in the root of this repo) must be translated. Have a look at the README.md files in these folders. Also make sure to add your language to the \_config.yml file (in the languages array.)
 
 ## Contribute to the design/site structure
 
