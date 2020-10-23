@@ -9,5 +9,5 @@ Holds fragments/files which are included in other sites.
 
 ## Translate new language
 
-* **Important**: Every file in here is required to be translated. If the file doesn't exist, the jekyll build will be broken.
+* **Important**: Every file in wiki/yourlanguagecode here **must** be translated. If the file doesn't exist, the jekyll build will be broken.
 * copy wiki/en to wiki/languagecode and translate contents
