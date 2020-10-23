@@ -105,6 +105,6 @@ Download the new sources as per [Get Jamulus](Installation-for-Linux#get-jamulus
 
 * To use this file configure the software with `qmake "CONFIG+=noupcasename" Jamulus.pro` to make sure the output target name of this software is **j**amulus instead of **J**amulus.
 
-* Users of Raspberry Pi: You may want to compile the client on another machine and run the binary on the Raspberry Pi. In which case, the only libraries you need to run it are those for a [headless server](Server---Linux#running-a-headless-server) build, but _with_ the Jack sound packages. Especially have a look at the footnote for the headless build.
+* Users of Raspberry Pi: You may want to compile the client on another machine and run the binary on the Raspberry Pi. In which case, the only libraries you need to run it are those for a [headless server](Server-Linux#running-a-headless-server) build, but _with_ the Jack sound packages. Especially have a look at the footnote for the headless build.
 
 * As of version 3.5.3, Jamulus is no longer compatible with Qt4.
