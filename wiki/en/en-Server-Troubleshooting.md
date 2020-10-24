@@ -11,7 +11,7 @@ permalink: "/wiki/Server-Troubleshooting"
 
 ### Why doesn't my server show up in the list? Why isn't in registering?
 
-If you are registered OK (you can [see it here](http://jamulus.softins.co.uk/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option). 
+If you are registered OK (you can [see it here](http://jamulus.softins.co.uk/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option).
 
 If you are seeing a message that says the server is full, please [see this note](Central-Servers) on Central Servers.
 
@@ -29,7 +29,7 @@ This should be your **public** IP address (find that with [Google](https://www.g
 
 ### What port numbers can I use?
 
-Keep the default UDP ports. The actual default port is documented by the [command line](https://github.com/corrados/jamulus/wiki/Command-Line-Options). At the time of writing this documentation, the port number is **22124**. 
+Keep the default UDP ports. The actual default port is documented by the [command line](Command-Line-Options). At the time of writing this documentation, the port number is **22124**. 
 
 ### Is a private server a direct server without contact to the Jamulus Central Server?
 
@@ -50,4 +50,3 @@ Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikiped
 To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address does not match with the address you see [here](https://ifconfig.me), then this means CGN may be enabled. Or if you experience problems such as being unable to [connect to servers or an empty server list](https://sourceforge.net/p/llcon/discussion/533517/thread/b3eea395c4/) this may also be an indicator that your ISP is the problem too.
 
 To fix the issue: if you are running a public server, try [port forwarding](Running-a-Private-Server#port-forwarding). If you are running a private server and are port forwarding already, contact your ISP support and request them to remove you from CGN and assign you a real WAN IP address because you want to host a server. If CGN is not the issue, you may need to ask your ISP to give you a WAN IP address (or fixed one to avoid using DDNS, if possible). If all else fails, consider hosting on a cloud platform (some providers do free trial periods).
-

@@ -14,7 +14,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 * **Macintosh users** - Double-click the "Jamulus server" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).
 
-* **Linux users** - Please refer to the [GUI server instructions](Server---Linux#running-a-server-with-the-gui).
+* **Linux users** - Please refer to the [GUI server instructions](Server-Linux#running-a-server-with-the-gui).
 
 <img width="627" alt="server-setup" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
 
@@ -40,7 +40,7 @@ Turn on server recording by first setting the Recording Directory in the Options
 
 _Note: When your server is recording, clients will display a message that recording is on._
 
-For headless servers: you can control the recording function [using these instructions](Server---Linux#controlling-recordings).
+For headless servers: you can control the recording function [using these instructions](Server-Linux#controlling-recordings).
 
 
 ### Other options

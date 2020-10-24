@@ -9,7 +9,7 @@ permalink: "/wiki/Compiling"
 
 # Linux
 
-Please refer to the [client installation page](Installation-for-Linux) or these instructions if you wish to [compile a headless server](Server---Linux)
+Please refer to the [client installation page](Installation-for-Linux) or these instructions if you wish to [compile a headless server](Server-Linux)
 
 # MacOS
 
@@ -78,6 +78,6 @@ Compiling with the `headless` flag means you can avoid installing some of the de
 
 1. If you are running Jamulus on Ubuntu/Debian, you will need all dependent packages to **compile** the binary, but to **run** the resulting headless Jamulus server you should only need `libqt5core5a`, `libqt5network5`, `libqt5xml5` and probably `libqt5concurrent5`. This may be useful for compiling/upgrading on one machine to run the binary on another (a Raspberry Pi, for example).
 
-1. Note that if you want to compile a GUI client on one machine and run it on another (eg a Raspberry Pi) you only need the dependencies listed for a [headless server](Server---Linux#running-a-headless-server) (see point above), only _with_ the Jack sound libraries.
+1. Note that if you want to compile a GUI client on one machine and run it on another (eg a Raspberry Pi) you only need the dependencies listed for a [headless server](Server-Linux#running-a-headless-server) (see point above), only _with_ the Jack sound libraries.
 
 
