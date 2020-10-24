@@ -10,7 +10,7 @@ permalink: "/wiki/Getting-Started"
 1. Un PC con **Windows 10**, oppure con **MacOS X El Capitan (v10.11) o versione superiore**, o **Linux**. Requisiti mini sono una CPU da 1,5GHZ.
 1. **Una connessione Ethernet via cavo e non WI-FI**(su connessione WI-FI si posso verificare difficolta di utilizzo e problemi di ascolto). Molte delle attuali linee sono sufficienti per garantire il buon funzionamento dell'applicazione([clicca qui per maggiori dettagli](Network-Requirements){: target="_blank" rel="noopener noreferrer"}). Si ricorda che una connessione con 10Mbits in down e 1Mbits in up non è sufficiente per garantire un buon funzionamento e non avere problemi di ascolto.
 1. **E' consigliabile usare le cuffie e non le casse** per prevenire effetti di echo o larsen e (in particolare per cantanti o per chi suona strumenti acustici) per essere sicuri di andare a tempo con gli altri
-_(aprire [questo link](Primi-Passi#problemi-non-riesci-a-tenere-il-tempo) per comprendere le connessioni).
+_(aprire [questo link](Getting-Started#problemi-non-riesci-a-tenere-il-tempo) per comprendere le connessioni).
 
 ## Massimizza la qualità, minimizza i ritardi
 ### **Raccomandato**: usare un interfaccia audio USB o Firewire!
