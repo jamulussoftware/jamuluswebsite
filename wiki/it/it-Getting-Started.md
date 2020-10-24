@@ -12,7 +12,8 @@ permalink: "/wiki/Getting-Started"
 1. **E' consigliabile usare le cuffie e non le casse** per prevenire effetti di echo o larsen e (in particolare per cantanti o per chi suona strumenti acustici) per essere sicuri di andare a tempo con gli altri
 _(aprire [questo link](Primi-Passi#problemi-non-riesci-a-tenere-il-tempo) per comprendere le connessioni).
 
-### Altamente Raccomandato: usare un interfaccia audio USB o Firewire!
+## Massimizza la qualità, minimizza i ritardi
+### **Raccomandato**: usare un interfaccia audio USB o Firewire!
 
 A meno che tu non sia un cantante con un microfono (USB), per ottimizzare la latenza ti consigliamo vivamente di utilizzare un'interfaccia audio, alla quale puoi collegare i tuoi strumenti piuttosto che utilizzare la scheda audio incorporata del tuo computer. L'interfaccia si collegherà al tuo PC solitamente tramite USB. Vedere [Hardware Setup](Hardware-Setup){: target="_blank" rel="noopener noreferrer"}.
 
@@ -51,11 +52,11 @@ In altre parole evita di ascoltare il segnale diretto del tuo strumento.
 
 E' ovviamente difficile per cantanti e musicisti acustici ma, anche se la connessione è buona, quando i musicisti non stanno ascoltando il **segnale che proviene dal server**, la sincronizzazione con gli altri ne risentirà. _(A scanso di equivoci: questo non ha nulla a che fare con i controlli "mute" in Jamulus.)_
 
-Ulteriori informazioni su come evitare di ascoltare se stessi (ed essere aiutati in altri problemi) possono essere trovate nella [Sezione domande Frequenti della FAQ](Client-Troubleshooting) (_attualmente in costruzione_)
+Ulteriori informazioni su come evitare di ascoltare se stessi (ed essere aiutati in altri problemi) possono essere trovate nella [sezione "Domande Frequenti" della FAQ](Client-Troubleshooting) (_attualmente in costruzione_)
 
 ## Come funziona Jamulus (in generale)
 
-**Ecco come milioni di persone utilizzano Jamulus per suonare, cantare e insegnare musica con altre persone in tempo reale, in tutto il mondo:**
+**Ecco come milioni di persone utilizzano Jamulus per suonare, cantare e insegnare musica in tempo reale, in tutto il mondo:**
 
 ![Visita](https://user-images.githubusercontent.com/4561747/79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
 _Jamulus funziona secondo il principio del client-server. L'audio di tutti viene inviato a un server, mixato ed elaborato. Successivamente l'audio viene inviato a ogni client. Se un server viene reso pubblico e registrato su un server centrale, le sue informazioni verranno trasmesse a tutti i client._
