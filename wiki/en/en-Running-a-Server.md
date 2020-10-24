@@ -23,7 +23,7 @@ It's **very important** that you read and understand what type of server you wan
 
 **_The capability of the server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**
 
-Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' [hardware](https://github.com/corrados/jamulus/wiki/Hardware-Setup), the networks that _they_ are on, and whether they are sticking to [Rule Number One](Getting-Started#having-trouble-cant-keep-in-time). There is therefore no guarantee that you will achieve lower latency or better overall performance by having your own server. 
+Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' [hardware](Hardware-Setup), the networks that _they_ are on, and whether they are sticking to [Rule Number One](Getting-Started#having-trouble-cant-keep-in-time). There is therefore no guarantee that you will achieve lower latency or better overall performance by having your own server. 
 
 If you plan to be playing regularly with the same people, **you are strongly advised** to first make sure that each member of the group is set up to use Jamulus properly. Do this by finding a public server with a reasonable ping time for all of you (20ms or less perhaps), all connect to that and work to fix any individual issues (verifying that they can [follow Rule Number One](Getting-Started#having-trouble-cant-keep-in-time) in particular). Use the solo technique above to prevent being interrupted if needed. 
 
@@ -48,9 +48,9 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 
 # All OK? Get set up!
 
-### [For Windows or Macintosh users](Server--Windows-&-Mac)
+### [For Windows or Macintosh users](Server-Win-Mac)
 ### [For Linux users](Server-Linux)
-### [For Raspberry Pi](Server-Raspberry-Pi)
+### [For Raspberry Pi](Server-Rpi)
 
 Server operators may also be interested in downloading [this set of useful tools](https://github.com/corrados/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`). 
 
