@@ -14,7 +14,7 @@ permalink: "/wiki/Hardware-Setup"
 
 **Windows users**: You need to install an ASIO driver. A sound card with a native ASIO driver is recommended. Have a look at the [Windows installation page](Installation-for-Windows) for further information.
 
-# Example Setups
+## Example Setups
 
 Setting up hardware usually burns down to 4 points, although each setup is different.
 
