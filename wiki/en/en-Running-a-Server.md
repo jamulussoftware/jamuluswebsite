@@ -22,7 +22,7 @@ You can just choose somebody else's server from your list and get going.
 If you really want to run a server, it's **very important** that you read and understand what type of server you want to run.
 
 <div class="fx-row fx-row-start-xs button-container">
-  <a href="Choosing-a-Server-Type" class="button fx-col-100-xs">Read about server types</a>
+  <a href="Choosing-a-Server-Type" class="button fx-col-100-xs" target="_blank" rel="noopener noreferrer">Read about server types</a>
 </div>
 
 ... then come back here.
