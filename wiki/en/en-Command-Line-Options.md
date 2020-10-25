@@ -7,7 +7,7 @@ permalink: "/wiki/Command-Line-Options"
 
 # Command Line Options
 
-While the most common functions in Jamulus can be set using the GUI, Jamulus can also be controlled using these options on the command line. Exactly how you do this will depend on your operating system. 
+While the most common functions in Jamulus can be set using the GUI, Jamulus can also be controlled using these options on the command line. Exactly how you do this will depend on your operating system.
 
 For example, on Windows to enable recording with the `-R` option: right-click on the Jamulus shortcut and choose "Properties" > Target. Add the necessary arguments to Jamulus.exe:
 
@@ -38,7 +38,7 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-n` |`--nogui`          | Disable GUI | (client and server) |
 |    `-o` |`--serverinfo`     | Server location details in the format: <br/>`[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum))| (public servers only) |
 |    `-p` |`--port`           | Local UDP port number. Default is 22124 | (server only) |
-|    `-R` |`--recording`      | Include a writable path where the files should be stored (in quotes if needed). | (server only) See description in [Server Setup](Server--Windows-&-Mac#recording). |
+|    `-R` |`--recording`      | Include a writable path where the files should be stored (in quotes if needed). | (server only) See description in [Server Setup](Server-Win-Mac#recording). |
 |       | `--norecord`      | Start recorder with recording disabled | (server only) |
 |    `-s` |`--server`         | Start in server mode | (server only) [See note](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Disable translations | (client and server) |
@@ -46,5 +46,5 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-u` |`--numchannels`    | Maximum number of channels. Default is 10, maximum is 50 | (server only) |
 |    `-w` |`--welcomemessage` | Supports HTML and inline CSS formatting (in enclosing quotes), or set path to text file. | (server only) |
 |    `-z` |`--startminimized` | Start minimized | (server only) |
-|       |`--ctrlmidich`     | MIDI controller channel to listen on | (client only) see [Tips & Tricks](Tips,-Tricks-&-More) |
+|       |`--ctrlmidich`     | MIDI controller channel to listen on | (client only) see [Tips & Tricks](Tips-Tricks-More) |
 |       |`--clientname`     | Window title and jack client name | (client only) |

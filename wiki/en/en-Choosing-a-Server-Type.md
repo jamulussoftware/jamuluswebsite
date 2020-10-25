@@ -10,11 +10,11 @@ permalink: "/wiki/Choosing-a-Server-Type"
 **You can run your server in one of three "modes" (either at home or on a 3rd party host):**
 
 ### Public
-Your server will be listed in the [central server](Central-servers) list that clients use by default. Musicians can then discover and connect to your server.  It is not necessary to run as a public server.  See [Private](#private), below.
+Your server will be listed in the [central server](Central-Servers) list that clients use by default. Musicians can then discover and connect to your server.  It is not necessary to run as a public server.  See [Private](#private), below.
 
 ![PublicServer](https://user-images.githubusercontent.com/4561747/79310856-7e0b2100-7ef4-11ea-9511-b2e3339cab6f.png)
 
-This mode is activated by checking the "Register my server..." checkbox and (optionally) entering your server information. 
+This mode is activated by checking the "Register my server..." checkbox and (optionally) entering your server information.
 
 When running without the GUI ("headless"), the following would configure a public server:
 
@@ -22,7 +22,7 @@ When running without the GUI ("headless"), the following would configure a publi
 Jamulus --nogui --server \
         --centralserver genreServer:port \
         --serverinfo "yourServerName;yourCity;[country ID]"
-~~~ 
+~~~
 
 **Note**: It is **not** necessary to port-forward or otherwise configure your router to run a public server.
 
@@ -31,7 +31,7 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 ***
 
 ### Private
-You must give musicians your server address to connect their clients to. See also [Running a Private Server](Running-a-Private-Server) for what needs to be done to enable others to connect to it. 
+You must give musicians your server address to connect their clients to. See also [Running a Private Server](Running-a-Private-Server) for what needs to be done to enable others to connect to it.
 
 ![PrivateServer](https://user-images.githubusercontent.com/4561747/79310944-9f6c0d00-7ef4-11ea-9d8a-ecb0e668c22d.png)
 

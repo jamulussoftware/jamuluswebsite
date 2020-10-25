@@ -21,7 +21,7 @@ If you plan to run a server on your desktop machine (and you have installed the 
 
 Hit return and you should see the server control window. You can stop the server by closing the server window, or by typing CTRL+C in the terminal.
 
-**To configure the server**, please refer to [the Windows & Macintosh instructions](Server--Windows-&-Mac).
+**To configure the server**, please refer to [the Windows & Macintosh instructions](Server-Win-Mac).
 
 See also [Command Line Options](Command-Line-Options) for other parameters you can set.
 
@@ -160,7 +160,7 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 
 ### Controlling recordings
 
-When using the [recording function](Server--Windows-&-Mac#recording) with the `-R` [command line option](#Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
+When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](#Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
 
 To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (eg `newRecording-Jamulus-server.service`).
 
