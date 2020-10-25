@@ -10,7 +10,7 @@ permalink: "/wiki/Choosing-a-Server-Type"
 **You can run your server in one of three "modes" (either at home or on a 3rd party host):**
 
 ### Public
-Your server will be listed in the [central server](Central-servers) list that clients use by default. Musicians can then discover and connect to your server.  It is not necessary to run as a public server.  See [Private](#Private), below.
+Your server will be listed in the [central server](Central-servers) list that clients use by default. Musicians can then discover and connect to your server.  It is not necessary to run as a public server.  See [Private](#private), below.
 
 ![PublicServer](https://user-images.githubusercontent.com/4561747/79310856-7e0b2100-7ef4-11ea-9511-b2e3339cab6f.png)
 
