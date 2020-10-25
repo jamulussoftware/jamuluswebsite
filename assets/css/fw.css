@@ -76,7 +76,7 @@ main li {
 
 .chlang ul li a, .chlang div, #langselect.chlang li.selected {
   color: #c94a55;
-}
+} /*todo: do it via html classes with .red*/
 
 .proplang {
   font-style: italic;
@@ -343,8 +343,20 @@ main>div {
   hr {
     border-color: #dbdbdb;
   }
-  
+
   code {
     background-color: #2b2f2f;
+  }
+
+  .red {
+    color: #ea6571 !important;
+  }
+
+  .red-bg {
+    background-color: #ea6571 !important;
+  }
+
+  .chlang {
+    border-color: #ea6571;
   }
 }
