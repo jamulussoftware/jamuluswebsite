@@ -6,10 +6,10 @@ permalink: "/wiki/Installation-for-Windows"
 ---
 
 # Installazione per Windows
-Assicurati di aver letto la pagina [Primi Passi](Primi-Passi).
+Assicurati di aver letto la pagina [Primi Passi](Getting-Started).
 1. **Scarica e installa i driver ASIO**. Si raccomanda di usare una scheda audio con driver ASIO proprietario. In alternativa [installare i driver (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} prima di installare Jamulus.
 1. **Scarica e installa Jamulus** dal sito [Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. Se ricevi un avviso, fai clic su "Ulteriori informazioni" e "Esegui comunque" per installare Jamulus.
-1. **Configura la tua scheda audio**. Dopo l'installazione passa a configurare il tuo hardware. Dai un'occhiata a come configurare i driver ASIO4All (scorri verso il basso), e poi su [Configurazione Hardware](Configurazione-Hardware).
+1. **Configura la tua scheda audio**. Dopo l'installazione passa a configurare il tuo hardware. Dai un'occhiata a come configurare i driver ASIO4All (scorri verso il basso), e poi su [Configurazione Hardware](Hardware-Setup).
 
 In alternativa puoi [compilare l'applicativo](Compiling) avendo le conoscenze necessarie.
 
@@ -19,7 +19,7 @@ In alternativa puoi [compilare l'applicativo](Compiling) avendo le conoscenze ne
 Prima di ogni cosa **chiudi tutte le applicazioni** (in particolare quelle che hanno accesso alla scheda audio come il browser) per evitare conflitti. Se non si sente nulla assicurarsi di aver impostato correttamente gli **inputs/outputs** nel pannello di controllo e verificare che lo **switch sia su on**.
 Sicuramente si dovrà effettuare qualche tentativo prima di trovare una corretta impostazione poiché essa è diversa per ogni computer. Per le prove puoi collegarti ad un server ed ascoltare la qualità audio del tuo strumento o della voce e verificare che tutto sia funzionante secondo le proprie esigenze.
 
-### Configurare gli Input sui driver ASIO4All (Guide)
+### Configurare gli Input sui driver ASIO4All (Guida)
 
 1. Aprire le impostazioni di Jamulus
 1. Cliccare su _"Settaggi ASIO"_
@@ -42,6 +42,6 @@ Puoi vedere [questo video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="
 La documentazione ufficiale e dettagliata sui driver ASIO4All è disponibile [sulla FAQ del sito ufficile](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} e nel manuale dei driver ASIO4All. Il manuale si trova nella cartella di installazione dei driver (solitamente `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## Tutto Installato?
-Ora puoi usare Jamulus. Se non hai ancora settato la tua scheda audio puoi visitare [Hardware Setup](Hardware-Setup).
+Ora puoi usare Jamulus. Se non hai ancora settato la tua scheda audio puoi visitare [Configurazione Hardware](Hardware-Setup).
 
 Per informazioni più dettagliate su come usare Jamulus puoi visitare la [pagina del manuale ufficiale](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
