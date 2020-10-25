@@ -26,16 +26,13 @@ Minimizing "latency" (signal delay) is crucial for playing successfully together
 
 Always connect to servers with the **lowest ping times** as shown in your server list. 15ms or below will give you the best chance of having a good time (although there's other things that affect performance too). Anything higher and you're taking your chances.
 
-## Ready? Install Jamulus!
-
 <div class="fx-row fx-row-start-xs button-container">
-  <a href="Installation-for-Windows" class="button fx-col-100-xs">For Windows users</a>
-  <a href="Installation-for-Macintosh" class="button fx-col-100-xs">For macOS users</a>
+  <a href="Installation-for-Windows" class="button fx-col-100-xs">Install on Windows</a>
+  <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Install on macOS</a>
   <a href="Installation-for-Linux" class="button fx-col-100-xs">For Linux users</a>
 </div>
-[Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/)
 
-Run Jamulus on any computer using a USB stick (64-bit systems only). Checks your hardware and sets you up like a boss straight out of the box!
+Also - [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) Run Jamulus on any computer using a USB stick (64-bit systems only). Checks your hardware and sets you up like a boss straight out of the box!
 
 ## All installed?
 
