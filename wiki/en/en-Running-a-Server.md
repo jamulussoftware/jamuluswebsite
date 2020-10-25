@@ -7,17 +7,27 @@ permalink: "/wiki/Running-a-Server"
 
 # Running a Server
 
-## Do I need to run a server to use Jamulus?
+<h2 style="color:black;font-size:1.5em;">
+       Do I need to run a server to use Jamulus?
+</h2>
 
-**Not if you don't want to.** You can just choose somebody else's server from your list and get going. 
+<p style="color:red;font-size:2em;">
+      <strong>NO.</strong>
+</p>
 
-**Don't want strangers interrupting?**  Once you and your friends are connected to a public server, press the "solo" buttons on the musicians each of you want to play with. Anyone you don't solo will see a "muted" icon on your channel. And you won't hear them. 
+You can just choose somebody else's server from your list and get going.
 
-## That sounds too easy. I REALLY want to run one - what do I need to know?
+**Don't want strangers interrupting?**  Once you and your friends are connected to a public server, press the "solo" buttons on the musicians each of you want to play with. Anyone you don't solo will see a "muted" icon on your channel. And you won't hear them.
 
-### Server types
+## That sounds too easy.
 
-It's **very important** that you read and understand what type of server you want to run. **Please read the overview on [Server Types](Choosing-a-Server-Type)** then come back here.
+If you really want to run a server, it's **very important** that you read and understand what type of server you want to run. 
+
+<div class="fx-row fx-row-start-xs button-container">
+  <a href="Choosing-a-Server-Type" class="button fx-col-100-xs">Read about server types</a>
+</div>
+
+... then come back here.
 
 ### Speed and latency
 
