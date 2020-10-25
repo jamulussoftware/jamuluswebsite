@@ -13,4 +13,4 @@ Para Windows, Macintosh y Linux
 
 **Si tienes un par de minutos, por favor [completa esta encuesta anónima](https://forms.gle/hSSjsxjWj2Pnp5kr7) (en inglés)**
 
-__Esta wiki está bajo una [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es){: target="_blank" rel="noreferrer" }.__
+_Esta wiki está bajo una [Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es){: target="_blank" rel="noreferrer" }._

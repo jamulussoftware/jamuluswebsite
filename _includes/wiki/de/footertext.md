@@ -13,4 +13,4 @@ Für Windows, Macintosh and Linux
 
 **Wenn Du ein bisschen Zeit hast, bitte [fülle unsere anonyme Umfrage aus (English)](https://forms.gle/hSSjsxjWj2Pnp5kr7)**
 
-__Dieses Wiki ist unter einer [Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz](https://creativecommons.org/licenses/by-sa/4.0/deed.de){: target="_blank" rel="noreferrer" } lizenziert. Willst du [mithelfen](Contribution)?__
+_Dieses Wiki ist unter einer [Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz](https://creativecommons.org/licenses/by-sa/4.0/deed.de){: target="_blank" rel="noreferrer" } lizenziert. Willst du [mithelfen](Contribution)?_
