@@ -9,8 +9,8 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a server to use Jamulus?
 
-
-NO.{: .doubletextsize .red }
+NO.
+{: .doubletextsize .red }
 
 
 You can just choose somebody else's server from your list and get going.
