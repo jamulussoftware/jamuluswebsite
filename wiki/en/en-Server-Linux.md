@@ -42,7 +42,7 @@ The following guide is for running Jamulus as a "pure" server on **hardware with
 ## Compile sources, create a user
 
 
-1. [Get the sources](Installation-for-Linux#get-jamulus), install the [dependent packages](Installation-for-Linux#install-the-dependent-packages) according to the Linux client install guide. Note that **you don't need to install the Jack package(s)** for a headless build. _If you plan to run headless on Gentoo, or are compiling under Ubuntu for use on another Ubuntu machine, [see the footnote](#what-does-the-headless-build-flag-do)._
+1. [Get the sources](Installation-for-Linux#get-jamulus-sources), install the [dependent packages](Installation-for-Linux#install-dependencies) according to the Linux client install guide. Note that **you don't need to install the Jack package(s)** for a headless build. _If you plan to run headless on Gentoo, or are compiling under Ubuntu for use on another Ubuntu machine, [see the footnote](#what-does-the-headless-build-flag-do)._
 
 2. Compile the sources to ignore the Jack sound library:
 
@@ -87,7 +87,7 @@ IOSchedulingClass=realtime
 IOSchedulingPriority=0
 
 #### Change this to set genre, location and other parameters.
-#### See [Command-Line-Options](ommand-Line-Options) ####
+#### See [Command-Line-Options](Command-Line-Options) ####
 ExecStart=/usr/local/bin/Jamulus -s -n -e jamulus.fischvolk.de -o "yourServerName;yourCity;[country ID]"
 
 Restart=on-failure
@@ -160,7 +160,7 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 
 ### Controlling recordings
 
-When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](#Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
+When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
 
 To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (eg `newRecording-Jamulus-server.service`).
 
