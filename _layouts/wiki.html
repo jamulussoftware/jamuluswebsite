@@ -23,7 +23,7 @@
     <div id="maincontainer" class="fx-col-100-xs fx-col-50-m">
       <noscript class="red"><strong>{{ site.data.general.tNoJSEnabled }}</strong></noscript>
       <main lang="{{ page.lang }}">{{ content }}</main>
-      <div id="ftext">
+      <div id="ftext" align="center">
         {% capture footertext %}
         {% if site.active_lang %}
         {% include wiki/{{ site.active_lang }}/footertext.md %}
