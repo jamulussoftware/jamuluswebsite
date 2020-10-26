@@ -10,7 +10,7 @@ permalink: "/wiki/Getting-Started"
 ## You will need
 
 1. **A computer** running either **Windows 10**, **MacOS X** El Capitan (v10.11) or higher, or **Linux**.
-1. **A wired internet connection** (don't use Wi-Fi, it will cause sound problems). Most broadband connections will be fine [^1].
+1. **A wired internet connection** (don't use Wi-Fi, it will cause sound problems). Most broadband connections will be fine[^1].
 1. **Wired headphones - not speakers** to prevent echo or feedback and (particularity if singing or playing acoustic instruments) to make sure you keep in time with others (see the [note on this](Getting-Started#having-trouble-cant-keep-in-time) for why)
 
 ## Maximise quality, minimise delay
@@ -61,4 +61,4 @@ _Jamulus works on the client server principle. Everybody’s audio is sent to a 
 
 ## Footnotes
 
-[^1]: [full details here](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. If you have 10Mbits down and 1Mbps up, you're unlikely to run into bandwidth-related issues.
+[^1]: [Full details here](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. If you have 10Mbits down and 1Mbps up, you're unlikely to run into bandwidth-related issues.
