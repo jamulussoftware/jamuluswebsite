@@ -5,7 +5,7 @@ lang: "en"
 permalink: "/wiki/Software-Synth"
 ---
 
-#Software Synth in Jamulus
+# Software Synth in Jamulus
 
 ## Linux
 We will elaborate the concept of playing a software synth on Linux as example and transfer that to other operating systems (e.g. Windows, MacOSX). 
