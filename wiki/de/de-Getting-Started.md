@@ -28,9 +28,9 @@ Je geringer die Latenz, desto besser kannst du mit anderen zusammenspielen. Die 
 Auch der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den **niedrigsten Ping-Zeiten**. 15ms oder weniger sind perfekt. Natürlich gibt es auch andere Einflussfaktoren für gelungene online Musikstunden, die wichtigsten Faktoren kennst du aber jetzt!
 
 <div class="fx-row fx-row-start-xs button-container">
-  <a href="Installation-for-Windows" class="button fx-col-100-xs">Für Windows</a>
-  <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Für macOS</a>
-  <a href="Installation-for-Linux" class="button fx-col-100-xs">Für Linux</a>
+  <a href="Installation-for-Windows" class="button fx-col-100-xs">Installation auf Windows</a>
+  <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Installation auf macOS</a>
+  <a href="Installation-for-Linux" class="button fx-col-100-xs">Installation auf Linux</a>
 </div>
 [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/){: target="_blank" rel="noopener noreferrer"}
 
