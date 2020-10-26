@@ -5,7 +5,7 @@ lang: "en"
 permalink: "/wiki/Jamulus-Cloud"
 ---
 
-#Jamulus in the Cloud
+# Jamulus in the Cloud
 
 Jamulus user [skrul](https://sourceforge.net/u/skrulx/profile/) has put up some public EC2 AMIs of Ubuntu 18.04 running Jamulus. 
 
