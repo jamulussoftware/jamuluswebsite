@@ -35,7 +35,7 @@ The following guide is for running Jamulus as a "pure" server on **hardware with
 
 * _Jamulus user [Grigory](https://sourceforge.net/u/cidnurg/profile/) maintains a **[Docker image for Jamulus](https://hub.docker.com/r/grundic/jamulus)** which you can use._
 
-* _Jamulus user [skrul](https://sourceforge.net/u/skrulx/profile/) has also put up some **public Amazon EC2 AMIs** of Ubuntu 18.04 running Jamulus. [See this page for details](Jamulus-in-the-Cloud)._
+* _Jamulus user [skrul](https://sourceforge.net/u/skrulx/profile/) has also put up some **public Amazon EC2 AMIs** of Ubuntu 18.04 running Jamulus. [See this page for details](Jamulus-Cloud)._
 
 
 
