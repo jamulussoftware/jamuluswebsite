@@ -54,7 +54,7 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 - Jamulus doesn't currently support IPv6
 
 
-# All OK? Get set up!
+## All OK? Get set up!
 
 ### [For Windows or Macintosh users](Server-Win-Mac)
 ### [For Linux users](Server-Linux)
@@ -62,6 +62,6 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 
 Server operators may also be interested in downloading [this set of useful tools](https://github.com/corrados/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 
-# Having problems? Got issues?
+## Having problems? Got issues?
 
 See the [Server Troubleshooting FAQ](Server-Troubleshooting)
