@@ -30,7 +30,7 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 
 
 ### 2. Private
-This type of server will not be listed on a central server lits. You must give musicians your server address to connect their clients to. See [Running a Private Server](Running-a-Private-Server) for what needs to be done to enable others to connect to it.
+This type of server will not be listed on a central server list. You must give musicians your server address to connect their clients to. See [Running a Private Server](Running-a-Private-Server) for what needs to be done to enable others to connect to it.
 
 ![PrivateServer](https://user-images.githubusercontent.com/4561747/79310944-9f6c0d00-7ef4-11ea-9d8a-ecb0e668c22d.png)
 
