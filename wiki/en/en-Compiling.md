@@ -7,13 +7,13 @@ permalink: "/wiki/Compiling"
 
 # Compiling Jamulus from Source
 
-# Linux
+## Linux
 
 Please refer to the [client installation page](Installation-for-Linux) or these instructions if you wish to [compile a headless server](Server-Linux)
 
-# MacOS
-
-## Requirements
+## MacOS
+You don't need to compile Jamulus for macOS since we provide official binaries, but if you really want to, follow the instructions below.
+### Requirements
 
 1. Install XCode
 1. Install QT as follow
@@ -23,14 +23,14 @@ brew install qt5
 brew link qt5 --force
 ```
 
-## Build project
+### Build project
 
-### Generate XCode Project file
+#### Generate XCode Project file
 ```sh
 qmake -spec macx-xcode Jamulus.pro
 ```
 
-### Print build targets and configuration in console
+#### Print build targets and configuration in console
 ```sh
 xcodebuild -list -project Jamulus.xcodeproj
 ```
@@ -50,7 +50,7 @@ will prompt
         Jamulus
 ```
 
-### Build the project
+#### Build the project
 
 ```sh
 xcodebuild build
@@ -59,16 +59,18 @@ xcodebuild build
 Will build the file and make it available in ./Release/Jamulus.app
 
 
-# Windows
+## Windows
+You don't need to compile Jamulus for Windows since we provide official binaries, but if you really want to, follow the instructions below.
 
-Required software: QT, a compiler like Visual Studio, ASIO development files
+**Required software**: QT, a compiler like Visual Studio, ASIO development files
 
-- copy [ASIO](https://www.steinberg.net/de/company/developer.html) development files in jamulus/windows directory so that, e.g., the
+- get the Jamulus source code e.g. via git or via zip download from the Jamulus Repo
+- get and copy the [ASIOSDK](https://www.steinberg.net/de/company/developer.html) development files in jamulus/windows directory so that, e.g., the
   directory jamulus/windows/ASIOSDK2/common exists
-- open Jamulus.pro in Qt Creator and compile & run
+- open Jamulus.pro in Qt Creator then compile & run
 
 
-# General notes
+## General notes
 
 ### The "headless" build flag
 
