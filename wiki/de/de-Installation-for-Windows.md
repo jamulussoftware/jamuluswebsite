@@ -10,7 +10,7 @@ Wenn du die [Schnellstartseite](Getting-Started) noch nicht gelesen hast, sollte
 
 1. **Downloade und installiere einen ASIO-Treiber**. Wir empfehlen, eine Soundkarte/Interface mit einem nativen, herstellereigenen ASIO-Treiber zu verwenden. Wenn kein nativer ASIO-Treiber vorhanden ist (v.A. bei integrierten Soundkarten), installiere [ASIO4ALL](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} vor der Installation von Jamulus.
 1. **Downloade und installiere Jamulus** von der [Jamulus Projektseite](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. Wenn du eine Warnung bekommst, klicke auf „Mehr Infos“ und „Trotzdem ausführen“, um Jamulus zu installieren.
-1. **Richte deine Soundkarte ein**. Wenn du Jamulus installiert hast, musst du deine Audio-Hardware einrichten. Wenn du ASIO4All nutzt, schau dir die Einrichtung an (scrolle etwas nach unten) sonst kannst du gleich deine Audio-Hardware einrichten. Siehe [Hardware-Setup](Hardware-Setup).
+1. **Richte deine Soundkarte ein**. Wenn du Jamulus installiert hast, musst du deine Audio-Hardware einrichten. Wenn du ASIO4All nutzt, schau dir die [Einrichtung](#asio4all-einrichten) an (scrolle etwas nach unten) sonst kannst du gleich deine Audio-Hardware einrichten. Siehe [Hardware-Setup](Hardware-Setup).
 
 Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
 
