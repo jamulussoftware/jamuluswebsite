@@ -22,7 +22,7 @@ Unless you are a musician with a (USB) microphone, then to avoid latency you are
 
 Minimizing "latency" (signal delay) is crucial for playing successfully together. While using Jamulus, try to make sure that nothing else on your machine or your network is competing against it. Don't watch YouTube/Netflix, or have anything else running on the machine that you are using Jamulus on.
 
-#### Ping time!
+### Ping time!
 
 Always connect to servers with the **lowest ping times** as shown in your server list. 15ms or below will give you the best chance of having a good time (although there's other things that affect performance too). Anything higher and you're taking your chances.
 
