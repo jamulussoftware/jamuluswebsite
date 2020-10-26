@@ -5,23 +5,21 @@ lang: "de"
 permalink: "/wiki/Installation-for-Linux"
 ---
 
-
 # Installation auf Linux
 Wenn du die [Schnellstartseite](Getting-Started) noch nicht gelesen hast, solltest du das nachholen.
 
-**Im Moment bieten wir keine offiziellen Pakete für Jamulus an**
+**Im Moment bieten wir keine offiziellen Pakete für Jamulus an.**
 
-Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hier](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. Du kannst auch das [all-in-one script](Linux-Client-Install-Script) benutzen. Jamulus zu kompillieren ist aber nicht schwer:
+Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hier](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. Du kannst zwar das [all-in-one script](Linux-Client-Install-Script) benutzen, Jamulus zu kompillieren ist aber einfach:
 
 ## Jamulus Sourcecode herunterladen
 
-1. Öffne ein Terminalfenster (Kommandozeile - `Strg+Alt+t` auf Ubuntu und verwandten Distributionen)
-1. Lade den Sourcecode für die neueste Version herunter und entpacke sie:
+1. Öffne ein Terminalfenster (Kommandozeile - `Strg+Alt+T` auf Ubuntu und verwandten Distributionen)
+1. Lade den Sourcecode für die neueste Version herunter und entpacke diesen:
 ~~~
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
 tar -xvf latest.tar.gz
 ~~~
-
 
 ## Abhängigkeiten installieren
 
@@ -39,9 +37,9 @@ Auf **Fedora**:
 
 `sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel`
 
-### Qjackctl: Empfohlen, aber nicht zwingend notwendig
+### QjackCtl: Empfohlen, aber nicht zwingend notwendig
 
-[QjackCtl](https://qjackctl.sourceforge.io){: target="_blank" rel="noopener noreferrer"} ist ein Programm, das den Jack Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere ihn z.B. wie folgt:
+[QjackCtl](https://qjackctl.sourceforge.io){: target="_blank" rel="noopener noreferrer"} ist ein Programm, das den Jack Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere QjackCtl z.B. wie folgt:
 
 `sudo apt-get install qjackctl`
 
@@ -63,13 +61,12 @@ make
 sudo make install
 ~~~
 
-
 ## Richte deine Soundkarte ein
 
 ### Konfiguriere Jack mit QJackCtl
 Jamulus-Clients brauchen [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"}. Du musst Jack aber zuerst einrichten. Am Besten machst du das mit `qjackctl`.
-1. Öffne die Kommandozeile z.B. mit Strg-Alt-T und
-1. Ausführliche den Befehl `qjackctl` aus und warte, bis sich das **Jack Audio Connection Kit** öffnet.
+1. Öffne die Kommandozeile
+1. Führe `qjackctl` aus und warte, bis sich das **Jack Audio Connection Kit** öffnet.
 2. Konfiguriere dein Audiointerface wie folgt (die genauen Einstellungen für Jack hängen von den Funktionen deiner Soundkarte ab):
 
 - Wähle dein Audio **Interface** aus (es können mehrere in der Liste sichtbar sein)
@@ -82,9 +79,12 @@ Starte Jack neu, um alle neuen Einstellungen zu übernehmen.
 1. Öffne die Kommandozeile oder führe Jamulus über deinen Desktop aus
 1. Wenn du die Kommandozeile nutzt, führe den Befehl `Jamulus` (mit einem großen 'J') aus, um den Jamulus Client zu starten
 
-Jamulus installiert sich nach `/usr/local/bin`. Du kannst das Sourcecodeverzeichnis, in dem du kompiliert hast, jetzt löschen.
+Jamulus installiert sich nach `/usr/local/bin`.
 
-Wenn du Soundprobleme (kurze Unterbrechungen (Dropouts) o.Ä.) hast (insbesondere XRUNs, die von Jack/QJackCtl gemeldet werden), versuche größere Werte (z.B. 256 frames oder 3 periods) in Schritt 3 von oben zu setzen. Niedrigere Einstellungen (z.B. 64 frames) bieten eine geringer Latenz, aber möglicherweise mehr Soundprobleme. Siehe auch die [Fehlerbehebungsseite](Client-Troubleshooting).
+Du kannst das Sourcecodeverzeichnis, in dem du kompiliert hast, jetzt löschen.
+
+Wenn du Soundprobleme (kurze Unterbrechungen (Dropouts) o.Ä.) hast (insbesondere XRUNs, die von Jack/QJackCtl gemeldet werden), versuche größere Werte (z.B. 256 frames oder 3 periods) in Schritt 3 von oben zu setzen. Niedrigere Einstellungen (z.B. 64 frames) bieten zwar eine geringere Latenz, aber möglicherweise mehr Soundprobleme.
+Siehe auch die [Fehlerbehebungsseite](Client-Troubleshooting).
 
 ## Alles installiert?
 Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du dein Audio-Equipment noch nicht eingerichtet hast, schau im [Hardware-Setup](Hardware-Setup).
