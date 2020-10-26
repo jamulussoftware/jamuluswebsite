@@ -171,8 +171,12 @@ nav {
   list-style-type: none;
 }
 
-.footnotes:target {
-  background-color: #eaf8fd;
+:target {
+  background-color: #ffceaf;
+  border-top: solid 2px #1181a4;
+  transition: border-top 0.5s;
+  transition: background-color 0.5s;
+  transition-timing-function: ease;
 }
 
 #footer {
@@ -342,6 +346,11 @@ main>div {
 
   .button {
     color: #cecdd2;
+  }
+
+  :target {
+    background-color: #82431c;
+    border-color: #3daed2;
   }
 
   header {
