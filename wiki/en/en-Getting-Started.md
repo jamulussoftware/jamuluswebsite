@@ -27,7 +27,7 @@ While using Jamulus, try to make sure that nothing else on your machine or your 
 
 Always connect to servers with the **lowest ping times** as shown in your server list. 15ms or below will give you the best chance of having a good time (although there's other things that affect performance too). Anything higher and you're taking your chances.
 
-Of course there are also other factors that influence successful online music performances, but now you know the most important ones. Let's go!
+Of course there are also other factors that influence successful online music performances, but now you know the most important ones. Let's go:
 
 <div class="fx-row fx-row-start-xs button-container">
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Install on Windows</a>
