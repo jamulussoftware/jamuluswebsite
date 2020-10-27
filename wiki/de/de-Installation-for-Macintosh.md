@@ -24,7 +24,7 @@ Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
 Um Jamulus trotzdem öffnen zu können, navigiere mit dem Finder in den Programme (Applications) Ordner, doppelklicke auf Jamulus, warte die Meldung ab, klicke dann mit der rechten Maustaste (oder Strg-Klick) auf Jamulus und wähle dann „Öffnen“ oben im Menü aus.
 
 Jetzt siehst du eine leicht veränderte Version der gleichen Meldung, die jetzt durch einen Klick auf „Öffnen“ Jamulus öffnen kann. Diese Warnung wird nur einmal angezeigt – Danach kann Jamulus ganz normal z.B. über das Launchpad geöffnet werden.
-Für weitere Informationen siehe [diese Apple Support-Seite](https://support.apple.com/de-de/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer" .button}.
+Für weitere Informationen siehe [diese Apple Support-Seite](https://support.apple.com/de-de/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
 
 Du kannst für weitere Infos auch diese [Anleitung](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} von [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (oder [direkt von Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"}) anschauen.
 
