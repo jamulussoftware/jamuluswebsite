@@ -14,20 +14,20 @@ permalink: "/wiki/Getting-Started"
 1. **Wired headphones - not speakers** to prevent echo or feedback and to minimize delay[^2].
 
 ## Maximise quality, minimise delay
-To maximize sound quality and to minimize latency (signal delay), you should follow these suggestions:
+
 ### 1. Use an audio interface/external microphone, not your internal sound card
 
-Unless you are a musician with a (USB) microphone, then to avoid latency you are strongly advised to use an audio interface: a box that you can plug your instrument(s) into rather than using your computer's built-in sound card. The interface will connect to your PC usually via USB. See [Hardware Setup](Hardware-Setup).
+Unless you are a musician with a (USB) microphone, you are strongly advised to use an audio interface: a box that you can plug your instrument(s) into. This will connect to your PC usually via USB. See [Hardware Setup](Hardware-Setup).
 
 ### 2. Minimize internet traffic and close all programs on your PC
 
-While using Jamulus, try to make sure that nothing else on your machine or your network is competing against it. Don't watch YouTube/Netflix, or have anything else running on the machine that you are using Jamulus on.
+Try to make sure nothing on your machine or your network is competing against Jamulus when you are using it. 
 
 ### 3. Connect to the servers with the lowest ping times
 
-Always connect to servers with the **lowest ping times** as shown in your server list. 15ms or below will give you the best chance of having a good time (although there's other things that affect performance too). Anything higher and you're taking your chances.
+Servers shown on the list with 15ms or below will give you the best chance of having a good time (although there's other things that affect performance too). Anything higher and you're taking your chances.
 
-Of course there are also other factors that influence successful online music performances, but now you know the most important ones. Let's go:
+Now that you have the basics down, let's go:
 
 <div class="fx-row fx-row-start-xs button-container">
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Install on Windows</a>
