@@ -8,7 +8,7 @@ permalink: "/wiki/Installation-for-Linux"
 # Installation auf Linux
 Wenn du die [Schnellstartseite](Getting-Started) noch nicht gelesen hast, solltest du das nachholen.
 
-**Im Moment bieten wir keine offiziellen Pakete für Jamulus an.**
+**Momentan bieten wir keine offiziellen Pakete für Jamulus an.**
 
 Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hier](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. Du kannst zwar das [all-in-one script](Linux-Client-Install-Script) benutzen, Jamulus zu kompillieren ist aber einfach:
 
