@@ -13,6 +13,8 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 You can also [compile your own binary](Compiling) if you feel so inclined.
 
+***
+
 ## Setting up ASIO4All
 *ASIO4All is not recommended if your audio interface provides its own ASIO driver, since that might have better latency.*
 
