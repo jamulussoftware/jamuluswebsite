@@ -50,6 +50,13 @@ code {
   padding-right: 2px;
 }
 
+pre code {
+  display: block;
+  overflow-x: auto;
+  border-left: solid 2px #1181a4;
+  padding-left: 5px;
+}
+
 table, th, td {
   border: solid 1px #d3d3d3;
 }
@@ -369,6 +376,11 @@ main>div {
 
   code {
     background-color: #2b2f2f;
+  }
+
+
+  pre code {
+    border-left-color: #3daed2;
   }
 
   .red {

@@ -18,7 +18,7 @@ You don't need to compile Jamulus for macOS since we provide official binaries, 
 1. Install XCode
 1. Install QT as follow
 
-```sh
+```shell
 brew install qt5
 brew link qt5 --force
 ```
@@ -26,16 +26,16 @@ brew link qt5 --force
 ### Build project
 
 #### Generate XCode Project file
-```sh
+```shell
 qmake -spec macx-xcode Jamulus.pro
 ```
 
 #### Print build targets and configuration in console
-```sh
+```shell
 xcodebuild -list -project Jamulus.xcodeproj
 ```
 will prompt
-```
+```shell
     Targets:
         Jamulus
         Qt Preprocess
@@ -52,7 +52,7 @@ will prompt
 
 #### Build the project
 
-```sh
+```shell
 xcodebuild build
 ```
 
@@ -74,12 +74,10 @@ You don't need to compile Jamulus for Windows since we provide official binaries
 
 ### The "headless" build flag
 
-Compiling with the `headless` flag means you can avoid installing some of the dependent packages, save some disk space and/or speed up your build time under the following circumstances: 
+Compiling with the `headless` flag means you can avoid installing some of the dependent packages, save some disk space and/or speed up your build time under the following circumstances:
 
 1. If you plan to run Jamulus on Gentoo Linux, the only packages you should need for a headless build are qtcore, qtnetwork, and qtxml (both for building and running the server).
 
 1. If you are running Jamulus on Ubuntu/Debian, you will need all dependent packages to **compile** the binary, but to **run** the resulting headless Jamulus server you should only need `libqt5core5a`, `libqt5network5`, `libqt5xml5` and probably `libqt5concurrent5`. This may be useful for compiling/upgrading on one machine to run the binary on another (a Raspberry Pi, for example).
 
 1. Note that if you want to compile a GUI client on one machine and run it on another (eg a Raspberry Pi) you only need the dependencies listed for a [headless server](Server-Linux#running-a-headless-server) (see point above), only _with_ the Jack sound libraries.
-
-

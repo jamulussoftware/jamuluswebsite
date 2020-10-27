@@ -16,10 +16,10 @@ Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hie
 
 1. Öffne ein Terminalfenster (Kommandozeile - `Strg+Alt+T` auf Ubuntu und verwandten Distributionen)
 1. Lade den Sourcecode für die neueste Version herunter und entpacke diesen:
-~~~
+```shell
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
 tar -xvf latest.tar.gz
-~~~
+```
 
 ## Abhängigkeiten installieren
 
@@ -27,21 +27,28 @@ Aktualisiere zuerst deine Paketquellen (z.B. auf Debian-basierten Distributionen
 
 Auf **Ubuntu-basierten** Distributionen 18.04+, und auf Debian 9 oder 10:
 
-`sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev`
+```shell
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
+```
 
 Am **Debian** 11 (bullseye) oder neuer, und Raspberry Pi Raspbian Buster oder neuer:
 
-`sudo apt-get install build-essential qtdeclarative5-dev  qt5-default qttools5-dev-tools libjack-jackd2-dev`
+```shell
+sudo apt-get install build-essential qtdeclarative5-dev  qt5-default qttools5-dev-tools libjack-jackd2-dev
+```
 
 Auf **Fedora**:
 
-`sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel`
-
+```shell
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
+```
 ### QjackCtl: Empfohlen, aber nicht zwingend notwendig
 
 [QjackCtl](https://qjackctl.sourceforge.io){: target="_blank" rel="noopener noreferrer"} ist ein Programm, das den Jack Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere QjackCtl z.B. wie folgt:
 
-`sudo apt-get install qjackctl`
+```shell
+sudo apt-get install qjackctl
+```
 
 Du kannst auch einen [low-latency kernel]( https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) verwenden (z.B. für Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`) um die Latenz noch stärker zu reduzieren.
 
@@ -54,12 +61,12 @@ cd jamulus-latest
 ```
 Kompiliere den Quellcode (das letzte `make` kann einige Minuten dauern):
 
-~~~
+```shell
 qmake Jamulus.pro
 make clean
 make
 sudo make install
-~~~
+```
 
 ## Richte deine Soundkarte ein
 
