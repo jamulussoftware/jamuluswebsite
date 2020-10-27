@@ -51,9 +51,11 @@ sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-aud
 
 [QjackCtl](https://qjackctl.sourceforge.io) is a utility to help you set up the Jack audio server (installed as part of the dependencies above). Install it via e.g.
 
-`sudo apt-get install qjackctl`
+```shell
+sudo apt-get install qjackctl
+```
 
-You may also wish to consider using a [low-latency kernel]( https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (eg. for Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
+You may also wish to consider using a [low-latency kernel](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (eg. for Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
 
 ## Compile this bad boy
 
@@ -64,12 +66,12 @@ cd jamulus-latest
 ```
 Now compile the sources with the following commands (the last `make` may take several minutes to run):
 
-~~~
+```shell
 qmake Jamulus.pro
 make clean
 make
 sudo make install
-~~~
+```
 
 
 ## Set up your sound card
