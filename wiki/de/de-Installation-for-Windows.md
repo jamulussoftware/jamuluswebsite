@@ -14,6 +14,8 @@ Wenn du die [Schnellstartseite](Getting-Started) noch nicht gelesen hast, sollte
 
 Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
 
+***
+
 ## ASIO4All einrichten
 *Du solltest ASIO4All nur dann nutzen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO Treiber anbietet (das ist v.A. bei integrierten Soundkarten der Fall), da native ASIO Treiber eine bessere Latenz haben könnten.*
 
