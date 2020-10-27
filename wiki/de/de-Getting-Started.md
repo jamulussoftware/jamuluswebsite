@@ -14,18 +14,17 @@ permalink: "/wiki/Getting-Started"
 3.  **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden und die Latenz zu veringern[^2].
 
 ## Qualität maximieren, Verzögerung minimieren
-
-### Empfohlen: ein Audiointerface!
+Um eine gute Qualität und geringe Latenz mit Jamulus zu erreichen, solltest du folgende Tipps befolgen:
+### 1. Nutze ein Audiointerface, nicht deine interne Soundkarte
 
 Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Details findest du im [Hardware-Setup](Hardware-Setup){: target="_blank" rel="noopener noreferrer"}.
 
-### Latenz minimieren!
+### 2. Verringere die Latenz durch wenig Internetverkehr und schließe alle Programme auf deinem PC
 
 Je geringer die Latenz, desto besser kannst du mit anderen zusammenspielen. Die Minimierung der „Latenz“ (Signalverzögerung) ist also entscheidend für ein erfolgreiches Zusammenspiel. Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC auszuführen und den Internetverkehr in deinem Netzwerk gering zu halten. Schau parallel keine YouTube/Netflix Videos und stoppe Virenscans.
 
-### Ping!
-
-Auch der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den **niedrigsten Ping-Zeiten**. 15ms oder weniger sind perfekt. Natürlich gibt es auch andere Einflussfaktoren für gelungene online Musikstunden, die wichtigsten Faktoren kennst du aber jetzt!
+### 3. Verbinde dich mit schnellen Servern (halte den Ping niedrig)
+Der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den **niedrigsten Ping-Zeiten**. 15ms oder weniger sind perfekt. Natürlich gibt es auch andere Einflussfaktoren für gelungene online Musikstunden, die wichtigsten Faktoren kennst du aber jetzt!
 
 <div class="fx-row fx-row-start-xs button-container">
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Installation auf Windows</a>
@@ -39,7 +38,6 @@ Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stickstar
 ## Fertig? Alles installiert?
 
 Wenn du Jamulus eingerichtet hast, schau dir das [Hardware-Setup](Hardware-Setup) an.
-
 Ausführliche Informationen zur Benutzung von Jamulus findest du im [Handbuch](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
 ## Weitere Anleitungen
