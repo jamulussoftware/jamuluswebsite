@@ -11,11 +11,15 @@ While the most common functions in Jamulus can be set using the GUI, Jamulus can
 
 For example, on Windows to enable recording with the `-R` option: right-click on the Jamulus shortcut and choose "Properties" > Target. Add the necessary arguments to Jamulus.exe:
 
-`"C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\path\to\your\Jam Recordings"`
+```shell
+"C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\path\to\your\Jam Recordings"
+```
 
 For Macintosh, start a Terminal window and run Jamulus with the desired options like this:
 
-`/Applications/Jamulus.app/Contents/MacOS/Jamulus -s -R "/path/to/your/jam recordings"`
+```shell
+/Applications/Jamulus.app/Contents/MacOS/Jamulus -s -R "/path/to/your/jam recordings"
+```
 
 ***
 
