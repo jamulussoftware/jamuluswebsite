@@ -38,7 +38,9 @@ This mode is activated by un-checking "Register my server...".
 
 When running without the GUI ("headless"), the following would configure a private server:
 
-`Jamulus --nogui --server`
+```shell
+Jamulus --nogui --server
+```
 
 See also [Command Line Options](Command-Line-Options) for other parameters you can set.
 
