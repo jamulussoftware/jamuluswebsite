@@ -11,7 +11,7 @@ permalink: "/wiki/Getting-Started"
 
 1. **A computer** running either **Windows 10**, **MacOS X** El Capitan (v10.11) or higher, or **Linux**.
 1. **A wired internet connection** (don't use Wi-Fi, it will cause sound problems). Most broadband connections will be fine[^1].
-1. **Wired headphones - not speakers** to prevent echo or feedback and (particularity if singing or playing acoustic instruments) to make sure you keep in time with others (see the [note on this](Getting-Started#having-trouble-cant-keep-in-time) for why)
+1. **Wired headphones - not speakers** to prevent echo or feedback and to minimize delay[^2].
 
 ## Maximise quality, minimise delay
 ### Highly recommended: an audio interface!
@@ -40,7 +40,8 @@ If you set up Jamulus, have a look [Hardware Setup](Hardware-Setup)
 
 For detailed information on using Jamulus, please see the [Help Manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
-**Also [this excellent guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"}** (_Facebook_)
+## Other guides
+* [This excellent guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) might also be worth a view.
 
 ## Having trouble? Can't keep in time?
 
@@ -60,5 +61,5 @@ Further information about how to avoid listening to yourself (and help with othe
 _Jamulus works on the client server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards the audio is sent to every client. If a server is made public and registered on a central server, its information will be broadcasted to all clients._
 
 ## Footnotes
-
 [^1]: [Full details here](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. If you have 10Mbits down and 1Mbps up, you're unlikely to run into bandwidth-related issues.
+[^2]: Bluetooth headphones usually have too much latency. That's one reason why wired headphones are required. Particularity if singing or playing acoustic instruments to make sure you keep in time with others only use headphones (see the [note on this](Getting-Started#having-trouble-cant-keep-in-time) for further information).
