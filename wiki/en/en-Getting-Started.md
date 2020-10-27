@@ -14,15 +14,16 @@ permalink: "/wiki/Getting-Started"
 1. **Wired headphones - not speakers** to prevent echo or feedback and to minimize delay[^2].
 
 ## Maximise quality, minimise delay
-### Highly recommended: an audio interface!
+To maximize sound quality and to minimize latency (signal delay), you should follow these suggestions:
+### 1. Use an audio interface/external microphone, not your internal sound card
 
 Unless you are a musician with a (USB) microphone, then to avoid latency you are strongly advised to use an audio interface: a box that you can plug your instrument(s) into rather than using your computer's built-in sound card. The interface will connect to your PC usually via USB. See [Hardware Setup](Hardware-Setup).
 
-### Minimise interruptions!
+### 2. Minimize internet traffic and close all programs on your PC
 
-Minimizing "latency" (signal delay) is crucial for playing successfully together. While using Jamulus, try to make sure that nothing else on your machine or your network is competing against it. Don't watch YouTube/Netflix, or have anything else running on the machine that you are using Jamulus on.
+While using Jamulus, try to make sure that nothing else on your machine or your network is competing against it. Don't watch YouTube/Netflix, or have anything else running on the machine that you are using Jamulus on.
 
-### Ping time!
+### 3. Connect to the servers with the lowest ping times
 
 Always connect to servers with the **lowest ping times** as shown in your server list. 15ms or below will give you the best chance of having a good time (although there's other things that affect performance too). Anything higher and you're taking your chances.
 
