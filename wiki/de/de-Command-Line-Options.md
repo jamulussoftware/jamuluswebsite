@@ -1,25 +1,25 @@
 ---
 layout: wiki
-title: "Kommandozeilen Optionen"
-lang: "en"
+title: "Kommandozeile"
+lang: "de"
 permalink: "/wiki/Command-Line-Options"
 ---
 
-# Kommandozeilen Optionen
+# Kommandozeile
 
-Zusätzlich zum setzen der Funktionen in der Jamulus Oberfläche kann man auch Funktionen über die Kommandozeile setzen. Die genaue Vorgehensweise hängt vom verwendeten Betriebssystem ab.
+Während die gebräuchlichsten Funktionen in Jamulus über die GUI eingestellt werden können, lässt sich Jamulus auch über die Kommandozeile steuern. Wie das genau funktioniert, hängt von deinem Betriebssystem ab.
 
-Um zum Beispiel bei Windows die Rekorderfunktion mit dem `-R` Argument zu aktivieren : Rechtsklick auf die Jamulus Verknüpfung und wählen Sie "Eigenschaften" > Ziel. Füge dann die nötigen Argumente zu Jamulus.exe hinzu:
+Unter Windows kannst du die Rekorderfunktion `-R` z.B. wie folgt aktivieren: Klicke mit der rechten Maustaste auf die Jamulus Verknüpfung, dann auf "Eigenschaften" und füge die entsprechende Option (in diesem Beispiel `-R`) nach Jamulus.exe hinzu:
 
 `"C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\path\to\your\Jam Recordings"`
 
-Bei MacOS, starte das Terminal Fenster und führe Jamulus mit den gewünschten Optionen wie folgt aus:
+Unter macOS, starte das Terminal Fenster und führe Jamulus mit den gewünschten Optionen wie folgt aus:
 
 `/Applications/Jamulus.app/Contents/MacOS/Jamulus -s -R "/path/to/your/jam recordings"`
 
 ***
 
-Sie können alle verfügbaren Optionen zur aktuellen Version von Jamulus über den Parameter `-h` erfahren.
+Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den Parameter `-h` anzeigen lassen.
 
 
 | Short | Long name | `[...]` bedeutet optionale Parameter | |
