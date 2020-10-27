@@ -10,11 +10,11 @@ Jamulus Help (Software Manual)
 Main Window
 -----------
 
-![Main window](main.png)
+![Main window](https://user-images.githubusercontent.com/20726856/97360410-77476880-189e-11eb-99c6-f4a68258bf31.png)
 
 ### Status LEDs
 
-![LEDs](led.png)
+![LEDs](https://user-images.githubusercontent.com/20726856/97360576-ac53bb00-189e-11eb-971e-a73414ec3f6f.png)
 
 The **Delay Status** LED shows the current audio delay status:
 
@@ -42,7 +42,7 @@ Make sure not to clip the input signal to avoid distortions of the audio signal 
 
 ### Chat button
 
-![Chat dialog](chat.png)
+![Chat dialog](https://user-images.githubusercontent.com/20726856/97360717-d7d6a580-189e-11eb-84db-80536e17dc30.png)
 
 The chat text entered in that dialog is sent to
 all connected clients. If a new chat message arrives and the Chat dialog is not already open, it will
@@ -50,21 +50,21 @@ opened automatically for all clients.
 
 ### Profile window
 
-![My profile dialog](profile.png)
+![My profile dialog](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
 
 From the View menu, select My Profile... to set your Alias/Name
 which is displayed below your fader in the server audio mixer board. If an instrument and/or country is set,
 icons for these selections will also be shown below your fader. The skill setting changes the background colour of
 the fader tag and the city entry shows up in the tool tip of the fader tag (see screenshot below).
 
-![Fader tag tool tip](fadertagtooltip.png)
+![Fader tag tool tip](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
 
 ### Connect/disconnect button
 
 Opens a dialog where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
 
-![Connect dialog](connect.png)
+![Connect dialog](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
 The Connection Setup window shows a list of available servers together with the number of occupants and the maxmium number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
@@ -72,7 +72,7 @@ You can filter the list by server name or location. To list only occupied server
 
 If you know the IP address or URL of a server, you can connect to it using the Server Name/Address
 field. An optional port number can be added after the IP address or URL using a colon as a separator, e.g,
-jamulus.dyndns.org:22124. The field will also show a list of the most recently used server addresses.
+jamulus.example.com:22124. The field will also show a list of the most recently used server addresses.
 
 ### Mute Myself button
 
@@ -80,7 +80,7 @@ Cuts your audio stream to the server so that you will be able to hear yourself a
 
 ### Reverb effect
 
-![Reverberation](reverberation.png)
+![Reverberation](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
 Reverb can be applied to one local mono audio channel or to both channels in stereo mode.
 The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed
@@ -89,7 +89,7 @@ to the right and move the fader upwards until the desired reverb level is reache
 
 ### Local audio pan / balance control
 
-![Local audio pan / balance control](audiofader.png)
+![Local audio pan / balance control](https://user-images.githubusercontent.com/20726856/97361250-8c70c700-189f-11eb-82c2-9a9d768dcfff.png)
 
 Controls the relative levels of the left and right local audio channels. For a mono signal
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
@@ -98,7 +98,7 @@ in a direction where the label above the fader shows L -x, where x is the curren
 
 ### Server audio mixer
 
-![Audio faders](faders.png)
+![Audio faders](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
 In the audio mixer frame, a fader is shown for each connected client at the server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
@@ -124,12 +124,12 @@ If the server operator has enabled recording, you will see a message above the m
 Settings Window
 ---------------
 
-![Settings](settings.png)
+![Settings](https://user-images.githubusercontent.com/20726856/97361399-c4780a00-189f-11eb-8ad0-6b94f7eb1dcc.png)
 
 ### Sound card device
 
-![Sound card device Windows](soundcarddevicewindows.png)
-![Sound card device Mac](soundcarddevicemac.png)
+![Sound card device Windows](https://user-images.githubusercontent.com/20726856/97361494-e70a2300-189f-11eb-9095-2c34ad07314d.png)
+![Sound card device Mac](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
 
 The ASIO driver (sound card) can be selected using Jamulus under the Windows operating system. If the selected ASIO
 driver is not valid an error message is shown and the previous valid driver is selected. Under the Mac operating
@@ -137,7 +137,7 @@ system the input and output hardware can be selected.
 
 ### Input/output channel mapping
 
-![Channel mapping](channelmapping.png)
+![Channel mapping](https://user-images.githubusercontent.com/20726856/97361637-1caf0c00-18a0-11eb-9b65-81225b7e3dd5.png)
 
 If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
@@ -151,7 +151,7 @@ also increases.
 
 ### Buffer delay
 
-![Buffer delay](bufferdelay.png)
+![Buffer delay](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
 
 The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many
 connection properties. Three buffer sizes are supported:
@@ -163,7 +163,7 @@ connection properties. Three buffer sizes are supported:
 Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.
 In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel.
 
-![Buffer delay Windows](bufferdelaywindows.png)
+![Buffer delay Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
 
 On Linux, use the Jack configuration tool to change the buffer size.
 
@@ -171,13 +171,13 @@ The actual buffer delay has influence on the connection status, the current uplo
 The lower the buffer size, the higher the probability of a red light in the status indicator (drop outs) and the
 higher the upload rate and the lower the overall delay.
 
-![Buffer delay dependencies](bufferdelaydependency.png)
+![Buffer delay dependencies](https://user-images.githubusercontent.com/20726856/97361878-816a6680-18a0-11eb-8c1f-fbf956be4b81.png)
 
 The buffer setting is therefore a trade-off between audio quality and overall delay.
 
 ### Jitter buffer with buffer status indicator
 
-![Jitter buffer](jitterbuffer.png)
+![Jitter buffer](https://user-images.githubusercontent.com/20726856/97361956-9b0bae00-18a0-11eb-85de-dc2ded891175.png)
 
 The jitter buffer compensates for network and sound card timing jitters. The size of the buffer
 therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
@@ -195,7 +195,7 @@ timing jitter. If the Auto check is enabled, the jitter buffer size faders are d
 
 ### Audio channels
 
-![Audio channels](audiochannels.png)
+![Audio channels](https://user-images.githubusercontent.com/20726856/97362020-b24a9b80-18a0-11eb-8a55-ee536b29460b.png)
 
 Selects the number of audio channels to be used for communication between client and server. There are three modes
 available:
@@ -213,13 +213,13 @@ the main window since the effect is applied to both channels in this case.
 
 ### Audio quality
 
-![Audio quality](audioquality.png)
+![Audio quality](https://user-images.githubusercontent.com/20726856/97362080-c42c3e80-18a0-11eb-87ac-9a4ca948bbcf.png)
 
 The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection.
 
 ### New client level
 
-![New client level](newclientlevel.png)
+![New client level](https://user-images.githubusercontent.com/20726856/97362173-e2923a00-18a0-11eb-8401-9ad71866f6b1.png)
 
 This setting defines the fader level of a newly connected client in percent. If a new musician connects
 to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
@@ -227,19 +227,19 @@ that client was already stored.
 
 ### Fancy skin
 
-![Fancy skin](fancyskin.png)
+![Fancy skin](https://user-images.githubusercontent.com/20726856/97362214-f9389100-18a0-11eb-9adb-ebf2c1d18007.png)
 
 This applies a fancy skin to the main window.
 
 ### Custom central server address
 
-![Central server address](centralserveraddress.png)
+![Central server address](https://user-images.githubusercontent.com/20726856/97362265-0a819d80-18a1-11eb-9b0c-2f7ecf21841c.png)
 
 Leave this blank unless you need to enter the address of a central server other than the default.
 
 ### Current connection status parameter
 
-![Indicators](indicators.png)
+![Indicators](https://user-images.githubusercontent.com/20726856/97362338-271dd580-18a1-11eb-99b7-02c9371a6258.png)
 
 The Ping Time is the time required for the audio stream to travel from the client to the server and back again.
 This delay is introduced by the network and should about 20-30ms. If this delay is higher than about 50ms,
