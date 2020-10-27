@@ -15,7 +15,7 @@ permalink: "/wiki/Getting-Started"
 
 ## Qualität maximieren, Verzögerung minimieren
 Um eine gute Qualität und geringe Latenz mit Jamulus zu erreichen, solltest du folgende Tipps befolgen:
-### 1. Nutze ein Audiointerface, nicht deine interne Soundkarte
+### 1. Nutze ein Audiointerface/USB-Mikrofon, nicht deine interne Soundkarte
 
 Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Details findest du im [Hardware-Setup](Hardware-Setup){: target="_blank" rel="noopener noreferrer"}.
 
