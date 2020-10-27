@@ -36,18 +36,18 @@ xcodebuild -list -project Jamulus.xcodeproj
 ```
 will prompt
 ```shell
-    Targets:
-        Jamulus
-        Qt Preprocess
+Targets:
+    Jamulus
+    Qt Preprocess
 
-    Build Configurations:
-        Debug
-        Release
+Build Configurations:
+    Debug
+    Release
 
-    If no build configuration is specified and -scheme is not passed then "Release" is used.
+If no build configuration is specified and -scheme is not passed then "Release" is used.
 
-    Schemes:
-        Jamulus
+Schemes:
+    Jamulus
 ```
 
 #### Build the project
