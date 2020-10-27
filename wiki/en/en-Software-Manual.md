@@ -33,7 +33,7 @@ The **Delay Status** LED shows the current audio delay status:
 
 ### Input level
 
-![Input level](inputlevel.png)
+![Input level](https://user-images.githubusercontent.com/20726856/97363247-9516cc80-18a2-11eb-8195-1e887ee8040f.png)
 
 This shows the level of the two stereo channels for your audio input.
 Make sure not to clip the input signal to avoid distortions of the audio signal (the LEDs will indicate clipping when it occurs).
