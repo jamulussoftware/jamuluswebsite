@@ -1,7 +1,7 @@
 ---
 layout: wikioverview
-title: "Mapa del sitio"
+title: "Resumen"
 lang: "es"
 permalink: "/wiki/"
 ---
-# Mapa del sitio
+# Page overview
