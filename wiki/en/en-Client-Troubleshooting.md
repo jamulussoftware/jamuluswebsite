@@ -12,17 +12,6 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 
 **Windows users (ASIO4All)**: If you’re using the ASIO4All driver have a look at the [ASIO4All setup section](Installation-for-Windows#setting-up-asio4all)
 
-### Try to connect - Message in Jamulus Client on MacOSX
-If you login to a Jamulus Session the room can empty without any musicians. Most likely the device in the settings seems to set to no device instead of having the default system settings to be available there. 
-
-Troubleshooting:
-* go to settings select a input/output device and you will be visible as musician with volume slider in the mixer with your
-* this was not the case before with the client. Without alteration of the version this problem was not there before with MacOSX.
-
-Bug Fixing Options:
-* (A) set a default device from available sound devices (e.g. the first available or the stored device if accessible)
-* (B) if the connection is established replace the "try to connect" message by "empty Jamulus Room" if connection to Jamulus server was established properly-
-
 ### You all sound OK, but it's difficult to keep together
 
 **If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing. 
