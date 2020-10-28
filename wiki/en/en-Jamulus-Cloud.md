@@ -13,7 +13,7 @@ Jamulus user [skrul](https://sourceforge.net/u/skrulx/profile/) has put up some 
 Launch an instance from the AMI in the region you want (you can use use m3.small) and make sure you add the "All UDP / Anywhere" rule to the security group before launching.
 
 
-**Note as of April 2020**: These instances come with Jamulus v3.5.0. Before running your server, you are strongly advised to [check the current release](https://github.com/corrados/jamulus/releases) and [upgrade](https://github.com/corrados/jamulus/blob/master/INSTALL.md) to that.
+**Note as of April 2020**: These instances come with Jamulus v3.5.0. Before running your server, you are strongly advised to [check the current release](https://github.com/corrados/jamulus/releases) and upgrade to that.
 
 ### AMIs Available
 
