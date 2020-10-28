@@ -1,0 +1,14 @@
+---
+layout: none
+---
+[
+  {% for site in site.sites %}
+    {
+      "title"    : "{{ site.title | escape }}",
+      "category" : "{{ site.category }}",
+      "tags"     : "{{ site.tags | array_to_sentence_string }}",
+      "url"      : "{{ site.baseurl }}{{ site.url }}",
+      "date"     : "{{ site.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
