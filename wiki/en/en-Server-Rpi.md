@@ -15,9 +15,9 @@ _Jamulus has been tested on a Raspberry Pi 4 2Gb by Jamulus user [SIVA Frédéri
 
 1. Edit [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) to enable boot without HDMI by adding `hdmi_force_hotplug=0`
 
-1. [Get the sources](Installation-for-Linux#get-jamulus), install the [dependent packages](Installation-for-Linux#install-the-dependent-packages) according to the Linux client install guide **but do NOT install Jack package(s)** - you don't need them on a [headless server](https://github.com/corrados/jamulus/wiki/Server---Linux#running-a-headless-server). To run a client, install all listed dependencies.
+1. [Get the sources](Installation-for-Linux#get-jamulus-sources), install the [dependent packages](Installation-for-Linux#install-dependencies) according to the Linux client install guide **but do NOT install Jack package(s)** - you don't need them on a [headless server](Server-Linux#running-a-headless-server). To run a client, install all listed dependencies.
 
-1. Compile the source code for a server as per [these instructions](Server---Linux#compile-sources-create-a-user). Compile a client using the [default instructions](Installation-for-Linux#compile-this-bad-boy).
+1. Compile the source code for a server as per [these instructions](Server-Linux#compile-sources-create-a-user). Compile a client using the [default instructions](Installation-for-Linux#compile-this-bad-boy).
 
 This will build Jamulus and put it in `/usr/local/bin/Jamulus`
 
@@ -27,7 +27,7 @@ If you are running a server, test by starting with the `--server` option, and wa
 
 `Jamulus -s`
 
-If all is well, run in your chosen [server mode](Choosing-a-Server-Type) as follows (or use systemd unit script provided in the [Linux guide](Server---Linux#create-a-start-script)), for example a public server:
+If all is well, run in your chosen [server mode](Choosing-a-Server-Type) as follows (or use systemd unit script provided in the [Linux guide](Server-Linux#create-a-start-script)), for example a public server:
 
 `sudo chrt 99 ionice -c1 nice -n -20 Jamulus -s -n -e [yourCentralServer] -o "yourServerName;yourCity;[country ID]"&`
 

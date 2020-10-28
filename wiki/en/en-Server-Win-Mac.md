@@ -14,17 +14,17 @@ permalink: "/wiki/Server-Win-Mac"
 
 * **Macintosh users** - Double-click the "Jamulus server" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).
 
-* **Linux users** - Please refer to the [GUI server instructions](Server---Linux#running-a-server-with-the-gui).
+* **Linux users** - Please refer to the [GUI server instructions](Server-Linux#running-a-server-with-the-gui).
 
 <img width="627" alt="server-setup" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
 
 ### Public server setup
 
-1. On checking "Make My Server Public" you should see a confirmation message saying whether your server has registered successfully. 
+1. On checking "Make My Server Public" you should see a confirmation message saying whether your server has registered successfully.
 
-1. Type in the name, city and country so that other users can easily identify you. 
+1. Type in the name, city and country so that other users can easily identify you.
 
-1. Specify a musical genre if you wish. This will make your server appear in the relevant server list for clients (see more [details on Central Servers](Central-Servers)). 
+1. Specify a musical genre if you wish. This will make your server appear in the relevant server list for clients (see more [details on Central Servers](Central-Servers)).
 
 _The Chat Welcome Message appears to all users when they join the server (the chat window will open automatically for them)._
 
@@ -40,22 +40,21 @@ Turn on server recording by first setting the Recording Directory in the Options
 
 _Note: When your server is recording, clients will display a message that recording is on._
 
-For headless servers: you can control the recording function [using these instructions](Server---Linux#controlling-recordings).
+For headless servers: you can control the recording function [using these instructions](Server-Linux#controlling-recordings).
 
 
 ### Other options
 
 <img width="549" alt="jamulus-server" src="https://user-images.githubusercontent.com/4561747/95724775-accd3e80-0c6e-11eb-90ba-7131e9c15316.png">
 
-**Windows users** - If you want the server to start automatically on system start, enable the corresponding check box. 
+**Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.
 
-(Leave the "Custom Central Server Address" field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#central))
+(Leave the "Custom Central Server Address" field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-central))
 
 
- 
+
 
 
 ***
 
 See also [Command Line Options](Command-Line-Options) for other parameters you can set.
-

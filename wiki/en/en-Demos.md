@@ -20,6 +20,7 @@ permalink: "/wiki/Demos"
 * [IP Rockers Live on Jamulus April 17 2020](https://soundcloud.com/dematteoss/sets/ip-rockers-live-on-jamulus-april-17-2020) (broken link)
 
 * [Introductory video showing setup with acoustic instruments](https://www.youtube.com/watch?v=lB4ZxDb9vnU) (not a demo as such)
+* [WorldJam](https://worldjam.vip/homepage.php) Every saturday night there's a world wide online jam being streamed over the net
 
 ![A typical Jamulus jam!](https://user-images.githubusercontent.com/4561747/79686157-1f1c1380-8236-11ea-9fdb-8a791dd2713f.png)
 

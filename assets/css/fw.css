@@ -2,6 +2,10 @@ button-container:root {
   color-scheme: light dark;
 }
 
+body {
+  line-height: 150%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #1181a4;
 }
@@ -27,6 +31,10 @@ a:hover {
   background-color: #c94a55 !important;
 }
 
+.doubletextsize {
+  font-size: 2em;
+}
+
 header {
   background-color: #49a9c9;
   color: #ffffff;
@@ -35,10 +43,18 @@ header {
 }
 
 code {
-  background-color: #d3d3d3;
+  background-color: #efefef;
+  font-size: 0.9em;
   border-radius: 2px;
-  display: inline-block;
-  padding: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+pre code {
+  display: block;
+  overflow-x: auto;
+  border-left: solid 2px #1181a4;
+  padding-left: 5px;
 }
 
 table, th, td {
@@ -68,10 +84,6 @@ main li {
   padding: 0.2em;
 }
 
-.chlang ul li a, .chlang div, #langselect.chlang li.selected {
-  color: #c94a55;
-}
-
 .proplang {
   font-style: italic;
 }
@@ -83,6 +95,7 @@ main li {
 #langselect ul {
   padding: 0;
   margin: 0;
+  text-align: right;
 }
 
 #langselect ul li {
@@ -98,12 +111,16 @@ main li {
   color: #2b7288;
 }
 
+#langselect.chlang ul li a, #langselect.chlang .selected {
+  color: inherit;
+}
+
 header #navbtn {
   color: #ffffff;
 }
 
 #gnav nav h3 {
-  margin: 0.5em 0 0.5em 0;
+  margin: 1.2em 0 0 0;
 }
 
 #gnav a .selected {
@@ -158,6 +175,21 @@ nav {
 
 #mnv ul {
   list-style-type: none;
+}
+
+:target {
+  background-color: #ffceaf;
+  border-top: solid 2px #1181a4;
+  transition: border-top 0.5s;
+  transition: background-color 0.5s;
+  transition-timing-function: ease;
+}
+
+table {
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  display: block;
 }
 
 #footer {
@@ -284,7 +316,7 @@ main>div {
 
 @media (prefers-color-scheme: dark) {
   h1, h2, h3, h4, h5, h6, a, #langselect {
-    color: #1ea4ce;
+    color: #3daed2;
   }
 
   #langselect .selected {
@@ -329,6 +361,11 @@ main>div {
     color: #cecdd2;
   }
 
+  :target {
+    background-color: #82431c;
+    border-color: #3daed2;
+  }
+
   header {
     color: #dbdbdb;
   }
@@ -339,5 +376,22 @@ main>div {
 
   code {
     background-color: #2b2f2f;
+  }
+
+
+  pre code {
+    border-left-color: #3daed2;
+  }
+
+  .red {
+    color: #ea6571 !important;
+  }
+
+  .red-bg {
+    background-color: #ea6571 !important;
+  }
+
+  .chlang {
+    border-color: #ea6571;
   }
 }

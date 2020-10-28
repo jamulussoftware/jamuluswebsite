@@ -19,10 +19,10 @@ Meanwhile, compiling the sources is quite easy:
 
 1. Open up a terminal window (command line - `CTRL+ALT+t` on Ubuntu and related distros)
 1. Download and unzip the sources for the latest release:
-~~~
+```shell
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
 tar -xvf latest.tar.gz
-~~~
+```
 
 
 ## Install dependencies
@@ -31,23 +31,31 @@ First, update your package list (e.g. on Debian based distributions with `sudo a
 
 On **Ubuntu-based** distributions 18.04+, and on Debian 9 or 10:
 
-`sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev`
+```shell
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
+```
 
 On **Debian** 11 (bullseye) or later, and Raspberry Pi Raspbian Buster release or later:
 
-`sudo apt-get install build-essential qtdeclarative5-dev  qt5-default qttools5-dev-tools libjack-jackd2-dev`
+```shell
+sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
+```
 
 On **Fedora**:
 
-`sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel`
+```shell
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
+```
 
 ### Qjackctl: Optional, but recommended
 
 [QjackCtl](https://qjackctl.sourceforge.io) is a utility to help you set up the Jack audio server (installed as part of the dependencies above). Install it via e.g.
 
-`sudo apt-get install qjackctl`
+```shell
+sudo apt-get install qjackctl
+```
 
-You may also wish to consider using a [low-latency kernel]( https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (eg. for Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
+You may also wish to consider using a [low-latency kernel](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (eg. for Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
 
 ## Compile this bad boy
 
@@ -58,12 +66,12 @@ cd jamulus-latest
 ```
 Now compile the sources with the following commands (the last `make` may take several minutes to run):
 
-~~~
+```shell
 qmake Jamulus.pro
 make clean
 make
 sudo make install
-~~~
+```
 
 
 ## Set up your sound card

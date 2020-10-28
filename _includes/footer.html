@@ -29,7 +29,7 @@
     // check if we support the language of the browser
     lus.forEach(function (lng, i) {
       if (ja.match('^' + lng)) { // this language is supported. We could add a suggestion here
-        document.getElementById('langselect').classList.add('chlang');
+        document.getElementById('langselect').classList.add('chlang','red');
         document.getElementById('suglang').style.display = "block";
         document.querySelectorAll('[data-slang='+ lng +']')[0].classList.add("proplang");
       }

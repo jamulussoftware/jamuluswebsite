@@ -12,3 +12,5 @@ Per Windows, Macintosh e Linux
 ## Raccontaci la tua esperienza con Jamulus!
 
 **Se hai qualche minuto a disposizione potresti aiutarci [compilando questo sondaggio completamente anonimo!](https://forms.gle/hSSjsxjWj2Pnp5kr7)**
+
+_La licenza soggettata a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/deed.it){: target="_blank" rel="noreferrer" }._

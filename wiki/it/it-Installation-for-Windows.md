@@ -37,11 +37,12 @@ Le cuffie e gli altoparlanti sono inseriti nella lista degli output e i microfon
 Di solito la configurazione di base è sufficiente per funzionare ma spesso si possono avere problemi con i settaggi.
 
 Se non si sente nulla per prima cosa bisogna **riavviare Jamulus e/o il PC**.
-In seguito, se il problema persiste, **settare nuovamente i dispositivi di input/output**. A sinistra dei dispositivi di ingesso-uscita è presente un icona di "acceso (se illuminato) - spento" e un'icona di riproduzione. Se è presente una croce rossa o un simbolo giallo, potrebbe essere necessario chiudere altre applicazioni come il browser, Zoom, ecc...
+
+In seguito, se il problema persiste, **settare nuovamente i dispositivi di input/output**. A sinistra dei dispositivi di ingesso-uscita è presente un icona di "acceso (se illuminato) - spento" e un'icona di riproduzione. Se è presente una croce rossa o un simbolo giallo, potrebbe essere necessario chiudere altri applicazioni come il browser, Zoom, ecc...
 
 Puoi vedere [questo video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} realizzato da @trombonepizza che raccoglie informazioni dettagliate sui dirver ASIO4All.
 
-La documentazione ufficiale e dettagliata sui driver ASIO4All è disponibile [sulla FAQ del sito ufficiale](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} e nel manuale dei driver ASIO4All. Il manuale si trova nella cartella di installazione del driver (solitamente `C:\Program Files (x86)\ASIO4ALL v2\`).
+La documentazione ufficiale e dettagliata sui driver ASIO4All è disponibile [sulla FAQ del sito ufficile](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} e nel manuale dei driver ASIO4All. Il manuale si trova nella cartella di installazione dei driver (solitamente `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## Tutto Installato?
 Ora puoi usare Jamulus. Se non hai ancora settato la tua scheda audio puoi visitare [Configurazione Hardware](Hardware-Setup).

@@ -12,9 +12,9 @@ permalink: "/wiki/Hardware-Setup"
 
 **For Jamulus to run stable it is recommended to use a PC with at least 1.5GHz CPU frequency.**
 
-**Windows users**: You need to install an ASIO driver. A sound card with a native ASIO driver is recommended but if your sound card doesn't provide one, try using this [free ASIO driver (ASIO4All)](http://www.asio4all.org) instead. To setup ASIO4All, have a look at this [basic setup guide](https://github.com/corrados/jamulus/wiki/Installation-for-Windows#setting-up-asio4all).
+**Windows users**: You need to install an ASIO driver. A sound card with a native ASIO driver is recommended. Have a look at the [Windows installation page](Installation-for-Windows) for further information.
 
-# Example Setups
+## Example Setups
 
 Setting up hardware usually burns down to 4 points, although each setup is different.
 
@@ -26,7 +26,7 @@ Setting up hardware usually burns down to 4 points, although each setup is diffe
 
 ## Windows: Audio interface connection - ASIO4All
  
-This is an example Windows client installation with audio device [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0).
+This is an example Windows client installation with audio device [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0){: target="_blank" rel="noopener noreferrer"}.
 The following instructions might be similar with other audio devices.
 
 _**The exact method of connecting your instrument will of course vary depending on your hardware.**_
@@ -35,7 +35,7 @@ _**The exact method of connecting your instrument will of course vary depending 
 
 In the future, always use the same USB port for the audio device. 
 
-**Windows users**: If not already done: download and install the [free ASIO sound driver (ASIO4All)](http://www.asio4all.org). Some people have also reported success using [this ASIO native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip), although it's not listed on Behringer's product pages as of April 2020.
+**Windows users**: If not already done: download and install the [free ASIO sound driver (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. Some people have also reported success using [this ASIO native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip){: target="_blank" rel="noopener noreferrer"} __currently not available__, although it's not listed on Behringer's product pages as of April 2020.
 
 
 #### 2. Start Jamulus
@@ -55,10 +55,10 @@ You're done! Have fun!
 
 ## Linux: Audio interface connection with QJackCtrl
 
-Refer to the Linux [client install guide](/wiki/Installation-for-Linux#configure-jack-with-qjackctl).
+Refer to the Linux [client install guide](Installation-for-Linux#configure-jack-with-qjackctl).
 
 ## Linux: Low Latency Kernels for Jamulus
-You might want to install Ubuntu Studio (URL: https://ubuntustudio.org/ ) it adds a second options in your boot menu for a low-latency kernel. The key of successful jamming is "low latency" between servers and connected Jamulus clients. If the underlying Linux system is started with a low-latency then it has a positive impact on latency for your Jamulus Sessions.
+You might want to install [Ubuntu Studio](https://ubuntustudio.org/){: target="_blank" rel="noopener noreferrer"} it adds a second options in your boot menu for a low-latency kernel. The key of successful jamming is "low latency" between servers and connected Jamulus clients. If the underlying Linux system is started with a low-latency then it has a positive impact on latency for your Jamulus Sessions.
 
 
 ## Points to note about inputs

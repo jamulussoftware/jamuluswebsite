@@ -11,40 +11,34 @@ permalink: "/wiki/Server-Linux"
 **_Please ensure you have read the [server overview](Running-a-Server)_**
 
 
-# Running a server with the GUI
+## Running a server with the GUI
 
 If you plan to run a server on your desktop machine (and you have installed the Jamulus client already), you can run it in your chosen [server mode](Choosing-a-Server-Type) by running Jamulus with the `-s` option as follows:
 
 1. Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros).
-
 1. Assuming Jamulus is in `/usr/local/bin`, type `Jamulus -s`
 
 Hit return and you should see the server control window. You can stop the server by closing the server window, or by typing CTRL+C in the terminal.
 
-**To configure the server**, please refer to [the Windows & Macintosh instructions](Server--Windows-&-Mac).
+**To configure the server**, please refer to [the Windows & Macintosh instructions](Server-Win-Mac).
 
 See also [Command Line Options](Command-Line-Options) for other parameters you can set.
 
+## Running a "headless" server
 
-***
-
-
-# Running a "headless" server 
-
-The following guide is for running Jamulus as a "pure" server on **hardware without audio** (eg on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. We also have instructions for [Raspberry Pi](Server---Raspberry-Pi), which rock too.
+The following guide is for running Jamulus as a "pure" server on **hardware without audio** (eg on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. We also have instructions for [Raspberry Pi](Server-Rpi), which rock too.
 
 * _Jamulus user [Grigory](https://sourceforge.net/u/cidnurg/profile/) maintains a **[Docker image for Jamulus](https://hub.docker.com/r/grundic/jamulus)** which you can use._
 
-* _Jamulus user [skrul](https://sourceforge.net/u/skrulx/profile/) has also put up some **public Amazon EC2 AMIs** of Ubuntu 18.04 running Jamulus. [See this page for details](Jamulus-in-the-Cloud)._
+* _Jamulus user [skrul](https://sourceforge.net/u/skrulx/profile/) has also put up some **public Amazon EC2 AMIs** of Ubuntu 18.04 running Jamulus. [See this page for details](Jamulus-Cloud)._
 
 
 
-## Compile sources, create a user
+### Compile sources, create a user
 
 
-1. [Get the sources](Installation-for-Linux#get-jamulus), install the [dependent packages](Installation-for-Linux#install-the-dependent-packages) according to the Linux client install guide. Note that **you don't need to install the Jack package(s)** for a headless build. _If you plan to run headless on Gentoo, or are compiling under Ubuntu for use on another Ubuntu machine, [see the footnote](#what-does-the-headless-build-flag-do)._
-
-2. Compile the sources to ignore the Jack sound library:
+1. [Get the sources](Installation-for-Linux#get-jamulus-sources), install the [dependent packages](Installation-for-Linux#install-dependencies) according to the Linux client install guide. Note that **you don't need to install the Jack package(s)** for a headless build. _If you plan to run headless on Gentoo, or are compiling under Ubuntu for use on another Ubuntu machine, [see the footnote](#what-does-the-headless-build-flag-do)._
+1. Compile the sources to ignore the Jack sound library:
 
 ~~~
 qmake "CONFIG+=nosound headless" Jamulus.pro
@@ -54,21 +48,21 @@ make
 
 3. Move the resulting `Jamulus` binary file to a permanent location, or use `sudo make install`. You can now remove the sources directory if you wish.
 
-**The rest of this guide assumes you are using  `/usr/local/bin/Jamulus`** 
+**The rest of this guide assumes you are using  `/usr/local/bin/Jamulus`**
 
 4. Create a non-privileged system user for the server to run as (will run as user _jamulus_, group _nogroup_):
 
 `sudo adduser --system --no-create-home jamulus`
 
-## Create a start script
+### Create a start script
 
 Once you have decided which mode you want your server to run in, use systemd to start it up (the rest of this guide assumes you are in "public" mode - **Please also see this [important note on Central Servers](Central-Servers)).**
 
-Create a systemd unit file that will start the server at boot time (thanks to [David Harrold](https://sourceforge.net/u/dkxl/profile/) for this). 
+Create a systemd unit file that will start the server at boot time (thanks to [David Harrold](https://sourceforge.net/u/dkxl/profile/) for this).
 
 The unit file applies high priority CPU and I/O scheduling to the server process. This is optional (and may be ignored on some hosts).
 
-Note also that the server log entries will go to journalctl (use [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) to see it ). 
+Note also that the server log entries will go to journalctl (use [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) to see it ).
 
 ~~~
 [Unit]
@@ -87,9 +81,9 @@ IOSchedulingClass=realtime
 IOSchedulingPriority=0
 
 #### Change this to set genre, location and other parameters.
-#### See https://github.com/corrados/jamulus/wiki/Command-Line-Options ####
+#### See [Command-Line-Options](Command-Line-Options) ####
 ExecStart=/usr/local/bin/Jamulus -s -n -e jamulus.fischvolk.de -o "yourServerName;yourCity;[country ID]"
-     
+
 Restart=on-failure
 RestartSec=30
 StandardOutput=journal
@@ -148,9 +142,9 @@ You can now also control Jamulus with the `service` command. For example:
 shows whether Jamulus is running OK, and the last few lines of the log (where you will see connections recorded).
 Note: Press `q` to exit the service status.
 
-## To update your installation to a new release
+### To update your installation to a new release
 
-Download the new sources as per the [instructions above](Server---Linux#compile-sources-create-a-user) and repeat the compilation in step 2 as if for a new installation. Shut down the server, copy the Jamulus binary over the old one and start it back up.
+Download the new sources as per the [instructions above](Server-Linux#compile-sources-create-a-user) and repeat the compilation in step 2 as if for a new installation. Shut down the server, copy the Jamulus binary over the old one and start it back up.
 
 ***
 
@@ -160,9 +154,9 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 
 ### Controlling recordings
 
-When using the [recording function](Server--Windows-&-Mac#recording) with the `-R` [command line option](#Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off. 
+When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
 
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (eg `newRecording-Jamulus-server.service`). 
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (eg `newRecording-Jamulus-server.service`).
 
 For turning recording on or off (depending on the current state):
 

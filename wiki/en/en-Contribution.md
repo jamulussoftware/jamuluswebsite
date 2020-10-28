@@ -6,13 +6,15 @@ permalink: "/wiki/Contribution"
 ---
 
 # Contributing to the Jamulus Project
-## Contribute to the wiki
-You can contribute to this wiki by opening a pull request with with the following title:
 
-`W: [language code (e.g. en)] {short description of your changes}` e.g.\
-`W: [en] Fix typo on getting-started page`.
+You can contribute to [this documentation](https://github.com/jamulussoftware/jamulussoftware.github.io/) by opening a pull request with with the following title:
 
- The source of this wiki can be found on the [jamulussoftware wiki GitHub Repo](https://github.com/jamulussoftware/jamulussoftware.github.io/).
+`W: [language code (e.g. en)] {short description of your changes}` 
 
-## Contribute to the Jamulus source
-If you want to help out with coding, have a look at the [Jamulus GitHub Repo](https://github.com/corrados/jamulus)
+### The more people can improve Jamulus, the better!
+
+* Have a look at our coding and [contribution guidelines](https://github.com/corrados/jamulus/issues/596) and [Jamulus GitHub repo](https://github.com/corrados/jamulus).
+
+* Note also [compliation guidence](/wiki/Compiling) for various platforms.
+
+
