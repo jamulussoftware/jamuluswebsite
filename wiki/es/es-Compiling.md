@@ -62,7 +62,7 @@ Generará el archivo y lo hará disponible en ./Release/Jamulus.app
 ## Windows
 No necesitas compilar Jamulus para Windows ya que proporcionamos binarios oficiales, pero si de verdad quieres hacerlo, sigue las siguientes instrucciones.
 
-**Software necesario**: QT, un compilador como Visual Studio, archivos de desarrollo de ASIO
+**Software necesario**: [QT](https://www.qt.io/download), un compilador como Visual Studio, archivos de desarrollo de ASIO
 
 - obtén el código fuente de Jamulus, por ej. de git o una descarga del zip desde el repositorio de Jamulus
 - copia los archivos de desarrollo de [ASIO](https://www.steinberg.net/de/company/developer.html) al directorio jamulus/windows para que, por ejemplo, se cree el directorio jamulus/windows/ASIOSDK2/common
