@@ -46,5 +46,5 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |    `-u` |`--numchannels`    | Maximale Anzahl an Kanälen. Standard ist 10, Maximum ist 50 | (nur Server) |
 |    `-w` |`--welcomemessage` | Begrüßungsnachricht. Unterstützt HTML und inline CSS (in Anführungszeichen), oder Pfad zu einer Textdatei. | (nur Server) |
 |    `-z` |`--startminimized` | Starte minimiert | (nur Server) |
-|       |`--ctrlmidich`     | MIDI Controller Kanal  | (nur Client) Siehe [Tips & Tricks](Tips-Tricks-More) |
+|       |`--ctrlmidich`     | MIDI Controller Kanal  | (nur Client) Siehe [Tipps & Tricks](Tips-Tricks-More) |
 |       |`--clientname`     | Fenster Titel und jack Client Name | (nur Client) |
