@@ -10,7 +10,7 @@ Ayuda para Jamulus (Manual del Software)
 Ventana Principal
 -----------
 
-![Main window](https://user-images.githubusercontent.com/4263412/97568577-52124180-19e7-11eb-9b29-3812c7ddb121.png)
+![Main window](https://user-images.githubusercontent.com/4263412/97588743-1a15f900-19fd-11eb-889e-db47dce809fe.png)
 
 ### LEDs de Estado
 
@@ -44,7 +44,7 @@ Asegúrate de no clipear la señal de entrada para evitar distorsiones de la se�
 
 ![Chat dialog](https://user-images.githubusercontent.com/4263412/97569564-943b8300-19e7-11eb-972f-79de36b4cee7.png)
 
-El texto escrito en la ventana del chat es enviado a todos los clientes conectados. Si llega un nuevo mensaje de chat y la venta no está abierta, se abrirá automáticamente para todos los clientes.
+El texto escrito en la ventana del chat es enviado a todos los clientes conectados. Si llega un nuevo mensaje de chat y la ventana no está abierta, se abrirá automáticamente para todos los clientes.
 
 ### Ventana de perfil
 
@@ -67,9 +67,9 @@ Puedes filtrar la lista por nombre de servidor o ubicación. Para solo mostrar l
 Si conoces la dirección IP o URL de un servidor, puedes conectarte a él utilizando el campo de Nombre/Dirección del Servidor. Se puede añadir un número de puerto opcional tras la dirección IP o URL utilizando dos puntos como separador, por ej.
 jamulus.dyndns.org:22124. El campo también mostrará una lista de los servidores utilizados recientemente.
 
-### Botón de Mutearme Yo
+### Botón de Silenciarme Yo
 
-Corta tu flujo de audio al servidor de modo que te escucharás y verás tus propios niveles de audio, pero otros músicos no. Ten en cuenta que otros músicos no sabrán si te has muteado.
+Corta tu flujo de audio al servidor de modo que te escucharás y verás tus propios niveles de audio, pero otros músicos no. Ten en cuenta que otros músicos no sabrán si te has silenciado.
 
 ### Efecto Reverb
 
@@ -118,7 +118,7 @@ Ventana de Configuración
 ![Sound card device Windows](https://user-images.githubusercontent.com/4263412/97571029-f85e4700-19e7-11eb-97aa-f04adfdb6a7c.png)
 ![Sound card device Mac](https://user-images.githubusercontent.com/4263412/97571216-044a0900-19e8-11eb-8d9f-70d660e0cf7b.png)
 
-El driver ASIO (tarjeta de audio) se puede seleccionar utilizando Jamulusen el sistema operativo Windows. Si el driver ASIO no es válido se mostrará un mensaje de error y el anterior driver válido será seleccionado. En Mac, se puede seleccionar el hardware de entrada y salida.
+El driver ASIO (tarjeta de audio) se puede seleccionar utilizando Jamulus en el sistema operativo Windows. Si el driver ASIO no es válido se mostrará un mensaje de error y el anterior driver válido será seleccionado. En Mac, se puede seleccionar el hardware de entrada y salida.
 
 ### Mapeo canales entrada/salida
 
