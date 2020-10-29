@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: "Beitragen"
+title: "Mithelfen"
 lang: "de"
 permalink: "/wiki/Contribution"
 ---
