@@ -31,9 +31,9 @@ El usuario de Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/) ha escrito
 
 ## Hacer una página de estado del servidor
 
-With the `-m` command line argument a server statistic information can be generated to be put on a web page.
+Con el argumento de la línea de comandos `-m`, se puede generar información estadística sobre el servidor para incluirla en una página web.
 
-Here is an example php script using the server status file to display the current server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):
+Este es un ejemplo de de un script php utilizando el archivo de estado del servidor para mostrar el estado actual del servidor en una página html (suponiendo que se utiliza el siguiente argumento de la línea de comandos: `-m /var/www/stat1.dat`):
 
 ~~~
 <?php
@@ -58,9 +58,9 @@ Puede que quieras guardar y restaurar la mezcla que tienes para los ensayos con 
 Haz tu sesión, luego desconecta y cierra Jamulus. Toda la configuración de los faders se guardan en el archivo de inicio.Si quieres guardar otra sesión, simplemente copia el archivo `jamulussetup1.ini` a `jamulussetup2.ini` y arranca con `--inifile "c:\temp\jamulussetup2.ini"`. Si quieres volver a la primera sesión, simplemente arranca Jamulus con el promer archivo de nuevo.
 
 
-## Script the arranque para cliente en Linux
+## Script de arranque para cliente en Linux
 
-Aquí va un script the arranque para Jamulus utilizando una vieja tarjeta de audio Audigy4. El gran número de faders de audio disponibles hace que sea difícil establecer la configuración correcta.
+Aquí va un script de arranque para Jamulus utilizando una vieja tarjeta de audio Audigy4. El gran número de faders de audio disponibles hace que sea difícil establecer la configuración correcta.
 
 Por tanto, este script incluye la configuración más importante para los faders de audio. La segunda parte del script se ocupa de las conexiones en Jack, Utilizo Guitarix como procesador de efectos de guitarra y lo inserto en la ruta del audio.
 
@@ -111,9 +111,9 @@ Si puedes cambiar el Número de Control en tu controlador MIDI, simplemente esta
 Si no puedes cambiar los Números de Control en tu controlador, tendrás que modificar y recompilar las fuentes:
 En el archivo `src/soundbase.cpp`, ve a la línea 290, elimina el `- 70` al final (no el punto y coma) para utilizar el Número de Control 0 para el primer fader, o reemplaza ese número con el Número de Control inicial que envía tu dispositivo MIDI. Guarda, [compila](Compiling) e instala.
 
-## Playing a software synth with Jamulus
+## Utilizar in sinte de software con Jamulus
 
-Sonic emperor [Engelbert Niehaus](https://github.com/niebert) describes how you can use JACK's MIDI input to [play a software synth through Jamulus](Software-Synth). This example uses Linux, but a similar approach would work for Windows and Mac.
+El maestro sónico [Engelbert Niehaus](https://github.com/niebert) describe cómo se puede utilizar la entrada MIDI de JACK para [tocar un sinte de software a través de Jamulus](Software-Synth). Este ejemplo utiliza Linux, pero un enfoque similar fuincionaría para Windows y Mac.
 
 ## Ejecutar Jamulus con Múltiples Interfaces de Audio
 
