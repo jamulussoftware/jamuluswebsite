@@ -60,7 +60,7 @@ Se puede encontrar más información sobre cómo evitar escucharte a ti mismo (y
 
 **Así es cómo millones de personas utilizan Jamulus para tocar, cantar y enseñar música con otras personas en tiempo real, por todo el mundo:**
 
-![Overview](https://user-images.githubusercontent.com/4561747/79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
+![Overview](https://user-images.githubusercontent.com/4263412/97573060-78d17780-19e9-11eb-94dd-7fd991650e37.png)
 _Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, se mezcla y se procesa allí. Después, el audio es anviado a cada cliente. Si un servidor es público y está registrado en un servidor central, su información será emitida a todos los clientes._
 
 ## Notas

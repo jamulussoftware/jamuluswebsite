@@ -10,18 +10,7 @@ permalink: "/wiki/Client-Troubleshooting"
 ### ¿No escuchas nada/Otros no pueden escucharte?
 Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auriculares están conectados al puerto correcto. Asegúrate de que ninguna otra aplicación como el navegador, herramienta de videoconferencia, etc. no está utilizando la tarjeta de sonido. Deberías cerrar estos programas al utilizar Jamulus. Si todo parece estar bien y el problema persiste, es probable que haya algún problema con la configuración del dispositivo de audio. Esto dependerá de tu configuración particular (plataforma, hardware, software y drivers), así que es mejor preguntar en [los foros](https://sourceforge.net/p/llcon/discussion/software/) para solicitar ayuda.
 
-**Usuarios de Windows (ASIO4All)**: Si estás utilizando el driver ASIO4All, mira [la sección de configuración para ASIO4All](Installation-for-Windows#setting-up-asio4all)
-
-###  
-
-
-
-*  
-*  
-
-
-*  
-*  
+**Usuarios de Windows (ASIO4All)**: Si estás utilizando el driver ASIO4All, mira [la sección de configuración para ASIO4All](Installation-for-Windows#setting-up-asio4all) 
 
 ### Todos suenan bien pero es difícil tocar todos juntos manteniendo el tiempo.
 

@@ -12,7 +12,8 @@ Puedes ejecutar tu servidor en uno de tres "modos" (bien en casa o en un host de
 ### 1. Público
 Tu servidor aparecerá en la lista del [servidor central](Central-Servers) que los clientes utilizan por defecto. Los músicos ya pueden ver y conectarse a tu servidor. No es necesario ejecutarlo como un servidor público ya que muchas otras personas ya los están ejecutando. Simplemente conéctate a uno con latencia baja y empieza a tocar.
 
-![PublicServer](https://user-images.githubusercontent.com/4561747/79310856-7e0b2100-7ef4-11ea-9511-b2e3339cab6f.png)
+![PublicServer](https://user-images.githubusercontent.com/70917001/94502850-6fcb6b80-01db-11eb-9b0a-b3ca4a9bcc34.png
+)
 
 Este modo se activa con la casilla de "Mi Servidor es Público" y (opcionalmente) rellenando los campos de información sobre tu servidor.
 
@@ -32,7 +33,7 @@ Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otr
 ### 2. Privado
 Este tipo de servidor no figurará en una lista de servidores central. Debes proporcionar a los músicos la dirección de tu servidor para que puedan conectar sus clientes. Ver también [Ejecutar un Servidor Privado](Running-a-Private-Server) para ver lo necesario para que otros se conecten a él..
 
-![PrivateServer](https://user-images.githubusercontent.com/4561747/79310944-9f6c0d00-7ef4-11ea-9d8a-ecb0e668c22d.png)
+![PrivateServer](https://user-images.githubusercontent.com/70917001/94502827-66420380-01db-11eb-94df-dbe3985d3665.png)
 
 Este modo se habilita desactivando "Mi Servidor es Público".
 

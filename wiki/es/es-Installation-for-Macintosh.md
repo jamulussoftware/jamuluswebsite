@@ -7,7 +7,7 @@ permalink: "/wiki/Installation-for-Macintosh"
 
 # Instalación en Macintosh
 
-Asegúrate de haber leído la página de [Cómo Empezar](Getting-Started) page.
+Asegúrate de haber leído la página de [Cómo Empezar](Getting-Started).
 
 1. [Descarga Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer" .button}
 1. **Extrae el archivo .zip descargado.**Haz doble clic en el archivo .zip, que creará una nueva carpeta con el mismo nombre. La carpeta contiene el archivo de la licencia y un archivo `.dmg` que contiene la aplicación.

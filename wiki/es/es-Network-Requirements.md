@@ -30,7 +30,7 @@ Con las siguientes unidades
 
 ## Ancho de banda de red
 
-There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)
+Hay un flujo hacia arriba (músico enviando al servidor) y otro hacia abajo (el servidor enviando la mezcla de vuelta al músico)
 ![image](https://user-images.githubusercontent.com/9976944/79274940-999b0b00-7ea5-11ea-85be-3ded5ee198d5.png)
 
 Nótese que la tasa de transferencia media de ADSL2 es de 10 Mbits/segundo para bajada y 1 Mbit/segundo para subida. El rendimiento real depende de la diatancia al proveedor, que puede [variar en teoría de 24Mb/s a 0,3km hasta 1,5Mb/s a 5,2km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) para la tasa de descarga.

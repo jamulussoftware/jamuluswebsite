@@ -5,7 +5,7 @@ lang: "es"
 permalink: "/wiki/Sound-Devices"
 ---
 
-# Known Good Devices
+# Dispositivos Comprobados
 
 Esta página contiene una lista de dispositivos de hardware que funciona o no funciona con Jamulus (aunque puede variar entre Windows, Mac y Linux). Por favor actualízala con cualquier información nueva que tengas (e indica la(s) platforma(s) que has utilizado).
 
@@ -47,7 +47,7 @@ Esta página contiene una lista de dispositivos de hardware que funciona o no fu
 
 * Interfaz Focusrite Clarett 4Pre (Thunderbolt 2)
 
-* Focusrite Scarlett interfaces (USB Audio) _Note: if you have issues with the buffer size going to 136, download the updated driver version `4.64.15.598` from [http://beta.focusrite.com/](http://beta.focusrite.com/)_
+* Interfaces Focusrite Scarlett (USB Audio) _Nota: si tienes problemas con el buffer donde cambia él solo a 136, descarga la versión actualizada del driver `4.64.15.598` desde [http://beta.focusrite.com/](http://beta.focusrite.com/)_
 
 * HiFiBerry DAC + ADC (HAT). Prácticamente sin jitter y buena latencia (20 milisegundos). No tiene amplificador de auriculares, así que necesitarás uno. Yo usé un Rolls MX122 mini mixer. Probado con Raspberry Pi 4 ejecutando Raspberry Pi OS Buster, versión de kernel 4.19.
 
