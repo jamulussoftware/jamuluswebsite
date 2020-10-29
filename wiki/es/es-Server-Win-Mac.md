@@ -26,13 +26,13 @@ permalink: "/wiki/Server-Win-Mac"
 
 1. Especifica un género musical si quieres. Esto hará que tu servidor aparezca en la lista relevante para los clientes (ver más [detalles sobre los Servidores Centrales](Central-Servers)).
 
-_The Chat Welcome Message appears to all users when they join the server (the chat window will open automatically for them)._
+_El Mensaje de Bienvenida del Chat aparece a todos los usuarios cuando se unen al servidor (la venta del chat se abrirá automáticamente)._
 
 ### Configuración de servidor privado
 
 Si no quieres activar "Mi Servidor es Público", estarás ejecutando un servidor privado y debes [leer estas instrucciones](Running-a-Private-Server).
 
-_If you want to **run a client on the same machine** you should **connect the client to `127.0.0.1`** for best performance. (Similarly, if you want to connect a client on another machine on your LAN, use the server's LAN IP address)._
+_Si quieres **ejecutar un cliente en la misma máquina** debes **conectar el cliente a `127.0.0.1`** para un rendimiento óptimo. (Similarmente, si quieres conectar un cliente de otra máquina de tu red local, utiliza la dirección IP local del servidor)._
 
 ### Grabación
 
@@ -40,7 +40,7 @@ Primero activa la grabación por parte del servidor estableciendo el Directorio 
 
 _Nota: Cuando tu servidor está grabando, los clientes mostrarán un mensaje informando de que la grabación está activa._
 
-For headless servers: you can control the recording function [using these instructions](Server-Linux#controlling-recordings).
+Para servidores "headless": puedes controlar la función de grabación [siguiendo estas instrucciones](Server-Linux#controlling-recordings).
 
 
 ### Otras opciones
