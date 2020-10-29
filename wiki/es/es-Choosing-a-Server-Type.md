@@ -33,7 +33,7 @@ Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otr
 ### 2. Privado
 Este tipo de servidor no figurará en una lista de servidores central. Debes proporcionar a los músicos la dirección de tu servidor para que puedan conectar sus clientes. Ver también [Ejecutar un Servidor Privado](Running-a-Private-Server) para ver lo necesario para que otros se conecten a él..
 
-![PrivateServer](https://user-images.githubusercontent.com/4561747/79310944-9f6c0d00-7ef4-11ea-9d8a-ecb0e668c22d.png)
+![PrivateServer](https://user-images.githubusercontent.com/70917001/94502827-66420380-01db-11eb-94df-dbe3985d3665.png)
 
 Este modo se habilita desactivando "Mi Servidor es Público".
 
