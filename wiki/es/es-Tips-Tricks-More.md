@@ -15,7 +15,7 @@ El usuario de Jamulus [Chris Rimple](https://sourceforge.net/u/chrisrimple/profi
 
 ## Utilizar el audio de Jamulus en Zoom o en otras aplicaciones similares
 
-Varios usuarios han comentado que han tenido éxito a la hora de organizar un "público virtual" para una sesión de Jamulus utilizando [Jack audio](https://jackaudio.org)para conectar la señal de Jamulus a través de JackRouter a la aplicación de destino (en este caso, Zoom).
+Varios usuarios han comentado que han tenido éxito a la hora de organizar un "público virtual" para una sesión de Jamulus utilizando [Jack audio](https://jackaudio.org) para conectar la señal de Jamulus a través de JackRouter a la aplicación de destino (en este caso, Zoom).
 
 También puedes usar [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) para Windows o [BlackHole](https://github.com/ExistentialAudio/BlackHole) para Mac para conectar la salida de Jamulus a mútliples destinos; por ejemplo a tus auriculares y a la aplicación de videoconferencia a la vez.
 
