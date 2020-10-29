@@ -23,7 +23,7 @@ Normally, people from outside your home network cannot see things inside it. So 
 
 The exact setup of port forwarding differs for every router. Here's an example of the port forwarding settings in a Linksys router:
 
-![Linksys screenshot](https://llcon.sourceforge.io/images/Linksysportforwarding.jpg)
+![Linksysportforwarding](https://user-images.githubusercontent.com/4561747/97542495-bc62bc00-19be-11eb-8e54-b6e906e676f6.jpg)
 
 For help see [portforward.com](https://portforward.com).
 
