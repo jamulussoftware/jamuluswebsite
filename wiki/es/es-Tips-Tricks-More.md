@@ -27,7 +27,7 @@ El usuario de Jamulus [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/
 
 ## Compartir partituras
 
-El usuario de Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/) ha escrito un sistema llamado [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), una aplicación web que permite a un "Jam leader" repartir partituras (en formato PDF) entre "Jammers"en tiempo real utilizando navegadores de red estándares.
+El usuario de Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/) ha escrito un sistema llamado [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), una aplicación web que permite a un "Jam leader" repartir partituras (en formato PDF) entre "Jammers" en tiempo real utilizando navegadores de red estándares.
 
 ## Hacer una página de estado del servidor
 
@@ -55,7 +55,7 @@ function loadserverstat ( $statfilename )
 
 Puede que quieras guardar y restaurar la mezcla que tienes para los ensayos con tu grupo (fader, mute, pan, solo, etc.). Hazlo arrancando Jamulus con la configuración `--inifile` (por ej. `Jamulus --inifile "c:\temp\jamulussetup1.ini"`) en la línea de comandos.
 
-Haz tu sesión, luego desconecta y cierra Jamulus. Toda la configuración de los faders se guardan en el archivo de inicio.Si quieres guardar otra sesión, simplemente copia el archivo `jamulussetup1.ini` a `jamulussetup2.ini` y arranca con `--inifile "c:\temp\jamulussetup2.ini"`. Si quieres volver a la primera sesión, simplemente arranca Jamulus con el promer archivo de nuevo.
+Haz tu sesión, luego desconecta y cierra Jamulus. Toda la configuración de los faders se guardan en el archivo de inicio. Si quieres guardar otra sesión, simplemente copia el archivo `jamulussetup1.ini` a `jamulussetup2.ini` y arranca con `--inifile "c:\temp\jamulussetup2.ini"`. Si quieres volver a la primera sesión, simplemente arranca Jamulus con el promer archivo de nuevo.
 
 
 ## Script de arranque para cliente en Linux
