@@ -5,7 +5,7 @@ lang: "es"
 permalink: "/wiki/Installation-for-Windows"
 ---
 
-# Installation for Windows
+# Instalación en Windows
 Asegúrate de leer la página de [Cómo Empezar](Getting-Started) page.
 1. **Descarga e instala un driver ASIO**. Se recomienda usar una tarjeta de audio con driver ASIO nativo. Si no tienes (sobre todo las tarjetas internas), instala [este driver ASIO gratuito (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} antes de instalar Jamulus.
 1. **Descarga e instala Jamulus** desde la [página del proyecto Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. Si te aparece una notificación de aviso, haz clic en "Más info" y "Ejecutar de todas formas" para instalar Jamulus.
