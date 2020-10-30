@@ -24,7 +24,7 @@ If you want to translate a file, you must first know where it is located on this
 -  The navigation and general translations can be found in the \_data/yourlanguagecode folder
 
 
-To translate a file, please duplicate it and change the lang: attribute to the language you want to translate it to. If you want to translate an English page to German, you need to change the lang: "en" attribute to lang: "de". This attribute can be found at the top of the file in the front matter (right at the top in between the `---`). Do not change the permalink attribute. It links pages with the same content but different languages and enables polyglot to know which page to change to if you change the language via the language picker.
+To translate a file, please duplicate it and change the `lang:` attribute to the language you want to translate it to. If you want to translate an English page to German, you need to change the `lang: "en"` attribute to `lang: "de"`. This attribute can be found at the top of the file in the front matter (right at the top in between the `---`). Do not change the permalink attribute. It links pages with the same content but different languages and enables polyglot to know which page to change to if you change the language via the language picker.
 
 ### Adding a new language
 

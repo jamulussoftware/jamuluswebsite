@@ -9,7 +9,7 @@ permalink: "/wiki/Command-Line-Options"
 
 Obwohl die gebräuchlichsten Funktionen in Jamulus über die GUI eingestellt werden können, lässt sich Jamulus auch über die Kommandozeile steuern. Wie das genau funktioniert, hängt von deinem Betriebssystem ab.
 
-Unter Windows kannst du die Rekorderfunktion `-R` z.B. wie folgt aktivieren: Klicke mit der rechten Maustaste auf die Jamulus Verknüpfung, dann auf "Eigenschaften" und füge die entsprechende Option (in diesem Beispiel `-R`) nach Jamulus.exe hinzu:
+Unter Windows kannst du die Rekorderfunktion `-R` z.B. wie folgt aktivieren: Klicke mit der rechten Maustaste auf die Jamulus Verknüpfung, dann auf „Eigenschaften“ und füge die entsprechende Option (in diesem Beispiel `-R`) nach Jamulus.exe hinzu:
 
 ```shell
 "C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\Pfad\zu\deinen\Aufnahmen"
