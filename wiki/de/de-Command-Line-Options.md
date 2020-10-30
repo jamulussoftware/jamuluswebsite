@@ -7,7 +7,7 @@ permalink: "/wiki/Command-Line-Options"
 
 # Kommandozeile
 
-Während die gebräuchlichsten Funktionen in Jamulus über die GUI eingestellt werden können, lässt sich Jamulus auch über die Kommandozeile steuern. Wie das genau funktioniert, hängt von deinem Betriebssystem ab.
+Obwohl die gebräuchlichsten Funktionen in Jamulus über die GUI eingestellt werden können, lässt sich Jamulus auch über die Kommandozeile steuern. Wie das genau funktioniert, hängt von deinem Betriebssystem ab.
 
 Unter Windows kannst du die Rekorderfunktion `-R` z.B. wie folgt aktivieren: Klicke mit der rechten Maustaste auf die Jamulus Verknüpfung, dann auf "Eigenschaften" und füge die entsprechende Option (in diesem Beispiel `-R`) nach Jamulus.exe hinzu:
 
@@ -24,10 +24,10 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 
 | Short | Long name | `[...]` bedeutet optionale Parameter | |
 |-------|-----------|----------------------------------|-|
-|    `-c` |`--connect`        | Automatische Verbindung zum angegebenen Server Start, Format `Adresse[:Port]` | (nur Client) |
+|    `-c` |`--connect`        | Automatische Verbindung zum angegebenen Server beim Start des Clients. Format `Adresse[:Port]` | (nur Client) |
 |    `-d` |`--discononquit`   | Trenne alle Verbindungen mit allen Clients beim Beenden des Servers | (nur Server) |
-|    `-e` |`--centralserver`  | Mache diesen Server öffentlich verfügbar. Schau dir auch die Option `-o` an| (nur Server) [Siehe hier](Choosing-a-Server-Type#1-public). |
-|    `-f` |`--listfilter`     | Setze Server auf die Whitelist, Format `IP Adresse 1[;IP Adresse 2]` | (nur Zentralserver) [Siehe hier](Choosing-a-Server-Type#3-central). |
+|    `-e` |`--centralserver`  | Mache diesen Server öffentlich verfügbar. Schau dir auch die Option `-o` an| (nur Server) [Siehe hier](Choosing-a-Server-Type#1-öffentlich). |
+|    `-f` |`--listfilter`     | Setze Server auf die Whitelist, Format `IP Adresse 1[;IP Adresse 2]` | (nur Zentralserver) [Siehe hier](Choosing-a-Server-Type#3-zentral). |
 |    `-F` |`--fastupdate`     | 64 samples frame size Modus. Reduziert Latenz wenn Clients mit der "Enable Small Network Buffers" Option verbunden sind. Benötigt schnelle CPU um Dropouts zu vermeiden, und mehr Bandbreite. | (nur Server) |
 | `-h,-?` |`--help`           | Dieser Hilfetext | (Client und Server) |
 |    `-i` |`--inifile`        | Setze Pfad zur Initialisierungs Datei (überschreibt den Standard) | (Client (immer) und Server (mit GUI)) |
@@ -47,4 +47,4 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |    `-w` |`--welcomemessage` | Begrüßungsnachricht. Unterstützt HTML und inline CSS (in Anführungszeichen), oder Pfad zu einer Textdatei. | (nur Server) |
 |    `-z` |`--startminimized` | Starte minimiert | (nur Server) |
 |       |`--ctrlmidich`     | MIDI Controller Kanal  | (nur Client) Siehe [Tipps & Tricks](Tips-Tricks-More) |
-|       |`--clientname`     | Fenster Titel und jack Client Name | (nur Client) |
+|       |`--clientname`     | Fenster Titel und Jack Client Name | (nur Client) |
