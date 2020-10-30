@@ -11,11 +11,15 @@ Obwohl die gebräuchlichsten Funktionen in Jamulus über die GUI eingestellt wer
 
 Unter Windows kannst du die Rekorderfunktion `-R` z.B. wie folgt aktivieren: Klicke mit der rechten Maustaste auf die Jamulus Verknüpfung, dann auf "Eigenschaften" und füge die entsprechende Option (in diesem Beispiel `-R`) nach Jamulus.exe hinzu:
 
-`"C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\Pfad\zu\deinen\Aufnahmen"`
+```shell
+"C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\Pfad\zu\deinen\Aufnahmen"
+```
 
 Unter macOS, starte das Terminal Fenster und führe Jamulus mit den gewünschten Optionen wie folgt aus:
 
-`/Applications/Jamulus.app/Contents/MacOS/Jamulus -s -R "/Pfad/zu/deinen/Aufnahmen"`
+```shell
+/Applications/Jamulus.app/Contents/MacOS/Jamulus -s -R "/Pfad/zu/deinen/Aufnahmen"
+```
 
 ***
 
