@@ -5,15 +5,15 @@ lang: "de"
 permalink: "/wiki/Central-Servers"
 ---
 
-# Registrierung : Öffentliche Server
+# Öffentliche Zentrale Server
 
-Um das Problem der Überschreitung des Serverlimits auf ein Minimum zu reduzieren, haben wir ab Mai 2020 genrebasierte zentrale Server eingeführt (mit einer derzeitigen Begrenzung auf jeweils 150 Server).
+Um das Problem der Überschreitung des Serverlimits zu reduzieren, haben wir ab Mai 2020 genrebasierte zentrale Server eingeführt (mit einer derzeitigen Begrenzung auf jeweils 150 Server).
 
-Wenn Sie einen öffentlichen Server starten, sehen Sie eine Meldung, ob Ihr Server erfolgreich gelistet wurde oder nicht. Wenn Sie Ihren Server laufen lassen, wird er seine Registrierungsversuche wiederholen, bis ein freier Slot verfügbar wird.  
+Wenn du einen öffentlichen Server startest, wird dir angezeigt, ob dein Server erfolgreich registriert wurde oder nicht. Wenn du deinen Server nicht stoppst, wird er immer wieder versuchen sich zu registrieren, bis ein freier Slot verfügbar ist.  
 
 ## Headless Server
 
-Ab Jamulus v3.5.4 müssen Sie den zentralen (Genre-)Server manuell mit der Option `--centralserver` (`-e`) wie folgt einstellen:
+Ab Jamulus v3.5.4 musst du den zentralen (Genre-)Server in der Kommandozeile manuell mit der Option `--centralserver` (`-e`) setzen. Das sind die offiziellen zentralen Server:
 
 | Genre |   Server address           |
 |-----------|------------------|
