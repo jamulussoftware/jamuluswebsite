@@ -20,10 +20,10 @@ Altrimenti, niente paura, compilare i sorgenti non è impossibile:
 
 1. Aprire il terminale (su Ubuntu o altre distro si può digitare - `CTRL+ALT+t`)
 1. Scaricare e scompattare l'ultima versione digitando i seguenti comandi:
-~~~
+```shell
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
 tar -xvf latest.tar.gz
-~~~
+```
 
 
 ## Installare le dipendenze
@@ -32,21 +32,29 @@ Per prima cosa aggiornare la lista dei pacchetti (es. sulle distro basate su Deb
 
 Su **Distro basate su Ubuntu 18.04+**, o **Debian 9 oppure 10** digitare:
 
-`sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev`
+```shell
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
+```
 
 Su **Debian** 11 (bullseye) o successive, e su Raspberry Pi Raspbian Buster release o successive, digitare:
 
-`sudo apt-get install build-essential qtdeclarative5-dev  qt5-default qttools5-dev-tools libjack-jackd2-dev`
+```shell
+sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
+```
 
 Su **Fedora** digitare:
 
-`sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel`
+```shell
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
+```
 
 ### Qjackctl: Un tool non indispensabile ma utile
 
 [QjackCtl](https://qjackctl.sourceforge.io) è un tool grafico per la gestione dei settaggi del server audio Jack (non fà parte della lista delle dipendenze). Si installa con il comando:
 
-`sudo apt-get install qjackctl`
+```shell
+sudo apt-get install qjackctl
+```
 
 Sarebbe opportuno usare un [kernel a bassa latenza]( https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (es. per Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
 
@@ -59,12 +67,12 @@ cd jamulus-latest
 ```
 Compiliamo il codice con i seguenti comandi(il comando `make` avrà bisogno di qualche minuto per essere completato):
 
-~~~
+```shell
 qmake Jamulus.pro
 make clean
 make
 sudo make install
-~~~
+```
 
 
 ## Configuriamo la scheda audio
