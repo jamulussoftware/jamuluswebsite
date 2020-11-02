@@ -1,8 +1,8 @@
 ---
-Layout: wiki
-Titel: "Einen Server betreiben"
+layout: wiki
+title: "Einen Server betreiben"
 lang: "de"
-Permalink: "/wiki/Running-a-Server"
+permalink: "/wiki/Running-a-Server"
 ---
 
 # Einen Jamulus Server betreiben
