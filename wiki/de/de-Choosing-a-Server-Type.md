@@ -1,11 +1,11 @@
 ---
 layout: wiki
-title: "Auswählen eines Servertyps"
+title: "Auswählen einer Serverart"
 lang: "de"
 permalink: "/wiki/Choosing-a-Server-Type"
 ---
 
-# Servertypen
+# Serverarten
 
 Du kannst einen Server in einem von drei „Modi“ betreiben (entweder bei dir zu Hause oder auf einem externen Server):
 
@@ -30,7 +30,7 @@ Siehe auch [Befehlszeilenoptionen](Command-Line-Options) für weitere Parameter,
 
 
 ### 2. Privat
-Dieser Servertyp wird nicht in einer öffentlichen Serverliste aufgeführt. Du musst den Musikern deine Serveradresse geben, damit sie sich verbinden können. Auf der Seite zum [Ausführen eines privaten Servers](Running-a-Private-Server) findest du Informationen darüber, was du tun musst, damit andere sich mit diesem Servertyp verbinden können.
+Diese Serverart wird nicht in einer öffentlichen Serverliste aufgeführt. Du musst den Musikern deine Serveradresse geben, damit sie sich verbinden können. Auf der Seite zum [Ausführen eines privaten Servers](Running-a-Private-Server) findest du Informationen darüber, was du tun musst, damit andere sich mit diesem Servertyp verbinden können.
 
 ![PrivateServer](https://user-images.githubusercontent.com/4561747/79310944-9f6c0d00-7ef4-11ea-9d8a-ecb0e668c22d.png)
 
@@ -45,7 +45,7 @@ Jamulus --nogui --server
 Siehe auch [Befehlszeilenoptionen](Command-Line-Options) für weitere Parameter, die du einstellen kannst.
 
 ### 3. Zentral
-Die Konfiguration eines Servers als Zentralserver muss nur unter besonderen Umständen (z.B. für Online-Veranstaltungen oder Musikvereine) vorgenommen werden. Die meisten Leute können diesen Typ ignorieren.
+Die Konfiguration eines Servers als Zentralserver muss nur unter besonderen Umständen (z.B. für Online-Veranstaltungen oder Musikvereine) vorgenommen werden. Die meisten Leute können diesen Servertyp ignorieren.
 
 Um an einem benutzerdefinierten, zentralen Server registrierte Server anzuzeigen, müssen Musiker die Adresse dieses Zentralservers in das Einstellungsfeld "Benutzerdefinierter zentraler Server" ihres Clients eingeben. Sie sehen dann die Liste der an diesem zentralen Server registrierten Server.
 
