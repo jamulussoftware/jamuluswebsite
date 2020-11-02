@@ -1,5 +1,5 @@
 ---
-Layout: Wiki
+Layout: wiki
 Titel: "Einen Server betreiben"
 lang: "de"
 Permalink: "/wiki/Running-a-Server"
