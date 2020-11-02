@@ -16,7 +16,7 @@ NEIN.
 Du kannst einfach einen Server von jemand anderem aus der Serverliste auswählen und dann loslegen.
 
 **Willst du nicht von anderen gestört werden?**
-Sobald du und deine Freunde mit einem öffentlichen Server verbunden sind, kannst du nur die Musiker, mit denen du spielen willst durch die "Solo"-Taste lautstellen. Jeder Musiker, den du nicht auf Solo gestellt wird für dich stummgeschaltet und sieht an deinem Kanal das "stummgeschaltet" Symbol.
+Sobald du und deine Freunde mit einem öffentlichen Server verbunden sind, kannst du andere Musiker stummschalten, indem du nur die Musiker, mit denen du spielen willst mit der Solo Taste in deinem Mix aktivierst. Jeder Musiker, den du nicht auf Solo gestellt wird für dich stummgeschaltet und sieht an deinem Kanal, dass du ihn stummgeschaltet hast.
 
 ## Das klingt zu einfach.
 
