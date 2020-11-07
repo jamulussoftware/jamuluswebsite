@@ -13,7 +13,7 @@ Du kannst eine Instanz in deiner gewünschten Region (m3.small reicht) nutzen. S
 
 **Anmerkung vom April 2020**: Diese Instanzen werden mit Jamulus v3.5.0 ausgeliefert. Bevor du den Server startest, solltest du Jamulus auf [die aktuellste Version](https://github.com/corrados/jamulus/releases) aktualisieren.
 
-### verfügbare AMIs
+### Verfügbare AMIs
 
 | Region  | AMI  |   |
 |---|---|---|
