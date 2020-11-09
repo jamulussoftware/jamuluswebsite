@@ -15,6 +15,6 @@ You can contribute to [this documentation](https://github.com/jamulussoftware/ja
 
 * Have a look at our coding and [contribution guidelines](https://github.com/corrados/jamulus/issues/596) and [Jamulus GitHub repo](https://github.com/corrados/jamulus).
 
-* Note also [compliation guidence](/wiki/Compiling) for various platforms.
+* Note also [compilation guidence](/wiki/Compiling) for various platforms.
 
 
