@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: "Schnellstart"
+title: "Erste Schritte"
 lang: "de"
 permalink: "/wiki/Getting-Started"
 ---
