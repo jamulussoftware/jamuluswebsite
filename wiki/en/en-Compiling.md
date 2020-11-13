@@ -76,7 +76,7 @@ You don't need to compile Jamulus for Windows since we provide official binaries
 
 Compiling with the `headless` flag means you can avoid installing some of the dependent packages, save some disk space and/or speed up your build time under the following circumstances:
 
-1. If you plan to run Jamulus on Gentoo Linux, the only packages you should need for a headless build are qtcore, qtnetwork, and qtxml (both for building and running the server).
+1. If you plan to run Jamulus on Gentoo Linux, the only packages you should need for a headless build are qtcore, qtnetwork, qtconcurrent, and qtxml (both for building and running the server).
 
 1. If you are running Jamulus on Ubuntu/Debian, you will need all dependent packages to **compile** the binary, but to **run** the resulting headless Jamulus server you should only need `libqt5core5a`, `libqt5network5`, `libqt5xml5` and probably `libqt5concurrent5`. This may be useful for compiling/upgrading on one machine to run the binary on another (a Raspberry Pi, for example).
 

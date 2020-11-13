@@ -75,7 +75,7 @@ Du brauchst Jamulus für Windows nicht zu kompilieren, da wir offizielle Binärd
 
 Kompilieren mit dem `headless` Flag kann unter folgenden Umständen die Installation einiger abhängiger Pakete vermeiden, was etwas Speicherplatz spart und eventuell die Kompilierzeit beschleunigt:
 
-1. Wenn du Jamulus unter Gentoo Linux ausführen willst, sind die einzigen Pakete, die du für einen headless build benötigen solltest, qtcore, qtnetwork und qtxml (sowohl für das Kompilieren als auch für den Betrieb des Servers).
+1. Wenn du Jamulus unter Gentoo Linux ausführen willst, sind die einzigen Pakete, die du für einen headless build benötigen solltest, qtcore, qtnetwork, qtconcurrent und qtxml (sowohl für das Kompilieren als auch für den Betrieb des Servers).
 
 1. Wenn du Jamulus unter Ubuntu/Debian nutzt, benötigst du zwar alle abhängigen Pakete um die Binärdatei zu **kompilieren**; um den fertigen headless Jamulus-Server **auszuführen**, brauchst du aber nur `libqt5core5a`, `libqt5network5`, `libqt5xml5` und eventuell `libqt5concurrent5`. Wenn du das Jamulus Binary auf eine andere Maschine (wie z.B. einen Raspberry Pi) kopierst, brauchst du auch nur diese Pakete.
 

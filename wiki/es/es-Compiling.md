@@ -75,7 +75,7 @@ No necesitas compilar Jamulus para Windows ya que proporcionamos binarios oficia
 
 Compilar con el indicador `headless` significa que puedes evitar instalar algunas de las dependencias bajo las siguientes circunstancias:
 
-1. Si tienes pensado ejecutar Jamulus en Gentoo Linux, los únicos paquetes que deberías necesitar para la operación headless son qtcore, qtnetwork, y qtxml (tanto para compilar como para ejecutar el servidor).
+1. Si tienes pensado ejecutar Jamulus en Gentoo Linux, los únicos paquetes que deberías necesitar para la operación headless son qtcore, qtnetwork, qtconcurrent, y qtxml (tanto para compilar como para ejecutar el servidor).
 
 1. Si estás ejecutando Jamulus en Ubuntu/Debian, necesitarás todas las dependencias para **compilar** el archivo binario, pero para **ejecutar** el servidor headless resultante solo deberías necesitar `libqt5core5a`, `libqt5network5`, `libqt5xml5` y probablemente `libqt5concurrent5`. Esto puede ser útil para ejecutar el binario en otra máquina (un Raspberry Pi, por ejemplo).
 
