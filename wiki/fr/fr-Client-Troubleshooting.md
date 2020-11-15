@@ -1,75 +1,75 @@
 ---
 layout: wiki
-title: "Client Troubleshooting"
-lang: "en"
+title: "Dépannage (Client)"
+lang: "fr"
 permalink: "/wiki/Client-Troubleshooting"
 ---
 
-# Troubleshooting
+# Dépannage
 
-### Don’t hear any sound/Others don’t hear you?
-Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your soundcard. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://sourceforge.net/p/llcon/discussion/software/) for guidance.
+### Vous n'entendez aucun son/les autres ne vous entendent pas ?
+Commencez par les choses les plus simples : assurez-vous que votre instrument/microphone et vos écouteurs sont branchés sur les bonnes prises. Assurez-vous qu'aucune autre application comme votre navigateur, votre outil de vidéoconférence, etc. n'utilise votre carte son. Vous devez les éteindre lorsque vous utilisez Jamulus. Si tout semble correct et que le problème persiste, il est probable qu'il y ait un problème avec les paramètres de votre appareil sonore. Cela dépendra de votre configuration particulière (plate-forme, matériel, logiciel et pilotes), il est donc préférable de demander conseil sur [les forums](https://sourceforge.net/p/llcon/discussion/software/).
 
-**Windows users (ASIO4All)**: If you’re using the ASIO4All driver have a look at the [ASIO4All setup section](Installation-for-Windows#setting-up-asio4all)
+**Utilisateurs de Windows (ASIO4All)** : Si vous utilisez le pilote ASIO4All, consultez la [section de configuration ASIO4All](Installation-for-Windows#configuration-de-asio4all).
 
-### You all sound OK, but it's difficult to keep together
+### Tout à l'air correct, mais c'est difficile de jouer ensemble
 
-**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing. 
+**Dans la mesure du possible, n'écoutez pas votre signal direct.** Assurez-vous que vous écoutez autant que possible le son de votre propre instrument/voix _revenant du serveur_. Ce signal vous permet de vous synchroniser avec vos partenaires de jeu, et sera le signal que vos camarades entendront également. Ainsi, en écoutant ce signal, vous serez synchronisés les uns avec les autres (en supposant que vous avez tous une latence raisonnablement faible). Notez que si un ou plusieurs musiciens ne suivent pas cette règle, ils ralentiront lorsqu'ils joueront ou chanteront.
 
-You can test whether you are hearing your signal correctly by doing the following:
+Vous pouvez vérifier si vous entendez correctement votre signal en procédant comme suit :
 
-1. Get your audio into your computer.
-1. Use an audio recording application (such as [Audacity](https://www.audacityteam.org/)) on your computer to record that input and check it's OK.
-1. Make sure that if you mute your audio input inside the recording application, you can't hear yourself.
-1. Close the recording application and run Jamulus. You should still not hear yourself.
-1. Connect to a server and play something. Now you should hear yourself with the delay from the server.
+1. Faites entrer votre audio dans votre ordinateur..
+1. Utilisez une application d'enregistrement audio (telle que [Audacity](https://www.audacityteam.org/)) sur votre ordinateur pour enregistrer cette entrée et vérifier qu'elle est correcte.
+1. Assurez-vous que si vous mettez en sourdine votre entrée audio dans l'application d'enregistrement, vous ne pouvez pas vous entendre.
+1. Fermez l'application d'enregistrement et lancez Jamulus. Vous ne devriez toujours pas vous entendre.
+1. Connectez-vous à un serveur et jouez quelque chose. Maintenant, vous devriez vous entendre avec le délai du serveur.
 
-**If you are still having problems**, try asking on the [hardware forum](https://sourceforge.net/p/llcon/discussion/hardware/). Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options. 
+**Si vous avez encore des problèmes**, essayez de demander sur le [forum du matériel](https://sourceforge.net/p/llcon/discussion/hardware/). La manière exacte dont vous éviterez d'écouter votre signal direct dépendra de votre configuration individuelle : votre interface sonore, votre table de mixage, le point de connexion de votre casque, etc... Par exemple, certaines interfaces audio ont des boutons "moniteur" (désactivez-les), ou des options similaires.
 
-Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) to understand how to adjust your setup to help with this. 
+Sachez que si l'écoute du signal du serveur vous assure d'être synchronisé avec les autres musiciens, vous pouvez également rencontrer des problèmes si votre latence globale (indiquée par le voyant "Delay" dans Jamulus) n'est pas verte ou au moins jaune la plupart du temps. Consultez le [manuel du logiciel](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) (en anglais) pour comprendre comment ajuster votre configuration dans ce cas.  
 
-### Can't work out your mic settings?
+### Vous n'arrivez pas à régler votre micro ?
 
-When using a microphone while playing your other instrument, you can use a stereo audio input signal in your settings where one channel is connected to the instrument and the other channel is connected to a microphone signal. On the microphone channel an optional reverberation effect can be applied.
+Lorsque vous utilisez un microphone tout en jouant de votre autre instrument, vous pouvez utiliser un signal d'entrée audio stéréo dans vos réglages où un canal est connecté à l'instrument et l'autre canal est connecté à un signal de microphone. Sur le canal du microphone, un effet de réverbération optionnel peut être appliqué.
 
-### Buffer LEDs suddenly going red, outages, jittering, weird sounds?
+### Les LEDs de la mémoire tampon deviennent soudainement rouges, des pannes, des sautillements, des sons bizarres ?
 
-The CPU in your computer may be having issues. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have.
+Le processeur de votre ordinateur peut avoir des problèmes. Essayez de ne rien avoir de concurrent à Jamulus (comme Zoom Meetings ou les flux en direct de Facebook) sur votre machine. Ou au moins, quittez-les pendant que vous jouez. Empêchez les scanners de virus d'effectuer des analyses ou des mises à jour logicielles, etc. Sachez que le réglage de la réverbération dans Jamulus utilise également plus de CPU. Plus vous avez de réverbération, plus le processeur est sollicité.
 
-### Ping times and latency start well, then get worse, causing issues
+### Les temps de ping et de latence commencent bien, puis s'aggravent, causant des problèmes
 
-This can indicate something else is competing with Jamulus on your network, so make sure nobody is watching HD Netflix movies or taking part in Zoom video conferences while you are playing. A more permanent solution for technically-minded users may be found by investigating [the issue of buffer bloat](https://www.bufferbloat.net/projects/bloat/wiki/) on their router and whether you can implement Smart Queue Management (SQM). [More details here](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/).
+Cela peut indiquer que quelque chose d'autre est en concurrence avec Jamulus sur votre réseau, alors assurez-vous que personne ne regarde de films HD Netflix ou ne participe à des vidéoconférences Zoom pendant que vous jouez. Une solution plus permanente pour les utilisateurs à vocation technique peut être trouvée en examinant [le problème du gonflement de la mémoire tampon](https://www.bufferbloat.net/projects/bloat/wiki/) sur leur routeur et en vérifiant si vous pouvez mettre en œuvre la gestion intelligente des files d'attente (SQM). Pour plus d'informations, [consultez ce site](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/).
 
-### Getting frustrated with software channels, audio routing, sample rates and more?
+### Vous n'êtes pas à l'aise avec les logiciels, le routage audio, les taux d'échantillonnage, etc. ?
 
-It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast.
+Il est généralement beaucoup plus facile et plus fiable de disposer d'une [console de mixage](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) pour connecter votre kit (instruments, micros, enregistreur, etc.) et d'envoyer ensuite un simple signal stéréo à votre interface audio. Assurez-vous cependant d'écouter le son résultant du serveur Jamulus via votre ordinateur !). La grande variété de combinaisons possibles de matériel, de logiciels et d'instruments signifie que la configuration de votre interface audio pour qu'elle fonctionne avec votre configuration particulière peut se compliquer très rapidement.
 
-### Getting blasted by somebody joining your jam with feedback or noise?
+### Vous vous faites exploser les oreilles par quelqu'un qui se joint à votre jam avec du feedback ou du bruit ?
 
-You can set your "New Client Level" to a low value (eg 10), or set the musicians you are playing with to "Solo" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all. 
+Vous pouvez régler votre "Nouveau niveau de client" sur une valeur faible (par exemple 10), ou mettre les musiciens avec lesquels vous jouez en état "Solo" (dans le panneau de mixage sur le côté droit). De cette façon, soit les nouveaux venus seront très silencieux, soit vous ne les entendrez pas du tout. 
 
-### Can't see the server you want to join?
+### Vous ne voyez pas le serveur que vous voulez rejoindre ?
 
-First check that you have the right genre server selected in your Connect Setup window. But sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](http://jamulus.softins.co.uk/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it. 
+Vérifiez d'abord que vous avez le bon serveur de genre sélectionné dans votre fenêtre de configuration de la connexion. Mais il arrive parfois que des problèmes de réseau empêchent votre client d'afficher la liste de tous les serveurs disponibles. Si vous connaissez le nom du serveur que vous souhaitez rejoindre, vous pouvez [rechercher son adresse IP ici](http://jamulus.softins.co.uk/). Saisissez l'adresse IP dans le champ "Adresse du serveur" de la fenêtre "Paramètre de connexion" pour vous y connecter. 
 
-### Not seeing a list of servers at all?
+### Vous ne voyez pas du tout la liste des serveurs ?
 
-In the UK (and possibly other regions/routers) the Virgin Media Cable Internet Modem setting can cause an issue. "Block Fragmented IP Packets" should not be checked. For other routers/ISP, also try turning off SPI (Stateful Packet Inspection) and if that fixes it, you can make a judgment about whether to leave that off or not.
+Au Royaume-Uni (et éventuellement dans d'autres régions/routeurs), le réglage du modem Internet par câble de Virgin Media peut poser problème. La case "Block Fragmented IP Packets" ne doit pas être cochée. Pour les autres routeurs/ISP, essayez également de désactiver le SPI (Stateful Packet Inspection) et si cela résout le problème, vous pouvez décider de le laisser désactivé ou non.
 
-In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about "Nobody can connect to my server" 
+Dans certains cas, il se peut que ce soit votre fournisseur d'accès Internet qui bloque votre utilisation de Jamulus. Voir la note sur la [page de dépannage du serveur](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-local) à propos de "Personne ne peut se connecter à mon serveur".
 
-### Trouble using Garageband (or other DAW) with Jamulus? 
+### Des problèmes pour utiliser Garageband (ou autre DAW) avec Jamulus ? 
 
-See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)
+Voir [ce forum de discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)
 
-### Using a Mac and your input is not heard?
+### Vous utilisez un Mac et votre signal n'est pas pris en compte ?
 
-(With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))
+(Avec nos remerciements à [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))
 
-Maybe you did not answer "Yes" to the `"Jamulus wants to access your microphone"` challenge.  To fix this:
-* Go to `Preferences` > `Security & Privacy` > `Privacy` tab
-* Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list
+Peut-être n'avez-vous pas répondu "oui" à la question `"Jamulus souhaite accéder au micro"`.  Pour y remédier :
+* Allez dans `Préférences Système` > `Securité et Confidentialté` > onglet `Confidentialité`
+* Recherchez `Microphone` sur la gauche et assurez vous que `Jamulus` est activé dans la liste de droite.
 
 ***
 
-For anything else, please search or post on the [Discussion Forums](https://sourceforge.net/p/llcon/discussion/software/)
+Pour tout autre questions ou problème, veuillez rechercher ou poster sur les [Forums de discussion](https://sourceforge.net/p/llcon/discussion/software/)
