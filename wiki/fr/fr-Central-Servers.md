@@ -1,24 +1,24 @@
 ---
 layout: wiki
-title: "Central Servers"
-lang: "en"
+title: "Serveurs centraux"
+lang: "fr"
 permalink: "/wiki/Central-Servers"
 ---
 
-# Public Server Registration
+# Enregistrement du serveur public
 
-As of May 2020, in order to minimise the problem of exceeding the server limit, we have created genre-based Central Servers (each with a current limit of 150 servers). 
+En mai 2020, afin de minimiser le problème du dépassement de la limite de serveurs, nous avons créé des serveurs centraux basés sur le genre (chacun avec une limite actuelle de 150 serveurs). 
 
-When you start a public server, you will see a message saying whether your server has been successfully listed or not. If you leave your server running, it will re-try its attempts to register until a free slot becomes available.  
+Lorsque vous démarrez un serveur public, vous verrez un message indiquant si votre serveur a été listé avec succès ou non. Si vous laissez votre serveur en marche, il réessaiera de s'inscrire jusqu'à ce qu'un créneau horaire libre se libère.  
 
-## Headless servers
+## Serveur sans GUI (_Headless server_)
 
-As of Jamulus v3.5.4, you will need to set central (genre) server manually using the `--centralserver` (`-e`) option as follows:
+À partir de Jamulus v3.5.4, vous devrez définir le serveur central (genre) manuellement en utilisant l'option `--centralserver` (`-e`) comme suit : 
 
-| Genre |   Server address           |
-|-----------|------------------|
-|**All/Any** |`jamulusallgenres.fischvolk.de:22224`    |
-|**Rock**|`jamulusrock.fischvolk.de:22424`|
-|**Jazz**|`jamulusjazz.fischvolk.de:22324`|
-|**Classical/Folk/Choir**|`jamulusclassical.fischvolk.de:22524`|
-|Default _(deprecated as of Jamulus v3.5.4)_|`jamulus.fischvolk.de:22124`|
+|                 Genre                    |           Adresse du serveur            |
+|------------------------------------------|-----------------------------------------|
+|**Tout genre**                            |`jamulusallgenres.fischvolk.de:22224`    |
+|**Rock**                                  |`jamulusrock.fischvolk.de:22424`         |
+|**Jazz**                                  |`jamulusjazz.fischvolk.de:22324`         |
+|**Classique/Folk/Chœurs**                 |`jamulusclassical.fischvolk.de:22524`    |
+|Default _(obsolète depuis Jamulus v3.5.4)_|`jamulus.fischvolk.de:22124`             |
