@@ -30,9 +30,6 @@ The following guide is for running Jamulus as a "pure" server on **hardware with
 
 * _Jamulus user [Grigory](https://sourceforge.net/u/cidnurg/profile/) maintains a **[Docker image for Jamulus](https://hub.docker.com/r/grundic/jamulus)** which you can use._
 
-* _Jamulus user [skrul](https://sourceforge.net/u/skrulx/profile/) has also put up some **public Amazon EC2 AMIs** of Ubuntu 18.04 running Jamulus. [See this page for details](Jamulus-Cloud)._
-
-
 
 ### Compile sources, create a user
 
@@ -56,13 +53,15 @@ make
 
 ### Create a start script
 
-Once you have decided which mode you want your server to run in, use systemd to start it up (the rest of this guide assumes you are in "public" mode - **Please also see this [important note on Central Servers](Central-Servers)).**
+Once you have decided which mode you want your server to run in, use systemd to start it up. 
 
 Create a systemd unit file that will start the server at boot time (thanks to [David Harrold](https://sourceforge.net/u/dkxl/profile/) for this).
 
 The unit file applies high priority CPU and I/O scheduling to the server process. This is optional (and may be ignored on some hosts).
 
 Note also that the server log entries will go to journalctl (use [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) to see it ).
+
+**Note**: The rest of this guide assumes you are in "public" mode using the `-e` (`--centralserver`) option. This specifies which musical genre list your server will appear in. See [the list of available genres here](Central-Servers)).
 
 ~~~
 [Unit]
