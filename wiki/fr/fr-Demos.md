@@ -17,7 +17,7 @@ permalink: "/wiki/Demos"
 
 * [Concert en direct sur Youtube avec 8 musiciens de jazz](https://www.youtube.com/watch?v=MpSIYxZMHw8&t=3307s) pour la Journée internationale du jazz, le 30 Avril 2020 ([plus de détails ici](https://sourceforge.net/p/llcon/discussion/533517/thread/070485619d/#6b71)) 
 
-* [IP Rockers Live on Jamulus April 17 2020](https://soundcloud.com/dematteoss/sets/ip-rockers-live-on-jamulus-april-17-2020) (broken link)
+* [IP Rockers Live on Jamulus April 17 2020](https://soundcloud.com/dematteoss/sets/ip-rockers-live-on-jamulus-april-17-2020) (lien mort)
 
 * [Vidéo d'introduction montrant l'installation avec des instruments accoustiques](https://www.youtube.com/watch?v=lB4ZxDb9vnU) (pas vraiment une démo)
 
