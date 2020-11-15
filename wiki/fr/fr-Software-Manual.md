@@ -1,251 +1,219 @@
 ---
 layout: wiki
-title: "Software Manual"
-lang: "en"
+title: "Manuel Utilisateur"
+lang: "fr"
 permalink: "/wiki/Software-Manual"
 ---
-Jamulus Help (Software Manual)
-==============================
+Aide Jamulus (Manuel Utilisateur)
+=================================
 
-Main Window
------------
+Fenêtre Principale
+------------------
 
 ![Main window](https://user-images.githubusercontent.com/20726856/97360410-77476880-189e-11eb-99c6-f4a68258bf31.png)
 
-### Status LEDs
+### LEDs d'état
 
 ![LEDs](https://user-images.githubusercontent.com/20726856/97360576-ac53bb00-189e-11eb-971e-a73414ec3f6f.png)
 
-The **Delay Status** LED shows the current audio delay status:
+La LED **Délai** indique l'état actuel du retard audio :
 
-* **Green** - The delay is perfect for a jam session
+* **Vert** - Le délai est parfait pour une bonne jam session
 
-* **Yellow** - A session is still possible but it may be harder to play
+* **Jaune** - Une session est toujours possible mais elle peut être plus difficile à jouer
 
-* **Red** - The delay is too large for jamming
+* **Rouge** - Le délai est trop important pour jouer
 
-**Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
+La LED **Tampons** indique l'état actuel de l'audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela peut être dû à l'un des problèmes suivants :
 
-- The network jitter buffer is not large enough for the current network/audio interface jitter.
-- The sound card's buffer delay (buffer size) is too small (see Settings window).
-- The upload or download stream rate is too high for your internet bandwidth.
-- The CPU of the client or server is at 100%.
+- Le tampon de jitter réseau n'est pas assez grand pour le jitter actuel de l'interface réseau/audio.
+- Le délai de la carte son (taille de la mémoire tampon) est trop faible (voir la fenêtre des paramètres).
+- Le debit montant ou le débit descendant est trop élevé pour votre bande passante Internet.
+- Le processeur (CPU) du client ou du serveur est à 100 %.
 
-### Input level
+### Niveau d'entrée
 
 ![Input level](https://user-images.githubusercontent.com/20726856/97363247-9516cc80-18a2-11eb-8195-1e887ee8040f.png)
 
-This shows the level of the two stereo channels for your audio input.
-Make sure not to clip the input signal to avoid distortions of the audio signal (the LEDs will indicate clipping when it occurs).
+Ceci indique le niveau des deux canaux stéréo pour votre entrée audio.
+Veillez à ne pas écrêter le signal d'entrée pour éviter la saturation du signal audio (les LEDs indiquent l'écrêtage lorsqu'il se produit).
 
 
 
-### Chat button
+### Bouton de conversation (Chat)
 
 ![Chat dialog](https://user-images.githubusercontent.com/20726856/97360717-d7d6a580-189e-11eb-84db-80536e17dc30.png)
 
-The chat text entered in that dialog is sent to
-all connected clients. If a new chat message arrives and the Chat dialog is not already open, it will
-opened automatically for all clients.
+Le texte saisi dans cette fenêtre est envoyé à tous les clients connectés.
+Si un nouveau message de chat arrive et que la fenêtre du chat n'est pas encore ouverte, elle est ouverte automatiquement pour tous les clients.
 
-### Profile window
+### Fenêtre du profil
 
 ![My profile dialog](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
 
-From the View menu, select My Profile... to set your Alias/Name
-which is displayed below your fader in the server audio mixer board. If an instrument and/or country is set,
-icons for these selections will also be shown below your fader. The skill setting changes the background colour of
-the fader tag and the city entry shows up in the tool tip of the fader tag (see screenshot below).
+Dans le menu _Vue_, sélectionnez _Mon profil_ pour définir votre alias/nom qui s'affiche sous votre curseur dans le tableau de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes pour ces paramètres seront également affichées sous votre curseur. Le paramètre de compétence modifie la couleur de fond du fader tag et l'entrée de la ville apparaît dans l'info-bulle du fader tag (voir la capture d'écran ci-dessous).
 
 ![Fader tag tool tip](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
 
-### Connect/disconnect button
+### Bouton de connexion/déconnexion
 
-Opens a dialog where you can select a server to connect to. If you are connected,
-pressing this button will end the session.
+Ouvre une fenêtre dans laquelle vous pouvez sélectionner un serveur auquel vous connecter. Si vous êtes connecté, en appuyant sur ce bouton, vous mettez fin à la session.
 
 ![Connect dialog](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maxmium number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles ainsi que le nombre de musiciens connectés, le nombre maximum d'utilisateur et le temps de réponse du serveur. Les administretaurs de serveurs peuvent, en option, référencer leurs serveurs par genre musical. Utilisez le menu déroulant Liste pour sélectionner un genre, cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Connexion pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur. Les serveurs permanents (ceux qui ont été listés pendant plus de 24 heures) sont indiqués en gras.
 
-You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
+Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour ne répertorier que les serveurs occupés, entrez un caractère "#".
 
-If you know the IP address or URL of a server, you can connect to it using the Server Name/Address
-field. An optional port number can be added after the IP address or URL using a colon as a separator, e.g,
-jamulus.example.com:22124. The field will also show a list of the most recently used server addresses.
+Si vous connaissez l'adresse IP ou l'URL d'un serveur, vous pouvez vous y connecter en utilisant le champ Nom/Adresse du serveur. Un numéro de port optionnel peut être ajouté après l'adresse IP ou l'URL en utilisant deux points comme séparateur, par exemple jamulus.example.com:22124. Le champ affichera également une liste des adresses de serveur les plus récemment utilisées.
+Si le serveur écoute sur le port par défaut (22124) il n'est pas nécéssaire de le spécifier.
 
-### Mute Myself button
+### Bouton _Me Silencer_
 
-Cuts your audio stream to the server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself.
+Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et voir vos propres niveaux d'entrée, mais pas les autres musiciens. Sachez que les autres musiciens ne sauront pas si vous vous êtes mis en sourdine.
 
-### Reverb effect
+### L'effet Réverb
 
 ![Reverberation](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
-Reverb can be applied to one local mono audio channel or to both channels in stereo mode.
-The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed
-in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector
-to the right and move the fader upwards until the desired reverb level is reached.
+La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.
+La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si un signal de microphone est envoyé sur le canal audio droit de la carte son et qu'un effet de réverbération doit être appliqué, réglez le sélecteur de canal sur la droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
 
-### Local audio pan / balance control
+### Contrôle local du panoramique et de la balance audio
 
 ![Local audio pan / balance control](https://user-images.githubusercontent.com/20726856/97361250-8c70c700-189f-11eb-82c2-9a9d768dcfff.png)
 
-Controls the relative levels of the left and right local audio channels. For a mono signal
-it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
-an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader
-in a direction where the label above the fader shows L -x, where x is the current attenuation indicator.
+Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un microphone est connecté au canal d'entrée droit et qu'un instrument est connecté au canal d'entrée gauche qui est beaucoup plus fort que le microphone, déplacez le fader audio dans une direction où l'étiquette au-dessus du fader indique G (ou D) -x, où x est l'indicateur d'atténuation actuel.
 
-### Server audio mixer
+### Mélangeur audio du serveur
 
 ![Audio faders](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
-In the audio mixer frame, a fader is shown for each connected client at the server (including yourself).
-The faders allow you to adjust the level of what you hear without affecting what others hear.
+Dans le mélangeur audio, un fader est affiché pour chaque client connecté au serveur (y compris vous-même). Les faders vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
 
-The VU meter shows the input level at the server - that is, the sound being sent.
+Le VU-mètre indique le niveau d'entrée au serveur, c'est-à-dire le son envoyé.
 
-If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control.
+Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez également un contrôle de panoramique.
 
-If you see a "mute" icon above a channel, it means that musician cannot hear you. Either they have muted you, soloed one or more channels not including yours, or have set your fader in their mix to zero.
+Si vous voyez une icône "muet" au-dessus d'un canal, cela signifie que le musicien ne peut pas vous entendre. Soit ils vous ont mis en sourdine, soit ils ont mis en solo un ou plusieurs canaux sans inclure le vôtre, soit ils ont réglé votre fader dans leur mixage à zéro.
 
-Using the **Mute button** prevents the indicated channel being heard in your local mix. Be aware that when you mute a musician, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted musician is reaching the server. Your fader position for them is also unaffected.
+L'utilisation du bouton **Mute** empêche d'entendre le canal séléctionné dans votre mixage local. Sachez que lorsque vous mettez un musicien en sourdine, il verra une icône "muet" au-dessus de votre fader pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir leurs VU-mètres bouger si le son du musicien mis en sourdine atteint le serveur. La position de votre fader n'est pas non plus affectée.
 
-The **Solo button** allows you to hear one or more musicians on their own. Those not soloed will be muted. Note also that those musicians who are not soloed will see a "muted" icon above your fader.
+Le bouton **Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en sourdine. Notez également que les musiciens qui ne sont pas en solo verront une icône "muet" au-dessus de votre curseur.
 
-Channels are listed left to right in the order that clients connect until they leave, at which point their "slot" is filled by the next new arrival. You can change the sort order using the Edit option in the application menu.
+Les canaux sont répertoriés de gauche à droite dans l'ordre dans lequel les clients se connectent jusqu'à ce qu'ils partent, leur "créneau" étant alors rempli par le nouvel arrivant suivant. Vous pouvez modifier l'ordre de tri en utilisant l'option "Modifier" dans le menu de l'application.
 
-You can group faders together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount.
+Vous pouvez regrouper les canaus en utilisant le bouton "groupe". Si vous déplacez le fader d'un membre du groupe, les autres faders de ce groupe seront déplacés dans la même proportion.
 
-If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
-
+Si l'administrateur du serveur a activé l'enregistrement, vous verrez un message au-dessus du mélangeur indiquant que vous êtes en train d'être enregistré.
 
 
-Settings Window
----------------
+
+Fenêtre des paramètres
+----------------------
 
 ![Settings](https://user-images.githubusercontent.com/20726856/97361399-c4780a00-189f-11eb-8ad0-6b94f7eb1dcc.png)
 
-### Sound card device
+### Interface audio
 
 ![Sound card device Windows](https://user-images.githubusercontent.com/20726856/97361494-e70a2300-189f-11eb-9095-2c34ad07314d.png)
 ![Sound card device Mac](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
 
-The ASIO driver (sound card) can be selected using Jamulus under the Windows operating system. If the selected ASIO
-driver is not valid an error message is shown and the previous valid driver is selected. Under the Mac operating
-system the input and output hardware can be selected.
+Le pilote ASIO (carte son) peut être sélectionné à l'aide de Jamulus sous le système d'exploitation Windows. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédent est sélectionné. Sous le système d'exploitation MacOS, le matériel d'entrée et de sortie peut être sélectionné.
 
-### Input/output channel mapping
+### Configuration des canaux d'entrée/sortie
 
 ![Channel mapping](https://user-images.githubusercontent.com/20726856/97361637-1caf0c00-18a0-11eb-9b65-81225b7e3dd5.png)
 
-If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping
-and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
-a different actual sound card channel can be selected.
+Si le dispositif de carte son sélectionné offre plus d'un canal d'entrée ou de sortie, les paramètres de configuration de la cartographie des canaux d'entrée et de sortie sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droit), un canal différent de la carte son peut être sélectionné.
 
-### Enable small network buffers
+### Activer les petits tampons de réseau
 
-Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the
-lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
-also increases.
+Permet la prise en charge de très petits paquets audio en réseau. Ils ne sont utilisés que si le délai de la mémoire tampon de la carte son est inférieur à 128 échantillons. Plus les tampons réseau sont petits, plus la latence audio est faible. Mais en même temps, la charge du réseau augmente et la probabilité d'interruption de l'audio augmente également.
 
-### Buffer delay
+### Délai de temporisation
 
 ![Buffer delay](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
 
-The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many
-connection properties. Three buffer sizes are supported:
+Le réglage du délai de la mémoire tampon est un réglage fondamental du logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
 
-- 64 samples: The preferred setting. Provides the lowest latency but does not work with all sound cards.
-- 128 samples: Should work for most available sound cards.
-- 256 samples: Should only be used on very slow computers, or with a slow internet connection.
+- 2,67ms (64 samples) : Fournit la latence la plus faible mais ne fonctionne pas avec toutes les cartes son.
+- 5,33ms (128 samples) : (le paramètre par défaut) Devrait fonctionner pour la plupart des cartes son disponibles.
+- 10,67ms (256 samples) : Ne devrait être utilisé que sur des ordinateurs très lents, ou avec une connexion internet lente.
 
-Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.
-In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel.
+Certains pilotes de carte son ne permettent pas de modifier le délai de la mémoire tampon à partir du logiciel Jamulus.
+Dans ce cas, le réglage du délai de la mémoire tampon est désactivé et doit être modifié à l'aide du pilote de la carte son. Sous Windows, appuyez sur le bouton ASIO Setup pour ouvrir le panneau des paramètres du pilote.
 
 ![Buffer delay Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
 
-On Linux, use the Jack configuration tool to change the buffer size.
+Sous Linux, utilisez l'outil de configuration Jack pour modifier la taille de la mémoire tampon.
 
-The actual buffer delay has influence on the connection status, the current upload rate and the overall delay.
-The lower the buffer size, the higher the probability of a red light in the status indicator (drop outs) and the
-higher the upload rate and the lower the overall delay.
+Le délai réel de la mémoire tampon a une influence sur l'état de la connexion, le taux de transfert actuel et le délai global.
+Plus la taille de la mémoire tampon est faible, plus la probabilité d'un voyant rouge dans l'indicateur d'état (abandons) est élevée et plus le taux de transfert est élevé et le retard global est faible.
 
 ![Buffer delay dependencies](https://user-images.githubusercontent.com/20726856/97361878-816a6680-18a0-11eb-8c1f-fbf956be4b81.png)
 
-The buffer setting is therefore a trade-off between audio quality and overall delay.
+Le réglage de la mémoire tampon est donc un compromis entre la qualité audio et le délai global.
 
-### Jitter buffer with buffer status indicator
+### Tampons de gigue
 
 ![Jitter buffer](https://user-images.githubusercontent.com/20726856/97361956-9b0bae00-18a0-11eb-85de-dc2ded891175.png)
 
-The jitter buffer compensates for network and sound card timing jitters. The size of the buffer
-therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
-(the longer the buffer, the higher the delay).
+Le tampon de gigue compense les gigues de synchronisation du réseau et de la carte son. La taille de la mémoire tampon influence donc la qualité du flux audio (le nombre d'interruptions) et le retard global
+(plus le tampon est long, plus le délai est important).
 
-You can set the jitter buffer size manually for the local client and the remote server. For the local jitter
-buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.
-If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted.
+Vous pouvez définir manuellement la taille du tampon de gigue pour le client local et le serveur distant. Pour la mémoire tampon de jitter locale, les pertes de flux audio sont indiquées par le voyant situé sous les curseurs de taille de la mémoire tampon de jitter.
+Si le voyant devient rouge, cela signifie qu'il y a eu un dépassement ou une sous-utilisation de la mémoire tampon et que le flux audio est interrompu.
 
-The jitter buffer setting is therefore a trade-off between audio quality and overall delay.
+Le réglage du tampon de gigue est donc aussi un compromis entre la qualité audio et le délai global.
 
-If the Auto setting is enabled, the jitter buffers
-of the local client and the remote server are set automatically based on measurements of the network and sound card
-timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse).
+Si le paramètre Auto est activé, les tampons de gigue du client local et du serveur distant sont automatiquement réglés en fonction des mesures de la gigue de synchronisation du réseau et de la carte son. Si la vérification automatique est activée, les curseurs de la taille des tampons de jitter sont désactivés (ils ne peuvent pas être déplacés avec la souris).
 
-### Audio channels
+### Canaux Audio
 
 ![Audio channels](https://user-images.githubusercontent.com/20726856/97362020-b24a9b80-18a0-11eb-8a55-ee536b29460b.png)
 
-Selects the number of audio channels to be used for communication between client and server. There are three modes
-available:
+Sélectionne le nombre de canaux audio à utiliser pour la communication entre le client et le serveur. Trois modes sont disponibles :
 
-Mono and Stereo modes use one and two audio channels respectively.
+Les modes Mono et Stéréo utilisent respectivement un et deux canaux audio.
 
-Mono-in/Stereo-out: The audio signal sent to the server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case
-the two input signals can be mixed to one mono channel but the server mix is heard in stereo.
+Entrée Mono/Sortie Stéréo : Le signal audio envoyé au serveur est mono mais le signal de retour est stéréo. Ceci est utile si la carte son a l'instrument sur un canal d'entrée et le microphone sur l'autre. Dans ce cas, les deux signaux d'entrée peuvent être mélangés sur un canal mono mais le mixage du serveur est entendu en stéréo.
 
-Enabling stereo mode will increase your stream's data rate. Make sure your upload rate does
-not exceed the available upload speed of your internet connection.
+L'activation du mode stéréo augmentera le débit de votre flux. Assurez-vous que votre débit ne dépasse pas la vitesse de téléchargement disponible de votre connexion internet.
 
-In stereo streaming mode, no audio channel selection for the reverb effect will be available on
-the main window since the effect is applied to both channels in this case.
+En mode de streaming stéréo, aucune sélection de canal audio pour l'effet de réverbération ne sera disponible dans la fenêtre principale puisque l'effet est appliqué aux deux canaux dans ce cas.
 
-### Audio quality
+### Qualité audio
 
 ![Audio quality](https://user-images.githubusercontent.com/20726856/97362080-c42c3e80-18a0-11eb-87ac-9a4ca948bbcf.png)
 
-The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection.
+Plus la qualité audio est élevée, plus le débit de données de votre flux audio est élevé. Assurez-vous que votre débit ne dépasse pas la vitesse de téléchargement disponible de votre connexion internet.
 
-### New client level
+### Niveau de nouveau client
 
 ![New client level](https://user-images.githubusercontent.com/20726856/97362173-e2923a00-18a0-11eb-8401-9ad71866f6b1.png)
 
-This setting defines the fader level of a newly connected client in percent. If a new musician connects
-to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
-that client was already stored.
+Ce paramètre définit le niveau du canal d'un client nouvellement connecté, en pourcentage. Si un nouveau musicien se connecte au serveur actuel, il obtiendra le niveau initial spécifié si aucun autre niveau de canal provenant d'une connexion précédente de ce client n'a déjà été enregistré.
 
-### Fancy skin
+### Thème graphique
 
 ![Fancy skin](https://user-images.githubusercontent.com/20726856/97362214-f9389100-18a0-11eb-9adb-ebf2c1d18007.png)
 
-This applies a fancy skin to the main window.
+Il s'agit d'appliquer un thème graphique à la fenêtre principale.
 
-### Custom central server address
+### Adresse personnalisée du serveur central
 
 ![Central server address](https://user-images.githubusercontent.com/20726856/97362265-0a819d80-18a1-11eb-9b0c-2f7ecf21841c.png)
 
-Leave this blank unless you need to enter the address of a central server other than the default.
+Laissez ce champ vide, sauf si vous devez entrer l'adresse d'un serveur central autre que celui par défaut.
 
-### Current connection status parameter
+### Paramètre de l'état actuel de la connexion
 
 ![Indicators](https://user-images.githubusercontent.com/20726856/97362338-271dd580-18a1-11eb-99b7-02c9371a6258.png)
 
-The Ping Time is the time required for the audio stream to travel from the client to the server and back again.
-This delay is introduced by the network and should about 20-30ms. If this delay is higher than about 50ms,
-your distance to the server is too large or your internet connection is not sufficient.
+Le temps de ping est le temps nécessaire au flux audio pour aller du client au serveur et revenir.
+Ce délai est introduit par le réseau et devrait être d'environ 20 à 30 ms. Si ce délai est supérieur à environ 50 ms, la distance qui vous sépare du serveur est trop importante ou votre connexion internet n'est pas suffisante.
 
-Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
+Le délai global est calculé à partir du temps de ping actuel et du délai introduit par les paramètres actuels de la mémoire tampon.
 
-Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream
-rate is not higher than your available internet upload speed (check this with a service such as [speedtest.net](http://speedtest.net)).
+Le débit audio en amont dépend de la taille actuelle des paquets audio et du réglage de la compression. Assurez-vous que le débit en amont n'est pas supérieur à votre vitesse de téléchargement Internet (vérifiez cela avec un service tel que [speedtest.net](http://speedtest.net)).
