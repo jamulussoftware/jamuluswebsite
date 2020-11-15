@@ -1,37 +1,38 @@
 ---
 layout: wiki
-title: "Installation for Macintosh"
-lang: "en"
+title: "Installation sous MacOS"
+lang: "fr"
 permalink: "/wiki/Installation-for-Macintosh"
 ---
 
-# Installation for Macintosh
+# Installation sous MacOS
 
-Make sure you've already read the [Getting Started](Getting-Started) page.
+Assurez-vous de lire le [guide de démarrage et installation](Getting-Started) avant de commencer.
 
-1. [Download Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer" .button}
-1. **Extract the downloaded .zip file.** Double-click on the .zip file, which will create new folder of same name. The folder contains the license file and a `.dmg` file containing the application.
-1. **Double-click the `.dmg` file** to open it. It will unpack and you will see two files (Jamulus client and server)
-1. **Drag and drop both icons into your Applications folder** to install Jamulus.
-1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application. If you see a message which tells you that Jamulus can't be opened because the developer can't be verified, read on and have a look at the following section.
+1. [Téléchargez Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer" .button}
+1. **Décompressez le fichier .zip téléchargé**. Double-cliquez sur le fichier `.zip`, ce qui créera un nouveau dossier du même nom. Le dossier contient le fichier de licence et un fichier `.dmg` contenant l'application.
+1. **Double-cliquez sur le fichier `.dmg`** pour l'ouvrir. L'image s'ouvre et vous verrez deux applications (client et serveur Jamulus).
+1. **Glissez et déposez les deux icônes dans le dossier Applications** pour installer Jamulus.
+1. **Executez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application. Si vous voyez un message qui vous dit que Jamulus ne peut pas être ouvert parce que le développeur ne peut pas être vérifié, lisez la suite et jetez un coup d'oeil à la section suivante.
 
-_You can remove the folder in the Downloads directory containing the `.dmg` and eject the "Jamulus" drive on your desktop. They are no longer needed._
+_Vous pouvez supprimer le dossier dans le répertoire Downloads contenant le `.dmg` et éjecter le lecteur "Jamulus" de votre bureau. Ils ne sont plus nécessaires._
 
-You can also [compile your own binary](Compiling) if you feel so inclined.
+Vous pouvez également [compiler vous même le logiciel](Compiling) si vous en avez envie.
 
-## "Jamulus" can't be opened because the developer cannot be verified
+## "Jamulus" ne peut pas être ouvert car le développeur ne peut pas être vérifié
 
-**The first time you try to double-click Jamulus to run it, you will probably see a message saying it cannot be opened.**
+**La première fois que vous essaierez de double-cliquer sur Jamulus pour l'exécuter, vous verrez probablement un message disant qu'il ne peut pas être ouvert.**
 
-To fix this, navigate to the Applications folder via Finder click on Jamulus, right-click (or control-click), and select "Open" from the top of the menu.
+Pour résoudre ce problème, accédez au dossier Applications via le Finder, cliquez sur Jamulus, faites un clic droit (ou un contrôle-clic) et sélectionnez "Ouvrir" dans le haut du menu.
 
-You will then get a slightly different version of the same message, which allows you to click Open and go ahead with running it. You will not be shown this warning again - just double-click it to run after that.
-For further information see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
+Vous aurrez alors une version légèrement différente du même message, qui vous permettra de cliquer sur Ouvrir et de continuer à l'exécuter. Cet avertissement ne s'affichera plus - il suffit de double-cliquer dessus pour le lancer. Pour plus d'informations, consultez [cette page d'assistance Apple](https://support.apple.com/fr-fr/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
 
-**See also [this excellent guide](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (or [directly on Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"}).**
+## Tout est installé ?
 
-## All installed?
+**Jamulus** a été installé et peut être utilisé maintenant. Si vous n'avez pas encore installé et configuré votre matériel audio, consultez la section [configuration du matériel](Hardware-Setup).
 
-Jamulus has been installed and can be used now. If you haven't set up your audio gear yet, have a look at [Hardware Setup](Hardware-Setup).
+Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouvez aussi consulter ce [document](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) (en anglais).
 
-For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+Vous pouvez également consulter [cet excellent guide](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener nore ferrer"} (en anglais) par [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (ou [directement sur Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"}).
+
+Et sur le site [Bassetorius](https://www.bassetorius.fr/applications/jamulus/){: target="_blank" rel="noopener noreferrer"} vous trouverez une série d'articles bien faits et détaillés, en Français, sur l'utilisation de Jamulus.
