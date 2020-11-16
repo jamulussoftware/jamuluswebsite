@@ -162,11 +162,11 @@ Voir [les options de ligne de commande](Command-Line-Options) pour les paramètr
 
 ### Contrôler l'enregistrement
 
-When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
+Lorsque vous utilisez la [fonction d'enregistrement](Server-Win-Mac#recording) avec [l'option de ligne de commande](Command-Line-Options) `-R`, si le serveur reçoit un signal `SIGUSR1` pendant un enregistrement, il commencera un nouvel enregistrement dans un nouveau répertoire. `SIGUSR2` activera/désactivera l'enregistrement activé.
 
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (eg `newRecording-Jamulus-server.service`).
+Pour envoyer ces signaux en utilisant `systemd`, créez les deux fichiers `.service` suivants dans `/etc/systemd/system`, en les appelant par un nom approprié (par exemple `newRecording-Jamulus-server.service`).
 
-For turning recording on or off (depending on the current state):
+Pour activer ou désactiver l'enregistrement (en fonction de l'état actif) :
 
 ~~~
 [Unit]
@@ -178,7 +178,7 @@ Type=oneshot
 ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
 ~~~
 
-For starting a new recording:
+Pour commencer un nouvel enregistrement :
 
 ~~~
 [Unit]
@@ -190,15 +190,15 @@ Type=oneshot
 ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
 ~~~
 
-_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_
+_Note importante : Le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de `systemd` pour contrôler votre serveur Jamulus. Dans cet exemple, il s'agirait donc de `Jamulus-Server.service`._
 
-Run `sudo systemctl daemon-reload` to register them for first use.
+Exécutez `sudo systemctl daemon-reload` pour les enregistrer pour la première utilisation.
 
-Now you can run these with the `service start` command, for example:
+Vous pouvez maintenant les exécuter avec la commande `service start`, par exemple :
 
-`sudo service jamulusTogglerec start` (assuming you named your unit file `jamulusTogglerec.service`)
+`sudo service jamulusTogglerec start` (en supposant que vous avez nommé le fichier `jamulusTogglerec.service`)
 
-You can see the result of these commands if you run `service jamulus status`, or by viewing the logs.
+Vous pouvez voir le résultat de ces commandes en éxécutant `service jamulus status`, ou en consultant les journaux (_voir ci dessous_).
 
 ### Lire les journaux
 
