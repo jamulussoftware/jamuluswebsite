@@ -10,13 +10,13 @@ permalink: "/wiki/Server-Rpi"
 **_Assurez vous de lire les documents [Gestion d'un serveur](Running-a-Server) ainsi que [Installation du serveur sous Linux](Server-Linux) avant de poursuivre._**
 
 _Jamulus à été testé sur un Raspberry Pi 4 2Gb par l'utilisateur de Jamulus, [SIVA Frédéric](https://sourceforge.net/u/fredsiva/profile/)  
-Il est aussi utilisé sur un Rasperry Pi 4 8Gb par le traducteur de cette documentation, [Gérald Niel (aka. @gegeweb)](https://stoneartprod.xyz/@gegeweb), pour son [serveur public](http://jamulus.gegeweb.org) avec d'excellent résultats concernant la latence pour plusieurs musiciens et musiciennes en Europe._
+Il est aussi utilisé sur un Rasperry Pi 4 8Gb par le traducteur de cette documentation, [Gérald Niel (aka. @gegeweb)](https://stoneartprod.xyz/@gegeweb), pour son [serveur public](http://jamulus.gegeweb.org) avec d'excellents résultats concernant la latence pour plusieurs musiciens et musiciennes en Europe._
 
 1. Installez la dernière version de Raspbian (Raspberry OS) Buster (activez les services [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) et [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) pour le confort, cependant ne pas utiliser VNC consommera moins de ressource et augmentera les performances.
 
 1. Editez le fichier [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) pour activer le démarrage sans l'HDMI `hdmi_force_hotplug=0`
 
-1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** les package(s) Jack - Il n'y en a pas besoin pour un [serveur sans _GUI_](Server-Linux#running-a-headless-server). Pour installer et utiliser le client, installez toutes les dépendances.
+1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** les package(s) Jack. Il n'y en a pas besoin pour un [serveur sans _GUI_](Server-Linux#running-a-headless-server). Pour installer et utiliser le client, installez toutes les dépendances.
 
 1. Compilez le code source code pour un serveur en suivant [ces instructions](Server-Linux#compiling-source. Pour compiler le client suivez [ces instructions](Installation-for-Linux#compiler-jamulus).
 
@@ -29,7 +29,7 @@ Si vous démarrez en mode client, vous devriez voir la fenêtre du client s'affi
 
 `Jamulus -s`
 
-Si tout s'est bien passé, définissez le [type de serveur](Choosing-a-Server-Type) que vous souhaitez administrer comme ci-dessous (ou utilisez le script de démarrage `systemd` fournit dans le guide [Installation du serveur sous Linux](Server-Linux#création-du-script-de-démarrage), par exemple, pour un serveur public :
+Si tout s'est bien passé, définissez le [type de serveur](Choosing-a-Server-Type) que vous souhaitez administrer et lancez la commande ci-dessous (_ou utilisez le script de démarrage `systemd` fournit dans le guide [Installation du serveur sous Linux](Server-Linux#création-du-script-de-démarrage)_), par exemple, pour un serveur public :
 
 `sudo chrt 99 ionice -c1 nice -n -20 Jamulus -s -n -e [yourCentralServer] -o "yourServerName;yourCity;[country ID]" &`
 
