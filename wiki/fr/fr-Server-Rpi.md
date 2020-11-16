@@ -10,7 +10,7 @@ permalink: "/wiki/Server-Rpi"
 **_Assurez vous de lire les documents [Gestion d'un serveur](Running-a-Server) ainsi que [Installation du serveur sous Linux](Server-Linux) avant de poursuivre._**
 
 _Jamulus à été testé sur un Raspberry Pi 4 2Gb par l'utilisateur de Jamulus, [SIVA Frédéric](https://sourceforge.net/u/fredsiva/profile/)  
-Il est aussi utilisé sur un Rasperry Pi 4 8Gb par le traducteur de cette documentation, [Gérald Niel (aka. @gegeweb)](https://stoneartprod.xyz/@gegeweb), pour son [serveur public](http://jamulus.gegeweb.org) avec d'excellent résultats concernant la la latence pour plusieurs musiciens et musiciennes en Europe._
+Il est aussi utilisé sur un Rasperry Pi 4 8Gb par le traducteur de cette documentation, [Gérald Niel (aka. @gegeweb)](https://stoneartprod.xyz/@gegeweb), pour son [serveur public](http://jamulus.gegeweb.org) avec d'excellent résultats concernant la latence pour plusieurs musiciens et musiciennes en Europe._
 
 1. Installez la dernière version de Raspbian (Raspberry OS) Buster (activez les services [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) et [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) pour le confort, cependant ne pas utiliser VNC consommera moins de ressource et augmentera les performances.
 
