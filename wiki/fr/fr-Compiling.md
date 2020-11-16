@@ -66,7 +66,7 @@ Il n'est pas nécéssaire de compiler Jamulus sous Windows depuis que nous fourn
 **Logiciels pré-requis**: [QT](https://www.qt.io/download), un compilateur comme Visual Studio, les bibilothèque de développement ASIO
 
 - Obtenez les sources de Jamulus via `git` ou en téléchargeant l'archive `.zip` depuis le dépot de Jamulus.
-- Obtenez et copiez le kit de développement [ASIOSDK](https://www.steinberg.net/de/company/developer.html) dans le répertoire `jamulus/windows` afin que le répertoire (par exemple) `amulus/windows/ASIOSDK2/common` existe.
+- Obtenez et copiez le kit de développement [ASIOSDK](https://www.steinberg.net/de/company/developer.html) dans le répertoire `jamulus/windows` afin que le répertoire (par exemple) `jamulus/windows/ASIOSDK2/common` existe.
 - ouvrez Jamulus.pro dans `Qt Creator` et lancez la compilation.
 
 
