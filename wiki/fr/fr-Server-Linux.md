@@ -10,7 +10,7 @@ permalink: "/wiki/Server-Linux"
 
 **_Veuillez vous assurer que vous avez bien lu&nbsp;: [Gestion d'un serveur](Running-a-Server)_**
 
-
+<a id="running-a-server-with-the-gui"></a>
 ## Executer le serveur avec l'interface graphique (_GUI_)
 
 Si vous prévoyez d'exécuter le serveur sur votre machine de bureau (et que vous avez déjà [installé le client Jamulus](Installation-for-Linux)), vous pouvez l'exécuter dans le [mode serveur de votre choix](Choosing-a-Server-Type) en exécutant Jamulus avec l'option `-s` comme suit&nbsp;:
