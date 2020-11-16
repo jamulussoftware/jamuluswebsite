@@ -33,7 +33,7 @@ Le guide suivant permet de faire fonctionner Jamulus comme un "pur" serveur sur 
 
 ### Compiler le code source
 
-1. [Téléchargez le code source](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dependances) comme indiqué dans le guide d'installation sous Linux. À noter, **il n'y a pas besoin d'installer le(s) package(s) Jack** pour un serveur dédié sans interface graphique. _Si vous prévoyez de compilier le serveur sous Gentoo, ou prévoyez de compiler sous Ubuntu pour l'utiliser sur une autre machine sous Ubuntu, [voir les notes de bas de page](#signification-du-drapeau-headless)._
+1. [Téléchargez le code source](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dependances) comme indiqué dans le guide d'installation sous Linux. À noter, **il n'y a pas besoin d'installer le(s) package(s) Jack** pour un serveur dédié sans interface graphique. _Si vous prévoyez de compilier le serveur sous Gentoo, ou prévoyez de compiler sous Ubuntu pour l'utiliser sur une autre machine sous Ubuntu, [voir les notes de bas de page](#le-drapeau-headless)._
 2. Compilez les sources en ignorant la librairie audio Jack&nbsp;:
 ~~~
 qmake "CONFIG+=nosound headless" Jamulus.pro
@@ -217,5 +217,5 @@ Suivre à l'écran les journaux Jamulus à mesure qu'ils apparaissent :
 Pour plus d'information sur l'utilisation de `journalctl`, consultez la page de manuel&nbsp;:  
 `man journalctl`
 
-### Signification du drapeau headless
+### Le drapeau headless
 Bien que cela ne soit pas strictement nécessaire, nous recommandons d'utiliser l'option `headless` pour accélérer la compilation. Les utilisateurs de Gentoo peuvent également éviter d'installer certaines dépendances en conséquence. [Plus d'informations ici](Compiling#option-de-compilation-headless).
