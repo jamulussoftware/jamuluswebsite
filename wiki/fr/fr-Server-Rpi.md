@@ -16,7 +16,7 @@ Il est aussi utilisé sur un Rasperry Pi 4 8Gb par le traducteur de cette docume
 
 1. Editez le fichier [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) pour activer le démarrage sans l'HDMI `hdmi_force_hotplug=0`
 
-1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** les package(s) Jack. Il n'y en a pas besoin pour un [serveur sans _GUI_](Server-Linux#running-a-headless-server). Pour installer et utiliser le client, installez toutes les dépendances.
+1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** les package(s) Jack. Il n'y en a pas besoin pour un [serveur sans _GUI_](Server-Linux#serveur-sans-interface-graphique). Pour installer et utiliser le client, installez toutes les dépendances.
 
 1. Compilez le code source code pour un serveur en suivant [ces instructions](Server-Linux#compiling-source. Pour compiler le client suivez [ces instructions](Installation-for-Linux#compiler-jamulus).
 

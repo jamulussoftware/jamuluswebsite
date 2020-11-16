@@ -7,11 +7,9 @@ permalink: "/wiki/Server-Linux"
 
 # Installation du serveur sous Linux
 
-
 **_Veuillez vous assurer que vous avez bien lu&nbsp;: [Gestion d'un serveur](Running-a-Server)_**
 
-<a id="running-a-server-with-the-gui"></a>
-## Executer le serveur avec l'interface graphique (_GUI_)
+## Serveur avec interface graphique
 
 Si vous prévoyez d'exécuter le serveur sur votre machine de bureau (et que vous avez déjà [installé le client Jamulus](Installation-for-Linux)), vous pouvez l'exécuter dans le [mode serveur de votre choix](Choosing-a-Server-Type) en exécutant Jamulus avec l'option `-s` comme suit&nbsp;:
 
@@ -24,8 +22,8 @@ Validez avec `[Entrée]` et vous devriez voir la fenêtre de contrôle du serveu
 
 Voir aussi les [options de la ligne de commande](Command-Line-Options) pour les paramètres que vous pouvez passer.
 
-<a id="running-a-headless-server"></a>
-## Serveur sans interface graphique (_"headless" server_)
+## Serveur sans interface graphique
+_("Headless server")_
 
 Le guide suivant permet de faire fonctionner Jamulus comme un "pur" serveur sur du matériel dédié sans audio ni interface graphique (par exemple un serveur dédié en datacenter ou dans le _cloud_ ou encore une machine dédiée) et suppose des distributions Ubuntu/Debian utilisant systemd. Nous avons également des instructions pour les [Raspberry Pi](Server-Rpi) qui sont bien faites.
 
@@ -37,7 +35,7 @@ Le guide suivant permet de faire fonctionner Jamulus comme un "pur" serveur sur 
 ### Compiler le code source, création de l'utilisateur `jamulus`
 
 
-1. [Téléchargez le code source](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dependances) comme indiqué dans le guide d'installation sous Linux. À noter, **il n'y a pas besoin d'installer le(s) package(s) Jack** pour un serveur dédié sans interface graphique. _Si vous prévoyez de compilier le serveur sous Gentoo, ou prévoyez de compiler sous Ubuntu pour l'utiliser sur une autre machine sous Ubuntu, [voir les notes de bas de page](#headless-flag)._
+1. [Téléchargez le code source](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dependances) comme indiqué dans le guide d'installation sous Linux. À noter, **il n'y a pas besoin d'installer le(s) package(s) Jack** pour un serveur dédié sans interface graphique. _Si vous prévoyez de compilier le serveur sous Gentoo, ou prévoyez de compiler sous Ubuntu pour l'utiliser sur une autre machine sous Ubuntu, [voir les notes de bas de page](#signification-du-drapeau-headless)._
 2. Compilez les sources en ignorant la librairie audio Jack&nbsp;:
 ~~~
 qmake "CONFIG+=nosound headless" Jamulus.pro
@@ -160,8 +158,7 @@ Voir [les options de ligne de commande](Command-Line-Options) pour les paramètr
 
 ## Notes de bas de page
 
-### Contrôler l'enregistrement
-
+### Gestion des enregistrements
 Lorsque vous utilisez la [fonction d'enregistrement](Server-Win-Mac#recording) avec [l'option de ligne de commande](Command-Line-Options) `-R`, si le serveur reçoit un signal `SIGUSR1` pendant un enregistrement, il commencera un nouvel enregistrement dans un nouveau répertoire. `SIGUSR2` activera/désactivera l'enregistrement activé.
 
 Pour envoyer ces signaux en utilisant `systemd`, créez les deux fichiers `.service` suivants dans `/etc/systemd/system`, en les appelant par un nom approprié (par exemple `newRecording-Jamulus-server.service`).
@@ -222,7 +219,5 @@ Suivre à l'écran les journaux Jamulus à mesure qu'ils apparaissent :
 Pour plus d'information sur l'utilisation de `journalctl`, consultez la page de manuel&nbsp;:  
 `man journalctl`
 
-<a id="headless-flag"></a>
-### Que signifie l'option de compilation "_headless_" ?
-
-Bien que cela ne soit pas strictement nécessaire, nous recommandons d'utiliser l'option `headless` pour accélérer la compilation. Les utilisateurs de Gentoo peuvent également éviter d'installer certaines dépendances en conséquence. [Plus d'informations ici](Compiling#the-headless-build-flag).
+### Signification du drapeau headless
+Bien que cela ne soit pas strictement nécessaire, nous recommandons d'utiliser l'option `headless` pour accélérer la compilation. Les utilisateurs de Gentoo peuvent également éviter d'installer certaines dépendances en conséquence. [Plus d'informations ici](Compiling#option-de-compilation-headless).

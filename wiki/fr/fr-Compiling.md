@@ -9,7 +9,7 @@ permalink: "/wiki/Compiling"
 
 ## Linux
 
-Veuillez vous référer aux documents [Installation sous Linux](Installation-for-Linux) ou ces instructions si vous souhaitez [compiler un serveur sans _GUI_](Server-Linux#running-a-headless-server)
+Veuillez vous référer aux documents [Installation sous Linux](Installation-for-Linux) ou ces instructions si vous souhaitez [compiler un serveur sans _GUI_](Server-Linux#serveur-sans-interface-graphique)
 
 ## MacOS
 Il n'est pas nécéssaire de compiler Jamulus sous macOS depuis que nous fournissons les binaires officiels. Mais si vous tenez vraiment à le faire, suivez les instructions ci-dessous.
@@ -72,8 +72,7 @@ Il n'est pas nécéssaire de compiler Jamulus sous Windows depuis que nous fourn
 
 ## Notes générales
 
-<a id="the-headless-build-flag"></a>
-### L'option de compilation "_headless_"
+### Option de compilation _headless_
 
 La compilation avec l'option _headless_ signifie que vous pouvez éviter d'installer certains des paquets dépendants, économiser de l'espace disque et/ou accélérer votre temps de compilation dans les circonstances suivantes :
 
@@ -81,5 +80,5 @@ La compilation avec l'option _headless_ signifie que vous pouvez éviter d'insta
 
 1. Si vous voulez utilisez Jamulus sur Ubuntu/Debian, vous aurez besoin de tous les paquets dépendants pour **compiler** le binaire, mais pour **exécuter** le serveur _headless_ Jamulus résultant, vous ne devriez avoir besoin que de `libqt5core5a`, `libqt5network5`, `libqt5xml5` et probablement `libqt5concurrent5`. Cela peut être utile pour compiler/mettre à jour sur une machine afin de faire tourner le binaire sur une autre (un Raspberry Pi, par exemple).
 
-1. Notez que si vous voulez compiler un client _GUI_ sur une machine et l'exécuter sur une autre (par exemple un Raspberry Pi), vous n'avez besoin que des dépendances énumérées pour un [_headless_](Server-Linux#running-a-headless-server) (_voir le point ci-dessus_), seulement _avec_ les bibliothèques Jack.
+1. Notez que si vous voulez compiler un client _GUI_ sur une machine et l'exécuter sur une autre (par exemple un Raspberry Pi), vous n'avez besoin que des dépendances énumérées pour un [_headless_](Server-Linux#serveur-sans-interface-graphique) (_voir le point ci-dessus_), seulement _avec_ les bibliothèques Jack.
 

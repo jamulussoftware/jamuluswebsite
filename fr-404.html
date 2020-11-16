@@ -1,0 +1,33 @@
+---
+permalink: /404.html
+lang: "fr"
+category: "hidden"
+---
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html lang="{{ site.active_lang }}">
+
+<head>
+	<title>404 Page non trouvée - Jamulus</title>
+	{% include headtags.html %}
+</head>
+
+<body class="thissiteisgone">
+	<header class="fx-row fx-row-between-xs fx-text-center">
+		<div class="fx-col fx-text-center">
+			<img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" />
+		</div>
+	</header>
+	<main class="fx-row-center-xs">
+		<div class="fx-col-center-xs fx-txt-center">
+			<h1 class="red">Ooops ! Voilà une erreur 404 !</h1>
+			<p>Il semblerait que la page que vous cherchez n'existe pas, ou n'existe plus !<br/>
+			Vérifiez que vous n'avez pas fait de faute de frappe.</p>
+			<p>Vous pouvez signaler cette erreur <a href="https://github.com/jamulussoftware/jamuluswebsite/issues/new?assignees=&labels=bug&template=bugreport.md&title=%5BBug%5D" title="Soumettre le problème sur le Github du site Jamulus">ici</a>.</p>
+			<p><a href="#" class="button red-bg" onclick="history.go(-1);return false;">Retourner à la page précédente…</a></p>
+		</div>
+	</main>
+	{% include footer.html %}
+</body>
+
+</html>

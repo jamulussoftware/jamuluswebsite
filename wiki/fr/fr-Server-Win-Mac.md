@@ -15,7 +15,7 @@ Si un message vous demande d'autoriser les communications entrantes pour l'appli
 * **Utilisateurs de MacOS** - Double-cliquez sur l'icône `Jamulus server` dans le répertoire `Applications` (nous partons du principe que vous avez installé Jamulus en suivant [ces instructions](Installation-for-Macintosh)).
 Si un message vous demande d'autoriser les communications entrantes pour Jamulus, acceptez la demande.
 
-* **Utilisateurs de Linux** - Suivez ces [instructions](Server-Linux#running-a-server-with-the-gui).
+* **Utilisateurs de Linux** - Suivez ces [instructions](Server-Linux#serveur-avec-interface-graphique).
 
 <img width="627" alt="server-setup" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
 
@@ -44,7 +44,7 @@ Activez l'enregistrement du serveur en définissant d'abord le répertoire d'enr
 
 _Remarque : lorsque votre serveur enregistre, les utilisateurs connectés voient un message indiquant que l'enregistrement est en cours dans leur client._
 
-Pour les serveur sans GUI : vous pouvez contrôler les enregistrements en [suivant ces instructions](Server-Linux#contrôler-l-enregistrement).
+Pour les serveur sans GUI : vous pouvez contrôler les enregistrements en [suivant ces instructions](Server-Linux#gestion-des-enregistrements).
 
 
 ### Autres options
