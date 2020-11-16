@@ -31,9 +31,7 @@ Le guide suivant permet de faire fonctionner Jamulus comme un "pur" serveur sur 
 
 * _Un autre utilisateur de Jamulus, [skrul](https://sourceforge.net/u/skrulx/profile/), à égualement déployé un certain nombre de **public Amazon EC2 AMIs** sous Ubuntu 18.04 pour faire fonctionner Jamulus. [Voir cette page](Jamulus-Cloud) (en anglais) pour plus de détails._
 
-<a id="compiling-source"></a>
-### Compiler le code source, création de l'utilisateur `jamulus`
-
+### Compiler le code source
 
 1. [Téléchargez le code source](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dependances) comme indiqué dans le guide d'installation sous Linux. À noter, **il n'y a pas besoin d'installer le(s) package(s) Jack** pour un serveur dédié sans interface graphique. _Si vous prévoyez de compilier le serveur sous Gentoo, ou prévoyez de compiler sous Ubuntu pour l'utiliser sur une autre machine sous Ubuntu, [voir les notes de bas de page](#signification-du-drapeau-headless)._
 2. Compilez les sources en ignorant la librairie audio Jack&nbsp;:
@@ -142,7 +140,7 @@ Puis, redémarrez le service :
 
 ### Mise à jour vers une nouvelle version
 
-Téléchargez le code source de la nouvelle version comme indiqué dans les [instructions ci-dessus](Server-Linux#compiling-source) et suivez l'étape 2 pour compiler les sources comme pour une nouvelle installation.  
+Téléchargez le code source de la nouvelle version comme indiqué dans les [instructions ci-dessus](Server-Linux#compiler-le-code-source) et suivez l'étape 2 pour compiler les sources comme pour une nouvelle installation.  
 Puis,
 1. arrêtez le serveur :  
 `sudo service jamulus stop`

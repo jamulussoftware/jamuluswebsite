@@ -18,7 +18,7 @@ Il est aussi utilisé sur un Rasperry Pi 4 8Gb par le traducteur de cette docume
 
 1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** les package(s) Jack. Il n'y en a pas besoin pour un [serveur sans _GUI_](Server-Linux#serveur-sans-interface-graphique). Pour installer et utiliser le client, installez toutes les dépendances.
 
-1. Compilez le code source code pour un serveur en suivant [ces instructions](Server-Linux#compiling-source. Pour compiler le client suivez [ces instructions](Installation-for-Linux#compiler-jamulus).
+1. Compilez le code source code pour un serveur en suivant [ces instructions](Server-Linux#compiler-le-code-source. Pour compiler le client suivez [ces instructions](Installation-for-Linux#compiler-jamulus).
 
 Ça va compiler le programme et placer le binaire ici : `/usr/local/bin/Jamulus`.
 
