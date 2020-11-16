@@ -24,6 +24,7 @@ Validez avec `[Entrée]` et vous devriez voir la fenêtre de contrôle du serveu
 
 Voir aussi les [options de la ligne de commande](Command-Line-Options) pour les paramètres que vous pouvez passer.
 
+<a id="running-a-headless-server"></a>
 ## Serveur sans interface graphique (_"headless" server_)
 
 Le guide suivant permet de faire fonctionner Jamulus comme un "pur" serveur sur du matériel dédié sans audio ni interface graphique (par exemple un serveur dédié en datacenter ou dans le _cloud_ ou encore une machine dédiée) et suppose des distributions Ubuntu/Debian utilisant systemd. Nous avons également des instructions pour les [Raspberry Pi](Server-Rpi) qui sont bien faites.
