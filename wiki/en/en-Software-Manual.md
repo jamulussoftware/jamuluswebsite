@@ -17,26 +17,26 @@ Main Window
 
 ### Status LEDs
 
-
 The **Delay Status** LED shows the current audio delay status:
 
-* **Green**
+* **Green** - The delay is perfect for a jam session
+
 
 ![image](https://user-images.githubusercontent.com/4561747/99384024-b6c60b00-28c6-11eb-9e7d-aa1e4245353f.png)
 
-The delay is perfect for a jam session.
 
-* **Yellow**
+* **Yellow** - A session is still possible but it may be harder to play
+
 
 ![image](https://user-images.githubusercontent.com/4561747/99384041-bb8abf00-28c6-11eb-96ab-c1c08acf2a85.png)
 
-A session is still possible but it may be harder to play.
 
-* **Red**
+* **Red** - The delay is too large for jamming
+
 
 ![image](https://user-images.githubusercontent.com/4561747/99384044-bded1900-28c6-11eb-8971-9ab6ee1908b5.png)
 
-The delay is too large for jamming.
+
 
 **Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
 
