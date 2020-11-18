@@ -55,7 +55,7 @@ Ein typischer Jam mit 4 Personen könnte grob 200Kbps * 4 = 800Kbs (0.8Mbps) Upl
 - Jamulus unterstützt derzeit kein IPv6.
 
 
-## Alles Ok? Mach dich bereit!
+## Alles Ok? Los geht's!
 
 ### [Windows- oder Macintosh-Server](Server-Win-Mac)
 ### [Linux-Server](Server-Linux)
