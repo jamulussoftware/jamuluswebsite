@@ -29,16 +29,10 @@ tar -xvf latest.tar.gz
 
 First, update your package list (e.g. on Debian based distributions with `sudo apt-get update`).
 
-On **Ubuntu-based** distributions 18.04+, and on Debian 9 or 10:
+On **Ubuntu-based** distributions 18.04+, Debian 9 or later,  Raspberry Pi Raspbian Buster release or later:
 
 ```shell
 sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev 
-```
-
-On **Debian** 11 (bullseye) or later, and Raspberry Pi Raspbian Buster release or later:
-
-```shell
-sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev
 ```
 
 On **Fedora**:
