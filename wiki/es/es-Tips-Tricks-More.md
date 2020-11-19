@@ -51,12 +51,13 @@ function loadserverstat ( $statfilename )
 <?php loadserverstat ( "stat1.dat" ); ?>
 ~~~
 
-## Guardar estado de mezcla de clientes entre sesiones
+## Guardar y cargar estados de mezcla de clientes
 
-Puede que quieras guardar y restaurar la mezcla que tienes para los ensayos con tu grupo (fader, mute, pan, solo, etc.). Hazlo arrancando Jamulus con la configuración `--inifile` (por ej. `Jamulus --inifile "c:\temp\jamulussetup1.ini"`) en la línea de comandos.
+Puedes guardar y restaurar la mezcla que tienes para los ensayos de tu grupo (fader, mute, pan, solo, etc.) y cargarlos en cualquier momento (incluso mientras tocas). Hazlo con "Archivo > Guardar Configuración Canales Mezclador" en tu cliente, y cárgalos con "Cargar Configuración Canales Mezclador" (o con arrastrar/dejar caer sobre la ventana del mezclador).
 
-Haz tu sesión, luego desconecta y cierra Jamulus. Toda la configuración de los faders se guardan en el archivo de inicio. Si quieres guardar otra sesión, simplemente copia el archivo `jamulussetup1.ini` a `jamulussetup2.ini` y arranca con `--inifile "c:\temp\jamulussetup2.ini"`. Si quieres volver a la primera sesión, simplemente arranca Jamulus con el promer archivo de nuevo.
+## Convertir un servidor público en privado sobre la marcha
 
+Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [https://github.com/DavidSavinkoff](David Savinkoff) por este truco!)
 
 ## Script de arranque para cliente en Linux
 
@@ -113,7 +114,7 @@ En el archivo `src/soundbase.cpp`, ve a la línea 290, elimina el `- 70` al fina
 
 ## Utilizar in sinte de software con Jamulus
 
-El maestro sónico [Engelbert Niehaus](https://github.com/niebert) describe cómo se puede utilizar la entrada MIDI de JACK para [tocar un sinte de software a través de Jamulus](Software-Synth). Este ejemplo utiliza Linux, pero un enfoque similar fuincionaría para Windows y Mac.
+[Engelbert Niehaus](https://github.com/niebert) describe cómo se puede utilizar la entrada MIDI de JACK para [tocar un sinte de software a través de Jamulus](Software-Synth). Este ejemplo utiliza Linux, pero un enfoque similar fuincionaría para Windows y Mac.
 
 ## Ejecutar Jamulus con Múltiples Interfaces de Audio
 
