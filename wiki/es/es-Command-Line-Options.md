@@ -30,7 +30,7 @@ Puedes ver todas las opciones posibles soportadas por tu versión arrancando Jam
 |-------|--------------|--------------------------------------|-|
 |    `-c` |`--connect`        | Conectar con una dirección de servidor al arrancar, formato `dirección[:puerto]` | (solo cliente) |
 |    `-d` |`--discononquit`   | Desconectar todos los clientes al salir | (solo servidor) |
-|    `-e` |`--centralserver`  | Hace que el servidor sea público. |  (solo servidor) [Ver nota](Choosing-a-Server-Type#1-público). |
+|    `-e` |`--centralserver`  | Hace que el servidor sea público y establece su género. |  (solo servidor) [Ver nota](Choosing-a-Server-Type#1-público). |
 |    `-f` |`--listfilter`     | Lista blanca con IPs para registrarse en la lista de servidores de este servidor. | (solo servidor central) [Ver nota](Choosing-a-Server-Type#3-central). |
 |    `-F` |`--fastupdate`     | Utiliza modo 64 muestras. Requiere un procesador potente para evitar cortes, y más ancho de banda si los clientes también se conectan con la opcion de "Activar Buffers Pequeños". | (Solo servidor) |
 | `-h,-?` |`--help`           | Este texto de ayuda | (cliente y servidor) |
