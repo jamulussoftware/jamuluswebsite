@@ -32,19 +32,19 @@ Primero actualiza la lista de paquetes (por ej. en distribuciones basadas en Deb
 En distros basadas en **Ubuntu**  18.04+ y en Debian 9 o 10:
 
 ```shell
-sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev
 ```
 
 En **Debian** 11 (bullseye) o posteriores, y la versión de Raspberry Pi Raspbian Buster o posterior:
 
 ```shell
-sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
+sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev
 ```
 
 En **Fedora**:
 
 ```shell
-sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libqt5concurrent5 jack-audio-connection-kit-devel
 ```
 
 ### Qjackctl: Opcional, pero recomendado
