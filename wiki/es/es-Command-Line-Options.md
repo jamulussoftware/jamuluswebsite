@@ -34,13 +34,13 @@ Puedes ver todas las opciones posibles soportadas por tu versión arrancando Jam
 |    `-f` |`--listfilter`     | Lista blanca con IPs para registrarse en la lista de servidores de este servidor. | (solo servidor central) [Ver nota](Choosing-a-Server-Type#3-central). |
 |    `-F` |`--fastupdate`     | Utiliza modo 64 muestras. Requiere un procesador potente para evitar cortes, y más ancho de banda si los clientes también se conectan con la opcion de "Activar Buffers Pequeños". | (Solo servidor) |
 | `-h,-?` |`--help`           | Este texto de ayuda | (cliente y servidor) |
-|    `-i` |`--inifile`        | Nombre de archivo de inicialización | (cliente y servidor) |
+|    `-i` |`--inifile`        | Establecer ubicación de archivo de inicialización (reemplaza el preestablecido) | (cliente (siempre) y servidor (con GUI) |
 |    `-j` |`--nojackconnect`  | Deshabilitar conexiones automáticas de Jack | (solo cliente) |
-|    `-l` |`--log`            | Habilitar registro, establece nombre del archivo | (solo servidor) |
-|    `-m` |`--htmlstatus`     | Habilita un archivo de estado HTML, establece un nombre de archivo | (solo servidor) |
-|    `-M` |`--mutestream`     | Arranca Jamulus en estado muteado | (solo cliente) |
+|    `-l` |`--log`            | Habilitar registro, establece ruta y nombre del archivo | (solo servidor) |
+|    `-m` |`--htmlstatus`     | Habilita un archivo de estado HTML, establece ruta y nombre del archivo | (solo servidor) |
+|    `-M` |`--mutestream`     | Arranca Jamulus en estado silenciado | (solo cliente) |
 |    `-n` |`--nogui`          | Deshabilitar interfaz gráfica  | (cliente y servidor) |
-|    `-o` |`--serverinfo`     | Detalles de localización del servidor en el formato: <br/>`[nombre];[ciudad];[[valor locale]]; ...` <br/>`[dirección servidor1];[nombre servidor1];[ciudad servidor1];[país servidor1 como ID QLocale]; ...` <br/> `[dirección servidor2]; ...` | (primero para cualquier servidor; adicionales solo para el servidor central - [ver nota](Choosing-a-Server-Type#3-central).) |
+|    `-o` |`--serverinfo`     | Detalles de localización del servidor en el formato: <br/>`[nombre];[ciudad];[[valor locale]]` (ver [valores](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) | (Solo servidores públicos) |
 |    `-p` |`--port`           | Número del puerto UDP local. Por defecto es 22124 | (solo servidor) |
 |    `-R` |`--recording`      | Incluye una ruta editable donde se deben guardar los archivos (entrecomillado si es apropiado). | (solo servidor) Ver descripción en [Configuración del Servidor](Server-Win-Mac#grabación). |
 |       |`--norecord`       | Arranca la grabadora con la grabación desactivada| (solo servidor) |
@@ -48,7 +48,7 @@ Puedes ver todas las opciones posibles soportadas por tu versión arrancando Jam
 |    `-t` |`--notranslation`  | Deshabilitar traducciones | (cliente y servidor) |
 |    `-T` |`--multithreading` | Habilitar multithreading | (solo servidor) |
 |    `-u` |`--numchannels`    | Número máximo de canales. Por defecto son 10, el máximo son 50 | (solo servidor) |
-|    `-w` |`--welcomemessage` | Mensaje de bienvenida al conectarse. Soporta el formateo HTML y CSS (entre comillas), o establece ruta a un archivo de texto | (solo servidor) |
+|    `-w` |`--welcomemessage` | Soporta el formateo HTML y CSS (entre comillas), o establece ruta a un archivo de texto | (solo servidor) |
 |    `-z` |`--startminimized` | Arranca minimizado | (solo servidor) |
 |       |`--ctrlmidich`     | Canal para recibir mensajes de controlador MIDI | (solo cliente), ver [Consejos y Trucos](Tips-Tricks-More#usar-la-opción-ctrlmidich-para-utilizar-un-controlador-midi) |
 |       |`--clientname`     | Título de ventana y nombre de cliente en Jack | (solo cliente) | |
