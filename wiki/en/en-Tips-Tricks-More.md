@@ -51,11 +51,13 @@ function loadserverstat ( $statfilename )
 <?php loadserverstat ( "stat1.dat" ); ?>
 ~~~
 
-## Saving client mix states between sessions 
+## Saving and loading client mix states 
 
-You may want to save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.). Do this by starting Jamulus with the `--inifile` setting (eg `Jamulus --inifile "c:\temp\jamulussetup1.ini"`) on the command line.
+You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Do this with "File > Save Mixer Channels Setup" in your client and load them using "Save Mixer Channels Setup" (or drag/drop them to the mixer window).
 
-Do your session, than disconnect and close the Jamulus software. All fader settings are stored in the ini-file. If you then want to store another session, simply copy the file `jamulussetup1.ini` to `jmulussetup2.ini` and start with `--inifile "c:\temp\jamulussetup2.ini"`. If you want to recover the first session, simply start Jamulus with the first file again.
+## Converting a public server to a private one on the fly
+
+You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [https://github.com/DavidSavinkoff](David Savinkoff) for this tip!)
 
 
 ## Jamulus client Linux start script
@@ -113,7 +115,7 @@ In the file `src/soundbase.cpp`, go to line 290, remove the `- 70` at the end (n
 
 ## Playing a software synth with Jamulus
 
-Sonic emperor [Engelbert Niehaus](https://github.com/niebert) describes how you can use JACK's MIDI input to [play a software synth through Jamulus](Software-Synth). This example uses Linux, but a similar approach would work for Windows and Mac.
+[Engelbert Niehaus](https://github.com/niebert) describes how you can use JACK's MIDI input to [play a software synth through Jamulus](Software-Synth). This example uses Linux, but a similar approach would work for Windows and Mac.
 
 ## Running Jamulus with Multiple Audio Interfaces
 
