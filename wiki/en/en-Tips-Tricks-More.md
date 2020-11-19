@@ -53,7 +53,7 @@ function loadserverstat ( $statfilename )
 
 ## Saving and loading client mix states 
 
-You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Do this with "File > Save Mixer Channels Setup" in your client and load them using "Save Mixer Channels Setup" (or drag/drop them to the mixer window).
+You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Do this with "File > Save Mixer Channels Setup" in your client and load them using "Load Mixer Channels Setup" (or drag/drop them to the mixer window).
 
 ## Converting a public server to a private one on the fly
 
