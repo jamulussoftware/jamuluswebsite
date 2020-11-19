@@ -92,7 +92,7 @@ Los faders te permiten ajustar el nivel de lo que escuchas sin afectar a lo que 
 
 El vúmetro muestra el nivel de entrada en el servidor - esto es, el sonido enviado.
 
-Si has configurado tu Canal de Audio a Estéreo o Salida Estéreo en tu Configuración, también verás un control de paneo.
+Si has configurado tu Canal de Audio a Estéreo o Salida Estéreo en tu Configuración, también verás un control de paneo (shift-clic para resetearlo).
 
 Si ves un icono de "silenciado" sobre un canal, significa que ese músico no puede escucharte. Puede que te hayan silenciado, aplicado 'solo' a uno o más canales sin incluir el tuyo, o han bajado tu fader en su mezcla a cero.
 
@@ -102,7 +102,7 @@ El **botón de Solo** te permite escuchar uno o más músicos asilados de los de
 
 Los canales se muestran de izquierda a derecha en el orden en el que se conectan los clientes hasta que se marchan, momento en el cual su "posición" es ocupada por cada nueva conexión. Puedes cambiar el orden utilizando la opción Editar en el menú de la aplicación.
 
-Puedes agrupar faders utilizando el botón de "grupo" (GRP). Si mueves el fader de cualquier miembro del grupo, los demás del grupo también se moverán en la misma proporción.
+Puedes agrupar faders utilizando el botón de "grupo". Si mueves el fader de cualquier miembro del grupo, los demás faders del grupo también se moverán en la misma proporción. Puedes aislar un canal del grupo temporalmente con shift-clic-arrastrar.
 
 Si el operador del servidor ha habilitado la grabación, verás un mensaje sobre el mezclador indicando que estás siendo grabado.
 
@@ -188,7 +188,7 @@ Cuanto mayor la calidad del audio, mayor la tasa de subida del audio. Asegúrate
 
 ![New client level](https://user-images.githubusercontent.com/4263412/97572391-71f63500-19e8-11eb-8922-9d957ec234ec.png)
 
-Este ajuste define el nivel del fader de una nueva conexión de cliente, en porcentaje. Si se conecta un nuevo cliente al servidor actual, el nivel inicial de su fader tomará este valor si no se ha especificado anteriormente un valor para ese cliente de una conexión anterior.
+Este ajuste define el nivel del fader de una nueva conexión de cliente, en porcentaje. Si se conecta un nuevo cliente al servidor actual, el nivel inicial de su fader tomará este valor si no se ha especificado anteriormente un valor para ese cliente de una conexión anterior. Puedes establecer a todos los clientes en un servidor ocupado en este nivel con Editar > "Poner Todos Faders a Nivel Cliente Nuevo".
 
 ### Interfaz oscura
 
