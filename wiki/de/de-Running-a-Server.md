@@ -40,7 +40,7 @@ Sobald alle Probleme mit den Musikern auf diese Weise gelöst sind, kannst du te
 
 ### Bandbreite – hast du genug?
 
-Ein typischer Jam mit 4 Personen könnte grob 200Kbps * 4 = 800Kbs (0.8Mbps) Upload und Download benötigen. Eine typische Breitbandverbindung mit 10MBit/s Download und 1MBit/s Upload, **wird sehr wahrscheinlich ab dem fünften Musiker zu gering sein**, insbesondere wenn andere Musiker Einstellungen wählen, die viel Bandbreite benötigen. Hier kannst du testen, [überprüfen, wie viel Bandbreite dein Anschluss bietet] (https://fast.com). [Mehr über die benötigte Bandbreite](Network-Requirements) bei verschiedenen Qualitätseinstellungen.
+Ein typischer Jam mit 4 Personen könnte grob 200Kbps * 4 = 800Kbs (0.8Mbps) Upload und Download benötigen. Eine typische Breitbandverbindung mit 10MBit/s Download und 1MBit/s Upload, **wird sehr wahrscheinlich ab dem fünften Musiker zu gering sein**, insbesondere wenn andere Musiker Einstellungen wählen, die viel Bandbreite benötigen. Hier kannst du testen, [wie viel Bandbreite dein Anschluss bietet](https://fast.com). [Mehr über die benötigte Bandbreite](Network-Requirements) bei verschiedenen Qualitätseinstellungen.
 
 ### Allgemein
 
@@ -55,7 +55,7 @@ Ein typischer Jam mit 4 Personen könnte grob 200Kbps * 4 = 800Kbs (0.8Mbps) Upl
 - Jamulus unterstützt derzeit kein IPv6.
 
 
-## Alles Ok? Mach dich bereit!
+## Alles Ok? Los geht's!
 
 ### [Windows- oder Macintosh-Server](Server-Win-Mac)
 ### [Linux-Server](Server-Linux)

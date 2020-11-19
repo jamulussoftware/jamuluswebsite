@@ -35,7 +35,7 @@ Natürlich gibt es auch andere Einflussfaktoren für gelungene online Musikstund
 </div>
 [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/){: target="_blank" rel="noopener noreferrer"}
 
-Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stickstarten! Jamulus OS prüft deine Hardware automatisch und richtet sie ein.
+Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stick starten! Jamulus OS prüft deine Hardware automatisch und richtet sie ein.
 
 ## Fertig? Alles installiert?
 

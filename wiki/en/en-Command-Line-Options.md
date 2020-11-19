@@ -30,7 +30,7 @@ You can see all possible options your version supports by starting Jamulus with 
 |-------|-----------|----------------------------------|-|
 |    `-c` |`--connect`        | Connect to given server address on startup, format `address[:port]` | (client only) |
 |    `-d` |`--discononquit`   | Disconnect all clients on quit | (server only) |
-|    `-e` |`--centralserver`  | Makes the server public. See also `-o`| (server only) [See note](Choosing-a-Server-Type#1-public). |
+|    `-e` |`--centralserver`  | Makes the server public and sets its genre. See also `-o`| (server only) [See list](Central-Servers). |
 |    `-f` |`--listfilter`     | Whitelist servers registering on the serverlist, format `ip address 1[;ip address 2]` | (central server only) [See note](Choosing-a-Server-Type#3-central). |
 |    `-F` |`--fastupdate`     | 64 samples frame size mode. Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients. | (server only) |
 | `-h,-?` |`--help`           | This help text | (client and server) |

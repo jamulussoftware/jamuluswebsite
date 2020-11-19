@@ -56,13 +56,15 @@ make
 
 ### Crea un script de arranque
 
-Una vez que has decidido en qué modo quieres ejecutar tu servidor, usa systemd para arrancarlo (el resto de esta guía presupone que lo harás en modo "público" - **Lee también esta [nota importante sobre Servidores Centrales](Central-Servers)).**
+Una vez que has decidido en qué modo quieres ejecutar tu servidor, usa systemd para arrancarlo.
 
 Crea un archivo de unidad de systemd, que iniciará el servidor al arrancar el ordenador (gracias a [David Harrold](https://sourceforge.net/u/dkxl/profile/) por esto).
 
 El archivo de unidad aplica una prioridad alta al CPU y al I/O scheduling para el proceso del servidor (y puede ser ignorado en algunos hosts).
 
 Ten en cuenta también que las entradas de registro del servidor irán a journalctl (utiliza [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) para verlos).
+
+**Nota**: El resto de esta guía presupone que estás en modo "público" utilizando la opción `-e` (`--centralserver`). Esto especifica en qué lista de género musical va a aparecer tu servidor. Ver [la lista de géneros disponibles aquí](Central-Servers))
 
 ~~~
 [Unit]

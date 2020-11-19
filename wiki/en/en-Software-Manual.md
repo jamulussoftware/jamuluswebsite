@@ -10,19 +10,33 @@ Jamulus Help (Software Manual)
 Main Window
 -----------
 
+Main Window
+-----------
+
 ![Main window](https://user-images.githubusercontent.com/20726856/97360410-77476880-189e-11eb-99c6-f4a68258bf31.png)
 
 ### Status LEDs
-
-![LEDs](https://user-images.githubusercontent.com/20726856/97360576-ac53bb00-189e-11eb-971e-a73414ec3f6f.png)
 
 The **Delay Status** LED shows the current audio delay status:
 
 * **Green** - The delay is perfect for a jam session
 
+
+![image](https://user-images.githubusercontent.com/4561747/99384024-b6c60b00-28c6-11eb-9e7d-aa1e4245353f.png)
+
+
 * **Yellow** - A session is still possible but it may be harder to play
 
+
+![image](https://user-images.githubusercontent.com/4561747/99384041-bb8abf00-28c6-11eb-96ab-c1c08acf2a85.png)
+
+
 * **Red** - The delay is too large for jamming
+
+
+![image](https://user-images.githubusercontent.com/4561747/99384044-bded1900-28c6-11eb-8971-9ab6ee1908b5.png)
+
+
 
 **Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
 
@@ -105,7 +119,7 @@ The faders allow you to adjust the level of what you hear without affecting what
 
 The VU meter shows the input level at the server - that is, the sound being sent.
 
-If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control.
+If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset).
 
 If you see a "mute" icon above a channel, it means that musician cannot hear you. Either they have muted you, soloed one or more channels not including yours, or have set your fader in their mix to zero.
 
@@ -115,7 +129,7 @@ The **Solo button** allows you to hear one or more musicians on their own. Those
 
 Channels are listed left to right in the order that clients connect until they leave, at which point their "slot" is filled by the next new arrival. You can change the sort order using the Edit option in the application menu.
 
-You can group faders together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount.
+You can group faders together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag
 
 If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
 
@@ -124,7 +138,7 @@ If the server operator has enabled recording, you will see a message above the m
 Settings Window
 ---------------
 
-![Settings](https://user-images.githubusercontent.com/20726856/97361399-c4780a00-189f-11eb-8ad0-6b94f7eb1dcc.png)
+![image](https://user-images.githubusercontent.com/4561747/99384700-b7ab6c80-28c7-11eb-845e-c137793941d4.png)
 
 ### Sound card device
 
@@ -223,7 +237,8 @@ The higher the audio quality, the higher your audio stream's data rate. Make sur
 
 This setting defines the fader level of a newly connected client in percent. If a new musician connects
 to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
-that client was already stored.
+that client was already stored. You can set all clients in an occupied server to this level using Edit > "Set All Faders to New Client Level".
+	
 
 ### Fancy skin
 
