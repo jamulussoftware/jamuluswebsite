@@ -32,13 +32,13 @@ First, update your package list (e.g. on Debian based distributions with `sudo a
 On **Ubuntu-based** distributions 18.04+, **Debian** 9 or later,  Raspberry Pi Raspbian Buster release or later:
 
 ```shell
-sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev 
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev 
 ```
 
 On **Fedora**:
 
 ```shell
-sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
 ```
 
 ### Qjackctl: Optional, but recommended
