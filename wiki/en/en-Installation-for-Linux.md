@@ -32,7 +32,7 @@ First, update your package list (e.g. on Debian based distributions with `sudo a
 On **Ubuntu-based** distributions 18.04+, **Debian** 9+ or 10 and Raspberry Pi Raspbian Buster release or later:
 
 ```shell
-sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev 
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
 ```
 
 On **Fedora**:
@@ -72,7 +72,7 @@ sudo make install
 
 ### Configure Jack with QJackCtl
 Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
-1. Open the command shell e.g. with Crtl-Alt-T and
+1. Open the command shell e.g. with Ctrl-Alt-T and
 1. Execute the command `qjackctl` you will see the **Jack Audio Connection Kit**
 2. Configure your audio interface as follows (the exact settings for Jack will depend on what your audio interface/sound card is capable of):
 
