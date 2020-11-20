@@ -9,7 +9,7 @@ permalink: "/wiki/Installation-for-Windows"
 Make sure you read the [Getting Started](Getting-Started) page.
 1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have one (especially internal sound cards), install [this free ASIO driver (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} before installing Jamulus.
 1. **Download and install Jamulus** from the [Jamulus project page](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. If you get a warning notice, click on "More info" and "Run anyway" to install Jamulus.
-1. **Setup your sound card**. When you're done, you need to setup your audio hardware. Have a look at how to setup ASIO4All if you you're using that (scroll down), and afterwards at [Hardware Setup](Hardware-Setup).
+1. **Setup your sound card**. When you're done, you need to setup your audio hardware. Have a look at how to setup ASIO4All if you you're using that ([scroll down](#setting-up-asio4all)), and afterwards at [Hardware Setup](Hardware-Setup).
 
 You can also [compile your own binary](Compiling) if you feel so inclined.
 
@@ -18,7 +18,7 @@ You can also [compile your own binary](Compiling) if you feel so inclined.
 ## Setting up ASIO4All
 *ASIO4All is not recommended if your audio interface provides its own ASIO driver, since that might have better latency.*
 
-First of all **close all applications** (especially those which could access your soundcard like your browser) to minimize conflicts. If the audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in its control panel **are switched on**.
+First of all **close all applications** (especially those which could access your soundcard like your browser) to minimize conflicts since Jamulus needs exclusive access to your sound card. If the audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in its control panel **are switched on**.
 You may need to experiment a bit to find the right ones since every computer is a bit different. Do this while you're connected to a server to hear your instrument or voice and check if everything is correctly setup.
 
 ### How to setup ASIO4All inputs (Guide)
