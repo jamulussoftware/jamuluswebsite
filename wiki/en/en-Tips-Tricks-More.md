@@ -113,10 +113,3 @@ If you can change the Control Number in your MIDI controller, just set it to 70 
 If you can't change the Control Numbers in your controller, you will need to modify and re-compile the sources:
 In the file `src/soundbase.cpp`, go to line 290, remove the `- 70` at the end (not the semicolon) to use Control Number 0 for the first fader, or replace that number with the initial Control Number your MIDI device sends. Save, [compile](Compiling) and install.
 
-## Playing a software synth with Jamulus
-
-[Engelbert Niehaus](https://github.com/niebert) describes how you can use JACK's MIDI input to [play a software synth through Jamulus](Software-Synth). This example uses Linux, but a similar approach would work for Windows and Mac.
-
-## Running Jamulus with Multiple Audio Interfaces
-
-It is possible to run Jamulus with multiple Audio Interfaces on all three operating systems. Useful when we need to output an instrument through external audio card for minimal latency and computer microphone for communication. Other use cases may apply.  [See this guide for details](Running-Jamulus-with-Multiple-Audio-Interfaces)
