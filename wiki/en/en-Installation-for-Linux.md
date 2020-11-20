@@ -11,9 +11,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 **Right now, we don't provide official packages for Jamulus**
 
-There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. You can also use an [all-in-one script](Linux-Client-Install-Script) if you want.
-
-Meanwhile, compiling the sources is quite easy:
+There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. You can also use an [all-in-one script](Linux-Client-Install-Script) if you want but compiling the sources is quite easy:
 
 ## Get Jamulus sources
 
@@ -32,7 +30,7 @@ First, update your package list (e.g. on Debian based distributions with `sudo a
 On **Ubuntu-based** distributions 18.04+, **Debian** 9+ or 10 and Raspberry Pi Raspbian Buster release or later:
 
 ```shell
-sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev 
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
 ```
 
 On **Fedora**:
