@@ -21,6 +21,8 @@ You can also [compile your own binary](Compiling) if you feel so inclined.
 
 ## "Jamulus" can't be opened because the developer cannot be verified
 
+![Jamulus blocked by Gatekeeper](https://user-images.githubusercontent.com/20726856/99886769-67256d80-2c3f-11eb-91e9-9cb2b6f80f95.png)
+
 **The first time you try to double-click Jamulus to run it, you will probably see a message saying it cannot be opened.**
 
 To fix this, navigate to the Applications folder via Finder click on Jamulus, right-click (or control-click), and select "Open" from the top of the menu.
