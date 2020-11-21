@@ -19,7 +19,7 @@ Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
 
 ## Jamulus kann nicht geöffnet werden, da es von einem nicht verifizierten Entwickler stammt
 
-![Jamulus kann nicht geöffnet werden](https://user-images.githubusercontent.com/20726856/99886619-4ad50100-2c3e-11eb-9c6e-b12d7560699c.png)
+![Jamulus blockiert durch Gatekeeper](https://user-images.githubusercontent.com/20726856/99886658-adc69800-2c3e-11eb-938e-7c4609f855b6.png)
 
 **Wenn du Jamulus zum ersten Mal öffnen willst, wirst du wahrscheinlich eine Meldung sehen, dass Jamulus nicht geöffnet werden kann, da der Entwickler unbekannt sei.**
 
