@@ -10,8 +10,6 @@ Jamulus Help (Software Manual)
 Main Window
 -----------
 
-Main Window
------------
 
 ![Main window](https://user-images.githubusercontent.com/20726856/97360410-77476880-189e-11eb-99c6-f4a68258bf31.png)
 
