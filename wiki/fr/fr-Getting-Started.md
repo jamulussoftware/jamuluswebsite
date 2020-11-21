@@ -1,17 +1,17 @@
 ---
 layout: wiki
-title: "Pour commencer"
+title: "Premier pas"
 lang: "fr"
 permalink: "/wiki/Getting-Started"
 ---
 
-# Pour commencer
+# Premier pas
 
-## Vous avez besoin de
+## Pré-requis
 
-1. **Un ordinateur** au moins sous **Windows 10**, **MacOS X** El Capitan (v10.11) ou plus réçent, ou **GNU/Linux**.
-1. **Une connection Internet filaire** (n'utilisez pas la Wi-Fi, cela va causer des problèmes de son). La plupart des connexions standard suffisent[^1].
-1. **Des microphones filaires - pas de haut parleurs** pour éviter de l'écho ou des larsen et pour minimiser le délai[^2].
+1. **Un ordinateur** au moins sous **Windows 10**, **MacOS X** El Capitan (v10.11) ou plus réçent, ou **Linux**.
+1. **Une connection Internet filaire** (n'utilisez pas le Wi-Fi, cela va causer des problèmes de son). La plupart des connexions à haut-débit suffisent[^1].
+1. **Des casques ou écouteurs filaires - pas de haut parleurs** pour éviter de l'écho ou des larsens et pour minimiser le délai[^2].
 
 ## Maximiser la qualité et diminuer le délai
 
@@ -21,7 +21,7 @@ Sauf dans le cas où vous êtes un musicien ayant un microphone (USB), il est fo
 
 ### 2. Réduisez votre trafic Internet et fermez les programmes de votre PC
 
-Assurez-vous que Jamulus ait le maximum de ressources sur votre machine ainsi que via votre connexion réseau quand vous l'utilisez.
+Essayez de vous assurer que rien sur votre machine ou votre réseau ne soit en concurrence avec Jamulus lorsque vous l'utilisez.
 
 ### 3. Connectez-vous aux serveurs qui ont le meilleur temps de réponse
 
