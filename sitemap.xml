@@ -7,7 +7,7 @@ category: hidden
   {% for page in site.pages %}
     {% unless page.category == "hidden" %}
       <url>
-        <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+        <loc>{{ site.a_rootpage }}{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
         {% for lng in site.languages %}
             {% if lng != site.default_lang %}
               <xhtml:link rel="alternate" hreflang="{{ lng }}" href="{{ site.a_rootpage }}/{{ lng }}{{ page.url }}" />
