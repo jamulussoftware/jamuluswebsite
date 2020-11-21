@@ -5,7 +5,7 @@ lang: "fr"
 permalink: "/wiki/Getting-Started"
 ---
 
-# Commencer à utiliser Jamulus
+# Pour commencer
 
 ## Vous avez besoin de
 
