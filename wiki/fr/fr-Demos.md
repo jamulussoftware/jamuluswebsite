@@ -10,9 +10,9 @@ permalink: "/wiki/Demos"
 
 **Sentez-vous libre d'ajouter les vôtres !**
 
-* [Cette vidéo (en)](https://youtube.com/watch?v=c8838jS2g3U) documentée par [Volker Fischer](https://sourceforge.net/u/corrados/profile/) montre une session en ligne de Jam avec son groupe _Jitterbuffer_
+* [Cette vidéo (en anglais)](https://youtube.com/watch?v=c8838jS2g3U) documentée par [Volker Fischer](https://sourceforge.net/u/corrados/profile/) montre une séance d'improvisation en ligne avec son groupe _Jitterbuffer_
 
-* [Jamulus The Movie - 28th March 2020 (en)](https://www.youtube.com/watch?v=2x-gwMmVK-s)
+* [Jamulus The Movie - 28th March 2020 (en anglais)](https://www.youtube.com/watch?v=2x-gwMmVK-s)
 
 * [Concert en direct sur Youtube avec 8 musiciens de jazz](https://www.youtube.com/watch?v=MpSIYxZMHw8&t=3307s) pour la Journée internationale du jazz, le 30 Avril 2020 ([plus de détails ici](https://sourceforge.net/p/llcon/discussion/533517/thread/070485619d/#6b71)) 
 
