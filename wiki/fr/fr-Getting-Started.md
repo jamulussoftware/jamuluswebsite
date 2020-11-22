@@ -32,7 +32,7 @@ Maintenant que vous avez les bases, c'est parti :
 <div class="fx-row fx-row-start-xs button-container">
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Installer sur Windows</a>
   <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Installer sur macOS</a>
-  <a href="Installation-for-Linux" class="button fx-col-100-xs">Installer sur une distribution GNU/Linux</a>
+  <a href="Installation-for-Linux" class="button fx-col-100-xs">Pour les utilisateurs de Linux</a>
 </div>
 
 Découvrez aussi : [Jamulus OS !](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) Exécutez Jamulus sur n'importe quel ordinateur avec une clé USB (uniquement pour les systèmes en 64 bits). Vérifiez la compatibilité de votre matériel et profitez-en !
@@ -41,16 +41,16 @@ Découvrez aussi : [Jamulus OS !](https://sourceforge.net/projects/jamulus-os/fi
 
 Si vous installez Jamulus, jetez un coup d'œil [la configuration matérielle](Hardware-Setup).
 
-Pour de plus amples informations à propos de l'utilisation de Jamulus, regardez [le mode d'emploi](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+Pour de plus amples informations à propos de l'utilisation de Jamulus, regardez [le manuel d'aide](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
 ## D'autres guides
-* [Cet excellent guide (en)](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} par [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) pourrait aussi vous aider.
+* [Cet excellent guide (en)](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} par [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) pourrait aussi vous intéresser.
 
 * Sur le site [Bassetorius](https://www.bassetorius.fr/applications/jamulus/){: target="_blank" rel="noopener noreferrer"} vous trouverez également une série d'articles bien faits et détaillés, en français, sur l'utilisation de Jamulus.
 
 ## Vous avez des problèmes ? Vous n'arrivez pas à être en rythme ?
 
-**ÉCOUTEZ. UNIQUEMENT. LE. SIGNAL. DE. VOTRE. SERVEUR !**
+**ÉCOUTEZ. UNIQUEMENT. LE. SIGNAL. DU. SERVEUR !**
 
 Ou dit autrement : n'écoutez **pas** votre signal directement.
 
@@ -60,11 +60,11 @@ Vous trouverez plus d'informations sur comment éviter de vous écouter (et pour
 
 ## Comment Jamulus fonctionne (principe de base)
 
-**Voici comment des millions de personne utilisent Jamulus pour jouer, chanter et apprendre la musique avec d'autres personnes en temps réel à travers le monde :**
+**Voici comment des millions de personnes utilisent Jamulus pour jouer, chanter et enseignent la musique avec d'autres personnes en temps réel à travers le monde :**
 
-![Un schéma pour expliquer le principe de fonctionnement de Jamulus](https://user-images.githubusercontent.com/44293594/99189852-b2351180-2763-11eb-96fc-660f5038a83c.png)
+![vue d'ensemble](https://user-images.githubusercontent.com/44293594/99189852-b2351180-2763-11eb-96fc-660f5038a83c.png)
 _Jamulus fonctionne sur le principe clients/serveurs. Le son de chacun est envoyé au serveur, qui les mixe et les traite. Ensuite, le son est envoyé à chaque client. Si un serveur est public et enregistré sur un serveur central, ses informations seront diffusées à tous les clients._
 
 ## Notes
-[^1]: [Tous les détails ici](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Si vous avez une connexion avec 10Mbits descendants et 1Mbps montants, vous n'aurez sûrement aucun problème de bande-passante.
-[^2]: Les casques sans-fil Bluetooth basiques ont généralement beaucoup trop de latence. C'est pourquoi, il est préférable d'utiliser un casque ou des écouteurs filaires. En particulier si vous chantez ou jouez d'un instrument accoustique, pour être sûr de jouer en même temps n'utilisez qu'un casque ou des écouteurs filaires. (voir ces [notes](Getting-Started#having-trouble-cant-keep-in-time) pour de plus amples informations).
+[^1]: [Tous les détails ici](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Si vous avez une connexion avec 10Mbits descendant et 1Mbps montant, vous n'aurez sûrement aucun problème de bande-passante.
+[^2]: Les casques sans-fil Bluetooth basiques ont généralement beaucoup trop de latence. C'est pourquoi, il est préférable d'utiliser un casque ou des écouteurs filaires. En particulier si vous chantez ou jouez d'un instrument accoustique, pour être sûr de jouer en rythme utilisez uniquement des casques filaires (voir ces [notes à ce propos](Getting-Started#having-trouble-cant-keep-in-time) pour de plus amples informations).
