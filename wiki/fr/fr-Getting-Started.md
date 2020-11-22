@@ -67,4 +67,4 @@ _Jamulus fonctionne sur le principe clients/serveurs. Le son de chacun est envoy
 
 ## Notes
 [^1]: [Tous les détails ici](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Si vous avez une connexion avec 10Mbits descendant et 1Mbps montant, vous n'aurez sûrement aucun problème de bande-passante.
-[^2]: Les casques sans-fil Bluetooth basiques ont généralement beaucoup trop de latence. C'est pourquoi, il est préférable d'utiliser un casque ou des écouteurs filaires. En particulier si vous chantez ou jouez d'un instrument accoustique, pour être sûr de jouer en rythme utilisez uniquement des casques filaires (voir ces [notes à ce propos](Getting-Started#having-trouble-cant-keep-in-time) pour de plus amples informations).
+[^2]: Les casques sans-fil Bluetooth basiques ont généralement beaucoup trop de latence. C'est pourquoi, il est préférable d'utiliser un casque ou des écouteurs filaires. En particulier si vous chantez ou jouez d'un instrument accoustique, pour être sûr de jouer en rythme utilisez uniquement des casques filaires (voir ce [paragraphe à ce propos](Getting-Started#having-trouble-cant-keep-in-time) pour de plus amples informations).
