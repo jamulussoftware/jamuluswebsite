@@ -15,7 +15,7 @@ permalink: "/wiki/Getting-Started"
 
 ## Maximiser la qualité et diminuer le délai
 
-### 1. Utilisez une interface audio∕un microphone externe, pas votre carte son interne
+### 1. Utilisez une interface audio∕un micro externe, pas votre carte son interne
 
 Sauf dans le cas où vous êtes un musicien ayant un microphone (USB), il est fortement recommandé d'utiliser une interface audio : un appareil sur lequel vous pouvez brancher votre instrument. Celle-ci se connectera à votre PC, généralement par USB. Visitez [la section configuration du matériel](Hardware-Setup).
 
@@ -25,7 +25,7 @@ Essayez de vous assurer que rien sur votre machine ou votre réseau ne soit en c
 
 ### 3. Connectez-vous aux serveurs qui ont le meilleur temps de réponse
 
-Les serveurs qui s'affichent dans la liste avec un temps de 15ms ou moins optimiserons votre expérience (même s'il y a d'autres éléments qui influent sur les performances). Avec des temps de réponse plus longs, c'est à vos risques et périls.
+Les serveurs affichés dans la liste avec un temps de 15ms ou moins vous offriront de meilleures chances de passer un bon moment (même s'il y a d'autres éléments qui influent sur les performances). Si vous dépassez cette limite, vous prenez des risques.
 
 Maintenant que vous avez les bases, c'est parti :
 
@@ -39,12 +39,14 @@ Découvrez aussi : [Jamulus OS !](https://sourceforge.net/projects/jamulus-os/fi
 
 ## Tout est bon ?
 
-Si vous voulez configurer Jamulus, visitez [la section matériel](Hardware-Setup).
+Si vous installez Jamulus, jetez un coup d'œil [la configuration matérielle](Hardware-Setup).
 
 Pour de plus amples informations à propos de l'utilisation de Jamulus, regardez [le mode d'emploi](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
 ## D'autres guides
 * [Cet excellent guide (en)](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} par [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) pourrait aussi vous aider.
+
+* Sur le site [Bassetorius](https://www.bassetorius.fr/applications/jamulus/){: target="_blank" rel="noopener noreferrer"} vous trouverez également une série d'articles bien faits et détaillés, en français, sur l'utilisation de Jamulus.
 
 ## Vous avez des problèmes ? Vous n'arrivez pas à être en rythme ?
 
