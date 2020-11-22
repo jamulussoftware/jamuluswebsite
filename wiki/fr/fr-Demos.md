@@ -8,8 +8,7 @@ permalink: "/wiki/Demos"
 
 # Exemples d'utilisations de Jamulus
 
-**Sentez-vous libre d'ajouter les votres !**
-
+**Sentez-vous libre d'ajouter les vôtres !**
 
 * [Cette vidéo (en)](https://youtube.com/watch?v=c8838jS2g3U) documentée par [Volker Fischer](https://sourceforge.net/u/corrados/profile/) montre une session en ligne de Jam avec son groupe _Jitterbuffer_
 
@@ -19,9 +18,9 @@ permalink: "/wiki/Demos"
 
 * [IP Rockers Live on Jamulus April 17 2020](https://soundcloud.com/dematteoss/sets/ip-rockers-live-on-jamulus-april-17-2020) (lien mort)
 
-* [Vidéo d'introduction montrant l'installation avec des instruments accoustiques](https://www.youtube.com/watch?v=lB4ZxDb9vnU) (pas vraiment une démo)
+* [Vidéo d'introduction montrant l'installation avec des instruments acoustiques](https://www.youtube.com/watch?v=lB4ZxDb9vnU) (pas vraiment une démo)
 
-* [WorldJam](https://worldjam.vip/) Chaque samedi soir il y a une session Jam mondiale en ligne à travers Internet. ([Chaîne Youtube](https://www.youtube.com/channel/UC1xWIPrhqOpftDXbs99w2Xg))
+* [WorldJam](https://worldjam.vip/) Chaque samedi soir il y a une session « Jam » mondiale en ligne à travers Internet.
 
 ## Une Jam typique !
 ![capture d'écran de la console de mix de Jamulus avec 11 tranches](https://user-images.githubusercontent.com/4561747/79686157-1f1c1380-8236-11ea-9fdb-8a791dd2713f.png)
