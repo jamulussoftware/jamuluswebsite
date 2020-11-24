@@ -98,9 +98,9 @@ jack_connect Jamulus:'output right' system:playback_2
 
 
 
-## Using --ctrlmidich for MIDI controllers
+## Using ctrlmidich for MIDI controllers
 
-The volume faders in the client's mixer window can be controlled using a MIDI controller (note: only available for use with MacOS and Linux). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There are two parameters you can set: `Channel` and `Offset`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and the second parameter to the Control Number you want the first fader to react to. By default, the offset is 70 (for the Behringer X-Touch), which means that the first fader reacts to Control Number 70, the second to 71, and so on. 
+The volume faders in the client's mixer window can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with MacOS and Linux). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There are two parameters you can set: `Channel` and `Offset`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and the second parameter to the Control Number you want the first fader to react to. By default, the offset is 70 (for the Behringer X-Touch), which means that the first fader reacts to Control Number 70, the second to 71, and so on. 
 
 So for example, if you're using a Behringer X-Touch, sending MIDI on channel 1 and leaving the offset at default, the command would look like this: `--ctrlmidich 1`. If you have a different controller, e.g. sending MIDI on channel 2 and starting with Control Number 30, the command would be as follows: `--ctrlmidich "2;30"`
 
