@@ -6,7 +6,7 @@ permalink: "/wiki/Software-Manual"
 ---
 Aide Jamulus (Manuel du Logiciel)
 =================================
-_(Note: les copies d'écran ont été faite avec l'interface en anglais, les termes utilisés dans ce manuel correspondent au termes employés dans l'interface du logiciel en français.)_
+_(Note: les copies d'écran ont été faite avec l'interface en anglais, les termes utilisés dans ce manuel correspondent aux termes employés dans l'interface du logiciel en français.)_
 
 Fenêtre Principale
 ------------------
