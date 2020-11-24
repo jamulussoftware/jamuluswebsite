@@ -1,37 +1,28 @@
 <aside id="gnav" class="fx-col-100-xs fx-col-25-m">
-  {% include langselect.html %}
-  <nav id="mnv">
-    <ul>
-      {% if site.data.navigation.nav[0] %}
-      {% for item in site.data.navigation.nav %}
-      {% if item.url %}
-      <li>
-        <h3><a href="{{ item.url | relative_url }}" class="{% if subentry.url == page.url %}selected{% endif %}">{{ item.title }}</a></h3>
-      </li>
-      {% else %}
-      <li>
-        <h3>{{ item.title }}</h3>
-      </li>
-      {% endif %}
-      {% if item.subfolderitems[0] %}
-      <li>
-        <ul>
-          {% for entry in item.subfolderitems %}
-          <li><a href="{{ entry.url }}" class="{% if entry.url == page.url %}selected{% endif %}">{{ entry.page }}</a>
-            {% if entry.subsubfolderitems[0] %}
-            <ul>
-              {% for subentry in entry.subsubfolderitems %}
-              <li><a href="{{ subentry.url }}" class="{% if subentry.url == page.url %}selected{% endif %}">{{ subentry.page }}</a></li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </li>
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-    </ul>
-  </nav>
+	{% include langselect.html %}
+	<nav id="mnv">
+		<ul>
+			{% if site.data.navigation.nav[0] %} {% for item in site.data.navigation.nav %} {% if item.url %}
+			<li>
+				<h3><a href="{{ item.url | relative_url }}" class="{% if subentry.url == page.url %}selected{% endif %}">{{ item.title }}</a></h3>
+				{% else %}
+				<li>
+					<h3>{{ item.title }}</h3>
+					{% endif %} {% if item.subfolderitems[0] %}
+					<ul>
+						{% for entry in item.subfolderitems %}
+						<li><a href="{{ entry.url }}" class="{% if entry.url == page.url %}selected{% endif %}">{{ entry.page }}</a> {% if entry.subsubfolderitems[0] %}
+							<ul>
+								{% for subentry in entry.subsubfolderitems %}
+								<li><a href="{{ subentry.url }}" class="{% if subentry.url == page.url %}selected{% endif %}">{{ subentry.page }}</a></li>
+								{% endfor %}
+							</ul>
+							{% endif %}
+						</li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% endif %} {% endfor %} {% endif %}
+		</ul>
+	</nav>
 </aside>
