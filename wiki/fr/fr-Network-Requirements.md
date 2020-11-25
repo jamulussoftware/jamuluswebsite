@@ -9,7 +9,8 @@ permalink: "/wiki/Network-Requirements"
 
 ## Bande passante audio
 
-Les paramètres audio ont un impact sur la bande passante requise pour réseau. Le tableau ci-dessous résume les exigences pour débit Internet en ce qui concerne la configuration de :
+Les paramètres audio ont un impact sur la bande passante requise pour réseau.  
+Le tableau ci-dessous résume les exigences pour débit Internet en ce qui concerne la configuration de :
 
 * canaux : stéréo/mono
 * qualité : haute/moyenne/basse
@@ -32,7 +33,7 @@ Avec les unités suivantes :
 
 ## Bande passante réseau
 
-Il y a un débit montant (le musicien envoie au serveur) et un débit descendant (le serveur renvoie le mix au musicien)![image](https://user-images.githubusercontent.com/9976944/79274940-999b0b00-7ea5-11ea-85be-3ded5ee198d5.png)
+Il y a un débit montant (le musicien envoie au serveur) et un débit descendant (le serveur renvoie le mix au musicien) ![image](https://user-images.githubusercontent.com/9108457/100272270-1bced000-2f5b-11eb-87d6-59531470be91.png)
 
 Notez également que le débit moyen pour l'ADSL 2 est de 10 Mbits/seconde pour le débit descendant et de 1 Mbit/seconde pour le débit montant. Les performances réelles dépendent de la distance et de l'atténuation de la ligne téléphonique, qui peut [théoriquement varier de 24 Mb/s à 300 m à 1,5 Mb/s à 5,2 km](https://fr.wikipedia.org/wiki/ADSL#Estimation_du_d%C3%A9bit_maximal_r%C3%A9el_en_fonction_de_la_longueur_de_la_ligne) pour le débit.
 
