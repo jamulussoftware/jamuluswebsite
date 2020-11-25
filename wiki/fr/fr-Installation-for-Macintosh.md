@@ -25,13 +25,13 @@ Vous pouvez également [compiler vous même le logiciel](Compiling) si vous en a
 
 Pour résoudre ce problème, accédez au dossier Applications via le Finder, cliquez sur Jamulus, faites un clic droit (ou un contrôle-clic) et sélectionnez « Ouvrir » dans le haut du menu contextuel.
 
-Vous aurrez alors une version légèrement différente du même message, qui vous permettra de cliquer sur « Ouvrir » et de continuer à l'exécuter. Cet avertissement ne s'affichera plus - il suffit de double-cliquer dessus pour le lancer. Pour plus d'informations, consultez [cette page d'assistance Apple](https://support.apple.com/fr-fr/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
+Vous aurez alors une version légèrement différente du même message, qui vous permettra de cliquer sur « Ouvrir » et de continuer à l'exécuter. Cet avertissement ne s'affichera plus et il suffira de double-cliquer dessus pour le lancer. Pour plus d'informations, consultez [cette page d'assistance Apple](https://support.apple.com/fr-fr/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
 
 **Vous pouvez également consulter [cet excellent guide](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener nore ferrer"} (en anglais) par [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (ou [directement sur Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"}).**
 
 ## Tout est installé ?
 
-**Jamulus** a été installé et peut être utilisé maintenant. Si vous n'avez pas encore installé et configuré votre matériel audio, consultez la section [configuration du matériel](Hardware-Setup).
+Jamulus a été installé et peut être utilisé maintenant. Si vous n'avez pas encore installé et configuré votre matériel audio, consultez la section [configuration du matériel](Hardware-Setup).
 
 Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouvez aussi consulter le [Maunuel du Logiciel](Software-Manual).
 
