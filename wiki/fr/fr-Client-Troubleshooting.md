@@ -56,8 +56,7 @@ Vérifiez d'abord que vous avez le bon serveur de genre musical sélectionné da
 
 Au Royaume-Uni (et éventuellement dans d'autres régions/routeurs), le réglage du modem Internet par câble de Virgin Media peut poser problème. La case « Block Fragmented IP Packets » ne doit pas être cochée. Pour les autres routeurs/<abbr title="Fournisseur de Services Internet">FSI</abbr>, essayez également de désactiver le SPI (Stateful Packet Inspection) et si cela résout le problème, vous pouvez décider de le laisser désactivé ou non.
 
-Dans certains cas, il se peut que ce soit votre fournisseur d'accès Internet qui bloque votre utilisation de Jamulus. Voir la note sur la [page de dépannage du serveur](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-local) à propos de "Personne ne peut se connecter à mon serveur".
-<!-- TODO: to be updated after translating Server-Troubleshooting.md -->
+Dans certains cas, il se peut que ce soit votre fournisseur d'accès Internet qui bloque votre utilisation de Jamulus. Voir la note sur la [page de dépannage du serveur](Server-Troubleshooting#personne-ne-peut-se-connecter-à-mon-serveur-mais-je-peux-my-connecter-localement) à propos de "Personne ne peut se connecter à mon serveur".
 
 ### Des problèmes pour utiliser Garageband (ou autre DAW) avec Jamulus ? 
 
