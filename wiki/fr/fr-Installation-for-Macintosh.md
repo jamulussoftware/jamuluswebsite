@@ -15,7 +15,7 @@ Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started) avant de c
 1. **Glissez et déposez les deux icônes dans votre dossier Applications** pour installer Jamulus.
 1. **Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application. Si vous voyez un message qui vous dit que Jamulus ne peut pas être ouvert parce que le développeur ne peut pas être vérifié, lisez la suite et jetez un coup d'œil à la section suivante.
 
-_Vous pouvez supprimer le dossier dans le dossier Téléchargement contenant le `.dmg` et éjecter le lecteur "Jamulus" de votre bureau. Ils ne sont plus nécessaires._
+_Vous pouvez supprimer le dossier dans le répertoire Téléchargements contenant le `.dmg` et éjecter le lecteur "Jamulus" de votre bureau. Ils ne sont plus nécessaires._
 
 Vous pouvez également [compiler vous même le logiciel](Compiling) si vous en avez envie.
 
