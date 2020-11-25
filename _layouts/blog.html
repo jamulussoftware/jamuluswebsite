@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html lang="{{ site.active_lang }}">
+
+<head>
+  <title>{{ page.title }} {{ site.data.general.blog.titleAdd }}</title>
+  {% include headtags.html %}
+  <link rel="stylesheet" href="/assets/css/blog.css">
+  <meta name="description" content="{{ page.metadescription }}">
+</head>
+
+<body class="blogsite">
+  <header class="fx-row fx-row-between-xs fx-text-center">
+    <div class="fx-col fx-text-center"><a href="/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}">
+        <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" /></a>
+    </div>
+    <div class="fx-col-center-xs fx-txt-right hide-on-dt">
+      <a href="#mnv" onclick="showNav();return false;">{% include general/navbtn.html %}</a>
+    </div>
+    <div class="fx-col-100-xs fx-txt-center">
+      <h1>{{ page.title }}</h1>
+      {% if page.author %}
+        {{ site.data.general.blog.by }} {{ page.author }}
+      {% endif %}
+    </div>
+  </header>
+  <div class="fx-row fx-row-center-xs">
+    {% include general/nav.html %}
+    <div id="maincontainer" class="fx-col-100-xs fx-col-50-m">
+      <noscript class="red"><strong>{{ site.data.general.tNoJSEnabled }}</strong></noscript>
+      <main lang="{{ page.lang }}">{{ content }}</main>
+    </div>
+    <aside class="fx-col-begin-xs fx-col-100-xs fx-col-10-m">
+      <p>
+        {{ site.data.general.blog.blogintro }}
+        <ul>
+          <li><a href="/blog">{{ site.data.general.blog.moretiptrick }}</a></li>
+          <li><a href="{{ site.blognewpage }}">{{ site.data.general.blog.newpage }}</a></li>
+        </ul>
+      </p>
+    </aside>
+  </div>
+  {% include footer.html %}
+</body>
+
+</html>
