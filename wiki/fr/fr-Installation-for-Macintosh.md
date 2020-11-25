@@ -35,4 +35,4 @@ Jamulus a été installé et peut être utilisé maintenant. Si vous n'avez pas 
 
 Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouvez aussi consulter le [Maunuel du Logiciel](Software-Manual).
 
-Et sur le site [Bassetorius](https://www.bassetorius.fr/applications/jamulus/){: target="_blank" rel="noopener noreferrer"} vous trouverez une série d'articles bien faits et détaillés, en Français, sur l'utilisation de Jamulus.
+Et sur le site [Bassetorius](https://www.bassetorius.fr/applications/jamulus/){: target="_blank" rel="noopener noreferrer"} vous trouverez une série d'articles bien faits et détaillés, en français, sur l'utilisation de Jamulus.
