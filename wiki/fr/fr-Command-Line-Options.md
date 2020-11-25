@@ -7,7 +7,7 @@ permalink: "/wiki/Command-Line-Options"
 
 # Options en ligne de commande
 
-Si les fonctions les plus courantes de Jamulus peuvent être définies à l'aide de l'interface graphique, Jamulus peut également être contrôlé à l'aide de ces options en lorsqu'il est démarré en ligne de commande. La manière exacte de procéder dépendra de votre système d'exploitation.
+Si les fonctions les plus courantes de Jamulus peuvent être définies à l'aide de l'interface graphique, Jamulus peut également être contrôlé à l'aide de ces options lorsqu'il est démarré en ligne de commande. La manière exacte de procéder dépendra de votre système d'exploitation.
 
 Par exemple, sous Windows pour activer l'enregistrement avec l'option `-R` : cliquez avec le bouton droit de la souris sur le raccourci Jamulus pour afficher le menu contextuel, choisissez `Propriétés` > `Cible` et ajoutez les arguments nécessaires au fichier `Jamulus.exe` :
 
