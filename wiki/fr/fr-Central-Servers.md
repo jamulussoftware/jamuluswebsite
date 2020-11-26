@@ -7,13 +7,13 @@ permalink: "/wiki/Central-Servers"
 
 # Enregistrement du serveur public
 
-En mai 2020, afin de minimiser le problème du dépassement de la limite de serveurs, nous avons créé des serveurs centraux basés sur le genre musical (chacun avec une limite actuelle de 150 serveurs). 
+En mai 2020, afin de minimiser le problème de la saturation du serveur central, nous avons créé plusieurs serveurs centraux basés sur le genre musical (chacun pouvant lister 150 serveurs au maximum). 
 
-Lorsque vous démarrez un serveur public, vous verrez un message indiquant si votre serveur a été listé avec succès ou non. Si vous laissez votre serveur en marche, il réessaiera de s'inscrire jusqu'à ce qu'un créneau libre soit disponible.  
+Lorsque vous démarrez un serveur public, vous verrez un message vous indiquant si votre serveur a été enregistré avec succès ou non. Si vous laissez votre serveur en fonction, il réessaiera de s'inscrire jusqu'à ce qu'un créneau soit libéré.  
 
-## Serveur sans GUI (_Headless server_)
+## Serveur sans <abbr title="Interface utilisateur graphique">IUG</abbr>
 
-À partir de Jamulus v3.5.4, vous devrez définir le serveur central (genre) manuellement en utilisant l'option `--centralserver` (`-e`) comme suit : 
+À partir de la version v3.5.4 de Jamulus, vous devrez définir le serveur central (genre) manuellement en utilisant l'option `--centralserver` (`-e`) comme suit : 
 
 |                 Genre                    |           Adresse du serveur            |
 |------------------------------------------|-----------------------------------------|
