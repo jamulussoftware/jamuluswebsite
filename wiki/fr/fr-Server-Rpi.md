@@ -15,7 +15,7 @@ _Jamulus à été testé sur un Raspberry Pi 4 2Gb par l'utilisateur de Jamulus,
 
 1. Editez le fichier [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) pour activer le démarrage sans l'HDMI `hdmi_force_hotplug=0`
 
-1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** le(s) package(s) Jack. Il n'y en a pas besoin pour un [serveur sans interface graphique](Server-Linux#serveur-sans-interface-graphique). Pour installer et utiliser le client, installez toutes les dépendances.
+1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** le(s) package(s) Jack. Il n'y en a pas besoin pour un [serveur sans <abbr title="Interface graphique utilisateur">IUG</abbr>](Server-Linux#serveur-sans-iug). Pour installer et utiliser le client, installez toutes les dépendances.
 
 1. Compilez le code source pour un serveur en suivant [ces instructions](Server-Linux#compiler-le-code-source). Pour compiler le client suivez [ces instructions](Installation-for-Linux#compiler-jamulus).
 
