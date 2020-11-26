@@ -200,4 +200,4 @@ Pour plus d'information sur l'utilisation de `journalctl`, consultez la page de 
 `man journalctl`
 
 ### Que fait l'option de compilation « headless » ?
-Bien ça ne soit pas strictement nécessaire, nous recommandons d'utiliser l'option `headless` pour accélérer la compilation. Les utilisateurs de Gentoo peuvent également éviter d'installer certaines dépendances en conséquence. [Plus d'informations ici](Compiling#option-de-compilation-headless).
+Bien que ça ne soit pas strictement nécessaire, nous recommandons d'utiliser l'option `headless` pour accélérer la compilation. Les utilisateurs de Gentoo peuvent également éviter d'installer certaines dépendances en conséquence. [Plus d'informations ici](Compiling#option-de-compilation-headless).
