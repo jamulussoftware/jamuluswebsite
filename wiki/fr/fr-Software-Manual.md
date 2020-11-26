@@ -67,7 +67,7 @@ Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour ne rép
 Si vous connaissez l'adresse IP ou l'URL d'un serveur, vous pouvez vous y connecter en utilisant le champ « Adresse du serveur ». Un numéro de port optionnel peut être ajouté après l'adresse IP ou l'URL en utilisant deux points comme séparateur, par exemple jamulus.example.com:22124. Le champ affichera également une liste des adresses de serveur les plus récemment utilisées.
 Si le serveur écoute sur le port par défaut (22124) il n'est pas nécéssaire de le spécifier.
 
-### Bouton _Me Silencer_
+### Bouton Me Silencer
 
 Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et voir vos propres niveaux d'entrée, mais pas les autres musiciens. Sachez que les autres musiciens ne sauront pas si vous vous êtes mis en sourdine.
 
@@ -82,7 +82,7 @@ La sélection du canal mono et le niveau de réverbération peuvent être modifi
 
 ![Panoramique ou Balance audio](https://user-images.githubusercontent.com/20726856/97361250-8c70c700-189f-11eb-82c2-9a9d768dcfff.png)
 
-Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le potentiomètre dans une direction où l'étiquette au-dessus du potentiomètre indique G -x, où x est l'indicateur d'atténuation appliqué.
+Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le curseur dans une direction où l'étiquette au-dessus du potentiomètre indique G -x, où x est l'indicateur d'atténuation appliqué.
 
 ### Console de mixage du serveur
 
@@ -92,7 +92,7 @@ Dans la console de mixage, un potentiomètre linéaire est affiché pour chaque 
 
 Le VU-mètre indique le niveau d'entrée au serveur, c'est-à-dire le son envoyé.
 
-Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez également un contrôle de panoramique.
+Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez également un contrôle de balance.
 
 Si vous voyez une icône "muet" au-dessus d'un canal, cela signifie que le musicien ne peut pas vous entendre. Soit ils vous ont mis en sourdine, soit ils ont mis en solo un ou plusieurs canaux sans inclure le vôtre, soit ils ont réglé votre potentiomètre dans leur console de mixage à zéro.
 
