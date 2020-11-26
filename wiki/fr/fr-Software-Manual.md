@@ -11,7 +11,7 @@ _(Note: les copies d'écran ont été faite avec l'interface en anglais, les ter
 Fenêtre Principale
 ------------------
 
-![Main window](https://user-images.githubusercontent.com/20726856/97360410-77476880-189e-11eb-99c6-f4a68258bf31.png)
+![Fenêtre Principale](https://user-images.githubusercontent.com/20726856/97360410-77476880-189e-11eb-99c6-f4a68258bf31.png)
 
 ### LEDs d'état
 
@@ -28,9 +28,9 @@ La LED **Délai** indique l'état actuel du retard audio :
 La LED **Tampons** indique l'état actuel de l'audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela peut être dû à l'un des problèmes suivants :
 
 - Le tampon de gigue[^1] réseau n'est pas assez grand pour la gigue actuelle de l'interface réseau ou audio.
-- Le délai de la carte son (taille de la mémoire tampon) est trop faible (voir la fenêtre des paramètres).
+- Le délai de l'interface audio (taille de la mémoire tampon) est trop faible (voir la fenêtre des paramètres).
 - Le debit montant ou le débit descendant est trop élevé pour votre bande passante Internet.
-- Le processeur (CPU) du client ou du serveur est à 100 %.
+- Le processeur du client ou du serveur est à 100 %.
 
 ### Niveau d'entrée
 
@@ -50,9 +50,9 @@ Si un nouveau message de tchate arrive et que la fenêtre du tchate n'est pas en
 
 ![Profil de musicien](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
 
-Dans le menu _Vue_, sélectionnez _Mon profil_ pour définir votre alias/nom qui s'affiche sous votre potentiomètre dans la console de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes correspondant à ces paramètres seront également affichées sous votre potentiomètre. Le paramètre de compétence modifie la couleur de fond du de l'etiquette du potentiomètre et l'entrée de la ville apparaît dans l'info-bulle au survol de l'etiquette du canal (voir la capture d'écran ci-dessous).
+Dans le menu _Vue_, sélectionnez _Mon profil_ pour définir votre alias/nom qui s'affiche sous votre canal dans la console de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes correspondant à ces paramètres seront également affichées sous votre potentiomètre. Le paramètre de compétence modifie la couleur de fond du de l'etiquette du potentiomètre et l'entrée de la ville apparaît dans l'info-bulle au survol de l'etiquette du canal (voir la capture d'écran ci-dessous).
 
-![Astuce pour les balises de curseur](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
+![Astuce pour les etiquettes de canal](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
 
 ### Bouton de connexion/déconnexion
 
@@ -76,7 +76,7 @@ Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et v
 ![Réverb](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
 La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.
-La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de l'interface audio et que vous voullez y appliquer un effet de réverbération, réglez le sélecteur de canal sur la droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
+La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de l'interface audio et que vous voullez y appliquer un effet de réverbération, réglez le sélecteur de canal sur le canal de droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
 
 ### Contrôle local du panoramique ou de la balance audio
 
@@ -88,17 +88,17 @@ Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un
 
 ![Faders audio](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
-Dans la console de mixage, un potentiomètre linéaire est affiché pour chaque client connecté au serveur (y compris vous-même). Les potentiomètres linéaire vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
+Dans la console de mixage, un potentiomètre linéaire est affiché pour chaque client connecté au serveur (y compris vous-même). Les potentiomètres linéaires vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
 
 Le VU-mètre indique le niveau d'entrée au serveur, c'est-à-dire le son envoyé.
 
-Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez également un contrôle de balance.
+Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez alors un contrôle de balance audio.
 
-Si vous voyez une icône "muet" au-dessus d'un canal, cela signifie que le musicien ne peut pas vous entendre. Soit ils vous ont mis en sourdine, soit ils ont mis en solo un ou plusieurs canaux sans inclure le vôtre, soit ils ont réglé votre potentiomètre dans leur console de mixage à zéro.
+Si vous voyez une icône « muet » au-dessus d'un canal, cela signifie que le musicien ne peut pas vous entendre. Soit il vous a mis en silence, soit il a mit en solo un ou plusieurs canaux sans inclure le vôtre, soit il a réglé votre potentiomètre dans sa console de mixage à zéro.
 
-L'utilisation du bouton **Muet** empêche d'entendre le canal séléctionné dans votre mixage local. Sachez que lorsque vous mettez un musicien en sourdine, il verra une icône « muet » au-dessus de votre potentiomètre pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir leurs VU-mètres bouger si le signal du musicien mis en sourdine atteint le serveur. La position de votre potentiomètre n'est pas non plus affectée.
+L'utilisation du bouton **Muet** empêche d'entendre le canal séléctionné dans votre mixage local. Sachez que lorsque vous mettez un musicien en silence, il verra une icône « muet » au-dessus de votre potentiomètre pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètres bouger si le signal du musicien mis en sourdine atteint le serveur. La position de son potentiomètre n'est alors pas affectée.
 
-Le bouton **Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en sourdine. Notez également que les musiciens qui ne sont pas en solo verront une icône « muet » au-dessus de votre potentiomètre.
+Le bouton **Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en silence. Notez également que les musiciens qui ne sont pas en solo verront une icône « muet » au-dessus de votre potentiomètre.
 
 Les canaux sont répertoriés de gauche à droite dans l'ordre dans lequel les clients se connectent jusqu'à ce qu'ils partent, leur « créneau » étant alors occupé par le nouvel arrivant suivant. Vous pouvez modifier l'ordre de tri en utilisant l'option « Modifier » dans le menu de l'application.
 
@@ -124,23 +124,23 @@ Le pilote ASIO (« Périphérique ») peut être sélectionné à l'aide de Jam
 
 ![Sélection des entrées/sorties](https://user-images.githubusercontent.com/20726856/97361637-1caf0c00-18a0-11eb-9b65-81225b7e3dd5.png)
 
-Si le dispositif de l'interface audio utilisée offre plus d'un canal d'entrée ou de sortie, les paramètres de configuration de l'assignation des canaux d'entrée et de sortie sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droite), un canal différent de l'interface audio peut être sélectionné.
+Si votre interface audio offre plus d'un canal d'entrée ou de sortie, les paramètres de configuration de l'assignation des canaux d'entrée et de sortie sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droite), un canal différent de l'interface audio peut être sélectionné.
 
 ### Activer les petits tampons de réseau
 
-Permet la prise en charge de très petits paquets audio en réseau. Ils ne sont utilisés que si le délai de la mémoire tampon de l'interface audio est inférieur à 128 échantillons. Plus les tampons réseau sont petits, plus la latence audio est faible. Mais en même temps, la bande passante augmente et la probabilité d'interruption de l'audio augmente également.
+Permet la prise en charge de très petits paquets audio en réseau. Ils ne sont utilisés que si la taille de la mémoire tampon de l'interface audio est inférieur à 128 échantillons. Plus les tampons réseau sont petits, plus la latence audio est faible. Mais en même temps, la bande passante augmente et la probabilité d'interruption du signal augmente également.
 
 ### Délai de temporisation
 
 ![Délai de temporisation](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
 
-Le réglage du délai de temporisation est un réglage fondamental du logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
+Le réglage du délai de temporisation est un réglage fondamental pour Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
 
-- 2,67ms (64 samples) : Fournit la latence la plus faible mais ne fonctionne pas avec toutes les interfaces audio.
-- 5,33ms (128 samples) : (le paramètre par défaut) Devrait fonctionner pour la plupart des interfaces audio disponibles.
-- 10,67ms (256 samples) : Ne devrait être utilisé que sur des ordinateurs très lents, ou avec une connexion internet avec une faible bande passante.
+- 2,67ms (64 échantillons) : Fournit la latence la plus faible mais ne fonctionne pas avec toutes les interfaces audio.
+- 5,33ms (128 échantillons) : (le paramètre par défaut) Devrait fonctionner pour la plupart des interfaces audio disponibles.
+- 10,67ms (256 échantillons) : Ne devrait être utilisé que sur des ordinateurs très lents, ou avec une connexion internet avec une faible bande passante.
 
-Certains pilotes d'interfaces audio ne permettent pas de modifier le délai de tamporisation à partir du logiciel Jamulus.
+Certains pilotes d'interface audio ne permettent pas de modifier le délai de tamporisation à partir de Jamulus.
 Dans ce cas, le réglage du délai de temporisation est désactivé et doit être modifié à l'aide du pilote de l'interface audio. Sous Windows, appuyez sur le bouton ASIO Setup pour ouvrir le panneau de contrôle du pilote.
 
 ![Fenêtre du Délai de temporisation](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
@@ -215,7 +215,7 @@ Ce délai est introduit par le réseau et devrait être d'environ 20 à 30 ms. S
 
 Le délai global est calculé à partir du temps de réponse actuel et du délai introduit par les paramètres de la mémoire tampon.
 
-Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de la qualité audio. Assurez-vous que le débit montant n'est pas supérieur à votre bande passante (vérifiez cela avec un service tel que [speedtest.net](http://speedtest.net)).
+Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de la qualité audio. Assurez-vous que le débit montant n'est pas supérieur à votre bande passante (vérifiez ça avec un service tel que [speedtest.net](http://speedtest.net)).
 
 ----
 ## Notes
