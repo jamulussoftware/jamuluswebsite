@@ -1,3 +1,7 @@
+---
+pagination:
+  enabled: true
+---
 <!DOCTYPE html>
 <!--[if IE 9]> <html class="ie9"> <![endif]-->
 <html lang="{{ site.active_lang }}">
@@ -6,7 +10,6 @@
   <title>{{ page.title }} {{ site.data.general.blog.titleAdd }}</title>
   {% include headtags.html %}
   <link rel="stylesheet" href="/assets/css/blog.css">
-  <meta name="description" content="{{ page.metadescription }}">
 </head>
 
 <body class="blogsite">
@@ -20,7 +23,7 @@
     <div class="fx-col-100-xs fx-txt-center">
       <h1>{{ page.title }}</h1>
       {% if page.author %}
-        {{ site.data.general.blog.by }} {{ page.author }}
+      {{ site.data.general.blog.by }} {{ page.author }}
       {% endif %}
     </div>
   </header>
@@ -31,13 +34,20 @@
       <main lang="{{ page.lang }}">{{ content }}</main>
     </div>
     <aside class="fx-col-begin-xs fx-col-100-xs fx-col-10-m">
-      <p>
+      <p id="blogintro">
         {{ site.data.general.blog.blogintro }}
-        <ul>
-          <li><a href="/blog">{{ site.data.general.blog.moretiptrick }}</a></li>
-          <li><a href="{{ site.blognewpage }}">{{ site.data.general.blog.newpage }}</a></li>
-        </ul>
       </p>
+      <ul id="blogside">
+        <li><a href="/blog">{{ site.data.general.blog.mainpage }}</a></li>
+        {% if page.previous.url %}
+          <li><a class="prev" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a></li>
+        {% endif %}
+        {% if page.next.url %}
+          <li><a class="next" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a></li>
+        {% endif %}
+        <li> <a href="{{ site.blognewpage }}">{{ site.data.general.blog.newpage }}</a>
+        </li>
+      </ul>
     </aside>
   </div>
   {% include footer.html %}

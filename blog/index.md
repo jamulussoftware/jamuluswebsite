@@ -1,7 +1,7 @@
 ---
-layout: blog
-title: "Overview"
+layout: bloglist
+pagination:
+  enabled: true
 lang: "en"
-heading: "Jamulus blog"
+title: "Overview"
 ---
-## Welcome to the Jamulus blog

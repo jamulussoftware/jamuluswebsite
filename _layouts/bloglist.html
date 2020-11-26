@@ -1,0 +1,80 @@
+---
+pagination:
+  enabled: true
+---
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html lang="{{ site.active_lang }}">
+
+<head>
+  <title>{{ page.title }} {{ site.data.general.blog.titleAdd }}</title>
+  {% include headtags.html %}
+  <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+
+<body class="blogsite">
+  <header class="fx-row fx-row-between-xs fx-text-center">
+    <div class="fx-col fx-text-center"><a href="/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}">
+        <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" /></a>
+    </div>
+    <div class="fx-col-center-xs fx-txt-right hide-on-dt">
+      <a href="#mnv" onclick="showNav();return false;">{% include general/navbtn.html %}</a>
+    </div>
+    <div class="fx-col-100-xs fx-txt-center">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </header>
+  <div class="fx-row fx-row-center-xs">
+    {% include general/nav.html %}
+    <div id="maincontainer" class="fx-col-100-xs fx-col-50-m">
+      <noscript class="red"><strong>{{ site.data.general.tNoJSEnabled }}</strong></noscript>
+      <main lang="{{ page.lang }}">
+        {{ content }}
+        {% for post in paginator.posts %}
+          <article>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a> | {{ post.date | date_to_string }}</h2>
+            {% if post.author %}
+              {{ site.data.general.blog.by }} {{ post.author }}
+            {% endif %}
+            {{ post.excerpt }}
+            <a href="{{ post.url }}">{{ site.data.general.blog.readmore }}</a>
+          </article>
+          <hr />
+        {% endfor %}
+        {% if paginator.total_pages > 1 %}
+        <ul>
+          {% if paginator.previous_page %}
+          <li>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+          </li>
+          {% endif %}
+          {% if paginator.next_page %}
+          <li>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+          </li>
+          {% endif %}
+        </ul>
+        {% endif %}
+      </main>
+    </div>
+    <aside class="fx-col-begin-xs fx-col-100-xs fx-col-10-m">
+      <p id="blogintro">
+        {{ site.data.general.blog.blogintro }}
+      </p>
+      <ul id="blogside">
+        <li><a href="/blog">{{ site.data.general.blog.mainpage }}</a></li>
+        {% if page.previous.url %}
+          <li><a class="prev" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a></li>
+        {% endif %}
+        {% if page.next.url %}
+          <li><a class="next" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a></li>
+        {% endif %}
+        <li> <a href="{{ site.blognewpage }}">{{ site.data.general.blog.newpage }}</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  {% include footer.html %}
+</body>
+
+</html>

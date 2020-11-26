@@ -1,12 +1,12 @@
 ---
-layout: blog
+layout: post
 title: "Using Multiple Audio Interfaces"
 heading: "Using multiple Audio interfaces"
 lang: "en"
 ---
 
 It is possible to run Jamulus with multiple Audio Interfaces on all three operating systems. Useful when we need to output an instrument through external audio card for minimal latency and computer microphone for communication. Other use cases may apply.
-
+<!--more-->
 
 ### Windows
 

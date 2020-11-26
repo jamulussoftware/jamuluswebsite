@@ -1,10 +1,12 @@
 ---
-layout: blog
+layout: post
 title: "Software Synth in Jamulus"
 lang: "en"
 author: "Engelbert Niehaus"
 heading: "Software Synth in Jamulus"
 ---
+This post will discuss how to setup a software synth in Jamulus.
+<!--more-->
 
 ## Linux
 We will elaborate the concept of playing a software synth on Linux as example and transfer that to other operating systems (e.g. Windows, MacOSX).
