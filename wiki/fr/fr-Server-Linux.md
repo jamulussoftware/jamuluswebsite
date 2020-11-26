@@ -1,17 +1,17 @@
 ---
 layout: wiki
-title: "Installation du serveur sous Linux"
+title: "Installation d'un serveur sous Linux"
 lang: "fr"
 permalink: "/wiki/Server-Linux"
 ---
 
-# Installation du serveur sous Linux
+# Installation d'un serveur sous Linux
 
-**_Veuillez vous assurer que vous avez bien lu&nbsp;: [Gestion d'un serveur](Running-a-Server)_**
+**_Assurez-vous d'abord de lire : [Gestion d'un serveur](Running-a-Server)_**
 
-## Serveur avec interface graphique
+## Serveur avec GUI
 
-Si vous prévoyez d'exécuter le serveur sur votre machine de bureau (et que vous avez déjà [installé le client Jamulus](Installation-for-Linux)), vous pouvez l'exécuter dans le [mode serveur de votre choix](Choosing-a-Server-Type) en exécutant Jamulus avec l'option `-s` comme suit :
+Si vous prévoyez d'exécuter le serveur sur votre poste de travail (et que vous avez déjà [installé le client Jamulus](Installation-for-Linux)), vous pouvez exécuter le serveur dans le [mode de votre choix](Choosing-a-Server-Type) en exécutant Jamulus avec l'option `-s` comme suit :
 
 1. Ouvrez un terminal de commande (`CTRL+ALT+t` sur Ubuntu et distributions dérivées).
 1. Partons du principe que Jamulus est dans `/usr/local/bin`, et tapons `Jamulus -s`
@@ -22,40 +22,37 @@ Validez avec `[Entrée]` et vous devriez voir la fenêtre de contrôle du serveu
 
 Voir aussi les [options de la ligne de commande](Command-Line-Options) pour les paramètres que vous pouvez passer.
 
-## Serveur sans interface graphique
-_("Headless server")_
+## Serveur sans GUI
 
-Le guide suivant permet de faire fonctionner Jamulus comme un « pur » serveur sur du matériel dédié sans audio ni interface graphique (par exemple un serveur dédié en datacenter ou dans le _cloud_ ou encore une machine dédiée) et suppose des distributions Ubuntu/Debian utilisant systemd. Nous avons également des instructions pour les [Raspberry Pi](Server-Rpi) qui pourraient être utiles.
+Le guide suivant est destiné à l'administration d'un « pur » serveur Jamulus sur du matériel dédié sans audio ni interface graphique (par exemple un serveur dédié en datacenter ou dans le _cloud_ ou encore une machine dédiée) et suppose des distributions Ubuntu/Debian utilisant systemd. Nous avons également des instructions pour les [Raspberry Pi](Server-Rpi) qui pourraient être utiles.
 
 * _Un utilisateur de Jamulus, [Grigory](https://sourceforge.net/u/cidnurg/profile/), maintient une **[image Docker pour Jamulus](https://hub.docker.com/r/grundic/jamulus)** que vous pouvez utiliser._
 
-* _Un autre utilisateur de Jamulus, [skrul](https://sourceforge.net/u/skrulx/profile/), à égualement déployé un certain nombre de **public Amazon EC2 AMIs** sous Ubuntu 18.04 pour faire fonctionner Jamulus. [Voir cette page](Jamulus-Cloud) (en anglais) pour plus de détails._
+### Compilation des sources, création d'un utilisateur
 
-### Compiler le code source
-
-1. [Téléchargez le code source](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dependances) comme indiqué dans le guide d'installation sous Linux. À noter, **il n'y a pas besoin d'installer le(s) package(s) Jack** pour un serveur dédié sans interface graphique. _Si vous prévoyez de compilier le serveur sous Gentoo, ou prévoyez de compiler sous Ubuntu pour l'utiliser sur une autre machine sous Ubuntu, [voir les notes de bas de page](#le-drapeau-headless)._
-2. Compilez les sources en ignorant la librairie audio Jack& :
+1. [Téléchargez le code source](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dependances) comme indiqué dans le guide d'installation sous Linux. À noter, **il n'y a pas besoin d'installer le(s) package(s) Jack** pour un serveur sans <abbr title="Graphic User Interface : Interface graphique en français">GUI</abbr>. _Si vous prévoyez d'éxecuter un serveur sans <abbr title="Graphic User Interface : Interface graphique en français">GUI</abbr> sous Gentoo, ou compilez sous Ubuntu pour une utilisation sur une autre machine Ubuntu, [voir les notes de bas de page](#que-fait-loption-de-compilation--headless--)._
+2. Compilez les sources en ignorant la librairie audio Jack :
 ~~~
 qmake "CONFIG+=nosound headless" Jamulus.pro
 make clean
 make
 ~~~
-3. Déplacez le fichier binaire `Jamulus` dans un répertoire permanent, ou utilisez la commande `sudo make install` qui installe le binaire dans `/usr/local/bin`.  
-Vous pouvez supprimer le répertoire contenant les sources si vous le désirez.  
-**Le reste de ce guide part du principe que vous avez installé le binaire à l'emplacement par défaut&nbsp;: `/usr/local/bin/Jamulus`**.
+3. Déplacez le fichier binaire `Jamulus` dans un emplacement permanent, ou utilisez la commande `sudo make install`.  
+Vous pouvez désormais supprimer le répertoire contenant les sources si vous le désirez.  
+    
+**Le reste de ce guide part du principe que vous avez installé le binaire à l'emplacement par défaut : `/usr/local/bin/Jamulus`**.  
 4. Créez un utilisateur système sans privilèges pour le serveur (il s'exécutera en tant qu'utilisateur _jamulus_, groupe _nogroup_.) :  
 `sudo adduser --system --no-create-home jamulus`
 
-### Création du script de démarrage
+### Création d'un script de démarrage
 
-Une fois que vous avez décidé [dans quel mode](Choosing-a-Server-Type) vous voudrez certainement que le serveur se lance au démarrage. Utilisez systemd pour le démarrer. Le reste de ce guide suppose que le serveur sera en mode _[public](Choosing-a-Server-Type#1-serveur-public)_.  
-_Veuillez également consulter cette **[note importante sur les serveurs centraux](Central-Servers)**._
+Après avoir décidé dans quel mode faire fonctionner le serveur, utilisez systemd pour le démarrer.
 
 Créez un fichier systemd qui lancera le serveur au démarrage (merci à [David Harrold](https://sourceforge.net/u/dkxl/profile/)).
 
-Le fichier systemd applique une planification CPU et E/S de haute priorité au processus du serveur. Ceci est facultatif (et peut être ignoré sur certains hôtes).
+Le fichier d'unité applique une priorité élevée à la programmation du CPU et aux I/O pour les processus du serveur (et peut être ignoré sur certains hôtes).
 
-Notez aussi que la journalisation du seveur se trouvera dans `journalctl` (utilisez [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) pour les lire).
+Notez aussi que la journalisation du seveur sera redirigé vers `journalctl` (utilisez [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) pour la consulter).
 
 ~~~
 [Unit]
@@ -87,12 +84,12 @@ SyslogIdentifier=jamulus
 WantedBy=multi-user.target
 ~~~
 
-Copier ce fichier dans `/etc/systemd/system` et donnez lui les permissions :
+Copier ce fichier dans `/etc/systemd/system` et donnez lui les bonnes permissions :
 
 `sudo cp jamulus.service /etc/systemd/system/jamulus.service`  
 `sudo chmod 644 /etc/systemd/system/jamulus.service`
 
-Testez que le lancement se passe bien et que tout est OK :
+Testez si le démarrage se passe bien :
 
 `sudo systemctl start jamulus`  
 `sudo systemctl status jamulus`
@@ -133,23 +130,16 @@ Note : Appuyez sur `q` pour quitter.
 ### Mise à jour vers une nouvelle version
 
 Téléchargez le code source de la nouvelle version comme indiqué dans les [instructions ci-dessus](#compiler-le-code-source) et suivez l'étape 2 pour compiler les sources comme pour une nouvelle installation.  
-Puis,
-1. arrêtez le serveur :  
-`sudo service jamulus stop`
-2. copiez le fichier binaire `Jamulus` à l'endroit où vous l'avez initiallement installé en écrasant l'ancien fichier, utilisez `sudo make install`si c'est ce que vous aviez fait.
-3. redémarrez le service :  
-`sudo service jamulus start`
-
-Voilà, c'est à jour !
+Arrêtez le serveur, copiez le fichier binaire Jamulus en écrasant le précédent, redémarrez le serveur.
 
 ***
 
-Voir [les options de ligne de commande](Command-Line-Options) pour les paramètres qui peuvent être configuré.
+Voir aussi [les options de ligne de commande](Command-Line-Options) pour les paramètres qui peuvent être configuré.
 
 ## Notes de bas de page
 
 ### Gestion des enregistrements
-Lorsque vous utilisez la [fonction d'enregistrement](Server-Win-Mac#recording) avec [l'option de ligne de commande](Command-Line-Options) `-R`, si le serveur reçoit un signal `SIGUSR1` pendant un enregistrement, il commencera un nouvel enregistrement dans un nouveau répertoire. `SIGUSR2` activera/désactivera l'enregistrement activé.
+Lorsque vous utilisez la [fonction d'enregistrement](Server-Win-Mac#recording) avec [l'option de ligne de commande](Command-Line-Options) `-R`, si le serveur reçoit un signal `SIGUSR1` pendant un enregistrement, il commencera un nouvel enregistrement dans un nouveau répertoire. `SIGUSR2` activera ou désactivera l'enregistrement actif.
 
 Pour envoyer ces signaux en utilisant `systemd`, créez les deux fichiers `.service` suivants dans `/etc/systemd/system`, en les appelant par un nom approprié (par exemple `newRecording-Jamulus-server.service`).
 
@@ -165,7 +155,7 @@ Type=oneshot
 ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
 ~~~
 
-Pour commencer un nouvel enregistrement :
+Pour démarrer un nouvel enregistrement :
 
 ~~~
 [Unit]
@@ -185,13 +175,13 @@ Vous pouvez maintenant les exécuter avec la commande `service start`, par exemp
 
 `sudo service jamulusTogglerec start` (en supposant que vous avez nommé le fichier `jamulusTogglerec.service`)
 
-Vous pouvez voir le résultat de ces commandes en éxécutant `service jamulus status`, ou en consultant les journaux (_voir ci dessous_).
+Vous pouvez voir le résultat de ces commandes en éxécutant `service jamulus status`, ou en consultant les journaux.
 
 ### Lire les journaux
 
-Jamulus journalisera dans le journal système si vous avez laissé le paramètre `StandardOutput=journal` dans le fichier `systemd`. Il est recommandé d'utiliser le journal du système, car le système gère le fichier journal pour vous, sans avoir à revenir le purger plus tard ou à vous soucier de l'espace disque.
+Jamulus journalisera dans le journal système si vous avez laissé le paramètre `StandardOutput=journal` dans le fichier `systemd`. Il est recommandé d'utiliser le journal du système, car le système gère le fichier journal pour vous, sans avoir à le purger plus tard ou à vous soucier de l'espace disque.
 
-Pour lire les journaux, utilisez `journalctl` (pressez `Ctrl-C`pour quitter). Par exemple, pour lire le journal système filtré pour le service Jamulus :  
+Pour lire les journaux, utilisez `journalctl` (pressez Ctrl-C pour quitter). Par exemple, pour lire le journal système filtré sur le service Jamulus :  
 `journalctl -u jamulus`
 
 Pour les entrées du jour :  
@@ -200,14 +190,14 @@ Pour les entrées du jour :
 Pour la dernière heure :  
 `journalctl -u jamulus --since "1 hour ago"`
 
-Pour n'afficher que les journaux de connexion :  
+Pour n'afficher que les messages de connexion à votre serveur Jamulus :  
 `journalctl -u jamulus | grep connected`
 
-Suivre à l'écran les journaux Jamulus à mesure qu'ils apparaissent :  
+Suivre les journaux Jamulus (à l'écran) en temps réel :  
 `journalctl -f -u jamulus`
 
-Pour plus d'information sur l'utilisation de `journalctl`, consultez la page de manuel&nbsp;:  
+Pour plus d'information sur l'utilisation de `journalctl`, consultez la page de manuel :  
 `man journalctl`
 
-### Le drapeau headless
-Bien que cela ne soit pas strictement nécessaire, nous recommandons d'utiliser l'option `headless` pour accélérer la compilation. Les utilisateurs de Gentoo peuvent également éviter d'installer certaines dépendances en conséquence. [Plus d'informations ici](Compiling#option-de-compilation-headless).
+### Que fait l'option de compilation « headless » ?
+Bien ça ne soit pas strictement nécessaire, nous recommandons d'utiliser l'option `headless` pour accélérer la compilation. Les utilisateurs de Gentoo peuvent également éviter d'installer certaines dépendances en conséquence. [Plus d'informations ici](Compiling#option-de-compilation-headless).
