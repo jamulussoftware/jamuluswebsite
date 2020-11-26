@@ -10,12 +10,12 @@ permalink: "/wiki/Installation-for-Macintosh"
 Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started) avant de commencer.
 
 1. [Téléchargez Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer" .button}
-1. **Décompressez le fichier .zip téléchargé**. Double-cliquez sur le fichier `.zip`, ce qui créera un nouveau dossier du même nom. Le dossier contient le fichier de licence et un fichier `.dmg` contenant l'application.
-1. **Double-cliquez sur le fichier `.dmg`** pour l'ouvrir. Ceci va le décompresser et vous verrez deux fichiers (client et serveur Jamulus).
-1. **Glissez et déposez les deux icônes dans votre dossier Applications** pour installer Jamulus.
+1. **Décompressez le fichier .zip téléchargé**. Double-cliquez sur l'archive `.zip` pour la décompresser, un nouveau dossier du même nom sera créé. Ce dossier contient le fichier de licence et une image disque `.dmg` contenant l'application.
+1. **Double-cliquez sur le fichier `.dmg`** pour l'ouvrir l'image et vous verrez deux fichiers (client et serveur Jamulus).
+1. **Glissez et déposez les deux icônes dans votre dossier Applications** pour installer Jamulus (client et serveur).
 1. **Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application. Si vous voyez un message qui vous dit que Jamulus ne peut pas être ouvert parce que le développeur ne peut pas être vérifié, lisez la suite et jetez un coup d'œil à la section suivante.
 
-_Vous pouvez supprimer le dossier dans le répertoire Téléchargements contenant le `.dmg` et éjecter le lecteur "Jamulus" de votre bureau. Ils ne sont plus nécessaires._
+_Vous pouvez éjecter le lecteur "Jamulus" de votre bureau et supprimer le dossier dans le répertoire Téléchargements contenant le `.dmg`. Ils ne sont plus nécessaires._
 
 Vous pouvez également [compiler vous même le logiciel](Compiling) si vous en avez envie.
 
