@@ -84,7 +84,7 @@ La sélection du canal mono et le niveau de réverbération peuvent être modifi
 
 Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le potentiomètre dans une direction où l'étiquette au-dessus du potentiomètre indique G -x, où x est l'indicateur d'atténuation appliqué.
 
-### Mélangeur audio du serveur
+### Console de mixage du serveur
 
 ![Faders audio](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
