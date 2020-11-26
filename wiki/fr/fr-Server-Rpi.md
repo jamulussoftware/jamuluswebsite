@@ -11,17 +11,17 @@ permalink: "/wiki/Server-Rpi"
 
 _Jamulus à été testé sur un Raspberry Pi 4 2Gb par l'utilisateur de Jamulus, [SIVA Frédéric](https://sourceforge.net/u/fredsiva/profile/)  
 
-1. Installez la dernière version de Raspbian Buster (activez les services [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) et [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) pour le confort, cependant ne pas utiliser VNC consommera moins de ressource et augmentera les performances.
+1. Installez la dernière version de Raspbian Buster (activez les services [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) pour le confort et [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md), cependant ne pas utiliser VNC consommera moins de ressource et augmentera les performances.
 
 1. Editez le fichier [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) pour activer le démarrage sans l'HDMI `hdmi_force_hotplug=0`
 
-1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** les package(s) Jack. Il n'y en a pas besoin pour un [serveur sans _GUI_](Server-Linux#serveur-sans-interface-graphique). Pour installer et utiliser le client, installez toutes les dépendances.
+1. [Téléchargez les sources](Installation-for-Linux#obtenir-les-sources-de-jamulus), installez les [dépendances](Installation-for-Linux#installation-des-dépendances) en suivant le guide d'installation sous Linux mais **SANS INSTALLER** le(s) package(s) Jack. Il n'y en a pas besoin pour un [serveur sans interface graphique](Server-Linux#serveur-sans-interface-graphique). Pour installer et utiliser le client, installez toutes les dépendances.
 
-1. Compilez le code source code pour un serveur en suivant [ces instructions](Server-Linux#compiler-le-code-source). Pour compiler le client suivez [ces instructions](Installation-for-Linux#compiler-jamulus).
+1. Compilez le code source pour un serveur en suivant [ces instructions](Server-Linux#compiler-le-code-source). Pour compiler le client suivez [ces instructions](Installation-for-Linux#compiler-jamulus).
 
-Ça va compiler le programme et placer le binaire ici : `/usr/local/bin/Jamulus`.
+Ça va compiler le programme et placer le binaire à cet emplacement : `/usr/local/bin/Jamulus`.
 
-Connectez Raspberry Pi en filaire avec un câble Ethernet à votre routeur.
+Connectez le Raspberry Pi en filaire avec un câble Ethernet à votre routeur.
 
 Si vous lancez Jamulus en mode serveur, vous pouvez tester en démarrant avec l'option `--server`, et accéder à l'interface graphique via VNC (ou HDMI). Si vous n'avez pas d'écran, ou de serveur graphique, connectez vous à la machine en SSH et utilisez les options `--server --nogui` (`CTRL+C` pour stopper le serveur).  
 Si vous démarrez en mode client, vous devriez voir la fenêtre du client s'afficher.
@@ -34,7 +34,7 @@ Si tout s'est bien passé, définissez le [type de serveur](Choosing-a-Server-Ty
 
 **Lisez cette [note importante à propos des serveurs centraux](Central-Servers) !**
 
-Voir aussi les [options de la ligne de commande](Command-Line-Options) pour les paramètres aui peuvent être ajustés.
+Voir aussi les [options de la ligne de commande](Command-Line-Options) pour les paramètres aui peuvent être configurés.
 
 ***
 
