@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: "Compiler Jamulus"
+title: "Compilation"
 lang: "fr"
 permalink: "/wiki/Compiling"
 ---
@@ -9,10 +9,10 @@ permalink: "/wiki/Compiling"
 
 ## Linux
 
-Veuillez vous référer aux documents [Installation sous Linux](Installation-for-Linux) ou ces instructions si vous souhaitez [compiler un serveur sans _GUI_](Server-Linux#serveur-sans-interface-graphique)
+Veuillez vous référer à la page [Installation sous Linux](Installation-for-Linux) ou suivez [ces instructions](Server-Linux#serveur-sans-gui) si vous souhaitez compiler un serveur sans <abbr title="Graphical User Interface :  Interface graphique en français.">GUI</abbr>.
 
 ## MacOS
-Il n'est pas nécéssaire de compiler Jamulus sous macOS depuis que nous fournissons les binaires officiels. Mais si vous tenez vraiment à le faire, suivez les instructions ci-dessous.
+Il n'est pas nécéssaire de compiler Jamulus sous macOS car nous fournissons les binaires officiels. Cependant, si vous souhaitez vraiment le faire, suivez les instructions ci-dessous :
 
 ### Pré-requis
 
@@ -26,12 +26,12 @@ brew link qt5 --force
 
 ### Compiler Jamulus
 
-#### Generrer le fichier de projet XCode
+#### Générez le fichier de projet XCode
 ```shell
 qmake -spec macx-xcode Jamulus.pro
 ```
 
-#### Affichez la cible et la configuration dans la console
+#### Affichez la cible et la configuration dans le terminal
 ```shell
 xcodebuild -list -project Jamulus.xcodeproj
 ```
@@ -61,7 +61,7 @@ Ceci va compiler et construire l'application `Jamulus.app` et la rendre disponib
 
 
 ## Windows
-Il n'est pas nécéssaire de compiler Jamulus sous Windows depuis que nous fournissons les binaires officiels. Mais si vous tenez vraiment à le faire, suivez les instructions ci-dessous.
+Il n'est pas nécéssaire de compiler Jamulus sous Windows car nous fournissons les binaires officiels. Cependant, si vous souhaitez vraiment le faire, suivez les instructions ci-dessous.
 
 **Logiciels pré-requis**: [QT](https://www.qt.io/download), un compilateur comme Visual Studio, les bibilothèque de développement ASIO
 
@@ -78,7 +78,7 @@ La compilation avec l'option _headless_ signifie que vous pouvez éviter d'insta
 
 1. Si vous prévoyez d'utiliser Jamulus sous Gentoo Linux, les seuls paquets dont vous devriez avoir besoin pour une compilation _headless_ sont `qtcore`, `qtnetwork` et `qtxml` (à la fois pour la compilation et l'exécution du serveur).
 
-1. Si vous voulez utilisez Jamulus sur Ubuntu/Debian, vous aurez besoin de tous les paquets dépendants pour **compiler** le binaire, mais pour **exécuter** le serveur _headless_ Jamulus résultant, vous ne devriez avoir besoin que de `libqt5core5a`, `libqt5network5`, `libqt5xml5` et probablement `libqt5concurrent5`. Cela peut être utile pour compiler/mettre à jour sur une machine afin de faire tourner le binaire sur une autre (un Raspberry Pi, par exemple).
+1. Si vous voulez utilisez Jamulus sur Ubuntu/Debian, vous aurez besoin de tous les paquets dépendants pour **compiler** le binaire, mais pour **exécuter** le serveur Jamulus sans <abbr title="Graphical User Interface : Interface graphique en français.">GUI</abbr> résultant, vous ne devriez avoir besoin que de `libqt5core5a`, `libqt5network5`, `libqt5xml5` et probablement `libqt5concurrent5`. Cela peut être utile pour compiler ou mettre à jour sur une machine et utiliser le binaire sur une autre machine (un Raspberry Pi, par exemple).
 
-1. Notez que si vous voulez compiler un client _GUI_ sur une machine et l'exécuter sur une autre (par exemple un Raspberry Pi), vous n'avez besoin que des dépendances énumérées pour un [serveur sans _GUI_](Server-Linux#serveur-sans-interface-graphique) (_voir le point ci-dessus_), seulement _avec_ les bibliothèques Jack.
+1. Notez que si vous voulez compiler un client avec <abbr title="Graphical User Interface : Interface graphique en français.">GUI</abbr> sur une machine et l'exécuter sur une autre (par exemple un Raspberry Pi), vous n'avez besoin que des dépendances énumérées pour un [serveur sans <abbr title="Graphical User Interface : Interface graphique en français.">GUI</abbr>](Server-Linux#serveur-sans-interface-graphique) (_voir le point ci-dessus_), seulement _avec_ les bibliothèques Jack.
 
