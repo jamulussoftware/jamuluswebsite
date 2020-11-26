@@ -2,7 +2,7 @@
 layout: wiki
 title: "Installation sous MacOS"
 lang: "fr"
-permalink: "/wiki/fr/Installation-for-Macintosh"
+permalink: "/wiki/Installation-for-Macintosh"
 ---
 
 # Installation sous MacOS
