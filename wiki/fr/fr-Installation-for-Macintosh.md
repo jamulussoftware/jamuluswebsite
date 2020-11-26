@@ -33,6 +33,6 @@ Vous aurez alors une version légèrement différente du même message, qui vous
 
 Jamulus a été installé et peut être utilisé maintenant. Si vous n'avez pas encore installé et configuré votre matériel audio, consultez la section [configuration du matériel](Hardware-Setup).
 
-Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouvez aussi consulter le [Maunuel du Logiciel](Software-Manual).
+Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouvez aussi consulter le [Manuel du Logiciel](Software-Manual).
 
 Et sur le site [Bassetorius](https://www.bassetorius.fr/applications/jamulus/){: target="_blank" rel="noopener noreferrer"} vous trouverez une série d'articles bien faits et détaillés, en français, sur l'utilisation de Jamulus.
