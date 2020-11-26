@@ -8,14 +8,15 @@ permalink: "/wiki/Privacy-Statement"
 # Déclaration de confidentialité
 
 ## Site Internet jamulus.io
+
 Le site jamulus.io s'efforce de ne pas collecter vos données personnelles. Si vous vous connectez au site jamulus.io, votre adresse IP est envoyée aux pages GitHub. De plus, comme nous avons placé un lien vers le logo de SourceForge dans le pied de page de chaque page, SourceForge peut également recevoir votre adresse IP.
-Nous ne mettons pas de cookies de suivi, bien que SourceForge puisse le faire. Si vous ne le souhaitez pas, veuillez désactiver les cookies dans votre navigateur.
+Nous ne mettons pas de cookies de suivi, bien que SourceForge puisse le faire. Si vous ne le souhaitez pas, désactivez les cookies dans votre navigateur.
 
 ## Logiciel Jamulus
 
 ### Utilisation des informations de profil
 
-Lorsque vous vous connectez à un serveur Jamulus public ou privé, tout ce que vous mettez dans Mon profil (dans les Paramètres) sera montré aux autres personnes sur ce serveur pendant que vous y êtes connecté. Le serveur ne stocke ni n'enregistre par ailleurs les informations relatives à votre profil et l'administrateur du serveur n'y a pas accès, sauf s'il est également connecté en tant que client.
+Lorsque vous vous connectez à un serveur Jamulus public ou privé, tout ce que vous mettez dans « Mon profil » (dans les Paramètres) est visible par les autres personnes connectées au serveur pendant que vous y êtes connecté. Le serveur ne stocke ni n'enregistre par ailleurs les informations relatives à votre profil et l'administrateur du serveur n'y a pas accès, sauf s'il est également connecté en tant que client.
 
 Lorsque vous vous connectez à un serveur public, votre profil est également accessible aux tiers à partir du serveur central auquel ce serveur est enregistré. Il peut s'agir d'informations sur l'état du réseau public Jamulus (par exemple, [ici](http://jamulus.softins.co.uk/)), mais ne se limite pas à cela. Les informations relatives au profil ne sont pas enregistrées ou stockées par le serveur Jamulus auquel vous êtes connecté ou par le serveur central Jamulus, mais peuvent être stockées ou traitées par des tiers.
 
@@ -29,7 +30,7 @@ _Les utilisateurs concernés par l'utilisation du réseau CloudFlare peuvent [re
 
 ### Enregistrements audio
 
-Vous verrez un avertissement si vous êtes connecté à un serveur Jamulus alors que l'enregistrement du serveur est activé. Les enregistrements de chaque joueur sont stockés par le serveur séparément sous forme de fichiers .WAV et seul l'administrateur du serveur y a accès.
+Vous verrez un avertissement si vous êtes connecté à un serveur Jamulus alors que l'enregistrement du serveur est activé. Les enregistrements de chaque musiciens sont stockés par le serveur séparément sous forme de fichiers .WAV et seul l'administrateur du serveur y a accès.
 
 ### Messages Tchate
 
