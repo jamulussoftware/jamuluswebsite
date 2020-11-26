@@ -15,7 +15,7 @@ Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started) avant de c
 1. **Glissez et déposez les deux icônes dans votre dossier Applications** pour installer Jamulus (client et serveur).
 1. **Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application. Si vous voyez un message qui vous dit que Jamulus ne peut pas être ouvert parce que le développeur ne peut pas être vérifié, lisez la suite et jetez un coup d'œil à la section suivante.
 
-_Vous pouvez éjecter le lecteur "Jamulus" de votre bureau et supprimer le dossier dans le répertoire Téléchargements contenant le `.dmg`. Ils ne sont plus nécessaires._
+_Vous pouvez éjecter le volume "Jamulus" de votre bureau et supprimer le dossier dans le répertoire Téléchargements contenant le `.dmg`. Ils ne sont plus nécessaires._
 
 Vous pouvez également [compiler vous même le logiciel](Compiling) si vous en avez envie.
 
@@ -33,6 +33,6 @@ Vous aurez alors une version légèrement différente du même message, qui vous
 
 Jamulus a été installé et peut être utilisé maintenant. Si vous n'avez pas encore installé et configuré votre matériel audio, consultez la section [configuration du matériel](Hardware-Setup).
 
-Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouvez aussi consulter le [Manuel du Logiciel](Software-Manual).
+Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouvez aussi consulter le [manuel du Logiciel](Software-Manual).
 
 Et sur le site [Bassetorius](https://www.bassetorius.fr/applications/jamulus/){: target="_blank" rel="noopener noreferrer"} vous trouverez une série d'articles bien faits et détaillés, en français, sur l'utilisation de Jamulus.
