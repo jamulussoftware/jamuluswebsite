@@ -10,6 +10,21 @@ pagination:
   <title>{{ page.title }} {{ site.data.general.blog.titleAdd }}</title>
   {% include headtags.html %}
   <link rel="stylesheet" href="/assets/css/blog.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "headline": "{{ page.heading }}",
+    "articleBody": "{{ content }}",
+    {% if page.author %}
+    "author": {
+      "@type": "Person",
+      "name": "{{ page.author }}"
+    },
+    {% endif %}
+    "dateCreated": "{{ page.date | date_to_xmlschema }}"
+  }
+  </script>
 </head>
 
 <body class="blog blogsite">
