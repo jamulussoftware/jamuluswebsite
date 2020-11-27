@@ -1,18 +1,20 @@
 ---
 layout: wiki
-title: "Serveur sous Windows and MacOS"
+title: "Serveur sous Windows, Mac OS X ou macOS"
 lang: "fr"
 permalink: "/wiki/Server-Win-Mac"
 ---
 
-# Serveur sous Windows and MacOS
+# Serveur sous Windows, Mac OS X ou macOS
 _(Note: les copies d'écran ont été faite avec l'interface en anglais, les termes utilisés par la suite dans ce document correspondent aux termes employés dans l'interface graphique du logiciel en français.)_
+
+_(**Avertissement:** Jamulus (serveur et client) n'a pas encore été testé avec macOS Big Sure installé sur un Mac équipé du nouveau processeur M1, si vous avez testé son utilisation avec succès sur cette plateforme merci de le faire savoir en ouvrant une « issue » [sur le dépôt de Jamulus](https://github.com/corrados/jamulus/issues))_
 
 **_Veuillez lire la documentation [Administration d'un serveur](Running-a-Server) au préalable_**
 
 * **Utilisateurs de Windows** : démarrez le serveur en utilisant le raccourcis `Jamulus Server` du menu démarrer Windows. Il faut bien entendu avoir d'abord installé le logiciel en suivant [ces instructions](Installation-for-Windows).  
 
-* **Utilisateurs de MacOS** : double-cliquez sur l'icône `Jamulus server` dans le répertoire `Applications` (nous partons du principe que vous avez installé Jamulus en suivant [ces instructions](Installation-for-Macintosh)).
+* **Utilisateurs de Mac OS X ou macOS** : double-cliquez sur l'icône `Jamulus server` dans votre répertoire `Applications` (nous partons du principe que vous avez installé Jamulus en suivant [ces instructions](Installation-for-Macintosh)).
 
 * **Utilisateurs de Linux** : Suivez ces [instructions](Server-Linux#serveur-avec-iug).
 
@@ -20,13 +22,11 @@ _(Note: les copies d'écran ont été faite avec l'interface en anglais, les ter
 
 ### Configuration d'un serveur public
 
-1. Cochez l'option « Rendre mon serveur public »
+1. En cochant l'option « Rendre mon serveur public » vous devriez avoir un message indiquant que votre serveur a bien été inscrit.
 
-1. Séléctionnez le serveur en fonction du genre musical soouhaitez dans la liste déroulante. Le serveur par défaut est plein. Vous devriez voir un message confirmant que votre serveur à été référencé avec succès.
+1. Renseignez le nom, la ville et le pays, ainsi les autres utilisateurs pourrons vous identifer facilement.
 
-1. Renseignez le nom du serveur, la ville, le pays ainsi les gens pourront vous identifier facilement. 
-
-1. Choisissez un genre musical si vous le désirez. Ceci fera apparaitre votre serveur dans la liste associée pour les clients. (voir ces [informations à propos des serveurs centraux](Central-Servers))  
+1. Spécifiez un genre musical si vous le souhaitez. Ça fera apparaître votre serveur dans la liste du serveur concerné pour les clients (voir ces [informations à propos des serveurs centraux](Central-Servers)(Central-Servers))  
   
 _Le message de bienvenue est visible par tous les utilisateurs lorsqu'ils rejoignent le serveur. (La fenêtre de Tchate s'ouvrira alors automatiquement pour eux)._
 
@@ -38,7 +38,7 @@ _Si vous **exécutez le client sur la même machine** vous devez **connecter le 
 
 ### Enregistrement
 
-Activez l'enregistrement du serveur en définissant d'abord le répertoire d'enregistrement dans l'onglet Options. L'enregistrement commence dès que la première personne se connecte au serveur et s'arrête lorsque la dernière personne le quitte. Utilisez le bouton « Nouvel enregistrement » pour créer un nouveau sous-répertoire dans lequel les enregistrements seront enregistrés. Notez que les enregistrements sont sauvegardés par pistes au format [Audacity](https://www.audacityteam.org/) `.lof` et [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Ouvrez ces fichiers dans ces applications respectives pour les écouter.
+Activez l'enregistrement du serveur en définissant d'abord le répertoire d'enregistrement dans l'onglet Options. L'enregistrement commence dès que la première personne se connecte au serveur et s'arrête lorsque la dernière personne le quitte. Utilisez le bouton « Nouvel enregistrement » pour créer un nouveau sous-répertoire dans lequel les enregistrements seront sauvegardés. Notez que les enregistrements sont sauvegardés par pistes au format [Audacity](https://www.audacityteam.org/) `.lof` et [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Ouvrez ces fichiers dans ces applications respectives pour les écouter.
 
 _Remarque : lorsque votre serveur enregistre, les utilisateurs connectés voient un message indiquant que l'enregistrement est en cours dans leur client._
 
