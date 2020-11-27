@@ -1,20 +1,18 @@
 ---
 layout: wiki
-title: "Serveur sous Windows, Mac OS X ou macOS"
+title: "Installation du serveur – Windows et Macintosh"
 lang: "fr"
 permalink: "/wiki/Server-Win-Mac"
 ---
 
-# Serveur sous Windows, Mac OS X ou macOS
+# Installation sous Windows et Macintosh
 _(Note: les copies d'écran ont été faite avec l'interface en anglais, les termes utilisés par la suite dans ce document correspondent aux termes employés dans l'interface graphique du logiciel en français.)_
-
-_(**Avertissement:** Jamulus (serveur et client) n'a pas encore été testé avec macOS Big Sure installé sur un Mac équipé du nouveau processeur M1, si vous avez testé son utilisation avec succès sur cette plateforme merci de le faire savoir en ouvrant une « issue » [sur le dépôt de Jamulus](https://github.com/corrados/jamulus/issues))_
 
 **_Veuillez lire la documentation [Administration d'un serveur](Running-a-Server) au préalable_**
 
 * **Utilisateurs de Windows** : démarrez le serveur en utilisant le raccourcis `Jamulus Server` du menu démarrer Windows. Il faut bien entendu avoir d'abord installé le logiciel en suivant [ces instructions](Installation-for-Windows).  
 
-* **Utilisateurs de Mac OS X ou macOS** : double-cliquez sur l'icône `Jamulus server` dans votre répertoire `Applications` (nous partons du principe que vous avez installé Jamulus en suivant [ces instructions](Installation-for-Macintosh)).
+* **Utilisateurs de Macintosh** : double-cliquez sur l'icône `Jamulus server` dans votre répertoire `Applications` (nous partons du principe que vous avez installé Jamulus en suivant [ces instructions](Installation-for-Macintosh)).
 
 * **Utilisateurs de Linux** : Suivez ces [instructions](Server-Linux#serveur-avec-iug).
 
@@ -26,7 +24,7 @@ _(**Avertissement:** Jamulus (serveur et client) n'a pas encore été testé ave
 
 1. Renseignez le nom, la ville et le pays, ainsi les autres utilisateurs pourrons vous identifer facilement.
 
-1. Spécifiez un genre musical si vous le souhaitez. Ça fera apparaître votre serveur dans la liste du serveur concerné pour les clients (voir ces [informations à propos des serveurs centraux](Central-Servers)(Central-Servers))  
+1. Spécifiez un genre musical si vous le souhaitez. Votre serveur apparaitra alors dans la liste du serveur concerné pour les clients (voir ces [informations à propos des serveurs centraux](Central-Servers)(Central-Servers))  
   
 _Le message de bienvenue est visible par tous les utilisateurs lorsqu'ils rejoignent le serveur. (La fenêtre de Tchate s'ouvrira alors automatiquement pour eux)._
 
