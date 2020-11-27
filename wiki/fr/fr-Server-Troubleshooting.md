@@ -4,8 +4,11 @@ title: "Problèmes potentiels du serveur"
 lang: "fr"
 permalink: "/wiki/Server-Troubleshooting"
 ---
-<!-- note for reviewers: If title is OK, mentions related to this page in others pages will 
-have to be modified. I previously used "Dépanage du server" but not happy with this wording. -->
+<!-- 
+note for reviewers: If title is OK, mentions related to this page in others pages will 
+have to be modified. I previously used "Dépanage du server" but not happy with this wording. 
+Why not : FAQ Seveur (same for client), to be made in EN before…
+-->
 # Résolution des problèmes du serveur
 
 ## Serveurs public
@@ -20,11 +23,11 @@ Vous pouvez vérifier que votre serveur est bien inscrit dans le genre sélécti
 
 ## Serveurs privés
 
-### Je fais tourner mon client sur la même machine ou le même réseau que mon serveur, mais je ne peux pas m'y connecter
+### J'utilise le client sur la même machine ou le même réseau que mon serveur, mais je n'arrive pas à m'y connecter
 
 Connectez votre client à l'adresse `127.0.0.1` (ou `localhost` si cela fonctionne pour vous). Si vous utilisez le client sur une machine différente du serveur mais sur le même réseau, alors connectez-vous à l'adresse du serveur _sur le réseau local_. Ne vous connectez pas via l'adresse publique (<abbr title="Wide area network (réseau étendu)">WAN</abbr>) du serveur.
 
-### Quelle adresse dois-je communiquer aux gens pour qu'ils puissent se connecter à mon serveur ?
+### Quelle adresse dois-je communiquer aux personnes pour qu'ils ou elles puissent se connecter à mon serveur ?
 
 Il doit s'agir de votre adresse IP **publique** (à trouver auprès de [Google](https://www.google.com/search?q=whatsmyip)). Connectez votre **propre** client Jamulus à l'adresse IP **locale** de votre serveur (`127.0.0.1` s'il est sur la même machine que votre client). Notez que votre adresse IP publique peut changer : voir la note sur le « DNS dynamique » dans [ce guide](Running-a-Private-Server).
 
