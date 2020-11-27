@@ -15,14 +15,17 @@ pagination:
     "@context":"https://schema.org",
     "@type":"BlogPosting",
     "headline": "{{ page.heading }}",
-    "articleBody": "{{ content }}",
     {% if page.author %}
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ page.author }}"
+    },
     "author": {
       "@type": "Person",
       "name": "{{ page.author }}"
     },
     {% endif %}
-    "dateCreated": "{{ page.date | date_to_xmlschema }}"
+    "datePublished": "{{ page.date | date_to_xmlschema }}"
   }
   </script>
 </head>
