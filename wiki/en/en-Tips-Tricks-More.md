@@ -15,7 +15,7 @@ Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has 
 
 ##  Using Jamulus audio in Zoom (or other) meeting apps
 
-Several users have reported success allowing a "virtual audience" for a Jamulus session by using [Jack audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings). 
+Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings). 
 
 You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for Mac to route Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time.
 
