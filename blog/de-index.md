@@ -1,7 +1,7 @@
 ---
 layout: bloglist
-lang: "en"
-title: "Overview"
+lang: "de"
+title: "Übersicht"
 permalink: /blog
 pagination:
   enabled: true
