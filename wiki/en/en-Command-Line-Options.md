@@ -35,7 +35,7 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-F` |`--fastupdate`     | 64 samples frame size mode. Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients. | (server only) |
 | `-h,-?` |`--help`           | This help text | (client and server) |
 |    `-i` |`--inifile`        | Set location of initialization file (overrides default) | (client (always) and server (with GUI)) |
-|    `-j` |`--nojackconnect`  | Disable auto Jack connections | (client only) |
+|    `-j` |`--nojackconnect`  | Disable auto JACK connections | (client only) |
 |    `-l` |`--log` | Enable logging, set path and file name | (server only) |
 |    `-m` |`--htmlstatus`     | Enable HTML status file, set path and file name | (server only) |
 |    `-M` |`--mutestream`     | Starts Jamulus in muted state | (client only) |
