@@ -13,8 +13,8 @@ Vous pouvez contribuer à [cette documentation](https://github.com/jamulussoftwa
 
 ### Plus il y a de gens qui peuvent améliorer Jamulus, mieux c'est !
 
-* Regardez le code source sur le [dépot GitHub de Jamulus](https://github.com/corrados/jamulus) ainsi que les [directives de contribution](https://github.com/corrados/jamulus/issues/596) (en anglais).
+* Consultez nos directives pour le code source et [les contributions](https://github.com/corrados/jamulus/issues/596) (en anglais), ainsi que le [dépot GitHub de Jamulus](https://github.com/corrados/jamulus).
 
-* Voir aussi les [instructions de compilation](/wiki/Compiling) pour les différentes plateformes.
+* Voyez aussi les [instructions de compilation](/wiki/Compiling) pour les différentes plateformes.
 
 
