@@ -47,10 +47,10 @@ Pour les serveur sans <abbr title="Interface utilisateur graphique">IUG</abbr> :
 
 <img width="549" alt="serveur Jamulus" src="https://user-images.githubusercontent.com/4561747/95724775-accd3e80-0c6e-11eb-90ba-7131e9c15316.png">
 
-**Utilisateurs Windows** : Si vous voulez que le serveur démarre automatiquement au démarrage du système, cochez l'option correspondante.
+**Utilisateurs Windows** : Si vous voulez que le serveur se lance automatiquement au démarrage du système, cochez l'option correspondante.
 
 (Laissez le champs « Serveur central personnalisé » vide sauf si vous souhaitez vous connecter à un [serveur central privé](Choosing-a-Server-Type#3-serveur-central))
 
 ***
 
-Voyez aussi les [options de la ligne de commande](Command-Line-Options) pour les autres paramètres qui peuvent être configurées.
+Voyez aussi les [options de la ligne de commande](Command-Line-Options) pour les autres paramètres qui peuvent être configurés.
