@@ -15,10 +15,10 @@ The following example was tested on Linux Mint and combines all the commands abo
 ### Installation dependent on Linux Distribution
 The following script call different installation commands dependent on the Linux distribution.
 The variable `DISTRO` defines which commands are executed. Set the variable dependent on the Linux distribution you are using.
-* `DISTRO="Ubuntu` for a Ubuntu or Linux Mint
-* `DISTRO="Debian` for a Debian or Raspbian Linux
-* `DISTRO="Fedora` for a Fedora Linux
-Furthermore if the installation is dependent of the release the variable `LINVERSION` is introduced but is currently not used. In the Ubuntu if statement there is an example how version dependent installation calls can be performed.
+* `DISTRO="Ubuntu"` for a Ubuntu or Linux Mint
+* `DISTRO="Debian"` for a Debian or Raspbian Linux
+* `DISTRO="Fedora"` for a Fedora Linux
+Furthermore if the installation is dependent of the release the variable `LINVERSION` is introduced but is currently not used. In the Ubuntu `if` statement there is an example how version dependent installation calls can be performed.
 ```bash
 if [ "$LINVERSION"  = "18.4" ]
 then
