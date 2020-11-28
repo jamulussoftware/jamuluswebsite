@@ -8,21 +8,21 @@ permalink: "/wiki/Linux-Client-Install-Script"
 
 # Script bash pour télécharger et compiler sous Linux
 
-Si vous prévoyez d'installer Jamulus sur plusieurs machnine Linux, vous pourrier avoir envie d'éssayer ce script.
+Si vous prévoyez d'installer Jamulus sur plusieurs machnines Linux, vous pourrier avoir envie d'essayer ce script.
 
-L'exemple suivant a été testé sous Linux Mint et combine toutes les commandes ci-dessous en un seul script pour Ubuntu/Linux. Pour pouvoir incorporer les commandes spécifiques aux différents distributions Linux des variables définissent la distribution et la version pour lesquelles ce script d'installation pourrait être utilisé. L'exemple utilise Ubuntu version 18.04 comme référence. Donc le nom suggéré pour le script est, par ex., `install4ubuntu18_4.sh`. Les commandes du script sont génériques afin que le script puisse être modifié pour fonctionner avec d'autres distributions.
+L'exemple suivant a été testé sous Linux Mint et combine toutes les commandes ci-dessus en un seul script pour Ubuntu/Linux Mint. Pour pouvoir incorporer les différentes commandes des distributions Linux, des variables définissent la distribution et la version pour lesquelles ce script d'installation pourrait être utilisé. L'exemple utilise Ubuntu version 18.04 comme référence. Donc le nom suggéré pour le script est, par ex., `install4ubuntu18_4.sh`. Les commandes du script sont génériques afin que l'installation puisse être modifiée pour fonctionner avec d'autres distributions.
 
-### L'installation dépend de la distribution Linux
+### Installation en fonction de la distribution Linux
 
-Le script suivant appèle différentes commandes d'isntallation qui dépendent de la distribution Linux.
-La variable `DISTRO` définie quelles commandes sont éxécutées. La valeur de cette variable dépend de la distribution Linux que vous utilisez :
+Le script suivant appelle différentes commandes d'installation en fonction de la distribution Linux.
+La variable `DISTRO` définie quelles commandes sont exécutées. Paramétrez la variable en fonction de la distribution Linux que vous utilisez :
 
 * `DISTRO="Ubuntu"` pour une Ubuntu ou Linux Mint
 * `DISTRO="Debian"` pour une Debian ou Raspian Linux
 * `DISTRO="Fedora"` pour une Fedora Linux
 
 D'autre part si l'installation est dépendante de la version, la variable `LINVERSION` a été introduite mais n'est pour l'instant pas utilisée. 
-Dans l'algorithme if pour Ubuntu il y a un exemple démontrant comment les appels dépendants de la version peuvent être utilisés. 
+Dans la déclaration `if` pour Ubuntu il y a un exemple de la façon dont les appels d'installation en fonction de la version peuvent être utilisés. 
 
 ```bash
 if [ "$LINVERSION"  = "18.4" ]
@@ -31,10 +31,10 @@ then
 fi  
 ```
 
-La variable `LINVERSION` n'est actuellement pas utilisé dans le script suivant, c'est juste une démonstration sur la manière dont les commandes spécifiques à une version peuvent être utilisées.
+La variable `LINVERSION` n'est pas actuellement utilisée dans le script suivant, c'est juste une démonstration sur la manière dont les commandes d'installation spécifiques à une version peuvent être utilisées.
 
 ### Adaptation du script d'installation
-Si vous voulez créer un script d'installation pour debian, copiez simplement le script `install4ubuntu18_4.sh` en le renommant `install4debian10_6.sh` et modifez la varable distribution :
+Si vous voulez créer un script d'installation pour debian, copiez simplement le script `install4ubuntu18_4.sh` en le renommant `install4debian10_6.sh` et modifez la varable distro :
 
 ```bash
 #!/bin/sh
@@ -43,11 +43,11 @@ DISTRO="Debian"
 LINVERSION="10.6"
 ```
 
-Après, testez l'installation sous debian et modifiez les commandes pour que le script d'installation fonctionne sous Debian. Partagez, s'il vous plait, vos scipts d'installation fonctionnels sur ce Wiki. Le responsable du dépot peut y ajouter un répertoire `/install_scripts` pour les scripts d'installation fonctionnels. Créez une demande de fusion pour votre nouveau script d'installation ou ouvrez une « issue » pour demander l'ajout du script documenté et testé dans ce dépôt. 
+Ensuite, testez l'installation sous debian et modifiez les commandes pour que le script d'installation fonctionne sous Debian. Partagez, s'il vous plait, vos scripts d'installation fonctionnels sur ce Wiki. Le responsable du dépôt pourrait y ajouter un répertoire `/install_scripts` pour les scripts d'installation fonctionnels. Créez une demande de fusion pour votre nouveau script d'installation ou ouvrez une « issue » pour demander l'ajout du script documenté et testé dans ce dépôt. 
 
 ### Le script d'installation
 
-Copiez le script d'installation suivant dans un ficher et suvegardez le avec le nom `install4ubuntu18_4.sh`. Après avoir sauvegardé ce fichier dans, par ex., votre répertoire `Téléchargements`, placez vous dans ce répertoire et appelez le script avec `sh install4ubuntu18_4.sh`.
+Copiez le script d'installation suivant dans un ficher et sauvegardez le avec le nom `install4ubuntu18_4.sh`. Après avoir sauvegardé ce fichier dans, par ex., votre répertoire `Téléchargements`, placez vous dans ce répertoire et appelez le script suivant avec `sh install4ubuntu18_4.sh`.
 
 ```bash
 #!/bin/sh
@@ -134,7 +134,7 @@ fi
 Le script peut, au tout début, demander pour quelle distribution Linux il doit être appelé.  
 Ça peut être testé avec la commande `lsb_release`.
 
-Avec la commande `lsb_release` qui retourne les informations spécifiques à la ditribution sous Linux.    
+Avec la commande `lsb_release` qui retourne les informations spécifiques à la distribution sous Linux.    
 Avec la commande `grep` et en utilisant des expressions rationnelles pour les variables `DISTRO` et `LINVERSION`.  
 Par ex., un système basé sur Unbuntu retourne les informations suivantes avec cette commande :
 
@@ -147,6 +147,6 @@ Release:        11.04
 Codename:       natty
 ```
 
-La problématique est que la commande `lsb_release` doit être disponible sur le système Linux. Pour les systèmes basés sur CentOS ou Fedora la commande `lsb_release` n'est disponible que si les paquets de base `lsb` sont installés. La détéction automatique de la version de Linux pourrait donc ne pas fonctionner.
+La problématique est que la commande `lsb_release` doit être disponible sur le système Linux. Pour les systèmes basés sur CentOS ou Fedora la commande `lsb_release` n'est disponible que si les paquets de base `lsb` sont installés. La détection automatique de la version de Linux pourrait donc ne pas fonctionner.
 
-En conséquece, obtenir les valeurs de `DISTRO` et `LINVERION` avec la commande `read` devrait être la meilleure amélioration dépendante de la distribution plutôt que d'automatiser la configuration avec `lsb_release`.
+En conséquence, obtenir les valeurs de `DISTRO` et `LINVERION` avec la commande `read` serait la meilleure amélioration en fonction de la distribution plutôt que d'automatiser la configuration avec `lsb_release`.
