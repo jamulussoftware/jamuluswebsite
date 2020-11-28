@@ -24,7 +24,7 @@ Jamulus --nogui --server \
         --serverinfo "deinServerName;deineStadt;[country ID]"
 ~~~
 
-**Bitte beachten**: Du musst **keine** Portweiterleitung in deinem Router einrichten, wenn du einen öffentlichen Server betreibst.
+**Achtung**: Du musst **keine** Portweiterleitung in deinem Router einrichten, wenn du einen öffentlichen Server betreibst.
 
 Siehe auch [Befehlszeilenoptionen](Command-Line-Options) für weitere Parameter, die du einstellen kannst.
 
