@@ -5,7 +5,6 @@ lang: "en"
 permalink: "/wiki/Installation-for-Linux"
 ---
 
-
 # Installation for Linux
 Make sure you read the [Getting Started](Getting-Started) page.
 
@@ -88,6 +87,8 @@ Jamulus puts itself into `/usr/local/bin`. You can now delete the sources direct
 If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (eg 256 frames or 3 periods) in step 3 above. Lower ones (eg 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
+Move on to the [Jamulus walk through page](Jamulus-Walk-Through)
+
 Have a look at [Hardware Setup](Hardware-Setup).
 For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
