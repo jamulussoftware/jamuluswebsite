@@ -11,7 +11,7 @@ permalink: "/wiki/Compiling"
 
 Please refer to the [client installation page](Installation-for-Linux) or these instructions if you wish to [compile a headless server](Server-Linux#running-a-headless-server)
 
-## MacOS
+## macOS
 You don't need to compile Jamulus for macOS since we provide official binaries, but if you really want to, follow the instructions below.
 ### Requirements
 

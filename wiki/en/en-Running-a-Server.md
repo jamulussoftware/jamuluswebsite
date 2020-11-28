@@ -56,7 +56,7 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 
 ## All OK? Get set up!
 
-### [For Windows or Macintosh users](Server-Win-Mac)
+### [For Windows or macOS users](Server-Win-Mac)
 ### [For Linux users](Server-Linux)
 ### [For Raspberry Pi](Server-Rpi)
 
