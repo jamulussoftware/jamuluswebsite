@@ -34,7 +34,7 @@ fi
 La variable `LINVERSION` n'est pas actuellement utilisée dans le script suivant, c'est juste une démonstration sur la manière dont les commandes d'installation spécifiques à une version peuvent être utilisées.
 
 ### Adaptation du script d'installation
-Si vous voulez créer un script d'installation pour debian, copiez simplement le script `install4ubuntu18_4.sh` en le renommant `install4debian10_6.sh` et modifez la varable distro :
+Si vous voulez créer un script d'installation pour Debian, copiez simplement le script `install4ubuntu18_4.sh` en le renommant `install4debian10_6.sh` et modifez la varable distro :
 
 ```bash
 #!/bin/sh
@@ -43,7 +43,7 @@ DISTRO="Debian"
 LINVERSION="10.6"
 ```
 
-Ensuite, testez l'installation sous debian et modifiez les commandes pour que le script d'installation fonctionne sous Debian. Partagez, s'il vous plait, vos scripts d'installation fonctionnels sur ce Wiki. Le responsable du dépôt pourrait y ajouter un répertoire `/install_scripts` pour les scripts d'installation fonctionnels. Créez une demande de fusion pour votre nouveau script d'installation ou ouvrez une « issue » pour demander l'ajout du script documenté et testé dans ce dépôt. 
+Ensuite, testez l'installation sous Debian et modifiez les commandes pour que le script d'installation fonctionne sous Debian. Partagez, s'il vous plait, vos scripts d'installation fonctionnels sur ce Wiki. Le responsable du dépôt pourrait y ajouter un répertoire `/install_scripts` pour les scripts d'installation fonctionnels. Créez une demande de fusion pour votre nouveau script d'installation ou ouvrez une « issue » pour demander l'ajout du script documenté et testé dans ce dépôt. 
 
 ### Le script d'installation
 
