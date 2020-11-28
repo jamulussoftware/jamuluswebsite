@@ -47,4 +47,4 @@ Official and more detailed information about how to configure ASIO4All is docume
 
 ## All installed?
 
-Move on to the [Jamulus walk through page](Jamulus-Walk-Through)
+Jamulus has been installed and can be used now. You can now take a look at the [Jamulus walk through page](Jamulus-Walk-Through)
