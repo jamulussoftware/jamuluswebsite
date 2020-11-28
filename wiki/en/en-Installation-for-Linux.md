@@ -11,9 +11,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 **Right now, we don't provide official packages for Jamulus**
 
-There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. You can also use an [all-in-one script](Linux-Client-Install-Script) if you want.
-
-Meanwhile, compiling the sources is quite easy:
+There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}, but compiling the sources is quite easy:
 
 ## Get Jamulus sources
 
@@ -29,22 +27,16 @@ tar -xvf latest.tar.gz
 
 First, update your package list (e.g. on Debian based distributions with `sudo apt-get update`).
 
-On **Ubuntu-based** distributions 18.04+, and on Debian 9 or 10:
+On **Ubuntu-based** distributions 18.04+, **Debian** 9+ or 10 and Raspberry Pi Raspbian Buster release or later:
 
 ```shell
-sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev 
-```
-
-On **Debian** 11 (bullseye) or later, and Raspberry Pi Raspbian Buster release or later:
-
-```shell
-sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
 ```
 
 On **Fedora**:
 
 ```shell
-sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
 ```
 
 ### Qjackctl: Optional, but recommended
@@ -89,8 +81,7 @@ Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noope
 Restart Jack to take any new settings
 
 ### Start Jamulus
-1. Open the command shell e.g. with Crtl-Alt-T and
-1. Execute the command `Jamulus` (with a capital 'J') and you will start the Jamulus Client
+Open Jamulus e.g. via your command shell. If you use the shell, execute the command `Jamulus` (with a capital 'J') which starts the Jamulus Client
 
 Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.
 

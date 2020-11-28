@@ -15,7 +15,7 @@ Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has 
 
 ##  Using Jamulus audio in Zoom (or other) meeting apps
 
-Several users have reported success allowing a "virtual audience" for a Jamulus session by using [Jack audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings). 
+Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings). 
 
 You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for Mac to route Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time.
 
@@ -98,25 +98,10 @@ jack_connect Jamulus:'output right' system:playback_2
 
 
 
-## Using the --ctrlmidich MIDI controller channel option
+## Using ctrlmidich for MIDI controllers
 
-Jamulus user [Ignotus](https://sourceforge.net/u/jammerman/profile/) writes: If you want to use a generic MIDI controller, you will need to either make adjustments to your controller or re-compile the sources:
+The volume faders in the client's mixer window can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with MacOS and Linux). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There are two parameters you can set: `Channel` and `Offset`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and the second parameter to the Control Number you want the first fader to react to. By default, the offset is 70 (for the Behringer X-Touch), which means that the first fader reacts to Control Number 70, the second to 71, and so on. 
 
-Note: only available for use with MacOS and Linux.
+So for example, if you're using a Behringer X-Touch, sending MIDI on channel 1 and leaving the offset at default, the command would look like this: `--ctrlmidich 1`. If you have a different controller, e.g. sending MIDI on channel 2 and starting with Control Number 30, the command would be as follows: `--ctrlmidich "2;30"`
 
-MIDI CC messages consist of a Control Number, Controller Value, and Channel. Jamulus listens to the Control Number to know what fader to move, on the channel you specify when launching it with `--ctrlmidich`.
-
-The Jamulus client is set by default for use with the Behringer X-Touch, which apparently sends Control Numbers starting at 70, when Jamulus' faders are zero-indexed, which means there's a -70 offset coded into the source code that turns that 70 Control Number into a 0 for the first fader, 71 into 1 for the next, etc.
-
-If you can change the Control Number in your MIDI controller, just set it to 70 (71, 72, etc for subsequent faders). Launch Jamulus with `--ctrlmidich x` where 'x' is the MIDI channel you're using, or launch it with `--ctrlmidich 0` to listen to all channels, and you're done. Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (Qjackctl (Linux), MIDI Studio (MacOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
-
-If you can't change the Control Numbers in your controller, you will need to modify and re-compile the sources:
-In the file `src/soundbase.cpp`, go to line 290, remove the `- 70` at the end (not the semicolon) to use Control Number 0 for the first fader, or replace that number with the initial Control Number your MIDI device sends. Save, [compile](Compiling) and install.
-
-## Playing a software synth with Jamulus
-
-[Engelbert Niehaus](https://github.com/niebert) describes how you can use JACK's MIDI input to [play a software synth through Jamulus](Software-Synth). This example uses Linux, but a similar approach would work for Windows and Mac.
-
-## Running Jamulus with Multiple Audio Interfaces
-
-It is possible to run Jamulus with multiple Audio Interfaces on all three operating systems. Useful when we need to output an instrument through external audio card for minimal latency and computer microphone for communication. Other use cases may apply.  [See this guide for details](Running-Jamulus-with-Multiple-Audio-Interfaces)
+Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (Qjackctl (Linux), MIDI Studio (MacOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
