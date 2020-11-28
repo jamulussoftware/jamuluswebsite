@@ -76,7 +76,7 @@ Il n'est pas nécéssaire de compiler Jamulus sous Windows car nous fournissons 
 
 La compilation avec le drapeau `headless` signifie que vous pouvez éviter d'installer certains des paquets dépendants, économiser de l'espace disque et/ou accélérer votre temps de compilation dans les circonstances suivantes :
 
-1. Si vous prévoyez d'utiliser Jamulus sous Gentoo Linux, les seuls paquets dont vous devriez avoir besoin pour une compilation _headless_ sont `qtcore`, `qtnetwork` et `qtxml` (à la fois pour la compilation et l'exécution du serveur).
+1. Si vous prévoyez d'utiliser Jamulus sous Gentoo Linux, les seuls paquets dont vous devriez avoir besoin pour une compilation headless sont `qtcore`, `qtnetwork` et `qtxml` (à la fois pour la compilation et l'exécution du serveur).
 
 1. Si vous voulez utilisez Jamulus sur Ubuntu/Debian, vous aurez besoin de tous les paquets dépendants pour **compiler** le binaire, mais pour **exécuter** le serveur Jamulus sans IUG résultant, vous ne devriez avoir besoin que de `libqt5core5a`, `libqt5network5`, `libqt5xml5` et probablement `libqt5concurrent5`. Cela peut être utile pour compiler ou mettre à jour sur une machine et utiliser le binaire sur une autre machine (un Raspberry Pi, par exemple).
 
