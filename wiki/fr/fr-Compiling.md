@@ -80,5 +80,5 @@ La compilation avec le drapeau `headless` signifie que vous pouvez éviter d'ins
 
 1. Si vous voulez utilisez Jamulus sur Ubuntu/Debian, vous aurez besoin de tous les paquets dépendants pour **compiler** le binaire, mais pour **exécuter** le serveur Jamulus sans IUG résultant, vous ne devriez avoir besoin que de `libqt5core5a`, `libqt5network5`, `libqt5xml5` et probablement `libqt5concurrent5`. Cela peut être utile pour compiler ou mettre à jour sur une machine et utiliser le binaire sur une autre machine (un Raspberry Pi, par exemple).
 
-1. Notez que si vous voulez compiler un client avec IUG sur une machine et l'exécuter sur une autre (par exemple un Raspberry Pi), vous n'avez besoin que des dépendances énumérées pour un [serveur sans <abbr title="Graphical User Interface : Interface graphique en français.">GUI</abbr>](Server-Linux#serveur-sans-iug) (_voir le point ci-dessus_), seulement _avec_ les bibliothèques Jack.
+1. Notez que si vous voulez compiler un client avec IUG sur une machine et l'exécuter sur une autre (par exemple un Raspberry Pi), vous n'avez besoin que des dépendances énumérées pour un [serveur sans IUG](Server-Linux#serveur-sans-iug) (_voir le point ci-dessus_), seulement _avec_ les bibliothèques Jack.
 
