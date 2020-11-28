@@ -8,9 +8,9 @@ permalink: "/wiki/Linux-Client-Install-Script"
 
 # Script bash pour télécharger et compiler sous Linux
 
-Si vous prévoyez d'installer Jamulus sur plusieurs machnines Linux, vous pourrier avoir envie d'essayer ce script.
+Si vous prévoyez d'installer Jamulus sur plusieurs machines Linux, vous pourrier avoir envie d'essayer ce script.
 
-L'exemple suivant a été testé sous Linux Mint et combine toutes les commandes ci-dessus en un seul script pour Ubuntu/Linux Mint. Pour pouvoir incorporer les différentes commandes des distributions Linux, des variables définissent la distribution et la version pour lesquelles ce script d'installation pourrait être utilisé. L'exemple utilise Ubuntu version 18.04 comme référence. Donc le nom suggéré pour le script est, par ex., `install4ubuntu18_4.sh`. Les commandes du script sont génériques afin que l'installation puisse être modifiée pour fonctionner avec d'autres distributions.
+L'exemple suivant a été testé sous Linux Mint et combine toutes les commandes ci-dessus en un seul script pour Ubuntu/Linux Mint. Pour pouvoir incorporer les différentes commandes des distributions Linux, des variables définissent la distribution et la version pour lesquelles ce script d'installation pourrait être utilisé. L'exemple utilise Ubuntu version 18.04 comme référence. Ainsi le nom suggéré pour le script est, par ex., `install4ubuntu18_4.sh`. Les commandes du script sont génériques afin que l'installation puisse être modifiée pour fonctionner avec d'autres distributions.
 
 ### Installation en fonction de la distribution Linux
 
