@@ -134,8 +134,8 @@ fi
 Le script peut, au tout début, demander pour quelle distribution Linux il doit être appelé.  
 Ça peut être testé avec la commande `lsb_release`.
 
-Avec la commande `lsb_release` qui retourne les informations spécifiques à la ditribution sous linux.    
-Avec la commande `grep` et des expressions rationnelles pour les variables `DISTRO` et `LINVERSION`.  
+Avec la commande `lsb_release` qui retourne les informations spécifiques à la ditribution sous Linux.    
+Avec la commande `grep` et en utilisant des expressions rationnelles pour les variables `DISTRO` et `LINVERSION`.  
 Par ex., un système basé sur Unbuntu retourne les informations suivantes avec cette commande :
 
 ```bash
