@@ -18,7 +18,7 @@ Cependant, la compilation des sources est assez facile :
 
 ## Obtenir les sources de Jamulus
 
-1. Ouvrez une fenêtre de terminal (ligne de commande - `CTRL+ALT+t` sur Ubuntu et les distributions dérivées)
+1. Ouvrez une fenêtre de terminal (ligne de commande - `CTRL+ALT+t` sur Ubuntu et distributions connexes)
 1. Téléchargez et dézippez les sources de la dernière version :
 ```shell
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
@@ -28,18 +28,12 @@ tar -xvf latest.tar.gz
 
 ## Installation des dépendances
 
-Tout d'abord, mettez à jour la liste des paquets (par exemple sur les distributions basées sur Debian avec `sudo apt-get update`).
+Tout d'abord, mettez à jour la liste des paquets (par ex. sur les distributions basées sur Debian avec `sudo apt-get update`).
 
-Sur les distributions basées sur **Ubuntu** 18.04+, et sur **Debian** 9+ ou 10 :
+Sur les distributions **basées sur Ubuntu** 18.04+, et sur **Debian** 9+ ou 10 et Raspberry Pi Raspbian Buster et suivantes :
 
 ```shell
 sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
-```
-
-Sur **Debian** 11 (bullseye) et suivantes, ainsi que sur Raspberry Pi Raspbian Buster et suivantes :
-
-```shell
-sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
 ```
 
 Sur **Fedora**:
@@ -50,7 +44,7 @@ sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-aud
 
 ### Qjackctl : Optionnel, mais recommandé
 
-[QjackCtl](https://qjackctl.sourceforge.io) est un utilitaire qui permet de configurer le serveur audio Jack (installé dans le cadre des dépendances ci-dessus). Installez-le, par exemple, via
+[QjackCtl](https://qjackctl.sourceforge.io) est un utilitaire qui vous aide à configurer le serveur audio Jack (installé dans le cadre des dépendances ci-dessus). Installez-le, par ex., via
 
 ```shell
 sudo apt-get install qjackctl
@@ -59,9 +53,9 @@ sudo apt-get install qjackctl
 Vous pouvez également envisager d'utiliser un [noyau à faible latence](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (ex. pour Ubuntu 18.04 : `sudo apt-get install linux-lowlatency-hwe-18.04`).
 
 
-## Compilons le sale gosse !…
+## Compilons le sale gosse
 
-Maintenant, placez vous (`cd`) dans le répertoire des sources de Jamulus que vous venez de télécharger :
+Maintenant, `cd` dans le répertoire des sources de Jamulus que avez téléchargé :
 
 ```shell
 cd jamulus-latest
@@ -76,15 +70,15 @@ sudo make install
 ```
 
 
-## Configuration de l'interface audio
+## Configurez votre interface audio
 
-### Configuration de Jack avec QJackCtl
+### Configurer Jack avec QJackCtl
 
 Les clients Jamulus ont besoin de [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.
 
-1. Ouvrez le terminal, par exemple avec `Crtl-Alt-T` et
+1. Ouvrez le terminal, par ex. avec Crtl-Alt-T et
 1. Exécutez la commande `qjackctl` vous verrez le **Jack Audio Connection Kit**
-2. Configurez votre interface audio comme suit (les paramètres exacts pour Jack dépendront ded fonctionnalités de votre interface audio ou carte son) :
+2. Configurez votre interface audio comme suit (les paramètres exacts pour Jack dépendront des fonctionnalités de votre interface audio/carte son) :
 
 - Réglez l'**Interface** sur celle que vous souhaitez (il peut y en avoir plusieurs dans la liste)
 - Fixez la **Fréquence d'échantillonnage à 48000** 
@@ -93,12 +87,12 @@ Les clients Jamulus ont besoin de [Jack](https://jackaudio.org/){: target="_blan
 Redémarrez Jack pour prendre en compte ces nouveaux paramètres.
 
 ### Démarrer Jamulus
-1. Ouvrez le terminal, par exemple avec `Crtl-Alt-T`, puis,
+1. Ouvrez le terminal, par ex. avec Crtl-Alt-T, puis,
 1. Executez la commande `Jamulus` (avec un 'J' majuscule) et vous démarrerez le client Jamulus
 
 Jamulus se trouve dans `/usr/local/bin`. Vous pouvez maintenant supprimer le répertoire des sources que vous venez de compiler.
 
-Si vous avez des de son qui se coupe (en particulier les erreurs XRUN rapportées par Jack/QJackCtl), essayez de définir des valeurs plus élevées (par exemple 256 échantillons ou 3 périodes) à l'étape 3 ci-dessus. Des valeurs plus basses (par exemple 64 échantillons) pourraient apporter de meilleures performances mais peut-être plus de problèmes avec le son. Sinon, consultez la [section dépannage](Client-Troubleshooting).
+Si vous avez des problèmes de son qui se coupe (en particulier les erreurs XRUN rapportées par Jack/QJackCtl), essayez de définir des valeurs plus élevées (par exemple 256 échantillons ou 3 périodes) à l'étape 3 ci-dessus. Des valeurs plus basses (par ex. 64 échantillons) pourraient apporter de meilleures performances mais peut-être plus de problèmes avec le son. Sinon, consultez la [section dépannage](Client-Troubleshooting).
 
 ## Tout est installé ?
 Consultez la section [configuration du matériel](Hardware-Setup).
@@ -110,9 +104,9 @@ Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouve
 
 Téléchargez de nouveau les sources comme indiqué à la section [obtenir les sources de Jamulus](#obtenir-les-sources-de-jamulus) puis répétez simplement les [instructions de compilation](#compiler-jamulus) comme pour une nouvelle installation ci-dessus.
 
-## Notes à l'attention des « geeks » et des curieux
+## Notes à l'attention des « geeks »
 
-* La commande `make clean` est essentielle pour supprimer les fichiers Qt générés automatiquement qui sont présents dans le fichier `.tar.gz` et qui peuvent ne pas correspondre à la version Qt que vous utilisez.
+* La commande `make clean` est essentielle pour supprimer les fichiers Qt générés automatiquement qui sont présents dans le fichier .tar.gz et qui peuvent ne pas correspondre à la version Qt que vous utilisez.
 
 * Pour utiliser une librairie partagée externe OPUS au lieu de la librairie intégrée, utilisez `qmake "CONFIG+=opus_shared_lib" Jamulus.pro`.
 
