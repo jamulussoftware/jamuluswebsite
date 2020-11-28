@@ -25,7 +25,7 @@ Un utilisateur de Jamulus, [Rob Durkin](https://sourceforge.net/u/bentwrench/pro
 
 Un utilisateur de Jamulus, [BTDT](https://sourceforge.net/u/btdt/profile/), a écrit un système appelé [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), c'est une application « web » qui permet au « patron de la Jam » d'envoyer les partitions (au format PDF) aux « Jammers » en temps réel, en utilisant un navigateur standard.
 
-## Faire une page de status pour le serveur
+## Faire une page de statut pour le serveur
 
 Avec l'option `-m` de la ligne de commande une information statistique à propos du serveur peut être générée pour être incluse dans une page « web ».  
 
@@ -56,7 +56,7 @@ Vous pouvez sauvegarder et restaurer le mixage que vous utilisez pour les répé
 Vous pouver faire tourner le serveur en mode public le temps nécéssaire à la connexion de votre groupe, ensuite passez tout simplement en mode privé en décochant la case « Rendre mon serveur public » dans l'<abbr title="Interface utilisateur graphique">IUG</abbr> du serveur.  
 (Merci à [https://github.com/DavidSavinkoff](David Savinkoff) pour le tuyau !) 
 
-## Scrit de démarrage du client pour Linux
+## Script de démarrage du client pour Linux
 
 Voici un script de démarrage Linux pour Jamulus utilisant une vieille carte son Audigy4, dont le grand nombre de canaux audio disponible rend compliqué l'obtention d'une cofiguration correcte.
 
