@@ -53,6 +53,6 @@ Jeder Server kann sich an deinem zentralen Server registrieren, um in deiner Lis
 
 Der Server, der als zentraler Server konfiguriert werden soll, muss mit `--centralserver localhost` gestartet werden (d.h. der zentrale Server, an dem sich dieser Server anmeldet ist er selbst).
 
-Wenn du steuern möchtest, welche Server sich an deinem zentralen Server registrieren könnenen, kannst du eine Whitelist mit der Option `--listfilter` aktivieren. Weitere Informationen zu dieser Funktion findest du auf der Seite [Kommandozeilen-Optionen](Command-Line-Options).
+Wenn du steuern möchtest, welche Server sich an deinem zentralen Server registrieren können, kannst du eine Whitelist mit der Option `--listfilter` aktivieren. Weitere Informationen zu dieser Funktion findest du auf der Seite [Kommandozeilen-Optionen](Command-Line-Options).
 
 Siehe auch [Befehlszeilenoptionen](Command-Line-Options) für weitere Parameter, die Du einstellen kannst.
