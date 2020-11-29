@@ -112,6 +112,6 @@ Téléchargez les nouvelles sources conformément à la section [Compilons ce vi
 
 * Pour utiliser ce fichier, configurez le logiciel avec `qmake "CONFIG+=noupcasename" Jamulus.pro` pour vous assurer que le nom du binaire cible soit **j**amulus au lieu de **J**amulus.
 
-* Utilisateurs de Raspberry Pi : vous pourriez vouloir compiler le client sur une autre machine et exécuter le binaire sur le Raspberry Pi. Dans ce cas, les seules bibliothèques dont vous avez besoin pour l'exécuter sont celles d'un [serveur sans <abbr tittle="Interface utilisateur graphique">IUG</abbr>](Server-Linux#serveur-sans-iug), mais _avec_ les paquets sons Jack. En particulier, jetez un œil à la note de bas de page pour la compilation sans IUG.
+* Utilisateurs de Raspberry Pi : vous pourriez vouloir compiler le client sur une autre machine et exécuter le binaire sur le Raspberry Pi. Dans ce cas, les seules bibliothèques dont vous avez besoin pour l'exécuter sont celles d'un [serveur sans <abbr title="Interface utilisateur graphique">IUG</abbr>](Server-Linux#serveur-sans-iug), mais _avec_ les paquets sons Jack. En particulier, jetez un œil à la note de bas de page pour la compilation sans IUG.
 
 * À partir de la version 3.5.3, Jamulus n'est plus compatible avec Qt4.
