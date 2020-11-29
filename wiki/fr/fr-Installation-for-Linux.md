@@ -12,7 +12,7 @@ Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started).
 
 **Pour l'instant, nous ne fournissons pas de paquets officiels pour Jamulus**
 
-Il existe une liste de [paquets non officiels pour les différentes distributions ici](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}). Vous pouvez également utiliser [ce script tout-en-un](Linux-Client-Install-Script) si vous le souhaitez.
+Il existe une liste de [paquets non officiels pour les différentes distributions ici](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. Vous pouvez également utiliser [ce script tout-en-un](Linux-Client-Install-Script) si vous le souhaitez.
 
 Cependant, la compilation des sources est assez facile :
 
