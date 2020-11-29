@@ -24,7 +24,7 @@ Jamulus --nogui --server \
         --serverinfo "deinServerName;deineStadt;[country ID]"
 ~~~
 
-**Bitte beachten**: Du musst **keine** Portweiterleitung in deinem Router einrichten, wenn du einen öffentlichen Server betreibst.
+**Achtung**: Du musst **keine** Portweiterleitung in deinem Router einrichten, wenn du einen öffentlichen Server betreibst.
 
 Siehe auch [Befehlszeilenoptionen](Command-Line-Options) für weitere Parameter, die du einstellen kannst.
 
@@ -47,12 +47,12 @@ Siehe auch [Befehlszeilenoptionen](Command-Line-Options) für weitere Parameter,
 ### 3. Zentral
 Die Konfiguration eines Servers als Zentralserver muss nur unter besonderen Umständen (z.B. für Onlineveranstaltungen oder Musikvereine) vorgenommen werden. Normalerweise kannst du diesen Typ ignorieren.
 
-Um einen Server, der an einem benutzerdefinierten, zentralen Server registriert ist zu finden, müssen Musiker die Adresse dieses Zentralservers im Einstellungsfeld „Benutzerdefinierter zentraler Server“ ihres Clients eingeben. Sie sehen dann eine Liste der an diesem zentralen Server registrierten Server.
+Um einen Server, der an einem benutzerdefinierten, zentralen Server registriert ist zu finden, müssen Musiker die Adresse dieses Zentralservers im Einstellungsfeld „Benutzerdefinierte Zentralserveradresse“ ihres Clients eingeben. Sie sehen dann eine Liste der an diesem zentralen Server registrierten Server.
 
 Jeder Server kann sich an deinem zentralen Server registrieren, um in deiner Liste angezeigt zu werden. Dazu muss dann der anzumeldende Server mit dem Flag `--centralserver` und deiner IP/Domain gestartet werden.
 
 Der Server, der als zentraler Server konfiguriert werden soll, muss mit `--centralserver localhost` gestartet werden (d.h. der zentrale Server, an dem sich dieser Server anmeldet ist er selbst).
 
-Wenn du steuern möchtest, welche Server sich an deinem zentralen Server registrieren könnenen, kannst du eine Whitelist mit der Option `--listfilter` aktivieren. Weitere Informationen zu dieser Funktion findest du auf der Seite [Kommandozeilen-Optionen](Command-Line-Options).
+Wenn du steuern möchtest, welche Server sich an deinem zentralen Server registrieren können, kannst du eine Whitelist mit der Option `--listfilter` aktivieren. Weitere Informationen zu dieser Funktion findest du auf der Seite [Kommandozeilen-Optionen](Command-Line-Options).
 
 Siehe auch [Befehlszeilenoptionen](Command-Line-Options) für weitere Parameter, die Du einstellen kannst.
