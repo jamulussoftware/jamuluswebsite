@@ -7,14 +7,11 @@
       {% if item.url %}
       <li>
         <h3><a href="{{ item.url | relative_url }}" class="{% if subentry.url == page.url %}selected{% endif %}">{{ item.title }}</a></h3>
-      </li>
       {% else %}
       <li>
         <h3>{{ item.title }}</h3>
-      </li>
       {% endif %}
       {% if item.subfolderitems[0] %}
-      <li>
         <ul>
           {% for entry in item.subfolderitems %}
           <li><a href="{{ entry.url }}" class="{% if entry.url == page.url %}selected{% endif %}">{{ entry.page }}</a>
