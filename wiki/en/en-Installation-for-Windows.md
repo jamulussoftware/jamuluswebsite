@@ -47,4 +47,7 @@ Official and more detailed information about how to configure ASIO4All is docume
 
 ## All installed?
 
-Jamulus has been installed and can be used now. You can now take a look at the [Jamulus walk through page](Jamulus-Walk-Through)
+Jamulus has been installed and can be used now.
+
+Have a look at [Hardware Setup](Hardware-Setup).
+For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
