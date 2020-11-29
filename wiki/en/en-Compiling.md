@@ -56,7 +56,7 @@ Schemes:
 xcodebuild build
 ```
 
-Will build the file and make it available in ./Release/Jamulus.app
+Will build the file and make it available in `./Release/Jamulus.app`
 
 
 ## Windows

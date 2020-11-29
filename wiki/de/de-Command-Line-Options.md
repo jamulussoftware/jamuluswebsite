@@ -15,7 +15,7 @@ Unter Windows kannst du die Rekorderfunktion `-R` z.B. wie folgt aktivieren: Kli
 "C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\Pfad\zu\deinen\Aufnahmen"
 ```
 
-Unter macOS, starte das Terminal Fenster und führe Jamulus mit den gewünschten Optionen wie folgt aus:
+Unter macOS, starte das Terminal und führe Jamulus mit den gewünschten Optionen wie folgt aus:
 
 ```shell
 /Applications/Jamulus.app/Contents/MacOS/Jamulus -s -R "/Pfad/zu/deinen/Aufnahmen"
@@ -30,7 +30,7 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |-------|-----------|----------------------------------|-|
 |    `-c` |`--connect`        | Automatische Verbindung zum angegebenen Server beim Start des Clients. Format `Adresse[:Port]` | (nur Client) |
 |    `-d` |`--discononquit`   | Trenne alle Verbindungen mit allen Clients beim Beenden des Servers | (nur Server) |
-|    `-e` |`--centralserver`  | Mache diesen Server öffentlich verfügbar. Schau dir auch die Option `-o` an| (nur Server) [Siehe hier](Choosing-a-Server-Type#1-öffentlich). |
+|    `-e` |`--centralserver`  | Mache diesen Server öffentlich verfügbar und setzt sein Genre. Schau dir auch die Option `-o` an | (nur Server) [Siehe hier](Choosing-a-Server-Type#1-öffentlich). |
 |    `-f` |`--listfilter`     | Setze Server auf die Whitelist, Format `IP Adresse 1[;IP Adresse 2]` | (nur Zentralserver) [Siehe hier](Choosing-a-Server-Type#3-zentral). |
 |    `-F` |`--fastupdate`     | 64 samples frame size Modus. Reduziert Latenz wenn Clients mit der "Enable Small Network Buffers" Option verbunden sind. Benötigt schnelle CPU um Dropouts zu vermeiden, und mehr Bandbreite. | (nur Server) |
 | `-h,-?` |`--help`           | Dieser Hilfetext | (Client und Server) |
