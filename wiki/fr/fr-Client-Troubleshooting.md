@@ -14,7 +14,7 @@ Commencez par les choses les plus simples : assurez-vous que votre instrument ou
 
 ### Tout sonne correctement, mais c'est difficile de rester en rythme
 
-**Dans la mesure du possible, n'écoutez pas votre signal direct.** Assurez-vous que vous écoutez si possible le son de votre propre instrument et/ou voix _revenant du serveur_. Ce signal vous permet de vous synchroniser avec vos partenaires de jeu, et sera le signal que vos camarades entendront également. Ainsi, en écoutant ce signal, vous serez synchronisés les uns avec les autres (en supposant que vous avez tous une latence raisonnablement faible). Notez que si un ou plusieurs musiciens ne suivent pas cette règle, ils ralentiront lorsqu'ils joueront ou chanteront.
+**Dans la mesure du possible, NE PAS écouter votre signal direct.** Assurez-vous que vous écoutez si possible le son de votre propre instrument et/ou voix _revenant du serveur_. Ce signal vous permet de vous synchroniser avec vos partenaires de jeu, et sera le signal que les membres du groupe entendront également. Ainsi, en écoutant ce signal, vous serez synchronisés les uns avec les autres (en supposant que vous avez tous une latence raisonnablement faible). Notez que si un ou plusieurs musiciens ne suivent pas cette règle, ils ralentiront lorsqu'ils joueront ou chanteront.
 
 Vous pouvez vérifier si vous entendez correctement votre signal en procédant comme suit :
 
@@ -24,9 +24,9 @@ Vous pouvez vérifier si vous entendez correctement votre signal en procédant c
 1. Fermez l'application d'enregistrement et lancez Jamulus. Vous ne devriez toujours pas vous entendre.
 1. Connectez-vous à un serveur et jouez quelque chose. Maintenant, vous devriez vous entendre avec le délai du serveur.
 
-**Si vous avez encore des problèmes**, essayez de demander sur le [forum du matériel](https://sourceforge.net/p/llcon/discussion/hardware/). La manière exacte dont vous éviterez d'écouter votre signal direct dépendra de votre configuration individuelle : votre interface audio, votre console de mixage, l'endroit où est branché votre casque, etc… Par exemple, certaines interfaces audio ont des boutons « monitor », ou des options similaires (désactivez-les).
+**Si vous avez encore des problèmes**, essayez de demander sur le [forum du matériel](https://sourceforge.net/p/llcon/discussion/hardware/). La manière exacte dont vous éviterez d'écouter votre signal direct dépendra de votre configuration individuelle : votre interface audio, votre console de mixage, l'endroit où est branché votre casque, etc… Par exemple, certaines interfaces audio ont des boutons « monitor » ou des options similaires (désactivez-les).
 
-Sachez que si l'écoute du signal du serveur vous assure d'être synchronisé avec les autres musiciens, vous pouvez également rencontrer des problèmes si votre latence globale (indiquée par le voyant "Delay" dans Jamulus) n'est pas verte ou au moins jaune la plupart du temps. Consultez le [manuel du logiciel](Software-Manual) pour comprendre comment ajuster votre configuration dans ce cas.  
+Sachez que si l'écoute du signal du serveur vous assure d'être synchronisé avec les autres musiciens, vous pouvez également rencontrer des problèmes si votre latence globale (indiquée par le voyant lumineux « Délai » dans Jamulus) n'est pas verte ou au moins jaune la plupart du temps. Consultez le [manuel du logiciel](Software-Manual) pour comprendre comment ajuster votre configuration dans ce cas.  
 
 ### Vous n'arrivez pas à régler votre micro ?
 
