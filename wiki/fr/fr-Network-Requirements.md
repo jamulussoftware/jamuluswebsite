@@ -4,13 +4,13 @@ title: "Qualité, délais et bande passante"
 lang: "fr"
 permalink: "/wiki/Network-Requirements"
 ---
-<!-- note for reviewers: « bande passante » or « débit » that's the question! ;) -->
+<!-- note for reviewers: « bande passante » or « débit »? That's the question! ;) -->
 # Prés-requis réseau
 
 ## Bande passante audio
 
 Les paramètres audio ont un impact sur la bande passante requise pour réseau.  
-Le tableau ci-dessous résume les pré-requis pour la bande passente Internet en ce qui concerne la configuration de :
+Le tableau ci-dessous résume les pré-requis pour la bande passante Internet en ce qui concerne la configuration de :
 
 * canaux : stéréo/mono
 * qualité : haute/moyenne/basse
