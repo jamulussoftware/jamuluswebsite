@@ -33,7 +33,4 @@ For further information see [this Apple Support Page](https://support.apple.com/
 **See also [this excellent guide](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (or [directly on Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"}).**
 
 ## All installed?
-
-Jamulus has been installed and can be used now. If you haven't set up your audio gear yet, have a look at [Hardware Setup](Hardware-Setup).
-
-For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+Jamulus has been installed and can be used now. You can now take a look at the [Jamulus walk through page](Walk-Through).
