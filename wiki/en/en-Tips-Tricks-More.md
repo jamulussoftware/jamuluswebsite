@@ -57,7 +57,7 @@ You can save and restore the mix you have for your band rehearsals (fader, mute,
 
 ## Converting a public server to a private one on the fly
 
-You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [https://github.com/DavidSavinkoff](David Savinkoff) for this tip!)
+You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
 
 
 ## Jamulus client Linux start script
