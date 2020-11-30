@@ -44,6 +44,6 @@ Mírate [este vídeo](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noope
 Información oficial y más detallada sobre cómo configurar ASIO4All se encuentra en la sección [ASIO4All FAQs en la página web de ASIO4All](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} y en el manual de ASIO4All. Normalmente se encuentra en tu escritorio o en la carpeta donde se instala el archivo binario de ASIO4All (normalmente `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## ¿Todo instalado?
-Jamulus ha sido instalado y ahora puede utilizarse. Si no has configurado tu equipo de audio, consulta la [Hardware Setup](Hardware-Setup).
+Jamulus ha sido instalado y ahora puede utilizarse. Si no has configurado tu equipo de audio, consulta la [Configuración de Hardware](Hardware-Setup).
 
 Para información detallada sobre la utilización de Jamulus, por favor consulta el [Manual de Ayuda](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
