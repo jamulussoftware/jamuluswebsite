@@ -98,7 +98,7 @@ Si tienes problemas con cortes de sonido (en particular errores de XRUN mostrado
 
 ## ¿Todo instalado?
 Mírate la [Configuración de Hardware](Hardware-Setup).
-Para información detallada sobre la utilización de Jamulus, por favor consulta el [Manual de Ayuda](Software-Manual).
+Para información detallada sobre la utilización de Jamulus, por favor consulta el [Manual de Ayuda](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
 
 ## Para actualizar tu instalación a una nueva versión
