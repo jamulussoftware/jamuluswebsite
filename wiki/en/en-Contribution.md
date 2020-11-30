@@ -9,7 +9,7 @@ permalink: "/wiki/Contribution"
 
 You can contribute to [this documentation](https://github.com/jamulussoftware/jamulussoftware.github.io/) by opening a pull request with with the following title:
 
-`W: [language code (e.g. en)] {short description of your changes}` 
+`[language code (e.g. en)] {short description of your changes}` 
 
 ### The more people can improve Jamulus, the better!
 
