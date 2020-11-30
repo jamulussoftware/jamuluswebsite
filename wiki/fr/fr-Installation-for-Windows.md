@@ -26,9 +26,9 @@ Vous devrez peut-être expérimenter un peu pour trouver les bonnes, car chaque 
 ### Comment configurer les entrées ASIO4All (Guide)
 
 1. Ouvrez les paramètres de Jamulus
-1. Allez à « _ASIO Settings_ » (Paramètres ASIO)
+1. Allez dans les Paramètres ASIO
 1. Activer le panneau _advanced view_ dans ASIO4All (cliquez sur l'icône en bas à droite)
-1. Ouvrez les entrées de votre carte son en cliquant sur l'_icône plus_ à côté du nom de la carte son.
+1. Ouvrez les entrées de votre carte son en cliquant sur l'_icône plus_ à côté du nom de la carte.
 1. Activez/désactivez alors les entrées/sorties correctes
 
 De nombreuses cartes son internes sont appelées Realtek High Definition Audio, Conexant ou similaire.
@@ -41,13 +41,13 @@ Bien qu'ASIO4All devrait fonctionner directement, vous pourriez rencontrer des d
 Si rien ne fonctionne, essayez tout d'abord de **redémarrer Jamulus et/ou votre ordinateur**.
 Ensuite, essayez de **configurer les entrées/sorties à nouveau**. Les entrées/sorties actives et accessibles affichent un bouton marche/arrêt allumé et un bouton de lecture. Si vous voyez une croix rouge ou un symbole jaune, vous devrez peut-être fermer d'autres applications comme votre navigateur, Zoom…
 
-Regardez cette [vidéo](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} (en anglais) de Andrew Williams qui donne des informations plus détaillées sur la configuration d'ASIO4All.
+Regardez cette [vidéo](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} (en anglais) de @trombonepizza qui donne des informations plus détaillées sur la configuration d'ASIO4All.
 
 Des informations officielles plus détaillées sur la façon de configurer ASIO4All sont aussi documentées dans les [FAQ officielles d'ASIO4All sur le site web d'ASIO4All](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} ainsi que dans le manuel d'ASIO4All. Vous trouverez très probablement ceci sur votre bureau ou dans le dossier où le binaire d'ASIO4All est installé (généralement `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## Tout est installé ?
 Jamulus a été installé et peut désormais être utilisé. Si vous n'avez pas encore installé votre matériel audio, consultez la section [configuration du matériel](Hardware-Setup).
 
-Pour des informations plus détaillées sur l'utilisation de Jamulus, vous pouvez consulter le [manuel du logiciel](Software-Manual).
+Pour des informations plus détaillées sur l'utilisation de Jamulus, veuillez consulter le [manuel du logiciel](Software-Manual).
 
 Et sur le site [Bassetorius](https://www.bassetorius.fr/applications/jamulus/){: target="_blank" rel="noopener noreferrer"} vous trouverez une série d'articles bien faits et détaillés, en français, sur l'utilisation de Jamulus.
