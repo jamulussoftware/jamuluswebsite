@@ -81,6 +81,7 @@ Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noope
 Restart Jack to take any new settings
 
 ### Start Jamulus
+
 Open Jamulus e.g. via your command shell. If you use the shell, execute the command `Jamulus` (with a capital 'J') which starts the Jamulus Client
 
 Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.

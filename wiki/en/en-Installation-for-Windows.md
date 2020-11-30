@@ -30,7 +30,7 @@ You may need to experiment a bit to find the right ones since every computer is 
 1. Now enable/disable the correct inputs/outputs
 
 Many internal sound cards are named Realtek High Definition Audio, Conexant or similar.
-Headphones and speakers are often labeled as output and microphones as inputs.
+Headphones and speakers are often labeled as "output" and microphones as "inputs".
 
 ### Having trouble with ASIO4All setup?
 
