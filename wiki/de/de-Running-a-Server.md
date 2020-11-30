@@ -61,7 +61,7 @@ Ein typischer Jam mit 4 Personen könnte grob 200Kbps * 4 = 800Kbs (0.8Mbps) Upl
 ### [Linux-Server](Server-Linux)
 ### [Raspberry Pi-Server](Server-Rpi)
 
-Serverbetreiber könnten [diese nützlichen Tools] (https://github.com/corrados/jamulus/tree/master/tools) aus dem Jamulus-Repository nützlich finden. Klone dazu das Git-Repo und rufe `git submodule update --init` auf).
+Serverbetreiber könnten [diese nützlichen Tools](https://github.com/corrados/jamulus/tree/master/tools) aus dem Jamulus-Repository nützlich finden. Klone dazu das Git-Repo und rufe `git submodule update --init` auf).
 
 ## Probleme?
 
