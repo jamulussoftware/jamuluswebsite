@@ -21,7 +21,7 @@ Unless you are a musician with a (USB) microphone, you are strongly advised to u
 
 ### 2. Minimize internet traffic and close all programs on your PC
 
-Try to make sure nothing on your machine or your network is competing against Jamulus when you are using it. 
+Try to make sure nothing on your machine or your network (like a video stream) is competing against Jamulus when you are using it. 
 
 ### 3. Connect to the servers with the lowest ping times
 
