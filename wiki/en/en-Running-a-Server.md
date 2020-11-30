@@ -55,7 +55,7 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 
 
 ## All OK? Get set up!
-<div class="fx-row fx-row-start-xs button-container" style="margin-top: .5em;">
+<div class="fx-row fx-row-start-xs button-container margin_button">
     <a href="Server-Win-Mac" class="button fx-col-100-xs">For Windows or macOS users</a>
     <a href="Server-Linux" class="button fx-col-100-xs">For Linux users</a>
     <a href="Server-Rpi" class="button fx-col-100-xs">or Raspberry Pi</a>
