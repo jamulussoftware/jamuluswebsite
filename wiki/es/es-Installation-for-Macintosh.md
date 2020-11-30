@@ -34,4 +34,4 @@ Para más información consulta [esta página de Soporte para Apple](https://sup
 
 Jamulus ha sido instalado y ahora puede utilizarse. Si no has configurado tu equipo de audio, consulta la [Configuración de Hardware](Hardware-Setup).
 
-Para información detallada sobre la utilización de Jamulus, por favor consulta el [Manual de Ayuda](Software-Manual).
+Para información detallada sobre la utilización de Jamulus, por favor consulta el [Manual de Ayuda](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
