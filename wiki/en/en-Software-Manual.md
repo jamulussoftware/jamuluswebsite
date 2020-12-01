@@ -177,7 +177,7 @@ In this case the buffer delay setting is disabled and has to be changed using th
 
 ![Buffer delay Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
 
-On Linux, use the JACK configuration tool to change the buffer size.
+On Linux, use the Jack configuration tool to change the buffer size.
 
 The actual buffer delay has influence on the connection status, the current upload rate and the overall delay.
 The lower the buffer size, the higher the probability of a red light in the status indicator (drop outs) and the

@@ -15,7 +15,7 @@ _Jamulus has been tested on a Raspberry Pi 4 2Gb by Jamulus user [SIVA Frédéri
 
 1. Edit [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) to enable boot without HDMI by adding `hdmi_force_hotplug=0`
 
-1. [Get the sources](Installation-for-Linux#get-jamulus-sources), install the [dependent packages](Installation-for-Linux#install-dependencies) according to the Linux client install guide **but do NOT install JACK package(s)** - you don't need them on a [headless server](Server-Linux#running-a-headless-server). To run a client, install all listed dependencies.
+1. [Get the sources](Installation-for-Linux#get-jamulus-sources), install the [dependent packages](Installation-for-Linux#install-dependencies) according to the Linux client install guide **but do NOT install Jack package(s)** - you don't need them on a [headless server](Server-Linux#running-a-headless-server). To run a client, install all listed dependencies.
 
 1. Compile the source code for a server as per [these instructions](Server-Linux#compile-sources-create-a-user). Compile a client using the [default instructions](Installation-for-Linux#compile-this-bad-boy).
 
