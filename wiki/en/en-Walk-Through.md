@@ -28,7 +28,7 @@ Now you can connect to a server. Click on "Connect" on the Jamulus main window, 
 ### The first Jam
 Congrats! You can now start jamming with Jamulus. The sliders you see on the right are like a mixing board: everything you change here will change your own mix. If you move something down, this user will be quieter, if you move something up, this user will be louder. It's that easy! Everything else like "PAN", "SOLO", "GRP",... are advanced options. You can of course try them!
 
-![Jamulus Mixer](https://user-images.githubusercontent.com/20726856/100801241-01e43000-3428-11eb-8d61-e03b5e648971.png)
+![Jamulus main mixer connected](https://user-images.githubusercontent.com/20726856/100801241-01e43000-3428-11eb-8d61-e03b5e648971.png)
 
 If you don't want others to hear your audio, click on "Mute Myself" (left to the mixing board) which will stop your audio being sent to other musicians. That's sometimes a live saver (you will probably not want to disturb others with nasty phone calls).
 
