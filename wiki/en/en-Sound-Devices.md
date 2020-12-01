@@ -1,22 +1,91 @@
 ---
 layout: wiki
-title: "Known Good Devices"
+title: "Sound Devices"
 lang: "en"
 permalink: "/wiki/Sound-Devices"
 ---
 
-# Known Good Devices
+# Sound Devices
 
-This page lists hardware known to work or not work with Jamulus (although it may vary between Windows, Mac and Linux). Please update with any new information you have (and indicate the platform(s) you have used).
+This page lists (thanks to Jamulus users) the audio devices known to work (or not) with Jamulus.  
+_**Note**: depends on how the device works on your system (Linux, MacOS, Windows, etc.)_.
 
-### Known to Work with Jamulus
+You can update it with the information you have. **Please indicate the platform(s) you are using!**.
 
-#### USB Microphones
+## Audio devices known to work with Jamulus
 
-* Blue Yeti microphone. Works well on Mac (there is a checkbox to turn off local monitoring). Works OK on Windows with ASIO4all but with a bit more latency than on Mac. You can turn off the local monitoring if you go deep into the settings. Latency on Linux is good but I did not find any way to turn off the local monitoring.
+### USB/USB-C devices
 
-* [Shure X2u](https://www.shure.com/en-GB/products/accessories/x2u-xlr-usb-interface) XLR to USB audio interface with headphone jack, converting an XLR mic into a USB mic. Set PC/Mic mix dial to 100% PC and listen to the output on headphones. Tested using Raspberry Pi 4 running Raspberry Pi OS Buster, kernel version 4.19.
+#### Microphones / DI Boxes
 
+* **[Blue Yeti](https://www.bluemic.com/fr-fr/products/yeti/)**, USB Microphone  
+Works well under **macOS** (there is a check option to disable local monitoring).  
+Works well under **Windows 10 with ASIO4All**, a bit more latency than under macOS. You can disable local monitoring by going deep into the settings.  
+Latency is good under **Linux**. You can't disable local monitoring (or we haven't found out how to do it, feel free to send us the information if you know how to do it).
+
+* **[Shure X2u](https://www.shure.com/en-GB/products/accessories/x2u-xlr-usb-interface)**, USB to XLR audio interface with headphone jack connector that converts a wired microphone to a USB microphone.  
+Set the PC/Mix dialog box to 100% PC to listen to Jamulus' mix on the headphone output.  
+Tested with a Raspberry Pi 4 under **Raspberry Pi OS Buster**, kernel version 4.19.
+
+#### Audio interfaces / digital mixing consoles
+
+* **[Solid State Logic SSL2+](https://www.solidstatelogic.com/products/ssl2-plus)**, USB-C/USB digital audio/MIDI interface 2 in/4 out  
+Works great out of the box, almost better than under macOS, with Jamulus under **Linux Ubuntu 20.04** (ACER Veriton N, i5, 8GB Ram) with [these settings](https://jamulus.io/wiki/Installation-for-Linux#configure-jack-with-qjackctl) (plugged on a USB3 port), recognized as "SSL2+" by `qjackctl`, no or very low latency, very good sound (SSL preamplifier!).   
+Same under **macOS** on a Mac Mini (late 2012, i7 / SSD / 8Gb RAM), with more sound dropouts than under Linux (plugged on a USB2 Hub).  
+Not yet tested on Windows 10, [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe)   
+The monitoring of the Jamulus mix is done by moving the "MONITOR MIX" completely to the right to "USB". See the [official manual](http://eu1.download.solidstatelogic.com/2%20Plus%20/SSL%202%20Plus%20User%20Guide_ENGLISH.pdf).
+
+…
+
+#### Amp modelers/effects pedals for instruments
+
+* **[Line 6 HX Stomp](https://fr.line6.com/hx-stomp/)**, USB multi-effects pedal for guitar  
+See [Remote Jam with Helix and Jamulus](https://jimamsden.wordpress.com/2020/04/04/remote-jamming-with-helix-and-jamulus/) for settings on a Mac.
+
+…
+
+#### Digital recorders
+
+* **[Zoom H4](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h4/)**, USB portable recorder
+Works well on Mac, PC and Raspberry Pi4
+
+… 
+
+### Firewire devices
+
+* **[Presonus StudioLive 16.4.2 AI](https://www.presonus.com/products/StudioLive-1642AI)** (StudioLive AI series), Firewire digital mixing desk  
+Works perfectly with Jamulus under **macOS** (not yet tested on Big Sure). Assign the individual inputs in Jamulus or the corresponding inputs to a stereo auxiliary mix (to be patched in "Universal Control") if more than two channels. Use outputs 17-18 to monitor the Jamulus mix.  
+These devices work under Windows, they should work with Jamulus under this OS (not tested).  
+Not tested under Linux, may (or may not) work, see [here](https://forums.presonus.com/viewtopic.php?f=67&t=2717).
+
+…
+
+### Thunderbolt devices
+
+* **[Universal Audio Arrow](https://www.uaudio.fr/audio-interfaces/arrow.html)**, Thunderbolt 3 digital audio interface  
+This device provides the lowest latency.
+
+…
+
+### Internal soundcards
+
+* **[HiFiBerry DAC+ ADC](https://www.hifiberry.com/shop/boards/hifiberry-dac-adc/)**, Raspberry Pi compatible HAC internal sound card.  
+Virtually no jitter and good latency (20 milliseconds). No headphone amp, so you'll need one. Used with a mini console [Rolls MX122](https://rolls.com/product/MX22s). Tested on Raspberry Pi 4 under **Raspberry Pi OS Buster**, kernel version 4.19.
+
+* **[Soundblaster Live!](https://en.wikipedia.org/wiki/Sound_Blaster_Live!)**, PCI sound card
+With [kX ASIO driver](https://www.kxproject.com/)
+
+…
+
+## Audio devices known not to work with Jamulus
+
+* **Zoom B3**, USB amplifier modeling pedal for bass. **Does not support 48 KHz**.
+
+* **Line6 Bass POD**, USB amplifier modeling pedal for bass. **Does not support 48 KHz**.
+
+
+----
+TO DELETE AFTER FINISH
 
 #### Audio interfaces
 
@@ -83,5 +152,3 @@ This page lists hardware known to work or not work with Jamulus (although it may
 
 * Zoom TAC-2 (Thunderbolt 2)
 
-### Known Not to work with Jamulus
-* Zoom B3 bass amp-modeling pedal. Does not support 48000 Hz. (USB Audio)
