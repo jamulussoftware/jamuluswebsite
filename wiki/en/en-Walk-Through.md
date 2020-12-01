@@ -5,18 +5,35 @@ lang: "en"
 permalink: "/wiki/Walk-Through"
 ---
 # Jamulus walk-through
-Let's have a look what Jamulus looks like and what you should do if you've installed it.
-## GUI description
-### Setting a profile
-### Connecting to a server
-### The first online Jam
+Let's have a look what Jamulus looks like and what you should do after having installed the software.
+## First start
+Before each online Jam, you should close all other programs, plugin everything (LAN-cable, Audio Gear, etc) to minimize CPU load and to ensure that no other application wants to access your sound card. You can have a look at [Hardware Setup](Hardware-Setup) for more information how to setup Hardware. If you need help setting up ASIO4All on Windows, have a look at the [ASIO4All Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
+
+### Jamulus main page
+If you open Jamulus, you will see a window which looks like this:
+![Jamulus main page](https://user-images.githubusercontent.com/20726856/100796017-4cfa4500-3420-11eb-9d35-aa206d392a5a.png)
+We will now have a look what you should do if this is the first time you open Jamulus.
+### 1. Setting a profile
+The first thing you should do in Jamulus is to set your profile, so that others can identify you. To do so, click on "View" at the bar on the top. Now click on "My Profile..." and fill at least "Alias/Name". This page looks like this:
+![Musician Profile](https://user-images.githubusercontent.com/20726856/100796411-e590c500-3420-11eb-9b62-e50d02cb009b.png)
+You can now close this window.
+
+### 2. Connecting to a server
+Now you can connect to a server. Click on "Connect" on the Jamulus main page, select your genre list (list on the top left), select a server and click on connect. Now you should be able to connect to the server. If you have problems here, they are most likely due to wrongly configured audio gear or network issues. Have a look at the [Troubleshooting page](Client-Troubleshooting).
+### The first Jam
+Congrats! You can now start jamming with Jamulus. The sliders you you see on the right are like a mixing board: everything you change here will change your own mix. If you move something down, this user will be quieter, if you move something up, this user will be louder. It's that easy! Everything else like "panning", "solo", "group",... are advanced options. You can of course try them!
+
+If you don't want others to hear your audio, click on "Mute Myself" (left to the mixing board) which will stop your audio being sent to other musicians. That's sometimes a live saver (you will probably not want to disturb others with nasty phone calls).
+
+While we're already here: "Settings" opens - of course - the settings window with all the audio settings, and "Chat" the chat window.
+
+More information about the user interface can be found in the [Jamulus manual](Software-Manual).
 ## Advanced
-* See the tips & tricks sections
-* See setting up a server
+Of course, you can do a lot more with Jamulus. Just click through the menus! <!--The community publishes guides, tips, tricks on the [community site](#). -->
 
 ## Help and Community
+If you need help or want to contribute to Jamulus you can have a look at the following links:
 ### Discussion Forums
-Description; Link to SourceForge
+For help, chat and general discussions about Jamulus: Have a look at the [forums on SourceForge](https://sourceforge.net/p/llcon/discussion/).
 ### Development and contribution
-Link to contributing page (do we even need this page in the documentation? Is the contributing file on the documentation Repo and Jamulus repo not enough?) and GitHub
-* See compiling
+If you want to contribute to the Jamulus Software, have a look at the [Jamulus GitHub repository](https://github.com/corrados/jamulus/) and read the contributing file there. Besides that, you can also contribute to this documentation: see the [Jamulus Website GitHub repository](https://github.com/jamulussoftware/jamuluswebsite) and have a look at the contribution file there.
