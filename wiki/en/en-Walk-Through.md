@@ -11,7 +11,9 @@ Before each online Jam, you should close all other programs, plugin everything (
 
 ### Jamulus main window
 If you open Jamulus, you will see a window which looks like this:
+
 ![Jamulus main page](https://user-images.githubusercontent.com/20726856/100796017-4cfa4500-3420-11eb-9d35-aa206d392a5a.png)
+
 We will now have a look what you should do if this is the first time you open Jamulus.
 ### 1. Setting a profile
 The first thing you should do in Jamulus is to set your profile, so that others can identify you. To do so, click on "View" at the bar on the top.
@@ -30,9 +32,9 @@ If you don't want others to hear your audio, click on "Mute Myself" (left to the
 
 While we're already here: "Settings" opens - of course - the settings window with all the audio settings, and "Chat" the chat window.
 
-More information about the user interface can be found in the [Jamulus manual](Software-Manual).
+More information about the user interface can be found in the [Software Manual](Software-Manual).
 ## Advanced
-Of course, you can do a lot more with Jamulus. Just click through the menus! <!--The community publishes guides, tips, tricks on the [community site](#). -->
+Of course, you can do a lot more with Jamulus, like setting up a private server, doing online concerts,... Just click through the navigation! <!--The community publishes guides, tips, tricks on the [community site](#).  -->
 
 ## Help and Community
 If you need help or want to contribute to Jamulus you can have a look at the following links:
