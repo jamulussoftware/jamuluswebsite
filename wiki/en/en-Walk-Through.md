@@ -19,7 +19,7 @@ This window looks like this:
 
 ![Musician Profile](https://user-images.githubusercontent.com/20726856/100796411-e590c500-3420-11eb-9b62-e50d02cb009b.png)
 
-Now click on "My Profile..." and fill at least "Alias/Name" and afterwards close the window.
+Now click on "My Profile...", fill at least "Alias/Name" and afterwards close the window.
 
 ### 2. Connecting to a server
 Now you can connect to a server. Click on "Connect" on the Jamulus main window, select your genre list (list on the top left), select a server and click on connect. Now you should be able to connect to the server. If you have problems here, they are most likely due to wrongly configured audio gear or network issues. Have a look at the [Troubleshooting page](Client-Troubleshooting).
