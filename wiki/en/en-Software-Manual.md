@@ -141,10 +141,10 @@ Settings Window
 ### Sound card device
 
 ![Sound card device Windows](https://user-images.githubusercontent.com/20726856/97361494-e70a2300-189f-11eb-9095-2c34ad07314d.png)
-![Sound card device Mac](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
+![Sound card device macOS](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
 
 The ASIO driver (sound card) can be selected using Jamulus under the Windows operating system. If the selected ASIO
-driver is not valid an error message is shown and the previous valid driver is selected. Under the Mac operating
+driver is not valid an error message is shown and the previous valid driver is selected. Under the macOS operating
 system the input and output hardware can be selected.
 
 ### Input/output channel mapping
@@ -236,7 +236,7 @@ The higher the audio quality, the higher your audio stream's data rate. Make sur
 This setting defines the fader level of a newly connected client in percent. If a new musician connects
 to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
 that client was already stored. You can set all clients in an occupied server to this level using Edit > "Set All Faders to New Client Level".
-	
+
 
 ### Fancy skin
 

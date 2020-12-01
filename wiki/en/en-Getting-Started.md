@@ -9,7 +9,7 @@ permalink: "/wiki/Getting-Started"
 
 ## You will need
 
-1. **A computer** running either **Windows 10**, **MacOS X** El Capitan (v10.11) or higher, or **Linux**.
+1. **A computer** running either **Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 or higher), or **Linux**.
 1. **A wired internet connection** (don't use Wi-Fi, it will cause sound problems). Most broadband connections will be fine[^1].
 1. **Wired headphones - not speakers** to prevent echo or feedback and to minimize delay[^2].
 
@@ -21,7 +21,7 @@ Unless you are a musician with a (USB) microphone, you are strongly advised to u
 
 ### 2. Minimize internet traffic and close all programs on your PC
 
-Try to make sure nothing on your machine or your network (like a video stream) is competing against Jamulus when you are using it. 
+Try to make sure nothing on your machine or your network (like a video stream) is competing against Jamulus when you are using it.
 
 ### 3. Connect to the servers with the lowest ping times
 
