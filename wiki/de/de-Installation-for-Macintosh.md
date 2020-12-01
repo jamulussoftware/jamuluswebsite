@@ -20,9 +20,7 @@ Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
 
 ## Jamulus kann nicht geöffnet werden, da es von einem nicht verifizierten Entwickler stammt
 
-![Jamulus blockiert durch Gatekeeper](https://user-images.githubusercontent.com/20726856/99886658-adc69800-2c3e-11eb-938e-7c4609f855b6.png)
-
-**Wenn du Jamulus zum ersten Mal öffnen willst, wirst du wahrscheinlich eine Meldung sehen, dass Jamulus nicht geöffnet werden kann, da der Entwickler unbekannt sei, da wir momentan Jamulus nicht von Apple signieren lassen.**
+**Wenn du Jamulus zum ersten Mal öffnen willst, wirst du wahrscheinlich eine Meldung sehen, dass Jamulus nicht geöffnet werden kann, da der Entwickler unbekannt sei.**
 
 Um Jamulus trotzdem öffnen zu können, navigiere mit dem Finder in den Programme (Applications) Ordner, doppelklicke auf Jamulus, warte die Meldung ab, klicke dann mit der rechten Maustaste (oder ctrl/strg und Klick) auf Jamulus und wähle dann „Öffnen“ oben im Menü aus.
 

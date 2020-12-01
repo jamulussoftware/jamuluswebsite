@@ -11,7 +11,9 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 **Right now, we don't provide official packages for Jamulus**
 
-There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}, but compiling the sources is quite easy:
+There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. You can also use an [all-in-one script](Linux-Client-Install-Script) if you want.
+
+Meanwhile, compiling the sources is quite easy:
 
 ## Get Jamulus sources
 
@@ -81,8 +83,8 @@ Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noope
 Restart Jack to take any new settings
 
 ### Start Jamulus
-
-Open Jamulus e.g. via your command shell. If you use the shell, execute the command `Jamulus` (with a capital 'J') which starts the Jamulus Client
+1. Open the command shell e.g. with Ctrl-Alt-T and
+1. Execute the command `Jamulus` (with a capital 'J') and you will start the Jamulus Client
 
 Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.
 
