@@ -25,16 +25,10 @@ tar -xvf latest.tar.gz
 
 Aktualisiere zuerst deine Paketquellen (z.B. auf Debian-basierten Distributionen mit `sudo apt-get update`).
 
-Auf **Ubuntu-basierten** Distributionen 18.04+, und auf Debian 9 oder 10:
+Auf **Ubuntu-basierten** Distributionen 18.04+, Debian 9+ oder 10 und Raspberry Pi Raspbian Buster oder neuer:
 
 ```shell
 sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
-```
-
-Am **Debian** 11 (bullseye) oder neuer, und Raspberry Pi Raspbian Buster oder neuer:
-
-```shell
-sudo apt-get install build-essential qtdeclarative5-dev  qt5-default qttools5-dev-tools libjack-jackd2-dev
 ```
 
 Auf **Fedora**:
@@ -42,9 +36,10 @@ Auf **Fedora**:
 ```shell
 sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
 ```
+
 ### QjackCtl: Empfohlen, aber nicht zwingend notwendig
 
-[QjackCtl](https://qjackctl.sourceforge.io){: target="_blank" rel="noopener noreferrer"} ist ein Programm, das den Jack Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere QjackCtl z.B. wie folgt:
+[QjackCtl](https://qjackctl.sourceforge.io) ist ein Programm, das den Jack Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere QjackCtl z.B. wie folgt:
 
 ```shell
 sudo apt-get install qjackctl
@@ -71,8 +66,8 @@ sudo make install
 ## Richte deine Soundkarte ein
 
 ### Konfiguriere Jack mit QJackCtl
-Jamulus-Clients brauchen [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"}. Du musst Jack aber zuerst einrichten. Am Besten machst du das mit `qjackctl`.
-1. Öffne die Kommandozeile
+Jamulus Clients brauchen [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"}. Du musst Jack aber zuerst einrichten. Am Besten machst du das mit `QjackCtl`.
+1. Öffne die Kommandozeile z.B. mit STRG-ALT-T
 1. Führe `qjackctl` aus und warte, bis sich das **Jack Audio Connection Kit** öffnet.
 2. Konfiguriere dein Audiointerface wie folgt (die genauen Einstellungen für Jack hängen von den Funktionen deiner Soundkarte ab):
 
@@ -83,8 +78,8 @@ Jamulus-Clients brauchen [Jack](https://jackaudio.org/){: target="_blank" rel="n
 Starte Jack neu, um alle neuen Einstellungen zu übernehmen.
 
 ### Jamulus starten
-1. Öffne die Kommandozeile oder führe Jamulus über deinen Desktop aus
-1. Wenn du die Kommandozeile nutzt, führe den Befehl `Jamulus` (mit einem großen 'J') aus, um den Jamulus Client zu starten
+1. Öffne die Kommandozeile z.B. mit STRG-ALT-T
+1. Führe den Befehl `Jamulus` (mit einem großen 'J') aus, um den Jamulus Client zu starten
 
 Jamulus installiert sich nach `/usr/local/bin`.
 

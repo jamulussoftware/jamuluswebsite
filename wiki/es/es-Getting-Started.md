@@ -65,4 +65,4 @@ _Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se e
 
 ## Notas
 [^1]: [Detalles al completo aquí](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Si tienes 10Mbits de bajada y 1Mbps de subida, es poco probable que tengas problemas de ancho de banda.
-[^2]: Los auriculares Bluetooth normalmente tienen demasiada latencia. Esa es una razón por la que se necesitan auriculares por cable. Sobre todo si cantas o tocas instrumentos acústicos, para asegurarte de que mantienes el tiempo con los demás, utiliza solo auriculares (ver la [nota sobre esto](Getting-Started#having-trouble-cant-keep-in-time) para más información).
+[^2]: Los auriculares Bluetooth normalmente tienen demasiada latencia. Esa es una razón por la que se necesitan auriculares por cable. Sobre todo si cantas o tocas instrumentos acústicos, para asegurarte de que mantienes el tiempo con los demás, utiliza solo auriculares (ver la [nota sobre esto](Getting-Started#tienes-problemas-no-puedes-mantener-el-tiempo) para más información).

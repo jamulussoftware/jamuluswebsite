@@ -71,7 +71,7 @@ sudo make install
 
 ### Configure Jack with QJackCtl
 Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
-1. Open the command shell e.g. with Crtl-Alt-T and
+1. Open the command shell e.g. with Ctrl-Alt-T and
 1. Execute the command `qjackctl` you will see the **Jack Audio Connection Kit**
 2. Configure your audio interface as follows (the exact settings for Jack will depend on what your audio interface/sound card is capable of):
 
@@ -82,6 +82,7 @@ Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noope
 Restart Jack to take any new settings
 
 ### Start Jamulus
+
 Open Jamulus e.g. via your command shell. If you use the shell, execute the command `Jamulus` (with a capital 'J') which starts the Jamulus Client
 
 Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.

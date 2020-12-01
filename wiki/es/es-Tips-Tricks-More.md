@@ -57,7 +57,7 @@ Puedes guardar y restaurar la mezcla que tienes para los ensayos de tu grupo (fa
 
 ## Convertir un servidor público en privado sobre la marcha
 
-Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [https://github.com/DavidSavinkoff](David Savinkoff) por este truco!)
+Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [David Savinkoff](https://github.com/DavidSavinkoff) por este truco!)
 
 ## Script de arranque para cliente en Linux
 
@@ -111,11 +111,3 @@ Si puedes cambiar el Número de Control en tu controlador MIDI, simplemente esta
 
 Si no puedes cambiar los Números de Control en tu controlador, tendrás que modificar y recompilar las fuentes:
 En el archivo `src/soundbase.cpp`, ve a la línea 290, elimina el `- 70` al final (no el punto y coma) para utilizar el Número de Control 0 para el primer fader, o reemplaza ese número con el Número de Control inicial que envía tu dispositivo MIDI. Guarda, [compila](Compiling) e instala.
-
-## Utilizar in sinte de software con Jamulus
-
-[Engelbert Niehaus](https://github.com/niebert) describe cómo se puede utilizar la entrada MIDI de JACK para [tocar un sinte de software a través de Jamulus](Software-Synth). Este ejemplo utiliza Linux, pero un enfoque similar fuincionaría para Windows y Mac.
-
-## Ejecutar Jamulus con Múltiples Interfaces de Audio
-
-Es posible ejecutar Jamulus con múltiples interfaces de audio en los tres sistemas operativos. Esto es útil cuando necesitamos sacar el audio de un instrumento a través de una tarjeta de audio externa para una latencia mínima, y usar el micrófono del ordenador para la comunicación. Otros casos de uso pueden ser aplicables. [Ver esta guía para más detalles](Running-Jamulus-with-Multiple-Audio-Interfaces)
