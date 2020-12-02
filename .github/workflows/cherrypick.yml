@@ -2,7 +2,7 @@ name: PR for release branch
 on:
   push:
     branches:
-      - main
+      - release
 jobs:
   release_pull_request:
     runs-on: ubuntu-latest
