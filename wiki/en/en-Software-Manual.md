@@ -78,7 +78,7 @@ pressing this button will end the session.
 
 ![Connect dialog](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maxmium number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
 You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
 
@@ -117,7 +117,7 @@ The faders allow you to adjust the level of what you hear without affecting what
 
 The VU meter shows the input level at the server - that is, the sound being sent.
 
-If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset).
+If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-right-click to reset).
 
 If you see a "mute" icon above a channel, it means that musician cannot hear you. Either they have muted you, soloed one or more channels not including yours, or have set your fader in their mix to zero.
 
@@ -177,7 +177,7 @@ In this case the buffer delay setting is disabled and has to be changed using th
 
 ![Buffer delay Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
 
-On Linux, use the Jack configuration tool to change the buffer size.
+On Linux, use the JACK configuration tool to change the buffer size.
 
 The actual buffer delay has influence on the connection status, the current upload rate and the overall delay.
 The lower the buffer size, the higher the probability of a red light in the status indicator (drop outs) and the
@@ -261,4 +261,4 @@ your distance to the server is too large or your internet connection is not suff
 Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
 
 Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream
-rate is not higher than your available internet upload speed (check this with a service such as [speedtest.net](http://speedtest.net)).
+rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/)).
