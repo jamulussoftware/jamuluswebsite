@@ -144,8 +144,7 @@ Settings Window
 ![Sound card device macOS](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
 
 The ASIO driver (sound card) can be selected using Jamulus under the Windows operating system. If the selected ASIO
-driver is not valid an error message is shown and the previous valid driver is selected. Under the macOS operating
-system the input and output hardware can be selected.
+driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected.
 
 ### Input/output channel mapping
 
