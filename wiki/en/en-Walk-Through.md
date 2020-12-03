@@ -7,7 +7,7 @@ permalink: "/wiki/Walk-Through"
 # Jamulus walk-through
 Let's have a look what Jamulus looks like and what you should do after having installed the software.
 ## First start
-Before each online Jam, you should close all other programs, plugin everything (LAN-cable, audio gear, etc) to minimize CPU load and to ensure that no other application wants to access your sound card. You can have a look at [Hardware Setup](Hardware-Setup) for more information how to setup Hardware. If you need help setting up ASIO4All on Windows, have a look at the [ASIO4All Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
+Before each online Jam, you should close all other programs, plugin everything (LAN-cable, audio gear, etc) to minimise CPU load and to ensure that no other application wants to access your sound card. You can have a look at [Hardware Setup](Hardware-Setup) for more information how to setup your hardware. If you need help setting up ASIO4All on Windows, have a look at the [ASIO4All Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
 
 ### Jamulus main window
 If you open Jamulus, you will see a window which looks like this:
