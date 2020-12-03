@@ -2,7 +2,7 @@
 layout: post
 title: "Linux Bash Installation Script"
 heading: "Bash Installation Script"
-author: niebert
+author: "niebert"
 lang: "en"
 ---
 

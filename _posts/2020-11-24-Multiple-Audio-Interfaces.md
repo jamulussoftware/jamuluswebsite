@@ -2,6 +2,7 @@
 layout: post
 title: "Using Multiple Audio Interfaces"
 heading: "Using multiple Audio interfaces"
+author: "gilgongo"
 lang: "en"
 ---
 

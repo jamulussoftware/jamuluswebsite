@@ -24,8 +24,8 @@ First of all we explain a few basic concepts on Linux to use MIDI and Audio toge
 ### Requirements for Using Software Synths in Jamulus on Linux
 For ALSA2JACK MIDI (`a2jmidid`) connection it is necessary to install the a2j package. Furthermore we use in this example a simple Hammond organ emulator `setBfree` in this example. Replace `setBfree` by your favorite Linux synthesizer. Both packages `a2jmidid` and `setbfree` can be installed via your package manager or e.g. on Ubuntu/Mint with `apt-get` commands:
 ```shell
-    sudo apt-get install a2jmidid
-    sudo apt-get install setbfree
+sudo apt-get install a2jmidid
+sudo apt-get install setbfree
 ```
 
 ### Connecting ALSA, JACK and MIDI for a Synth for Jamulus
