@@ -33,7 +33,7 @@ La LED **Délai** indique l'état actuel du retard audio :
 **Tampons** indique l'état actuel de l'audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela peut être dû à l'un des problèmes suivants :
 
 - Le tampon de gigue[^1] réseau n'est pas assez grand pour la gigue actuelle de l'interface réseau/audio.
-- Le délai de l'interface audio (taille de la mémoire tampon) est trop faible (voir la fenêtre des paramètres).
+- Le délai du tampon du périphérique audio (taille du tampon) est trop faible (voir la fenêtre des paramètres).
 - Le débit montant ou descendant est trop élevé pour votre bande passante Internet.
 - Le processeur du client ou du serveur est à 100 %.
 
@@ -80,7 +80,7 @@ Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et v
 ![Réverb](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
 La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.
-La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de l'interface audio et que vous voullez y appliquer un effet de réverbération, réglez le sélecteur de canal sur le canal de droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
+La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de l'interface audio et que vous voulez y appliquer un effet de réverbération, réglez le sélecteur de canal sur le canal de droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
 
 ### Contrôle local du panoramique/de la balance audio
 
@@ -154,7 +154,7 @@ Sous Linux, utilisez l'outil de configuration Jack pour modifier la taille du ta
 Le délai actuel du tampon a une influence sur l'état de la connexion, le taux de transfert courant et le délai global.
 Plus la taille du tampon est faible, plus la probabilité d'un voyant rouge dans l'indicateur d'état (décrochages) est élevée et plus le taux de transfert est élevé et le délai global est faible.
 
-![Dépendances du délai de tempon](https://user-images.githubusercontent.com/20726856/97361878-816a6680-18a0-11eb-8c1f-fbf956be4b81.png)
+![Dépendances du délai de tampon](https://user-images.githubusercontent.com/20726856/97361878-816a6680-18a0-11eb-8c1f-fbf956be4b81.png)
 
 Le réglage du tampon est donc un compromis entre la qualité audio et le délai global.
 
