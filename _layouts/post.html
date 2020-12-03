@@ -65,15 +65,17 @@ pagination:
       <div class="fx-row-100-xs">
         <h2>{{ site.data.general.blog.navpages }}</h2>
       </div>
-      <div class="fx-row-100-xs fx-row-50-m">
+      <div class="fx-row fx-row-between-xs">
+        <div class="fx-col fx-txt-left">
         {% if page.previous.url %}
         <a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
         {% endif %}
-      </div>
-      <div class="fx-row-100-xs fx-row-50-m fx-row-center">
-        {% if page.next.url %}
-        <a href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
-        {% endif %}
+        </div>
+        <div class="fx-col fx-txt-right">
+          {% if page.next.url %}
+          <a href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+          {% endif %}
+        </div>
       </div>
     </div>
     <aside class="fx-col-begin-xs fx-col-100-xs fx-col-10-m">
