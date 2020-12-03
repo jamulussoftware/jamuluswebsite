@@ -7,26 +7,30 @@ permalink: "/wiki/Walk-Through"
 # Jamulus walk-through
 Let's have a look what Jamulus looks like and what you should do after having installed the software.
 ## First start
-Before each online Jam, you should close all other programs, plugin everything (LAN-cable, audio gear, etc) to minimise CPU load and to ensure that no other application wants to access your sound card. You can have a look at [Hardware Setup](Hardware-Setup) for more information how to setup your hardware. If you need help setting up ASIO4All on Windows, have a look at the [ASIO4All Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
+Before each time you start Jamulus:
+1. Close all other applications
+2. Plugin everything (LAN-cable, audio gear, etc) to minimise CPU load and to ensure that no other application wants to access your sound card
+
+You can have a look at [Hardware Setup](Hardware-Setup) for more information how to setup your hardware. If you need help setting up ASIO4All on Windows, have a look at the [ASIO4All Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
 
 ### Jamulus main window
 If you open Jamulus, you will see a window which looks like this:
 
 ![Jamulus main page](https://user-images.githubusercontent.com/20726856/100796017-4cfa4500-3420-11eb-9d35-aa206d392a5a.png)
 
-We will now have a look what you should do if this is the first time you open Jamulus.
-### 1. Setting a profile
-The first thing you should do in Jamulus is to set your profile, so that others can identify you. To do so, click on "View" at the bar on the top and on "My Profile..."
+We will now have a look what you should do for the first start of Jamulus.
+### 1. Setting up a profile
+The first thing you should do is to set your profile, so that others can identify you. To do so, click on "View" at the bar on the top and on "My Profile..."
 Now a window like this will open:
 
 ![Musician Profile](https://user-images.githubusercontent.com/20726856/100796411-e590c500-3420-11eb-9b62-e50d02cb009b.png)
 
-Fill at least "Alias/Name" and afterwards close the window to make it easier for others to identify who you are.
+Fill at least "Alias/Name" and  close the window to make it easier for others to identify who you are.
 
 ### 2. Connecting to a server
-Now you can connect to a server. Click on "Connect" on the Jamulus main window, select your genre list (list on the top left), select a server and click on connect. Now you should be able to connect to the server. If you have problems here, they are most likely due to wrongly configured audio gear or network issues. Have a look at the [Troubleshooting page](Client-Troubleshooting).
+Now you can connect to a server. Click on "Connect" in the Jamulus main window, select your genre list (list on the top left), select a server and click on "Connect". Now you should be able to connect to the server. If you have problems here, they are most likely due to wrongly configured audio gear or network issues. Have a look at the [Troubleshooting page](Client-Troubleshooting).
 ### The first Jam
-Congrats! You can now start jamming with Jamulus. The sliders you see on the right are like a mixing board: everything you change here will change your own mix. If you move something down, this user will be quieter, if you move something up, this user will be louder. It's that easy! Everything else like "PAN", "SOLO", "GRP",... are advanced options. You can of course try them!
+Congrats! You can now start jamming with Jamulus. The sliders you see on the right are like a mixing board: everything you change here will change your own mix. If you move a slider down, this user will be quieter, if you move it up, this user will be louder. It's that easy! Everything else like "PAN", "SOLO", "GRP",... are advanced options. You can of course try them!
 
 ![Jamulus main mixer connected](https://user-images.githubusercontent.com/20726856/100801241-01e43000-3428-11eb-8d61-e03b5e648971.png)
 
