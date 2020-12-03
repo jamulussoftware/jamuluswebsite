@@ -29,22 +29,16 @@ tar -xvf latest.tar.gz
 
 Primero actualiza la lista de paquetes (por ej. en distribuciones basadas en Debian con `sudo apt-get update`).
 
-En distros basadas en **Ubuntu**  18.04+ y en Debian 9 o 10:
+En distros basadas en **Ubuntu**  18.04+, **Debian** 9+ o 10 y Raspberry Pi Raspbian Buster o superior:
 
 ```shell
-sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev
-```
-
-En **Debian** 11 (bullseye) o posteriores, y la versión de Raspberry Pi Raspbian Buster o posterior:
-
-```shell
-sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libqt5concurrent5 libjack-jackd2-dev
+sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev 
 ```
 
 En **Fedora**:
 
 ```shell
-sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libqt5concurrent5 jack-audio-connection-kit-devel
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
 ```
 
 ### Qjackctl: Opcional, pero recomendado
@@ -103,7 +97,7 @@ Para información detallada sobre la utilización de Jamulus, por favor consulta
 
 ## Para actualizar tu instalación a una nueva versión
 
-Descarga las nuevas fuentes como en [Obtén Jamulus](Installation-for-Linux#get-jamulus-sources) y repite solamente las [instrucciones de compilación](Installation-for-Linux#compile-this-bad-boy) como si fuera una nueva instalación.
+Descarga las nuevas fuentes como en [Obtén Jamulus](Installation-for-Linux#obtén-las-fuentes-de-jamulus) y repite solamente las [instrucciones de compilación](Installation-for-Linux#compílalo) como si fuera una nueva instalación.
 
 ## Nota para frikis
 
@@ -113,6 +107,6 @@ Descarga las nuevas fuentes como en [Obtén Jamulus](Installation-for-Linux#get-
 
 * Para utilizar este archivo configura el software con `qmake "CONFIG+=noupcasename" Jamulus.pro` para asegurarte de que el nombre de destino de este software es **j**amulus en lugar de **J**amulus.
 
-* Usuarios de Raspberry Pi: Quizá quieras compilar el cliente en otra máquina y ejecutar el archivo binario en el Raspberry Pi. En este caso, las únicas librerías que necesitas para ejecutarlo son aquellos necesarios para la compilación de un [servidor "headless"](Server-Linux#running-a-headless-server) pero _con_ las librerías de audio para Jack. Sobre todo lee el pie de página sobre la compilación "headless".
+* Usuarios de Raspberry Pi: Quizá quieras compilar el cliente en otra máquina y ejecutar el archivo binario en el Raspberry Pi. En este caso, las únicas librerías que necesitas para ejecutarlo son aquellos necesarios para la compilación de un [servidor "headless"](Server-Linux#ejecutar-un-servidor-headless) pero _con_ las librerías de audio para Jack. Sobre todo lee el pie de página sobre la compilación "headless".
 
 * A partir de la versión 3.5.3, Jamulus ya no es compatible con Qt4.

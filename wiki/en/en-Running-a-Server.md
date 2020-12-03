@@ -37,7 +37,7 @@ If you plan to be playing regularly with the same people, **you are strongly adv
 
 Once any issues with musicians have been solved in this way, you can then investigate hosting your own server either at home or on a cloud host such as Amazon, which may result in better latency than servers run at home. For example, [see this guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/howto-idiots-guide-to-installing-jamulus-server-on-amazon-aws-lightsail-ubuntu-i/507719749802976/) to using AWS Lightsail by Jamulus user [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_)
 
-### Bandwidth - do you have enough?
+### Bandwidth – do you have enough?
 
 A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs (0.8Mbps) up and down. So if you have a 10Mbits down and 1Mbps up broadband connection, **you may start running out of bandwidth if a fifth player joins**, particularly if other musicians choose settings that increase their usage. You may want to [check that you have enough speed](https://fast.com) for that. [Read more about bandwidth use](Network-Requirements) at different quality settings.
 
@@ -55,10 +55,11 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 
 
 ## All OK? Get set up!
-
-### [For Windows or Macintosh users](Server-Win-Mac)
-### [For Linux users](Server-Linux)
-### [For Raspberry Pi](Server-Rpi)
+<div class="fx-row fx-row-start-xs button-container">
+    <a href="Server-Win-Mac" class="button fx-col-100-xs">For Windows or macOS users</a>
+    <a href="Server-Linux" class="button fx-col-100-xs">For Linux users</a>
+    <a href="Server-Rpi" class="button fx-col-100-xs">or Raspberry Pi</a>
+</div>
 
 Server operators may also be interested in downloading [this set of useful tools](https://github.com/corrados/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 
