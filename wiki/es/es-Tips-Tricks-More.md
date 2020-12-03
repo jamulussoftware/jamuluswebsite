@@ -57,7 +57,7 @@ Puedes guardar y restaurar la mezcla que tienes para los ensayos de tu grupo (fa
 
 ## Convertir un servidor público en privado sobre la marcha
 
-Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [https://github.com/DavidSavinkoff](David Savinkoff) por este truco!)
+Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [David Savinkoff](https://github.com/DavidSavinkoff) por este truco!)
 
 ## Script de arranque para cliente en Linux
 
