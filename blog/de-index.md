@@ -1,8 +1,8 @@
 ---
-layout: bloglist
+layout: kblist
 lang: "de"
 title: "Übersicht"
-permalink: /blog
+permalink: /kb
 pagination:
   enabled: true
 ---

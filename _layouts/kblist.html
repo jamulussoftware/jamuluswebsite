@@ -7,12 +7,12 @@ pagination:
 <html lang="{{ site.active_lang }}">
 
 <head>
-  <title>{{ page.title }} {{ site.data.general.blog.titleAdd }}</title>
+  <title>{{ page.title }} {{ site.data.general.kb.titleAdd }}</title>
   {% include headtags.html %}
-  <link rel="stylesheet" href="/assets/css/blog.css">
+  <link rel="stylesheet" href="/assets/css/kb.css">
 </head>
 
-<body class="blog bloglist">
+<body class="kb kblist">
   <header class="fx-row fx-row-between-xs fx-text-center">
     <div class="fx-col fx-text-center"><a href="/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}">
         <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" /></a>
@@ -35,7 +35,7 @@ pagination:
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <div>{{ post.date | date_to_string }}
               {% if post.author %}
-                {{ site.data.general.blog.by }}
+                {{ site.data.general.kb.by }}
                 {% if site.data.authors[post.author].url %}<a href="{{ site.data.authors[post.author].url }}" rel="nofollow">{% endif %}
                 {% if site.data.authors[post.author].name %}
                   {{ site.data.authors[post.author].name }}
@@ -46,7 +46,7 @@ pagination:
               {% endif %}
             </div>
             {{ post.excerpt }}
-            <a href="{{ post.url }}">{{ site.data.general.blog.readmore }}</a>
+            <a href="{{ post.url }}">{{ site.data.general.kb.readmore }}</a>
           </article>
           <hr />
         {% endfor %}
@@ -62,11 +62,11 @@ pagination:
       </main>
     </div>
     <aside class="fx-col-begin-xs fx-col-100-xs fx-col-10-m">
-      <p id="blogintro">
-        {{ site.data.general.blog.blogintro }}
+      <p id="kbintro">
+        {{ site.data.general.kb.kbintro }}
       </p>
-      <ul id="blogside">
-        <li><a href="{{ site.blognewpage }}">{{ site.data.general.blog.newpage }}</a></li>
+      <ul id="kbside">
+        <li><a href="{{ site.kbnewpage }}">{{ site.data.general.kb.newpage }}</a></li>
       </ul>
     </aside>
   </div>
