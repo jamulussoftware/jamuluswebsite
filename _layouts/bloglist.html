@@ -34,9 +34,16 @@ pagination:
           <article>
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <div>{{ post.date | date_to_string }}
-            {% if post.author %}
-              {{ site.data.general.blog.by }} {{ post.author }}
-            {% endif %}
+              {% if post.author %}
+                {{ site.data.general.blog.by }}
+                {% if site.data.authors[post.author].url %}<a href="{{ site.data.authors[post.author].url }}" rel="nofollow">{% endif %}
+                {% if site.data.authors[post.author].name %}
+                  {{ site.data.authors[post.author].name }}
+                {% else %}
+                  {{ post.author }}
+                {% endif %}
+                {% if site.data.authors[post.author].url %}</a>{% endif %}
+              {% endif %}
             </div>
             {{ post.excerpt }}
             <a href="{{ post.url }}">{{ site.data.general.blog.readmore }}</a>

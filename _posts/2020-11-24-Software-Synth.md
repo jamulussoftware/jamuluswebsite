@@ -2,7 +2,7 @@
 layout: post
 title: "Software Synth in Jamulus"
 lang: "en"
-author: "Engelbert Niehaus"
+author: "niebert"
 heading: "Software Synth in Jamulus"
 ---
 This post will discuss how to setup a software synth in Jamulus.

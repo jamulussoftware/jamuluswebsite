@@ -18,11 +18,13 @@ pagination:
     {% if page.author %}
     "publisher": {
       "@type": "Person",
-      "name": "{{ page.author }}"
+      "name": "{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}{{ page.author }}{% endif %}",
+      {% if site.data.authors[page.author].url %}"url": "{{ site.data.authors[page.author].url }}"{% endif %}
     },
     "author": {
       "@type": "Person",
-      "name": "{{ page.author }}"
+      "name": "{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}{{ page.author }}{% endif %}",
+      {% if site.data.authors[page.author].url %}"url": "{{ site.data.authors[page.author].url }}"{% endif %}
     },
     {% endif %}
     "datePublished": "{{ page.date | date_to_xmlschema }}"
@@ -41,10 +43,17 @@ pagination:
     <div class="fx-col-100-xs fx-txt-center">
       <h1>{{ page.heading }}</h1>
       {% if page.author %}
-        {{ site.data.general.blog.by }} {{ page.author }}
+        {{ site.data.general.blog.by }}
+        {% if site.data.authors[page.author].url %}<a href="{{ site.data.authors[page.author].url }}" rel="nofollow">{% endif %}
+        {% if site.data.authors[page.author].name %}
+          {{ site.data.authors[page.author].name }}
+        {% else %}
+          {{ page.author }}
+        {% endif %}
+        {% if site.data.authors[page.author].url %}</a>{% endif %}
       {% endif %}
       {% if page.date %}
-      | <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
+       (<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>)
       {% endif %}
     </div>
   </header>
