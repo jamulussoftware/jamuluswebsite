@@ -80,13 +80,13 @@ Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et v
 ![Réverberation](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
 La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.
-La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de l'interface audio et que vous voulez y appliquer un effet de réverbération, réglez le sélecteur de canal sur le canal de droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
+La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de la carte son et que vous voulez y appliquer un effet de réverbération, réglez le sélecteur de canal sur le canal de droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
 
 ### Contrôle local du panoramique/de la balance audio
 
 ![Panoramique/Balance audio locale](https://user-images.githubusercontent.com/20726856/97361250-8c70c700-189f-11eb-82c2-9a9d768dcfff.png)
 
-Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le curseur dans une direction où l'étiquette au-dessus du potentiomètre indique G -x, où x est l'indicateur d'atténuation.
+Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le chariot dans une direction où l'étiquette au-dessus du potentiomètre indique G -x, où x est l'indicateur d'atténuation.
 
 ### Console de mixage du serveur
 
@@ -138,7 +138,7 @@ Permet la prise en charge des très petits paquets audio réseau. Ils ne sont ut
 
 ![Délai de tampon](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
 
-Le réglage du délai de teampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
+Le réglage du délai de tampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
 
 - 64 échantillons : le paramètre à choisir de préférence, fournit la latence la plus faible mais ne fonctionne pas avec toutes les interfaces audio.
 - 128 échantillons : devrait fonctionner pour la plupart des interfaces audio disponibles.
@@ -213,7 +213,7 @@ Laissez ce champ vide, sauf si vous devez entrer l'adresse d'un serveur central 
 
 ![Indicateurs](https://user-images.githubusercontent.com/20726856/97362338-271dd580-18a1-11eb-99b7-02c9371a6258.png)
 
-Le temps de réponse est le temps nécessaire au flux audio pour faire l'aller-retour entre le client et le serveur.
+Le temps de « ping »  est le temps nécessaire au flux audio pour faire l'aller-retour entre le client et le serveur.
 Ce délai est introduit par le réseau et devrait être d'environ 20 à 30 ms. Si le délai est supérieur à environ 50 ms, la distance qui vous sépare du serveur est trop importante ou votre connexion internet n'est pas suffisante.
 
 Le délai global est calculé à partir du « ping » actuel et du délai introduit par les paramètres actuel du tampon.
