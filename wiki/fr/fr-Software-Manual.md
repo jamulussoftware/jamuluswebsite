@@ -4,7 +4,7 @@ title: "Manuel du logiciel"
 lang: "fr"
 permalink: "/wiki/Software-Manual"
 ---
-Aide Jamulus (Manuel du Logiciel)
+Aide Jamulus (Manuel du logiciel)
 =================================
 _(Note : les copies d'écran ont été faites avec l'interface en anglais, les termes utilisés dans ce manuel correspondent aux termes employés dans l'interface du logiciel en français.)_
 
@@ -15,7 +15,7 @@ Fenêtre principale
 
 ### LEDs d'état
 
-La LED **Délai** indique l'état actuel du retard audio :
+La LED du **status de délai** indique l'état actuel du retard :
 
 * **Vert** - Le délai est parfait pour une bonne session
 
@@ -25,7 +25,7 @@ La LED **Délai** indique l'état actuel du retard audio :
 
 ![image](https://user-images.githubusercontent.com/4561747/99384041-bb8abf00-28c6-11eb-96ab-c1c08acf2a85.png)
 
-* **Rouge** - Le délai est trop important pour jouer
+* **Rouge** - Le délai est trop important pour bœuffer
 
 ![image](https://user-images.githubusercontent.com/4561747/99384044-bded1900-28c6-11eb-8971-9ab6ee1908b5.png)
 
@@ -51,13 +51,13 @@ Veillez à ne pas écrêter le signal d'entrée pour éviter une distorsion du s
 Le texte saisi dans cette fenêtre est envoyé à tous les clients connectés.
 Si un nouveau message de tchate arrive et que la fenêtre du tchate n'est pas encore ouverte, elle est ouverte automatiquement pour tous les clients.
 
-### Profil de musicien
+### Fenêtre de profil
 
 ![Fenêtre « Profil de musicien »](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
 
 Dans le menu Vue, sélectionnez Mon profil… pour définir votre pseudo qui s'affiche sous votre potentiomètre dans la console de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes correspondant à ces choix seront également affichées sous votre potentiomètre. Le paramètre de compétence modifie la couleur de fond du de l'etiquette du potentiomètre et l'entrée de la ville apparaît dans l'info-bulle à son survol (voir la capture d'écran ci-dessous).
 
-![Info-bulle de l'étiquette du potentiomètre](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
+![Info-bulle de l'étiquette du chariot](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
 
 ### Bouton de connexion/déconnexion
 
@@ -65,7 +65,7 @@ Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un serveur 
 
 ![Fenêtre « Paramètres de connexion »](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles avec le nombre de musiciens y étants connecté et le nombre maximum d'utilisateur accepté. Les administrateurs de serveurs peuvent optionellement référencer leurs serveurs par genre musical. Utilisez le menu déroulant Liste pour sélectionner un genre, cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Se connecter pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur. Les serveurs permanents (ceux qui ont été listés pendant plus de 24 heures) sont indiqués en gras.
+La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles avec le nombre de musiciens y étant connecté et le nombre maximum d'utilisateur accepté. Les administrateurs de serveurs peuvent optionellement référencer leurs serveurs par genre musical. Utilisez le menu déroulant Liste pour sélectionner un genre, cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Se connecter pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur. Les serveurs permanents (ceux qui ont été listés pendant plus de 24 heures) sont indiqués en gras.
 
 Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour ne répertorier que les serveurs occupés, entrez un caractère « # ».
 
@@ -75,7 +75,7 @@ Si vous connaissez l'adresse IP ou l'URL d'un serveur, vous pouvez vous y connec
 
 Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et voir vos propres niveaux d'entrée, mais pas les autres musiciens. Sachez que les autres musiciens ne sauront pas si vous vous êtes mis en silence.
 
-### L'effet Réverb
+### L'effet Réverberation
 
 ![Réverb](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
@@ -92,7 +92,7 @@ Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un
 
 ![Potentiomètres](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
-Dans le cadre de la console de mixage, un potentiomètre rectiligne est affiché pour chaque client connecté au serveur (y compris vous-même). Les potentiomètres vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
+Dans le cadre de la console de mixage, un charot est affiché pour chaque client connecté au serveur (y compris vous-même). Les chariots vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
 
 Le VU-mètre indique le niveau d'entrée au serveur, c'est-à-dire le son envoyé.
 
@@ -124,7 +124,7 @@ Fenêtre des paramètres
 
 Le pilote ASIO (Périphérique) peut être sélectionné à l'aide de Jamulus sous le système d'exploitation Windows. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédent est sélectionné. Sous le système d'exploitation Mac, le matériel d'entrée et de sortie peut être sélectionné.
 
-### Assignation des canaux d'entrée/sortie
+### Assignation de canal d'entrée/sortie
 
 ![Cartographie des canaux](https://user-images.githubusercontent.com/20726856/97361637-1caf0c00-18a0-11eb-9b65-81225b7e3dd5.png)
 
@@ -134,18 +134,18 @@ Si le périphérique audio sélectionné fournit plus d'un canal d'entrée ou de
 
 Permet la prise en charge des très petits paquets audio réseau. Ils ne sont utilisés que si le délai du tampon du périphérique audio est inférieur à 128 échantillons. Plus les tampons réseau sont petits, plus la latence audio est faible. Mais en même temps la charge réseau augmente et la probabilité de décrochage audio augmente également.
 
-### Délai de temporisation
+### Délai de tampon
 
-![Délai de temporisation](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
+![Délai de tampon](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
 
-Le réglage du délai de temporisation est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
+Le réglage du délai de teampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
 
 - 64 échantillons : le paramètre à choisir de préférence, fournit la latence la plus faible mais ne fonctionne pas avec toutes les interfaces audio.
 - 128 échantillons : devrait fonctionner pour la plupart des interfaces audio disponibles.
 - 256 échantillons : ne devrait être utilisé que sur des ordinateurs très lents, ou avec une connexion internet avec une bande passante lente.
 
-Certains pilotes de périphérique audio ne permettent pas de modifier le délai de tampon à partir de Jamulus.
-Dans ce cas, le réglage du délai de temporisation est désactivé et doit être modifié à l'aide du pilote du périphérique audio. Sous Windows, appuyez sur le bouton Configuration ASIO pour ouvrir le panneau des paramètres du pilote.
+Certains pilotes de carte son ne permettent pas de modifier le délai de tampon à partir de Jamulus.
+Dans ce cas, le réglage du délai de tampon est désactivé et doit être modifié à l'aide du pilote de la carte son. Sous Windows, appuyez sur le bouton Configuration ASIO pour ouvrir le panneau des paramètres du pilote.
 
 ![Fenêtre du Délai de tampon Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
 
@@ -177,7 +177,7 @@ Si le paramètre Auto est activé, les tampons de gigue du client local et du se
 
 Sélectionne le nombre de canaux audio à utiliser pour la communication entre le client et le serveur. Trois modes sont disponibles :
 
-Les modes Mono et Stéréo utilisent respectivement un et deux canaux audio.
+Les modes mono et stéréo utilisent respectivement un et deux canaux audio.
 
 Mono-entrée/stéréo-sortie : le signal audio envoyé au serveur est mono mais le signal de retour est stéréo. C'est utile si le périphérique audio a l'instrument sur un canal d'entrée et le micro sur l'autre. Dans ce cas, les deux signaux d'entrée peuvent être mélangés sur un canal mono mais le mixage du serveur est entendu en stéréo.
 
