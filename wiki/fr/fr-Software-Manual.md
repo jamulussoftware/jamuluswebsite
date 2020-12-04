@@ -77,7 +77,7 @@ Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et v
 
 ### L'effet Réverberation
 
-![Réverb](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
+![Réverberation](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
 La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.
 La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de l'interface audio et que vous voulez y appliquer un effet de réverbération, réglez le sélecteur de canal sur le canal de droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
