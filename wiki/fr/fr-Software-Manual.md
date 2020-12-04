@@ -17,7 +17,7 @@ Fenêtre principale
 
 La LED du **status de délai** indique l'état actuel du retard :
 
-* **Vert** - Le délai est parfait pour une bonne session
+* **Vert** - Le délai est parfait pour une bonne session de bœuf
 
 ![image](https://user-images.githubusercontent.com/4561747/99384024-b6c60b00-28c6-11eb-9e7d-aa1e4245353f.png)
 
@@ -33,7 +33,7 @@ La LED du **status de délai** indique l'état actuel du retard :
 **Tampons** indique l'état actuel de l'audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela peut être dû à l'un des problèmes suivants :
 
 - Le tampon de gigue[^1] réseau n'est pas assez grand pour la gigue actuelle de l'interface réseau/audio.
-- Le délai du tampon du périphérique audio (taille du tampon) est trop faible (voir la fenêtre des paramètres).
+- Le délai du tampon de la carte son (taille du tampon) est trop faible (voir la fenêtre des paramètres).
 - Le débit montant ou descendant est trop élevé pour votre bande passante Internet.
 - Le processeur du client ou du serveur est à 100 %.
 
@@ -55,9 +55,9 @@ Si un nouveau message de tchate arrive et que la fenêtre du tchate n'est pas en
 
 ![Fenêtre « Profil de musicien »](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
 
-Dans le menu Vue, sélectionnez Mon profil… pour définir votre pseudo qui s'affiche sous votre potentiomètre dans la console de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes correspondant à ces choix seront également affichées sous votre potentiomètre. Le paramètre de compétence modifie la couleur de fond du de l'etiquette du potentiomètre et l'entrée de la ville apparaît dans l'info-bulle à son survol (voir la capture d'écran ci-dessous).
+Dans le menu Vue, sélectionnez Mon profil… pour définir votre pseudo qui s'affiche sous votre chariot dans la console de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes correspondant à ces choix seront également affichées sous votre chariot. Le paramètre de compétence modifie la couleur de fond du de l'étiquette du chariot et l'entrée de la ville apparaît dans l'info-bulle à son survol (voir la capture d'écran ci-dessous).
 
-![Info-bulle de l'étiquette du chariot](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
+![Info-bulle de l'étiquette de chariot](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
 
 ### Bouton de connexion/déconnexion
 
@@ -75,9 +75,9 @@ Si vous connaissez l'adresse IP ou l'URL d'un serveur, vous pouvez vous y connec
 
 Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et voir vos propres niveaux d'entrée, mais pas les autres musiciens. Sachez que les autres musiciens ne sauront pas si vous vous êtes mis en silence.
 
-### L'effet Réverberation
+### L'effet Réverbération
 
-![Réverberation](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
+![Réverbération](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
 La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.
 La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de la carte son et que vous voulez y appliquer un effet de réverbération, réglez le sélecteur de canal sur le canal de droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
@@ -86,27 +86,27 @@ La sélection du canal mono et le niveau de réverbération peuvent être modifi
 
 ![Panoramique/Balance audio locale](https://user-images.githubusercontent.com/20726856/97361250-8c70c700-189f-11eb-82c2-9a9d768dcfff.png)
 
-Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le chariot dans une direction où l'étiquette au-dessus du potentiomètre indique G -x, où x est l'indicateur d'atténuation.
+Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le chariot dans une direction où l'étiquette au-dessus du chariot indique G -x, où x est l'indicateur d'atténuation.
 
 ### Console de mixage du serveur
 
-![Potentiomètres](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
+![Chariots](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
-Dans le cadre de la console de mixage, un charot est affiché pour chaque client connecté au serveur (y compris vous-même). Les chariots vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
+Dans le cadre de la console de mixage, un chariot est affiché pour chaque client connecté au serveur (y compris vous-même). Les chariots vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
 
 Le VU-mètre indique le niveau d'entrée au serveur, c'est-à-dire le son envoyé.
 
 Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez alors un contrôle de balance audio (Maj-clic-droit pour réinitialiser).
 
-Si vous voyez une icône « muet » au-dessus d'un canal, cela signifie que ce musicien ne peut pas vous entendre. Soit il vous a mis en silence, soit il a mis en solo un ou plusieurs canaux sans inclure le vôtre, soit il a réglé votre potentiomètre dans son mixage à zéro.
+Si vous voyez une icône « muet » au-dessus d'un canal, cela signifie que ce musicien ne peut pas vous entendre. Soit il vous a mis en silence, soit il a mis en solo un ou plusieurs canaux sans inclure le vôtre, soit il a réglé votre chariot dans son mixage à zéro.
 
-L'utilisation du **bouton Muet** empêche d'entendre le canal sélectionné dans votre mixage local. Sachez que lorsque vous mettez un musicien en silence, il verra une icône « muet » au-dessus de votre potentiomètre pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètre bouger si le signal du musicien mis en sourdine atteint le serveur. La position de votre potentiomètre pour eux n'est pas affectée non plus.
+L'utilisation du **bouton Muet** empêche d'entendre le canal sélectionné dans votre mixage local. Sachez que lorsque vous mettez un musicien en silence, il verra une icône « muet » au-dessus de votre chariot pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètre bouger si le signal du musicien mis en sourdine atteint le serveur. La position de votre chariot pour eux n'est pas affectée non plus.
 
-Le **bouton Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en silence. Notez également que ces musiciens qui ne sont pas en solo verront une icône « muet » au-dessus de votre potentiomètre.
+Le **bouton Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en silence. Notez également que ces musiciens qui ne sont pas en solo verront une icône « muet » au-dessus de votre chariot.
 
 Les canaux sont répertoriés de gauche à droite dans l'ordre dans lequel les clients se connectent jusqu'à ce qu'ils partent, leur « créneau » étant alors occupé par le nouvel arrivant suivant. Vous pouvez modifier l'ordre de tri en utilisant l'option Éditer dans le menu de l'application.
 
-Vous pouvez regrouper les canaux audio en utilisant le commutateur « groupe ». Déplacer le potentiomètre de n'importe quel membre du groupe va agir sur les autres potentiomètres de ce groupe avec une proportion identique. Vous pouvez isoler temporairement un canal du groupe avec Maj-clic-glisser.
+Vous pouvez regrouper les chariots en utilisant le commutateur « groupe ». Déplacer le chariot de n'importe quel membre du groupe va agir sur les autres chariots de ce groupe avec une proportion identique. Vous pouvez isoler temporairement un canal du groupe avec Maj-clic-glisser.
 
 Si l'administrateur du serveur a activé l'enregistrement, vous verrez un message au-dessus de la console de mixage indiquant que vous êtes en train d'être enregistré.
 
@@ -122,13 +122,13 @@ Fenêtre des paramètres
 ![Périphérique audio sous Windows](https://user-images.githubusercontent.com/20726856/97361494-e70a2300-189f-11eb-9095-2c34ad07314d.png)
 ![Périphérique audio sous MacOS](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
 
-Le pilote ASIO (Périphérique) peut être sélectionné à l'aide de Jamulus sous le système d'exploitation Windows. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédent est sélectionné. Sous le système d'exploitation Mac, le matériel d'entrée et de sortie peut être sélectionné.
+Le pilote ASIO (Périphérique) peut être sélectionné en utilisant Jamulus sous le système d'exploitation Windows. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédent est sélectionné. Sous le système d'exploitation Mac, le matériel d'entrée et de sortie peut être sélectionné.
 
 ### Assignation de canal d'entrée/sortie
 
 ![Cartographie des canaux](https://user-images.githubusercontent.com/20726856/97361637-1caf0c00-18a0-11eb-9b65-81225b7e3dd5.png)
 
-Si le périphérique audio sélectionné fournit plus d'un canal d'entrée ou de sortie, les _Cartographie des canaux d'entrée_ et _Cartographie des canaux de sortie_ sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droite), un canal différent de l'actuel périphérique audio peut être sélectionné.
+Si la carte son sélectionnée fournit plus d'un canal d'entrée ou de sortie, les _cartographie des canaux d'entrée_ et _cartographie des canaux de sortie_ sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droite), un canal différent de l'actuelle carte son peut être sélectionné.
 
 ### Activer les petits tampons de réseau
 
@@ -141,10 +141,10 @@ Permet la prise en charge des très petits paquets audio réseau. Ils ne sont ut
 Le réglage du délai de tampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
 
 - 64 échantillons : le paramètre à choisir de préférence, fournit la latence la plus faible mais ne fonctionne pas avec toutes les interfaces audio.
-- 128 échantillons : devrait fonctionner pour la plupart des interfaces audio disponibles.
+- 128 échantillons : devrait fonctionner pour la plupart des cartes son disponibles.
 - 256 échantillons : ne devrait être utilisé que sur des ordinateurs très lents, ou avec une connexion internet avec une bande passante lente.
 
-Certains pilotes de carte son ne permettent pas de modifier le délai de tampon à partir de Jamulus.
+Certains pilotes de carte son ne permettent pas de modifier le délai de tampon à partir du logiciel Jamulus.
 Dans ce cas, le réglage du délai de tampon est désactivé et doit être modifié à l'aide du pilote de la carte son. Sous Windows, appuyez sur le bouton Configuration ASIO pour ouvrir le panneau des paramètres du pilote.
 
 ![Fenêtre du Délai de tampon Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
@@ -158,18 +158,18 @@ Plus la taille du tampon est faible, plus la probabilité d'un voyant rouge dans
 
 Le réglage du tampon est donc un compromis entre la qualité audio et le délai global.
 
-### Tampon de gigue avec indicateur d'état du tampon
+### Tampon de gigue avec indicateur de statut du tampon
 
 ![Tampon de gigue](https://user-images.githubusercontent.com/20726856/97361956-9b0bae00-18a0-11eb-85de-dc2ded891175.png)
 
 Le tampon de gigue compense les gigues de synchronisation du réseau et de la carte son. La taille du tampon influence donc la qualité du flux audio (le nombre de décrochages) et le délai global (plus le tampon est long, plus le délai est important).
 
-Vous pouvez définir manuellement la taille du tampon de gigue pour le client local et le serveur distant. Pour le tampon de gigue locale, les décrochages dans le flux audio sont indiqués par le voyant lumineux situé sous les curseurs de taille de tampon de gigue.
+Vous pouvez définir manuellement la taille du tampon de gigue pour le client local et le serveur distant. Pour le tampon de gigue local, les décrochages dans le flux audio sont indiqués par le voyant lumineux situé sous les chariots de taille de tampon de gigue.
 Si le voyant devient rouge, un dépassement ou une sous-utilisation du tampon a eu lieu et le flux audio est interrompu.
 
 Le réglage du tampon de gigue est donc aussi un compromis entre la qualité audio et le délai global.
 
-Si le paramètre Auto est activé, les tampons de gigue du client local et du serveur distant sont automatiquement réglés en fonction des mesures de la gigue de synchronisation du réseau et du périphérique audio. Si la vérification automatique est activée, les curseurs de la taille des tampons de gigue sont désactivés (ils ne peuvent pas être déplacés avec la souris).
+Si le paramètre Auto est activé, les tampons de gigue du client local et du serveur distant sont automatiquement réglés en fonction des mesures de la gigue de synchronisation du réseau et de la carte son. Si la vérification automatique est activée, les chariots de la taille de tampon de gigue sont désactivés (ils ne peuvent pas être déplacés avec la souris).
 
 ### Canaux audio
 
@@ -179,7 +179,7 @@ Sélectionne le nombre de canaux audio à utiliser pour la communication entre l
 
 Les modes mono et stéréo utilisent respectivement un et deux canaux audio.
 
-Mono-entrée/stéréo-sortie : le signal audio envoyé au serveur est mono mais le signal de retour est stéréo. C'est utile si le périphérique audio a l'instrument sur un canal d'entrée et le micro sur l'autre. Dans ce cas, les deux signaux d'entrée peuvent être mélangés sur un canal mono mais le mixage du serveur est entendu en stéréo.
+Mono-entrée/stéréo-sortie : le signal audio envoyé au serveur est mono mais le signal de retour est stéréo. C'est utile si la carte son a l'instrument sur un canal d'entrée et le micro sur l'autre. Dans ce cas, les deux signaux d'entrée peuvent être mélangés sur un canal mono mais le mixage du serveur est entendu en stéréo.
 
 L'activation du mode stéréo augmentera le débit de données de votre flux. Assurez-vous que votre débit montant ne dépasse pas la vitesse montante disponible pour votre connexion internet.
 
@@ -195,7 +195,7 @@ Plus la qualité audio est élevée, plus le débit de données de votre flux au
 
 ![Niveau de nouveau client](https://user-images.githubusercontent.com/20726856/97362173-e2923a00-18a0-11eb-8401-9ad71866f6b1.png)
 
-Ce paramètre définit le niveau du canal d'un client nouvellement connecté, en pourcentage. Si un nouveau musicien se connecte au serveur courant, il obtiendra le niveau initial spécifié si aucun autre niveau de canal provenant d'une connexion précédente de ce même client n'a déjà été enregistré. Vous pouvez configurer tous les clients d'un serveur occupé à ce niveau en utilisant Éditer > « Régler tous les chariots sur niveau d'un nouveau client ».
+Ce paramètre définit le niveau du chariot d'un client nouvellement connecté, en pourcentage. Si un nouveau musicien se connecte au serveur courant, il obtiendra le niveau de chariot initial spécifié si aucun autre niveau de canal provenant d'une connexion précédente de ce même client n'a déjà été stocké. Vous pouvez configurer tous les clients d'un serveur occupé à ce niveau en utilisant Éditer > « Régler tous les chariots sur niveau d'un nouveau client ».
 
 ### Thème fantaisie
 
