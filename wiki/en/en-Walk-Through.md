@@ -9,7 +9,7 @@ Let's have a look at what Jamulus looks like and what you should do after having
 ## First start
 Before you start Jamulus:
 1. Close all other applications
-2. Plugin everything (Ethernet cable, audio gear, etc.)
+2. Connect everything (Ethernet cable, audio gear, etc.)
 
 ... to minimise CPU load and to ensure that no other application tries to use your sound card.
 
@@ -51,6 +51,6 @@ If you need help or want to contribute to the Jamulus Project, you can have a lo
 For help, chat, and general discussions about Jamulus: Have a look at the [forums on SourceForge](https://sourceforge.net/p/llcon/discussion/).
 
 ### Development and contribution
-If you want to contribute to the Jamulus Software, have a look at the [Jamulus GitHub repository](https://github.com/corrados/jamulus/) and read the contributing file there. 
+If you want to contribute to the Jamulus Software, have a look at the [Jamulus GitHub repository](https://github.com/corrados/jamulus/) and read the contributing file there.
 
 Besides that, you can also contribute to this documentation: see the [Jamulus Website GitHub repository](https://github.com/jamulussoftware/jamuluswebsite) and have a look at the contribution file there.
