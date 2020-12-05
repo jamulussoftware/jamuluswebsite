@@ -8,7 +8,7 @@ permalink: "/wiki/Walk-Through"
 Let's have a look at what Jamulus looks like and what you should do after having installed the software.
 ## First start
 Before you start Jamulus:
-1. Close all other applications
+1. For now, close all other applications. It's best to start from zero at first.
 2. Connect everything (Ethernet cable, audio gear, etc.)
 
 ... to minimise load on your computer and to ensure that no other application tries to use your sound card.
