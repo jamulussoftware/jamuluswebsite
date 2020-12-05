@@ -117,7 +117,7 @@ The faders allow you to adjust the level of what you hear without affecting what
 
 The VU meter shows the input level at the server - that is, the sound being sent.
 
-If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-right-click to reset).
+If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset).
 
 If you see a "mute" icon above a channel, it means that musician cannot hear you. Either they have muted you, soloed one or more channels not including yours, or have set your fader in their mix to zero.
 
