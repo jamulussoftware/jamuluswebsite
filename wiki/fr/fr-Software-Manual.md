@@ -223,4 +223,4 @@ Le débit montant de l'audio dépend de la taille actuelle des paquets audio et 
 ----
 ## Notes
 
-[^1] : dans le domaine des réseaux informatiques, la **gigue** (en anglais **jitter**) est la variation de la latence au fil du temps. _(Source : [Wikipédia FR](https://fr.wikipedia.org/wiki/Gigue_(informatique)){: target="_blank" rel="noopener noreferrer"})_
+[^1]: dans le domaine des réseaux informatiques, la **gigue** (en anglais **jitter**) est la variation de la latence au fil du temps. _(Source : [Wikipédia FR](https://fr.wikipedia.org/wiki/Gigue_(informatique)){: target="_blank" rel="noopener noreferrer"})_
