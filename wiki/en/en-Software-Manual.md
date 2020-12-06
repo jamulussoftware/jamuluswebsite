@@ -78,7 +78,7 @@ pressing this button will end the session.
 
 ![Connect dialog](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maxmium number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
 You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
 
@@ -260,4 +260,4 @@ your distance to the server is too large or your internet connection is not suff
 Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
 
 Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream
-rate is not higher than your available internet upload speed (check this with a service such as [speedtest.net](http://speedtest.net)).
+rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/)).
