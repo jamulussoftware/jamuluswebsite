@@ -30,7 +30,7 @@ La LED du **status de délai** indique l'état actuel du délai :
 ![image](https://user-images.githubusercontent.com/4561747/99384044-bded1900-28c6-11eb-8971-9ab6ee1908b5.png)
 
 
-**Tampons** indique l'état actuel de l'audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela peut être dû à l'un des problèmes suivants :
+**Tampons** indique l'état actuel de l'audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela peut être dû à l'un des problèmes suivants :
 
 - Le tampon de gigue[^1] réseau n'est pas assez grand pour la gigue actuelle de l'interface réseau/audio.
 - Le délai du tampon de la carte son (taille du tampon) est trop faible (voir la fenêtre des paramètres).
@@ -67,7 +67,7 @@ Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un serveur 
 
 La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles avec le nombre d'occupants et le nombre maximum possible. Les administrateurs de serveur peuvent optionellement référencer leurs serveurs par genre musical. Utilisez le menu déroulant Liste pour sélectionner un genre, cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Se connecter pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur. Les serveurs permanents (ceux qui ont été listés pendant plus de 24 heures) sont indiqués en gras.
 
-Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour ne répertorier que les serveurs occupés, entrez un caractère « # ».
+Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour ne répertorier que les serveurs occupés, entrez un caractère « # ».
 
 Si vous connaissez l'adresse IP ou l'URL d'un serveur, vous pouvez vous y connecter en utilisant le champ Adresse du serveur. Un numéro de port optionnel peut être ajouté après l'adresse IP ou l'URL en utilisant le deux-points comme séparateur, par ex. jamulus.example.com:22124. Le champ affichera également une liste des adresses de serveur les plus utilisées récemment.
 
@@ -98,15 +98,15 @@ Le VU-mètre indique le niveau d'entrée au serveur, c'est-à-dire le son envoy�
 
 Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez alors un contrôle de balance audio (Maj-clic pour réinitialiser).
 
-Si vous voyez une icône « muet » au-dessus d'un canal, cela signifie que ce musicien ne peut pas vous entendre. Soit il vous a mis en silence, soit il a mis en solo un ou plusieurs canaux sans inclure le vôtre, soit il a réglé votre chariot dans son mixage à zéro.
+Si vous voyez une icône « muet » au-dessus d'un canal, cela signifie que ce musicien ne peut pas vous entendre. Soit il vous a mis en silence, soit il a mis en solo un ou plusieurs canaux sans inclure le vôtre, soit il a réglé votre chariot dans son mixage à zéro.
 
-L'utilisation du **bouton Muet** empêche d'entendre le canal indiqué dans votre mixage local. Sachez que lorsque vous mettez un musicien en silence, il verra une icône « muet » au-dessus de votre chariot pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètre bouger si le signal du musicien mis en sourdine atteint le serveur. La position de votre chariot pour eux n'est pas affectée non plus.
+L'utilisation du **bouton Muet** empêche d'entendre le canal indiqué dans votre mixage local. Sachez que lorsque vous mettez un musicien en silence, il verra une icône « muet » au-dessus de votre chariot pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètre bouger si le signal du musicien mis en sourdine atteint le serveur. La position de votre chariot pour eux n'est pas affectée non plus.
 
-Le **bouton Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en silence. Notez également que ces musiciens qui ne sont pas en solo verront une icône « muet » au-dessus de votre chariot.
+Le **bouton Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en silence. Notez également que ces musiciens qui ne sont pas en solo verront une icône « muet » au-dessus de votre chariot.
 
 Les canaux sont listés de gauche à droite dans l'ordre dans lequel les clients se connectent jusqu'à ce qu'ils partent, leur « créneau » sera alors occupé par le nouvel arrivant suivant. Vous pouvez modifier l'ordre de tri en utilisant l'option Éditer dans le menu de l'application.
 
-Vous pouvez regrouper les chariots en utilisant le commutateur « groupe ». Déplacer le chariot de n'importe quel membre du groupe déplacera les autres chariots de ce groupe de la même proportion. Vous pouvez temporairement isoler un canal du groupe avec Maj-clic-glisser.
+Vous pouvez regrouper les chariots en utilisant le commutateur « groupe ». Déplacer le chariot de n'importe quel membre du groupe déplacera les autres chariots de ce groupe de la même proportion. Vous pouvez temporairement isoler un canal du groupe avec Maj-clic-glisser.
 
 Si l'administrateur du serveur a activé l'enregistrement, vous verrez un message au-dessus de la console de mixage indiquant que vous êtes en train d'être enregistré.
 
@@ -138,7 +138,7 @@ Permet la prise en charge des très petits paquets audio réseau. Ils ne sont ut
 
 ![Délai de tampon](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
 
-Le réglage du délai de tampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de tampon sont prises en charge :
+Le réglage du délai de tampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de tampon sont prises en charge :
 
 - 64 échantillons : le paramètre à choisir de préférence, fournit la latence la plus faible mais ne fonctionne pas avec toutes les cartes son.
 - 128 échantillons : devrait fonctionner pour la plupart des cartes son disponibles.
@@ -195,7 +195,7 @@ Plus la qualité audio est élevée, plus le débit de données de votre flux au
 
 ![Niveau de nouveau client](https://user-images.githubusercontent.com/20726856/97362173-e2923a00-18a0-11eb-8401-9ad71866f6b1.png)
 
-Ce paramètre définit le niveau du chariot d'un client nouvellement connecté, en pourcentage. Si un nouveau musicien se connecte au serveur courant, il obtiendra le niveau de chariot initial spécifié si aucun autre niveau de canal provenant d'une connexion précédente de ce même client n'a déjà été stocké. Vous pouvez configurer tous les clients d'un serveur occupé à ce niveau en utilisant Éditer > « Régler tous les chariots sur niveau d'un nouveau client ».
+Ce paramètre définit le niveau du chariot d'un client nouvellement connecté, en pourcentage. Si un nouveau musicien se connecte au serveur courant, il obtiendra le niveau de chariot initial spécifié si aucun autre niveau de canal provenant d'une connexion précédente de ce même client n'a déjà été stocké. Vous pouvez configurer tous les clients d'un serveur occupé à ce niveau en utilisant Éditer > « Régler tous les chariots sur niveau d'un nouveau client ».
 
 ### Thème fantaisie
 
@@ -213,7 +213,7 @@ Laissez ce champ vide, sauf si vous devez entrer l'adresse d'un serveur central 
 
 ![Indicateurs](https://user-images.githubusercontent.com/20726856/97362338-271dd580-18a1-11eb-99b7-02c9371a6258.png)
 
-Le temps de « ping »  est le temps nécessaire au flux audio pour faire l'aller-retour entre le client et le serveur.
+Le temps de « ping »  est le temps nécessaire au flux audio pour faire l'aller-retour entre le client et le serveur.
 Ce délai est introduit par le réseau et devrait être d'environ 20 à 30 ms. Si le délai est supérieur à environ 50 ms, la distance qui vous sépare du serveur est trop importante ou votre connexion internet n'est pas suffisante.
 
 Le délai global est calculé à partir du « ping » actuel et du délai introduit par les paramètres actuel du tampon.
