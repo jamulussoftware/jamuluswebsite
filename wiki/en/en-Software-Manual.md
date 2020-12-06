@@ -261,4 +261,4 @@ your distance to the server is too large or your internet connection is not suff
 Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
 
 Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream
-rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/)).
+rate is not higher than your available internet upload speed (check this with a service such as [speedtest.net](https://speedtest.net)).
