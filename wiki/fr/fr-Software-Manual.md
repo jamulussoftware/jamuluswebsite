@@ -4,7 +4,7 @@ title: "Manuel du logiciel"
 lang: "fr"
 permalink: "/wiki/Software-Manual"
 ---
-Aide Jamulus (Manuel du logiciel)
+Aide Jamulus (manuel du logiciel)
 =================================
 _(Note : les copies d'écran ont été faites avec l'interface en anglais, les termes utilisés dans ce manuel correspondent aux termes employés dans l'interface du logiciel en français.)_
 
@@ -15,9 +15,9 @@ Fenêtre principale
 
 ### LEDs d'état
 
-La LED du **status de délai** indique l'état actuel du retard :
+La LED du **status de délai** indique l'état actuel du délai :
 
-* **Vert** - Le délai est parfait pour une bonne session de bœuf
+* **Vert** - Le délai est parfait pour une session de bœuf
 
 ![image](https://user-images.githubusercontent.com/4561747/99384024-b6c60b00-28c6-11eb-9e7d-aa1e4245353f.png)
 
@@ -34,7 +34,7 @@ La LED du **status de délai** indique l'état actuel du retard :
 
 - Le tampon de gigue[^1] réseau n'est pas assez grand pour la gigue actuelle de l'interface réseau/audio.
 - Le délai du tampon de la carte son (taille du tampon) est trop faible (voir la fenêtre des paramètres).
-- Le débit montant ou descendant est trop élevé pour votre bande passante Internet.
+- Le débit montant ou descendant est trop élevé pour votre bande passante internet.
 - Le processeur du client ou du serveur est à 100 %.
 
 ### Niveau d'entrée
@@ -44,69 +44,69 @@ La LED du **status de délai** indique l'état actuel du retard :
 Ceci indique le niveau des deux canaux stéréo pour votre entrée audio.
 Veillez à ne pas écrêter le signal d'entrée pour éviter une distorsion du signal audio (les LEDs indiquent l'écrêtage lorsqu'il se produit).
 
-### Bouton _Tchate_
+### Bouton Tchate
 
-![Fenêtre « Tchate »](https://user-images.githubusercontent.com/20726856/97360717-d7d6a580-189e-11eb-84db-80536e17dc30.png)
+![Fenêtre de tchate](https://user-images.githubusercontent.com/20726856/97360717-d7d6a580-189e-11eb-84db-80536e17dc30.png)
 
-Le texte saisi dans cette fenêtre est envoyé à tous les clients connectés.
-Si un nouveau message de tchate arrive et que la fenêtre du tchate n'est pas encore ouverte, elle est ouverte automatiquement pour tous les clients.
+Le texte de tchate saisi dans cette fenêtre est envoyé à tous les clients connectés.
+Si un nouveau message de tchate arrive et que la fenêtre du tchate n'est pas encore ouverte, elle sera ouverte automatiquement pour tous les clients.
 
 ### Fenêtre de profil
 
-![Fenêtre « Profil de musicien »](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
+![Fenêtre de mon profil](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
 
-Dans le menu Vue, sélectionnez Mon profil… pour définir votre pseudo qui s'affiche sous votre chariot dans la console de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes correspondant à ces choix seront également affichées sous votre chariot. Le paramètre de compétence modifie la couleur de fond du de l'étiquette du chariot et l'entrée de la ville apparaît dans l'info-bulle à son survol (voir la capture d'écran ci-dessous).
+Dans le menu Vue, sélectionnez Mon profil… pour définir votre pseudo/nom qui s'affiche sous votre chariot dans la console de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes correspondant à ces choix seront également affichées sous votre chariot. Le paramètre de compétence modifie la couleur de fond de l'étiquette du chariot et l'entrée de la ville apparaît dans l'info-bulle à son survol (voir la capture d'écran ci-dessous).
 
 ![Info-bulle de l'étiquette de chariot](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
 
 ### Bouton de connexion/déconnexion
 
-Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un serveur auquel vous connecter. Si vous êtes connecté, en appuyant sur ce bouton, vous mettez fin à la session.
+Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un serveur auquel vous connecter. Si vous êtes connecté, appuyer sur ce bouton mettra fin à la session.
 
-![Fenêtre « Paramètres de connexion »](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
+![Dialogue de connexion](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles avec le nombre de musiciens y étant connecté et le nombre maximum d'utilisateur accepté. Les administrateurs de serveurs peuvent optionellement référencer leurs serveurs par genre musical. Utilisez le menu déroulant Liste pour sélectionner un genre, cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Se connecter pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur. Les serveurs permanents (ceux qui ont été listés pendant plus de 24 heures) sont indiqués en gras.
+La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles avec le nombre d'occupants et le nombre maximum possible. Les administrateurs de serveur peuvent optionellement référencer leurs serveurs par genre musical. Utilisez le menu déroulant Liste pour sélectionner un genre, cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Se connecter pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur. Les serveurs permanents (ceux qui ont été listés pendant plus de 24 heures) sont indiqués en gras.
 
 Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour ne répertorier que les serveurs occupés, entrez un caractère « # ».
 
-Si vous connaissez l'adresse IP ou l'URL d'un serveur, vous pouvez vous y connecter en utilisant le champ Adresse du serveur. Un numéro de port optionnel peut être ajouté après l'adresse IP ou l'URL en utilisant le deux-points comme séparateur, par ex. jamulus.example.com:22124. Le champ affichera également une liste des serveurs les plus utilisées récemment.
+Si vous connaissez l'adresse IP ou l'URL d'un serveur, vous pouvez vous y connecter en utilisant le champ Adresse du serveur. Un numéro de port optionnel peut être ajouté après l'adresse IP ou l'URL en utilisant le deux-points comme séparateur, par ex. jamulus.example.com:22124. Le champ affichera également une liste des adresses de serveur les plus utilisées récemment.
 
-### Bouton Me Silencer
+### Bouton Me silencer
 
 Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et voir vos propres niveaux d'entrée, mais pas les autres musiciens. Sachez que les autres musiciens ne sauront pas si vous vous êtes mis en silence.
 
-### L'effet Réverbération
+### L'effet de réverbération
 
 ![Réverbération](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
 
 La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.
-La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de la carte son et que vous voulez y appliquer un effet de réverbération, réglez le sélecteur de canal sur le canal de droite et déplacez le curseur vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
+La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de la carte son et qu'un effet de réverbération doit y être appliqué, réglez le sélecteur de canal sur le canal de droite et déplacez le chariot vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
 
 ### Contrôle local du panoramique/de la balance audio
 
-![Panoramique/Balance audio locale](https://user-images.githubusercontent.com/20726856/97361250-8c70c700-189f-11eb-82c2-9a9d768dcfff.png)
+![Contrôle de panoramique/balance audio locale](https://user-images.githubusercontent.com/20726856/97361250-8c70c700-189f-11eb-82c2-9a9d768dcfff.png)
 
-Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le chariot dans une direction où l'étiquette au-dessus du chariot indique G -x, où x est l'indicateur d'atténuation.
+Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le chariot audio dans une direction où l'étiquette au-dessus du chariot indique G -x, où x est l'indicateur d'atténuation actuelle.
 
-### Console de mixage du serveur
+### Console de mixage audio du serveur
 
-![Chariots](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
+![Chariots audio](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
 Dans le cadre de la console de mixage, un chariot est affiché pour chaque client connecté au serveur (y compris vous-même). Les chariots vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
 
 Le VU-mètre indique le niveau d'entrée au serveur, c'est-à-dire le son envoyé.
 
-Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez alors un contrôle de balance audio (Maj-clic-droit pour réinitialiser).
+Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez alors un contrôle de balance audio (Maj-clic pour réinitialiser).
 
 Si vous voyez une icône « muet » au-dessus d'un canal, cela signifie que ce musicien ne peut pas vous entendre. Soit il vous a mis en silence, soit il a mis en solo un ou plusieurs canaux sans inclure le vôtre, soit il a réglé votre chariot dans son mixage à zéro.
 
-L'utilisation du **bouton Muet** empêche d'entendre le canal sélectionné dans votre mixage local. Sachez que lorsque vous mettez un musicien en silence, il verra une icône « muet » au-dessus de votre chariot pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètre bouger si le signal du musicien mis en sourdine atteint le serveur. La position de votre chariot pour eux n'est pas affectée non plus.
+L'utilisation du **bouton Muet** empêche d'entendre le canal indiqué dans votre mixage local. Sachez que lorsque vous mettez un musicien en silence, il verra une icône « muet » au-dessus de votre chariot pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètre bouger si le signal du musicien mis en sourdine atteint le serveur. La position de votre chariot pour eux n'est pas affectée non plus.
 
 Le **bouton Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en silence. Notez également que ces musiciens qui ne sont pas en solo verront une icône « muet » au-dessus de votre chariot.
 
-Les canaux sont répertoriés de gauche à droite dans l'ordre dans lequel les clients se connectent jusqu'à ce qu'ils partent, leur « créneau » étant alors occupé par le nouvel arrivant suivant. Vous pouvez modifier l'ordre de tri en utilisant l'option Éditer dans le menu de l'application.
+Les canaux sont listés de gauche à droite dans l'ordre dans lequel les clients se connectent jusqu'à ce qu'ils partent, leur « créneau » sera alors occupé par le nouvel arrivant suivant. Vous pouvez modifier l'ordre de tri en utilisant l'option Éditer dans le menu de l'application.
 
-Vous pouvez regrouper les chariots en utilisant le commutateur « groupe ». Déplacer le chariot de n'importe quel membre du groupe va agir sur les autres chariots de ce groupe avec une proportion identique. Vous pouvez isoler temporairement un canal du groupe avec Maj-clic-glisser.
+Vous pouvez regrouper les chariots en utilisant le commutateur « groupe ». Déplacer le chariot de n'importe quel membre du groupe déplacera les autres chariots de ce groupe de la même proportion. Vous pouvez temporairement isoler un canal du groupe avec Maj-clic-glisser.
 
 Si l'administrateur du serveur a activé l'enregistrement, vous verrez un message au-dessus de la console de mixage indiquant que vous êtes en train d'être enregistré.
 
@@ -117,37 +117,37 @@ Fenêtre des paramètres
 
 ![image](https://user-images.githubusercontent.com/20726856/97361399-c4780a00-189f-11eb-8ad0-6b94f7eb1dcc.png)
 
-### Périphérique audio
+### Périphérique de carte son
 
-![Périphérique audio sous Windows](https://user-images.githubusercontent.com/20726856/97361494-e70a2300-189f-11eb-9095-2c34ad07314d.png)
-![Périphérique audio sous MacOS](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
+![Périphérique de carte son sous Windows](https://user-images.githubusercontent.com/20726856/97361494-e70a2300-189f-11eb-9095-2c34ad07314d.png)
+![Périphérique de carte son sous MacOS](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
 
 Le pilote ASIO (Périphérique) peut être sélectionné en utilisant Jamulus sous le système d'exploitation Windows. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédent est sélectionné. Sous le système d'exploitation Mac, le matériel d'entrée et de sortie peut être sélectionné.
 
 ### Assignation de canal d'entrée/sortie
 
-![Cartographie des canaux](https://user-images.githubusercontent.com/20726856/97361637-1caf0c00-18a0-11eb-9b65-81225b7e3dd5.png)
+![Cartographie de canal](https://user-images.githubusercontent.com/20726856/97361637-1caf0c00-18a0-11eb-9b65-81225b7e3dd5.png)
 
-Si la carte son sélectionnée fournit plus d'un canal d'entrée ou de sortie, les _cartographie des canaux d'entrée_ et _cartographie des canaux de sortie_ sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droite), un canal différent de l'actuelle carte son peut être sélectionné.
+Si le périphérique de carte son sélectionnée fournit plus d'un canal d'entrée ou de sortie, les _cartographie des canaux d'entrée_ et _cartographie des canaux de sortie_ sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droite), un canal différent de la carte son actuelle peut être sélectionné.
 
 ### Activer les petits tampons de réseau
 
-Permet la prise en charge des très petits paquets audio réseau. Ils ne sont utilisés que si le délai du tampon du périphérique audio est inférieur à 128 échantillons. Plus les tampons réseau sont petits, plus la latence audio est faible. Mais en même temps la charge réseau augmente et la probabilité de décrochage audio augmente également.
+Permet la prise en charge des très petits paquets audio réseau. Ils ne sont utilisés que si le délai du tampon de la carte son est inférieur à 128 échantillons. Plus les tampons réseau sont petits, plus la latence audio est faible. Mais en même temps, la charge réseau augmente et la probabilité de décrochage audio augmente également.
 
 ### Délai de tampon
 
 ![Délai de tampon](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
 
-Le réglage du délai de tampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de mémoire tampon sont prises en charge :
+Le réglage du délai de tampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de tampon sont prises en charge :
 
-- 64 échantillons : le paramètre à choisir de préférence, fournit la latence la plus faible mais ne fonctionne pas avec toutes les interfaces audio.
+- 64 échantillons : le paramètre à choisir de préférence, fournit la latence la plus faible mais ne fonctionne pas avec toutes les cartes son.
 - 128 échantillons : devrait fonctionner pour la plupart des cartes son disponibles.
-- 256 échantillons : ne devrait être utilisé que sur des ordinateurs très lents, ou avec une connexion internet avec une bande passante lente.
+- 256 échantillons : ne devrait être utilisé que sur des ordinateurs très lents, ou avec une connexion internet lente.
 
 Certains pilotes de carte son ne permettent pas de modifier le délai de tampon à partir du logiciel Jamulus.
 Dans ce cas, le réglage du délai de tampon est désactivé et doit être modifié à l'aide du pilote de la carte son. Sous Windows, appuyez sur le bouton Configuration ASIO pour ouvrir le panneau des paramètres du pilote.
 
-![Fenêtre du Délai de tampon Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
+![Délai de tampon Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
 
 Sous Linux, utilisez l'outil de configuration Jack pour modifier la taille du tampon.
 
@@ -183,7 +183,7 @@ Mono-entrée/stéréo-sortie : le signal audio envoyé au serveur est mono mais
 
 L'activation du mode stéréo augmentera le débit de données de votre flux. Assurez-vous que votre débit montant ne dépasse pas la vitesse montante disponible pour votre connexion internet.
 
-En mode de flux stéréo, aucune sélection de canal audio pour l'effet de réverbération ne sera disponible dans la fenêtre principale puisque l'effet est alors appliqué aux deux canaux du signal stéréo dans ce cas.
+En mode de flux stéréo, aucune sélection de canal audio pour l'effet de réverb ne sera disponible dans la fenêtre principale puisque l'effet est appliqué aux deux canaux dans ce cas.
 
 ### Qualité audio
 
@@ -201,7 +201,7 @@ Ce paramètre définit le niveau du chariot d'un client nouvellement connecté, 
 
 ![Thème fantaisie](https://user-images.githubusercontent.com/20726856/97362214-f9389100-18a0-11eb-9adb-ebf2c1d18007.png)
 
-Il s'agit d'appliquer un thème fantaisie à la fenêtre principale.
+Ceci applique un thème fantaisie à la fenêtre principale.
 
 ### Adresse personnalisée du serveur central
 
@@ -218,9 +218,9 @@ Ce délai est introduit par le réseau et devrait être d'environ 20 à 30 ms. S
 
 Le délai global est calculé à partir du « ping » actuel et du délai introduit par les paramètres actuel du tampon.
 
-Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de la qualité audio. Assurez-vous que le débit montant n'est pas supérieur à votre vitesse montante Internet (vérifiez ça avec un service tel que [speedtest.net](http://speedtest.net)).
+Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de compression. Assurez-vous que le débit montant n'est pas supérieur à votre vitesse montante internet disponible (vérifiez ça avec un service tel que [speedtest.net](http://speedtest.net)).
 
 ----
 ## Notes
 
-[^1]: dans le domaine des réseaux informatiques, la **gigue** (en anglais **jitter**) est la variation de la latence au fil du temps. _(Source : [Wikipédia](https://fr.wikipedia.org/wiki/Gigue_(informatique)){: target="_blank" rel="noopener noreferrer"})_
+[^1] : dans le domaine des réseaux informatiques, la **gigue** (en anglais **jitter**) est la variation de la latence au fil du temps. _(Source : [Wikipédia FR](https://fr.wikipedia.org/wiki/Gigue_(informatique)){: target="_blank" rel="noopener noreferrer"})_
