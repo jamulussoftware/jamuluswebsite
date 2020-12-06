@@ -15,7 +15,7 @@ NO.
 
 You can just choose somebody else's server from your list and get going.
 
-**Don't want strangers interrupting?**  Once you and your friends are connected to a public server, press the "solo" buttons on the musicians each of you want to play with. Anyone you don't solo will see a "muted" icon on your channel. And you won't hear them.
+**Don't want strangers interrupting?**  Once you and your friends are connected to a public server, press the "solo" buttons on the musicians each of you want to play with. Anyone you don't solo will see a "muted" icon on your fader. And you won't hear them.
 
 ## That sounds too easy.
 
