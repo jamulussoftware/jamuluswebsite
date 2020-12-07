@@ -34,8 +34,8 @@ The following guide is for running Jamulus as a "pure" server on **hardware with
 ### Compile sources, create a user
 
 
-1. [Get the sources](Installation-for-Linux#get-jamulus-sources), install the [dependent packages](Installation-for-Linux#install-dependencies) according to the Linux client install guide. Note that **you don't need to install the Jack package(s)** for a headless build. _If you plan to run headless on Gentoo, or are compiling under Ubuntu for use on another Ubuntu machine, [see the footnote](#what-does-the-headless-build-flag-do)._
-1. Compile the sources to ignore the Jack sound library:
+1. [Get the sources](Installation-for-Linux#get-jamulus-sources), install the [dependent packages](Installation-for-Linux#install-dependencies) according to the Linux client install guide. Note that **you don't need to install the JACK package(s)** for a headless build. _If you plan to run headless on Gentoo, or are compiling under Ubuntu for use on another Ubuntu machine, [see the footnote](#what-does-the-headless-build-flag-do)._
+1. Compile the sources to ignore the JACK sound library:
 
 ~~~
 qmake "CONFIG+=nosound headless" Jamulus.pro
