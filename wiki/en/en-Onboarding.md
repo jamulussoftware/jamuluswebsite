@@ -1,10 +1,10 @@
 ---
 layout: wiki
-title: "Jamulus Walk-Through"
+title: "Jamulus Onboardings"
 lang: "en"
-permalink: "/wiki/Walk-Through"
+permalink: "/wiki/Onboarding"
 ---
-# Jamulus walk-through
+# Jamulus onboarding
 Let's have a look at what Jamulus looks like and what you should do after having installed the software.
 ## First start
 Before you start Jamulus:

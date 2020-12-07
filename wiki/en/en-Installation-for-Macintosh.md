@@ -33,4 +33,6 @@ For further information see [this Apple Support Page](https://support.apple.com/
 **See also [this excellent guide](http://web.archive.org/web/20200406181452/https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (or [directly on Facebook](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"}).**
 
 ## All installed?
-Jamulus has been installed and can be used now. You can now take a look at the [Jamulus walk through page](Walk-Through).
+Jamulus has been installed and can be used now. You can now take a look at the
+
+[Jamulus Onboarding page](Onboarding){: .button}

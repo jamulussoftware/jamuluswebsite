@@ -44,6 +44,6 @@ Have a look at [this video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel=
 Official and more detailed info about how to configure ASIO4All is documented in the official [ASIO4All FAQs on the ASIO4All website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} and in the ASIO4All manual. This can most likely be found on your desktop or in the folder where the ASIO4All binary is installed (usually `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## All installed?
-Jamulus has been installed and can be used now. You can now take a look at the [Jamulus walk through page](Walk-Through).
+Jamulus has been installed and can be used now. You can now take a look at the
 
-For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+[Jamulus Onboarding page](Onboarding){: .button}
