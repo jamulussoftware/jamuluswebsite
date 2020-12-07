@@ -47,7 +47,6 @@ Official and more detailed information about how to configure ASIO4All is docume
 
 ## All installed?
 
-Jamulus has been installed and can be used now.
+Jamulus has been installed and can be used now. You can now take a look at the
 
-If you haven't set up your audio gear yet, have a look at [Hardware Setup](Hardware-Setup).
-For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+[Jamulus Onboarding page](Onboarding){: .button}

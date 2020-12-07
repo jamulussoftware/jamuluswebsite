@@ -90,11 +90,10 @@ Jamulus puts itself into `/usr/local/bin`. You can now delete the sources direct
 If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (eg 256 frames or 3 periods) in step 3 above. Lower ones (eg 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
-Jamulus has been installed and can be used now.
 
-Have a look at [Hardware Setup](Hardware-Setup).
-For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+Jamulus has been installed and can be used now. You can now take a look at the
 
+[Jamulus Onboarding page](Onboarding){: .button}
 
 ## To update your installation to a new release
 

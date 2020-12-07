@@ -31,8 +31,7 @@ You will then get a slightly different version of the same message, which allows
 For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
 
 ## All installed?
+Jamulus has been installed and can be used now. You can now take a look at the
 
-Jamulus has been installed and can be used now.
+[Jamulus Onboarding page](Onboarding){: .button}
 
-Have a look at [Hardware Setup](Hardware-Setup).
-For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
