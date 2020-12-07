@@ -53,4 +53,4 @@ For help, chat, and general discussions about Jamulus: Have a look at the [forum
 ### Development and contribution
 If you want to contribute to the Jamulus Software, have a look at the [Jamulus GitHub repository](https://github.com/corrados/jamulus/) and read the contributing file there.
 
-Besides that, you can also contribute to this documentation: see the [Jamulus Website GitHub repository](https://github.com/jamulussoftware/jamuluswebsite) and have a look at the contribution file there.
+<!--Besides that, you can also contribute to this documentation: see the [Jamulus Website GitHub repository](https://github.com/jamulussoftware/jamuluswebsite) and have a look at the contribution file there.-->
