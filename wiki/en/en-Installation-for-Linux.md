@@ -5,13 +5,14 @@ lang: "en"
 permalink: "/wiki/Installation-for-Linux"
 ---
 
-
 # Installation for Linux
 Make sure you read the [Getting Started](Getting-Started) page.
 
-**Right now, we don't provide official packages for Jamulus**
+## Jamulus packages
 
-There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}, but compiling the sources is quite easy:
+Although we don't provide official packages, you might find Jamulus in the package manager of your distro. Have a look at this table:
+[![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
+There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. If you don't find it in your package manager, you need to compile Jamulus from source. That's quite easy:
 
 ## Get Jamulus sources
 
@@ -89,6 +90,8 @@ Jamulus puts itself into `/usr/local/bin`. You can now delete the sources direct
 If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (eg 256 frames or 3 periods) in step 3 above. Lower ones (eg 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
+Jamulus has been installed and can be used now.
+
 Have a look at [Hardware Setup](Hardware-Setup).
 For detailed information on using Jamulus, please see the [help manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
 
