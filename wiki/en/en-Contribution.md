@@ -25,14 +25,14 @@ Have a look at the [CONTRIBUTING file](https://github.com/jamulussoftware/jamulu
 
 **The following content is for the documentation on jamulus.io only, not for the Jamulus software!**
 
-If you aren't comfortable with Pull Requests, commits, etc. just open an issue. We will then care about your changes. If you want to do the changes on your own and open a Pull Request, follow this instructions:
+If you aren't comfortable with Pull Requests, commits, etc. just open an issue. We will then care about your changes. If you want to do the changes on your own and open a Pull Request, follow those instructions:
 
 1. Fork the repo (there's a fork button on the top right of the page)
-2. Descide which branch you have to commit your changes too (rule of thumb: everything which might need translation should go to the `changes` branch, typos should go to the `release` branch more information can be found in the [CONTRIBUTING file](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md)). Create a new branch from the up to date branch you chose
+2. Decide which branch you have to commit your changes too (rule of thumb: everything which might need translation should go to the `changes` branch, typos should go to the `release` branch more information can be found in the [CONTRIBUTING file](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md)). Create a new branch from the up to date branch you chose
 3. Make your changes
 4. If you did the changes offline, push the new branch into your repository
 5. Submit your Pull Request, give a short description of your changes and link the issue you opened
 6. Wait for a review and a merge
 
-**Hint (for git):** *Do not merge your work* into your local `changes` branch, only keep it in sync by pooling from the remote Jamulus Website repository. Create a new branch for your proposed changes.
+**Hint (for git):** *Do not merge your work* into your local `changes` branch, only keep it in sync by pooling from the remote Jamulus website repository. Create a new branch for your proposed changes.
 If the `changes` branch is modified before submitting your request, keep the local `changes` branch in sync by pooling from the official one, merge the local changes branch into your working branch, resolve conflicts, push your changes and create the Pull Request.
