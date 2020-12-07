@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: "Jamulus Onboardings"
+title: "Jamulus Onboarding"
 lang: "en"
 permalink: "/wiki/Onboarding"
 ---
