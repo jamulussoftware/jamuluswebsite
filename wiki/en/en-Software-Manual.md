@@ -15,28 +15,29 @@ Main Window
 
 ### Status LEDs
 
-The **Delay Status** LED shows the current audio delay status:
-
-* **Green** - The delay is perfect for a jam session
-
+The **Delay** status LED shows the current audio delay status:
 
 ![image](https://user-images.githubusercontent.com/4561747/99384024-b6c60b00-28c6-11eb-9e7d-aa1e4245353f.png)
 
 
-* **Yellow** - A session is still possible but it may be harder to play
-
+**Green** - The delay is perfect for a jam session
 
 ![image](https://user-images.githubusercontent.com/4561747/99384041-bb8abf00-28c6-11eb-96ab-c1c08acf2a85.png)
 
 
-* **Red** - The delay is too large for jamming
+**Yellow** - A session is still possible but it may be harder to play
 
 
 ![image](https://user-images.githubusercontent.com/4561747/99384044-bded1900-28c6-11eb-8971-9ab6ee1908b5.png)
 
 
+**Red** - The delay is too large for jamming
 
-**Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
+
+
+
+
+The **Buffers** status LED shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
 
 - The network jitter buffer is not large enough for the current network/audio interface jitter.
 - The sound card's buffer delay (buffer size) is too small (see Settings window).
@@ -78,7 +79,7 @@ pressing this button will end the session.
 
 ![Connect dialog](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maxmium number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
 You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
 
@@ -112,22 +113,22 @@ in a direction where the label above the fader shows L -x, where x is the curren
 
 ![Audio faders](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
-In the audio mixer frame, a fader is shown for each connected client at the server (including yourself).
+The audio mixer screen shows each user connected to the server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
 
 The VU meter shows the input level at the server - that is, the sound being sent.
 
 If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset).
 
-If you see a "mute" icon above a channel, it means that musician cannot hear you. Either they have muted you, soloed one or more channels not including yours, or have set your fader in their mix to zero.
+If you see a "mute" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero.
 
-Using the **Mute button** prevents the indicated channel being heard in your local mix. Be aware that when you mute a musician, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted musician is reaching the server. Your fader position for them is also unaffected.
+Using the **Mute button** prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected.
 
-The **Solo button** allows you to hear one or more musicians on their own. Those not soloed will be muted. Note also that those musicians who are not soloed will see a "muted" icon above your fader.
+The **Solo button** allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a "muted" icon above your fader.
 
-Channels are listed left to right in the order that clients connect until they leave, at which point their "slot" is filled by the next new arrival. You can change the sort order using the Edit option in the application menu.
+Users are listed left to right in the order that they connect. You can change the sort order using the Edit option in the application menu.
 
-You can group faders together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag
+You can group users together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag.
 
 If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
 
@@ -141,11 +142,10 @@ Settings Window
 ### Sound card device
 
 ![Sound card device Windows](https://user-images.githubusercontent.com/20726856/97361494-e70a2300-189f-11eb-9095-2c34ad07314d.png)
-![Sound card device Mac](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
+![Sound card device macOS](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
 
 The ASIO driver (sound card) can be selected using Jamulus under the Windows operating system. If the selected ASIO
-driver is not valid an error message is shown and the previous valid driver is selected. Under the Mac operating
-system the input and output hardware can be selected.
+driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected.
 
 ### Input/output channel mapping
 
@@ -179,7 +179,7 @@ In this case the buffer delay setting is disabled and has to be changed using th
 
 On Linux, use the JACK configuration tool to change the buffer size.
 
-The actual buffer delay has influence on the connection status, the current upload rate and the overall delay.
+The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.
 The lower the buffer size, the higher the probability of a red light in the status indicator (drop outs) and the
 higher the upload rate and the lower the overall delay.
 
@@ -195,14 +195,14 @@ The jitter buffer compensates for network and sound card timing jitters. The siz
 therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
 (the longer the buffer, the higher the delay).
 
-You can set the jitter buffer size manually for the local client and the remote server. For the local jitter
+You can set the jitter buffer size manually for your local client and the remote server. For the local jitter
 buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.
 If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted.
 
 The jitter buffer setting is therefore a trade-off between audio quality and overall delay.
 
 If the Auto setting is enabled, the jitter buffers
-of the local client and the remote server are set automatically based on measurements of the network and sound card
+of your local client and the remote server are set automatically based on measurements of the network and sound card
 timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse).
 
 ### Audio channels
@@ -233,10 +233,10 @@ The higher the audio quality, the higher your audio stream's data rate. Make sur
 
 ![New client level](https://user-images.githubusercontent.com/20726856/97362173-e2923a00-18a0-11eb-8401-9ad71866f6b1.png)
 
-This setting defines the fader level of a newly connected client in percent. If a new musician connects
+This setting defines the fader level of a newly connected client in percent. If a new user connects
 to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
-that client was already stored. You can set all clients in an occupied server to this level using Edit > "Set All Faders to New Client Level".
-	
+that user was already stored. You can set all users in an occupied server to this level using Edit > "Set All Faders to New Client Level".
+
 
 ### Fancy skin
 
@@ -261,4 +261,4 @@ your distance to the server is too large or your internet connection is not suff
 Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
 
 Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream
-rate is not higher than your available internet upload speed (check this with a service such as [speedtest.net](http://speedtest.net)).
+rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/)).

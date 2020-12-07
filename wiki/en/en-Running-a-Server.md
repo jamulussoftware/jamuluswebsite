@@ -15,7 +15,7 @@ NO.
 
 You can just choose somebody else's server from your list and get going.
 
-**Don't want strangers interrupting?**  Once you and your friends are connected to a public server, press the "solo" buttons on the musicians each of you want to play with. Anyone you don't solo will see a "muted" icon on your channel. And you won't hear them.
+**Don't want strangers interrupting?**  Once you and your friends are connected to a public server, press the "solo" buttons on the musicians each of you want to play with. Anyone you don't solo will see a "muted" icon on your fader. And you won't hear them.
 
 ## That sounds too easy.
 
@@ -55,10 +55,11 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 
 
 ## All OK? Get set up!
-
-### [For Windows or Macintosh users](Server-Win-Mac)
-### [For Linux users](Server-Linux)
-### [For Raspberry Pi](Server-Rpi)
+<div class="fx-row fx-row-start-xs button-container">
+    <a href="Server-Win-Mac" class="button fx-col-100-xs">For Windows or macOS users</a>
+    <a href="Server-Linux" class="button fx-col-100-xs">For Linux users</a>
+    <a href="Server-Rpi" class="button fx-col-100-xs">or Raspberry Pi</a>
+</div>
 
 Server operators may also be interested in downloading [this set of useful tools](https://github.com/corrados/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 

@@ -1,11 +1,11 @@
 ---
 layout: wiki
-title: "Installation for Macintosh"
+title: "Installation for macOS"
 lang: "en"
 permalink: "/wiki/Installation-for-Macintosh"
 ---
 
-# Installation for Macintosh
+# Installation for macOS
 
 Make sure you've already read the [Getting Started](Getting-Started) page.
 

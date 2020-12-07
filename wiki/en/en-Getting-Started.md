@@ -9,7 +9,7 @@ permalink: "/wiki/Getting-Started"
 
 ## You will need
 
-1. **A computer** running either **Windows 10**, **MacOS X** El Capitan (v10.11) or higher, or **Linux**.
+1. **A computer** running either **Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 or higher), or **Linux**.
 1. **A wired internet connection** (don't use Wi-Fi, it will cause sound problems). Most broadband connections will be fine[^1].
 1. **Wired headphones - not speakers** to prevent echo or feedback and to minimize delay[^2].
 

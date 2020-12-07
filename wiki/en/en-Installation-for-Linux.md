@@ -37,7 +37,7 @@ sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qt
 On **Fedora**:
 
 ```shell
-sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
 ```
 
 ### Qjackctl: Optional, but recommended
