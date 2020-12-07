@@ -13,7 +13,7 @@ Before you start Jamulus:
 
 ... to minimise load on your computer and to ensure that no other application tries to use your sound card.
 
-You can have a look at [Hardware Setup](Hardware-Setup) for more information on what to do with that. If you need help setting up ASIO4All on Windows, have a look at the [ASIO4All Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
+You can have a look at [Hardware Setup](Hardware-Setup) for more information on what to do with your equipment. If you need help setting up ASIO4All on Windows, have a look at the [ASIO4All Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
 
 ### Jamulus main window
 When you open Jamulus, you will see a window which looks like this:
@@ -29,15 +29,15 @@ Now you will see this:
 Fill in at least "Alias/Name" to set your name and close the window.
 
 ### 2. Connecting to a server
-Click on "Connect" in the Jamulus main window, select a genre from the list in the top left, select a server, and click on "Connect". Now you should be connected to the server. If you have problems here, they are most likely due to wrongly configured audio gear or network issues. Have a look at the [Troubleshooting page](Client-Troubleshooting).
+Now you are set up, you can use the "Connect" button in the Jamulus main window to join a server. A window will now open in which you can find servers grouped by genre. To select another genre, select one from the list in the top left. After having selected a genre and a server join a server by clicking on "Connect". If you have problems here, they are most likely due to wrongly configured audio gear or network issues. Have a look at the [Troubleshooting page](Client-Troubleshooting).
 ### The first Jam
-Congrats! You can now start jamming with Jamulus. The sliders you see on the right work as a mixing desk: everything you change here will change what you hear. If you move a slider down, this user will be quieter, if you move it up, this user will be louder for you. Everything else like "PAN", "SOLO", "GRP", ... are advanced options. You can try them of course!
+Congrats! You can now start jamming with Jamulus. The sliders you see on the right are your own personal mix. Everything you change here will change what you hear, but won't affect others. If you move a slider down, that user will be quieter, if you move it up, that user will be louder for you.
 
 ![Jamulus main mixer connected](https://user-images.githubusercontent.com/20726856/100801241-01e43000-3428-11eb-8d61-e03b5e648971.png)
 
-If you don't want others to hear your audio, click on "Mute Myself" (left to the mixing board) which will stop your audio from being sent to other musicians.
+If you don't want others to hear your audio, click on "Mute Myself" (left to your personal mix) which will stop your audio from being sent to other musicians.
 
-While we're already here: "Settings" opens – of course – the settings window with all the audio settings, and "Chat" the chat window.
+While we're already here: "Settings" opens – of course – the settings window with all the audio settings. 
 
 More information about using Jamulus can be found in the [Software Manual](Software-Manual).
 
