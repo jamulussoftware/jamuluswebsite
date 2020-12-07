@@ -37,7 +37,7 @@ Congrats! You can now start jamming with Jamulus. The sliders you see on the rig
 
 If you don't want others to hear your audio, click on "Mute Myself" (left to your personal mix) which will stop your audio from being sent to other musicians.
 
-While we're already here: "Settings" opens – of course – the settings window with all the audio settings. 
+While we're already here: "Settings" opens – of course – the settings window with all the audio settings which you probably want to change for your needs.
 
 More information about using Jamulus can be found in the [Software Manual](Software-Manual).
 
