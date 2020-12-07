@@ -31,7 +31,7 @@ Yes:
 ### 2. Be clear if a translation update is going on
 You can see this if we ping the translators in a PR from changes to translate.
 
-**If yes:** only translate the changes of the pull request from changes to translation. If you find issues, start with 1
+**If yes:** only translate the changes of the Pull Request from changes to translation. If you find issues, start with 1
 **If no:** no need to care about the translate branch
 
 ## Adding a new language
