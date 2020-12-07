@@ -15,9 +15,9 @@ Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has 
 
 ##  Using Jamulus audio in Zoom (or other) meeting apps
 
-Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings). 
+Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings).
 
-You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for Mac to route Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time.
+You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for macOS to route Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time.
 
 
 ## Recording Jamulus on Windows with Reaper
@@ -31,7 +31,7 @@ Jamulus user [BTDT](https://sourceforge.net/u/btdt/profile/) has written a syste
 
 ## Making a server status page
 
-With the `-m` command line argument a server statistic information can be generated to be put on a web page. 
+With the `-m` command line argument a server statistic information can be generated to be put on a web page.
 
 Here is an example php script using the server status file to display the current server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):
 
@@ -51,22 +51,22 @@ function loadserverstat ( $statfilename )
 <?php loadserverstat ( "stat1.dat" ); ?>
 ~~~
 
-## Saving and loading client mix states 
+## Saving and loading client mix states
 
 You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Do this with "File > Save Mixer Channels Setup" in your client and load them using "Load Mixer Channels Setup" (or drag/drop them to the mixer window).
 
 ## Converting a public server to a private one on the fly
 
-You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [https://github.com/DavidSavinkoff](David Savinkoff) for this tip!)
+You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
 
 
 ## Jamulus client Linux start script
 
-Here's a Linux start script for Jamulus using an old Audigy4 sound card, the large number of available audio faders for which makes it hard to get the correct settings. 
+Here's a Linux start script for Jamulus using an old Audigy4 sound card, the large number of available audio faders for which makes it hard to get the correct settings.
 
-This script therefore includes the most important audio fader settings. The second part of the script deals with the jack connections. I use Guitarix as my guitar effect processor which I plug in in the jack audio path. 
+This script therefore includes the most important audio fader settings. The second part of the script deals with the jack connections. I use Guitarix as my guitar effect processor which I plug in in the jack audio path.
 
-Finally I start Jamulus automatically connecting to the central server. 
+Finally I start Jamulus automatically connecting to the central server.
 
 Here is the script:
 
@@ -100,8 +100,8 @@ jack_connect Jamulus:'output right' system:playback_2
 
 ## Using ctrlmidich for MIDI controllers
 
-The volume faders in the client's mixer window can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with MacOS and Linux). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There are two parameters you can set: `Channel` and `Offset`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and the second parameter to the Control Number you want the first fader to react to. By default, the offset is 70 (for the Behringer X-Touch), which means that the first fader reacts to Control Number 70, the second to 71, and so on. 
+The volume faders in the client's mixer window can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There are two parameters you can set: `Channel` and `Offset`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and the second parameter to the Control Number you want the first fader to react to. By default, the offset is 70 (for the Behringer X-Touch), which means that the first fader reacts to Control Number 70, the second to 71, and so on.
 
 So for example, if you're using a Behringer X-Touch, sending MIDI on channel 1 and leaving the offset at default, the command would look like this: `--ctrlmidich 1`. If you have a different controller, e.g. sending MIDI on channel 2 and starting with Control Number 30, the command would be as follows: `--ctrlmidich "2;30"`
 
-Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (Qjackctl (Linux), MIDI Studio (MacOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
+Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (Qjackctl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.

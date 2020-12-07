@@ -5,13 +5,14 @@ lang: "en"
 permalink: "/wiki/Installation-for-Linux"
 ---
 
-
 # Installation for Linux
 Make sure you read the [Getting Started](Getting-Started) page.
 
-**Right now, we don't provide official packages for Jamulus**
+## Jamulus packages
 
-There is a list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}, but compiling the sources is quite easy:
+Although we don't provide official packages, you might find Jamulus in the package manager of your distro. Have a look at this table:
+[![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
+There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. If you don't find it in your package manager, you need to compile Jamulus from source. That's quite easy:
 
 ## Get Jamulus sources
 
@@ -36,7 +37,7 @@ sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qt
 On **Fedora**:
 
 ```shell
-sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
 ```
 
 ### Qjackctl: Optional, but recommended
@@ -81,6 +82,7 @@ Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noope
 Restart Jack to take any new settings
 
 ### Start Jamulus
+
 Open Jamulus e.g. via your command shell. If you use the shell, execute the command `Jamulus` (with a capital 'J') which starts the Jamulus Client
 
 Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.
@@ -88,10 +90,10 @@ Jamulus puts itself into `/usr/local/bin`. You can now delete the sources direct
 If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (eg 256 frames or 3 periods) in step 3 above. Lower ones (eg 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
+
 Jamulus has been installed and can be used now. You can now take a look at the
 
 [Jamulus Onboarding page](Onboarding){: .button}
-
 
 ## To update your installation to a new release
 

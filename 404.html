@@ -2,10 +2,11 @@
 permalink: /404.html
 lang: en
 category: "hidden"
+hidelang: yes
 ---
 <!DOCTYPE html>
 <!--[if IE 9]> <html class="ie9"> <![endif]-->
-<html lang="{{ site.active_lang }}">
+<html lang="en">
 
 <head>
   <title>404 Not found - Jamulus</title>
@@ -13,18 +14,22 @@ category: "hidden"
 </head>
 
 <body class="thissiteisgone">
-  <header class="fx-row fx-row-between-xs fx-text-center">
-    <div class="fx-col fx-text-center">
-        <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" />
+  {% include header.html %}
+  <div class="fx-row fx-row-center-xs">
+    {% include general/nav.html %}
+    <div id="maincontainer" class="fx-col-100-xs fx-col-50-m">
+      <noscript class="red"><strong>{{ site.data.general.tNoJSEnabled }}</strong></noscript>
+      <main>
+        <div class="fx-col-center-xs fx-txt-center">
+          <div class="red doubletextsize">&#x274C; <strong>404</strong></div>
+          <h1 class="red">There's nothing here</h1>
+          <p>Jamu... What? We couldn't find this page! Maybe this site was moved or deleted. Did you check if there was a typo?</p>
+          <p>You might find the content on the</p>
+          <p><a href="/wiki" class="button red-bg">Wiki overview page</a></p>
+        </div>
+      </main>
     </div>
-  </header>
-  <main class="fx-row-center-xs">
-    <div class="fx-col-center-xs fx-txt-center">
-      <h1 class="red">404. There's nothing here</h1>
-      <p>Maybe this site was moved or deleted. Did you check if there was a typo?</p>
-      <p><a href="#" class="button red-bg" onclick="history.go(-1);return false;">Try going back</a></p>
-    </div>
-  </main>
+  </div>
   {% include footer.html %}
 </body>
 

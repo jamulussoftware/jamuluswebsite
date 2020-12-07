@@ -14,19 +14,19 @@ permalink: "/wiki/Getting-Started"
 3.  **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden und die Latenz zu veringern[^2].
 
 ## Qualität maximieren, Verzögerung minimieren
-Um eine gute Qualität und geringe Latenz (Signalverzögerung) mit Jamulus zu erreichen, solltest du folgende Tipps befolgen:
+
 ### 1. Nutze ein Audiointerface/USB-Mikrofon, nicht deine interne Soundkarte
 
 Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise deutlich besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Details findest du im [Hardware-Setup](Hardware-Setup){: target="_blank" rel="noopener noreferrer"}.
 
 ### 2. Verringere die Latenz durch wenig Internetverkehr und schließe alle Programme auf deinem PC
 
-Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC auszuführen und den Internetverkehr in deinem Netzwerk gering zu halten um die Audioverzögerung gering zu halten. Schau parallel keine YouTube/Netflix Videos und stoppe Virenscans.
+Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC auszuführen und den Internetverkehr in deinem Netzwerk gering zu halten um die Audioverzögerung gering zu halten.
 
 ### 3. Verbinde dich mit Servern mit niedrigem Ping
-Der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den **niedrigsten Ping-Zeiten**. 15ms oder weniger sind perfekt.
+Der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den niedrigsten Ping-Zeiten. 15ms oder weniger sind perfekt.
 
-Natürlich gibt es auch andere Einflussfaktoren für gelungene online Musikstunden, die wichtigsten Faktoren kennst du aber jetzt! Los geht's:
+Die wichtigsten Faktoren kennst du jetzt! Los geht's:
 
 <div class="fx-row fx-row-start-xs button-container">
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Installation auf Windows</a>
@@ -62,6 +62,7 @@ Weitere Informationen darüber, wie du vermeiden kannst, auf dich selbst zu hör
 
 ![Overview](https://user-images.githubusercontent.com/4561747/79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
 _Jamulus arbeitet nach dem Client-Server-Prinzip. Das Audiosignal von allen Musikern wird an einen Server geschickt, dort gemischt und verarbeitet. Danach wird das Audio an jeden Client gesendet. Wenn ein Server öffentlich gemacht und auf einem zentralen Server registriert wird, werden seine Informationen an alle Clients gesendet._
+
 ## Fußnoten
 [^1]: Empfohlen werden mindestens 10MBit/s Download und 1MBit/s Upload ([vollständige Details hier](Network-Requirements){: target="\_blank" rel="noopener noreferrer"}). Wenn du keine LAN Buchse mehr an deinem Laptop hast, kannst du einen USB zu LAN-Adapter versuchen.
 [^2]: Die Zeitverzögerung von Bluetooth-Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
