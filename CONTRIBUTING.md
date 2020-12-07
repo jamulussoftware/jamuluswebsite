@@ -1,7 +1,7 @@
 # Contribute to the documentation
 We really appreciate your support!
 
-Please note that discussions should be kept in English. Don't be afraid, if you don't speak English fluently. You can use [DeepL](https://www.deepl.com) which might be able to translate your language to English.
+Please note that discussions should be kept in English. If you don't speak English fluently you can use a reasonably good online translator (e.g. [DeepL](https://www.deepl.com), [Reverso](https://www.reverso.net/text_translation.aspx), ...) which might be able to translate your language to English.
 
 Please have a look at the [issues page on GitHub](https://github.com/jamulussoftware/jamuluswebsite/issues) and check if anybody has raised an issue with the same topic.
 
