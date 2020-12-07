@@ -3,7 +3,7 @@ We really appreciate your support!
 
 Please note that discussions should be kept in English. Don't be afraid, if you don't speak English fluently. You can use [DeepL](https://www.deepl.com) which might be able to translate your language to English.
 
-Please have a look at the [issues page on GitHub](https://github.com/jamulussoftware/jamuluswebsite/issues) and check if anybody already raised an issue with the same topic.
+Please have a look at the [issues page on GitHub](https://github.com/jamulussoftware/jamuluswebsite/issues) and check if anybody has raised an issue with the same topic.
 
 If this is the case, please subscribe to the issue and explain your proposal.
 
