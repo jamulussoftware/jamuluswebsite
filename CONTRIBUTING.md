@@ -10,10 +10,10 @@ If you want to open a Pull Request (after having described and discussed your pr
 ## I don't know GitHub. What do I need to know?
 If you aren't comfortable with Pull Requests, commits, etc. just open an issue. We will then care about your changes. If you want to do the changes on your own and open a Pull Request, follow this instructions:
 1. Fork this repo (there's a fork button on the top right of the page)
-2. Create a new branch from the up to date `changes` branch
+2. Descide which branch you have to commit your changes too (rule of thumb: everything which might need translation should go to the `changes` branch, typos should go to the `release` branch more information can be found later in this file). Create a new branch from the up to date branch you chose
 3. Make your changes
 4. If you did the changes offline, push the new branch into your repository
-5. Submit your Pull Request (merge it to the `changes` branch), give a short description of your changes and link the issue you opened
+5. Submit your Pull Request, give a short description of your changes and link the issue you opened
 6. Wait for a review and a merge.
 
 Hint (for git): **Do not merge your work** into your local `changes` branch, only keep it in sync by pooling from the remote Jamulus Website repository. Create a new branch for your proposed changes.
