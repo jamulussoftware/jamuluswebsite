@@ -95,7 +95,6 @@ Jamulus ha sido instalado y ahora puede utilizarse. Ahora puedes echar un vistaz
 
 [página de Iniciación a Jamulus](Onboarding){: .button}
 
-
 ## Para actualizar tu instalación a una nueva versión
 
 Descarga las nuevas fuentes como en [Obtén Jamulus](Installation-for-Linux#obtén-las-fuentes-de-jamulus) y repite solamente las [instrucciones de compilación](Installation-for-Linux#compílalo) como si fuera una nueva instalación.
