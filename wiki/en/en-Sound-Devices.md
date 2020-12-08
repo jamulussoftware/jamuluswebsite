@@ -23,11 +23,11 @@ This page lists hardware known to work or not work with Jamulus (although it may
 * Ammoon [AGM02](https://www.ammoon.com/p-i3974.html) and [AGM04](https://www.ammoon.com/p-i4049.html) USB mixer: relatively inexpensive 4 channel USB mixers, both tested on MacOS Catalina, the AGM02 tested on Windows 10. On Windows 10, with ASIO4ALL, the AGM02 can be used as an input, and the onboard audio as the output. There is no way to monitor only the USB return signal on the AGM02.  (USB Audio)
 **Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://artproaudio.com/product/usbmix4-four-channel-mixer-usb-audio-interface/).
 
-* ART USB Mix4 (USB audio interface + 4 channel mixer). 
+* ART USB Mix4 (USB audio interface + 4 channel mixer).
 
 * Audient EVO 4, [driver download and install](https://evo.audio/driver-installation/) (USB Audio)
 
-* Behringer UCA222 & UCA202 U-Control (USB audio) _Note: Works best on Mac and Linux. On Windows, [ASIO4ALL](http://www.asio4all.org/) driver works OK but not great. There is also the [native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) which Behringer withdrew support for a while ago, and therefore removed from their download section._
+* Behringer UCA222 & UCA202 U-Control (USB audio) _Note: Works best on Mac and Linux. On Windows, [ASIO4ALL](https://www.asio4all.org/) driver works OK but not great. There is also the [native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) which Behringer withdrew support for a while ago, and therefore removed from their download section._
 
 * Behringer UGC102 (USB interface for guitar/bass) _Note: On Mac, appears as "USB Audio Codec" - when selected for input and output in Jamulus, the UGC102 headphone jack is the output (and cannot be used for input)._
 

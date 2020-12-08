@@ -47,7 +47,7 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-s` |`--server`         | Start in server mode | (server only) [See note](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Disable translations | (client and server) |
 |    `-T` |`--multithreading` | Enable multithreading | (server only) |
-|    `-u` |`--numchannels`    | Maximum number of channels. Default is 10, maximum is 50 | (server only) |
+|    `-u` |`--numchannels`    | Maximum number of users. Default is 10, maximum is 50 | (server only) |
 |    `-w` |`--welcomemessage` | Supports HTML and inline CSS formatting (in enclosing quotes), or set path to text file. | (server only) |
 |    `-z` |`--startminimized` | Start minimized | (server only) |
 |       |`--ctrlmidich`     | MIDI controller channel to listen on and control number offset, format: `channel[;offset]` | (client only) see [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
