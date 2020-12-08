@@ -20,6 +20,6 @@ See the [Jamulus GitHub repo](https://github.com/corrados/jamulus) for further i
 
 Pull requests for the website should look like this:
 
-`[language code (e.g. en)] {short description of your changes}` on 
+`[language code (e.g. en)] {short description of your changes}`
 
 See the [Website GitHub repo](https://github.com/jamulussoftware/jamuluswebsite) for further information.
