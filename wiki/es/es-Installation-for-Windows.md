@@ -34,7 +34,7 @@ Antes de empezar con Jamulus:
 1. Abre las entradas de tu tarjeta de audio haciendo clic en el _icono de plus_ al lado de esta tarjeta.
 1. Ahora activa/desactiva las entradas/salidas correctas en la lista bajo tu tarjeta de audio y desactiva todo lo demás
 
-**Consejo:** Muchas tarjetas internas se denominan Realtek High Definition Audio, Conexant o similar. En cuanto a las entradas/salidas: A menudo los auriculares y los altavoces están etiquetados como 'output' y los micrófonos como 'input' o 'capture'. 'Stereo Mix' normalmente no es la entrada/salida que buscas, por tanto puedes desactivarlo si lo ves.
+**Consejo:** Muchas tarjetas internas se denominan Realtek High Definition Audio, Conexant o similar. En cuanto a las entradas/salidas: a menudo los auriculares y los altavoces están etiquetados como 'output' y los micrófonos como 'input' o 'capture'. 'Stereo Mix' normalmente no es la entrada/salida que buscas, por tanto puedes desactivarlo si lo ves.
 
 ### ¿Tienes problemas con la configuración de ASIO4All?
 
