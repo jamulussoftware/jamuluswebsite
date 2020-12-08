@@ -97,7 +97,7 @@ Para información detallada sobre la utilización de Jamulus, por favor consulta
 
 ## Para actualizar tu instalación a una nueva versión
 
-Descarga las nuevas fuentes como en [Obtén Jamulus](Installation-for-Linux#get-jamulus-sources) y repite solamente las [instrucciones de compilación](Installation-for-Linux#compile-this-bad-boy) como si fuera una nueva instalación.
+Descarga las nuevas fuentes como en [Obtén Jamulus](Installation-for-Linux#obtén-las-fuentes-de-jamulus) y repite solamente las [instrucciones de compilación](Installation-for-Linux#compílalo) como si fuera una nueva instalación.
 
 ## Nota para frikis
 
@@ -107,6 +107,6 @@ Descarga las nuevas fuentes como en [Obtén Jamulus](Installation-for-Linux#get-
 
 * Para utilizar este archivo configura el software con `qmake "CONFIG+=noupcasename" Jamulus.pro` para asegurarte de que el nombre de destino de este software es **j**amulus en lugar de **J**amulus.
 
-* Usuarios de Raspberry Pi: Quizá quieras compilar el cliente en otra máquina y ejecutar el archivo binario en el Raspberry Pi. En este caso, las únicas librerías que necesitas para ejecutarlo son aquellos necesarios para la compilación de un [servidor "headless"](Server-Linux#running-a-headless-server) pero _con_ las librerías de audio para Jack. Sobre todo lee el pie de página sobre la compilación "headless".
+* Usuarios de Raspberry Pi: Quizá quieras compilar el cliente en otra máquina y ejecutar el archivo binario en el Raspberry Pi. En este caso, las únicas librerías que necesitas para ejecutarlo son aquellos necesarios para la compilación de un [servidor "headless"](Server-Linux#ejecutar-un-servidor-headless) pero _con_ las librerías de audio para Jack. Sobre todo lee el pie de página sobre la compilación "headless".
 
 * A partir de la versión 3.5.3, Jamulus ya no es compatible con Qt4.
