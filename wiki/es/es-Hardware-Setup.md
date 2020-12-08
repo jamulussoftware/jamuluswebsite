@@ -71,10 +71,6 @@ Quizá quieras instalar [Ubuntu Studio](https://ubuntustudio.org/){: target="_bl
 
 _(Gracias a [pcar75](https://github.com/pcar75) por esta información)_
 
-
-
-
-
 ## Otros ejemplos
 
 **Este vídeo documenta una [sesión jam en directo](https://youtu.be/c8838jS2g3U).** Utilizo una tarjeta de audio USB Lexicon Omega en un Mac Mini del 2009. Mis compañeros de grupo utilizan todos Windows 10 y tienen tarjetas de audio Behringer, por ejemplo el Behringer Xenyx 1204USB. Mi conexión a internet tiene 10 Mbps de bajada / 1 Mbps de subida mediante conexión DSL.
