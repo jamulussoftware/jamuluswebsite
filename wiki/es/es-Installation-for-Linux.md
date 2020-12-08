@@ -5,15 +5,16 @@ lang: "es"
 permalink: "/wiki/Installation-for-Linux"
 ---
 
-
 # Instalación en Linux
 Asegúrate de leer la página de [Cómo Empezar](Getting-Started).
 
-**Ahora mismo no ofrecemos paquetes oficiales para Jamulus**
+## Paquetes de Jamulus
 
-Hay una lista no oficial de [paquetes para distintas distribuciones aquí](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. También puedes utilizar un [script todo-en-uno](Linux-Client-Install-Script) si lo deseas.
+Aunque no ofrecemos paquetes oficiales, puede que encuentres Jamulus en el gestor de paquetes de tu distribución. Echa un vistazo a esta tabla:
 
-Mientras tanto, compilar las fuentes es bastante fácil:
+[![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
+
+También hay una lista de paquetes no oficiales [paquetes para diferentes distribuciones aquí](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. Si no lo encuentras en tu gestor de paquetes, tienes que compilar Jamulus de las fuentes. Es bastante fácil: 
 
 ## Obtén las fuentes de Jamulus
 
@@ -38,7 +39,7 @@ sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qt
 En **Fedora**:
 
 ```shell
-sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
 ```
 
 ### Qjackctl: Opcional, pero recomendado
@@ -83,16 +84,16 @@ Los clientes de Jamulus necesitan [Jack](https://jackaudio.org/){: target="_blan
 Reinicia Jack para que surta efecto la nueva configuración
 
 ### Arranca Jamulus
-1. Abre la terminal por ej. con Crtl-Alt-T y
-1. Ejecuta el comando `Jamulus` (con 'J' mayúscula) para iniciar el Cliente de Jamulus
+Abre Jamulus, por ej. con la terminal. Si utilizas la terminal, ejecuta el comando `Jamulus` (con 'J' mayúscula) y esto arranca el cliente de Jamulus
 
 Jamulus se instala en `/usr/local/bin`. Ahora puedes eliminar la carpeta de las fuentes si quieres.
 
 Si tienes problemas con cortes de sonido (en particular errores de XRUN mostrados por Jack/QJackctl) prueba con valores más altos (por ej. 256 cuadros o 3 periodos) en el paso 3 anterior. Valores más bajos (por ej. 64 cuadros) pueden ofrecer un mejor rendimiento pero también quizá más problemas con el audio. Ver la [página de resolución de problemas](Client-Troubleshooting).
 
 ## ¿Todo instalado?
-Mírate la [Configuración de Hardware](Hardware-Setup).
-Para información detallada sobre la utilización de Jamulus, por favor consulta el [Manual de Ayuda](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+Jamulus ha sido instalado y ahora puede utilizarse. Ahora puedes echar un vistazo a la
+
+[página de Iniciación a Jamulus](Onboarding){: .button}
 
 
 ## Para actualizar tu instalación a una nueva versión
