@@ -22,7 +22,7 @@ También puedes [compilar tu propio archivo binario](Compiling) si así lo desea
 Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configuración adecuada ya que cada ordenador es un poco diferente. Configura tu tarjeta mientras estés en conexión con un servidor para escuchar tu instrumento o tu voz y comprobar que todo está bien configurado.
 
 Antes de empezar con Jamulus:
-1. **cierra todas las aplicaciones** (sobre todo aquellos que podrían acceder a tu tarjeta de sonido como tu navegador/reproductor de audio) ya que Jamulus necesita acceso exclusivo a tu tarjeta de audio. 
+1. **Cierra todas las aplicaciones** (sobre todo aquellos que podrían acceder a tu tarjeta de sonido como tu navegador/reproductor de audio) ya que Jamulus necesita acceso exclusivo a tu tarjeta de audio. 
 1. Si el audio no funciona directamente, asegúrate de que solo **están activadas** las **entradas/salidas correctas** en ASIO4ALL. Todo lo demás debería estar apagado. Esto se puede hacer como sigue:
 
 ### Cómo configurar las entradas de ASIO4All (Guía)
