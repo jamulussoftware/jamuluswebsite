@@ -9,19 +9,19 @@ permalink: "/wiki/Getting-Started"
 
 ## Pré-requis
 
-1. **Un ordinateur** au moins sous **Windows 10**, **MacOS X** El Capitan (v10.11) ou plus réçent, ou **Linux**.
+1. **Un ordinateur** au moins sous **Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 or higher), ou **Linux**.
 1. **Une connection Internet filaire** (n'utilisez pas le Wi-Fi, cela va causer des problèmes de son). La plupart des connexions à haut-débit suffisent[^1].
 1. **Des casques ou écouteurs filaires - pas de haut parleurs** pour éviter de l'écho ou des larsens et pour minimiser le délai[^2].
 
 ## Maximiser la qualité et diminuer le délai
 
-### 1. Utilisez une interface audio∕un micro externe, pas votre carte son interne
+### 1. Réduisez votre trafic Internet et fermez les programmes de votre PC
 
-Sauf dans le cas où vous êtes un musicien ayant un microphone (USB), il est fortement recommandé d'utiliser une interface audio : un appareil sur lequel vous pouvez brancher votre instrument. Celle-ci se connectera à votre PC, généralement par USB. Visitez [la section configuration du matériel](Hardware-Setup).
+Essayez de vous assurer que rien sur votre machine ou votre réseau (comme un flux vidéo) ne soit en concurrence avec Jamulus lorsque vous l'utilisez.
 
-### 2. Réduisez votre trafic Internet et fermez les programmes de votre PC
+### 2. Utilisez une interface audio∕un micro externe, pas votre carte son interne
 
-Essayez de vous assurer que rien sur votre machine ou votre réseau ne soit en concurrence avec Jamulus lorsque vous l'utilisez.
+Nous vous recommandons vivement - bien que vous puissiez commencer sans ça - d'utiliser une interface audio (un boîtier dans lequel vous branchez un micro/instrument et que vous connectez à votre PC par exemple via USB) pour profiter d'un son de meilleure qualité avec une faible latence dans Jamulus. Vous pouvez également utiliser un microphone USB. Voir le [matériel recommandé](#materiel_recommandé).
 
 ### 3. Connectez-vous aux serveurs qui ont le meilleur temps de réponse
 
@@ -37,7 +37,10 @@ Maintenant que vous avez les bases, c'est parti :
 
 Découvrez aussi : [Jamulus OS !](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) Exécutez Jamulus sur n'importe quel ordinateur avec une clé USB (uniquement pour les systèmes en 64 bits). Vérifiez la compatibilité de votre matériel et profitez-en !
 
-## Tout est bon ?
+## Matériel recommandé
+
+Voir [la liste de bon matériel connu](Sound-Devices) et la [configuration du matériel](Hardware-Setup).
+
 
 Si vous installez Jamulus, jetez un coup d'œil [la configuration matérielle](Hardware-Setup).
 
