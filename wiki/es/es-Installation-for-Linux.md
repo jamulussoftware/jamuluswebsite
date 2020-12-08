@@ -12,7 +12,7 @@ Asegúrate de leer la página de [Cómo Empezar](Getting-Started).
 
 Aunque no ofrecemos paquetes oficiales, puede que encuentres Jamulus en el gestor de paquetes de tu distribución. Echa un vistazo a esta tabla:
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
+[![Estado paquetes](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
 También hay una lista de paquetes no oficiales [paquetes para diferentes distribuciones aquí](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. Si no lo encuentras en tu gestor de paquetes, tienes que compilar Jamulus de las fuentes. Es bastante fácil: 
 
