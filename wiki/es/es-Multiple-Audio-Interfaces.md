@@ -37,7 +37,7 @@ En Windows, la mejor opción para utilizar varias interfaces con Jamulus a la ve
 * Si configuras tu dispositivo predeterminado de reproducción bajo Windows para ser una de las entradas de VoiceMeeter, puedes dirigir audio de tu ordenador hacia JackRouter (y por tanto hacia Jamulus) activando el botón _A1_ en la entrada relevante bajo _Virtual Inputs_. Esto es útil si quieres reproducir audio a través de Jamulus (backing tracks, youtube, grabaciones, etc...)
 
 
-### MacOS X
+### macOS
 
 Los [Dispositivos Agregados](https://support.apple.com/en-us/HT202000) te permiten hacer esto. Solo asegúrate de que tu versión de Jamulus es 3.5.3 o posterior.
 

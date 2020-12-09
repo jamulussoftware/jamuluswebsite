@@ -15,7 +15,7 @@ Por ejemplo, en Windows, para activar la grabación con la opción `-R`: haz cli
 "C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\path\to\your\Jam Recordings"
 ```
 
-Para Macintosh, arranca una ventana de Terminal y ejecuta Jamulus con las opciones deseadas como sigue:
+Para macOS, arranca una ventana de Terminal y ejecuta Jamulus con las opciones deseadas como sigue:
 
 ```shell
 /Applications/Jamulus.app/Contents/MacOS/Jamulus -s -R "/path/to/your/jam recordings"
@@ -35,7 +35,7 @@ Puedes ver todas las opciones posibles soportadas por tu versión arrancando Jam
 |    `-F` |`--fastupdate`     | Utiliza modo 64 muestras. Requiere un procesador potente para evitar cortes, y más ancho de banda si los clientes también se conectan con la opcion de "Activar Buffers Pequeños". | (Solo servidor) |
 | `-h,-?` |`--help`           | Este texto de ayuda | (cliente y servidor) |
 |    `-i` |`--inifile`        | Establecer ubicación de archivo de inicialización (reemplaza el preestablecido) | (cliente (siempre) y servidor (con GUI) |
-|    `-j` |`--nojackconnect`  | Deshabilitar conexiones automáticas de Jack | (solo cliente) |
+|    `-j` |`--nojackconnect`  | Deshabilitar conexiones automáticas de JACK | (solo cliente) |
 |    `-l` |`--log`            | Habilitar registro, establece ruta y nombre del archivo | (solo servidor) |
 |    `-m` |`--htmlstatus`     | Habilita un archivo de estado HTML, establece ruta y nombre del archivo | (solo servidor) |
 |    `-M` |`--mutestream`     | Arranca Jamulus en estado silenciado | (solo cliente) |
@@ -47,8 +47,8 @@ Puedes ver todas las opciones posibles soportadas por tu versión arrancando Jam
 |    `-s` |`--server`         | Arrancar en modo servidor | (solo servidor) [Ver nota](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Deshabilitar traducciones | (cliente y servidor) |
 |    `-T` |`--multithreading` | Habilitar multithreading | (solo servidor) |
-|    `-u` |`--numchannels`    | Número máximo de canales. Por defecto son 10, el máximo son 50 | (solo servidor) |
+|    `-u` |`--numchannels`    | Número máximo de usuarios. Por defecto son 10, el máximo son 50 | (solo servidor) |
 |    `-w` |`--welcomemessage` | Soporta el formateo HTML y CSS (entre comillas), o establece ruta a un archivo de texto | (solo servidor) |
 |    `-z` |`--startminimized` | Arranca minimizado | (solo servidor) |
-|       |`--ctrlmidich`     | Canal para recibir mensajes de controlador MIDI | (solo cliente), ver [Consejos y Trucos](Tips-Tricks-More#usar-la-opción-ctrlmidich-para-utilizar-un-controlador-midi) |
+|       |`--ctrlmidich`     | Canal para recibir mensajes de controlador MIDI y compensación de número de control, formato: `canal[;compensación]` | (solo cliente), ver [Consejos y Trucos](Tips-Tricks-More#utilizar-ctrlmidich-para-controladores-midi) |
 |       |`--clientname`     | Título de ventana y nombre de cliente en Jack | (solo cliente) | |
