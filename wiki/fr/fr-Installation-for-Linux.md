@@ -72,7 +72,7 @@ sudo make install
 
 ## Configurez votre interface audio
 
-### Configurer Jack avec QJackCtl
+### Configurer Jack avec QjackCtl
 
 Les clients Jamulus ont besoin de [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.
 
