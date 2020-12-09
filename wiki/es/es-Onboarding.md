@@ -13,7 +13,7 @@ Antes de arrancar Jamulus:
 
 ... para *minimizar la carga* en tu ordenador y asegurarte de que *ninguna otra aplicación* trata de utilizar tu tarjeta de sonido.
 
-Puedes echar un vistazo a la [Configuración de Hardware](Hardware-Setup) para más información sobre qué hacer con tu equipo. Si necesitas ayuda para configurar ASIO4All en Windows, echas un vistazo a [la guía de Configuración de ASIO4All en la página de instlación en Windows](Installation-for-Windows#configurar-asio4all).
+Puedes echar un vistazo a la [Configuración de Hardware](Hardware-Setup) para más información sobre qué hacer con tu equipo. Si necesitas ayuda para configurar ASIO4All en Windows, echa un vistazo a [la guía de Configuración de ASIO4All en la página de instalación en Windows](Installation-for-Windows#configurar-asio4all).
 
 ### Ventana principal de Jamulus
 Cuando abras Jamulus, verás una ventana con este aspecto:
@@ -29,7 +29,7 @@ Ahora verás esto:
 Rellena al menos el campo de "Alias/Nombre" para establecer tu nombre y cierra la ventana.
 
 ### 2. Conectarse a un servidor
-Ahora que tienes todo preparado, puedes utilizar el botón de "Connectar" en la ventana principal de Jamulus para unirte a un servidor. Se abrirá una ventana en la que encontrarás listas de *servidores agrupados por género*. Para seleccionar otro género, elige uno de la lista arriba a la izquierda. Tras elegir un género y un servidor, únete a un servidor haciendo clic en "Conectar". Si te encuentras con problemas en este punto, probablemente se deben a una configuración errónea de los dispositivos de audio o a problemas de la red. Echa un vistazo a la [página de Resolución de Problemas](Client-Troubleshooting).
+Ahora que tienes todo preparado, puedes utilizar el botón de "Conectar" en la ventana principal de Jamulus para unirte a un servidor. Se abrirá una ventana en la que encontrarás listas de *servidores agrupados por género*. Para seleccionar otro género, elige uno de la lista arriba a la izquierda. Tras elegir un género y un servidor, únete a un servidor haciendo clic en "Conectar". Si te encuentras con problemas en este punto, probablemente se deban a una configuración errónea de los dispositivos de audio o a problemas de la red. Echa un vistazo a la [página de Resolución de Problemas](Client-Troubleshooting).
 ### La primera Jam
 ¡Enhorabuena! Ya puedes empezar a tocar con Jamulus. Los faders que ves a la derecha son tu mezcla personal. Todo lo que cambies aquí afectará a lo que tú escuchas, pero no a los demás. Si bajas un fader, ese usuario sonará más bajo, si lo subes, se escuchará más alto.
 
@@ -53,4 +53,4 @@ Para ayuda, conversar y discusiones generales sobre Jamulus, consulta los [foros
 ### Desarrollo y contribuciones
 Si quieres contribuir al Software Jamulus, consulta el [repositorio de Jamulus en GitHub](https://github.com/corrados/jamulus/) y lee el documento sobre contribuciones que hay allí.
 
-<!--Además de esto, también puedes contribuir a esta documentación:: consulta el [repositorio de la página web de Jamulus en GitHub](https://github.com/jamulussoftware/jamuluswebsite) y lee el documento sobre contribuciones que hay allí.-->
+<!--Además de esto, también puedes contribuir a esta documentación: consulta el [repositorio de la página web de Jamulus en GitHub](https://github.com/jamulussoftware/jamuluswebsite) y lee el documento sobre contribuciones que hay allí.-->
