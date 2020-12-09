@@ -6,7 +6,7 @@ author: "corrados"
 lang: "en"
 ---
 
-This is an example Windows client installation with audio device [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0){: target="_blank" rel="noopener noreferrer"}.
+This is an example Windows client installation with a [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0){: target="_blank" rel="noopener noreferrer"} audio device.
 The following instructions might be similar with other audio devices.
 <!--more-->
 
