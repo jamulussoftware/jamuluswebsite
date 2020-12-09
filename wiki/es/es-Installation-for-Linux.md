@@ -12,7 +12,7 @@ Asegúrate de leer la página de [Cómo Empezar](Getting-Started).
 
 Aunque no ofrecemos paquetes oficiales, puede que encuentres Jamulus en el gestor de paquetes de tu distribución. Echa un vistazo a esta tabla:
 
-[![Estado paquetes](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
+[![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
 También hay una lista de paquetes no oficiales [paquetes para diferentes distribuciones aquí](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. Si no lo encuentras en tu gestor de paquetes, tienes que compilar Jamulus de las fuentes. Es bastante fácil: 
 
@@ -42,9 +42,9 @@ En **Fedora**:
 sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
 ```
 
-### Qjackctl: Opcional, pero recomendado
+### QJackCtl: Opcional, pero recomendado
 
-[QjackCtl](https://qjackctl.sourceforge.io) es una utilidad para ayudarte a configurar Jack (instalado como parte de las dependencias mencionadas arriba). Instálalo por ej. con
+[QJackCtl](https://qjackctl.sourceforge.io) es una utilidad para ayudarte a configurar Jack (instalado como parte de las dependencias mencionadas arriba). Instálalo por ej. con
 
 ```shell
 sudo apt-get install qjackctl
@@ -71,8 +71,8 @@ sudo make install
 
 ## Configura tu tarjeta de sonido
 
-### Configura Jack con QJackCtl
-Los clientes de Jamulus necesitan [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} para funcionar, pero hay que configurarlo primero. El método recomendado es utilizar `QjackCtl`..
+### Configura JACK con QJackCtl
+Los clientes de Jamulus necesitan [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} para funcionar, pero hay que configurarlo primero. El método recomendado es utilizar `QJackCtl`..
 1. Abre la terminal por ej. con Crtl-Alt-T y
 1. Ejecuta el comando `qjackctl`. Verás la aplicación **Jack Audio Connection Kit**
 2. Configura tu interfaz de audio como sigue (la configuración exacta de Jack dependerá de lo que es capaz tu interfaz/tarjeta de audio):
