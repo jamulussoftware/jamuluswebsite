@@ -103,4 +103,4 @@ Los faders de volumen en la ventana del mezclador del usuario se pueden controla
 
 Por tanto como ejemplo, si utilizas un Behringer X-Touch, enviando MIDI en el canal 1 y dejando la compensación en el valor predeterminado, el comando tendría este aspecto: `--ctrlmidich 1`. Si tienes un controlador diferente, que por ejemplo envía MIDI en el canal 2 y empezando con el Número de Control 30, el comando sería el siguiente: `--ctrlmidich "2;30"`.
 
-Asegúrate de que el puerto de salida de tu dispositivo MIDI esté conectado al puerto de entrada MIDI de Jamulus (QJackCtl (Linux), MIDI Studio (macOS) o lo que sea que utilices para gestionar las conexiones). En Linux tendrás que instalar y arrancar a2jmidid para que tu dispositivo aparezca en la pestaña MIDI de QJackCtl.
+Asegúrate de que el puerto de salida de tu dispositivo MIDI esté conectado al puerto de entrada MIDI de Jamulus (QjackCtl (Linux), MIDI Studio (macOS) o lo que sea que utilices para gestionar las conexiones). En Linux tendrás que instalar y arrancar a2jmidid para que tu dispositivo aparezca en la pestaña MIDI de QjackCtl.

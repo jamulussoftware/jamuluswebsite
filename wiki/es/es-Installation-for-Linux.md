@@ -42,9 +42,9 @@ En **Fedora**:
 sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
 ```
 
-### QJackCtl: Opcional, pero recomendado
+### QjackCtl: Opcional, pero recomendado
 
-[QJackCtl](https://qjackctl.sourceforge.io) es una utilidad para ayudarte a configurar Jack (instalado como parte de las dependencias mencionadas arriba). Instálalo por ej. con
+[QjackCtl](https://qjackctl.sourceforge.io) es una utilidad para ayudarte a configurar Jack (instalado como parte de las dependencias mencionadas arriba). Instálalo por ej. con
 
 ```shell
 sudo apt-get install qjackctl
@@ -71,8 +71,8 @@ sudo make install
 
 ## Configura tu tarjeta de sonido
 
-### Configura JACK con QJackCtl
-Los clientes de Jamulus necesitan [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} para funcionar, pero hay que configurarlo primero. El método recomendado es utilizar `QJackCtl`..
+### Configura JACK con QjackCtl
+Los clientes de Jamulus necesitan [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} para funcionar, pero hay que configurarlo primero. El método recomendado es utilizar `QjackCtl`..
 1. Abre la terminal por ej. con Crtl-Alt-T y
 1. Ejecuta el comando `qjackctl`. Verás la aplicación **Jack Audio Connection Kit**
 2. Configura tu interfaz de audio como sigue (la configuración exacta de Jack dependerá de lo que es capaz tu interfaz/tarjeta de audio):
@@ -88,7 +88,7 @@ Abre Jamulus, por ej. con la terminal. Si utilizas la terminal, ejecuta el coman
 
 Jamulus se instala en `/usr/local/bin`. Ahora puedes eliminar la carpeta de las fuentes si quieres.
 
-Si tienes problemas con cortes de sonido (en particular errores de XRUN mostrados por Jack/QJackctl) prueba con valores más altos (por ej. 256 cuadros o 3 periodos) en el paso 3 anterior. Valores más bajos (por ej. 64 cuadros) pueden ofrecer un mejor rendimiento pero también quizá más problemas con el audio. Ver la [página de resolución de problemas](Client-Troubleshooting).
+Si tienes problemas con cortes de sonido (en particular errores de XRUN mostrados por Jack/Qjackctl) prueba con valores más altos (por ej. 256 cuadros o 3 periodos) en el paso 3 anterior. Valores más bajos (por ej. 64 cuadros) pueden ofrecer un mejor rendimiento pero también quizá más problemas con el audio. Ver la [página de resolución de problemas](Client-Troubleshooting).
 
 ## ¿Todo instalado?
 Jamulus ha sido instalado y ahora puede utilizarse. Ahora puedes echar un vistazo a la
