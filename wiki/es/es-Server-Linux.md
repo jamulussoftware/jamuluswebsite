@@ -20,7 +20,7 @@ Si tienes pensado ejecutar un servidor en tu ordenador (y ya has instalado el cl
 
 Dale a Enter y deberías ver la ventana del servidor. Puedes detener el servidor cerrando la ventana o tecleando CTRL+C en la terminal.
 
-**Para configurar el servidor**, por favor consulta [las instrucciones para Windows y Macintosh](Server-Win-Mac).
+**Para configurar el servidor**, por favor consulta [las instrucciones para Windows y macOS](Server-Win-Mac).
 
 Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otros parámetros que se pueden establecer.
 
