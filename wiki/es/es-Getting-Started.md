@@ -21,7 +21,7 @@ Intenta asegurarte de que no haya nada en tu ordenador o en tu red (como vídeo 
 
 ### 2. Utiliza un interfaz de audio/micrófono externo, no el dispositivo interno de sonido
 
-Recomendamos encarecidamente ‒ aunque puedes empezar sin él ‒ que utilices un interfaz de audio (un dispositivo al que conectas tu micrófono/instrumento y que se conecta al tu PC mediante, por ejemplo, USB) para disfrutar una mejor calidad de sonido con menor latencia en Jamulus. También puedes utilizar un micrófono USB. Ver [hardware recomendado](#recommended-hardware).
+Recomendamos encarecidamente ‒ aunque puedes empezar sin él ‒ que utilices un interfaz de audio (un dispositivo al que conectas tu micrófono/instrumento y que se conecta al tu PC mediante, por ejemplo, USB) para disfrutar una mejor calidad de sonido con menor latencia en Jamulus. También puedes utilizar un micrófono USB. Ver [hardware recomendado](#hardware-recomendado).
 
 ### 3. Conéctate a los servidores con el ping más bajo
 
