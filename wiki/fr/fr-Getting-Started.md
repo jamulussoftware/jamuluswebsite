@@ -9,7 +9,7 @@ permalink: "/wiki/Getting-Started"
 
 ## Pré-requis
 
-1. **Un ordinateur** au moins sous **Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 or higher), ou **Linux**.
+1. **Un ordinateur** au moins sous **Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 ou plus récent), ou **Linux**.
 1. **Une connection Internet filaire** (n'utilisez pas le Wi-Fi, cela va causer des problèmes de son). La plupart des connexions à haut-débit suffisent[^1].
 1. **Des casques ou écouteurs filaires - pas de haut parleurs** pour éviter de l'écho ou des larsens et pour minimiser le délai[^2].
 
