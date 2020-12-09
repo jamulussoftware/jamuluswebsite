@@ -69,7 +69,7 @@ Voir [ce forum de discussion](https://sourceforge.net/p/llcon/discussion/533517/
 (Avec nos remerciements à [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569) (en anglais))
 
 Peut-être n'avez-vous pas répondu « oui » à la question `« Jamulus souhaite accéder à votre micro »`.  Pour y remédier :
-* Allez dans `Préférences Système` > `Sécurité et confidentialté` > onglet `Confidentialité`
+* Allez dans `Préférences Système` > `Sécurité et confidentialité` > onglet `Confidentialité`
 * Recherchez `Microphone` sur la gauche et assurez-vous que `Jamulus` soit activé dans la liste de droite.
 
 ***
