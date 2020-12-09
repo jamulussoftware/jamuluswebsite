@@ -146,7 +146,7 @@ Nota: Pulsa `q` para salir del estado del servicio.
 
 ### Para actualizar tu instalación a una nueva versión
 
-Descarga las fuentes siguiendo las [instrucciones anteriores](Server-Linux#compile-sources-create-a-user) y repite el proceso de compilación del paso 2 como si fuera una nueva instalación. Cierra el servidor, copia el archivo binario de Jamulus encima del antiguo y reinicialo.
+Descarga las fuentes siguiendo las [instrucciones anteriores](Server-Linux#compíla-las-fuentes-crea-un-usuario) y repite el proceso de compilación del paso 2 como si fuera una nueva instalación. Cierra el servidor, copia el archivo binario de Jamulus encima del antiguo y reinicialo.
 
 ***
 
@@ -156,7 +156,7 @@ Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otr
 
 ### Controlar las grabaciones
 
-Cuando se utiliza la [función de grabación](Server-Win-Mac#recording) con la `opción de la línea de comandos` [-R](Command-Line-Options), si el servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un directorio nuevo. SIGUSR2 conmutará entre grabación activa/desactivada.
+Cuando se utiliza la [función de grabación](Server-Win-Mac#grabación) con la `opción de la línea de comandos` [-R](Command-Line-Options), si el servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un directorio nuevo. SIGUSR2 conmutará entre grabación activa/desactivada.
 
 Para enviar estas señales utilizando systemd, crea los siguientes dos archivos `.service` en `/etc/systemd/system`, dándoles un nombre apropiado (por ej. `nuevaGrabación-Jamulus-server.service`).
 
@@ -220,4 +220,4 @@ Mostrar (en pantalla) mensajes de registro de Jamulus según ocurren:
 
 ### ¿Qué hace el indicador de compilación "headless"?
 
-Aunque no es estrictamente necesario, recomendamos utilizar el indicador `headless` para agilizar el proceso de compilación. Los usuarios de Gentoo también pueden evitar la instalación de algunas dependencias como consecuencia de esto. [Más información aquí](Compiling#the-headless-build-flag).
+Aunque no es estrictamente necesario, recomendamos utilizar el indicador `headless` para agilizar el proceso de compilación. Los usuarios de Gentoo también pueden evitar la instalación de algunas dependencias como consecuencia de esto. [Más información aquí](Compiling#el-indicador-de-compilación-headless).
