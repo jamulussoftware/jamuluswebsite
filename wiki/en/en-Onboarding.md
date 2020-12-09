@@ -4,7 +4,7 @@ title: "Jamulus onboarding"
 lang: "en"
 permalink: "/wiki/Onboarding"
 ---
-# Jamulus onboarding
+# Jamulus on-boarding
 Let's have a look at what Jamulus looks like and what you should do after having installed the software.
 ## First start
 Before you start Jamulus:

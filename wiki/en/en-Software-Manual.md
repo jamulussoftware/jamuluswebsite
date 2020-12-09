@@ -33,10 +33,6 @@ The **Delay** status LED shows the current audio delay status:
 
 **Red** - The delay is too large for jamming
 
-
-
-
-
 The **Buffers** status LED shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
 
 - The network jitter buffer is not large enough for the current network/audio interface jitter.
@@ -57,13 +53,13 @@ Make sure not to clip the input signal to avoid distortions of the audio signal 
 
 ![Chat dialog](https://user-images.githubusercontent.com/20726856/97360717-d7d6a580-189e-11eb-84db-80536e17dc30.png)
 
-The chat text entered in that dialog is sent to
-all connected clients. If a new chat message arrives and the Chat dialog is not already open, it will
+The chat text entered in that dialogue is sent to
+all connected clients. If a new chat message arrives and the Chat dialogue is not already open, it will
 opened automatically for all clients.
 
 ### Profile window
 
-![My profile dialog](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
+![My profile dialogue](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
 
 From the View menu, select My Profile... to set your Alias/Name
 which is displayed below your fader in the server audio mixer board. If an instrument and/or country is set,
@@ -74,12 +70,12 @@ the fader tag and the city entry shows up in the tool tip of the fader tag (see 
 
 ### Connect/disconnect button
 
-Opens a dialog where you can select a server to connect to. If you are connected,
+Opens a dialogue where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
 
-![Connect dialog](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
+![Connect dialogue](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators can optionally list their servers by musical genre. Use the List drop-down to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
 You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
 
@@ -197,7 +193,7 @@ therefore influences the quality of the audio stream (how many dropouts occur) a
 
 You can set the jitter buffer size manually for your local client and the remote server. For the local jitter
 buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.
-If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted.
+If the light turns to red, a buffer over-/under- run has taken place and the audio stream is interrupted.
 
 The jitter buffer setting is therefore a trade-off between audio quality and overall delay.
 

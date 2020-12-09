@@ -26,7 +26,7 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 
 ## Running a "headless" server
 
-The following guide is for running Jamulus as a "pure" server on **hardware without audio** (eg on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. We also have instructions for [Raspberry Pi](Server-Rpi), which rock too.
+The following guide is for running Jamulus as a "pure" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. We also have instructions for [Raspberry Pi](Server-Rpi), which rock too.
 
 * _Jamulus user [Grigory](https://sourceforge.net/u/cidnurg/profile/) maintains a **[Docker image for Jamulus](https://hub.docker.com/r/grundic/jamulus)** which you can use._
 
@@ -53,7 +53,7 @@ make
 
 ### Create a start script
 
-Once you have decided which mode you want your server to run in, use systemd to start it up. 
+Once you have decided which mode you want your server to run in, use systemd to start it up.
 
 Create a systemd unit file that will start the server at boot time (thanks to [David Harrold](https://sourceforge.net/u/dkxl/profile/) for this).
 
@@ -155,7 +155,7 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 
 When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
 
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (eg `newRecording-Jamulus-server.service`).
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
 
 For turning recording on or off (depending on the current state):
 

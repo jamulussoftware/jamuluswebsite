@@ -5,7 +5,6 @@ lang: "en"
 permalink: "/wiki/Demos"
 ---
 
-
 # Examples of Jamulus in Use
 
 **Feel free to add your own!**
@@ -15,7 +14,7 @@ permalink: "/wiki/Demos"
 
 * [Jamulus The Movie - 28th March 2020](https://www.youtube.com/watch?v=2x-gwMmVK-s)
 
-* [Live concert with 8 jazz musicians](https://www.youtube.com/watch?v=MpSIYxZMHw8&t=3307s) for International Jazz Day, 30 April 2020 ([more details here](https://sourceforge.net/p/llcon/discussion/533517/thread/070485619d/#6b71)) 
+* [Live concert with 8 jazz musicians](https://www.youtube.com/watch?v=MpSIYxZMHw8&t=3307s) for International Jazz Day, 30 April 2020 ([more details here](https://sourceforge.net/p/llcon/discussion/533517/thread/070485619d/#6b71))
 
 * [The IP Rockers LIVE on Jamulus](https://soundcloud.com/dematteoss/sets/the-ip-rockers-live-on-jamulus)
 

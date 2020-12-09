@@ -8,7 +8,7 @@ permalink: "/wiki/Client-Troubleshooting"
 # Troubleshooting
 
 ### Don’t hear any sound/Others don’t hear you?
-Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your soundcard. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://sourceforge.net/p/llcon/discussion/software/) for guidance.
+Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your sound-card. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://sourceforge.net/p/llcon/discussion/software/) for guidance.
 
 **Windows users (ASIO4All)**: If you’re using the ASIO4All driver have a look at the [ASIO4All setup section](Installation-for-Windows#setting-up-asio4all)
 
@@ -46,7 +46,7 @@ It's usually far easier and more reliable to have a [mixing desk](https://www.th
 
 ### Getting blasted by somebody joining your jam with feedback or noise?
 
-You can set your "New Client Level" to a low value (eg 10), or set the musicians you are playing with to "Solo" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all.
+You can set your "New Client Level" to a low value (e.g. 10), or set the musicians you are playing with to "Solo" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all.
 
 ### Can't see the server you want to join?
 

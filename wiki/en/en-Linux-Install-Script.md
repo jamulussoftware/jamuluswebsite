@@ -10,19 +10,19 @@ permalink: "/wiki/Linux-Client-Install-Script"
 
 If you plan to be installing Jamulus on many Linux machines, you may want to try this script.
 
-The following example was tested on Linux Mint and combins all the commands above into one script for Ubuntu/Linux Mint. To incorporate the different command for different Linux distributions variables define the distribution and the release for which the installation script should be performed. Example focuses on Ubuntu with release 18.04 as example. So the suggested script name for the release is e.g. `install4ubuntu18_4.sh`. The script commands are generic so that the installation could also be modified so that they work on other linux distributions.
+The following example was tested on Linux Mint and combines all the commands above into one script for Ubuntu/Linux Mint. To incorporate the different command for different Linux distributions variables define the distribution and the release for which the installation script should be performed. Example focuses on Ubuntu with release 18.04 as example. So the suggested script name for the release is e.g. `install4ubuntu18_4.sh`. The script commands are generic so that the installation could also be modified so that they work on other Linux distributions.
 
 ### Installation dependent on Linux Distribution
 The following script call different installation commands dependent on the Linux distribution.
 The variable `DISTRO` defines which commands are executed. Set the variable dependent on your Linux distribution you are using.
 * `DISTRO="Ubuntu` for a Ubuntu or Linux Mint
-* `DISTRO="Debian` for a Debian or Raspian Linux
+* `DISTRO="Debian` for a Debian or Raspbian Linux
 * `DISTRO="Fedora` for a Fedora Linux
 Furthermore if the installation is dependent of the release the variable `LINVERSION` is introduced but is currently not used. In the Ubuntu if statement there is an example how version dependent installation calls can be performed.
 ```bash
 if [ "$LINVERSION"  = "18.4" ]
 then
-    echo "Perform Installation Specifics for $DISTRO Version $DISTRO" 
+    echo "Perform Installation Specifics for $DISTRO Version $DISTRO"
 fi  
 ```
 The variable `LINVERSION` is currently not used in the following script but it is just a demo how to use the version specific installation commands.
@@ -46,26 +46,26 @@ DISTRO="Ubuntu"
 LINVERSION="18.04"
 
 # Get Jamulus Release Name with "curl" and "grep"  
-R=`curl -s https://api.github.com/repos/corrados/jamulus/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")'` 
+R=`curl -s https://api.github.com/repos/corrados/jamulus/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")'`
 echo "Jamulus Installation Script for $DISTRO $LINVERSION"
 echo "Release: $R"
 INSTALLJAMULUS="no"
 while true; do
     read -p "Do you wish to install Jamulus on $DISTRO $LINVERSION? (y/n) " yn
     case $yn in
-        [Yy]* ) 
+        [Yy]* )
            echo "Start Installation $DISTRO $LINVERSION"
            echo "(1) Fetch Release $R from GitHub"
-           wget https://github.com/corrados/jamulus/archive/$R.tar.gz 
+           wget https://github.com/corrados/jamulus/archive/$R.tar.gz
            echo "(2) Extract Source Code for Jamulus Release $R from GitHub"
            tar -xvf $R.tar.gz
            echo "(3) Delete ${R}.tar.gz from GitHub"
            rm $R.tar.gz
            echo "(4) Update Repository"
            sudo apt-get update
-           INSTALLJAMULUS="yes" 
+           INSTALLJAMULUS="yes"
            break;;
-        [Nn]* ) 
+        [Nn]* )
            echo "Cancelled Jamulus Installation on $DISTRO $LINVERSION"
            exit;;
         * ) echo "Please answer yes or no.";;
@@ -73,33 +73,33 @@ while true; do
 done
 
 # echo "Check Variable: $INSTALLJAMULUS"
-	
+
 if [ "$INSTALLJAMULUS" = "yes" ]; then     
 	echo "(5) Install Build Essentials for $DISTRO"
-	
+
 	if [ "$DISTRO"  = "Ubuntu" ]
 	then  
-		      echo "Installation for $DISTRO" 
-		      sudo apt-get install cmake qmake gcc g++ 
-		      sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev 
+		      echo "Installation for $DISTRO"
+		      sudo apt-get install cmake qmake gcc g++
+		      sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
 		      sudo apt-get install qjackctl
                       if [ "$LINVERSION"  = "18.4" ]
                       then
-                          echo "Perform Installation Specifics for $DISTRO Version $DISTRO" 
+                          echo "Perform Installation Specifics for $DISTRO Version $DISTRO"
                       fi  
-	
+
   	elif [ "$DISTRO" = "Debian" ]
 	then    
-			  sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev 
+			  sudo apt-get install build-essential qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
 			  sudo apt-get install qjackctl
 	elif [ "$DISTRO" = "Fedora" ]
 	then    
-			  sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel 
+			  sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus jack-audio-connection-kit-devel
 			  sudo dnf install qjackctl
 	fi
-           
+
 	echo "(6) Compile Jamulus $R"
-	echo "Change to Directory jamulus-$R" 
+	echo "Change to Directory jamulus-$R"
 	cd "jamulus-$R"
 	# ls
 	qmake Jamulus.pro
@@ -110,7 +110,7 @@ if [ "$INSTALLJAMULUS" = "yes" ]; then
         cd ..
         echo "(6) Delete the Source Files after Installation"
         rm -R "jamulus-$R"
-           
+
 else
 
 	echo "Installation cancelled"
@@ -136,7 +136,6 @@ Release:        11.04
 Codename:       natty
 ```
 
-The challenge is, that `lsb_release` command must be available on Linux system. On CentOS/Fedora based systems `lsb_release` command is only available, if the `lsb` core packages are installed. So the automated Linux version detected might no work. 
+The challenge is, that `lsb_release` command must be available on Linux system. On CentOS/Fedora based systems `lsb_release` command is only available, if the `lsb` core packages are installed. So the automated Linux version detected might no work.
 
 So reading the `DISTRO` and `LINVERION` with the `read` command might be the better distribution dependent improvement than an automated setting with `lsb_release`.
-

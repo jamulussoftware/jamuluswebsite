@@ -36,5 +36,4 @@ For further information about this warning see [this Apple Support Page](https:/
 ## All installed?
 Jamulus has been installed and can be used now. You can now take a look at the
 
-[Jamulus Onboarding page](Onboarding){: .button}
-
+[Jamulus On-boarding page](Onboarding){: .button}

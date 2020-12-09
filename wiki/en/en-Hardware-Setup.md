@@ -5,7 +5,6 @@ lang: "en"
 permalink: "/wiki/Hardware-Setup"
 ---
 
-
 # Hardware Setup
 
 ## General info
@@ -22,7 +21,6 @@ Setting up hardware usually burns down to 4 points, although each setup is diffe
 2. Close all programs and start Jamulus (don't forget to choose the right inputs in Jamulus's settings)
 3. Plug in your instrument/microphone and headphones
 4. Connect to a Jamulus server and have fun!
-
 
 ## Windows: Audio interface connection - ASIO4All
 
@@ -52,14 +50,12 @@ Connect your instrument to the input plugs of the Behringer U-CONTROL UCA202. Pl
 
 You're done! Have fun!
 
-
 ## Linux: Audio interface connection with QJackCtrl
 
 Refer to the Linux [client install guide](Installation-for-Linux#configure-jack-with-qjackctl).
 
 ## Linux: Low Latency Kernels for Jamulus
 You might want to install [Ubuntu Studio](https://ubuntustudio.org/){: target="_blank" rel="noopener noreferrer"} it adds a second options in your boot menu for a low-latency kernel. The key of successful jamming is "low latency" between servers and connected Jamulus clients. If the underlying Linux system is started with a low-latency then it has a positive impact on latency for your Jamulus Sessions.
-
 
 ## Points to note about inputs
 
@@ -75,7 +71,7 @@ _(Thanks to [pcar75](https://github.com/pcar75) for this information)_
 
 **This video documents a [live jam session](https://youtu.be/c8838jS2g3U).** I am using a Lexicon Omega USB audio card on a 2009 Mac Mini. My bandmates all use Windows 10 and have Behringer audio cards, e.g. the Behringer Xenyx 1204USB. My internet connection is 10 Mbps down / 1 Mbps upstream via DSL.
 
-**Jamulus user [Andrew Evans](https://sourceforge.net/u/belvario/profile/)**: With bandmates all within one city (but spanning 2 ISPs) and achieving consistent 20ms ping time, running the server on a separate dedicated Windows machine and a client on a Macbook Pro. Remote players on Macbook Air. Everyone on wired Ethernet connections to their home router/gateways. We used WhatsApp video to see each other (with audio muted - it's funny to see how far behind the Whatsapp audio lags from Jamulus though!)
+**Jamulus user [Andrew Evans](https://sourceforge.net/u/belvario/profile/)**: With bandmates all within one city (but spanning 2 ISPs) and achieving consistent 20ms ping time, running the server on a separate dedicated Windows machine and a client on a MacBook Pro. Remote players on MacBook Air. Everyone on wired Ethernet connections to their home router/gateways. We used WhatsApp video to see each other (with audio muted - it's funny to see how far behind the WhatsApp audio lags from Jamulus though!)
 
 ## Having problems?
 

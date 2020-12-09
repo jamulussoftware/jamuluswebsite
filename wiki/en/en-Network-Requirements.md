@@ -16,7 +16,7 @@ The audio settings have an impact on the required network bandwidth. The below t
 
 With the following units
 * ms : milliseconds
-* Kbps : Kilo-bits per seconds (Reminder : 1Mbps = 1024Kbps, 1KByte = 8Kbits)
+* Kbps : Kilo-bits per seconds (Reminder : 1Mbps = 1024Kbps, 1Kbyte = 8Kbits)
 * Mbps : Mega-bits per seconds
 
 | Channels  | Quality | Bandwidth (for buffer : 2.67ms) |  Bandwidth (for buffer : 5.33ms) | Bandwidth (for buffer : 10.67ms) | Bandwidth (for buffer : 21.33ms) |
@@ -34,4 +34,3 @@ There is one upstream (musician sending to the server) and one downstream (serve
 ![image](https://user-images.githubusercontent.com/9976944/79274940-999b0b00-7ea5-11ea-85be-3ded5ee198d5.png)
 
 Note also that mean ADSL2 transfer rate is 10 Mbits/second for downstream and 1 Mbit/second for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24Mb/s at 0.3km to 1.5Mb/s at 5.2km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate.
-

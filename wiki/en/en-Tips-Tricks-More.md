@@ -11,8 +11,6 @@ permalink: "/wiki/Tips-Tricks-More"
 
 Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has compiled a massive amount of information relating to [Remote Band Rehearsals](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc), which covers topics such as hardware and software configuration including examples and advice for newcomers to the field. He also includes a section on Jamulus in comparison to other solutions.
 
-
-
 ##  Using Jamulus audio in Zoom (or other) meeting apps
 
 Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings).
@@ -96,12 +94,10 @@ jack_connect Jamulus:'output left' system:playback_1
 jack_connect Jamulus:'output right' system:playback_2
 ~~~
 
-
-
 ## Using ctrlmidich for MIDI controllers
 
 The volume faders in the client's mixer window can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There are two parameters you can set: `Channel` and `Offset`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and the second parameter to the Control Number you want the first fader to react to. By default, the offset is 70 (for the Behringer X-Touch), which means that the first fader reacts to Control Number 70, the second to 71, and so on.
 
 So for example, if you're using a Behringer X-Touch, sending MIDI on channel 1 and leaving the offset at default, the command would look like this: `--ctrlmidich 1`. If you have a different controller, e.g. sending MIDI on channel 2 and starting with Control Number 30, the command would be as follows: `--ctrlmidich "2;30"`
 
-Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (Qjackctl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
+Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QJackCtl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in QJackCtl.

@@ -18,7 +18,7 @@ There is also list of unofficial [packages for different distributions here](htt
 
 ## Get Jamulus sources
 
-1. Open up a terminal window (command line - `CTRL+ALT+t` on Ubuntu and related distros)
+1. Open up a terminal window (command line - `CTRL+ALT+T` on Ubuntu and related distros)
 1. Download and unzip the sources for the latest release:
 ```shell
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
@@ -68,7 +68,6 @@ make
 sudo make install
 ```
 
-
 ## Set up your sound card
 
 ### Configure Jack with QJackCtl
@@ -95,7 +94,7 @@ If you get problems with sound breaking up (in particular XRUN errors reported b
 
 Jamulus has been installed and can be used now. You can now take a look at the
 
-[Jamulus Onboarding page](Onboarding){: .button}
+[Jamulus On-boarding page](Onboarding){: .button}
 
 ## To update your installation to a new release
 
