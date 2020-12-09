@@ -9,7 +9,7 @@ permalink: "/wiki/Compiling"
 
 ## Linux
 
-Por favor consulta la [página de instalación del cliente](Installation-for-Linux) o estas instrucciones si deseas [compilar un servidor 'headless'](Server-Linux#running-a-headless-server)
+Por favor consulta la [página de instalación del cliente](Installation-for-Linux) o estas instrucciones si deseas [compilar un servidor 'headless'](Server-Linux#ejecutar-un-servidor-headless)
 
 ## macOS
 No necesitas compilar Jamulus para macOS ya que proporcionamos binarios oficiales, pero si de verdad quieres hacerlo, sigue las siguientes instrucciones.
@@ -79,4 +79,4 @@ Compilar con el indicador `headless` significa que puedes evitar instalar alguna
 
 1. Si estás ejecutando Jamulus en Ubuntu/Debian, necesitarás todas las dependencias para **compilar** el archivo binario, pero para **ejecutar** el servidor headless resultante solo deberías necesitar `libqt5core5a`, `libqt5network5`, `libqt5xml5` y probablemente `libqt5concurrent5`. Esto puede ser útil para ejecutar el binario en otra máquina (un Raspberry Pi, por ejemplo).
 
-1. Ten en cuenta que si quieres compilar un cliente con GUI en una máquina y ejecutarlo en otro (por ej. un Raspberry Pi) solo necesitas las dependencias listadas para un [servidor "headless"](Server-Linux#running-a-headless-server) (ver punto anterior), solo que _con_ las librerías de audio de JACK.
+1. Ten en cuenta que si quieres compilar un cliente con GUI en una máquina y ejecutarlo en otro (por ej. un Raspberry Pi) solo necesitas las dependencias listadas para un [servidor "headless"](Server-Linux#ejecutar-un-servidor-headless) (ver punto anterior), solo que _con_ las librerías de audio de JACK.
