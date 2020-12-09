@@ -11,11 +11,11 @@ permalink: "/wiki/Server-Troubleshooting"
 
 ### ¿Por qué no aparece mi servidor en la lista? ¿Por qué no se registra?
 
-Si se ha registrado correctamente (lo puedes [ver aquí](http://jamulus.softins.co.uk/)) y tú o los demás músicos no pueden ver el servidor, quizá tengas que esperar, o iniciar el cliente con la opción `--showallservers` e intentar conectar desde ahí ([ver esta página](Command-Line-Options) sobre cómo arrancar tu cliente con una opción de configuración).
+Si se ha registrado correctamente (lo puedes [ver aquí](http://explorer.jamulus.io/)) y tú o los demás músicos no pueden ver el servidor, quizá tengas que esperar, o iniciar el cliente con la opción `--showallservers` e intentar conectar desde ahí ([ver esta página](Command-Line-Options) sobre cómo arrancar tu cliente con una opción de configuración).
 
 Si ves un mensaje diciendo que el servidor está completo, por favor [lee esta nota](Central-Servers) sobre Servidores Centrales.
 
-Puedes verificar que tu servidor aparece en la lista del género relevante [comprobándolo aquí](http://jamulus.softins.co.uk/).
+Puedes verificar que tu servidor aparece en la lista del género relevante [comprobándolo aquí](http://explorer.jamulus.io/).
 
 ## Servidores - Privados
 
