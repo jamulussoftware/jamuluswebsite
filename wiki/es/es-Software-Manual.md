@@ -10,21 +10,34 @@ Ayuda para Jamulus (Manual del Software)
 Ventana Principal
 -----------
 
+
 ![Main window](https://user-images.githubusercontent.com/4263412/97588743-1a15f900-19fd-11eb-889e-db47dce809fe.png)
 
 ### LEDs de Estado
 
-![LEDs](https://user-images.githubusercontent.com/4263412/97569025-6fdfa680-19e7-11eb-9310-7d441b51c691.png)
-
 El LED de **Estado de Retardo** muestra el estado actual del retardo de audio:
+
+![image](https://user-images.githubusercontent.com/4561747/99384024-b6c60b00-28c6-11eb-9e7d-aa1e4245353f.png)
+
 
 * **Verde** - El retardo es perfecto para una jam session
 
+![image](https://user-images.githubusercontent.com/4561747/99384041-bb8abf00-28c6-11eb-96ab-c1c08acf2a85.png)
+
+
 * **Amarillo** - Una sesión aún es posible pero quizá sea más difícil tocar
+
+
+![image](https://user-images.githubusercontent.com/4561747/99384044-bded1900-28c6-11eb-8971-9ab6ee1908b5.png)
+
 
 * **Rojo** - El retardo es demasiado grande para tocar
 
-**Buffers** muestra el estado actual del flujo de audio. Si está **rojo**, hay interrupciones en el flujo de audio. Esto puede ser causado por alguno de los siguientes problemas:
+
+
+
+
+El LED de estado de **Buffers** muestra el estado actual del flujo de audio/datos. Si está **rojo**, hay interrupciones en el flujo de audio. Esto puede ser causado por alguno de los siguientes problemas:
 
 - El jitter buffer de red no es lo suficientemente grande para el jitter actual de la red/interfaz de audio.
 - El retardo de buffer de la tarjeta de audio (tamaño buffer) tiene un valor demasiado bajo (ver ventana de Configuración).
@@ -87,22 +100,22 @@ Controla los niveles relativos de los canales locales de audio derecho e izquier
 
 ![Audio faders](https://user-images.githubusercontent.com/4263412/97570647-de246900-19e7-11eb-9343-c1e8b9970774.png)
 
-En la ventana del mezclador de audio, se muestra un fader para cada cliente conectado al servidor (incluyéndote a ti).
+La pantalla del mezclador de audio muestra a cada usuario conectado al servidor (incluyéndote a ti).
 Los faders te permiten ajustar el nivel de lo que escuchas sin afectar a lo que escuchan los demás.
 
 El vúmetro muestra el nivel de entrada en el servidor - esto es, el sonido enviado.
 
 Si has configurado tu Canal de Audio a Estéreo o Salida Estéreo en tu Configuración, también verás un control de paneo (shift-clic para resetearlo).
 
-Si ves un icono de "silenciado" sobre un canal, significa que ese músico no puede escucharte. Puede que te hayan silenciado, aplicado 'solo' a uno o más canales sin incluir el tuyo, o han bajado tu fader en su mezcla a cero.
+Si ves un icono de "silenciado" sobre un usuario, significa que esa persona no puede escucharte. Puede que te hayan silenciado, aplicado 'solo' a uno o más usuarios sin incluirte a ti, o hayan bajado tu fader en su mezcla a cero.
 
-Utilizar el **botón de Mute** evita que el canal indicado se escuche en tu mezcla local. Ten en cuenta que cuando muteas a un músico, verán un icono de "silenciado" sobre tu fader para indicar que no puedes escucharle. Ten en cuenta también que continuarás viendo mover su vúmetro si el sonido del músico silenciado llega al servidor. La posición del fader para ellos en tu mezcla no se verá afectada.
+Utilizar el **botón de Mute** evita que el usuario indicado se escuche en tu mezcla local. Ten en cuenta que cuando silencias a alguien, verán un icono de "silenciado" sobre tu fader para indicar que no puedes escucharle. Ten en cuenta también que continuarás viendo mover su vúmetro si el sonido del usuario silenciado llega al servidor. La posición del fader para ellos en tu mezcla no se verá afectada.
 
-El **botón de Solo** te permite escuchar uno o más músicos asilados de los demás. Los que no lo tengan aplicado estarán silenciados. Ten en cuenta que aquellos músicos que no lo tienen aplicado verán el icono de "silenciado" sobre tu fader.
+El **botón de Solo** te permite escuchar a uno o más usuarios aislados de los demás. Los que no lo tengan aplicado estarán silenciados. Ten en cuenta que aquellas personas que no lo tienen aplicado verán el icono de "silenciado" sobre tu fader.
 
-Los canales se muestran de izquierda a derecha en el orden en el que se conectan los clientes hasta que se marchan, momento en el cual su "posición" es ocupada por cada nueva conexión. Puedes cambiar el orden utilizando la opción Editar en el menú de la aplicación.
+Los usuarios se muestran de izquierda a derecha en el orden en el que se conectan. Puedes cambiar el orden utilizando la opción Editar en el menú de la aplicación.
 
-Puedes agrupar faders utilizando el botón de "grupo". Si mueves el fader de cualquier miembro del grupo, los demás faders del grupo también se moverán en la misma proporción. Puedes aislar un canal del grupo temporalmente con shift-clic-arrastrar.
+Puedes agrupar a usuarios utilizando el botón de "grupo". Si mueves el fader de cualquier miembro del grupo, los demás faders del grupo también se moverán en la misma proporción. Puedes aislar un canal del grupo temporalmente con shift-clic-arrastrar.
 
 Si el operador del servidor ha habilitado la grabación, verás un mensaje sobre el mezclador indicando que estás siendo grabado.
 
@@ -116,9 +129,9 @@ Ventana de Configuración
 ### Dispositivo de Audio
 
 ![Sound card device Windows](https://user-images.githubusercontent.com/4263412/97571029-f85e4700-19e7-11eb-97aa-f04adfdb6a7c.png)
-![Sound card device Mac](https://user-images.githubusercontent.com/4263412/97571216-044a0900-19e8-11eb-8d9f-70d660e0cf7b.png)
+![Sound card device macOS](https://user-images.githubusercontent.com/4263412/97571216-044a0900-19e8-11eb-8d9f-70d660e0cf7b.png)
 
-El driver ASIO (tarjeta de audio) se puede seleccionar utilizando Jamulus en el sistema operativo Windows. Si el driver ASIO no es válido se mostrará un mensaje de error y el anterior driver válido será seleccionado. En Mac, se puede seleccionar el hardware de entrada y salida.
+El driver ASIO (tarjeta de audio) se puede seleccionar utilizando Jamulus en el sistema operativo Windows. Si el driver ASIO seleccionado no es válido se mostrará un mensaje de error y el anterior driver válido será seleccionado. En macOS, se puede seleccionar el hardware de entrada y salida.
 
 ### Mapeo canales entrada/salida
 
@@ -144,7 +157,7 @@ Algunos drivers de tarjetas de audio no permiten cambiar el retardo de buffer de
 
 ![Buffer delay Windows](https://user-images.githubusercontent.com/4263412/97571883-33f91100-19e8-11eb-850b-8dd0b86ec59d.png)
 
-En Linux, utiliza la herramienta de configuración de Jack para cambiar el tamaño del buffer.
+En Linux, utiliza la herramienta de configuración de JACK para cambiar el tamaño del buffer.
 
 El retardo del buffer tiene un impacto en el estado de la conexión, la tasa de subida y el retardo total. Cuanto menor sea el buffer, mayor la probabilidad de que el indicador de estado esté en rojo (caídas de audio), mayor la tasa de subida y menor el retardo total.
 
@@ -158,11 +171,11 @@ Por tanto la configuración del buffer es un compromiso entre calidad de audio y
 
 El jitter buffer compensa el jitter de la red y la tarjeta de audio. El tamaño de este buffer tiene por tanto un impacto sobre la calidad del flujo de audio (el número de caídas de la señal) y el retardo total (a mayor buffer, mayor retardo).
 
-El tamaño del jitter buffer se puede establecer manualmente para el cliente local y para el servidor remoto. Para el jitter buffer local, las caídas del flujo de audio se indican mediante la luz debajo de los faders del jitter buffer. Si la luz se vuelve roja, significa que ha habido una interrupción del flujo de audio.
+El tamaño del jitter buffer se puede establecer manualmente para tu cliente local y para el servidor remoto. Para el jitter buffer local, las caídas del flujo de audio se indican mediante la luz debajo de los faders del jitter buffer. Si la luz se vuelve roja, significa que ha habido una interrupción del flujo de audio.
 
 Por tanto la configuración del jitter buffer es un compromiso entre calidad y retardo total.
 
-Si se activa la casilla de Auto, los jitter buffers del cliente local y del servidor remoto se configuran automáticamente basándose en mediciones del jitter de la red y la tarjeta de audio. Si se activa esta opción, los faders quedan deshabilitados (no pueden moverse con el ratón).
+Si se activa la casilla de Auto, los jitter buffers de tu cliente local y del servidor remoto se configuran automáticamente basándose en mediciones del jitter de la red y la tarjeta de audio. Si se activa esta opción, los faders quedan deshabilitados (no pueden moverse con el ratón).
 
 ### Canales de Audio
 
@@ -188,7 +201,7 @@ Cuanto mayor la calidad del audio, mayor la tasa de subida del audio. Asegúrate
 
 ![New client level](https://user-images.githubusercontent.com/4263412/97572391-71f63500-19e8-11eb-8922-9d957ec234ec.png)
 
-Este ajuste define el nivel del fader de una nueva conexión de cliente, en porcentaje. Si se conecta un nuevo cliente al servidor actual, el nivel inicial de su fader tomará este valor si no se ha especificado anteriormente un valor para ese cliente de una conexión anterior. Puedes establecer a todos los clientes en un servidor ocupado en este nivel con Editar > "Poner Todos Faders a Nivel Cliente Nuevo".
+Este ajuste define el nivel del fader de una nueva conexión de cliente, en porcentaje. Si se conecta un nuevo usuario al servidor actual, el nivel inicial de su fader tomará este valor si no se ha especificado anteriormente un valor para ese cliente de una conexión anterior. Puedes establecer a todos los usuarios en un servidor ocupado en este nivel con Editar > "Poner Todos Faders a Nivel Cliente Nuevo".
 
 ### Interfaz oscura
 
@@ -210,4 +223,4 @@ El Ping es el tiempo que requiere el flujo de audio para viajar desde el cliente
 
 El retardo total se calcula con el ping y el retardo ocasionado por la configuración de buffers.
 
-La Tasa de Subida de Audio depende del tamaño actual de los paquetes de audio y la configuración de compresión de audio. Asegúrate de que la tasa de subida no es mayor que la velocidad de subida disponible (comprueba la tasa de subida de tu conexión a internet, por ejemplo con [speedtest.net](http://speedtest.net)).
+La Tasa de Subida de Audio depende del tamaño actual de los paquetes de audio y la configuración de compresión de audio. Asegúrate de que la tasa de subida no es mayor que la velocidad de subida disponible (comprueba la tasa de subida de tu conexión a internet, por ejemplo con [librespeed.org](https://librespeed.org/)).
