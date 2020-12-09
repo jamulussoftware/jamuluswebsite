@@ -50,7 +50,7 @@ Puedes establecer el "Nivel Cliente Nuevo" a un valor bajo (por ej. 10), o confi
 
 ### ¿No ves el servidor al que te quieres unir?
 
-Primero comprueba que tienes el género de servidor correcto seleccionado en la ventana de Configuración de Conexión. Pero en ocasiones problemas de red hacen que tu cliente no muestre todos los servidores disponibles. Si conoces el nombre del servidor al que te quieres unir, puedes [mirar su dirección IP aquí](http://explorer.jamulus.io/). Introduce la dirección IP en el campo de "Nombre/Dirección Servidor" en la ventana de Configuración de Conexión para conectarte.
+Primero comprueba que tienes el género de servidor correcto seleccionado en la ventana de Configuración de Conexión. Pero en ocasiones problemas de red hacen que tu cliente no muestre todos los servidores disponibles. Si conoces el nombre del servidor al que te quieres unir, puedes [mirar su dirección IP aquí](https://explorer.jamulus.io/). Introduce la dirección IP en el campo de "Nombre/Dirección Servidor" en la ventana de Configuración de Conexión para conectarte.
 
 ### ¿No ves ninguna lista de servidores?
 
