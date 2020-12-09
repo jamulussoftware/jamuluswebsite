@@ -4,7 +4,7 @@ title: "Iniciación a Jamulus"
 lang: "es"
 permalink: "/wiki/Onboarding"
 ---
-# Jamulus onboarding
+# Iniciación a Jamulus
 Veamos qué aspecto tiene Jamulus y qué debes hacer tras haber instalado el software.
 ## Primer paso
 Antes de arrancar Jamulus:
