@@ -9,22 +9,24 @@ lang: "en"
 If you plan to be installing Jamulus on many Linux machines, you may want to try this script.
 <!--more-->
 
-The following example was tested on Linux Mint and combines all the needed steps in one script for Ubuntu/Linux Mint. To incorporate the different command for different Linux distributions, variables define the distribution and the release for which the installation should be performed. This example focuses on Ubuntu release 18.04. The suggested script name for the release is e.g. `install4ubuntu18_4.sh`. The script commands are generic so that the installation could also be modified so that they work on other Linux distributions.
+If you plan to be installing Jamulus on many Linux machines, you may want to try this script.
+
+The following example was tested on Linux Mint and combines all the commands above into one script for Ubuntu/Linux Mint. To incorporate the different commands for different Linux distributions, variables define the distribution and the release for which the installation script should be performed. The following focuses on Ubuntu with release 18.04 as example. So the suggested script name for the release is e.g. `install4ubuntu18_4.sh`. The script commands are generic so that the installation could also be modified so that they work on other linux distributions.
 
 ### Installation dependent on Linux Distribution
-The following script calls different installation commands dependent on the Linux distribution.
-The variable `DISTRO` defines which commands are executed. Set the variable dependent on your Linux distribution you are using e.g.
-* `DISTRO="Ubuntu` for Ubuntu or Linux Mint
-* `DISTRO="Debian` for Debian or Raspbian Linux
-* `DISTRO="Fedora` for Fedora
-Furthermore if the installation is dependent on the release, the variable `LINVERSION` is introduced but currently not used. In Ubuntu the if statement is an example how version dependent installation calls can be performed:
+The following script call different installation commands dependent on the Linux distribution.
+The variable `DISTRO` defines which commands are executed. Set the variable dependent on the Linux distribution you are using.
+* `DISTRO="Ubuntu"` for a Ubuntu or Linux Mint
+* `DISTRO="Debian"` for a Debian or Raspbian Linux
+* `DISTRO="Fedora"` for a Fedora Linux
+Furthermore if the installation is dependent of the release the variable `LINVERSION` is introduced but is currently not used. In the Ubuntu `if` statement there is an example how version dependent installation calls can be performed.
 ```bash
 if [ "$LINVERSION"  = "18.4" ]
 then
     echo "Perform Installation Specifics for $DISTRO Version $DISTRO"
 fi  
 ```
-The variable `LINVERSION` is currently not used and just a demo how to use the version specific installation commands.
+The variable `LINVERSION` is currently not used in the following script but it is just a demo how to use the version specific installation commands.
 
 ### Adaptation of the Installation Script
 If you want to create an installation script for Debian just copy the script `install4ubuntu18_4.sh` to `install4debian10_6.sh` and modify the distro variables to
@@ -34,10 +36,10 @@ If you want to create an installation script for Debian just copy the script `in
 DISTRO="Debian"
 LINVERSION="10.6"
 ```
-After that, test the installation on Debian and modify the commands so that the installation script works on Debian. You can share working installation scripts in this Wiki. The maintainer of the Jamulus Repository might add a folder in the repository `/install_scripts` for working installation scripts. Create a pull request for new installation scripts or create an issue with a request to add a documented and tested installation script.
+After that test the installation on Debian and modify the commands so that the installation script works on Debian. Please share working installation scripts in this Wiki. The maintainer of this repository might add a folder in this repository `/install_scripts` for working installation scripts. Create a pull request for new installation scripts or create an issue with a request to add a documented and tested installation script to this repository.
 
 ### The Installation Script
-Copy the following installation script into a file and save it to the filename `install4ubuntu18_4.sh`. After saving the file e.g. in your `Download` directory change to the directory (`cd`) and call the following script with `sh install4ubuntu18_4.sh`.
+Copy the following installation script into a file and save it to the filename `install4ubuntu18_4.sh`. After saving the file e.g. in your `Download` directory change to the directory and call the following script with `sh install4ubuntu18_4.sh`.
 ```bash
 #!/bin/sh
 # set DISTRO either to "Ubuntu", "Debian" or "Fedora"
@@ -120,10 +122,10 @@ fi
 
 
 ## Possible Improvements of the Installation Script for Jamulus
-This script checks in the very beginning for which linux distribution the installation should be called.
+The script can ask in the very beginning for which linux distribution the installation script should be called.
 This can be tested with the command `lsb_release`
 
-With the `lsb_release` command the command returns the distribution specific information about a Linux distro.
+The `lsb_release` command returns the distribution specific information about a Linux distro.
 With a `grep` command with regular expression the variable `DISTRO` and `LINVERSION`.
 E.g. the Ubuntu based systems return with the command the following information.
 ```bash
@@ -135,6 +137,6 @@ Release:        11.04
 Codename:       natty
 ```
 
-The challenge is, that `lsb_release` command must be available on your Linux system. On CentOS/Fedora based systems `lsb_release` command is only available, if the `lsb` core packages are installed. So the automated Linux version detected might no work.
+The challenge is, that `lsb_release` command must be available on Linux system. On CentOS/Fedora based systems `lsb_release` command is only available, if the `lsb` core packages are installed. So the automated Linux version detected might no work.
 
-Reading the `DISTRO` and `LINVERION` with the `read` command might be the better distribution dependent improvement than an automated setting with `lsb_release`.
+So reading the `DISTRO` and `LINVERION` with the `read` command might be the better distribution dependent improvement than an automated setting with `lsb_release`.
