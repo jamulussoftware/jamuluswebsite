@@ -11,11 +11,11 @@ permalink: "/wiki/Server-Troubleshooting"
 
 ### Why doesn't my server show up in the list? Why isn't in registering?
 
-If you are registered OK (you can [see it here](http://jamulus.softins.co.uk/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option).
+If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option).
 
 If you are seeing a message that says the server is full, please [see this note](Central-Servers) on Central Servers.
 
-You can verify that your server is listed in the relevant genre by [checking it here](http://jamulus.softins.co.uk/).
+You can verify that your server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/).
 
 ## Servers - Private
 
@@ -29,7 +29,7 @@ This should be your **public** IP address (find that with [Google](https://www.g
 
 ### What port numbers can I use?
 
-Keep the default UDP ports. The actual default port is documented by the [command line](Command-Line-Options). At the time of writing this documentation, the port number is **22124**. 
+Keep the default UDP ports. The actual default port is documented by the [command line](Command-Line-Options). At the time of writing this documentation, the port number is **22124**.
 
 ### Is a private server a direct server without contact to the Jamulus Central Server?
 
