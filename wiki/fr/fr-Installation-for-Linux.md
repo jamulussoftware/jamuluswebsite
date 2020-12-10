@@ -14,9 +14,9 @@ Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started).
 
 Bien que nous ne fournissions pas de paquets officiels, vous pourriez trouver Jamulus dans le gestionnaires de paquets de votre distribution. Consultez ce tableau :
 
-[![Statut des paquets](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
+[![Statut d'empaquetage](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-Il existe aussi une liste de [paquets non officiels pour les différentes distributions ici](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. Si vous ne le trouvez pas dans votre gestionnaire de paquet, vous devrez compiler Jamulus depuis le code source. C'est assez simple :
+Il existe aussi une liste de [paquets non officiels pour les différentes distributions ici](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"} (en anglais). Si vous ne le trouvez pas dans votre gestionnaire de paquet, vous devrez compiler Jamulus depuis le code source. C'est assez simple :
 
 ## Obtenir les sources de Jamulus
 
@@ -102,6 +102,9 @@ Jamulus a été installé et peut désormais être utilisé. Vous pouvez mainten
 
 [page d'embarquement Jamulus](Onboarding){: .button}
 
+Jamulus has been installed and can be used now. You can now take a look at the
+
+[Jamulus Onboarding page](Onboarding){: .button}
 
 ## Pour mettre à jour votre installation vers une nouvelle version
 
