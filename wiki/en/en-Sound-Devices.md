@@ -8,7 +8,7 @@ permalink: "/wiki/Sound-Devices"
 # Sound Devices
 
 This page lists (thanks to Jamulus users) the audio devices known to work (or not) with Jamulus.  
-_**Note**: depends on how the device works on your system (Linux, MacOS, Windows, etc.)_.
+_**Note**: This depends on how the device works on your system (Linux, MacOS, Windows, etc)_.
 
 You can update it with the information you have. **Please indicate the platform(s) you are using!**.
 
@@ -18,7 +18,7 @@ You can update it with the information you have. **Please indicate the platform(
 
 #### Microphones / DI Boxes
 
-* **[Blue Yeti](https://www.bluemic.com/fr-fr/products/yeti/)**, USB Microphone  
+* **[Blue Yeti](https://www.bluemic.com/en-us/products/yeti/)**, USB Microphone  
 Works well under **macOS** (there is a check option to disable local monitoring).  
 Works well under **Windows 10 with ASIO4All**, a bit more latency than under macOS. You can disable local monitoring by going deep into the settings.  
 Latency is good under **Linux**. You can't disable local monitoring (or we haven't found out how to do it, feel free to send us the information if you know how to do it).
@@ -28,12 +28,12 @@ Set the PC/Mix dialog box to 100% PC to listen to Jamulus' mix on the headphone 
 Tested with a Raspberry Pi 4 under **Raspberry Pi OS Buster**, kernel version 4.19.
 
 * **[Behringer UGC102](https://www.behringer.com/behringer/product?modelCode=P0198)**, Guitar-to-USB Interface  (guitar and bass) 
-_Note: On **macOS**, appears as "USB Audio Codec". When selected for input and output in Jamulus, the **UGC102** headphone jack is the output (and cannot be used for input)._
+_Note: On **macOS**, this device appears as "USB Audio Codec". When selected for input and output in Jamulus, the **UGC102** headphone jack is the output (and cannot be used for input)._
 
 #### Audio interfaces / digital mixing consoles
 
 * **[Solid State Logic SSL2+](https://www.solidstatelogic.com/products/ssl2-plus)**, USB-C/USB digital audio/MIDI interface 2 in/4 out  
-Works great under **Linux** (Ubunutu 20.04 or Raspberry Pi OS (Buster)), **macOS** (not tested on Big Sure) or **Windows 10** with the [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe).  
+Works great under **Linux** (Ubunutu 20.04 or Raspberry Pi OS (Buster)), **macOS** (not tested on Big Sur) or **Windows 10** with the [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe).  
 The monitoring of the Jamulus mix is done by moving the "MONITOR MIX" completely to the right to "USB". See the [official manual](http://eu1.download.solidstatelogic.com/2%20Plus%20/SSL%202%20Plus%20User%20Guide_ENGLISH.pdf).
 
 * **[Ammoon AGM02](https://www.ammoon.com/p-i3974.html)** and **[Ammoon AGM04](https://www.ammoon.com/p-i4049.html)**, low-cost USB 2-channel and 4-channel compact mixing consoles 
@@ -60,30 +60,30 @@ On Windows, [ASIO4ALL](http://www.asio4all.org/) driver works OK but not great. 
 * **[Berhinger XENYX serie](https://www.behringer.com/series.html?category=R-BEHRINGER-XENYXSERIES)**, USB digital audio interfaces  
 [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip). This Behringer ASIO Driver does not appear to be very good. Audio latency with this "unsupported" driver seems poor - not better than ASIO4all. It's good device for **macOS** and **Linux**, but perhaps not for Windows. More testing is required.
 
-* **[Focusrite Scarlett](https://focusrite.com/en/scarlett)**, USB digital audio interface
+* **[Focusrite Scarlett serie](https://focusrite.com/en/scarlett)**, USB digital audio interfaces
 _Note: if you have issues with the buffer size going to 136, download the updated driver version `4.64.15.598` from [http://beta.focusrite.com/](http://beta.focusrite.com/)_
 
 * **[iConnectivity AUDIO4+](https://www.iconnectivity.com/products/audio/iconnectaudio4plus)**, USB digital audio interface
 
-* **[Lexicon Omega](conpro.com/en/products/omega)**, USB digital audio interface  
+* **[Lexicon Omega](https://lexiconpro.com/en/products/omega)**, USB digital audio interface  
 _Note: Works best on **macOS** and **Linux**. There is a driver for Windows but this does not allow to use 64 samples buffer size and adds some latency compared to, e.g.,the mocOS driver._
 
-* **[Native Instruments Komplete Audio 2](https://www.native-instruments.com/fr/products/komplete/audio-interfaces/komplete-audio-1-audio-2/)**, USB digital audio interface  
+* **[Native Instruments Komplete Audio 2](https://www.native-instruments.com/en/products/komplete/audio-interfaces/komplete-audio-1-audio-2/)**, USB digital audio interface  
 Tested on **Windows 10** with 64 sample buffer and am getting great sound and total latency around 15ms over the ping time.
 
-* **[Steinberg UR22C](https://new.steinberg.net/fr/audio-interfaces/ur22c/)** USB-C/USB3 digital audio interface  
+* **[Steinberg UR22C](https://new.steinberg.net/audio-interfaces/ur22c/)** USB-C/USB3 digital audio interface  
 Works directly on **macOS** with a beautiful sound even with un-balanced jack.  
 Works on a **Raspberry PI4** provided `jackd` version used is the one from `/usr/bin` (Tweaking `raspijamulus.sh`). Not tested on PC.
 
-* **[Steinberg UR22 MKII](https://www.steinberg.fr/fr/produits/interfaces_audio/ur_series/modeles/ur22mkii.html)**, USB digital audio interface 
+* **[Steinberg UR22 MKII](https://www.steinberg.net/en/products/audio_interfaces/ur_series/models/ur22mkii.html)**, USB digital audio interface 
 Sounds great, can achieve 32 frame buffer and works on **Windows** and **Linux**.  
 Not tested on **macOS**.
 
-* **[Yamaha AG03](https://fr.yamaha.com/fr/products/music_production/interfaces/ag_series/index.html)**, USB digital audio/MIDI interface
+* **[Yamaha AG03](https://usa.yamaha.com/products/music_production/interfaces/ag_series/index.html)**, USB digital audio/MIDI interface
 
 #### Amp modelers/effects pedals for instruments
 
-* **[Line 6 HX Stomp](https://fr.line6.com/hx-stomp/)**, USB multi-effects pedal for guitar  
+* **[Line 6 HX Stomp](https://line6.com/hx-stomp/)**, USB multi-effects pedal for guitar  
 See [Remote Jam with Helix and Jamulus](https://jimamsden.wordpress.com/2020/04/04/remote-jamming-with-helix-and-jamulus/) for settings on a Mac.
 
 #### Digital recorders
@@ -100,11 +100,11 @@ Works well on Mac, PC and Raspberry Pi4
 ### Firewire devices
 
 * **[Presonus StudioLive 16.4.2 AI](https://www.presonus.com/products/StudioLive-1642AI)** (StudioLive AI series), Firewire digital mixing desk  
-Works perfectly with Jamulus under **macOS** (not yet tested on Big Sure). Assign the individual inputs in Jamulus or the corresponding inputs to a stereo auxiliary mix (to be patched in "Universal Control") if more than two channels. Use outputs 17-18 to monitor the Jamulus mix.  
+Works perfectly with Jamulus under **macOS** (not yet tested on Big Sur). Assign the individual inputs in Jamulus or the corresponding inputs to a stereo auxiliary mix (to be patched in "Universal Control") if more than two channels. Use outputs 17-18 to monitor the Jamulus mix.  
 These devices work under Windows, they should work with Jamulus under this OS (not tested).  
 Not tested under Linux, may (or may not) work, see [here](https://forums.presonus.com/viewtopic.php?f=67&t=2717).
 
-* **[Edirol (Roland) FA-66](https://www.roland.com/fr/products/fa-66/)** Firewire digital audio interface  
+* **[Edirol (Roland) FA-66](https://www.roland.com/global/products/fa-66/)** Firewire digital audio interface  
 Good on **macOS**, **Linux**, et **Windows**, [Pilote ASIO](https://www.roland.com/global/products/fa-66/downloads/).
 
 * **[MOTU Ultralite](https://motu.com/products/motuaudio/copy_of_ultralite/body-old.html)** (2010 models MK1/MK2), Firewire digital audio interface  
@@ -112,14 +112,14 @@ Tested on e MacBook Pro 2015, **Mac OS X** 10.11.6 (El Capitan), Apple Thunderbo
 
 ### Thunderbolt devices
 
-* **[Focusrite Clarett 4Pre](https://focusrite.com/fr/node/43)**, Thunderbolt 2 digital audio interface  
+* **[Focusrite Clarett 4Pre](https://focusrite.com/en/usb-c-audio-interface/clarett-usb/clarett-4pre-usb)**, Thunderbolt 2 digital audio interface  
 
 * **[Resident Audio T4](http://www.residentaudio.com/t4overview)**, Thunderbolt 2 digital audio interface
 
-* **[Universal Audio Arrow](https://www.uaudio.fr/audio-interfaces/arrow.html)**, Thunderbolt 3 digital audio interface  
+* **[Universal Audio Arrow](https://www.uaudio.com/audio-interfaces/arrow.html)**, Thunderbolt 3 digital audio interface  
 This device provides the lowest latency.
 
-* **[Zoom TAC-2](https://zoomcorp.com/fr/fr/interfaces-audio/audio-interfaces/tac-2/)**, Thunderbolt 2 digital audio interface
+* **[Zoom TAC-2](https://zoomcorp.com/en/us/audio-interface/audio-interfaces/tac-2/)**, Thunderbolt 2 digital audio interface
 
 ### Internal soundcards
 
