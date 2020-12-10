@@ -22,7 +22,7 @@ Vous pouvez également [compiler vous même le logiciel](Compiling) si vous le s
 
 Pour ASIO4All, vous devrez probablement expérimenter un peu pour trouver la bonne configuration car chaque ordinateur est un peu différent. Configurez votre carte son quand vous serez connecté à un serveur pour entendre votre instrument ou votre voix et vérifier que tout soit correctement configuré.
 
-Avant que vous démaariez avec Jamulus :
+Avant que vous démariez avec Jamulus :
 1. **Fermez toutes les applications** (en particulier celles qui pourraient accéder à votre carte son comme votre navigateur/lecteur de média) car Jamulus a besoin d'un accès exclusif à votre carte son.
 2. Si l'audio ne fonctionne pas directement, assurez-vous que seules les **entrées/sorties correctes** de son panneau de contrôle **sont activées**. Tout le reste devrait être désactivé. Ça peut être fait comme suit :
 
