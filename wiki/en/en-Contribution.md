@@ -7,12 +7,19 @@ permalink: "/wiki/Contribution"
 
 # Contributing to the Jamulus Project
 
-You can contribute to [this documentation](https://github.com/jamulussoftware/jamuluswebsite) by opening a pull request with with the following title:
+## Jamulus Software
+* If you want to contribute code, post your idea on [the developer forum](https://sourceforge.net/p/llcon/discussion/developerforum/) first so that it can be discussed before making a pull request (be sure to read main dev's [Volker's manifesto for contributions](https://github.com/corrados/jamulus/issues/596))
 
-`[language code (e.g. en)] {short description of your changes}` on the [Documentation repo](https://github.com/jamulussoftware/jamuluswebsite). If your change involves the need of translation, please write that in the description.
+See the [Jamulus GitHub repo](https://github.com/corrados/jamulus) for further information.
 
-### The more people can improve Jamulus, the better!
+## Jamulus Website
 
-* Have a look at our coding and [contribution guidelines](https://github.com/corrados/jamulus/issues/596) and [Jamulus GitHub repo](https://github.com/corrados/jamulus).
+* If you find a mistake, typo or something out of date (in any language) on the website, you can [raise it as an issue here](https://github.com/jamulussoftware/jamuluswebsite/issues).
 
-* Note also the [compilation guide](/wiki/Compiling) for various platforms.
+* If you think some documentation or information is missing or can be improved, post about that on [the relevant discussion forum](https://sourceforge.net/p/llcon/discussion/) so that it can be discussed first.
+
+Pull requests for the website should look like this:
+
+`[language code (e.g. en)] {short description of your changes}` on 
+
+See the [Website GitHub repo](https://github.com/jamulussoftware/jamuluswebsite) for further information.

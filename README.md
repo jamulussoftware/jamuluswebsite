@@ -28,12 +28,12 @@ To translate a file, please duplicate it and change the `lang:` attribute to the
 
 ### Adding a new language
 
-If you want to add a new language, you must follow the instructions on the polyglot site and add the folders/files. 
+If you want to add a new language, you must follow the instructions on the polyglot site and add the folders/files.
 - Make sure to add your language to the \_config.yml file (in the languages array.)
-- At least, the main includes for the wiki (see \_includes/wiki/) have to be translated. 
-- The navigation and general site wide strings (see the \_data/ folder) and the homepage (see the 1-index.html file in the root of this repo) should be translated. 
+- At least, the main includes for the wiki (see \_includes/wiki/) have to be translated.
+- The navigation and general site wide strings (see the \_data/ folder) and the homepage (see the 1-index.html file in the root of this repo) should be translated.
 
-Have a look at the README.md files in these folders. 
+Have a look at the README.md files in these folders.
 
 ## Contribute to the design/site structure
 

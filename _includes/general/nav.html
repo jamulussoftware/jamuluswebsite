@@ -1,5 +1,5 @@
 <aside id="gnav" class="fx-col-100-xs fx-col-25-m">
-  {% include langselect.html %}
+  {% if page.hidelang %}{% else %}{% include langselect.html %}{% endif %}
   <nav id="mnv">
     <ul>
       {% if site.data.navigation.nav[0] %}
