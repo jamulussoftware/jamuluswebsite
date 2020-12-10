@@ -5,7 +5,7 @@ lang: "en"
 author: "niebert"
 heading: "Software Synth in Jamulus"
 ---
-This post will discuss how to setup a software synth in Jamulus.
+This article will discuss how to setup a software synth in Jamulus.
 <!--more-->
 
 ## Linux
