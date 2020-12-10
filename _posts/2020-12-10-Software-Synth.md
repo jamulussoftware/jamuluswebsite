@@ -5,41 +5,45 @@ lang: "en"
 author: "niebert"
 heading: "Software Synth in Jamulus"
 ---
-This article will discuss how to setup a software synth in Jamulus.
+This article will show you how to use a software synth with Jamulus.
+
 <!--more-->
 
 ## Linux
-We will elaborate the concept of playing a software synth on Linux as example and transfer that to other operating systems (e.g. Windows, MacOSX).
-* **(Hammond Organ Synth)** As an example we talk open source software synth [setBfree](https://github.com/pantherb/setBfree), which is a hammond organ emulator that outputs through JACK on Linux.
-* **(MIDI Keyboard)** The MIDI keyboard is used to generate the key pressed events, that are transmitted through a USB-MIDI interface to Linux system and the Synthesizer [setBfree](https://github.com/pantherb/setBfree) generates the corresponding tone for the pressed key. In general the MIDI keyboard can also be replaced by a digital wind midi controller, that does the same but the tone is dependent on how the musician blows air into the digital wind controller.
-* **(Connector to Jamulus)** You may hear the audio output of your Linux system on your speakers but the audio output may not be use as input for your Jamulus session. So another step is to connect the audio out to Jamulus client (with QJackCtl).
+We will look at the concept of playing a software synth on Linux but other operating systems should work similar.
+Let's have a look at what we need:
+1. A software synth like [setBfree](https://github.com/pantherb/setBfree) **(Hammond Organ Synth)** which in this example emulates an organ and outputs its audio to JACK on Linux.
+2. A **MIDI Keyboard**. The MIDI keyboard is used to generate the key pressed events, that are transmitted through a USB-MIDI interface to your Operating System. After that the synthesizer [setBfree](https://github.com/pantherb/setBfree) generates the corresponding sound for the pressed key. The MIDI keyboard could also be replaced by a digital wind midi controller, which does the same (although the tone is dependent on how the musician blows air into the digital wind controller).
+3. A **connector to Jamulus**. You may hear the audio output of the synth on your speakers but the audio output may not be used as input for Jamulus. That's why we need to connect the audio output of the synth to the Jamulus client (this can be done with QJackCtl).
 
 ### General Information about ALSA, JACK and MIDI
-First of all we explain a few basic concepts on Linux to use MIDI and Audio together.
-* ALSA is the basic to connection to the hardware, i.e. the soundcard and the midi controller for the keyboard.
-* JACK is build on top of ALSA and uses ALSA for the audio output. It provides a adequat environment for music production on Linux.
-* Synthesizer like the [Hammond Organ emulator setBfree](https://github.com/pantherb/setBfree) connect to JACK for audio output.
-* Jamulus connects to JACK.
+This part is specific to Linux. Let's have a look at a few concepts how Linux handles Audio and MIDI.
+* **ALSA** is the basic layer to connect to the hardware, i.e. the soundcard and the midi controller for the keyboard.
+* **JACK** is built on top of ALSA and uses ALSA for the audio output. It provides an easy to use environment for music production on Linux.
+* A **synthesizer** like the [Hammond Organ emulator setBfree](https://github.com/pantherb/setBfree) connects to JACK and sends its audio there.
+* **Jamulus** connects to JACK too and can therefore receive and send audio to every application connected to JACK (including our synthesizer).
 
-### Requirements for Using Software Synths in Jamulus on Linux
-For ALSA2JACK MIDI (`a2jmidid`) connection it is necessary to install the a2j package. Furthermore we use in this example a simple Hammond organ emulator `setBfree` in this example. Replace `setBfree` by your favorite Linux synthesizer. Both packages `a2jmidid` and `setbfree` can be installed via your package manager or e.g. on Ubuntu/Mint with `apt-get` commands:
+### Requirements for using Software Synths in Jamulus on Linux
+If you use your MIDI keyboard, you might need ALSA2JACK MIDI (`a2jmidid`) from the `a2j` package. To connect it to JACK. Since we use `setBfree` in this example, you also need a software synth (of course, you can replace this by your favourite Linux synthesizer). Both packages `a2jmidid` and `setbfree` can be installed with your package manager e.g. on Ubuntu by using the `apt-get` commands:
 ```shell
 sudo apt-get install a2jmidid
 sudo apt-get install setbfree
 ```
 
 ### Connecting ALSA, JACK and MIDI for a Synth for Jamulus
-Now we look an the workflow to use the whole infrastructure in Jamulus.
-* **(Jamulus Installation and JACK)** Use the [install script](https://github.com/corrados/jamulus/wiki/Linux-Client-Install-Script) for Jamulus on Linux or [install Jamulus with the manual in the wiki](https://github.com/corrados/jamulus/wiki/Installation-for-Linux). With this installation we have JACK and QJackCtl installed for Jamulus.
-* **(ALSA to JACK - MIDI)** Next we must create a connection from ALSA to JACK to route the MIDI input from the keyboard to the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree).
-   * ***(Command Line: `qjackctl`)*** For this step you can start JACK-Control (QJackCtl) from the command line by `qjackctl`,
-   * ***(Command Line: `a2jmidid -e`)*** Then you launch the ALSA2JACK MIDI connector with command: `a2jmidid -e`. As long as this connector runs in the shell the `a2j` connection interface is visible in `QJackCtl`.
-   * ***(QJackCtl: `ALSA-MIDI`)*** Connect your USB MIDI as input to `MIDI through` in the ALSA-MIDI tab of QJackCtl.  Now the midi events from your keyboard reach JACK and are ready to connect.
-   * ***(Start Synth)*** Start the Hammond Synthesizer too e.g. from the command line with `setBfree`. You will see the `setBfree` graphical user interface GUI (see http://setbfree.org/gui_3d). Press with your mouse on the visualised organ keyboard to test if the synth generates an organ sound on your speakers.
-   * ***(QJackCtl: `JACK-MIDI`)*** Now we can connect `a2j` in JACK-MIDI as input to the synth `setBfree`, that generates the sound as output for each key pressed on the keyboard. Keep in mind that you can connect synths if they are started and visible for QJackCtl.  So you can connect  after starting the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree), i.e. connect `a2j` to the `setbfree` if you also see the Hammond Synth SetBFree in QJackCtl.
-   * ***(Test Software Synth with MIDI Keyboard)*** If you have speakers attached to your Linux Computer you would hear the emulated Hammond sound on your Linux PC for all the keys your press on your MIDI keyboard. If you just want to play the software synth with your keyboard you are ready to play from here. The only remaining step is to connect the audio to Jamulus.
-* **(Synth to Jamulus - Audio)** In the previous step we connected the MIDI signals from your keyboard to the MIDI input of JACK via a2j - MIDI through connection. Now JACK the MIDI which tell JACK which keys are pressed on the keyboard. Now create an audio connection in JACK (i.e. the generated Hammond sound of the synth). We connect the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree) output to Jamulus. Therefore Jamulus must be started so that you see also Jamulus in the audio connection of QJackCtl. Now you can the audio output of the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree) to the audio input of Jamulus in JACK.
+Let's have a look at the workflow and the infrastructure in Jamulus.
+1. Install Jamulus (You've probably already done that). If not, please have a look at the [installation page in the documentation](/wiki/Getting-Started). If you use Linux and have followed the instructions, JACK and QJackCtl should have been installed.
+2. **ALSA to JACK - MIDI** Next we must create a connection from ALSA to JACK to route the MIDI input from the keyboard to setBfree.
+   * Open Qjackctl e.g. from the command line by typing `qjackctl`
+   * Launch the ALSA2JACK MIDI connector with `a2jmidid -e`. While this connector runs, the `a2j` connection interface should be visible in `QJackCtl`.
+   * Now connect your USB MIDI device as input to `MIDI through` in the ALSA-MIDI tab of QJackCtl. MIDI events from your keyboard will now reach JACK.
+   * Start your synth e.g. from the command line with (in my case) `setBfree`. You will now see the `setBfree` graphical user interface (it could look like this: http://setbfree.org/gui_3d). You can now check if the synth generates sound by clicking on the visualised organ keyboard and listening for sound through your speakers.
+   * In Qjackctl we can now connect `a2j` in JACK-MIDI as input to the synth `setBfree`, that generates the sound as output for each key pressed on the keyboard. Keep in mind that you can connect synths if they are started and visible for QJackCtl.  So you can connect after starting the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree), i.e. connect `a2j` to the `setbfree` if you also see the Hammond Synth SetBFree in QJackCtl.
+   * Let's test the software synth with our MIDI Keyboard! If you have speakers attached to your Linux Computer you should hear the emulated Hammond sound on your Linux PC for all the keys your press on your MIDI keyboard. If you just want to play the software synth with your keyboard, you're finished here. But if you want to connect the sound of the synth to Jamulus, the only remaining step is to connect the synths' audio to Jamulus.
+**Synth to Jamulus - Audio**: In the previous step we ensured that the MIDI signals from your keyboard get sent to to the MIDI input of JACK. Now we need to create an audio connection from JACK (i.e. the generated Hammond sound of the synth) to Jamulus. To do so, we connect the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree) output to Jamulus. Therefore, start Jamulus so that you can see Jamulus in QJackCtl. Now connect the audio output of the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree) to the audio input of Jamulus in JACK. Now you're done.
 
-In general `QJackCtrl` is used similar operations like for plugging in instruments in mixer and the mixer into an amplifier and the amplifier again to the speakers. Have fun with your other OpenSource synths like QSynth, [ZynAddSubFX](https://sourceforge.net/projects/zynaddsubfx/) than can be installed on your Linux system and/or used within LMMS.
+`QJackCtrl` can be used for operations like plugging in instruments in mixer and the mixer into an amplifier and the amplifier again to the speakers.
 
-Have fun playing your synth within Jamulus.
+Have fun with other OpenSource synths like QSynth, [ZynAddSubFX](https://sourceforge.net/projects/zynaddsubfx/) which can be installed on your Linux system and/or used within LMMS.
+
+Have fun playing your synth within Jamulus!
