@@ -10,8 +10,6 @@ permalink: "/wiki/Client-Troubleshooting"
 ### Vous n'entendez aucun son ou les autres ne vous entendent pas ?
 Commencez par les choses simples : assurez-vous que votre instrument ou micro et votre casque soient branchés sur les bonnes prises. Assurez-vous qu'aucune autre application comme votre navigateur, votre logiciel de vidéoconférence, etc. n'utilise votre carte son. Vous devriez les éteindre lorsque vous utilisez Jamulus. Si tout semble correct et que le problème persiste, il est probable qu'il y ait un problème avec les paramètres de votre périphérique son. Cela dépendra de votre configuration particulière (plate-forme, matériel, logiciel et pilotes), il est donc préférable de demander conseil sur [les forums](https://sourceforge.net/p/llcon/discussion/software/).
 
-Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your soundcard. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://sourceforge.net/p/llcon/discussion/software/) for guidance.
-
 **Utilisateurs de Windows (ASIO4All)** : si vous utilisez le pilote ASIO4All, consultez la [section de configuration ASIO4All](Installation-for-Windows#configuration-de-asio4all).
 
 ### Tout sonne correctement, mais c'est difficile de rester en rythme
