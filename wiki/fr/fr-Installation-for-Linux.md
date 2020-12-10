@@ -102,10 +102,6 @@ Jamulus a été installé et peut désormais être utilisé. Vous pouvez mainten
 
 [page d'embarquement Jamulus](Onboarding){: .button}
 
-Jamulus has been installed and can be used now. You can now take a look at the
-
-[Jamulus Onboarding page](Onboarding){: .button}
-
 ## Pour mettre à jour votre installation vers une nouvelle version
 
 Téléchargez les nouvelles sources conformément à la section [Compilons ce vilain garçon](#compilons-ce-vilain-garçon) puis répétez simplement les [instructions de compilation](#compiler-jamulus) comme pour une nouvelle installation ci-dessus.
