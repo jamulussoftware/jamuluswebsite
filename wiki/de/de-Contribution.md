@@ -14,9 +14,10 @@ Mehr (englische) Informationen findest du im  [Jamulus GitHub repo](https://gith
 
 ## Jamulus Website
 * Wenn du einen Fehler, oder eine veraltete Information (egal in welcher Sprache) findest, bitte öffne einen [GitHub Issue auf Englisch hier](https://github.com/jamulussoftware/jamuluswebsite/issues).
-* Wenn dir irgendeine Information fehlt oder ein Eintrag verbessert werden sollte, poste deine Idee (auf Englisch)[im entsprechenden Forum](https://sourceforge.net/p/llcon/discussion/), damit wir es mit dir diskutieren können.
+* Wenn dir irgendeine Information fehlt oder ein Eintrag verbessert werden sollte, poste deine Idee (auf Englisch) [im entsprechenden Forum](https://sourceforge.net/p/llcon/discussion/), damit wir es mit dir diskutieren können.
 
-Pull Requests für die Website sollten einen Titel, der diesem Schema folgt haben:
+Pull Requests für die Website sollten einen Titel, der diesem Schema folgt, haben:
+
 `[Sprachcode (z.B. de)] {Kurzbeschreibung deiner Änderungen}`
 
 Mehr Infos gibt's im [Website GitHub repo](https://github.com/jamulussoftware/jamuluswebsite).

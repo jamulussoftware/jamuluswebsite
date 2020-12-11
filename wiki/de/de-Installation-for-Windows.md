@@ -19,14 +19,14 @@ Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
 ## ASIO4All einrichten
 *Fast alle integrierten Soundkarten benötigen diesen Treiber. Du solltest ASIO4All nur dann nutzen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO Treiber anbietet, da native ASIO Treiber eine bessere Latenz haben könnten.*
 
-Wenn du ASIO4All nutzt, musst du möglicherweise ein bisschen herumprobieren, bis du deine individuell richtige Konfiguration eingestellt hast. Leider ist jeder PC etwas anders. Am Besten verbindest du dich gleich mit einem Server und richtest dann ASIO4All ein. Das erleichtert dir das Setup, da du gleich mit deinem Instrument/Stimme testen kannst, ob alles richtig eingestellt ist.
+Wenn du ASIO4All nutzt, musst du möglicherweise ein bisschen herumprobieren, bis du deine individuell richtige Konfiguration eingestellt hast. Jeder PC ist etwas anders. Am Besten verbindest du dich mit einem Server und richtest dann gleichzeitig ASIO4All ein. Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist.
 
 Bevor du Jamulus startest solltest du:
 
 1. **Alle anderen Programme schließen** (besonders die, die (wie z.B. dein Browser/Media Player) auf deine Soundkarte zugreifen könnten), weil Jamulus exklusiven Zugriff auf die Soundkarte benötigt
 1. Sicherstellen, dass nur die **richtigen Ein-/Ausgänge** in ASIO4All **aktiv sind**. Alle anderen sollten ausgeschaltet sein. Wie das geht, siehst du hier:
 
-### ASIO4All einrichten (Anleitung)
+### ASIO4All Ein/Ausgänge einrichten (Anleitung)
 
 1. Jamulus Einstellungen öffnen (linke Spalte in Jamulus)
 1. Klick auf _„ASIO-Einstellungen“_
@@ -37,7 +37,7 @@ Bevor du Jamulus startest solltest du:
 
 **Tipp:** Viele interne Soundkarten heißen Realtek High Definition Audio, Conexant oder ähnlich.
 
-Bezüglich der Ein/Ausgänge: Kopfhörer und Lautsprecher werden oft als „Output“ und Mikrofone als „Input“ oder „Capture“ bezeichnet. Stereo Mix ist normalerweise nicht der Ein/Ausgang, den du brauchst, deshalb - solltest du diesen Ein/Ausgang sehen - solltest du ihn ausschalten.
+Bezüglich der Ein/Ausgänge: Kopfhörer und Lautsprecher werden oft als „Output“ und Mikrofone als „Input“ oder „Capture“ bezeichnet. Stereo Mix ist normalerweise nicht der Ein/Ausgang, den du brauchst, deshalb - wenn du diesen Ein/Ausgang siehst - solltest du ihn ausschalten.
 
 ### Probleme mit dem ASIO4All Setup?
 

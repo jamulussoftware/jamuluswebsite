@@ -21,7 +21,7 @@ Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC a
 
 ### 1. Nutze ein Audiointerface/USB-Mikrofon, nicht deine interne Soundkarte
 
-Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise deutlich besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Infos findest du unter [Hardware](#Hardware).
+Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise deutlich besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Infos findest du unter [Hardware](#hardware).
 
 
 ### 3. Verbinde dich mit Servern mit niedrigem Ping
