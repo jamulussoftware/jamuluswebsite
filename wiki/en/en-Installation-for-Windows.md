@@ -34,7 +34,9 @@ Before you start with Jamulus:
 1. Open your soundcard inputs by clicking the _plus icon_ next to this soundcard to show its inputs/outputs
 1. Now enable the correct inputs/outputs in the list under your soundcard and disable everything else
 
-**Hint:** Many internal sound cards are named Realtek High Definition Audio, Conexant or similar. Concerning the inputs/outputs: Headphones and speakers are often labeled as output and microphones as inputs or capture. Stereo Mix is usually not the input/output you search for, therefore you can switch it off, if you see it.
+**Hint:** Many internal sound cards are named Realtek High Definition Audio, Conexant or similar.
+
+Concerning the inputs/outputs: Headphones and speakers are often labeled as output and microphones as inputs or capture. Stereo Mix is usually not the input/output you search for, therefore you can switch it off, if you see it.
 
 ### Having trouble with ASIO4All setup?
 
