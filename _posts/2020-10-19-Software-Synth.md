@@ -64,9 +64,9 @@ Let's have a look at the workflow.
 
 **Synth to Jamulus - Audio**: In the previous step we ensured that the MIDI signals from your keyboard got sent to to the MIDI input of JACK. Now we need to create an audio connection from JACK (i.e. the generated Hammond sound of the synth) to Jamulus. To do so, we connect the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree) output to Jamulus. Therefore, start Jamulus so that you can see Jamulus in QjackCtl. Now connect the audio output of the [Hammond Emulator setBfree](https://github.com/pantherb/setBfree) to the audio input of Jamulus in JACK.
 
-![QJackctl connect synth to Jamulus](https://user-images.githubusercontent.com/20726856/101933860-0e614900-3bdd-11eb-981b-5dbcb3e93d89.png)
+![QJackctl connect synth to Jamulus](https://user-images.githubusercontent.com/20726856/101958961-ad4d6b80-3c04-11eb-86cd-24e7efa6fe00.png))
 
-There is one last step. In the above image you can see that the setBfree synth output (left) is not only connected to the Jamulus input (right), but also to `system`. `System` would be your speakers or headphones, but what you want to listen to is just the output from Jamulus, not the direct sound from setBfree also at the same time (not exactly - they'd be separated by a small time lag). So now you must disconnect setBfree from "system". That way you will hear the audio coming from the Jamulus server (yours and that of whoever you are playing with) and will avoid an echo or flanger effect.
+There is one last step. In your local connection setup, you might see that the setBfree synth output (left) is not only connected to the Jamulus input (right), but also to `system`. `System` would be your speakers or headphones, but what you want to listen to is just the output from Jamulus, not the direct sound from setBfree also at the same time (not exactly - they'd be separated by a small time lag). So now you must disconnect setBfree from "system". That way you will hear the audio coming from the Jamulus server (yours and that of whoever you are playing with) and will avoid an echo or flanger effect.
 
 Now you're done.
 
