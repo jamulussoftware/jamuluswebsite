@@ -26,7 +26,7 @@ You can test whether you are hearing your signal correctly by doing the followin
 
 **If you are still having problems**, try asking on the [hardware forum](https://sourceforge.net/p/llcon/discussion/hardware/). Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options.
 
-Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) to understand how to adjust your setup to help with this.
+Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this.
 
 ### Can't work out your mic settings?
 
