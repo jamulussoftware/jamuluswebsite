@@ -9,19 +9,20 @@ permalink: "/wiki/Getting-Started"
 
 ## Du brauchst
 
-1.  **Einen Computer** (_Windows 10_, _macOS_ El Capitan (v10.11) oder neuer, _Linux_)
+1.  **Einen Computer** (**Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 oder neuer), **Linux**)
 2.  **Eine kabelgebundene Internetverbindung** (LAN, _kein WLAN_, sonst gibt es Qualitätsprobleme). Die meisten Internetverbindungen sind ausreichend[^1].
 3.  **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden und die Latenz zu veringern[^2].
 
 ## Qualität maximieren, Verzögerung minimieren
 
+### 1. Verringere die Latenz durch wenig Internetverkehr und schließe alle Programme auf deinem PC
+
+Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC auszuführen und den Internetverkehr in deinem Netzwerk gering, wie möglich zu halten, damit die Audioverzögerung gering bleibt. Das heißt, dass du z.B. keinen Video Stream anschauen solltest.
+
 ### 1. Nutze ein Audiointerface/USB-Mikrofon, nicht deine interne Soundkarte
 
-Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise deutlich besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Details findest du im [Hardware-Setup](Hardware-Setup){: target="_blank" rel="noopener noreferrer"}.
+Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise deutlich besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon probieren. Mehr Infos findest du unter [Hardware](#Hardware).
 
-### 2. Verringere die Latenz durch wenig Internetverkehr und schließe alle Programme auf deinem PC
-
-Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC auszuführen und den Internetverkehr in deinem Netzwerk gering zu halten um die Audioverzögerung gering zu halten.
 
 ### 3. Verbinde dich mit Servern mit niedrigem Ping
 Der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den niedrigsten Ping-Zeiten. 15ms oder weniger sind perfekt.
@@ -37,10 +38,8 @@ Die wichtigsten Faktoren kennst du jetzt! Los geht's:
 
 Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stick starten! Jamulus OS prüft deine Hardware automatisch und richtet sie ein.
 
-## Fertig? Alles installiert?
-
-Wenn du Jamulus eingerichtet hast, schau dir das [Hardware-Setup](Hardware-Setup) an.
-Ausführliche Informationen zur Benutzung von Jamulus findest du im [Handbuch](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+## Hardware
+Schau dir die [Liste von getesteter Hardware](Sound-Devices) und das [Hardware Setup](Hardware-Setup) an.
 
 ## Weitere Anleitungen
 
