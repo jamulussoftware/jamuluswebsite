@@ -67,7 +67,7 @@ Du brauchst Jamulus für Windows nicht zu kompilieren, da wir offizielle Binärd
 
 - Lade den Jamulus-Quellcode z.B. per git oder per Zip-Download aus dem Jamulus Repo herunter
 - Downloade und kopiere die Dateien der [ASIOSDK](https://www.steinberg.net/de/company/developer.html) in ein Verzeichnis `[\pfad\zum\jamulus\quellcode]\windows`, damit u.A. das
-  Verzeichnis `[\pfad\zum\jamulus\quellcode]\windows\ASIOSDK2\common existiert
+  Verzeichnis `[\pfad\zum\jamulus\quellcode]\windows\ASIOSDK2\common` existiert
 - Öffne Jamulus.pro im Qt Creator und kompiliere das Programm
 
 ## Allgemeine Anmerkungen
