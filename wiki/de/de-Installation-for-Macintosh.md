@@ -12,7 +12,7 @@ Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, sol
 1. Wenn du eine zip Datei heruntergeladen hast (nur selten der Fall): **Entpacke die heruntergeladene .zip Datei.** Doppelklicke die .zip Datei. Ein neuer Ordner mit dem selben Namen wird erstellt. Dieser Ordner enthält die Lizenz und eine `.dmg` Datei, die Jamulus enthält.
 1. **Doppelklicke auf die `.dmg` Datei** um sie zu öffnen und stimme der Lizenz zu. Nach kurzer Zeit solltest du zwei Icons in einem Fenster sehen (Jamulus client und server)
 1. **Klicke und ziehe (drag and drop) beide Icons in den Programme (Applications) Ordner** um Jamulus zu installieren.
-1. **Starte Jamulus**. Jamulus kann jetzt wie jede andere App gestertet werden können. Wenn du eine Meldung, die besagt, dass Jamulus nicht geöffnet werden kann, da der Entwickler nicht überprüft werden kann, erscheint, lese den nächsten Abschnitt.
+1. **Starte Jamulus**. Jamulus kann jetzt wie jede andere App gestartet werden. Wenn du eine Meldung, die besagt, dass Jamulus nicht geöffnet werden kann, da der Entwickler nicht überprüft werden kann, erscheint, lese den nächsten Abschnitt.
 
 _Du kannst den Ordner, der die .dmg Datei enthält im Downloads löschen und den virtuellen "Jamulus" Datenträger auf deinem Schreibtisch auswerfen. Beides wird nicht mehr gebraucht._
 

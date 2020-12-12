@@ -12,7 +12,7 @@ Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, sol
 1. Starte Jamulus. Jetzt kannst du Jamulus wie jedes andere Programm öffnen.
 1. **Richte deine Soundkarte ein**. Wenn du Jamulus installiert hast, musst du deine Audio-Hardware einrichten. Wenn du ASIO4All nutzt, schau dir die [Einrichtung](#asio4all-einrichten) an (scrolle etwas nach unten) sonst kannst du gleich deine Audio-Hardware einrichten. Siehe [Hardware-Setup](Hardware-Setup).
 
-Du kannst Jamulus auch selbst [kompilieren](Compiling), wenn du das willst.
+Wenn du willst, kannst du Jamulus auch selbst [kompilieren](Compiling).
 
 ***
 
@@ -37,11 +37,11 @@ Bevor du Jamulus startest solltest du:
 
 **Tipp:** Viele interne Soundkarten heißen Realtek High Definition Audio, Conexant oder ähnlich.
 
-Bezüglich der Ein/Ausgänge: Kopfhörer und Lautsprecher werden oft als „Output“ und Mikrofone als „Input“ oder „Capture“ bezeichnet. Stereo Mix ist normalerweise nicht der Ein/Ausgang, den du brauchst, deshalb - wenn du diesen Ein/Ausgang siehst - solltest du ihn ausschalten.
+Bezüglich der Ein/Ausgänge: Kopfhörer und Lautsprecher werden oft als „Output“ und Mikrofone als „Input“ oder „Capture“ bezeichnet. Stereo Mix ist normalerweise nicht der Ein/Ausgang, den du brauchst, deshalb – wenn du diesen Ein/Ausgang siehst – solltest du ihn ausschalten.
 
 ### Probleme mit dem ASIO4All Setup?
 
-Wenn nichts zu funktionieren scheint, versuche zuerst, Jamulus und/oder deinen PC **neuzustarten**.
+Wenn Nichts zu funktionieren scheint, versuche zuerst Jamulus und/oder deinen PC **neuzustarten**.
 Danach versuche **die Ein-/Ausgänge nochmal neu einzurichten**. Aktivierte und zugängliche Ein-/Ausgänge zeigen ein leuchtendes An/Aus- und ein Play-Symbol. Wenn du ein rotes Kreuz oder ein gelbes Symbol siehst, musst du eventuell andere Anwendungen, wie deinen Browser, Zoom, ... schließen oder deinen PC neu starten.
 
 Wirf einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} von @trombonepizza, das ausführlichere Informationen zur Einrichtung von ASIO4All gibt (English).

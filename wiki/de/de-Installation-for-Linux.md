@@ -8,7 +8,7 @@ permalink: "/wiki/Installation-for-Linux"
 # Installation auf Linux
 Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
 
-Obwohl wir momentan keine offiziellen Pakete anbieten, könnte es sein, dass du Jamulus über den Paktemanager deiner Distribution installieren kannst.
+Obwohl wir momentan keine offiziellen Pakete anbieten, könnte es sein, dass du Jamulus über den Paketmanager deiner Distribution installieren kannst.
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
@@ -16,7 +16,7 @@ Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hie
 
 ## Jamulus Sourcecode herunterladen
 
-1. Öffne ein Terminalfenster (Kommandozeile - `Strg+Alt+T` auf Ubuntu und verwandten Distributionen)
+1. Öffne ein Terminalfenster (Kommandozeile: `Strg+Alt+T` auf Ubuntu und verwandten Distributionen)
 1. Lade den Sourcecode für die neueste Version herunter und entpacke diesen:
 ```shell
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
@@ -102,7 +102,7 @@ Lade die neuen Quellen gemäß [Jamulus Sourcecode herunterladen](Installation-f
 
 ## Hinweise für Geeks
 
-* Das "make clean" ist unerlässlich, um die automatisch generierten Qt-Dateien zu entfernen, die in der .tar.gz-Datei vorhanden sind und möglicherweise nicht mit der Qt-Version übereinstimmen, die du verwendest.
+* Du musst "make clean" ausführen, um die automatisch generierten Qt-Dateien (die in der .tar.gz-Datei vorhanden sind und möglicherweise nicht mit der Qt-Version, die du verwendest, übereinstimmen) zu entfernen.
 
 * Um eine externe, gemeinsam genutzte OPUS-Bibliothek anstelle der eingebauten zu verwenden, benutze qmake `"CONFIG+=opus_shared_lib" Jamulus.pro`.
 
