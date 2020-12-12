@@ -6,10 +6,8 @@ author: "niebert"
 lang: "en"
 ---
 
-If you plan to be installing Jamulus on many Linux machines, you may want to try this script.
+IThanks to niebert, if you plan to install Jamulus on many Linux machines, you can try this script.
 <!--more-->
-
-If you plan to be installing Jamulus on many Linux machines, you may want to try this script.
 
 The following example was tested on Linux Mint and combines all the commands above into one script for Ubuntu/Linux Mint. To incorporate the different commands for different Linux distributions, variables define the distribution and the release for which the installation script should be performed. The following focuses on Ubuntu with release 18.04 as example. So the suggested script name for the release is e.g. `install4ubuntu18_4.sh`. The script commands are generic so that the installation could also be modified so that they work on other linux distributions.
 
