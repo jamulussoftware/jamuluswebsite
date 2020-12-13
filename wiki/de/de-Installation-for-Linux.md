@@ -41,7 +41,7 @@ sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Co
 
 ### QjackCtl: Empfohlen, aber nicht zwingend notwendig
 
-[QjackCtl](https://qjackctl.sourceforge.io) ist ein Programm, das den Jack Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere QjackCtl z.B. wie folgt:
+[QjackCtl](https://qjackctl.sourceforge.io) ist ein Programm, das den JACK Audioserver (den du vorher installiert hast) über eine GUI einrichten kann. Installiere QjackCtl z.B. wie folgt:
 
 ```shell
 sudo apt-get install qjackctl
@@ -67,8 +67,8 @@ sudo make install
 
 ## Richte deine Soundkarte ein
 
-### Konfiguriere Jack mit QJackCtl
-Jamulus Clients brauchen [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"}. Du musst Jack aber zuerst einrichten. Am Besten machst du das mit `QjackCtl`.
+### Konfiguriere Jack mit QjackCtl
+Jamulus Clients brauchen [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"}. Du musst JACK aber zuerst einrichten. Am Besten machst du das mit `QjackCtl`.
 1. Öffne die Kommandozeile z.B. mit STRG-ALT-T
 1. Führe `qjackctl` aus und warte, bis sich das **Jack Audio Connection Kit** öffnet.
 2. Konfiguriere dein Audiointerface wie folgt (die genauen Einstellungen für Jack hängen von den Funktionen deiner Soundkarte ab):
