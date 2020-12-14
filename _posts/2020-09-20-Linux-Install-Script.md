@@ -6,7 +6,7 @@ author: "niebert"
 lang: "en"
 ---
 
-Thanks to niebert, if you plan to install Jamulus on many Linux machines, you can try this script.
+Thanks to [niebert](https://github.com/niebert), if you plan to install Jamulus on many Linux machines, you can try this script.
 <!--more-->
 
 The following example was tested on Linux Mint and combines all the commands to install Jamulus on Linux into one script (currently for Ubuntu/Linux Mint).
@@ -16,12 +16,12 @@ The following example was tested on Linux Mint and combines all the commands to 
 To incorporate the different commands for different Linux distributions, variables define the distribution and the release for which the installation script should be performed. The following focuses on Ubuntu with release 18.04 as example. So the suggested script name for the release is e.g. `install4ubuntu18_4.sh`. The script commands are generic so that the installation could also be modified so that they work on other Linux distributions.
 
 ### Installation dependent on Linux Distribution
-The following script calls different installation commands dependent on the Linux distribution.
-The variable `DISTRO` defines which commands are executed. Set the variable dependent on the Linux distribution you are using.
+The following script calls different installation commands depending on the Linux distribution.
+The variable `DISTRO` defines which commands are executed. Set the variable depending on the Linux distribution you are using.
 * `DISTRO="Ubuntu"` for a Ubuntu or Linux Mint
 * `DISTRO="Debian"` for a Debian or Raspbian Linux
 * `DISTRO="Fedora"` for a Fedora Linux
-Furthermore if the installation is dependent of the release the variable `LINVERSION` is introduced but is currently not used. In the Ubuntu `if` statement there is an example how version dependent installation calls can be performed.
+Furthermore if the installation is dependent of the release the variable `LINVERSION` is introduced but is currently not used. In the Ubuntu `if` statement there is an example how version depending installation calls can be performed.
 ```bash
 if [ "$LINVERSION"  = "18.4" ]
 then
