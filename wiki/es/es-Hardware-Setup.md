@@ -55,7 +55,7 @@ Conecta tu instrumento a una entrada del Behringer U-CONTROL UCA202. Enchufa tus
 
 ## Linux: Conexión de interfaz de audio con QJackCtrl
 
-Consulta la [guía de instalación del cliente](Installation-for-Linux#configure-jack-with-qjackctl) en Linux.
+Consulta la [guía de instalación del cliente](Installation-for-Linux#configura-jack-con-qjackctl) en Linux.
 
 ## Linux: Kernels Low Latency para Jamulus
 Quizá quieras instalar [Ubuntu Studio](https://ubuntustudio.org/){: target="_blank" rel="noopener noreferrer"} añade otra opción en el menú de arranque para un kernel de baja latencia. La clave para una jam session online es la baja latencia entre los servidores y los clientes conectados. Si el sistema Linux arranca con un kernel de baja latencia esto tiene un impacto positivo en tus sesiones de Jamulus.

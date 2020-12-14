@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "Running a Private Server"
-lang: "en"
+lang: "es"
 permalink: "/wiki/Running-a-Private-Server"
 ---
 
