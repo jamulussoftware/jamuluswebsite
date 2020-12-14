@@ -37,7 +37,7 @@ Under Windows, the best option to run multiple interfaces through Jamulus at the
 * If you set your default playback device under Windows to one of VoiceMeeter's virtual inputs, you can route audio from your computer into JackRouter (and consequently, into Jamulus) by enabling the _A1_ button on the relevant input under _Virtual Inputs_. This is useful if you wish to play some audio through Jamulus (backing tracks, youtube, recordings, etc...)
 
 
-### MacOS X
+### macOS
 
 [Aggregate devices](https://support.apple.com/en-us/HT202000) lets you do this. Just make sure your Jamulus version is 3.5.3 or higher.
 
@@ -56,4 +56,3 @@ On Linux, it is possible to route additional devices to Jack by using alsa_in.
 2. Jamulus should automatically route the JACK configured interface, adjustments can be made through the _Connect_ button.
 3. Connect the device configured on step 1 into jamulus input.
 4. Use Patchbay as described on Windows section to make connections permanent.
-

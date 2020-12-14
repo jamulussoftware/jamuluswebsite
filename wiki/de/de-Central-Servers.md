@@ -9,7 +9,7 @@ permalink: "/wiki/Central-Servers"
 
 Um das Problem der Überschreitung des Serverlimits zu reduzieren, haben wir ab Mai 2020 genrebasierte zentrale Server eingeführt (mit einer derzeitigen Begrenzung auf jeweils 150 Server).
 
-Wenn du einen öffentlichen Server startest, wird dir angezeigt, ob dein Server erfolgreich registriert wurde oder nicht. Wenn du deinen Server nicht stoppst, wird er immer wieder versuchen sich zu registrieren, bis ein freier Slot verfügbar ist.  
+Wenn du deinen Server im öffentlichen Modus startest, wird im Server angezeigt, ob dein Server erfolgreich registriert werden konnte, oder nicht. Wenn du deinen Server nicht stoppst, wird er immer wieder versuchen sich zu registrieren, bis ein freier Slot verfügbar ist.  
 
 ## Headless Server
 

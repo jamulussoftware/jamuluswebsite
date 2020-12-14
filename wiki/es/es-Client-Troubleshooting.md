@@ -10,7 +10,7 @@ permalink: "/wiki/Client-Troubleshooting"
 ### ¿No escuchas nada/Otros no pueden escucharte?
 Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auriculares están conectados al puerto correcto. Asegúrate de que ninguna otra aplicación como el navegador, herramienta de videoconferencia, etc. no está utilizando la tarjeta de sonido. Deberías cerrar estos programas al utilizar Jamulus. Si todo parece estar bien y el problema persiste, es probable que haya algún problema con la configuración del dispositivo de audio. Esto dependerá de tu configuración particular (plataforma, hardware, software y drivers), así que es mejor preguntar en [los foros](https://sourceforge.net/p/llcon/discussion/software/) para solicitar ayuda.
 
-**Usuarios de Windows (ASIO4All)**: Si estás utilizando el driver ASIO4All, mira [la sección de configuración para ASIO4All](Installation-for-Windows#setting-up-asio4all) 
+**Usuarios de Windows (ASIO4All)**: Si estás utilizando el driver ASIO4All, mira [la sección de configuración para ASIO4All](Installation-for-Windows#configurar-asio4all) 
 
 ### Todos suenan bien pero es difícil tocar todos juntos manteniendo el tiempo.
 
@@ -50,13 +50,13 @@ Puedes establecer el "Nivel Cliente Nuevo" a un valor bajo (por ej. 10), o confi
 
 ### ¿No ves el servidor al que te quieres unir?
 
-Primero comprueba que tienes el género de servidor correcto seleccionado en la ventana de Configuración de Conexión. Pero en ocasiones problemas de red hacen que tu cliente no muestre todos los servidores disponibles. Si conoces el nombre del servidor al que te quieres unir, puedes [mirar su dirección IP aquí](http://jamulus.softins.co.uk/). Introduce la dirección IP en el campo de "Nombre/Dirección Servidor" en la ventana de Configuración de Conexión para conectarte.
+Primero comprueba que tienes el género de servidor correcto seleccionado en la ventana de Configuración de Conexión. Pero en ocasiones problemas de red hacen que tu cliente no muestre todos los servidores disponibles. Si conoces el nombre del servidor al que te quieres unir, puedes [mirar su dirección IP aquí](https://explorer.jamulus.io/). Introduce la dirección IP en el campo de "Nombre/Dirección Servidor" en la ventana de Configuración de Conexión para conectarte.
 
 ### ¿No ves ninguna lista de servidores?
 
 En el Reino Unido (y posiblemente en otras regiones/routers) la configuración del Módem de Virgin Media Cable Internet puede ocasionar problemas. No se debería activar "Block Fragmented IP Packets". Para otros routers/ISPs, también prueba a desactivar SPI (Stateful Packet Inspection) y si eso lo arregla, puedes decidir si lo dejas desactivado o no.
 
-En algunos casos, puede ser que tu ISP esté bloqueando Jamulus. Ver la nota en la página [resolución de problemas del servidor](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) sobre "Nadie se puede conectar a mi servidor"
+En algunos casos, puede ser que tu ISP esté bloqueando Jamulus. Ver la nota en la página [resolución de problemas del servidor](Server-Troubleshooting#nadie-se-puede-conectar-a-mi-servidor---pero-yo-me-puedo-conectar-localmente) sobre "Nadie se puede conectar a mi servidor"
 
 ### Problemas al utilizar Garageband (u otro DAW) con Jamulus?
 

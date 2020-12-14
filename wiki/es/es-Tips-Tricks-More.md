@@ -15,9 +15,9 @@ El usuario de Jamulus [Chris Rimple](https://sourceforge.net/u/chrisrimple/profi
 
 ## Utilizar el audio de Jamulus en Zoom o en otras aplicaciones similares
 
-Varios usuarios han comentado que han tenido éxito a la hora de organizar un "público virtual" para una sesión de Jamulus utilizando [Jack audio](https://jackaudio.org) para conectar la señal de Jamulus a través de JackRouter a la aplicación de destino (en este caso, Zoom).
+Varios usuarios han comentado que han tenido éxito a la hora de organizar un "público virtual" para una sesión de Jamulus utilizando [JACK audio](https://jackaudio.org) para conectar la señal de Jamulus a través de JackRouter a la aplicación de destino (en este caso, Zoom).
 
-También puedes usar [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) para Windows o [BlackHole](https://github.com/ExistentialAudio/BlackHole) para Mac para conectar la salida de Jamulus a mútliples destinos; por ejemplo a tus auriculares y a la aplicación de videoconferencia a la vez.
+También puedes usar [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) para Windows o [BlackHole](https://github.com/ExistentialAudio/BlackHole) para macOS para conectar la salida de Jamulus a mútliples destinos; por ejemplo a tus auriculares y a la aplicación de videoconferencia a la vez.
 
 
 ## Grabar con Jamulus en Windows y Reaper
@@ -57,7 +57,7 @@ Puedes guardar y restaurar la mezcla que tienes para los ensayos de tu grupo (fa
 
 ## Convertir un servidor público en privado sobre la marcha
 
-Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [https://github.com/DavidSavinkoff](David Savinkoff) por este truco!)
+Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [David Savinkoff](https://github.com/DavidSavinkoff) por este truco!)
 
 ## Script de arranque para cliente en Linux
 
@@ -97,17 +97,10 @@ jack_connect Jamulus:'output right' system:playback_2
 
 
 
-## Usar la opción --ctrlmidich para utilizar un controlador MIDI
+## Utilizar ctrlmidich para controladores MIDI
 
-El usuario de Jamulus [Ignotus](https://sourceforge.net/u/jammerman/profile/) escribe: Si quieres utilizar un controlador MIDI genérico, necesitarás hacer ajustes a tu controlador o recompilar las fuentes de Jamulus:
+Los faders de volumen en la ventana del mezclador del usuario se pueden controlar mediante un controlador MIDI usando el parámetro `--ctrlmidich` (nota: solo disponible para macOS y Linux). Para habilitar esta función, Jamulus debe arrancarse con `--ctrlmidich`. Se pueden establecer dos parámetros: `Canal` y `Compensación`. El primer parámetro es el canal que quieres que Jamulus utilice (0 para todos los canales) y el segundo parámetro el Número de Control (Control Number) con el que quieres que reaccione el primer fader. Por defecto, la compensación está establecida en 70 (para el Behringer X-Touch), lo cual significa que el primer fader reacciona al Número de Control 70, el segundo a 71, etc.
 
-Nota: solo disponible para usar con MacOS y Linux.
+Por tanto como ejemplo, si utilizas un Behringer X-Touch, enviando MIDI en el canal 1 y dejando la compensación en el valor predeterminado, el comando tendría este aspecto: `--ctrlmidich 1`. Si tienes un controlador diferente, que por ejemplo envía MIDI en el canal 2 y empezando con el Número de Control 30, el comando sería el siguiente: `--ctrlmidich "2;30"`.
 
-Los mensajes MIDI CC consisten en un Número de Control (Control Number), Valor de Control (Controller Value), y Canal (Channel). Jamulus reacciona al Número de Control para saber qué fader mover, en el Canal que especifiques al arrancar Jamulus con `--ctrlmidich`.
-
-Por defecto, el cliente de Jamulus está configurado para su uso con el Behringer X-Touch, que por lo visto envía Números de Control empezando por 70, cuando los faders de Jamulus tienen índice 0, lo que significa que hay una compensación de -70 en el código para convertir ese Número de Control en 0 para el primer fader, 71 para el siguiente, etc.
-
-Si puedes cambiar el Número de Control en tu controlador MIDI, simplemente establécelo en 70 (71, 72, etc. para los faders siguientes). Arranca Jamulus con `--ctrlmidich x` donde 'x' es el canal MIDI que estás usando, o arráncalo con `--ctrlmidich 0` para recibir por todos los canales, y ya está. Asegúrate de conectar la salida MIDI de tu controlador a la entrada MIDI de Jamulus (Qjackctl (Linux), MIDI Studio (MacOS) o lo que sea que uses para gestionar las conexiones). En Linux tendrás que instalar y lanzar a2jmidid para que tu dispositivo aparezca en la pestaña de MIDI en Qjackctl.
-
-Si no puedes cambiar los Números de Control en tu controlador, tendrás que modificar y recompilar las fuentes:
-En el archivo `src/soundbase.cpp`, ve a la línea 290, elimina el `- 70` al final (no el punto y coma) para utilizar el Número de Control 0 para el primer fader, o reemplaza ese número con el Número de Control inicial que envía tu dispositivo MIDI. Guarda, [compila](Compiling) e instala.
+Asegúrate de que el puerto de salida de tu dispositivo MIDI esté conectado al puerto de entrada MIDI de Jamulus (QjackCtl (Linux), MIDI Studio (macOS) o lo que sea que utilices para gestionar las conexiones). En Linux tendrás que instalar y arrancar a2jmidid para que tu dispositivo aparezca en la pestaña MIDI de QjackCtl.

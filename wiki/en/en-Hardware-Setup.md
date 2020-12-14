@@ -25,26 +25,26 @@ Setting up hardware usually burns down to 4 points, although each setup is diffe
 
 
 ## Windows: Audio interface connection - ASIO4All
- 
+
 This is an example Windows client installation with audio device [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0){: target="_blank" rel="noopener noreferrer"}.
 The following instructions might be similar with other audio devices.
 
 _**The exact method of connecting your instrument will of course vary depending on your hardware.**_
 
-#### 1. Plug the interface into a USB port on your computer 
+#### 1. Plug the interface into a USB port on your computer
 
-In the future, always use the same USB port for the audio device. 
+In the future, always use the same USB port for the audio device.
 
 **Windows users**: If not already done: download and install the [free ASIO sound driver (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. Some people have also reported success using [this ASIO native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip){: target="_blank" rel="noopener noreferrer"} __currently not available__, although it's not listed on Behringer's product pages as of April 2020.
 
 
 #### 2. Start Jamulus
 
-Configure Jamulus to use the correct sound setup (see [this excellent guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/) by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) on Facebook). 
+Configure Jamulus to use the correct sound setup (see [this excellent guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/) by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) on Facebook).
 
 Make sure you have switched off the monitor button on your Behringer U-CONTROL UCA202 (otherwise you will hear both the original sound you are sending to the Jamulus server as well as the returning sound, and may get feedback).
 
-#### 3. Plug in your instrument and headphones 
+#### 3. Plug in your instrument and headphones
 
 Connect your instrument to the input plugs of the Behringer U-CONTROL UCA202. Plug in your headphones into the Behringer U-CONTROL UCA202.
 
@@ -70,10 +70,6 @@ You might want to install [Ubuntu Studio](https://ubuntustudio.org/){: target="_
 - A few Mixers with USB/Firewire/Thunderbolt will either send **only** a mixed down signal to the **digital** output (small/budget mixers), or else also ADD a stereo mix-down signal to the separate signals on the digital output.
 
 _(Thanks to [pcar75](https://github.com/pcar75) for this information)_
-
-
-
-
 
 ## Other examples
 
