@@ -14,7 +14,7 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 
 ### You all sound OK, but it's difficult to keep together
 
-**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing. 
+**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.
 
 You can test whether you are hearing your signal correctly by doing the following:
 
@@ -24,9 +24,9 @@ You can test whether you are hearing your signal correctly by doing the followin
 1. Close the recording application and run Jamulus. You should still not hear yourself.
 1. Connect to a server and play something. Now you should hear yourself with the delay from the server.
 
-**If you are still having problems**, try asking on the [hardware forum](https://sourceforge.net/p/llcon/discussion/hardware/). Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options. 
+**If you are still having problems**, try asking on the [hardware forum](https://sourceforge.net/p/llcon/discussion/hardware/). Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options.
 
-Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) to understand how to adjust your setup to help with this. 
+Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) to understand how to adjust your setup to help with this.
 
 ### Can't work out your mic settings?
 
@@ -46,19 +46,19 @@ It's usually far easier and more reliable to have a [mixing desk](https://www.th
 
 ### Getting blasted by somebody joining your jam with feedback or noise?
 
-You can set your "New Client Level" to a low value (eg 10), or set the musicians you are playing with to "Solo" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all. 
+You can set your "New Client Level" to a low value (eg 10), or set the musicians you are playing with to "Solo" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all.
 
 ### Can't see the server you want to join?
 
-First check that you have the right genre server selected in your Connect Setup window. But sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](http://jamulus.softins.co.uk/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it. 
+First check that you have the right genre server selected in your Connect Setup window. But sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](http://explorer.jamulus.io/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it. 
 
 ### Not seeing a list of servers at all?
 
 In the UK (and possibly other regions/routers) the Virgin Media Cable Internet Modem setting can cause an issue. "Block Fragmented IP Packets" should not be checked. For other routers/ISP, also try turning off SPI (Stateful Packet Inspection) and if that fixes it, you can make a judgment about whether to leave that off or not.
 
-In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about "Nobody can connect to my server" 
+In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about "Nobody can connect to my server"
 
-### Trouble using Garageband (or other DAW) with Jamulus? 
+### Trouble using Garageband (or other DAW) with Jamulus?
 
 See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)
 

@@ -11,8 +11,9 @@ permalink: "/wiki/Compiling"
 
 Lies bitte die [Client Installationsseite](Installation-for-Linux) oder die Anleitung zum kompilieren eines [Headless-Servers](Server-Linux#running-a-headless-server) durch.
 
-## MacOS
+## macOS
 Du musst Jamulus nicht für MacOS kompilieren, da wir offizielle Binärdateien zur Verfügung stellen. Aber wenn du es aber trotzdem machen willst, folge den unten stehenden Anweisungen.
+
 ### Anforderungen
 
 1. Installiere XCode
@@ -65,8 +66,8 @@ Du brauchst Jamulus für Windows nicht zu kompilieren, da wir offizielle Binärd
 **benötigte Software**: [QT](https://www.qt.io/download), ein Compiler wie Visual Studio, ASIO Development SDK
 
 - Lade den Jamulus-Quellcode z.B. per git oder per Zip-Download aus dem Jamulus Repo herunter
-- Downloade und kopiere die Entwicklungsdateien der [ASIOSDK](https://www.steinberg.net/de/company/developer.html) in das Verzeichnis jamulus/windows, damit u.A. das
-  Verzeichnis jamulus/windows/ASIOSDK2/common existiert
+- Downloade und kopiere die Dateien der [ASIOSDK](https://www.steinberg.net/de/company/developer.html) in ein Verzeichnis `[\pfad\zum\jamulus\quellcode]\windows`, damit u.A. das
+  Verzeichnis `[\pfad\zum\jamulus\quellcode]\windows\ASIOSDK2\common` existiert
 - Öffne Jamulus.pro im Qt Creator und kompiliere das Programm
 
 ## Allgemeine Anmerkungen
@@ -79,4 +80,4 @@ Kompilieren mit dem `headless` Flag kann unter folgenden Umständen die Installa
 
 1. Wenn du Jamulus unter Ubuntu/Debian nutzt, benötigst du zwar alle Pakete um die Binärdatei zu **kompilieren**; um den fertigen headless Jamulus-Server **auszuführen**, brauchst du aber nur `libqt5core5a`, `libqt5network5`, `libqt5xml5` und eventuell `libqt5concurrent5`. Wenn du das Jamulus Binary auf eine andere Maschine (wie z.B. einen Raspberry Pi) kopierst, brauchst du auch nur diese Pakete.
 
-1. Wenn du einen GUI Client erstellen möchtest um ihn auf einem anderen Rechner auszuführen (z.B. einem Raspberry Pi), dann brauchst du nur die Abhängigkeiten des [headless Servers](Server-Linux#running-a-headless-server) (siehe Punkt oben) und zusätzlich die Jack-Soundbibliotheken.
+1. Wenn du einen GUI Client erstellen möchtest um ihn auf einem anderen Rechner auszuführen (z.B. einem Raspberry Pi), dann brauchst du nur die Abhängigkeiten des [headless Servers](Server-Linux#running-a-headless-server) (siehe Punkt oben) und zusätzlich die JACK-Soundbibliotheken.
