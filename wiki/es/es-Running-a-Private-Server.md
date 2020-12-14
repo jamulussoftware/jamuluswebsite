@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "Running a Private Server"
-lang: "en"
+lang: "es"
 permalink: "/wiki/Running-a-Private-Server"
 ---
 
@@ -15,7 +15,7 @@ Se recomienda que pruebes a ejecutar tu servidor en **modo público primero** pa
 
 ## Operar un servidor privado tras un router doméstico
 ### Validación de puertos
-Para operar un servidor privado, necesitas habilitar el redireccionamiento de puertos en tu router. _(Si tienes curiosidad sobre por qué hay que hacer esto para los servidores privados pero no para los públicos, consulta [esta nota](#footnote-for-geeks).)_
+Para operar un servidor privado, necesitas habilitar el redireccionamiento de puertos en tu router. _(Si tienes curiosidad sobre por qué hay que hacer esto para los servidores privados pero no para los públicos, consulta [esta nota](#nota-para-frikis).)_
 
 Normalmente, las personas de fuera de tu red doméstica no pueden ver lo que sucede dentro de ella. Por tanto, si quieres operar un servidor Jamulus en casa, tienes que abrir una puerta en tu router para dejar que clientes de Jamulus puedan conectarse a él.
 

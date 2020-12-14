@@ -1,20 +1,20 @@
 ---
 layout: wiki
-title: "Instalación de Servidor - Windows y Macintosh"
+title: "Instalación de Servidor - Windows y macOS"
 lang: "es"
 permalink: "/wiki/Server-Win-Mac"
 ---
 
-# Installation for Windows and Macintosh
+# Instalación para Windows y macOS
 
 
 **_Primero asegúrate de leer la [descripción de servidores](Running-a-Server)_**
 
 * **Usuarios de Windows** - Arranca el servidor utilizando la entrada de "Jamulus server" en el menú de inicio de Windows.
 
-* **Usuarios de Macintosh** - Haz doble cilc en el icono de "Jamulus server" en Aplicaciones (suponiendo que has depositado los archivos allí siguiendo [estas instrucciones](Installation-for-Macintosh)).
+* **Usuarios de macOS** - Haz doble cilc en el icono de "Jamulus server" en Aplicaciones (suponiendo que has depositado los archivos allí siguiendo [estas instrucciones](Installation-for-Macintosh)).
 
-* **Usuarios de Linux** - Consulta las [instrucciones para el servidor con interfaz gráfica](Server-Linux#running-a-server-with-the-gui).
+* **Usuarios de Linux** - Consulta las [instrucciones para el servidor con interfaz gráfica](Server-Linux#ejecutar-el-servidor-con-interfaz-gráfica).
 
 <img width="627" alt="server-setup" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
 
@@ -40,7 +40,7 @@ Primero activa la grabación por parte del servidor estableciendo el Directorio 
 
 _Nota: Cuando tu servidor está grabando, los clientes mostrarán un mensaje informando de que la grabación está activa._
 
-Para servidores "headless": puedes controlar la función de grabación [siguiendo estas instrucciones](Server-Linux#controlling-recordings).
+Para servidores "headless": puedes controlar la función de grabación [siguiendo estas instrucciones](Server-Linux#controlar-las-grabaciones).
 
 
 ### Otras opciones

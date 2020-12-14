@@ -35,7 +35,7 @@ _**The exact method of connecting your instrument will of course vary depending 
 
 In the future, always use the same USB port for the audio device.
 
-**Windows users**: If not already done: download and install the [free ASIO sound driver (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. Some people have also reported success using [this ASIO native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip){: target="_blank" rel="noopener noreferrer"} __currently not available__, although it's not listed on Behringer's product pages as of April 2020.
+**Windows users**: If not already done: download and install the [free ASIO sound driver (ASIO4All)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. Some people have also reported success using [this ASIO native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip){: target="_blank" rel="noopener noreferrer"} __currently not available__, although it's not listed on Behringer's product pages as of April 2020.
 
 
 #### 2. Start Jamulus

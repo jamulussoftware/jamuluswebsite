@@ -15,7 +15,7 @@ NO.
 
 Puedes simplemente escoger otro servidor de la lista y utilizarlo.
 
-**¿No quieres interrupciones de extraños?** Una vez que tú y tus compañeros/as se hayan conectado a un servidor público, pulsa el botón de "solo" de cada músico con quien quieres tocar. Aquellos para quienes no actives este botón verán un icono de "silenciado" en tu canal. Y no les escucharás.
+**¿No quieres interrupciones de extraños?** Una vez que tú y tus compañeros/as se hayan conectado a un servidor público, pulsa el botón de "solo" de cada músico con quien quieres tocar. Aquellos para quienes no actives este botón verán un icono de "silenciado" en tu fader. Y no les escucharás.
 
 ## Eso suena demasiado fácil.
 
@@ -55,10 +55,11 @@ En una jam típica puede haber 4 personas, para lo que necesitarías 200Kbps * 4
 
 
 ## ¿Todo bien? ¡A configurar!
-
-### [Para usuarios de Windows o Macintosh](Server-Win-Mac)
-### [Para usuarios de Linux](Server-Linux)
-### [Para Raspberry Pi](Server-Rpi)
+<div class="fx-row fx-row-start-xs button-container">
+    <a href="Server-Win-Mac" class="button fx-col-100-xs">Para usuarios de Windows o macOS</a>
+    <a href="Server-Linux" class="button fx-col-100-xs">Para usuarios de Linux</a>
+    <a href="Server-Rpi" class="button fx-col-100-xs">Raspberry Pi</a>
+</div>
 
 Los operadores de servidores también pueden descargarse [este conjunto de herramientas útiles](https://github.com/corrados/jamulus/tree/master/tools) del repositorio de Jamulus (clona el repositorio de Git y ejecuta `git submodule update --init`).
 

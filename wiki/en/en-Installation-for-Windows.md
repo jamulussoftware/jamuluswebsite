@@ -7,7 +7,7 @@ permalink: "/wiki/Installation-for-Windows"
 
 # Installation for Windows
 Make sure you read the [Getting Started](Getting-Started) page.
-1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have one (especially internal sound cards), install [this free ASIO driver (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} before installing Jamulus.
+1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have one (especially internal sound cards), install [this free ASIO driver (ASIO4All)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} before installing Jamulus.
 1. [Download and install Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. This is needed since we don't pay for code signing yet.
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
 1. **Setup your sound card**. When you're done, you need to setup your audio hardware. Have a look at how to setup ASIO4All if you you're using that ([scroll down](#setting-up-asio4all)), and afterwards at [Hardware Setup](Hardware-Setup).
@@ -28,13 +28,15 @@ Before you start with Jamulus:
 ### How to setup ASIO4All inputs (Guide)
 
 1. Open Jamulus's settings
-1. Go to _"ASIO Settings"_
+1. Go to _"ASIO Settings"_ (column on the left)
 1. Enable _advanced view_ in ASIO4All (click the tool icon on the bottom right)
 1. Enable only the soundcard you want to use by clicking on the button next to its name
 1. Open your soundcard inputs by clicking the _plus icon_ next to this soundcard
 1. Now enable the correct inputs/outputs in the list under your soundcard and disable everything else
 
 **Hint:** Many internal sound cards are named Realtek High Definition Audio, Conexant or similar. Concerning the inputs/outputs: Headphones and speakers are often labeled as output and microphones as inputs or capture. Stereo Mix is usually not the input/output you search for, therefore you can switch it off, if you see it.
+
+Concerning the inputs/outputs: Headphones and speakers are often labeled as output and microphones as inputs or capture. Stereo Mix is usually not the input/output you search for, therefore you can switch it off, if you see it.
 
 ### Having trouble with ASIO4All setup?
 
