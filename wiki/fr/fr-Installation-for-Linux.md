@@ -104,7 +104,7 @@ Jamulus a été installé et peut désormais être utilisé. Vous pouvez mainten
 
 ## Pour mettre à jour votre installation vers une nouvelle version
 
-Téléchargez les nouvelles sources conformément à la section [Obtenir les sources de Jamulus](#Installation-for-Linux#obtenir-les-sources-de-jamulus) puis répétez simplement les [instructions de compilation](#compilons-ce-vilain-garçon) comme pour une nouvelle installation ci-dessus.
+Téléchargez les nouvelles sources conformément à la section [Obtenir les sources de Jamulus](Installation-for-Linux#obtenir-les-sources-de-jamulus) puis répétez simplement les [instructions de compilation](#compilons-ce-vilain-garçon) comme pour une nouvelle installation ci-dessus.
 
 ## Notes à l'attention des « geeks »
 
