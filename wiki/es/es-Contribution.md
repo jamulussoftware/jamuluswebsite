@@ -16,7 +16,7 @@ Ver el [repositorio de Jamulus en GitHub](https://github.com/corrados/jamulus) p
 
 * Si observas algún error de contenido o tipográfico, o algo que está desfasado (en cualquier idioma), puedes [comentarlo aquí](https://github.com/jamulussoftware/jamuluswebsite/issues).
 
-* Si crees que falta o se puede mejorar alguna documentación o información, abre un post en [el foro de discución relevante](https://sourceforge.net/p/llcon/discussion/) para que se pueda discutir primero.
+* Si crees que falta o se puede mejorar alguna documentación o información, abre un post en [el foro de discusión relevante](https://sourceforge.net/p/llcon/discussion/) para que se pueda discutir primero.
 
 Los "pull request" para la página web deben tener este aspecto:
 

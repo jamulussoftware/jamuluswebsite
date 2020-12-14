@@ -6,7 +6,7 @@ permalink: "/wiki/Installation-for-Windows"
 ---
 
 # Instalación en Windows
-Asegúrate de leer la página de [Cómo Empezar](Getting-Started) page.
+Asegúrate de leer la página de [Cómo Empezar](Getting-Started).
 1. **Descarga e instala un driver ASIO**. Se recomienda usar una tarjeta de audio con driver ASIO nativo. Si no tienes (sobre todo las tarjetas internas), instala [este driver ASIO gratuito (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} antes de instalar Jamulus.
 1. [Descarga e instala Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. Si te aparece una notificación de aviso de SmartScreen, haz clic en "Más info" y "Ejecutar de todas formas" para instalar Jamulus. Esto es necesario ya que aún no pagamos para la firma de código.
 1. **Ejecuta Jamulus**. Ahora deberías de poder utilizar Jamulus igual que cualquier otra aplicación.
