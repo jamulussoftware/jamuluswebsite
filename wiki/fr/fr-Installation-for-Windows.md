@@ -12,7 +12,7 @@ Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started).
 1. **Téléchargez et installez un pilote ASIO**. Il est recommandé d'utiliser une interface audio ou une carte son avec un pilote ASIO natif. Si vous n'en avez pas (en particulier pour les cartes son internes), installez ce [pilote ASIO gratuit (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} avant d'installer Jamulus.
 1. [Téléchargez et installez Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. Si vous avez un avertissement de SmartScreen, cliquez sur « Plus d'infos » et « Exécuter quand même » pour installer Jamulus. C'est nécessaire car nous ne payons pas encore pour signer le code.
 1. **Lancez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application.
-1. **Configurez votre carte son**. Lorsque vous aurez fini, vous devrez configurer votre matériel audio. Regardez comment configurer ASIO4All si vous l'utilisez ([défilez vers le bas](#setting-up-asio4all)), et consultez ensuite la [Configuration du matériel](Hardware-Setup).
+1. **Configurez votre carte son**. Lorsque vous aurez fini, vous devrez configurer votre matériel audio. Regardez comment configurer ASIO4All si vous l'utilisez ([défilez vers le bas](#configuration-de-asio4all)), et consultez ensuite la [Configuration du matériel](Hardware-Setup).
 
 Vous pouvez également [compiler vous même le logiciel](Compiling) si vous le souhaitez.
 

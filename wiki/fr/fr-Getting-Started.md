@@ -21,7 +21,7 @@ Essayez de vous assurer que rien sur votre machine ou votre réseau (comme un fl
 
 ### 2. Utilisez une interface audio∕un micro externe, pas votre carte son interne
 
-Nous vous recommandons vivement - bien que vous puissiez commencer sans ça - d'utiliser une interface audio (un boîtier dans lequel vous branchez un micro/instrument et que vous connectez à votre PC par exemple via USB) pour profiter d'un son de meilleure qualité avec une faible latence dans Jamulus. Vous pouvez également utiliser un microphone USB. Voir le [matériel recommandé](#materiel_recommandé).
+Nous vous recommandons vivement - bien que vous puissiez commencer sans ça - d'utiliser une interface audio (un boîtier dans lequel vous branchez un micro/instrument et que vous connectez à votre PC par exemple via USB) pour profiter d'un son de meilleure qualité avec une faible latence dans Jamulus. Vous pouvez également utiliser un microphone USB. Voir le [matériel recommandé](#matériel-recommandé).
 
 ### 3. Connectez-vous aux serveurs qui ont le meilleur temps de réponse
 
