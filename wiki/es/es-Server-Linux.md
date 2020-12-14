@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "Server Installation - Linux"
-lang: "en"
+lang: "es"
 permalink: "/wiki/Server-Linux"
 ---
 
@@ -37,7 +37,7 @@ La siguiente guía es para ejecutar Jamulus como un servidor "puro" en **hardwar
 ### Compila las fuentes, crea un usuario
 
 
-1. [Obtén las fuentes](Installation-for-Linux#get-jamulus-sources) e instala las [dependencias](Installation-for-Linux#install-dependencies) de acuerdo a la guía de instalación de Linux. Ten en cuenta que **no necesitas instalar los paquetes de JACK** para una instalación 'headless'. _Si tienes pensado ejecutar un servidor 'headless' en Gentoo, o estás compilando en Ubuntu para usarlo en otra máquina con Ubuntu, [ver la nota a pie de página](#what-does-the-headless-build-flag-do)._
+1. [Obtén las fuentes](Installation-for-Linux#obtén-las-fuentes-de-jamulus) e instala las [dependencias](Installation-for-Linux#instala-las-dependencias) de acuerdo a la guía de instalación de Linux. Ten en cuenta que **no necesitas instalar los paquetes de JACK** para una instalación 'headless'. _Si tienes pensado ejecutar un servidor 'headless' en Gentoo, o estás compilando en Ubuntu para usarlo en otra máquina con Ubuntu, [ver la nota a pie de página](#el-indicador-de-compilación-headless)._
 1. Compila las fuentes para ignorar la librería de audio de JACK:
 
 ~~~
