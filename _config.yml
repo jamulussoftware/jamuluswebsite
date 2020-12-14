@@ -17,6 +17,7 @@ jekyll-minifier:
   compress_json:             true
   exclude:                   "sitemap.xml"
 excerpt_separator: <!--more-->
+permalink: /kb/:categories/:year/:month/:day/:title:output_ext
 pagination:
   enabled: true
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages

@@ -2,7 +2,7 @@
 layout: kblist
 lang: "en"
 title: "Overview"
-permalink: /kb
+permalink: /kb/
 pagination:
   enabled: true
 ---
