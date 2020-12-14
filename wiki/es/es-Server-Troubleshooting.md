@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "Server Troubleshooting"
-lang: "en"
+lang: "es"
 permalink: "/wiki/Server-Troubleshooting"
 ---
 
