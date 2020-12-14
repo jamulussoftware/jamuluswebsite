@@ -19,7 +19,7 @@ permalink: "/wiki/Getting-Started"
 
 Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC auszuführen und den Internetverkehr in deinem Netzwerk so gering wie möglich zu halten, damit die Audioverzögerung gering bleibt. Das heißt, dass du parallel z.B. keinen Videostream anschauen solltest.
 
-### 1. Nutze ein Audiointerface/USB-Mikrofon, nicht deine interne Soundkarte
+### 2. Nutze ein Audiointerface/USB-Mikrofon, nicht deine interne Soundkarte
 
 Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise deutlich besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon nutzen. Mehr Infos findest du unter [Audiohardware](#audiohardware).
 
