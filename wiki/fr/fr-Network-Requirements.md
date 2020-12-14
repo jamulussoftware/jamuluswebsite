@@ -4,17 +4,16 @@ title: "Qualité, délais et bande passante"
 lang: "fr"
 permalink: "/wiki/Network-Requirements"
 ---
-<!-- note for reviewers: « bande passante » or « débit »? That's the question! ;) -->
+
 # Prés-requis réseau
 
 ## Bande passante audio
 
-Les paramètres audio ont un impact sur la bande passante requise pour réseau.  
-Le tableau ci-dessous résume les pré-requis pour la bande passante Internet en ce qui concerne la configuration de :
+Les paramètres audio ont un impact sur la bande passante requise pour réseau. Le tableau ci-dessous résume les pré-requis réseau en ce qui concerne la configuration de :
 
 * canaux : stéréo/mono
 * qualité : haute/moyenne/basse
-* durée de la mémoire tampon audio : 2.67ms, 5.33ms, 10.67ms, 21.33ms
+* durée du tampon audio : 2.67ms, 5.33ms, 10.67ms, 21.33ms
 
 Avec les unités suivantes :
 
@@ -35,6 +34,6 @@ Avec les unités suivantes :
 
 Il y a un débit montant (le musicien envoie au serveur) et un débit descendant (le serveur renvoie le mixage au musicien) ![image](https://user-images.githubusercontent.com/9108457/100272270-1bced000-2f5b-11eb-87d6-59531470be91.png)
 
-Notez également que la bande passante moyenne pour l'ADSL 2 est de 10 Mbits/seconde pour le débit descendant et de 1 Mbit/seconde pour le débit montant. Les performances réelles dépendent de la distance avec l'opérateur, qui peut [théoriquement varier de 24 Mb/s à 300 m à 1,5 Mb/s à 5,2 km](https://fr.wikipedia.org/wiki/ADSL#Estimation_du_d%C3%A9bit_maximal_r%C3%A9el_en_fonction_de_la_longueur_de_la_ligne) pour le débit.
+Notez également que la bande passante moyenne pour l'ADSL 2 est de 10 Mbits/seconde pour le débit descendant et de 1 Mbit/seconde pour le débit montant. Les performances réelles dépendent de la distance avec l'opérateur, qui peut [théoriquement varier de 24 Mb/s à 300 m à 1,5 Mb/s à 5,2 km](https://fr.wikipedia.org/wiki/ADSL#Estimation_du_d%C3%A9bit_maximal_r%C3%A9el_en_fonction_de_la_longueur_de_la_ligne) pour le débit descendant.
 
 
