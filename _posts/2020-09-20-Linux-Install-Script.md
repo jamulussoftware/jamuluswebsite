@@ -6,13 +6,17 @@ author: "niebert"
 lang: "en"
 ---
 
-IThanks to niebert, if you plan to install Jamulus on many Linux machines, you can try this script.
+Thanks to niebert, if you plan to install Jamulus on many Linux machines, you can try this script.
 <!--more-->
 
-The following example was tested on Linux Mint and combines all the commands above into one script for Ubuntu/Linux Mint. To incorporate the different commands for different Linux distributions, variables define the distribution and the release for which the installation script should be performed. The following focuses on Ubuntu with release 18.04 as example. So the suggested script name for the release is e.g. `install4ubuntu18_4.sh`. The script commands are generic so that the installation could also be modified so that they work on other linux distributions.
+The following example was tested on Linux Mint and combines all the commands to install Jamulus on Linux into one script (currently for Ubuntu/Linux Mint).
+
+## How it works
+
+To incorporate the different commands for different Linux distributions, variables define the distribution and the release for which the installation script should be performed. The following focuses on Ubuntu with release 18.04 as example. So the suggested script name for the release is e.g. `install4ubuntu18_4.sh`. The script commands are generic so that the installation could also be modified so that they work on other Linux distributions.
 
 ### Installation dependent on Linux Distribution
-The following script call different installation commands dependent on the Linux distribution.
+The following script calls different installation commands dependent on the Linux distribution.
 The variable `DISTRO` defines which commands are executed. Set the variable dependent on the Linux distribution you are using.
 * `DISTRO="Ubuntu"` for a Ubuntu or Linux Mint
 * `DISTRO="Debian"` for a Debian or Raspbian Linux
@@ -34,7 +38,7 @@ If you want to create an installation script for Debian just copy the script `in
 DISTRO="Debian"
 LINVERSION="10.6"
 ```
-After that test the installation on Debian and modify the commands so that the installation script works on Debian. Please share working installation scripts in this Wiki. The maintainer of this repository might add a folder in this repository `/install_scripts` for working installation scripts. Create a pull request for new installation scripts or create an issue with a request to add a documented and tested installation script to this repository.
+After that, test the installation on Debian and modify the commands so that the installation script works on Debian. You can share working scripts, if you like. **Edit by Jamulus-Website maintainers:** You should contact [niebert](https://github.com/niebert) if you want to share scripts.
 
 ### The Installation Script
 Copy the following installation script into a file and save it to the filename `install4ubuntu18_4.sh`. After saving the file e.g. in your `Download` directory change to the directory and call the following script with `sh install4ubuntu18_4.sh`.
@@ -120,7 +124,7 @@ fi
 
 
 ## Possible Improvements of the Installation Script for Jamulus
-The script can ask in the very beginning for which linux distribution the installation script should be called.
+The script can ask in the very beginning for which Linux distribution the installation script should be called.
 This can be tested with the command `lsb_release`
 
 The `lsb_release` command returns the distribution specific information about a Linux distro.
