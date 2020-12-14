@@ -15,8 +15,7 @@ NEIN.
 
 Du kannst einfach einen Server von jemand anderem aus der Serverliste auswählen und dann loslegen.
 
-**Willst du nicht von anderen gestört werden?**
-Sobald du und deine Freunde mit einem öffentlichen Server verbunden sind, kannst du andere Musiker stummschalten, indem du nur die Musiker, mit denen du spielen willst mit der Solo Taste in deinem Mix aktivierst. Jeder Musiker, den du nicht auf Solo gestellt wird für dich stummgeschaltet und sieht an deinem Kanal, dass du ihn stummgeschaltet hast.
+**Willst du nicht von anderen gestört werden?** Sobald du und deine Freunde mit einem öffentlichen Server verbunden sind, kannst du andere Musiker stummschalten, indem du nur die Musiker, mit denen du spielen willst mit der Solo Taste in deinem Mix aktivierst. Jeder Musiker, den du nicht auf „Solo” stellst, wird für dich stummgeschaltet und sieht in seinem Mix an deinem Regler, dass du ihn stummgeschaltet hast.
 
 ## Das klingt zu einfach.
 
@@ -57,9 +56,11 @@ Ein typischer Jam mit 4 Personen könnte grob 200Kbps * 4 = 800Kbs (0.8Mbps) Upl
 
 ## Alles Ok? Los geht's!
 
-### [Windows- oder Macintosh-Server](Server-Win-Mac)
-### [Linux-Server](Server-Linux)
-### [Raspberry Pi-Server](Server-Rpi)
+<div class="fx-row fx-row-start-xs button-container">
+    <a href="Server-Win-Mac" class="button fx-col-100-xs">Windows und macOS</a>
+    <a href="Server-Linux" class="button fx-col-100-xs">Linux</a>
+    <a href="Server-Rpi" class="button fx-col-100-xs">Raspberry Pi</a>
+</div>
 
 Serverbetreiber könnten [diese nützlichen Tools](https://github.com/corrados/jamulus/tree/master/tools) aus dem Jamulus-Repository nützlich finden. Klone dazu das Git-Repo und rufe `git submodule update --init` auf).
 

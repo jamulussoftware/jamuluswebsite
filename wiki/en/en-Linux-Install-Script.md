@@ -28,14 +28,14 @@ fi
 The variable `LINVERSION` is currently not used in the following script but it is just a demo how to use the version specific installation commands.
 
 ### Adaptation of the Installation Script
-If you want to create an installation script for debian just copy the script `install4ubuntu18_4.sh` to `install4debian10_6.sh` and modify the distro variables to
+If you want to create an installation script for Debian just copy the script `install4ubuntu18_4.sh` to `install4debian10_6.sh` and modify the distro variables to
 ```bash
 #!/bin/sh
 # set DISTRO either to "Ubuntu", "Debian" or "Fedora"
 DISTRO="Debian"
 LINVERSION="10.6"
 ```
-After that test the installation on debian and modify the commands so that the installation script works on Debian. Please share working installation scripts in this Wiki. The maintainer of this repository might add a folder in this repository `/install_scripts` for working installation scripts. Create a pull request for new installation scripts or create an issue with a request to add a documented and tested installation script to this repository.
+After that test the installation on Debian and modify the commands so that the installation script works on Debian. Please share working installation scripts in this Wiki. The maintainer of this repository might add a folder in this repository `/install_scripts` for working installation scripts. Create a pull request for new installation scripts or create an issue with a request to add a documented and tested installation script to this repository.
 
 ### The Installation Script
 Copy the following installation script into a file and save it to the filename `install4ubuntu18_4.sh`. After saving the file e.g. in your `Download` directory change to the directory and call the following script with `sh install4ubuntu18_4.sh`.
