@@ -30,9 +30,6 @@ La siguiente guía es para ejecutar Jamulus como un servidor "puro" en **hardwar
 
 * _El usuario de Jamulus [Grigory](https://sourceforge.net/u/cidnurg/profile/) mantiene una imagen de **[Docker para Jamulus](https://hub.docker.com/r/grundic/jamulus)** que puedes utilizar._
 
-* _El usuario de Jamulus [skrul](https://sourceforge.net/u/skrulx/profile/) también tiene disponibles algunas **AMI públicas de Amazon EC2** de Ubuntu 18.04 ejecutando Jamulus. [Ver esta página para más detalles](Jamulus-Cloud)._
-
-
 
 ### Compila las fuentes, crea un usuario
 
