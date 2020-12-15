@@ -33,7 +33,7 @@ El usuario de Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/) ha escrito
 
 Con el argumento de la línea de comandos `-m`, se puede generar información estadística sobre el servidor para incluirla en una página web.
 
-Este es un ejemplo de de un script php utilizando el archivo de estado del servidor para mostrar el estado actual del servidor en una página html (suponiendo que se utiliza el siguiente argumento de la línea de comandos: `-m /var/www/stat1.dat`):
+Este es un ejemplo de un script php utilizando el archivo de estado del servidor para mostrar el estado actual del servidor en una página html (suponiendo que se utiliza el siguiente argumento de la línea de comandos: `-m /var/www/stat1.dat`):
 
 ~~~
 <?php
@@ -53,17 +53,17 @@ function loadserverstat ( $statfilename )
 
 ## Guardar y cargar estados de mezcla de clientes
 
-Puedes guardar y restaurar la mezcla que tienes para los ensayos de tu grupo (fader, mute, pan, solo, etc.) y cargarlos en cualquier momento (incluso mientras tocas). Hazlo con "Archivo > Guardar Configuración Canales Mezclador" en tu cliente, y cárgalos con "Cargar Configuración Canales Mezclador" (o con arrastrar/dejar caer sobre la ventana del mezclador).
+Puedes guardar y restaurar la mezcla que tienes para los ensayos de tu grupo (fader, mute, pan, solo, etc.) y cargarlo en cualquier momento (incluso mientras tocas). Hazlo con "Archivo > Guardar Configuración Canales Mezclador" en tu cliente, y cárgalo con "Cargar Configuración Canales Mezclador" (o con arrastrar/dejar caer sobre la ventana del mezclador).
 
 ## Convertir un servidor público en privado sobre la marcha
 
-Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [David Savinkoff](https://github.com/DavidSavinkoff) por este truco!)
+Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' en la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [David Savinkoff](https://github.com/DavidSavinkoff) por este truco!)
 
 ## Script de arranque para cliente en Linux
 
 Aquí va un script de arranque para Jamulus utilizando una vieja tarjeta de audio Audigy4. El gran número de faders de audio disponibles hace que sea difícil establecer la configuración correcta.
 
-Por tanto, este script incluye la configuración más importante para los faders de audio. La segunda parte del script se ocupa de las conexiones en Jack, Utilizo Guitarix como procesador de efectos de guitarra y lo inserto en la ruta del audio.
+Por tanto, este script incluye la configuración más importante para los faders de audio. La segunda parte del script se ocupa de las conexiones en JACK. Utilizo Guitarix como procesador de efectos de guitarra y lo inserto en la ruta del audio.
 
 Finalmente, arranco Jamulus automáticamente, conectándose al servidor central.
 

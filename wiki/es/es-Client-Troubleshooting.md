@@ -8,7 +8,7 @@ permalink: "/wiki/Client-Troubleshooting"
 # Resolución de Problemas
 
 ### ¿No escuchas nada/Otros no pueden escucharte?
-Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auriculares están conectados al puerto correcto. Asegúrate de que ninguna otra aplicación como el navegador, herramienta de videoconferencia, etc. no está utilizando la tarjeta de sonido. Deberías cerrar estos programas al utilizar Jamulus. Si todo parece estar bien y el problema persiste, es probable que haya algún problema con la configuración del dispositivo de audio. Esto dependerá de tu configuración particular (plataforma, hardware, software y drivers), así que es mejor preguntar en [los foros](https://sourceforge.net/p/llcon/discussion/software/) para solicitar ayuda.
+Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auriculares están conectados al puerto correcto. Asegúrate de que ninguna otra aplicación como el navegador, herramienta de videoconferencia, etc. está utilizando la tarjeta de sonido. Deberías cerrar estos programas al utilizar Jamulus. Si todo parece estar bien y el problema persiste, es probable que haya algún problema con la configuración del dispositivo de audio. Esto dependerá de tu configuración particular (plataforma, hardware, software y drivers), así que es mejor preguntar en [los foros](https://sourceforge.net/p/llcon/discussion/software/) para solicitar ayuda.
 
 **Usuarios de Windows (ASIO4All)**: Si estás utilizando el driver ASIO4All, mira [la sección de configuración para ASIO4All](Installation-for-Windows#configurar-asio4all) 
 
@@ -34,7 +34,7 @@ Cuando utilizas un micrófono mientras tocas otro instrumento, puedes utilizar u
 
 ### ¿El LED del buffer se vuelve rojo, cortes, jitter, sonidos raros?
 
-El procesador de tu ordenador podría estar sobrecargado. Intenta no dejar que otros programas compitan con Jamulus (como Zoom Meetings o streaming en directo de Facebook) en tu máquina. O al menos ciérralos mientras tocas. Evita cosas como escaneos del antivirus o actualizaciones de software, etc. Ten en cuenta que el efecto de reverb en Jamulus consume más CPU cuanto más erverb se aplique.
+El procesador de tu ordenador podría estar sobrecargado. Intenta no dejar que otros programas compitan con Jamulus (como Zoom Meetings o streaming en directo de Facebook) en tu máquina. O al menos ciérralos mientras tocas. Evita cosas como escaneos del antivirus o actualizaciones de software, etc. Ten en cuenta que el efecto de reverb en Jamulus consume más CPU cuanto más reverb se aplique.
 
 ### Los tiempos del ping y la latencia empiezan bien pero luego empeoran, causando problemas
 
@@ -66,7 +66,7 @@ Ver [este hilo del foro](https://sourceforge.net/p/llcon/discussion/533517/threa
 
 (Con agradecimientos a [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))
 
-Quizá no respondiste "Sí" al reto de `"Jamulus quiere acceder a tu micrófono"`. Para arreglarlo:
+Quizá no respondiste "Sí" al mensaje de `"Jamulus quiere acceder a tu micrófono"`. Para arreglarlo:
 * Ve a `Preferencias` > `Seguridad & Privacidad` > pestaña de `Privacidad`
 * Busca `Micrófono` a la izquierda y luego asegúrate de que `Jamulus` está activado en la lista de la derecha
 
