@@ -11,7 +11,7 @@ permalink: "/wiki/Running-a-Private-Server"
 
 Esta guía presupone que vas a ejecutar un servidor privado en tu red doméstica, pero algunos de los problemas de aquí también podrían ser aplicables a aquellos ejecutándolo en hosts en la nube (por ej. Amazon EC2).
 
-Se recomienda que pruebes a ejecutar tu servidor en **modo público primero** para así acotar cualquier problema posterior en modo provado.
+Se recomienda que pruebes a ejecutar tu servidor en **modo público primero** para así acotar cualquier problema posterior en modo privado.
 
 ## Operar un servidor privado tras un router doméstico
 ### Validación de puertos
