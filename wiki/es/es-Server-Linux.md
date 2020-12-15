@@ -143,7 +143,7 @@ Nota: Pulsa `q` para salir del estado del servicio.
 
 ### Para actualizar tu instalación a una nueva versión
 
-Descarga las fuentes siguiendo las [instrucciones anteriores](Server-Linux#compila-las-fuentes-crea-un-usuario) y repite el proceso de compilación del paso 2 como si fuera una nueva instalación. Cierra el servidor, copia el archivo binario de Jamulus encima del antiguo y reinicialo.
+Descarga las fuentes siguiendo las [instrucciones anteriores](Server-Linux#compila-las-fuentes-crea-un-usuario) y repite el proceso de compilación del paso 2 como si fuera una nueva instalación. Cierra el servidor, copia el archivo binario de Jamulus encima del antiguo y reinícialo.
 
 ***
 
@@ -157,7 +157,7 @@ Cuando se utiliza la [función de grabación](Server-Win-Mac#grabación) con la 
 
 Para enviar estas señales utilizando systemd, crea los siguientes dos archivos `.service` en `/etc/systemd/system`, dándoles un nombre apropiado (por ej. `nuevaGrabación-Jamulus-server.service`).
 
-Para encender o apagar la grabación (dependiendo del estado actual):
+Para iniciar o detener la grabación (dependiendo del estado actual):
 
 ~~~
 [Unit]
