@@ -21,7 +21,7 @@ Intenta asegurarte de que no haya nada en tu ordenador o en tu red (como vídeo 
 
 ### 2. Utiliza un interfaz de audio/micrófono externo, no el dispositivo interno de sonido
 
-Recomendamos encarecidamente ‒ aunque puedes empezar sin él ‒ que utilices un interfaz de audio (un dispositivo al que conectas tu micrófono/instrumento y que se conecta al tu PC mediante, por ejemplo, USB) para disfrutar una mejor calidad de sonido con menor latencia en Jamulus. También puedes utilizar un micrófono USB. Ver [hardware recomendado](#hardware-recomendado).
+Recomendamos encarecidamente ‒ aunque puedes empezar sin él ‒ que utilices un interfaz de audio (un dispositivo al que conectas tu micrófono/instrumento y que se conecta a tu PC mediante, por ejemplo, USB) para disfrutar una mejor calidad de sonido con menor latencia en Jamulus. También puedes utilizar un micrófono USB. Ver [hardware recomendado](#hardware-recomendado).
 
 ### 3. Conéctate a los servidores con el ping más bajo
 
@@ -50,7 +50,7 @@ Ver [la lista de hardware comprobado](Sound-Devices) y [Configuración de Hardwa
 
 O dicho de otra manera, **no** escuches tu señal directa.
 
-Obviamente esto es difícil para cantantes y al tocar algunos instrumentos acústicos, pero aunque tu conexión sea buena, si no escuchas tu **propia señal que vuelve del servidor**, tu sincronización **sufrirá**. _(Para que quede claro: esto no tiene nada que ver con los controles de "mute" en Jamulus.)_
+Obviamente esto es difícil para cantantes y a la hora de tocar algunos instrumentos acústicos, pero aunque tu conexión sea buena, si no escuchas tu **propia señal que vuelve del servidor**, tu sincronización **sufrirá**. _(Para que quede claro: esto no tiene nada que ver con los controles de "mute" en Jamulus.)_
 
 Se puede encontrar más información sobre cómo evitar escucharte a ti mismo (y ayuda con otros problemas) en la [sección de FAQ sobre la Resolución de Problemas](Client-Troubleshooting) (_aún en construcción_)
 
@@ -59,7 +59,7 @@ Se puede encontrar más información sobre cómo evitar escucharte a ti mismo (y
 **Así es cómo millones de personas utilizan Jamulus para tocar, cantar y enseñar música con otras personas en tiempo real, por todo el mundo:**
 
 ![Overview](https://user-images.githubusercontent.com/4263412/97573060-78d17780-19e9-11eb-94dd-7fd991650e37.png)
-_Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, se mezcla y se procesa allí. Después, el audio es anviado a cada cliente. Si un servidor es público y está registrado en un servidor central, su información será emitida a todos los clientes._
+_Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, se mezcla y se procesa allí. Después, el audio es enviado a cada cliente. Si un servidor es público y está registrado en un servidor central, su información será emitida a todos los clientes._
 
 ## Notas
 [^1]: [Detalles al completo aquí](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Si tienes 10Mbits de bajada y 1Mbps de subida, es poco probable que tengas problemas de ancho de banda.

@@ -22,7 +22,7 @@ También puedes [compilar tu propio archivo binario](Compiling) si así lo desea
 Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configuración adecuada ya que cada ordenador es un poco diferente. Configura tu tarjeta mientras estés en conexión con un servidor para escuchar tu instrumento o tu voz y comprobar que todo está bien configurado.
 
 Antes de empezar con Jamulus:
-1. **Cierra todas las aplicaciones** (sobre todo aquellos que podrían acceder a tu tarjeta de sonido como tu navegador/reproductor de audio) ya que Jamulus necesita acceso exclusivo a tu tarjeta de audio. 
+1. **Cierra todas las aplicaciones** (sobre todo aquellas que podrían acceder a tu tarjeta de sonido como tu navegador/reproductor de audio) ya que Jamulus necesita acceso exclusivo a tu tarjeta de audio. 
 1. Si el audio no funciona directamente, asegúrate de que solo **están activadas** las **entradas/salidas correctas** en ASIO4ALL. Todo lo demás debería estar apagado. Esto se puede hacer como sigue:
 
 ### Cómo configurar las entradas de ASIO4All (Guía)
@@ -43,7 +43,7 @@ Después trata de **configurar de nuevo las entradas/salidas**. Las entradas/sal
 
 Mírate [este vídeo](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} de @trombonepizza que ofrece más información detallada sobre la configuración de ASIO4All.
 
-Información oficial y más detallada sobre cómo configurar ASIO4All se encuentra en la sección [ASIO4All FAQs en la página web de ASIO4All](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} y en el manual de ASIO4All. Normalmente se encuentra en tu escritorio o en la carpeta donde se instala el archivo binario de ASIO4All (normalmente `C:\Program Files (x86)\ASIO4ALL v2\`).
+Información oficial y más detallada sobre cómo configurar ASIO4All se encuentra en la sección [ASIO4All FAQs en la página web de ASIO4All](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} y en el manual de ASIO4All. Normalmente se encuentra en tu escritorio o en la carpeta donde se instala el archivo binario de ASIO4All (normalmente `C:\Archivos de Programa (x86)\ASIO4ALL v2\`).
 
 ## ¿Todo instalado?
 

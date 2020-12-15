@@ -7,7 +7,7 @@ permalink: "/wiki/Privacy-Statement"
 
 # Declaración de Privacidad
 ## Página de Inicio
-Esta página de inicio de jamulus.io trata de no recoger tus datos personales. Si te conectas a la página jamulus.io site, tu IP se envía a GitHub Pages. Además, puesto que enlazamos el logo de SourceForge en el pie de cada página, SourceForge podría obtener tu IP.
+Esta página de inicio de jamulus.io trata de no recoger tus datos personales. Si te conectas a la página de jamulus.io, tu IP se envía a GitHub Pages. Además, puesto que enlazamos el logo de SourceForge en el pie de cada página, SourceForge podría obtener tu IP.
 No utilizamos cookies de rastreo, aunque SourceForge quizá lo haga. Si no deseas esto, por favor deshabilita los cookies en tu navegador.
 
 ## Software Jamulus
