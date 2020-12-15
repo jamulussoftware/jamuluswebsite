@@ -112,3 +112,5 @@ Download the new sources as per [Get Jamulus](Installation-for-Linux#get-jamulus
 * Users of Raspberry Pi: You may want to compile the client on another machine and run the binary on the Raspberry Pi. In which case, the only libraries you need to run it are those for a [headless server](Server-Linux#running-a-headless-server) build, but _with_ the Jack sound packages. Especially have a look at the footnote for the headless build.
 
 * As of version 3.5.3, Jamulus is no longer compatible with Qt4.
+
+* When you get "Project ERROR: jack development package not found", check if your environment variable PKG_CONFIG_PATH is pointing to the directory where the file jack.pc is located, i.e. /usr/lib/x86_64-linux-gnu/pkgconfig/
