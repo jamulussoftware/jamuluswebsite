@@ -7,7 +7,7 @@ permalink: "/wiki/Sound-Devices"
 
 # Dispositivos Comprobados
 
-Esta página contiene una lista de dispositivos de hardware que funciona o no funciona con Jamulus (aunque puede variar entre Windows, Mac y Linux). Por favor actualízala con cualquier información nueva que tengas (e indica la(s) platforma(s) que has utilizado).
+Esta página contiene una lista de dispositivos de hardware que funcionan o no funcionan con Jamulus (aunque puede variar entre Windows, Mac y Linux). Por favor actualízala con cualquier información nueva que tengas (e indica la(s) platforma(s) que has utilizado).
 
 ### Se sabe que funcionan con Jamulus
 
