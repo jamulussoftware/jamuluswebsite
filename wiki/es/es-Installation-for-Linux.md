@@ -14,7 +14,7 @@ Aunque no ofrecemos paquetes oficiales, puede que encuentres Jamulus en el gesto
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-También hay una lista de paquetes no oficiales [paquetes para diferentes distribuciones aquí](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. Si no lo encuentras en tu gestor de paquetes, tienes que compilar Jamulus de las fuentes. Es bastante fácil: 
+También hay una lista de paquetes no oficiales [para diferentes distribuciones aquí](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. Si no lo encuentras en tu gestor de paquetes, tienes que compilar Jamulus de las fuentes. Es bastante fácil: 
 
 ## Obtén las fuentes de Jamulus
 
@@ -59,7 +59,7 @@ Ahora `cd` a la carpeta de las fuentes de Jamulus que has descargado:
 ```shell
 cd jamulus-latest
 ```
-Ahora compila las fuentes con los siguientes comandos (el último `make` puede tardar varios minutos):
+A continuación compila las fuentes con los siguientes comandos (el último `make` puede tardar varios minutos):
 
 ```shell
 qmake Jamulus.pro
@@ -72,7 +72,7 @@ sudo make install
 ## Configura tu tarjeta de sonido
 
 ### Configura JACK con QjackCtl
-Los clientes de Jamulus necesitan [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} para funcionar, pero hay que configurarlo primero. El método recomendado es utilizar `QjackCtl`..
+Los clientes de Jamulus necesitan [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} para funcionar, pero hay que configurarlo primero. El método recomendado es utilizar `QjackCtl`.
 1. Abre la terminal por ej. con Crtl-Alt-T y
 1. Ejecuta el comando `qjackctl`. Verás la aplicación **Jack Audio Connection Kit**
 2. Configura tu interfaz de audio como sigue (la configuración exacta de Jack dependerá de lo que es capaz tu interfaz/tarjeta de audio):
@@ -84,11 +84,11 @@ Los clientes de Jamulus necesitan [JACK](https://jackaudio.org/){: target="_blan
 Reinicia Jack para que surta efecto la nueva configuración
 
 ### Arranca Jamulus
-Abre Jamulus, por ej. con la terminal. Si utilizas la terminal, ejecuta el comando `Jamulus` (con 'J' mayúscula) y esto arranca el cliente de Jamulus
+Abre Jamulus, por ej. con la terminal. Si utilizas la terminal, ejecuta el comando `Jamulus` (con 'J' mayúscula) y esto arranca el cliente de Jamulus.
 
 Jamulus se instala en `/usr/local/bin`. Ahora puedes eliminar la carpeta de las fuentes si quieres.
 
-Si tienes problemas con cortes de sonido (en particular errores de XRUN mostrados por Jack/Qjackctl) prueba con valores más altos (por ej. 256 cuadros o 3 periodos) en el paso 3 anterior. Valores más bajos (por ej. 64 cuadros) pueden ofrecer un mejor rendimiento pero también quizá más problemas con el audio. Ver la [página de resolución de problemas](Client-Troubleshooting).
+Si tienes problemas con cortes de sonido (en particular errores de XRUN mostrados por JACK/QjackCtl) prueba con valores más altos (por ej. 256 cuadros o 3 periodos) en el paso 3 anterior. Valores más bajos (por ej. 64 cuadros) pueden ofrecer un mejor rendimiento pero también quizá más problemas con el audio. Ver la [página de resolución de problemas](Client-Troubleshooting).
 
 ## ¿Todo instalado?
 Jamulus ha sido instalado y ahora puede utilizarse. Ahora puedes echar un vistazo a la
