@@ -16,7 +16,7 @@ You don't need to compile Jamulus for macOS since we provide official binaries, 
 ### Requirements
 
 1. Install XCode
-1. Install QT as follow
+1. Install Qt as follow
 
 ```shell
 brew install qt5
