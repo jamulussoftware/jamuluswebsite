@@ -46,7 +46,7 @@ It's usually far easier and more reliable to have a [mixing desk](https://www.th
 
 ### Getting blasted by somebody joining your jam with feedback or noise?
 
-You can set your "New Client Level" to a low value (eg 10), or set the musicians you are playing with to "Solo" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all.
+You can set your "New Client Level" to a low value (e.g. 10), or set the musicians you are playing with to "Solo" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all.
 
 ### Can't see the server you want to join?
 
