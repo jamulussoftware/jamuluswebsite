@@ -104,4 +104,4 @@ The volume faders in the client's mixer window can be controlled using a MIDI co
 
 So for example, if you're using a Behringer X-Touch, sending MIDI on channel 1 and leaving the offset at default, the command would look like this: `--ctrlmidich 1`. If you have a different controller, e.g. sending MIDI on channel 2 and starting with Control Number 30, the command would be as follows: `--ctrlmidich "2;30"`
 
-Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (Qjackctl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
+Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.

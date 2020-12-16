@@ -42,7 +42,7 @@ On **Fedora**:
 sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
 ```
 
-### Qjackctl: Optional, but recommended
+### QjackCtl: Optional, but recommended
 
 [QjackCtl](https://qjackctl.sourceforge.io) is a utility to help you set up the Jack audio server (installed as part of the dependencies above). Install it via e.g.
 
@@ -71,8 +71,8 @@ sudo make install
 
 ## Set up your sound card
 
-### Configure Jack with QJackCtl
-Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
+### Configure JACK with QjackCtl
+Jamulus clients need [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
 1. Open the command shell e.g. with Ctrl-Alt-T and
 1. Execute the command `qjackctl` you will see the **Jack Audio Connection Kit**
 2. Configure your audio interface as follows (the exact settings for Jack will depend on what your audio interface/sound card is capable of):
@@ -89,7 +89,7 @@ Open Jamulus e.g. via your command shell. If you use the shell, execute the comm
 
 Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.
 
-If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (e.g. 256 frames or 3 periods) in step 3 above. Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
+If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods) in step 3 above. Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
 
