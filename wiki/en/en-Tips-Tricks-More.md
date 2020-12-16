@@ -64,7 +64,7 @@ You can run a public server long enough for your band to connect, then go privat
 
 Here's a Linux start script for Jamulus using an old Audigy4 sound card, the large number of available audio faders for which makes it hard to get the correct settings.
 
-This script therefore includes the most important audio fader settings. The second part of the script deals with the jack connections. I use Guitarix as my guitar effect processor which I plug in in the jack audio path.
+This script therefore includes the most important audio fader settings. The second part of the script deals with the JACK connections. I use Guitarix as my guitar effect processor which I plug in in the JACK audio path.
 
 Finally I start Jamulus automatically connecting to the central server.
 
