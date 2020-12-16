@@ -39,7 +39,7 @@ Also - [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS
 
 ## Recommended hardware
 
-In general, your device must support a sample rate of **48kHz** (DVD-quality). On Windows it's recommended to choose a device with a native [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output)-driver.
+In general, your device must support a sample rate of **48kHz** (DVD quality). On Windows it's recommended to choose a device with a native [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) driver.
 
 See [the list of known good hardware](Sound-Devices).
 
