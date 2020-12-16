@@ -1,7 +1,7 @@
 ---
 layout: kblist
 lang: "en"
-title: "Overview"
+title: "KB Overview"
 permalink: /kb/
 pagination:
   enabled: true
