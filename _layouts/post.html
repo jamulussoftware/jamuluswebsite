@@ -1,0 +1,104 @@
+---
+pagination:
+  enabled: true
+---
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html lang="{{ site.active_lang }}">
+
+<head>
+  <title>{{ page.title }} {{ site.data.general.kb.titleAdd }}</title>
+  {% include headtags.html %}
+  <link rel="stylesheet" href="/assets/css/kb.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "headline": "{{ page.heading }}",
+    {% if page.discussionurl %}
+    "discussionUrl": "{{ page.discussionurl }}",
+    {% endif %}
+    {% if page.author %}
+    "publisher": {
+      "@type": "Person",
+      "name": "{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}{{ page.author }}{% endif %}",
+      {% if site.data.authors[page.author].url %}"url": "{{ site.data.authors[page.author].url }}"{% endif %}
+    },
+    "author": {
+      "@type": "Person",
+      "name": "{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}{{ page.author }}{% endif %}",
+      {% if site.data.authors[page.author].url %}"url": "{{ site.data.authors[page.author].url }}"{% endif %}
+    },
+    {% endif %}
+    "datePublished": "{{ page.date | date_to_xmlschema }}"
+  }
+  </script>
+</head>
+
+<body class="kb kbsite">
+  <header class="fx-row fx-row-between-xs fx-text-center">
+    <div class="fx-col fx-text-center"><a href="/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}">
+        <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" /></a>
+    </div>
+    <div class="fx-col-center-xs fx-txt-right hide-on-dt">
+      <a href="#mnv" onclick="showNav();return false;">{% include general/navbtn.html %}</a>
+    </div>
+    <div class="fx-col-100-xs fx-txt-center">
+      <h1>{{ page.heading }}</h1>
+      {% if page.author %}
+        {{ site.data.general.kb.by }}
+        {% if site.data.authors[page.author].url %}<a href="{{ site.data.authors[page.author].url }}" rel="nofollow">{% endif %}
+        {% if site.data.authors[page.author].name %}
+          {{ site.data.authors[page.author].name }}
+        {% else %}
+          {{ page.author }}
+        {% endif %}
+        {% if site.data.authors[page.author].url %}</a>{% endif %}
+      {% endif %}
+      {% if page.date %}
+       (<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>)
+      {% endif %}
+    </div>
+  </header>
+  <div class="fx-row fx-row-center-xs">
+    {% include general/nav.html %}
+    <div id="maincontainer" class="fx-col-100-xs fx-col-50-m">
+      <noscript class="red"><strong>{{ site.data.general.tNoJSEnabled }}</strong></noscript>
+      <main lang="{{ page.lang }}">
+        {{ content }}
+      </main>
+      <div class="fx-row-100-xs">
+        {% if page.discussionurl %}
+          <h2>{{ site.data.general.kb.discuss.title }}</h2>
+          <a href="{{ page.discussionurl }}">{{ site.data.general.kb.discuss.linktitle }}</a>
+        {% endif %}
+        <h2>{{ site.data.general.kb.navpages }}</h2>
+      </div>
+      <div class="fx-row fx-row-between-xs">
+        <div class="fx-col fx-txt-left">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+        {% endif %}
+        </div>
+        <div class="fx-col fx-txt-right">
+          {% if page.next.url %}
+          <a href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <aside class="fx-col-begin-xs fx-col-100-xs fx-col-10-m">
+      <p id="kbintro">
+        {{ site.data.general.kb.kbintro }}
+      </p>
+      <ul id="kbside">
+        <li><a href="/kb">{{ site.data.general.kb.mainpage }}</a></li>
+        <li><a href="{{ site.kbnewpage }}">{{ site.data.general.kb.newpage }}</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  {% include footer.html %}
+</body>
+
+</html>
