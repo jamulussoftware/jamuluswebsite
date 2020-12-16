@@ -13,7 +13,7 @@ Before you start Jamulus:
 
 ... to *minimise load* on your computer and to ensure that *no other application* tries to use your sound card.
 
-You can have a look at [Hardware Setup](Hardware-Setup) for more information on what to do with your equipment. If you need help setting up ASIO4All on Windows, have a look at the [ASIO4All Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
+You can have a look at [Hardware Setup](Hardware-Setup) for more information on what to do with your equipment. If you need help setting up ASIO4ALL on Windows, have a look at the [ASIO4ALL Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
 
 ### Jamulus main window
 When you open Jamulus, you will see a window which looks like this:
