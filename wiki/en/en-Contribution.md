@@ -25,12 +25,12 @@ Have a look at the [CONTRIBUTING file](https://github.com/jamulussoftware/jamulu
 
 **The following content is for the documentation on jamulus.io only, not for the Jamulus software!**
 
-If you aren't comfortable with Pull Requests, commits, etc. just open an issue. We will then care about your changes. If you want to do the changes on your own and open a Pull Request, follow these instructions:
+If you aren't comfortable with Pull Requests, commits, etc. just open an issue. We will then take care of your changes. If you want to do the changes on your own and open a Pull Request, follow these instructions:
 
-1. Fork the repo (there's a fork button on the top right of the page)
-2. Decide which branch you have to commit your changes too (rule of thumb: everything which might need translation should go to the `changes` branch, typos should go to the `release` branch more information can be found in the [CONTRIBUTING file](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md)). Create a new branch from the up to date branch you chose
+1. Fork the repo (there's a fork button on the top right of the GitHub page)
+2. Decide which branch you have to commit your changes too (rule of thumb: everything which might need translation should go to the `changes` branch, typos should go to the `release` branch; more information can be found in the [CONTRIBUTING file](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md)). Create a new branch from the up to date branch you chose
 3. Make your changes
-4. If you did the changes offline, push the new branch into your repository
+4. If you did the changes offline, push the new branch to your repository
 5. Submit your Pull Request, give a short description of your changes and link the issue you opened
 6. Wait for a review and a merge
 
