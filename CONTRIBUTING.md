@@ -9,7 +9,7 @@ If this is the case, please subscribe to the issue and explain your proposal.
 
 If that's not the case, please open a [new issue](https://github.com/jamulussoftware/jamuluswebsite/issues/new/choose), select which type of issue it is and describe your issue.
 
-If you want to open a Pull Request (after having described and discussed your proposal), have a look at the [Contribution page on the website](https://jamulus.io/wiki/Contribution). Keep in mind that your changes (if they are not just typos) might have to wait until everything is translated. We will bundle them (if everything is all right) with other changes and upload multiple changes in one bulk to jamulus.io.
+If you want to open a Pull Request (after having described and discussed your proposal), keep in mind that your changes (if they are not just typos) might have to wait until everything is translated. We will bundle them (if everything is all right) with other changes and upload multiple changes in one bulk to jamulus.io.
 
 Pull requests/issues for the website should have a title which looks like this:
 
