@@ -7,10 +7,10 @@ permalink: "/wiki/Choosing-a-Server-Type"
 
 # Types de serveur
 
-Vous pouvez administrer un serveurs dans un des ces trois « modes » (soit à domicile, soit hébergé par un tiers )
+Vous pouvez administrer un serveurs dans un des ces trois « modes » (soit à domicile, soit hébergé par un tiers)
 
 ### 1. Serveur public
-Votre serveur sera listé dans la liste du [serveur central](Central-Servers) que les clients utilisent par défaut. Les musiciens pourront alors le découvrir et s'y connecter. Il n'est pas forcément nécessaire de fonctionner comme un serveur public puisque de nombreuses autres personnes en administrent déjà. Connectez vous juste à un serveur à faible latence et de commencer à jammer.
+Votre serveur sera listé dans la liste du [serveur central](Central-Servers) que les clients utilisent par défaut. Les musiciens pourront alors le découvrir et s'y connecter. Il n'est pas forcément nécessaire de fonctionner comme un serveur public puisque de nombreuses autres personnes en administrent déjà. Connectez vous juste à un serveur à faible latence et de commencer à bœuffer.
 
 ![Serveur public](https://user-images.githubusercontent.com/9108457/100002427-d37da980-2dc4-11eb-9a22-ac575cf0d6bf.png)
 
@@ -51,7 +51,7 @@ Configurer votre serveur comme un serveur central est uniquement nécéssaire da
 
 Pour consulter les serveurs listés sur un serveur central personnalisé, les musiciens doivent entrer l'adresse dans le champ « Serveur central personnalisé » des paramètres de leur client.  Ils verront alors une liste générée par ce serveur central dans les paramètres de connexion.
 
-Les administrateurs de serveurs « normaux » peuvent également s'inscrire sur votre serveur central personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en définissant le vôtre avec l'option `--centralserver`.
+Les administrateurs de serveurs normaux peuvent également s'inscrire sur votre serveur central personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en définissant le vôtre avec l'option `--centralserver`.
 
 Pour démarrer le serveur en tant que serveur central, il doit être configuré avec `--centralserver localhost` (c'est-à-dire se spécifier comme le serveur central à interroger).
 
