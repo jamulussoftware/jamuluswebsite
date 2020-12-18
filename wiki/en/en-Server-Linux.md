@@ -155,7 +155,7 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 
 When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
 
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (eg `newRecording-Jamulus-server.service`).
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
 
 For turning recording on or off (depending on the current state):
 

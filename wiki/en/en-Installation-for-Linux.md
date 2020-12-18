@@ -18,7 +18,7 @@ There is also list of unofficial [packages for different distributions here](htt
 
 ## Get Jamulus sources
 
-1. Open up a terminal window (command line - `CTRL+ALT+t` on Ubuntu and related distros)
+1. Open up a terminal window (command line - `CTRL+ALT+T` on Ubuntu and related distros)
 1. Download and unzip the sources for the latest release:
 ```shell
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
@@ -67,7 +67,6 @@ make clean
 make
 sudo make install
 ```
-
 
 ## Set up your sound card
 

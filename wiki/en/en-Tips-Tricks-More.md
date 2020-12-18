@@ -11,8 +11,6 @@ permalink: "/wiki/Tips-Tricks-More"
 
 Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has compiled a massive amount of information relating to [Remote Band Rehearsals](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc), which covers topics such as hardware and software configuration including examples and advice for newcomers to the field. He also includes a section on Jamulus in comparison to other solutions.
 
-
-
 ##  Using Jamulus audio in Zoom (or other) meeting apps
 
 Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings).
@@ -95,8 +93,6 @@ jack_connect gx_head_fx:out_1 Jamulus:'input right'
 jack_connect Jamulus:'output left' system:playback_1
 jack_connect Jamulus:'output right' system:playback_2
 ~~~
-
-
 
 ## Using ctrlmidich for MIDI controllers
 
