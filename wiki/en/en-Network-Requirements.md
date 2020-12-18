@@ -33,4 +33,4 @@ With the following units
 There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)
 ![image](https://user-images.githubusercontent.com/9976944/79274940-999b0b00-7ea5-11ea-85be-3ded5ee198d5.png)
 
-Note also that mean ADSL2 transfer rate is 10 Mbits/second for downstream and 1 Mbit/second for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24Mb/s at 0.3km to 1.5Mb/s at 5.2km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate.
+Note also that mean ADSL2 transfer rate is 10 MBit/s for downstream and 1 MBit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24MBit/s at 0.3km to 1.5MBit/s at 5.2km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate.
