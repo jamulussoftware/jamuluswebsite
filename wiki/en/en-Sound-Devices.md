@@ -13,7 +13,7 @@ This page lists hardware known to work or not work with Jamulus (although it may
 
 #### USB Microphones
 
-* Blue Yeti microphone. Works well on Mac (there is a checkbox to turn off local monitoring). Works OK on Windows with ASIO4all but with a bit more latency than on Mac. You can turn off the local monitoring if you go deep into the settings. Latency on Linux is good but I did not find any way to turn off the local monitoring.
+* Blue Yeti microphone. Works well on Mac (there is a checkbox to turn off local monitoring). Works OK on Windows with ASIO4ALL but with a bit more latency than on Mac. You can turn off the local monitoring if you go deep into the settings. Latency on Linux is good but I did not find any way to turn off the local monitoring.
 
 * [Shure X2u](https://www.shure.com/en-GB/products/accessories/x2u-xlr-usb-interface) XLR to USB audio interface with headphone jack, converting an XLR mic into a USB mic. Set PC/Mic mix dial to 100% PC and listen to the output on headphones. Tested using Raspberry Pi 4 running Raspberry Pi OS Buster, kernel version 4.19.
 
@@ -39,11 +39,11 @@ This page lists hardware known to work or not work with Jamulus (although it may
 
 * Behringer XENYX Q502USB (USB audio) [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip)
 
-* Behringer XENYX Q802USB (USB audio) [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip).  This Behringer ASIO Driver does not appear to be very good.  Audio latency with this 'unsupported' driver seems poor - not better than ASIO4all.  It's good device for Mac and Linux, but perhaps not for Windows.  More testing is required.
+* Behringer XENYX Q802USB (USB audio) [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip).  This Behringer ASIO Driver does not appear to be very good.  Audio latency with this 'unsupported' driver seems poor - not better than ASIO4ALL.  It's good device for Mac and Linux, but perhaps not for Windows.  More testing is required.
 
 * Behringer XR18/XR16/XR12 digital mixers (USB Audio)
 
-* Edirol FA-66 (Firewire) - good on Mac, Linux, and Windows [ASIO driver](https://www.roland.com/global/products/fa-66/downloads/)
+* Edirol FA-66 (FireWire) - good on Mac, Linux, and Windows [ASIO driver](https://www.roland.com/global/products/fa-66/downloads/)
 
 * Focusrite Clarett 4Pre interface (Thunderbolt 2)
 
@@ -57,7 +57,7 @@ This page lists hardware known to work or not work with Jamulus (although it may
 
 * Line 6 Helix Stomp, read [Remote Jamming with Helix and Jamulus](https://jimamsden.wordpress.com/2020/04/04/remote-jamming-with-helix-and-jamulus/) for setup on a Mac. (USB Audio)
 
-* MOTU Ultralite (2010 firewire model mk1/mk2), 2015 MacBook Pro, OS X El Capitan 10.11.6, Apple Thunderbolt/Firewire adapter.
+* MOTU Ultralite (2010 FireWire model mk1/mk2), 2015 MacBook Pro, OS X El Capitan 10.11.6, Apple Thunderbolt/FireWire adapter.
 
 * Native Instruments Komplete Audio 2, Tested on Win10 with 64 sample buffer and am getting great sound and total latency around 15ms over the ping time. (USB Audio)
 
