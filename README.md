@@ -4,7 +4,7 @@ This is the home of the [Jamulus website](https://jamulus.io). The goal of this 
 
 ## Contribute a translation
 
-Do you want to contribute to the Jamulus Wiki/Website? Please open an issue and see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+Do you want help out with translation? Please open an issue and see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## Adding pictures
 Unfortunately GitHub doesn't enable picture upload on the normal md editor. Therefore you can attempt to open an issue, upload your image, copy the link to the page you want to integrate it into and then don't submit the issue. See this answer on stack overflow: https://stackoverflow.com/a/26601810
