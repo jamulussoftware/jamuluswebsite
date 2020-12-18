@@ -35,7 +35,7 @@ _**El modo exacto de conectar tu instrumento variará dependiendo de tu hardware
 
 En el futuro, siempre utiliza el mismo puerto USB para el dispositivo de audio.
 
-**Usuarios de Windows**: Si no lo has hecho ya: descarga e instala [el driver ASIO de audio gratuito (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. Algunas personas han tenido éxito utilizando [este driver ASIO nativo](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip){: target="_blank" rel="noopener noreferrer"} __actualmente no disponible__; no está listado en las páginas de producto de Behringer a fecha de abril del 2020.
+**Usuarios de Windows**: Si no lo has hecho ya: descarga e instala [el driver ASIO de audio gratuito (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. Algunas personas han tenido éxito utilizando [este driver ASIO nativo](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip){: target="_blank" rel="noopener noreferrer"}  __actualmente no disponible__; no está listado en las páginas de producto de Behringer a fecha de abril del 2020.
 
 
 #### 2. Arranca Jamulus
@@ -55,10 +55,10 @@ Conecta tu instrumento a una entrada del Behringer U-CONTROL UCA202. Enchufa tus
 
 ## Linux: Conexión de interfaz de audio con QJackCtrl
 
-Consulta la [guía de instalación del cliente](Installation-for-Linux#configure-jack-with-qjackctl) en Linux.
+Consulta la [guía de instalación del cliente](Installation-for-Linux#configura-jack-con-qjackctl) en Linux.
 
 ## Linux: Kernels Low Latency para Jamulus
-Quizá quieras instalar [Ubuntu Studio](https://ubuntustudio.org/){: target="_blank" rel="noopener noreferrer"} añade otra opción en el menú de arranque para un kernel de baja latencia. La clave para una jam session online es la baja latencia entre los servidores y los clientes conectados. Si el sistema Linux arranca con un kernel de baja latencia esto tiene un impacto positivo en tus sesiones de Jamulus.
+Quizá quieras instalar [Ubuntu Studio](https://ubuntustudio.org/){: target="_blank" rel="noopener noreferrer"}, que añade otra opción en el menú de arranque para un kernel de baja latencia. La clave para una jam session online es la baja latencia entre los servidores y los clientes conectados. Si el sistema Linux arranca con un kernel de baja latencia esto tiene un impacto positivo en tus sesiones de Jamulus.
 
 
 ## Apuntes sobre las entradas
@@ -71,15 +71,11 @@ Quizá quieras instalar [Ubuntu Studio](https://ubuntustudio.org/){: target="_bl
 
 _(Gracias a [pcar75](https://github.com/pcar75) por esta información)_
 
-
-
-
-
 ## Otros ejemplos
 
 **Este vídeo documenta una [sesión jam en directo](https://youtu.be/c8838jS2g3U).** Utilizo una tarjeta de audio USB Lexicon Omega en un Mac Mini del 2009. Mis compañeros de grupo utilizan todos Windows 10 y tienen tarjetas de audio Behringer, por ejemplo el Behringer Xenyx 1204USB. Mi conexión a internet tiene 10 Mbps de bajada / 1 Mbps de subida mediante conexión DSL.
 
-**El usuario de Jamulus [Andrew Evans](https://sourceforge.net/u/belvario/profile/)**: Con todos los compañeros de grupo en la misma ciudad (pero con 2 ISPs diferentes) y un tiempo ping de 20ms estables, ejecutando el servidor en un ordenador Windows por separado y el cliente en un Macbook Pro. Los demás músicos con Macbook Air. Todos con conexión Ethernet por cable a sus routers/gateways. Utilizamos WhatsApp video para vernos (con el audio apagado - ¡pero es divertido ver lo atrás que queda el audio de Whatsapp con respecto a Jamulus!)
+**El usuario de Jamulus [Andrew Evans](https://sourceforge.net/u/belvario/profile/)**: Con todos los compañeros de grupo en la misma ciudad (pero con 2 ISPs diferentes) y un tiempo ping de 20 ms estables, ejecutando el servidor en un ordenador Windows por separado y el cliente en un Macbook Pro. Los demás músicos con Macbook Air. Todos con conexión Ethernet por cable a sus routers/gateways. Utilizamos WhatsApp video para vernos (con el audio apagado - ¡pero es divertido ver lo atrás que queda el audio de Whatsapp con respecto a Jamulus!)
 
 ## ¿Tienes problemas?
 

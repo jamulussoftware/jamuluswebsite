@@ -10,7 +10,7 @@ permalink: "/wiki/Linux-Client-Install-Script"
 
 Si tienes intención de instalar Jamulus en muchas máquinas Linux, quizá te interese este script.
 
-El siguiente ejemplo ha sido probado en Linux Mint y combina todos los comandos de arriba en un único script para Ubuntu/Linux Mint. Para incorporar los diferentes comandos para distribuciones distintas de Linux, hay variables que definen la distribución y la versión para la cual hay que ejecutar el script. El ejemplo se centra en Ubuntu con la versión 18.04 como ejemplo. Así que el nombre sugerido para el script sería `install4ubuntu18_4.sh`. Los comandos del script son genéricos para que la instalación pueda ser modificada para funcionar con otras distribuciones de Linux.
+El siguiente ejemplo ha sido probado en Linux Mint y combina todos los comandos en un único script para Ubuntu/Linux Mint. Para incorporar los diferentes comandos para distribuciones distintas de Linux, hay variables que definen la distribución y la versión para la cual hay que ejecutar el script. El ejemplo se centra en Ubuntu con la versión 18.04 como ejemplo. Así que el nombre sugerido para el script sería `install4ubuntu18_4.sh`. Los comandos del script son genéricos para que la instalación pueda ser modificada para funcionar con otras distribuciones de Linux.
 
 ### Instalación dependiente de la Distribución de Linux
 El siguiente script puede ejecutar diferentes comandos de instalación dependiendo de la distribución de Linux. La variable `DISTRO` define qué comandos son ejecutados. Establece la variable dependiendo de la distribusión de Linux que estés utilizando.
