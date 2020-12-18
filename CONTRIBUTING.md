@@ -17,13 +17,13 @@ Pull requests/issues for the website should have a title which looks like this:
 
 ## Branches, Translation and development process
 
-We currently use multiple branches to ensure that translators know what to translate. Therefore have a look at the guideline below.
+We currently use *multiple branches* to ensure that translators know what to translate.
 
 After having discussed and agreed on changes you want to be integrated to jamulus.io, you should ask yourself some questions:
 
 ## 0. Is the language of your content already online and existing?
-No: Will discuss this later (since you introduce a new language).
-Yes:
+If not: This will be discussed this later (since you introduce a new language).
+If so look here:
 ### 1. Be clear if your change needs translation
 **No:** A fix which doesn't need to be translated (e.g. typo) --> Open a Pull Request to `release`. It will go live a few minutes after the PR is merged
 **Yes:** A fix which needs to be translated (e.g. if you want to make a sentence or paragraph clearer) --> Commit to `changes` since others will need to translate it. It will be part of the next release.
