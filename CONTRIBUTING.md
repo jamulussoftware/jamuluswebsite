@@ -21,7 +21,7 @@ We currently use *multiple branches* to ensure that translators know what to tra
 
 After having discussed and agreed on changes you want to be integrated to jamulus.io, you should ask yourself some questions:
 
-## 0. Is the language of your content already online and existing?
+## 0. Is your content in a language that already exists on the site?
 If not: This will be discussed this later (since you introduce a new language).
 If so look here:
 ### 1. Be clear if your change needs translation
