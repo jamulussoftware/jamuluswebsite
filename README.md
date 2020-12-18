@@ -2,7 +2,7 @@
 
 This is the home of the [Jamulus website](https://jamulus.io). The goal of this page is to explain what Jamulus is and how to use it.
 
-## Contribute and translation
+## Contribute a translation
 
 Do you want to contribute to the Jamulus Wiki/Website? Please open an issue and see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
@@ -38,7 +38,9 @@ Have a look at the README.md files in these folders.
 This site is built with Jekyll and Fox-CSS.
 
 ## Contribute to the design/site structure
+Please open an issue and see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
+### A few tips/links
 Since this page uses Jekyll, please have a look at the [Jekyll documentation](https://jekyllrb.com/docs/).
 This project uses the FOX-CSS framework. See the [FOX-CSS documentation](http://www.fox-css.com/documents/).
 CSS files can be found in the assets/css folder.
