@@ -2,16 +2,12 @@
 
 This is the home of the [Jamulus website](https://jamulus.io). The goal of this page is to explain what Jamulus is and how to use it.
 
-## Contribute a translation
-
-Do you want help out with translation? Please open an issue and see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
 ## Adding pictures
 Unfortunately GitHub doesn't enable picture upload on the normal md editor. Therefore you can attempt to open an issue, upload your image, copy the link to the page you want to integrate it into and then don't submit the issue. See this answer on stack overflow: https://stackoverflow.com/a/26601810
 
-## Translating
+## Contribute a translation
 
-**Before translating, please have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) file to get familiar with our translation process**
+**Before translating, please have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) file to get familiar with our translation process. Afterwards, check if there's already a discussion thread for your language here: https://github.com/jamulussoftware/jamuluswebsite/discussions and participate in it**
 
 Translations are handled by the [Polyglot Jekyll Plug-in](https://github.com/untra/polyglot).
 If you want to translate a file, you must first know where it is located on this repo:
