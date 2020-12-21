@@ -20,7 +20,7 @@ You can also [compile your own binary](Compiling#windows) if you feel so incline
 ## Setting up ASIO4ALL
 *Most internal soundcards need this driver. ASIO4ALL is not recommended if your audio interface provides its own ASIO driver, since that might have better latency.*
 
-For ASIO4ALL, you may need to experiment a bit to find the right configuration since every computer is a bit different. Setup your soundcard while you're connected to a server to hear your instrument or voice and check if everything is correctly setup.
+For ASIO4ALL, you may need to experiment a bit to find the right configuration since every computer is a bit different. Setup your soundcard while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly setup.
 
 Before you start with Jamulus:
 1. **Close all applications** (especially those which could access your soundcard like your browser/media player) since Jamulus needs exclusive access to your sound card.
