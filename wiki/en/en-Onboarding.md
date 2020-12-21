@@ -42,7 +42,7 @@ While we're already here: "Settings" opens – of course – the settings window
 More information about using Jamulus can be found in the [Software Manual](Software-Manual).
 
 ## Advanced
-<!--  Of course, you can do a lot more with Jamulus, like setting up a private server, doing online concerts, ...  Have a look at this website! The community publishes guides, tips, tricks in the [knowledge base](/kb/). -->
+ Of course, you can do a lot more with Jamulus (like setting up a private server, doing online concerts,...). Have a look at the navigation on this website. Furthermore, the community publishes guides, tips, tricks in the [knowledge base](/kb/).
 
 ## Help and Community
 If you need help or want to contribute to the Jamulus Project, you can have a look at the following links:
