@@ -14,7 +14,7 @@ Although we don't provide official packages, you might find Jamulus in the packa
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. If you don't find it in your package manager, you need to compile Jamulus from source. That's quite easy:
+There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223). If you don't find it in your package manager, you need to compile Jamulus from source. That's quite easy:
 
 ## Get Jamulus sources
 
@@ -71,7 +71,7 @@ sudo make install
 ## Set up your sound card
 
 ### Configure JACK with QjackCtl
-Jamulus clients need [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
+Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
 1. Open the command shell e.g. with Ctrl-Alt-T and
 1. Execute the command `qjackctl` you will see the **Jack Audio Connection Kit**
 2. Configure your audio interface as follows (the exact settings for JACK will depend on what your audio interface/sound card is capable of):

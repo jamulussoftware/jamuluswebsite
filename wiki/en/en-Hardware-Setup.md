@@ -25,7 +25,7 @@ Setting up hardware usually burns down to 4 points, although each setup is diffe
 
 ## Windows: Audio interface connection - ASIO4ALL
 
-This is an example Windows client installation with audio device [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0){: target="_blank" rel="noopener noreferrer"}.
+This is an example Windows client installation with audio device [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0).
 The following instructions might be similar with other audio devices.
 
 _**The exact method of connecting your instrument will of course vary depending on your hardware.**_
@@ -56,7 +56,7 @@ You're done! Have fun!
 Refer to the Linux [client install guide](Installation-for-Linux#configure-jack-with-qjackctl).
 
 ## Linux: Low Latency Kernels for Jamulus
-You might want to install [Ubuntu Studio](https://ubuntustudio.org/){: target="_blank" rel="noopener noreferrer"} it adds a second options in your boot menu for a low-latency kernel. The key of successful jamming is "low latency" between servers and connected Jamulus clients. If the underlying Linux system is started with a low-latency then it has a positive impact on latency for your Jamulus Sessions.
+You might want to install [Ubuntu Studio](https://ubuntustudio.org/) it adds a second options in your boot menu for a low-latency kernel. The key of successful jamming is "low latency" between servers and connected Jamulus clients. If the underlying Linux system is started with a low-latency then it has a positive impact on latency for your Jamulus Sessions.
 
 
 ## Points to note about inputs
