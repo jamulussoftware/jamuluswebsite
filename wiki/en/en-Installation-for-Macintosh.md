@@ -16,7 +16,7 @@ Make sure you've already read the [Getting Started](Getting-Started) page.
 
 _You can remove the folder in the Downloads directory containing the `.dmg` and eject the "Jamulus" drive on your desktop. They are no longer needed._
 
-You can also [compile your own binary](Compiling) if you feel so inclined.
+You can also [compile your own binary](Compiling#macos) if you feel so inclined.
 
 ## "Jamulus" can't be opened because the developer cannot be verified
 

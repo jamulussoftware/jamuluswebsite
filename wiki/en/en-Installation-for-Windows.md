@@ -13,7 +13,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
 1. **Setup your sound card**. When you're done, you need to setup your audio hardware. Have a look at how to setup ASIO4ALL if you you're using that ([scroll down](#setting-up-asio4all)), and afterwards at [Hardware Setup](Hardware-Setup).
 
-You can also [compile your own binary](Compiling) if you feel so inclined.
+You can also [compile your own binary](Compiling#windows) if you feel so inclined.
 
 ***
 
