@@ -71,7 +71,7 @@ _(Thanks to [pcar75](https://github.com/pcar75) for this information)_
 
 ## Other examples
 
-**This video documents a [live jam session](https://youtu.be/c8838jS2g3U).** I am using a Lexicon Omega USB audio card on a 2009 Mac Mini. My bandmates all use Windows 10 and have Behringer audio cards, e.g. the Behringer Xenyx 1204USB. My internet connection is 10 Mbps down / 1 Mbps upstream via DSL.
+**This video documents a [live jam session](https://youtu.be/c8838jS2g3U).** I am using a Lexicon Omega USB audio card on a 2009 Mac Mini. My bandmates all use Windows 10 and have Behringer audio cards, e.g. the Behringer Xenyx 1204USB. My internet connection is 10 Mbit/s down / 1 Mbit/s upstream via DSL.
 
 **Jamulus user [Andrew Evans](https://sourceforge.net/u/belvario/profile/)**: With bandmates all within one city (but spanning 2 ISPs) and achieving consistent 20ms ping time, running the server on a separate dedicated Windows machine and a client on a MacBook Pro. Remote players on MacBook Air. Everyone on wired Ethernet connections to their home router/gateways. We used WhatsApp video to see each other (with audio muted - it's funny to see how far behind the WhatsApp audio lags from Jamulus though!)
 
