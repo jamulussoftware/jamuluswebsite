@@ -5,7 +5,7 @@ lang: "de"
 permalink: "/wiki/Contribution"
 ---
 
-# Beitragen zum Jamulus Project
+# Bei Jamulus mithelfen
 
 ## Jamulus Software
 * Wenn du Code beisteuern willst, poste deine Idee im [developer forum](https://sourceforge.net/p/llcon/discussion/developerforum/)(Englisch), damit wir deine Idee erst diskutieren können. Danach kannst du einen Pull Request eröffnen. Lies dir am Besten erst einmal das [manifesto for contributions](https://github.com/corrados/jamulus/issues/596) von Volker Fischer (Hauptentwickler) durch.
