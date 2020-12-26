@@ -17,11 +17,11 @@ permalink: "/wiki/Getting-Started"
 
 ### 1. Verringere die Latenz durch wenig Internetverkehr und schließe alle Programme auf deinem PC
 
-Während du Jamulus verwendest, versuche keine anderen Programme auf deinem PC auszuführen und den Internetverkehr in deinem Netzwerk so gering wie möglich zu halten, damit die Audioverzögerung gering bleibt. Das heißt, dass du parallel z.B. keinen Videostream anschauen solltest.
+Während du Jamulus verwendest sollten keine anderen Programme auf deinem PC bzw. andere Familienmitglieder in deinem Netzwerk das Internet benutzen. Das heißt, dass du parallel z.B. keinen Videostream anschauen solltest, da sonst die Tonqualität massiv leidet.
 
 ### 2. Nutze ein Audiointerface/USB-Mikrofon, nicht deine interne Soundkarte
 
-Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten (Interfaces) normalerweise deutlich besser. Ein Audiointerface ist eine Box, an die du dein(e) Instrument(e) anschließen kannst. Normalerweise verbindet man ein Interface per USB mit deinem PC. Du kannst natürlich auch ein externes USB-Mikrofon nutzen. Mehr Infos findest du unter [Audiohardware](#audiohardware).
+Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten/Interfaces normalerweise deutlich besser (das ist eine Box, an die du ein Mikrofon/Instrument anschließen kannst und die man z.B. per USB mit dem PC verbindet). Du kannst natürlich auch ein externes USB-Mikrofon nutzen. Mehr Infos findest du unter [Audiohardware](#audiohardware).
 
 
 ### 3. Verbinde dich mit Servern mit niedrigem Ping
@@ -36,7 +36,7 @@ Die wichtigsten Faktoren kennst du jetzt! Los geht's:
 </div>
 [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/){: target="_blank" rel="noopener noreferrer"}
 
-Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stick starten! Jamulus OS prüft deine Hardware automatisch und richtet sie ein.
+Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stick starten! [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) prüft deine Hardware automatisch und richtet sie ein.
 
 ## Audiohardware
 Schau dir die [Liste von getesteter Hardware](Sound-Devices) und das [Hardware Setup](Hardware-Setup) an.
@@ -51,7 +51,7 @@ Schau dir die [Liste von getesteter Hardware](Sound-Devices) und das [Hardware S
 
 Oder anders ausgedrückt, höre **nicht** auf dein direktes Signal.
 
-Selbst wenn du eine gute Internetverbindung hast: Um den Rhythmus halten zu können, musst du dich auf das Signal vom Server und nicht auf dein Livesignal konzentrieren. _(Um Zweifel auszuschließen: das hat nichts mit den „Mute“-Reglern in Jamulus zu tun.)_
+Auch wenn du eine gute Internetverbindung hast, ist es besser (um den Rhythmus halten zu können), wenn du dich auf das Signal vom Server und nicht auf dein Livesignal konzentrierst. _(Um Zweifel auszuschließen: das hat nichts mit den „Mute“-Reglern in Jamulus zu tun.)_
 
 Weitere Informationen darüber, wie du vermeiden kannst, auf dich selbst zu hören (und Hilfe bei anderen Problemen), findest du auf der [Fehlerbehebung FAQ](Client-Troubleshooting) Seite. (_momentan in Arbeit_)
 
