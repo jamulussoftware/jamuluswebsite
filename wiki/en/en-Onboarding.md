@@ -17,7 +17,7 @@ Before you start Jamulus:
 If you haven't done this already, please do so by plugging in your hardware (if you need to), opening Jamulus's settings and selecting your input/output devices.
 
 * If you need help setting up ASIO4ALL on Windows, have a look at the [ASIO4ALL Setup guide on the Windows installation page](Installation-for-Windows#setting-up-asio4all).
-* MacOS users just need to select their input/output devices in Jamulus's settings.
+* macOS users just need to select their input/output devices in Jamulus's settings.
 
 You can also have a look at [Hardware Setup](Hardware-Setup) for more information on what to do with your equipment.
 
