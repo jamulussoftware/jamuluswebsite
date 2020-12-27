@@ -31,7 +31,7 @@ To open Jamulus
 1. Now control-click (or right-click) on Jamulus, and select "Open" from the top of the menu.
 
 You will then get a slightly different version of the same message, which allows you to click "Open" and go ahead with running it. You will not be shown this warning again - just double-click it to run after that.
-For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
+For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
 
 ## All installed?
 Jamulus has been installed and can be used now. You can now take a look at the

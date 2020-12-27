@@ -44,7 +44,7 @@ Concerning the inputs/outputs: Headphones and speakers are often labeled as outp
 If nothing works, first of all try to **restart Jamulus and/or your PC**.
 Afterwards try to **setup the inputs/outputs again**. Enabled and accessible inputs/outputs show a lit up on/off button and a play button. If you see a red cross or a yellow symbol, you might need to close other applications like your browser, Zoom, ...
 
-Have a look at [this video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} from [trombonepizza](https://github.com/trombonepizza){: target="_blank" rel="noopener noreferrer"} which gives more detailed setup information on ASIO4ALL.
+Have a look at [this video](https://youtu.be/_GzOsitVgLI) from [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL.
 
 Official and more detailed information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} and in the [ASIO4ALL manual here](https://www.asio4all.org/ASIO4ALL%20v2%20Instruction%20Manual.pdf).
 (The manual can also be found on your desktop or in the folder where the ASIO4ALL binary is installed (usually `C:\Program Files (x86)\ASIO4ALL v2\`)).
