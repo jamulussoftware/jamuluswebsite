@@ -19,7 +19,7 @@ Under Windows, the best option to run multiple interfaces through Jamulus at the
 **Steps:**
 1. [Install and configure JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html) - Make sure you select your best audio interface in the configuration steps, also add `-r 48000 -p <desired frame buffer size>` to ensure JACK is outputting audio in the required sample rate for Jamulus (48.000Hz). If your frame buffer size is too low for your hardware, you'll need to change it to a higher value;
 2. Install and open Voicemeeter;
-3. Open configured Jack PortAudio shortcut, Jack Control and Jamulus software;
+3. Open configured JACK PortAudio shortcut, Jack Control and Jamulus software;
 4. On Voicemeeter, go to HARDWARE OUT and on A1 dropdown list, select JackRouter. On Hardware Input 1 select your computer microphone. You can make your computer microphone have the lowest latency possible by going into _Menu > System Settings/Options..._ and enabling _WDM Input Exclusive Mode_ (if you experience crackling noises while speaking, disable this) and changing the _Engine Mode_ to _Swift_;
 5. Make sure the Hardware Input where you selected your microphone is sending sound through A1 by enabling the corresponding button next to the fader;
 6. On Jamulus, under Settings, select JackRouter as your Soundcard Device;
@@ -41,7 +41,7 @@ Under Windows, the best option to run multiple interfaces through Jamulus at the
 
 ### Linux
 
-On Linux, it is possible to route additional devices to Jack by using alsa_in.
+On Linux, it is possible to route additional devices to JACK by using alsa_in.
 
 **Requirements:**
 
@@ -49,7 +49,7 @@ On Linux, it is possible to route additional devices to Jack by using alsa_in.
 * alsa
 
 **Steps:**
-1. Follow [this tutorial](https://www.penguinproducer.com/Blog/2011/11/using-multiple-devices-with-jack/) to route the desired interface into Jack by using alsa_in.
+1. Follow [this tutorial](https://www.penguinproducer.com/Blog/2011/11/using-multiple-devices-with-jack/) to route the desired interface into JACK by using alsa_in.
 2. Jamulus should automatically route the JACK configured interface, adjustments can be made through the _Connect_ button.
 3. Connect the device configured on step 1 into jamulus input.
 4. Use Patchbay as described on Windows section to make connections permanent.
