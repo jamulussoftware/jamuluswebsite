@@ -1,0 +1,76 @@
+---
+pagination:
+  enabled: true
+---
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<html lang="{{ site.active_lang }}">
+
+<head>
+  <title>{{ page.title }} {{ site.data.general.kb.titleAdd }}</title>
+  {% include headtags.html %}
+  <link rel="stylesheet" href="/assets/css/kb.css">
+</head>
+
+<body class="kb kblist">
+  <header class="fx-row fx-row-between-xs fx-text-center">
+    <div class="fx-col fx-text-center"><a href="/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}">
+        <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" /></a>
+    </div>
+    <div class="fx-col-center-xs fx-txt-right hide-on-dt">
+      <a href="#mnv" onclick="showNav();return false;">{% include general/navbtn.html %}</a>
+    </div>
+    <div class="fx-col-100-xs fx-txt-center">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </header>
+  <div class="fx-row fx-row-center-xs">
+    {% include general/nav.html %}
+    <div id="maincontainer" class="fx-col-100-xs fx-col-50-m">
+      <noscript class="red"><strong>{{ site.data.general.tNoJSEnabled }}</strong></noscript>
+      <main lang="{{ page.lang }}">
+        {{ content }}
+        {% for post in paginator.posts %}
+          <article>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <div>{{ post.date | date_to_string }}
+              {% if post.author %}
+                {{ site.data.general.kb.by }}
+                {% if site.data.authors[post.author].url %}<a href="{{ site.data.authors[post.author].url }}" rel="nofollow">{% endif %}
+                {% if site.data.authors[post.author].name %}
+                  {{ site.data.authors[post.author].name }}
+                {% else %}
+                  {{ post.author }}
+                {% endif %}
+                {% if site.data.authors[post.author].url %}</a>{% endif %}
+              {% endif %}
+            </div>
+            {{ post.excerpt }}
+            <a href="{{ post.url }}">{{ site.data.general.kb.readmore }}</a>
+          </article>
+          <hr />
+        {% endfor %}
+        {% if paginator.page_trail %}
+          <ul id="paginator">
+          {% for trail in paginator.page_trail %}
+            <li {% if page.url == trail.path %}class="selected"{% endif %}>
+                <a href="{{ trail.path | prepend: site.baseurl }}" title="{{ trail.title }}">{{ trail.num }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      </main>
+    </div>
+    <aside class="fx-col-begin-xs fx-col-100-xs fx-col-10-m">
+      <p id="kbintro">
+        {{ site.data.general.kb.kbintro }}
+      </p>
+      <ul id="kbside">
+        <li><a href="{{ site.kbnewpage }}">{{ site.data.general.kb.newpage }}</a></li>
+      </ul>
+    </aside>
+  </div>
+  {% include footer.html %}
+</body>
+
+</html>

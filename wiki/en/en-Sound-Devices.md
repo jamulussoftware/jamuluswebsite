@@ -7,8 +7,8 @@ permalink: "/wiki/Sound-Devices"
 
 # Sound Devices
 
-This page lists (thanks to Jamulus users) the audio devices known to work (or not) with Jamulus.  
-_**Note**: This depends on how the device works on your system (Linux, MacOS, Windows, etc)_.
+Thanks to Jamulus users, this page lists audio devices known to work (or not) with Jamulus.  
+_**Note**: If they work or not depends on your operating system (Linux, MacOS, Windows, etc.)_.
 
 You can update it with the information you have. **Please indicate the platform(s) you are using!**.
 

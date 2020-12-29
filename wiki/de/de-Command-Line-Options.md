@@ -35,7 +35,7 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |    `-F` |`--fastupdate`     | 64 samples frame size Modus. Reduziert Latenz wenn Clients mit der "Enable Small Network Buffers" Option verbunden sind. Benötigt schnelle CPU um Dropouts zu vermeiden, und mehr Bandbreite. | (nur Server) |
 | `-h,-?` |`--help`           | Dieser Hilfetext | (Client und Server) |
 |    `-i` |`--inifile`        | Setze Pfad zur Initialisierungs Datei (überschreibt den Standard) | (Client (immer) und Server (mit GUI)) |
-|    `-j` |`--nojackconnect`  | Keine Jack Verbindung | (nur Client) |
+|    `-j` |`--nojackconnect`  | Deaktiviert automatische JACK Verbindung | (nur Client) |
 |    `-l` |`--log` | Aktiviere Logging, gebe Pfad und Dateinamen an | (nur Server) |
 |    `-m` |`--htmlstatus`     | Aktiviere HTML Status Datei, gebe Pfad und Dateinamen an | (nur Server) |
 |    `-M` |`--mutestream`     | Starte Jamulus im stummgeschalteten Modus | (nur Client) |
@@ -47,8 +47,8 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |    `-s` |`--server`         | Starte in Server Modus | (nur Server) [Siehe Notiz](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Keine Übersetzungen | (Client und Server) |
 |    `-T` |`--multithreading` | Aktiviere Multithreading | (nur Server) |
-|    `-u` |`--numchannels`    | Maximale Anzahl an Kanälen. Standard ist 10, Maximum ist 50 | (nur Server) |
+|    `-u` |`--numchannels`    | Maximale Anzahl an Nutzern. Standard ist 10, Maximum ist 50 | (nur Server) |
 |    `-w` |`--welcomemessage` | Begrüßungsnachricht. Unterstützt HTML und inline CSS (in Anführungszeichen), oder Pfad zu einer Textdatei. | (nur Server) |
 |    `-z` |`--startminimized` | Starte minimiert | (nur Server) |
-|       |`--ctrlmidich`     | MIDI Controller Kanal  | (nur Client) Siehe [Tipps & Tricks](Tips-Tricks-More) |
+|       |`--ctrlmidich`     | MIDI Controller Kanal und Offset, Format `channel[;offset]`  | (nur Client) Siehe [Tipps & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
 |       |`--clientname`     | Fenster Titel und Jack Client Name | (nur Client) |

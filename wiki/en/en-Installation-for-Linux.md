@@ -14,11 +14,11 @@ Although we don't provide official packages, you might find Jamulus in the packa
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. If you don't find it in your package manager, you need to compile Jamulus from source. That's quite easy:
+There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223). If you don't find it in your package manager, you need to compile Jamulus from source. That's quite easy:
 
 ## Get Jamulus sources
 
-1. Open up a terminal window (command line - `CTRL+ALT+t` on Ubuntu and related distros)
+1. Open up a terminal window (command line - `CTRL+ALT+T` on Ubuntu and related distros)
 1. Download and unzip the sources for the latest release:
 ```shell
 wget https://github.com/corrados/jamulus/archive/latest.tar.gz
@@ -42,9 +42,9 @@ On **Fedora**:
 sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
 ```
 
-### Qjackctl: Optional, but recommended
+### QjackCtl: Optional, but recommended
 
-[QjackCtl](https://qjackctl.sourceforge.io) is a utility to help you set up the Jack audio server (installed as part of the dependencies above). Install it via e.g.
+[QjackCtl](https://qjackctl.sourceforge.io) is a utility to help you set up the JACK audio server (installed as part of the dependencies above). Install it via e.g.
 
 ```shell
 sudo apt-get install qjackctl
@@ -68,20 +68,19 @@ make
 sudo make install
 ```
 
-
 ## Set up your sound card
 
-### Configure Jack with QJackCtl
-Jamulus clients need [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
+### Configure JACK with QjackCtl
+Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
 1. Open the command shell e.g. with Ctrl-Alt-T and
-1. Execute the command `qjackctl` you will see the **Jack Audio Connection Kit**
-2. Configure your audio interface as follows (the exact settings for Jack will depend on what your audio interface/sound card is capable of):
+1. Execute the command `qjackctl` you will see the **JACK Audio Connection Kit**
+2. Configure your audio interface as follows (the exact settings for JACK will depend on what your audio interface/sound card is capable of):
 
 - Set the audio **Interface** to the one you want (there may be several in the list)
 - Set the **Sample Rate to 48000**
 - Set the **Frames/Period to 128** and Periods/Buffer at 2 at first
 
-Restart Jack to take any new settings
+Restart JACK to take any new settings
 
 ### Start Jamulus
 
@@ -89,7 +88,7 @@ Open Jamulus e.g. via your command shell. If you use the shell, execute the comm
 
 Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.
 
-If you get problems with sound breaking up (in particular XRUN errors reported by Jack/QJackCtl) try setting bigger values (eg 256 frames or 3 periods) in step 3 above. Lower ones (eg 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
+If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods) in step 3 above. Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
 
@@ -109,6 +108,6 @@ Download the new sources as per [Get Jamulus](Installation-for-Linux#get-jamulus
 
 * To use this file configure the software with `qmake "CONFIG+=noupcasename" Jamulus.pro` to make sure the output target name of this software is **j**amulus instead of **J**amulus.
 
-* Users of Raspberry Pi: You may want to compile the client on another machine and run the binary on the Raspberry Pi. In which case, the only libraries you need to run it are those for a [headless server](Server-Linux#running-a-headless-server) build, but _with_ the Jack sound packages. Especially have a look at the footnote for the headless build.
+* Users of Raspberry Pi: You may want to compile the client on another machine and run the binary on the Raspberry Pi. In which case, the only libraries you need to run it are those for a [headless server](Server-Linux#running-a-headless-server) build, but _with_ the JACK sound packages. Especially have a look at the footnote for the headless build.
 
 * As of version 3.5.3, Jamulus is no longer compatible with Qt4.

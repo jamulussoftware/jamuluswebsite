@@ -6,7 +6,7 @@
       {% for item in site.data.navigation.nav %}
       {% if item.url %}
       <li>
-        <h3><a href="{{ item.url | relative_url }}" class="{% if subentry.url == page.url %}selected{% endif %}">{{ item.title }}</a></h3>
+        <h3><a href="{{ item.url | relative_url }}" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ item.title }}</a></h3>
       {% else %}
       <li>
         <h3>{{ item.title }}</h3>
@@ -14,11 +14,11 @@
       {% if item.subfolderitems[0] %}
         <ul>
           {% for entry in item.subfolderitems %}
-          <li><a href="{{ entry.url }}" class="{% if entry.url == page.url %}selected{% endif %}">{{ entry.page }}</a>
+          <li><a href="{{ entry.url }}" class="{% if entry.url == page.url or entry.selectOnLayout == page.layout %}selected{% endif %}">{{ entry.page }}</a>
             {% if entry.subsubfolderitems[0] %}
             <ul>
               {% for subentry in entry.subsubfolderitems %}
-              <li><a href="{{ subentry.url }}" class="{% if subentry.url == page.url %}selected{% endif %}">{{ subentry.page }}</a></li>
+              <li><a href="{{ subentry.url }}" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ subentry.page }}</a></li>
               {% endfor %}
             </ul>
             {% endif %}

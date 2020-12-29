@@ -15,22 +15,21 @@ Fenêtre principale
 
 ### LEDs d'état
 
-La LED du **status de délai** indique l'état actuel du délai :
-
-* **Vert** - Le délai est parfait pour une session de bœuf
+La LED du status de **délai** indique l'état actuel du délai audio :
 
 ![image](https://user-images.githubusercontent.com/4561747/99384024-b6c60b00-28c6-11eb-9e7d-aa1e4245353f.png)
 
-* **Jaune** - Une session est toujours possible mais elle peut être plus difficile à jouer
+* **Vert** - Le délai est parfait pour une session de bœuf
 
 ![image](https://user-images.githubusercontent.com/4561747/99384041-bb8abf00-28c6-11eb-96ab-c1c08acf2a85.png)
 
-* **Rouge** - Le délai est trop important pour bœuffer
+* **Jaune** - Une session est toujours possible mais elle peut être plus difficile à jouer
 
 ![image](https://user-images.githubusercontent.com/4561747/99384044-bded1900-28c6-11eb-8971-9ab6ee1908b5.png)
 
+* **Rouge** - Le délai est trop important pour bœuffer
 
-**Tampons** indique l'état actuel de l'audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela peut être dû à l'un des problèmes suivants :
+La LED d'état de **Tampons** indique l'état actuel de l'audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela peut être dû à l'un des problèmes suivants :
 
 - Le tampon de gigue[^1] réseau n'est pas assez grand pour la gigue actuelle de l'interface réseau/audio.
 - Le délai du tampon de la carte son (taille du tampon) est trop faible (voir la fenêtre des paramètres).
@@ -92,21 +91,22 @@ Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un
 
 ![Chariots audio](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
 
-Dans le cadre de la console de mixage, un chariot est affiché pour chaque client connecté au serveur (y compris vous-même). Les chariots vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
+L'écran du mixeur audio affiche chaque utilisateur connecté au serveur (y compris vous-même).
+Les chariots vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
 
 Le VU-mètre indique le niveau d'entrée au serveur, c'est-à-dire le son envoyé.
 
 Si vous avez réglé votre canal audio sur Stéréo ou Sortie Stéréo dans vos paramètres, vous verrez alors un contrôle de balance audio (Maj-clic pour réinitialiser).
 
-Si vous voyez une icône « muet » au-dessus d'un canal, cela signifie que ce musicien ne peut pas vous entendre. Soit il vous a mis en silence, soit il a mis en solo un ou plusieurs canaux sans inclure le vôtre, soit il a réglé votre chariot dans son mixage à zéro.
+Si vous voyez une icône « muet » au-dessus d'un utilisateur, cela signifie que cette personne ne peut pas vous entendre. Soit il vous a mis en silence, soit il a mis en solo un ou plusieurs utilisateurs sans vous y inclure, soit il a réglé votre chariot dans son mixage à zéro.
 
-L'utilisation du **bouton Muet** empêche d'entendre le canal indiqué dans votre mixage local. Sachez que lorsque vous mettez un musicien en silence, il verra une icône « muet » au-dessus de votre chariot pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètre bouger si le signal du musicien mis en sourdine atteint le serveur. La position de votre chariot pour eux n'est pas affectée non plus.
+L'utilisation du bouton **Muet** empêche les utilisateurs d'être entendus dans votre mix local. Sachez que lorsque vous mettez quelqu'un en silence, il verra une icône « muet » au-dessus de votre chariot pour indiquer que vous ne l'entendez pas. Notez également que vous continuerez à voir son VU-mètre bouger si le son de l'utilisateur mis en sourdine atteint le serveur. La position de votre chariot pour eux n'est pas affectée non plus.
 
-Le **bouton Solo** vous permet d'entendre un ou plusieurs musiciens seuls. Ceux qui ne sont pas en solo seront mis en silence. Notez également que ces musiciens qui ne sont pas en solo verront une icône « muet » au-dessus de votre chariot.
+Le **bouton Solo** vous permet d'entendre un ou plusieurs utilisateurs seuls. Ceux qui ne sont pas en solo seront mis en silence. Notez également que ces personnes qui ne sont pas en solo verront une icône « muet » au-dessus de votre chariot.
 
 Les canaux sont listés de gauche à droite dans l'ordre dans lequel les clients se connectent jusqu'à ce qu'ils partent, leur « créneau » sera alors occupé par le nouvel arrivant suivant. Vous pouvez modifier l'ordre de tri en utilisant l'option Éditer dans le menu de l'application.
 
-Vous pouvez regrouper les chariots en utilisant le commutateur « groupe ». Déplacer le chariot de n'importe quel membre du groupe déplacera les autres chariots de ce groupe de la même proportion. Vous pouvez temporairement isoler un canal du groupe avec Maj-clic-glisser.
+Vous pouvez regrouper les utilisateurs en utilisant le commutateur « groupe ». Déplacer le chariot de n'importe quel membre du groupe déplacera les autres chariots de ce groupe de la même proportion. Vous pouvez temporairement isoler un canal du groupe avec Maj-clic-glisser.
 
 Si l'administrateur du serveur a activé l'enregistrement, vous verrez un message au-dessus de la console de mixage indiquant que vous êtes en train d'être enregistré.
 
@@ -120,9 +120,9 @@ Fenêtre des paramètres
 ### Périphérique de carte son
 
 ![Périphérique de carte son sous Windows](https://user-images.githubusercontent.com/20726856/97361494-e70a2300-189f-11eb-9095-2c34ad07314d.png)
-![Périphérique de carte son sous MacOS](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
+![Périphérique de carte son sous macOS](https://user-images.githubusercontent.com/20726856/97361570-02752e00-18a0-11eb-8475-e92a57ce6ae7.png)
 
-Le pilote ASIO (Périphérique) peut être sélectionné en utilisant Jamulus sous le système d'exploitation Windows. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédent est sélectionné. Sous le système d'exploitation Mac, le matériel d'entrée et de sortie peut être sélectionné.
+Le pilote ASIO (Périphérique) peut être sélectionné en utilisant Jamulus sous le système d'exploitation Windows. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédent est sélectionné. Sous macOS, le matériel d'entrée et de sortie peut être sélectionné.
 
 ### Assignation de canal d'entrée/sortie
 
@@ -149,7 +149,7 @@ Dans ce cas, le réglage du délai de tampon est désactivé et doit être modif
 
 ![Délai de tampon Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
 
-Sous Linux, utilisez l'outil de configuration Jack pour modifier la taille du tampon.
+Sous Linux, utilisez l'outil de configuration JACK pour modifier la taille du tampon.
 
 Le délai actuel du tampon a une influence sur l'état de la connexion, le taux de transfert courant et le délai global.
 Plus la taille du tampon est faible, plus la probabilité d'un voyant rouge dans l'indicateur d'état (décrochages) est élevée et plus le taux de transfert est élevé et le délai global est faible.
@@ -164,12 +164,12 @@ Le réglage du tampon est donc un compromis entre la qualité audio et le délai
 
 Le tampon de gigue compense les gigues de synchronisation du réseau et de la carte son. La taille du tampon influence donc la qualité du flux audio (le nombre de décrochages) et le délai global (plus le tampon est long, plus le délai est important).
 
-Vous pouvez définir manuellement la taille du tampon de gigue pour le client local et le serveur distant. Pour le tampon de gigue local, les décrochages dans le flux audio sont indiqués par le voyant lumineux situé sous les chariots de taille de tampon de gigue.
+Vous pouvez définir manuellement la taille du tampon de gigue pour votre client local et le serveur distant. Pour le tampon de gigue local, les décrochages dans le flux audio sont indiqués par le voyant lumineux situé sous les chariots de taille de tampon de gigue.
 Si le voyant devient rouge, un dépassement ou une sous-utilisation du tampon a eu lieu et le flux audio est interrompu.
 
 Le réglage du tampon de gigue est donc aussi un compromis entre la qualité audio et le délai global.
 
-Si le paramètre Auto est activé, les tampons de gigue du client local et du serveur distant sont automatiquement réglés en fonction des mesures de la gigue de synchronisation du réseau et de la carte son. Si la vérification automatique est activée, les chariots de la taille de tampon de gigue sont désactivés (ils ne peuvent pas être déplacés avec la souris).
+Si le paramètre Auto est activé, les tampons de gigue de votre client local et du serveur distant sont automatiquement réglés en fonction des mesures de la gigue de synchronisation du réseau et de la carte son. Si la vérification automatique est activée, les chariots de la taille de tampon de gigue sont désactivés (ils ne peuvent pas être déplacés avec la souris).
 
 ### Canaux audio
 
@@ -195,7 +195,7 @@ Plus la qualité audio est élevée, plus le débit de données de votre flux au
 
 ![Niveau de nouveau client](https://user-images.githubusercontent.com/20726856/97362173-e2923a00-18a0-11eb-8401-9ad71866f6b1.png)
 
-Ce paramètre définit le niveau du chariot d'un client nouvellement connecté, en pourcentage. Si un nouveau musicien se connecte au serveur courant, il obtiendra le niveau de chariot initial spécifié si aucun autre niveau de canal provenant d'une connexion précédente de ce même client n'a déjà été stocké. Vous pouvez configurer tous les clients d'un serveur occupé à ce niveau en utilisant Éditer > « Régler tous les chariots sur niveau d'un nouveau client ».
+Ce paramètre définit le niveau du chariot d'un client nouvellement connecté, en pourcentage. Si un nouveau utilisateur se connecte au serveur courant, il obtiendra le niveau de chariot initial spécifié si aucun autre niveau de canal provenant d'une connexion précédente de ce même utilisateur n'a déjà été stocké. Vous pouvez configurer tous les utilisateurs d'un serveur occupé à ce niveau en utilisant Éditer > « Régler tous les chariots sur niveau d'un nouveau client ».
 
 ### Thème fantaisie
 
@@ -218,7 +218,7 @@ Ce délai est introduit par le réseau et devrait être d'environ 20 à 30 ms. S
 
 Le délai global est calculé à partir du « ping » actuel et du délai introduit par les paramètres actuel du tampon.
 
-Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de compression. Assurez-vous que le débit montant n'est pas supérieur à votre vitesse montante internet disponible (vérifiez ça avec un service tel que [speedtest.net](http://speedtest.net)).
+Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de compression. Assurez-vous que le débit montant n'est pas supérieur à votre vitesse montante internet disponible (vérifiez ça avec un service tel que [librespeed.org](https://librespeed.org/)).
 
 ----
 ## Notes

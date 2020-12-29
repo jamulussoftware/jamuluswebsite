@@ -53,6 +53,4 @@ Normal server operators can also register with your custom central server so the
 
 To run a server as a central server, it should be configured with `--centralserver localhost` (that is, specify itself as the central server to query).
 
-If you want to control which servers can register with your central server, you can enable a whitelist with the `--listfilter` command line option. See the [command line options page](Command-Line-Options) for further information about this feature.
-
-See also [Command Line Options](Command-Line-Options) for other parameters you can set.
+If you want to control which servers can register with your central server, you can enable a whitelist with the `--listfilter` command line option. See the [command line options page](Command-Line-Options) for further information about this feature and other parameters you can set.

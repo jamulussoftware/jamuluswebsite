@@ -106,8 +106,7 @@ to the right and move the fader upwards until the desired reverb level is reache
 
 Controls the relative levels of the left and right local audio channels. For a mono signal
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
-an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader
-in a direction where the label above the fader shows L -x, where x is the current attenuation indicator.
+an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
 
 ### Server audio mixer
 
