@@ -46,7 +46,7 @@ sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Co
 
 ### Qjackctl : optionnel, mais recommandé
 
-[QjackCtl](https://qjackctl.sourceforge.io) est un utilitaire qui vous aide à configurer le serveur audio Jack (installé dans le cadre des dépendances ci-dessus). Installez-le, par ex., via
+[QjackCtl](https://qjackctl.sourceforge.io) est un utilitaire qui vous aide à configurer le serveur audio JACK (installé dans le cadre des dépendances ci-dessus). Installez-le, par ex., via
 
 ```shell
 sudo apt-get install qjackctl
@@ -74,19 +74,19 @@ sudo make install
 
 ## Configurez votre interface audio
 
-### Configurer Jack avec QjackCtl
+### Configurer JACK avec QjackCtl
 
-Les clients Jamulus ont besoin de [Jack](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.
+Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.
 
 1. Ouvrez le terminal de commande, par ex. avec Crtl-Alt-T et
-1. Exécutez la commande `qjackctl` vous verrez le **Jack Audio Connection Kit**
-2. Configurez votre interface audio comme suit (les paramètres exacts pour Jack dépendront des fonctionnalités de votre interface audio/carte son) :
+1. Exécutez la commande `qjackctl` vous verrez le **JACK Audio Connection Kit**
+2. Configurez votre interface audio comme suit (les paramètres exacts pour JACK dépendront des fonctionnalités de votre interface audio/carte son) :
 
 - Réglez l'**Interface audio** sur celle que vous souhaitez (il peut y en avoir plusieurs dans la liste)
 - Paramétrez la **Fréquence d'échantillonnage à 48000** 
 - Paramétrez les **Échantillons/Période à 128** et les Périodes/Tampons à 2 pour commencer
 
-Redémarrez Jack pour prendre en compte ces nouveaux paramètres.
+Redémarrez JACK pour prendre en compte ces nouveaux paramètres.
 
 ### Démarrer Jamulus
 
@@ -94,7 +94,7 @@ Ouvrez Jamulus, par ex. en ligne de commande. Si vous utilisez la ligne de comma
 
 Jamulus se trouve dans `/usr/local/bin`. Vous pouvez maintenant supprimer le répertoire des sources que vous venez de compiler.
 
-Si vous avez des problèmes de son qui se coupe (en particulier les erreurs XRUN rapportées par Jack/QJackCtl), essayez de définir des valeurs plus élevées (par exemple 256 échantillons ou 3 périodes) à l'étape 3 ci-dessus. Des valeurs plus basses (par ex. 64 échantillons) pourraient apporter de meilleures performances mais peut-être plus de problèmes avec le son. Sinon, consultez la [section dépannage](Client-Troubleshooting).
+Si vous avez des problèmes de son qui se coupe (en particulier les erreurs XRUN rapportées par JACK/QJackCtl), essayez de définir des valeurs plus élevées (par exemple 256 échantillons ou 3 périodes) à l'étape 3 ci-dessus. Des valeurs plus basses (par ex. 64 échantillons) pourraient apporter de meilleures performances mais peut-être plus de problèmes avec le son. Sinon, consultez la [section dépannage](Client-Troubleshooting).
 
 ## Tout est installé ?
 
@@ -114,6 +114,6 @@ Téléchargez les nouvelles sources conformément à la section [Obtenir les sou
 
 * Pour utiliser ce fichier, configurez le logiciel avec `qmake "CONFIG+=noupcasename" Jamulus.pro` pour vous assurer que le nom du binaire cible soit **j**amulus au lieu de **J**amulus.
 
-* Utilisateurs de Raspberry Pi : vous pourriez vouloir compiler le client sur une autre machine et exécuter le binaire sur le Raspberry Pi. Dans ce cas, les seules bibliothèques dont vous avez besoin pour l'exécuter sont celles d'un [serveur sans <abbr title="Interface utilisateur graphique">IUG</abbr>](Server-Linux#serveur-sans-iug), mais _avec_ les paquets sons Jack. En particulier, jetez un œil à la note de bas de page pour la compilation sans IUG.
+* Utilisateurs de Raspberry Pi : vous pourriez vouloir compiler le client sur une autre machine et exécuter le binaire sur le Raspberry Pi. Dans ce cas, les seules bibliothèques dont vous avez besoin pour l'exécuter sont celles d'un [serveur sans <abbr title="Interface utilisateur graphique">IUG</abbr>](Server-Linux#serveur-sans-iug), mais _avec_ les paquets sons JACK. En particulier, jetez un œil à la note de bas de page pour la compilation sans IUG.
 
 * À partir de la version 3.5.3, Jamulus n'est plus compatible avec Qt4.

@@ -149,7 +149,7 @@ Dans ce cas, le réglage du délai de tampon est désactivé et doit être modif
 
 ![Délai de tampon Windows](https://user-images.githubusercontent.com/20726856/97361808-65ff5b80-18a0-11eb-88d6-fb2131f10c75.png)
 
-Sous Linux, utilisez l'outil de configuration Jack pour modifier la taille du tampon.
+Sous Linux, utilisez l'outil de configuration JACK pour modifier la taille du tampon.
 
 Le délai actuel du tampon a une influence sur l'état de la connexion, le taux de transfert courant et le délai global.
 Plus la taille du tampon est faible, plus la probabilité d'un voyant rouge dans l'indicateur d'état (décrochages) est élevée et plus le taux de transfert est élevé et le délai global est faible.
