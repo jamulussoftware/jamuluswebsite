@@ -51,4 +51,4 @@ Vous pouvez voir toutes les options possibles prises en charge par votre version
 |    `-w` |`--welcomemessage` | Accepte le formatage  HTML et CSS en ligne (entre guillemets), ou définit le chemin d'accès vers un fichier texte. | (serveur uniquement) |
 |    `-z` |`--startminimized` | Démarrage minimisé | (serveur uniquement) |
 |       |`--ctrlmidich`     | Canal de contrôle MIDI à écouter et décalage de numéro de contrôle, format : `channel[;offset]` | (client uniquement) voir [Trucs et astuces](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) |
-|       |`--clientname`     | Titre de la fenêtre et nom du client Jack | (client uniquement) |
+|       |`--clientname`     | Titre de la fenêtre et nom du client JACK | (client uniquement) |
