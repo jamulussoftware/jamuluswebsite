@@ -45,7 +45,7 @@ On Linux, it is possible to route additional devices to JACK by using alsa_in.
 
 **Requirements:**
 
-* QJackCtl
+* QjackCtl
 * alsa
 
 **Steps:**

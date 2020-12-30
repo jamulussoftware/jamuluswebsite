@@ -51,7 +51,7 @@ Connect your instrument to the input plugs of the Behringer U-CONTROL UCA202. Pl
 
 You're done! Have fun!
 
-## Linux: Audio interface connection with QJackCtrl
+## Linux: Audio interface connection with QjackCtl
 
 Refer to the Linux [client install guide](Installation-for-Linux#configure-jack-with-qjackctl).
 
