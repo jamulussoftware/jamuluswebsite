@@ -41,6 +41,8 @@ This page lists hardware known to work or not work with Jamulus (although it may
 
 * Behringer XENYX Q802USB (USB audio) [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip).  This Behringer ASIO Driver does not appear to be very good.  Audio latency with this 'unsupported' driver seems poor - not better than ASIO4ALL.  It's good device for Mac and Linux, but perhaps not for Windows.  More testing is required.
 
+* Behringer XENYX X1832 USB (USB audio) - works fine on Ubuntu 20.04 LTS (with jamulus client 3.6.1 or 3.6.2 built from git repository and QJackCtl installed from Ubuntu package). Other operating systems (Windows, Mac, other Linuxes) not tested.
+
 * Behringer XR18/XR16/XR12 digital mixers (USB Audio)
 
 * Edirol FA-66 (FireWire) - good on Mac, Linux, and Windows [ASIO driver](https://www.roland.com/global/products/fa-66/downloads/)
