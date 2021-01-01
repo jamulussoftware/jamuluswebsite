@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: "Démonstrations de Jamulus"
+title: "Démos de Jamulus"
 lang: "fr"
 permalink: "/wiki/Demos"
 ---
