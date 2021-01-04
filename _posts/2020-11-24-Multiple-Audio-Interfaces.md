@@ -46,7 +46,7 @@ On Linux, it is possible to route additional devices to JACK by using alsa_in.
 **Requirements:**
 
 * QjackCtl
-* alsa
+* ALSA
 
 **Steps:**
 1. Follow [this tutorial](https://www.penguinproducer.com/Blog/2011/11/using-multiple-devices-with-jack/) to route the desired interface into JACK by using alsa_in.
