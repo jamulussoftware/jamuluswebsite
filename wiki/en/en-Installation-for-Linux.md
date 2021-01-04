@@ -10,11 +10,23 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 ## Jamulus packages
 
-Although we don't provide official packages, you might find Jamulus in the package manager of your distro. Have a look at this table:
+Although we don't provide official packages for every Linux distribution, you might find Jamulus in the package manager of your distro. Have a look at this table:
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223). If you don't find it in your package manager, you need to compile Jamulus from source. That's quite easy:
+There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223).
+
+### Debian and Ubuntu amd64
+
+If you're on **Debian** or **Ubuntu** (only amd64), you may try the compiled deb packages from GitHub Actions.
+
+1. Download the deb file from the [Jamulus GitHub release](https://github.com/corrados/jamulus/releases/tag/latest) page
+1. Update apt: `sudo apt-get update`
+1. Install the package: `sudo dpkg -i <Jamulus-deb-file-name>.deb`
+
+**Note:** The generated deb files will install Jamulus with a lower case "j". You can therefore start it in terminal by typing `jamulus`.
+
+If you can't use one of these options, you need to compile Jamulus from source. That's quite easy:
 
 ## Get Jamulus sources
 
