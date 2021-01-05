@@ -9,7 +9,7 @@ lang: "en"
 Thanks to Jamulus users, this page lists audio devices known to work (or not) with Jamulus.
 <!--more-->
 
-_**Note**: If they work or can also depend on your operating system (Linux, MacOS, Windows, etc.)_.
+_**Note**: If they work or not can depend on your operating system (Linux, MacOS, Windows, etc.)_.
 
 ## Updating this page
 
