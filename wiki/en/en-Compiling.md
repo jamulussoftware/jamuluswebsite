@@ -64,14 +64,14 @@ You don't need to compile Jamulus for Windows since we provide official binaries
 
 **Required software**: [Qt](https://www.qt.io/download), a compiler like Visual Studio ([Build Tools 2017 or 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) recommended), [ASIO development files](https://www.steinberg.net/en/company/developers.html)
 
-Get the Jamulus source code e.g. via git or [zip download](https://github.com/corrados/jamulus/archive/master.zip) from the [Jamulus repo](https://github.com/corrados/jamulus). Make sure that there are **no** spaces in the directory you move the jamulus directory to since it might break the Jamulus installer (if you know how to fix this issue, please open an issue on the Jamulus repo to tell us how).
+Get the Jamulus source code e.g. via git or [zip download](https://github.com/corrados/jamulus/archive/master.zip) from the [Jamulus repo](https://github.com/corrados/jamulus). Make sure that there are **no** spaces in the directory you move the `jamulus` directory to since it might break the Jamulus installer (if you know how to fix this issue, please open an issue on the Jamulus repo to tell us how).
 
 ### Compiling and building installer
 
 Most users will probably want to use this method:
 
 1. Open PowerShell
-1. Navigate to the jamulus directory
+1. Navigate to the `jamulus` directory
 1. To allow unsigned scripts, run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`. You can also revert this after having run this script. For more information see the [Microsoft PowerShell documentation page](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)
 1. Edit the $QtCompile32 and $QtCompile64 variables
 1. Run the Jamulus compilation and installer script: `.\windows\deploy_windows.ps1 C:\Qt\QtVersion`. 
