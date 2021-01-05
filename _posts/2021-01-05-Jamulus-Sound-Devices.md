@@ -1,19 +1,19 @@
 ---
 layout: post
 title: "Audio devices for Jamulus"
-lang: "en""
+lang: "en"
 heading: "Sound devices"
 lang: "en"
 ---
 
-# Sound Devices
-
 Thanks to Jamulus users, this page lists audio devices known to work (or not) with Jamulus.
-<!-- more -->
+<!--more-->
 
 _**Note**: If they work or not depends on your operating system (Linux, MacOS, Windows, etc.)_.
 
-You can update this page with the information you have. **Please indicate the platform(s) you are using!**. Just open an issue on the 
+## Updating this page
+
+You can update this page with the information you have. **Please indicate the platform(s) you are using!**. Just [open an issue with the sound device topic on the Jamulus documentation repo](https://github.com/jamulussoftware/jamuluswebsite/issues/new?template=newsounddevice.md).
 
 ## Audio devices known to work with Jamulus
 
@@ -30,7 +30,7 @@ Latency is good under **Linux**. You can't disable local monitoring (or we haven
 Set the PC/Mix dialog box to 100% PC to listen to Jamulus' mix on the headphone output.  
 Tested with a Raspberry Pi 4 under **Raspberry Pi OS Buster**, kernel version 4.19.
 
-* **[Behringer UGC102](https://www.behringer.com/behringer/product?modelCode=P0198)**, Guitar-to-USB Interface  (guitar and bass) 
+* **[Behringer UGC102](https://www.behringer.com/behringer/product?modelCode=P0198)**, Guitar-to-USB Interface  (guitar and bass)
 _Note: On **macOS**, this device appears as "USB Audio Codec". When selected for input and output in Jamulus, the **UGC102** headphone jack is the output (and cannot be used for input)._
 
 #### Audio interfaces / digital mixing consoles
@@ -39,7 +39,7 @@ _Note: On **macOS**, this device appears as "USB Audio Codec". When selected for
 Works great under **Linux** (Ubunutu 20.04 or Raspberry Pi OS (Buster)), **macOS** (not tested on Big Sur) or **Windows 10** with the [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe).  
 The monitoring of the Jamulus mix is done by moving the "MONITOR MIX" completely to the right to "USB". See the [official manual](http://eu1.download.solidstatelogic.com/2%20Plus%20/SSL%202%20Plus%20User%20Guide_ENGLISH.pdf).
 
-* **[Ammoon AGM02](https://www.ammoon.com/p-i3974.html)** and **[Ammoon AGM04](https://www.ammoon.com/p-i4049.html)**, low-cost USB 2-channel and 4-channel compact mixing consoles 
+* **[Ammoon AGM02](https://www.ammoon.com/p-i3974.html)** and **[Ammoon AGM04](https://www.ammoon.com/p-i4049.html)**, low-cost USB 2-channel and 4-channel compact mixing consoles
 Both tested on **macOS Catalina**.  
 The **AGM02** tested on **Windows 10**. On Windows 10, with ASIO4ALL, the **AGM02** can be used as an input, and the onboard audio as the output. There is no way to monitor only the USB return signal on the **AGM02**.
 _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://artproaudio.com/product/usbmix4-four-channel-mixer-usb-audio-interface/)._
@@ -56,7 +56,7 @@ On Windows, [ASIO4ALL](http://www.asio4all.org/) driver works OK but not great. 
 * **[Behringer UMC202HD](https://www.behringer.com/product.html?modelCode=P0BJZ)**, **UMC204HD**, et **UMC404HD** USB digital audio interfaces  
 [pilotes ASIO pour Windows 7 à 10](http://downloads.music-group.com/software/behringer/UMC/UMC-Driver_4-59-0.zip)
 
-* **[Behringer X32](https://www.behringer.com/behringer/product?modelCode=P0ASF)** X-USB digital mixing desk 32-in/32-out 
+* **[Behringer X32](https://www.behringer.com/behringer/product?modelCode=P0ASF)** X-USB digital mixing desk 32-in/32-out
 
 * **[Behringer XR18](https://www.behringer.com/product.html?modelCode=P0BI8)** (XR serie), USB digital mixing consoles
 
@@ -78,7 +78,7 @@ Tested on **Windows 10** with 64 sample buffer and am getting great sound and to
 Works directly on **macOS** with a beautiful sound even with un-balanced jack.  
 Works on a **Raspberry PI4** provided `jackd` version used is the one from `/usr/bin` (Tweaking `raspijamulus.sh`). Not tested on PC.
 
-* **[Steinberg UR22 MKII](https://www.steinberg.net/en/products/audio_interfaces/ur_series/models/ur22mkii.html)**, USB digital audio interface 
+* **[Steinberg UR22 MKII](https://www.steinberg.net/en/products/audio_interfaces/ur_series/models/ur22mkii.html)**, USB digital audio interface
 Sounds great, can achieve 32 frame buffer and works on **Windows** and **Linux**.  
 Not tested on **macOS**.
 

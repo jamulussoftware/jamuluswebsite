@@ -41,7 +41,7 @@ Also - [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS
 
 In general, your device must support a sample rate of **48kHz** (DVD quality) and should allow you to listen to the computer's audio signal. On Windows it's recommended to choose a device with a native [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) driver.
 
-See [the list of known good hardware](Sound-Devices).
+See [the community list of known good hardware](/kb/2021/01/05/Jamulus-Sound-Devices.html).
 
 ## Other guides
 * [This excellent guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) might also be worth a view.
