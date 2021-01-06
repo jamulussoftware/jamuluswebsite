@@ -63,7 +63,7 @@ Will build the file and make it available in `./Release/Jamulus.app`
 You don't need to compile Jamulus for Windows since we provide official binaries, but if you really want to, follow the instructions below.
 
 ### Required Software
-* A compiler like [Visual Studio](https://visualstudio.microsoft.com) (You only need [Build Tools 2017 or 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) but can also choose the full IDE from the [Visual Studio download page](https://visualstudio.microsoft.com/downloads/))
+* A compiler like [Visual Studio](https://visualstudio.microsoft.com) (You only need [Build Tools 2017 or 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) but can also choose to download and install the full IDE from the [Visual Studio download page](https://visualstudio.microsoft.com/downloads/))
 * [Qt](https://www.qt.io/download)
     * Use the free GPLv2 license for Open Source development
     * To determine the Qt version you need, check [qt-installer-windows.qs](https://github.com/corrados/jamulus/blob/master/windows/qt-installer-windows.qs): under INSTALL_COMPONENTS you will see `qt.qt5.[version]`, e.g., 5123 means version 5.12.3.
