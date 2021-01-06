@@ -62,8 +62,16 @@ Will build the file and make it available in `./Release/Jamulus.app`
 ## Windows
 You don't need to compile Jamulus for Windows since we provide official binaries, but if you really want to, follow the instructions below.
 
-**Required software**: [Qt](https://www.qt.io/download), a compiler like Visual Studio ([Build Tools 2017 or 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) recommended), [ASIO development files](https://www.steinberg.net/en/company/developers.html)
+### Required Software
+* A compiler like [Visual Studio](https://visualstudio.microsoft.com) (You only need [Build Tools 2017 or 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) but can also choose the full IDE from the [Visual Studio download page](https://visualstudio.microsoft.com/downloads/))
+* [Qt](https://www.qt.io/download)
+    * Use the free GPLv2 license for Open Source development
+    * To determine the Qt version you need, check [qt-installer-windows.qs](https://github.com/corrados/jamulus/blob/master/windows/qt-installer-windows.qs): under INSTALL_COMPONENTS you will see `qt.qt5.[version]`, e.g., 5123 means version 5.12.3.
+    * Select Components during installation: Expand the Qt section, find the matching version, e.g., **Qt 5.12.3**, and add the compiler components for your compiler, e.g., `MSVC 2017 32-bit/64-bit` for Visual Studio 2019
+* [ASIO development files](https://www.steinberg.net/de/company/developer.html)
 
+
+### Download Jamulus source code
 Get the Jamulus source code e.g. via git or [zip download](https://github.com/corrados/jamulus/archive/master.zip) from the [Jamulus repo](https://github.com/corrados/jamulus). Make sure that there are **no** spaces in the directory you move the `jamulus` directory to since it might break the Jamulus installer (if you know how to fix this issue, please open an issue on the Jamulus repo to tell us how).
 
 ### Compiling and building installer
@@ -79,9 +87,10 @@ Most users will probably want to use this method:
 
 ### Compiling only
 
-1. Get and copy the [ASIOSDK](https://www.steinberg.net/de/company/developer.html) development files in `[\path\to\jamulus\source]\windows` directory so that, e.g., the
-  directory `[\path\to\jamulus\source]\ASIOSDK2\common` exists
-1. Open Jamulus.pro in Qt Creator then compile & run
+1. Create a folder under `\windows` called ASIOSDK2
+1. Download the [ASIOSDK](https://www.steinberg.net/asiosdk), open the top level folder in the .zip file and copy the contents into `[\path\to\jamulus\source]\windows\ASIOSDK2` so that, e.g., the folder `[\path\to\jamulus\source]\windows\ASIOSDK2\common` exists
+1. Open Jamulus.pro in Qt Creator, configure the project with a default kit, then compile & run
+
 
 ## General notes
 
