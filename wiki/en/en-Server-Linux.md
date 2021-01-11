@@ -20,7 +20,7 @@ If you plan to run a server on your desktop machine (and you have installed the 
 
 Hit return and you should see the server control window. You can stop the server by closing the server window, or by typing CTRL+C in the terminal.
 
-**To configure the server**, please refer to [the Windows & Macintosh instructions](Server-Win-Mac).
+**To configure the server**, please refer to [the Windows & macOS instructions](Server-Win-Mac).
 
 See also [Command Line Options](Command-Line-Options) for other parameters you can set.
 

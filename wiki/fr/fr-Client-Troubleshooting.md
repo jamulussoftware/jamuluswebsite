@@ -54,7 +54,7 @@ Vérifiez d'abord que vous avez le bon serveur de genre musical sélectionné da
 
 ### Vous ne voyez pas du tout la liste des serveurs ?
 
-Au Royaume-Uni (et éventuellement dans d'autres régions/routeurs), le réglage du modem Internet par câble de Virgin Media peut poser problème. « Block Fragmented IP Packets » ne doit pas être cochée. Pour les autres routeurs/FAI (fournisseur d'accès internet), essayez également de désactiver le SPI (Stateful Packet Inspection) et si cela résout le problème, vous pouvez décider de le laisser désactivé ou non.
+Au Royaume-Uni (et éventuellement dans d'autres régions/routeurs), le réglage du modem internet par câble de Virgin Media peut poser problème. « Block Fragmented IP Packets » ne doit pas être cochée. Pour les autres routeurs/FAI (fournisseur d'accès internet), essayez également de désactiver le SPI (Stateful Packet Inspection) et si cela résout le problème, vous pouvez décider de le laisser désactivé ou non.
 
 Dans certains cas, il se peut que ce soit votre FAI qui bloque votre utilisation pour Jamulus. Voir la note sur la [page de dépannage du serveur](Server-Troubleshooting#personne-ne-peut-se-connecter-à-mon-serveur-mais-je-peux-my-connecter-localement) à propos de « Personne ne peut se connecter à mon serveur ».
 

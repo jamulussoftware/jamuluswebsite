@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: "Démonstrations de Jamulus"
+title: "Démos de Jamulus"
 lang: "fr"
 permalink: "/wiki/Demos"
 ---
@@ -20,6 +20,6 @@ permalink: "/wiki/Demos"
 * [Les IP Rockers en live sur Jamulus](https://soundcloud.com/dematteoss/sets/the-ip-rockers-live-on-jamulus)
 
 * [Vidéo d'introduction montrant l'installation avec des instruments acoustiques](https://www.youtube.com/watch?v=lB4ZxDb9vnU) (pas vraiment une démo)
-* [WorldJam](https://worldjam.vip/) Chaque samedi soir il y a une session « Jam » mondiale en ligne à travers Internet.
+* [WorldJam](https://worldjam.vip/) Chaque samedi soir il y a une session « Jam » mondiale en ligne à travers internet.
 
 ![Un bœuf Jamulus typique !](https://user-images.githubusercontent.com/4561747/79686157-1f1c1380-8236-11ea-9fdb-8a791dd2713f.png)

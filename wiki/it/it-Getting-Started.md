@@ -11,7 +11,7 @@ permalink: "/wiki/Getting-Started"
 
 1. **Un computer** con installato **Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 o versioni successive), oppure **Linux**.
 1. **Una connessione cablata ad internet** (non usare il Wi-Fi, rende problematico l'uso del software creando problemi di ascolto). Una connessione in fibra offre le caratteristiche ideali per l'utilizzo[^1].
-1. **Usare le cuffie - non le casse** per prevenire effetti di echo o larsen e minimizzare il delay[^2].
+1. **Usare le cuffie con filo - non le casse** per prevenire effetti di echo o larsen e minimizzare il delay[^2].
 
 ## Massimizza la qualità, minimizza i ritardi
 
@@ -25,7 +25,7 @@ Raccomandiamo - anche se per cominciare ne puoi fare a meno - di usare una sched
 
 ### 3. Connettersi a server con latenza bassa
 
-E' consigliabile scegliere server dalla lista che riportano ping inferiori o uguali a 15ms per un ottima esperienza di utilizzo (anche se ci sono altre cose che possono influenzare le prestazioni). Collegarsi a server con ping più alti potrebbe compromettere il corretto funzionamento del software.
+E' consigliabile scegliere server dalla lista che riportano ping inferiori o uguali a 15ms per un ottima esperienza di utilizzo (anche se ci sono altre cose che possono influenzare le prestazioni). Collegarsi a server con ping più alti può comportare qualche possibile difficoltà in più.
 
 Ora che hai acquisito le nozioni di base, possiamo cominciare:
 
@@ -52,7 +52,7 @@ In altre parole **evita** di ascoltare il segnale diretto del tuo strumento/micr
 
 Risulta sicuramente complicato per cantanti o musicisti di strumenti acustici ma, anche se la connessione è buona, quando non si ascolta il **segnale che proviene dal server**, la scincronizzazione con gli altri ne risentirà. _(A scanso di equivoci: questo non ha nulla a che fare con i controlli “mute” in Jamulus.)_
 
-Further information about how to avoid listening to yourself (and help with other problems) can be found in the [Troubleshooting FAQ section](Client-Troubleshooting) (_currently under construction_)
+Si possono trovare ulteriori informazioni su come evitare di sentire se stessi (e aiuto su altri problemi) in [Troubleshooting FAQ section](Client-Troubleshooting) (_currently under construction_)
 
 ## Come funziona Jamulus (in generale)
 
@@ -62,5 +62,5 @@ Further information about how to avoid listening to yourself (and help with othe
 _Jamulus funziona secondo il principio del client-server. L’audio di tutti viene inviato a un server, mixato ed elaborato. Successivamente l’audio viene inviato a ogni client. Se un server viene reso pubblico e registrato su un server centrale, le sue informazioni verranno trasmesse a tutti i client._
 
 ## Note a pié di pagina
-[^1]: [Dettagli di connessione](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Una connessione con 10Mbits in down e 1Mbps in up non è sufficiente, è probabile riscontrare problemi relativi alla connettività.
-[^2]: Cuffie-Bluetooth  di solito inseriscono latenza. Per questo è consigliabile usare cuffie con filo. In particolare per cantanti e musicisti di strumenti acustici (leggere [il paragrafo relativo](Getting-Started#having-trouble-cant-keep-in-time) per maggiori informazioni).
+[^1]: [Dettagli di connessione](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Se hai una connessione con 10Mbits in down e 1Mbps in up, è improbabile riscontrare problemi relativi alla connettività.
+[^2]: Cuffie-Bluetooth  di solito inseriscono troppa latenza. Per questo è consigliabile usare cuffie con filo. In particolare per cantanti e musicisti di strumenti acustici (leggere [il paragrafo relativo](Getting-Started#having-trouble-cant-keep-in-time) per maggiori informazioni).

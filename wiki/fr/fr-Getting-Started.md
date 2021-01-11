@@ -10,12 +10,12 @@ permalink: "/wiki/Getting-Started"
 ## Pré-requis
 
 1. **Un ordinateur** au moins sous **Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 ou plus récent), ou **Linux**.
-1. **Une connection Internet filaire** (n'utilisez pas le Wi-Fi, cela va causer des problèmes de son). La plupart des connexions à haut-débit suffisent[^1].
+1. **Une connection internet filaire** (n'utilisez pas le Wi-Fi, cela va causer des problèmes de son). La plupart des connexions à haut-débit suffisent[^1].
 1. **Des casques ou écouteurs filaires - pas de haut parleurs** pour éviter de l'écho ou des larsens et pour minimiser le délai[^2].
 
 ## Maximiser la qualité et diminuer le délai
 
-### 1. Réduisez votre trafic Internet et fermez les programmes de votre PC
+### 1. Réduisez votre trafic internet et fermez les programmes de votre PC
 
 Essayez de vous assurer que rien sur votre machine ou votre réseau (comme un flux vidéo) ne soit en concurrence avec Jamulus lorsque vous l'utilisez.
 
