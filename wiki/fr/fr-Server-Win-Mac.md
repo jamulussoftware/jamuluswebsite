@@ -12,9 +12,9 @@ _(Note: les copies d'écran ont été faite avec l'interface en anglais, les ter
 
 * **Utilisateurs de Windows** : démarrez le serveur en utilisant l'entrée « Jamulus Server » du menu démarrer de Windows.
 
-* **Utilisateurs de macOS** : double-cliquez sur l'icône « Jamulus server » dans Applications (en supposant que vous y avez placé les fichiers de l'installation conformément conformément à [ces instructions](Installation-for-macOS)).
+* **Utilisateurs de macOS** : double-cliquez sur l'icône « Jamulus server » dans Applications (en supposant que vous y avez placé les fichiers de l'installation conformément conformément à [ces instructions](Installation-for-Macintosh)).
 
-* **Utilisateurs de Linux** : veuillez vous référer aux [instructions serveur avec IUG](Server-Linux#running-a-server-with-the-gui).
+* **Utilisateurs de Linux** : veuillez vous référer aux [instructions serveur avec IUG](Server-Linux#exécuter-un-serveur-avec-iug).
 
 <img width="627" alt="configuration du serveur" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
 
@@ -40,7 +40,7 @@ Activez l'enregistrement du serveur en paramétrant d'abord le répertoire d'enr
 
 _Note : lorsque votre serveur enregistre, les clients afficheront un message indiquant que l'enregistrement est en cours._
 
-Pour les serveurs sans <abbr title="Interface utilisateur graphique">IUG</abbr> : vous pouvez contrôler la fonction d'enregistrement en [suivant ces instructions](Server-Linux#gestion-des-enregistrements).
+Pour les serveurs sans <abbr title="Interface utilisateur graphique">IUG</abbr> : vous pouvez contrôler la fonction d'enregistrement en [suivant ces instructions](Server-Linux#contrôler-les-enregistrements).
 
 ### Autres options
 
@@ -48,7 +48,7 @@ Pour les serveurs sans <abbr title="Interface utilisateur graphique">IUG</abbr> 
 
 **Utilisateurs Windows** : si vous souhaitez que le serveur se lance automatiquement au démarrage du système, cochez l'option correspondante.
 
-(Laissez le champ « Adresse personnalisée du serveur central » vide, sauf si vous devez inscrire votre serveur sur un [serveur central privé](Choosing-a-Server-Type#3-serveur-central))
+(Laissez le champ « Adresse personnalisée du serveur central » vide, sauf si vous devez inscrire votre serveur sur un [serveur central privé](Choosing-a-Server-Type#3-central))
 
 ***
 
