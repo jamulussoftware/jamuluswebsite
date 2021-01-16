@@ -42,7 +42,7 @@ Vous pouvez voir toutes les options possibles prises en charge par votre version
 |    `-n` |`--nogui`          | Désactiver l'IUG | (client et serveur) |
 |    `-o` |`--serverinfo`     | Détails sur l'emplacement du serveur dans le format : <br/>`[nom];[ville];[valeur de la locale]` (voir [valeurs](https://doc.qt.io/qt-5/qlocale.html#Country-enum))| (serveurs publics uniquement) |
 |    `-p` |`--port`           | Numéro de port UDP local. 22124 par défaut | (serveur uniquement) |
-|    `-R` |`--recording`      | Inclure un chemin d'accès en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire). | (serveur uniquement) Voir la description dans [paramétrage du serveur](Server-Win-Mac#recording). |
+|    `-R` |`--recording`      | Inclure un chemin d'accès en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire). | (serveur uniquement) Voir la description dans [paramétrage du serveur](Server-Win-Mac##enregistrement). |
 |       | `--norecord`      | Démarrer l'enregistreur avec l'enregistrement désactivé | (serveur uniquement) |
 |    `-s` |`--server`         | Démarrer en mode serveur | (serveur uniquement) [Voir note](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Désactiver les traductions | (client et serveur) |
@@ -50,5 +50,5 @@ Vous pouvez voir toutes les options possibles prises en charge par votre version
 |    `-u` |`--numchannels`    | Nombre maximum d'utilisateurs. 10 par défaut, 50 au maximum | (serveur  uniquement) |
 |    `-w` |`--welcomemessage` | Accepte le formatage  HTML et CSS en ligne (entre guillemets), ou définit le chemin d'accès vers un fichier texte. | (serveur uniquement) |
 |    `-z` |`--startminimized` | Démarrage minimisé | (serveur uniquement) |
-|       |`--ctrlmidich`     | Canal de contrôle MIDI à écouter et décalage de numéro de contrôle, format : `channel[;offset]` | (client uniquement) voir [Trucs et astuces](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) |
+|       |`--ctrlmidich`     | Canal de contrôle MIDI à écouter et décalage de numéro de contrôle, format : `channel[;offset]` | (client uniquement) voir [Trucs et astuces](Tips-Tricks-More#utilisation-de-ctrlmidich-pour-les-contrôleurs-midi) |
 |       |`--clientname`     | Titre de la fenêtre et nom du client JACK | (client uniquement) |
