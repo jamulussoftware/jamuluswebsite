@@ -35,16 +35,11 @@ Maintenant que vous avez les bases, c'est parti :
   <a href="Installation-for-Linux" class="button fx-col-100-xs">Pour les utilisateurs de Linux</a>
 </div>
 
-Découvrez aussi : [Jamulus OS !](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) Exécutez Jamulus sur n'importe quel ordinateur avec une clé USB (uniquement pour les systèmes en 64 bits). Vérifiez la compatibilité de votre matériel et profitez-en !
+Découvrez aussi : [Jamulus OS ! (en anglais)](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) Exécutez Jamulus sur n'importe quel ordinateur avec une clé USB (uniquement pour les systèmes en 64 bits). Vérifiez la compatibilité de votre matériel et profitez-en !
 
 ## Matériel recommandé
 
-Voir [la liste de bon matériel connu](Sound-Devices) et la [configuration du matériel](Hardware-Setup).
-
-
-Si vous installez Jamulus, jetez un coup d'œil [la configuration matérielle](Hardware-Setup).
-
-Pour de plus amples informations à propos de l'utilisation de Jamulus, regardez [le manuel d'aide](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+Voir [la liste de bon matériel connu (en anglais)](Sound-Devices) et la [configuration du matériel](Hardware-Setup).
 
 ## D'autres guides
 * [Cet excellent guide (en)](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} par [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) pourrait aussi vous intéresser.
