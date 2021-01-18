@@ -28,7 +28,7 @@ La première fois que vous essaierez de double-cliquer sur Jamulus pour l'ouvrir
 Pour ouvrir Jamulus, naviguer vers le dossier Applications via le Finder, cliquez sur Jamulus, faites un clic-droit (ou un contrôle-clic) et sélectionnez « Ouvrir » dans le haut du menu.
 
 Vous aurez alors une version légèrement différente du même message, qui vous permettra de cliquer sur "Ouvrir" et de continuer à l'exécuter. Cet avertissement ne s'affichera plus et il suffira après ça de double-cliquer dessus pour le lancer.
-Pour plus d'informations à propos de cet avertissement, consultez [cette page d'assistance Apple](https://support.apple.com/fr-fr/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"} (en anglais).
+Pour plus d'informations à propos de cet avertissement, consultez [cette page d'assistance Apple (en anglais)](https://support.apple.com/fr-fr/guide/mac-help/mh40616/mac){: target="_blank" rel="noopener noreferrer"}.
 
 ## Tout est installé ?
 
