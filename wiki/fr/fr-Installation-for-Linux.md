@@ -12,11 +12,11 @@ Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started).
 
 ## Paquets jamulus
 
-Bien que nous ne fournissions pas de paquets officiels, vous pourriez trouver Jamulus dans le gestionnaires de paquets de votre distribution. Consultez ce tableau :
+Bien que nous ne fournissions pas de paquets officiels, vous pourriez trouver Jamulus dans le gestionnaire de paquets de votre distribution. Consultez ce tableau :
 
 [![Statut d'empaquetage](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-Il existe aussi une liste de [paquets non officiels pour les différentes distributions ici](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"} (en anglais). Si vous ne le trouvez pas dans votre gestionnaire de paquet, vous devrez compiler Jamulus depuis le code source. C'est assez simple :
+Il existe aussi une liste de [paquets non officiels pour les différentes distributions ici (en anglais)](https://github.com/corrados/jamulus/issues/223){: target="_blank" rel="noopener noreferrer"}. Si vous ne le trouvez pas dans votre gestionnaire de paquet, vous devrez compiler Jamulus depuis le code source. C'est assez simple :
 
 ## Obtenir les sources de Jamulus
 
@@ -52,7 +52,7 @@ sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Co
 sudo apt-get install qjackctl
 ```
 
-Vous pouvez également envisager d'utiliser un [noyau à faible latence](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (ex. pour Ubuntu 18.04 : `sudo apt-get install linux-lowlatency-hwe-18.04`).
+Vous pouvez également envisager d'utiliser un [noyau à faible latence (en anglais)](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (ex. pour Ubuntu 18.04 : `sudo apt-get install linux-lowlatency-hwe-18.04`).
 
 
 ## Compilons ce vilain garçon
@@ -76,7 +76,7 @@ sudo make install
 
 ### Configurer JACK avec QjackCtl
 
-Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.
+Les clients Jamulus ont besoin de [JACK (en anglais)](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"} pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.
 
 1. Ouvrez le terminal de commande, par ex. avec Crtl-Alt-T et
 1. Exécutez la commande `qjackctl` vous verrez le **JACK Audio Connection Kit**
@@ -114,6 +114,6 @@ Téléchargez les nouvelles sources conformément à la section [Obtenir les sou
 
 * Pour utiliser ce fichier, configurez le logiciel avec `qmake "CONFIG+=noupcasename" Jamulus.pro` pour vous assurer que le nom du binaire cible soit **j**amulus au lieu de **J**amulus.
 
-* Utilisateurs de Raspberry Pi : vous pourriez vouloir compiler le client sur une autre machine et exécuter le binaire sur le Raspberry Pi. Dans ce cas, les seules bibliothèques dont vous avez besoin pour l'exécuter sont celles d'un [serveur sans <abbr title="Interface utilisateur graphique">IUG</abbr>](Server-Linux#serveur-sans-iug), mais _avec_ les paquets sons JACK. En particulier, jetez un œil à la note de bas de page pour la compilation sans IUG.
+* Utilisateurs de Raspberry Pi : vous pourriez vouloir compiler le client sur une autre machine et exécuter le binaire sur le Raspberry Pi. Dans ce cas, les seules bibliothèques dont vous avez besoin pour l'exécuter sont celles d'un [serveur sans <abbr title="Interface utilisateur graphique">IUG</abbr>](Server-Linux#exécuter-un-serveur-sans-iug), mais _avec_ les paquets sons JACK. En particulier, jetez un œil à la note de bas de page pour la compilation sans IUG.
 
 * À partir de la version 3.5.3, Jamulus n'est plus compatible avec Qt4.
