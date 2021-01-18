@@ -49,9 +49,9 @@ De plus amples informations sur l'utilisation de Jamulus peuvent être trouvées
 Si vous avez besoin d'aide ou voulez contribuer au projet Jamulus, vous pouvez consulter les liens suivants :
 
 ### Forums de discussion
-Pour de l'aide, du tchate, et des discussions générales à propos de Jamulus : jetez un œil aux [forums sur Sourceforge](https://sourceforge.net/p/llcon/discussion/) (en anglais).
+Pour de l'aide, du tchate, et des discussions générales à propos de Jamulus : jetez un œil aux [forums sur Sourceforge (en anglais)](https://sourceforge.net/p/llcon/discussion/).
 
 ### Développement et contribution
-Si vous voulez contribuer au logiciel Jamulus, jetez un œil au [dépôt Github de Jamulus](https://github.com/corrados/jamulus/) (en anglais) et y lire le fichier de contribution.
+Si vous voulez contribuer au logiciel Jamulus, jetez un œil au [dépôt Github de Jamulus (en anglais)](https://github.com/corrados/jamulus/) et y lire le fichier de contribution.
 
 <!-- En outre, vous pouvez aussi contribuer à cette documentation : voyez le [dépôt GitHub du site de Jamulus](https://github.com/jamulussoftware/jamuluswebsite) et consultez y le fichier de contribution. -->
