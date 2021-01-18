@@ -9,8 +9,8 @@ permalink: "/wiki/Installation-for-Windows"
 
 Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started).
 
-1. **Téléchargez et installez un pilote ASIO**. Il est recommandé d'utiliser une interface audio ou une carte son avec un pilote ASIO natif. Si vous n'en avez pas (en particulier pour les cartes son internes), installez ce [pilote ASIO gratuit (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} avant d'installer Jamulus.
-1. [Téléchargez et installez Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. Si vous avez un avertissement de SmartScreen, cliquez sur « Plus d'infos » et « Exécuter quand même » pour installer Jamulus. C'est nécessaire car nous ne payons pas encore pour signer le code.
+1. **Téléchargez et installez un pilote ASIO**. Il est recommandé d'utiliser une interface audio ou une carte son avec un pilote ASIO natif. Si vous n'en avez pas (en particulier pour les cartes son internes), installez ce [pilote ASIO gratuit (ASIO4All) (en anglais)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} avant d'installer Jamulus.
+1. [Téléchargez et installez Jamulus (en anglais)](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. Si vous avez un avertissement de SmartScreen, cliquez sur « Plus d'infos » et « Exécuter quand même » pour installer Jamulus. C'est nécessaire car nous ne payons pas encore pour signer le code.
 1. **Lancez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application.
 1. **Configurez votre carte son**. Lorsque vous aurez fini, vous devrez configurer votre matériel audio. Regardez comment configurer ASIO4All si vous l'utilisez ([défilez vers le bas](#configuration-de-asio4all)), et consultez ensuite la [Configuration du matériel](Hardware-Setup).
 
@@ -43,9 +43,9 @@ Avant de démarrer avec Jamulus :
 Si rien ne fonctionne, essayez tout d'abord de **redémarrer Jamulus et/ou votre ordinateur**.
 Ensuite, essayez de **configurer les entrées/sorties à nouveau**. Les entrées/sorties actives et accessibles affichent un bouton marche/arrêt allumé et un bouton de lecture. Si vous voyez une croix rouge ou un symbole jaune, vous devrez peut-être fermer d'autres applications comme votre navigateur, Zoom…
 
-Regardez cette [vidéo](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} (en anglais) de @trombonepizza qui donne des informations plus détaillées sur la configuration d'ASIO4All.
+Regardez cette [vidéo (en anglais)](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} de @trombonepizza qui donne des informations plus détaillées sur la configuration d'ASIO4All.
 
-Des informations officielles plus détaillées sur la façon de configurer ASIO4All sont aussi documentées dans les [FAQ officielles d'ASIO4All sur le site web d'ASIO4All](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} ainsi que dans le manuel d'ASIO4All. Vous trouverez très probablement ceci sur votre bureau ou dans le dossier où le binaire d'ASIO4All est installé (généralement `C:\Program Files (x86)\ASIO4ALL v2\`).
+Des informations officielles plus détaillées sur la façon de configurer ASIO4All sont aussi documentées dans la [FAQ officielle d'ASIO4All sur le site web d'ASIO4All (en anglais)](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} ainsi que dans le manuel d'ASIO4All. Vous trouverez très probablement ceci sur votre bureau ou dans le dossier où le binaire d'ASIO4All est installé (généralement `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## Tout est installé ?
 
