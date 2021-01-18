@@ -23,6 +23,7 @@ If you're on **Debian** or **Ubuntu** (only amd64), you may try the compiled deb
 1. Download the deb file from the [Jamulus GitHub release](https://github.com/corrados/jamulus/releases/tag/latest) page
 1. Update apt: `sudo apt-get update`
 1. Install the package: `sudo dpkg -i <Jamulus-deb-file-name>.deb`
+1. Since Jamulus needs JACK, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
 
 **Note:** The generated deb files will install Jamulus with a lower case "j". You can therefore start it in terminal by typing `jamulus`.
 
