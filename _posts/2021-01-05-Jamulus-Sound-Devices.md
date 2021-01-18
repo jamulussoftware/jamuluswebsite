@@ -131,19 +131,20 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 ***
 
-**[Berhinger XENYX serie](https://www.behringer.com/series.html?category=R-BEHRINGER-XENYXSERIES)**, USB digital audio interfaces
+**[Berhinger XENYX series](https://www.behringer.com/series.html?category=R-BEHRINGER-XENYXSERIES)**, USB digital audio interfaces
 
 **Windows**: Works, but not great. The [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) does not appear to be very good. Audio latency with this "unsupported" driver seems poor - not better than ASIO4ALL.
 
 **macOS**: Works great.
 
-**Linux**: Works great.
+**Linux**: Works great. 
 
+Tested Behringer XENYX X1832 USB (USB audio) on Ubuntu 20.04 LTS which works fine. 
 _More testing required._
 
 ***
 
-**[Focusrite Scarlett serie](https://focusrite.com/en/scarlett)**, USB digital audio interfaces
+**[Focusrite Scarlett range](https://focusrite.com/en/scarlett)**, USB digital audio interfaces
 
 **Windows**: Works great. If you have issues with the buffer size going to 136, download the updated driver version `4.64.15.598` from [http://beta.focusrite.com/](http://beta.focusrite.com/)
 
