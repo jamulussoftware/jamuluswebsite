@@ -21,9 +21,10 @@ To provide the lowest latency, Jamulus uses [ASIO](https://en.wikipedia.org/wiki
 ### Setting up ASIO4ALL
 *ASIO4ALL is not recommended if your sound card/audio interface provides its own ASIO driver, since that might have better latency.*
 
-For ASIO4ALL, you may need to experiment a bit to find the right configuration since every computer is a bit different.
+For ASIO4ALL ([download](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}), you may need to experiment a bit to find the right configuration since every computer is a bit different.
 
 **Tip:** Setup your sound card while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly setup, but first read on.
+
 
 Before you start with Jamulus:
 1. **Close all applications** (especially those which could access your sound card like your browser/media player) since Jamulus needs exclusive access to your sound card. Other programs will not be able to use audio if ASIO4ALL and Jamulus are running.
