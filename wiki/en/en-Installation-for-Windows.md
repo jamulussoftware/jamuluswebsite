@@ -15,8 +15,8 @@ Make sure you read the [Getting Started](Getting-Started) page.
 You can also [compile your own binary](Compiling) if you feel so inclined.
 
 ***
-# ASIO
-## Setting up ASIO4All
+## ASIO
+### Setting up ASIO4All
 *Most internal soundcards need this driver. ASIO4All is not recommended if your audio interface provides its own ASIO driver, since that might have better latency.*
 
 For ASIO4All ([download](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}), you may need to experiment a bit to find the right configuration since every computer is a bit different. Setup your soundcard while you're connected to a server to hear your instrument or voice and check if everything is correctly setup.
