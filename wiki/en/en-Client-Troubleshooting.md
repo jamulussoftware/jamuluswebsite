@@ -10,7 +10,7 @@ permalink: "/wiki/Client-Troubleshooting"
 ### Don’t hear any sound/Others don’t hear you?
 Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your soundcard. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://sourceforge.net/p/llcon/discussion/software/) for guidance.
 
-**Windows users (ASIO4All)**: If you’re using the ASIO4All driver have a look at the [ASIO4All setup section](Installation-for-Windows#setting-up-asio4all)
+**Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4LL setup section](Installation-for-Windows#setting-up-asio4all)
 
 ### You all sound OK, but it's difficult to keep together
 
@@ -26,7 +26,7 @@ You can test whether you are hearing your signal correctly by doing the followin
 
 **If you are still having problems**, try asking on the [hardware forum](https://sourceforge.net/p/llcon/discussion/hardware/). Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options.
 
-Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) to understand how to adjust your setup to help with this.
+Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this.
 
 ### Can't work out your mic settings?
 
@@ -50,7 +50,7 @@ You can set your "New Client Level" to a low value (e.g. 10), or set the musicia
 
 ### Can't see the server you want to join?
 
-First check that you have the right genre server selected in your Connect Setup window. But sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](http://explorer.jamulus.io/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it.
+First check that you have the right genre server selected in your Connect Setup window. But sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it.
 
 ### Not seeing a list of servers at all?
 

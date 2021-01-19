@@ -39,7 +39,7 @@ Once any issues with musicians have been solved in this way, you can then invest
 
 ### Bandwidth – do you have enough?
 
-A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs (0.8Mbps) up and down. So if you have a 10Mbits down and 1Mbps up broadband connection, **you may start running out of bandwidth if a fifth player joins**, particularly if other musicians choose settings that increase their usage. You may want to [check that you have enough speed](https://fast.com) for that. [Read more about bandwidth use](Network-Requirements) at different quality settings.
+A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800 Kbit/s (0.8 Mbit/s) up and down. So if you have a 10 Mbit/s down and 1 Mbit/s up broadband connection, **you may start running out of bandwidth if a fifth player joins**, particularly if other musicians choose settings that increase their usage. You may want to [check that you have enough speed](https://fast.com) for that. [Read more about bandwidth use](Network-Requirements) at different quality settings.
 
 ### In general
 
@@ -58,8 +58,9 @@ A typical jam might have 4 people, for which you would need 200Kbps * 4 = 800Kbs
 <div class="fx-row fx-row-start-xs button-container">
     <a href="Server-Win-Mac" class="button fx-col-100-xs">For Windows or macOS users</a>
     <a href="Server-Linux" class="button fx-col-100-xs">For Linux users</a>
-    <a href="Server-Rpi" class="button fx-col-100-xs">Raspberry Pi</a>
 </div>
+
+If you want to run a server on a Raspberry Pi, have a look at the [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) from fredsiva.
 
 Server operators may also be interested in downloading [this set of useful tools](https://github.com/corrados/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 

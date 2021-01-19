@@ -51,4 +51,4 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-w` |`--welcomemessage` | Supports HTML and inline CSS formatting (in enclosing quotes), or set path to text file. | (server only) |
 |    `-z` |`--startminimized` | Start minimized | (server only) |
 |       |`--ctrlmidich`     | MIDI controller channel to listen on and control number offset, format: `channel[;offset]` | (client only) see [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
-|       |`--clientname`     | Window title and jack client name | (client only) |
+|       |`--clientname`     | Window title and JACK client name | (client only) |

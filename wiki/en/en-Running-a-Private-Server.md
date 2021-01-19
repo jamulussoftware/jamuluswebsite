@@ -9,7 +9,7 @@ permalink: "/wiki/Running-a-Private-Server"
 
 **_Please ensure you have read the [server overview](Running-a-Server)_**
 
-This guide assumes you will be running a private server on your home network, but some of the issues here may also apply to those running on cloud hosts (e.g. Amazon EC2). 
+This guide assumes you will be running a private server on your home network, but some of the issues here may also apply to those running on cloud hosts (e.g. Amazon EC2).
 
 It is highly recommended to test your server in **public mode first** so as to narrow down any subsequent problems in private mode.
 
@@ -33,7 +33,7 @@ Once you have your router set up, you can get your external (WAN) IP address e.g
 
 * You do not need to open a port range as shown in the example above as long as you want to start only one instance of the Jamulus server on the same machine.
 
-* If using a different port than the default port (22124) you have to enter the port number after the server name or IP address separated by a colon in the Jamulus client (e. g. jamulus.dyndns.org:22120).
+* If using a different port than the default port (22124) you have to enter the port number after the server name or IP address separated by a colon in the Jamulus client (e.g. jamulus.example.org:22120).
 
 * See also this excellent [guide to running a private server](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/how-to-create-a-private-server-for-band-rehearsals/508642543044030/) by [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) on Facebook.  
 

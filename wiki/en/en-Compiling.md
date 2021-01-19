@@ -16,7 +16,7 @@ You don't need to compile Jamulus for macOS since we provide official binaries, 
 ### Requirements
 
 1. Install XCode
-1. Install QT as follow
+1. Install Qt as follow
 
 ```shell
 brew install qt5
@@ -62,7 +62,7 @@ Will build the file and make it available in `./Release/Jamulus.app`
 ## Windows
 You don't need to compile Jamulus for Windows since we provide official binaries, but if you really want to, follow the instructions below.
 
-**Required software**: [QT](https://www.qt.io/download), a compiler like Visual Studio, ASIO development files
+**Required software**: [Qt](https://www.qt.io/download), a compiler like Visual Studio, ASIO development files
 
 - get the Jamulus source code e.g. via git or via zip download from the Jamulus Repo
 - get and copy the [ASIOSDK](https://www.steinberg.net/en/company/developers.html) development files in `[\path\to\jamulus\source]\windows` directory so that, e.g., the

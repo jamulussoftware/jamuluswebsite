@@ -51,10 +51,6 @@ For headless servers: you can control the recording function [using these instru
 
 (Leave the "Custom Central Server Address" field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-central))
 
-
-
-
-
 ***
 
 See also [Command Line Options](Command-Line-Options) for other parameters you can set.

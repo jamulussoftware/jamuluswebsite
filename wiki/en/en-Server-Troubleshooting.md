@@ -11,11 +11,11 @@ permalink: "/wiki/Server-Troubleshooting"
 
 ### Why doesn't my server show up in the list? Why isn't in registering?
 
-If you are registered OK (you can [see it here](http://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option).
+If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option).
 
 If you are seeing a message that says the server is full, please [see this note](Central-Servers) on Central Servers.
 
-You can verify that your server is listed in the relevant genre by [checking it here](http://explorer.jamulus.io/).
+You can verify that your server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/).
 
 ## Servers - Private
 

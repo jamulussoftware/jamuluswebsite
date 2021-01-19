@@ -11,7 +11,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-  border-color: #1181a4;
+  border: none;
+  height: 1px;
+  background-color: #1181a4;
 }
 
 a {
@@ -105,7 +107,7 @@ main li {
   padding: 0;
 }
 
-#langselect .selected, #gnav .selected {
+#langselect .selected, #gnav .selected, #paginator .selected {
   font-weight: bold;
   text-decoration: underline;
   color: #2b7288;
@@ -136,6 +138,7 @@ header #navbtn {
 
 #gnav nav ul li>a {
   margin-left: 0.5em;
+  display: inline-block;
 }
 
 #gnav nav>ul>li>ul>li>ul>li>a {
@@ -148,7 +151,7 @@ nav {
   padding: 10px 10px 10px 10px;
 }
 
-#navaround, nav {
+#navaround, nav, .kblist article {
   background-color: #eaf8fd;
 }
 
@@ -175,6 +178,10 @@ nav {
 
 #mnv ul {
   list-style-type: none;
+}
+
+#editsitecontent svg {
+  color: #1181a4;
 }
 
 :target {
@@ -279,6 +286,16 @@ main>div {
   margin: auto;
 }
 
+#paginator {
+  padding: 0;
+  margin: 0;
+}
+
+#paginator li {
+  list-style-type: none;
+  display: inline-block;
+}
+
 @media (min-width:940px) {
   #langselect ul li {
     margin: 0 0.3em 0 0;
@@ -319,7 +336,7 @@ main>div {
     color: #3daed2;
   }
 
-  #langselect .selected {
+  #langselect .selected, #paginator .selected {
     color: #1da3cc;
   }
 
@@ -336,7 +353,7 @@ main>div {
     color: #dbdbdb;
   }
 
-  #mnv, #navaround {
+  #mnv, #navaround, .kblist article {
     background-color: #262a2b;
   }
 
@@ -371,7 +388,7 @@ main>div {
   }
 
   hr {
-    border-color: #dbdbdb;
+    background-color: #dbdbdb;
   }
 
   code {
