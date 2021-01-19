@@ -35,7 +35,7 @@ Beaucoup de gens attribuent au serveur des problèmes qui sont en fait des probl
 
 Si vous prévoyez de jouer régulièrement avec les mêmes personnes, **il vous est fortement conseillé** de vous assurer d'abord que chaque membre du groupe est configuré pour utiliser Jamulus correctement. Pour ce faire, trouvez un serveur public avec un temps de ping raisonnable pour chacun d'entre vous (20ms ou moins peut-être), connectez-vous tous à ce serveur et essayez de résoudre les problèmes individuels (en vérifiant qu'ils peuvent [suivre la règle numéro un](Getting-Started#vous-avez-des-problèmes--vous-narrivez-pas-à-être-en-rythme-) en particulier). Utilisez la technique solo ci-dessus pour éviter d'être interrompu si nécessaire.
 
-Une fois les problèmes avec les musiciens résolus de cette manière, vous pouvez alors envisager d'héberger votre propre serveur soit chez vous, soit sur un hôte dans le « Cloud » comme Amazon, ce qui pourrait entraîner une meilleure latence qu'un serveur fonctionnant à domicile. Par exemple, [voir ce guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/howto-idiots-guide-to-installing-jamulus-server-on-amazon-aws-lightsail-ubuntu-i/507719749802976/) (en anglais) d'utilisation de AWS Lightsail par l'utilisateur de Jamulus [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_).
+Une fois les problèmes avec les musiciens résolus de cette manière, vous pouvez alors envisager d'héberger votre propre serveur soit chez vous, soit sur un hôte dans le « Cloud » comme Amazon, ce qui pourrait entraîner une meilleure latence qu'un serveur fonctionnant à domicile. Par exemple, [voir ce guide (en anglais)](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/howto-idiots-guide-to-installing-jamulus-server-on-amazon-aws-lightsail-ubuntu-i/507719749802976/) (_Facebook_) d'utilisation de AWS Lightsail par l'utilisateur de Jamulus [Simon Tomlinson (en anglais)](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_).
 
 ### Bande passante - en avez-vous suffisamment ?
 
@@ -51,7 +51,7 @@ Un bœuf typique peut compter 4 personnes, pour lesquelles il faut 200Kbps x 4 =
 
 - Administrer un **serveur privé à domicile** (mais pas un serveur public) nécessitera que vous [redirigiez un port](Running-a-Private-Server) sur votre routeur.
 
-- Jamulus ne prend pas actuellement en charge IPv6
+- Jamulus ne prend actuellement pas en charge IPv6
 
 ## Tout va bien ? Alors, c'est parti !
 <div class="fx-row fx-row-start-xs button-container">
@@ -60,7 +60,7 @@ Un bœuf typique peut compter 4 personnes, pour lesquelles il faut 200Kbps x 4 =
     <a href="Server-Rpi" class="button fx-col-100-xs">Raspberry Pi</a>
 </div>
 
-Les administrateurs de serveur pourraient également être intéressés par le téléchargement de [cet ensemble d'outils utiles](https://github.com/corrados/jamulus/tree/master/tools) depuis le dépôt Jamulus (cloner le dépôt Git avec la commande `git submodule update --init`).
+Les administrateurs de serveur pourraient également être intéressés par le téléchargement de [cet ensemble d'outils utiles (en anglais)](https://github.com/corrados/jamulus/tree/master/tools) depuis le dépôt Jamulus (cloner le dépôt Git avec la commande `git submodule update --init`).
 
 ## Vous avez des problèmes ? Des difficultés ?
 
