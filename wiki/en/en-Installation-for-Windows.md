@@ -15,14 +15,19 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 ***
 
-## Setting up ASIO4ALL
-*Most internal sound cards need this driver. ASIO4ALL is not recommended if your audio interface provides its own ASIO driver, since that might have better latency.*
+## ASIO
+To provide the lowest latency, Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output). If you don't have an external sound card, you will probably also not have an ASIO driver. Therefore, you will need to install a generic one like ASIO4ALL which you can [download from the official ASIO4ALL website](https://www.asio4all.org/). If you own an external sound card/audio interface, you should check for an official ASIO driver and use it since they usually provide better quality.
 
-For ASIO4ALL, you may need to experiment a bit to find the right configuration since every computer is a bit different. Setup your sound card while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly setup.
+### Setting up ASIO4ALL
+*ASIO4ALL is not recommended if your sound card/audio interface provides its own ASIO driver, since that might have better latency.*
+
+For ASIO4ALL, you may need to experiment a bit to find the right configuration since every computer is a bit different.
+
+**Tip:** Setup your sound card while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly setup, but first read on.
 
 Before you start with Jamulus:
-1. **Close all applications** (especially those which could access your sound card like your browser/media player) since Jamulus needs exclusive access to your sound card.
-1. If the audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. This can be done as follows:
+1. **Close all applications** (especially those which could access your sound card like your browser/media player) since Jamulus needs exclusive access to your sound card. Other programs will not be able to use audio if ASIO4ALL and Jamulus are running.
+1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. This can be done as follows:
 
 ### How to setup ASIO4ALL inputs (Guide)
 
