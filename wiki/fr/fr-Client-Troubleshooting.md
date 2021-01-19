@@ -8,7 +8,7 @@ permalink: "/wiki/Client-Troubleshooting"
 # Dépannage
 
 ### Vous n'entendez aucun son ou les autres ne vous entendent pas ?
-Commencez par les choses simples : assurez-vous que votre instrument ou micro et votre casque soient branchés sur les bonnes prises. Assurez-vous qu'aucune autre application comme votre navigateur, votre logiciel de vidéoconférence, etc. n'utilise votre carte son. Vous devriez les éteindre lorsque vous utilisez Jamulus. Si tout semble correct et que le problème persiste, il est probable qu'il y ait un problème avec les paramètres de votre périphérique son. Cela dépendra de votre configuration particulière (plate-forme, matériel, logiciel et pilotes), il est donc préférable de demander conseil sur [les forums](https://sourceforge.net/p/llcon/discussion/software/).
+Commencez par les choses simples : assurez-vous que votre instrument ou micro et votre casque soient branchés sur les bonnes prises. Assurez-vous qu'aucune autre application comme votre navigateur, votre logiciel de vidéoconférence, etc. n'utilise votre carte son. Vous devriez les éteindre lorsque vous utilisez Jamulus. Si tout semble correct et que le problème persiste, il est probable qu'il y ait un problème avec les paramètres de votre périphérique son. Cela dépendra de votre configuration particulière (plate-forme, matériel, logiciel et pilotes), il est donc préférable de demander conseil sur [les forums (en anglais)](https://sourceforge.net/p/llcon/discussion/software/).
 
 **Utilisateurs de Windows (ASIO4All)** : si vous utilisez le pilote ASIO4All, consultez la [section de configuration ASIO4All](Installation-for-Windows#configuration-de-asio4all).
 
@@ -19,14 +19,14 @@ Commencez par les choses simples : assurez-vous que votre instrument ou micro et
 Vous pouvez testez si vous entendez correctement votre signal en procédant comme suit :
 
 1. Faites entrer votre signal audio dans votre ordinateur.
-1. Utilisez une application d'enregistrement audio (telle que [Audacity](https://www.audacityteam.org/)) sur votre ordinateur pour enregistrer cette entrée et vérifier qu'elle est correcte.
+1. Utilisez une application d'enregistrement audio (telle que [Audacity (en anglais)](https://www.audacityteam.org/)) sur votre ordinateur pour enregistrer cette entrée et vérifier qu'elle est correcte.
 1. Assurez-vous que si vous mettez en silence votre entrée audio dans l'application d'enregistrement, vous ne pouvez pas vous entendre.
 1. Fermez l'application d'enregistrement et lancez Jamulus. Vous ne devriez toujours pas vous entendre.
 1. Connectez-vous à un serveur et jouez quelque chose. Maintenant, vous devriez vous entendre avec le délai du serveur.
 
-**Si vous avez encore des problèmes**, essayez de demander sur le [forum du matériel](https://sourceforge.net/p/llcon/discussion/hardware/). La manière exacte dont vous éviterez d'écouter votre signal direct dépendra de votre configuration individuelle : votre interface son, votre console de mixage, l'endroit où est branché votre casque, etc… Par exemple, certaines interfaces audio ont des boutons « monitor » (désactivez-les), ou des options similaires.
+**Si vous avez encore des problèmes**, essayez de demander sur le [forum du matériel (en anglais)](https://sourceforge.net/p/llcon/discussion/hardware/). La manière exacte dont vous éviterez d'écouter votre signal direct dépendra de votre configuration individuelle : votre interface son, votre console de mixage, l'endroit où est branché votre casque, etc… Par exemple, certaines interfaces audio ont des boutons « monitor » (désactivez-les), ou des options similaires.
 
-Sachez que si l'écoute du signal du serveur vous assure d'être synchronisé avec les autres musiciens, vous pourriez également rencontrer des problèmes si votre latence globale (indiquée par le voyant lumineux « Délai » dans Jamulus) n'est pas verte ou au moins jaune la plupart du temps. Consultez le [manuel du logiciel](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) pour comprendre comment ajuster votre configuration afin de vous aider dans cette tâche.
+Sachez que si l'écoute du signal du serveur vous assure d'être synchronisé avec les autres musiciens, vous pourriez également rencontrer des problèmes si votre latence globale (indiquée par le voyant lumineux « Délai » dans Jamulus) n'est pas verte ou au moins jaune la plupart du temps. Consultez le [manuel du logiciel](Software-Manual) pour comprendre comment ajuster votre configuration afin de vous aider dans cette tâche.
 
 ### Vous n'arrivez pas à régler votre micro ?
 
@@ -38,7 +38,7 @@ Le processeur de votre ordinateur peut avoir des problèmes. Essayez de ne rien 
 
 ### Les temps de ping et de latence commencent bien, puis s'aggravent, causant des problèmes
 
-Cela peut indiquer que quelque chose d'autre entre en concurrence avec Jamulus sur votre réseau, alors assurez-vous que personne ne regarde de films en HD sur Netflix ou ne participe à des vidéoconférences Zoom pendant que vous jouez. Une solution plus permanente pour les utilisateurs à vocation technique, peut être trouvée en examinant [le problème du gonflement de la mémoire tampon](https://www.bufferbloat.net/projects/bloat/wiki/) (en anglais) sur leur routeur, et en vérifiant si vous pouvez mettre en œuvre la gestion intelligente des files d'attente (Smart Queue Management - SQM). [Plus de détails ici](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/) (en anglais).
+Cela peut indiquer que quelque chose d'autre entre en concurrence avec Jamulus sur votre réseau, alors assurez-vous que personne ne regarde de films en HD sur Netflix ou ne participe à des vidéoconférences Zoom pendant que vous jouez. Une solution plus permanente pour les utilisateurs à vocation technique, peut être trouvée en examinant [le problème du gonflement de la mémoire tampon (en anglais)](https://www.bufferbloat.net/projects/bloat/wiki/) sur leur routeur, et en vérifiant si vous pouvez mettre en œuvre la gestion intelligente des files d'attente (Smart Queue Management - SQM). [Plus de détails ici (en anglais)](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/).
 
 ### Vous n'êtes pas à l'aise avec les canaux du logiciel, le routage audio, les taux d'échantillonnage, et autres ?
 
@@ -50,7 +50,7 @@ Vous pouvez régler votre « Niveau de nouveau client » sur une valeur faible
 
 ### Vous ne voyez pas le serveur que vous voulez rejoindre ?
 
-Vérifiez d'abord que vous avez le bon serveur de genre musical sélectionné dans votre fenêtre des paramètres de connexion. Mais il arrive parfois que des problèmes de réseau empêchent votre client d'afficher la liste de tous les serveurs disponibles. Si vous connaissez le nom du serveur que vous souhaitez rejoindre, vous pouvez [rechercher son adresse IP ici](http://explorer.jamulus.io/)). Saisissez l'adresse IP dans le champ « Adresse du serveur » de la fenêtre « Paramètres de connexion » pour vous y connecter.
+Vérifiez d'abord que vous avez le bon serveur de genre musical sélectionné dans votre fenêtre des paramètres de connexion. Mais il arrive parfois que des problèmes de réseau empêchent votre client d'afficher la liste de tous les serveurs disponibles. Si vous connaissez le nom du serveur que vous souhaitez rejoindre, vous pouvez [rechercher son adresse IP ici (en anglais)](http://explorer.jamulus.io/). Saisissez l'adresse IP dans le champ « Adresse du serveur » de la fenêtre « Paramètres de connexion » pour vous y connecter.
 
 ### Vous ne voyez pas du tout la liste des serveurs ?
 
@@ -60,11 +60,11 @@ Dans certains cas, il se peut que ce soit votre FAI qui bloque votre utilisation
 
 ### Des problèmes pour utiliser Garageband (ou autre STAN) avec Jamulus ? 
 
-Voir [ce forum de discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994) (en anglais).
+Voir [ce forum de discussion (en anglais)](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994).
 
 ### Vous utilisez un Mac et votre signal d'entrée n'est pas entendu ?
 
-(Avec nos remerciements à [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569) (en anglais))
+(Avec nos remerciements à [Mark Anthony De Souza (en anglais)](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569) (_Facebook_))
 
 Peut-être n'avez-vous pas répondu « oui » à la question `« Jamulus souhaite accéder à votre micro »`.  Pour y remédier :
 * Allez dans `Préférences Système` > `Sécurité et confidentialité` > onglet `Confidentialité`
@@ -72,4 +72,4 @@ Peut-être n'avez-vous pas répondu « oui » à la question `« Jamulus souhai
 
 ***
 
-Pour toute autre question, veuillez rechercher ou poster sur les [forums de discussion](https://sourceforge.net/p/llcon/discussion/software/).
+Pour toute autre question, veuillez rechercher ou poster sur les [forums de discussion (en anglais)](https://sourceforge.net/p/llcon/discussion/software/).
