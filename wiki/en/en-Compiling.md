@@ -72,7 +72,7 @@ You don't need to compile Jamulus for Windows since we provide official binaries
 
 
 ### Download Jamulus source code
-Get the Jamulus source code e.g. via git or [zip download](https://github.com/corrados/jamulus/archive/master.zip) from the [Jamulus repo](https://github.com/corrados/jamulus). Make sure that there are **no** spaces in the directory you move the `jamulus` directory to since it might break the Jamulus installer (if you know how to fix this issue, please open an issue on the Jamulus repo to tell us how).
+Get the Jamulus source code e.g. via git or [zip download](https://github.com/corrados/jamulus/archive/master.zip) from the [Jamulus repo](https://github.com/corrados/jamulus). Make sure that there are **no** spaces in the directory you move the `jamulus` directory to since it might break the Jamulus installer (if you know how to fix this issue, please comment on [issue #864](https://github.com/corrados/jamulus/issues/864) on the Jamulus repo to tell us how).
 
 ### Compiling and building installer
 
