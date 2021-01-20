@@ -17,7 +17,7 @@ Il est fortement recommandé de tester votre serveur en **mode public d'abord** 
 
 ### Redirection de port
 
-Pour faire fonctionner un serveur privé, vous devez configurer la redirection de port sur votre routeur. _(Si vous êtes curieux de savoir pourquoi vous devez faire cela pour les serveurs privés mais pas pour les serveurs publics, voir [cette note de base de page](#notes-pour-les-geeks))_.
+Pour faire fonctionner un serveur privé, vous devez configurer la redirection de port sur votre routeur. _(Si vous êtes curieux de savoir pourquoi vous devez faire cela pour les serveurs privés mais pas pour les serveurs publics, voir [cette note de base de page](#notes-de-bas-de-page-pour-les-geeks))_.
 
 Normalement, les personnes extérieures à votre réseau domestique ne peuvent pas voir les choses à l'intérieur de celui-ci. Donc si vous voulez faire fonctionner un serveur Jamulus chez vous, vous devez ouvrir un trou dans votre routeur pour permettre aux clients Jamulus de s'y connecter.
 
@@ -27,7 +27,7 @@ La configuration exacte de la redirection de port diffère pour chaque routeur. 
 
 ![Linksysportforwarding](https://user-images.githubusercontent.com/4561747/97542495-bc62bc00-19be-11eb-8e54-b6e906e676f6.jpg)
 
-Pour obtenir de l'aide, voir : [portforward.com](https://portforward.com) (en anglais).
+Pour obtenir de l'aide, voir : [portforward.com (en anglais)](https://portforward.com).
 
 Une fois votre routeur configuré, vous pouvez obtenir votre adresse IP externe (WAN), par exemple en [utilisant Google](https://www.google.com/search?q=what+is+my+ip). Donnez cette adresse à vos amis pour qu'ils puissent se connecter à votre serveur (_mais voir aussi la note sur le DNS dynamique ci-dessous_). Quant à vous, vous devez vous connecter à votre propre ordinateur à la place, puisque c'est votre ordinateur qui fait tourner le serveur. Par conséquent, **seulement vous** devez vous connecter à `127.0.0.1`.
 
@@ -37,11 +37,11 @@ Une fois votre routeur configuré, vous pouvez obtenir votre adresse IP externe 
 
 * Si vous utilisez un port différent du port par défaut (22124), vous devez entrer le numéro de port après le nom du serveur ou l'adresse IP, séparés par un double-point dans le client Jamulus (par exemple jamulus.dyndns.org:22120).
 
-* Voir aussi cet excellent [guide pour la gestion d'un serveur privé](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/how-to-create-a-private-server-for-band-rehearsals/508642543044030/) (en anglais) par [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) sur Facebook.  
+* Voir aussi cet excellent [guide pour la gestion d'un serveur privé (en anglais)](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/how-to-create-a-private-server-for-band-rehearsals/508642543044030/) par [Simon Tomlinson (en anglais)](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) sur Facebook.  
 
 ## Le DNS dynamique et pourquoi vous en aurez probablement besoin
 
-La plupart des connexions internet domestiques changent d'adresse IP après un certain temps (heures, jours ou semaines). Pour faciliter la connexion, vous pouvez donc également mettre en place une adresse DNS dynamique. Vous pouvez le faire sur [la machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) (en anglais) sur laquelle vous faites tourner le serveur Jamulus ou, de préférence, sur votre routeur [s'il le prend en charge](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/) (en anglais).
+La plupart des connexions internet domestiques changent d'adresse IP après un certain temps (heures, jours ou semaines). Pour faciliter la connexion, vous pouvez donc également mettre en place une adresse DNS dynamique. Vous pouvez le faire sur [la machine (en anglais)](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) sur laquelle vous faites tourner le serveur Jamulus ou, de préférence, sur votre routeur [s'il le prend en charge (en anglais)](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/).
 
 Notez aussi que votre routeur domestique peut également modifier l'adresse IP de la machine sur laquelle vous administrez votre serveur. Dans ce cas, vous pourriez devoir donner à cette machine une adresse IP statique dans la configuration DHCP du routeur, ou simplement faire un transfert de port vers toutes les adresses de votre réseau local (LAN).
 
