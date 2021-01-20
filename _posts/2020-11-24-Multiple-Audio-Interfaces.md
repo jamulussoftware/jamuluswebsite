@@ -49,7 +49,7 @@ On Linux, it is possible to route additional devices to JACK by using alsa_in.
 * ALSA
 
 **Steps:**
-1. Follow [this tutorial](https://www.penguinproducer.com/Blog/2011/11/using-multiple-devices-with-jack/) to route the desired interface into JACK by using alsa_in.
+1. Follow [this tutorial](https://web.archive.org/web/20201112033306/https://www.penguinproducer.com/Blog/2011/11/using-multiple-devices-with-jack/) to route the desired interface into JACK by using alsa_in.
 2. Jamulus should automatically route the JACK configured interface, adjustments can be made through the _Connect_ button.
 3. Connect the device configured on step 1 into jamulus input.
 4. Use Patchbay as described on Windows section to make connections permanent.
