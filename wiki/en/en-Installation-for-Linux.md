@@ -16,16 +16,18 @@ Although we don't provide official packages for every Linux distribution, you mi
 
 There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223).
 
-### Debian and Ubuntu amd64
+### Debian and Ubuntu (amd64 .deb only)
 
-If you're on **Debian** or **Ubuntu** (only amd64), you may try the compiled deb packages from GitHub Actions.
+If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages from GitHub Actions.
 
-1. Download the deb file from the [Jamulus GitHub release](https://github.com/corrados/jamulus/releases/tag/latest) page
+1. Download the jamulus_latest_ubuntu_amd64.deb file from the [Jamulus GitHub release](https://github.com/corrados/jamulus/releases/tag/latest) page
 1. Update apt: `sudo apt-get update`
-1. Install the package: `sudo dpkg -i <Jamulus-deb-file-name>.deb`
-1. Since Jamulus needs JACK, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
+1. Install the package: `sudo dpkg -i /path/to/jamulus_latest_ubuntu_amd64.deb`
+1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
 
-**Note:** The generated deb files will install Jamulus with a lower case "j". You can therefore start it in terminal by typing `jamulus`.
+**Note:** The generated deb files will install Jamulus with a lower case "j". You can therefore start it in terminal by typing `jamulus`. This is different to a compiled version of Jamulus which uses the upper case *J*!
+
+Afterwards you should look at the "Set up your sound card" step on this page.
 
 If you can't use one of these options, you need to compile Jamulus from source. That's quite easy:
 
@@ -80,6 +82,9 @@ make clean
 make
 sudo make install
 ```
+**Note:** The compiled version of Jamulus puts itself into `/usr/local/bin`. 
+
+You can now delete the sources directory you compiled from.
 
 ## Set up your sound card
 
@@ -97,9 +102,7 @@ Restart JACK to take any new settings
 
 ### Start Jamulus
 
-Open Jamulus e.g. via your command shell. If you use the shell, execute the command `Jamulus` (with a capital 'J') which starts the Jamulus Client
-
-Jamulus puts itself into `/usr/local/bin`. You can now delete the sources directory you compiled from.
+Open Jamulus e.g. via your command shell. If you use the shell and compiled Jamulus yourself, execute the command `Jamulus` (with a capital 'J') or if you used the .deb package with a lowercase j. This will start the Jamulus Client.
 
 If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods) in step 3 above. Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
@@ -111,7 +114,7 @@ Jamulus has been installed and can be used now. You can now take a look at the
 
 ## To update your installation to a new release
 
-Download the new sources as per [Get Jamulus](Installation-for-Linux#get-jamulus-sources) and repeat just the [compilation instructions](Installation-for-Linux#compile-this-bad-boy) as if for a new installation above.
+Download the new sources as per [Get Jamulus](Installation-for-Linux#get-jamulus-sources) and repeat just the [compilation instructions](Installation-for-Linux#compile-this-bad-boy) as if for a new installation above or use the new .deb package if you used it.
 
 ## Notes for geeks
 
