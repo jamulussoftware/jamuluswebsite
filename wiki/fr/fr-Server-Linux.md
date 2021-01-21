@@ -27,7 +27,7 @@ Voir aussi les [options en ligne de commande](Command-Line-Options) pour les aut
 
 Le guide suivant permet d'utiliser Jamulus comme un serveur "pur" sur du **matériel sans audio** (par exemple sur un hôte tiers ou dans le nuage) et suppose des distributions Ubuntu/Debian utilisant systemd. Nous avons également des instructions pour [Raspberry Pi](Server-Rpi), qui est aussi très bien.
 
-* _L'utilisateur de Jamulus [Grigory](https://sourceforge.net/u/cidnurg/profile/), maintient une **[image Docker pour Jamulus](https://hub.docker.com/r/grundic/jamulus)** que vous pouvez utiliser._
+* _L'utilisateur de Jamulus [Grigory (en anglais)](https://sourceforge.net/u/cidnurg/profile/), maintient une **[image Docker pour Jamulus (en anglais)](https://hub.docker.com/r/grundic/jamulus)** que vous pouvez utiliser._
 
 ### Compilation des sources, création d'un utilisateur
 
@@ -53,11 +53,11 @@ make
 
 Après avoir décidé dans quel mode vous souhaitez faire fonctionner votre serveur, utilisez systemd pour le démarrer.
 
-Créez un fichier d'unité systemd qui lancera le serveur au moment du démarrage (merci à [David Harrold](https://sourceforge.net/u/dkxl/profile/) pour cela).
+Créez un fichier d'unité systemd qui lancera le serveur au moment du démarrage (merci à [David Harrold (en anglais)](https://sourceforge.net/u/dkxl/profile/) pour cela).
 
 Le fichier d'unité applique une priorité élevée au processeur et à l'ordonnancement des E/S au traitement du serveur. Ceci est optionnel (et peut être ignoré sur certains hôtes).
 
-Notez aussi que les entrées de journalisation du serveur iront dans journalctl (utilisez [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) pour les consulter).
+Notez aussi que les entrées de journalisation du serveur iront dans journalctl (utilisez [journald (en anglais)](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) pour les consulter).
 
 **Note** : le reste de ce guide suppose que vous êtes en mode "public" en utilisant l'option `-e` (`--centralserver`). Ceci précise dans quelle liste de genres musicaux votre serveur apparaîtra. Voir [la liste des genres disponibles ici](Central-Servers)).
 
@@ -139,11 +139,11 @@ Note : pressez `q` pour quitter le statut de service.
 
 ### Mettre à jour votre installation vers une nouvelle version
 
-Téléchargez les nouvelles sources comme indiqué dans les [instructions ci-dessus](#compilation-des-sources--creation-d-un-utilisateur) et répétez la compilation à l'étape 2 comme pour une nouvelle installation. Arrêtez le serveur, copiez le fichier binaire Jamulus en écrasant l'ancien, et redémarrez le serveur.
+Téléchargez les nouvelles sources comme indiqué dans les [instructions ci-dessus](#compilation-des-sources-création-dun-utilisateur) et répétez la compilation à l'étape 2 comme pour une nouvelle installation. Arrêtez le serveur, copiez le fichier binaire Jamulus en écrasant l'ancien, et redémarrez le serveur.
 
 ***
 
-Voir aussi les [options en ligne de commandee](Command-Line-Options) pour les autres paramètres que vous pouvez configurer.
+Voir aussi les [options en ligne de commande](Command-Line-Options) pour les autres paramètres que vous pouvez configurer.
 
 ## Notes de bas de page
 
