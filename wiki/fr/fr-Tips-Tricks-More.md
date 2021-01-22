@@ -9,21 +9,21 @@ permalink: "/wiki/Tips-Tricks-More"
 
 ## S'informer sur les répétitions de groupe à distance
 
-L'utilisateur de Jamulus [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/), a compilé un grand nombre d'informations relatives [aux répétitions de groupe à distance](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc, en anglais) qui couvre des sujets comme la configuration matérielle et logicielle incluant des exemples et conseils pour les nouveaux arrivants sur ce terrain. Il inclut aussi une section comparant de Jamulus à d'autres solutions.
+L'utilisateur de Jamulus [Chris Rimple (en anglais)](https://sourceforge.net/u/chrisrimple/profile/), a compilé un grand nombre d'informations relatives [aux répétitions de groupe à distance (en anglais)](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc) qui couvre des sujets comme la configuration matérielle et logicielle incluant des exemples et conseils pour les nouveaux arrivants sur ce terrain. Il inclut aussi une section comparant de Jamulus à d'autres solutions.
 
 ## Utilisation de l'audio de Jamulus dans des applications de visio-conférences Zoom (ou autres)
 
-Plusieurs utilisateurs ont rapporté avoir permis à un « public virtuel » de suivre une session Jamulus en utilisant [JACK audio](https://jackaudio.org) pour router le signal de Jamulus à travers de JackRouter vers l'application cible (dans ce cas, Zoom meetings).
+Plusieurs utilisateurs ont rapporté avoir permis à un « public virtuel » de suivre une session Jamulus en utilisant [JACK audio (en anglais)](https://jackaudio.org) pour router le signal de Jamulus à travers de JackRouter vers l'application cible (dans ce cas, Zoom meetings).
 
-Vous pouvez également utiliser [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) pour Windows ou [BlackHole](https://github.com/ExistentialAudio/BlackHole) pour macOS afin de router la sortie de Jamulus vers de multiples destinations, par exemple vers votre casque et l'application de visio-conférence en même temps.
+Vous pouvez également utiliser [VoiceMeeter (en anglais)](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) pour Windows ou [BlackHole (en anglais)](https://github.com/ExistentialAudio/BlackHole) pour macOS afin de router la sortie de Jamulus vers de multiples destinations, par exemple vers votre casque et l'application de visio-conférence en même temps.
 
 ## Enregistrer Jamulus sous Windows avec Reaper
 
-L'utilisateur de Jamulus [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/), a écrit un [guide pour enregistrer la sortie de Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc, en anglais) en utilisant composant additionnel ReaRoute pour [Reaper](https://www.reaper.fm/).  
+L'utilisateur de Jamulus [Rob Durkin (en anglais)](https://sourceforge.net/u/bentwrench/profile/), a écrit un [guide pour enregistrer la sortie de Jamulus (en anglais)](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc) en utilisant composant additionnel ReaRoute pour [Reaper (en anglais)](https://www.reaper.fm/).  
 
 ## Partager les partitions de voix et d'accords
 
-L'utilisateur de Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/), a écrit un système appelé [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), une application web qui permet à un « chef de bœuf » d'envoyer des partitions (au format PDF) aux « bœuffeurs » en temps réel en utilisant des navigateurs web standard.
+L'utilisateur de Jamulus [BTDT (en anglais)](https://sourceforge.net/u/btdt/profile/), a écrit un système appelé [305keepers (en anglais)](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), une application web qui permet à un « chef de bœuf » d'envoyer des partitions (au format PDF) aux « bœuffeurs » en temps réel en utilisant des navigateurs web standard.
 
 ## Faire une page de statut du serveur
 
@@ -53,7 +53,7 @@ Vous pouvez sauvegarder et restaurer le mix que vous utilisez pour les répétit
 
 ## Convertir un serveur public en un serveur privé à la volée
 
-Vous pouver faire fonctionner un serveur public le temps nécessaire pour que votre groupe s'y connecte,puis devenir privé en décochant simplement la case « Rendre mon serveur public » dans l'<abbr title="Interface utilisateur graphique">IUG</abbr> du serveur. Les membres de votre groupe resteront connectés au serveur jusqu'à ce qu'ils se déconnectent. (Merci à [David Savinkoff](https://github.com/DavidSavinkoff) pour le tuyau !) 
+Vous pouver faire fonctionner un serveur public le temps nécessaire pour que votre groupe s'y connecte,puis devenir privé en décochant simplement la case « Rendre mon serveur public » dans l'<abbr title="Interface utilisateur graphique">IUG</abbr> du serveur. Les membres de votre groupe resteront connectés au serveur jusqu'à ce qu'ils se déconnectent. (Merci à [David Savinkoff (en anglais)](https://github.com/DavidSavinkoff) pour le tuyau !) 
 
 ## Script de démarrage du client pour Linux
 
