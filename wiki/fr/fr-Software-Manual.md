@@ -218,7 +218,7 @@ Ce délai est introduit par le réseau et devrait être d'environ 20 à 30 ms. S
 
 Le délai global est calculé à partir du « ping » actuel et du délai introduit par les paramètres actuel du tampon.
 
-Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de compression. Assurez-vous que le débit montant n'est pas supérieur à votre vitesse montante internet disponible (vérifiez ça avec un service tel que [librespeed.org](https://librespeed.org/)).
+Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de compression. Assurez-vous que le débit montant n'est pas supérieur à votre vitesse montante internet disponible (vérifiez ça avec un service tel que [librespeed.org (en anglais)](https://librespeed.org/)).
 
 ----
 ## Notes
