@@ -62,9 +62,9 @@ You might want to install [Ubuntu Studio](https://ubuntustudio.org/) it adds a s
 ## Points to note about inputs
 
 - If you want to connect 2 or more sources (eg voice + synth + guitar), it is important to note that Jamulus currently handles only input 2 channels (L/R). So the hardware being used must provide a mixed-down stereo output to Jamulus.
-- Audio interfaces generally output a mixed signal on their analog output, but separate signals (1 per source) on their digital output (USB/FireWire/Thunderbolt).
-- Mixers generally only output mixed-down signals on their analog output.
-- Mixers with USB/FireWire/Thunderbolt generally output mixed-down signal on their **analog** output AND separate signals only (no mixed-down signal) on their **digital** output.
+- Audio interfaces generally output a mixed signal on their analogue output, but separate signals (1 per source) on their digital output (USB/FireWire/Thunderbolt).
+- Mixers generally only output mixed-down signals on their analogue output.
+- Mixers with USB/FireWire/Thunderbolt generally output mixed-down signal on their **analogue** output AND separate signals only (no mixed-down signal) on their **digital** output.
 - A few Mixers with USB/FireWire/Thunderbolt will either send **only** a mixed down signal to the **digital** output (small/budget mixers), or else also ADD a stereo mix-down signal to the separate signals on the digital output.
 
 _(Thanks to [pcar75](https://github.com/pcar75) for this information)_

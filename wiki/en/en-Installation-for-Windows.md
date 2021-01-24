@@ -37,7 +37,7 @@ Before you start with Jamulus:
 1. Enable _advanced view_ in ASIO4ALL (click the tool icon on the bottom right)
 1. Enable only the sound card you want to use by clicking on the button next to its name
 1. Open your sound card inputs by clicking the _plus icon_ next to this sound card
-1. Now enable the correct inputs/outputs in the list under your soundcard and disable everything else
+1. Now enable the correct inputs/outputs in the list under your sound card and disable everything else
 
 **Hint:** Many internal sound cards are named Realtek High Definition Audio, Conexant or similar.
 
