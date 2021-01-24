@@ -22,4 +22,4 @@ permalink: "/wiki/Demos"
 * [Vidéo d'introduction montrant l'installation avec des instruments acoustiques (en anglais)](https://www.youtube.com/watch?v=lB4ZxDb9vnU) (pas vraiment une démo)
 * [WorldJam (en anglais)](https://worldjam.vip/) Chaque samedi soir il y a une session « Jam » mondiale en ligne à travers internet.
 
-![Un bœuf Jamulus typique !](https://user-images.githubusercontent.com/4561747/79686157-1f1c1380-8236-11ea-9fdb-8a791dd2713f.png)
+![Un bœuf Jamulus typique !](https://user-images.githubusercontent.com/8705846/105633156-52d83980-5e57-11eb-8a11-00d497695f13.png)
