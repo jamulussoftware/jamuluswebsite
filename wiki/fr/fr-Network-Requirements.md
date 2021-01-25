@@ -30,6 +30,6 @@ Avec les unités suivantes
 
 ## Bande passante réseau
 
-Il y a un débit montant (le musicien envoie au serveur) et un débit descendant (le serveur renvoie le mixage au musicien) ![image](https://user-images.githubusercontent.com/9976944/79274940-999b0b00-7ea5-11ea-85be-3ded5ee198d5.png)
+Il y a un débit montant (le musicien envoie au serveur) et un débit descendant (le serveur renvoie le mixage au musicien) ![image](https://user-images.githubusercontent.com/8705846/105736770-71146700-5f35-11eb-9f0d-5dd94d47e294.png)
 
 Notez également que le taux de transfert ADSL2 moyen est de 10 Mbits/seconde pour le débit descendant et de 1 Mbit/seconde pour le débit montant. Les performances réelles dépendent de la distance par rapport au fournisseur, qui peut [théoriquement varier de 24 Mb/s à 0,3 km à 1,5 Mb/s à 5,2 km](https://fr.wikipedia.org/wiki/ADSL#Estimation_du_d%C3%A9bit_maximal_r%C3%A9el_en_fonction_de_la_longueur_de_la_ligne) pour le taux de téléchargement.
