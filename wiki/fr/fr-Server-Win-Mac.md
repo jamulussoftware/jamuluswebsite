@@ -36,7 +36,7 @@ _Si vous souhaitez **exécuter un client sur la même machine**, vous devriez **
 
 ### Enregistrement
 
-Activez l'enregistrement du serveur en paramétrant d'abord le répertoire d'enregistrement dans l'onglet Options. L'enregistrement commence dès que la première personne se connecte au serveur et s'arrête lorsque la dernière personne le quitte. Utilisez le bouton « Nouvel enregistrement » pour créer un nouveau sous-répertoire dans lequel les enregistrements seront stockés. Notez que les enregistrements sont sauvegardés par piste au format `.lof` d'[Audacity](https://www.audacityteam.org/) (en anglais) et `.rpp` de [REAPER](https://fr.wikipedia.org/wiki/Reaper_(logiciel)). Ouvrez les fichiers respectifs pour les écouter dans ces applications.
+Activez l'enregistrement du serveur en paramétrant d'abord le répertoire d'enregistrement dans l'onglet Options. L'enregistrement commence dès que la première personne se connecte au serveur et s'arrête lorsque la dernière personne le quitte. Utilisez le bouton « Nouvel enregistrement » pour créer un nouveau sous-répertoire dans lequel les enregistrements seront stockés. Notez que les enregistrements sont sauvegardés par piste au format `.lof` d'[Audacity] (en anglais)(https://www.audacityteam.org/) et `.rpp` de [REAPER](https://fr.wikipedia.org/wiki/Reaper_(logiciel)). Ouvrez les fichiers respectifs pour les écouter dans ces applications.
 
 _Note : lorsque votre serveur enregistre, les clients afficheront un message indiquant que l'enregistrement est en cours._
 
