@@ -2,7 +2,7 @@ name: Sync release to changes
 on:
   push:
     branches:
-      - 'changes'
+      - 'release'
 jobs:
   sync-branch:
     runs-on: ubuntu-latest
