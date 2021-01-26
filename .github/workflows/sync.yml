@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: Merge release -> changes
+      - name: ${{ github.sha }} update from release
         uses: devmasx/merge-branch@v1.3.1
         with:
           type: now
