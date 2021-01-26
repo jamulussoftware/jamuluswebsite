@@ -14,7 +14,7 @@ When you start a public server, you will see a message saying whether your serve
 ## Headless servers
 
 As of Jamulus v3.5.4, you will need to set central (genre) server manually using the `--centralserver` (`-e`) option as follows:
-(outdated)
+
 | Genre |   Server address           |
 |-----------|------------------|
 |**All/Any** |`jamulusallgenres.fischvolk.de:22224`    |
