@@ -6,12 +6,11 @@ permalink: "/wiki/Software-Manual"
 ---
 Aide Jamulus (manuel du logiciel)
 =================================
-_(Note : les copies d'écran ont été faites avec l'interface en anglais, les termes utilisés dans ce manuel correspondent aux termes employés dans l'interface du logiciel en français.)_
 
 Fenêtre principale
 ------------------
 
-![Fenêtre principale](https://user-images.githubusercontent.com/20726856/97360410-77476880-189e-11eb-99c6-f4a68258bf31.png)
+![Fenêtre principale](https://user-images.githubusercontent.com/8705846/106172879-97cfd900-6193-11eb-976f-18f1a5cff304.png)
 
 ### LEDs d'état
 
@@ -38,31 +37,32 @@ La LED d'état de **Tampons** indique l'état actuel de l'audio/du streaming. Si
 
 ### Niveau d'entrée
 
-![Niveau d'entrée](https://user-images.githubusercontent.com/20726856/97363247-9516cc80-18a2-11eb-8195-1e887ee8040f.png)
+![Niveau d'entrée](https://user-images.githubusercontent.com/8705846/106173229-001eba80-6194-11eb-8ac3-5abee38ef55a.png)
 
 Ceci indique le niveau des deux canaux stéréo pour votre entrée audio.
 Veillez à ne pas écrêter le signal d'entrée pour éviter une distorsion du signal audio (les LEDs indiquent l'écrêtage lorsqu'il se produit).
 
 ### Bouton Tchate
 
-![Fenêtre de tchate](https://user-images.githubusercontent.com/20726856/97360717-d7d6a580-189e-11eb-84db-80536e17dc30.png)
+![Fenêtre de tchate](https://user-images.githubusercontent.com/8705846/106173343-1af12f00-6194-11eb-9f81-a1cff4ef3d84.png)
 
 Le texte de tchate saisi dans cette fenêtre est envoyé à tous les clients connectés.
 Si un nouveau message de tchate arrive et que la fenêtre du tchate n'est pas encore ouverte, elle sera ouverte automatiquement pour tous les clients.
 
 ### Fenêtre de profil
 
-![Fenêtre de mon profil](https://user-images.githubusercontent.com/20726856/97360811-f9379180-189e-11eb-98bf-7f44f884adaa.png)
+![Fenêtre de mon profil](https://user-images.githubusercontent.com/8705846/106173352-1fb5e300-6194-11eb-95f9-abce79061020.png)
 
 Dans le menu Vue, sélectionnez Mon profil… pour définir votre pseudo/nom qui s'affiche sous votre chariot dans la console de mixage audio du serveur. Si un instrument et/ou un pays est défini, les icônes correspondant à ces choix seront également affichées sous votre chariot. Le paramètre de compétence modifie la couleur de fond de l'étiquette du chariot et l'entrée de la ville apparaît dans l'info-bulle à son survol (voir la capture d'écran ci-dessous).
 
-![Info-bulle de l'étiquette de chariot](https://user-images.githubusercontent.com/20726856/97360889-166c6000-189f-11eb-802d-330e761ed017.png)
+![Info-bulle de l'étiquette de chariot](https://user-images.githubusercontent.com/8705846/106173502-483ddd00-6194-11eb-9201-b25fa3df6afb.png)
+
 
 ### Bouton de connexion/déconnexion
 
 Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un serveur auquel vous connecter. Si vous êtes connecté, appuyer sur ce bouton mettra fin à la session.
 
-![Dialogue de connexion](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
+![Dialogue de connexion](https://user-images.githubusercontent.com/8705846/106173654-76bbb800-6194-11eb-9c53-933b1ac92007.png)
 
 La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles avec le nombre d'occupants et le nombre maximum possible. Les administrateurs de serveur peuvent optionellement référencer leurs serveurs par genre musical. Utilisez le menu déroulant Liste pour sélectionner un genre, cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Se connecter pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur. Les serveurs permanents (ceux qui ont été listés pendant plus de 24 heures) sont indiqués en gras.
 
@@ -76,20 +76,20 @@ Coupe votre flux audio vers le serveur afin que vous puissiez vous entendre et v
 
 ### L'effet de réverbération
 
-![Réverbération](https://user-images.githubusercontent.com/20726856/97361142-6e0acb80-189f-11eb-8fd7-e03aa4ffc662.png)
+![Réverbération](https://user-images.githubusercontent.com/8705846/106173837-a965b080-6194-11eb-82cf-bd47279d1698.png)
 
 La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.
 La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si le signal d'un micro est envoyé sur le canal audio de droite de la carte son et qu'un effet de réverbération doit y être appliqué, réglez le sélecteur de canal sur le canal de droite et déplacez le chariot vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint.
 
 ### Contrôle local du panoramique/de la balance audio
 
-![Contrôle de panoramique/balance audio locale](https://user-images.githubusercontent.com/20726856/97361250-8c70c700-189f-11eb-82c2-9a9d768dcfff.png)
+![Contrôle de panoramique/balance audio locale](https://user-images.githubusercontent.com/8705846/106173825-a7035680-6194-11eb-9ba2-8a2ee29401de.png)
 
 Contrôle les niveaux relatifs des canaux audio locaux gauche et droite. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un micro est connecté au canal d'entrée de droite et qu'un instrument est connecté au canal d'entrée de gauche qui est beaucoup plus fort que le micro, déplacez le chariot audio dans une direction où l'étiquette au-dessus du chariot indique G -x, où x est l'indicateur d'atténuation actuelle.
 
 ### Console de mixage audio du serveur
 
-![Chariots audio](https://user-images.githubusercontent.com/20726856/97361324-a5797800-189f-11eb-80d4-3a93e5728b99.png)
+![Chariots audio](https://user-images.githubusercontent.com/8705846/106174023-e29e2080-6194-11eb-9538-fc2d43e40d83.png)
 
 L'écran du mixeur audio affiche chaque utilisateur connecté au serveur (y compris vous-même).
 Les chariots vous permettent d'ajuster le niveau de ce que vous entendez sans affecter ce que les autres entendent.
@@ -115,7 +115,7 @@ Si l'administrateur du serveur a activé l'enregistrement, vous verrez un messag
 Fenêtre des paramètres
 ----------------------
 
-![image](https://user-images.githubusercontent.com/20726856/97361399-c4780a00-189f-11eb-8ad0-6b94f7eb1dcc.png)
+![image](https://user-images.githubusercontent.com/8705846/106174150-fe092b80-6194-11eb-80c2-e4420c36b385.png)
 
 ### Périphérique de carte son
 
@@ -136,7 +136,7 @@ Permet la prise en charge des très petits paquets audio réseau. Ils ne sont ut
 
 ### Délai de tampon
 
-![Délai de tampon](https://user-images.githubusercontent.com/20726856/97361710-3c463480-18a0-11eb-8d5c-07ed6590ccac.png)
+![Délai de tampon](https://user-images.githubusercontent.com/8705846/106174474-5e986880-6195-11eb-90ba-55bc5f985bdb.png)
 
 Le réglage du délai de tampon est un réglage fondamental pour le logiciel Jamulus. Ce réglage a une influence sur de nombreuses propriétés de la connexion. Trois tailles de tampon sont prises en charge :
 
@@ -154,13 +154,13 @@ Sous Linux, utilisez l'outil de configuration JACK pour modifier la taille du ta
 Le délai actuel du tampon a une influence sur l'état de la connexion, le taux de transfert courant et le délai global.
 Plus la taille du tampon est faible, plus la probabilité d'un voyant rouge dans l'indicateur d'état (décrochages) est élevée et plus le taux de transfert est élevé et le délai global est faible.
 
-![Dépendances du délai de tampon](https://user-images.githubusercontent.com/20726856/97361878-816a6680-18a0-11eb-8c1f-fbf956be4b81.png)
+![Dépendances du délai de tampon](https://user-images.githubusercontent.com/8705846/106175140-10379980-6196-11eb-9569-1755d215ce33.png)
 
 Le réglage du tampon est donc un compromis entre la qualité audio et le délai global.
 
 ### Tampon de gigue avec indicateur de statut du tampon
 
-![Tampon de gigue](https://user-images.githubusercontent.com/20726856/97361956-9b0bae00-18a0-11eb-85de-dc2ded891175.png)
+![Tampon de gigue](https://user-images.githubusercontent.com/8705846/106175220-26455a00-6196-11eb-82bc-b8adac27eaa5.png)
 
 Le tampon de gigue compense les gigues de synchronisation du réseau et de la carte son. La taille du tampon influence donc la qualité du flux audio (le nombre de décrochages) et le délai global (plus le tampon est long, plus le délai est important).
 
@@ -173,7 +173,7 @@ Si le paramètre Auto est activé, les tampons de gigue de votre client local et
 
 ### Canaux audio
 
-![Canaux audio](https://user-images.githubusercontent.com/20726856/97362020-b24a9b80-18a0-11eb-8a55-ee536b29460b.png)
+![Canaux audio](https://user-images.githubusercontent.com/8705846/106175341-4b39cd00-6196-11eb-848c-018b2cd4412e.png)
 
 Sélectionne le nombre de canaux audio à utiliser pour la communication entre le client et le serveur. Trois modes sont disponibles :
 
@@ -187,38 +187,38 @@ En mode de flux stéréo, aucune sélection de canal audio pour l'effet de réve
 
 ### Qualité audio
 
-![Qualité audio](https://user-images.githubusercontent.com/20726856/97362080-c42c3e80-18a0-11eb-87ac-9a4ca948bbcf.png)
+![Qualité audio](https://user-images.githubusercontent.com/8705846/106175399-5d1b7000-6196-11eb-8b1c-3925c6625843.png)
 
 Plus la qualité audio est élevée, plus le débit de données de votre flux audio est élevé. Assurez-vous que votre débit montant ne dépasse pas la vitesse montante disponible pour votre connexion internet.
 
 ### Niveau de nouveau client
 
-![Niveau de nouveau client](https://user-images.githubusercontent.com/20726856/97362173-e2923a00-18a0-11eb-8401-9ad71866f6b1.png)
+![Niveau de nouveau client](https://user-images.githubusercontent.com/8705846/106175431-673d6e80-6196-11eb-8dc1-ad063269e54d.png)
 
 Ce paramètre définit le niveau du chariot d'un client nouvellement connecté, en pourcentage. Si un nouveau utilisateur se connecte au serveur courant, il obtiendra le niveau de chariot initial spécifié si aucun autre niveau de canal provenant d'une connexion précédente de ce même utilisateur n'a déjà été stocké. Vous pouvez configurer tous les utilisateurs d'un serveur occupé à ce niveau en utilisant Éditer > « Régler tous les chariots sur niveau d'un nouveau client ».
 
 ### Thème fantaisie
 
-![Thème fantaisie](https://user-images.githubusercontent.com/20726856/97362214-f9389100-18a0-11eb-9adb-ebf2c1d18007.png)
+![Thème fantaisie](https://user-images.githubusercontent.com/8705846/106175464-72909a00-6196-11eb-9153-d30f29fad416.png)
 
 Ceci applique un thème fantaisie à la fenêtre principale.
 
 ### Adresse personnalisée du serveur central
 
-![Adresse du serveur central](https://user-images.githubusercontent.com/20726856/97362265-0a819d80-18a1-11eb-9b0c-2f7ecf21841c.png)
+![Adresse du serveur central](https://user-images.githubusercontent.com/8705846/106175517-7f14f280-6196-11eb-9d1c-edd63aa91c08.png)
 
 Laissez ce champ vide, sauf si vous devez entrer l'adresse d'un serveur central autre que celui par défaut.
 
 ### Paramètre de l'état actuel de la connexion
 
-![Indicateurs](https://user-images.githubusercontent.com/20726856/97362338-271dd580-18a1-11eb-99b7-02c9371a6258.png)
+![Indicateurs](https://user-images.githubusercontent.com/8705846/106175566-8d630e80-6196-11eb-83e4-c659d0994c8d.png)
 
 Le temps de « ping »  est le temps nécessaire au flux audio pour faire l'aller-retour entre le client et le serveur.
 Ce délai est introduit par le réseau et devrait être d'environ 20 à 30 ms. Si le délai est supérieur à environ 50 ms, la distance qui vous sépare du serveur est trop importante ou votre connexion internet n'est pas suffisante.
 
 Le délai global est calculé à partir du « ping » actuel et du délai introduit par les paramètres actuel du tampon.
 
-Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de compression. Assurez-vous que le débit montant n'est pas supérieur à votre vitesse montante internet disponible (vérifiez ça avec un service tel que [librespeed.org](https://librespeed.org/)).
+Le débit montant de l'audio dépend de la taille actuelle des paquets audio et du réglage de compression. Assurez-vous que le débit montant n'est pas supérieur à votre vitesse montante internet disponible (vérifiez ça avec un service tel que [librespeed.org (en anglais)](https://librespeed.org/)).
 
 ----
 ## Notes

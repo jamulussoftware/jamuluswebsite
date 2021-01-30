@@ -4,12 +4,9 @@ title: "Software Manual"
 lang: "en"
 permalink: "/wiki/Software-Manual"
 ---
-Jamulus Help (Software Manual)
-==============================
+# Jamulus Software Manual
 
-Main Window
------------
-
+## Main Window
 
 ![Main window](https://user-images.githubusercontent.com/20726856/97360410-77476880-189e-11eb-99c6-f4a68258bf31.png)
 
@@ -32,10 +29,6 @@ The **Delay** status LED shows the current audio delay status:
 
 
 **Red** - The delay is too large for jamming
-
-
-
-
 
 The **Buffers** status LED shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
 
@@ -133,8 +126,7 @@ If the server operator has enabled recording, you will see a message above the m
 
 
 
-Settings Window
----------------
+## Settings Window
 
 ![image](https://user-images.githubusercontent.com/4561747/99384700-b7ab6c80-28c7-11eb-845e-c137793941d4.png)
 

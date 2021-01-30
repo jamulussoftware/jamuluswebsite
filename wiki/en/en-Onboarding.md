@@ -5,7 +5,7 @@ lang: "en"
 permalink: "/wiki/Onboarding"
 ---
 # Jamulus onboarding
-Let's have a look at what Jamulus looks like and what you should do after having installed the software.
+Let's have a look at what you should do after having installed the software.
 ## First start
 Before you start Jamulus:
 1. For now, **close all other applications**. It's best to start from zero at first.
@@ -27,7 +27,7 @@ When you open Jamulus, you will see a window which looks like this:
 ![Jamulus main window](https://user-images.githubusercontent.com/20726856/100796017-4cfa4500-3420-11eb-9d35-aa206d392a5a.png)
 
 ### 1. Setting up a profile
-To let others know who you are, you should set up your *profile*. To do so, click on "View" (bar on the top)>"My Profile..."
+To let others know who you are, you should set up your *profile*. To do so, click on "View" (bar on the top) > "My Profile..."
 Now you will see this:
 
 ![Musician Profile](https://user-images.githubusercontent.com/20726856/100796411-e590c500-3420-11eb-9b62-e50d02cb009b.png)

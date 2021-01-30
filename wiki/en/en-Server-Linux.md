@@ -157,6 +157,8 @@ When using the [recording function](Server-Win-Mac#recording) with the `-R` [com
 
 To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
 
+**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
+
 For turning recording on or off (depending on the current state):
 
 ~~~
