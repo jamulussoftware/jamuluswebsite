@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: "Quality, Delay and Network Bandwidth"
+title: "Quality, Delay and Bandwidth"
 lang: "en"
 permalink: "/wiki/Network-Requirements"
 ---
