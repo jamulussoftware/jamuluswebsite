@@ -16,7 +16,7 @@ _(Note: les copies d'écran ont été faite avec l'interface en anglais, les ter
 
 * **Utilisateurs de Linux** : veuillez vous référer aux [instructions serveur avec IUG](Server-Linux#exécuter-un-serveur-avec-iug).
 
-<img width="627" alt="configuration du serveur" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
+<img width="627" alt="configuration du serveur" src="https://user-images.githubusercontent.com/8705846/106392488-5d17ac00-63f2-11eb-8b83-199bdbd3b5bc.png">
 
 ### Configuration d'un serveur public
 
@@ -44,7 +44,7 @@ Pour les serveurs sans <abbr title="Interface utilisateur graphique">IUG</abbr> 
 
 ### Autres options
 
-<img width="549" alt="jamulus-server" src="https://user-images.githubusercontent.com/4561747/95724775-accd3e80-0c6e-11eb-90ba-7131e9c15316.png">
+<img width="549" alt="jamulus-server" src="https://user-images.githubusercontent.com/8705846/106392489-5e48d900-63f2-11eb-95e4-b80fafe67e7a.png">
 
 **Utilisateurs Windows** : si vous souhaitez que le serveur se lance automatiquement au démarrage du système, cochez l'option correspondante.
 
