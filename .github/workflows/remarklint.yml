@@ -1,12 +1,13 @@
-name: Lint markdown
+name: reviewdog
 on: [pull_request]
 jobs:
-  md-check:
+  remark-lint:
+    name: runner / remark-lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Remark Action
-        uses: ocular-d/action-remark@0.0.10
+      - uses: actions/checkout@v1
+      - name: remark-lint
+        uses: reviewdog/action-remark-lint@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-check
