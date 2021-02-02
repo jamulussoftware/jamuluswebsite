@@ -1,8 +1,9 @@
 name: Lint markdown
 on: [push, pull_request]
 jobs:
-  jekyll:
+  md-check:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - name: Remark Action
         uses: ocular-d/action-remark@0.0.10
