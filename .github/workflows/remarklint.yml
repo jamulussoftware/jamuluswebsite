@@ -1,7 +1,5 @@
 name: Lint markdown
-
-on: [pull-request, push]
-
+on: [push, pull_request]
 jobs:
   jekyll:
     runs-on: ubuntu-latest
