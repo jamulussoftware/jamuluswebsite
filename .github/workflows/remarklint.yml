@@ -1,0 +1,10 @@
+name: Lint markdown
+
+on: [pull-request, push]
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remark Action
+        uses: ocular-d/action-remark@0.0.10
