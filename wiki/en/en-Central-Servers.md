@@ -14,7 +14,7 @@ When you start a public server, you will see a message saying whether your serve
 
 ## Headless servers
 
-Set central (genre) server using the `--centralserver` (`-e`) option as follows:
+Set central (genre) server using the `--centralserver` (`-e`) option as folos:
 
 
 | Genre |   Server address           |
