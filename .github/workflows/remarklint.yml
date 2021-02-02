@@ -1,5 +1,5 @@
 name: Lint markdown
-on: [push, pull_request]
+on: [pull_request]
 jobs:
   md-check:
     runs-on: ubuntu-latest
@@ -7,3 +7,6 @@ jobs:
       - uses: actions/checkout@master
       - name: Remark Action
         uses: ocular-d/action-remark@0.0.10
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-check
