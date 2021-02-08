@@ -9,14 +9,19 @@ permalink: "/wiki/Installation-for-Windows"
 Make sure you read the [Getting Started](Getting-Started) page.
 1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install [this free ASIO driver (ASIO4ALL)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} before installing Jamulus.
 1. [Download Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: .button target="_blank" rel="noopener noreferrer"}
-1. **Install Jamulus**: Double click the Jamulus installer. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. This is needed since we don't pay for code signing yet.
+1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
 1. **Setup your sound card**. When you're done, you need to setup your audio hardware. Have a look at how to setup ASIO4ALL if you you're using that and/or [Hardware Setup](Hardware-Setup).
 
 ***
 
 ## ASIO
-To provide the lowest latency, Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output). If you don't have an external sound card, you will probably also not have an ASIO driver. Therefore, you will need to install a generic one like ASIO4ALL which you can [download from the official ASIO4ALL website](https://www.asio4all.org/). If you own an external sound card/audio interface, you should check for an official ASIO driver and use it since they usually provide better quality.
+Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to provide the lowest latency.
+* If you own an external sound card/audio interface, use its official ASIO driver (they usually provide the best quality).
+* If you don't have an external sound card, you will probably not have an ASIO driver. Therefore, you will need to install a generic one like ASIO4ALL:
+
+[ASIO4ALL website](https://www.asio4all.org/){: .button target="_blank" rel="noopener noreferrer"}
+
 
 ### Setting up ASIO4ALL
 *ASIO4ALL is not recommended if your sound card/audio interface provides its own ASIO driver, since that might have better latency.*
@@ -45,12 +50,13 @@ Concerning the inputs/outputs: Headphones and speakers are often labelled as out
 
 ### Having trouble with ASIO4ALL setup?
 
-If nothing works, first of all try to **restart Jamulus and/or your PC**.
-Afterwards try to **setup the inputs/outputs again**. Enabled and accessible inputs/outputs show a lit up on/off button and a play button. If you see a red cross or a yellow symbol, you might need to close other applications like your browser, Zoom, ...
+If nothing works, first restart Jamulus and/or your PC to close background processes that may be accessing your sound card.
+
+Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons. If instead, you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g browser, Zoom, etc).
 
 Have a look at [this video](https://youtu.be/_GzOsitVgLI) from [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL.
 
-Official and more detailed information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} and in the [ASIO4ALL manual here](https://www.asio4all.org/ASIO4ALL%20v2%20Instruction%20Manual.pdf).
+Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} and in the [ASIO4ALL manual here](https://www.asio4all.org/ASIO4ALL%20v2%20Instruction%20Manual.pdf).
 (The manual can also be found on your desktop or in the folder where the ASIO4ALL binary is installed (usually `C:\Program Files (x86)\ASIO4ALL v2\`)).
 
 ## All installed?
