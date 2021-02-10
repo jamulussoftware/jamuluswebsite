@@ -25,7 +25,7 @@ The first time you try to double-click Jamulus to run it, you will probably see 
 
 To open Jamulus
 1. Navigate to the Applications folder via Finder
-1. Double-click on Jamulus and wait for the mentioned message
+1. Double-click on Jamulus and wait for the above-mentioned message
 1. Close this message by clicking on "Cancel"
 1. Now control-click (or right-click) on Jamulus, and select "Open" from the top of the menu.
 
