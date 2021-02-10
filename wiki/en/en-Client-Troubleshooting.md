@@ -18,7 +18,7 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 
 You can test whether you are hearing your signal correctly by doing the following:
 
-1. Get your audio into your computer.
+1. Connect your audio source (mic, instrument...) to your computer.
 1. Use an audio recording application (such as [Audacity](https://www.audacityteam.org/)) on your computer to record that input and check it's OK.
 1. Make sure that if you mute your audio input inside the recording application, you can't hear yourself.
 1. Close the recording application and run Jamulus. You should still not hear yourself.
@@ -50,7 +50,7 @@ You can set your "New Client Level" to a low value (e.g. 10), or set the musicia
 
 ### Can't see the server you want to join?
 
-First check that you have the right genre server selected in your Connect Setup window. But sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it.
+First check that you have the right genre server selected in your Connection Setup window. Sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it.
 
 ### Not seeing a list of servers at all?
 
