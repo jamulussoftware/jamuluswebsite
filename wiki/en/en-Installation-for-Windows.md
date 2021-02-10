@@ -11,7 +11,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 1. [Download Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: .button target="_blank" rel="noopener noreferrer"}
 1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
-1. **Setup your sound card**. When you're done, you need to setup your audio hardware. Have a look at how to setup ASIO4ALL if you you're using that and/or [Hardware Setup](Hardware-Setup).
+1. **Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL if you're using that and/or [Hardware Setup](Hardware-Setup).
 
 ***
 
@@ -28,14 +28,14 @@ Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to 
 
 For ASIO4ALL ([download](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}), you may need to experiment a bit to find the right configuration since every computer is a bit different.
 
-**Tip:** Setup your sound card while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly setup, but first read on.
+**Tip:** Set up your sound card while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly set up; but first read on.
 
 
 Before you start with Jamulus:
 1. **Close all applications** (especially those which could access your sound card like your browser/media player) since Jamulus needs exclusive access to your sound card. Other programs will not be able to use audio if ASIO4ALL and Jamulus are running.
 1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. This can be done as follows:
 
-### How to setup ASIO4ALL inputs (Guide)
+### How to set up ASIO4ALL inputs (Guide)
 
 1. Open Jamulus's settings
 1. Go to _"ASIO Settings"_ (column on the left)
@@ -46,15 +46,15 @@ Before you start with Jamulus:
 
 **Hint:** Many internal sound cards are named Realtek High Definition Audio, Conexant or similar.
 
-Concerning the inputs/outputs: Headphones and speakers are often labelled as output and microphones as inputs or capture. Stereo Mix is usually not the input/output you search for, therefore you can switch it off, if you see it.
+Concerning the inputs/outputs: Headphones and speakers are often labelled as output and microphones as inputs or capture. Stereo Mix is usually not the input/output you're looking for and therefore you can switch it off if you see it.
 
-### Having trouble with ASIO4ALL setup?
+### Having trouble setting up ASIO4ALL?
 
 If nothing works, first restart Jamulus and/or your PC to close background processes that may be accessing your sound card.
 
-Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons. If instead, you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g browser, Zoom, etc).
+Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. browser, Zoom, etc).
 
-Have a look at [this video](https://youtu.be/_GzOsitVgLI) from [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL.
+Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL.
 
 Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} and in the [ASIO4ALL manual here](https://www.asio4all.org/ASIO4ALL%20v2%20Instruction%20Manual.pdf).
 (The manual can also be found on your desktop or in the folder where the ASIO4ALL binary is installed (usually `C:\Program Files (x86)\ASIO4ALL v2\`)).
