@@ -33,9 +33,9 @@ If you really want to run a server, it's **very important** that you read and un
 
 Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' [hardware](Hardware-Setup), the networks that _they_ are on, and whether they are sticking to [Rule Number One](Getting-Started#having-trouble-cant-keep-in-time). There is therefore no guarantee that you will achieve lower latency or better overall performance by having your own server.
 
-If you plan to be playing regularly with the same people, **you are strongly advised** to first make sure that each member of the group is set up to use Jamulus properly. Do this by finding a public server with a reasonable ping time for all of you (20ms or less perhaps), all connect to that and work to fix any individual issues (verifying that they can [follow Rule Number One](Getting-Started#having-trouble-cant-keep-in-time) in particular). Use the solo technique above to prevent being interrupted if needed.
+If you plan to be playing regularly with the same people, **you are strongly advised** to first make sure that each member of the group is set up to use Jamulus properly. Do this by finding a public server with a reasonable ping time for all of you (20 ms or less perhaps), all connect to that and work to fix any individual issues (verifying that they can [follow Rule Number One](Getting-Started#having-trouble-cant-keep-in-time) in particular). Use the solo technique above to prevent being interrupted if needed.
 
-Once any issues with musicians have been solved in this way, you can then investigate hosting your own server either at home or on a cloud host such as Amazon, which may result in better latency than servers run at home. For example, [see this guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/howto-idiots-guide-to-installing-jamulus-server-on-amazon-aws-lightsail-ubuntu-i/507719749802976/) to using AWS Lightsail by Jamulus user [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_)
+Once any issues with musicians have been solved in this way, you can then investigate hosting your own server either at home or on a cloud host such as Amazon, which may result in better latency than servers run at home. For example, [see this guide](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/howto-idiots-guide-to-installing-jamulus-server-on-amazon-aws-lightsail-ubuntu-i/507719749802976/) for using AWS Lightsail, by Jamulus user [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_)
 
 ### Bandwidth – do you have enough?
 
@@ -43,7 +43,7 @@ A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800
 
 ### In general
 
-- Consider using a cloud host to get better ping times if you having problems
+- Consider using a cloud host to get better ping times if you're having problems
 
 - Any server should have at least 1.6GHz CPU frequency and 1GB RAM
 
@@ -60,9 +60,9 @@ A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800
     <a href="Server-Linux" class="button fx-col-100-xs">For Linux users</a>
 </div>
 
-If you want to run a server on a Raspberry Pi, have a look at the [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) from fredsiva.
+If you want to run a server on a Raspberry Pi, have a look at the [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) by fredsiva.
 
-Server operators may also be interested in downloading [this set of useful tools](https://github.com/corrados/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
+Server operators may also be interested in downloading [this set of useful tools](https://github.com/jamuluswebsite/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 
 ## Having problems? Got issues?
 
