@@ -13,9 +13,9 @@ Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has 
 
 ##  Using Jamulus audio in Zoom (or other) meeting apps
 
-Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through the JackRouter to the target application (in this case, Zoom meetings).
+Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through JackRouter to the target application (in this case, Zoom meetings).
 
-You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for macOS to route Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time.
+You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for macOS to route the Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time.
 
 
 ## Recording Jamulus on Windows with Reaper
@@ -29,7 +29,7 @@ Jamulus user [BTDT](https://sourceforge.net/u/btdt/profile/) has written a syste
 
 ## Making a server status page
 
-With the `-m` command line argument a server statistic information can be generated to be put on a web page.
+With the `-m` command line argument, server statistic information can be generated to be put on a web page.
 
 Here is an example php script using the server status file to display the current server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):
 
