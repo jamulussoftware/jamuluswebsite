@@ -24,13 +24,13 @@ permalink: "/wiki/Server-Win-Mac"
 
 1. Type in the name, city and country so that other users can easily identify you.
 
-1. Specify a musical genre if you wish. This will make your server appear in the relevant server list for clients (see more [details on Central Servers](Central-Servers)).
+1. Specify a music genre if you wish. This will make your server appear in the relevant server list for clients (see more [details on Central Servers](Central-Servers)).
 
 _The Chat Welcome Message appears to all users when they join the server (the chat window will open automatically for them)._
 
 ### Private server setup
 
-If you do not check the "Make My Server Public", you will be running a private server and need to [read these instructions](Running-a-Private-Server).
+If you do not check "Make My Server Public", you will be running a private server and need to [read these instructions](Running-a-Private-Server).
 
 _If you want to **run a client on the same machine** you should **connect the client to `127.0.0.1`** for best performance. (Similarly, if you want to connect a client on another machine on your LAN, use the server's LAN IP address)._
 
