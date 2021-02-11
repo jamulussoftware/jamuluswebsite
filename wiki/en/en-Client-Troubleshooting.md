@@ -18,11 +18,11 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 
 You can test whether you are hearing your signal correctly by doing the following:
 
-1. Connect your audio source (mic, instrument...) to your computer.
-1. Use an audio recording application (such as [Audacity](https://www.audacityteam.org/)) on your computer to record that input and check it's OK.
-1. Make sure that if you mute your audio input inside the recording application, you can't hear yourself.
-1. Close the recording application and run Jamulus. You should still not hear yourself.
-1. Connect to a server and play something. Now you should hear yourself with the delay from the server.
+1.  Connect your audio source (mic, instrument...) to your computer.
+1.  Use an audio recording application (such as [Audacity](https://www.audacityteam.org/)) on your computer to record that input and check it's OK.
+1.  Make sure that if you mute your audio input inside the recording application, you can't hear yourself.
+1.  Close the recording application and run Jamulus. You should still not hear yourself.
+1.  Connect to a server and play something. Now you should hear yourself with the delay from the server.
 
 **If you are still having problems**, try asking on the [hardware forum](https://sourceforge.net/p/llcon/discussion/hardware/). Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options.
 
@@ -67,8 +67,8 @@ See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/th
 (With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))
 
 Maybe you did not answer "Yes" to the `"Jamulus wants to access your microphone"` challenge.  To fix this:
-* Go to `Preferences` > `Security & Privacy` > `Privacy` tab
-* Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list
+*  Go to `Preferences` > `Security & Privacy` > `Privacy` tab
+*  Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list
 
 ***
 
