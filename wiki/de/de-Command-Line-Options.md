@@ -52,4 +52,3 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |    `-z` |`--startminimized` | Starte minimiert | (nur Server) |
 |       |`--ctrlmidich`     | MIDI Controller Kanal und Offset, Format `channel[;offset]`  | (nur Client) Siehe [Tipps & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
 |       |`--clientname`     | Fenster Titel und Jack Client Name | (nur Client) |
-|       |`--serverpublicip` | Bei Nutzung eines eigenen Zentralservers mit eigenen Slave-Servern in einem privaten Netzwerk kann mit dieser Option die öffentliche IP-Adresse angegeben werden, um Clients aus dem Internet den Zugriff zu ermöglichen. Darüberhinaus sind weiterhin entsprechende Port-Weiterleitungen in Router bzw. Firewall nötig.| (nur Server) |
