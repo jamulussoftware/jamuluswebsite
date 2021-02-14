@@ -14,18 +14,20 @@ Although we don't provide official packages for every Linux distribution, you mi
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-There is also list of unofficial [packages for different distributions here](https://github.com/corrados/jamulus/issues/223).
+There is also list of unofficial [packages for different distributions here](https://github.com/jamulussoftware/jamulus/discussions/914).
 
-### Debian and Ubuntu (amd64 .deb only)
+### Debian and Ubuntu
+
+Jamulus (with GUI) is will be [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt-get install jamulus`.
 
 If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages from GitHub Actions.
 
-1. Download the jamulus_latest_ubuntu_amd64.deb file from the [Jamulus GitHub release](https://github.com/corrados/jamulus/releases/tag/latest) page
+1. Download the jamulus_latest_ubuntu_amd64.deb file from the [Jamulus GitHub release](https://github.com/jamulussoftware/jamulus/releases/tag/latest) page
 1. Update apt: `sudo apt-get update`
-1. Install the package: `sudo dpkg -i /path/to/jamulus_latest_ubuntu_amd64.deb`
+1. Install the package: `sudo dpkg -i /path/to/jamulus_latest_ubuntu_amd64.deb` and fix the dependencies with `sudo apt-get install -f`.
 1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
 
-**Note:** The generated deb files will install Jamulus with a lower case "j". You can therefore start it in terminal by typing `jamulus`. This is different to a compiled version of Jamulus which uses the upper case *J*!
+**Note:** The generated deb files will install Jamulus with a lower case "j". You can therefore start it in terminal by typing `jamulus`. This is different to a version you compiled from git which would use the upper case *J*!
 
 Afterwards you should look at the "Set up your sound card" step on this page.
 
