@@ -50,6 +50,6 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-u` |`--numchannels`    | Maximum number of users. Default is 10, maximum is 50 | (server only) |
 |    `-w` |`--welcomemessage` | Supports HTML and inline CSS formatting (in enclosing quotes), or set path to text file. | (server only) |
 |    `-z` |`--startminimized` | Start minimized | (server only) |
-|       |`--ctrlmidich`     | MIDI controller channel to listen on and control number offset, format: `channel[;offset]` | (client only) see [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
+|       |`--ctrlmidich`     | MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels) format: `channel[;f<off>*<channels>][;p<off>*<channels>][;s<off>*<channels>][;m<off>*<channels>]` | (client only) see [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
 |       |`--clientname`     | Window title and JACK client name | (client only) |
 |       |`--serverpublicip` | When running your own central server with own slave servers in a private network, specify your public IP with this option to enable clients from the Internet to connect. You will still need proper port forwarding in your router/firewall.| (server only) |
