@@ -39,6 +39,7 @@ Also - [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS
 
 ## Recommended hardware
 
+Passive voice can be read here.
 In general, your device must support a sample rate of **48kHz** (DVD quality) and should allow you to listen to the computer's audio signal. On Windows it's recommended to choose a device with a native [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) driver.
 
 See [the community list of known good hardware](/kb/2021/01/05/Jamulus-Sound-Devices.html).
