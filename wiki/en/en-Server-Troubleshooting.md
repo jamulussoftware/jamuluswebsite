@@ -37,7 +37,7 @@ Yes. Please see [Server Types](Choosing-a-Server-Type)
 
 ### Can I convert my private server to being a public one?
 
-Yes. Simply check the "Make my Server Public" box in the server window and fill out the details. Remember also that you do not need to port forward if you have a public server.
+Yes. Simply check the "Make my Server Public" box in the server window and fill out the details. If you register your server, do not use port forwarding as it may prevent others using your server.
 
 ### **_Headless Linux_**: I have created a server but it is joining the Central Server and I don't want it to.
 
