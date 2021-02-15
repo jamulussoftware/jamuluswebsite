@@ -14,13 +14,13 @@ Although we don't provide official packages for every Linux distribution, you mi
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-There is also list of unofficial [packages for different distributions here](https://github.com/jamuluswebsite/jamulus/issues/223).
+There is also list of unofficial [packages for different distributions here](https://github.com/jamulussoftware/jamulus/issues/223).
 
 ### Debian and Ubuntu (amd64 .deb only)
 
 If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages from GitHub Actions.
 
-1. Download the jamulus_latest_ubuntu_amd64.deb file from the [Jamulus GitHub release](https://github.com/jamuluswebsite/jamulus/releases/tag/latest) page
+1. Download the jamulus_latest_ubuntu_amd64.deb file from the [Jamulus GitHub release](https://github.com/jamulussoftware/jamulus/releases/tag/latest) page
 1. Update apt: `sudo apt-get update`
 1. Install the package: `sudo dpkg -i /path/to/jamulus_latest_ubuntu_amd64.deb`
 1. Since Jamulus needs the JACK server, you have to install it too. We recommend using `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
