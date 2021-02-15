@@ -24,7 +24,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 1. Type in the name, city and country so that other users can easily identify you.
 
-1. Specify a music genre if you wish. This will make your server appear in the relevant server list for clients (see more [details on Central Servers](Central-Servers)).
+1. Specify a music genre. This will make your server appear in the relevant server list for clients (see more [details on Central Servers](Central-Servers)).
 
 _The Chat Welcome Message appears to all users when they join the server (the chat window will open automatically for them)._
 
