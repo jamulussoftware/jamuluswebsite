@@ -91,7 +91,7 @@ You can now delete the sources directory you compiled from.
 ### Configure JACK with QjackCtl
 Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
 1. Open the command shell e.g. with Ctrl-Alt-T and
-1. Execute the command `qjackctl`. You will see the **JACK Audio Connection Kit**
+1. Execute the command `qjackctl`. You will see the **Qt JACK Control utility main page**
 2. Configure your audio interface as follows (the exact settings for JACK will depend on what your audio interface/sound card is capable of):
 
 - Set the audio **Interface** to the one you want (there may be several in the list)
