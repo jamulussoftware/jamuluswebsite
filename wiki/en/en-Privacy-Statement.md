@@ -24,7 +24,7 @@ When you connect to a public or private server, the server operator can see your
 
 As a server operator, when you register a public server with a Central Server, your IP address is sent to CloudFlare (1.1.1.1) in order to identify your public IP address. The IP addresses of all public servers registered with the Central Server can also be seen by third parties for informational or other purposes (for example [here](https://explorer.jamulus.io/)). Your public IP address is otherwise not logged or stored by Jamulus, but may be stored or processed by third parties.
 
-_Users concerned by the use of CloudFlare's network can [re-compile](Compiling) the Jamulus source code to use an alternative for WELL_KNOWN_HOST/ WELL_KNOWN_PORT in [global.h](https://github.com/jamuluswebsite/jamulus/blob/master/src/global.h#L111)_
+_Users concerned by the use of CloudFlare's network can [re-compile](Compiling) the Jamulus source code to use an alternative for WELL_KNOWN_HOST/ WELL_KNOWN_PORT in [global.h](https://github.com/jamulussoftware/jamulus/blob/master/src/global.h#L111)_
 
 ### Audio Recordings
 
