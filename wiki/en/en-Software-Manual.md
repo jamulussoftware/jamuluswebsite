@@ -246,8 +246,10 @@ Leave this blank unless you need to enter the address of a central server other 
 ![Indicators](https://user-images.githubusercontent.com/20726856/97362338-271dd580-18a1-11eb-99b7-02c9371a6258.png)
 
 The Ping Time is the time required for the audio stream to travel from the client to the server and back again.
-This delay is introduced by the network and should be about 20-30 ms. If this delay is higher than about 50 ms,
-your distance to the server is too large or your internet connection is not sufficient.
+This delay is introduced by the network and ideally should be about 20-30 ms. When this delay is higher than about 50 ms, it starts to become
+more noticeable and you may find it harder to keep in time, though it is still possible once you get used to it. Factors such as tempo, the instrument
+played or headphone isolation will have an impact on the delay you find you can deal with. 
+The most probable causes for a high delay are that your distance to the server is too large or your internet connection is not sufficient.
 
 Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
 
