@@ -15,9 +15,9 @@ See the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus) for fu
 
 ## Jamulus Website
 
-*  If you find a mistake, typo or something out of date (in any language) on the website, you can [open an issue on GitHub](https://github.com/jamulussoftware/jamuluswebsite/issues) or, if you don't have a GitHub account, on [the relevant discussion forum](https://sourceforge.net/p/llcon/discussion/) on SourceForge.
+* If you find a mistake, typo or something out of date (in any language) on the website, you can [open an issue on GitHub](https://github.com/jamulussoftware/jamuluswebsite/issues) or, if you don't have a GitHub account, on [the relevant discussion forum](https://sourceforge.net/p/llcon/discussion/) on SourceForge.
 
-*  If you think some documentation or information is missing or can be improved, post about that on [the relevant discussion forum](https://sourceforge.net/p/llcon/discussion/) so that it can be discussed first.
+* If you think some documentation or information is missing or can be improved, post about that on [the relevant discussion forum](https://sourceforge.net/p/llcon/discussion/) so that it can be discussed first.
 
 Have a look at the [CONTRIBUTING file](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md) for the website and the [Website GitHub repo](https://github.com/jamulussoftware/jamuluswebsite) for further information.
 
