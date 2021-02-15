@@ -67,8 +67,8 @@ See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/th
 (With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))
 
 Maybe you did not answer "Yes" to the `"Jamulus wants to access your microphone"` challenge.  To fix this:
-*  Go to `Preferences` > `Security & Privacy` > `Privacy` tab
-*  Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list
+* Go to `Preferences` > `Security & Privacy` > `Privacy` tab
+* Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list
 
 ***
 
