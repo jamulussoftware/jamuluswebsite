@@ -17,7 +17,7 @@ You can just choose somebody else's server from your list and get going.
 
 **Don't want strangers interrupting?**  Once you and your friends are connected to a public server, press the "solo" buttons on the musicians each of you want to play with. Anyone you don't solo will see a "muted" icon on your fader. And you won't hear them.
 
-## That sounds too easy.
+## That sounds too easy!
 
 If you really want to run a server, it's **very important** that you read and understand what type of server you want to run.
 
