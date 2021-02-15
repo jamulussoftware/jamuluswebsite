@@ -52,4 +52,4 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-z` |`--startminimized` | Start minimized | (server only) |
 |       |`--ctrlmidich`     | MIDI controller channel to listen on and control number offset, format: `channel[;offset]` | (client only) see [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
 |       |`--clientname`     | Window title and JACK client name | (client only) |
-|       |`--serverpublicip` | Allows servers to be seen on the Internet when listed by a Central Server on a LAN | (server only) [See note](Choosing-a-Server-Type) |
+|       |`--serverpublicip` | Supply the server's public IP address  | (server only) [See note](Choosing-a-Server-Type) |
