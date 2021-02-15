@@ -17,8 +17,8 @@ Although you **can** install Jamulus on Android devices (and hear sound), we str
 
 If you do want to try Jamulus on Android:
 
-1. Allow the installation of apps from unknown sources (look in Settings>Security).
-1. Download the APK from the [GitHub release page](https://github.com/corrados/jamulus/releases/tag/latest)
+1. Allow the installation of apps from unknown sources (look in Settings>Security. Note: this can vary for device and OS-version)
+1. Download and install the APK from the [GitHub release page](https://github.com/corrados/jamulus/releases/tag/latest)
 1. You should now be able to run Jamulus on your Android device
 
 ## Feedback and development
