@@ -27,11 +27,11 @@ If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages
 1. Install the package: `sudo dpkg -i /path/to/jamulus_latest_ubuntu_amd64.deb` and fix the dependencies with `sudo apt-get install -f`.
 1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
 
-**Note:** The generated deb files will install Jamulus with a lower case "j". You can therefore start it in terminal by typing `jamulus`. This is different to a version you compiled from git which would use the upper case *J*!
-
 Afterwards you should look at the "Set up your sound card" step on this page.
 
-If you can't use one of these options, you need to compile Jamulus from source. That's quite easy:
+---
+
+If you can't use one of above options, you need to compile Jamulus from source:
 
 ## Get Jamulus sources
 
@@ -88,6 +88,8 @@ sudo make install
 
 You can now delete the sources directory you compiled from.
 
+---
+
 ## Set up your sound card
 
 ### Configure JACK with QjackCtl
@@ -104,9 +106,9 @@ Restart JACK to take any new settings
 
 ### Start Jamulus
 
-Open Jamulus e.g. via your command shell. If you use the shell and compiled Jamulus yourself, execute the command `Jamulus` (with a capital 'J') or if you used the .deb package with a lowercase j. This will start the Jamulus Client.
+From the command line, execute the command `jamulus`, or if you compiled from source `Jamulus` with a (with a capital 'J'). This will start the Jamulus Client.
 
-If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods) in step 3 above. Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
+If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
 
