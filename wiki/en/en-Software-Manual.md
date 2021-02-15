@@ -72,7 +72,7 @@ pressing this button will end the session.
 
 ![Connect dialog](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators can optionally list their servers by music genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
 You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
 
