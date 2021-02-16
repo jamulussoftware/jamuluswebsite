@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Hardware-Setup"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
+
 # Hardware Setup
 
 ## General info

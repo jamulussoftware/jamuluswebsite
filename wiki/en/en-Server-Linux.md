@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Server-Linux"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Server Installation - Linux
 
 

@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Installation-for-Windows"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
+
 # Installation for Windows
 Make sure you read the [Getting Started](Getting-Started) page.
 1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install [this free ASIO driver (ASIO4ALL)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} before installing Jamulus.

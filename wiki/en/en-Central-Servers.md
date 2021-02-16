@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Central-Servers"
 ---
 
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Public Server Registration
 
 Because there is a limit of 150 servers per central server, you need to select which central server you want to advertise your server on. Select a genre if you intend to limit players to that style (players can then see your server in their genre list). 
