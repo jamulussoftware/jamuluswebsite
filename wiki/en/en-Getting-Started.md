@@ -33,6 +33,7 @@ Now that you have the basics down, let's go:
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Install on Windows</a>
   <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Install on macOS</a>
   <a href="Installation-for-Linux" class="button fx-col-100-xs">For Linux users</a>
+  <a href="Installation-for-Android" class="button fx-col-100-xs">Install on Android (PoC)</a>
 </div>
 
 Also - [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) Run Jamulus on any computer using a USB stick (64-bit systems only). Checks your hardware and sets you up like a boss straight out of the box!
