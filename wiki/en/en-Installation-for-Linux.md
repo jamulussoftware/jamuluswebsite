@@ -16,11 +16,15 @@ Although we don't provide official packages for every Linux distribution, you mi
 
 There is also list of unofficial [packages for different distributions here](https://github.com/jamulussoftware/jamulus/discussions/914).
 
+### Flatpak
+
+Jamulus is available as a [Flatpak](https://flatpak.org/) from [Flathub here](https://flathub.org/apps/details/io.jamulus.Jamulus). You will need to setup pipewire in order to use the Jamulus flatpak.
+
 ### Debian and Ubuntu
 
 Jamulus (with GUI) is will be [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt-get install jamulus`.
 
-If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages from GitHub Actions.
+If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages from GitHub Actions:
 
 1. Download the jamulus_latest_ubuntu_amd64.deb file from the [Jamulus GitHub release](https://github.com/jamulussoftware/jamulus/releases/tag/latest) page
 1. Update apt: `sudo apt-get update`
@@ -33,17 +37,19 @@ Afterwards you should look at the "Set up your sound card" step on this page.
 
 If you can't use one of above options, you need to compile Jamulus from source:
 
-## Get Jamulus sources
+## Compile from source
+
+### Get Jamulus sources
 
 1. Open up a terminal window (command line - `CTRL+ALT+T` on Ubuntu and related distros)
 1. Download and unzip the sources for the latest release:
 ```shell
-wget https://github.com/corrados/jamulus/archive/latest.tar.gz
+wget https://github.com/jamulussoftware/jamulus/archive/latest.tar.gz
 tar -xvf latest.tar.gz
 ```
 
 
-## Install dependencies
+### Install dependencies
 
 First, update your package list (e.g. on Debian based distributions with `sudo apt-get update`).
 
@@ -69,7 +75,7 @@ sudo apt-get install qjackctl
 
 You may also wish to consider using a [low-latency kernel](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (eg. for Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
 
-## Compile this bad boy
+### Compile this bad boy
 
 Now `cd` into the jamulus sources directory you downloaded:
 
