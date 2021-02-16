@@ -39,7 +39,7 @@ If you're on amd64 Debian/Ubuntu, you may try the compiled .deb packages from Gi
 1. Install the package: `sudo apt install /path/to/jamulus_headless_latest_ubuntu_amd64.deb`
 1. Enable the headless server via systemd: `sudo systemctl enable jamulus-headless`
 1. Add the required [command line options](Command-Line-Options) to the systemd service file in `/lib/systemd/system/jamulus-headless.service`.
-1. Restart the headless server: `sudo systemctl restart jamulus-headless`
+1. Reload systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
 
 You should now be running a private server!
 
