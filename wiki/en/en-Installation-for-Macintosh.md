@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Installation-for-Macintosh"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
+
 # Installation for macOS
 
 Make sure you've already read the [Getting Started](Getting-Started) page.
