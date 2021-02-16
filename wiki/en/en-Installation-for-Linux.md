@@ -29,7 +29,7 @@ If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages
 1. Install the package: `sudo apt install /path/to/jamulus_latest_ubuntu_amd64.deb`.
 1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
 
-Afterwards you should look at the "Set up your sound card" step on this page.
+Afterwards you should look at the "[Set up your sound card](#set-up-your-sound-card)" step on this page.
 
 **Note:** Jamulus (with GUI) is will be [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt-get install jamulus`.
 
