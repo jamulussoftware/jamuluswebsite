@@ -1,0 +1,11 @@
+<div id="breadcrumb">
+ {% if include.root %}
+   <strong>{{ include.root }}</strong> |   
+ {% endif %}
+ {% if include.branch1 %}
+   <a href="{{ include.branch1-url }}">{{ include.branch1 }}</a> 
+ {% endif %}
+ {% if include.branch2 %}
+   &gt; <a href="{{ include.branch2-url }}">{{ include.branch2 }}</a>
+ {% endif %}
+</div>
