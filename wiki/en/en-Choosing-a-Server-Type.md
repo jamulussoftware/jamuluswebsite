@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Choosing-a-Server-Type"
 ---
 
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Server Types
 
 You can run your server in one of three "modes" (either at home or on a 3rd party host):
