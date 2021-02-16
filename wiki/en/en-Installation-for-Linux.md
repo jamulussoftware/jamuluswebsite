@@ -24,7 +24,7 @@ If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages
 
 1. Download the jamulus_latest_ubuntu_amd64.deb file from the [Jamulus GitHub release](https://github.com/jamulussoftware/jamulus/releases/tag/latest) page
 1. Update apt: `sudo apt-get update`
-1. Install the package: `sudo dpkg -i /path/to/jamulus_latest_ubuntu_amd64.deb` and fix the dependencies with `sudo apt-get install -f`.
+1. Install the package: `sudo apt install /path/to/jamulus_latest_ubuntu_amd64.deb`.
 1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
 
 Afterwards you should look at the "Set up your sound card" step on this page.
