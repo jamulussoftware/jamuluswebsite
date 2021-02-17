@@ -31,7 +31,7 @@ If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages
 
 Afterwards you should look at the "[Set up your sound card](#set-up-your-sound-card)" step on this page.
 
-**Note:** Jamulus (with GUI) is will be [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt-get install jamulus`.
+**Note:** Jamulus (with GUI) is [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt-get install jamulus`.
 
 ---
 
