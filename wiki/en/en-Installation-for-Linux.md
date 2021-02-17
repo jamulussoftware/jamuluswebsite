@@ -35,7 +35,7 @@ Afterwards you should look at the "[Set up your sound card](#set-up-your-sound-c
 
 ---
 
-If you can't use one of above options, you need to compile Jamulus from source:
+If you can't use one of the above options, you need to compile Jamulus from source:
 
 ## Compile from source
 
