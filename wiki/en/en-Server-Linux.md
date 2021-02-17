@@ -211,7 +211,7 @@ You can see the result of these commands if you run `service jamulus status`, or
 
 ### Viewing The Logs
 
-Jamulus will log to the system file if you left the `StandardOutput=journal` setting in the unit file. Logging to the system log is recommended, as the system will manage the log file for you, no need to come back and purge it later, or worry about filling up your disk space.
+Jamulus will log to the system file if you left the `StandardOutput=journal` setting in the unit file. Logging to the system log is recommended, as the system will manage the log file for you - no need to come back and purge it later or worry about filling up your disk space.
 
 To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:
 

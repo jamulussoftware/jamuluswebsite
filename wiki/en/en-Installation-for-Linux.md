@@ -16,6 +16,7 @@ Although we don't provide official packages for every Linux distribution, you mi
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
+
 There is also list of unofficial [packages for different distributions here](https://github.com/jamulussoftware/jamulus/discussions/914).
 
 ### Flatpak
@@ -53,7 +54,7 @@ tar -xvf latest.tar.gz
 
 ### Install dependencies
 
-First, update your package list (e.g. on Debian based distributions with `sudo apt-get update`).
+First, update your package list (e.g. on Debian-based distributions with `sudo apt-get update`).
 
 On **Ubuntu-based** distributions 18.04+, **Debian** 9+ or 10 and Raspberry Pi Raspbian Buster release or later:
 
@@ -75,7 +76,7 @@ sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Co
 sudo apt-get install qjackctl
 ```
 
-You may also wish to consider using a [low-latency kernel](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (eg. for Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
+You may also wish to consider using a [low-latency kernel](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (e.g. for Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
 
 ### Compile this bad boy
 
@@ -103,14 +104,14 @@ You can now delete the sources directory you compiled from.
 ### Configure JACK with QjackCtl
 Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
 1. Open the command shell e.g. with Ctrl-Alt-T and
-1. Execute the command `qjackctl` you will see the **JACK Audio Connection Kit**
+1. Execute the command `qjackctl`. You will see the **Qt JACK Control utility main page**
 2. Configure your audio interface as follows (the exact settings for JACK will depend on what your audio interface/sound card is capable of):
 
 - Set the audio **Interface** to the one you want (there may be several in the list)
 - Set the **Sample Rate to 48000**
 - Set the **Frames/Period to 128** and Periods/Buffer at 2 at first
 
-Restart JACK to take any new settings
+Restart JACK for the new settings to take effect
 
 ### Start Jamulus
 
@@ -130,12 +131,12 @@ Download the new sources as per [Get Jamulus](Installation-for-Linux#get-jamulus
 
 ## Notes for geeks
 
-* The "make clean" is essential to remove the automatically generated Qt files which are present in the .tar.gz file and may not match the Qt version you are using.
+* The "make clean" command is essential to remove the automatically generated Qt files which are present in the .tar.gz file and may not match the Qt version you are using.
 
-* To use an external shared OPUS library instead of the built-in use qmake `"CONFIG+=opus_shared_lib" Jamulus.pro`.
+* To use an external shared OPUS library instead of the built-in one use qmake `"CONFIG+=opus_shared_lib" Jamulus.pro`.
 
 * To use this file configure the software with `qmake "CONFIG+=noupcasename" Jamulus.pro` to make sure the output target name of this software is **j**amulus instead of **J**amulus.
 
-* Users of Raspberry Pi: You may want to compile the client on another machine and run the binary on the Raspberry Pi. In which case, the only libraries you need to run it are those for a [headless server](Server-Linux#running-a-headless-server) build, but _with_ the JACK sound packages. Especially have a look at the footnote for the headless build.
+* Users of Raspberry Pi: You may want to compile the client on another machine and run the binary on the Raspberry Pi. In which case the only libraries you need to run it are those for a [headless server](Server-Linux#running-a-headless-server) build, but _with_ the JACK sound packages. In particular, have a look at the footnote for the headless build.
 
 * As of version 3.5.3, Jamulus is no longer compatible with Qt4.

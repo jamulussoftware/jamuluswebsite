@@ -51,7 +51,7 @@ You can set your "New Client Level" to a low value (e.g. 10), or set the musicia
 
 ### Can't see the server you want to join?
 
-First check that you have the right genre server selected in your Connect Setup window. But sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it.
+First check that you have the right genre server selected in your Connection Setup window. Sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the "Server Name/Address" field in the Connect Setup window to connect to it.
 
 ### Not seeing a list of servers at all?
 

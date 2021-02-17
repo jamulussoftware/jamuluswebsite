@@ -11,7 +11,7 @@ permalink: "/wiki/Server-Troubleshooting"
 
 ## Servers - Public
 
-### Why doesn't my server show up in the list? Why isn't in registering?
+### Why doesn't my server show up in the list? Why isn't it registering?
 
 If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option).
 
@@ -39,7 +39,7 @@ Yes. Please see [Server Types](Choosing-a-Server-Type)
 
 ### Can I convert my private server to being a public one?
 
-Yes. Simply check the "Make my Server Public" box in the server window and fill out the details. Remember that you also do not need to port forward if you have a public server.
+Yes. Simply check the "Make my Server Public" box in the server window and fill out the details. If you register your server, do not use port forwarding as it may prevent others using your server.
 
 ### **_Headless Linux_**: I have created a server but it is joining the Central Server and I don't want it to.
 
