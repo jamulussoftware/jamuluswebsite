@@ -59,8 +59,7 @@ Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outp
 
 Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL.
 
-Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target="_blank" rel="noopener noreferrer"} and in the [ASIO4ALL manual here](http://index-of.co.uk/Audio/ASIO4ALL%20v2%20Instruction%20Manual.pdf).
-(The manual can also be found on your desktop or in the folder where the ASIO4ALL binary is installed (usually `C:\Program Files (x86)\ASIO4ALL v2\`)).
+Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target="_blank" rel="noopener noreferrer"} and in the ASIO4ALL manual which can be found on your desktop or in the folder where the ASIO4ALL binary is installed (usually `C:\Program Files (x86)\ASIO4ALL v2\`)).
 
 ## All installed?
 
