@@ -66,7 +66,7 @@ You don't need to compile Jamulus for Windows since we provide official binaries
 * A compiler like [Visual Studio](https://visualstudio.microsoft.com) (You only need [Build Tools 2017 or 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) but can also choose to download and install the full IDE from the [Visual Studio download page](https://visualstudio.microsoft.com/downloads/))
 * [Qt](https://www.qt.io/download)
     * Use the free GPLv2 license for Open Source development
-    * To determine the Qt version you need, check [qt-installer-windows.qs](https://github.com/corrados/jamulus/blob/master/windows/qt-installer-windows.qs): under INSTALL_COMPONENTS you will see `qt.qt5.[version]`, e.g., 5123 means version 5.12.3.
+    * To determine the Qt version you need, check [qt-installer-windows.qs](https://github.com/jamulussoftware/jamulus/blob/master/windows/qt-installer-windows.qs): under INSTALL_COMPONENTS you will see `qt.qt5.[version]`, e.g., 5123 means version 5.12.3.
     * Select Components during installation: Expand the Qt section, find the matching version, e.g., **Qt 5.12.3**, and add the compiler components for your compiler, e.g., `MSVC 2017 32-bit/64-bit` for Visual Studio 2019
 * [ASIO development files](https://www.steinberg.net/en/company/developer.html)
 

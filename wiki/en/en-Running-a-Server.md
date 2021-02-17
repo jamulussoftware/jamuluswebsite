@@ -62,7 +62,7 @@ A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800
 
 If you want to run a server on a Raspberry Pi, have a look at the [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) from fredsiva.
 
-Server operators may also be interested in downloading [this set of useful tools](https://github.com/corrados/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
+Server operators may also be interested in downloading [this set of useful tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 
 ## Having problems? Got issues?
 
