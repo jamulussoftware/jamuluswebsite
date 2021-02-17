@@ -36,9 +36,9 @@ The following guide is for running Jamulus as a "pure" server on **hardware with
 
 If you're on amd64 Debian/Ubuntu, you may try the compiled .deb packages from GitHub Actions:
 
-1. Download the [jamulus_headless_latest_ubuntu_amd64.deb](https://github.com/jamulussoftware/jamulus/releases/download/latest/jamulus_headless_latest_ubuntu_amd64.deb) file from the Jamulus [GitHub release page](https://github.com/jamulussoftware/jamulus/releases/tag/latest)
+1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
 1. Update apt: `sudo apt update`
-1. Install the package: `sudo apt install /path/to/jamulus_headless_latest_ubuntu_amd64.deb`
+1. Install the package: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`
 1. Enable the headless server via systemd: `sudo systemctl enable jamulus-headless`
 1. Add the required [command line options](Command-Line-Options) to the systemd service file in `/lib/systemd/system/jamulus-headless.service`.
 1. Reload systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
