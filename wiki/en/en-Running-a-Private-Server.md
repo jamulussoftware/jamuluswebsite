@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Running-a-Private-Server"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Running a Private Server
 
 **_Please ensure you have read the [server overview](Running-a-Server)_**

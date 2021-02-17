@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Server-Linux"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Server Installation - Linux
 
 
@@ -30,6 +32,20 @@ The following guide is for running Jamulus as a "pure" server on **hardware with
 
 * _Jamulus user [Grigory](https://sourceforge.net/u/cidnurg/profile/) maintains a **[Docker image for Jamulus](https://hub.docker.com/r/grundic/jamulus)** which you can use._
 
+### Use the official Debian/Ubuntu headless .deb files
+
+If you're on amd64 Debian/Ubuntu, you may try the compiled .deb packages from GitHub Actions:
+
+1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
+1. Update apt: `sudo apt update`
+1. Install the package: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`
+1. Enable the headless server via systemd: `sudo systemctl enable jamulus-headless`
+1. Add the required [command line options](Command-Line-Options) to the systemd service file in `/lib/systemd/system/jamulus-headless.service`.
+1. Reload systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
+
+You should now be running a private server!
+
+**Note:** To configure the server, you can add command line flags to the file `/lib/systemd/system/jamulus-headless.service` e.g. make this a public server. Have a look at the [Command Line Options](Command-Line-Options) page.
 
 ### Compile sources, create a user
 
@@ -143,7 +159,7 @@ Note: Press `q` to exit the service status.
 
 ### To update your installation to a new release
 
-Download the new sources as per the [instructions above](Server-Linux#compile-sources-create-a-user) and repeat the compilation in step 2 as if for a new installation. Shut down the server, copy the Jamulus binary over the old one and start it back up.
+Download the new sources as per the [instructions above](Server-Linux#compile-sources-create-a-user) and repeat the compilation in step 2 as if for a new installation or just install the new headless .deb files. If you compiled Jamulus from source, shut down the server, copy the Jamulus binary over the old one and start it back up.
 
 ***
 

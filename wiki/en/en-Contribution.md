@@ -9,7 +9,7 @@ permalink: "/wiki/Contribution"
 
 ## Jamulus Software
 
-If you want to contribute code or have a feature request, [open an issue on GitHub](https://github.com/corrados/jamulus/issues/) (preferred) or [post your idea on the developer forum](https://sourceforge.net/p/llcon/discussion/developerforum/) if you don't have a GitHub account. This allows us to discuss the changes before e.g. making a pull request (be sure to read main dev's [Volker's manifesto for contributions on GitHub](https://github.com/jamulussoftware/jamulus/issues/596) and the [CONTRIBUTING file](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md))
+If you want to contribute code or have a feature request, [open an issue on GitHub](https://github.com/jamulussoftware/jamulus/issues/) (preferred) or [post your idea on the developer forum](https://sourceforge.net/p/llcon/discussion/developerforum/) if you don't have a GitHub account. This allows us to discuss the changes before e.g. making a pull request (be sure to read main dev's [Volker's manifesto for contributions on GitHub](https://github.com/jamulussoftware/jamulus/discussions/915) and the [CONTRIBUTING file](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md))
 
 See the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus) for further information.
 

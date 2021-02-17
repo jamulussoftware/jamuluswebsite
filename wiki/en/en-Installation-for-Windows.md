@@ -5,10 +5,13 @@ lang: "en"
 permalink: "/wiki/Installation-for-Windows"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
+
 # Installation for Windows
 Make sure you read the [Getting Started](Getting-Started) page.
 1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install [this free ASIO driver (ASIO4ALL)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} before installing Jamulus.
-1. [Download Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: .button target="_blank" rel="noopener noreferrer"}
+1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
+**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
 1. **Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL if you're using that and/or [Hardware Setup](Hardware-Setup).
@@ -56,7 +59,7 @@ Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outp
 
 Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL.
 
-Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"} and in the [ASIO4ALL manual here](https://www.asio4all.org/ASIO4ALL%20v2%20Instruction%20Manual.pdf).
+Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target="_blank" rel="noopener noreferrer"} and in the [ASIO4ALL manual here](http://index-of.co.uk/Audio/ASIO4ALL%20v2%20Instruction%20Manual.pdf).
 (The manual can also be found on your desktop or in the folder where the ASIO4ALL binary is installed (usually `C:\Program Files (x86)\ASIO4ALL v2\`)).
 
 ## All installed?
