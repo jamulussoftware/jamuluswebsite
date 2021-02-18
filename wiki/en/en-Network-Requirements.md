@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Network-Requirements"
 ---
 
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server"  %}
+
 # Network Requirements
 
 ## Audio bandwidth
