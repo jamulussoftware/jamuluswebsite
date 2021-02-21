@@ -9,15 +9,15 @@ permalink: "/wiki/Contribution"
 
 ## Jamulus Software
 
-If you want to contribute code or have a feature request, [open an issue on GitHub](https://github.com/jamulussoftware/jamulus/issues/) (preferred) or [post your idea on the developer forum](https://sourceforge.net/p/llcon/discussion/developerforum/) if you don't have a GitHub account. This allows us to discuss the changes before e.g. making a pull request (be sure to read main dev's [Volker's manifesto for contributions on GitHub](https://github.com/jamulussoftware/jamulus/discussions/915) and the [CONTRIBUTING file](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md))
+If you want to contribute code or have a feature request, [open an issue on GitHub](https://github.com/jamulussoftware/jamulus/issues/) (preferred) or [post your idea on the forum](https://github.com/jamulussoftware/jamulus/discussions) if you don't have a GitHub account. This allows us to discuss the changes before e.g. making a pull request (be sure to read main dev's [Volker's manifesto for contributions on GitHub](https://github.com/jamulussoftware/jamulus/discussions/915) and the [CONTRIBUTING file](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md))
 
 See the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus) for further information.
 
 ## Jamulus Website
 
-* If you find a mistake, typo or something out of date (in any language) on the website, you can [open an issue on GitHub](https://github.com/jamulussoftware/jamuluswebsite/issues) or, if you don't have a GitHub account, on [the relevant discussion forum](https://sourceforge.net/p/llcon/discussion/) on SourceForge.
+* If you find a mistake, typo or something out of date (in any language) on the website, you can [open an issue on GitHub](https://github.com/jamulussoftware/jamuluswebsite/issues).
 
-* If you think some documentation or information is missing or can be improved, post about that on [the relevant discussion forum](https://sourceforge.net/p/llcon/discussion/) so that it can be discussed first.
+* If you think some documentation or information is missing or can be improved, post about that on [the discussion forum](https://github.com/jamulussoftware/jamuluswebsite/discussions) so that it can be discussed first.
 
 Have a look at the [CONTRIBUTING file](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md) for the website and the [Website GitHub repo](https://github.com/jamulussoftware/jamuluswebsite) for further information.
 

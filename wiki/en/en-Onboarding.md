@@ -59,7 +59,7 @@ More information about using Jamulus can be found in the [Software Manual](Softw
 If you need help or want to contribute to the Jamulus Project, you can have a look at the following links:
 
 ### Discussion Forums
-For help, chat, and general discussions about Jamulus: Have a look at the [forums on SourceForge](https://sourceforge.net/p/llcon/discussion/).
+For help, chat, and general discussions about Jamulus: Have a look at the [forums on GitHub](https://github.com/jamulussoftware/jamulus/discussions).
 
 ### Development and contribution
 
