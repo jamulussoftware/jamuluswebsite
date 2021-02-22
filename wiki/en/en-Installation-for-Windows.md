@@ -50,7 +50,7 @@ Before you start with Jamulus:
 **Hints:**
 1. Many internal sound cards are named Realtek High Definition Audio, Conexant or similar.
 1. Headphones and speakers are often labelled as output and microphones as inputs or capture.
-1. Stereo Mix is usually not the input/output you're looking for and therefore you can switch it off if you see it.
+1. Stereo Mix is usually not the input/output you're looking for and therefore you should switch it off if you see it.
 
 ### Having trouble setting up ASIO4ALL?
 
