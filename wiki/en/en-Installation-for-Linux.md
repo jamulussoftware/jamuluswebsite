@@ -24,8 +24,7 @@ There is also list of unofficial [packages for different distributions here](htt
 Jamulus is available as a [Flatpak](https://flatpak.org/) from [Flathub here](https://flathub.org/apps/details/io.jamulus.Jamulus). You will need to setup pipewire in order to use the Jamulus flatpak.
 
 ### Debian and Ubuntu
-
-If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages from GitHub Actions:
+You can install Jamulus from [buster-backports](https://packages.debian.org/de/buster-backports/jamulus) or - if you're on amd64 **Debian**/**Ubuntu** - you may try the compiled .deb packages from GitHub Actions:
 
 1. Download the [latest .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
 1. Update apt: `sudo apt-get update`
@@ -34,7 +33,7 @@ If you're on amd64 **Debian**/**Ubuntu**, you may try the compiled .deb packages
 
 Afterwards you should look at the "[Set up your sound card](#set-up-your-sound-card)" step on this page.
 
-**Note:** Jamulus (with GUI) is [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt-get install jamulus`.
+**Note:** Jamulus (with GUI) is also [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt-get install jamulus`.
 
 ---
 
