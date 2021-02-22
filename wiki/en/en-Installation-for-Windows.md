@@ -9,7 +9,7 @@ permalink: "/wiki/Installation-for-Windows"
 
 # Installation for Windows
 Make sure you read the [Getting Started](Getting-Started) page.
-1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install [this free ASIO driver (ASIO4ALL)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} before installing Jamulus.
+1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install a generic driver like [ASIO4ALL)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. For more information scroll down to the [ASIO](#asio) section.
 1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
 **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)
@@ -29,7 +29,7 @@ Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to 
 ### Setting up ASIO4ALL
 *ASIO4ALL is not recommended if your sound card/audio interface provides its own ASIO driver, since that might have better latency.*
 
-For ASIO4ALL ([download](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}), you may need to experiment a bit to find the right configuration since every computer is a bit different.
+For ASIO4ALL, you may need to experiment a bit to find the right configuration since every computer is a bit different.
 
 **Tip:** Set up your sound card while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly set up; but first read on.
 
@@ -41,15 +41,16 @@ Before you start with Jamulus:
 ### How to set up ASIO4ALL inputs (Guide)
 
 1. Open Jamulus's settings
-1. Go to _"ASIO Settings"_ (column on the left)
+1. Go to _"ASIO Device Settings"_ (column on the left; directly under the selection of the driver)
 1. Enable _advanced view_ in ASIO4ALL (click the tool icon on the bottom right)
 1. Enable only the sound card you want to use by clicking on the button next to its name
 1. Open your sound card inputs/outputs by clicking the _plus icon_ next to this sound card
-1. Now enable the correct inputs/outputs in the list under your sound card and disable everything else
+1. Now enable the correct inputs/outputs in the list under your sound card and disable everything else. You can hover over the inputs/outputs to see which of both they are and if they support the required sample rate for Jamulus of 48kHz (DVD quality).
 
-**Hint:** Many internal sound cards are named Realtek High Definition Audio, Conexant or similar.
-
-Concerning the inputs/outputs: Headphones and speakers are often labelled as output and microphones as inputs or capture. Stereo Mix is usually not the input/output you're looking for and therefore you can switch it off if you see it.
+**Hints:**
+1. Many internal sound cards are named Realtek High Definition Audio, Conexant or similar.
+1. Headphones and speakers are often labelled as output and microphones as inputs or capture.
+1. Stereo Mix is usually not the input/output you're looking for and therefore you can switch it off if you see it.
 
 ### Having trouble setting up ASIO4ALL?
 
