@@ -9,7 +9,7 @@ permalink: "/wiki/Installation-for-Windows"
 
 # Installation for Windows
 Make sure you read the [Getting Started](Getting-Started) page.
-1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install a generic driver like [ASIO4ALL)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. For more information scroll down to the [ASIO](#asio) section.
+1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install a generic driver like [ASIO4ALL](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. **Note:** Do not fall for  ads! Download the ASIO4ALL installer by scrolling down a bit! For more information scroll down to the [ASIO](#asio) section.
 1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
 **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)
