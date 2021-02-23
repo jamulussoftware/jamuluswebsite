@@ -9,7 +9,7 @@ permalink: "/wiki/Installation-for-Windows"
 
 # Installation for Windows
 Make sure you read the [Getting Started](Getting-Started) page.
-1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install a generic driver like [ASIO4ALL](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. **Note:** Do not fall for ads! Download the ASIO4ALL installer by scrolling down a bit! For more information scroll down to the [ASIO](#asio) section.
+1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install a generic driver like ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.
 1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
 **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)
@@ -23,7 +23,13 @@ Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to 
 * If you own an external sound card/audio interface, use its official ASIO driver (they usually provide the best quality).
 * If you don't have an external sound card, you will probably not have an ASIO driver. Therefore, you will need to install a generic one like ASIO4ALL:
 
-[ASIO4ALL website](https://www.asio4all.org/){: .button target="_blank" rel="noopener noreferrer"}
+You can try two versions of ASIO4ALL. ASIO4ALL v2.14 includes a workaround for a bug which might break other functionality.
+
+[ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+
+[ASIO4ALL v2.13 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.13/ASIO4ALL_2_13_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+
+[ASIO4ALL website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
 
 ### Setting up ASIO4ALL
