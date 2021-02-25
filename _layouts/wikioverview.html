@@ -4,7 +4,7 @@ layout: wiki
 {{ content }}
 <ul>
   {% for page in site.pages %}
-    {% if page.category != "hidden" %}
+    {% if page.category != "hidden" and page.layout != "kblist" %}
     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endif %}
   {% endfor %}
