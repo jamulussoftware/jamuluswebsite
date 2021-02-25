@@ -24,9 +24,7 @@ Lorsque vous vous connectez à un serveur public, votre profil est également ac
 
 Lorsque vous vous connectez à un serveur public ou privé, l'administrateur du serveur peut voir votre adresse IP pendant que vous y êtes connecté. Si l'administrateur du serveur a activé la journalisation (qui est désactivée par défaut), votre adresse IP sera également journalisée et stockée dans le fichier journal du serveur.
 
-En tant qu'administrateur de serveur, lorsque vous inscrivez un serveur public auprès d'un serveur central, votre adresse IP est envoyée à CloudFlare (1.1.1.1) afin d'identifier votre adresse IP publique. Les adresses IP de tous les serveurs publics enregistrés auprès du serveur central peuvent également être consultées par des tiers à des fins d'information ou autres (par exemple [ici (en anglais)](http://explorer.jamulus.io/)). Votre adresse IP publique n'est par ailleurs pas journalisée ou stockée par Jamulus, mais peut être stockée ou traitée par des tiers.
-
-_Les utilisateurs concernés par l'utilisation du réseau CloudFlare peuvent [recompiler](Compiling) le code source de Jamulus afin d'utiliser une alternative pour WELL_KNOWN_HOST et WELL_KNOWN_PORT dans [global.h](https://github.com/corrados/jamulus/blob/master/src/global.h#L111)._
+Les adresses IP de tous les serveurs publics enregistrés auprès du serveur central peuvent également être consultées par des tiers à des fins d'information ou autres (par exemple [ici (en anglais)](http://explorer.jamulus.io/)). Votre adresse IP publique n'est par ailleurs pas journalisée ou stockée par Jamulus, mais peut être stockée ou traitée par des tiers.
 
 ### Enregistrements audio
 
