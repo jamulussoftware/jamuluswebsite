@@ -19,7 +19,7 @@ Wenn du willst, kannst du Jamulus auch selbst [kompilieren](Compiling).
 ## ASIO4All einrichten
 *Fast alle integrierten Soundkarten benötigen diesen Treiber. Du solltest ASIO4All nur dann nutzen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO Treiber anbietet, da native ASIO Treiber eine bessere Latenz haben könnten.*
 
-Wenn du ASIO4All nutzt, musst du möglicherweise ein bisschen herumprobieren, bis du deine individuell richtige Konfiguration eingestellt hast. Jeder PC ist etwas anders. Am Besten verbindest du dich mit einem Server und richtest dann gleichzeitig ASIO4All ein. Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist.
+Wenn du ASIO4All nutzt, musst du möglicherweise ein bisschen herumprobieren, bis du deine individuell richtige Konfiguration eingestellt hast, da jeder PC immer etwas anders ist. Am Besten verbindest du dich mit einem Server und richtest dann gleichzeitig ASIO4All ein. Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist.
 
 Bevor du Jamulus startest solltest du:
 
@@ -29,10 +29,10 @@ Bevor du Jamulus startest solltest du:
 ### ASIO4All Ein/Ausgänge einrichten (Anleitung)
 
 1. Jamulus Einstellungen öffnen (linke Spalte in Jamulus)
-1. Klick auf _„ASIO-Einstellungen“_
+1. Klick auf _„ASIO-Einstellung“_
 1. Aktiviere die _erweiterte Ansicht_ in ASIO4ALL (klicke auf das Werkzeug-Icon unten rechts)
 1. Aktiviere nur die Soundkarte, die du nutzen willst, indem du auf den Knopf direkt neben dem Namen der Soundkarte klickst
-1. Öffne deine Soundkarte, um die Ein/Ausgänge anzuzeigen
+1. Öffne deine Soundkarte über das Plus-Icon neben der Soundkarte, um die Ein/Ausgänge anzuzeigen
 1. Aktiviere die richtigen Ein/Ausgänge in der Liste unter deiner Soundkarte und deaktiviere alle anderen Ein/Ausgänge
 
 **Tipp:** Viele interne Soundkarten heißen Realtek High Definition Audio, Conexant oder ähnlich.
