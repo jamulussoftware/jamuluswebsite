@@ -8,9 +8,9 @@ permalink: "/wiki/Client-Troubleshooting"
 # Resolución de Problemas
 
 ### ¿No escuchas nada/Otros no pueden escucharte?
-Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auriculares están conectados al puerto correcto. Asegúrate de que ninguna otra aplicación como el navegador, herramienta de videoconferencia, etc. está utilizando la tarjeta de sonido. Deberías cerrar estos programas al utilizar Jamulus. Si todo parece estar bien y el problema persiste, es probable que haya algún problema con la configuración del dispositivo de audio. Esto dependerá de tu configuración particular (plataforma, hardware, software y drivers), así que es mejor preguntar en [los foros](https://sourceforge.net/p/llcon/discussion/software/) para solicitar ayuda.
+Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auriculares están conectados al puerto correcto. Asegúrate de que ninguna otra aplicación como el navegador, herramienta de videoconferencia, etc. está utilizando la tarjeta de sonido. Deberías cerrar estos programas al utilizar Jamulus. Si todo parece estar bien y el problema persiste, es probable que haya algún problema con la configuración del dispositivo de audio. Esto dependerá de tu configuración particular (plataforma, hardware, software y drivers), así que es mejor preguntar en [los foros](https://github.com/jamulussoftware/jamulus/discussions) para solicitar ayuda.
 
-**Usuarios de Windows (ASIO4All)**: Si estás utilizando el driver ASIO4All, mira [la sección de configuración para ASIO4All](Installation-for-Windows#configurar-asio4all) 
+**Usuarios de Windows (ASIO4ALL)**: Si estás utilizando el driver ASIO4ALL, mira [la sección de configuración para ASIO4ALL](Installation-for-Windows#configurar-asio4all) 
 
 ### Todos suenan bien pero es difícil tocar todos juntos manteniendo el tiempo.
 
@@ -18,15 +18,16 @@ Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auricular
 
 Puedes probar si estás escuchando correctamente tu señal haciendo lo siguiente:
 
-1. Conecta tu fuente de audio (instrumento/micrófono) al ordenador.
-1. Utiliza una aplicación de grabación de audio (como [Audacity](https://www.audacityteam.org/)) en tu ordenador para grabar esa fuente de audio y comprueba que funciona.
-1. Asegúrate de que si muteas tu entrada de audio en la aplicación de grabación, no te escuchas.
-1. Cierra la aplicación de grabación y abre Jamulus. Aún no deberías oírte.
-1. Conéctate a un servidor y toca algo. Ahora deberías escucharte con el retardo del servidor.
+1. Ejecuta Jamulus y conéctate a un servidor con un tiempo ping largo (mayor de 200 ms)
+2. Choca las palmas (o toca una nota corta en un instrumento). Deberías escuchar el sonido volver del servidor Jamulus, pero con un retardo importante.
+3. Haz clic en el botón de "Mute" bajo tu fader en la ventana del mezclador de Jamulus (**NO** el botón de "Silenciarme Yo" a la izquierda).
+4. Vuelve a chocar las palmas.
 
-**Si sigues teniendo problemas**, prueba a preguntar en el [foro de hardware](https://sourceforge.net/p/llcon/discussion/hardware/). Cómo evitas exactamente escuchar tu señal directa dependerá de tu configuración individual - tu interfaz de audio, mesa de mezclas, conexión de auriculares, etc. Por ejemplo, algunos interfaces de audio tienen botón de "monitor" (apágalo), u opciones similares.
+Si escuchas dos choques de palmas tras el paso 2, o cualquier choque tras el paso 4, es que **no** estás siguiendo la Regla Número Uno - tienes el audio local habilitado y deberías deshabilitarlo.
 
-Ten en cuenta que aunque escuches la señal del servidor y esto asegura que estás en sincronización con los demás músicos, puedes experimentar problemas si tu retardo total (indicado por la luz de "Retardo" en Jamulus) no está en verde o al menos en amarillo la mayor parte del tiempo. Consulta el [manual de software](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md) para entender cómo ajustar tu configuración para mejorar este aspecto.
+Exactamente cómo evitas escuchar tu señal directa dependerá de tu configuración individual - tu interfaz de audio, mesa de mezclas, punto de conexión de auriculares, etc. Por ejemplo, algunos interfaces de audio tienen botón de "monitor" (apágalos), u opciones similares. **Si sigues teniendo problemas**, prueba a preguntar en el [foro](https://github.com/jamulussoftware/jamulus/discussions).
+
+Ten en cuenta que mientras que escuchar la señal del servidor asegurará que estarás en sincronización con los demás músicos, puedes también experimentar problemas si tu latencia total (indicada por el piloto de "Retardo" en Jamulus) no está en verde o al menos en amarillo la mayor parte del tiempo. Consulta [el manual de software](/wiki/Software-Manual) para entender cómo ajustar tu configuración para ayudar con esto.
 
 ### ¿Dificultades a la hora de configurar el micrófono?
 
@@ -50,7 +51,7 @@ Puedes establecer el "Nivel Cliente Nuevo" a un valor bajo (por ej. 10), o confi
 
 ### ¿No ves el servidor al que te quieres unir?
 
-Primero comprueba que tienes el género de servidor correcto seleccionado en la ventana de Configuración de Conexión. Pero en ocasiones problemas de red hacen que tu cliente no muestre todos los servidores disponibles. Si conoces el nombre del servidor al que te quieres unir, puedes [mirar su dirección IP aquí](https://explorer.jamulus.io/). Introduce la dirección IP en el campo de "Nombre/Dirección Servidor" en la ventana de Configuración de Conexión para conectarte.
+Primero comprueba que tienes el género de servidor correcto seleccionado en la ventana de Configuración de Conexión. En ocasiones problemas de red hacen que tu cliente no muestre todos los servidores disponibles. Si conoces el nombre del servidor al que te quieres unir, puedes [mirar su dirección IP aquí](https://explorer.jamulus.io/). Introduce la dirección IP en el campo de "Nombre/Dirección Servidor" en la ventana de Configuración de Conexión para conectarte.
 
 ### ¿No ves ninguna lista de servidores?
 
@@ -72,4 +73,4 @@ Quizá no respondiste "Sí" al mensaje de `"Jamulus quiere acceder a tu micrófo
 
 ***
 
-Para cualquier otra cosa, por favor busca o publica un post en los [Foros de Discusión](https://sourceforge.net/p/llcon/discussion/software/)
+Para cualquier otra cosa, por favor busca o publica un post en los [Foros de Discusión](https://github.com/jamulussoftware/jamulus/discussions)
