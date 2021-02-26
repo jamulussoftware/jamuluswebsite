@@ -25,7 +25,7 @@ Puedes probar si estás escuchando correctamente tu señal haciendo lo siguiente
 
 Si escuchas dos choques de palmas tras el paso 2, o cualquier choque tras el paso 4, es que **no** estás siguiendo la Regla Número Uno - tienes el audio local habilitado y deberías deshabilitarlo.
 
-Exactamente cómo evitas escuchar tu señal directa dependerá de tu configuración individual - tu interfaz de audio, mesa de mezclas, punto de conexión de auriculares, etc. Por ejemplo, algunos interfaces de audio tienen botón de "monitor" (apágalos), u opciones similares. **Si sigues teniendo problemas**, prueba a preguntar en el [foro](https://github.com/jamulussoftware/jamulus/discussions).
+Exactamente cómo evitas escuchar tu señal directa dependerá de tu configuración individual - tu interfaz de audio, mesa de mezclas, punto de conexión de auriculares, etc. Por ejemplo, algunos interfaces de audio tienen botón de "monitor" (apágalo), u opciones similares. **Si sigues teniendo problemas**, prueba a preguntar en el [foro](https://github.com/jamulussoftware/jamulus/discussions).
 
 Ten en cuenta que mientras que escuchar la señal del servidor asegurará que estarás en sincronización con los demás músicos, puedes también experimentar problemas si tu latencia total (indicada por el piloto de "Retardo" en Jamulus) no está en verde o al menos en amarillo la mayor parte del tiempo. Consulta [el manual de software](/wiki/Software-Manual) para entender cómo ajustar tu configuración para ayudar con esto.
 
