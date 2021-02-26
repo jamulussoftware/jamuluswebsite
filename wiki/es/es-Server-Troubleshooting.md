@@ -5,6 +5,8 @@ lang: "es"
 permalink: "/wiki/Server-Troubleshooting"
 ---
 
+{% include breadcrumb.html root="Utilización de Jamulus" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
+
 # Resolución de Problemas
 
 ## Servidores - Públicos
@@ -37,7 +39,7 @@ Sí. Lee sobre [Tipos de Servidor](Choosing-a-Server-Type)
 
 ### ¿Puedo convertir mi servidor privado en uno público?
 
-Sí. Simplemente activa la casilla de "Mi Servidor es Público" en la ventana del servidor y rellena los datos. Recuerda que tampoco tienes por qué validar puertos si tu servidor es público.
+Sí. Simplemente activa la casilla de "Mi Servidor es Público" en la ventana del servidor y rellena los datos. Si registras tu servidor, no redirecciones puertos ya que puede impedir que otros utilicen tu servidor.
 
 ### **_Linux Headless_**: He creado un servidor pero se está registrando con el Servidor Central y no quiero que lo haga.
 
