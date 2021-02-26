@@ -63,7 +63,7 @@ Generará el archivo y lo hará disponible en ./Release/Jamulus.app
 No necesitas compilar Jamulus para Windows ya que proporcionamos binarios oficiales, pero si de verdad quieres hacerlo, sigue las siguientes instrucciones.
 
 ### Software necesario
-* Un compilador como [Visual Studio](https://visualstudio.microsoft.com) (Solo necesitas [Build Tools 2017 o 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) pero también puedes optar por descargar e instalar en IDE completo de [la página de descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/))
+* Un compilador como [Visual Studio](https://visualstudio.microsoft.com) (Solo necesitas [Build Tools 2017 o 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) pero también puedes optar por descargar e instalar el IDE completo de [la página de descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/))
 * [Qt](https://www.qt.io/download)
 * Utiliza la licencia libre GPLv2 para desarrollo de código abierto
 * Para determinar qué versión de Qt necesitas, comprueba [qt-installer-windows.qs](https://github.com/jamulussoftware/jamulus/blob/master/windows/qt-installer-windows.qs): bajo INSTALL_COMPONENTS verás `qt.qt5.[version]`, por ej., 5123 significa versión 5.12.3.
@@ -79,7 +79,7 @@ La mayoría de usuarios probablemente querrán utilizar este método:
 
 1. Abre PowerShell
 1. Navega al directorio `jamulus`
-1. Para permitir scripts sin firma, haz clic derecho en el script `windows\deploy_windows.ps1`, selecciona propiedades y permite la ejecución de este script. También puedes ejecutar `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`. (Puedes revertir esto tras ejecutar el script, Para más información ver la [página de documentación de Microsoft PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)).
+1. Para permitir scripts sin firma, haz clic derecho en el script `windows\deploy_windows.ps1`, selecciona propiedades y permite la ejecución de este script. También puedes ejecutar `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`. (Puedes revertir esto tras ejecutar el script. Para más información ver la [página de documentación de Microsoft PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy)).
 1. Edita las variables $QtCompile32 y $QtCompile64.
 1. Ejecuta el script de compilación e instalación en PowerShell: `.\windows\deploy_windows.ps1 C:\Qt\QtVersion`.
 1. Ahora puedes encontrar el instalador de Jamulus en el directorio `.\deploy`.
