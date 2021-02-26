@@ -38,7 +38,7 @@ Puedes probar dos versiones de ASIO4ALL. ASIO4ALL v2.14 incluye una actualizaci�
 
 Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configuración adecuada ya que cada ordenador es un poco diferente. 
 
-**Consejo** Configura tu tarjeta mientras estés en [conexión con un servidor](Onboarding#2-conectarse-a-un-servidor) para escuchar tu instrumento o tu voz y comprobar que todo está bien configurado; pero sigue leyendo.
+**Consejo:** Configura tu tarjeta mientras estés en [conexión con un servidor](Onboarding#2-conectarse-a-un-servidor) para escuchar tu instrumento o tu voz y comprobar que todo está bien configurado; pero sigue leyendo.
 
 Antes de empezar con Jamulus:
 1. **Cierra todas las aplicaciones** (sobre todo aquellas que podrían acceder a tu tarjeta de sonido como tu navegador/reproductor de audio) ya que Jamulus necesita acceso exclusivo a tu tarjeta de audio. Otros programas no podrán usar audio si ASIO4ALL y Jamulus están activos.
