@@ -9,7 +9,7 @@ permalink: "/wiki/Central-Servers"
 
 # Registro de Servidor Público
 
-Puesto que hay un límite de 150 servidores por cada servidor central, debes elegir en qué servidor central quieres publicar tu servidor. Selecciona un género si tu intención es restringir lo que se toca a ese estilo (los músicos verán tu servidor baje ese género en su lista).
+Puesto que hay un límite de 150 servidores por cada servidor central, debes elegir en qué servidor central quieres publicar tu servidor. Selecciona un género si tu intención es restringir lo que se toca a ese estilo (los músicos verán tu servidor bajo ese género en su lista).
 
 Cuando arrancas un servidor público, verás un mensaje informando sobre si tu servidor se ha registrado con éxito o no. Si lo dejas arrancado, volverá a intentar registrarse hasta haya un hueco libre.
 
