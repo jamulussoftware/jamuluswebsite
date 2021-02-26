@@ -31,7 +31,7 @@ Puedes instalar Jamulus de [buster-backports](https://packages.debian.org/de/bus
 1. Instala el paquete: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`.
 1. Puesto que Jamulus necesita el servidor JACK, también debes instalarlo. Recomendamos el uso de `QjackCtl` para configurar JACK. Puedes instalarlo con `sudo apt-get install qjackctl`
 
-Después, deberás consultar el paso de "[configurar tu tarjeta de sonido](#set-up-your-sound-card)" de esta página.
+Después, deberás consultar el paso de "[configurar tu tarjeta de sonido](#configura-tu-tarjeta-de-sonido)" de esta página.
 
 **Nota** Jamulus (con GUI) también se [incluye en Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) gracias a [mirabilos](https://github.com/mirabilos). Si ya utilizas Bullseye, simplemente instala Jamulus con `sudo apt-get install jamulus`.
 
