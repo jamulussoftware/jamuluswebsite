@@ -14,7 +14,7 @@ Asegúrate de leer la página de [Cómo Empezar](Getting-Started).
 **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. [Instala Jamulus](https://sourceforge.net/projects/llcon/files/latest/download)Haz doble-clic en el instalador para ejecutarlo. Si ves un aviso de SmartScreen, haz clic en "Más info" y "Ejecutar de todas formas" para instalar Jamulus. (Si descargaste una versión nueva de Jamulus y eres de las primeras personas en descargarlo, Jamulus no entrará en la lista blanca de SmartScreen aún. No pagamos para la firma de código).
 1. **Ejecuta Jamulus**. Ahora deberías de poder utilizar Jamulus igual que cualquier otra aplicación.
-1. **Configura tu tarjeta de sonido**. Una vez hecho, tienes que configurar tu hardware de audio. Mira cómo configurar ASIO4All si es lo que vas a utilizar y/o la [Configuración de Hardware](Hardware-Setup).
+1. **Configura tu tarjeta de sonido**. Una vez hecho, tienes que configurar tu hardware de audio. Mira cómo configurar ASIO4ALL si es lo que vas a utilizar y/o la [Configuración de Hardware](Hardware-Setup).
 
 ***
 
@@ -34,7 +34,7 @@ Puedes probar dos versiones de ASIO4ALL. ASIO4ALL v2.14 incluye una actualizaci�
 
 
 ### Setting up ASIO4ALL
-*No se recomienda ASIO4ALL si tu tarjeta de sonido/interfaz de audio proporciona su propio driver ASIO, ya que este último puede ofrecer major latencia.*
+*No se recomienda ASIO4ALL si tu tarjeta de sonido/interfaz de audio proporciona su propio driver ASIO, ya que este último puede ofrecer mejor latencia.*
 
 Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configuración adecuada ya que cada ordenador es un poco diferente. 
 
