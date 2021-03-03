@@ -32,7 +32,7 @@ Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaro
 
 [ASIO4ALL Website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
-## ASIO4All einrichten
+## ASIO4ALL einrichten
 *Du solltest ASIO4All nur dann nutzen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO Treiber anbietet, da native ASIO Treiber eine bessere Latenz haben könnten.*
 
 Wenn du ASIO4All nutzt, musst du möglicherweise ein bisschen herumprobieren, da jeder PC immer etwas anders ist.

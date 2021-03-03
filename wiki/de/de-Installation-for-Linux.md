@@ -114,8 +114,6 @@ Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst 
 
 [Nach der Installation](Onboarding){: .button}
 
-Ausführliche Informationen zur Benutzung von Jamulus findest du im [Jamulus Help Manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
-
 ## Installation auf eine neue Version zu aktualisieren
 
 Lade die neuen Quellen gemäß [Jamulus Sourcecode herunterladen](Installation-for-Linux#jamulus-sourcecode-herunterladen) herunter und wiederhole nur die [Kompilierungsanleitung](Installation-for-Linux#kompiliere-jamulus) wie für eine neue Installation von oben oder nutze ein neues .deb Paket, wenn du das genutzt hast.

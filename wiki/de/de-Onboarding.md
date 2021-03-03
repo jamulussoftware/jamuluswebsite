@@ -60,7 +60,7 @@ Natürlich kannst du sehr viel mehr mit Jamulus tun. Du könntest z.B. einen pri
 Wenn du Hilfe brauchst oder wenn du bei der Entwicklung von Jamulus mithelfen willst, schau mal unter den folgenden Links nach:
 
 ### Foren
-Hilfe und generelle Diskussionen über Jamulus finden im [Forum auf SourceForge](https://github.com/jamulussoftware/jamulus/discussions) (Englisch) statt.
+Hilfe und generelle Diskussionen über Jamulus finden im [Forum auf GitHub](https://github.com/jamulussoftware/jamulus/discussions) (Englisch) statt.
 
 ### Entwicklung
 Um Jamulus mitzugestalten und bei der Entwicklung mitzuhelfen, kannst du dich im [Jamulus GitHub repository](https://github.com/jamulussoftware/jamulus/) umschauen. Lese am Besten die `CONTRIBUTING.md` Datei.

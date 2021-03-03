@@ -11,7 +11,7 @@ Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, sol
 
 ## Was du über Android wissen solltest
 
-Obwohl du Jamulus auf Android Geräten installieren kannst (und du eventuell Ton hören kannst), raten wir davon ab. Die Tonqualität v.A. über WLAN ist schlecht und die Latenz hoch. Wenn du keinen PC hast, kanst du z.B. einen [Raspberry Pi](https://www.raspberrypi.org/){: target="_blank" rel="noopener noreferrer" } kaufen. Das ist ein günstiger, kleiner Computer, auf dem Jamulus sehr gut läuft. Androd Support ist nur ein Proof of Concept!
+Obwohl du Jamulus auf Android Geräten installieren kannst (und du eventuell Ton hören kannst), raten wir davon ab. Die Tonqualität v.A. über WLAN ist schlecht und die Latenz hoch. Wenn du keinen PC hast, kannst du z.B. einen [Raspberry Pi](https://www.raspberrypi.org/){: target="_blank" rel="noopener noreferrer" } kaufen. Das ist ein günstiger, kleiner Computer, auf dem Jamulus sehr gut läuft. Android Support ist nur ein Proof of Concept!
 
 ## Installation des Android PoC
 
