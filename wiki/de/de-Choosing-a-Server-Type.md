@@ -5,6 +5,9 @@ lang: "de"
 permalink: "/wiki/Choosing-a-Server-Type"
 ---
 
+
+{% include breadcrumb.html root="Mehr" branch1="Server einrichten" branch1-url="Running-a-Server" %}
+
 # Serverarten
 
 Du kannst einen Server in einem von drei „Modi“ betreiben (entweder bei dir zu Hause oder auf einem externen Server):
@@ -53,6 +56,8 @@ Jeder Server kann sich an deinem zentralen Server registrieren, um in deiner Lis
 
 Der Server, der als zentraler Server konfiguriert werden soll, muss mit `--centralserver localhost` gestartet werden (d.h. der zentrale Server, an dem sich dieser Server anmeldet ist er selbst).
 
-Wenn du steuern möchtest, welche Server sich an deinem zentralen Server registrieren können, kannst du eine Whitelist mit der Option `--listfilter` aktivieren. Weitere Informationen zu dieser Funktion findest du auf der Seite [Kommandozeilen-Optionen](Command-Line-Options).
+#### Konfigurationsoptionen
 
-Siehe auch [Befehlszeilenoptionen](Command-Line-Options) für weitere Parameter, die Du einstellen kannst.
+Wenn du steuern möchtest, welche Server sich an deinem zentralen Server registrieren können, kannst du eine Whitelist mit der Option `--listfilter` aktivieren. Weitere Informationen zu dieser und anderer Funktionen findest du auf der Seite [Kommandozeilen-Optionen](Command-Line-Options).
+
+Wenn du einen öffentlichen Zentralserver hinter einer NAT/Firewall in einem privaten Netzwerk betreibst, nutze die `--serverpublicip` Option um die öffentliche IP der Server, die auf dem Zentralserver aufgelistet werden. Du musst dieses Argument setzen, damit sich Clients aus dem öffentlichen Internet mit den Servern hinter der NAT verbinden können. Server die diese Funktion nutzen benötigen trotzdem Port Forwarding in deinem Router/Firewall.
