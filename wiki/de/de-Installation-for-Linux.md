@@ -4,7 +4,7 @@ title: "Installation auf Linux"
 lang: "de"
 permalink: "/wiki/Installation-for-Linux"
 ---
-{% include breadcrumb.html root="Jamulus Nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
+{% include breadcrumb.html root="Jamulus nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 # Installation auf Linux
 Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
@@ -25,7 +25,7 @@ Jamulus kann aus den [buster-backports](https://packages.debian.org/de/buster-ba
 1. Downloade die [neuste .deb Datei]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
 1. Update apt: `sudo apt-get update`
 1. Installiere das Paket: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`.
-1. Da Jamulus den JACK Server benötigt, musst du ihn auch instllieren. Wir empfehlen, dass du `QjackCtl` zur Konfiguration von JACK benutzt. Installiere das Programm mit `sudo apt-get install qjackctl`
+1. Da Jamulus den JACK Server benötigt, musst du ihn auch installieren. Wir empfehlen, dass du `QjackCtl` zur Konfiguration von JACK benutzt. Installiere das Programm mit `sudo apt-get install qjackctl`
 
 Jetzt kannst du dir die Sektion "[Richte deine Soundkarte ein](#richte-deine-soundkarte-ein)" ansehen.
 
@@ -85,7 +85,7 @@ make clean
 make
 sudo make install
 ```
-**Beachte**: Die kompiliere Version von Jamulus wird nach `/usr/local/bin` kopiert.
+**Beachte**: Die kompilierte Version von Jamulus wird nach `/usr/local/bin` kopiert.
 
 Du kannst jetzt den Quellcode-Ordner löschen.
 

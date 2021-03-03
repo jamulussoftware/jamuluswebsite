@@ -63,7 +63,7 @@ Ein typischer Jam mit 4 Personen könnte grob 200Kbit/s * 4 = 800Kbit/s (0,8 Mbi
 
 Wenn du den Jamulus Server auf einem Raspberry Pi einrichten möchtest, sieh dir die [Anleitung für Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) von fredsiva an.
 
-Serverbetreiber könnten [diese nützlichen Tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) aus dem Jamulus-Repository nützlich finden. Klone dazu das Git-Repo und rufe `git submodule update --init` auf).
+Serverbetreiber könnten [diese nützlichen Tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) aus dem Jamulus-Repository hilfreich finden. Klone dazu das Git-Repo und rufe `git submodule update --init` auf).
 
 ## Probleme?
 

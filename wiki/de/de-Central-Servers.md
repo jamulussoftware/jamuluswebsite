@@ -11,7 +11,7 @@ permalink: "/wiki/Central-Servers"
 
 Da jeder Zentralserver ein Limit von 150 Servern hat, musst du einen Zentralserver aussuchen, auf dem du deinen Server registrieren willst. Suche dir ein Genre aus, wenn du möchtest, dass eher Musiker eines bestimmten Genres auf deinem Server spielen (Musiker können deinen Server in ihrer Genre Liste sehen).
 
-Wenn du deinen Server im öffentlichen Modus startest, wird im Server angezeigt, ob dein Server erfolgreich registriert werden konnte, oder nicht. Sollte das nicht der Fall sein aber du deinen Server nicht stoppst, wird er immer wieder versuchen sich zu registrieren, bis ein freier Slot verfügbar ist.  
+Wenn du deinen Server im öffentlichen Modus startest, wird dir angezeigt, ob dein Server erfolgreich registriert werden konnte, oder nicht. Sollte das nicht der Fall sein du aber deinen Server nicht stoppst, wird er immer wieder versuchen sich zu registrieren, bis ein freier Slot verfügbar ist.  
 
 ## Headless Server
 
