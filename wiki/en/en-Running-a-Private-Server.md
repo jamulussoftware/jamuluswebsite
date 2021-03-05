@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Running-a-Private-Server"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Running a Private Server
 
 **_Please ensure you have read the [server overview](Running-a-Server)_**
@@ -15,7 +17,7 @@ It is highly recommended to test your server in **public mode first** so as to n
 
 ## Operating a private server behind a home network router
 ### Port forwarding
-To run a private server, you need to setup port forwarding on your router. _(If you are curious about why you need to do this for private but not public servers, see [this footnote](#footnote-for-geeks).)_
+To run a private server, you need to set up port forwarding on your router. _(If you are curious about why you need to do this for private but not public servers, see [this footnote](#footnote-for-geeks).)_
 
 Normally, people from outside your home network cannot see things inside it. So if you want to operate a Jamulus server at home, you need to open a hole in your router to let Jamulus clients connect to it.
 

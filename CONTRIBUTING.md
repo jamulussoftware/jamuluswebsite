@@ -26,7 +26,7 @@ If not: This will be discussed this later (since you introduce a new language).
 If so look here:
 ### 1. Be clear if your change needs translation
 **No:** A fix which doesn't need to be translated (e.g. typo) --> Open a Pull Request to `release`. It will go live a few minutes after the PR is merged
-**Yes:** A fix which needs to be translated (e.g. if you want to make a sentence or paragraph clearer) --> Commit to `changes` since others will need to translate it. It will be part of the next release.
+**Yes:** A fix which needs to be translated (e.g. if you want to make a sentence or paragraph clearer) --> Commit to `changes` since others will need to translate it. (If you wish to, please do not add your translation to your commit, but add a comment with the translation in your Pull Request). It will be part of the next release.
 
 ### 2. Be clear if a translation update is going on
 You can see this if we ping the translators in a PR from changes to translate.

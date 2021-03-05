@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Choosing-a-Server-Type"
 ---
 
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Server Types
 
 You can run your server in one of three "modes" (either at home or on a 3rd party host):
@@ -53,4 +55,8 @@ Normal server operators can also register with your custom central server so the
 
 To run a server as a central server, it should be configured with `--centralserver localhost` (that is, specify itself as the central server to query).
 
-If you want to control which servers can register with your central server, you can enable a whitelist with the `--listfilter` command line option. See the [command line options page](Command-Line-Options) for further information about this feature and other parameters you can set.
+#### Configuration points to note
+
+If you want to control which servers can register with your Central Server, you can enable a whitelist with the `--listfilter` command line option. See the [command line options page](Command-Line-Options) for further information about this feature and other parameters you can set.
+
+When running a public Central Server behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the server(s) being listed by your Central Server. This is necessary to allow clients on the public Internet to connect to them via NAT. Note that for the servers using this option, you will still need proper port forwarding in your router/firewall. 

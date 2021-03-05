@@ -52,7 +52,7 @@ Make sure not to clip the input signal to avoid distortions of the audio signal 
 
 The chat text entered in that dialog is sent to
 all connected clients. If a new chat message arrives and the Chat dialog is not already open, it will
-opened automatically for all clients.
+open automatically for all clients.
 
 ### Profile window
 
@@ -72,7 +72,7 @@ pressing this button will end the session.
 
 ![Connect dialog](https://user-images.githubusercontent.com/20726856/97360965-31d76b00-189f-11eb-870b-f58be6e30f04.png)
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators can optionally list their servers by musical genre. Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
 You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
 
@@ -171,7 +171,7 @@ In this case the buffer delay setting is disabled and has to be changed using th
 On Linux, use the JACK configuration tool to change the buffer size.
 
 The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.
-The lower the buffer size, the higher the probability of a red light in the status indicator (drop outs) and the
+The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the
 higher the upload rate and the lower the overall delay.
 
 ![Buffer delay dependencies](https://user-images.githubusercontent.com/20726856/97361878-816a6680-18a0-11eb-8c1f-fbf956be4b81.png)
@@ -246,8 +246,10 @@ Leave this blank unless you need to enter the address of a central server other 
 ![Indicators](https://user-images.githubusercontent.com/20726856/97362338-271dd580-18a1-11eb-99b7-02c9371a6258.png)
 
 The Ping Time is the time required for the audio stream to travel from the client to the server and back again.
-This delay is introduced by the network and should about 20-30ms. If this delay is higher than about 50ms,
-your distance to the server is too large or your internet connection is not sufficient.
+This delay is introduced by the network and ideally should be about 20-30 ms. When this delay is higher than about 50 ms, it starts to become
+more noticeable and you may find it harder to keep in time, though it is still possible once you get used to it. Factors such as tempo, the instrument
+played or headphone isolation will have an impact on the delay you find you can deal with. 
+The most probable causes for a high delay are that your distance to the server is too large or your internet connection is not sufficient.
 
 Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
 

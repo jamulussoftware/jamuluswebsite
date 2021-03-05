@@ -5,11 +5,13 @@ lang: "en"
 permalink: "/wiki/Central-Servers"
 ---
 
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Public Server Registration
 
 Because there is a limit of 150 servers per central server, you need to select which central server you want to advertise your server on. Select a genre if you intend to limit players to that style (players can then see your server in their genre list). 
 
-When you start a public server, you will see a message saying whether your server has been successfully listed or not. If not, and you leave your server running, it will re-try its attempts to register until a free slot becomes available.  
+When you start a public server, you will see a message saying whether your server has been successfully listed or not. If not, and you leave your server running, it will keep trying to register until a free slot becomes available.  
 
 
 ## Headless servers

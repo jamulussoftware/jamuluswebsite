@@ -49,7 +49,7 @@ DISTRO="Ubuntu"
 LINVERSION="18.04"
 
 # Get Jamulus Release Name with "curl" and "grep"  
-R=`curl -s https://api.github.com/repos/corrados/jamulus/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")'`
+R=`curl -s https://api.github.com/repos/jamulussoftware/jamulus/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")'`
 echo "Jamulus Installation Script for $DISTRO $LINVERSION"
 echo "Release: $R"
 INSTALLJAMULUS="no"
