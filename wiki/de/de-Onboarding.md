@@ -18,8 +18,8 @@ Bevor du Jamulus startest, solltest du:
 
 Wenn du dein Audio noch nicht eingerichtet hast, stecke deine Hardware in deinen PC (wenn nötig), öffne die Einstellungen und wähle das Ein/Ausgangsgerät aus.
 
-* Wenn du Hilfe mit dem Setup von ASIO4All auf Windows brauchst, schau dir die [ASIO4All Einrichtung auf der Installationsseite für Windows](Installation-for-Windows#asio4all-einrichten) an.
-* macOS Nutzer müssen nur ihre Ein/Ausgänge in den Jamulus Einstellungen auswählen
+* Wenn du Hilfe mit dem Setup von ASIO4ALL auf Windows brauchst, schau dir die [ASIO4ALL Einrichtung auf der Installationsseite für Windows](Installation-for-Windows#asio4all-einrichten) an.
+* macOS Nutzer müssen nur ihre Ein-/Ausgänge in den Jamulus Einstellungen auswählen
 
 Du kannst dir das [Hardware Setup](Hardware-Setup) anschauen, um mehr über die Einrichtung deiner Audiohardware zu erfahren.
 
@@ -37,11 +37,11 @@ Jetzt wird sich ein Fenster öffnen, das so aussieht:
 Trage zumindest deinen Namen bzw. Alias im Feld „Alias/Name“ ein. Dann kannst du das Fenster schließen.
 
 ### 2. Verbindung mit einem Server herstellen
-Klicke auf den „Verbinden“ Knopf in der Jamulus Hauptansicht um dich mit einem Server zu verbinden. Du wirst dieses Fenster sehen:
+Klicke auf den „Verbinden“ Knopf in der Jamulus Hauptansicht, um dich mit einem Server zu verbinden. Du wirst dieses Fenster sehen:
 
 ![Connection Setup](https://user-images.githubusercontent.com/20726856/102825226-a1b92c00-43de-11eb-9aa9-21d7a8576f5c.png)
 
-Das Fenster zeigt Server, die *nach ihrem Genre sortiert* sind. Um von einem Genre zu einem anderen zu wechseln, wähle eine andere Liste in der oberen linken Ecke aus. Nachdem du das Genre und einen Server ausgewählt hast, verbinde dich mit einem Server, indem du ihn auswählst und auf den „Verbinden“ Knopf klickst. Solltest du hier Probleme haben, liegt das sehr wahrscheinlich entweder daran, dass du deine Audiohardware falsch eingerichtet hast oder an Problemen mit deiner Internetverbindung. Vielleicht findest du Hilfe auf der [Troubleshooting Seite](Client-Troubleshooting).
+Das Fenster zeigt Server, die *nach ihrem Genre sortiert* sind. Um von einem Genre zu einem anderen zu wechseln, wähle eine andere Liste in der oberen linken Ecke aus. Nachdem du das Genre und einen Server ausgewählt hast, verbinde dich mit einem Server, indem du ihn auswählst und auf den „Verbinden“ Knopf klickst. Solltest du hier Probleme haben, liegt das sehr wahrscheinlich entweder daran, dass du deine Audiohardware falsch eingerichtet hast oder es Probleme mit deiner Internetverbindung gibt. Vielleicht findest du Hilfe auf der [Troubleshooting Seite](Client-Troubleshooting).
 ### Der erste Jam
 Gratulation! Du kannst jetzt mit Jamulus jammen. Die Lautstärkenregler, die du rechts sehen kannst, sind dein persönlicher Mix. Alles was du hier veränderst, wird das, was du hörst verändern, aber keinen Einfluss auf andere haben. Wenn du einen Regler nach unten bewegst, wird diese Person leiser, wenn du ihn nach oben bewegst, wird die Person lauter.
 
@@ -54,7 +54,7 @@ Der Knopf „Einstellungen“ öffnet (natürlich) das Jamulus Einstellungsfenst
 Wenn du mehr über die Nutzung von Jamulus lesen willst, kannst du ins [Software Handbuch](Software-Manual) schauen.
 
 ## Erweitert
-Natürlich kannst du sehr viel mehr mit Jamulus tun. Du könntest z.B. einen privaten Server aufsetzen, Online-Konzerte durchführen,... Guck dich einfach auf dieser Website um! Die Community veröffentlicht Anleitungen, Tipps und Tricks in der [knowledge base](/kb/).
+Natürlich kannst du sehr viel mehr mit Jamulus tun. Du könntest z.B. einen privaten Server aufsetzen, Online-Konzerte durchführen,... Guck dich einfach auf dieser Website um! Die Community veröffentlicht Anleitungen, Tipps und Tricks in der [Knowledge base](/kb/).
 
 ## Hilfe und Community
 Wenn du Hilfe brauchst oder wenn du bei der Entwicklung von Jamulus mithelfen willst, schau mal unter den folgenden Links nach:
@@ -63,6 +63,6 @@ Wenn du Hilfe brauchst oder wenn du bei der Entwicklung von Jamulus mithelfen wi
 Hilfe und generelle Diskussionen über Jamulus finden im [Forum auf GitHub](https://github.com/jamulussoftware/jamulus/discussions) (Englisch) statt.
 
 ### Entwicklung
-Um Jamulus mitzugestalten und bei der Entwicklung mitzuhelfen, kannst du dich im [Jamulus GitHub repository](https://github.com/jamulussoftware/jamulus/) umschauen. Lese am Besten die `CONTRIBUTING.md` Datei.
+Um Jamulus mitzugestalten und bei der Entwicklung mitzuhelfen, kannst du dich im [Jamulus GitHub Repository](https://github.com/jamulussoftware/jamulus/) umschauen. Lese am Besten die `CONTRIBUTING.md` Datei.
 
 <!-- Du kannst auch an dieser Dokumentation mithelfen. Schau dir das [Jamulus Website GitHub repository](https://github.com/jamulussoftware/jamuluswebsite) und die CONTRIBUTING Datei dort an. -->

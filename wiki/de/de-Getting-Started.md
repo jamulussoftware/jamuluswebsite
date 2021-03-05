@@ -40,7 +40,7 @@ Die wichtigsten Faktoren kennst du jetzt! Los geht's:
 Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stick starten! [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) prüft deine Hardware automatisch und richtet sie ein.
 
 ## Audiohardware
-Dein Gerät muss eine Sample Rate von **48kHz** (DVD-Qualität) unterstützen. Auch sollte es möglich sein, dass es den Ton deines Computers ausgeben kann. Unter Windows sollte das Gerät einen herstellereigenen [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output) Treiber unterstützen.
+Dein Gerät muss eine Abtastrate (Sample Rate) von **48kHz** (DVD-Qualität) unterstützen. Auch sollte es möglich sein, dass es den Ton deines Computers ausgeben kann. Unter Windows sollte das Gerät einen herstellereigenen [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output) Treiber unterstützen.
 
 Du kannst auch in die [Liste der von der Community getesteten Geräte schauen](/kb/2021/01/05/Jamulus-Sound-Devices.html).
 
@@ -63,7 +63,7 @@ Weitere Informationen darüber, wie du vermeiden kannst, auf dich selbst zu hör
 **Millionen von Menschen benutzen Jamulus um mit anderen Menschen auf der ganzen Welt in Echtzeit zu spielen, zu singen und Musik zu unterrichten. Das funktioniert ganz einfach:**
 
 ![Overview](https://user-images.githubusercontent.com/4561747/79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
-_Jamulus arbeitet nach dem Client-Server Prinzip. Das Audiosignal von allen Musikern wird an einen Server geschickt, dort gemischt und verarbeitet. Danach wird das Audio an jeden Client gesendet. Wenn ein Server öffentlich gemacht und auf einem zentralen Server registriert wird, werden seine Informationen an alle Clients gesendet._
+_Jamulus arbeitet nach dem Client-Server Prinzip. Das Audiosignal von allen Musikern wird an einen Server geschickt, dort gemischt und verarbeitet. Danach wird das Audiosignal an jeden Client gesendet. Wenn ein Server öffentlich gemacht und auf einem zentralen Server registriert wird, werden seine Informationen an alle Clients gesendet._
 
 ## Fußnoten
 [^1]: Empfohlen werden mindestens 10 Mbit/s Download und 1 Mbit/s Upload ([vollständige Details hier](Network-Requirements){: target="_blank" rel="noopener noreferrer"}). Wenn du keine LAN Buchse mehr an deinem Laptop hast, kannst du einen USB zu LAN-Adapter versuchen.

@@ -64,16 +64,16 @@ Erstellt die Binärdatei in `./Release/Jamulus.app`
 Du brauchst Jamulus für Windows nicht zu kompilieren, da wir offizielle Binärdateien zur Verfügung stellen. Aber wenn du es aber trotzdem machen willst, folge den unten stehenden Anweisungen.
 
 ### Benötigte Software
-* Ein Compiler wie [Visual Studio](https://visualstudio.microsoft.com) (You only need [Build Tools 2017 oder 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) aber du kannst auch die komplette IDE herunterladen und installieren [Visual Studio Download Seite](https://visualstudio.microsoft.com/downloads/))
+* Ein Compiler wie [Visual Studio](https://visualstudio.microsoft.com) (Du brauchst nur [Build Tools 2017 oder 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16), aber du kannst auch die komplette IDE herunterladen und installieren [Visual Studio Download Seite](https://visualstudio.microsoft.com/downloads/))
 * [Qt](https://www.qt.io/download)
-    * Nutze die kostenlose Open Source Version (Lizenziert unter der GPLv2 license für Open Source Entwicklung
-    * Um herauszufinden, welche Qt version du brauchst, schau in der [qt-installer-windows.qs](https://github.com/jamulussoftware/jamulus/blob/master/windows/qt-installer-windows.qs) Datei nach: unter INSTALL_COMPONENTS siehst du z.B. `qt.qt5.[version]`, 5123 wäre version 5.12.3.
-    * Wähle die Komponenten während der Installation aus: Öffne die Qt sektion, suche nach der passenden Version, z.B., **Qt 5.12.3**, und wähle die compiler components für deinen compiler, z.B., `MSVC 2017 32-bit/64-bit` für Visual Studio 2019 aus
+    * Nutze die kostenlose Open Source Version (Lizenziert unter der GPLv2-Lizenz für Open Source Entwicklung
+    * Um herauszufinden, welche Qt-Version du brauchst, schau in der [qt-installer-windows.qs](https://github.com/jamulussoftware/jamulus/blob/master/windows/qt-installer-windows.qs) Datei nach: unter INSTALL_COMPONENTS siehst du z.B. `qt.qt5.[version]`, 5123 wäre version 5.12.3.
+    * Wähle die Komponenten während der Installation aus: Öffne den Qt-Abschnitt, suche nach der passenden Version, z.B., **Qt 5.12.3**, und wähle die Compiler components für deinen Compiler, z.B., `MSVC 2017 32-bit/64-bit` für Visual Studio 2019, aus
 * [ASIO SDK Dateien](https://new.steinberg.net/de/developers/)
 
 
 ### Downloade den Jamulus Quellcode
-Lade den Quellcode z.B. mit git oder per [zip Download](https://github.com/jamulussoftware/jamulus/archive/master.zip) aus der [Jamulus repo](https://github.com/jamulussoftware/jamulus) herunter. Stelle sicher, dass **keine** Leerzeichen in dem Pfad, in den du den `jamulus` Ordner bewegst sind, da das dann der Jamulus Installer nicht korrekt erstellt werden kann. (Wenn du weißt, wie man diesen Fehler einfach lösen kann, schreib einfach im [issue #864](https://github.com/jamulussoftware/jamulus/issues/864) auf der Jamulus Repository).
+Lade den Quellcode z.B. mit git oder per [zip Download](https://github.com/jamulussoftware/jamulus/archive/master.zip) aus der [Jamulus Repo](https://github.com/jamulussoftware/jamulus) herunter. Stelle sicher, dass **keine** Leerzeichen im Pfad sind, in den du den `jamulus` Ordner verschiebst, da ansonsten der Jamulus Installer nicht korrekt erstellt werden kann. (Wenn du weißt, wie man diesen Fehler einfach lösen kann, schreib einfach im [issue #864](https://github.com/jamulussoftware/jamulus/issues/864) auf der Jamulus Repository).
 
 ### Mit Installer kompilieren
 
@@ -88,9 +88,9 @@ Die meisten Nutzer werden diese Methode nutzen wollen.
 
 ### Nur kompilieren
 
-1. Erstelle einen Ordner im `\windows` Ordner mit dem Namen ASIOSDK2
-1. Lade die [ASIOSDK](https://www.steinberg.net/asiosdk) herunter, öffne den Ordner auf der ersten Ebene in der .zip Datei und kopiere den Inhalt nach `[\pfad\zum\jamulus\code]\windows\ASIOSDK2` damit z.B. `[\pfad\zum\jamulus\code]\windows\ASIOSDK2\common` existiert
-1. Öffne Jamulus.pro im Qt Creator, konfiguriere das Projekt mit dem default kit, dann klicke auf compile & run
+1. Erstelle einen Ordner im `\windows` Ordner mit dem Namen ASIOSDK2.
+1. Lade die [ASIOSDK](https://www.steinberg.net/asiosdk) herunter, öffne den Ordner auf der ersten Ebene in der .zip Datei und kopiere den Inhalt nach `[\pfad\zum\jamulus\code]\windows\ASIOSDK2`, sodass z.B. `[\pfad\zum\jamulus\code]\windows\ASIOSDK2\common` existiert.
+1. Öffne Jamulus.pro im Qt Creator, konfiguriere das Projekt mit dem Default kit, dann klicke auf Compile & run
 
 
 ## Allgemeine Anmerkungen
