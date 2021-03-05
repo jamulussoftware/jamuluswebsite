@@ -37,7 +37,7 @@ Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaro
 
 Wenn du ASIO4All nutzt, musst du möglicherweise ein bisschen herumprobieren, da jeder PC immer etwas anders ist.
 
-**Tipp:** Richte deine Soundkarte ein, wenn du mit einem Server verbunden bist Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist; aber lies erst einmal weiter.
+**Tipp:** Richte deine Soundkarte ein, wenn du [mit einem Server verbunden](Onboarding#2-verbindung-mit-einem-server-herstellen) bist Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist; aber lies erst einmal weiter.
 
 Bevor du Jamulus startest:
 
