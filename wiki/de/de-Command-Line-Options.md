@@ -42,7 +42,7 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |    `-n` |`--nogui`          | Deaktiviere GUI | (Client und Server) |
 |    `-o` |`--serverinfo`     | Serverstandort im Format: <br/>`[Name];[Stadt];[Lokaler Wert]` (Siehe [Werte](https://doc.qt.io/qt-5/qlocale.html#Country-enum))| (nur öffentliche Server) |
 |    `-p` |`--port`           | Lokaler UDP Port. Standard ist 22124 | (nur Server) |
-|    `-R` |`--recording`      | Pfad zu einem beschreibbaren Pfad wo die Aufgenommenen Dateien gespeichert werden (in Anführungszeichen wenn nötig). | (nur Server) Siehe Beschreibung im [Server Setup](Server-Win-Mac#recording). |
+|    `-R` |`--recording`      | Pfad zu einem beschreibbaren Pfad wo die aufgenommenen Dateien gespeichert werden (in Anführungszeichen wenn nötig). | (nur Server) Siehe Beschreibung im [Server Setup](Server-Win-Mac#recording). |
 |       | `--norecord`      | Starte mit deaktivierten Recorder | (nur Server) |
 |    `-s` |`--server`         | Starte in Server Modus | (nur Server) [Siehe Notiz](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Keine Übersetzungen | (Client und Server) |
@@ -50,5 +50,6 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |    `-u` |`--numchannels`    | Maximale Anzahl an Nutzern. Standard ist 10, Maximum ist 50 | (nur Server) |
 |    `-w` |`--welcomemessage` | Begrüßungsnachricht. Unterstützt HTML und inline CSS (in Anführungszeichen), oder Pfad zu einer Textdatei. | (nur Server) |
 |    `-z` |`--startminimized` | Starte minimiert | (nur Server) |
-|       |`--ctrlmidich`     | MIDI Controller Kanal und Offset, Format `channel[;offset]`  | (nur Client) Siehe [Tipps & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
-|       |`--clientname`     | Fenster Titel und Jack Client Name | (nur Client) |
+|       |`--ctrlmidich`     | MIDI Controller Kanal, Offset und fortlaufende CC Zahlen (Kanäle). Format `channel[;f<off>*<channels>][;p<off>*<channels>][;s<off>*<channels>][;m<off>*<channels>]`  | (nur Client) Siehe [Tipps & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
+|       |`--clientname`     | Fenster Titel und JACK Client Name | (nur Client) |
+|       |`--serverpublicip` | Setze die öffentliche IP des Servers | (nur Server) [Mehr Informationen](Choosing-a-Server-Type) |
