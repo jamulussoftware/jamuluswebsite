@@ -37,7 +37,7 @@ Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaro
 
 Wenn du ASIO4ALL nutzt, musst du möglicherweise ein bisschen herumprobieren, da jeder PC immer etwas anders ist.
 
-**Tipp:** Richte deine Soundkarte ein, wenn du [mit einem Server verbunden](Onboarding#2-verbindung-mit-einem-server-herstellen) bist Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist; aber lies erst einmal weiter.
+**Tipp:** Richte deine Soundkarte ein, wenn du [mit einem Server verbunden](Onboarding#2-verbindung-mit-einem-server-herstellen) bist. Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist; aber lies erst einmal weiter.
 
 Bevor du Jamulus startest:
 
@@ -66,7 +66,7 @@ Danach versuche **die Ein-/Ausgänge nochmal neu einzurichten**. Aktivierte und 
 
 Wirf einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} von [trombonepizza](https://github.com/trombonepizza), das ausführlichere Informationen zur Einrichtung von ASIO4ALL gibt (English).
 
-Offizielle und ausführliche Infos zur Konfiguration von ASIO4ALL sind auch in den [FAQs auf der ASIO4ALL Website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"}, sowie im ASIO4ALL Handbuch dokumentiert. Diese findest du höchstwahrscheinlich auf deinem Desktop oder in dem Ordner, in dem das ASIO4ALL-Binary installiert ist (normalerweise `C:\Program Files (x86)\ASIO4ALL v2\`).
+Offizielle und ausführliche Infos zur Konfiguration von ASIO4ALL sind auch in den [FAQs auf der ASIO4ALL Website](https://www.asio4all.org/index.php/help/faq/){: target="_blank" rel="noopener noreferrer"}, sowie im ASIO4ALL Handbuch dokumentiert. Diese findest du höchstwahrscheinlich auf deinem Desktop oder in dem Ordner, in dem das ASIO4ALL-Binary installiert ist (normalerweise `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## Alles installiert?
 Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
