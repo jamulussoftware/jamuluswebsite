@@ -35,16 +35,16 @@ Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaro
 ## ASIO4ALL einrichten
 *Du solltest ASIO4ALL nur dann nutzen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO-Treiber anbietet, da native ASIO-Treiber eine bessere Latenz haben könnten.*
 
-Wenn du ASIO4All nutzt, musst du möglicherweise ein bisschen herumprobieren, da jeder PC immer etwas anders ist.
+Wenn du ASIO4ALL nutzt, musst du möglicherweise ein bisschen herumprobieren, da jeder PC immer etwas anders ist.
 
 **Tipp:** Richte deine Soundkarte ein, wenn du [mit einem Server verbunden](Onboarding#2-verbindung-mit-einem-server-herstellen) bist Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist; aber lies erst einmal weiter.
 
 Bevor du Jamulus startest:
 
 1. **Schließe alle anderen Programme** (besonders die, die (wie z.B. dein Browser/Media Player) auf deine Soundkarte zugreifen könnten), weil Jamulus exklusiven Zugriff auf die Soundkarte benötigt. Andere Programme werden keinen Ton ausgeben/aufnehmen können, wenn Jamulus mit ASIO4ALL läuft.
-1. Wenn das Audio nicht sofort funktioniert, stelle sicher, dass die **richtigen Ein-/Ausgänge** in ASIO4All **aktiv sind**. Alle anderen sollten ausgeschaltet sein. Wie das geht, siehst du hier:
+1. Wenn das Audio nicht sofort funktioniert, stelle sicher, dass die **richtigen Ein-/Ausgänge** in ASIO4ALL **aktiv sind**. Alle anderen sollten ausgeschaltet sein. Wie das geht, siehst du hier:
 
-### ASIO4All Ein/Ausgänge einrichten (Anleitung)
+### ASIO4ALL Ein/Ausgänge einrichten (Anleitung)
 
 1. Jamulus Einstellungen öffnen (linke Spalte in Jamulus)
 1. Klick auf _„ASIO Geräte Einstellungen“_
@@ -58,7 +58,7 @@ Bevor du Jamulus startest:
 1. Kopfhörer und Lautsprecher werden oft als „Output“ und Mikrofone als „Input“ oder „Capture“ bezeichnet.
 1. Stereo Mix ist normalerweise nicht der Ein-/Ausgang, den du brauchst. Wenn du diesen Ein-/Ausgang siehst, solltest du ihn ausschalten.
 
-### Probleme mit dem ASIO4All Setup?
+### Probleme mit dem ASIO4ALL Setup?
 
 Wenn Nichts zu funktionieren scheint, versuche zuerst Jamulus und/oder deinen PC **neuzustarten**, damit Hintergrundprozesse, die auf die Soundkarte zugreifen könnten, geschlossen werden.
 
@@ -66,7 +66,7 @@ Danach versuche **die Ein-/Ausgänge nochmal neu einzurichten**. Aktivierte und 
 
 Wirf einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} von [trombonepizza](https://github.com/trombonepizza), das ausführlichere Informationen zur Einrichtung von ASIO4ALL gibt (English).
 
-Offizielle und ausführliche Infos zur Konfiguration von ASIO4All sind auch in den [FAQs auf der ASIO4ALL Website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"}, sowie im ASIO4ALL Handbuch dokumentiert. Diese findest du höchstwahrscheinlich auf deinem Desktop oder in dem Ordner, in dem das ASIO4ALL-Binary installiert ist (normalerweise `C:\Program Files (x86)\ASIO4ALL v2\`).
+Offizielle und ausführliche Infos zur Konfiguration von ASIO4ALL sind auch in den [FAQs auf der ASIO4ALL Website](http://www.asio4all.org/faq.html){: target="_blank" rel="noopener noreferrer"}, sowie im ASIO4ALL Handbuch dokumentiert. Diese findest du höchstwahrscheinlich auf deinem Desktop oder in dem Ordner, in dem das ASIO4ALL-Binary installiert ist (normalerweise `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## Alles installiert?
 Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
