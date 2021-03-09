@@ -67,7 +67,7 @@ Du brauchst Jamulus für Windows nicht zu kompilieren, da wir offizielle Binärd
 * Ein Compiler wie [Visual Studio](https://visualstudio.microsoft.com) (Du brauchst nur [Build Tools 2017 oder 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16), aber du kannst auch die komplette IDE herunterladen und installieren [Visual Studio Download Seite](https://visualstudio.microsoft.com/downloads/))
 * [Qt](https://www.qt.io/download)
     * Nutze die kostenlose Open Source Version (Lizenziert unter der GPLv2-Lizenz für Open Source Entwicklung
-    * Um herauszufinden, welche Qt-Version du brauchst, schau in der [qt-installer-windows.qs](https://github.com/jamulussoftware/jamulus/blob/master/windows/qt-installer-windows.qs) Datei nach: unter INSTALL_COMPONENTS siehst du z.B. `qt.qt5.[version]`, 5123 wäre version 5.12.3.
+    * Um herauszufinden, welche Qt-Version du brauchst, schau in der [qt-installer-windows.qs](https://github.com/jamulussoftware/jamulus/blob/master/windows/qt-installer-windows.qs) Datei nach: unter INSTALL_COMPONENTS siehst du z.B. `qt.qt5.[version]`, 5123 wäre Version 5.12.3.
     * Wähle die Komponenten während der Installation aus: Öffne den Qt-Abschnitt, suche nach der passenden Version, z.B., **Qt 5.12.3**, und wähle die Compiler components für deinen Compiler, z.B., `MSVC 2017 32-bit/64-bit` für Visual Studio 2019, aus
 * [ASIO SDK Dateien](https://new.steinberg.net/de/developers/)
 
@@ -84,7 +84,7 @@ Die meisten Nutzer werden diese Methode nutzen wollen.
 1. Um unsignierte Scripts ausführen zu können, klicke mit der rechten Maustaste auf das `windows\deploy_windows.ps1` Skript, wähle Eigenschaften aus und erlaube dem Script, dass es ausgeführt werden darf. Du kannst auch `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` in PowerShell ausführen. (Du kannst das nach dem Ausführen des Scripts auch rückgängig machen. Mehr Informationen findest du auf der [Microsoft PowerShell Dokumentationsseite](https://docs.microsoft.com/de-de/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.1)).
 1. Setze die $QtCompile32 und $QtCompile64 Variablen.
 1. Führe das Script in PowerShell aus `.\windows\deploy_windows.ps1 C:\Qt\QtVersion`.
-1. Jetzt kannst du den Jamulus installer im `.\deploy` Ordner finden.
+1. Jetzt kannst du den Jamulus-Installer im `.\deploy` Ordner finden.
 
 ### Nur kompilieren
 

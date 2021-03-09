@@ -23,10 +23,10 @@ Schau dir die [CONTRIBUTING-Datei](https://github.com/jamulussoftware/jamulusweb
 
 **Der folgende Inhalt bezieht sich nur auf die Dokumentation auf jamulus.io, nicht auf die Jamulus Software!**
 
-Wenn du dich mit Pull Requests, Commits, etc. nicht auskennst, eröffne einfach ein "Issue". Wir werden uns dann um deine Änderungen kümmern. Wenn du die Änderungen selbst durchführen willst und einen Pull Request öffnest, folge dieser Anleitung:
+Wenn du dich mit Pull Requests, Commits, etc. nicht auskennst, eröffne einfach ein „Issue“. Wir werden uns dann um deine Änderungen kümmern. Wenn du die Änderungen selbst durchführen willst und einen Pull Request öffnest, folge dieser Anleitung:
 
 1. Forke das Repo (es gibt einen Fork-Button oben rechts auf der GitHub-Seite)
-2. Entscheide, in welchen Zweig ("Branch") du deine Änderungen commitest, also wo du deine Änderung anwenden willst. (Faustregel: alles, was eventuell übersetzt werden muss, sollte in den `changes` Branch gehen, Tippfehler sollten in den `release` Branch gehen; mehr Informationen findest du in der [CONTRIBUTING Datei](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md)). Erstelle auf deinem Fork einen neuen Branch aus dem Branch, den du gewählt hast
+2. Entscheide, in welchen Zweig („Branch“) du deine Änderungen commitest, also wo du deine Änderung anwenden willst. (Faustregel: alles, was eventuell übersetzt werden muss, sollte in den `changes` Branch gehen, Tippfehler sollten in den `release` Branch gehen; mehr Informationen findest du in der [CONTRIBUTING Datei](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md)). Erstelle auf deinem Fork einen neuen Branch aus dem Branch, den du gewählt hast
 3. Verändere was du verändern möchtest
 4. Wenn du die Änderungen lokal gemacht hast, pushe den neuen Branch in dein Repository
 5. Eröffne einen Pull Request, beschreibe kurz was du geändert hast und verlinke den Issue, das du geöffnet hast

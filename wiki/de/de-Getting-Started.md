@@ -54,7 +54,7 @@ Du kannst auch in die [Liste der von der Community getesteten Geräte schauen](/
 
 Oder anders ausgedrückt, höre **nicht** auf dein direktes Signal.
 
-Auch wenn du eine gute Internetverbindung hast, ist es besser (um den Rhythmus halten zu können), wenn du dich auf das Signal vom Server und nicht auf dein Livesignal konzentrierst. _(Um Zweifel auszuschließen: das hat nichts mit den „Mute“-Reglern in Jamulus zu tun.)_
+Auch wenn du eine gute Internetverbindung hast, ist es besser (um den Rhythmus halten zu können), wenn du dich auf das Signal vom Server und nicht auf dein Live-Signal konzentrierst. _(Um Zweifel auszuschließen: das hat nichts mit den „Mute“-Reglern in Jamulus zu tun.)_
 
 Weitere Informationen darüber, wie du vermeiden kannst, auf dich selbst zu hören (und Hilfe bei anderen Problemen), findest du auf der [Fehlerbehebung FAQ](Client-Troubleshooting) Seite. (_momentan in Arbeit_)
 
