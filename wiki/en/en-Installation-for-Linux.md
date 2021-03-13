@@ -35,6 +35,16 @@ Afterwards you should look at the "[Set up your sound card](#set-up-your-sound-c
 
 **Note:** Jamulus (with GUI) is also [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt install jamulus`.
 
+### PipeWire
+
+[PipeWire](https://pipewire.org/) includes a JACK implementation. Follow the instruction to install it for your distribution, configure it, and start Jamulus with the command below.
+
+    pw-jack Jamulus
+
+You can pass the period in samples using the switch `-p`: `pw-jack -v -p 64 Jamulus`.
+
+On a Dell Latitude E7250 with Debian sid/unstable using *jackd* 5+nmu1 changing the period to 64 in QjackCtl resulted in no sound. With 128 samples per period Jamulus showed a latency of 100 ms (ping of 12 ms). With PipeWire (0.3.19-4), and 64 samples per period the latency is 32 ms (ping + 20 ms), and sound is working.
+
 ---
 
 If you can't use one of the above options, you need to compile Jamulus from source:
