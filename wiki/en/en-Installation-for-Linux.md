@@ -27,13 +27,13 @@ Jamulus is available as a [Flatpak](https://flatpak.org/) from [Flathub here](ht
 You can install Jamulus from [buster-backports](https://packages.debian.org/de/buster-backports/jamulus) or - if you're on amd64 **Debian**/**Ubuntu** - you may try the compiled .deb packages from GitHub Actions:
 
 1. Download the [latest .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
-1. Update apt: `sudo apt-get update`
+1. Update apt: `sudo apt update`
 1. Install the package: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`.
-1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
+1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt install qjackctl`
 
 Afterwards you should look at the "[Set up your sound card](#set-up-your-sound-card)" step on this page.
 
-**Note:** Jamulus (with GUI) is also [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt-get install jamulus`.
+**Note:** Jamulus (with GUI) is also [included in Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) thanks to [mirabilos](https://github.com/mirabilos). If you already use Bullseye, just install Jamulus via `sudo apt install jamulus`.
 
 ---
 
@@ -53,12 +53,12 @@ tar -xvf latest.tar.gz
 
 ### Install dependencies
 
-First, update your package list (e.g. on Debian-based distributions with `sudo apt-get update`).
+First, update your package list (e.g. on Debian-based distributions with `sudo apt update`).
 
 On **Ubuntu-based** distributions 18.04+, **Debian** 9+ or 10 and Raspberry Pi Raspbian Buster release or later:
 
 ```shell
-sudo apt-get install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
+sudo apt install build-essential qt5-qmake qtdeclarative5-dev qt5-default qttools5-dev-tools libjack-jackd2-dev
 ```
 
 On **Fedora**:
@@ -72,10 +72,10 @@ sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Co
 [QjackCtl](https://qjackctl.sourceforge.io) is a utility to help you set up the JACK audio server (installed as part of the dependencies above). Install it via e.g.
 
 ```shell
-sudo apt-get install qjackctl
+sudo apt install qjackctl
 ```
 
-You may also wish to consider using a [low-latency kernel](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (e.g. for Ubuntu 18.04: `sudo apt-get install linux-lowlatency-hwe-18.04`).
+You may also wish to consider using a [low-latency kernel](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (e.g. for Ubuntu 18.04: `sudo apt install linux-lowlatency-hwe-18.04`).
 
 ### Compile this bad boy
 
