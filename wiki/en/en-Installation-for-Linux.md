@@ -21,7 +21,7 @@ There is also list of unofficial [packages for different distributions here](htt
 
 ### Flatpak
 
-Jamulus is available as a [Flatpak](https://flatpak.org/) from [Flathub here](https://flathub.org/apps/details/io.jamulus.Jamulus). You will need to set up pipewire in order to use the Jamulus flatpak.
+Jamulus is available as a [Flatpak](https://flatpak.org/) from [Flathub here](https://flathub.org/apps/details/io.jamulus.Jamulus). You will need to set up PipeWire in order to use the Jamulus flatpak.
 
 ### Debian and Ubuntu
 You can install Jamulus from [buster-backports](https://packages.debian.org/de/buster-backports/jamulus) or - if you're on amd64 **Debian**/**Ubuntu** - you may try the compiled .deb packages from GitHub Actions:
