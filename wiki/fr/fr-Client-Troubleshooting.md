@@ -50,7 +50,7 @@ Vous pouvez régler votre « Niveau de nouveau client » sur une valeur faible
 
 ### Vous ne voyez pas le serveur que vous voulez rejoindre ?
 
-Vérifiez d'abord que vous avez le bon serveur de genre musical sélectionné dans votre fenêtre des paramètres de connexion. Mais il arrive parfois que des problèmes de réseau empêchent votre client d'afficher la liste de tous les serveurs disponibles. Si vous connaissez le nom du serveur que vous souhaitez rejoindre, vous pouvez [rechercher son adresse IP ici (en anglais)](http://explorer.jamulus.io/). Saisissez l'adresse IP dans le champ « Adresse du serveur » de la fenêtre « Paramètres de connexion » pour vous y connecter.
+Vérifiez d'abord que vous avez le bon serveur de genre musical sélectionné dans votre fenêtre des paramètres de connexion. Mais il arrive parfois que des problèmes de réseau empêchent votre client d'afficher la liste de tous les serveurs disponibles. Si vous connaissez le nom du serveur que vous souhaitez rejoindre, vous pouvez [rechercher son adresse IP ici (en anglais)](https://explorer.jamulus.io/). Saisissez l'adresse IP dans le champ « Adresse du serveur » de la fenêtre « Paramètres de connexion » pour vous y connecter.
 
 ### Vous ne voyez pas du tout la liste des serveurs ?
 
