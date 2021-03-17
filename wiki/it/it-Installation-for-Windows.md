@@ -10,7 +10,7 @@ permalink: "/wiki/Installation-for-Windows"
 Assicurati di aver letto la pagina [Primi Passi](Getting-Started).
 
 1. **Scarica e installa i driver ASIO**. Si raccomanda di usare una scheda audio con driver ASIO proprietario. In alternativa [installare i driver (ASIO4All)](http://www.asio4all.org){: target="_blank" rel="noopener noreferrer"} prima di installare Jamulus.
-1. **Scarica e installa Jamulus** dal sito [Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer"}. Se ricevi un avviso, fai clic su "Ulteriori informazioni" e "Esegui comunque" per installare Jamulus.
+1. **Scarica e installa Jamulus** dal sito [Jamulus](https://github.com/jamulussoftware/jamulus/releases/latest){: target="_blank" rel="noopener noreferrer"}. Se ricevi un avviso, fai clic su "Ulteriori informazioni" e "Esegui comunque" per installare Jamulus.
 1. **Configura la tua scheda audio**. Dopo l'installazione passa a configurare il tuo hardware. Dai un'occhiata a come configurare i driver ASIO4All (scorri verso il basso), e poi su [Configurazione Hardware](Hardware-Setup).
 
 In alternativa puoi [compilare l'applicativo](Compiling) avendo le conoscenze necessarie.
