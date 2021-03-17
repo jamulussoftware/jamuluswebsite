@@ -18,15 +18,13 @@ Nous ne plaçons pas de cookies de suivi, cependant SourceForge pourrait le fair
 
 Lorsque vous vous connectez à un serveur Jamulus public ou privé, tout ce que vous mettez dans Mon profil (dans les Paramètres) sera visible par les autres personnes sur ce serveur pendant que vous y serez connecté. Le serveur ne stocke ni ne sauvegarde par ailleurs les informations relatives à votre profil et l'administrateur du serveur n'y a pas accès sauf s'il y est également connecté en tant que client.
 
-Lorsque vous vous connectez à un serveur public, votre profil est également accessible aux tiers à partir du serveur central auquel ce serveur est inscrit. Ceci peut être à des fins d'information sur l'état du réseau public Jamulus (par exemple, [ici (en anglais)](http://explorer.jamulus.io/)), mais ne se limite pas à ça. Les informations relatives au profil ne sont pas journalisées ou stockées par le serveur Jamulus auquel vous êtes connecté, ou par le serveur central Jamulus, mais peuvent être stockées ou traitées par des tiers.
+Lorsque vous vous connectez à un serveur public, votre profil est également accessible aux tiers à partir du serveur central auquel ce serveur est inscrit. Ceci peut être à des fins d'information sur l'état du réseau public Jamulus (par exemple, [ici (en anglais)](https://explorer.jamulus.io/)), mais ne se limite pas à ça. Les informations relatives au profil ne sont pas journalisées ou stockées par le serveur Jamulus auquel vous êtes connecté, ou par le serveur central Jamulus, mais peuvent être stockées ou traitées par des tiers.
 
 ### Utilisation des adresses IP
 
 Lorsque vous vous connectez à un serveur public ou privé, l'administrateur du serveur peut voir votre adresse IP pendant que vous y êtes connecté. Si l'administrateur du serveur a activé la journalisation (qui est désactivée par défaut), votre adresse IP sera également journalisée et stockée dans le fichier journal du serveur.
 
-En tant qu'administrateur de serveur, lorsque vous inscrivez un serveur public auprès d'un serveur central, votre adresse IP est envoyée à CloudFlare (1.1.1.1) afin d'identifier votre adresse IP publique. Les adresses IP de tous les serveurs publics enregistrés auprès du serveur central peuvent également être consultées par des tiers à des fins d'information ou autres (par exemple [ici (en anglais)](http://explorer.jamulus.io/)). Votre adresse IP publique n'est par ailleurs pas journalisée ou stockée par Jamulus, mais peut être stockée ou traitée par des tiers.
-
-_Les utilisateurs concernés par l'utilisation du réseau CloudFlare peuvent [recompiler](Compiling) le code source de Jamulus afin d'utiliser une alternative pour WELL_KNOWN_HOST et WELL_KNOWN_PORT dans [global.h](https://github.com/corrados/jamulus/blob/master/src/global.h#L111)._
+Les adresses IP de tous les serveurs publics enregistrés auprès du serveur central peuvent également être consultées par des tiers à des fins d'information ou autres (par exemple [ici (en anglais)](https://explorer.jamulus.io/)). Votre adresse IP publique n'est par ailleurs pas journalisée ou stockée par Jamulus, mais peut être stockée ou traitée par des tiers.
 
 ### Enregistrements audio
 
