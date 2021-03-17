@@ -26,9 +26,9 @@ Jamulus utiliza [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) 
 
 Puedes probar dos versiones de ASIO4ALL. ASIO4ALL v2.14 incluye una actualización para un bug que puede hacer fallar otras funcionalidades.
 
-[ASIO4ALL v2.14 Descarga](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL v2.15 Beta 1 Descarga](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_Beta1_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
-[ASIO4ALL v2.13 Descarga](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.13/ASIO4ALL_2_13_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL v2.14 Descarga](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
 [Web ASIO4ALL](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
@@ -36,7 +36,7 @@ Puedes probar dos versiones de ASIO4ALL. ASIO4ALL v2.14 incluye una actualizaci�
 ### Setting up ASIO4ALL
 *No se recomienda ASIO4ALL si tu tarjeta de sonido/interfaz de audio proporciona su propio driver ASIO, ya que este último puede ofrecer mejor latencia.*
 
-Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configuración adecuada ya que cada ordenador es un poco diferente. 
+Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configuración adecuada ya que cada ordenador es un poco diferente.
 
 **Consejo:** Configura tu tarjeta mientras estés en [conexión con un servidor](Onboarding#2-conectarse-a-un-servidor) para escuchar tu instrumento o tu voz y comprobar que todo está bien configurado; pero sigue leyendo.
 
@@ -53,9 +53,9 @@ Antes de empezar con Jamulus:
 1. Abre las entradas/salidas de tu tarjeta de audio haciendo clic en el _icono de plus_ al lado de esta tarjeta.
 1. Ahora activa/desactiva las entradas/salidas correctas en la lista bajo tu tarjeta de audio y desactiva todo lo demás. Puedes mover el ratón sobre las entradas/salidas para ver qué es cada una y si soportan la tasa de muestreo de Jamulus que es de 48 kHz (calidad DVD).
 
-**Consejos:** 
-1. Muchas tarjetas internas se denominan Realtek High Definition Audio, Conexant o similar. 
-1. A menudo los auriculares y los altavoces están etiquetados como 'output' y los micrófonos como 'input' o 'capture'. 
+**Consejos:**
+1. Muchas tarjetas internas se denominan Realtek High Definition Audio, Conexant o similar.
+1. A menudo los auriculares y los altavoces están etiquetados como 'output' y los micrófonos como 'input' o 'capture'.
 1. 'Stereo Mix' normalmente no es la entrada/salida que buscas, por tanto puedes desactivarlo si lo ves.
 
 ### ¿Tienes problemas con la configuración de ASIO4All?
