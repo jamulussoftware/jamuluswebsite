@@ -9,7 +9,7 @@ permalink: "/wiki/Installation-for-Macintosh"
 
 Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started) avant de commencer.
 
-1. [Téléchargez Jamulus](https://sourceforge.net/projects/llcon/files/latest/download){: target="_blank" rel="noopener noreferrer" .button}
+1. [Téléchargez Jamulus](https://github.com/jamulussoftware/jamulus/releases/latest){: target="_blank" rel="noopener noreferrer" .button}
 1. **Décompressez le fichier .zip téléchargé**. Double-cliquez sur l'archive `.zip` pour la décompresser, un nouveau dossier du même nom sera créé. Ce dossier contient le fichier de licence et une image disque `.dmg` contenant l'application.
 1. **Double-cliquez sur le fichier `.dmg`** pour l'ouvrir l'image et vous verrez deux fichiers (client et serveur Jamulus). Acceptez la licence.
 1. **Glissez et déposez les deux icônes dans votre dossier Applications** pour installer Jamulus (client et serveur).
