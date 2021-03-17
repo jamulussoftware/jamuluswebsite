@@ -4,12 +4,9 @@ title: "Manual del Software"
 lang: "es"
 permalink: "/wiki/Software-Manual"
 ---
-Ayuda para Jamulus (Manual del Software)
-==============================
+# Manual de Software de Jamulus
 
-Ventana Principal
------------
-
+## Ventana Principal
 
 ![Main window](https://user-images.githubusercontent.com/4263412/97588743-1a15f900-19fd-11eb-889e-db47dce809fe.png)
 
@@ -32,10 +29,6 @@ El LED de **Estado de Retardo** muestra el estado actual del retardo de audio:
 
 
 * **Rojo** - El retardo es demasiado grande para tocar
-
-
-
-
 
 El LED de estado de **Buffers** muestra el estado actual del flujo de audio/datos. Si está **rojo**, hay interrupciones en el flujo de audio. Esto puede ser causado por alguno de los siguientes problemas:
 
@@ -73,7 +66,7 @@ Abre una ventana donde puedes seleccionar un servidor. Si estás conectado, puls
 
 ![Connect dialog](https://user-images.githubusercontent.com/4263412/97570179-be8d4080-19e7-11eb-9133-b7e12e634193.png)
 
-La ventana de Configuración de Conexión muestra una lista de servidores disponibles junto con el número de usuarios conectados y el número máximo de los mismos soportado. Los operadores de servidores pueden, opcionalmente, listar su servidor por género musical. Utiliza el menú desplegable de Lista para elegir un género, haz clic sobre el servidor al que te quieres unir y otra vez sobre el botón de Conectar para conectarte. También puedes hacer doble clic sobre el nombre del servidor. Los servidores permanentes (aquellos que llevan más de 24 horas en la lista) se muestran en negrita.
+La ventana de Configuración de Conexión muestra una lista de servidores disponibles junto con el número de usuarios conectados y el número máximo de los mismos soportado. Los operadores de servidores registran sus servidores en listas (normalmente definidas por género, aunque algunas pueden ser específicas de una región o para cualquier género). Utiliza el menú desplegable de Lista para elegir un género, haz clic sobre el servidor al que te quieres unir y otra vez sobre el botón de Conectar para conectarte. También puedes hacer doble clic sobre el nombre del servidor. Los servidores permanentes (aquellos que llevan más de 24 horas en la lista) se muestran en negrita.
 
 Puedes filtrar la lista por nombre de servidor o ubicación. Para solo mostrar los servidores ocupados, escribe el caracter "#".
 
@@ -94,7 +87,7 @@ Se puede aplicar un efecto de reverberación a un canal local de audio mono o a 
 
 Control local de paneo / balance
 
-Controla los niveles relativos de los canales locales de audio derecho e izquierdo. Para una señal mono actúa como paneo entre los dos canales. Por ejemplo, si se conecta un miocrófono al canal derecho y un instrumento al izquierdo que suena mucho más alto que el micrófono, mueve el fader en una dirección donde la etiqueta sobre el fader muestra L -x, donde x es el indicador de atenuación actual.
+Controla los niveles relativos de los canales locales de audio derecho e izquierdo. Para una señal mono actúa como paneo entre los dos canales. Por ejemplo, si se conecta un miocrófono al canal derecho y un instrumento al izquierdo que suena mucho más alto que el micrófono, mueve el fader de audio para aumentar el volumen relativo del micrófono.
 
 ### Mezclador de audio del servidor
 
@@ -121,8 +114,7 @@ Si el operador del servidor ha habilitado la grabación, verás un mensaje sobre
 
 
 
-Ventana de Configuración
----------------
+## Ventana de Configuración
 
 ![Settings](https://user-images.githubusercontent.com/4263412/97570866-ebd9ee80-19e7-11eb-9e24-314540cf1b32.png)
 
@@ -219,7 +211,8 @@ Deja esto en blanco a menos que necesites escribir la dirección de un servidor 
 
 ![Indicators](https://user-images.githubusercontent.com/4263412/97572481-97833e80-19e8-11eb-84a5-b671c16e48b5.png)
 
-El Ping es el tiempo que requiere el flujo de audio para viajar desde el cliente al servidor y volver. Este retardo lo determina la red y debería ser de unos 20-30 ms. Si este retardo es mayor de unos 50 ms, la distancia al servidor es demasiado grande o tu conexión a internet no es óptima.
+El Ping es el tiempo que requiere el flujo de audio para viajar desde el cliente al servidor y volver. 
+Este retardo lo determina la red y debería ser de unos 20-30 ms. Cuando este retardo es mayor de unos 50 ms, empieza a ser más notable y te puedes encontrar con que es más difícil mantener la sincronización con los demás, aunque sigue siendo posible cuando te acostumbras. Los factores como el tempo, el instrumento utilizado o el aislamiento de los auriculares pueden tener un impacto en el retardo con el que te sientes cómod@. Las causas más probables de un retardo alto son que la distancia al servidor es demasiado grande o que tu conexión a internet no es óptima.
 
 El retardo total se calcula con el ping y el retardo ocasionado por la configuración de buffers.
 

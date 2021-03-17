@@ -13,7 +13,7 @@ _**Note**: If they work or not can depend on your operating system (Linux, MacOS
 
 ## Updating this page
 
-You can update this page with the information you have. **Please indicate the platform(s) you are using!**. Just [open an issue with the sound device topic on the Jamulus documentation repo](https://github.com/jamulussoftware/jamuluswebsite/issues/new?template=newsounddevice.md) and fill the form.
+You can update this page with the information you have. **Please indicate the platform(s) you are using!** Just [open an issue and give more information on your device](https://github.com/jamulussoftware/jamuluswebsite/issues/new).
 
 ## Audio devices known to work with Jamulus
 
@@ -137,9 +137,9 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 **macOS**: Works great.
 
-**Linux**: Works great. 
+**Linux**: Works great.
 
-Tested Behringer XENYX X1832 USB (USB audio) on Ubuntu 20.04 LTS which works fine. 
+Tested Behringer XENYX X1832 USB (USB audio) on Ubuntu 20.04 LTS which works fine.
 _More testing required._
 
 ***

@@ -31,7 +31,7 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-c` |`--connect`        | Connect to given server address on startup, format `address[:port]` | (client only) |
 |    `-d` |`--discononquit`   | Disconnect all clients on quit | (server only) |
 |    `-e` |`--centralserver`  | Makes the server public and sets its genre. See also `-o`| (server only) [See list](Central-Servers). |
-|    `-f` |`--listfilter`     | Whitelist servers registering on the serverlist, format `ip address 1[;ip address 2]` | (central server only) [See note](Choosing-a-Server-Type#3-central). |
+|    `-f` |`--listfilter`     | Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` | (central server only) [See note](Choosing-a-Server-Type#3-central). |
 |    `-F` |`--fastupdate`     | 64 samples frame size mode. Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients. | (server only) |
 | `-h,-?` |`--help`           | This help text | (client and server) |
 |    `-i` |`--inifile`        | Set location of initialization file (overrides default) | (client (always) and server (with GUI)) |
@@ -42,7 +42,7 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-n` |`--nogui`          | Disable GUI | (client and server) |
 |    `-o` |`--serverinfo`     | Server location details in the format: <br/>`[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum))| (public servers only) |
 |    `-p` |`--port`           | Local UDP port number. Default is 22124 | (server only) |
-|    `-R` |`--recording`      | Include a writable path where the files should be stored (in quotes if needed). | (server only) See description in [Server Setup](Server-Win-Mac#recording). |
+|    `-R` |`--recording`      | Include a writeable path where the files should be stored (in quotes if needed). | (server only) See description in [Server Setup](Server-Win-Mac#recording). |
 |       | `--norecord`      | Start recorder with recording disabled | (server only) |
 |    `-s` |`--server`         | Start in server mode | (server only) [See note](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Disable translations | (client and server) |
@@ -50,5 +50,6 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-u` |`--numchannels`    | Maximum number of users. Default is 10, maximum is 50 | (server only) |
 |    `-w` |`--welcomemessage` | Supports HTML and inline CSS formatting (in enclosing quotes), or set path to text file. | (server only) |
 |    `-z` |`--startminimized` | Start minimized | (server only) |
-|       |`--ctrlmidich`     | MIDI controller channel to listen on and control number offset, format: `channel[;offset]` | (client only) see [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
-|       |`--clientname`     | Window title and jack client name | (client only) |
+|       |`--ctrlmidich`     | MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f<off>*<channels>][;p<off>*<channels>][;s<off>*<channels>][;m<off>*<channels>]` | (client only) see [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
+|       |`--clientname`     | Window title and JACK client name | (client only) |
+|       |`--serverpublicip` | Supply the server's public IP address  | (server only) [See note](Choosing-a-Server-Type) |

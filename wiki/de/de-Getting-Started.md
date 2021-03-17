@@ -25,7 +25,7 @@ Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers
 
 
 ### 3. Verbinde dich mit Servern mit niedrigem Ping
-Der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den niedrigsten Ping-Zeiten. 15ms oder weniger sind perfekt.
+Der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den niedrigsten Ping-Zeiten. 15 ms oder weniger sind perfekt.
 
 Die wichtigsten Faktoren kennst du jetzt! Los geht's:
 
@@ -33,13 +33,16 @@ Die wichtigsten Faktoren kennst du jetzt! Los geht's:
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Installation auf Windows</a>
   <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Installation auf macOS</a>
   <a href="Installation-for-Linux" class="button fx-col-100-xs">Installation auf Linux</a>
+  <a href="Installation-for-Android" class="button fx-col-100-xs">Installation auf Android (PoC)</a>
 </div>
 [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/){: target="_blank" rel="noopener noreferrer"}
 
 Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stick starten! [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) prüft deine Hardware automatisch und richtet sie ein.
 
 ## Audiohardware
-Schau dir die [Liste von getesteter Hardware](Sound-Devices) und das [Hardware Setup](Hardware-Setup) an.
+Dein Gerät muss eine Abtastrate (Sample Rate) von **48kHz** (DVD-Qualität) unterstützen. Auch sollte es möglich sein, dass es den Ton deines Computers ausgeben kann. Unter Windows sollte das Gerät einen herstellereigenen [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output) Treiber unterstützen.
+
+Du kannst auch in die [Liste der von der Community getesteten Geräte schauen](/kb/2021/01/05/Jamulus-Sound-Devices.html).
 
 ## Weitere Anleitungen
 
@@ -51,7 +54,7 @@ Schau dir die [Liste von getesteter Hardware](Sound-Devices) und das [Hardware S
 
 Oder anders ausgedrückt, höre **nicht** auf dein direktes Signal.
 
-Auch wenn du eine gute Internetverbindung hast, ist es besser (um den Rhythmus halten zu können), wenn du dich auf das Signal vom Server und nicht auf dein Livesignal konzentrierst. _(Um Zweifel auszuschließen: das hat nichts mit den „Mute“-Reglern in Jamulus zu tun.)_
+Auch wenn du eine gute Internetverbindung hast, ist es besser (um den Rhythmus halten zu können), wenn du dich auf das Signal vom Server und nicht auf dein Live-Signal konzentrierst. _(Um Zweifel auszuschließen: das hat nichts mit den „Mute“-Reglern in Jamulus zu tun.)_
 
 Weitere Informationen darüber, wie du vermeiden kannst, auf dich selbst zu hören (und Hilfe bei anderen Problemen), findest du auf der [Fehlerbehebung FAQ](Client-Troubleshooting) Seite. (_momentan in Arbeit_)
 
@@ -60,8 +63,8 @@ Weitere Informationen darüber, wie du vermeiden kannst, auf dich selbst zu hör
 **Millionen von Menschen benutzen Jamulus um mit anderen Menschen auf der ganzen Welt in Echtzeit zu spielen, zu singen und Musik zu unterrichten. Das funktioniert ganz einfach:**
 
 ![Overview](https://user-images.githubusercontent.com/4561747/79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
-_Jamulus arbeitet nach dem Client-Server-Prinzip. Das Audiosignal von allen Musikern wird an einen Server geschickt, dort gemischt und verarbeitet. Danach wird das Audio an jeden Client gesendet. Wenn ein Server öffentlich gemacht und auf einem zentralen Server registriert wird, werden seine Informationen an alle Clients gesendet._
+_Jamulus arbeitet nach dem Client-Server Prinzip. Das Audiosignal von allen Musikern wird an einen Server geschickt, dort gemischt und verarbeitet. Danach wird das Audiosignal an jeden Client gesendet. Wenn ein Server öffentlich gemacht und auf einem zentralen Server registriert wird, werden seine Informationen an alle Clients gesendet._
 
 ## Fußnoten
-[^1]: Empfohlen werden mindestens 10MBit/s Download und 1MBit/s Upload ([vollständige Details hier](Network-Requirements){: target="_blank" rel="noopener noreferrer"}). Wenn du keine LAN Buchse mehr an deinem Laptop hast, kannst du einen USB zu LAN-Adapter versuchen.
-[^2]: Die Zeitverzögerung von Bluetooth-Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
+[^1]: Empfohlen werden mindestens 10 Mbit/s Download und 1 Mbit/s Upload ([vollständige Details hier](Network-Requirements){: target="_blank" rel="noopener noreferrer"}). Wenn du keine LAN Buchse mehr an deinem Laptop hast, kannst du einen USB zu LAN-Adapter versuchen.
+[^2]: Die Zeitverzögerung von Bluetooth Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).

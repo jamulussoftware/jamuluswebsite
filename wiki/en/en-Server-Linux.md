@@ -5,6 +5,8 @@ lang: "en"
 permalink: "/wiki/Server-Linux"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Server Installation - Linux
 
 
@@ -20,7 +22,7 @@ If you plan to run a server on your desktop machine (and you have installed the 
 
 Hit return and you should see the server control window. You can stop the server by closing the server window, or by typing CTRL+C in the terminal.
 
-**To configure the server**, please refer to [the Windows & Macintosh instructions](Server-Win-Mac).
+**To configure the server**, please refer to [the Windows & macOS instructions](Server-Win-Mac).
 
 See also [Command Line Options](Command-Line-Options) for other parameters you can set.
 
@@ -30,6 +32,20 @@ The following guide is for running Jamulus as a "pure" server on **hardware with
 
 * _Jamulus user [Grigory](https://sourceforge.net/u/cidnurg/profile/) maintains a **[Docker image for Jamulus](https://hub.docker.com/r/grundic/jamulus)** which you can use._
 
+### Use the official Debian/Ubuntu headless .deb files
+
+If you're on amd64 Debian/Ubuntu, you may try the compiled .deb packages from GitHub Actions:
+
+1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
+1. Update apt: `sudo apt update`
+1. Install the package: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`
+1. Enable the headless server via systemd: `sudo systemctl enable jamulus-headless`
+1. Add the required [command line options](Command-Line-Options) to the systemd service file in `/lib/systemd/system/jamulus-headless.service`.
+1. Reload systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
+
+You should now be running a private server!
+
+**Note:** To configure the server, you can add command line flags to the file `/lib/systemd/system/jamulus-headless.service` e.g. make this a public server. Have a look at the [Command Line Options](Command-Line-Options) page.
 
 ### Compile sources, create a user
 
@@ -143,7 +159,7 @@ Note: Press `q` to exit the service status.
 
 ### To update your installation to a new release
 
-Download the new sources as per the [instructions above](Server-Linux#compile-sources-create-a-user) and repeat the compilation in step 2 as if for a new installation. Shut down the server, copy the Jamulus binary over the old one and start it back up.
+Download the new sources as per the [instructions above](Server-Linux#compile-sources-create-a-user) and repeat the compilation in step 2 as if for a new installation or just install the new headless .deb files. If you compiled Jamulus from source, shut down the server, copy the Jamulus binary over the old one and start it back up.
 
 ***
 
@@ -155,7 +171,9 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 
 When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
 
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (eg `newRecording-Jamulus-server.service`).
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
+
+**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
 
 For turning recording on or off (depending on the current state):
 
@@ -193,7 +211,7 @@ You can see the result of these commands if you run `service jamulus status`, or
 
 ### Viewing The Logs
 
-Jamulus will log to the system file if you left the `StandardOutput=journal` setting in the unit file. Logging to the system log is recommended, as the system will manage the log file for you, no need to come back and purge it later, or worry about filling up your disk space.
+Jamulus will log to the system file if you left the `StandardOutput=journal` setting in the unit file. Logging to the system log is recommended, as the system will manage the log file for you - no need to come back and purge it later or worry about filling up your disk space.
 
 To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:
 

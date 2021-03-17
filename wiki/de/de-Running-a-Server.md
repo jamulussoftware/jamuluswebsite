@@ -35,11 +35,11 @@ Viele Leute denken, dass der Server Probleme macht, obwohl es eigentlich Problem
 
 Wenn du planst, regelmäßig mit den gleichen Leuten zu spielen, solltest du zunächst sicherzustellen, dass jedes Mitglied der Gruppe für die korrekte Verwendung von Jamulus eingerichtet ist. Finde dazu einen öffentlichen Server mit einer geringen Ping-Zeit für alle (20 ms oder weniger), lasse jeden eine Verbindung zu diesem Server herstellen und arbeite daran, alle individuellen Probleme zu beheben (stelle sicher, dass sie [Regel Nr. 1](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten) befolgen). Verwende die oben genannte Solotechnik, um zu verhindern, dass du unterbrochen wirst.
 
-Sobald alle Probleme mit den Musikern auf diese Weise gelöst sind, kannst du testen, ob du deinen eigenen Server entweder zu Hause oder auf einem Cloud-Host wie Amazon hosten willst, der evtl. besseren Latenzzeiten hat. Siehe [diesen Leitfaden](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/howto-idiots-guide-to-installing-jamulus-server-on-amazon-aws-lightsail-ubuntu-i/507719749802976/) zur Verwendung von AWS Lightsail von [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_)
+Sobald alle Probleme mit den Musikern auf diese Weise gelöst sind, kannst du testen, ob du deinen eigenen Server entweder zu Hause oder auf einem Cloud-Host wie Amazon hosten willst, der evtl. besseren Latenzzeiten hat. Schau dir [diesen Leitfaden](https://www.facebook.com/notes/jamulus-worldjam/howto-idiots-guide-to-installing-or-upgrading-a-jamulus-server-on-amazon-aws-lig/818091045662521/) von [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_)  zur Verwendung von AWS Lightsail an.
 
 ### Bandbreite – hast du genug?
 
-Ein typischer Jam mit 4 Personen könnte grob 200Kbps * 4 = 800Kbs (0.8Mbps) Upload und Download benötigen. Eine typische Breitbandverbindung mit 10MBit/s Download und 1MBit/s Upload, **wird sehr wahrscheinlich ab dem fünften Musiker zu gering sein**, insbesondere wenn andere Musiker Einstellungen wählen, die viel Bandbreite benötigen. Hier kannst du testen, [wie viel Bandbreite dein Anschluss bietet](https://fast.com). [Mehr über die benötigte Bandbreite](Network-Requirements) bei verschiedenen Qualitätseinstellungen.
+Ein typischer Jam mit 4 Personen könnte grob 200Kbit/s * 4 = 800Kbit/s (0,8 Mbit/s) Upload und Download benötigen. Eine typische Breitbandverbindung mit 10 Mbit/s Download und 1 Mbit/s Upload, **wird sehr wahrscheinlich ab dem fünften Musiker zu gering sein**, insbesondere wenn andere Musiker Einstellungen wählen, die viel Bandbreite benötigen. Hier kannst du testen, [wie viel Bandbreite dein Anschluss bietet](https://fast.com). [Mehr über die benötigte Bandbreite](Network-Requirements) bei verschiedenen Qualitätseinstellungen.
 
 ### Allgemein
 
@@ -59,10 +59,11 @@ Ein typischer Jam mit 4 Personen könnte grob 200Kbps * 4 = 800Kbs (0.8Mbps) Upl
 <div class="fx-row fx-row-start-xs button-container">
     <a href="Server-Win-Mac" class="button fx-col-100-xs">Windows und macOS</a>
     <a href="Server-Linux" class="button fx-col-100-xs">Linux</a>
-    <a href="Server-Rpi" class="button fx-col-100-xs">Raspberry Pi</a>
 </div>
 
-Serverbetreiber könnten [diese nützlichen Tools](https://github.com/corrados/jamulus/tree/master/tools) aus dem Jamulus-Repository nützlich finden. Klone dazu das Git-Repo und rufe `git submodule update --init` auf).
+Wenn du den Jamulus Server auf einem Raspberry Pi einrichten möchtest, sieh dir die [Anleitung für Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) von fredsiva an.
+
+Serverbetreiber könnten [diese nützlichen Tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) aus dem Jamulus-Repository hilfreich finden. Klone dazu das Git-Repo und rufe `git submodule update --init` auf).
 
 ## Probleme?
 

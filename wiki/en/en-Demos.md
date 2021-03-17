@@ -5,7 +5,6 @@ lang: "en"
 permalink: "/wiki/Demos"
 ---
 
-
 # Examples of Jamulus in Use
 
 **Feel free to add your own!**

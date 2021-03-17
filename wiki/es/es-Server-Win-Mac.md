@@ -5,6 +5,8 @@ lang: "es"
 permalink: "/wiki/Server-Win-Mac"
 ---
 
+{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+
 # Instalación para Windows y macOS
 
 
@@ -24,7 +26,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 1. Escribe el nombre, la ciudad y el país para que otros usuarios puedan identificarte con facilidad.
 
-1. Especifica un género musical si quieres. Esto hará que tu servidor aparezca en la lista relevante para los clientes (ver más [detalles sobre los Servidores Centrales](Central-Servers)).
+1. Especifica un género musical. Esto hará que tu servidor aparezca en la lista relevante para los clientes (ver más [detalles sobre los Servidores Centrales](Central-Servers)).
 
 _El Mensaje de Bienvenida del Chat aparece a todos los usuarios cuando se unen al servidor (la venta del chat se abrirá automáticamente)._
 
@@ -50,10 +52,6 @@ Para servidores "headless": puedes controlar la función de grabación [siguiend
 **Usuarios de Windows** - Si quieres que el servidor arranque automáticamente al iniciar el sistema, activa la casilla correspondiente.
 
 (Deja el campo de "Dirección Personalizada Servidor Central" vacío a menos que necesites listar tu servidor en un [servidor central privado](Choosing-a-Server-Type#3-central))
-
-
-
-
 
 ***
 
