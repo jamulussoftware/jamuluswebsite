@@ -8,7 +8,7 @@ permalink: "/wiki/Client-Troubleshooting"
 # Dépannage
 
 ### Vous n'entendez aucun son ou les autres ne vous entendent pas ?
-Commencez par les choses simples : assurez-vous que votre instrument ou micro et votre casque soient branchés sur les bonnes prises. Assurez-vous qu'aucune autre application comme votre navigateur, votre logiciel de vidéoconférence, etc. n'utilise votre carte son. Vous devriez les éteindre lorsque vous utilisez Jamulus. Si tout semble correct et que le problème persiste, il est probable qu'il y ait un problème avec les paramètres de votre périphérique son. Cela dépendra de votre configuration particulière (plate-forme, matériel, logiciel et pilotes), il est donc préférable de demander conseil sur [les forums (en anglais)](https://sourceforge.net/p/llcon/discussion/software/).
+Commencez par les choses simples : assurez-vous que votre instrument ou micro et votre casque soient branchés sur les bonnes prises. Assurez-vous qu'aucune autre application comme votre navigateur, votre logiciel de vidéoconférence, etc. n'utilise votre carte son. Vous devriez les éteindre lorsque vous utilisez Jamulus. Si tout semble correct et que le problème persiste, il est probable qu'il y ait un problème avec les paramètres de votre périphérique son. Cela dépendra de votre configuration particulière (plate-forme, matériel, logiciel et pilotes), il est donc préférable de demander conseil sur [les forums (en anglais)](https://github.com/jamulussoftware/jamulus/discussions/).
 
 **Utilisateurs de Windows (ASIO4All)** : si vous utilisez le pilote ASIO4All, consultez la [section de configuration ASIO4All](Installation-for-Windows#configuration-de-asio4all).
 
@@ -24,7 +24,7 @@ Vous pouvez testez si vous entendez correctement votre signal en procédant comm
 1. Fermez l'application d'enregistrement et lancez Jamulus. Vous ne devriez toujours pas vous entendre.
 1. Connectez-vous à un serveur et jouez quelque chose. Maintenant, vous devriez vous entendre avec le délai du serveur.
 
-**Si vous avez encore des problèmes**, essayez de demander sur le [forum du matériel (en anglais)](https://sourceforge.net/p/llcon/discussion/hardware/). La manière exacte dont vous éviterez d'écouter votre signal direct dépendra de votre configuration individuelle : votre interface son, votre console de mixage, l'endroit où est branché votre casque, etc… Par exemple, certaines interfaces audio ont des boutons « monitor » (désactivez-les), ou des options similaires.
+**Si vous avez encore des problèmes**, essayez de demander sur le [forum du matériel (en anglais)](https://github.com/jamulussoftware/jamulus/discussions/). La manière exacte dont vous éviterez d'écouter votre signal direct dépendra de votre configuration individuelle : votre interface son, votre console de mixage, l'endroit où est branché votre casque, etc… Par exemple, certaines interfaces audio ont des boutons « monitor » (désactivez-les), ou des options similaires.
 
 Sachez que si l'écoute du signal du serveur vous assure d'être synchronisé avec les autres musiciens, vous pourriez également rencontrer des problèmes si votre latence globale (indiquée par le voyant lumineux « Délai » dans Jamulus) n'est pas verte ou au moins jaune la plupart du temps. Consultez le [manuel du logiciel](Software-Manual) pour comprendre comment ajuster votre configuration afin de vous aider dans cette tâche.
 
@@ -72,4 +72,4 @@ Peut-être n'avez-vous pas répondu « oui » à la question `« Jamulus souhai
 
 ***
 
-Pour toute autre question, veuillez rechercher ou poster sur les [forums de discussion (en anglais)](https://sourceforge.net/p/llcon/discussion/software/).
+Pour toute autre question, veuillez rechercher ou poster sur les [forums de discussion (en anglais)](https://github.com/jamulussoftware/jamulus/discussions/).
