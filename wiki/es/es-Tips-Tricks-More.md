@@ -99,8 +99,14 @@ jack_connect Jamulus:'output right' system:playback_2
 
 ## Utilizar ctrlmidich para controladores MIDI
 
-Los faders de volumen en la ventana del mezclador del usuario se pueden controlar mediante un controlador MIDI usando el parámetro `--ctrlmidich` (nota: solo disponible para macOS y Linux). Para habilitar esta función, Jamulus debe arrancarse con `--ctrlmidich`. Se pueden establecer dos parámetros: `Canal` y `Compensación`. El primer parámetro es el canal que quieres que Jamulus utilice (0 para todos los canales) y el segundo parámetro el Número de Control (Control Number) con el que quieres que reaccione el primer fader. Por defecto, la compensación está establecida en 70 (para el Behringer X-Touch), lo cual significa que el primer fader reacciona al Número de Control 70, el segundo a 71, etc.
+Los faders de volumen y paneo, y los botones de mute y solo en la ventana del mezclador del usuario se pueden controlar mediante un controlador MIDI usando el parámetro `--ctrlmidich` (nota: solo disponible para macOS y Linux). Para habilitar esta función, Jamulus debe arrancarse con `--ctrlmidich`. Hay un parámetro MIDI global que es el canal (1-16) y dos parámetros que puedes establecer para cada mando: `compensación` y `cifra de números CC consecutivos`. Establece el primer parámetro al canal MIDI por el que te comunicarás con Jamulus (0 para todos los canales) y luego especifica los mandos que quieres controlar (f = fader volumen; p = pan; m = mute; s = solo) con la compensación (número CC inicial) y cifra de números CC consecutivos. Observa el siguiente ejemplo:
 
-Por tanto como ejemplo, si utilizas un Behringer X-Touch, enviando MIDI en el canal 1 y dejando la compensación en el valor predeterminado, el comando tendría este aspecto: `--ctrlmidich 1`. Si tienes un controlador diferente, que por ejemplo envía MIDI en el canal 2 y empezando con el Número de Control 30, el comando sería el siguiente: `--ctrlmidich "2;30"`.
+`--ctrlmidich '1;f0*8;p16*8;s32*8;m48*8'`
+
+Aquí, Jamulus recibe por el canal MIDI 1. Los números CC para los faders de volumen comienzan por 0 y hay 8 de ellos (por tanto van hasta el número CC 7). Los mandos de paneo comienzan en el número CC 16 y van hasta el 23; Solo de 32 a 39 y Mute de 48 a 55.
+
+Las columnas de faders y controles de la ventana del mezclador se controlan en orden ascendente de izquierda a derecha. Continuando con el ejemplo de arriba, el fader de volumen de la columna número 1 (de más a la izquierda) se controlaría con el número CC 0; pan con 16; solo con 32 y mute con 48. Como hemos especificado 8 controladores consecutivos para cada parámetro, esto nos daría control sobre 8 columnas (cada una con volumen, pan, solo y mute) en la ventana del mezclador. La siguiente columna se controlaría con 1, 17, 33 y 49, y así sucesivamente.
+
+*Nota:* Jamulus no proporciona información de vuelta via MIDI sobre el estado de los botones de Solo y Mute, lo cual significa que tu controlador debe conmutar los LEDs (si tiene) por sí solo.
 
 Asegúrate de que el puerto de salida de tu dispositivo MIDI esté conectado al puerto de entrada MIDI de Jamulus (QjackCtl (Linux), MIDI Studio (macOS) o lo que sea que utilices para gestionar las conexiones). En Linux tendrás que instalar y arrancar a2jmidid para que tu dispositivo aparezca en la pestaña MIDI de QjackCtl.
