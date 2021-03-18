@@ -33,7 +33,7 @@ Ahora que tienes lo básico, vayamos allá:
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Instalación en Windows</a>
   <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Instalación en macOS</a>
   <a href="Installation-for-Linux" class="button fx-col-100-xs">Para usuarios de Linux</a>
-  <a href="Installation-for-Android" class="button fx-col-100-xs">Install on Android (PoC)</a>
+  <a href="Installation-for-Android" class="button fx-col-100-xs">Instalación en Android (PoC)</a>
 </div>
 
 También - [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) Ejecuta Jamulus en cualquier ordenador utilizando un pendrive (solo sistemas de 64-bits). ¡Comprueba tu hardware y lo configura todo sin tener que hacer nada!
@@ -42,7 +42,7 @@ También - [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/Jamul
 
 En general, tu dispositivo debe soportar una tasa de muestreo de **48 kHz** (calidad DVD) y debería permitirte escuchar la señal de audio del ordenador. En Windows se recomienda escoger un dispositivo con driver [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) nativo.
 
-Ver [la lista de la comunidad de hardware funcional](/kb/2021/01/05/Jamulus-Sound-Devices.html).
+Ver [la lista de la comunidad de hardware funcional (en inglés)](/kb/2021/01/05/Jamulus-Sound-Devices.html).
 
 ## Otras guías
 * [Esta excelente guía](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} de [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) también merece un vistazo.
