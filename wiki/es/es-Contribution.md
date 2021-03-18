@@ -8,7 +8,7 @@ permalink: "/wiki/Contribution"
 # Contribuir al Proyecto Jamulus
 
 ## Software Jamulus
-* Si quieres contribuir código o quieres pedir la implementación de una función, escribe tu idea en [abre un 'issue' en GitHub (en inglés)](https://github.com/jamulussoftware/jamulus/issues/) (preferiblemente) o [publica tu idea en el foro](https://github.com/jamulussoftware/jamulus/discussions) si no tienes cuenta de GitHub. Esto nos permite debatir los cambio, por ejemplo, antes de hacer un "pull request" (asegúrate de leer el [manifiesto de Volker para contribuciones en GitHub (en inglés)](https://github.com/jamulussoftware/jamulus/discussions/915) y el [archivo de CONTRIBUTING](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md))
+* Si quieres contribuir código o quieres pedir la implementación de una función, escribe tu idea en [abre un 'issue' en GitHub (en inglés)](https://github.com/jamulussoftware/jamulus/issues/) (preferiblemente) o [publica tu idea en el foro](hhttps://github.com/jamulussoftware/jamulus/discussions) si no tienes cuenta de GitHub. Esto nos permite debatir los cambio, por ejemplo, antes de hacer un "pull request" (asegúrate de leer el [manifiesto de Volker para contribuciones en GitHub (en inglés)](https://github.com/jamulussoftware/jamulus/discussions/915) y el [archivo de CONTRIBUTING](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md))
 
 Ver el [repositorio de Jamulus en GitHub](https://github.com/jamulussoftware/jamulus) para más información.
 
