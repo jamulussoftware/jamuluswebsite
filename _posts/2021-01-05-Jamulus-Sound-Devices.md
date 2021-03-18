@@ -214,6 +214,16 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **Linux**: Not yet tested.
 
+***
+
+**[ZOOM LiveTrak L-8](https://zoomcorp.com/en/us/digital-mixer-multi-track-recorders/digital-mixer-recorder/LIVETRAK-L-8/)**, Mixer
+
+**Windows**: Latency is around 19ms (measured with local server with ping time of 0 ms) using "L-8 Driver" (ASIO, 07/02/2020) from [zoomcorp.com](https://zoomcorp.com/)
+
+**macOS**: Not yet tested
+
+**Linux**: Not yet tested
+
 #### Amp modelers/effects pedals for instruments
 
 **[Line 6 HX Stomp](https://line6.com/hx-stomp/)**, USB multi-effects pedal for guitar
@@ -245,6 +255,16 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 **macOS**: Works well.
 
 **Linux**: Tested on Raspberry Pi 4. Works well.
+
+***
+
+**[Zoom H2N](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h2n-handy-recorder/)**, USB portable recorder
+
+**Windows**: Latency is around 26ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/)
+
+**macOS**: Not yet tested
+
+**Linux**: Not yet tested
 
 ### FireWire devices
 
