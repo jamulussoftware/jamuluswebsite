@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: If you see something on our wesbite that's wrong or broken. 
+about: If you see something on our wesbite that's wrong or broken.
 title: "[Bug]"
 labels: bug
 assignees: ''
