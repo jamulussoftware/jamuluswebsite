@@ -8,7 +8,7 @@ permalink: "/wiki/Contribution"
 # Contribuer au projet Jamulus
 
 ## Logiciel Jamulus
-* Si vous voulez contribuer au code, postez d'abord votre idée sur [le forum des développeurs (en anglais)](https://sourceforge.net/p/llcon/discussion/developerforum/) afin qu'elle puisse être discutée avant de faire un « pull request » (assurez-vous de lire le [manifeste de Volker pour les contributions](https://github.com/corrados/jamulus/issues/596 (en anglais)), du développeur principal) 
+* Si vous voulez contribuer au code, postez d'abord votre idée sur [le forum des développeurs (en anglais)](https://github.com/jamulussoftware/jamulus/discussions) afin qu'elle puisse être discutée avant de faire un « pull request » (assurez-vous de lire le [manifeste de Volker pour les contributions](https://github.com/corrados/jamulus/issues/596 (en anglais)), du développeur principal) 
 
 Voir le [dépôt de Jamulus GitHub (en anglais)](https://github.com/corrados/jamulus) pour plus d'informations.
 
