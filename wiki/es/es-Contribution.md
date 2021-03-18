@@ -16,7 +16,7 @@ Ver el [repositorio de Jamulus en GitHub](https://github.com/jamulussoftware/jam
 
 * Si observas algún error de contenido o tipográfico, o algo que está desfasado (en cualquier idioma), puedes [abrir un 'issue' en GitHub](https://github.com/jamulussoftware/jamuluswebsite/issues).
 
-* Si crees que falta o se puede mejorar alguna documentación o información, abre un post en [el foro de discusión](https://github.com/jamulussoftware/jamuluswebsite/discussions) para que se pueda discutir primero.
+* Si crees que falta o se puede mejorar alguna documentación o información, abre un post en [el foro de discusión](https://github.com/jamulussoftware/jamulus/discussions) para que se pueda discutir primero.
 
 Echa un vistazo al [archivo de CONTRIBUTING](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md) para la página web y al [repositorio GitHub de la página web](https://github.com/jamulussoftware/jamuluswebsite) para más información.
 
