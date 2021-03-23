@@ -38,7 +38,7 @@ Si utilizas amd64 Debian/Ubuntu, puedes probar los paquetes .deb compilados con 
 
 1. Descarga el [último archivo .deb para headless]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
 1. Actualiza apt: `sudo apt update`
-1. Instala el paquete: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`
+1. Instala el paquete: `sudo apt install /path/to/{{ site.download_file_names.deb-headless }}`
 1. Habilita el servidor 'headless' con systemd:`sudo systemctl enable jamulus-headless`
 1. Añade las [opciones de línea de comandos](Command-Line-Options) al archivo de servicio de systemd en `/lib/systemd/system/jamulus-headless.service`.
 1. Vuelve a cargar los archivos de sistema `sudo systemctl daemon-reload` y reinicia el servidor 'headless': `sudo systemctl restart jamulus-headless`
