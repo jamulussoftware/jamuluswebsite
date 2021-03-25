@@ -13,7 +13,7 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 
 **Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4LL setup section](Installation-for-Windows#setting-up-asio4all)
 
-### You permanently get an error-message while trying to connect to any server?
+### You permanently get an error message while trying to connect to any server?
 
 If you are using a USB-microphone, try to connect it directly to an USB-port in your computer, bypassing any USB-hub. Some USB-hubs have caused the error message "Your sound card is not working correctly. Please open the settings dialog and check the device selection and the driver settings.".
 
