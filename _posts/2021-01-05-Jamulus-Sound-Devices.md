@@ -13,7 +13,7 @@ _**Note**: If they work or not can depend on your operating system (Linux, MacOS
 
 ## Updating this page
 
-You can update this page with the information you have. **Please indicate the platform(s) you are using!** Just [open an issue and give more information on your device](https://github.com/jamulussoftware/jamuluswebsite/issues/new).
+You can update this page with the information you have. **Please indicate the platform(s) you are using!** Just [edit this page and wait for an approval](https://github.com/jamulussoftware/jamuluswebsite/edit/release/_posts/2021-01-05-Jamulus-Sound-Devices.md).
 
 ## Audio devices known to work with Jamulus
 
