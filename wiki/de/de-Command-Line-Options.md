@@ -47,7 +47,7 @@ Du kannst dir alle verfügbaren Optionen der aktuellen Jamulus Version über den
 |    `-s` |`--server`         | Starte in Server Modus | (nur Server) [Siehe Notiz](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Keine Übersetzungen | (Client und Server) |
 |    `-T` |`--multithreading` | Aktiviere Multithreading | (nur Server) |
-|    `-u` |`--numchannels`    | Maximale Anzahl an Nutzern. Standard ist 10, Maximum ist 50 | (nur Server) |
+|    `-u` |`--numchannels`    | Maximale Anzahl an Nutzern. Standard ist 10, Maximum ist 150 | (nur Server) |
 |    `-w` |`--welcomemessage` | Begrüßungsnachricht. Unterstützt HTML und inline CSS (in Anführungszeichen), oder Pfad zu einer Textdatei. | (nur Server) |
 |    `-z` |`--startminimized` | Starte minimiert | (nur Server) |
 |       |`--ctrlmidich`     | MIDI Controller Kanal, Offset und fortlaufende CC Zahlen (Kanäle). Format `channel[;f<off>*<channels>][;p<off>*<channels>][;s<off>*<channels>][;m<off>*<channels>]`  | (nur Client) Siehe [Tipps & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
