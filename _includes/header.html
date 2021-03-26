@@ -1,8 +1,35 @@
 <header class="fx-row fx-row-between-xs fx-text-center">
-  <div class="fx-col fx-text-center"><a href="/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}">
-      <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" /></a>
+  <div class="fx-col fx-text-center icon">
+    <a href="/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}">
+        <img alt="{{ site.data.general.nav.altJamulusIcon }}" width="40" height="40" src="{{ 'assets/img/jamulus-icon-2020.svg'| relative_url }}" />
+        <span>
+          <div>Jamulus</div>
+          <div class="tagline">{{ site.data.general.header.tagline }}</div>
+        </span>
+    </a> 
+      </div>
+        
+  </div>
+  <div class="fx-col-center-xs fx-txt-right headerlinks">
+    <a href="/wiki/Getting-Started">{{ site.data.general.header.setupLink }}</a>
+    <a href="/wiki/Software-Manual">{{ site.data.general.header.documentationLink }}</a>
+    <a class="download-header" href="/Download">{{ site.data.general.header.downloadLink }}</a>
   </div>
   <div class="fx-col-center-xs fx-txt-right hide-on-dt">
     <a href="#mnv" onclick="showNav();return false;">{% include general/navbtn.html %}</a>
   </div>
 </header>
+
+<!-- highlights current page in navbar -->
+<script>
+  var url = location.href.split("/");
+  var navLinks = document.getElementsByClassName("headerlinks")[0].getElementsByTagName("a");
+  var i = 0;
+  var currentPage = url[url.length - 1];
+  for (i; i<navLinks.length; i++) {
+    var lb = navLinks[i].href.split("/");
+    if( lb[lb.length - 1] == currentPage) {
+      navLinks[i].classList.add("current");
+    }
+  }
+</script>

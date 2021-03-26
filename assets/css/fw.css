@@ -39,10 +39,75 @@ a:hover {
 }
 
 header {
-  background-color: #49a9c9;
+  background-color: #1181a4;
   color: #ffffff;
-  margin-bottom: 2em;
-  padding: 1em 0 1em 0;
+  margin: 0 24px;
+  padding: 18px 16px;
+}
+
+.headerlinks {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.headerlinks a {
+  color: #ffffffD9;
+  padding: 16px 16px;
+  transition: color 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.headerlinks a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.headerlinks a:active {
+  position: relative;
+  top: 0.5px;
+}
+
+.icon {
+  margin-top: 12px;
+}
+
+.icon a span {
+  color: #ffffff;
+  padding: 0 8px;
+  font-size: 24px;
+  bottom: 14px;
+  letter-spacing: 1.2px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.icon a:hover {
+  text-decoration: none;
+}
+
+.tagline {
+  font-size: 14px;
+  position: relative;
+  left: 2px;
+}
+
+
+.download-header {
+  border-color:#ffffff;
+  border-style: solid;
+  border-radius: 4px;
+  background-color: none;
+  transition: background-color 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.download-header:hover {
+  background-color: #4EABCB;
+}
+
+.current {
+  color: #ffffff !important;
+  text-decoration: underline;
 }
 
 code {
@@ -248,6 +313,7 @@ main>div {
 }
 
 .fx-row {
+  margin-top: 0;
   margin-left: 0;
   margin-right: 0;
 }
@@ -297,6 +363,19 @@ main>div {
   display: inline-block;
 }
 
+
+
+@media (max-width: 940px) {
+  .headerlinks {
+    display: none;
+  }
+
+  .tagline {
+    display: none;
+  }
+}
+
+
 @media (min-width:940px) {
   #langselect ul li {
     margin: 0 0.3em 0 0;
@@ -305,6 +384,7 @@ main>div {
   #mnv {
     display: block !important;
   }
+
 
   .hide-on-dt {
     display: none;
@@ -331,6 +411,7 @@ main>div {
     display: block;
   }
 }
+
 
 @media (prefers-color-scheme: dark) {
   h1, h2, h3, h4, h5, h6, a, #langselect {

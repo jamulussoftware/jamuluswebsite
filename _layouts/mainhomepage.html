@@ -33,24 +33,7 @@
 </head>
 
 <body class="mainsite">
-  <header class="fx-row fx-row-center-xs">
-    <div class="fx-col-100-xs">
-      <img alt="{{ page.mAltProgIcon }}" width="200" height="200" src="{{ '/assets/img/jamulus-icon-2020.svg' | relative_url }}" id="jamulusicon" />
-      <h1>Jamulus</h1>
-      <span>{{ page.mTSlogan }}</span>
-    </div>
-    <div class="fx-col-100-xs" id="actionbutton">
-      <div class="fx-row">
-        <div class="fx-col-100-xs">
-          <a href="wiki/Getting-Started" id="get_started_btn_top">{{ page.mTGetStartedNow }}</a>
-        </div>
-        <div class="fx-col-100-xs" id="dl_frm_sf_container">
-          {{ page.mHTMLDownloadNow }}
-        </div>
-      </div>
-    </div>
-  </header>
-  <a href="#mnv" onclick="showNav();return false;" id="navaround" class="hide-on-dt fx-txt-center">{% include general/navbtn.html %}</a>
+{% include header.html %}
   <div>
     <div class="fx-row fx-row-center-xs">
       {% include general/nav.html %}
