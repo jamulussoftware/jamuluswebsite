@@ -1,16 +1,9 @@
----
-name: Generic Pull Request
-about: If you changed something and you would like to see it on the website
-title: "[PR]"
-labels: ""
-assignees: ''
----
-# Does this need translation
+# Does this need translation?
 
 <!-- Does your pull request need translation? -->
 
-- [] Yes <!-- If you tick this, please open a pull request to the changes branch, otherwise to release -->
-- [] No <!-- This is only the case for typos in a specific language or if you changed something for every language -->
+- [ ] Yes <!-- If you tick this, please open a pull request to the changes branch, otherwise to release -->
+- [ ] No <!-- This is only the case for typos in a specific language or if you changed something for every language -->
 
 # Changes
 
