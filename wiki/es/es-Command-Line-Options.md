@@ -47,7 +47,7 @@ Puedes ver todas las opciones posibles soportadas por tu versión arrancando Jam
 |    `-s` |`--server`         | Arrancar en modo servidor | (solo servidor) [Ver nota](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Deshabilitar traducciones | (cliente y servidor) |
 |    `-T` |`--multithreading` | Habilitar multithreading | (solo servidor) |
-|    `-u` |`--numchannels`    | Número máximo de usuarios. Por defecto son 10, el máximo son 50 | (solo servidor) |
+|    `-u` |`--numchannels`    | Número máximo de usuarios. Por defecto son 10, el máximo son 150 | (solo servidor) |
 |    `-w` |`--welcomemessage` | Soporta el formateo HTML y CSS (entre comillas), o establece la ruta a un archivo de texto | (solo servidor) |
 |    `-z` |`--startminimized` | Arranca minimizado | (solo servidor) |
 |         |`--ctrlmidich`     | Canal para recibir mensajes de controlador MIDI, compensación de número de control y números CC consecutivos (canales). Formato: `canal[;f<comp>*<canales>][;p<comp>*<canales>][;s<comp>*<canales>][;m<comp>*<canales>]` | (solo cliente), ver [Consejos y Trucos](Tips-Tricks-More#utilizar-ctrlmidich-para-controladores-midi) |
