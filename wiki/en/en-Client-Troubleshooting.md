@@ -8,9 +8,15 @@ permalink: "/wiki/Client-Troubleshooting"
 # Troubleshooting
 
 ### Don’t hear any sound/Others don’t hear you?
+
 Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your sound card. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://github.com/jamulussoftware/jamulus/discussions) for guidance.
 
 **Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4LL setup section](Installation-for-Windows#setting-up-asio4all)
+
+### You permanently get an error message while trying to connect to any server?
+
+1. Check if your interface or microphone is properly connected to your PC (try another USB Port)
+2. If you are using a USB-microphone, try to connect it directly to an USB-port in your computer, bypassing any USB-hub. Some USB-hubs have caused the error message "Your sound card is not working correctly. Please open the settings dialog and check the device selection and the driver settings.".
 
 ### You all sound OK, but it's difficult to keep together
 
