@@ -34,4 +34,4 @@ When you type a message in the Chat Window, other connected players can see that
 
 ### Data transmission
 
-Please note that all audio and text data is sent and received between the Jamulus server and client is unencrypted. 
+Please note that all audio and text data is sent and received between the Jamulus server and client without encryption. 
