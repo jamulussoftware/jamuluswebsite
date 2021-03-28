@@ -62,7 +62,7 @@ Further information about how to avoid listening to yourself (and help with othe
 **Here's how millions of people are using Jamulus to play, sing and teach music with other people in real time, all over the world:**
 
 ![Overview](https://user-images.githubusercontent.com/4561747/79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
-_Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a central server, its information will be broadcast to all clients._
+_Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a directory server, its information will be broadcast to all clients._
 
 ## Footnotes
 [^1]: [Full details here](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. If you have 10 Mbit/s down and 1 Mbit/s up, you're unlikely to run into bandwidth-related issues.

@@ -26,7 +26,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 1. Type in the name, city and country so that other users can easily identify you.
 
-1. Specify a music genre. This will make your server appear in the relevant server list for clients (see more [details on Central Servers](Central-Servers)).
+1. Specify a music genre. This will make your server appear in the relevant server list for clients (see more [details on Directory Servers](Directory-Servers)).
 
 _The Chat Welcome Message appears to all users when they join the server (the chat window will open automatically for them)._
 
@@ -51,7 +51,7 @@ For headless servers: you can control the recording function [using these instru
 
 **Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.
 
-(Leave the "Custom Central Server Address" field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-central))
+(Leave the "Custom Directory Server Address" field empty unless you need to list your server on a [private directory server](Choosing-a-Server-Type#3-central))
 
 ***
 

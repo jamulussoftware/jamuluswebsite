@@ -235,11 +235,11 @@ that user was already stored. You can set all users in an occupied server to thi
 
 This applies a fancy skin to the main window.
 
-### Custom central server address
+### Custom directory server address
 
-![Central server address](https://user-images.githubusercontent.com/20726856/97362265-0a819d80-18a1-11eb-9b0c-2f7ecf21841c.png)
+![Directory server address](https://user-images.githubusercontent.com/20726856/97362265-0a819d80-18a1-11eb-9b0c-2f7ecf21841c.png)
 
-Leave this blank unless you need to enter the address of a central server other than the default.
+Leave this blank unless you need to enter the address of a directory server other than the default.
 
 ### Current connection status parameter
 
