@@ -32,6 +32,6 @@ You will see a notice if you are connected to a Jamulus server while server reco
 
 When you type a message in the Chat Window, other connected players can see that, but chats are not stored by the server and neither the server operator nor any third parties have access to them.
 
-### Data transmission
+### Data Transmission
 
 Please note that all audio and text data is sent and received between the Jamulus server and client without encryption. 
