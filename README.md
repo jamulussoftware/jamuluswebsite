@@ -6,15 +6,15 @@ This is the content repository for [jamulus.io](https://jamulus.io). Text appear
 
 ## Making changes to the English version
 
-(See the translation process later in this document if you want to get involved with that.)
+(Note that any significant changes must be made to the English first. See the translation process later in this document if you want to get involved with that.)
 
-Make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit the website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
+To edit an individual file, you can use the Github web interface or make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit multiple website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
 
 To view the website offline one your own machine, you will need to clone it locally and use Jekyll to build it. Please ask on [in the discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
 
 ## Formatting and style
 
-We use GitHub markdown to format the basic text. Have a look at the markdown in existing pages for examples. 
+We use [GitHub markdown](https://guides.github.com/features/mastering-markdown/) to format the basic text. Have a look at the markdown in existing pages for examples. 
 
 Note that we use British English spelling and grammar conventions. 
 
