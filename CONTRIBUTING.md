@@ -1,6 +1,6 @@
 # Helping out with Jamulus
 
-We’d really appreciate your support and welcome help with proofreading, improvements, web design, and translation.
+We’d really appreciate your support and welcome help with for example proofreading, improvements, web design, translation.
 
 Have a look at [README.md](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/README.md) for more information. And if you’ve not seen it already, the [general overview](https://jamulus.io/wiki/Contribution) to getting involved. 
 
