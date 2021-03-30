@@ -55,7 +55,7 @@ Please do not add new or significantly modified content to a non-English .md or 
 
 Please make sure you are aware of what stage of the workflow we are currently at by monitoring the [project board](https://github.com/orgs/jamulussoftware/projects/2), and on the Discord (or Matrix) discussion channel that you will be invited to join. This is where relevant deadlines and information will be posted during the translation sprint.
 
-Pull requests for translation should have a title which looks like this:
+Pull requests for translations should have a title which looks like this:
 
 `[Tag (Translation)][language code (e.g. en)] {short description of your changes}`
 
