@@ -43,7 +43,7 @@ We collect changes to the English version of the site on a "changes" branch firs
 
 1. Changes are first made to en-*.md files and committed to the “changes” branch.
 1. Once we’ve agreed to release the changes to production (usually just before a software release), we then create GitHub issues for each language, tagged for that release. You can ask questions about the work there.
-1. We then squash merge changes to a “translation_[versionNo]” branch.
+1. We then create a “translation_[versionNo]” branch which contains all relevant changes in a single commit for easy translation (`git branch translation_[versionNo] release && git checkout translation_[versionNo] && git merge --squash changes`).
 1. Translators for each language then update any affected files in their language and open pull requests to merge them into a new branch for the release. Those pull requests are linked to the relevant GitHub issue in step 2.
 1. When all translations are merged (issues will then close automatically), we merge that new branch into the trunk.
 
