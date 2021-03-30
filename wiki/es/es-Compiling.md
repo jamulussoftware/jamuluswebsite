@@ -71,7 +71,7 @@ No necesitas compilar Jamulus para Windows ya que proporcionamos binarios oficia
 * [Archivos de desarrollo de ASIO](https://www.steinberg.net/en/company/developer.html)
 
 ### Descarga el código fuente de Jamulus
-Obtén el código fuente de Jamulus, por ej. de git o [descarga el zip](https://github.com/jamulussoftware/jamulus/archive/master.zip) desde el [repositorio de Jamulus](https://github.com/jamulussoftware/jamulus). Asegúrate de que **no** haya espacios en el nombre del directorio al que mueves el directorio `jamulus` ya que puede hacer fallar al instalador de Jamulus (si sabes cómo solucionar este problema, por favor coméntalo en [issue #864](https://github.com/jamulussoftware/jamulus/issues/864) en el respositorio de Jamulus para explicarnos cómo.
+Obtén el código fuente de Jamulus, por ej. de git o [descarga el zip](https://github.com/jamulussoftware/jamulus/archive/master.zip) desde el [repositorio de Jamulus](https://github.com/jamulussoftware/jamulus).
 
 ### Compilar y construir el instalador
 
