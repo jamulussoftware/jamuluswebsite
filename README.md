@@ -18,7 +18,7 @@ We use [GitHub markdown](https://guides.github.com/features/mastering-markdown/)
 
 Note that we use British English spelling and grammar conventions. 
 
-Adding pictures
+## Adding pictures
 
 Use the `{{site.url}}` variable to call an existing image in the corresponding directory for that language. This ensures the correct URL is used:
 
