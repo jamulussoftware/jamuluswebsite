@@ -62,6 +62,6 @@ Pull requests for translations should have a title which looks like this:
 
 ## Adding a new language
 
-Make sure to add the language to the \_config.yml file (in the languages array.)  At a minimum, the main includes for the wiki (see \_includes/wiki/) have to be translated.
+Make sure to add the language to the \_config.yml file (in the languages array).  At a minimum, the main includes for the wiki (see \_includes/wiki/) have to be translated.
 
 The navigation and general site-wide strings (see the \_data/ folder) and the homepage (see the 1-index.html file in the root of this repo) should also be translated.
