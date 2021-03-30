@@ -73,7 +73,7 @@ Du brauchst Jamulus für Windows nicht zu kompilieren, da wir offizielle Binärd
 
 
 ### Downloade den Jamulus Quellcode
-Lade den Quellcode z.B. mit git oder per [zip Download](https://github.com/jamulussoftware/jamulus/archive/master.zip) aus der [Jamulus Repo](https://github.com/jamulussoftware/jamulus) herunter. Stelle sicher, dass **keine** Leerzeichen im Pfad sind, in den du den `jamulus` Ordner verschiebst, da ansonsten der Jamulus Installer nicht korrekt erstellt werden kann. (Wenn du weißt, wie man diesen Fehler einfach lösen kann, schreib einfach im [issue #864](https://github.com/jamulussoftware/jamulus/issues/864) auf der Jamulus Repository).
+Lade den Quellcode z.B. mit git oder per [zip Download](https://github.com/jamulussoftware/jamulus/archive/master.zip) aus der [Jamulus Repo](https://github.com/jamulussoftware/jamulus) herunter.
 
 ### Mit Installer kompilieren
 
