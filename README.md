@@ -10,7 +10,7 @@ This is the content repository for [jamulus.io](https://jamulus.io). Text appear
 
 To edit an individual file, you can use the Github web interface or make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit multiple website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
 
-To view the website offline one your own machine, you will need to clone it locally and use Jekyll to build it. Please ask on [in the discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
+To view the website offline one your own machine, you will need to clone it locally and use [Jekyll](https://jekyllrb.com/) to build it. Please ask on [in the discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
 
 ## Formatting and style
 
