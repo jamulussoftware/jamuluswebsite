@@ -11,15 +11,13 @@
 <body>
   {% include header.html %}
   <div>
-    <div>
     {% include general/nav.html %}
-    </div>
     <div class="fx-row">
         <noscript class="red"><strong>{{ site.data.general.tNoJSEnabled }}</strong></noscript>
         <main lang="{{ page.lang }}">{{ content }}</main>
     </div>
-    {% include footer.html %}
   </div>
+  {% include footer.html %}
 </body>
 
 </html>

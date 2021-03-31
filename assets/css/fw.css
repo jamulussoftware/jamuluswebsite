@@ -70,7 +70,7 @@ header {
   margin-top: 12px;
 }
 
-.icon a span {
+.icon-container {
   color: #ffffff;
   padding: 0 8px;
   font-size: 24px;
@@ -81,17 +81,23 @@ header {
   vertical-align: middle;
 }
 
+.icon-name {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
 
 .icon a:hover {
   text-decoration: none;
 }
 
-.tagline {
+.icon-tagline {
   font-size: 14px;
   position: relative;
   left: 2px;
 }
-
 
 .download-header {
   border-color:#ffffff;
@@ -109,6 +115,7 @@ header {
   color: #ffffff !important;
   text-decoration: underline;
 }
+
 
 code {
   background-color: #efefef;
@@ -370,7 +377,7 @@ main>div {
     display: none;
   }
 
-  .tagline {
+  .icon-tagline {
     display: none;
   }
 }

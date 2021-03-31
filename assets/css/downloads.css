@@ -5,11 +5,8 @@ main {
 
 .container {
     margin: auto;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: nowrap;
 }
-
 
 .download-area {
     margin: auto;
@@ -28,8 +25,7 @@ main {
     display: block;
     text-align: center;
     margin: 16px 0;
-    padding: 8px 0px;
-    width: 90%;
+    padding: 12px 0;
     background-color: #E95420;
     color: #ffffff;
     border: 2px solid #E95420;
@@ -47,19 +43,15 @@ main {
     top: 1px;
 }
 
-
 .caption-text {
     font-size: 14px;
 }
-
-
 
 .infoarea {
     margin: auto;
 }
 
 .help {
-    display: flex;
     margin: auto;
     width: 80%;
     padding: 50px 100px;
@@ -90,9 +82,9 @@ main {
 .list {
     padding: 0 0;
     margin: 0 16px 0 0;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
     column-gap: 16px;
 }
 
@@ -107,13 +99,30 @@ main {
     background-color: #EAF8FD;
 }
 
+.requirements h4 {
+    color: #333;
+}
 
 
 @media (min-width: 940px) {
+    #suglang {
+        text-align: right;
+    }
+
+    #gnav {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 95%;
+    }
+
+    #langselect {
+        width: 30%;
+    }
     #mnv {
         display: none !important;
     }
 }
+
 
 @media (max-width: 940px) {
 
@@ -136,7 +145,6 @@ main {
        padding: 0 0;
    }
 
-   
    .download-area {
        text-align: center;
        max-width: 100%;
@@ -147,7 +155,6 @@ main {
    .download-area p {
        text-align: center;
    }
-
 
    .downloadbutton {
        margin: 8px auto;
@@ -165,6 +172,7 @@ main {
    .requirements {
        text-align: center;
    }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -181,5 +189,3 @@ main {
         color: #ffffffCC;
     }
 }
-
-
