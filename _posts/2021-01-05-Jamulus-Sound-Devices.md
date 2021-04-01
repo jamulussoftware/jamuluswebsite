@@ -107,7 +107,7 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 **macOS**: Works great
 
-**Linux**: Works great (measured interface latency with `alsa_delay hw:1 hw:1 48000 64 2` and cable from output to microphone input on Debian 10: `8.451 ms`. Note this is **only the interface latency** not the latency in Jamulus)
+**Linux**: Works great (measured interface latency of UMC202HD with `alsa_delay hw:1 hw:1 48000 64 2` and cable from output to microphone input on Debian 10: `8.451 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 ***
 
