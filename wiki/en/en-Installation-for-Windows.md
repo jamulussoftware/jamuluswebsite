@@ -42,7 +42,7 @@ For ASIO4ALL, you may need to experiment a bit to find the right configuration s
 
 Before you start with Jamulus:
 1. **Close all applications** (especially those which could access your sound card like your browser/media player) since Jamulus needs exclusive access to your sound card. Other programs will not be able to use audio if ASIO4ALL and Jamulus are running.
-1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. This can be done as follows:
+1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](https://jamulus.io/de/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:
 
 ### How to set up ASIO4ALL inputs (Guide)
 
