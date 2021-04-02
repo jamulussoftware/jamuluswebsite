@@ -16,8 +16,8 @@ Avant de démarrer Jamulus 
 ### Configuration de votre matériel audio
 Si vous ne l'avez pas encore fait, branchez votre matériel (si nécessaire), ouvrez la fenetre de réglages des paramètres de Jamulus et en sélectionnez vos périphériques d'entrée/sortie.
 
-* Si vous avez besoin d'aide pour configurer ASIO4All sur Windows, consultez le [guide de configuration ASIO4All sur la page installation sous Windows](Installation-for-Windows#configuration-de-asio4all).
-* les utilisateurs macOS n'ont qu'à sélectionner leurs périphériques d'entrée/sortie dans la fenetre de réglages des paramètres de Jamulus.
+*   Si vous avez besoin d'aide pour configurer ASIO4All sur Windows, consultez le [guide de configuration ASIO4All sur la page installation sous Windows](Installation-for-Windows#configuration-de-asio4all).
+*   les utilisateurs macOS n'ont qu'à sélectionner leurs périphériques d'entrée/sortie dans la fenêtre de réglages des paramètres de Jamulus.
 
 Vous pouvez jeter un coup d'œil à la [configuration matérielle](Hardware-Setup) pour plus d'informations sur ce que vous devez faire avec votre équipement.
 
@@ -39,7 +39,7 @@ Maintenant que vous avez configuré matériel et logiciel, vous pouvez utiliser 
 
 ![Connection Setup](https://user-images.githubusercontent.com/20726856/102825226-a1b92c00-43de-11eb-9aa9-21d7a8576f5c.png)
 
-Cette fenetre montre les *serveurs regroupés par genre*. Pour choisir un autre genre, sélectionnez-en un dans la liste en haut à gauche. Après avoir sélectionné un genre et un serveur, rejoignez le serveur en cliquant sur « Se connecter ». Si vous rencontrez des problèmes ici, ils sont très probablement dus à un équipement audio mal configuré ou à des problèmes de réseau. Consultez la [page de dépannage du client](Client-Troubleshooting).
+Cette fenêtre montre les *serveurs regroupés par genre*. Pour choisir un autre genre, sélectionnez-en un dans la liste en haut à gauche. Après avoir sélectionné un genre et un serveur, rejoignez le serveur en cliquant sur « Se connecter ». Si vous rencontrez des problèmes ici, ils sont très probablement dus à un équipement audio mal configuré ou à des problèmes de réseau. Consultez la [page de dépannage du client](Client-Troubleshooting).
 
 ### Le premier bœuf
 Félicitations ! Vous pouvez maintenant commencer à bœuffer avec Jamulus. Les chariots que vous voyez sur la droite sont votre propre mixage personnel. Tout ce que vous modifiez ici agit sur ce que vous entendez, mais n'affectera pas les autres utilisateurs. Si vous déplacez un chariot vers le bas, cet utilisateur sera moins fort, si vous le déplacez vers le haut, cet utilisateur sera plus fort pour vous.
