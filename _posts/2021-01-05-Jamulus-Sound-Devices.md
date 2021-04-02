@@ -105,7 +105,7 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 **Windows**: Works great. [ASIO driver Windows 7 to 10](https://mediadl.musictribe.com/download/software/behringer/UMC/UMC-Driver_4-59-0.zip)
 
-**macOS**: Works great
+**macOS**: Works great (measured interface latency with Oblique Audio RTL Utility, 48000 64 samples and cable from output to input on Mac OS X Big Sur: `10.625ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **Linux**: Works great (measured interface latency with `alsa_delay hw:1 hw:1 48000 64 2` and cable from output to microphone input on Debian 10: `8.451 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
@@ -148,7 +148,7 @@ _More testing required._
 
 **Windows**: Works great. If you have issues with the buffer size going to 136, download the updated driver version `4.64.15.598` from [http://beta.focusrite.com/](http://beta.focusrite.com/)
 
-**macOS**: Should work great.
+**macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X: around `7.5ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **Linux**: Not tested, but should work great.
 
@@ -178,7 +178,17 @@ _More testing required._
 
 **Windows**: Tested on *Windows 10* with 64 sample buffer and am getting great sound and total latency around 15ms over the ping time.
 
-**macOS**: Should work
+**macOS**: Should work.
+
+**Linux**: Not yet tested.
+
+***
+
+**[Presonus Studio 24C](https://www.presonus.com/products/Studio-24c)** USB digital audio interface
+
+**Windows**: Works great with provided ASIO driver. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X Big Sur: `4.1ms`. Note this is **only the interface latency** not the latency in Jamulus)
+
+**macOS**: Works great.
 
 **Linux**: Not yet tested.
 
@@ -325,9 +335,9 @@ This device provides the **lowest latency**.
 
 ### Internal soundcards
 
-**[HiFiBerry DAC+ ADC](https://www.hifiberry.com/shop/boards/hifiberry-dac-adc/)**, Raspberry Pi compatible HAC internal sound card.
+**[HiFiBerry DAC+ ADC (Pro)](https://www.hifiberry.com/shop/boards/hifiberry-dac-adc/)**, Raspberry Pi compatible HAC internal sound card.
 
-**Linux**: Virtually no jitter and good latency (20 milliseconds). No headphone amp, so you'll need one. Used with a mini console [Rolls MX122](https://rolls.com/product/MX22s). Tested on Raspberry Pi 4 under **Raspberry Pi OS Buster**, kernel version 4.19.
+**Linux**: Virtually no jitter and good latency (20 milliseconds). No headphone amp, so you'll need one. Used with a mini console [Rolls MX122](https://rolls.com/product/MX22s). Tested on several distributions, kernel versions 4.19, 5.4 and 5.8. (measured interface latency with jack_delay, 48000Hz, 64 samples/buffer, 2 periods, asynchronous mode and cable from output to input, with DSP mode set to low latency in alsamixer: `4.9ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **Windows**: Not yet tested (if anybody runs Windows ARM on a Raspberry Pi feel free to test it). Probably no ASIO Driver available.
 
