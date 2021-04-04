@@ -174,6 +174,15 @@ _More testing required._
 
 ***
 
+**[M-audio M-track Solo/Duo](https://m-audio.com/m-track-solo, https://m-audio.com/m-track-duo)**, 48-KHz, 2-channel USB Audio Interface
+
+**Windows**: Works both with dedicated driver (M-Track Solo and Duo Windows Driver v1.0.3) and ASIO4ALL 2.15 Beta 1 with 64 sample buffer size. However, the ASIO4ALL driver results in lower delay of about 5 ms and less audio device buffer jitter.
+
+**macOS**: Works out of the box.
+
+**Linux**: Not yet tested.
+
+
 **[Native Instruments Komplete Audio 2](https://www.native-instruments.com/en/products/komplete/audio-interfaces/komplete-audio-1-audio-2/)**, USB digital audio interface
 
 **Windows**: Tested on *Windows 10* with 64 sample buffer and am getting great sound and total latency around 15ms over the ping time.
