@@ -16,8 +16,8 @@ Avant de démarrer Jamulus 
 ### Configuration de votre matériel audio
 Si vous ne l'avez pas encore fait, branchez votre matériel (si nécessaire), ouvrez la fenetre de réglages des paramètres de Jamulus et en sélectionnez vos périphériques d'entrée/sortie.
 
- * Si vous avez besoin d'aide pour configurer ASIO4All sur Windows, consultez le [guide de configuration ASIO4All sur la page installation sous Windows](Installation-for-Windows#configuration-de-asio4all).
- * les utilisateurs macOS n'ont qu'à sélectionner leurs périphériques d'entrée/sortie dans la fenêtre de réglages des paramètres de Jamulus.
+* Si vous avez besoin d'aide pour configurer ASIO4All sur Windows, consultez le [guide de configuration ASIO4All sur la page installation sous Windows](Installation-for-Windows#configuration-de-asio4all).
+* les utilisateurs macOS n'ont qu'à sélectionner leurs périphériques d'entrée/sortie dans la fenêtre de réglages des paramètres de Jamulus.
 
 Vous pouvez jeter un coup d'œil à la [configuration matérielle](Hardware-Setup) pour plus d'informations sur ce que vous devez faire avec votre équipement.
 
