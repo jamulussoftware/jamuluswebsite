@@ -46,3 +46,7 @@ No. If you just intend to connect to other people’s servers, then all you need
 
 Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a central server, its information will be broadcast to all clients.
 
+### Why doesn't Jamulus provide video support?
+
+Adding video support adds a lot of complexity. You can use other software like Jitsi or Zoom if you want to see others when playing (or have an "audience"), but the video will be significantly behind the Jamulus audio. 
+
