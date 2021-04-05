@@ -14,8 +14,9 @@ To get the best from Jamulus, at a minimum you will need:
 1. **A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)
 
 If you have any questions, please see the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)
-## Getting started
-If you haven’t done so already, please follow the installation guide for your platform to get Jamulus working with your hardware:
+
+## Installation
+To get Jamulus working with your hardware, please follow the installation guide for your platform:
 
 * [Windows](/wiki/Installation-for-Windows)
 * [macOS](/wiki/Installation-for-Macintosh)
