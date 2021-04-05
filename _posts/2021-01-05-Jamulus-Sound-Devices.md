@@ -99,6 +99,9 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 **Linux**: Works better than on Windows.
 
+** Please note: Ploytec, a German company have developed a very low latency alternative to ASIO4ALL and the native Behringer driver for both Windows and Mac. It is capable of latency in the 2 ms range. Their software driver is somewhat expensive at $60, but you can download and try it out to see if it is worth the money for your situation. The demo download can be found at: 
+https://www.usb-audio.com/download/
+
 ***
 
 **[Behringer UMC202HD](https://www.behringer.com/product.html?modelCode=P0BJZ)**, **UMC204HD**, and **UMC404HD** USB digital audio interfaces. Affordable. Behringer provides native ASIO drivers for Windows.
