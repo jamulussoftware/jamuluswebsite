@@ -189,6 +189,7 @@ _More testing required._
 
 **Linux**: Not yet tested.
 
+***
 
 **[Native Instruments Komplete Audio 2](https://www.native-instruments.com/en/products/komplete/audio-interfaces/komplete-audio-1-audio-2/)**, USB digital audio interface
 
