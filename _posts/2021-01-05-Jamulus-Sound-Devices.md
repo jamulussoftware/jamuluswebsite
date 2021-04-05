@@ -6,10 +6,14 @@ heading: "Sound devices"
 lang: "en"
 ---
 
+### You can of course use Jamulus with your computer's built-in sound card or microphone.
+
+However, most people choose to use specialist audio interfaces. These either help you play in time better with better latency, or have more features. Most are quite inexpensive and easy to set up, and will usually perform better than "stock" hardware.
+
 Thanks to Jamulus users, this page lists audio devices known to work (or not) with Jamulus.
 <!--more-->
 
-_**Note**: If they work or not can depend on your operating system (Linux, MacOS, Windows, etc.)_.
+_**Note**: Whether these work or not can depend on your operating system (Linux, MacOS, Windows, etc.)_.
 
 ## Updating this page
 
