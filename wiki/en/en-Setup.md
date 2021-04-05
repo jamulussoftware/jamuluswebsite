@@ -65,5 +65,9 @@ Note that you can use the Chat facility at any time to message other players whi
 
 More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual).
 
-**Have fun!**  And if you have any questions, feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions).
+## Troubleshooting
+
+Having audio trouble? Can't see servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions). 
+
+
 
