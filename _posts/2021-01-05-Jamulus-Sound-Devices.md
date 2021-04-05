@@ -110,7 +110,7 @@ https://www.usb-audio.com/download/
 
 **macOS**: Works great (measured interface latency with Oblique Audio RTL Utility, 48000 64 samples and cable from output to input on Mac OS X Big Sur: `10.625ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
-**Linux**: Works great (measured interface latency with `alsa_delay hw:1 hw:1 48000 64 2` and cable from output to microphone input on Debian 10: `8.451 ms`. Note this is **only the interface latency** not the latency in Jamulus)
+**Linux**: Works great (measured interface latency of UMC202HD with `alsa_delay hw:1 hw:1 48000 64 2` and cable from output to microphone input on Debian 10: `8.451 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 ***
 
