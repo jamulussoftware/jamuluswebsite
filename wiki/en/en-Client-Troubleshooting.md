@@ -22,7 +22,7 @@ Jamulus currently doesn't show devices which were plugged in after the sound sys
 
 ### Your sound is stuttering
 
-Probably your audio device doesn't work with the buffer size you selected. Select higher buffer sizes in Jamulus's settings until you sound well. Use another device if possible since high buffer sizes mean high latency. 
+Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency. 
 
 ### You all sound OK, but it's difficult to keep together
 
