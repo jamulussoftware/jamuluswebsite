@@ -14,7 +14,7 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 
 ### Getting a loud squeal if you connect to a server
 
-You're creating feedback since your microphone is recording the signal of your speaker. Disconnect from the server and select the correct input and output devices. See the installation page for your OS to get more information on how to do that.
+You're creating feedback since your microphone is recording the signal of your speaker. Disconnect from the server and select the correct input and output devices. See the Jamulus installation page for your OS to get more information on how to do that.
 
 ### Not seeing the headphone or microphone you just connected to your PC?
 
