@@ -16,7 +16,7 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 
 You're creating feedback since your microphone is recording the signal of your speaker. Disconnect from the server and select the correct input and output devices. See the installation page for your OS to get more information on how to do that.
 
-### Not seing the headphone or microphone you just connected to your PC?
+### Not seeing the headphone or microphone you just connected to your PC?
 
 Jamulus currently doesn't show devices which were plugged in after the sound system was loaded. Just restart Jamulus with your device plugged in.
 
