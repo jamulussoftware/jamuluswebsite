@@ -18,7 +18,7 @@ You're creating feedback since your microphone is recording the signal of your s
 
 ### Not seeing the headphone or microphone you just connected to your PC?
 
-Jamulus currently doesn't show devices which were plugged in after the sound system was loaded. Just restart Jamulus with your device plugged in.
+Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded. 
 
 ### Your sound is stuttering
 
