@@ -66,7 +66,6 @@ main {
     border-radius: 6px;
     margin: 0 8px;
     padding: 16px 8px;
-    flex: 1;
 }
 
 .helpbox h4 {
@@ -153,7 +152,7 @@ main {
    }
 
    .downloadbutton {
-       margin: 8px auto;
+       margin: 8px 12px;
    }
 
    .help {
@@ -166,6 +165,7 @@ main {
        margin: 16px 8px;
    }
    .requirements {
+       margin: 0px 12px;
        text-align: center;
    }
 
@@ -173,8 +173,12 @@ main {
 
 @media (prefers-color-scheme: dark) {
     .requirements {
-        color: #ffffffCC;
+        color: #dbdbdb;
         background-color:#5a5a5a;
+    }
+
+    .requirements h4 {
+        color: #ffffff;
     }
 
     .helpbox h4 {
@@ -182,6 +186,6 @@ main {
     }
 
     .helpbox p {
-        color: #ffffffCC;
+        color: #dbdbdb;
     }
 }
