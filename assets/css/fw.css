@@ -66,19 +66,16 @@ header {
   top: 0.5px;
 }
 
-.icon {
-  margin-top: 12px;
+.icon-container {
+  margin: 12px 0;
 }
 
-.icon-container {
+.icon {
   color: #ffffff;
   padding: 0 8px;
   font-size: 24px;
-  bottom: 14px;
   letter-spacing: 1.2px;
-  position: relative;
   display: inline-block;
-  vertical-align: middle;
 }
 
 .icon-name {
@@ -89,7 +86,7 @@ header {
 }
 
 
-.icon a:hover {
+.icon-container a:hover {
   text-decoration: none;
 }
 
@@ -358,6 +355,28 @@ main>div {
 
 .buttoncontainer a {
   margin: auto;
+}
+
+.button-secondary {
+  display: block;
+  text-align: center;
+  margin: 16px 0;
+  padding: 12px 0;
+  background-color: #E95420;
+  color: #ffffff;
+  border: 2px solid #E95420;
+  border-radius: 6px;
+  transition: border-color 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.button-secondary:hover {
+  border-color: #1181a4;
+  text-decoration: none;
+}
+
+.button-secondary:active {
+  position: relative;
+  top: 1px;
 }
 
 #paginator {
