@@ -107,3 +107,42 @@ Fader strips in the mixer window are controlled in ascending order from left to 
 *Note*: Jamulus does not provide feedback on the state of the Solo and Mute buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself.
 
 Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
+
+## Quality of Service
+
+Jamulus uses DSCP/CS4 to opportunistically deal with bufferbloat.<br>
+DSCP/CS4 is 128 (or 0x80) and is compatible with IPv4 and IPv6.<br>
+Other values can be set with: jamulus --qos [0..255]<br>
+( please see the informative RFC4594 and jamulus --help )<br>
+To disable QoS use: --qos 0 
+
+#### Windows Quality of Service instructions
+
+Prior to Windows Vista / Server 2008, Windows allowed software developers to set the
+Quality of Service field on IP traffic.
+With the release of Vista / Server 2008, Microsoft began to overwrite DSCP values
+that were set by applications with the Policy-based QoS layer.
+
+In order to enable Quality of Service you must follow these instructions:
+
+In Search box beside Start menu Type: Local Group Policy Editor (enter)<br>
+In new window, (click) on the menu icon to display the Actions third panel<br>
+Looking at the first panel of the Local Group Policy Editor<br>
+&nbsp;Local Computer Policy<br>
+&nbsp;&nbsp;Computer Configuration<br>
+&nbsp;&nbsp;&nbsp;Windows Settings<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br>
+Looking at the third panel (Actions) of the Local Group Policy Editor<br>
+&nbsp;Policy-based QoS<br>
+&nbsp;&nbsp;More Actions<br>
+&nbsp;&nbsp;&nbsp;Create new Policy (click)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 128<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Next<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Next<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Next<br>
+&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Finish<br>
+(Notice Jamulus policy in center panel may be edited)<br>
+
