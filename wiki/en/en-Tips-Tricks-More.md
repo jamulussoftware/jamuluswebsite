@@ -112,7 +112,7 @@ Make sure you connect your MIDI device's output port to the Jamulus MIDI in port
 
 Jamulus uses DSCP/CS4 to opportunistically deal with bufferbloat.<br>
 DSCP/CS4 is 128 (or 0x80) and is compatible with IPv4 and IPv6.<br>
-Other values can be set with: jamulus --qos [0..255]<br>
+Other values can be set with: jamulus --qos `[0..255]`<br>
 ( please see the informative RFC4594 and jamulus --help )<br>
 To disable QoS use: --qos 0 
 
