@@ -22,9 +22,7 @@ Cuando te conectas a un servidor público, tu perfil también es accesible por p
 
 Cuando te conectas a un servidor público o privado, el operador del servidor puede ver tu dirección IP mientras dure tu conexión. Si el operador del servidor ha habilitado el registro (que está deshabilitado por defecto) tu dirección IP será registrado y guardado en el archivo de registro del servidor.
 
-Como operador de un servidor, cuando tu registras un servidor público con un Servidor Central, tu dirección IP es enviada a CloudFare (1.1.1.1) para identificar tu dirección IP pública. Las direcciones IP de todos los servidores públicos registrados con el Servidor Central también pueden ser vistas por terceros para fines informativos u otros fines (por ejemplo [aquí](https://explorer.jamulus.io/)). Tu dirección IP pública no es registrada ni guardada por parte de Jamulus, pero puede ser guardada o procesada por terceros.
-
-_Los usuarios preocupados por el uso de la red de CloudFare pueden [re-compilar](Compiling) el código fuente de Jamulus para utilizar una alternativa para WELL_KNOWN_HOST/ WELL_KNOWN_PORT en [global.h](https://github.com/corrados/jamulus/blob/master/src/global.h#L111)_
+Las direcciones IP de todos los servidores públicos registrados con el Servidor Central también pueden ser vistas por terceros para fines informativos u otros fines (por ejemplo [aquí](https://explorer.jamulus.io/)). Tu dirección IP pública no es registrada ni guardada por parte de Jamulus, pero puede ser guardada o procesada por terceros.
 
 ### Grabaciones de Audio
 

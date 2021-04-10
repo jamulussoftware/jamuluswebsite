@@ -43,12 +43,13 @@ Puedes ver todas las opciones posibles soportadas por tu versión arrancando Jam
 |    `-o` |`--serverinfo`     | Detalles de localización del servidor en el formato: <br/>`[nombre];[ciudad];[[valor locale]]` (ver [valores](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) | (Solo servidores públicos) |
 |    `-p` |`--port`           | Número del puerto UDP local. Por defecto es 22124 | (solo servidor) |
 |    `-R` |`--recording`      | Incluye una ruta editable donde se deben guardar los archivos (entrecomillado si procede). | (solo servidor) Ver descripción en [Configuración del Servidor](Server-Win-Mac#grabación). |
-|       |`--norecord`       | Arranca la grabadora con la grabación desactivada| (solo servidor) |
+|         |`--norecord`       | Arranca la grabadora con la grabación desactivada| (solo servidor) |
 |    `-s` |`--server`         | Arrancar en modo servidor | (solo servidor) [Ver nota](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Deshabilitar traducciones | (cliente y servidor) |
 |    `-T` |`--multithreading` | Habilitar multithreading | (solo servidor) |
-|    `-u` |`--numchannels`    | Número máximo de usuarios. Por defecto son 10, el máximo son 50 | (solo servidor) |
+|    `-u` |`--numchannels`    | Número máximo de usuarios. Por defecto son 10, el máximo son 150 | (solo servidor) |
 |    `-w` |`--welcomemessage` | Soporta el formateo HTML y CSS (entre comillas), o establece la ruta a un archivo de texto | (solo servidor) |
 |    `-z` |`--startminimized` | Arranca minimizado | (solo servidor) |
-|       |`--ctrlmidich`     | Canal para recibir mensajes de controlador MIDI y compensación de número de control, formato: `canal[;compensación]` | (solo cliente), ver [Consejos y Trucos](Tips-Tricks-More#utilizar-ctrlmidich-para-controladores-midi) |
-|       |`--clientname`     | Título de ventana y nombre de cliente en JACK | (solo cliente) | |
+|         |`--ctrlmidich`     | Canal para recibir mensajes de controlador MIDI, compensación de número de control y números CC consecutivos (canales). Formato: `canal[;f<comp>*<canales>][;p<comp>*<canales>][;s<comp>*<canales>][;m<comp>*<canales>]` | (solo cliente), ver [Consejos y Trucos](Tips-Tricks-More#utilizar-ctrlmidich-para-controladores-midi) |
+|         |`--clientname`     | Título de ventana y nombre de cliente en JACK | (solo cliente) |
+|         |`--serverpublicip` | Proporciona la dirección IP pública del servidor  | (solo servidor) [Ver nota](Choosing-a-Server-Type) |

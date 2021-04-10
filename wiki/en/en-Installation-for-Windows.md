@@ -25,9 +25,9 @@ Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to 
 
 You can try two versions of ASIO4ALL. ASIO4ALL v2.14 includes a workaround for a bug which might break other functionality.
 
-[ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL v2.15 Beta 1 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_Beta1_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
-[ASIO4ALL v2.13 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.13/ASIO4ALL_2_13_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
 [ASIO4ALL website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
@@ -42,7 +42,7 @@ For ASIO4ALL, you may need to experiment a bit to find the right configuration s
 
 Before you start with Jamulus:
 1. **Close all applications** (especially those which could access your sound card like your browser/media player) since Jamulus needs exclusive access to your sound card. Other programs will not be able to use audio if ASIO4ALL and Jamulus are running.
-1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. This can be done as follows:
+1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:
 
 ### How to set up ASIO4ALL inputs (Guide)
 

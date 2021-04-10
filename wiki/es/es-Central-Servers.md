@@ -5,20 +5,24 @@ lang: "es"
 permalink: "/wiki/Central-Servers"
 ---
 
+{% include breadcrumb.html root="Más" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
+
 # Registro de Servidor Público
 
-A fecha de Mayo 2020, para minimizar el problema de sobrepasar el límite del número de servidores, hemos creado Servidores Centrales organizados por género (cada uno con un límite de 150 servidores).
+Puesto que hay un límite de 150 servidores por cada servidor central, debes elegir en qué servidor central quieres publicar tu servidor. Selecciona un género si tu intención es restringir lo que se toca a ese estilo (los músicos verán tu servidor bajo ese género en su lista).
 
 Cuando arrancas un servidor público, verás un mensaje informando sobre si tu servidor se ha registrado con éxito o no. Si lo dejas arrancado, volverá a intentar registrarse hasta haya un hueco libre.
 
 ## Servidores 'Headless'
 
-A partir de Jamulus v3.5.4, necesitarás configurar el servidor central (por género) manualmente utilizando la opción `--centralserver` (`-e`) como se muestra a continuación:
+Configura el servidor central (por género) utilizando la opción `--centralserver` (`-e`) como se muestra a continuación:
 
 | Género | Dirección Servidor |
 |-----------|------------------|
-| **Todos/Cualquiera** | `jamulusallgenres.fischvolk.de:22224` |
-| **Rock** | `jamulusrock.fischvolk.de:22424` |
-| **Jazz** | `jamulusjazz.fischvolk.de:22324` |
-| **Clásica/Folk/Coro** | `jamulusclassical.fischvolk.de:22524` |
-| Predeterminado _(obsoleto a partir de Jamulus v3.5.4)_ | `jamulus.fischvolk.de:22124` |
+|**Cualquier Género 1** |`anygenre1.jamulus.io:22124`|
+|**Cualquier Género 2** |`anygenre2.jamulus.io:22224`|
+|**Cualquier Género 3** |`anygenre3.jamulus.io:22624`|
+|**Género Rock** |`rock.jamulus.io:22424`|
+|**Género Jazz** |`jazz.jamulus.io:22324`|
+|**Género Clásico/Folk** |`classical.jamulus.io:22524`|
+|**Género Coral/Barbershop** |`choral.jamulus.io:22724`|

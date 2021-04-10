@@ -4,22 +4,43 @@ title: "Installation auf Linux"
 lang: "de"
 permalink: "/wiki/Installation-for-Linux"
 ---
+{% include breadcrumb.html root="Jamulus nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 # Installation auf Linux
 Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
 
-Obwohl wir momentan keine offiziellen Pakete anbieten, könnte es sein, dass du Jamulus über den Paketmanager deiner Distribution installieren kannst.
+Obwohl wir momentan keine offiziellen Pakete für jede Linux Distribution anbieten, könnte es sein, dass du Jamulus über den Paketmanager deiner Distribution installieren kannst. Schau einfach in dieser Tabelle nach:
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/jamulus.svg)](https://repology.org/project/jamulus/versions)
 
-Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hier](https://github.com/corrados/jamulus/issues/223#issue-619038918){: target="_blank" rel="noopener noreferrer"}. Wenn du Jamulus nicht in den Paketquellen deiner Distro finden kannst, musst du Jamulus kompillieren. Das ist nicht schwer:
+Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hier](https://github.com/jamulussoftware/jamulus/discussions/914).
+
+### Flatpak
+
+Jamulus existiert als [Flatpak](https://flatpak.org/) auf [Flathub here](https://flathub.org/apps/details/io.jamulus.Jamulus). Um das Jamulus Flatpak zu nutzen musst du pipewire konfigurieren.
+
+### Debian and Ubuntu
+Jamulus kann aus den [buster-backports](https://packages.debian.org/de/buster-backports/jamulus) oder - wenn du amd64 **Debian**/**Ubuntu** installiert hast - als .deb Datei installiert werden:
+
+1. Downloade die [neuste .deb Datei]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
+1. Update apt: `sudo apt-get update`
+1. Installiere das Paket: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`.
+1. Da Jamulus den JACK Server benötigt, musst du ihn auch installieren. Wir empfehlen, dass du `QjackCtl` zur Konfiguration von JACK benutzt. Installiere das Programm mit `sudo apt-get install qjackctl`
+
+Jetzt kannst du dir die Sektion "[Richte deine Soundkarte ein](#richte-deine-soundkarte-ein)" ansehen.
+
+**Beachte:** Dank [mirabilos](https://github.com/mirabilos) ist Jamulus (mit GUI) in den [Debian Bullseye (testing)](https://packages.debian.org/bullseye/jamulus) Paketquellen. Wenn du schon Bullseye nutzt, kannst du Jamulus via `sudo apt-get install jamulus` installieren.
+
+---
+
+Wenn du Jamulus nicht in den Paketquellen deiner Distro finden kannst, musst du Jamulus kompillieren. Das ist nicht schwer:
 
 ## Jamulus Sourcecode herunterladen
 
 1. Öffne ein Terminalfenster (Kommandozeile: `Strg+Alt+T` auf Ubuntu und verwandten Distributionen)
 1. Lade den Sourcecode für die neueste Version herunter und entpacke diesen:
 ```shell
-wget https://github.com/corrados/jamulus/archive/latest.tar.gz
+wget https://github.com/jamulussoftware/jamulus/archive/latest.tar.gz
 tar -xvf latest.tar.gz
 ```
 
@@ -64,29 +85,28 @@ make clean
 make
 sudo make install
 ```
+**Beachte**: Die kompilierte Version von Jamulus wird nach `/usr/local/bin` kopiert.
+
+Du kannst jetzt den Quellcode-Ordner löschen.
 
 ## Richte deine Soundkarte ein
 
 ### Konfiguriere Jack mit QjackCtl
-Jamulus Clients brauchen [JACK](https://jackaudio.org/){: target="_blank" rel="noopener noreferrer"}. Du musst JACK aber zuerst einrichten. Am Besten machst du das mit `QjackCtl`.
+Jamulus Clients brauchen [JACK](https://jackaudio.org/). Du musst JACK aber zuerst einrichten. Am Besten machst du das mit `QjackCtl`.
 1. Öffne die Kommandozeile z.B. mit STRG-ALT-T
 1. Führe `qjackctl` aus und warte, bis sich das **Jack Audio Connection Kit** öffnet.
-2. Konfiguriere dein Audiointerface wie folgt (die genauen Einstellungen für Jack hängen von den Funktionen deiner Soundkarte ab):
+2. Konfiguriere dein Audiointerface wie folgt (die genauen Einstellungen für JACK hängen von den Funktionen deiner Soundkarte ab):
 
 - Wähle dein Audio **Interface** aus (es können mehrere in der Liste sichtbar sein)
 - Setzte die **Sample Rate auf 48000**
 - Setze die **Frames/Period Einstellung erst einmal auf 128** und Periods/Buffer zunächst auf 2
 
-Starte Jack neu, um alle neuen Einstellungen zu übernehmen.
+Starte JACK neu, um alle neuen Einstellungen zu übernehmen.
 
 ### Jamulus starten
-1. Öffne Jamulus z.B. mit der Kommandozeile. Wenn du sie benutzt, führe den Befehl `Jamulus` (mit einem großen 'J') aus, um den Jamulus Client zu starten
+Öffne Jamulus z.B. mit der Kommandozeile. Wenn du sie benutzt, führe den Befehl `jamulus`, oder wenn du Jamulus selbst kompiliert hast `Jamulus` (mit einem großen 'J') aus, um den Jamulus Client zu starten
 
-Jamulus installiert sich nach `/usr/local/bin`.
-
-Du kannst das Sourcecodeverzeichnis, in dem du kompiliert hast, jetzt löschen.
-
-Wenn du Soundprobleme (kurze Unterbrechungen (Dropouts) o.Ä.) hast (insbesondere XRUNs, die von Jack/QJackCtl gemeldet werden), versuche größere Werte (z.B. 256 frames oder 3 periods) in Schritt 3 von oben zu setzen. Niedrigere Einstellungen (z.B. 64 frames) bieten zwar eine geringere Latenz, aber möglicherweise mehr Soundprobleme.
+Wenn du Soundprobleme (kurze Unterbrechungen (Dropouts) o.Ä.) hast (insbesondere XRUNs, die von Jack/QjackCtl gemeldet werden), versuche größere Werte (z.B. 256 Frames oder 3 Perioden) zu setzen. Niedrigere Einstellungen (z.B. 64 Frames) bieten zwar eine geringere Latenz, aber möglicherweise mehr Soundprobleme.
 Siehe auch die [Fehlerbehebungsseite](Client-Troubleshooting).
 
 ## Alles installiert?
@@ -94,11 +114,9 @@ Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst 
 
 [Nach der Installation](Onboarding){: .button}
 
-Ausführliche Informationen zur Benutzung von Jamulus findest du im [Jamulus Help Manual](https://github.com/corrados/jamulus/blob/master/src/res/homepage/manual.md).
+## Installation auf eine neue Version zu aktualisieren
 
-## Um deine Installation auf eine neue Version zu aktualisieren
-
-Lade die neuen Quellen gemäß [Jamulus Sourcecode herunterladen](Installation-for-Linux#jamulus-sourcecode-herunterladen) herunter und wiederhole nur die [Kompilierungsanleitung](Installation-for-Linux#kompiliere-jamulus) wie für eine neue Installation von oben.
+Lade die neuen Quellen gemäß [Jamulus Sourcecode herunterladen](Installation-for-Linux#jamulus-sourcecode-herunterladen) herunter und wiederhole nur die [Kompilierungsanleitung](Installation-for-Linux#kompiliere-jamulus) wie für eine neue Installation von oben oder nutze ein neues .deb Paket, wenn du das genutzt hast.
 
 ## Hinweise für Geeks
 
@@ -108,6 +126,6 @@ Lade die neuen Quellen gemäß [Jamulus Sourcecode herunterladen](Installation-f
 
 * Um diese Datei zu benutzen, konfiguriere die Software mit `qmake "CONFIG+=noupcasename" Jamulus.pro`, um sicherzustellen, dass der Ausgabezielname dieser Software **j**amulus statt **J**amulus ist.
 
-* Benutzer vom Raspberry Pi: Vielleicht möchtest du den Client auf einer anderen Maschine kompilieren und die Binärdatei auf einem anderen Raspberry Pi laufen lassen. In diesem Fall brauchst du nur die Bibliotheken für einen [headless server](Server-Linux#running-a-headless-server), aber _mit_ den Jack-Sound-Paketen. Schaut dir insbesondere die Fußnote für den headless-Build an.
+* Benutzer vom Raspberry Pi: Vielleicht möchtest du den Client auf einer anderen Maschine kompilieren und die Binärdatei auf einem anderen Raspberry Pi laufen lassen. In diesem Fall brauchst du nur die Bibliotheken für einen [headless server](Server-Linux#running-a-headless-server), aber _mit_ den JACK-Sound-Paketen. Schaut dir insbesondere die Fußnote für den headless-Build an.
 
 * Ab Version 3.5.3 ist Jamulus nicht mehr mit Qt4 kompatibel.

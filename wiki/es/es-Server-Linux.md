@@ -5,6 +5,8 @@ lang: "es"
 permalink: "/wiki/Server-Linux"
 ---
 
+{% include breadcrumb.html root="Utilización de Jamulus" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
+
 # Instalación de Servidor - Linux
 
 
@@ -30,11 +32,24 @@ La siguiente guía es para ejecutar Jamulus como un servidor "puro" en **hardwar
 
 * _El usuario de Jamulus [Grigory](https://sourceforge.net/u/cidnurg/profile/) mantiene una imagen de **[Docker para Jamulus](https://hub.docker.com/r/grundic/jamulus)** que puedes utilizar._
 
+### Utiliza los archivos .deb oficiales de Debian/Ubuntu para 'headless'
+
+Si utilizas amd64 Debian/Ubuntu, puedes probar los paquetes .deb compilados con GitHub Actions:
+
+1. Descarga el [último archivo .deb para headless]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
+1. Actualiza apt: `sudo apt update`
+1. Instala el paquete: `sudo apt install /path/to/{{ site.download_file_names.deb-headless }}`
+1. Habilita el servidor 'headless' con systemd:`sudo systemctl enable jamulus-headless`
+1. Añade las [opciones de línea de comandos](Command-Line-Options) al archivo de servicio de systemd en `/lib/systemd/system/jamulus-headless.service`.
+1. Vuelve a cargar los archivos de sistema `sudo systemctl daemon-reload` y reinicia el servidor 'headless': `sudo systemctl restart jamulus-headless`
+
+¡Ya deberías de estar ejecutando un servidor 'headless'!
+
+**Nota:** Para configurar el servidor, puedes añadir parámetros de línea de comandos al archivo `/lib/systemd/system/jamulus-headless.service` por ej. para hacerlo un servidor público. Echa un vistazo a la página de [opciones de línea de comandos](Command-Line-Options).
 
 ### Compila las fuentes, crea un usuario
 
-
-1. [Obtén las fuentes](Installation-for-Linux#obtén-las-fuentes-de-jamulus) e instala las [dependencias](Installation-for-Linux#instala-las-dependencias) de acuerdo a la guía de instalación de Linux. Ten en cuenta que **no necesitas instalar los paquetes de JACK** para una instalación 'headless'. _Si tienes pensado ejecutar un servidor 'headless' en Gentoo, o estás compilando en Ubuntu para usarlo en otra máquina con Ubuntu, [ver la nota a pie de página](#qué-hace-el-indicador-de-compilacion-headless)._
+1. [Obtén las fuentes](Installation-for-Linux#obtén-las-fuentes-de-jamulus) e instala las [dependencias](Installation-for-Linux#instala-las-dependencias) de acuerdo a la guía de instalación de Linux. Ten en cuenta que **no necesitas instalar los paquetes de JACK** para una instalación 'headless'. _Si tienes pensado ejecutar un servidor 'headless' en Gentoo, o estás compilando en Ubuntu para usarlo en otra máquina con Ubuntu, [ver la nota a pie de página](#qué-hace-el-indicador-de-compilación-headless)._
 1. Compila las fuentes para ignorar la librería de audio de JACK:
 
 ~~~
@@ -143,7 +158,7 @@ Nota: Pulsa `q` para salir del estado del servicio.
 
 ### Para actualizar tu instalación a una nueva versión
 
-Descarga las fuentes siguiendo las [instrucciones anteriores](Server-Linux#compila-las-fuentes-crea-un-usuario) y repite el proceso de compilación del paso 2 como si fuera una nueva instalación. Cierra el servidor, copia el archivo binario de Jamulus encima del antiguo y reinícialo.
+Descarga las fuentes siguiendo las [instrucciones anteriores](Server-Linux#compila-las-fuentes-crea-un-usuario) y repite el proceso de compilación del paso 2 como si fuera una nueva instalación o simplemente instala el nuevo archivo .deb para 'headless'. Si has compilado Jamulus de las fuentes, copia el archivo binario de Jamulus encima del antiguo y reinícialo.
 
 ***
 
@@ -156,6 +171,8 @@ Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otr
 Cuando se utiliza la [función de grabación](Server-Win-Mac#grabación) con la `opción de la línea de comandos` [-R](Command-Line-Options), si el servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un directorio nuevo. SIGUSR2 conmutará entre grabación activa/desactivada.
 
 Para enviar estas señales utilizando systemd, crea los siguientes dos archivos `.service` en `/etc/systemd/system`, dándoles un nombre apropiado (por ej. `nuevaGrabación-Jamulus-server.service`).
+
+**Nota:** Deberás guaradar las grabaciones a una ruta _fuera_ del directorio 'home' de Jamulus, o quitar `ProtectHome=true` de tu archivo de unidad de systemd (ten en cuenta que hacer esto es un riesgo potencial para la seguridad).
 
 Para iniciar o detener la grabación (dependiendo del estado actual):
 

@@ -7,7 +7,7 @@ Unfortunately GitHub doesn't enable picture upload on the normal md editor. Ther
 
 ## Contribute a translation
 
-**Before translating, please have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) file to get familiar with our translation process. Afterwards, check if there's already a discussion thread for your language here: https://github.com/jamulussoftware/jamuluswebsite/discussions and participate in it**
+**Before translating, please have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) file to get familiar with our translation process. Afterwards, check if there's already a discussion thread for your language here: https://github.com/jamulussoftware/jamulus/discussions and participate in it**
 
 Translations are handled by the [Polyglot Jekyll Plug-in](https://github.com/untra/polyglot).
 If you want to translate a file, you must first know where it is located on this repo:

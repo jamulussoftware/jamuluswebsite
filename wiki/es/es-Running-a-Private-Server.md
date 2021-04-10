@@ -5,6 +5,8 @@ lang: "es"
 permalink: "/wiki/Running-a-Private-Server"
 ---
 
+{% include breadcrumb.html root="Utilización de Jamulus" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
+
 # Ejecutar un Servidor Privado
 
 **_Primero asegúrate de leer la [descripción de servidores](Running-a-Server)_**
@@ -33,7 +35,7 @@ Una vez configurado el router, puedes obtener tu dirección IP (WAN) externa por
 
 * No necesitas abrir un rango de puertos como muestra el ejemplo de arriba si solo vas a abrir una instancia del servidor Jamulus en tu ordenador.
 
-* Si utilizas un puerto distinto al que se usa por defecto (22124) tienes que escribir el número del puerto detrás del nombre del servidor o la dirección IP, separado por dos puntos, en el cliente de Jamulus (por ej.: jamulus.dyndns.org:22120).
+* Si utilizas un puerto distinto al que se usa por defecto (22124) tienes que escribir el número del puerto detrás del nombre del servidor o la dirección IP, separado por dos puntos, en el cliente de Jamulus (por ej. jamulus.ejemplo.org:22120).
 
 * Ver también esta excelente [guía sobre la operación de un servidor privado](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/how-to-create-a-private-server-for-band-rehearsals/508642543044030/) de [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) en Facebook (inglés).
 

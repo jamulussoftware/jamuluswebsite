@@ -33,13 +33,16 @@ Ahora que tienes lo básico, vayamos allá:
   <a href="Installation-for-Windows" class="button fx-col-100-xs">Instalación en Windows</a>
   <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Instalación en macOS</a>
   <a href="Installation-for-Linux" class="button fx-col-100-xs">Para usuarios de Linux</a>
+  <a href="Installation-for-Android" class="button fx-col-100-xs">Instalación en Android (PoC)</a>
 </div>
 
 También - [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) Ejecuta Jamulus en cualquier ordenador utilizando un pendrive (solo sistemas de 64-bits). ¡Comprueba tu hardware y lo configura todo sin tener que hacer nada!
 
 ## Hardware recomendado
 
-Ver [la lista de hardware comprobado](Sound-Devices) y [Configuración de Hardware](Hardware-Setup).
+En general, tu dispositivo debe soportar una tasa de muestreo de **48 kHz** (calidad DVD) y debería permitirte escuchar la señal de audio del ordenador. En Windows se recomienda escoger un dispositivo con driver [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) nativo.
+
+Ver [la lista de la comunidad de hardware funcional (en inglés)](/kb/2021/01/05/Jamulus-Sound-Devices.html).
 
 ## Otras guías
 * [Esta excelente guía](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} de [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) también merece un vistazo.
@@ -59,8 +62,8 @@ Se puede encontrar más información sobre cómo evitar escucharte a ti mismo (y
 **Así es cómo millones de personas utilizan Jamulus para tocar, cantar y enseñar música con otras personas en tiempo real, por todo el mundo:**
 
 ![Overview](https://user-images.githubusercontent.com/4263412/97573060-78d17780-19e9-11eb-94dd-7fd991650e37.png)
-_Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, se mezcla y se procesa allí. Después, el audio es enviado a cada cliente. Si un servidor es público y está registrado en un servidor central, su información será emitida a todos los clientes._
+_Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, se mezcla y se procesa allí. Después, el audio es enviado de vuelta a cada cliente. Si un servidor es público y está registrado en un servidor central, su información será emitida a todos los clientes._
 
 ## Notas
-[^1]: [Detalles al completo aquí](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Si tienes 10Mbits de bajada y 1Mbps de subida, es poco probable que tengas problemas de ancho de banda.
+[^1]: [Detalles al completo aquí](Network-Requirements){: target="_blank" rel="noopener noreferrer"}. Si tienes 10 Mbits de bajada y 1 Mbps de subida, es poco probable que tengas problemas de ancho de banda.
 [^2]: Los auriculares Bluetooth normalmente tienen demasiada latencia. Esa es una razón por la que se necesitan auriculares por cable. Sobre todo si cantas o tocas instrumentos acústicos, para asegurarte de que mantienes el tiempo con los demás, utiliza solo auriculares (ver la [nota sobre esto](Getting-Started#tienes-problemas-no-puedes-mantener-el-tiempo) para más información).

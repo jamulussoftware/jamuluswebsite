@@ -5,6 +5,8 @@ lang: "es"
 permalink: "/wiki/Choosing-a-Server-Type"
 ---
 
+{% include breadcrumb.html root="Más" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
+
 # Tipos de servidor
 
 Puedes ejecutar tu servidor en uno de tres "modos" (bien en casa o en un host de terceros):
@@ -54,6 +56,8 @@ Los operadores de servidores convencionales también pueden registrarse con tu s
 
 Para ejecutar un servidor como central, se debe configurar con `--centralserver localhost` (esto es, se especifica como el servidor central que recibe consultas).
 
-Si quieres controlar qué servidores pueden registrarse con tu servidor central, puedes habilitar una lista blanca con la opción de línea de comandos `--listfilter`. Ver la [página de opciones de la línea de comandos](Command-Line-Options) para más información sobre esta característica.
+#### Notas sobre la configuración
 
-Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otros parámetros que se pueden establecer.
+Si quieres controlar qué servidores pueden registrarse con tu servidor central, puedes habilitar una lista blanca con la opción de línea de comandos `--listfilter`. Ver la [página de opciones de la línea de comandos](Command-Line-Options) para más información sobre esta característica y otros parámetros que se pueden establecer.
+
+Cuando se ejecuta un Servidor Central tras un cortafuegos NAT en una red privada, utiliza la opción `--serverpublicip` para especificar la dirección IP pública de el/los servidor/es listados por tu Servidor Central. Esto es necesario para permitir a los clientes de la Red públic conectarse a ellos a través de NAT. Ten en cuenta que para los servidores utilizando esta opción, seguirás necesitando redireccionar puertos correctamente en tu router/cortafuegos.
