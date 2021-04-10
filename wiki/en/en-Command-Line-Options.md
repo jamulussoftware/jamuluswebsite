@@ -42,9 +42,9 @@ You can see all possible options your version supports by starting Jamulus with 
 |    `-n` |`--nogui`          | Disable GUI | (client and server) |
 |    `-o` |`--serverinfo`     | Server location details in the format: <br/>`[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum))| (public servers only) |
 |    `-p` |`--port`           | Local UDP port number. Default is 22124 | (server only) |
-|    `-P` |`--delaypan`  |  Start with delay panning enabled | (server only) |
+|    `-P` |`--delaypan`  |  Start with delay panning enabled | (server only) see [Server Setup](https://jamulus.io/wiki/Server-Win-Mac#other+options) |
 |    `-Q` |`--qos`            | Request quality of service in the IP header octet.<br> (e.g. --qos 0)&nbsp;&nbsp;&nbsp;DF=0, AF31=104, CS4=128 default, EF=184 | see [Tips & Tricks](Tips-Tricks-More#quality-of-service) (global option)
-|    `-R` |`--recording`      | Include a writeable path where the files should be stored (in quotes if needed). | (server only) See description in [Server Setup](Server-Win-Mac#recording). |
+|    `-R` |`--recording`      | Include a writeable path where the files should be stored (in quotes if needed). | (server only) see [Server Setup](Server-Win-Mac#recording). |
 |       | `--norecord`      | Start recorder with recording disabled | (server only) |
 |    `-s` |`--server`         | Start in server mode | (server only) [See note](Choosing-a-Server-Type) |
 |    `-t` |`--notranslation`  | Disable translations | (client and server) |
