@@ -137,7 +137,7 @@ Looking at the third panel (Actions) of the Local Group Policy Editor<br>
 &nbsp;&nbsp;More Actions<br>
 &nbsp;&nbsp;&nbsp;Create new Policy (click)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 128<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Next<br>
 &nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Next<br>
