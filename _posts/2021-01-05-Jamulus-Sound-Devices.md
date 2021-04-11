@@ -35,6 +35,16 @@ You can update this page with the information you have. **Please indicate the pl
 
 ***
 
+**[Marantz MPM-1000U](https://www.marantzpro.com/products/view/mpm-1000u)**, low-cost USB Microphone 
+
+**Windows**: Needs *ASIO4All*. Probably a bit more latency than under macOS.
+
+**macOS**: Not yet tested.
+
+**Linux**: Not yet tested.
+
+***
+
 **[Shure X2u](https://www.shure.com/en-GB/products/accessories/x2u-xlr-usb-interface)**, USB to XLR audio interface with headphone jack connector that converts a wired microphone to a USB microphone.
 
 **Windows**: Set the PC/Mix dialog box to 100% PC to listen to Jamulus' mix on the headphone output.
