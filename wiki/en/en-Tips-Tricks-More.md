@@ -110,20 +110,12 @@ Make sure you connect your MIDI device's output port to the Jamulus MIDI in port
 
 ## Quality of Service
 
-Jamulus uses DSCP/CS4 to opportunistically deal with bufferbloat.<br>
-DSCP/CS4 is 128 (or 0x80) and is compatible with IPv4 and IPv6.<br>
-Other values can be set with: jamulus --qos `[0..255]`<br>
-( please see the informative RFC4594 and jamulus --help )<br>
-To disable QoS use: --qos 0 
+Jamulus uses DSCP/CS4 opportunistically to deal with buffer bloat, and uses a default DSCP/CS4 value of 128 (or 0x80). This is compatible with IPv4 and IPv6. Other values can be set using the `-Q` option, eg  `-Q [0..255]` (where 0 disables QoS). If you want to explore the effect of non-default settings, see [RFC4594](https://tools.ietf.org/html/rfc4594). However, most people will have no need to do this.
 
-#### Windows Quality of Service instructions
+### Using Quality of Service on Windows
 
-Prior to Windows Vista / Server 2008, Windows allowed software developers to set the
-Quality of Service field on IP traffic.
-With the release of Vista / Server 2008, Microsoft began to overwrite DSCP values
-that were set by applications with the Policy-based QoS layer.
+Jamulus’s QoS settings (including the default) have no effect on Windows because the operating system ignores them. To enable Quality of Service for Jamulus, you must follow these instructions. Note also that you may need to repeat this procedure every time Jamulus is updated.
 
-In order to enable Quality of Service you must follow these instructions:
 
 In Search box beside Start menu Type: Local Group Policy Editor (enter)<br>
 In new window, (click) on the menu icon to display the Actions third panel<br>
