@@ -31,11 +31,11 @@ _Note that the following options will not alter settings made in the GUI._
 | `-i`    | `--inifile`       | Set location of initialization file (overrides default)                                                      | Client (always) and server (with GUI)                    |
 | `-n`    | `--nogui`         | Disable GUI                                                                                                  |                                                          |
 | `-p`    | `--port`          | Local UDP port number. Default is 22124                                                                      |                                                          |
-|    `-Q` | `--qos`        | Sets the quality of service DSCP value. Default is 128. Disable with 0.  | QoS is ignored by Windows, but see [Tips & Tricks](Tips-Tricks-More#quality-of-service) for how to apply it. |
+|    `-Q` | `--qos`           | Sets the quality of service DSCP value. Default is 128. Disable with 0.  | QoS is ignored by Windows, but see [Tips & Tricks](Tips-Tricks-More#quality-of-service) for how to apply it. |
 | `-t`    | `--notranslation` | Disable translations                                                                                         |                                                          |
 | `-v`    | `--version`       | Output version information and exit | |
 
-### Sever only
+### Server only
 
 | Short | Long name         | `[...]` means optional parameter                                                                                                                             | Notes                                                                    |
 |-------|-------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
