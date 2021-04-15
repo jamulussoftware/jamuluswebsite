@@ -97,7 +97,7 @@ IOSchedulingPriority=0
 
 #### Change this to set genre, location and other parameters.
 #### See [Command-Line-Options](Command-Line-Options) ####
-ExecStart=/usr/local/bin/Jamulus -s -n -e jamulus.fischvolk.de -o "yourServerName;yourCity;[country ID]"
+ExecStart=ExecStart=/bin/sh -c 'exec /usr/bin/Jamulus -s -n -e anygenre3.jamulus.io -o "yourServerName;yourCity;[country ID]"
 
 Restart=on-failure
 RestartSec=30
