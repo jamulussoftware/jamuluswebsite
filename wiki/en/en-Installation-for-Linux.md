@@ -67,6 +67,12 @@ On **Fedora**:
 sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus libQt5Concurrent5 jack-audio-connection-kit-devel
 ```
 
+On **Fedora 33**:
+The package names have changed slightly, and later you will need to use the command qmake-qt5 instead of just qmake
+```shell
+sudo dnf install qt5-qtdeclarative-devel jack-audio-connection-kit-dbus qt5-linguist jack-audio-connection-kit-devel
+```
+
 ### QjackCtl: Optional, but recommended
 
 [QjackCtl](https://qjackctl.sourceforge.io) is a utility to help you set up the JACK audio server (installed as part of the dependencies above). Install it via e.g.
