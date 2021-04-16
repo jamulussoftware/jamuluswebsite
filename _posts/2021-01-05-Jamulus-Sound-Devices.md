@@ -167,7 +167,7 @@ _More testing required._
 
 **macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X: around `7.5ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
-**Linux**: Not tested, but should work great.
+**Linux**: works.
 
 ***
 
@@ -237,7 +237,7 @@ _More testing required._
 
 **macOS**: Not yet tested.
 
-**Linux**: Works (great?) on Linux.
+**Linux**: Works great on Linux.
 
 Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.  
 
