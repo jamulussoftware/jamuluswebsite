@@ -33,6 +33,6 @@ With the following units
 ## Network bandwidth
 
 There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)
-![image](https://user-images.githubusercontent.com/9976944/79274940-999b0b00-7ea5-11ea-85be-3ded5ee198d5.png)
+<figure><img src="{{site.url}}/assets/img/en-screenshots/bandwidth-diagram.png" loading="lazy" alt="A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high"></figure>
 
 Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate.

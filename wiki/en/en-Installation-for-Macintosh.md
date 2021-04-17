@@ -22,7 +22,7 @@ _You can remove the folder in the Downloads directory containing the `.dmg` and 
 
 ## "Jamulus" can't be opened because the developer cannot be verified
 
-![Jamulus blocked by Gatekeeper](https://user-images.githubusercontent.com/20726856/99886769-67256d80-2c3f-11eb-91e9-9cb2b6f80f95.png)
+<figure><img src="{{site.url}}/assets/img/en-screenshots/verification-mac.png" loading="lazy" alt="Image of a macOS warning screen for Jamulus warning the developer cannot be verified"></figure>
 
 The first time you try to double-click Jamulus to run it, you will probably see a message saying it cannot be opened. We don't code-sign Jamulus yet (it's quite expensive).
 

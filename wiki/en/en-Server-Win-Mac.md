@@ -18,7 +18,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 * **Linux users** - Please refer to the [GUI server instructions](Server-Linux#running-a-server-with-the-gui).
 
-<img width="627" alt="server-setup" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
+<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-setup.png" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
 ### Public server setup
 
@@ -47,7 +47,7 @@ For headless servers: you can control the recording function [using these instru
 
 ### Other options
 
-<img width="549" alt="jamulus-server" src="https://user-images.githubusercontent.com/4561747/95724775-accd3e80-0c6e-11eb-90ba-7131e9c15316.png">
+<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
 **Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.
 
