@@ -14,7 +14,7 @@ You can run your server in one of three "modes" (either at home or on a 3rd part
 ### 1. Public
 Your server will be listed in the [central server](Central-Servers) list that clients use by default. Musicians can then discover and connect to your server.  It is not necessary to run as a public server since many other people already run them. Just connect to one with low latency and start jamming.
 
-![PublicServer](https://user-images.githubusercontent.com/4561747/79310856-7e0b2100-7ef4-11ea-9511-b2e3339cab6f.png)
+<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus public server"></figure>
 
 This mode is activated by checking the "Register my server..." checkbox and (optionally) entering your server information.
 
@@ -34,7 +34,7 @@ See also [Command Line Options](Command-Line-Options) for other parameters you c
 ### 2. Private
 This type of server will not be listed on a central server list. You must give musicians your server address to connect their clients to. See [Running a Private Server](Running-a-Private-Server) for what needs to be done to enable others to connect to it.
 
-![PrivateServer](https://user-images.githubusercontent.com/4561747/79310944-9f6c0d00-7ef4-11ea-9d8a-ecb0e668c22d.png)
+<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus private server"></figure>
 
 This mode is activated by un-checking "Register my server...".
 

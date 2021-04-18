@@ -18,7 +18,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 * **Linux users** - Please refer to the [GUI server instructions](Server-Linux#running-a-server-with-the-gui).
 
-<img width="627" alt="server-setup" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
+<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-setup.png" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
 ### Public server setup
 
@@ -55,7 +55,11 @@ This option uses small differences in sound arrival time between the two ears. I
 
 ### Custom Central Server Address
 
+
+<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
+
 Leave this field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-central))
+
 
 **Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.
 
