@@ -5,6 +5,9 @@ lang: "de"
 permalink: "/wiki/Installation-for-Android"
 ---
 
+{% include breadcrumb.html root="Jamulus Nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
+
+
 # Installation for Android
 
 Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
