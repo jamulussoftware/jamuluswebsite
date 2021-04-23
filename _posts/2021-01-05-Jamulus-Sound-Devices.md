@@ -331,6 +331,16 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 ***
 
+**[Zoom H1N](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h1n-handy-recorder/)**, USB portable recorder
+
+**Windows**: Latency is around 22ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
+
+**macOS**: Not yet tested
+
+**Linux**: Not yet tested
+
+***
+
 ### FireWire devices
 
 **[Presonus StudioLive 16.4.2 AI](https://www.presonus.com/products/StudioLive-1642AI)** (StudioLive AI series), FireWire digital mixing desk  
