@@ -233,11 +233,11 @@ that user was already stored. You can set all users in an occupied server to thi
 
 This applies a fancy skin to the main window.
 
-### Custom central server address
+### Custom directory server address
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/directory-custom.png" loading="lazy" alt="Image of a text input for directory server address"></figure>
 
-Leave this blank unless you need to enter the address of a central server other than the default.
+Leave this blank unless you need to enter the address of a directory server other than the default.
 
 ### Current connection status parameter
 
