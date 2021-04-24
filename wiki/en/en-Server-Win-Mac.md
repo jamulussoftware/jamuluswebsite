@@ -18,7 +18,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 * **Linux users** - Please refer to the [GUI server instructions](Server-Linux#running-a-server-with-the-gui).
 
-<img width="627" alt="server-setup" src="https://user-images.githubusercontent.com/4561747/87871031-19ed7280-c9a5-11ea-9104-6234a227ed62.png">
+<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-setup.png" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
 ### Public server setup
 
@@ -36,6 +36,11 @@ If you do not check "Make My Server Public", you will be running a private serve
 
 _If you want to **run a client on the same machine** you should **connect the client to `127.0.0.1`** for best performance. (Similarly, if you want to connect a client on another machine on your LAN, use the server's LAN IP address)._
 
+
+### Other options
+
+<img width="549" alt="jamulus-server" src="https://user-images.githubusercontent.com/4561747/114275476-79e7e580-9a1a-11eb-8e6b-09d9f956c689.png">
+
 ### Recording
 
 Turn on server recording by first setting the Recording Directory in the Options tab. Recording starts once the first person connects to the server, and stops when the last person leaves. Use the "New Recording" button to create a new sub-directory in which the recordings will be stored. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
@@ -44,14 +49,22 @@ _Note: When your server is recording, clients will display a message that record
 
 For headless servers: you can control the recording function [using these instructions](Server-Linux#controlling-recordings).
 
+### Delay panning
 
-### Other options
+This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal "volume" panning. Note that to achieve the effect, all clients should be set to 'mono in / stereo out' (or to 'stereo', but only if transmitting a stereo signal).
 
-<img width="549" alt="jamulus-server" src="https://user-images.githubusercontent.com/4561747/95724775-accd3e80-0c6e-11eb-90ba-7131e9c15316.png">
+### Custom Central Server Address
+
+
+<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
+
+Leave this field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-central))
+
 
 **Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.
 
-(Leave the "Custom Directory Server Address" field empty unless you need to list your server on a [private directory server](Choosing-a-Server-Type#3-central))
+(Leave the "Custom Directory Server Address" field empty unless you need to list your server on a [private directory server](Choosing-a-Server-Type#3-directory))
+
 
 ***
 

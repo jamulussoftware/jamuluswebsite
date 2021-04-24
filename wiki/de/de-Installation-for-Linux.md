@@ -17,7 +17,7 @@ Eine Liste inoffizieller [Pakete für verschiedene Distributionen findest du hie
 
 ### Flatpak
 
-Jamulus existiert als [Flatpak](https://flatpak.org/) auf [Flathub here](https://flathub.org/apps/details/io.jamulus.Jamulus). Um das Jamulus Flatpak zu nutzen musst du pipewire konfigurieren.
+Jamulus existiert als [Flatpak](https://flatpak.org/) auf [Flathub hier](https://flathub.org/apps/details/io.jamulus.Jamulus). Um das Jamulus Flatpak zu nutzen musst du pipewire konfigurieren.
 
 ### Debian and Ubuntu
 Jamulus kann aus den [buster-backports](https://packages.debian.org/de/buster-backports/jamulus) oder - wenn du amd64 **Debian**/**Ubuntu** installiert hast - als .deb Datei installiert werden:
