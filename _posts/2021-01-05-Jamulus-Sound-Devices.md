@@ -67,18 +67,6 @@ You can update this page with the information you have. **Please indicate the pl
 
 #### Audio interfaces / digital mixing consoles
 
-**[Solid State Logic SSL2+](https://www.solidstatelogic.com/products/ssl2-plus)**, USB-C/USB digital audio/MIDI interface 2 in/4 out
-
-**Windows**: Works great with the [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe).  
-
-**macOS**: Works great (not tested on Big Sur).
-
-**Linux**: Works great (Tested on Ubuntu 20.04 and Raspberry Pi OS (Buster))
-
-The monitoring of the Jamulus mix is done by moving the "MONITOR MIX" completely to the right to "USB". See the [official manual](http://eu1.download.solidstatelogic.com/2%20Plus%20/SSL%202%20Plus%20User%20Guide_ENGLISH.pdf).
-
-***
-
 **[Ammoon AGM02](https://www.ammoon.com/p-i3974.html)** and **[Ammoon AGM04](https://www.ammoon.com/p-i4049.html)**, low-cost USB 2-channel and 4-channel compact mixing consoles
 
 **Windows**: Works. Tested *AGM02*. On Windows 10, with ASIO4ALL, the **AGM02** can be used as an input, and the onboard audio as the output. There is no way to monitor only the USB return signal on the **AGM02**.
@@ -101,9 +89,9 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 Tested on Raspberry Pi 4B with JamBox image: Latency added through JACK = 13 ms; Pi USB port underpowered so use the supplied power adapter. 
 
-_**Note:** "Latency added" = Jamulus 3.7.0 client's reported Overall Delay minus Ping Time to a cloud server pinging at ~4 ms.
+**Note:** "Latency added" = Jamulus 3.7.0 client's reported Overall Delay minus Ping Time to a cloud server pinging at ~4 ms.
 
-The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com/p-i4049.html)._
+The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com/p-i4049.html).
 
 ***
 
@@ -127,7 +115,7 @@ The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com
 
 **Linux**: Works better than on Windows.
 
-** Please note: Ploytec, a German company have developed a very low latency alternative to ASIO4ALL and the native Behringer driver for both Windows and Mac. It is capable of latency in the 2 ms range. Their software driver is somewhat expensive at $60, but you can download and try it out to see if it is worth the money for your situation. The demo download can be found at: 
+**Note:** Ploytec, a German company have developed a very low latency alternative to ASIO4ALL and the native Behringer driver for both Windows and Mac. It is capable of latency in the 2 ms range. Their software driver is somewhat expensive at $60, but you can download and try it out to see if it is worth the money for your situation. The demo download can be found at: 
 https://www.usb-audio.com/download/
 
 ***
@@ -235,6 +223,18 @@ _More testing required._
 
 ***
 
+**[Solid State Logic SSL2+](https://www.solidstatelogic.com/products/ssl2-plus)**, USB-C/USB digital audio/MIDI interface 2 in/4 out
+
+**Windows**: Works great with the [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe).  
+
+**macOS**: Works great (not tested on Big Sur).
+
+**Linux**: Works great (Tested on Ubuntu 20.04 and Raspberry Pi OS (Buster))
+
+The monitoring of the Jamulus mix is done by moving the "MONITOR MIX" completely to the right to "USB". See the [official manual](http://eu1.download.solidstatelogic.com/2%20Plus%20/SSL%202%20Plus%20User%20Guide_ENGLISH.pdf).
+
+***
+
 **[Steinberg UR22C](https://new.steinberg.net/audio-interfaces/ur22c/)** USB-C/USB3 digital audio interface
 
 **Windows**: Provides ASIO Driver. Not yet tested.
@@ -256,6 +256,7 @@ _More testing required._
 Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.  
 
 ***
+
 
 **[Yamaha AG03](https://usa.yamaha.com/products/music_production/interfaces/ag_series/index.html)**, USB digital audio/MIDI interface
 
