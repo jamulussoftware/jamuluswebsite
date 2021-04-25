@@ -55,13 +55,13 @@ You can save and restore the mix you have for your band rehearsals (fader, mute,
 
 ## Delegate mixing to a mix master using the --mastermix server mode
 
-By starting a server instance with the `--mastermix` flag, the first client to connect will become the mix master.
+By starting a server instance with the `--mastermix` flag, the first client to connect will become the controller, or 'mix master' of the audio mix.
 
-Subsequent joiners will be able to control their own as well as the mix master's pan and gain, but nobody else's (clients after version TODO will see their faders and buttons grayed out). Instead, they will hear the pan and gain value as set by the mix master.
+Subsequent joiners will be able to control their own as well as the mix master's pan and gain, but nobody else's (clients will see these faders and buttons grayed out). Instead, they will hear the pan and gain value as set by the mix master.
 
-When this mix master sets a channel to SOLO, this will *not* apply to everybody's elses mix. Allowing the mix master to 'secretly' SOLO people can help creating a good mix without disturbing other clients.
+When the mix master sets a channel to Solo, this will *not* apply to everybody's elses mix. Allowing the mix master to secretly solo people can help to create a good mix without disturbing other clients.
 
-This mode can be valuable to e.g. choir rehearsals to offload mixing from the singers to a conductor or dedicated sound engineer and improve the quality of the overall mix for everybody.
+This mode can be valuable for example in choir rehearsals to offload mixing from the singers to a conductor. Or in having a dedicated sound engineer to improve the quality of the overall mix for everybody.
 
 ## Converting a public server to a private one on the fly
 
