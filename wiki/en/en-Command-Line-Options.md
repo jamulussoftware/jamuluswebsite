@@ -44,7 +44,7 @@ _Note that the following options will not alter settings made in the GUI._
 | Short | Long name         | `[...]` means optional parameter                                                                                                                             | Notes                                                                    |
 |-------|-------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | `-d`  | `--discononquit`  | Disconnect all clients on quit                                                                                                                               |                                                                          |
-| `-e`  | `--centralserver` | Makes the server public and sets its genre. See also `-o`                                                                                                    | See [server types](Choosing-a-Server-Type#3-directory)                     |
+| `-e`  | `--centralserver` | Make the server public and sets its genre. See also `-o`                                                                                                    | See [server types](Choosing-a-Server-Type#3-directory)                     |
 | `-f`  | `--listfilter`    | Whitelist servers registering on the server list, format `ip address 1[;ip address 2]`                                                                       | Directory servers only. [See note](Choosing-a-Server-Type#3-directory)     |
 | `-F`  | `--fastupdate`    | Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients. |                                                                          |
 | `-l`  | `--log`           | Enable logging, set path and file name                                                                                                                       |                                                                          |
@@ -53,8 +53,8 @@ _Note that the following options will not alter settings made in the GUI._
 | `-o`  | `--serverinfo`    | Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum))                      | Public servers only                                                      |
 | `-P`  | `--delaypan`      | Start with delay panning enabled                                                                                                                             | See [Server Setup](https://jamulus.io/wiki/Server-Win-Mac#other+options) |
 | `-R`  | `--recording`     | Include a writeable path where the files should be stored (in quotes if needed).                                                                             | See [Server Setup](Server-Win-Mac#recording).                            |
-|       | `--norecord`      | Disables recording when enabled by default by `-R`                                                                                                             |                                                                          |
-|       | `--serverbindip` | IP address to bind to                                            |
+|       | `--norecord`      | Disable recording when enabled by default by `-R`                                                                                                             |                                                                          |
+|       | `--serverbindip` | Specify the IP address to bind to                                 |
 
 ### Client only
 
