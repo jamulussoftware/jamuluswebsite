@@ -17,12 +17,11 @@
         class="{% if item.url == "/download" %}download-header{% endif %}
               {% if item.url == page.url %}current{% endif %}"
               >
-        {{item.title}}</a>
+        {{ item.title }}</a>
     {% endfor %}
   </div>
   <div class="fx-col-center-xs fx-txt-right hide-on-dt">
     <a href="#mnv" onclick="showNav();return false;">{% include general/navbtn.html %}</a>
   </div>
 </header>
-
 
