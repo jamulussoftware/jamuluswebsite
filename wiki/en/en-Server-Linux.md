@@ -77,7 +77,7 @@ The unit file applies high priority CPU and I/O scheduling to the server process
 
 Note also that the server log entries will go to journalctl (use [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) to see it ).
 
-**Note**: The rest of this guide assumes you are in "public" mode using the `-e` (`--centralserver`) option. This specifies which musical genre list your server will appear in. See [the list of available genres here](Central-Servers)).
+**Note**: The rest of this guide assumes you are in "public" mode using the `-e` (`--centralserver`) option. This specifies which musical genre list your server will appear in. See [the list of available genres here](Directory-Servers)).
 
 ~~~
 [Unit]
@@ -97,7 +97,7 @@ IOSchedulingPriority=0
 
 #### Change this to set genre, location and other parameters.
 #### See [Command-Line-Options](Command-Line-Options) ####
-ExecStart=/usr/local/bin/Jamulus -s -n -e jamulus.fischvolk.de -o "yourServerName;yourCity;[country ID]"
+ExecStart=/bin/sh -c 'exec /usr/bin/Jamulus -s -n -e anygenre3.jamulus.io -o "yourServerName;yourCity;[country ID]"'
 
 Restart=on-failure
 RestartSec=30
@@ -138,7 +138,7 @@ You should see something like this:
 Mar 26 11:52:34 oddjob systemd[1]: Started jamulus.service.
 Mar 26 11:52:35 oddjob jamulus[1308]: - server mode chosen
 Mar 26 11:52:35 oddjob jamulus[1308]: - no GUI mode chosen
-Mar 26 11:52:35 oddjob jamulus[1308]: - central server: jamulus.fischvolk.de
+Mar 26 11:52:35 oddjob jamulus[1308]: - directory server: jamulus.fischvolk.de
 Mar 26 11:52:35 oddjob jamulus[1308]: - server info: yourServerName;yourCity;[country ID]
 Mar 26 11:52:35 oddjob jamulus[1308]: - welcome message: Thanks for connecting!
 Mar 26 11:52:35 oddjob jamulus[1308]:  *** Jamulus, Version [version]

@@ -21,6 +21,10 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
 ```
 
+***
+
+You can see all possible options your version supports by starting Jamulus with the `-h` option.
+
 _Note that the following options will not alter settings made in the GUI._
 
 ### General settings (client and server modes)
@@ -40,17 +44,17 @@ _Note that the following options will not alter settings made in the GUI._
 | Short | Long name         | `[...]` means optional parameter                                                                                                                             | Notes                                                                    |
 |-------|-------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | `-d`  | `--discononquit`  | Disconnect all clients on quit                                                                                                                               |                                                                          |
-| `-e`  | `--centralserver` | Makes the server public and sets its genre. See also `-o`                                                                                                    | See [server types](Choosing-a-Server-Type#3-central)                     |
-| `-f`  | `--listfilter`    | Whitelist servers registering on the server list, format `ip address 1[;ip address 2]`                                                                       | Directory servers only. [See note](Choosing-a-Server-Type#3-central)     |
+| `-e`  | `--centralserver` | Make the server public and sets its genre. See also `-o`                                                                                                    | See [server types](Choosing-a-Server-Type#3-directory)                     |
+| `-f`  | `--listfilter`    | Whitelist servers registering on the server list, format `ip address 1[;ip address 2]`                                                                       | Directory servers only. [See note](Choosing-a-Server-Type#3-directory)     |
 | `-F`  | `--fastupdate`    | Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients. |                                                                          |
 | `-l`  | `--log`           | Enable logging, set path and file name                                                                                                                       |                                                                          |
 | `-L`  | `--licence`       | Show an agreement window before users can connect                                                                                                            |                                                                          |
 | `-m`  | `--htmlstatus`    | Enable HTML status file, set path and file name                                                                                                              |                                                                          |
-| `-o`  | `--serverinfo`    | Server location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum))                      | Public servers only                                                      |
+| `-o`  | `--serverinfo`    | Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum))                      | Public servers only                                                      |
 | `-P`  | `--delaypan`      | Start with delay panning enabled                                                                                                                             | See [Server Setup](https://jamulus.io/wiki/Server-Win-Mac#other+options) |
 | `-R`  | `--recording`     | Include a writeable path where the files should be stored (in quotes if needed).                                                                             | See [Server Setup](Server-Win-Mac#recording).                            |
-|       | `--norecord`      | disables recording when enabled by default by -R                                                                                                             |                                                                    |
-
+|       | `--norecord`      | Disable recording when enabled by default by `-R`                                                                                                             |                                                                          |
+|       | `--serverbindip` | Specify the IP address to bind to                                 |
 
 ### Client only
 
@@ -62,8 +66,5 @@ _Note that the following options will not alter settings made in the GUI._
 | `-j`  | `--nojackconnect` | Disable auto JACK connections                                                                                                            |                                                                             |
 |       | `--ctrlmidich`    | MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f*][;p*][;s*][;m*]` | See [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
 |       | `--clientname`    | Window title and JACK client name                                                                                                        |                                                                             |
-
-
-
 
 
