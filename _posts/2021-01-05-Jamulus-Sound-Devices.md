@@ -35,6 +35,16 @@ You can update this page with the information you have. **Please indicate the pl
 
 ***
 
+**[Marantz MPM-1000U](https://www.marantzpro.com/products/view/mpm-1000u)**, low-cost USB Microphone 
+
+**Windows**: Needs *ASIO4All*. Probably a bit more latency than under macOS.
+
+**macOS**: Not yet tested.
+
+**Linux**: Not yet tested.
+
+***
+
 **[Shure X2u](https://www.shure.com/en-GB/products/accessories/x2u-xlr-usb-interface)**, USB to XLR audio interface with headphone jack connector that converts a wired microphone to a USB microphone.
 
 **Windows**: Set the PC/Mix dialog box to 100% PC to listen to Jamulus' mix on the headphone output.
@@ -57,18 +67,6 @@ You can update this page with the information you have. **Please indicate the pl
 
 #### Audio interfaces / digital mixing consoles
 
-**[Solid State Logic SSL2+](https://www.solidstatelogic.com/products/ssl2-plus)**, USB-C/USB digital audio/MIDI interface 2 in/4 out
-
-**Windows**: Works great with the [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe).  
-
-**macOS**: Works great (not tested on Big Sur).
-
-**Linux**: Works great (Tested on Ubuntu 20.04 and Raspberry Pi OS (Buster))
-
-The monitoring of the Jamulus mix is done by moving the "MONITOR MIX" completely to the right to "USB". See the [official manual](http://eu1.download.solidstatelogic.com/2%20Plus%20/SSL%202%20Plus%20User%20Guide_ENGLISH.pdf).
-
-***
-
 **[Ammoon AGM02](https://www.ammoon.com/p-i3974.html)** and **[Ammoon AGM04](https://www.ammoon.com/p-i4049.html)**, low-cost USB 2-channel and 4-channel compact mixing consoles
 
 **Windows**: Works. Tested *AGM02*. On Windows 10, with ASIO4ALL, the **AGM02** can be used as an input, and the onboard audio as the output. There is no way to monitor only the USB return signal on the **AGM02**.
@@ -79,7 +77,21 @@ The monitoring of the Jamulus mix is done by moving the "MONITOR MIX" completely
 
 _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://artproaudio.com/product/usbmix4-four-channel-mixer-usb-audio-interface/)._
 
-**ART USBMix4**, USB 4-channel compact mixing console (_see above_)
+***
+
+**ART USBMIX4**, USB 4-channel compact mixing console (_see above_), lower retail price than the AGM04 in Canada and includes CD-ROM with ART ASIO driver plus 5VDC power adapter for standalone use or when computer USB port cannot supply suffciient juice. Audio from USB can be monitored without the direct feed from the microphone.  
+
+**Windows**: Works well on Windows 10. Latency added via the ART ASIO driver v1.1 = ~14 ms; via ASIO4ALL v2 = ~24 ms
+
+**macOS**: Supported; should work.
+
+**Linux**: Spec says USB Class Compliant plug-and-play Mac / PC Interface; should work. 
+
+Tested on Raspberry Pi 4B with JamBox image: Latency added through JACK = 13 ms; Pi USB port underpowered so use the supplied power adapter. 
+
+**Note:** "Latency added" = Jamulus 3.7.0 client's reported Overall Delay minus Ping Time to a cloud server pinging at ~4 ms.
+
+The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com/p-i4049.html).
 
 ***
 
@@ -103,7 +115,7 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 **Linux**: Works better than on Windows.
 
-** Please note: Ploytec, a German company have developed a very low latency alternative to ASIO4ALL and the native Behringer driver for both Windows and Mac. It is capable of latency in the 2 ms range. Their software driver is somewhat expensive at $60, but you can download and try it out to see if it is worth the money for your situation. The demo download can be found at: 
+**Note:** Ploytec, a German company have developed a very low latency alternative to ASIO4ALL and the native Behringer driver for both Windows and Mac. It is capable of latency in the 2 ms range. Their software driver is somewhat expensive at $60, but you can download and try it out to see if it is worth the money for your situation. The demo download can be found at: 
 https://www.usb-audio.com/download/
 
 ***
@@ -157,7 +169,7 @@ _More testing required._
 
 **macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X: around `7.5ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
-**Linux**: Not tested, but should work great.
+**Linux**: works.
 
 ***
 
@@ -211,6 +223,18 @@ _More testing required._
 
 ***
 
+**[Solid State Logic SSL2+](https://www.solidstatelogic.com/products/ssl2-plus)**, USB-C/USB digital audio/MIDI interface 2 in/4 out
+
+**Windows**: Works great with the [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe).  
+
+**macOS**: Works great (not tested on Big Sur).
+
+**Linux**: Works great (Tested on Ubuntu 20.04 and Raspberry Pi OS (Buster))
+
+The monitoring of the Jamulus mix is done by moving the "MONITOR MIX" completely to the right to "USB". See the [official manual](http://eu1.download.solidstatelogic.com/2%20Plus%20/SSL%202%20Plus%20User%20Guide_ENGLISH.pdf).
+
+***
+
 **[Steinberg UR22C](https://new.steinberg.net/audio-interfaces/ur22c/)** USB-C/USB3 digital audio interface
 
 **Windows**: Provides ASIO Driver. Not yet tested.
@@ -227,11 +251,12 @@ _More testing required._
 
 **macOS**: Not yet tested.
 
-**Linux**: Works (great?) on Linux.
+**Linux**: Works great on Linux.
 
 Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.  
 
 ***
+
 
 **[Yamaha AG03](https://usa.yamaha.com/products/music_production/interfaces/ag_series/index.html)**, USB digital audio/MIDI interface
 
@@ -300,6 +325,16 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 **[Zoom H2](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h2/)**, USB portable recorder
 
 **Windows**: Latency is around 26ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
+
+**macOS**: Not yet tested
+
+**Linux**: Not yet tested
+
+***
+
+**[Zoom H1N](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h1n-handy-recorder/)**, USB portable recorder
+
+**Windows**: Latency is around 22ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
 
 **macOS**: Not yet tested
 

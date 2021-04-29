@@ -53,10 +53,19 @@ function loadserverstat ( $statfilename )
 
 You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Do this with "File > Save Mixer Channels Setup" in your client and load them using "Load Mixer Channels Setup" (or drag/drop them to the mixer window).
 
+## Delegate mixing to a mix master using the --mastermix server mode
+
+By starting a server instance with the `--mastermix` flag, the first client to connect will become the controller, or 'mix master' of the audio mix.
+
+Subsequent joiners will be able to control their own as well as the mix master's pan and gain, but nobody else's (clients will see these faders and buttons grayed out). Instead, they will hear the pan and gain value as set by the mix master.
+
+When the mix master sets a channel to Solo, this will *not* apply to everybody's elses mix. Allowing the mix master to secretly solo people can help to create a good mix without disturbing other clients.
+
+This mode can be valuable for example in choir rehearsals to offload mixing from the singers to a conductor. Or in having a dedicated sound engineer to improve the quality of the overall mix for everybody.
+
 ## Converting a public server to a private one on the fly
 
 You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
-
 
 ## Jamulus client Linux start script
 
@@ -64,7 +73,7 @@ Here's a Linux start script for Jamulus using an old Audigy4 sound card, the lar
 
 This script therefore includes the most important audio fader settings. The second part of the script deals with the JACK connections. I use Guitarix as my guitar effect processor which I plug in in the JACK audio path.
 
-Finally I start Jamulus automatically connecting to the central server.
+Finally I start Jamulus automatically connecting to the directory server.
 
 Here is the script:
 
@@ -153,20 +162,12 @@ You can see the result of these commands if you run `service jamulus status`, or
 
 ## Quality of Service
 
-Jamulus uses DSCP/CS4 to opportunistically deal with bufferbloat.<br>
-DSCP/CS4 is 128 (or 0x80) and is compatible with IPv4 and IPv6.<br>
-Other values can be set with: jamulus --qos `[0..255]`<br>
-( please see the informative RFC4594 and jamulus --help )<br>
-To disable QoS use: --qos 0 
+Jamulus uses DSCP/CS4 opportunistically to deal with buffer bloat, and uses a default DSCP/CS4 value of 128 (or 0x80). This is compatible with IPv4 and IPv6. Other values can be set using the `-Q` option, eg  `-Q [0..255]` (where 0 disables QoS). If you want to explore the effect of non-default settings, see [RFC4594](https://tools.ietf.org/html/rfc4594). However, most people will have no need to do this.
 
-#### Windows Quality of Service instructions
+### Using Quality of Service on Windows
 
-Prior to Windows Vista / Server 2008, Windows allowed software developers to set the
-Quality of Service field on IP traffic.
-With the release of Vista / Server 2008, Microsoft began to overwrite DSCP values
-that were set by applications with the Policy-based QoS layer.
+Jamulus’s QoS settings (including the default) have no effect on Windows because the operating system ignores them. To enable Quality of Service for Jamulus, you must follow these instructions. Note also that you may need to repeat this procedure every time Jamulus is updated.
 
-In order to enable Quality of Service you must follow these instructions:
 
 In Search box beside Start menu Type: Local Group Policy Editor (enter)
 In new window, (click) on the menu icon to display the Actions third panel
