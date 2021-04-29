@@ -53,19 +53,10 @@ function loadserverstat ( $statfilename )
 
 You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Do this with "File > Save Mixer Channels Setup" in your client and load them using "Load Mixer Channels Setup" (or drag/drop them to the mixer window).
 
-## Delegate mixing to a mix master using the --mastermix server mode
-
-By starting a server instance with the `--mastermix` flag, the first client to connect will become the controller, or 'mix master' of the audio mix.
-
-Subsequent joiners will be able to control their own as well as the mix master's pan and gain, but nobody else's (clients will see these faders and buttons grayed out). Instead, they will hear the pan and gain value as set by the mix master.
-
-When the mix master sets a channel to Solo, this will *not* apply to everybody's elses mix. Allowing the mix master to secretly solo people can help to create a good mix without disturbing other clients.
-
-This mode can be valuable for example in choir rehearsals to offload mixing from the singers to a conductor. Or in having a dedicated sound engineer to improve the quality of the overall mix for everybody.
-
 ## Converting a public server to a private one on the fly
 
 You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
+
 
 ## Jamulus client Linux start script
 
