@@ -117,24 +117,36 @@ Jamulus uses DSCP/CS4 opportunistically to deal with buffer bloat, and uses a de
 Jamulus’s QoS settings (including the default) have no effect on Windows because the operating system ignores them. To enable Quality of Service for Jamulus, you must follow these instructions. Note also that you may need to repeat this procedure every time Jamulus is updated.
 
 
-In Search box beside Start menu Type: Local Group Policy Editor (enter)<br>
-In new window, (click) on the menu icon to display the Actions third panel<br>
-Looking at the first panel of the Local Group Policy Editor<br>
-&nbsp;Local Computer Policy<br>
-&nbsp;&nbsp;Computer Configuration<br>
-&nbsp;&nbsp;&nbsp;Windows Settings<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br>
-Looking at the third panel (Actions) of the Local Group Policy Editor<br>
-&nbsp;Policy-based QoS<br>
-&nbsp;&nbsp;More Actions<br>
-&nbsp;&nbsp;&nbsp;Create new Policy (click)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Next<br>
-&nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Next<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Next<br>
-&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Finish<br>
-(Notice Jamulus policy in center panel may be edited)<br>
+In Search box beside Start menu Type: Local Group Policy Editor (enter)
+In new window, (click) on the menu icon to display the Actions third panel
+Looking at the first panel of the Local Group Policy Editor
+&nbsp;Local Computer Policy
+&nbsp;&nbsp;Computer Configuration
+&nbsp;&nbsp;&nbsp;Windows Settings
+&nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)
+Looking at the third panel (Actions) of the Local Group Policy Editor
+&nbsp;Policy-based QoS
+&nbsp;&nbsp;More Actions
+&nbsp;&nbsp;&nbsp;Create new Policy (click)
+&nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus
+&nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32
+&nbsp;&nbsp;&nbsp;&nbsp;Next
+&nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe
+&nbsp;&nbsp;&nbsp;&nbsp;Next
+&nbsp;&nbsp;&nbsp;&nbsp;Next
+&nbsp;&nbsp;&nbsp;&nbsp;UDP
+&nbsp;&nbsp;&nbsp;&nbsp;Finish
+(Notice Jamulus policy in center panel may be edited)
+
+## Delegate mixing to a mix master using the --mastermix server mode
+
+By starting a server instance with the `--mastermix` flag, the first client to connect will become the controller, or 'mix master' of the audio mix.
+
+Subsequent joiners will be able to control their own as well as the mix master's pan and gain, but nobody else's (clients will see these faders and buttons grayed out). Instead, they will hear the pan and gain value as set by the mix master.
+
+When the mix master sets a channel to Solo, this will *not* apply to everybody's elses mix. Allowing the mix master to secretly solo people can help to create a good mix without disturbing other clients.
+
+This mode can be valuable for example in choir rehearsals to offload mixing from the singers to a conductor. Or in having a dedicated sound engineer to improve the quality of the overall mix for everybody.
+
+
 
