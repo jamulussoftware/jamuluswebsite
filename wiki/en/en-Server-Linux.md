@@ -9,205 +9,37 @@ permalink: "/wiki/Server-Linux"
 
 # Server Installation - Linux
 
-
 **_Please ensure you have read the [server overview](Running-a-Server)_**
 
 
-## Running a server with the GUI
+## Running a server with a GUI on a desktop machine
 
-If you plan to run a server on your desktop machine (and you have installed the Jamulus client already), you can run it in your chosen [server mode](Choosing-a-Server-Type) by running Jamulus with the `-s` option as follows:
+If you have installed the Jamulus client, you can run it in your chosen [server mode](Choosing-a-Server-Type) by running Jamulus with the `-s` option as follows:
 
 1. Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros).
 1. Assuming Jamulus is in `/usr/local/bin`, type `Jamulus -s`
 
-Hit return and you should see the server control window. You can stop the server by closing the server window, or by typing CTRL+C in the terminal.
+Hit return and you should see the server control window. You can stop the server by closing the server window, or by using `CTRL+C` in the terminal.
 
-**To configure the server**, please refer to [the Windows & macOS instructions](Server-Win-Mac).
-
-See also [Command Line Options](Command-Line-Options) for other parameters you can set.
+**To configure the server**, please refer to [the Windows & macOS instructions](Server-Win-Mac), and [Command Line Options](Command-Line-Options) for other parameters you can set.
 
 ## Running a "headless" server
 
-The following guide is for running Jamulus as a "pure" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. We also have instructions for [Raspberry Pi](Server-Rpi), which rock too.
-
-* _Jamulus user [Grigory](https://sourceforge.net/u/cidnurg/profile/) maintains a **[Docker image for Jamulus](https://hub.docker.com/r/grundic/jamulus)** which you can use._
-
-### Use the official Debian/Ubuntu headless .deb files
-
-If you're on amd64 Debian/Ubuntu, you may try the compiled .deb packages from GitHub Actions:
+The following is for running Jamulus as a "pure" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. We also have instructions for [Raspberry Pi](Server-Rpi).
 
 1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
-1. Update apt: `sudo apt update`
-1. Install the package: `sudo apt install /path/to/{{ site.download_file_names.deb-headless }}`
-1. Enable the headless server via systemd: `sudo systemctl enable jamulus-headless`
-1. Add the required [command line options](Command-Line-Options) to the systemd service file in `/lib/systemd/system/jamulus-headless.service`.
-1. Reload systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
+1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
+1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`
+1. Enable the headless server process via systemd: `sudo systemctl enable jamulus-headless`
+1. Add your desired [command line options](Command-Line-Options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running a private server).
+1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
+1. Check all is well with `service jamulus-headless status` (hit `q` to get back to the command prompt).
 
-You should now be running a private server!
+## Notes
 
-**Note:** To configure the server, you can add command line flags to the file `/lib/systemd/system/jamulus-headless.service` e.g. make this a public server. Have a look at the [Command Line Options](Command-Line-Options) page.
+You can control Jamulus with the `service` command. For example, to stop the server cleanly:
 
-### Compile sources, create a user
-
-
-1. [Get the sources](Installation-for-Linux#get-jamulus-sources), install the [dependent packages](Installation-for-Linux#install-dependencies) according to the Linux client install guide. Note that **you don't need to install the JACK package(s)** for a headless build. _If you plan to run headless on Gentoo, or are compiling under Ubuntu for use on another Ubuntu machine, [see the footnote](#what-does-the-headless-build-flag-do)._
-1. Compile the sources to ignore the JACK sound library:
-
-~~~
-qmake "CONFIG+=nosound headless" Jamulus.pro
-make clean
-make
-~~~
-
-3. Move the resulting `Jamulus` binary file to a permanent location, or use `sudo make install`. You can now remove the sources directory if you wish.
-
-**The rest of this guide assumes you are using  `/usr/local/bin/Jamulus`**
-
-4. Create a non-privileged system user for the server to run as (will run as user _jamulus_, group _nogroup_):
-
-`sudo adduser --system --no-create-home jamulus`
-
-### Create a start script
-
-Once you have decided which mode you want your server to run in, use systemd to start it up.
-
-Create a systemd unit file that will start the server at boot time (thanks to [David Harrold](https://sourceforge.net/u/dkxl/profile/) for this).
-
-The unit file applies high priority CPU and I/O scheduling to the server process. This is optional (and may be ignored on some hosts).
-
-Note also that the server log entries will go to journalctl (use [journald](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) to see it ).
-
-**Note**: The rest of this guide assumes you are in "public" mode using the `-e` (`--centralserver`) option. This specifies which musical genre list your server will appear in. See [the list of available genres here](Directory-Servers)).
-
-~~~
-[Unit]
-Description=Jamulus-Server
-After=network.target
-
-[Service]
-Type=simple
-User=jamulus
-Group=nogroup
-NoNewPrivileges=true
-ProtectSystem=true
-ProtectHome=true
-Nice=-20
-IOSchedulingClass=realtime
-IOSchedulingPriority=0
-
-#### Change this to set genre, location and other parameters.
-#### See [Command-Line-Options](Command-Line-Options) ####
-ExecStart=/bin/sh -c 'exec /usr/bin/Jamulus -s -n -e anygenre3.jamulus.io -o "yourServerName;yourCity;[country ID]"'
-
-Restart=on-failure
-RestartSec=30
-StandardOutput=journal
-StandardError=inherit
-SyslogIdentifier=jamulus
-
-[Install]
-WantedBy=multi-user.target
-~~~
-
-Copy the unit file to `/etc/systemd/system` and give it permissions:
-
-
-`sudo cp jamulus.service /etc/systemd/system/jamulus.service`
-
-`sudo chmod 644 /etc/systemd/system/jamulus.service`
-
-
-Test that it starts OK:
-
-`sudo systemctl start jamulus`
-
-`sudo systemctl status jamulus`
-
-
-You should see something like this:
-
-~~~
-● jamulus.service
-   Loaded: loaded (/lib/systemd/system/jamulus.service; enabled; vendor preset: enabled)
-   Active: active (running) since Thu 2020-03-26 11:52:34 GMT; 4s ago
- Main PID: 1308 (Jamulus)
-    Tasks: 2 (limit: 4915)
-   CGroup: /system.slice/jamulus.service
-           └─1308 /usr/local/bin/Jamulus -s -n -e jamulus.fischvolk.de -o yourServerName;yourCity;[country ID]
-
-Mar 26 11:52:34 oddjob systemd[1]: Started jamulus.service.
-Mar 26 11:52:35 oddjob jamulus[1308]: - server mode chosen
-Mar 26 11:52:35 oddjob jamulus[1308]: - no GUI mode chosen
-Mar 26 11:52:35 oddjob jamulus[1308]: - directory server: jamulus.fischvolk.de
-Mar 26 11:52:35 oddjob jamulus[1308]: - server info: yourServerName;yourCity;[country ID]
-Mar 26 11:52:35 oddjob jamulus[1308]: - welcome message: Thanks for connecting!
-Mar 26 11:52:35 oddjob jamulus[1308]:  *** Jamulus, Version [version]
-Mar 26 11:52:35 oddjob jamulus[1308]:  *** Internet Jam Session Software
-Mar 26 11:52:35 oddjob jamulus[1308]:  *** Under the GNU General Public License (GPL)
-~~~
-
-If all is well, enable the service to start at boot with:
-
-`sudo systemctl enable jamulus`
-
-You can now also control Jamulus with the `service` command. For example:
-
-`sudo service jamulus status`
-
-shows whether Jamulus is running OK, and the last few lines of the log (where you will see connections recorded).
-Note: Press `q` to exit the service status.
-
-### To update your installation to a new release
-
-Download the new sources as per the [instructions above](Server-Linux#compile-sources-create-a-user) and repeat the compilation in step 2 as if for a new installation or just install the new headless .deb files. If you compiled Jamulus from source, shut down the server, copy the Jamulus binary over the old one and start it back up.
-
-***
-
-See also [Command Line Options](Command-Line-Options) for other parameters you can set.
-
-## Footnotes
-
-### Controlling recordings
-
-When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
-
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
-
-**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
-
-For turning recording on or off (depending on the current state):
-
-~~~
-[Unit]
-Description=Toggle recording state of Jamulus server
-Requisite=Jamulus-Server
-
-[Service]
-Type=oneshot
-ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
-~~~
-
-For starting a new recording:
-
-~~~
-[Unit]
-Description=Start a new recording on Jamulus server
-Requisite=Jamulus-Server
-
-[Service]
-Type=oneshot
-ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
-~~~
-
-_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_
-
-Run `sudo systemctl daemon-reload` to register them for first use.
-
-Now you can run these with the `service start` command, for example:
-
-`sudo service jamulusTogglerec start` (assuming you named your unit file `jamulusTogglerec.service`)
-
-You can see the result of these commands if you run `service jamulus status`, or by viewing the logs.
+`sudo service jamulus-headless stop`
 
 ### Viewing The Logs
 
@@ -233,6 +65,10 @@ Follow (show on screen) Jamulus log messages as they occur:
 
 `journalctl -f -u jamulus`
 
-### What does the "headless" build flag do?
+### Upgrading
 
-Although not strictly necessary, we recommend using the `headless` flag to speed up the build process. Gentoo users may also be able to avoid installing some dependencies as a consequence. [More information here](Compiling#the-headless-build-flag).
+To upgrade your server to a newer version, simply download a new .deb and re-install as step 3.
+
+### Recording
+
+See [this information](/wiki/Tips-Tricks-More#controlling-recording-on-linux-headless-servers) on controlling recordings on headless servers.
