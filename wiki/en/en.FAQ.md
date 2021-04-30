@@ -30,7 +30,7 @@ So it makes sense to minimise any sources of delay or other problems with the si
 
 For the same reason as you need to minimise delay in your signal in order to play in time, you need to make sure you are playing to your own sound that other musicians are hearing. More information on this, and a way of testing your setup to make sure you are obeying this “Golden Rule” [can be found here](/wiki/Client-Troubleshooting).
 
-Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed back headphones turned up as loud as you can to mask your own sound so that you can concentrate on the mix coming back to you from the server.
+Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the server.
 
 ### Do I need a fast Internet connection?
 
