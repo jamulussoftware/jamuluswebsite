@@ -14,10 +14,12 @@
 
 .wikisite main h2 {
    margin-bottom: 0.2em;
+   clear: both;
 }
 
 .wikisite main h3 {
    margin-bottom: 0.5em;
+   clear: both;
 }
 
 .wikisite #ftext {
@@ -36,6 +38,19 @@
 
 .wikisite .button-container {
     margin: .25em 0;
+}
+
+
+figure img {
+  display: block;
+  border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  bottom: 10px;
 }
 
 @media (prefers-color-scheme: dark) {

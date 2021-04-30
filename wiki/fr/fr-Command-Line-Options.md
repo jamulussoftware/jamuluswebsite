@@ -1,54 +1,62 @@
 ---
 layout: wiki
-title: "Options en ligne de commande"
+title: "Command Line Options"
 lang: "fr"
 permalink: "/wiki/Command-Line-Options"
 ---
 
-# Options en ligne de commande
+# Options de la ligne de commande
 
-Si les fonctions les plus courantes de Jamulus peuvent être configurées à l'aide de l'interface graphique, Jamulus peut également être contrôlé à l'aide de ces options lorsqu'il est démarré en ligne de commande. La manière exacte de procéder dépendra de votre système d'exploitation.
+La plupart des fonctions courantes de Jamulus peuvent être définies à l'aide de l'interface graphique, mais ces fonctions et d'autres peuvent également être définies à l'aide d'options données dans une fenêtre de terminal. La manière exacte de procéder dépend de votre système d'exploitation.
 
-Par exemple, sous Windows pour activer l'enregistrement avec l'option `-R` : cliquez-droit sur le raccourci Jamulus et choisissez `Propriétés` > `Cible`. Ajoutez les arguments nécessaires au fichier `Jamulus.exe` :
-
-```shell
-"C:\Program Files (x86)\Jamulus\Jamulus.exe" -s -R "C:\chemin\vers\vos\enregistrements de bœufs"
-```
-
-Pour macOS, lancez une fenêtre de terminal et exécutez Jamulus avec les options souhaitées comme ceci:
+Par exemple, sous Windows, pour qu'un client utilise un fichier de paramètres spécifique, cliquez avec le bouton droit de la souris sur le raccourci Jamulus et choisissez "Propriétés" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :
 
 ```shell
-/Applications/Jamulus.app/Contents/MacOS/Jamulus -s -R "/chemin/vers/vos/enregistrements de bœufs"
+"C:\Program Files (x86)\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini"
 ```
 
-***
+Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :
 
-Vous pouvez voir toutes les options possibles prises en charge par votre version en démarrant Jamulus avec l'option `-h`.
+```shell
+/Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
+```
 
+_Notez que les options suivantes ne modifieront pas les reglages définis dans l'interface graphique._
 
-| Courte | Nom long  | `[...]` signifie paramètre optionnel     |  |
-|--------|-----------|----------------------------------|-----------|
-|    `-c` |`--connect`        | Se connecter à une adresse de serveur donnée au démarrage, format `adresse[:port]`. | (client uniquement) |
-|    `-d` |`--discononquit`   | Déconnecter tous les clients à fermeture | (serveur uniquement) |
-|    `-e` |`--centralserver`  | Rend le serveur public et fixe son genre. Voir aussi `-o`| [Voir la liste](Central-Servers) |
-|    `-f` |`--listfilter`     | Serveurs de la liste blanche s'inscrivant sur la liste de serveur, format `adresse IP 1[;adresse IP 2]` | (serveur central uniquement) [Voir la note note](Choosing-a-Server-Type#3-central). |
-|    `-F` |`--fastupdate`     | Mode taille de trame de 64 échantillons. Réduit la latence si les clients se connectent avec l'option "Activer les petits tampons de réseau". Nécessite un processeur plus rapide pour éviter les décrochages, et plus de bande passante pour les clients actifs. | (serveur uniquement) |
-| `-h,-?` |`--help`           | Ce texte d'aide | (client et serveur) |
-|    `-i` |`--inifile`        | Définir l'emplacement du fichier d'initialisation (écrase la valeur par défaut) | (client (toujours) et serveur (avec IUG)) |
-|    `-j` |`--nojackconnect`  | Désactiver les connexions JACK automatiques | (client uniquement) |
-|    `-l` |`--log` | Activer la journalisation, définir le chemin et le nom du fichier | (serveur uniquement) |
-|    `-m` |`--htmlstatus`     | Activer le fichier de statut HTML, définir le chemin et le nom du fichier | (serveur uniquement) |
-|    `-M` |`--mutestream`     | Démarrer Jamulus en mode silence | (client uniquement) |
-|    `-n` |`--nogui`          | Désactiver l'IUG | (client et serveur) |
-|    `-o` |`--serverinfo`     | Détails sur l'emplacement du serveur dans le format : <br/>`[nom];[ville];[valeur de la locale]` (voir [valeurs](https://doc.qt.io/qt-5/qlocale.html#Country-enum))| (serveurs publics uniquement) |
-|    `-p` |`--port`           | Numéro de port UDP local. 22124 par défaut | (serveur uniquement) |
-|    `-R` |`--recording`      | Inclure un chemin d'accès en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire). | (serveur uniquement) Voir la description dans [paramétrage du serveur](Server-Win-Mac##enregistrement). |
-|       | `--norecord`      | Démarrer l'enregistreur avec l'enregistrement désactivé | (serveur uniquement) |
-|    `-s` |`--server`         | Démarrer en mode serveur | (serveur uniquement) [Voir note](Choosing-a-Server-Type) |
-|    `-t` |`--notranslation`  | Désactiver les traductions | (client et serveur) |
-|    `-T` |`--multithreading` | Activer le multithreading | (serveur uniquement) |
-|    `-u` |`--numchannels`    | Nombre maximum d'utilisateurs. 10 par défaut, 150 au maximum | (serveur  uniquement) |
-|    `-w` |`--welcomemessage` | Accepte le formatage  HTML et CSS en ligne (entre guillemets), ou définit le chemin d'accès vers un fichier texte. | (serveur uniquement) |
-|    `-z` |`--startminimized` | Démarrage minimisé | (serveur uniquement) |
-|       |`--ctrlmidich`     | Canal de contrôle MIDI à écouter et décalage de numéro de contrôle, format : `channel[;offset]` | (client uniquement) voir [Trucs et astuces](Tips-Tricks-More#utilisation-de-ctrlmidich-pour-les-contrôleurs-midi) |
-|       |`--clientname`     | Titre de la fenêtre et nom du client JACK | (client uniquement) |
+### Paramètres généraux (modes client et serveur)
+
+| Raccourci | Nom long 			| `[...]` signifie paramètre facultatif 															| Notes 								  |
+|-----------|-------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------|
+|  `-h,-?`  | `--help`          | Affiche ce texte d'aide                                                                           | 										  |
+|  `-i`     | `--inifile`       | Définit l'emplacement du fichier d'initialisation (remplace la valeur par défaut)                 | Client (toujours) and server (avec IGU) |
+|  `-n`     | `--nogui`         | Désactive l'IGU                                                                                   | 										  |
+|  `-p`     | `--port`          | Numéro du port UDP local. La valeur par défaut est 22124                                          | 										  |
+|  `-Q`     | `--qos`           | Définit la valeur DSCP de la qualité de service. La valeur par défaut est 128. Désactiver avec 0. | QoS ignorée par Windows, consultez [Tips & Tricks](Tips-Tricks-More#quality-of-service). |
+|  `-t`     | `--notranslation` | Désactive les traductions                                                                         |										  |
+|  `-v`     | `--version`       | Affiche les informations sur la version et quitte                                                 | 										  |
+
+### Serveur seulement
+
+| Raccourci | Nom long      | `[...]` signifie paramètre facultatif 																| Notes									  |
+|-------|-------------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------|
+| `-d`  | `--discononquit`  | Déconnecter tous les clients en quittant   														    | 										  | 
+| `-e`  | `--centralserver` | Rend le serveur public et définit son genre. Voir aussi `-o`. 										| Voir [Type de serveur](Choosing-a-Server-Type#3-central) |
+| `-f`  | `--listfilter`    | Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format  `ip address 1[;ip address 2]` | Serveur seulement. [Voir note](Choosing-a-Server-Type#3-central) |
+| `-F`  | `--fastupdate`    | Réduit la latence des clients connectés avec l'option "Activer les petits tampons réseau". Nécessite un processeur plus rapide pour éviter les pertes de données et plus de bande passante pour les clients activés. | |
+| `-l`  | `--log`           | Active l'enregistrement, définir le chemin et le nom de fichier 										|										  |
+| `-L`  | `--licence`       | Affiche une fenêtre d'accord avant que les utilisateurs puissent se connecter						    |										  |
+| `-o`  | `--serverinfo`    | Détails de l'emplacement du serveur dans le format : `[nom];[ville];[locale value]` (voir [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) | Serveurs publics seulement |
+| `-P`  | `--delaypan`      | Commencez avec le panoramique à retardement activé 												| voir [réglages serveur](https://jamulus.io/wiki/Server-Win-Mac#other+options) |
+| `-R`  | `--recording`     | Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire). | voir [réglages serveur](Server-Win-Mac#recording) |
+|       | `--norecord`      | Désactive l'enregistrement lorsqu'il est activé par défaut par -R 									|  	   									  |
+
+### Client seulement
+
+| Raccourci | Nom long      | `[...]` signifie paramètre facultatif                                                              | Notes 									|
+|-----------|---------------|----------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| `-M`  | `--mutestream`    | Démarre Jamulus silencé 																			 |											|
+|       | `--mutemyown`     | Me silencer dans le mix personnel 																 | Headless seulement 						|
+| `-c`  | `--connect`       | Se connecter à l'adresse du serveur donné au démarrage, format `address[:port]` 					 |								 			|
+| `-j`  | `--nojackconnect` | Désactive les connections automatique de JACK 													 |											|
+|       | `--ctrlmidich`    | Canal du contrôleur MIDI à écouter, décalage du numéro de contrôle et numéros CC consécutifs (canaux). Format: `channel[;f*][;p*][;s*][;m*]` 	| voir [Trucs & Astuces](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
+|       | `--clientname`    | Titre de la fenêtre et nom du client JACK 														 |											|

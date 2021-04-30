@@ -7,19 +7,13 @@ permalink: "/wiki/Contribution"
 
 # Contribuer au projet Jamulus
 
-## Logiciel Jamulus
-* Si vous voulez contribuer au code, postez d'abord votre idée sur [le forum (en anglais)](https://github.com/jamulussoftware/jamulus/discussions) afin qu'elle puisse être discutée avant de faire un « pull request » (assurez-vous de lire le [manifeste de Volker pour les contributions](https://github.com/corrados/jamulus/issues/596 (en anglais)), du développeur principal) 
+Si vous trouvez une erreur, une coquille ou quelque chose qui n'est pas à mis à jour (dans n'importe quelle langue) sur ce site web ou dans Jamulus lui-même, vous pouvez <a href="https://github.com/jamulussoftware/jamulus/issues">souligner ce problème comme un bogue</a>.
 
-Voir le [dépôt de Jamulus GitHub (en anglais)](https://github.com/corrados/jamulus) pour plus d'informations.
+Si vous pensez qu'il manque de la documentation ou des informations ou qu'elles peuvent être améliorées, <a href="https://github.com/jamulussoftware/jamulus/discussions">postez à ce sujet sur ce forum</a> pour qu'on en discute d'abord.
 
-## Site web Jamulus
+Si vous souhaitez aider à la traduction, vous devrez disposer d'un compte GitHub et être familier avec l'utilisation de git et de Jekyll. Lisez notre [processus de documentation et de traduction](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md), et [présentez-vous](https://github.com/jamulussoftware/jamulus/discussions) si vous souhaitez vous impliquer. 
 
-* Si vous trouvez une erreur, une faute de frappe ou quelque chose de dépassé (dans n'importe quelle langue) sur le site web, vous pouvez [le signaler comme un problème ici (en anglais)](https://github.com/jamulussoftware/jamuluswebsite/issues).
 
-* Si vous pensez que certaines documentations ou informations manquent ou peuvent être améliorées, postez à ce propos sur le [forum de discussion pertinent (en anglais)](https://sourceforge.net/p/llcon/discussion/) afin que ça puisse d'abord être discuté.
+## Vous voulez contribuer au code ?
 
-Les « pull request » pour le site web devraient ressembler à ceci :
-
-`[code de langue (par exemple fr)] {brève description de vos modifications}`
-
-Voir le [dépôt github du site web (en anglais)](https://github.com/jamulussoftware/jamuluswebsite) pour plus d'informations.
+Consultez nos [directives pour participer au développement](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md).

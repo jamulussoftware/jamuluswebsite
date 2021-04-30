@@ -1,22 +1,24 @@
 ---
 layout: wiki
-title: "Choisir un type de serveur"
+title: "Choosing a Server Type"
 lang: "fr"
 permalink: "/wiki/Choosing-a-Server-Type"
 ---
 
-# Types de serveur
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
 
-Vous pouvez administrer votre serveur dans un de ces trois « modes » (soit à domicile, soit chez un hôte tiers) :
+# Types de Serveurs
+
+Vous pouvez faire fonctionner votre serveur dans l'un des trois "modes" suivants (soit chez vous, soit sur un hôte tiers) :
 
 ### 1. Public
-Votre serveur sera listé dans la liste du [serveur central](Central-Servers) que les clients utilisent par défaut. Les musiciens pourront alors découvrir et se connecter à votre serveur. Il n'est pas forcément nécessaire de le faire fonctionner comme un serveur public puisque beaucoup d'autres personnes en administrent déjà. Il suffit de se connecter à un serveur à faible latence et de commencer à bœuffer.
+Votre serveur sera répertorié dans la liste [liste des serveurs](Directory-Servers) que les clients utilisent par défaut. Les musiciens peuvent alors le découvrir et s'y connecter.  Il n'est pas nécessaire de fonctionner en tant que serveur public puisque de nombreuses autres personnes en utilisent déjà. Il suffit de se connecter à un serveur à faible latence et de commencer à jouer.
 
-![Serveur public](https://user-images.githubusercontent.com/9108457/100002427-d37da980-2dc4-11eb-9a22-ac575cf0d6bf.png)
+<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus public server"></figure>
 
-Ce mode est activé en cochant l'option "Rendre mon serveur public" et (éventuellement) en saisissant les informations relatives à votre serveur
+Ce mode est activé en cochant la case "Rendre mon serveur public..." et en saisissant (facultativement) les informations relatives à votre serveur.
 
-Quand vous utilisez un serveur sans <abbr="Interface utilisateur graphique">IUG</abbr>, la suite devrait permettre de configurer un serveur public :
+Lors de l'exécution sans l'interface graphique ("headless"), la procédure suivante configurerait un serveur public :
 
 ~~~
 Jamulus --nogui --server \
@@ -24,37 +26,37 @@ Jamulus --nogui --server \
         --serverinfo "yourServerName;yourCity;[country ID]"
 ~~~
 
-**Note** : il n'est **pas** nécéssaire de faire de la redirection de port ou de configurer votre routeur pour administrer un serveur public.
+Il n'est **pas** nécessaire de faire une redirection de port ou de configurer votre routeur pour qu'il exécute un serveur public.
 
-Voir aussi les [options en ligne de commande](Command-Line-Options) pour d'autres paramètres que vous pouvez configurer.
+Voir également [Options de la ligne de commande](Command-Line-Options) pour les autres paramètres que vous pouvez définir.
 
 
 ### 2. Privé
+Ce type de serveur ne sera pas répertorié dans une liste de serveurs. Vous devez donner aux musiciens l'adresse de votre serveur pour qu'ils puissent y connecter leurs clients. Voir [Gestion d'un serveur privé](Running-a-Private-Server) pour savoir ce qu'il faut faire pour permettre aux autres de s'y connecter.
 
-Ce type de serveur ne sera pas listé sur un serveur central. Vous devez donner l'adresse de votre serveur aux musiciens pour qu'ils y connectent leurs clients. Voir [Administration d'un serveur privé](Running-a-Private-Server) pour savoir ce qu'il faut faire pour permettre à d'autres de s'y connecter.
+<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus private server"></figure>
 
-![Serveur privé](https://user-images.githubusercontent.com/9108457/100002706-3a02c780-2dc5-11eb-8c7c-816e0cc02ed6.png)
+Ce mode est activé en décochant la case "Rendre mon serveur public...".
 
-Ce mode est activé en décochant l'option « Rendre mon serveur public ».
-
-Lors d'une utilisation sans <abbr title="Interface utilisateur graphique">IUG</abbr>, la suite devrait permettre de configurer un serveur privé :
+Lorsqu'il est exécuté sans l'interface graphique ("headless"), ce qui suit configurerait un serveur privé :
 
 ```shell
 Jamulus --nogui --server
 ```
 
-Voir aussi les [options en ligne de commande](Command-Line-Options) pour d'autres paramètres que vous pouvez configurer.
+Voir également [Options de la ligne de commande](Command-Line-Options) pour les autres paramètres que vous pouvez définir.
 
-### 3. Central
+### 3. Serveur central (annuaire)
+La configuration de votre serveur en tant que serveur central, ou annuaire, ne doit être effectuée que dans des circonstances particulières (par exemple, pour des événements en ligne ou des associations musicales). La plupart des gens peuvent ignorer ce type.
 
-La configuration de votre serveur en tant que serveur central ne doit être effectuée que dans des circonstances particulières (par exemple, pour des événements en ligne ou des associations musicales). La plupart des gens peuvent ignorer ce type.
+Pour afficher les serveurs répertoriés par un serveur d'annuaire personnalisé, les musiciens doivent saisir l'adresse dans le champ de paramètres "Adresse personnalisée du serveur central" de leur client.  Ils verront alors une liste de configuration de connexion générée par ce serveur d'annuaire.
 
-Pour voir les serveurs listés sur un serveur central personnalisé, les musiciens doivent entrer l'adresse dans le champ « Serveur central personnalisé » des paramètres de leur client. Ils verront alors une liste générée par ce serveur central dans les paramètres de connexion.
+Les opérateurs de serveurs normaux peuvent également s'inscrire auprès de votre serveur d'annuaire personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en définissant le votre comme option `--centralserver`.
 
-Les administrateurs de serveurs normaux peuvent également s'inscrire sur votre serveur central personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en paramétrant le vôtre avec l'option `--centralserver`.
+Pour faire fonctionner un serveur en tant que serveur central, il doit être configuré avec `--centralserver localhost` (c'est-à-dire qu'il doit se spécifier comme le serveur d'annuaire à interroger).
 
-Pour démarrer le serveur en tant que serveur central, il doit être configuré avec `--centralserver localhost` (c'est-à-dire, se spécifier comme le serveur central à interroger).
+#### Points de configuration à noter
 
-Si vous voulez contrôler les serveurs qui peuvent s'inscrire sur votre serveur central, vous pouvez activer une liste blanche avec l'option en ligne de commande `--listfilter`. Voir les [options en ligne de commande](Command-Line-Options) pour davantage d'informations sur cette fonctionnalité.
+Si vous voulez contrôler quels serveurs peuvent s'enregistrer grâce à votre serveur central, vous pouvez activer une liste blanche avec l'option de ligne de commande `--listfilter`. Consultez la page [Options de la ligne de commande](Command-Line-Options) pour plus d'informations sur cette fonctionnalité et les autres paramètres que vous pouvez définir.
 
-Voir aussi [les options en ligne de commande](Command-Line-Options) pour les autres paramètres que vous pouvez configurer.
+Lorsque vous exécutez un serveur central public derrière un pare-feu NAT sur un réseau privé, utilisez l'option `--serverpublicip` pour spécifier l'adresse IP publique du ou des serveurs listés par votre serveur central. Ceci est nécessaire pour permettre aux clients de l'Internet public de se connecter à eux via NAT. Notez que pour les serveurs utilisant cette option, vous aurez toujours besoin d'une redirection de port appropriée dans votre routeur/pare-feu.
