@@ -60,7 +60,7 @@ With your sound all set up, you are ready to go. When you connect to a server (y
 
 [screenshot]
 
-If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other musicians. They won’t be able to tell you have done this though. And if you see a “mute” icon next to a player, that means they can’t hear you. 
+If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other musicians. They won’t be able to tell you have done this though. But if you see a “mute” icon next to a player, that means they can’t hear you becuase they've muted you in their mix. 
 
 Note that you can use the Chat facility at any time to message other players while you are connected. The welcome message in the chat may also state some guidelines for use.
 
