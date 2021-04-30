@@ -1,44 +1,65 @@
 # Jamulus Website
 
-This is the home of the [Jamulus website](https://jamulus.io). The goal of this page is to explain what Jamulus is and how to use it.
+This is the content repository for [jamulus.io](https://jamulus.io). Text appearing in the Jamulus software application itself is part of the [main code repository](https://github.com/jamulussoftware/jamulus). The web site is built with Jekyll and Fox-CSS.
+
+### Please also note that discussions should be in English so as to be open to all. 
+
+## Making changes to the English version
+
+(Note that any significant changes must be made to the English first. See the translation process later in this document if you want to get involved with that.)
+
+To edit an individual file, you can use the Github web interface or make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit multiple website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
+
+To view the website offline one your own machine, you will need to clone it locally and use [Jekyll](https://jekyllrb.com/) to build it. Please ask on [in the discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
+
+## Formatting and style
+
+We use [GitHub markdown](https://guides.github.com/features/mastering-markdown/) to format the basic text. Have a look at the markdown in existing pages for examples. 
+
+Note that we use British English spelling and grammar conventions. 
 
 ## Adding pictures
-Unfortunately GitHub doesn't enable picture upload on the normal md editor. Therefore you can attempt to open an issue, upload your image, copy the link to the page you want to integrate it into and then don't submit the issue. See this answer on stack overflow: https://stackoverflow.com/a/26601810
 
-## Contribute a translation
+Use the `{{site.url}}` variable to call an existing image in the corresponding directory for that language. This ensures the correct URL is used:
 
-**Before translating, please have a look at the [CONTRIBUTING.md](CONTRIBUTING.md) file to get familiar with our translation process. Afterwards, check if there's already a discussion thread for your language here: https://github.com/jamulussoftware/jamulus/discussions and participate in it**
+`<img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" …` 
 
-Translations are handled by the [Polyglot Jekyll Plug-in](https://github.com/untra/polyglot).
-If you want to translate a file, you must first know where it is located on this repo:
-
--   General translations (especially for the wiki) can be found in \_includes/wiki/yourlanguagecode folder. These files **must** be translated in order not to break the site.
--   The homepage (https://jamulus.io/) is located in the repo root and named 1-[langcode]-index.html
--   The wiki content can be found in the wiki/ folder. Make sure to read the README.md file in the wiki/ folder.
--  The navigation and general translations can be found in the \_data/yourlanguagecode folder
+If you want to add a new image, use .png format if possible, and if it’s not a screenshot, ask about where you should store it. Localised images must go in a directory for that language (see the example for English, above).
 
 
-To translate a file, please duplicate it and change the `lang:` attribute to the language you want to translate it to. If you want to translate an English page to German, you need to change the `lang: "en"` attribute to `lang: "de"`. This attribute can be found at the top of the file in the front matter (right at the top in between the `---`). Do not change the permalink attribute (It internally links pages with the same content but different languages and enables polyglot to know which page to change to if you change the language via the language picker.)
+## Translating
 
-### Adding a new language
+### Please note: As of April 2021 we are only translating the following sections of the website:
 
-If you want to add a new language, you must follow the instructions on the polyglot site and add the folders/files.
-- Make sure to add your language to the \_config.yml file (in the languages array.)
-- At least, the main includes for the wiki (see \_includes/wiki/) have to be translated.
-- The navigation and general site-wide strings (see the \_data/ folder) and the homepage (see the 1-index.html file in the root of this repo) should be translated.
+- Home page
+- Getting Started
+- Installation pages
 
-Have a look at the README.md files in these folders.
+For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/TRANSLATING.md)
 
-## Tech
+We collect changes to the English version of the site on a "changes" branch first. We then freeze changes prior to a Jamulus software release, and do a translation "sprint" over a couple of weeks when all translation takes place.
 
-This site is built with Jekyll and Fox-CSS.
+### Here’s the overall workflow
 
-## Contribute to the design/site structure
-Please open an issue and see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+1. Changes are first made to en-*.md files and committed to the “changes” branch.
+1. Once we’ve agreed the changes can go live (usually just before a software release), we then create GitHub issues for each language, tagged for that release. You can ask questions about the work there.
+1. We then create a “translation_[versionNo]” branch which contains all relevant changes in a single commit for easy translation (`git branch translation_[versionNo] release && git checkout translation_[versionNo] && git merge --squash changes`).
+1. Translators for each language then update any affected files in their language and open pull requests to merge them into the "translation_[versionNo]” branch. Those pull requests are linked to the relevant GitHub issue in step 2 so they can be tracked.
+1. When all translations are merged (issues will then close automatically), we merge that new branch into the `release` branch, which is automatically made live on the production site.
 
-### A few tips/links
-Since this page uses Jekyll, please have a look at the [Jekyll documentation](https://jekyllrb.com/docs/).
-This project uses the FOX-CSS framework. See the [FOX-CSS documentation](http://www.fox-css.com/documents/).
-CSS files can be found in the assets/css folder.
-The \_layouts folder holds the main layouts for the page.
-More information can be found at the README.md files in (almost) every folder.
+### Points to note
+
+- Each page on the site has a .md or .html language suffixed version.  Most of the website content is in \_includes/wiki/[langCode]. These files must be translated in order not to break the site. The homepage (https://jamulus.io/) is located in the repo root and named 1-[langCode]-index.html
+
+- Please do not add new or significantly modified content to a non-English .md or .html file. All changes must be made on the changes branch in English **first** after being [discussed here](https://github.com/jamulussoftware/jamulus/discussions).
+
+- Please make sure you are aware of what stage of the workflow we are currently at by monitoring the [project board](https://github.com/orgs/jamulussoftware/projects/2), and on the Discord (or Matrix) discussion channel that you will be invited to join. This is where relevant deadlines and information will be posted during the translation sprint.
+
+- Pull requests for translations should have a title which looks like this: `[Tag (Translation)][language code (e.g. en)] {short description of your changes}`
+
+
+## Adding a new language
+
+Make sure to add the language to the \_config.yml file (in the languages array).  At a minimum, the main includes for the wiki (see \_includes/wiki/) have to be translated.
+
+The navigation and general site-wide strings (see the \_data/ folder) and the homepage (see the 1-index.html file in the root of this repo) should also be translated.
