@@ -56,7 +56,7 @@ Once connected to a server, make sure you can hear yourself OK and fix any input
 
 ## Playing for the first time
 
-With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list) and the sliders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a slider down, that user will be quieter, if you move it up, that user will be louder for you.
+With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you.
 
 [screenshot]
 
