@@ -24,7 +24,7 @@ To get Jamulus working with your hardware, please follow the installation guide 
 
 And for now, close all other applications. It’s best to start simple at first.
 
-### Jamulus main window
+## Jamulus main window
 
 When you open Jamulus, you will see a window which looks like this:
 
@@ -34,7 +34,7 @@ When you open Jamulus, you will see a window which looks like this:
 </figure>
 
 
-#### Setting up a profile
+## Setting up a profile
 
 First, let others know who you are. Click on “View” (bar on the top) > “My Profile…” Now you will see this:
 
@@ -46,7 +46,7 @@ First, let others know who you are. Click on “View” (bar on the top) > “My
 
 Fill in at least “Alias/Name” and close the window.
 
-### Connecting to a server and testing your sound
+## Connecting to a server and testing your sound
 
 **Before playing with others, we recommend that you connect to an empty server to test your setup**, and make sure you are listening to the signal coming back from the server (if possible) and not yourself.
 
