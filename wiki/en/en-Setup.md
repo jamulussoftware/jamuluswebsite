@@ -72,9 +72,9 @@ With your sound all set up, you are ready to go. When you connect to a server (y
   <figcaption>The main window when you are connected to a sever</figcaption>
 </figure>
 
-If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other musicians. They won’t be able to tell you have done this though. But if you see a “mute” icon next to a player, that means they can’t hear you becuase they've muted you in their mix. 
+If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other people. They won’t be able to tell you have done this though. But if you see a “mute” icon above a fader, that means they can’t hear you because they've muted your channel in their mix. 
 
-Note that you can use the Chat facility at any time to message other players while you are connected. The welcome message in the chat may also state some guidelines for use.
+Note that you can use the Chat facility at any time to message other people while you are connected. The welcome message in the chat may also state some guidelines for use.
 
 More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual).
 
