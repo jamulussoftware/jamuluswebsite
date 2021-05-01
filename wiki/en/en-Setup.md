@@ -28,14 +28,20 @@ And for now, close all other applications. It’s best to start simple at first.
 
 When you open Jamulus, you will see a window which looks like this:
 
-[screenshot]
+<figure>
+  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>The main window before you connect to a server</figcaption>
+</figure>
 
 
 #### Setting up a profile
 
 First, let others know who you are. Click on “View” (bar on the top) > “My Profile…” Now you will see this:
 
-[screenshot]
+<figure>
+  <img src="{{site.url}}/assets/img/en-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>Let people know who you are</figcaption>
+</figure>
 
 
 Fill in at least “Alias/Name” and close the window.
@@ -48,7 +54,10 @@ Before you connect to a server, you should **not** be able to hear yourself.  Li
 
 Now use the “Connect” button in the Jamulus main window to join a server. A window will now open:
 
-[screenshot]
+<figure>
+  <img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>Connect to a server</figcaption>
+</figure>
 
 The most important thing about servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a server with a ping of less than 15ms if you can. 
 
@@ -58,7 +67,10 @@ Once connected to a server, make sure you can hear yourself OK and fix any input
 
 With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you.
 
-[screenshot]
+<figure>
+  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>The main window when you are connected to a sever</figcaption>
+</figure>
 
 If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other musicians. They won’t be able to tell you have done this though. But if you see a “mute” icon next to a player, that means they can’t hear you becuase they've muted you in their mix. 
 
