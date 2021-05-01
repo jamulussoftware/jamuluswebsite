@@ -116,7 +116,7 @@ The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com
 **Linux**: Works better than on Windows.
 
 **Note:** Ploytec, a German company have developed a very low latency alternative to ASIO4ALL and the native Behringer driver for both Windows and Mac. It is capable of latency in the 2 ms range. Their software driver is somewhat expensive at $60, but you can download and try it out to see if it is worth the money for your situation. The demo download can be found at:
-https://www.usb-audio.com/download/
+[https://www.usb-audio.com/download/](https://www.usb-audio.com/download/)
 
 ***
 
@@ -150,7 +150,7 @@ https://www.usb-audio.com/download/
 
 ***
 
-**[Berhinger XENYX series](https://www.behringer.com/series.html?category=R-BEHRINGER-XENYXSERIES)**, USB digital audio interfaces
+**[Behringer XENYX series](https://www.behringer.com/series.html?category=R-BEHRINGER-XENYXSERIES)**, USB digital audio interfaces
 
 **Windows**: Works, but not great. The [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) does not appear to be very good. Audio latency with this "unsupported" driver seems poor - not better than ASIO4ALL.
 
@@ -163,16 +163,6 @@ _More testing required._
 
 ***
 
-**[Focusrite Scarlett range](https://focusrite.com/en/scarlett)**, USB digital audio interfaces
-
-**Windows**: Works great. If you have issues with the buffer size going to 136, download the updated driver version `4.64.15.598` from [http://beta.focusrite.com/](http://beta.focusrite.com/)
-
-**macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X: around `7.5ms`. Note this is **only the interface latency** not the latency in Jamulus)
-
-**Linux**: works.
-
-***
-
 **[ESI U22 XT](https://www.esi-audio.com/products/u22xt/)**, low cost USB 2.0 Audio interface with ASIO-driver supporting basic audio routing natively
 
 **Windows**: Works. Tested with [native ASIO driver](https://download.esi-audio.com/?w=esi&p=95&g=2&l=en).
@@ -182,6 +172,16 @@ _More testing required._
 **Linux**: Company says it should work.
 
 *Note:* you might need to switch to the microphone inputs by pushing a button on the back of the interface. Buffer size can't be changed within Jamulus. Open the ASIO Driver settings, select "Config" and set the buffer size under "Latency". Local monitoring can be turned down by turning "mix" to the right (see manual).
+
+***
+
+**[Focusrite Scarlett range](https://focusrite.com/en/scarlett)**, USB digital audio interfaces
+
+**Windows**: Works great. If you have issues with the buffer size going to 136, download the updated driver version `4.64.15.598` from [http://beta.focusrite.com/](http://beta.focusrite.com/)
+
+**macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X: around `7.5ms`. Note this is **only the interface latency** not the latency in Jamulus)
+
+**Linux**: works.
 
 ***
 
