@@ -1,7 +1,7 @@
 ---
 layout: redirect
-redirect: "/wiki/Compiling"
+redirect: "https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md"
 lang: "en"
-permalink: "https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md"
+permalink: "/wiki/Compiling"
 category: "hidden"
 ---
