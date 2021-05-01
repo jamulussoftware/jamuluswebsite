@@ -1,7 +1,8 @@
 ---
 layout: redirect
-redirect: "/wiki/Getting-Started"
+redirect: "/wiki/Setup"
 lang: "en"
-permalink: "/wiki/Setup"
+permalink: "/wiki/Getting-Started"
 category: "hidden"
 ---
+
