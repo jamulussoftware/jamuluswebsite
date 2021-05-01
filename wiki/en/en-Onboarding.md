@@ -1,7 +1,8 @@
 ---
 layout: redirect
-redirect: "/wiki/Onboarding"
+redirect: "/wiki/Setup"
 lang: "en"
-permalink: "/wiki/Setup"
+permalink: "/wiki/Onboarding"
 category: "hidden"
 ---
+
