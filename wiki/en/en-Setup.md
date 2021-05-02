@@ -20,7 +20,7 @@ To get Jamulus working with your hardware, please follow the installation guide 
 
 * [Windows](/wiki/Installation-for-Windows)
 * [macOS](/wiki/Installation-for-Macintosh)
-* [Linux](/wiki/Installation-for-Liknux)
+* [Linux](/wiki/Installation-for-Linux)
 
 And for now, close all other applications. It’s best to start simple at first.
 
