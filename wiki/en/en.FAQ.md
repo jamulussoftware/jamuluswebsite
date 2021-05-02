@@ -22,7 +22,7 @@ You can also set up a private server on Jamulus and give others your address to 
 
 ### Why shouldn’t I use wireless equipment?
 
-Whether or not you will be able to play in time with other musicians depends mainly on how much latency you have in your sound signal. An overall delay much bigger than 50ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music.
+Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal. An overall delay much bigger than 50ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music.
 
 So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50ms or more. 
 
@@ -50,4 +50,3 @@ Jamulus works on the client-server principle. Everybody’s audio is sent to a s
 ### Why doesn't Jamulus provide video support?
 
 Adding video support adds a lot of complexity. You can use other software like Jitsi or Zoom if you want to see others when playing (or have an "audience"), but the video will be significantly behind the Jamulus audio. 
-
