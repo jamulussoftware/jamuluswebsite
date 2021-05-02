@@ -14,7 +14,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 1. Download the [latest .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
 1. Update apt: `sudo apt-get update`
-1. Install the package: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`.
+1. Install the package from where you downloaded it: `sudo apt install {{ site.download_file_names.deb-gui }}`.
 1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
 
 Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
@@ -22,13 +22,13 @@ Note that if you need to upgrade Jamulus to a newer version, just download the n
 For installers on other distributions, see [Repology](https://repology.org/project/jamulus/versions). You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts). 
 
 
-## Set up your sound card
+## Set up your hardware
 
 ### Configure JACK with QjackCtl
 Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
 1. Open the command shell e.g. with Ctrl-Alt-T and
 1. Execute the command `qjackctl`. You will see the **Qt JACK Control utility main page**
-2. Configure your audio interface as follows (the exact settings for JACK will depend on what your audio interface/sound card is capable of):
+2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):
 
 - Set the audio **Interface** to the one you want (there may be several in the list)
 - Set the **Sample Rate to 48000**
@@ -46,4 +46,4 @@ If you get problems with sound breaking up (in particular XRUN errors reported b
 
 Take a look at the
 
-[Jamulus Onboarding page](Onboarding){: .button}
+[Jamulus setup page](Setup){: .button}
