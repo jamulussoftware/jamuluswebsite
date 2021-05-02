@@ -5,7 +5,7 @@ lang: "en"
 permalink: "/wiki/Setup"
 ---
 
-# Setup
+# Setup - getting started with Jamulus
 
 To get the best from Jamulus, at a minimum you will need:
 
@@ -81,6 +81,5 @@ More information about using Jamulus can be found in the [Software Manual](/wiki
 ## Troubleshooting
 
 Having audio trouble? Can't see servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions). 
-
 
 
