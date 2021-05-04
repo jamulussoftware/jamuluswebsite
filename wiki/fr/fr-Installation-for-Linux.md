@@ -27,7 +27,6 @@ wget https://github.com/corrados/jamulus/archive/latest.tar.gz
 tar -xvf latest.tar.gz
 ```
 
-
 ## Installation des dépendances
 
 Tout d'abord, mettez à jour la liste des paquets (par ex. sur les distributions basées sur Debian avec `sudo apt-get update`).
@@ -54,7 +53,6 @@ sudo apt-get install qjackctl
 
 Vous pouvez également envisager d'utiliser un [noyau à faible latence (en anglais)](https://help.ubuntu.com/community/UbuntuStudio/RealTimeKernel) (ex. pour Ubuntu 18.04 : `sudo apt-get install linux-lowlatency-hwe-18.04`).
 
-
 ## Compilons ce vilain garçon
 
 Maintenant, `cd` dans le répertoire des sources de Jamulus que avez téléchargé :
@@ -70,7 +68,6 @@ make clean
 make
 sudo make install
 ```
-
 
 ## Configurez votre interface audio
 

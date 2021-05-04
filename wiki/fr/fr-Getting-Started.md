@@ -1,11 +1,11 @@
 ---
 layout: wiki
-title: "Premier pas"
+title: "Premiers pas"
 lang: "fr"
 permalink: "/wiki/Getting-Started"
 ---
 
-# Premier pas
+# Premiers pas
 
 ## Pré-requis
 
