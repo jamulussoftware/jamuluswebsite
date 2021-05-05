@@ -13,7 +13,6 @@ Si vous pensez qu'il manque de la documentation ou des informations ou qu'elles 
 
 Si vous souhaitez aider à la traduction, vous devrez disposer d'un compte GitHub et être familier avec l'utilisation de git et de Jekyll. Lisez notre [processus de documentation et de traduction](https://github.com/jamulussoftware/jamuluswebsite/blob/changes/CONTRIBUTING.md), et [présentez-vous](https://github.com/jamulussoftware/jamulus/discussions) si vous souhaitez vous impliquer. 
 
-
 ## Vous voulez contribuer au code ?
 
 Consultez nos [directives pour participer au développement](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md).
