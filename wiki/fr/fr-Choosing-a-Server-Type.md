@@ -46,10 +46,10 @@ Jamulus --nogui --server
 
 Voir également [Options de la ligne de commande](Command-Line-Options) pour les autres paramètres que vous pouvez définir.
 
-### 3. Serveur central (annuaire)
-La configuration de votre serveur en tant que serveur central, ou annuaire, ne doit être effectuée que dans des circonstances particulières (par exemple, pour des événements en ligne ou des associations musicales). La plupart des gens peuvent ignorer ce type.
+### 3. Serveur annuaire
+La configuration de votre serveur en tant que serveur annuaire ne doit être effectuée que dans des circonstances particulières (par exemple, pour des événements en ligne ou des associations musicales). La plupart des gens peuvent ignorer ce type.
 
-Pour afficher les serveurs répertoriés par un serveur d'annuaire personnalisé, les musiciens doivent saisir l'adresse dans le champ de paramètres "Adresse personnalisée du serveur central" de leur client.  Ils verront alors une liste de configuration de connexion générée par ce serveur d'annuaire.
+Pour afficher les serveurs répertoriés par un serveur d'annuaire personnalisé, les musiciens doivent saisir l'adresse dans le champ de paramètres "Adresse personnalisée du serveur annuaire" de leur client.  Ils verront alors une liste de configuration de connexion générée par ce serveur d'annuaire.
 
 Les opérateurs de serveurs normaux peuvent également s'inscrire auprès de votre serveur d'annuaire personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en définissant le votre comme option `--centralserver`.
 
@@ -59,4 +59,4 @@ Pour faire fonctionner un serveur en tant que serveur central, il doit être con
 
 Si vous voulez contrôler quels serveurs peuvent s'enregistrer grâce à votre serveur central, vous pouvez activer une liste blanche avec l'option de ligne de commande `--listfilter`. Consultez la page [Options de la ligne de commande](Command-Line-Options) pour plus d'informations sur cette fonctionnalité et les autres paramètres que vous pouvez définir.
 
-Lorsque vous exécutez un serveur central public derrière un pare-feu NAT sur un réseau privé, utilisez l'option `--serverpublicip` pour spécifier l'adresse IP publique du ou des serveurs listés par votre serveur central. Ceci est nécessaire pour permettre aux clients de l'Internet public de se connecter à eux via NAT. Notez que pour les serveurs utilisant cette option, vous aurez toujours besoin d'une redirection de port appropriée dans votre routeur/pare-feu.
+Lorsque vous exécutez un serveur annuaire public derrière un pare-feu NAT sur un réseau privé, utilisez l'option `--serverpublicip` pour spécifier l'adresse IP publique du ou des serveurs listés par votre serveur annuaire. Ceci est nécessaire pour permettre aux clients de l'Internet public de se connecter à eux via NAT. Notez que pour les serveurs utilisant cette option, vous aurez toujours besoin d'une redirection de port appropriée dans votre routeur/pare-feu.
