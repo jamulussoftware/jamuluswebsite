@@ -15,7 +15,7 @@ Non. Les musiciens sur un serveur Jamulus jouent simplement en temps réel ensem
 
 ### Comment puis-je savoir si je peux rejoindre un serveur ? Existe-t-il des règles ?
 
-En général, si quelqu'un met en place un serveur public, alors [par définition] (/wiki/Choosing-a-Server-Type) il accepte que tout le monde puisse y jouer. Jamulus n'a pas de protection par mot de passe ni d'autres mécanismes d'authentification. Cependant, certains serveurs peuvent indiquer leur politique dans le message de bienvenue que vous verrez dans la fenêtre de discussion.
+En général, si quelqu'un met en place un serveur public, alors [par définition](/wiki/Choosing-a-Server-Type) il accepte que tout le monde puisse y jouer. Jamulus n'a pas de protection par mot de passe ni d'autres mécanismes d'authentification. Cependant, certains serveurs peuvent indiquer leur politique dans le message de bienvenue que vous verrez dans la fenêtre de discussion.
 
 Vous pouvez également créer un serveur privé sur Jamulus et donner aux autres votre adresse pour qu'ils s'y connectent. Consultez [cette page pour plus d'informations](/wiki/Running-a-Server).
 
@@ -27,7 +27,7 @@ Il est donc logique de minimiser les sources de retard ou autres problèmes lié
 
 ### Pourquoi ne devrais-je pas écouter mon propre signal ?
 
-Pour la même raison que vous devez minimiser le retard de votre signal afin de jouer en temps voulu, vous devez vous assurer que vous jouez sur votre propre son que les autres musiciens entendent. Vous trouverez plus d'informations à ce sujet, ainsi qu'un moyen de tester votre installation pour vous assurer que vous respectez cette "règle d'or" [ici] (/wiki/Client-Troubleshooting).
+Pour la même raison que vous devez minimiser le retard de votre signal afin de jouer en temps voulu, vous devez vous assurer que vous jouez sur votre propre son que les autres musiciens entendent. Vous trouverez plus d'informations à ce sujet, ainsi qu'un moyen de tester votre installation pour vous assurer que vous respectez cette "règle d'or" [ici](/wiki/Client-Troubleshooting).
 
 Bien sûr, si vous jouez d'un instrument acoustique ou si vous êtes chanteur, il sera difficile d'exclure votre son "local". Mais vous devriez au moins essayer de le faire, par exemple en utilisant un casque fermé, réglé aussi fort que possible pour masquer votre propre son. Vous pourrez ainsi vous concentrer sur le mixage qui vous parvient du serveur.
 
@@ -37,7 +37,7 @@ Pour la plupart des gens, une connexion à large bande standard (par exemple, 10
 
 ### Dois-je faire tourner un serveur ?
 
-Non. Si vous souhaitez simplement vous connecter aux serveurs d'autres personnes, tout ce dont vous avez besoin est un client. [Lisez ceci si vous pensez avoir besoin de faire tourner votre propre serveur](/wiki/Running-a-Server). 
+Non. Si vous souhaitez simplement vous connecter aux serveurs d'autres personnes, tout ce dont vous avez besoin est un client. Lisez ceci si vous pensez avoir besoin de [faire tourner votre propre serveur](/wiki/Running-a-Server). 
 
 ### Comment fonctionne Jamulus (en général) ?
 

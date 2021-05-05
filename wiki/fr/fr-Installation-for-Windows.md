@@ -8,7 +8,7 @@ permalink: "/wiki/Installation-for-Windows"
 {% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
 
 # Installation sous Windows
-Assurez-vous d'avoir déjà lu la page [Premier pas](Getting-Started).
+Assurez-vous d'avoir déjà lu la page [configuration](Getting-Started).
 1. **Téléchargez et installez un pilote ASIO**. Il est recommandé d'utiliser une interface audio avec un pilote ASIO natif. Si vous n'avez pas d'interface audio externe, vous devrez probablement installer un pilote générique comme ASIO4ALL. Pour plus d'informations, consultez la section [ASIO](#asio).
 1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
 **Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
