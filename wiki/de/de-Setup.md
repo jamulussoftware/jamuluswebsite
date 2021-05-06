@@ -8,12 +8,13 @@ permalink: "de/wiki/Setup"
 Um das Beste von Jamulus zu bekommen, brauchst Du mindestens:
 
 Eine kabelgebundene Internetverbindung (kein WLAN - siehe FAQ)
+Kabelgebundene Kopfhörer (weder Bluetooth noch Lautsprecher - siehe FAQ)
 
+Ein vernünftiges Audiointerface, Soundkarte und Mikrofon (siehe diese Auflistung für Beispiele)
+Falls Du Fragen dazu hast, schau mal in die Diskussion rein
 
-A wired internet connection (not wi-fi - see the FAQ)
-Wired headphones (not Bluetooth or speakers - see the FAQ)
-A reasonable audio device, sound card and/or mic (see this list for examples)
-If you have any questions, please see the Discussions
+Installation
+
 
 Installation
 
