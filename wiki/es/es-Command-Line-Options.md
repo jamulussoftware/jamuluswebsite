@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Command Line Options"
-lang: "en"
+title: "Opciones de Línea de Comandos"
+lang: "es"
 permalink: "/wiki/Command-Line-Options"
 ---
 
