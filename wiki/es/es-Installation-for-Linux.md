@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Installation for Linux"
-lang: "en"
+title: "Instalación en Linux"
+lang: "es"
 permalink: "/wiki/Installation-for-Linux"
 ---
 
