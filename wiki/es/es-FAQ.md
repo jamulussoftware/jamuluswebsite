@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "FAQ"
-lang: "en"
+lang: "es"
 permalink: "/wiki/FAQ"
 ---
 
