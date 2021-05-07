@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Server Installation - Windows and macOS"
-lang: "en"
+title: "Instalación del Servidor - Windows y macOS"
+lang: "es"
 permalink: "/wiki/Server-Win-Mac"
 ---
 
@@ -16,7 +16,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 * **Usuarios de macOS** - Haz doble cilc en el icono de "Jamulus server" en Aplicaciones (suponiendo que has depositado los archivos allí siguiendo [estas instrucciones](Installation-for-Macintosh)).
 
-* **Usuarios de Linux** - Consulta las [instrucciones para el servidor con interfaz gráfica](Server-Linux#running-a-server-with-the-gui).
+* **Usuarios de Linux** - Consulta las [instrucciones para el servidor con interfaz gráfica](Server-Linux#ejecutar-el-servidor-con-interfaz-grafica-en-un-pc-de-escritorio).
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-setup.png" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
@@ -47,7 +47,7 @@ Primero activa la grabación por parte del servidor estableciendo el Directorio 
 
 _Nota: Cuando tu servidor está grabando, los clientes mostrarán un mensaje informando de que la grabación está activa._
 
-Para servidores "headless": puedes controlar la función de grabación [siguiendo estas instrucciones](Server-Linux#controlling-recordings).
+Para servidores "headless": puedes controlar la función de grabación [siguiendo estas instrucciones](Server-Linux#grabación).
 
 ### Paneo con retardo
 
@@ -58,12 +58,12 @@ Esta opción utiliza las pequeñas diferencias en el tiempo de llegada del sonid
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
-Deja este campo vacío a menos que necesites listar tu servidor en un [servidor de directorio privado](Choosing-a-Server-Type#3-central))
+Deja este campo vacío a menos que necesites listar tu servidor en un [servidor de directorio privado](Choosing-a-Server-Type#3-directorio))
 
 
 **Usuarios de Windows** - Si quieres que el servidor arranque automáticamente al iniciar el sistema, activa la casilla correspondiente.
 
-(Deja el campo de "Dirección Personalizada Servidor de Directorio" vacío a menos que necesites listar tu servidor en un [servidor de directorio privado](Choosing-a-Server-Type#3-directory))
+(Deja el campo de "Dirección Personalizada Servidor de Directorio" vacío a menos que necesites listar tu servidor en un [servidor de directorio privado](Choosing-a-Server-Type#3-directorio))
 
 
 ***
