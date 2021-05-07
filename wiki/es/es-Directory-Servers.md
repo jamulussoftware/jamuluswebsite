@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Directory Servers"
-lang: "en"
+title: "Servidores de Directorio"
+lang: "es"
 permalink: "/wiki/Directory-Servers"
 ---
 
