@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Quality, Delay and Bandwidth"
-lang: "en"
+title: "Calidad, Retardo y Ancho de Banda"
+lang: "es"
 permalink: "/wiki/Network-Requirements"
 ---
 

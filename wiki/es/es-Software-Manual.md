@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Software Manual"
-lang: "en"
+title: "Manual de Software"
+lang: "es"
 permalink: "/wiki/Software-Manual"
 ---
 # Manual de Software de Jamulus

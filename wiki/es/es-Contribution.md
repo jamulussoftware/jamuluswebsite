@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Contribution"
-lang: "en"
+title: "Contribución"
+lang: "es"
 permalink: "/wiki/Contribution"
 ---
 

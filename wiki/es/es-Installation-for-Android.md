@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Installation for Android"
-lang: "en"
+title: "Instalación en Android"
+lang: "es"
 permalink: "/wiki/Installation-for-Android"
 ---
 

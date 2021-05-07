@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Choosing a Server Type"
-lang: "en"
+title: "Elegir un Tipo de Servidor"
+lang: "es"
 permalink: "/wiki/Choosing-a-Server-Type"
 ---
 

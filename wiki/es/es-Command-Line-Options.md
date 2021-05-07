@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Command Line Options"
-lang: "en"
+title: "Opciones de Línea de Comandos"
+lang: "es"
 permalink: "/wiki/Command-Line-Options"
 ---
 
@@ -44,15 +44,15 @@ _Nótese que las siguientes opciones no alterarán las configuraciónes hechas e
 | Corto | Nombre largo | `[...]` significa parámetro opcional | Notas |
 |-------|-------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | `-d` | `--discononquit` | Desconectar todos los clientes al salir |                                                                          |
-| `-e` | `--centralserver` | Hace que el servidor sea público y establece el género. Ver también `-o` | Ver [tipos de servidores](Choosing-a-Server-Type#3-directory) |
-| `-f` | `--listfilter` | Lista blanca de servidores registrándose en la lista de servidores, formato `dirección ip 1[;dirección ip 2]` | Solo servidores de directorio. [Ver nota](Choosing-a-Server-Type#3-directory) |
+| `-e` | `--centralserver` | Hace que el servidor sea público y establece el género. Ver también `-o` | Ver [tipos de servidores](Choosing-a-Server-Type#3-directorio) |
+| `-f` | `--listfilter` | Lista blanca de servidores registrándose en la lista de servidores, formato `dirección ip 1[;dirección ip 2]` | Solo servidores de directorio. [Ver nota](Choosing-a-Server-Type#3-directorio) |
 | `-F` | `--fastupdate` | Reduce la latencia si el cliente se conecta con la opción "Activar Buffers Pequeños". Requiere un procesador potente para evitar cortes, y más ancho de banda hacia clientes activados. |                                                                          |
 | `-l` | `--log` | Habilitar registro, establece ruta y nombre del archivo |                                                                          |
 | `-L` | `--licence` | Muestra una ventana de aceptación para que los usuarios se puedan conectar |                                                                          |
 | `-m` | `--htmlstatus` | Habilita un archivo de estado HTML, establece una ruta y un nombre de archivo |                                                                          |
 | `-o` | `--serverinfo` | Detalles de localización del servidor en el formato: `[nombre];[ciudad];[valor locale]` (ver [valores](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) | Solo servidores públicos |
-| `-P` | `--delaypan` | Iniciar con paneo con retardo | Ver [Configuración del Servidor](https://jamulus.io/wiki/Server-Win-Mac#other+options) |
-| `-R` | `--recording` | Incluye una ruta editable donde se deben guardar los archivos (entrecomillado si procede). | Ver [Configuración del Servidor](Server-Win-Mac#recording). |
+| `-P` | `--delaypan` | Iniciar con paneo con retardo | Ver [Configuración del Servidor](https://jamulus.io/wiki/Server-Win-Mac#otras-opciones) |
+| `-R` | `--recording` | Incluye una ruta editable donde se deben guardar los archivos (entrecomillado si procede). | Ver [Configuración del Servidor](Server-Win-Mac#grabación). |
 |       | `--norecord` | Desactiva la grabación cuando se habilita por defecto con `-R` |                                                                          |
 |       | `--serverbindip` | Especifica la dirección IP a la que vincularse |
 
@@ -64,7 +64,7 @@ _Nótese que las siguientes opciones no alterarán las configuraciónes hechas e
 |       | `--mutemyown` | Silenciarme en mi mezcla personal | Solo headless |
 | `-c` | `--connect` | Conectar con una dirección de servidor al arrancar, formato `dirección[:puerto]` |                                                                             |
 | `-j` | `--nojackconnect` | Deshabilitar conexiones automáticas de JACK |                                                                             |
-|       | `--ctrlmidich` | Canal para recibir mensajes de controlador MIDI, compensación de número de control y números CC consecutivos (canales). Formato: `canal[;f<comp>*<canales>][;p<comp>*<canales>][;s<comp>*<canales>][;m<comp>*<canales>]` | Ver [Consejos y Trucos](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
+|       | `--ctrlmidich` | Canal para recibir mensajes de controlador MIDI, compensación de número de control y números CC consecutivos (canales). Formato: `canal[;f<comp>*<canales>][;p<comp>*<canales>][;s<comp>*<canales>][;m<comp>*<canales>]` | Ver [Consejos y Trucos](Tips-Tricks-More#Utilizar-ctrlmidich-para-controladores-MIDI) |
 |       | `--clientname` | Título de ventana y nombre de cliente en JACK |                                                                             |
 
 

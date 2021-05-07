@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Setup"
-lang: "en"
+title: "Configuración"
+lang: "es"
 permalink: "/wiki/Setup"
 ---
 
