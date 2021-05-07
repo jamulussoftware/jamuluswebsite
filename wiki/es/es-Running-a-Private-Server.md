@@ -1,11 +1,11 @@
 ---
 layout: wiki
 title: "Running a Private Server"
-lang: "es"
+lang: "en"
 permalink: "/wiki/Running-a-Private-Server"
 ---
 
-{% include breadcrumb.html root="Utilización de Jamulus" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
+{% include breadcrumb.html root="Más" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
 
 # Ejecutar un Servidor Privado
 
@@ -16,8 +16,8 @@ Esta guía presupone que vas a ejecutar un servidor privado en tu red doméstica
 Se recomienda que pruebes a ejecutar tu servidor en **modo público primero** para así acotar cualquier problema posterior en modo privado.
 
 ## Operar un servidor privado tras un router doméstico
-### Validación de puertos
-Para operar un servidor privado, necesitas habilitar el redireccionamiento de puertos en tu router. _(Si tienes curiosidad sobre por qué hay que hacer esto para los servidores privados pero no para los públicos, consulta [esta nota](#nota-para-frikis).)_
+### Redireccionamiento de puertos
+Para operar un servidor privado, necesitas habilitar el redireccionamiento de puertos en tu router. _(Si tienes curiosidad sobre por qué hay que hacer esto para los servidores privados pero no para los públicos, consulta [esta nota](#footnote-for-geeks).)_
 
 Normalmente, las personas de fuera de tu red doméstica no pueden ver lo que sucede dentro de ella. Por tanto, si quieres operar un servidor Jamulus en casa, tienes que abrir una puerta en tu router para dejar que clientes de Jamulus puedan conectarse a él.
 
@@ -25,7 +25,7 @@ Normalmente, las personas de fuera de tu red doméstica no pueden ver lo que suc
 
 La configuración exacta del redireccionamiento de puertos difiere para cada router. Aquí hay un ejemplo de esta configuración en un router Linksys:
 
-![Linksysportforwarding](https://user-images.githubusercontent.com/4561747/97542495-bc62bc00-19be-11eb-8e54-b6e906e676f6.jpg)
+<figure><img src="{{site.url}}/assets/img/en-screenshots/linksys-port-forward.png" loading="lazy" alt="Image of a Linksys router's port forwarding settings"></figure>
 
 Para más ayuda ver [portforward.com](https://portforward.com).
 
@@ -49,9 +49,6 @@ Nótese también que tu router doméstico puede cambiar la dirección IP del ord
 
 Una de las muchas características de Jamulus que lo hacen orgásmicamente maravilloso es que puedes montar un servidor en segundos. ¿Pero los servidores públicos por qué no necesitan la validación de puertos?
 
-Normalmente, los cortafuegos NAT impiden las peticiones externas desde fuera de la red local. El tráfico entrante solo es posible para paquetes _relacionados con una petición saliente_ (estrictamente hablando, paquetes de "relación" y "establecimiento" con una conexión inicial saliente). En modo público, cuando un servidor Jamulus se conecta a un Servidor Central, inicia una conexión saliente. De ahí en adelante, el Servidor Central envía "pings" de conexión (establecimiento/relación; no pings ICMP) a ese servidor a intervalos regulares para mantener abierto(s) el/los puerto(s) relevantes en el router/cortafuegos.
+Normalmente, los cortafuegos NAT impiden las peticiones externas desde fuera de la red local. El tráfico entrante solo es posible para paquetes _relacionados con una petición saliente_ (estrictamente hablando, paquetes de "relación" y "establecimiento" con una conexión inicial saliente). En modo público, cuando un servidor Jamulus se conecta a un Servidor de Directorio, inicia una conexión saliente. De ahí en adelante, el Servidor de Directorio envía "pings" de conexión (establecimiento/relación; no pings ICMP) a ese servidor a intervalos regulares para mantener abierto(s) el/los puerto(s) relevantes en el router/cortafuegos.
 
 Sin embargo, en modo privado los clientes tienen que _iniciar_ conexiones a la red del servidor. Los cortafuegos NAT impiden esto, por lo que tienes que decirles que permitan peticiones de conexión entrantes en el puerto que Jamulus utiliza, mediante el redireccionamiento de puertos.
-
-
-
