@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Tips, Tricks and More"
-lang: "en"
+title: "Consejos, Trucos y Más"
+lang: "es"
 permalink: "/wiki/Tips-Tricks-More"
 ---
 
@@ -111,7 +111,7 @@ Asegúrate de que el puerto de salida de tu dispositivo MIDI esté conectado al 
 
 ## Controlar grabaciones en servidores Linux "headless"
 
-Cuando se utiliza la [función de grabación](Server-Win-Mac#recording) con la `opción de la línea de comandos` [-R](Command-Line-Options), si el servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un directorio nuevo. SIGUSR2 conmutará entre grabación activa/inactiva.
+Cuando se utiliza la [función de grabación](Server-Win-Mac#grabación) con la `opción de la línea de comandos` [-R](Command-Line-Options), si el servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un directorio nuevo. SIGUSR2 conmutará entre grabación activa/inactiva.
 
 Para enviar estas señales utilizando systemd, crea los siguientes dos archivos `.service` en `/etc/systemd/system`, dándoles un nombre apropiado (por ej. `nuevaGrabación-Jamulus-server.service`).
 
