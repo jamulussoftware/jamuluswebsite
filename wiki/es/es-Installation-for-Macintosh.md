@@ -22,7 +22,7 @@ _Puedes eliminar la carpeta en el directorio de Descargas que contiene el archiv
 
 ## "Jamulus" no puede abrirse porque no se puede verificar el desarrollador
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/verification-mac.png" loading="lazy" alt="Image of a macOS warning screen for Jamulus warning the developer cannot be verified"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/verification-mac.png" loading="lazy" alt="Image of a macOS warning screen for Jamulus warning the developer cannot be verified"></figure>
 
 La primera vez que trates de hacer doble clic en Jamulus para ejecutarlo, probablemente verás un mensaje diciendo que no puede abrirse. De momento no realizamos la firma de código para Jamulus (es bastante caro).
 
