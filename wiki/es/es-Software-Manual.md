@@ -9,22 +9,22 @@ permalink: "/wiki/Software-Manual"
 ## Ventana Principal
 
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Image of the Jamulus main window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" loading="lazy" alt="Image of the Jamulus main window"></figure>
 
 ### LEDs de Estado
 
 
 El LED de estado de ** Retardo** muestra el estado actual del retardo de audio:
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" loading="lazy" alt="Image of a green LED symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/led-green.png" loading="lazy" alt="Image of a green LED symbol"></figure>
 
 **Verde** - El retardo es perfecto para una jam session
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-yellow.png" loading="lazy" alt="Image of a yellow LED symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/led-yellow.png" loading="lazy" alt="Image of a yellow LED symbol"></figure>
 
 **Amarillo** - Una sesión aún es posible pero quizá sea más difícil tocar
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/led-red.png" loading="lazy" alt="Image of a green red symbol"></figure>
 
 **Rojo** - El retardo es demasiado grande para tocar
 
@@ -38,7 +38,7 @@ El LED de estado de **Buffers** muestra el estado actual del flujo de audio. Si 
 
 ### Nivel de entrada
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/input-level.png" loading="lazy" alt="Image of an input level meter"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/input-level.png" loading="lazy" alt="Image of an input level meter"></figure>
 
 Esto muestra los niveles de los dos canales estéreo de tu entrada de audio.
 Asegúrate de no clipear la señal de entrada para evitar distorsiones de la señal de audio (los LEDs indicarán el clipeo cuando suceda).
@@ -46,23 +46,23 @@ Asegúrate de no clipear la señal de entrada para evitar distorsiones de la se�
 
 ### Botón de chat
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/chat-window.png" loading="lazy" alt="Image of a chat window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/chat-window.png" loading="lazy" alt="Image of a chat window"></figure>
 
 El texto escrito en la ventana del chat es enviado a todos los clientes conectados. Si llega un nuevo mensaje de chat y la ventana no está abierta, se abrirá automáticamente para todos los clientes.
 
 ### Ventana de perfil
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-window.png" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/profile-window.png" loading="lazy" alt="Image of a profile window"></figure>
 
 Desde el menú de Ver, selecciona Mi Perfil... para establecer tu Alias/Nombre, mostrado debajo de tu fader en la ventana principal del cliente de Jamulus. Si se establece un instrumento y/o un país, los iconos de estas selecciones también se mostrarán bajo tu fader. El nivel de habilidad cambia el color de fondo de la etiqueta del fader y la ciudad se muestra en el tooltip de la etiqueta (ver pantallazo abajo).
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/profile-tooltip.png" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
 
 ### Botón Conexión/Desconexión
 
 Abre una ventana donde puedes seleccionar un servidor. Si estás conectado, pulsar este botón finalizará la sesión.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" loading="lazy" alt="Image of a server connection window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" loading="lazy" alt="Image of a server connection window"></figure>
 
 La ventana de Configuración de Conexión muestra una lista de servidores disponibles junto con el número de usuarios conectados y el número máximo de los mismos soportado. Los operadores de servidores pueden registrarlos en listas (mayormente definidas por género, aunque algunas pueden referirse a ubicación o a todos los géneros). Utiliza el menú desplegable de Lista para elegir un género, haz clic sobre el servidor al que te quieres unir y otra vez sobre el botón de Conectar para conectarte. También puedes hacer doble clic sobre el nombre del servidor. Los servidores permanentes (aquellos que llevan más de 24 horas en la lista) se muestran en negrita.
 
@@ -77,19 +77,19 @@ Corta tu flujo de audio al servidor de modo que te escucharás y verás tus prop
 
 ### Efecto Reverb
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/reverb.png" loading="lazy" alt="Image of an audio reverb slider"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/reverb.png" loading="lazy" alt="Image of an audio reverb slider"></figure>
 
 Se puede aplicar un efecto de reverberación a un canal local de audio mono o a ambos canales en modo estéreo. Se puede modificar la selección de canales en modo mono y el nivel de reverberación. Por ejemplo, si la señal del micrófono va por el canal derecho de la tarjeta de audio y se desea aplicar reverberación, cambia el selector de canal a derecho y sube el fader hasta alcanzar el nivel de reverberación deseado.
 
 ### Control local de paneo / balance
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/pan-slider.png" loading="lazy" alt="Image of a pan/balance slider"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/pan-slider.png" loading="lazy" alt="Image of a pan/balance slider"></figure>
 
 Controla los niveles relativos de los canales locales de audio derecho e izquierdo. Para una señal mono actúa como paneo entre los dos canales. Por ejemplo, si se conecta un miocrófono al canal derecho y un instrumento al izquierdo que suena mucho más alto que el micrófono, mueve el fader para aumentar el volumen relativo del micrófono.
 
 ### Mezclador de audio del servidor
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/mixer-channles.png" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
 
 La ventana del mezclador de audio muestra cada usuario conectado al servidor (incluyéndote a ti).
 Los faders te permiten ajustar el nivel de lo que escuchas sin afectar a lo que escuchan los demás.
@@ -114,17 +114,17 @@ Si el operador del servidor ha habilitado la grabación, verás un mensaje sobre
 
 ## Ventana de Configuración
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-window.png" loading="lazy" alt="Image of a settings window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/settings-window.png" loading="lazy" alt="Image of a settings window"></figure>
 
 ### Tarjeta de sonido
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/device-select-windows.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
-{<figure><img src="{{site.url}}/assets/img/en-screenshots/device-select-mac.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/device-select-windows.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
+{<figure><img src="{{site.url}}/assets/img/es-screenshots/device-select-mac.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
 El driver ASIO (tarjeta de sonido) se puede seleccionar utilizando Jamulus en el sistema operativo Windows. Si el driver ASIO no es válido se mostrará un mensaje de error y el anterior driver válido será seleccionado. En macOS, se puede seleccionar el hardware de entrada y salida.
 
 ### Mapeo canales entrada/salida
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/channel-mapping.png" loading="lazy" alt="Image of Input and output channel mapping"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/channel-mapping.png" loading="lazy" alt="Image of Input and output channel mapping"></figure>
 
 Si el dispositivo de audio ofrece más de un canal de entrada o salida, son visibles las configuraciones para el _Mapeo de Canales de Entrada y de Salida_. Para cada canal de entrada/salida (canal Izquierdo y Derecho) de Jamulus se puede seleccionar un canal diferente de la tarjeta de audio.
 
@@ -134,7 +134,7 @@ Permite soporte para paquetes de audio por red muy reducidos. Solo se utilizan s
 
 ### Retardo de Buffer
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/buffer-delay.png" loading="lazy" alt="Image of buffer delay selection"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/buffer-delay.png" loading="lazy" alt="Image of buffer delay selection"></figure>
 
 El retardo de buffer es un parámetro fundamental en Jamulus. Este parámetro tiene un impacto sobre muchas propiedades de la conexión. Hay soporte para tres tamaños de buffer:
 
@@ -144,19 +144,19 @@ El retardo de buffer es un parámetro fundamental en Jamulus. Este parámetro ti
 
 Algunos drivers de tarjetas de audio no permiten cambiar el retardo de buffer desde dentro de Jamulus. En este caso la configuración del retardo de buffer se deshabilita y hay que cambiarlo utilizando el driver de la tarjeta de sonido. En Windows, pulsa el botón de Configuración ASIO para acceder al panel de configuración.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/asio-setup-button.png" loading="lazy" alt="Image of ASIO setup button with a red circle around it"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/asio-setup-button.png" loading="lazy" alt="Image of ASIO setup button with a red circle around it"></figure>
 
 En Linux, utiliza la herramienta de configuración de JACK para cambiar el tamaño del buffer.
 
 El retardo del buffer tiene un impacto en el estado de la conexión, la tasa de subida y el retardo total. Cuanto menor sea el buffer, mayor la probabilidad de que el indicador de estado esté en rojo (caídas de audio), mayor la tasa de subida y menor el retardo total.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/buffer-delay-2.png" loading="lazy" alt="Image of red arrows pointing to upload and delay statistics from buffer delay"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/buffer-delay-2.png" loading="lazy" alt="Image of red arrows pointing to upload and delay statistics from buffer delay"></figure>
 
 Por tanto la configuración del buffer es un compromiso entre calidad de audio y retardo total.
 
 ### Jitter buffer con indicador del estado del buffer
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/jitter-buffer.png" loading="lazy" alt="Image of Jitter buffer with status indicator"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/jitter-buffer.png" loading="lazy" alt="Image of Jitter buffer with status indicator"></figure>
 
 El jitter buffer compensa el jitter de la red y la tarjeta de sonido. El tamaño de este buffer tiene por tanto un impacto sobre la calidad del flujo de audio (el número de caídas de la señal) y el retardo total (a mayor buffer, mayor retardo).
 
@@ -169,7 +169,7 @@ Si se activa la casilla de Auto, los jitter buffers del cliente local y del serv
 ### Canales de Audio
 
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/audio-channels.png" loading="lazy" alt="Screenshot of a dropdown menu for selecting audio channel"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/audio-channels.png" loading="lazy" alt="Screenshot of a dropdown menu for selecting audio channel"></figure>
 
 Selecciona el número de canales de audio a utilizar para la comunicación entre cliente y servidor. Hay tres modos disponibles:
 
@@ -183,32 +183,32 @@ En el caso del modo estéreo, no estará disponible la selección de canal para 
 
 ### Calidad del Audio
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/audio-quality.png" loading="lazy" alt="Image of a dropdown menu for selecting audio quality"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/audio-quality.png" loading="lazy" alt="Image of a dropdown menu for selecting audio quality"></figure>
 
 Cuanto mayor la calidad del audio, mayor la tasa de subida del audio. Asegúrate de que tu tasa de subida no excede el ancho de banda de tu conexión a Internet.
 
 ### Nivel cliente nuevo
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/new-client-level.png" loading="lazy" alt="Image of a text input for new client level"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/new-client-level.png" loading="lazy" alt="Image of a text input for new client level"></figure>
 
 Este ajuste define el nivel del fader de una nueva conexión de cliente, en porcentaje. Si se conecta un nuevo usuario al servidor actual, el nivel inicial de su fader tomará este valor si no se ha especificado anteriormente un valor para ese usuario de una conexión anterior. Puedes establecer en este nivel a todos los usuarios en un servidor ocupado con Editar > "Poner Todos Faders a Nivel Cliente Nuevo".
 
 
 ### Interfaz oscura
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/fancy-skin.png" loading="lazy" alt="Image of a checkbox for selecting fancy skin"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/fancy-skin.png" loading="lazy" alt="Image of a checkbox for selecting fancy skin"></figure>
 
 Esto aplicará un aspecto oscuro a la ventana principal.
 
 ### Dirección personalizada de servidor de directorio
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/directory-custom.png" loading="lazy" alt="Image of a text input for directory server address"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/directory-custom.png" loading="lazy" alt="Image of a text input for directory server address"></figure>
 
 Deja esto en blanco a menos que necesites escribir la dirección de un servidor de directorio distinto a los que hay por defecto.
 
 ### Parámetro de estado de conexión actual
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/connection-status.png" loading="lazy" alt="Image of connection status indicators"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/connection-status.png" loading="lazy" alt="Image of connection status indicators"></figure>
 
 El Ping es el tiempo que requiere el flujo de audio para viajar desde el cliente al servidor y volver. Este retardo lo determina la red y debería ser de unos 20-30 ms. Cuando este retardo es mayor de unos 50 ms, empieza a ser más notable y te puedes encontrar con que es más difícil mantener la sincronización con los demás, aunque sigue siendo posible cuando te acostumbras. Los factores como el tempo, el instrumento utilizado o el aislamiento de los auriculares pueden tener un impacto en el retardo con el que te manejas. Las causas más probables de un retardo alto son que la distancia al servidor es demasiado grande o que tu conexión a internet no es óptima.
 
