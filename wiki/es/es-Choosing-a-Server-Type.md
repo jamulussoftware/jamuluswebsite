@@ -14,7 +14,7 @@ Puedes ejecutar tu servidor en uno de tres "modos" (bien en casa o en un host de
 ### 1. Público
 Tu servidor aparecerá en la lista del [servidor de directorio](Directory-Servers) que los clientes utilizan por defecto. Los músicos ya pueden ver y conectarse a tu servidor. No es necesario ejecutarlo como un servidor público ya que muchas otras personas ya los están ejecutando. Simplemente conéctate a uno con latencia baja y empieza a tocar.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagrama de conexiones entre clientes dentro de un servidor público de Jamulus"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/diagram-public-server.png" loading="lazy" alt="Diagrama de conexiones entre clientes dentro de un servidor público de Jamulus"></figure>
 
 Este modo se activa con la casilla de "Registrar mi servidor..." y (opcionalmente) rellenando los campos de información sobre tu servidor.
 
@@ -34,7 +34,7 @@ Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otr
 ### 2. Privado
 Este tipo de servidor no figurará en una lista de servidores de directorios. Debes proporcionar a los músicos la dirección de tu servidor para que puedan conectar sus clientes. Ver también [Ejecutar un Servidor Privado](Running-a-Private-Server) para ver lo necesario para que otros se conecten a él.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagrama de conexiones entre clientes dentro de un servidor privado de Jamulus"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/diagram-private-server.png" loading="lazy" alt="Diagrama de conexiones entre clientes dentro de un servidor privado de Jamulus"></figure>
 
 Este modo se habilita desactivando "Mi Servidor es Público".
 
