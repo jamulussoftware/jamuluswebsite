@@ -18,7 +18,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 * **Usuarios de Linux** - Consulta las [instrucciones para el servidor con interfaz gráfica](Server-Linux#ejecutar-el-servidor-con-interfaz-grafica-en-un-pc-de-escritorio).
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-setup.png" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/server-window-setup.png" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
 ### Configuración de servidor público
 
@@ -56,7 +56,7 @@ Esta opción utiliza las pequeñas diferencias en el tiempo de llegada del sonid
 ### Dirección Personalizada del Servidor de Directorio
 
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
 Deja este campo vacío a menos que necesites listar tu servidor en un [servidor de directorio privado](Choosing-a-Server-Type#3-directorio))
 
