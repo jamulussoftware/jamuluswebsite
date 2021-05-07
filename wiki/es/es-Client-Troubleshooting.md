@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "Client Troubleshooting"
-lang: "en"
+lang: "es"
 permalink: "/wiki/Client-Troubleshooting"
 ---
 
