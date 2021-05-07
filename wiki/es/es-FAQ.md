@@ -42,7 +42,7 @@ No. Si solo tienes intención de conectarte a los servidores de otros, lo único
 
 ### ¿Cómo funciona Jamulus (en general)?
 
-<img src="{{site.url}}assets/img/en-screenshots/diagram-overview.png" loading="lazy" alt="Diagram showing how Jamulus works">
+<img src="{{site.url}}assets/img/es-screenshots/diagram-overview.png" loading="lazy" alt="Diagram showing how Jamulus works">
 
 
 
