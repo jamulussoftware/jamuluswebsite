@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Server Installation - Linux"
-lang: "en"
+title: "Instalación de Servidor - Linux"
+lang: "es"
 permalink: "/wiki/Server-Linux"
 ---
 
@@ -71,4 +71,4 @@ Para actualizar tu servidor a una versión nueva, simplemente descarga el nuevo 
 
 ### Grabación
 
-Ver [esta información](/wiki/Tips-Tricks-More#controlling-recording-on-linux-headless-servers) sobre controlar las grabaciones en servidores "headless".
+Ver [esta información](/wiki/Tips-Tricks-More#controlar-grabaciones-en-servidores-linux-headless) sobre controlar las grabaciones en servidores "headless".
