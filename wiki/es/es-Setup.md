@@ -29,7 +29,7 @@ Y por ahora, cierra todas las demás aplicaciones. Es mejor empezar con lo simpl
 Cuando abras Jamulus, verás una ventana con este aspecto:
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <img src="{{site.url}}/assets/img/es-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
   <figcaption>La ventana principal antes de conectarte a un servidor</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Cuando abras Jamulus, verás una ventana con este aspecto:
 Primero muestra a los demás quién eres. Haz clic en “Ver” (barra superior) > “Mi Perfil…” Ahora verás esto:
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <img src="{{site.url}}/assets/img/es-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
   <figcaption>Muestra a los demás quién eres</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ Antes de conectarte a un servidor **no** deberías poder escucharte. Escuchar tu
 Ahora usa el botón de “Conectar” en la ventana principal de Jamulus para unirte a un servidor. Se abrirá una ventana:
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
   <figcaption>Conectarse a un servidor</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ Una vez establecida la conexión con un servidor, asegúrate de que te escuchas 
 Con el sonido configurado, ya puedes empezar. Cuando te conectas a un servidor (quizá quieras seleccionar un género de la lista), los faders que ves a la derecha son tu mezcla personal. Todo lo que cambies aquí coambiará lo que escuchas, pero no afectará a nadie más. Si bajas un fader, ese canal bajará de volumen, y si lo subes, el volumen de ese canal aumentará - para tí.
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
   <figcaption>La ventana principal cuando te conectas a un servidor</figcaption>
 </figure>
 
