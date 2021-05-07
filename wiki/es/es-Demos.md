@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "Jamulus Demos"
-lang: "en"
+lang: "es"
 permalink: "/wiki/Demos"
 ---
 
