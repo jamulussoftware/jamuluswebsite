@@ -69,7 +69,7 @@ Primero comprueba que tienes el género de servidor correcto seleccionado en la 
 
 En el Reino Unido (y posiblemente en otras regiones/routers) la configuración del Módem de Virgin Media Cable Internet puede ocasionar problemas. No se debería activar "Block Fragmented IP Packets". Para otros routers/ISPs, también prueba a desactivar SPI (Stateful Packet Inspection) y si eso lo arregla, puedes decidir si lo dejas desactivado o no.
 
-En algunos casos, puede ser que tu ISP esté bloqueando Jamulus. Ver la nota en la página [resolución de problemas del servidor](Server-Troubleshooting#adie se puede conectar a mi servidor---pero yo me puedo conectar localmente) sobre "Nadie se puede conectar a mi servidor"
+En algunos casos, puede ser que tu ISP esté bloqueando Jamulus. Ver la nota en la página [resolución de problemas del servidor](Server-Troubleshooting#nadie-se-puede-conectar-a-mi-servidor---pero-yo-me-puedo-conectar-localmente) sobre "Nadie se puede conectar a mi servidor"
 
 ### Problemas al utilizar Garageband (u otro DAW) con Jamulus?
 
