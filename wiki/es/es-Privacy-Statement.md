@@ -1,7 +1,7 @@
 ---
 layout: wiki
-title: "Jamulus – Privacy Statement"
-lang: "en"
+title: "Jamulus – Declaración de Privacidad"
+lang: "es"
 permalink: "/wiki/Privacy-Statement"
 ---
 
@@ -23,7 +23,7 @@ Cuando te conectas a un servidor público, tu perfil también es accesible por p
 
 Cuando te conectas a un servidor público o privado, el operador del servidor puede ver tu dirección IP mientras dure tu conexión. Si el operador del servidor ha habilitado el registro (que está deshabilitado por defecto) tu dirección IP será registrada y guardada en el archivo de registro del servidor.
 
-Las direcciones IP de todos los servidores públicos registrados con el Servidor de Directorio también pueden ser vistas por terceros para fines informativos u otros fines (por ejemplo [here](https://explorer.jamulus.io/)). Tu dirección IP pública no es registrada ni guardada por parte de Jamulus, pero puede ser guardada o procesada por terceros.
+Las direcciones IP de todos los servidores públicos registrados con el Servidor de Directorio también pueden ser vistas por terceros para fines informativos u otros fines (por ejemplo [aquí](https://explorer.jamulus.io/)). Tu dirección IP pública no es registrada ni guardada por parte de Jamulus, pero puede ser guardada o procesada por terceros.
 
 ### Grabaciones de Audio
 
