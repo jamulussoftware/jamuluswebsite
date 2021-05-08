@@ -5,7 +5,20 @@ lang: "en"
 permalink: "/wiki/Software-Manual"
 ---
 # Jamulus User Manual
+{:.no_toc}
 
+This manual documents the Jamulus client appliction for use by musicians and singers using the software to connect to a server. 
+If you wish to set up your own server, see the [Server Administrators' Manual](Server-Admin-Manual)
+
+
+<details markdown="1">
+
+<summary style=" font-size: 20px; font-color: #0e6f8e;">Table of contents</summary>
+
+* TOC
+{:toc}
+
+</details>  
 
 ## Main Window
 
