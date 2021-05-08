@@ -4,31 +4,34 @@ title: "Software Manual"
 lang: "en"
 permalink: "/wiki/Software-Manual"
 ---
-# Jamulus Software Manual
+# Jamulus User Manual
+
 
 ## Main Window
 
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Image of the Jamulus main window"></figure>
+<figure>
+	<img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Image of the Jamulus main window">
+	<figcaption>Your local mix when connected to a Server</figcaption>
+</figure>
 
-### Status LEDs
+### Delay and Buffer LEDs
 
+**Delay** shows the status of the current audio latency:
 
-The **Delay** status LED shows the current audio delay status:
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" loading="lazy" alt="Image of a green LED symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
 
 **Green** - The delay is perfect for a jam session
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-yellow.png" loading="lazy" alt="Image of a yellow LED symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/led-yellow.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
 
 **Yellow** - A session is still possible but it may be harder to play
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png"  style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
 
 **Red** - The delay is too large for jamming
 
-The **Buffers** status LED shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
+**Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
 
 - The network jitter buffer is not large enough for the current network/audio interface jitter.
 - The sound card's buffer delay (buffer size) is too small (see Settings window).
@@ -38,7 +41,7 @@ The **Buffers** status LED shows the current audio/streaming status. If the ligh
 
 ### Input level
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/input-level.png" loading="lazy" alt="Image of an input level meter"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/input-level.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of an input level meter"></figure>
 
 This shows the level of the two stereo channels for your audio input.
 Make sure not to clip the input signal to avoid distortions of the audio signal (the LEDs will indicate clipping when it occurs).
@@ -54,14 +57,14 @@ open automatically for all clients.
 
 ### Profile window
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-window.png" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-window.png" style="width:75%;" loading="lazy" alt="Image of a profile window"></figure>
 
 From the View menu, select My Profile... to set your Alias/Name
 which is displayed below your fader in the server audio mixer board. If an instrument and/or country is set,
 icons for these selections will also be shown below your fader. The skill setting changes the background colour of
 the fader tag and the city entry shows up in the tool tip of the fader tag (see screenshot below).
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
 
 ### Connect/disconnect button
 
@@ -76,7 +79,7 @@ You can filter the list by server name or location. To list only occupied server
 
 If you know the IP address or URL of a server, you can connect to it using the Server Name/Address
 field. An optional port number can be added after the IP address or URL using a colon as a separator, e.g,
-jamulus.example.com:22124. The field will also show a list of the most recently used server addresses.
+`jamulus.example.com:22124`. The field will also show a list of the most recently used server addresses.
 
 ### Mute Myself button
 
@@ -84,7 +87,7 @@ Cuts your audio stream to the server so that you will be able to hear yourself a
 
 ### Reverb effect
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/reverb.png" loading="lazy" alt="Image of an audio reverb slider"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/reverb.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of an audio reverb slider"></figure>
 
 Reverb can be applied to one local mono audio channel or to both channels in stereo mode.
 The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed
@@ -93,7 +96,7 @@ to the right and move the fader upwards until the desired reverb level is reache
 
 ### Local audio pan / balance control
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/pan-slider.png" loading="lazy" alt="Image of a pan/balance slider"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/pan-slider.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of a pan/balance slider"></figure>
 
 Controls the relative levels of the left and right local audio channels. For a mono signal
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
@@ -101,7 +104,7 @@ an instrument is connected to the left input channel which is much louder than t
 
 ### Server audio mixer
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
 
 The audio mixer screen shows each user connected to the server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
@@ -131,13 +134,13 @@ If the server operator has enabled recording, you will see a message above the m
 ### Sound card device
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/device-select-windows.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
-{<figure><img src="{{site.url}}/assets/img/en-screenshots/device-select-mac.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/device-select-mac.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
 The ASIO driver (sound card) can be selected using Jamulus under the Windows operating system. If the selected ASIO
 driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected.
 
 ### Input/output channel mapping
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/channel-mapping.png" loading="lazy" alt="Image of Input and output channel mapping"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/channel-mapping.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
 
 If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
@@ -177,7 +180,7 @@ The buffer setting is therefore a trade-off between audio quality and overall de
 
 ### Jitter buffer with buffer status indicator
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/jitter-buffer.png" loading="lazy" alt="Image of Jitter buffer with status indicator"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/jitter-buffer.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Jitter buffer with status indicator"></figure>
 
 The jitter buffer compensates for network and sound card timing jitters. The size of the buffer
 therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
