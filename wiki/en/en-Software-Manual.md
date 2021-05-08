@@ -13,7 +13,7 @@ If you wish to set up your own server, see the [Server Administrators' Manual](S
 
 <details markdown="1">
 
-<summary style=" font-size: 20px; font-color: #0e6f8e;">Table of contents</summary>
+<summary>Table of contents</summary>
 
 * TOC
 {:toc}
