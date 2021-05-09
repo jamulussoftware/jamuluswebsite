@@ -48,22 +48,21 @@ Mindestens das Feld “Alias/Name” ausfüllen und dann das Fenster schließen.
 
 **Bevor du anfängst mit anderen Leuten zu spielen, wir empfehlen, dass du dich mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst.
 
-Bevor du dich mit einem Server verbindest, sollst du dich selbst **nicht** hören können.
+Bevor du dich mit einem Server verbindest, sollst du dich selbst **nicht** hören können. Auf dein eigenes Audio vom Jamulus zu hören (und nicht von dir selbst) ist die “Goldene Regel” und ermöglicht, dass du im Takt mit anderen spielst ([siehe FAQ](/wiki/de/FAQ)).
 
-Before you connect to a server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ)).
-
-Now use the “Connect” button in the Jamulus main window to join a server. A window will now open:
+Nun klick auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutreten. Ein weiteres Fenster geht auf:
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
-  <figcaption>Connect to a server</figcaption>
+  <img src="{{site.url}}/assets/img/de-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>Einem Server beitreten</figcaption>
 </figure>
 
-The most important thing about servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a server with a ping of less than 15ms if you can.
+Das Wichtigste über Server ist ihre “Ping-Zeit”. Je höher der Wert, desto schwerieger im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15ms ist.
 
-Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting).
+Einmal mit einem Server verbunden, sehe zu, dass du dich gut hören kannst, pass deine Eingangslautstärke an und korrigiere eventuelle Probleme. Und natürlich halte dich an [Die goldene Regel](/wiki/de/Client-Troubleshooting).
 
-## Playing for the first time
+
+## Spielen zum ersten Mal
 
 With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you.
 
