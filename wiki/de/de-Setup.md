@@ -59,7 +59,7 @@ Nun klick auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutret
 
 Das Wichtigste über die Server ist ihre “Ping-Zeit”. Je höher der Wert, desto schwerieger ist, im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15ms ist.
 
-Einmal mit einem Server verbunden, sehe zu, dass du dich gut hören kannst, pass deine Eingangslautstärke an und korrigiere eventuelle Probleme. Und natürlich halte dich an [Die goldene Regel](/wiki/de/Client-Troubleshooting).
+Einmal mit einem Server verbunden, siehe zu, dass du dich gut hören kannst, pass deine Eingangslautstärke an und korrigiere eventuelle Probleme. Und natürlich halte dich an [Die goldene Regel](/wiki/de/Client-Troubleshooting).
 
 
 ## Das erstmalige Musizieren
