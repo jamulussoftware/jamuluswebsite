@@ -16,17 +16,17 @@ Um das Beste von Jamulus genießen zu können, brauchst du mindestens:
 Falls du Fragen dazu hast, schau mal rein in die [Diskussionen](https://github.com/jamulussoftware/jamulus/discussions)
 
 ## Installation
-Um Jamulus mit deiner Hardware zum Laufen zu bringen, folge bitte die Installationsanleitung für deine Platform:
+Um Jamulus mit deiner Hardware zum Laufen zu bringen, folge bitte die Installationsanleitung für deine Plattform:
 
 * [Windows](/wiki/de/Installation-for-Windows)
 * [macOS](/wiki/de/Installation-for-Macintosh)
 * [Linux](/wiki/de/Installation-for-Linux)
 
-Und nun schließe alle anderen Programme. Es ist besser, wenn man unkompliziert startet.
+Und nun schließe alle anderen Programme. Es ist besser, wenn man unkompliziert beginnt.
 
 ## Jamulus Hauptfenster
 
-Wenn du Jamulus öffnest, siehst du ein Fenster, das so aussieht:
+Wenn du Jamulus öffnest, siehst du ein Fenster, welches so aussieht:
 
 <figure>
   <img src="{{site.url}}/assets/img/de-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
@@ -35,7 +35,7 @@ Wenn du Jamulus öffnest, siehst du ein Fenster, das so aussieht:
 
 ## Profil einrichten
 
-Zuerst, lass die anderen wissen, wer du bist. Auf “Ansicht” (Menüleiste oben) > “Mein Profil…” klicken, dann siehst du das:
+Zuerst lass die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” (Menüleiste oben) > “Mein Profil…”, dann siehst du folgendes:
 
 <figure>
   <img src="{{site.url}}/assets/img/de-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
@@ -46,7 +46,7 @@ Mindestens das Feld “Alias/Name” ausfüllen und dann das Fenster schließen.
 
 ## Mit einem Server verbinden und das Audio testen
 
-**Bevor du anfängst mit anderen Leuten zu spielen, wir empfehlen, dass du dich mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst.
+**Bevor du anfängst mit anderen Leuten zu spielen, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst.
 
 Bevor du dich mit einem Server verbindest, sollst du dich selbst **nicht** hören können. Auf dein eigenes Audio vom Jamulus zu hören (und nicht von dir selbst) ist die “Goldene Regel” und ermöglicht, dass du im Takt mit anderen spielst ([siehe FAQ](/wiki/de/FAQ)).
 
