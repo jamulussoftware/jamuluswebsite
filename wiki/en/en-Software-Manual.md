@@ -8,7 +8,6 @@ permalink: "/wiki/Software-Manual"
 {:.no_toc}
 
 This manual documents the Jamulus client appliction for use by musicians and singers using the software to connect to a server. 
-If you wish to set up your own server, see the [Server Administrators' Manual](Server-Admin-Manual)
 
 
 <details markdown="1">
@@ -263,7 +262,6 @@ Attempts to detect audio feedback loops. Once detected, this feature will activa
 Controls the relative levels of the left and right local audio channels. For a mono signal
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
 an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
-
 
 
 
