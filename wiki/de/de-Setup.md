@@ -71,14 +71,12 @@ Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit
   <figcaption>Das Hauptfenster wenn du mit einem Server verbunden bist</figcaption>
 </figure>
 
-Falls du nicht möchtest, dass die anderen dich hören, klick auf “Stummschalten”. Das verhindert, dass dein Audiosignal an andere Leute gesendet wird. Sie wissen es aber nicht, ob du das gemacht hast. Aber wenn 
+Falls du nicht möchtest, dass die anderen dich hören, klick auf “Stummschalten”. Das verhindert, dass dein Audiosignal an andere Leute gesendet wird. Sie wissen es aber nicht, ob du das gemacht hast. Aber wenn du das Symbol “mute” über einem Regler siehst, das bedeutet sie können dich nicht hören, weil sie deinen Kanal in ihrem Mix stummgeschaltet haben.
 
-If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other people. They won’t be able to tell you have done this though. But if you see a “mute” icon above a fader, that means they can’t hear you because they've muted your channel in their mix.
+Achte darauf, dass du die Chatfunktion nutzen kannst während du online bist, um eine Nachricht an die anderen Teilnehmer zu schreiben. Die Willkommensbotschaft im Chat kann auch einige Richtlinien anzeigen.
 
-Note that you can use the Chat facility at any time to message other people while you are connected. The welcome message in the chat may also state some guidelines for use.
+Weitere Informationen über die Verwendung von Jamulus kann man im [Software Handbuch](/wiki/de/Software-Manual) finden.
 
-More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual).
+## Fehlerbehebung
 
-## Troubleshooting
-
-Having audio trouble? Can't see servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions).
+Hast du Probleme mit dem Audio? Kannst du die Serverliste nicht sehen, oder irgendeine andere Angelegenheit? Schau dir die [Fehlerbehebungsseite](/wiki/de/Client-Troubleshooting) an, oder frage gerne bei den [Diskussionen](https://github.com/jamulussoftware/jamulus/discussions).
