@@ -13,9 +13,9 @@ Make sure you read the [Getting Started](Getting-Started) page.
 ### Debian and Ubuntu
 
 1. Download the [latest .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
-1. Update apt: `sudo apt-get update`
-1. Install the package from where you downloaded it: `sudo apt install {{ site.download_file_names.deb-gui }}`.
-1. Since Jamulus needs the JACK server, you have to install it too. We recommend to use `QjackCtl` to configure JACK. You can install it via `sudo apt-get install qjackctl`
+1. Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`
+1. Navigate to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}`.
+1. Once installed, yuo can delete the file and close any console windows.
 
 Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
 
@@ -26,8 +26,7 @@ For installers on other distributions, see [Repology](https://repology.org/proje
 
 ### Configure JACK with QjackCtl
 Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
-1. Open the command shell e.g. with Ctrl-Alt-T and
-1. Execute the command `qjackctl`. You will see the **Qt JACK Control utility main page**
+1. Launch QjackCtl. You will see the **Qt JACK Control utility main page**
 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):
 
 - Set the audio **Interface** to the one you want (there may be several in the list)
@@ -38,7 +37,7 @@ Restart JACK for the new settings to take effect
 
 ### Start Jamulus
 
-With JACK running and configured, start Jamulus from your desktop launcher (or from the command line, execute the command `jamulus`).
+With JACK running and configured, launch Jamulus.
 
 If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
 
