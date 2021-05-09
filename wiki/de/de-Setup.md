@@ -5,70 +5,79 @@ lang: "de"
 permalink: "de/wiki/Setup"
 ---
 
-Um das Beste von Jamulus zu bekommen, brauchst Du mindestens:
+# Setup - getting started with Jamulus
 
-Eine kabelgebundene Internetverbindung (kein WLAN - siehe FAQ)
-Kabelgebundene Kopfhörer (weder Bluetooth noch Lautsprecher - siehe FAQ)
+Um das Beste von Jamulus zu bekommen, brauchst du mindestens:
 
-Ein vernünftiges Audiointerface, Soundkarte und Mikrofon (siehe diese Auflistung für Beispiele)
-Falls Du Fragen dazu hast, schau mal in die Diskussion rein
+1. **Eine kabelgebundene Internetverbindung** (kein WLAN - siehe [FAQ](/wiki/de/FAQ))
+1. **Kabelgebundene Kopfhörer (weder Bluetooth noch Lautsprecher** - siehe [FAQ](/wiki/de/FAQ))
+1. **Ein vernünftiges Audiointerface, Soundkarte und Mikrofon** ([siehe diese Auflistung](/kb/2021/01/05/Jamulus-Sound-Devices.html) für Beispiele)
 
-Installation
+Falls du Fragen dazu hast, schau mal rein in die [Diskussionen](https://github.com/jamulussoftware/jamulus/discussions)
 
+## Installation
+Um Jamulus mit deiner Hardware zum Laufen zu bringen, folge bitte die Installationsanleitung für deine Platform:
 
-Installation
+* [Windows](/wiki/de/Installation-for-Windows)
+* [macOS](/wiki/de/Installation-for-Macintosh)
+* [Linux](/wiki/de/Installation-for-Linux)
 
-To get Jamulus working with your hardware, please follow the installation guide for your platform:
+Und nun schließe alle anderen Programme. Es ist besser, wenn man unkompliziert startet.
 
-Windows
-macOS
-Linux
-And for now, close all other applications. It’s best to start simple at first.
+## Jamulus Hauptfenster
 
-Jamulus main window
+Wenn du Jamulus öffnest, siehst du ein Fenster, dass so aussieht:
 
-When you open Jamulus, you will see a window which looks like this:
+<figure>
+  <img src="{{site.url}}/assets/img/de-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>Das Hauptfenster bevor du dich mit einem Server verbindest</figcaption>
+</figure>
 
-Screenshot
+## Profil einrichten
 
-The main window before you connect to a server
-Setting up a profile
+Zuerst, lass die anderen wissen, wer du bist. Auf “Ansicht” (Menüleiste oben) > “Mein Profil…” klicken, dann siehst du das:
 
-First, let others know who you are. Click on “View” (bar on the top) > “My Profile…” Now you will see this:
+<figure>
+  <img src="{{site.url}}/assets/img/de-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>Lass die Leute wissen, wer du bist</figcaption>
+</figure>
 
-Screenshot
+Mindestens das Feld “Alias/Name” ausfüllen und dann das Fenster schließen.
 
-Let people know who you are
-Fill in at least “Alias/Name” and close the window.
+## Mit einem Server verbinden und das Audio testen
 
-Connecting to a server and testing your sound
+**Bevor du anfängst mit anderen Leuten zu spielen, wir empfehlen, dass du dich mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst.
 
-Before playing with others, we recommend that you connect to an empty server to test your setup, and make sure you are listening to the signal coming back from the server (if possible) and not yourself.
+Bevor du dich mit einem Server verbindest, sollst du dich selbst **nicht** hören können.
 
-Before you connect to a server, you should not be able to hear yourself. Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others (see the FAQ).
+Before you connect to a server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ)).
 
 Now use the “Connect” button in the Jamulus main window to join a server. A window will now open:
 
-Screenshot
+<figure>
+  <img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>Connect to a server</figcaption>
+</figure>
 
-Connect to a server
 The most important thing about servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a server with a ping of less than 15ms if you can.
 
-Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. And of course, check that you are also able to obey The Golden Rule.
+Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting).
 
-Playing for the first time
+## Playing for the first time
 
 With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you.
 
-Screenshot
+<figure>
+  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>The main window when you are connected to a sever</figcaption>
+</figure>
 
-The main window when you are connected to a sever
 If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other people. They won’t be able to tell you have done this though. But if you see a “mute” icon above a fader, that means they can’t hear you because they've muted your channel in their mix.
 
 Note that you can use the Chat facility at any time to message other people while you are connected. The welcome message in the chat may also state some guidelines for use.
 
-More information about using Jamulus can be found in the Software Manual.
+More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual).
 
-Troubleshooting
+## Troubleshooting
 
-Having audio trouble? Can't see servers, or some other issue? Have a look at the Troubleshooting page, or feel free to ask in the Discussions.
+Having audio trouble? Can't see servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions).
