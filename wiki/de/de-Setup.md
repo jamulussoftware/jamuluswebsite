@@ -7,7 +7,7 @@ permalink: "de/wiki/Setup"
 
 # Setup - Erste Schritte mit Jamulus
 
-Um das Beste von Jamulus zu bekommen, brauchst du mindestens:
+Um das Beste von Jamulus genießen zu können, brauchst du mindestens:
 
 1. **Eine kabelgebundene Internetverbindung** (kein WLAN - siehe [FAQ](/wiki/de/FAQ))
 1. **Kabelgebundene Kopfhörer (weder Bluetooth noch Lautsprecher** - siehe [FAQ](/wiki/de/FAQ))
