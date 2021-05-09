@@ -5,7 +5,7 @@ lang: "de"
 permalink: "de/wiki/Setup"
 ---
 
-# Setup - getting started with Jamulus
+# Setup - Erste Schritte mit Jamulus
 
 Um das Beste von Jamulus zu bekommen, brauchst du mindestens:
 
@@ -26,7 +26,7 @@ Und nun schließe alle anderen Programme. Es ist besser, wenn man unkompliziert 
 
 ## Jamulus Hauptfenster
 
-Wenn du Jamulus öffnest, siehst du ein Fenster, dass so aussieht:
+Wenn du Jamulus öffnest, siehst du ein Fenster, das so aussieht:
 
 <figure>
   <img src="{{site.url}}/assets/img/de-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
@@ -64,12 +64,14 @@ Einmal mit einem Server verbunden, sehe zu, dass du dich gut hören kannst, pass
 
 ## Spielen zum ersten Mal
 
-With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you.
+Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit einem Server verbunden hast (du kannst ein Genre aus der Liste wählen), sind die Regler die du rechts siehst dein privates Mischpult. Alles was du hier änderst, hat Einfluss auf das was du hörst, aber nicht auf das was die anderen hören. Wenn du einen Regler runterziehst, wird dieser Kanal leiser, wenn du ihn nach oben ziehst, wird der Kanal für dich lauter.
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
-  <figcaption>The main window when you are connected to a sever</figcaption>
+  <img src="{{site.url}}/assets/img/de-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <figcaption>Das Hauptfenster wenn du mit einem Server verbunden bist</figcaption>
 </figure>
+
+Falls du nicht möchtest, dass die anderen dich hören, klick auf “Stummschalten”. Das verhindert, dass dein Audiosignal an andere Leute gesendet wird. Sie wissen es aber nicht, ob du das gemacht hast. Aber wenn 
 
 If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other people. They won’t be able to tell you have done this though. But if you see a “mute” icon above a fader, that means they can’t hear you because they've muted your channel in their mix.
 
