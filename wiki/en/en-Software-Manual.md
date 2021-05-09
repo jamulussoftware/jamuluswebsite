@@ -7,9 +7,7 @@ permalink: "/wiki/Software-Manual"
 # Jamulus User Manual
 {:.no_toc}
 
-This manual documents the Jamulus client appliction for use by musicians and singers using the software to connect to a server. 
-If you wish to set up your own server, see the [Server Administrators' Manual](Server-Admin-Manual)
-
+This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server. 
 
 <details markdown="1">
 
@@ -176,7 +174,6 @@ the main window since the effect is applied to both channels in this case.
 
 The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection.
 
-
 ### Buffer Delay
 
 The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many
@@ -221,7 +218,6 @@ Allows support for very small network audio packets. These are only used if the 
 lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
 also increases.
 
-
 ### Measurements
 
 The Ping Time is the time required for the audio stream to travel from the client to the server and back again.
@@ -263,7 +259,5 @@ Attempts to detect audio feedback loops. Once detected, this feature will activa
 Controls the relative levels of the left and right local audio channels. For a mono signal
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
 an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
-
-
 
 

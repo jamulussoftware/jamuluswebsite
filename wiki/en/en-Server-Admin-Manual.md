@@ -5,5 +5,5 @@ lang: "en"
 permalink: "/wiki/Server-Admin-Manual"
 ---
 
-# Jamulus Server Adminstrator's Manual
+# Jamulus Server Administrator Manual
 
