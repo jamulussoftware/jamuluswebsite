@@ -12,6 +12,18 @@ Start with the simple stuff: make sure your instrument/microphone and headphones
 
 **Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4LL setup section](Installation-for-Windows#setting-up-asio4all)
 
+### Getting a loud squeal if you connect to a server
+
+You're creating feedback since your microphone is recording the signal of your speaker. Disconnect from the server and select the correct input and output devices. See the Jamulus installation page for your OS to get more information on how to do that.
+
+### Not seeing the headphone or microphone you just connected to your PC?
+
+Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded. 
+
+### Your sound is stuttering
+
+Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency. 
+
 ### You all sound OK, but it's difficult to keep together
 
 **If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.
