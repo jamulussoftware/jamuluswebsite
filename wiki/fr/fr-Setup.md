@@ -16,7 +16,6 @@ Pour tirer le meilleur parti de Jamulus, vous aurez besoin au minimum de :
 Si vous avez des questions, veuillez consulter la rubrique [Discussions](https://github.com/jamulussoftware/jamulus/discussions)
 
 ## Installation
-
 Pour que Jamulus fonctionne avec votre matériel, veuillez suivre le guide d'installation de votre plate-forme :
 
 * [Windows](/wiki/Installation-for-Windows)
@@ -30,18 +29,20 @@ Et pour l'instant, fermez toutes les autres applications. Il est préférable de
 Lorsque vous ouvrez Jamulus, vous verrez une fenêtre qui ressemble à ceci :
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="width:100% ; float:none ;">.
+  <img src="{{site.url}}/assets/img/fr-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">.
   <figcaption>La fenêtre principale avant de se connecter à un serveur</figcaption>.
 </figure>
+
 
 ## Configuration d'un profil
 
 Tout d'abord, faites savoir aux autres qui vous êtes. Cliquez sur "Affichage" (barre en haut) > "Mon profil..." Vous verrez alors ceci :
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="width:100% ; float:none ;">
+  <img src="{{site.url}}/assets/img/fr-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>Laissez les gens savoir qui vous êtes</figcaption>.
 </figure>
+
 
 Remplissez au moins "Alias/Nom" et fermez la fenêtre.
 
@@ -54,7 +55,7 @@ Avant de vous connecter à un serveur, vous ne devez **pas** être capable de vo
 Utilisez maintenant le bouton "Connecter" dans la fenêtre principale de Jamulus pour rejoindre un serveur. Une fenêtre s'ouvre alors :
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100% ; float:none ;">
+  <img src="{{site.url}}/assets/img/fr-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="order: 5px solid grey;">
   <figcaption>Connexion à un serveur</figcaption>
 </figure>
 
@@ -67,11 +68,11 @@ Une fois connecté à un serveur, assurez-vous que vous pouvez vous entendre cor
 Une fois votre son configuré, vous êtes prêt à jouer. Lorsque vous vous connectez à un serveur (vous pouvez sélectionner un genre dans la liste), les faders que vous voyez sur la droite sont votre mixage personnel. Tout ce que vous modifiez ici changera ce que vous entendez, mais n'affectera pas les autres. Si vous déplacez un fader vers le bas, ce canal sera plus silencieux, si vous le déplacez vers le haut, le canal sera plus fort pour vous.
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100% ; float:none ;">.
+  <img src="{{site.url}}/assets/img/fr-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">.
   <figcaption>La fenêtre principale lorsque vous êtes connecté à un serveur</figcaption>.
 </figure>
 
-Si vous ne voulez pas que les autres entendent votre audio, cliquez sur le bouton "Me silencer" qui empêchera votre audio d'être envoyé aux autres personnes. Ils ne seront pas en mesure de dire que vous avez fait cela cependant. Mais si vous voyez une icône "silencé" au-dessus d'un chariot, cela signifie qu'ils ne peuvent pas vous entendre car ils ont coupé votre canal dans leur mélange audio. 
+Si vous ne voulez pas que les autres entendent votre audio, cliquez sur le bouton "Me silencer" qui empêchera votre audio d'être envoyé aux autres personnes. Ils ne seront pas en mesure de dire que vous avez fait cela cependant. Mais si vous voyez une icône "sourdine" au-dessus d'un chariot, cela signifie qu'ils ne peuvent pas vous entendre car ils ont coupé votre canal dans leur mélange audio. 
 
 Notez que vous pouvez utiliser la fonction de tchate à tout moment pour envoyer des messages à d'autres personnes lorsque vous êtes connecté. Le message de bienvenue dans le tchate peut également indiquer certaines directives d'utilisation.
 
