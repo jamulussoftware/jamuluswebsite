@@ -29,7 +29,7 @@ Y por ahora, cierra todas las demás aplicaciones. Es mejor empezar con lo simpl
 Cuando abras Jamulus, verás una ventana con este aspecto:
 
 <figure>
-  <img src="{{site.url}}/assets/img/es-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <img src="{{site.url}}/assets/img/es-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>La ventana principal antes de conectarte a un servidor</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Cuando abras Jamulus, verás una ventana con este aspecto:
 Primero muestra a los demás quién eres. Haz clic en “Ver” (barra superior) > “Mi Perfil…” Ahora verás esto:
 
 <figure>
-  <img src="{{site.url}}/assets/img/es-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <img src="{{site.url}}/assets/img/es-screenshots/settings-profile.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>Muestra a los demás quién eres</figcaption>
 </figure>
 
@@ -50,12 +50,12 @@ Rellena al menos “Alias/Nombre” y cierra la ventana.
 
 **Antes de tocar con otros, recomendamos que te conectes a un servidor vacío para probar tu configuración**, y asegurarte de que escuchas la señal que vuelve del servidor (si es posible) y no tu audio directo.
 
-Antes de conectarte a un servidor **no** deberías poder escucharte. Escuchar tu sonido desde Jamulus (y no tu audio directo) se denomina “La Regla de Oro” y te permite tocar en sincronización con otras personas ([ver las FAQ](/wiki/FAQ)).
+Antes de conectarte a un servidor **no** deberías de poder escucharte. Escuchar tu sonido desde Jamulus (y no tu audio directo) se denomina “La Regla de Oro” y te permite tocar en sincronización con otras personas ([ver las FAQ](/wiki/FAQ)).
 
 Ahora usa el botón de “Conectar” en la ventana principal de Jamulus para unirte a un servidor. Se abrirá una ventana:
 
 <figure>
-  <img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>Conectarse a un servidor</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ Una vez establecida la conexión con un servidor, asegúrate de que te escuchas 
 Con el sonido configurado, ya puedes empezar. Cuando te conectas a un servidor (quizá quieras seleccionar un género de la lista), los faders que ves a la derecha son tu mezcla personal. Todo lo que cambies aquí coambiará lo que escuchas, pero no afectará a nadie más. Si bajas un fader, ese canal bajará de volumen, y si lo subes, el volumen de ese canal aumentará - para tí.
 
 <figure>
-  <img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
+  <img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>La ventana principal cuando te conectas a un servidor</figcaption>
 </figure>
 
