@@ -2,7 +2,7 @@
 layout: wiki
 title: "Installation auf macOS"
 lang: "de"
-permalink: "/wiki/de/Installation-for-Macintosh"
+permalink: "/wiki/Installation-for-Macintosh"
 ---
 
 {% include breadcrumb.html root="Verwendung von Jamulus" branch1="Erste Schritte" branch1-url="Setup" %}
