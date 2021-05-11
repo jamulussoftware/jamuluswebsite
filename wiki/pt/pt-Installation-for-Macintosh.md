@@ -10,7 +10,6 @@ permalink: "/wiki/Installation-for-Macintosh"
 # Instalação no macOS
 Primeiro tenha certeza que você já leu a página [Começando](Getting-Started)
 
-
 1. [Baixe o Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
 **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Instale o Jamulus**: Abra o arquivo `.dmg` que você baixou, concorde com os termos de licensa, *clique e arraste* os dois ícones que você está vendo (Jamulus - cliente e servidor) na sua *Pasta de programas*. Feito isso, Você pode fechar essa janela.
