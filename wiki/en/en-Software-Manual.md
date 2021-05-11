@@ -4,31 +4,45 @@ title: "Software Manual"
 lang: "en"
 permalink: "/wiki/Software-Manual"
 ---
-# Jamulus Software Manual
+# Jamulus User Manual
+{:.no_toc}
 
-## Main Window
+This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server. 
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+{:toc}
+
+</details>  
+
+# Main Window
 
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Image of the Jamulus main window"></figure>
+<figure>
+	<img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
+	<figcaption>Your local mix when connected to a Server</figcaption>
+</figure>
 
-### Status LEDs
+## Delay and Buffer LEDs
 
+**Delay** shows the status of the current audio latency:
 
-The **Delay** status LED shows the current audio delay status:
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" loading="lazy" alt="Image of a green LED symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
 
 **Green** - The delay is perfect for a jam session
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-yellow.png" loading="lazy" alt="Image of a yellow LED symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/led-yellow.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
 
 **Yellow** - A session is still possible but it may be harder to play
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png"  style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
 
 **Red** - The delay is too large for jamming
 
-The **Buffers** status LED shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
+**Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
 
 - The network jitter buffer is not large enough for the current network/audio interface jitter.
 - The sound card's buffer delay (buffer size) is too small (see Settings window).
@@ -36,39 +50,35 @@ The **Buffers** status LED shows the current audio/streaming status. If the ligh
 - The CPU of the client or server is at 100%.
 
 
-### Input level
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/input-level.png" loading="lazy" alt="Image of an input level meter"></figure>
+## Input
 
 This shows the level of the two stereo channels for your audio input.
 Make sure not to clip the input signal to avoid distortions of the audio signal (the LEDs will indicate clipping when it occurs).
 
+## Mute Myself button
 
-### Chat button
+Cuts your audio stream to the server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/chat-window.png" loading="lazy" alt="Image of a chat window"></figure>
+## Reverb effect
+
+Reverb can be applied to one local mono audio channel or to both channels in stereo mode.
+The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed
+in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector
+to the right and move the fader upwards until the desired reverb level is reached.
+
+
+## Chat
 
 The chat text entered in that dialog is sent to
 all connected clients. If a new chat message arrives and the Chat dialog is not already open, it will
 open automatically for all clients.
 
-### Profile window
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-window.png" loading="lazy" alt="Image of a profile window"></figure>
-
-From the View menu, select My Profile... to set your Alias/Name
-which is displayed below your fader in the server audio mixer board. If an instrument and/or country is set,
-icons for these selections will also be shown below your fader. The skill setting changes the background colour of
-the fader tag and the city entry shows up in the tool tip of the fader tag (see screenshot below).
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
-
-### Connect/disconnect button
+## Connect/disconnect button
 
 Opens a dialog where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" loading="lazy" alt="Image of a server connection window"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a server connection window"></figure>
 
 The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
@@ -76,32 +86,11 @@ You can filter the list by server name or location. To list only occupied server
 
 If you know the IP address or URL of a server, you can connect to it using the Server Name/Address
 field. An optional port number can be added after the IP address or URL using a colon as a separator, e.g,
-jamulus.example.com:22124. The field will also show a list of the most recently used server addresses.
+`jamulus.example.com:22124`. The field will also show a list of the most recently used server addresses.
 
-### Mute Myself button
+## Server audio mixer
 
-Cuts your audio stream to the server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself.
-
-### Reverb effect
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/reverb.png" loading="lazy" alt="Image of an audio reverb slider"></figure>
-
-Reverb can be applied to one local mono audio channel or to both channels in stereo mode.
-The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed
-in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector
-to the right and move the fader upwards until the desired reverb level is reached.
-
-### Local audio pan / balance control
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/pan-slider.png" loading="lazy" alt="Image of a pan/balance slider"></figure>
-
-Controls the relative levels of the left and right local audio channels. For a mono signal
-it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
-an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
-
-### Server audio mixer
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
 
 The audio mixer screen shows each user connected to the server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
@@ -124,46 +113,78 @@ If the server operator has enabled recording, you will see a message above the m
 
 
 
-## Settings Window
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-window.png" loading="lazy" alt="Image of a settings window"></figure>
+# Settings 
 
-### Sound card device
+## My Profile
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/device-select-windows.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
-{<figure><img src="{{site.url}}/assets/img/en-screenshots/device-select-mac.png" loading="lazy" alt="Audio Device selection on Windows" ></figure>
-The ASIO driver (sound card) can be selected using Jamulus under the Windows operating system. If the selected ASIO
+From the View menu, select "My Profile..." to set your Alias/Name
+which is displayed below your fader in the server audio mixer board. 
+
+<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+
+If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:
+
+<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+
+
+### Skin
+
+This applies a skin to the main window, some of which are designed to accommodate larger ensembles.
+
+### Mixer rows
+
+This sets the number of rows displayed in the server audio mixer, for use with larger ensembles.
+
+
+## Audio/Network Setup
+
+<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-network.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+
+### Device
+
+Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO
 driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected.
 
 ### Input/output channel mapping
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/channel-mapping.png" loading="lazy" alt="Image of Input and output channel mapping"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/channel-mapping.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
 
 If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
 a different actual sound card channel can be selected.
 
-### Enable small network buffers
+### Audio channels
 
-Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the
-lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
-also increases.
+Selects the number of audio channels to be used for communication between client and server. There are three modes
+available:
 
-### Buffer delay
+**Mono** and **Stereo** modes use one and two audio channels respectively.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/buffer-delay.png" loading="lazy" alt="Image of buffer delay selection"></figure>
+**Mono-in/Stereo-out**: The audio signal sent to the server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case
+the two input signals can be mixed to one mono channel but the server mix is heard in stereo.
+
+Enabling stereo mode will increase your stream's data rate. Make sure your upload rate does
+not exceed the available upload speed of your internet connection.
+
+In stereo streaming mode, no audio channel selection for the reverb effect will be available on
+the main window since the effect is applied to both channels in this case.
+
+### Audio quality
+
+The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection.
+
+### Buffer Delay
 
 The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many
 connection properties. Three buffer sizes are supported:
 
-- 64 samples: The preferred setting. Provides the lowest latency but does not work with all sound cards.
-- 128 samples: Should work for most available sound cards.
-- 256 samples: Should only be used on very slow computers, or with a slow internet connection.
+- **64 samples** The preferred setting. Provides the lowest latency but does not work with all sound cards.
+- **128 samples** Should work for most available sound cards.
+- **256 samples** Should only be used on very slow computers, or with a slow internet connection.
 
 Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.
 In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel.
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/asio-setup-button.png" loading="lazy" alt="Image of ASIO setup button with a red circle around it"></figure>
 
 On Linux, use the JACK configuration tool to change the buffer size.
 
@@ -171,13 +192,11 @@ The actual buffer delay has an influence on the connection status, the current u
 The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the
 higher the upload rate and the lower the overall delay.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/buffer-delay-2.png" loading="lazy" alt="Image of red arrows pointing to upload and delay statistics from buffer delay"></figure>
-
 The buffer setting is therefore a trade-off between audio quality and overall delay.
 
-### Jitter buffer with buffer status indicator
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/jitter-buffer.png" loading="lazy" alt="Image of Jitter buffer with status indicator"></figure>
+
+### Jitter Buffer
 
 The jitter buffer compensates for network and sound card timing jitters. The size of the buffer
 therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
@@ -193,55 +212,13 @@ If the Auto setting is enabled, the jitter buffers
 of your local client and the remote server are set automatically based on measurements of the network and sound card
 timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse).
 
-### Audio channels
+### Enable small network buffers
 
+Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the
+lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
+also increases.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/audio-channels.png" loading="lazy" alt="Screenshot of a dropdown menu for selecting audio channel"></figure>
-
-Selects the number of audio channels to be used for communication between client and server. There are three modes
-available:
-
-Mono and Stereo modes use one and two audio channels respectively.
-
-Mono-in/Stereo-out: The audio signal sent to the server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case
-the two input signals can be mixed to one mono channel but the server mix is heard in stereo.
-
-Enabling stereo mode will increase your stream's data rate. Make sure your upload rate does
-not exceed the available upload speed of your internet connection.
-
-In stereo streaming mode, no audio channel selection for the reverb effect will be available on
-the main window since the effect is applied to both channels in this case.
-
-### Audio quality
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/audio-quality.png" loading="lazy" alt="Image of a dropdown menu for selecting audio quality"></figure>
-
-The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection.
-
-### New client level
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/new-client-level.png" loading="lazy" alt="Image of a text input for new client level"></figure>
-
-This setting defines the fader level of a newly connected client in percent. If a new user connects
-to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
-that user was already stored. You can set all users in an occupied server to this level using Edit > "Set All Faders to New Client Level".
-
-
-### Fancy skin
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/fancy-skin.png" loading="lazy" alt="Image of a checkbox for selecting fancy skin"></figure>
-
-This applies a fancy skin to the main window.
-
-### Custom directory server address
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/directory-custom.png" loading="lazy" alt="Image of a text input for directory server address"></figure>
-
-Leave this blank unless you need to enter the address of a directory server other than the default.
-
-### Current connection status parameter
-
-<figure><img src="{{site.url}}/assets/img/en-screenshots/connection-status.png" loading="lazy" alt="Image of connection status indicators"></figure>
+### Measurements
 
 The Ping Time is the time required for the audio stream to travel from the client to the server and back again.
 This delay is introduced by the network and ideally should be about 20-30 ms. When this delay is higher than about 50 ms, it starts to become
@@ -253,3 +230,34 @@ Overall Delay is calculated from the current Ping Time and the delay introduced 
 
 Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream
 rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/)).
+
+## Advanced Setup
+
+<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-advanced.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+
+### Custom directory server address
+
+Leave this blank unless you need to enter the address of a directory server other than the default.
+
+### New Client Level
+
+This setting defines the fader level of a newly connected client in percent. If a new user connects
+to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
+that user was already stored. You can set all users in an occupied server to this level using Edit > "Set All Faders to New Client Level".
+
+### Input Boost
+
+Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus.
+
+### Feedback Protection
+
+Attempts to detect audio feedback loops. Once detected, this feature will activate the "Mute Myself" button and show an explanation message to enable you to fix the problem.
+
+
+### Input Balance
+
+Controls the relative levels of the left and right local audio channels. For a mono signal
+it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
+an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
+
+

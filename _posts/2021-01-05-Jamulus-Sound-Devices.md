@@ -35,7 +35,7 @@ You can update this page with the information you have. **Please indicate the pl
 
 ***
 
-**[Marantz MPM-1000U](https://www.marantzpro.com/products/view/mpm-1000u)**, low-cost USB Microphone 
+**[Marantz MPM-1000U](https://www.marantzpro.com/products/view/mpm-1000u)**, low-cost USB Microphone
 
 **Windows**: Needs *ASIO4All*. Probably a bit more latency than under macOS.
 
@@ -85,9 +85,9 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 **macOS**: Supported; should work.
 
-**Linux**: Spec says USB Class Compliant plug-and-play Mac / PC Interface; should work. 
+**Linux**: Spec says USB Class Compliant plug-and-play Mac / PC Interface; should work.
 
-Tested on Raspberry Pi 4B with JamBox image: Latency added through JACK = 13 ms; Pi USB port underpowered so use the supplied power adapter. 
+Tested on Raspberry Pi 4B with JamBox image: Latency added through JACK = 13 ms; Pi USB port underpowered so use the supplied power adapter.
 
 **Note:** "Latency added" = Jamulus 3.7.0 client's reported Overall Delay minus Ping Time to a cloud server pinging at ~4 ms.
 
@@ -115,8 +115,8 @@ The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com
 
 **Linux**: Works better than on Windows.
 
-**Note:** Ploytec, a German company have developed a very low latency alternative to ASIO4ALL and the native Behringer driver for both Windows and Mac. It is capable of latency in the 2 ms range. Their software driver is somewhat expensive at $60, but you can download and try it out to see if it is worth the money for your situation. The demo download can be found at: 
-https://www.usb-audio.com/download/
+**Note:** Ploytec, a German company have developed a very low latency alternative to ASIO4ALL and the native Behringer driver for both Windows and Mac. It is capable of latency in the 2 ms range. Their software driver is somewhat expensive at $60, but you can download and try it out to see if it is worth the money for your situation. The demo download can be found at:
+[https://www.usb-audio.com/download/](https://www.usb-audio.com/download/)
 
 ***
 
@@ -150,7 +150,7 @@ https://www.usb-audio.com/download/
 
 ***
 
-**[Berhinger XENYX series](https://www.behringer.com/series.html?category=R-BEHRINGER-XENYXSERIES)**, USB digital audio interfaces
+**[Behringer XENYX series](https://www.behringer.com/series.html?category=R-BEHRINGER-XENYXSERIES)**, USB digital audio interfaces
 
 **Windows**: Works, but not great. The [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) does not appear to be very good. Audio latency with this "unsupported" driver seems poor - not better than ASIO4ALL.
 
@@ -160,6 +160,18 @@ https://www.usb-audio.com/download/
 
 Tested Behringer XENYX X1832 USB (USB audio) on Ubuntu 20.04 LTS which works fine.
 _More testing required._
+
+***
+
+**[ESI U22 XT](https://www.esi-audio.com/products/u22xt/)**, low cost USB 2.0 Audio interface with ASIO-driver supporting basic audio routing natively
+
+**Windows**: Works. Tested with [native ASIO driver](https://download.esi-audio.com/?w=esi&p=95&g=2&l=en).
+
+**macOS**: Company says it should work.
+
+**Linux**: Company says it should work.
+
+*Note:* you might need to switch to the microphone inputs by pushing a button on the back of the interface. Buffer size can't be changed within Jamulus. Open the ASIO Driver settings, select "Config" and set the buffer size under "Latency". Local monitoring can be turned down by turning "mix" to the right (see manual).
 
 ***
 

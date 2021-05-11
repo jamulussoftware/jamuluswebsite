@@ -108,6 +108,49 @@ Fader strips in the mixer window are controlled in ascending order from left to 
 
 Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
 
+
+## Controlling recordings on Linux headless servers
+
+When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
+
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
+
+**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
+
+For turning recording on or off (depending on the current state):
+
+~~~
+[Unit]
+Description=Toggle recording state of Jamulus server
+Requisite=Jamulus-Server
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+~~~
+
+For starting a new recording:
+
+~~~
+[Unit]
+Description=Start a new recording on Jamulus server
+Requisite=Jamulus-Server
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
+~~~
+
+_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_
+
+Run `sudo systemctl daemon-reload` to register them for first use.
+
+Now you can run these with the `service start` command, for example:
+
+`sudo service jamulusTogglerec start` (assuming you named your unit file `jamulusTogglerec.service`)
+
+You can see the result of these commands if you run `service jamulus status`, or by viewing the logs.
+
 ## Quality of Service
 
 Jamulus uses DSCP/CS4 opportunistically to deal with buffer bloat, and uses a default DSCP/CS4 value of 128 (or 0x80). This is compatible with IPv4 and IPv6. Other values can be set using the `-Q` option, eg  `-Q [0..255]` (where 0 disables QoS). If you want to explore the effect of non-default settings, see [RFC4594](https://tools.ietf.org/html/rfc4594). However, most people will have no need to do this.
@@ -115,7 +158,6 @@ Jamulus uses DSCP/CS4 opportunistically to deal with buffer bloat, and uses a de
 ### Using Quality of Service on Windows
 
 Jamulus’s QoS settings (including the default) have no effect on Windows because the operating system ignores them. To enable Quality of Service for Jamulus, you must follow these instructions. Note also that you may need to repeat this procedure every time Jamulus is updated.
-
 
 In Search box beside Start menu Type: Local Group Policy Editor (enter)
 In new window, (click) on the menu icon to display the Actions third panel

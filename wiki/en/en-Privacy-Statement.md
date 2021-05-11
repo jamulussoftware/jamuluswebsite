@@ -6,9 +6,10 @@ permalink: "/wiki/Privacy-Statement"
 ---
 
 # Privacy Statement
-## Homepage
-This homepage jamulus.io tries not to collect your personal data. If you connect to the jamulus.io site, your IP is sent to GitHub Pages. Furthermore, since we link the SourceForge logo in the footer of every page, also SourceForge might get your IP.
-We do not set tracking cookies, although SourceForge might do so. If you do not wish this, please disable cookies in your browser.
+
+## Web site
+
+The website at jamulus.io is served using GitHub Pages. We do not collect your personal data or set tracking cookies. When you connect to the jamulus.io site, your IP is sent to GitHub Pages.
 
 ## Jamulus software
 
