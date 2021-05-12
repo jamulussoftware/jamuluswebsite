@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: "Installation for Windows"
-lang: "en"
+lang: "pt"
 permalink: "/wiki/Installation-for-Windows"
 ---
 {% include breadcrumb.html root="Usand Jamulus" branch1="Começando" branch1-url="Getting-Started" %}
