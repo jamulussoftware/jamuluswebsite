@@ -8,7 +8,7 @@ permalink: "/wiki/Installation-for-Windows"
 {% include breadcrumb.html root="Jamulus Nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 # Installation auf Windows
-Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
+Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
 1. **Downloade und installiere einen ASIO-Treiber**. Wir empfehlen, eine Soundkarte/Interface mit einem nativen, herstellereigenen ASIO-Treiber zu verwenden. Wenn kein nativer ASIO-Treiber vorhanden ist (v.A. bei integrierten Soundkarten), brauchst du einen generischen Treiber wie ASIO4ALL. Mehr Informationen findest du im [ASIO](#asio) Abschnitt unten auf dieser Seite.
 1. [Downloade Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
 **Alternativ-Download:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
@@ -19,9 +19,9 @@ Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, sol
 ***
 ## ASIO
 
-Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um eine geringe Audioverzögerung zu ermöglichen.
+Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um die geringste Audiolatenz zu ermöglichen.
 
-* Wenn du eine externe Soundkarte/Interface besitzt, nutze den offiziellen ASIO-Treiber (normalerweise bieten sie die beste Qualität).
+* Wenn du eine externe Soundkarte bzw. -interface besitzt, nutze den offiziellen ASIO-Treiber (normalerweise bieten sie die beste Qualität).
 * Wenn du keine externe Soundkarte besitzt, wirst du wahrscheinlich keinen ASIO-Treiber haben. Deshalb musst du einen generischen Treiber, wie ASIO4ALL nutzen:
 
 Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaround für einen Bug, der eventuell Probleme mit anderen Funktionen auslöst.
@@ -33,7 +33,7 @@ Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaro
 [ASIO4ALL Website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
 ## ASIO4ALL einrichten
-*Du solltest ASIO4ALL nur dann nutzen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO-Treiber anbietet, da native ASIO-Treiber eine bessere Latenz haben könnten.*
+*ASIO4ALL ist nur dann empfohlen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO-Treiber anbietet, da native ASIO-Treiber eine bessere Latenz haben könnten.*
 
 Wenn du ASIO4ALL nutzt, musst du möglicherweise ein bisschen herumprobieren, da jeder PC immer etwas anders ist.
 
@@ -42,15 +42,15 @@ Wenn du ASIO4ALL nutzt, musst du möglicherweise ein bisschen herumprobieren, da
 Bevor du Jamulus startest:
 
 1. **Schließe alle anderen Programme** (besonders die, die (wie z.B. dein Browser/Media Player) auf deine Soundkarte zugreifen könnten), weil Jamulus exklusiven Zugriff auf die Soundkarte benötigt. Andere Programme werden keinen Ton ausgeben/aufnehmen können, wenn Jamulus mit ASIO4ALL läuft.
-1. Wenn das Audio nicht sofort funktioniert, stelle sicher, dass die **richtigen Ein-/Ausgänge** in ASIO4ALL **aktiv sind**. Alle anderen sollten ausgeschaltet sein. Wie das geht, siehst du hier:
+1. Wenn das Audio nicht sofort funktioniert, stelle sicher, dass die **richtigen Ein-/Ausgänge** in ASIO4ALL **aktiv sind**. Alle anderen sollten ausgeschaltet sein. Suche in der [gemeinsame Auflistung funktionsfähiger ASIO4ALL Einstellungen](/kb/2021/03/20/ASIO4ALL-Examples.html) nach deinem System oder stelle sie selbst ein, wenn du deine nicht findest:
 
 ### ASIO4ALL Ein/Ausgänge einrichten (Anleitung)
 
-1. Jamulus Einstellungen öffnen (linke Spalte in Jamulus)
-1. Klick auf _„ASIO Geräte Einstellungen“_
+1. Jamulus Einstellungen öffnen
+1. Klick auf _„ASIO Geräte Einstellungen“_  (linke Spalte in Jamulus, unten)
 1. Aktiviere die _erweiterte Ansicht_ in ASIO4ALL (klicke auf das Werkzeug-Icon unten rechts)
 1. Aktiviere nur die Soundkarte, die du nutzen willst, indem du auf den Knopf direkt neben dem Namen der Soundkarte klickst
-1. Öffne deine Soundkarte über das Plus-Icon neben der Soundkarte, um die Ein/Ausgänge anzuzeigen
+1. Öffne deine Soundkarte über das _Plus-Icon_ neben der Soundkarte, um die Ein/Ausgänge anzuzeigen
 1. Aktiviere die richtigen Ein/Ausgänge in der Liste unter deiner Soundkarte und deaktiviere alle anderen Ein/Ausgänge. Du kannst über den Ein/Ausgängen hovern (mit dem Mauszeiger auf über dem Ein/Ausgang ruhen) ob sie die richtige Sample Rate für Jamulus unterstützen (48kHz; DVD-Qualität)
 
 **Tipps:**
@@ -62,7 +62,7 @@ Bevor du Jamulus startest:
 
 Wenn Nichts zu funktionieren scheint, versuche zuerst Jamulus und/oder deinen PC **neuzustarten**, damit Hintergrundprozesse, die auf die Soundkarte zugreifen könnten, geschlossen werden.
 
-Danach versuche **die Ein-/Ausgänge nochmal neu einzurichten**. Aktivierte und zugängliche Ein-/Ausgänge zeigen ein leuchtendes An/Aus- und ein Play-Symbol. Wenn du ein rotes Kreuz oder ein gelbes Symbol siehst, musst du eventuell andere Anwendungen, wie deinen Browser, Zoom, ... schließen oder deinen PC neu starten.
+Danach versuche *die Ein-/Ausgänge nochmal neu einzurichten*. Aktivierte und zugängliche Ein-/Ausgänge zeigen ein leuchtendes An/Aus- und ein Play-Symbol. Wenn du ein rotes Kreuz oder ein gelbes Symbol siehst, musst du eventuell andere Anwendungen schließen (z.B. deinen Browser, Zoom, usw.) oder deinen PC neu starten.
 
 Wirf einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI){: target="_blank" rel="noopener noreferrer"} von [trombonepizza](https://github.com/trombonepizza), das ausführlichere Informationen zur Einrichtung von ASIO4ALL gibt (English).
 
