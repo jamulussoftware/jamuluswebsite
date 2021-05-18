@@ -19,10 +19,10 @@ Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
 ***
 ## ASIO
 
-Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um die geringste Audiolatenz zu ermöglichen.
+Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um mit der möglicht geringsten Audiolatenz zu arbeiten.
 
 * Wenn du eine externe Soundkarte bzw. -interface besitzt, nutze den offiziellen ASIO-Treiber (normalerweise bieten sie die beste Qualität).
-* Wenn du keine externe Soundkarte besitzt, wirst du wahrscheinlich keinen ASIO-Treiber haben. Deshalb musst du einen generischen Treiber, wie ASIO4ALL nutzen:
+* Wenn du keine externe Soundkarte besitzt, wird es wahrscheinlich keinen ASIO-Treiber geben. Deshalb musst du einen generischen Treiber, wie ASIO4ALL nutzen:
 
 Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaround für einen Bug, der eventuell Probleme mit anderen Funktionen auslöst.
 
@@ -33,11 +33,11 @@ Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaro
 [ASIO4ALL Website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
 ## ASIO4ALL einrichten
-*ASIO4ALL ist nur dann empfohlen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO-Treiber anbietet, da native ASIO-Treiber eine bessere Latenz haben könnten.*
+*ASIO4ALL ist nur dann empfohlen, wenn deine Soundkarte keinen nativen, vom Hersteller der Soundkarte entwickelten ASIO-Treiber anbietet, da native ASIO-Treiber eine bessere Latenz anbieten können.*
 
 Wenn du ASIO4ALL nutzt, musst du möglicherweise ein bisschen herumprobieren, da jeder PC immer etwas anders ist.
 
-**Tipp:** Richte deine Soundkarte ein, wenn du [mit einem Server verbunden](Onboarding#2-verbindung-mit-einem-server-herstellen) bist. Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist; aber lies erst einmal weiter.
+**Tipp:** Richte deine Soundkarte ein, während du [mit einem Server verbunden](Onboarding#2-verbindung-mit-einem-server-herstellen) bist. Das erleichtert dir das Setup, da du dann mit deinem Instrument oder deiner Stimme testen kannst, ob alles richtig eingestellt ist; aber lies erst einmal weiter.
 
 Bevor du Jamulus startest:
 
@@ -60,7 +60,7 @@ Bevor du Jamulus startest:
 
 ### Probleme mit dem ASIO4ALL Setup?
 
-Wenn Nichts zu funktionieren scheint, versuche zuerst Jamulus und/oder deinen PC **neuzustarten**, damit Hintergrundprozesse, die auf die Soundkarte zugreifen könnten, geschlossen werden.
+Wenn es scheint, das nichts funktioniert, versuche zuerst Jamulus und/oder deinen PC **neuzustarten**, damit Hintergrundprozesse, die auf die Soundkarte zugreifen könnten, geschlossen werden.
 
 Danach versuche *die Ein-/Ausgänge nochmal neu einzurichten*. Aktivierte und zugängliche Ein-/Ausgänge zeigen ein leuchtendes An/Aus- und ein Play-Symbol. Wenn du ein rotes Kreuz oder ein gelbes Symbol siehst, musst du eventuell andere Anwendungen schließen (z.B. deinen Browser, Zoom, usw.) oder deinen PC neu starten.
 
