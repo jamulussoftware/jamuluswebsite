@@ -17,12 +17,13 @@ Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
 1. **Richte deine Soundkarte ein**. Wenn du Jamulus installiert hast, musst du deine Audio-Hardware einrichten. Falls du ASIO4ALL nutzt, schau dir die [Einrichtung](#asio4all-einrichten) und/oder das [Hardware-Setup](Hardware-Setup) an.
 
 ***
+
 ## ASIO
 
 Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um mit der möglicht geringsten Audiolatenz zu arbeiten.
 
 * Wenn du eine externe Soundkarte bzw. -interface besitzt, nutze den offiziellen ASIO-Treiber (normalerweise bieten sie die beste Qualität).
-* Wenn du keine externe Soundkarte besitzt, wird es wahrscheinlich keinen ASIO-Treiber geben. Deshalb musst du einen generischen Treiber, wie ASIO4ALL nutzen:
+* Wenn du keine externe Soundkarte besitzt, wird es wahrscheinlich keinen ASIO-Treiber geben. Deshalb musst du einen generischen Treiber nutzen, wie ASIO4ALL:
 
 Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaround für einen Bug, der eventuell Probleme mit anderen Funktionen auslöst.
 
@@ -69,6 +70,6 @@ Wirf einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI){: target="_bla
 Offizielle und ausführliche Infos zur Konfiguration von ASIO4ALL sind auch in den [FAQs auf der ASIO4ALL Website](https://www.asio4all.org/index.php/help/faq/){: target="_blank" rel="noopener noreferrer"}, sowie im ASIO4ALL Handbuch dokumentiert. Diese findest du höchstwahrscheinlich auf deinem Desktop oder in dem Ordner, in dem das ASIO4ALL-Binary installiert ist (normalerweise `C:\Program Files (x86)\ASIO4ALL v2\`).
 
 ## Alles installiert?
-Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
+Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
 [Nach der Installation](Onboarding){: .button}
