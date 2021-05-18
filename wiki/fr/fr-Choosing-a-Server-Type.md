@@ -14,7 +14,7 @@ Vous pouvez faire fonctionner votre serveur dans l'un des trois "modes" suivants
 ### 1. Public
 Votre serveur sera répertorié dans la liste [serveurs annuaire](Directory-Servers) que les clients utilisent par défaut. Les musiciens peuvent alors le découvrir et s'y connecter. Il n'est pas nécessaire de fonctionner en tant que serveur public puisque de nombreuses autres personnes en utilisent déjà. Il suffit de se connecter à un serveur à faible latence et de commencer à jouer.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagramme des connexions entre clients au sein d'un serveur public Jamulus"></figure>
+<figure><img src="{{site.url}}/assets/img/fr-screenshots/diagram-public-server.png" loading="lazy" alt="Diagramme des connexions entre clients au sein d'un serveur public Jamulus"></figure>
 
 Ce mode est activé en cochant la case "Rendre mon serveur public..." et en saisissant (facultativement) les informations relatives à votre serveur.
 
@@ -34,7 +34,7 @@ Voir également [Options de la ligne de commande](Command-Line-Options) pour les
 ### 2. Privé
 Ce type de serveur ne sera pas répertorié dans une liste de serveurs. Vous devez donner aux musiciens l'adresse de votre serveur pour qu'ils puissent y connecter leurs clients. Voir [Gestion d'un serveur privé](Running-a-Private-Server) pour savoir ce qu'il faut faire pour permettre aux autres de s'y connecter.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagramme des connexions entre clients au sein d'un serveur privé Jamulus"></figure>
+<figure><img src="{{site.url}}/assets/img/fr-screenshots/diagram-private-server.png" loading="lazy" alt="Diagramme des connexions entre clients au sein d'un serveur privé Jamulus"></figure>
 
 Ce mode est activé en décochant la case "Rendre mon serveur public...".
 
