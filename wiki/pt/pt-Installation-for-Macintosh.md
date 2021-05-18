@@ -27,11 +27,9 @@ A primeira vez que você tentar abrir o Jamulus, você vai provavelmente ver uma
 
 Para abrir o Jamulus
 1. Use o finder e vá até a pasta de programas
-1. Dê um clique duplo no Jamulus e espere pela mensagem mencionada acima
-1. Feche a mensagem clicando em "Cancelar"
 1. Segure a tecla Control e clique (ou clique com o botão direito) no Jamulus, então selecione "Abrir" no topo do menu.
 
-Você verá uma versão ligeiramente diferente da mesma mensagem, agora aparecerá um botão "Abrir", que você pode clicar para continar e abrir o Jamulus. Essa mensagem de alerta não vai aparecer de novo - nas próximas vezes basta abrí-lo com um clique duplo.
+Você verá uma versão ligeiramente diferente da mesma mensagem, agora aparecerá um botão "Abrir", que você pode clicar para continar e abrir o Jamulus. Essa mensagem de alerta não vai aparecer de novo - nas próximas vezes basta abrí-lo normalmente com um clique duplo.
 
 Para mais informações sobre essa mensagem de alerta leia [essa página de suporte da Apple](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
 
