@@ -43,7 +43,6 @@ Wenn du Soundprobleme (kurze Unterbrechungen, Knistern o.Ä.) hast (insbesondere
 Siehe auch die [Fehlerbehebungsseite](Client-Troubleshooting).
 
 ## Alles installiert?
+Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
-Schau dir die Seite an:
-
-[Jamulus setup page](Setup){: .button}
+[Nach der Installation](Setup){: .button}
