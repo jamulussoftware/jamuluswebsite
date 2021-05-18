@@ -15,7 +15,7 @@ NO.
 
 Puedes simplemente escoger otro servidor de la lista y utilizarlo.
 
-**¿No quieres interrupciones de extraños?** Una vez que tú y tus compañeros/as se hayan conectado a un servidor público, pulsa el botón de "solo" de cada músico con quien quieres tocar. Aquellos para quienes no actives este botón verán un icono de "silenciado" en tu fader. Y no les escucharás.
+**¿No quieres interrupciones de extraños?** Una vez que tú y tus compañeros/as se hayan conectado a un servidor público, pulsa el botón de "solo" de cada músico con quien quieres tocar. Aquellos para quienes no actives este botón verán un icono de "silenciado" en tu canal. Y no les escucharás.
 
 ## Eso suena demasiado fácil.
 
@@ -39,17 +39,17 @@ Una vez se haya solucionado cualquier problema que puedan tener los músicos, ah
 
 ### Ancho de banda - ¿tienes suficiente?
 
-En una jam típica puede haber 4 personas, para lo que necesitarías 200 Kbit/s * 4 = 800 Kbit/s (0,8 Mbit/s) de subida y bajada. Así que si tienes 10 Mbit/s de bajada y 1 Mbp/s de subida de banda ancha, **puede ser que te empiece a escasear el ancho de banda si se une una quinta persona**, sobre todo si otros músicos eligen configuraciones que aumentan su uso. Quizá quieras [comprobar que tienes velocidad suficiente](https://fast.com) para ello. [Lee más sobre el uso de ancho de banda](Network-Requirements) con diferentes configuraciones de calidad.
+En una jam típica puede haber 4 personas, para lo que necesitarías 200 Kbit/s * 4 = 800 Kbit/s (0,8 Mbit/s) de subida y bajada. Así que si tienes 10 Mbit/s de bajada y 1 Mbit/s de subida de banda ancha, **puede ser que te empiece a escasear el ancho de banda si se une una quinta persona**, sobre todo si otros músicos eligen configuraciones que aumentan su uso. Quizá quieras [comprobar que tienes velocidad suficiente](https://fast.com) para ello. [Lee más sobre el uso de ancho de banda](Network-Requirements) con diferentes configuraciones de calidad.
 
 ### En general
 
 - Considera el uso de un host en la nube para conseguir mejores tiempos de ping si tienes problemas
 
-- Cualquier servidor debería de tener una frecuencia de procesador de 1,6GHz CPU y 1GB de RAM
+- Cualquier servidor debería de tener una frecuencia de procesador de 1,6 GHz y 1 GB de RAM
 
 - Ejecutar un servidor puede requerir que configures cortafuegos operando en tu ordenador o host en la nube, o externos.
 
-- Ejecutar un **servidor privado en casa** (pero no uno público) requerirá que [valides puertos](Running-a-Private-Server) en tu router.
+- Ejecutar un **servidor privado en casa** (pero no uno público) requerirá que [redirecciones puertos](Running-a-Private-Server) en tu router.
 
 - Actualmente Jamulus no da soporte para IPv6
 
