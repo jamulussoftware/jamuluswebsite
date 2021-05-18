@@ -28,13 +28,12 @@ Wenn du Jamulus zum ersten Mal öffnest, wirst du wahrscheinlich eine Meldung se
 
 Um Jamulus trotzdem öffnen zu können
 1. Öffne den Ordner „Programme“ (oder "Applications") im Finder
-1. Doppelklicke auf Jamulus und warte die o.g. Meldung ab
 1. Klicke mit gedrückter Ctrl/Strg-Taste (oder einem Rechtsklick) auf Jamulus und wähle dann „Öffnen“ oben im Menü aus.
 
-Jetzt siehst du eine leicht veränderte Version der gleichen Meldung, die nun es ermöglicht, auf „Öffnen“ zu klicken und Jamulus zu starten. Diese Warnung wirst du nicht mehr sehen – ab jetzt kannst du Jamulus ganz normal durch einen Doppelklick starten.
+Jetzt siehst du eine leicht veränderte Version der gleichen Meldung, aber nun kannst du auf „Öffnen“ klicken und Jamulus starten. Diese Warnung wirst du nicht mehr sehen – ab jetzt kannst du Jamulus ganz normal durch einen Doppelklick starten.
 Für weitere Informationen über diese Meldung siehe [diese Apple Support-Seite](https://support.apple.com/de-de/guide/mac-help/mh40616/mac).
 
 ## Alles installiert?
-Jamulus wurde installiert und kann jetzt benutzt werden. Jetzt kannst du dir die folgende Seite anschauen:
+Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
 [Nach der Installation](Onboarding){: .button}
