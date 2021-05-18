@@ -9,9 +9,7 @@ permalink: "/wiki/Installation-for-Windows"
 # Instalação no Windows
 Primeiro tenha certeza que você já leu a página [Começando](Getting-Started)
 
-1. **Baixe e instale um driver ASIO**. Se recomenda usar uma placa ou interface de som com um driver ASIO nativo. Se você não possui uma placa de som externa, você provavelmente deve instalar um driver genérico como ASIO4ALL. Para mais informações vá até a seção [ASIO](#asio) abaixo.
-
-
+1. **Baixe e instale um driver ASIO**. É recomendável usar uma placa ou interface de som com um driver ASIO nativo. Se você não possui uma placa de som externa, você provavelmente deve instalar um driver genérico como ASIO4ALL. Para mais informações vá até a seção [ASIO](#asio) abaixo.
 1. [Baixe o Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
 **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Instale o Jamulus**: Dê um clique duplo no instalador para rodá-lo. Se você vir uma mensagem de alerta do SmartScreen, clique em "Mais informações" e "Iniciar assim mesmo" para instalar o Jamulus. (Se você for uma das primeiras pessoas a baixar uma nova versão do Jamulus, ele ainda não vai estar na lista do SmartScreen. Nós não pagamos por assinatura de código.)
@@ -21,9 +19,9 @@ Primeiro tenha certeza que você já leu a página [Começando](Getting-Started)
 ***
 
 ## ASIO
-Jamulus faz uso do [ASIO](https://pt.wikipedia.org/wiki/Audio_Stream_Input/Output) para conseguir a menor latência possível.
+Jamulus faz uso do [ASIO](https://pt.wikipedia.org/wiki/Audio_Stream_Input/Output) para poder trabalhar com a menor latência possível.
 * Se você usa uma placa ou interface de áudio externa, use seu driver ASIO oficial (eles oferecem a melhor qualidade).
-* Se você não possui uma placa externa de som, você provavelmente não tem um driver ASIO. No entanto você tem que instalar um genérico, como ASIO4ALL:
+* Se você não possui uma placa externa de som, provavelmente não existe tem um driver ASIO específico. Nesse caso instale um driver genérico, como ASIO4ALL:
 
 Você pode experimentar duas versões diferentes de ASIO4ALL. A versão 2.14 inclui uma solução para um bug que pode causar conflito com outras funções.
 
@@ -37,9 +35,9 @@ Você pode experimentar duas versões diferentes de ASIO4ALL. A versão 2.14 inc
 ### Configurando o ASIO4ALL
 *ASIO4ALL não é recomendado se sua placa ou interface de áudio fornecer seu próprio driver ASIO, uma vez que este tem a melhor latência.*
 
-No ASIO4ALL você pode ter que experimentar um pouco até achar a configuração certa, já que computadores diferem um pouco um do outro.
+No ASIO4ALL você pode ter que experimentar até achar a configuração certa, já que computadores diferem um pouco um do outro.
 
-**Dica:** Configure sua placa de som enquanto estiver [conectado com um servidor](Onboarding#2-connecting-to-a-server) para poder ouvir sua própria voz ou instrumento e checar se tudo está correto; mas primeiro continue lendo.
+**Dica:** Configure sua placa de som enquanto estiver [conectado com um servidor](Onboarding#2-connecting-to-a-server) para poder ouvir sua própria voz ou instrumento e checar se tudo está correto; mas antes disso continue lendo.
 
 Antes de começar a usar o Jamulus:
 
@@ -57,7 +55,6 @@ Antes de começar a usar o Jamulus:
 1. Agora habilite as entradas/saídas corretas na lista abaixo do dispositivo de áudio e desabilite todo o resto. Você pode passar o mouse por cima das opções para ver quais delas suportam o sample rate requirido de 48kHz para Jamulus (qualidade DVD).
 
 **Dicas:**
-1. Many internal sound cards are named Realtek High Definition Audio, Conexant or similar.
 1. Várias placas de som internas têm o nome Realtek High Definition Audio, Conexant ou similar.
 1. Fones de ouvido e auto-falantes são frequentemente nomeados "output" e microfones "input" ou "capture".
 1. Via de regra Stereo Mix não é o input/output que você está procurando, e portanto deve ser desabilitado, caso você o veja.
