@@ -10,11 +10,11 @@ permalink: "/wiki/Setup"
 Para obter o melhor de Jamulus, você precisa no mínimo de:
 
 1. **Uma conexão de internet a cabo** (não wi-fi - veja o [FAQ](/wiki/FAQ))
-1. **Fones de ouvido co cabo** (nem Bluetooth e nem Auto-falantes - veja o [FAQ](/wiki/FAQ))
-1. **Uma interface de áudio razoável, placa de som e/ou microfone** ([veja essa lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) com exemplos)
+1. **Fones de ouvido com cabo** (nem Bluetooth e nem Auto-falantes - veja o [FAQ](/wiki/FAQ))
+1. **Uma interface de áudio ou placa de som razoavelmente boa e/ou microfone** ([veja essa lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) para exemplos)
 
 
-Se você tiver alguma dúvida, veja a página de [Discussões](https://github.com/jamulussoftware/jamulus/discussions)
+Se tiver alguma dúvida, dê uma olhada na página de [Discussões](https://github.com/jamulussoftware/jamulus/discussions)
 
 ## Instalação
 Para fazer Jamulus funcionar com o seu hardware, siga as seguintes instruções de acordo com sua plataforma:
@@ -23,7 +23,7 @@ Para fazer Jamulus funcionar com o seu hardware, siga as seguintes instruções 
 * [macOS](/wiki/Installation-for-Macintosh)
 * [Linux](/wiki/Installation-for-Linux)
 
-E por ora feche todos os outros programas. É melhor começar de maneira simples.
+E feche todos os outros programas por ora. É melhor começar de maneira simples.
 
 
 ## Jamulus - Janela principal
@@ -52,7 +52,7 @@ Preencha pelo menos o campo “Apelido/Nome” e feche a janela.
 
 **Antes de começar a tocar com outros, é recomendável se conectar a um servidor vazio para testar o seu setup**, para ter certeza que você está ouvindo o sinal vindo direto do servidor (se possível) e não o seu próprio som.
 
-Antes de se conectar a um servidor, você **não** deve conseguir ouvir a você mesmo. Ouvir seu próprio som através do Jamulus (e não direto de você mesmo) é considerado “A regra de ouro” que permite que você consiga tocar em tempo com os outros ([see the FAQ](/wiki/FAQ)).
+Antes de se conectar a um servidor, você **não** deve conseguir ouvir a si mesmo. A “Regra de ouro” do Jamulus é ouvir seu próprio som através do programa (e não direto de você mesmo). Isso possibilita tocar em tempo com os outros ([see the FAQ](/wiki/FAQ)).
 
 Agora use o botão “Conectar” na janela principal do Jamulus para se juntar a um servidor. A seguinte janela vai se abrir:
 
@@ -61,15 +61,11 @@ Agora use o botão “Conectar” na janela principal do Jamulus para se juntar 
   <figcaption>Conectar a um servidor</figcaption>
 </figure>
 
-A coisa mais importante sobre servidores é o “ping”. Quanto maior o número, mais difícil será tocar em tempo com outros. Em regra você deverá escolher um servidor cujo ping é menor que 15ms se possível.
-
-Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting).
+A coisa mais importante sobre servidores é o “ping”. Quanto maior o número, mais difícil será tocar em tempo com outros. Em regra você deverá escolher um servidor cujo ping seja menor que 15ms se possível.
 
 Uma vez conectado a um servidor, tenha certeza de que você se ouve bem e corrija o volume de entrada ou qualquer outro problema. E claro, não esqueça de obedecer [a regra de ouro](/wiki/Client-Troubleshooting).
 
 ## Tocando pela primeira vez
-
-With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you.
 
 Com o sistema configurado, você está pronto para começar. Quando você se conectar a um servidor (escolha um gênero da lista se quiser), os controles que você vê à direita é a sua mesa de som pessoal. Tudo o que você alterar ali vai mudar o que você ouve, mas isso não afeta os outros. Se você mover um botão para baixo, esse canal vai ficar mais fraco, se você movê-lo para cima, o canal ficará mais forte para você.
 
@@ -85,8 +81,5 @@ Preste atenção que você pode usar a função Chat a qualquer momento em que v
 Mais informações sobre como usar Jamulus você encontra no [Manual do software](/wiki/Software-Manual).
 
 ## Solução de Problemas
-
-Having audio trouble? Can't see servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions).
-
 
 Você está tendo problemas com o áudio? Não consegue ver os servidores, ou algum outro problema? Dá uma olhada em [Troubleshooting page](/wiki/Client-Troubleshooting), ou fique livre para postar sua pergunta nas [Discussões](https://github.com/jamulussoftware/jamulus/discussions).
