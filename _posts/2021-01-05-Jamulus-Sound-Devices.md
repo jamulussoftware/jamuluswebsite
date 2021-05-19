@@ -426,6 +426,18 @@ This device provides the **lowest latency**.
 
 See above. Not fully verified.
 
+***
+
+**[M-Audio Delta44/66/1010](https://www.sweetwater.com/store/detail/Delta44--m-audio-delta-44)**, PCI internal sound card with I/O breakout box
+
+**Windows**: ?
+
+**macOS**: ?
+
+**Linux**: Works great with jack.
+
+***
+
 ## Audio devices known not to work with Jamulus
 
 * **Zoom B3**, USB amplifier modeling pedal for bass. **Does not support 48 kHz**.
