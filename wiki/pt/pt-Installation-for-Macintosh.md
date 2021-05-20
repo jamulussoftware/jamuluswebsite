@@ -23,10 +23,12 @@ _Você pode ejetar o drive "Jamulus" do seu desktop e deletar a pasta no seu dir
 
 <figure><img src="{{site.url}}/assets/img/pt-screenshots/verification-mac.png" loading="lazy" alt="Alerta macOS dizendo que o desenvolvedor não pode ser verificado"></figure>
 
-A primeira vez que você tentar abrir o Jamulus, você vai provavelmente ver uma mensagem dizendo que ele não pode ser aberto. Nós não fazemos assinatura de código ainda (é muito caro).
+Quando se tenta abrir Jamulus pela primeira vez, provavelmente aparecerá uma mensagem dizendo que ele não pode ser aberto. Nós não fazemos assinatura de código ainda (é muito caro).
 
-Para abrir o Jamulus
+Para contornar esse problema:
 1. Use o finder e vá até a pasta de programas
+1. Dê um clique duplo no Jamulus e espere até a mensagem descrita acima aparecer
+1. Feche essa mensagem clicando em "Cancelar"
 1. Segure a tecla Control e clique (ou clique com o botão direito) no Jamulus, então selecione "Abrir" no topo do menu.
 
 Você verá uma versão ligeiramente diferente da mesma mensagem, agora aparecerá um botão "Abrir", que você pode clicar para continar e abrir o Jamulus. Essa mensagem de alerta não vai aparecer de novo - nas próximas vezes basta abrí-lo normalmente com um clique duplo.
