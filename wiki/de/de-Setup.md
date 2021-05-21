@@ -42,7 +42,7 @@ Zuerst lass die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” 
   <figcaption>Lass die Leute wissen, wer du bist</figcaption>
 </figure>
 
-Fülle mindestens das Feld “Alias/Name” aus und dann kannst du dieses Fenster schließen.
+Fülle mindestens das Feld “Alias/Name” aus. Dann kannst du das Fenster schließen.
 
 ## Mit einem Server verbinden und das Audio testen
 
