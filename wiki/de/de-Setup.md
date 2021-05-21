@@ -11,7 +11,7 @@ Um das Beste von Jamulus genießen zu können, brauchst du mindestens:
 
 1. **Eine kabelgebundene Internetverbindung** (kein WLAN - siehe [FAQ](/wiki/FAQ))
 1. **Kabelgebundene Kopfhörer (weder Bluetooth noch Lautsprecher** - siehe [FAQ](/wiki/FAQ))
-1. **Ein vernünftiges Audiointerface oder Soundkarte und Mikrofon** ([siehe diese Auflistung](/kb/2021/01/05/Jamulus-Sound-Devices.html) für Beispiele)
+1. **Ein passendes Audiointerface oder Soundkarte und Mikrofon** ([siehe diese Auflistung](/kb/2021/01/05/Jamulus-Sound-Devices.html) für Beispiele)
 
 Falls du Fragen dazu hast, schau mal rein in die [Diskussionen](https://github.com/jamulussoftware/jamulus/discussions)
 
