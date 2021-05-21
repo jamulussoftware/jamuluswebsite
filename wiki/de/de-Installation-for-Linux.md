@@ -16,7 +16,7 @@ Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
 1. Installiere das Paket: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`.
 1. Da Jamulus den JACK Server benötigt, musst du ihn auch installieren. Wir empfehlen, dass du `QjackCtl` zur Konfiguration von JACK benutzt. Installiere das Programm mit `sudo apt-get install qjackctl`
 
-Wenn du Jamulus auf eine neue Version upgraden musst, kannst du die neue .deb Datei einfach herunterladen und neu installieren, wie oben beschrieben.
+Wenn du Jamulus auf eine neue Version upgradest, kannst du die neue .deb Datei einfach herunterladen und wie oben beschrieben neu installieren.
 
 Für Installationspakete anderer Distributionen schau dir [Repology](https://repology.org/project/jamulus/versions) an. Du magst auch die von Benutzern erstellten [Installationsskripts](https://github.com/jamulussoftware/installscripts) verwenden.
 
