@@ -49,7 +49,7 @@ Fülle mindestens das Feld “Alias/Name” aus. Dann kannst du das Fenster schl
 **Bevor du anfängst mit anderen Leuten zu musizieren, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst vor Ort.
 
 Bevor du dich mit einem Server verbindest, solltest du dich selbst **nicht** hören können. Die “Goldene Regel” von Jamulus ist:
-Auf deinen eigenen Klang über das Programm zu hören, und nicht direkt von dir selbst. Das ermöglicht, dass du im Takt mit anderen spielst ([siehe FAQ](/wiki/FAQ)).
+auf deinen eigenen Klang über das Programm zu hören; nicht das direkte Signal von deinem Instrument. Dadurch kannst du mit anderen einfacher im Takt spielen ([siehe FAQ](/wiki/FAQ)).
 
 Nun klicke auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutreten. Ein weiteres Fenster geht auf:
 
