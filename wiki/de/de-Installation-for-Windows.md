@@ -23,7 +23,7 @@ Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
 Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um mit der möglicht geringsten Audiolatenz zu arbeiten.
 
 * Wenn du eine externe Soundkarte bzw. -interface besitzt, nutze den offiziellen ASIO-Treiber (normalerweise bieten sie die beste Qualität).
-* Wenn du keine externe Soundkarte besitzt, wird es wahrscheinlich keinen ASIO-Treiber geben. Deshalb musst du einen generischen Treiber nutzen, wie ASIO4ALL:
+* Wenn du keine externe Soundkarte besitzt, wirst du wahrscheinlich keinen ASIO-Treiber haben. Deshalb musst du einen generischen Treiber nutzen, wie ASIO4ALL:
 
 Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaround für einen Bug, der eventuell Probleme mit anderen Funktionen auslöst.
 
