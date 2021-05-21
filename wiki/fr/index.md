@@ -1,5 +1,5 @@
 ---
-layout: Présentation du wiki
+layout: wikioverview
 title: "Présentation"
 lang: "fr"
 permalink: "/wiki/"
