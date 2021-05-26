@@ -11,7 +11,7 @@ Las funciones más comunes de Jamulus pueden configurarse usando la interfaz gr�
 
 Por ejemplo, en Windows, para que un cliente utilice un archivo específico de configuración, haz clic derecho en el acceso directo de Jamulus y elige "Propiedades" > Destino. Añade los argumentos necesarios a Jamulus.exe:
 
-"C:\Archivos de Programa (x86)\Jamulus\Jamulus.exe" --inifile "C:\ruta\a\myinifile.ini"
+```shell "C:\Program Files (x86)\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini" ```
 
 Para macOS, arranca una ventana de Terminal y ejecuta Jamulus con las opciones deseadas como sigue:
 
@@ -47,7 +47,7 @@ _Nótese que las siguientes opciones no alterarán las configuraciónes hechas e
 | `-L` | `--licence` | Muestra una ventana de aceptación para que los usuarios se puedan conectar |                                                                          |
 | `-m` | `--htmlstatus` | Habilita un archivo de estado HTML, establece una ruta y un nombre de archivo |                                                                          |
 | `-o` | `--serverinfo` | Detalles de localización del servidor en el formato: `[nombre];[ciudad];[valor locale]` (ver [valores](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) | Solo servidores públicos |
-| `-P` | `--delaypan` | Iniciar con paneo con retardo | Ver [Configuración del Servidor](Server-Win-Mac#otras-opciones) |
+| `-P` | `--delaypan` | Iniciar con paneo con retardo | Ver [Configuración del Servidor](https://jamulus.io/wiki/Server-Win-Mac#otras-opciones) |
 | `-R` | `--recording` | Incluye una ruta editable donde se deben guardar los archivos (entrecomillado si procede). | Ver [Configuración del Servidor](Server-Win-Mac#grabación). |
 |       | `--norecord` | Desactiva la grabación cuando se habilita por defecto con `-R` |                                                                          |
 |       | `--serverbindip` | Especifica la dirección IP a la que vincularse |

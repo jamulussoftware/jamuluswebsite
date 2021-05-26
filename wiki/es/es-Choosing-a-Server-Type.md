@@ -21,9 +21,11 @@ Este modo se activa con la casilla de "Registrar mi servidor..." y (opcionalment
 
 Cuando se ejecuta sin GUI ("headless"), lo siguiente configuraría un servidor público:
 
+~~~
 Jamulus --nogui --server \
-        --centralserver géneroServidor:puerto \
-        --serverinfo "nombreDeTuServidor;tuCiudad;[ID País]"
+        --centralserver genreServer:port \
+        --serverinfo "yourServerName;yourCity;[country ID]"
+~~~
 
 **Nota**: **No** es necesario abrir puertos ni realizar ninguna configuración del router para habilitar un servidor público.
 
