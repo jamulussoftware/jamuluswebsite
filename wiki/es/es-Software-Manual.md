@@ -14,7 +14,8 @@ Este manual documenta la aplicación del cliente de Jamulus para su uso por part
 
 <summary>Tabla de contenidos</summary>
 
-* TOC {:toc}
+* TOC
+ {:toc}
 
 </details>
 
@@ -220,5 +221,3 @@ Esto trata de detectar la retroalimentación cíclica. Una vez detectada, se act
 ### Balance de Entrada
 
 Controla los niveles relativos de los canales locales de audio derecho e izquierdo. Para una señal mono actúa como paneo entre los dos canales. Por ejemplo, si se conecta un micrófono al canal derecho y un instrumento al izquierdo que suena mucho más alto que el micrófono, mueve el fader para aumentar el volumen relativo del micrófono.
-
-

@@ -11,7 +11,8 @@ title: 'Installation sous macOS'
 
 Assurez-vous d'avoir déjà lu la page [Getting Started](Getting-Started).
 
-1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\ **Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
+1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
+**Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Installez Jamulus**: Ouvrez le fichier `.dmg` téléchargé, acceptez la licence, *copiez collez* les deux icônes que vous voyez dans la fenêtre (Jamulus client et serveur) dans votre *dossier Applications*. Après cela, vous pouvez fermer cette fenêtre.
 1. **Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application. Si vous voyez un message qui vous dit que Jamulus ne peut pas être ouvert parce que le développeur ne peut pas être vérifié, lisez les explications dans la section suivante.
 

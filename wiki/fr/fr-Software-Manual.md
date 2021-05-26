@@ -14,7 +14,8 @@ Ce manuel documente l'application client Jamulus destinée aux musiciens et chan
 
 <summary>Table of contents</summary>
 
-* TOC {:toc}
+* TOC
+ {:toc}
 
 </details>
 
@@ -220,5 +221,3 @@ Tente de détecter les boucles de rétroaction audio. Une fois détectée, cette
 ### Balance d'entrée
 
 Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. Pour un signal mono il agit comme un panoramique entre les deux canaux. Par exemple, si un microphone est connecté au canal d'entrée droit et qu'un instrument est connecté au canal d'entrée gauche, la balance d'entrée agit comme un panoramique entre les deux canaux. Un instrument est connecté au canal d'entrée gauche et est beaucoup plus fort que le microphone, déplacez le fader audio pour augmenter le volume relatif du microphone.
-
-

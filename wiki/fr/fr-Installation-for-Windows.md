@@ -11,7 +11,8 @@ title: 'Installation sous Windows'
 
 Assurez-vous d'avoir déjà lu la page [Getting Started](Getting-Started).
 1. **Téléchargez et installez un pilote ASIO**. Il est recommandé d'utiliser une interface audio avec un pilote ASIO natif. Si vous n'avez pas d'interface audio externe, vous devrez probablement installer un pilote générique comme ASIO4ALL. Pour plus d'informations, consultez la section [ASIO](#asio).
-1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\ **Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
+1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
+**Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Installez Jamulus** : Double-cliquez sur le programme d'installation pour le lancer. Si vous recevez un avertissement de SmartScreen, cliquez sur "Plus d'infos" et "Exécuter quand même" pour installer Jamulus. (Si vous avez récupéré une nouvelle version de Jamulus et que vous êtes l'une des premières personnes à l'avoir téléchargée, Jamulus ne sera pas encore sur la liste blanche de SmartScreen. Nous ne payons pas pour la signature du code).
 1. **Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application.
 1. **Configurez votre carte son**. Une fois que vous avez terminé, vous devez configurer votre matériel audio. Regardez comment configurer ASIO4ALL si vous l'utilisez et/ou [Configurer le matériel](Hardware-Setup).
