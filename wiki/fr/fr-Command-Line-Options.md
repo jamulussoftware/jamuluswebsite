@@ -46,7 +46,7 @@ _Notez que les options suivantes ne modifieront pas les reglages définis dans l
 | `-l`  | `--log`           | Active l'enregistrement, définir le chemin et le nom de fichier 										|										  |
 | `-L`  | `--licence`       | Affiche une fenêtre d'accord avant que les utilisateurs puissent se connecter						    |										  |
 | `-o`  | `--serverinfo`    | Détails de l'emplacement du serveur dans le format : `[nom];[ville];[locale value]` (voir [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) | Serveurs publics seulement |
-| `-P`  | `--delaypan`      | Commencez avec le panoramique à retardement activé 												| voir [réglages serveur](https://jamulus.io/wiki/Server-Win-Mac#autres-options) |
+| `-P`  | `--delaypan`      | Commencez avec le panoramique à retardement activé 												| voir [réglages serveur](Server-Win-Mac#autres-options) |
 | `-R`  | `--recording`     | Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).                                                                             | voir [réglages serveur](Server-Win-Mac#enregistrement).                            |
 |       | `--norecord`      | Désactive l'enregistrement lorsqu'il est activé par défaut par -R 									|  	   									  |
 |       | `--serverbindip` | Specify the IP address to bind to                                 |
