@@ -1,11 +1,11 @@
 ---
+lang: es
 layout: wiki
-title: "FAQ"
-lang: "es"
-permalink: "/wiki/FAQ"
+permalink: /wiki/FAQ
+title: FAQ
 ---
 
-# Jamulus FAQ
+Jamulus FAQ
 
 Esto es un resumen de dudas comunes. Para problemas comunes y sus soluciones, ver la página de [Resolución de problemas](/wiki/Client-Troubleshooting).
 
@@ -40,10 +40,9 @@ Para la mayoría con banda ancha normal (por ej. 10 Mbit/s de bajada y 1 Mbit/s 
 
 No. Si solo tienes intención de conectarte a los servidores de otros, lo único que necesitas es un cliente. [Lee esto si crees que debes ejecutar tu propio servidor](/wiki/Running-a-Server).
 
-### ¿Cómo funciona Jamulus (en general)?
+¿Cómo funciona Jamulus (en general)?
 
 <img src="{{site.url}}assets/img/es-screenshots/diagram-overview.png" loading="lazy" alt="Diagram showing how Jamulus works">
-
 
 
 Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, donde se procesa. Después, el audio se envía de vuelta a cada cliente. Si un servidor es público y está registrado en un servidor de directorio, su información será emitida a todos los clientes.

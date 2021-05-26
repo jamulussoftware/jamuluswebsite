@@ -1,8 +1,8 @@
 ---
+category: hidden
+lang: es
 layout: redirect
-redirect: "/wiki/Setup"
-lang: "en"
-permalink: "/wiki/Getting-Started"
-category: "hidden"
+permalink: /wiki/Getting-Started
+redirect: /wiki/Setup
 ---
 

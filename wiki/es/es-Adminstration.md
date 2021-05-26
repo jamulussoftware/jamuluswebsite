@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Adminstration"
-lang: "en"
-permalink: "/wiki/Adminstration"
+permalink: /wiki/Adminstration
+title: Administración
 ---
 
 

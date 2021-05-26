@@ -1,8 +1,8 @@
 ---
+lang: fr
 layout: wiki
-title: "Installation pour Android"
-lang: "fr"
-permalink: "/wiki/Installation-for-Android"
+permalink: /wiki/Installation-for-Android
+title: 'Installation pour Android'
 ---
 
 {% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
@@ -21,16 +21,17 @@ Bien que vous **pouvez** installer Jamulus sur des appareils Android (et entendr
 Si vous voulez essayer Jamulus sur Android :
 
 1. Autorisez l'installation d'applications provenant de sources inconnues (regardez dans Paramètres>Sécurité. Remarque : la manière exacte de le faire dépend de votre appareil et de la version de votre système d'exploitation.)
-1. Télécharger et installer Jamulus]({{ site.download_root_link }}{ site.download_file_names.android }}){ : .button}
+1. [Télécharger et installer Jamulus]({{ site.download_root_link }}{ site.download_file_names.android }}){ : .button}
 1. Vous devriez maintenant être en mesure d'exécuter Jamulus sur votre appareil Android.
 
-### Commentaires et développement
+## Commentaires et développement
 
 Nous sommes très heureux de recevoir les commentaires des utilisateurs et des développeurs Android. Il vous suffit de vous rendre sur le [repo GitHub de Jamulus](https://github.com/jamulussoftware/jamulus/).
 
 ***
 
-### Tout est installé ?
+## Tout est installé ?
+
 Jamulus a été installé et peut être utilisé dès maintenant. Vous pouvez maintenant jeter un coup d'œil à la
 
 [Page d'accueil de Jamulus](Accueil){ : .button}

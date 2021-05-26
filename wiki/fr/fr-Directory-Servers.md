@@ -1,17 +1,17 @@
 ---
+lang: fr
 layout: wiki
-title: "Serveurs annuaires"
-lang: "fr"
-permalink: "/wiki/Directory-Servers"
+permalink: /wiki/Directory-Servers
+title: 'Serveurs annuaires'
 ---
 
 {% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
 
 # Enregistrement du serveur public
 
-Comme il y a une limite de 150 serveurs par serveur annuaire, vous devez sélectionner le serveur annuaire sur lequel vous voulez annoncer votre serveur. Sélectionnez un genre si vous avez l'intention de limiter les joueurs à ce style (les joueurs pourront alors voir votre serveur dans leur liste de genres). 
+Comme il y a une limite de 150 serveurs par serveur annuaire, vous devez sélectionner le serveur annuaire sur lequel vous voulez annoncer votre serveur. Sélectionnez un genre si vous avez l'intention de limiter les joueurs à ce style (les joueurs pourront alors voir votre serveur dans leur liste de genres).
 
-Lorsque vous démarrez un serveur public, vous verrez un message indiquant si votre serveur a été répertorié avec succès ou non. Si ce n'est pas le cas, et que vous laissez votre serveur en marche, il continuera à essayer de s'inscrire jusqu'à ce qu'un emplacement se libère.  
+Lorsque vous démarrez un serveur public, vous verrez un message indiquant si votre serveur a été répertorié avec succès ou non. Si ce n'est pas le cas, et que vous laissez votre serveur en marche, il continuera à essayer de s'inscrire jusqu'à ce qu'un emplacement se libère.
 
 
 ## Serveurs "headless"

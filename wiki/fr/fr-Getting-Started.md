@@ -1,8 +1,8 @@
 ---
 category: hidden
-lang: es
+lang: fr
 layout: redirect
-permalink: /wiki/Onboarding
+permalink: /wiki/Getting-Started
 redirect: /wiki/Setup
 ---
 

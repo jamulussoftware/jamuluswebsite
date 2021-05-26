@@ -36,6 +36,7 @@ You will then get a slightly different version of the same message, which allows
 For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
 
 ## All installed?
+
 Jamulus has been installed and can be used now. You can now take a look at the
 
 [Jamulus Onboarding page](Onboarding){: .button}

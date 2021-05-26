@@ -1,7 +1,7 @@
 ---
+category: hidden
+lang: es
 layout: redirect
-redirect: "/kb/2020/03/28/Server-Rpi.html"
-lang: "en"
-permalink: "/wiki/Server-Rpi"
-category: "hidden"
+permalink: /wiki/Server-Rpi
+redirect: /kb/2020/03/28/Server-Rpi.html
 ---

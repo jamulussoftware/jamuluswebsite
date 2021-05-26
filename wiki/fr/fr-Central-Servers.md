@@ -1,6 +1,6 @@
 ---
 category: hidden
-lang: es
+lang: fr
 layout: redirect
 permalink: /wiki/Directory-Servers
 redirect: /wiki/Central-Servers

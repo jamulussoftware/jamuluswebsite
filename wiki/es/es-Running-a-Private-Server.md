@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Ejecutar un Servidor Privado"
-lang: "es"
-permalink: "/wiki/Running-a-Private-Server"
+permalink: /wiki/Running-a-Private-Server
+title: 'Ejecutar un Servidor Privado'
 ---
 
 {% include breadcrumb.html root="Más" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
@@ -16,7 +16,9 @@ Esta guía presupone que vas a ejecutar un servidor privado en tu red doméstica
 Se recomienda que pruebes a ejecutar tu servidor en **modo público primero** para así acotar cualquier problema posterior en modo privado.
 
 ## Operar un servidor privado tras un router doméstico
+
 ### Redireccionamiento de puertos
+
 Para operar un servidor privado, necesitas habilitar el redireccionamiento de puertos en tu router. _(Si tienes curiosidad sobre por qué hay que hacer esto para los servidores privados pero no para los públicos, consulta [esta nota](#nota-para-frikis).)_
 
 Normalmente, las personas de fuera de tu red doméstica no pueden ver lo que sucede dentro de ella. Por tanto, si quieres operar un servidor Jamulus en casa, tienes que abrir una puerta en tu router para dejar que clientes de Jamulus puedan conectarse a él.
@@ -29,7 +31,7 @@ La configuración exacta del redireccionamiento de puertos difiere para cada rou
 
 Para más ayuda ver [portforward.com](https://portforward.com).
 
-Una vez configurado el router, puedes obtener tu dirección IP (WAN) externa por ejemplo [usando Google](https://www.google.com/search?q=what+is+my+ip). Dales esta dirección a tus amigos/as para que puedan conectarse a tu servidor (_pero también lee la nota sobre DNS dinámica abajo_). Tú tienes que conectarte a tu propio ordenador, puesto que tu ordenador es el que ejecuta el servidor. Por tanto, **solo tú** tienes que conectarte a `127.0.0.1`.
+Una vez configurado el router, puedes obtener tu dirección IP (WAN) externa por ejemplo [usando Google](https://www.google.com/search?q=what+is+my+ip). Dales esta dirección a tus amig@s para que puedan conectarse a tu servidor (_pero también lee la nota sobre DNS dinámica abajo_). Tú tienes que conectarte a tu propio ordenador, puesto que tu ordenador es el que ejecuta el servidor. Por tanto, **solo tú** tienes que conectarte a `127.0.0.1`.
 
 ### Puntos a tener en cuenta
 
@@ -37,7 +39,7 @@ Una vez configurado el router, puedes obtener tu dirección IP (WAN) externa por
 
 * Si utilizas un puerto distinto al que se usa por defecto (22124) tienes que escribir el número del puerto detrás del nombre del servidor o la dirección IP, separado por dos puntos, en el cliente de Jamulus (por ej. jamulus.ejemplo.org:22120).
 
-* Ver también esta excelente [guía sobre la operación de un servidor privado](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/how-to-create-a-private-server-for-band-rehearsals/508642543044030/) de [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) en Facebook (inglés).
+* Ver también esta excelente [guía sobre la operación de un servidor privado](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/how-to-create-a-private-server-for-band-rehearsals/508642543044030/) de [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) en Facebook.
 
 ## DNS dinámica y por qué es probable que lo necesites
 

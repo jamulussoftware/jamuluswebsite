@@ -1,35 +1,34 @@
 ---
+lang: fr
 layout: wiki
-title: "Exécuter un serveur"
-lang: "fr"
-permalink: "/wiki/Running-a-Server"
+permalink: /wiki/Running-a-Server
+title: 'Exécuter un serveur'
 ---
 
-## Exécuter un serveur
+# Exécuter un serveur
 
 ## Dois-je faire tourner un serveur pour utiliser Jamulus ?
 
-NON.
-{ : .doubletextsize .red }
+NON. { : .doubletextsize .red }
 
 
 Vous pouvez simplement choisir le serveur de quelqu'un d'autre dans votre liste et vous lancer.
 
-**Vous ne voulez pas être interrompu par des inconnus ? ** Une fois que vous et vos amis êtes connectés à un serveur public, appuyez sur les boutons "solo" des musiciens avec lesquels chacun d'entre vous veut jouer. Tous ceux que vous ne mettez pas en solo verront une icône "muted" sur votre fader. Et vous ne les entendrez pas.
+**Vous ne voulez pas être interrompu par des inconnus ?** Une fois que vous et vos amis êtes connectés à un serveur public, appuyez sur les boutons "solo" des musiciens avec lesquels chacun d'entre vous veut jouer. Tous ceux que vous ne mettez pas en solo verront une icône "muted" sur votre fader. Et vous ne les entendrez pas.
 
-### Cela semble trop facile.
+## Cela semble trop facile.
 
 Si vous voulez vraiment gérer un serveur, il est **très important** que vous lisiez et compreniez quel type de serveur vous voulez gérer.
 
 <div class="fx-row fx-row-start-xs button-container">
-  <a href="Choosing-a-Server-Type" class="button fx-col-100-xs" target="_blank" rel="noopener noreferrer">Lecture sur les types de serveurs</a>.
+  <a href="Choosing-a-Server-Type" class="button fx-col-100-xs" target="_blank" rel="noopener noreferrer">Lecture sur les types de serveurs</a>
 </div>
 
 ... puis revenez ici.
 
 ### Vitesse et latence
 
-**_La capacité du serveur lui-même (et du réseau sur lequel il se trouve) n'est PAS le principal déterminant de la qualité d'une session Jamulus!_**.
+**_La capacité du serveur lui-même (et du réseau sur lequel il se trouve) n'est PAS le principal déterminant de la qualité d'une session Jamulus!_**
 
 De nombreuses personnes attribuent au serveur des problèmes qui sont en fait des problèmes du _client_. Cela dépend en grande partie du [matériel](Hardware-Setup) des clients, des réseaux sur lesquels ils se trouvent et de leur respect de la [règle numéro un](Getting-Started#having-trouble-cant-keep-in-time). Il n'y a donc aucune garantie que vous obtiendrez une latence plus faible ou de meilleures performances générales en ayant votre propre serveur.
 
@@ -55,6 +54,7 @@ Une jam typique peut compter 4 personnes, pour lesquelles vous avez besoin de 20
 
 
 ## Tout va bien ? Installez-vous !
+
 <div class="fx-row fx-row-start-xs button-container">
     <a href="Server-Win-Mac" class="button fx-col-100-xs">Pour les utilisateurs de Windows ou macOS</a>
     <a href="Server-Linux" class="button fx-col-100-xs">Pour les utilisateurs de Linux</a>

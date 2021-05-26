@@ -1,19 +1,19 @@
 ---
+lang: fr
 layout: wiki
-title: "Installation sous Windows"
-lang: "fr"
-permalink: "/wiki/Installation-for-Windows"
+permalink: /wiki/Installation-for-Windows
+title: 'Installation sous Windows'
 ---
 
 {% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
 
 # Installation sous Windows
-Assurez-vous d'avoir déjà lu la page [configuration](Getting-Started).
+
+Assurez-vous d'avoir déjà lu la page [Getting Started](Getting-Started).
 1. **Téléchargez et installez un pilote ASIO**. Il est recommandé d'utiliser une interface audio avec un pilote ASIO natif. Si vous n'avez pas d'interface audio externe, vous devrez probablement installer un pilote générique comme ASIO4ALL. Pour plus d'informations, consultez la section [ASIO](#asio).
-1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
-**Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
+1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\ **Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Installez Jamulus** : Double-cliquez sur le programme d'installation pour le lancer. Si vous recevez un avertissement de SmartScreen, cliquez sur "Plus d'infos" et "Exécuter quand même" pour installer Jamulus. (Si vous avez récupéré une nouvelle version de Jamulus et que vous êtes l'une des premières personnes à l'avoir téléchargée, Jamulus ne sera pas encore sur la liste blanche de SmartScreen. Nous ne payons pas pour la signature du code).
-1. **Lancez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application.
+1. **Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application.
 1. **Configurez votre carte son**. Une fois que vous avez terminé, vous devez configurer votre matériel audio. Regardez comment configurer ASIO4ALL si vous l'utilisez et/ou [Configurer le matériel](Hardware-Setup).
 
 ***
@@ -32,7 +32,8 @@ Vous pouvez essayer deux versions d'ASIO4ALL. ASIO4ALL v2.14 inclut une solution
 
 [ASIO4ALL website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
-## Configuration de ASIO4All
+
+### Configuration de ASIO4All
 
 *ASIO4All n'est pas recommandé si votre interface audio fournit son propre pilote ASIO, car celui-ci pourrait avoir une meilleure latence.*
 
@@ -40,9 +41,10 @@ Pour ASIO4All, vous aurez peut-être besoin d'expérimenter un peu pour trouver 
 
 **Astuce :** Configurez votre carte son lorsque vous êtes [connecté à un serveur] (Onboarding#2-connecting-to-a-server) pour entendre votre instrument ou votre voix et vérifier si tout est correctement configuré ; mais lisez d'abord ce qui suit.
 
+
 Avant de démarrer avec Jamulus :
 1. **Fermez toutes les applications** (en particulier celles qui pourraient accéder à votre carte son comme votre navigateur/lecteur de média) car Jamulus a besoin d'un accès exclusif à votre carte son. Les autres programmes ne pourront pas utiliser l'audio si ASIO4ALL et Jamulus sont en cours d'exécution.
-1. Si l'audio ne fonctionne pas directement, assurez-vous que seules les **entrées/sorties correctes** dans ASIO4All **sont activées**. Tout le reste devrait être désactivé. Ça peut être fait comme suit :
+1. Si l'audio ne fonctionne pas directement, assurez-vous que seules les **entrées/sorties correctes** dans ASIO4All **sont activées**. Tout le reste devrait être désactivé. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:
 
 ### Comment configurer les entrées ASIO4All (guide)
 
@@ -70,6 +72,6 @@ Des informations officielles et supplémentaires sur la façon de configurer ASI
 
 ## Tout est installé ?
 
-Jamulus a été installé et peut désormais être utilisé. Vous pouvez maintenant jeter un coup d'œil à la 
+Jamulus a été installé et peut être utilisé dès maintenant. Vous pouvez maintenant jeter un coup d'œil à la
 
-[page d'embarquement Jamulus](Onboarding){: .button}
+[Page d'accueil de Jamulus](Accueil){ : .button}

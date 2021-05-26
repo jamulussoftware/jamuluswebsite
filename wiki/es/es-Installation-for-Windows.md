@@ -1,24 +1,25 @@
 ---
+lang: es
 layout: wiki
-title: "Instalación en Windows"
-lang: "es"
-permalink: "/wiki/Installation-for-Windows"
+permalink: /wiki/Installation-for-Windows
+title: 'Instalación en Windows'
 ---
 
 {% include breadcrumb.html root="Utilización de Jamulus" branch1="Cómo Empezar" branch1-url="Getting-Started" %}
 
 # Instalación en Windows
-Asegúrate de leer la página de [Cómo Empezar](Getting-Started).
+
+Asegúrate de haber leído la página de [Cómo Empezar](Getting-Started).
 1. **Descarga e instala un driver ASIO**. Se recomienda usar una tarjeta de audio con driver ASIO nativo. Si no tienes una tarjeta de audio externa, probablemente tendrás que instalar un driver genérico como ASIO4ALL. Para más información, baja a la sección sobre [ASIO](#asio).
-1. [Descarga Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
-   **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
+1. [Descarga Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\ **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Instala Jamulus**: Haz doble-clic en el instalador para ejecutarlo. Si ves un aviso de SmartScreen, haz clic en "Más info" y "Ejecutar de todas formas" para instalar Jamulus. (Si descargaste una versión nueva de Jamulus y eres de las primeras personas en descargarlo, Jamulus no entrará en la lista blanca de SmartScreen aún. No pagamos para la firma de código).
-1.  **Ejecuta Jamulus**.Ahora deberías de poder usar Jamulus como cualquier otra aplicación.
+1. **Ejecuta Jamulus**. Ahora deberías de poder usar Jamulus como cualquier otra aplicación.
 1. **Configura tu tarjeta de sonido**. Una vez hecho, tienes que configurar tu hardware de audio. Mira cómo configurar ASIO4ALL si es lo que vas a utilizar y/o la [Configuración de Hardware](Hardware-Setup).
 
 ***
 
 ## ASIO
+
 Jamulus utiliza [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) para proporcionar la menor latencia.
 * Si tienes una tarjeta de sonido/interfaz de audio externa, utiliza su driver ASIO oficial (normalmente ofrecen la mejor calidad).
 * Si no tienes una tarjeta externa, probablemente no tendrás instalado un driver ASIO. Por tanto, deberás instalar uno genérico como ASIO4ALL:
@@ -33,6 +34,7 @@ Puedes probar dos versiones de ASIO4ALL. ASIO4ALL v2.14 incluye una actualizaci�
 
 
 ### Configurar ASIO4ALL
+
 *No se recomienda ASIO4ALL si tu tarjeta de sonido/interfaz de audio tiene su propio driver ASIO, puesto que este último podría proporcionar mejor latencia.*
 
 Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configuración adecuada ya que cada ordenador es un poco diferente.
@@ -42,7 +44,7 @@ Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configura
 
 Antes de empezar con Jamulus:
 1. **Cierra todas las aplicaciones** (sobre todo aquellas que podrían acceder a tu tarjeta de sonido como tu navegador/reproductor de audio) ya que Jamulus necesita acceso exclusivo a tu tarjeta de audio. Otros programas no podrán usar audio si ASIO4ALL y Jamulus están activos.
-1. Si el audio de Jamulus no funciona directamente, asegúrate de que solo ** las entradas/salidas correctas** en ASIO4ALL **están activadas**. Todo lo demás debería de estar apagado. Busca [ configuraciones funcionales de ASIO4ALL en la lista comunitaria](/kb/2021/03/20/ASIO4ALL-Examples.html) para tu configuración o hazlo manualmente si no encuentras la tuya:
+1. Si el audio de Jamulus no funciona directamente, asegúrate de que solo **las entradas/salidas correctas** en ASIO4ALL **están activadas**. Todo lo demás debería estar apagado. Busca [configuraciones funcionales de ASIO4ALL en la lista comunitaria](/kb/2021/03/20/ASIO4ALL-Examples.html) para tu configuración o hazlo manualmente si no encuentras la tuya:
 
 ### Cómo configurar las entradas de ASIO4ALL (Guía)
 

@@ -68,30 +68,31 @@ Finally I start Jamulus automatically connecting to the directory server.
 
 Here is the script:
 
+
 ~~~
-amixer sset 'Mic' capture 30% cap
-amixer sset 'Mic' playback 0%
-amixer sset 'Line' playback 60% unmute
-amixer sset 'Audigy Analog/Digital Output Jack' unmute
-amixer sset 'Analog Mix' capture 100%
-amixer sset 'Analog Mix' playback 0%
-amixer sset 'Wave' 100%
-amixer sset 'Master' capture 100% cap
-amixer sset 'Master' playback 100%
-amixer sset 'Master' playback 100%
-amixer sset 'PCM' playback 100%
-amixer sset 'PCM' capture 0%
-guitarix &
-/home/corrados/llcon/Jamulus -c myJamulusServer.domain.com &
-sleep 3
-jack_disconnect system:capture_1 Jamulus:'input left'
-jack_disconnect system:capture_2 Jamulus:'input right'
-jack_connect system:capture_1 gx_head_amp:in_0
-jack_connect gx_head_amp:out_0 gx_head_fx:in_0
-jack_connect gx_head_fx:out_0 Jamulus:'input left'
-jack_connect gx_head_fx:out_1 Jamulus:'input right'
-jack_connect Jamulus:'output left' system:playback_1
-jack_connect Jamulus:'output right' system:playback_2
+ amixer sset 'Mic' capture 30% cap
+ amixer sset 'Mic' playback 0%
+ amixer sset 'Line' playback 60% unmute
+ amixer sset 'Audigy Analog/Digital Output Jack' unmute
+ amixer sset 'Analog Mix' capture 100%
+ amixer sset 'Analog Mix' playback 0%
+ amixer sset 'Wave' 100%
+ amixer sset 'Master' capture 100% cap
+ amixer sset 'Master' playback 100%
+ amixer sset 'Master' playback 100%
+ amixer sset 'PCM' playback 100%
+ amixer sset 'PCM' capture 0%
+ guitarix &
+ /home/corrados/llcon/Jamulus -c myJamulusServer.domain.com &
+ sleep 3
+ jack_disconnect system:capture_1 Jamulus:'input left'
+ jack_disconnect system:capture_2 Jamulus:'input right'
+ jack_connect system:capture_1 gx_head_amp:in_0
+ jack_connect gx_head_amp:out_0 gx_head_fx:in_0
+ jack_connect gx_head_fx:out_0 Jamulus:'input left'
+ jack_connect gx_head_fx:out_1 Jamulus:'input right'
+ jack_connect Jamulus:'output left' system:playback_1
+ jack_connect Jamulus:'output right' system:playback_2
 ~~~
 
 ## Using ctrlmidich for MIDI controllers
@@ -120,25 +121,23 @@ To send these signals using systemd, create the following two `.service` files i
 For turning recording on or off (depending on the current state):
 
 ~~~
-[Unit]
-Description=Toggle recording state of Jamulus server
-Requisite=Jamulus-Server
+ [Unit]
+ Description=Toggle recording state of Jamulus server 
+ Requisite=Jamulus-Server
 
-[Service]
-Type=oneshot
-ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+ [Service]
+ Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server 
 ~~~
 
 For starting a new recording:
 
 ~~~
-[Unit]
-Description=Start a new recording on Jamulus server
-Requisite=Jamulus-Server
+ [Unit]
+ Description=Start a new recording on Jamulus server 
+ Requisite=Jamulus-Server
 
-[Service]
-Type=oneshot
-ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
+ [Service]
+ Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server 
 ~~~
 
 _Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_

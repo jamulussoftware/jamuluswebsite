@@ -1,14 +1,15 @@
 ---
+lang: es
 layout: wiki
-title: "Resolución de Problemas del Cliente"
-lang: "es"
-permalink: "/wiki/Client-Troubleshooting"
+permalink: /wiki/Client-Troubleshooting
+title: 'Resolución de Problemas del Cliente'
 ---
 
 # Resolución de Problemas
 
 ### ¿No escuchas nada/Otros no pueden escucharte?
-Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auriculares están conectados al puerto correcto. Asegúrate de que ninguna otra aplicación como el navegador, herramienta de videoconferencia, etc. no está utilizando la tarjeta de sonido. Deberías cerrar estos programas al utilizar Jamulus. Si todo parece estar bien y el problema persiste, es probable que haya algún problema con la configuración del dispositivo de audio. Esto dependerá de tu configuración particular (plataforma, hardware, software y drivers), así que es mejor preguntar en [los foros](https://github.com/jamulussoftware/jamulus/discussions) para solicitar ayuda.
+
+Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y auriculares están conectados al puerto correcto. Asegúrate de que ninguna otra aplicación como el navegador, herramienta de videoconferencia, etc. está utilizando la tarjeta de sonido. Deberías cerrar estos programas al utilizar Jamulus. Si todo parece estar bien y el problema persiste, es probable que haya algún problema con la configuración del dispositivo de audio. Esto dependerá de tu configuración particular (plataforma, hardware, software y drivers), así que es mejor preguntar en [los foros](https://github.com/jamulussoftware/jamulus/discussions) para solicitar ayuda.
 
 **Usuarios de Windows (ASIO4ALL)**: Si estás utilizando el driver ASIO4ALL, mira [la sección de configuración para ASIO4ALL](Installation-for-Windows#configurar-asio4all)
 
@@ -43,21 +44,21 @@ Ten en cuenta que aunque escuches la señal del servidor y esto asegura que est�
 
 ### ¿Dificultades a la hora de configurar el micrófono?
 
-Cuando utilizas un micrófono mientras tocas otro instrumento, puedes utilizar una señal de entrada estéreo en la configuración, donde un canal se conecta al instrumento y el otro canal a la señal del micrófono. En el canal del micrófono es posible aplicar un efecto de reverb opcional.
+Cuando utilizas un micrófono mientras también tocas un instrumento, puedes utilizar una señal de entrada estéreo en la configuración, donde un canal se conecta al instrumento y el otro canal a la señal del micrófono. En el canal del micrófono es posible aplicar un efecto de reverb opcional.
 
 ### ¿El LED del buffer se vuelve rojo, cortes, jitter, sonidos raros?
 
-El procesador de tu ordenador podría estar sobrecargado. Intenta no dejar que otros programas compitan con Jamulus (como Zoom Meetings o streaming en directo de Facebook) en tu máquina. O al menos ciérralos mientras tocas. Evita cosas como escaneos del antivirus o actualizaciones de software, etc. Ten en cuenta que el efecto de reverb en Jamulus consume más CPU cuanto más erverb se aplique.
+El procesador de tu ordenador podría estar sobrecargado. Intenta no dejar que otros programas compitan con Jamulus (como Zoom Meetings o streaming en directo de Facebook) en tu máquina. O al menos ciérralos mientras tocas. Evita cosas como escaneos del antivirus o actualizaciones de software, etc. Ten en cuenta que el efecto de reverb en Jamulus consume más CPU cuanto más reverb se aplique.
 
 ### Los tiempos del ping y la latencia empiezan bien pero luego empeoran, causando problemas
 
 Esto puede indicar que algo está compitiendo con Jamulus en tu red, así que asegúrate de que nadie está viendo películas en HD en Netflix o realizando una videoconferencia por Zoom mientras tocas. Una solución más permanente para aquellas personas con más inclinación técnica podría ser investigando [el tema del "buffer bloat"](https://www.bufferbloat.net/projects/bloat/wiki/) en su router y si es posible implementar Smart Queue Management (SQM). [Más detalles aquí](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/).
 
-### ¿Te frustras con los canales de software, ruteo de audio, tasas de muestro y demás?
+### ¿Te frustras con los canales de software, ruteo de audio, tasas de muestreo y demás?
 
 Normalmente es mucho más fácil y fiable tener una [mesa de mezclas](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) para conectar tu equipo (instrumentos, micrófono, grabadora, etc.) y luego enviar una simple señal estéreo a tu interfaz de audio (¡pero asegúrate de escuchar el sonido resultante del servidor Jamulus a través del ordenador!). La enorme variedad de combinaciones posibles de hardware, software e instrumentos significa que configurar tu tarjeta de audio para funcionar con tu equipo en particular se puede complicar rápidamente.
 
-### ¿Atronado cuando entra alguien nuevo a tu jam con feedback o ruido?
+### ¿Atronado cuando entra alguien nuevo a tu jam con retroalimentación o ruido?
 
 Puedes establecer el "Nivel Cliente Nuevo" a un valor bajo (por ej. 10), o configurar los músicos con quienes tocas a "Solo" (a la derecha en el panel del mezclador). De ese modo, los nuevos miembros que se unan estarán a un volumen bajo o silenciados.
 

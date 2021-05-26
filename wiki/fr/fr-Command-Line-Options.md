@@ -1,8 +1,8 @@
 ---
+lang: fr
 layout: wiki
-title: "Options de la ligne de commande"
-lang: "fr"
-permalink: "/wiki/Command-Line-Options"
+permalink: /wiki/Command-Line-Options
+title: 'Options de la ligne de commande'
 ---
 
 # Options de la ligne de commande
@@ -11,15 +11,15 @@ La plupart des fonctions courantes de Jamulus peuvent être définies à l'aide 
 
 Par exemple, sous Windows, pour qu'un client utilise un fichier de paramètres spécifique, cliquez avec le bouton droit de la souris sur le raccourci Jamulus et choisissez "Propriétés" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :
 
-```shell
-"C:\Program Files (x86)\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini"
-```
+```shell "C:\Program Files (x86)\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini" ```
 
 Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :
 
-```shell
-/Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
-```
+```shell /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini" ```
+
+***
+
+You can see all possible options your version supports by starting Jamulus with the `-h` option.
 
 _Notez que les options suivantes ne modifieront pas les reglages définis dans l'interface graphique._
 
@@ -31,7 +31,7 @@ _Notez que les options suivantes ne modifieront pas les reglages définis dans l
 |  `-i`     | `--inifile`       | Définit l'emplacement du fichier d'initialisation (remplace la valeur par défaut)                 | Client (toujours) and server (avec IGU) |
 |  `-n`     | `--nogui`         | Désactive l'IGU                                                                                   | 										  |
 |  `-p`     | `--port`          | Numéro du port UDP local. La valeur par défaut est 22124                                          | 										  |
-|  `-Q`     | `--qos`           | Définit la valeur DSCP de la qualité de service. La valeur par défaut est 128. Désactiver avec 0. | QoS ignorée par Windows, consultez [Tips & Tricks](Tips-Tricks-More#quality-of-service). |
+|  `-Q`     | `--qos`           | Définit la valeur DSCP de la qualité de service. La valeur par défaut est 128. Désactiver avec 0.  | QoS ignorée par Windows, consultez [Tips & Tricks](Tips-Tricks-More#qualité-de-service). |
 |  `-t`     | `--notranslation` | Désactive les traductions                                                                         |										  |
 |  `-v`     | `--version`       | Affiche les informations sur la version et quitte                                                 | 										  |
 
@@ -46,9 +46,10 @@ _Notez que les options suivantes ne modifieront pas les reglages définis dans l
 | `-l`  | `--log`           | Active l'enregistrement, définir le chemin et le nom de fichier 										|										  |
 | `-L`  | `--licence`       | Affiche une fenêtre d'accord avant que les utilisateurs puissent se connecter						    |										  |
 | `-o`  | `--serverinfo`    | Détails de l'emplacement du serveur dans le format : `[nom];[ville];[locale value]` (voir [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) | Serveurs publics seulement |
-| `-P`  | `--delaypan`      | Commencez avec le panoramique à retardement activé 												| voir [réglages serveur](https://jamulus.io/wiki/Server-Win-Mac#other+options) |
-| `-R`  | `--recording`     | Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire). | voir [réglages serveur](Server-Win-Mac#recording) |
+| `-P`  | `--delaypan`      | Commencez avec le panoramique à retardement activé 												| voir [réglages serveur](https://jamulus.io/wiki/Server-Win-Mac#autres-options) |
+| `-R`  | `--recording`     | Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).                                                                             | voir [réglages serveur](Server-Win-Mac#enregistrement).                            |
 |       | `--norecord`      | Désactive l'enregistrement lorsqu'il est activé par défaut par -R 									|  	   									  |
+|       | `--serverbindip` | Specify the IP address to bind to                                 |
 
 ### Client seulement
 
@@ -60,3 +61,5 @@ _Notez que les options suivantes ne modifieront pas les reglages définis dans l
 | `-j`  | `--nojackconnect` | Désactive les connections automatique de JACK 													 |											|
 |       | `--ctrlmidich`    | Canal du contrôleur MIDI à écouter, décalage du numéro de contrôle et numéros CC consécutifs (canaux). Format: `channel[;f*][;p*][;s*][;m*]` 	| voir [Trucs & Astuces](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
 |       | `--clientname`    | Titre de la fenêtre et nom du client JACK 														 |											|
+
+

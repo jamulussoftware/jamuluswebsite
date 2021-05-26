@@ -1,14 +1,15 @@
 ---
+lang: fr
 layout: wiki
-title: "Installation sous Linux"
-lang: "fr"
-permalink: "/wiki/Installation-for-Linux"
+permalink: /wiki/Installation-for-Linux
+title: 'Installation pour Linux'
 ---
 
 {% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
 
 # Installation pour Linux
-Assurez-vous de lire la page [Configuration](Getting-Started).
+
+Assurez-vous d'avoir déjà lu la page [Getting Started](Getting-Started).
 
 ### Debian et Ubuntu
 
@@ -25,6 +26,7 @@ Pour les installateurs sur d'autres distributions, voir [Repology](https://repol
 ## Configurer votre matériel
 
 ### Configurer JACK avec QjackCtl
+
 Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.
 1. Exécutez la commande `qjackctl`. Vous verrez la page principale de l'utilitaire **Qt JACK Control**.
 2. Configurez votre matériel audio comme suit (les paramètres exacts de JACK dépendront de ce que votre matériel audio est capable de faire) :

@@ -1,13 +1,13 @@
 ---
+lang: fr
 layout: wiki
-title: "Dépannage d'un serveur"
-lang: "fr"
-permalink: "/wiki/Server-Troubleshooting"
+permalink: /wiki/Server-Troubleshooting
+title: 'Dépannage du Serveur'
 ---
 
-{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
 
-## Dépannage
+# Dépannage
 
 ## Serveurs - Public
 

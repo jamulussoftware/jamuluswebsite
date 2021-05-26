@@ -1,11 +1,10 @@
 ---
+lang: es
 layout: wiki
-title: "Manual de Software"
-lang: "es"
-permalink: "/wiki/Software-Manual"
+permalink: /wiki/Software-Manual
+title: 'Manual del Software'
 ---
-# Manual de Software de Jamulus
-{:.no_toc}
+# Manual de Usuario de Jamulus {:.no_toc}
 
 Este manual documenta la aplicación del cliente de Jamulus para su uso por parte de músicos y cantantes para utilizar el software con el fin de conectarse a un servidor.
 
@@ -13,8 +12,7 @@ Este manual documenta la aplicación del cliente de Jamulus para su uso por part
 
 <summary>Tabla de contenidos</summary>
 
-* TOC
-   {:toc}
+* TOC {:toc}
 
 </details>
 
@@ -23,7 +21,7 @@ Este manual documenta la aplicación del cliente de Jamulus para su uso por part
 
 <figure>
 	<img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
-	<figcaption>Tu mezcla local cuando te conectas a un Servidor</figcaption>
+	<figcaption>Your local mix when connected to a Server</figcaption>
 </figure>
 
 ## LEDs de retardo y buffer
@@ -38,7 +36,7 @@ Este manual documenta la aplicación del cliente de Jamulus para su uso por part
 
 **Amarillo** - Una sesión aún es posible pero quizá sea más difícil tocar
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/led-red.png"  style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/led-red.png" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
 
 **Rojo** - El retardo es demasiado grande para tocar
 
@@ -52,8 +50,7 @@ Este manual documenta la aplicación del cliente de Jamulus para su uso por part
 
 ## Entrada
 
-Esto muestra los niveles de los dos canales estéreo de tu entrada de audio.
-Asegúrate de no clipear la señal de entrada para evitar distorsiones de la señal de audio (los LEDs indicarán el clipeo cuando suceda).
+Esto muestra los niveles de los dos canales estéreo de tu entrada de audio. Asegúrate de no clipear la señal de entrada para evitar distorsiones de la señal de audio (los LEDs indicarán el clipeo cuando suceda).
 
 ## Botón de Silenciarme Yo
 
@@ -78,15 +75,13 @@ La ventana de Configuración de Conexión muestra una lista de servidores dispon
 
 Puedes filtrar la lista por nombre de servidor o ubicación. Para solo mostrar los servidores ocupados, escribe el caracter "#".
 
-Si conoces la dirección IP o URL de un servidor, puedes conectarte a él utilizando el campo de Nombre/Dirección del Servidor. Se puede añadir un número de puerto opcional tras la dirección IP o URL utilizando dos puntos como separador, por ej.
-`jamulus.ejemplo.org:22124`. El campo también mostrará una lista de los servidores utilizados recientemente.
+Si conoces la dirección IP o URL de un servidor, puedes conectarte a él utilizando el campo de Nombre/Dirección del Servidor. Se puede añadir un número de puerto opcional tras la dirección IP o URL utilizando dos puntos como separador, por ej. `jamulus.ejemplo.org:22124`. El campo también mostrará una lista de los servidores utilizados recientemente.
 
 ## Mezclador de audio del servidor
 
 <figure><img src="{{site.url}}/assets/img/es-screenshots/mixer-channles.png" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
 
-La ventana del mezclador de audio muestra cada usuario conectado al servidor (incluyéndote a ti).
-Los faders te permiten ajustar el nivel de lo que escuchas sin afectar a lo que escuchan los demás.
+La ventana del mezclador de audio muestra a cada usuario conectado al servidor (incluyéndote a ti). Los faders te permiten ajustar el nivel de lo que escuchas sin afectar a lo que escuchan los demás.
 
 El vúmetro muestra el nivel de entrada en el servidor - esto es, el sonido enviado.
 
@@ -159,11 +154,11 @@ En el caso del modo estéreo, no estará disponible la selección de canal para 
 
 Cuanto mayor la calidad del audio, mayor la tasa de subida del audio. Asegúrate de que tu tasa de subida no excede el ancho de banda de tu conexión a Internet.
 
-### Retardo Buffer
+### Retardo del Buffer
 
-El retardo de buffer es un parámetro fundamental en Jamulus. Este parámetro tiene un impacto sobre muchas propiedades de la conexión. Hay soporte para tres tamaños de buffer:
+El retardo del buffer es un parámetro fundamental en Jamulus. Este parámetro tiene un impacto sobre muchas propiedades de la conexión. Hay soporte para tres tamaños de buffer:
 
-- **64 muestras** Es la configuración aconsejada puesto que ofrece la latencia más baja, aunque no funciona con todas las tarjetas de sonido.
+- **64 muestras**: Es la configuración aconsejada puesto que ofrece la latencia más baja, aunque no funciona con todas las tarjetas de sonido.
 - **128 muestras** Debería de funcionar con la mayoría de tarjetas de sonido.
 - **256 muestras** Solo debería usarse con un ordenador muy lento o con una conexión a internet muy lenta.
 
@@ -187,7 +182,7 @@ Por tanto la configuración del jitter buffer es un compromiso entre calidad y r
 
 Si se activa la casilla de Auto, los jitter buffers del cliente local y del servidor remoto se configuran automáticamente basándose en mediciones del jitter de la red y la tarjeta de audio. Si se activa esta opción, los faders quedan deshabilitados (no pueden moverse con el ratón).
 
-### Activar Buffers de Red Pequeños
+### Activar Buffers Red Pequeños
 
 Permite soporte para paquetes de audio por red muy reducidos. Solo se utilizan si el retardo del buffer de la tarjeta de audio es menor de 128 muestras. Cuanto menores los buffers de red, menor la latencia de audio. Pero al mismo tiempo, aumenta la carga de red y la probabilidad de caídas de audio también aumenta.
 
@@ -197,7 +192,7 @@ El Ping es el tiempo que requiere el flujo de audio para viajar desde el cliente
 
 El retardo total se calcula con el ping y el retardo ocasionado por la configuración de buffers.
 
-La Tasa de Subida de Audio depende del tamaño actual de los paquetes de audio y la configuración de compresión de audio. Asegúrate de que la tasa de subida no es mayor que la velocidad de subida disponible (comprueba la tasa de subida de tu conexión a internet, por ejemplo con [librespeed.org](https://librespeed.org/)).
+La Tasa de Subida de Audio depende del tamaño actual de los paquetes de audio y la configuración de compresión de audio. Asegúrate de que la tasa de subida no es mayor que la velocidad de subida disponible (comprueba la tasa de subida de tu conexión a internet, por ejemplo con [librespeed.org](https://librespeed.org/).
 
 ## Configuración Avanzada
 
@@ -207,7 +202,7 @@ La Tasa de Subida de Audio depende del tamaño actual de los paquetes de audio y
 
 Deja esto en blanco a menos que necesites escribir la dirección de un servidor de directorio distinto a los que hay por defecto.
 
-### Nivel Cliente Nuevo
+### Nivel cliente nuevo
 
 Este ajuste define el nivel del fader de una nueva conexión de cliente, en porcentaje. Si se conecta un nuevo usuario al servidor actual, el nivel inicial de su fader tomará este valor si no se ha especificado anteriormente un valor para ese usuario de una conexión anterior. Puedes establecer en este nivel a todos los usuarios en un servidor ocupado con Editar > "Poner Todos Faders a Nivel Cliente Nuevo".
 
@@ -217,11 +212,11 @@ Aumenta la ganancia de tu dispositivo. Utiliza esto si tu dispositivo no entrega
 
 ### Protección contra Retroalimentación
 
-Esto trata de detectar retroalimentación cíclica. Una vez detectada, se activará el botón de "Silenciarme Yo" y se mostrará un mensaje de explicación para que puedas solucionar el problema.
+Esto trata de detectar la retroalimentación cíclica. Una vez detectada, se activará el botón de "Silenciarme Yo" y se mostrará un mensaje de explicación para que puedas solucionar el problema.
 
 
 ### Balance de Entrada
 
-Controla los niveles relativos de los canales locales de audio derecho e izquierdo. Para una señal mono actúa como paneo entre los dos canales. Por ejemplo, si se conecta un miocrófono al canal derecho y un instrumento al izquierdo que suena mucho más alto que el micrófono, mueve el fader para aumentar el volumen relativo del micrófono.
+Controla los niveles relativos de los canales locales de audio derecho e izquierdo. Para una señal mono actúa como paneo entre los dos canales. Por ejemplo, si se conecta un micrófono al canal derecho y un instrumento al izquierdo que suena mucho más alto que el micrófono, mueve el fader para aumentar el volumen relativo del micrófono.
 
 

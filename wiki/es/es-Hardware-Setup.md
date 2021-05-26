@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Hardware Setup"
-lang: "es"
-permalink: "/wiki/Hardware-Setup"
+permalink: /wiki/Hardware-Setup
+title: 'Configuración de Hardware'
 ---
 
 {% include breadcrumb.html root="Utilización de Jamulus" branch1="Cómo Empezar" branch1-url="Getting-Started" %}
@@ -13,7 +13,7 @@ permalink: "/wiki/Hardware-Setup"
 
 **Para que Jamulus se ejecute con estabilidad se recomienda utilizar un PC con un procesador de al menos 1.5 GHz.**
 
-**Usuarios de Windows**: Necesitarás instalar un driver ASIO driver. Se recomienda una tarjeta de audio con driver ASIO nativo. Consulta la [página de instalación en Windows](Installation-for-Windows) para más información.
+**Usuarios de Windows**: Necesitarás instalar un driver ASIO. Se recomienda una tarjeta de audio con driver ASIO nativo. Consulta la [página de instalación en Windows](Installation-for-Windows) para más información.
 
 ## Ejemplos de Configuración
 
@@ -27,8 +27,7 @@ Normalmente, configurar el hardware se reduce a 4 puntos, aunque cada equipo es 
 
 ## Windows: Conexión interfaz de audio - ASIO4ALL
 
-Este es un ejemplo de instalación de un cliente en Windows con un dispositivo de audio [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0).
-Las siguientes instrucciones pueden ser similares para otros dispositivos de audio.
+Este es un ejemplo de instalación de un cliente en Windows con un dispositivo de audio [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0). Las siguientes instrucciones pueden ser similares para otros dispositivos de audio.
 
 _**El modo exacto de conectar tu instrumento variará dependiendo de tu hardware.**_
 
@@ -36,14 +35,14 @@ _**El modo exacto de conectar tu instrumento variará dependiendo de tu hardware
 
 En el futuro, siempre utiliza el mismo puerto USB para el dispositivo de audio.
 
-**Usuarios de Windows**: Si no lo has hecho ya: descarga e instala [el driver ASIO de audio gratuito (ASIO4ALL)](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. Algunas personas han tenido éxito utilizando [este driver ASIO nativo](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip){: target="_blank" rel="noopener noreferrer"} __actualmente no disponible__; no está listado en las páginas de producto de Behringer a fecha de abril del 2020.
+**Usuarios de Windows**: Si no lo has hecho ya: descarga e instala [el driver ASIO de audio gratuito (ASIO4ALL](https://www.asio4all.org){: target="_blank" rel="noopener noreferrer"}. Algunas personas han tenido éxito utilizando [este driver ASIO nativo](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip){: target="_blank" rel="noopener noreferrer"} __actualmente no disponible__; no está listado en las páginas de producto de Behringer a fecha de abril del 2020.
 
 
 #### 2. Arranca Jamulus
 
 Configura Jamulus para utilizar la configuración de audio correcta (ver [esta excelente guía](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/) de [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) en Facebook).
 
-Asegúrate de haber apagado el botón de monitoreo en tu Behringer U-CONTROL UCA202 (de lo contrario escucharás tanto el sonido original que envías al servidor Jamulus como el sonido que vuelve del mismo, y podría ocasionar feedback).
+Asegúrate de haber apagado el botón de monitoreo en tu Behringer U-CONTROL UCA202 (de lo contrario escucharás tanto el sonido original que envías al servidor Jamulus como el sonido que vuelve del mismo, y podría causar retroalimentación).
 
 #### 3. Enchufa tu instrumento y tus auriculares
 
@@ -58,7 +57,8 @@ Conecta tu instrumento a una entrada del Behringer U-CONTROL UCA202. Enchufa tus
 Consulta la [guía de instalación del cliente](Installation-for-Linux#configura-jack-con-qjackctl) en Linux.
 
 ## Linux: Kernels Low Latency para Jamulus
-Quizá quieras instalar [Ubuntu Studio](https://ubuntustudio.org/). Añade otra opción en el menú de arranque para un kernel de baja latencia. La clave para una jam session online es la baja latencia entre los servidores y los clientes conectados. Si el sistema Linux arranca con un kernel de baja latencia esto tiene un impacto positivo en tus sesiones de Jamulus.
+
+Quizá quieras instalar [Ubuntu Studio](https://ubuntustudio.org/). Añade otra opción en el menú de arranque para un kernel de baja latencia. La clave para una jam session online es la baja latencia entre los servidores y los clientes conectados. Si el sistema Linux arranca con un kernel de baja latencia esto tendrá un impacto positivo en tus sesiones de Jamulus.
 
 
 ## Apuntes sobre las entradas

@@ -1,17 +1,17 @@
 ---
+lang: fr
 layout: wiki
-title: "Configuration du matériel"
-lang: "fr"
-permalink: "/wiki/Hardware-Setup"
+permalink: /wiki/Hardware-Setup
+title: 'Configuration du matériel'
 ---
 
 {% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
 
-## Configuration du matériel
+# Configuration du matériel
 
 ## Informations générales
 
-**Pour que Jamulus fonctionne de manière stable, il est recommandé d'utiliser un PC avec une fréquence CPU d'au moins 1,5 GHz.
+**Pour que Jamulus fonctionne de manière stable, il est recommandé d'utiliser un PC avec une fréquence CPU d'au moins 1,5 GHz.**
 
 **Utilisateurs de Windows** : Vous devez installer un pilote ASIO. Une carte son avec un pilote ASIO natif est recommandée. Consultez la [page d'installation Windows](Installation-for-Windows) pour plus d'informations.
 
@@ -27,10 +27,9 @@ La configuration du matériel se résume généralement à 4 points, bien que ch
 
 ## Windows : Connexion d'une interface audio - ASIO4ALL
 
-Voici un exemple d'installation client Windows avec le périphérique audio [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0).
-Les instructions suivantes peuvent être similaires avec d'autres périphériques audio.
+Voici un exemple d'installation client Windows avec le périphérique audio [Behringer U-CONTROL UCA202](https://www.amazon.com/Behringer-U-Phono-UFO202-Audiophile-Interface/dp/B002GHBYZ0). Les instructions suivantes peuvent être similaires avec d'autres périphériques audio.
 
-La méthode exacte de connexion de votre instrument variera bien sûr en fonction de votre matériel.
+_**La méthode exacte de connexion de votre instrument variera bien sûr en fonction de votre matériel.**_
 
 #### 1. Branchez l'interface sur un port USB de votre ordinateur.
 
@@ -58,6 +57,7 @@ Vous avez terminé ! Amusez-vous bien !
 Consultez le [guide d'installation du client] Linux (Installation-for-Linux#configure-jack-with-qjackctl).
 
 ## Linux : Noyaux à faible latence pour Jamulus
+
 Vous voudrez peut-être installer [Ubuntu Studio] (https://ubuntustudio.org/). Il ajoute une deuxième option dans votre menu de démarrage pour un noyau à faible latence. La clé d'un boeuf réussi est une "faible latence" entre les serveurs et les clients Jamulus connectés. Si le système Linux sous-jacent est démarré avec un noyau à faible latence, cela a un impact positif sur la latence de vos sessions Jamulus.
 
 

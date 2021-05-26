@@ -1,7 +1,7 @@
 ---
 category: hidden
-lang: es
+lang: fr
 layout: redirect
-permalink: 'Ejecutar Jamulus con Múltiples Interfaces de Audio'
+permalink: /wiki/Running-Jamulus-with-Multiple-Audio-Interfaces
 redirect: /kb/2020/11/24/Multiple-Audio-Interfaces.html
 ---

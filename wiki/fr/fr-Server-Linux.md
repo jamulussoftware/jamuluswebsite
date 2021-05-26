@@ -1,15 +1,15 @@
 ---
+lang: fr
 layout: wiki
+permalink: /wiki/Server-Linux
 title: "Installation d'un serveur - Linux"
-lang: "fr"
-permalink: "/wiki/Server-Linux"
 ---
 
-{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
 
 # Installation d'un serveur - Linux
 
-**Veuillez vous assurer que vous avez lu la page [Exécuter un serveur](Running-a-Server)_**.
+**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur] (Running-a-Server)_**
 
 
 ## Exécution d'un serveur avec une interface graphique sur une machine de bureau
@@ -30,7 +30,7 @@ Ce qui suit concerne l'exécution de Jamulus en tant que serveur "pur" sur du **
 1. Téléchargez le [dernier fichier .deb sans tête]({{ site.download_root_link }}{ site.download_file_names.deb-headless }})
 1. Mettez à jour apt pour vous assurer que vous avez une liste actuelle de paquets standard : `sudo apt update`
 1. Installez le paquet Jamulus : `sudo apt install ./{{ site.download_file_names.deb-headless }}`
-1. Activez le processus de serveur sans tête via systemd : `sudo systemctl enable jamulus-headless``.
+1. Activez le processus de serveur sans tête via systemd : `sudo systemctl enable jamulus-headless`.
 1. Ajoutez vos [options de ligne de commande] (Command-Line-Options) à la ligne `ExecStart` dans le fichier de service systemd dans `/lib/systemd/system/jamulus-headless.service` (Par défaut, vous allez exécuter un serveur privé).
 1. Rechargez les fichiers systemd `sudo systemctl daemon-reload` et redémarrez le serveur headless : `sudo systemctl restart jamulus-headless`
 1. Vérifiez que tout va bien avec `service jamulus-headless status` (tapez `q` pour revenir à l'invite de commande).
@@ -39,7 +39,7 @@ Ce qui suit concerne l'exécution de Jamulus en tant que serveur "pur" sur du **
 
 Vous pouvez contrôler Jamulus avec la commande `service`. Par exemple, pour arrêter le serveur proprement :
 
-`sudo service jamulus-headless stop`.
+`sudo service jamulus-headless stop`
 
 ### Visualisation des journaux
 
