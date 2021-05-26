@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Consejos, Trucos y Más"
-lang: "es"
-permalink: "/wiki/Tips-Tricks-More"
+permalink: /wiki/Tips-Tricks-More
+title: 'Consejos, Trucos y Más'
 ---
 
 # Consejos y Trucos
@@ -68,30 +68,31 @@ Finalmente, arranco Jamulus automáticamente, conectándose al servidor central.
 
 Este es el script:
 
+
 ~~~
-amixer sset 'Mic' capture 30% cap
-amixer sset 'Mic' playback 0%
-amixer sset 'Line' playback 60% unmute
-amixer sset 'Audigy Analog/Digital Output Jack' unmute
-amixer sset 'Analog Mix' capture 100%
-amixer sset 'Analog Mix' playback 0%
-amixer sset 'Wave' 100%
-amixer sset 'Master' capture 100% cap
-amixer sset 'Master' playback 100%
-amixer sset 'Master' playback 100%
-amixer sset 'PCM' playback 100%
-amixer sset 'PCM' capture 0%
-guitarix &
-/home/corrados/llcon/Jamulus -c myJamulusServer.domain.com &
-sleep 3
-jack_disconnect system:capture_1 Jamulus:'input left'
-jack_disconnect system:capture_2 Jamulus:'input right'
-jack_connect system:capture_1 gx_head_amp:in_0
-jack_connect gx_head_amp:out_0 gx_head_fx:in_0
-jack_connect gx_head_fx:out_0 Jamulus:'input left'
-jack_connect gx_head_fx:out_1 Jamulus:'input right'
-jack_connect Jamulus:'output left' system:playback_1
-jack_connect Jamulus:'output right' system:playback_2
+ amixer sset 'Mic' capture 30% cap
+ amixer sset 'Mic' playback 0%
+ amixer sset 'Line' playback 60% unmute
+ amixer sset 'Audigy Analog/Digital Output Jack' unmute
+ amixer sset 'Analog Mix' capture 100%
+ amixer sset 'Analog Mix' playback 0%
+ amixer sset 'Wave' 100%
+ amixer sset 'Master' capture 100% cap
+ amixer sset 'Master' playback 100%
+ amixer sset 'Master' playback 100%
+ amixer sset 'PCM' playback 100%
+ amixer sset 'PCM' capture 0%
+ guitarix &
+ /home/corrados/llcon/Jamulus -c myJamulusServer.domain.com &
+ sleep 3
+ jack_disconnect system:capture_1 Jamulus:'input left'
+ jack_disconnect system:capture_2 Jamulus:'input right'
+ jack_connect system:capture_1 gx_head_amp:in_0
+ jack_connect gx_head_amp:out_0 gx_head_fx:in_0
+ jack_connect gx_head_fx:out_0 Jamulus:'input left'
+ jack_connect gx_head_fx:out_1 Jamulus:'input right'
+ jack_connect Jamulus:'output left' system:playback_1
+ jack_connect Jamulus:'output right' system:playback_2
 ~~~
 
 ## Utilizar ctrlmidich para controladores MIDI
@@ -111,7 +112,7 @@ Asegúrate de que el puerto de salida de tu dispositivo MIDI esté conectado al 
 
 ## Controlar grabaciones en servidores Linux "headless"
 
-Cuando se utiliza la [función de grabación](Server-Win-Mac#grabación) con la `opción de la línea de comandos` [-R](Command-Line-Options), si el servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un directorio nuevo. SIGUSR2 conmutará entre grabación activa/inactiva.
+Cuando se utiliza la [función de grabación](Server-Win-Mac#grabación) con la [opción de la línea de comandos](Command-Line-Options) `-R`, si el servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un directorio nuevo. SIGUSR2 conmutará entre grabación activa/inactiva.
 
 Para enviar estas señales utilizando systemd, crea los siguientes dos archivos `.service` en `/etc/systemd/system`, dándoles un nombre apropiado (por ej. `nuevaGrabación-Jamulus-server.service`).
 
@@ -120,25 +121,23 @@ Para enviar estas señales utilizando systemd, crea los siguientes dos archivos 
 Para encender o apagar la grabación (dependiendo del estado actual):
 
 ~~~
-[Unit]
-Description=Toggle recording state of Jamulus server
-Requisite=Jamulus-Server
+ [Unit]
+ Description=Toggle recording state of Jamulus server 
+ Requisite=Jamulus-Server
 
-[Service]
-Type=oneshot
-ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+ [Service]
+ Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server 
 ~~~
 
 Para empezar una nueva grabación:
 
 ~~~
-[Unit]
-Description=Toggle recording state of Jamulus server
-Requisite=Jamulus-Server
+ [Unit]
+ Description=Start a new recording on Jamulus server 
+ Requisite=Jamulus-Server
 
-[Service]
-Type=oneshot
-ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+ [Service]
+ Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server 
 ~~~
 
 _Nota: El nombre del servicio Jamulus en la línea de `ExecStart` tiene que ser el mismo que el nombre del archivo `.service` que creaste cuando configuraste systemd para controlar tu servidor Jamulus. Así que en este ejemplo sería `Jamulus-Server.service`_
@@ -153,32 +152,13 @@ Puedes ver el resultado de estos comandos si ejecutas `service jamulus status`, 
 
 ## Quality of Service
 
-Jamulus utiliza DSCP/CS4 oportunísticamente para ocuparse de "bufferbloat" (valor DSCP/CS4 de 128 (o 0x80). Esto es compatible con IPv4 y IPv6. Se pueden establecer otros valores utilizando la opción `-Q`, por ejemplo  `-Q [0..255]` (donde 0 deshabilita QoS). Si quieres explorar el efecto de configuraciones no predeterminadas, ver [RFC4594](https://tools.ietf.org/html/rfc4594). Sin embargo, la mayoría de las personas no tendrán necesidad de hacer esto.
+Jamulus utiliza DSCP/CS4 oportunísticamente para ocuparse del "bufferbloat" (valor DSCP/CS4 de 128 (o 0x80). Esto es compatible con IPv4 y IPv6. Se pueden establecer otros valores utilizando la opción `-Q`, por ejemplo `-Q [0..255]` (donde 0 deshabilita QoS). Si quieres explorar el efecto de configuraciones no predeterminadas, ver [RFC4594](https://tools.ietf.org/html/rfc4594). Sin embargo, la mayoría de las personas no tendrán necesidad de hacer esto.
 
 ### Utilizar Quality of Service en Windows
 
-La configuración de QoS en Jamulus (incluyendo la predeterminada) no tiene efecto en Windows porque el sistema operativo la ignora. Para habiliatar Quality of Service para Jamulus, debes seguir estas instrucciones. También ten en cuenta que quizá tengas que repetir este procedimiento cada vez que se actualiza Jamulus.
+La configuración de QoS en Jamulus (incluyendo la predeterminada) no tiene efecto en Windows porque el sistema operativo la ignora. Para habilitar Quality of Service para Jamulus, debes seguir estas instrucciones. También ten en cuenta que quizá tengas que repetir este procedimiento cada vez que se actualiza Jamulus.
 
 
-En el campo de Búsqueda al lado del menú de Arranque teclea: Editor de Directivas de Grupo Local (enter)<br>
-En la nueva ventana, (clic) en el icono del menú para mostrar el tercer panel de Acción<br>
-Mirando el primer panel del Editor de Directivas de Grupo Local<br>
-&nbsp;Local Computer Policy<br>
-&nbsp;&nbsp;Computer Configuration<br>
-&nbsp;&nbsp;&nbsp;Windows Settings<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (clic)<br>
-Mirando el tercer panel (Acción) del Editor de Directivas de Grupo Local<br>
-&nbsp;Policy-based QoS<br>
-&nbsp;&nbsp;Más Acciones<br>
-&nbsp;&nbsp;&nbsp;Crear nueva Directiva (clic)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Nombre Directiva: Jamulus<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Especificar valor DSCP: 32<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Esta directiva QoS se aplica solo a las aplicaciones con el nombre Jamulus.exe<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br>
-&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Terminar<br>
-(Nota: la directiva para Jamulus en el panel central puede editarse)
+En el campo de Búsqueda al lado del menú de Arranque teclea: Editor de Directivas de Grupo Local (enter)<br> En la nueva ventana, (clic) en el icono del menú para mostrar el tercer panel de Acción<br> Mirando el primer panel del Editor de Directivas de Grupo Local<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (clic)<br> Mirando el tercer panel (Acción) del Editor de Directivas de Grupo Local<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;Más Acciones<br> &nbsp;&nbsp;&nbsp;Crear nueva Directiva (clic)<br> &nbsp;&nbsp;&nbsp;&nbsp;Nombre Directiva: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Especificar valor DSCP: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;Esta directiva QoS se aplica solo a las aplicaciones con el nombre Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Terminar<br> (Nota: la directiva para Jamulus en el panel central puede editarse)
 
 

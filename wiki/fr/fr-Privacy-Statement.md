@@ -1,14 +1,15 @@
 ---
+lang: fr
 layout: wiki
-title: "Jamulus – Déclaration de confidentialité"
-lang: "fr"
-permalink: "/wiki/Privacy-Statement"
+permalink: /wiki/Privacy-Statement
+title: 'Jamulus – Déclaration de confidentialité'
 ---
 
 # Déclaration de confidentialité
+
 ## Page d'accueil
-Cette page d'accueil jamulus.io s'efforce de ne pas collecter vos données personnelles. Si vous vous connectez au site jamulus.io, votre IP est envoyée aux pages GitHub. De plus, puisque nous avons un lien avec le logo SourceForge dans le pied de page de chaque page, SourceForge peut également obtenir votre IP.
-Nous n'installons pas de cookies de suivi, bien que SourceForge puisse le faire. Si vous ne le souhaitez pas, veuillez désactiver les cookies dans votre navigateur.
+
+The website at jamulus.io is served using GitHub Pages. We do not collect your personal data or set tracking cookies. Si vous vous connectez au site jamulus.io, votre IP est envoyée aux pages GitHub.
 
 ## Logiciel Jamulus
 
@@ -20,7 +21,7 @@ Lorsque vous vous connectez à un serveur public, votre profil est également ac
 
 ### Utilisation des adresses IP
 
-Lorsque vous vous connectez à un serveur public ou privé, l'opérateur du serveur peut voir votre adresse IP pendant que vous êtes connecté.  Si l'opérateur du serveur a activé la journalisation (qui est désactivée par défaut), votre adresse IP sera également enregistrée et stockée dans le fichier journal du serveur.
+Lorsque vous vous connectez à un serveur public ou privé, l'opérateur du serveur peut voir votre adresse IP pendant que vous êtes connecté. Si l'opérateur du serveur a activé la journalisation (qui est désactivée par défaut), votre adresse IP sera également enregistrée et stockée dans le fichier journal du serveur.
 
 Les adresses IP de tous les serveurs publics enregistrés auprès du serveur d'annuaire peuvent également être vues par des tiers à des fins d'information ou autres (par exemple [ici](https://explorer.jamulus.io/)). Votre adresse IP publique n'est par ailleurs ni enregistrée ni stockée par Jamulus, mais elle peut être stockée ou traitée par des tiers.
 

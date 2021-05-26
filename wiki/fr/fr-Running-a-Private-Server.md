@@ -1,23 +1,25 @@
 ---
+lang: fr
 layout: wiki
-title: "Executer un serveur privé"
-lang: "fr"
-permalink: "/wiki/Running-a-Private-Server"
+permalink: /wiki/Running-a-Private-Server
+title: "Exécuter d'un serveur privé"
 ---
 
-{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
 
 # Exécuter d'un serveur privé
 
-**Veuillez vous assurer que vous avez lu la page [Exécuter un serveur] (Running-a-Server).
+**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur] (Running-a-Server)_**
 
 Ce guide part du principe que vous allez exécuter un serveur privé sur votre réseau domestique, mais certains des problèmes abordés ici peuvent également s'appliquer à ceux qui fonctionnent sur des hôtes en nuage (par exemple Amazon EC2).
 
 Il est fortement recommandé de tester d'abord votre serveur en **mode public** afin de limiter les problèmes ultérieurs en mode privé.
 
-### Exploitation d'un serveur privé derrière un routeur de réseau domestique
+## Exploitation d'un serveur privé derrière un routeur de réseau domestique
+
 ### Redirection de port
-Pour faire fonctionner un serveur privé, vous devez configurer la redirection de port sur votre routeur. (Si vous êtes curieux de savoir pourquoi vous devez faire cela pour les serveurs privés mais pas pour les serveurs publics, consultez [cette note de bas de page](#footnote-for-geeks).)_
+
+Pour faire fonctionner un serveur privé, vous devez configurer la redirection de port sur votre routeur. _(Si vous êtes curieux de savoir pourquoi vous devez faire cela pour les serveurs privés mais pas pour les serveurs publics, consultez [cette note de bas de page](#Note-de-bas-de-page-pour-les-geeks).)_
 
 Normalement, les personnes extérieures à votre réseau domestique ne peuvent pas voir ce qui s'y trouve. Ainsi, si vous souhaitez faire fonctionner un serveur Jamulus chez vous, vous devez ouvrir une brèche dans votre routeur pour permettre aux clients Jamulus de s'y connecter.
 
@@ -25,7 +27,7 @@ Normalement, les personnes extérieures à votre réseau domestique ne peuvent p
 
 La configuration exacte de la redirection de port diffère pour chaque routeur. Voici un exemple des paramètres de la redirection de port dans un routeur Linksys :
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/linksys-port-forward.png" loading="lazy" alt="Image des paramètres de redirection de port d'un routeur Linksys"></figure>.
+<figure><img src="{{site.url}}/assets/img/en-screenshots/linksys-port-forward.png" loading="lazy" alt="Image des paramètres de redirection de port d'un routeur Linksys"></figure>
 
 Pour obtenir de l'aide, consultez [portforward.com](https://portforward.com).
 
@@ -37,7 +39,7 @@ Une fois que votre routeur est configuré, vous pouvez obtenir votre adresse IP 
 
 * Si vous utilisez un port différent du port par défaut (22124), vous devez entrer le numéro de port après le nom du serveur ou l'adresse IP, séparé par deux points dans le client Jamulus (par exemple, jamulus.example.org:22120).
 
-* Voir également l'excellent [guide sur la gestion d'un serveur privé](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/how-to-create-a-private-server-for-band-rehearsals/508642543044030/) de [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) sur Facebook.  
+* Voir également l'excellent [guide sur la gestion d'un serveur privé](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/how-to-create-a-private-server-for-band-rehearsals/508642543044030/) de [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) sur Facebook.
 
 ## DNS dynamique et pourquoi vous en aurez probablement besoin
 

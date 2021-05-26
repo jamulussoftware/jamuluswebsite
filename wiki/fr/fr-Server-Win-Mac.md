@@ -1,22 +1,24 @@
 ---
+lang: fr
 layout: wiki
+permalink: /wiki/Server-Win-Mac
 title: "Installation d'un serveur - Windows et macOS"
-lang: "fr"
-permalink: "/wiki/Server-Win-Mac"
 ---
 
-{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+{% include breadcrumb.html root="More" branch1="Running a Server" branch1-url="Running-a-Server" %}
 
 # Installation pour Windows et macOS
 
 
-**Veuillez vous assurer que vous avez lu la page [Exécuter un serveur](Running-a-Server).
+**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur](Running-a-Server)_**
 
-* Utilisateurs de Windows** - Démarrez le serveur en utilisant l'entrée "Serveur Jamulus" dans le menu de démarrage de Windows.
+* **Utilisateurs de Windows** - Démarrez le serveur en utilisant l'entrée "Serveur Jamulus" dans le menu de démarrage de Windows.
 
-* Utilisateurs de Macintosh** - Double-cliquez sur l'icône "Serveur Jamulus" dans Applications (en supposant que vous y avez placé les fichiers de l'installation conformément à [ces instructions](Installation-for-Macintosh)).
+* **Utilisateurs de macOS** - Double-cliquez sur l'icône "Serveur Jamulus" dans Applications (en supposant que vous y avez placé les fichiers de l'installation conformément à [ces instructions](Installation-for-Macintosh)).
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-setup.png" loading="lazy" alt="Image de la fenêtre de configuration du serveur Jamulus"></figure>
+* **Linux users** - Please refer to the [GUI server instructions](Server-Linux#running-a-server-with-the-gui).
+
+<figure><img src="{{site.url}}/assets/img/fr-screenshots/server-window-setup.png" loading="lazy" alt="Image de la fenêtre de configuration du serveur Jamulus"></figure>
 
 ### Configuration du serveur public
 
@@ -26,13 +28,13 @@ permalink: "/wiki/Server-Win-Mac"
 
 1. Spécifiez un genre musical. Cela fera apparaître votre serveur dans la liste des serveurs pertinents pour les clients (voir plus de [détails sur les serveurs annuaires](Directory-Servers)).
 
-Le message de bienvenue du chat apparaît à tous les utilisateurs lorsqu'ils rejoignent le serveur (la fenêtre de tchate s'ouvre automatiquement pour eux).
+_Le message de bienvenue du chat apparaît à tous les utilisateurs lorsqu'ils rejoignent le serveur (la fenêtre de tchate s'ouvre automatiquement pour eux)._
 
 ### Configuration d'un serveur privé
 
 Si vous ne cochez pas la case "Rendre mon serveur public", vous allez exécuter un serveur privé et vous devez [lire ces instructions](Running-a-Private-Server).
 
-Si vous voulez **exécuter un client sur la même machine**, vous devez **connecter le client à `127.0.0.1`** pour de meilleures performances. (De même, si vous voulez connecter un client sur une autre machine de votre réseau local, utilisez l'adresse IP du réseau local du serveur).
+_Si vous voulez **exécuter un client sur la même machine**, vous devez **connecter le client à `127.0.0.1`** pour de meilleures performances. De même, si vous voulez connecter un client sur une autre machine de votre réseau local, utilisez l'adresse IP du réseau local du serveur)._
 
 
 ### Autres options
@@ -43,7 +45,7 @@ Si vous voulez **exécuter un client sur la même machine**, vous devez **connec
 
 Activez l'enregistrement du serveur en définissant d'abord le répertoire d'enregistrement dans l'onglet Options. L'enregistrement commence dès que la première personne se connecte au serveur et s'arrête lorsque la dernière personne quitte le serveur. Utilisez le bouton "New Recording" pour créer un nouveau sous-répertoire dans lequel les enregistrements seront stockés. Notez que les enregistrements sont par piste au format [Audacity](https://www.audacityteam.org/) `.lof` et [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Ouvrez les fichiers respectifs pour les écouter dans ces applications.
 
-Remarque : Lorsque votre serveur enregistre, les clients affichent un message indiquant que l'enregistrement est en cours.
+_Remarque : Lorsque votre serveur enregistre, les clients affichent un message indiquant que l'enregistrement est en cours._
 
 Pour les serveurs sans tête : vous pouvez contrôler la fonction d'enregistrement [en utilisant ces instructions](Server-Linux#controlling-recordings).
 
@@ -54,7 +56,7 @@ Cette option utilise les petites différences de temps d'arrivée du son entre l
 ### Adresse du serveur central personnalisé
 
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
+<figure><img src="{{site.url}}/assets/img/fr-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
 Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-central)).
 
@@ -66,4 +68,4 @@ Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur s
 
 ***
 
-Voir aussi [Options de la ligne de commande](Command-Line-Options) pour d'autres paramètres que vous pouvez définir.
+Voir également [Options de la ligne de commande](Command-Line-Options) pour les autres paramètres que vous pouvez définir.

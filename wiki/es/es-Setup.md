@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Configuración"
-lang: "es"
-permalink: "/wiki/Setup"
+permalink: /wiki/Setup
+title: Configuración
 ---
 
 # Configuración - cómo empezar con Jamulus
@@ -11,11 +11,12 @@ Para obtener el mejor resultado con Jamulus, como mínimo necesitarás:
 
 1. **Una conexión a internet por cable** (no utilices Wi-Fi - ver las [FAQ](/wiki/FAQ)).
 1. **Auriculares por cable** (no de Bluetooth o altavoces - ver las [FAQ](/wiki/FAQ))
-1. **Un dispositivo de audio, tarjeta de sonido y/o micrófono decente** ([ver esta lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) para ejemplos)
+1. **Un dispositivo de audio, tarjeta de sonido y/o micrófono decente** ([consulta esta lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) para ver ejemplos)
 
 Si tienes alguna duda, por favor consulta las [Discussions](https://github.com/jamulussoftware/jamulus/discussions)
 
 ## Instalación
+
 Para hacer que Jamulus funcione con tu hardware, por favor sigue la guía de instalación para tu plataforma:
 
 * [Windows](/wiki/Installation-for-Windows)
@@ -30,7 +31,7 @@ Cuando abras Jamulus, verás una ventana con este aspecto:
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>La ventana principal antes de conectarte a un servidor</figcaption>
+  <figcaption>The main window before you connect to a server</figcaption>
 </figure>
 
 
@@ -40,7 +41,7 @@ Primero muestra a los demás quién eres. Haz clic en “Ver” (barra superior)
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/settings-profile.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>Muestra a los demás quién eres</figcaption>
+  <figcaption>Let people know who you are</figcaption>
 </figure>
 
 
@@ -56,20 +57,20 @@ Ahora usa el botón de “Conectar” en la ventana principal de Jamulus para un
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>Conectarse a un servidor</figcaption>
+  <figcaption>Connect to a server</figcaption>
 </figure>
 
-Lo más importante de los servidores es su “tiempo ping”. Cuanto mayor el número, más difícil será tocar en sincronización. Normalmente, se selecciona un servidor con un tiempo ping de 15 ms o menos, si es posible.
+Lo más importante de los servidores es su “tiempo ping”. Cuanto mayor la cifra, más difícil será tocar en sincronización. Normalmente, se selecciona un servidor con un tiempo ping de 15 ms o menos, si es posible.
 
 Una vez establecida la conexión con un servidor, asegúrate de que te escuchas bien y arregla cualquier problema de volumen de entrada, etc. Y por supuesto, comprueba que también puedes obedecer [La Regla de Oro](/wiki/Client-Troubleshooting).
 
 ## Tocar por primera vez
 
-Con el sonido configurado, ya puedes empezar. Cuando te conectas a un servidor (quizá quieras seleccionar un género de la lista), los faders que ves a la derecha son tu mezcla personal. Todo lo que cambies aquí coambiará lo que escuchas, pero no afectará a nadie más. Si bajas un fader, ese canal bajará de volumen, y si lo subes, el volumen de ese canal aumentará - para tí.
+Con el sonido configurado, ya puedes empezar. Cuando te conectas a un servidor (quizá quieras seleccionar un género de la lista), los faders que ves a la derecha son tu mezcla personal. Todo lo que cambies aquí cambiará lo que escuchas, pero no afectará a nadie más. Si bajas un fader, ese canal bajará de volumen, y si lo subes, el volumen de ese canal aumentará - para tí.
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>La ventana principal cuando te conectas a un servidor</figcaption>
+  <figcaption>The main window when you are connected to a sever</figcaption>
 </figure>
 
 Si no quieres que otros escuchen tu audio, haz clic en el botón de “Silenciarme Yo”, que impedirá que tu audio sea enviado a otras personas. No podrán saber que lo has hecho. Pero si ves un icono de "silenciado" sobre un fader, significa que esa persona no te escucha porque ha silenciado tu canal en su mezcla.

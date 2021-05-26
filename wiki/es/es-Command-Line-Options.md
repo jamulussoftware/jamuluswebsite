@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Opciones de Línea de Comandos"
-lang: "es"
-permalink: "/wiki/Command-Line-Options"
+permalink: /wiki/Command-Line-Options
+title: 'Opciones de Línea de Comandos'
 ---
 
 # Opciones de Línea de Comandos
@@ -11,15 +11,11 @@ Las funciones más comunes de Jamulus pueden configurarse usando la interfaz gr�
 
 Por ejemplo, en Windows, para que un cliente utilice un archivo específico de configuración, haz clic derecho en el acceso directo de Jamulus y elige "Propiedades" > Destino. Añade los argumentos necesarios a Jamulus.exe:
 
-```shell
-"C:\Archivos de Programa (x86)\Jamulus\Jamulus.exe" --inifile "C:\ruta\a\myinifile.ini"
-```
+```shell "C:\Program Files (x86)\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini" ```
 
 Para macOS, arranca una ventana de Terminal y ejecuta Jamulus con las opciones deseadas como sigue:
 
-```shell
 /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/ruta/a/myinifile.ini"
-```
 
 ***
 
@@ -64,7 +60,8 @@ _Nótese que las siguientes opciones no alterarán las configuraciónes hechas e
 |       | `--mutemyown` | Silenciarme en mi mezcla personal | Solo headless |
 | `-c` | `--connect` | Conectar con una dirección de servidor al arrancar, formato `dirección[:puerto]` |                                                                             |
 | `-j` | `--nojackconnect` | Deshabilitar conexiones automáticas de JACK |                                                                             |
-|       | `--ctrlmidich` | Canal para recibir mensajes de controlador MIDI, compensación de número de control y números CC consecutivos (canales). Formato: `canal[;f<comp>*<canales>][;p<comp>*<canales>][;s<comp>*<canales>][;m<comp>*<canales>]` | Ver [Consejos y Trucos](Tips-Tricks-More#Utilizar-ctrlmidich-para-controladores-MIDI) |
+|       | `--ctrlmidich` | Canal para recibir mensajes de controlador MIDI, compensación de número de control y números CC consecutivos (canales). Formato: `canal[;f<comp>*<canales>][;p<comp>*<canales>][;s<comp>*<canales>][;m<comp>*<canales>]` | Ver [Consejos y Trucos](Tips-Tricks-More#utilizar-ctrlmidich-para-controladores-midi) |
 |       | `--clientname` | Título de ventana y nombre de cliente en JACK |                                                                             |
+
 
 

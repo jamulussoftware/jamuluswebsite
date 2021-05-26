@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Servidores de Directorio"
-lang: "es"
-permalink: "/wiki/Directory-Servers"
+permalink: /wiki/Directory-Servers
+title: 'Servidores de Directorio'
 ---
 
 {% include breadcrumb.html root="Más" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}

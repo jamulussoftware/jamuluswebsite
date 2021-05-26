@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Instalación de Servidor - Linux"
-lang: "es"
-permalink: "/wiki/Server-Linux"
+permalink: /wiki/Server-Linux
+title: 'Instalación de Servidor - Linux'
 ---
 
 {% include breadcrumb.html root="Más" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
@@ -14,7 +14,7 @@ permalink: "/wiki/Server-Linux"
 
 ## Ejecutar el servidor con interfaz gráfica en un PC de escritorio
 
-Si has instalado el cliente Jamulus, puedes ejecutarlo en el [modo de servidor](Choosing-a-Server-Type) que escojas ejecutando Jamulus con la opción `-s` como sigue:
+Si has instalado el cliente Jamulus, puedes ejecutarlo en el [modo servidor](Choosing-a-Server-Type) que escojas ejecutando Jamulus con la opción `-s` como sigue:
 
 1. Abre una terminal (`CTRL+ALT+t` en Ubuntu y distros relacionadas).
 1. Suponiendo que Jamulus se encuentra en `/usr/local/bin`, teclea `Jamulus -s`

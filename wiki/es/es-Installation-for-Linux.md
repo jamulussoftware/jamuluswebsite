@@ -1,31 +1,33 @@
 ---
+lang: es
 layout: wiki
-title: "Instalación en Linux"
-lang: "es"
-permalink: "/wiki/Installation-for-Linux"
+permalink: /wiki/Installation-for-Linux
+title: 'Instalación en Linux'
 ---
 
 {% include breadcrumb.html root="Utilización de Jamulus" branch1="Cómo Empezar" branch1-url="Getting-Started" %}
 
 # Instalación en Linux
-Asegúrate de leer la página de [Cómo Empezar](Getting-Started).
+
+Asegúrate de haber leído la página de [Cómo Empezar](Getting-Started).
 
 ### Debian y Ubuntu
 
 1. Descarga el [archivo .deb más reciente]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
 1. Actualiza apt abriendo una consola (CTRL+ALT+T debería funcionar) y escribe: `sudo apt-get update`
-1. Navega hasta donde descargaste el instalador y o bien haz doble-clic sobre él, o utiliza la línea de comandos: `sudo apt install ./{{ site.download_file_names.deb-gui }}`.
+1. Navega hasta donde descargaste el instalador y, o bien haz doble-clic sobre él, o utiliza la línea de comandos: `sudo apt install ./{{ site.download_file_names.deb-gui }}`.
 1. Una vez instalado, puedes eliminar el archivo y cerrar las ventanas de consolas.
 
-Ten en cuenta que si necesitas actualizar Jamulus a una nueva versión, simplemente descarga el archivo .deb nuevo y reinstalar como arriba.
+Ten en cuenta que si necesitas actualizar Jamulus a una nueva versión, simplemente descarga el archivo .deb nuevo y reinstala como arriba.
 
-Para los instaladores de otras distribuciones, ver [Repology](https://repology.org/project/jamulus/versions). Quizá también quieras utilizar alguno de los [scripts de instalación](https://github.com/jamulussoftware/installscripts) contribuidos.
+Para los instaladores de otras distribuciones, ver [Repology](https://repology.org/project/jamulus/versions). Quizá también quieras utilizar alguno de los [scripts de instalación](https://github.com/jamulussoftware/installscripts).
 
 
 ## Configura tu hardware
 
-### Configura JACK con QjackCtl
-Los clientes de Jamulus necesitan [JACK](https://jackaudio.org/) para funcionar, pero hay que configurarlo primero. El método recomendado es utilizar `QjackCtl`.
+### Configura Jack con QJackCtl
+
+Los clientes de Jamulus necesitan [Jack](https://jackaudio.org/) para funcionar, pero hay que configurarlo primero. El método recomendado es utilizar `QjackCtl`.
 1. Inicia QjackCtl. Verás la **ventana principal de Qt JACK Control**
 2. Configura tu hardware de audio como sigue (la configuración exacta de JACK dependerá de lo que es capaz tu hardware de audio):
 

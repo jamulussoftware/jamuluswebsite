@@ -8,6 +8,7 @@ permalink: "/wiki/Installation-for-Windows"
 {% include breadcrumb.html root="Using Jamulus" branch1="Getting Started" branch1-url="Getting-Started" %}
 
 # Installation for Windows
+
 Make sure you read the [Getting Started](Getting-Started) page.
 1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install a generic driver like ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.
 1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
@@ -19,6 +20,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 ***
 
 ## ASIO
+
 Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to provide the lowest latency.
 * If you own an external sound card/audio interface, use its official ASIO driver (they usually provide the best quality).
 * If you don't have an external sound card, you will probably not have an ASIO driver. Therefore, you will need to install a generic one like ASIO4ALL:
@@ -33,6 +35,7 @@ You can try two versions of ASIO4ALL. ASIO4ALL v2.14 includes a workaround for a
 
 
 ### Setting up ASIO4ALL
+
 *ASIO4ALL is not recommended if your sound card/audio interface provides its own ASIO driver, since that might have better latency.*
 
 For ASIO4ALL, you may need to experiment a bit to find the right configuration since every computer is a bit different.

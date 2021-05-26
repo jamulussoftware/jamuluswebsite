@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Manual Administradores de Servidores Jamulus"
-lang: "es"
-permalink: "/wiki/Server-Admin-Manual"
+permalink: /wiki/Server-Admin-Manual
+title: 'Manual Administradores de Servidores'
 ---
 
 # Manual Administradores de Servidores Jamulus

@@ -1,25 +1,27 @@
 ---
+lang: fr
 layout: wiki
-title: "Trucs, astuces et plus !"
-lang: "fr"
-permalink: "/wiki/Tips-Tricks-More"
+permalink: /wiki/Tips-Tricks-More
+title: 'Trucs et astuces'
 ---
 
 # Trucs et astuces
 
-##  Découvrir les répétitions de groupes à distance
+## Découvrir les répétitions de groupes à distance
 
 L'utilisateur de Jamulus [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) a rassemblé une grande quantité d'informations sur les [Répétitions à distance de groupes musicaux](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/). (Google doc), qui couvre des sujets tels que la configuration matérielle et logicielle, y compris des exemples et des conseils pour les nouveaux venus dans le domaine. Il inclut également une section sur Jamulus en comparaison avec d'autres solutions.
 
-##  Utilisation de l'audio Jamulus dans les applications de réunion Zoom (ou autres)
+## Utilisation de l'audio Jamulus dans les applications de réunion Zoom (ou autres)
 
 Plusieurs utilisateurs ont rapporté avoir réussi à autoriser une "audience virtuelle" pour une session Jamulus en utilisant [JACK audio](https://jackaudio.org) pour acheminer le signal Jamulus à travers JackRouter vers l'application cible (dans ce cas, les réunions Zoom).
 
 Vous pouvez également utiliser [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) pour Windows ou [BlackHole](https://github.com/ExistentialAudio/BlackHole) pour macOS afin d'acheminer la sortie de Jamulus vers plusieurs destinations, par exemple vers votre casque et l'application de réunion en même temps.
 
+
 ## Enregistrer Jamulus sous Windows avec Reaper
 
-L'utilisateur Jamulus [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/) a écrit un [guide pour enregistrer les sorties de Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc) en utilisant ReaRoute de [Reaper](https://www.reaper.fm/).  
+L'utilisateur Jamulus [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/) a écrit un [guide pour enregistrer les sorties de Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc) en utilisant ReaRoute de [Reaper](https://www.reaper.fm/).
+
 
 ## Partage de paroles de chansons/accords
 
@@ -55,6 +57,7 @@ Vous pouvez sauvegarder et restaurer le mixage que vous avez pour les répétiti
 
 Vous pouvez faire tourner un serveur public suffisamment longtemps pour que votre groupe se connecte, puis le rendre privé en décochant simplement la case "Rendre mon serveur public" dans l'interface graphique du serveur. Les membres de votre groupe seront toujours connectés au serveur jusqu'à ce qu'ils se déconnectent. (Merci à [David Savinkoff](https://github.com/DavidSavinkoff) pour cette astuce !)
 
+
 ## Script de démarrage Linux pour le client Jamulus
 
 Voici un script de démarrage Linux pour Jamulus utilisant une vieille carte son Audigy4, dont le grand nombre de faders audio disponibles rend difficile l'obtention des réglages corrects.
@@ -65,30 +68,31 @@ Enfin, je lance Jamulus en le connectant automatiquement au serveur de répertoi
 
 Voici le script :
 
+
 ~~~
-amixer sset 'Mic' capture 30% cap
-amixer sset 'Mic' playback 0%
-amixer sset 'Line' playback 60% unmute
-amixer sset 'Audigy Analog/Digital Output Jack' unmute
-amixer sset 'Analog Mix' capture 100%
-amixer sset 'Analog Mix' playback 0%
-amixer sset 'Wave' 100%
-amixer sset 'Master' capture 100% cap
-amixer sset 'Master' playback 100%
-amixer sset 'Master' playback 100%
-amixer sset 'PCM' playback 100%
-amixer sset 'PCM' capture 0%
-guitarix &
-/home/corrados/llcon/Jamulus -c myJamulusServer.domain.com &
-sleep 3
-jack_disconnect system:capture_1 Jamulus:'input left'
-jack_disconnect system:capture_2 Jamulus:'input right'
-jack_connect system:capture_1 gx_head_amp:in_0
-jack_connect gx_head_amp:out_0 gx_head_fx:in_0
-jack_connect gx_head_fx:out_0 Jamulus:'input left'
-jack_connect gx_head_fx:out_1 Jamulus:'input right'
-jack_connect Jamulus:'output left' system:playback_1
-jack_connect Jamulus:'output right' system:playback_2
+ amixer sset 'Mic' capture 30% cap
+ amixer sset 'Mic' playback 0%
+ amixer sset 'Line' playback 60% unmute
+ amixer sset 'Audigy Analog/Digital Output Jack' unmute
+ amixer sset 'Analog Mix' capture 100%
+ amixer sset 'Analog Mix' playback 0%
+ amixer sset 'Wave' 100%
+ amixer sset 'Master' capture 100% cap
+ amixer sset 'Master' playback 100%
+ amixer sset 'Master' playback 100%
+ amixer sset 'PCM' playback 100%
+ amixer sset 'PCM' capture 0%
+ guitarix &
+ /home/corrados/llcon/Jamulus -c myJamulusServer.domain.com &
+ sleep 3
+ jack_disconnect system:capture_1 Jamulus:'input left'
+ jack_disconnect system:capture_2 Jamulus:'input right'
+ jack_connect system:capture_1 gx_head_amp:in_0
+ jack_connect gx_head_amp:out_0 gx_head_fx:in_0
+ jack_connect gx_head_fx:out_0 Jamulus:'input left'
+ jack_connect gx_head_fx:out_1 Jamulus:'input right'
+ jack_connect Jamulus:'output left' system:playback_1
+ jack_connect Jamulus:'output right' system:playback_2
 ~~~
 
 ## Utilisation de ctrlmidich pour les contrôleurs MIDI
@@ -105,6 +109,7 @@ Les bandes de faders dans la fenêtre de mixage sont contrôlées dans l'ordre c
 
 Assurez-vous de connecter le port de sortie de votre appareil MIDI au port d'entrée MIDI de Jamulus (QjackCtl (Linux), MIDI Studio (macOS) ou tout autre outil que vous utilisez pour gérer les connexions). Sous Linux, vous devrez installer et lancer a2jmidid pour que votre périphérique apparaisse dans l'onglet MIDI de Qjackctl.
 
+
 ## Contrôle des enregistrements sur les serveurs headless Linux
 
 Lorsque vous utilisez la [fonction d'enregistrement](Server-Win-Mac#recording) avec l'[option de ligne de commande] `-R`(Command-Line-Options), si le serveur reçoit un signal SIGUSR1 pendant un enregistrement, il démarre un nouvel enregistrement dans un nouveau répertoire. SIGUSR2 permet d'activer ou de désactiver l'enregistrement.
@@ -116,25 +121,23 @@ Pour envoyer ces signaux en utilisant systemd, créez les deux fichiers `.servic
 Pour activer ou désactiver l'enregistrement (selon l'état actuel) :
 
 ~~~
-[Unit]
-Description=Toggle recording state of Jamulus server
-Requisite=Jamulus-Server
+ [Unit]
+ Description=Toggle recording state of Jamulus server 
+ Requisite=Jamulus-Server
 
-[Service]
-Type=oneshot
-ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+ [Service]
+ Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server 
 ~~~
 
 Pour demarrer un nouvel enregistrement :
 
 ~~~
-[Unit]
-Description=Start a new recording on Jamulus server
-Requisite=Jamulus-Server
+ [Unit]
+ Description=Start a new recording on Jamulus server 
+ Requisite=Jamulus-Server
 
-[Service]
-Type=oneshot
-ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
+ [Service]
+ Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server 
 ~~~
 
 _Note : Le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de systemd pour contrôler votre serveur Jamulus. Donc dans cet exemple, ce serait `Jamulus-Server.service`_.
@@ -155,23 +158,7 @@ Jamulus utilise DSCP/CS4 de manière opportuniste pour gérer le gonflement de l
 
 Les paramètres de qualité de service de Jamulus (y compris la valeur par défaut) n'ont aucun effet sur Windows car le système d'exploitation les ignore. Pour activer la qualité de service pour Jamulus, vous devez suivre ces instructions. Notez également que vous devrez peut-être répéter cette procédure à chaque mise à jour de Jamulus.
 
-Dans la boîte de recherche à côté du menu Démarrer, tapez : Local Group Policy Editor (entrer)<br>
-Dans la nouvelle fenêtre, (cliquer) sur l'icône du menu pour afficher le troisième panneau Actions.<br>
-Regardez le premier panneau de l'éditeur de stratégie du groupe local.<br>
-&nbsp;Stratégie de l'ordinateur local<br>
-&nbsp;&nbsp;Configuration<br>
-&nbsp;&nbsp;&nbsp;fenêtres paramètres<br>
-&nbsp;&nbsp;&nbsp;&nbsp;QoS basée sur la stratégie (cliquer)<br>
-Regarder le troisieme panneau (Actions) de l'éditeur de stratégie de groupe local<br>
-&nbsp;QoS basée sur la stratégie<br>
-&nbsp;&nbsp;Plus d'actions<br>
-&nbsp;&nbsp;&nbsp;créer une nouvelle stratégie (cliquer)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;nom : Jamulus<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Specifier la valeur DSCP : 32<br>
-&nbsp;&nbsp;&nbsp;&nbsp;suivant<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Cette stratégie QoS s'applique seulement au programme Jamulus.exe<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Suivant<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Suivant<br>
-&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Fin<br>
-(Avis : La stratégie de Jamulus dans le panneau central peut être modifiée)
+
+Dans la boîte de recherche à côté du menu Démarrer, tapez : Local Group Policy Editor (entrer)<br> Dans la nouvelle fenêtre, (cliquer) sur l'icône du menu pour afficher le troisième panneau Actions.<br> Regardez le premier panneau de l'éditeur de stratégie du groupe local.<br> &nbsp;Stratégie de l'ordinateur local<br> &nbsp;&nbsp;Configuration<br> &nbsp;&nbsp;&nbsp;fenêtres paramètres<br> &nbsp;&nbsp;&nbsp;&nbsp;QoS basée sur la stratégie (cliquer)<br> Regarder le troisieme panneau (Actions) de l'éditeur de stratégie de groupe local<br> &nbsp;QoS basée sur la stratégie<br> &nbsp;&nbsp;Plus d'actions<br> &nbsp;&nbsp;&nbsp;créer une nouvelle stratégie (cliquer)<br> &nbsp;&nbsp;&nbsp;&nbsp;nom : Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specifier la valeur DSCP : 32<br> &nbsp;&nbsp;&nbsp;&nbsp;suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;Cette stratégie QoS s'applique seulement au programme Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Fin<br> (Avis : La stratégie de Jamulus dans le panneau central peut être modifiée)
+
+

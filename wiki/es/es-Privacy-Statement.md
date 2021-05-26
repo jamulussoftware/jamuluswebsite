@@ -1,15 +1,15 @@
 ---
+lang: es
 layout: wiki
-title: "Jamulus – Declaración de Privacidad"
-lang: "es"
-permalink: "/wiki/Privacy-Statement"
+permalink: /wiki/Privacy-Statement
+title: 'Jamulus – Declaración de Privacidad'
 ---
 
 # Declaración de Privacidad
 
 ## Página web
 
-La página web en jamulus.io se ofrece utilizando GitHub Pages. No almacenamos tus datos personales ni utilizamos cookies de rastreo. Cuando te conectas a la página de jamulus.io site, tu IP se envía a GitHub Pages.
+La página web en jamulus.io se ofrece utilizando GitHub Pages. No almacenamos tus datos personales ni utilizamos cookies de rastreo. Cuando te conectas a la página de jamulus.io, tu IP se envía a GitHub Pages.
 
 ## Software Jamulus
 

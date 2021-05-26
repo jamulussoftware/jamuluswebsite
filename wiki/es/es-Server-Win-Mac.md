@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Instalación del Servidor - Windows y macOS"
-lang: "es"
-permalink: "/wiki/Server-Win-Mac"
+permalink: /wiki/Server-Win-Mac
+title: 'Instalación de Servidor - Windows y macOS'
 ---
 
 {% include breadcrumb.html root="Más" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
@@ -14,7 +14,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 * **Usuarios de Windows** - Arranca el servidor utilizando la entrada de "Jamulus server" en el menú de inicio de Windows.
 
-* **Usuarios de macOS** - Haz doble cilc en el icono de "Jamulus server" en Aplicaciones (suponiendo que has depositado los archivos allí siguiendo [estas instrucciones](Installation-for-Macintosh)).
+* **Usuarios de macOS** - Haz doble clic en el icono de "Jamulus server" en Aplicaciones (suponiendo que has depositado los archivos allí siguiendo [estas instrucciones](Installation-for-Macintosh)).
 
 * **Usuarios de Linux** - Consulta las [instrucciones para el servidor con interfaz gráfica](Server-Linux#ejecutar-el-servidor-con-interfaz-grafica-en-un-pc-de-escritorio).
 
@@ -22,7 +22,7 @@ permalink: "/wiki/Server-Win-Mac"
 
 ### Configuración de servidor público
 
-1. Al activar "Mi Servidor es Público" deberías ver un mensaje de confirmación de que tu servidor se ha registrado correctamente.
+1. Al activar "Mi Servidor es Público" deberías de ver un mensaje de confirmación de que tu servidor se ha registrado correctamente.
 
 1. Escribe el nombre, la ciudad y el país para que otros usuarios puedan identificarte con facilidad.
 
@@ -43,7 +43,7 @@ _Si quieres **ejecutar un cliente en la misma máquina** tienes que **conectar e
 
 ### Grabación
 
-Primero activa la grabación por parte del servidor estableciendo el Directorio de Grabación en la pestaña de Opciones. La grabación comienza cuando la primera persona se conecta al servidor y se para cuando la última persona se marcha. Utiliza el botón de "Nueva Grabación" para crear un nuevo sub-directorio en el cual se guardarán las grabaciones. Nota: las grabaciones son por pistas en el formato `.lof` de [Audacity](https://www.audacityteam.org/) y `.rpp` de [REAPER](https://en.wikipedia.org/wiki/REAPER). Abre los archivos respectivos para escucharlos en estas aplicaciones.
+Primero activa la grabación por parte del servidor estableciendo el Directorio de Grabación en la pestaña de Opciones. La grabación comienza cuando la primera persona se conecta al servidor y se detiene cuando la última persona se marcha. Utiliza el botón de "Nueva Grabación" para crear un nuevo sub-directorio en el cual se guardarán las grabaciones. Nota: las grabaciones son por pistas en el formato `.lof` de [Audacity](https://www.audacityteam.org/) y `.rpp` de [REAPER](https://en.wikipedia.org/wiki/REAPER). Abre los archivos respectivos para escucharlos en estas aplicaciones.
 
 _Nota: Cuando tu servidor está grabando, los clientes mostrarán un mensaje informando de que la grabación está activa._
 

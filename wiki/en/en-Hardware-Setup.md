@@ -58,6 +58,7 @@ You're done! Have fun!
 Refer to the Linux [client install guide](Installation-for-Linux#configure-jack-with-qjackctl).
 
 ## Linux: Low Latency Kernels for Jamulus
+
 You might want to install [Ubuntu Studio](https://ubuntustudio.org/). It adds a second option in your boot menu for a low-latency kernel. The key to successful jamming is "low latency" between servers and connected Jamulus clients. If the underlying Linux system is started with a low-latency kernel then it has a positive impact on latency for your Jamulus sessions.
 
 

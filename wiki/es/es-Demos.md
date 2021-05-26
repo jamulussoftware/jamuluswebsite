@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Jamulus Demos"
-lang: "es"
-permalink: "/wiki/Demos"
+permalink: /wiki/Demos
+title: 'Jamulus Demos'
 ---
 
 # Ejemplos de uso de Jamulus
@@ -12,7 +12,7 @@ permalink: "/wiki/Demos"
 
 * [Este vídeo](https://youtu.be/c8838jS2g3U) documenta una sesión online de [Volker Fischer](https://sourceforge.net/u/corrados/profile/) con su banda _Jitterbuffer_
 
-* [Jamulus The Movie - 28 de marzo del 2020](https://www.youtube.com/watch?v=2x-gwMmVK-s)
+* [Jamulus The Movie - 28 Marzo 2020](https://www.youtube.com/watch?v=2x-gwMmVK-s)
 
 * [Concierto en directo con 8 músicos de jazz](https://www.youtube.com/watch?v=MpSIYxZMHw8&t=3307s) para el Día Internacional del Jazz, el 30 de abril del 2020 ([más detalles aquí](https://sourceforge.net/p/llcon/discussion/533517/thread/070485619d/#6b71))
 

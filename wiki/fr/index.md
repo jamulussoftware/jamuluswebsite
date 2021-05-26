@@ -1,8 +1,7 @@
 ---
+lang: fr
 layout: wikioverview
-title: "Présentation"
-lang: "fr"
-permalink: "/wiki/"
+permalink: /wiki/
+title: Présentation
 ---
-
 # Page de présentation

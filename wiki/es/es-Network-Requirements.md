@@ -1,8 +1,8 @@
 ---
+lang: es
 layout: wiki
-title: "Calidad, Retardo y Ancho de Banda"
-lang: "es"
-permalink: "/wiki/Network-Requirements"
+permalink: /wiki/Network-Requirements
+title: 'Calidad, Retardo y Ancho de Banda'
 ---
 
 {% include breadcrumb.html root="Más" branch1="Ejecutar un Servidor" branch1-url="Running-a-Server" %}
@@ -32,7 +32,6 @@ Con las siguientes unidades
 
 ## Ancho de banda de red
 
-Hay un flujo de datos de subida (músico enviando al servidor) y otro de bajada (el servidor enviando la mezcla de vuelta al músico)
-<figure><img src="{{site.url}}/assets/img/es-screenshots/bandwidth-diagram.png" loading="lazy" alt="Diagrama de los anchos de banda en una red de Jamulus con diferentes calidades de audio, de baja a alta"></figure>
+Hay un flujo de datos de subida (músico enviando al servidor) y otro de bajada (el servidor enviando la mezcla de vuelta al músico) <figure><img src="{{site.url}}/assets/img/es-screenshots/bandwidth-diagram.png" loading="lazy" alt="A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high"></figure>
 
 Nótese que la tasa de transferencia media de ADSL2 es de 10 Mbit/s para bajada y 1 Mbit/s para subida. El rendimiento real depende de la distancia al proveedor, que puede [variar en teoría de 24 Mbit/s a 0,3 km hasta 1,5 Mbit/s a 5,2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) para la tasa de descarga.
