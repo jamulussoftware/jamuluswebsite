@@ -49,7 +49,9 @@ We collect changes to the English version of the site on a "changes" branch firs
 
 ### Points to note
 
-- Each page on the site has a .md or .html language suffixed version.  Most of the website content is in \_includes/wiki/[langCode]. These files must be translated in order not to break the site. The homepage (https://jamulus.io/) is located in the repo root and named 1-[langCode]-index.html
+- Each page on the site has a .md or .html language suffixed version.  Some of the website content is in \_includes/wiki/[langCode]. These files must be translated in order not to break the site. 
+
+- The homepage (https://jamulus.io/) is located in the repo root and named 1-[langCode]-index.html
 
 - Please do not add new or significantly modified content to a non-English .md or .html file. All changes must be made on the changes branch in English **first** after being [discussed here](https://github.com/jamulussoftware/jamulus/discussions).
 

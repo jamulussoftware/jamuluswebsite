@@ -6,20 +6,21 @@ heading: "Sound devices"
 lang: "en"
 ---
 
-### You can of course use Jamulus with your computer's built-in sound card or microphone.
+You can of course use Jamulus with your computer's built-in sound card or microphone.
+{: .doubletextsize .blue }
 
-However, most people choose to use specialist audio interfaces. These either help you play in time better with better latency, or have more features. Most are quite inexpensive and easy to set up, and will usually perform better than "stock" hardware.
+However, most people use external devices like USB microphones or audio interfaces. These usually perform much better than "stock" hardware in terms of audio quality and latency. Most are quite inexpensive and easy to set up.
 
-Thanks to Jamulus users, this page lists audio devices known to work (or not) with Jamulus.
 <!--more-->
-
-_**Note**: Whether these work or not can depend on your operating system (Linux, MacOS, Windows, etc.)_.
 
 ## Updating this page
 
-You can update this page with the information you have. **Please indicate the platform(s) you are using!** Just [edit this page and wait for an approval](https://github.com/jamulussoftware/jamuluswebsite/edit/release/_posts/2021-01-05-Jamulus-Sound-Devices.md).
+Just [edit this page and wait for an approval](https://github.com/jamulussoftware/jamuluswebsite/edit/release/_posts/2021-01-05-Jamulus-Sound-Devices.md). Please indicate the platform(s) you are using.
 
 ## Audio devices known to work with Jamulus
+
+Your device must support a sample rate of *48kHz (DVD quality)* - which many devices do - and should allow you to listen to the computer’s audio signal. On Windows it’s recommended to choose a device with a *native ASIO driver* - not ASIO4ALL.
+Whether the following devices work or not can *depend on your operating system* (Linux, MacOS, Windows, etc.)!
 
 ### USB/USB-C devices
 
@@ -27,7 +28,7 @@ You can update this page with the information you have. **Please indicate the pl
 
 **[Blue Yeti](https://www.bluemic.com/en-us/products/yeti/)**, USB Microphone
 
-**Windows**: Works well *with ASIO4All*; a bit more latency than under macOS. You can disable local monitoring by going deep into the settings.
+**Windows**: Works well *with ASIO4ALL*; a bit more latency than under macOS. You can disable local monitoring by going deep into the settings.
 
 **macOS**: Works well. (There is a check option to disable local monitoring).
 
@@ -63,7 +64,7 @@ You can update this page with the information you have. **Please indicate the pl
 
 **Linux**: not yet tested.
 
-
+***
 
 #### Audio interfaces / digital mixing consoles
 
@@ -79,7 +80,7 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 ***
 
-**ART USBMIX4**, USB 4-channel compact mixing console (_see above_), lower retail price than the AGM04 in Canada and includes CD-ROM with ART ASIO driver plus 5VDC power adapter for standalone use or when computer USB port cannot supply suffciient juice. Audio from USB can be monitored without the direct feed from the microphone.  
+**[ART USBMIX4](https://artproaudio.com/product/usbmix4-four-channel-mixer-usb-audio-interface/)**, USB 4-channel compact mixing console (_see above_), lower retail price than the AGM04 in Canada and includes CD-ROM with ART ASIO driver plus 5VDC power adapter for standalone use or when computer USB port cannot supply suffciient juice. Audio from USB can be monitored without the direct feed from the microphone.  
 
 **Windows**: Works well on Windows 10. Latency added via the ART ASIO driver v1.1 = ~14 ms; via ASIO4ALL v2 = ~24 ms
 
@@ -300,6 +301,8 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **Linux**: not yet tested.
 
+***
+
 #### Digital recorders
 
 **Tascam DR-07X** stereo recorder with USB audio into computer, headphones in line-out of the recorder.
@@ -397,6 +400,8 @@ This device provides the **lowest latency**.
 
 * **[Zoom TAC-2](https://zoomcorp.com/en/us/audio-interface/audio-interfaces/tac-2/)**, Thunderbolt 2 digital audio interface
 
+***
+
 ### Internal soundcards
 
 **[HiFiBerry DAC+ ADC (Pro)](https://www.hifiberry.com/shop/boards/hifiberry-dac-adc/)**, Raspberry Pi compatible HAC internal sound card.
@@ -420,6 +425,18 @@ This device provides the **lowest latency**.
 **[Soundblaster Audigy 4](https://en.wikipedia.org/wiki/Sound_Blaster_Audigy#Sound_Blaster_Audigy_4)**, PCI internal sound card  
 
 See above. Not fully verified.
+
+***
+
+**[M-Audio Delta44/66/1010](https://www.sweetwater.com/store/detail/Delta44--m-audio-delta-44)**, PCI internal sound card with I/O breakout box
+
+**Windows**: ?
+
+**macOS**: ?
+
+**Linux**: Works great with jack.
+
+***
 
 ## Audio devices known not to work with Jamulus
 
