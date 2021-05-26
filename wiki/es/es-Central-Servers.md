@@ -1,7 +1,0 @@
----
-category: hidden
-lang: es
-layout: redirect
-permalink: /wiki/Directory-Servers
-redirect: /wiki/Central-Servers
----

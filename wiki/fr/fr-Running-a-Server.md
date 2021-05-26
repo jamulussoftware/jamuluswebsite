@@ -9,7 +9,8 @@ title: 'Exécuter un serveur'
 
 ## Dois-je faire tourner un serveur pour utiliser Jamulus ?
 
-NON. { : .doubletextsize .red }
+NO.
+ {: .doubletextsize .red }
 
 
 Vous pouvez simplement choisir le serveur de quelqu'un d'autre dans votre liste et vous lancer.

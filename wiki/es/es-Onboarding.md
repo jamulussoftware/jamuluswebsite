@@ -1,8 +1,0 @@
----
-category: hidden
-lang: es
-layout: redirect
-permalink: /wiki/Onboarding
-redirect: /wiki/Setup
----
-

@@ -52,7 +52,7 @@ La configuration de votre serveur en tant que serveur annuaire ne doit être eff
 
 Pour afficher les serveurs répertoriés par un serveur d'annuaire personnalisé, les musiciens doivent saisir l'adresse dans le champ de paramètres "Adresse personnalisée du serveur annuaire" de leur client. Ils verront alors une liste de configuration de connexion générée par ce serveur d'annuaire.
 
-Les opérateurs de serveurs normaux peuvent également s'inscrire auprès de votre serveur d'annuaire personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en définissant le votre comme option `--centralserver`. i
+Les opérateurs de serveurs normaux peuvent également s'inscrire auprès de votre serveur d'annuaire personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en définissant le votre comme option `--centralserver`.
 
 Pour faire fonctionner un serveur en tant que serveur central, il doit être configuré avec `--centralserver localhost` (c'est-à-dire qu'il doit se spécifier comme le serveur d'annuaire à interroger).
 

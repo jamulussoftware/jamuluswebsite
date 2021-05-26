@@ -50,7 +50,7 @@ Configurar tu servidor como un Servidor de Directorio solo necesita hacerse bajo
 
 Para ver servidores listados por un servidor de directorios personalizado, los músicos deben introducir la dirección en el campo "Servidor de Directorio Personalizado" de su cliente. Verán entonces una lista en Configuración de Conexión que es generada por ese directorio de servidores.
 
-Los operadores de servidores convencionales también pueden registrarse con tu servidor de directorio personalizado para que los suyos aparezcan en tu lista de servidores, estableciéndolo con la opción de `--centralserver`. -i
+Los operadores de servidores convencionales también pueden registrarse con tu servidor de directorio personalizado para que los suyos aparezcan en tu lista de servidores, estableciéndolo con la opción de `--centralserver`.
 
 Para ejecutar un servidor como Servidor de Directorio, se debe configurar con `--centralserver localhost` (esto es, se especifica como el servidor de directorio que recibe consultas).
 

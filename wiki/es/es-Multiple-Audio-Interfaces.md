@@ -1,7 +1,0 @@
----
-category: hidden
-lang: es
-layout: redirect
-permalink: 'Ejecutar Jamulus con Múltiples Interfaces de Audio'
-redirect: /kb/2020/11/24/Multiple-Audio-Interfaces.html
----

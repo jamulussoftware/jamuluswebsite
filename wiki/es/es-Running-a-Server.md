@@ -9,7 +9,8 @@ title: 'Ejecutar un Servidor'
 
 ## ¿Necesito ejecutar un servidor para utilizar Jamulus?
 
-NO. {: .doubletextsize .red }
+NO.
+ {: .doubletextsize .red }
 
 
 Puedes simplemente escoger otro servidor de la lista y utilizarlo.
