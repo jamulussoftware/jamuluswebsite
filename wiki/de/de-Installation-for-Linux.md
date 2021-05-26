@@ -16,7 +16,7 @@ Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
 1. Installiere das Paket: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`.
 1. Da Jamulus den JACK Server benötigt, musst du ihn auch installieren. Wir empfehlen, dass du `QjackCtl` zur Konfiguration von JACK benutzt. Installiere das Programm mit `sudo apt-get install qjackctl`
 
-Achte darauf, dass wenn du Jamulus auf eine neue Version upgraden musst, kannst du die neue .deb Datei einfach herunterladen und neu installieren, wie oben beschrieben.
+Wenn du Jamulus auf eine neue Version upgradest, kannst du die neue .deb Datei einfach herunterladen und wie oben beschrieben neu installieren.
 
 Für Installationspakete anderer Distributionen schau dir [Repology](https://repology.org/project/jamulus/versions) an. Du magst auch die von Benutzern erstellten [Installationsskripts](https://github.com/jamulussoftware/installscripts) verwenden.
 
@@ -33,18 +33,16 @@ Jamulus Clients brauchen [JACK](https://jackaudio.org/). Du musst JACK aber zuer
 - Setzte die **Sample Rate auf 48000**
 - Setze die **Frames/Period auf 128** und Periods/Buffer zunächst auf 2
 
-Starte JACK neu, um alle neuen Einstellungen zu übernehmen.
+Starte JACK neu, um die neuen Einstellungen zu übernehmen.
 
 ### Jamulus starten
 
-Nun dass JACK konfiguriert und am Laufen ist, kannst du Jamulus aus dem Launcher starten (oder mit der Kommandozeile, führe den Befehl `jamulus` aus)
-.
+Nachdem JACK konfiguriert und am Laufen ist, kannst du Jamulus aus dem Launcher starten (oder mit der Kommandozeile über den Befehl `jamulus`).
 
-Wenn du Soundprobleme (kurze Unterbrechungen (Dropouts) o.Ä.) hast (insbesondere XRUNs, die von Jack/QjackCtl gemeldet werden), versuche größere Werte (z.B. 256 Frames oder 3 Perioden) zu setzen. Niedrigere Einstellungen (z.B. 64 Frames) bieten zwar eine bessere Leistung, aber möglicherweise mehr Soundprobleme.
+Wenn du Soundprobleme (kurze Unterbrechungen, Knistern o.Ä.) hast (insbesondere XRUNs, die von Jack/QjackCtl gemeldet werden), versuche größere Werte (z.B. 256 Frames oder 3 Perioden) zu setzen. Niedrigere Einstellungen (z.B. 64 Frames) bieten zwar eine bessere Leistung, aber möglicherweise mehr Soundprobleme.
 Siehe auch die [Fehlerbehebungsseite](Client-Troubleshooting).
 
 ## Alles installiert?
+Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
-Schau dir die Seite an:
-
-[Jamulus setup page](Setup){: .button}
+[Nach der Installation](Setup){: .button}
