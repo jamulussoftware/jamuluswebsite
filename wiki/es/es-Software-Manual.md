@@ -4,7 +4,9 @@ layout: wiki
 permalink: /wiki/Software-Manual
 title: 'Manual del Software'
 ---
-# Manual de Usuario de Jamulus {:.no_toc}
+# Manual de Usuario de Jamulus
+
+{:.no_toc}
 
 Este manual documenta la aplicación del cliente de Jamulus para su uso por parte de músicos y cantantes para utilizar el software con el fin de conectarse a un servidor.
 
