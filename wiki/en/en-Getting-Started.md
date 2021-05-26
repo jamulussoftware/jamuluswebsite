@@ -9,8 +9,8 @@ permalink: "/wiki/Getting-Started"
 
 To get the best from Jamulus, at a minimum you will need:
 
-1. **A wired internet connection** (not wi-fi - see the [FAQ](/wiki/FAQ))
-1. **Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ))
+1. **A wired internet connection** (not wi-fi - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))
+1. **Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))
 1. **A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)
 
 If you have any questions, please see the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)
@@ -51,7 +51,7 @@ Fill in at least “Alias/Name” and close the window.
 
 **Before playing with others, we recommend that you connect to an empty server to test your setup**, and make sure you are listening to the signal coming back from the server (if possible) and not yourself.
 
-Before you connect to a server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ)).
+Before you connect to a server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal)).
 
 Now use the “Connect” button in the Jamulus main window to join a server. A window will now open:
 
