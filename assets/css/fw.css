@@ -34,6 +34,10 @@ a:hover {
   background-color: #c94a55 !important;
 }
 
+.blue {
+  color: #1181a4!important;
+}
+
 .doubletextsize {
   font-size: 2em;
 }
@@ -329,6 +333,10 @@ main>div {
 @media (prefers-color-scheme: dark) {
   h1, h2, h3, h4, h5, h6, a, #langselect {
     color: #3daed2;
+  }
+
+  .blue {
+    color: #3daed2!important;
   }
 
   #langselect .selected, #paginator .selected {

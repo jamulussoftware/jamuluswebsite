@@ -11,7 +11,7 @@ Um das Beste von Jamulus genießen zu können, brauchst du mindestens:
 
 1. **Eine kabelgebundene Internetverbindung** (kein WLAN - siehe [FAQ](/wiki/FAQ))
 1. **Kabelgebundene Kopfhörer (weder Bluetooth noch Lautsprecher** - siehe [FAQ](/wiki/FAQ))
-1. **Ein vernünftiges Audiointerface, Soundkarte und Mikrofon** ([siehe diese Auflistung](/kb/2021/01/05/Jamulus-Sound-Devices.html) für Beispiele)
+1. **Ein passendes Audiointerface oder Soundkarte und Mikrofon** ([siehe diese Auflistung](/kb/2021/01/05/Jamulus-Sound-Devices.html) für Beispiele)
 
 Falls du Fragen dazu hast, schau mal rein in die [Diskussionen](https://github.com/jamulussoftware/jamulus/discussions)
 
@@ -22,7 +22,7 @@ Um Jamulus mit deiner Hardware zum Laufen zu bringen, folge bitte die Installati
 * [macOS](/wiki/Installation-for-Macintosh)
 * [Linux](/wiki/Installation-for-Linux)
 
-Und nun schließe alle anderen Programme. Es ist besser, wenn man unkompliziert beginnt.
+Und nun schließe alle anderen Programme. Es ist besser unkompliziert zu beginnen.
 
 ## Jamulus Hauptfenster
 
@@ -42,15 +42,16 @@ Zuerst lass die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” 
   <figcaption>Lass die Leute wissen, wer du bist</figcaption>
 </figure>
 
-Mindestens das Feld “Alias/Name” ausfüllen und dann das Fenster schließen.
+Fülle mindestens das Feld “Alias/Name” aus. Dann kannst du das Fenster schließen.
 
 ## Mit einem Server verbinden und das Audio testen
 
 **Bevor du anfängst mit anderen Leuten zu musizieren, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst vor Ort.
 
-Bevor du dich mit einem Server verbindest, solltest du dich selbst **nicht** hören können. Auf deinen eigenen Klang über Jamulus zu hören (und nicht den von dir selbst) ist die “Goldene Regel” und ermöglicht, dass du im Takt mit anderen spielst ([siehe FAQ](/wiki/FAQ)).
+Bevor du dich mit einem Server verbindest, solltest du dich selbst **nicht** hören können. Die “Goldene Regel” von Jamulus ist:
+auf deinen eigenen Klang über das Programm zu hören; nicht das direkte Signal von deinem Instrument. Dadurch kannst du mit anderen einfacher im Takt spielen ([siehe FAQ](/wiki/FAQ)).
 
-Nun klick auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutreten. Ein weiteres Fenster geht auf:
+Nun klicke auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutreten. Ein weiteres Fenster geht auf:
 
 <figure>
   <img src="{{site.url}}/assets/img/de-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
