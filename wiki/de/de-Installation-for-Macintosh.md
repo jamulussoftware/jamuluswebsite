@@ -38,4 +38,4 @@ Für weitere Informationen über diese Meldung siehe [diese Apple Support-Seite]
 ## Alles installiert?
 Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
-[Nach der Installation](Onboarding){: .button}
+[Nach der Installation](Getting-Started){: .button}

@@ -75,4 +75,4 @@ Des informations officielles et supplémentaires sur la façon de configurer ASI
 
 Jamulus a été installé et peut être utilisé dès maintenant. Vous pouvez maintenant jeter un coup d'œil à la
 
-[Page d'accueil de Jamulus](Accueil){ : .button}
+[Page d'accueil de Jamulus](Getting-Started){ : .button}

@@ -75,4 +75,4 @@ Información oficial y más detallada sobre cómo configurar ASIO4ALL se encuent
 
 Jamulus ha sido instalado y puede utilizarse. Ahora puedes echar un vistazo a la
 
-[página de Iniciación a Jamulus](Onboarding){: .button}
+[página de Iniciación a Jamulus](Getting-Started){: .button}

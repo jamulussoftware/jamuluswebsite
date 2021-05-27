@@ -33,4 +33,4 @@ Wir freuen uns über jedes Feedback von Android Nutzern und Entwicklern. Schau e
 ## Alles installiert?
 Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
 
-[Nach der Installation](Onboarding){: .button}
+[Nach der Installation](Getting-Started){: .button}

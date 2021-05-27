@@ -38,4 +38,4 @@ Vous aurez alors une version légèrement différente du même message, qui vous
 
 Jamulus a été installé et peut être utilisé dès maintenant. Vous pouvez maintenant jeter un coup d'œil à la
 
-[Page d'accueil de Jamulus](Accueil){ : .button}
+[Page d'accueil de Jamulus](Getting-Started){ : .button}

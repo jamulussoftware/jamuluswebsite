@@ -45,4 +45,4 @@ Siehe auch die [Fehlerbehebungsseite](Client-Troubleshooting).
 ## Alles installiert?
 Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
-[Nach der Installation](Setup){: .button}
+[Nach der Installation](Getting-Started){: .button}

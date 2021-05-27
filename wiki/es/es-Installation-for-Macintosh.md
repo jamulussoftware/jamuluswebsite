@@ -38,4 +38,4 @@ Ahora verás una versión ligeramente diferente del mismo mensaje, que te permit
 
 Jamulus ha sido instalado y puede utilizarse. Ahora puedes echar un vistazo a la
 
-[página de Iniciación a Jamulus](Onboarding){: .button}
+[página de Iniciación a Jamulus](Getting-Started){: .button}
