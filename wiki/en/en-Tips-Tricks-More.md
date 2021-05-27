@@ -121,23 +121,25 @@ To send these signals using systemd, create the following two `.service` files i
 For turning recording on or off (depending on the current state):
 
 ~~~
- [Unit]
- Description=Toggle recording state of Jamulus server 
- Requisite=Jamulus-Server
+[Unit]
+Description=Toggle recording state of Jamulus server
+Requisite=Jamulus-Server
 
- [Service]
- Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server 
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
 ~~~
 
 For starting a new recording:
 
 ~~~
- [Unit]
- Description=Start a new recording on Jamulus server 
- Requisite=Jamulus-Server
+[Unit]
+Description=Start a new recording on Jamulus server
+Requisite=Jamulus-Server
 
- [Service]
- Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server 
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
 ~~~
 
 _Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_
@@ -179,5 +181,3 @@ Looking at the third panel (Actions) of the Local Group Policy Editor<br>
 &nbsp;&nbsp;&nbsp;&nbsp;UDP<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>
 (Notice Jamulus policy in center panel may be edited)
-
-

@@ -5,10 +5,9 @@ lang: "en"
 permalink: "/wiki/Software-Manual"
 ---
 # Jamulus User Manual
-
 {:.no_toc}
 
-This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server. 
+This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server.
 
 <details markdown="1">
 
@@ -115,12 +114,12 @@ If the server operator has enabled recording, you will see a message above the m
 
 
 
-# Settings 
+# Settings
 
 ## My Profile
 
 From the View menu, select "My Profile..." to set your Alias/Name
-which is displayed below your fader in the server audio mixer board. 
+which is displayed below your fader in the server audio mixer board.
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
 
@@ -224,7 +223,7 @@ also increases.
 The Ping Time is the time required for the audio stream to travel from the client to the server and back again.
 This delay is introduced by the network and ideally should be about 20-30 ms. When this delay is higher than about 50 ms, it starts to become
 more noticeable and you may find it harder to keep in time, though it is still possible once you get used to it. Factors such as tempo, the instrument
-played or headphone isolation will have an impact on the delay you find you can deal with. 
+played or headphone isolation will have an impact on the delay you find you can deal with.
 The most probable causes for a high delay are that your distance to the server is too large or your internet connection is not sufficient.
 
 Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
@@ -260,5 +259,3 @@ Attempts to detect audio feedback loops. Once detected, this feature will activa
 Controls the relative levels of the left and right local audio channels. For a mono signal
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
 an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
-
-

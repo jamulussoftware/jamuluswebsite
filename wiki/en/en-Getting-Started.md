@@ -3,6 +3,7 @@ layout: wiki
 title: "Setup"
 lang: "en"
 permalink: "/wiki/Getting-Started"
+category: "hidden"
 ---
 
 # Setup - getting started with Jamulus
