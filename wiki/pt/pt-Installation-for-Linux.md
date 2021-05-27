@@ -48,4 +48,4 @@ Se você tiver problemas com o som interrompendo (em particular erros XRUN que o
 
 Dê uma olhada na página
 
-[Configurando o Jamulus](Setup){: .button}
+[Configurando o Jamulus](Getting-Started){: .button}
