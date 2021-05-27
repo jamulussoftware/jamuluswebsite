@@ -9,7 +9,7 @@ permalink: "/wiki/Installation-for-Macintosh"
 
 # Installation auf macOS
 
-Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
+Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
 
 1. [Lade Jamulus herunter]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
 **Alternativ-Download:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)

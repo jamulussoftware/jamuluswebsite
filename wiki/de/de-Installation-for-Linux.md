@@ -7,7 +7,7 @@ permalink: "/wiki/Installation-for-Linux"
 {% include breadcrumb.html root="Jamulus nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 # Installation auf Linux
-Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
+Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
 
 ### Debian and Ubuntu
 
