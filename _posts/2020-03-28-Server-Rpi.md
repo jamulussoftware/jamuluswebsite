@@ -35,7 +35,7 @@ If all is well, run in your chosen [server mode](/wiki/Choosing-a-Server-Type) a
 
 `sudo chrt 99 ionice -c1 nice -n -20 Jamulus -s -n -e [yourCentralServer] -o "yourServerName;yourCity;[country ID]"&`
 
-**Please also see this [important note on Central Servers](/wiki/Central-Servers).**
+**Please also see this [important note on Directory Servers](/wiki/Directory-Servers).**
 
 See also [Command Line Options](/wiki/Command-Line-Options) for other parameters you can set.
 
