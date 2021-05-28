@@ -74,7 +74,7 @@ Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit
 
 Falls du nicht möchtest, dass die anderen dich hören, klick auf “Stummschalten”. Das verhindert, dass dein Audiosignal an andere Leute gesendet wird. Niemand erfährt, ob du das gemacht hast. Wenn du hingegen das Symbol “mute” über einem Regler siehst, bedeutet das, dass diese Person dich nicht hören kann, weil sie deinen Kanal in ihrem Mix stummgeschaltet hat.
 
-Achte auch darauf, dass du die Chatfunktion nutzen kannst während du online bist, um eine Nachricht an die anderen Teilnehmer zu schreiben. Die Willkommensbotschaft im Chat kann auch einige Richtlinien anzeigen.
+Während du online bist, kannst du die Chatfunktion nutzen, um eine Nachricht an die anderen Teilnehmer zu schreiben. Die Willkommensbotschaft im Chat kann auch einige Richtlinien anzeigen.
 
 Weitere Informationen über die Verwendung von Jamulus kann man im [Software Handbuch](/wiki/Software-Manual) finden.
 
