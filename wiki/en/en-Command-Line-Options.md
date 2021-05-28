@@ -66,5 +66,3 @@ _Note that the following options will not alter settings made in the GUI._
 | `-j`  | `--nojackconnect` | Disable auto JACK connections                                                                                                            |                                                                             |
 |       | `--ctrlmidich`    | MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f*][;p*][;s*][;m*]` | See [Tips & Tricks](Tips-Tricks-More#Using-ctrlmidich-for-MIDI-controllers) |
 |       | `--clientname`    | Window title and JACK client name                                                                                                        |                                                                             |
-
-

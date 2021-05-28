@@ -5,11 +5,11 @@ lang: "de"
 permalink: "/wiki/Installation-for-Macintosh"
 ---
 
-{% include breadcrumb.html root="Verwendung von Jamulus" branch1="Erste Schritte" branch1-url="Setup" %}
+{% include breadcrumb.html root="Verwendung von Jamulus" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 # Installation auf macOS
 
-Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
+Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
 
 1. [Lade Jamulus herunter]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
 **Alternativ-Download:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
@@ -38,4 +38,4 @@ Für weitere Informationen über diese Meldung siehe [diese Apple Support-Seite]
 ## Alles installiert?
 Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
-[Nach der Installation](Onboarding){: .button}
+[Nach der Installation](Getting-Started){: .button}

@@ -1,8 +1,7 @@
 ---
 layout: redirect
-redirect: "/wiki/Setup"
+redirect: "/wiki/Getting-Started"
 lang: "en"
 permalink: "/wiki/Onboarding"
 category: "hidden"
 ---
-

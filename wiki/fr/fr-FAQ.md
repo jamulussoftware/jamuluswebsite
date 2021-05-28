@@ -42,7 +42,7 @@ Non. Si vous souhaitez simplement vous connecter aux serveurs d'autres personnes
 
 ### Comment fonctionne Jamulus (en général) ?
 
-<img src="{{site.url}}assets/img/fr-screenshots/diagram-overview.png" loading="lazy" alt="Diagramme montrant le fonctionnement de Jamulus">
+<img src="{{site.url}}/assets/img/fr-screenshots/diagram-overview.png" loading="lazy" alt="Diagramme montrant le fonctionnement de Jamulus">
 
 
 Jamulus fonctionne sur le principe client-serveur. L'audio de chaque musicien est envoyé à un serveur, où il est mixé et traité. Ensuite, l'audio est renvoyé à chaque client. Si un serveur est rendu public et enregistré sur un répertoire, ses informations seront diffusées à tous les clients.

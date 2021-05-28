@@ -2,7 +2,7 @@
 layout: wiki
 title: "Setup"
 lang: "pt"
-permalink: "/wiki/Setup"
+permalink: "/wiki/Getting-Started"
 ---
 
 # Setup - começando com Jamulus

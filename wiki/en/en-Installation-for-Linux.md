@@ -20,7 +20,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
 
-For installers on other distributions, see [Repology](https://repology.org/project/jamulus/versions). You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts). 
+For installers on other distributions, see [Repology](https://repology.org/project/jamulus/versions). You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts).
 
 
 ## Set up your hardware
@@ -47,4 +47,4 @@ If you get problems with sound breaking up (in particular XRUN errors reported b
 
 Take a look at the
 
-[Jamulus setup page](Setup){: .button}
+[Jamulus setup page](Getting-Started){: .button}
