@@ -22,7 +22,7 @@ Um Jamulus mit deiner Hardware zum Laufen zu bringen, folge bitte die Installati
 * [macOS](/wiki/Installation-for-Macintosh)
 * [Linux](/wiki/Installation-for-Linux)
 
-Und nun schließe alle anderen Programme. Es ist besser unkompliziert zu beginnen.
+Und nun schließe alle anderen Programme. Es ist besser simpel zu beginnen.
 
 ## Jamulus Hauptfenster
 
@@ -35,7 +35,7 @@ Wenn du Jamulus öffnest, siehst du ein Fenster, welches so aussieht:
 
 ## Profil einrichten
 
-Zuerst lass die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” (Menüleiste oben) > “Mein Profil…”, dann siehst du folgendes:
+Lasse zuerst die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” (Menüleiste oben) > “Mein Profil…”, dann siehst du folgendes:
 
 <figure>
   <img src="{{site.url}}/assets/img/de-screenshots/profile-window.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
@@ -44,7 +44,7 @@ Zuerst lass die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” 
 
 Fülle mindestens das Feld “Alias/Name” aus. Dann kannst du das Fenster schließen.
 
-## Mit einem Server verbinden und das Audio testen
+## Mit einem Server verbinden und Audio testen
 
 **Bevor du anfängst mit anderen Leuten zu musizieren, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst vor Ort.
 
@@ -58,14 +58,14 @@ Nun klicke auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutre
   <figcaption>Einem Server beitreten</figcaption>
 </figure>
 
-Das Wichtigste über die Server ist ihre “Ping-Zeit”. Je höher der Wert, desto schwerieger ist, im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15ms ist.
+Die wichtigste Eigenschaft von Servern ist ihre “Ping-Zeit”. Je höher der Wert, desto schwerieger ist, im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15ms ist.
 
 Einmal mit einem Server verbunden, siehe zu, dass du dich gut hören kannst, pass deine Eingangslautstärke an und korrigiere eventuelle Probleme. Und natürlich halte dich an [Die goldene Regel](/wiki/Client-Troubleshooting).
 
 
 ## Das erstmalige Musizieren
 
-Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit einem Server verbunden hast (du kannst ein Genre aus der Liste wählen), sind die Regler rechts in der Ansicht dein privates Mischpult. Alles was du hier änderst, hat Einfluss auf das was du hörst, aber nicht auf das was die anderen hören. Wenn du einen Regler runterziehst, wird dieser Kanal leiser, wenn du ihn nach oben ziehst, wird der Kanal für dich lauter.
+Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit einem Server verbunden hast (du kannst ein Genre aus der Liste wählen), sind die Regler rechts in der Ansicht dein privates Mischpult. Alles was du hier änderst, hat Einfluss auf das, was du hörst, aber nicht auf das, was die anderen hören. Wenn du einen Regler runterziehst, wird dieser Kanal leiser, wenn du ihn nach oben ziehst, wird der Kanal für dich lauter.
 
 <figure>
   <img src="{{site.url}}/assets/img/de-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="width:100%; float:none;">
