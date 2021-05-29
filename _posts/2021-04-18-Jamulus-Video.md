@@ -53,7 +53,11 @@ https://<add-jitsi-server-here>/myMeeting#config.resolution=180&config.constrain
 
 #### Optimize Jitsi by disabling unneeded features
 
-To reduce PC load and disable audio, you can also use the following options: `https://<add-jitsi-server-here>/myMeeting#config.startSilent=true&config.prejoinPageEnabled=false&config.disableAudioLevels=true&config.enableLipSync=false&config.enableLayerSuspension=true&config.disableE2EE=true&config.p2p.enabled=false`.
+To reduce PC load and disable audio, you can also use the following options:
+
+```
+https://<add-jitsi-server-here>/myMeeting#config.startSilent=true&config.prejoinPageEnabled=false&config.disableAudioLevels=true&config.enableLipSync=false&config.enableLayerSuspension=true&config.disableE2EE=true&config.p2p.enabled=false
+```
 
 An "all in one" example link with multiple other options might look like that: 
 
