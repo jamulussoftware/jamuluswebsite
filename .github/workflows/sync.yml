@@ -5,9 +5,11 @@ on:
       - 'release'
 jobs:
   sync-branch:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
 
       - name: ${{ github.sha }} update from release
         uses: devmasx/merge-branch@v1.3.1
