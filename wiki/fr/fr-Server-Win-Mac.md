@@ -53,17 +53,17 @@ Pour les serveurs sans tête : vous pouvez contrôler la fonction d'enregistreme
 
 Cette option utilise les petites différences de temps d'arrivée du son entre les deux oreilles. Elle produit un effet stéréo similaire à l'audition humaine naturelle par rapport à un panoramique normal de "volume". Notez que pour obtenir cet effet, tous les clients doivent être réglés sur 'mono in / stereo out' (ou sur 'stereo', mais seulement s'ils transmettent un signal stéréo).
 
-### Adresse du serveur central personnalisé
+### Adresse du serveur annuaire personnalisé
 
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
-Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-central)).
+Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3. Serveur annuaire)).
 
 
 **Utilisateurs de Windows** - Si vous voulez que le serveur démarre automatiquement au démarrage du système, activez la case à cocher correspondante.
 
-(Laissez le champ "Custom Directory Server Address" vide, sauf si vous devez inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-directory)).
+(Laissez le champ "Adresse personalisée du serveur annuaire" vide, sauf si vous devez inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3. Serveur annuaire)).
 
 
 ***
