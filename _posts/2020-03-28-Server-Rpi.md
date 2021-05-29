@@ -31,7 +31,7 @@ If you are running a server, test by starting with the `--server` option, and wa
 
 `Jamulus -s`
 
-If all is well, run in your chosen [server mode](/wiki/Choosing-a-Server-Type) as follows (or use systemd unit script provided in the [Linux guide](/wiki/Server-Linux#create-a-start-script)), for example a public server:
+If all is well, run in your chosen [server mode](/wiki/Choosing-a-Server-Type) as follows (or create a systemd unit script), for example a public server:
 
 `sudo chrt 99 ionice -c1 nice -n -20 Jamulus -s -n -e [yourCentralServer] -o "yourServerName;yourCity;[country ID]"&`
 
