@@ -5,6 +5,8 @@ on:
       - 'release'
 jobs:
   sync-branch:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
