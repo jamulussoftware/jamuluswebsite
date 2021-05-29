@@ -16,7 +16,7 @@ Lorsque vous démarrez un serveur public, vous verrez un message indiquant si vo
 
 ## Serveurs "headless"
 
-Définissez le serveur annuaire (genre) en utilisant l'option `--centralserver` (`-e`) comme suit :
+Définissez le serveur annuaire (genre) en utilisant l'option `--directoryserver` (`-e`) comme suit :
 
 
 | Genre | Adresse du serveur |
