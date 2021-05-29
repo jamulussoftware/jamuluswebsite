@@ -10,6 +10,7 @@
   margin-top: 0;
   line-height: 1.5em;
   border-bottom: 3px solid;
+  clear: both;
 }
 
 .wikisite main h2 {
@@ -64,4 +65,20 @@ figcaption {
   .wikisite #editsitecontent svg {
     color: #1b90b5;
   }
+}
+
+details {
+  font: 16px;
+  font-style: bold;
+  width: 620px;
+}
+
+details > summary {
+  font-size: 20px;
+  padding: 5px 6px;
+  width: 15em;
+  background-color: #eaf8fd;
+  border: none;
+  color: #1882A1;
+  cursor: pointer;
 }

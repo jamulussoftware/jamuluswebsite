@@ -28,7 +28,7 @@ Il est donc logique de minimiser les sources de retard ou autres problèmes lié
 
 ### Pourquoi ne devrais-je pas écouter mon propre signal ?
 
-Pour la même raison que vous devez minimiser le retard de votre signal afin de jouer en temps voulu, vous devez vous assurer que vous jouez sur votre propre son que les autres musiciens entendent. Vous trouverez plus d'informations à ce sujet, ainsi qu'un moyen de tester votre installation pour vous assurer que vous respectez cette "règle d'or" [ici](/wiki/Client-Troubleshooting).
+Pour la même raison que vous devez minimiser le retard de votre signal afin de jouer en temps voulu, vous devez vous assurer que vous jouez sur votre propre son que les autres musiciens entendent. Vous trouverez plus d'informations à ce sujet, ainsi qu'un moyen de tester votre installation pour vous assurer que vous respectez cette "règle d'or" [ici](/wiki/Client-Troubleshooting#vous-avez-tous-un-son-correct-mais-il-est-difficile-de-jouer-ensemble).
 
 Bien sûr, si vous jouez d'un instrument acoustique ou si vous êtes chanteur, il sera difficile d'exclure votre son "local". Mais vous devriez au moins essayer de le faire, par exemple en utilisant un casque fermé, réglé aussi fort que possible pour masquer votre propre son. Vous pourrez ainsi vous concentrer sur le mixage qui vous parvient du serveur.
 
@@ -42,7 +42,7 @@ Non. Si vous souhaitez simplement vous connecter aux serveurs d'autres personnes
 
 ### Comment fonctionne Jamulus (en général) ?
 
-<img src="{{site.url}}assets/img/fr-screenshots/diagram-overview.png" loading="lazy" alt="Diagramme montrant le fonctionnement de Jamulus">
+<img src="{{site.url}}/assets/img/fr-screenshots/diagram-overview.png" loading="lazy" alt="Diagramme montrant le fonctionnement de Jamulus">
 
 
 Jamulus fonctionne sur le principe client-serveur. L'audio de chaque musicien est envoyé à un serveur, où il est mixé et traité. Ensuite, l'audio est renvoyé à chaque client. Si un serveur est rendu public et enregistré sur un répertoire, ses informations seront diffusées à tous les clients.

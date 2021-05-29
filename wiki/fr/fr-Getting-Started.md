@@ -1,7 +1,7 @@
 ---
 lang: fr
 layout: wiki
-permalink: /wiki/Setup
+permalink: /wiki/Getting-Started
 title: Configuration
 ---
 
@@ -82,5 +82,3 @@ Vous trouverez de plus amples informations sur l'utilisation de Jamulus dans le 
 ## Dépannage
 
 Vous avez des problèmes audio ? Vous ne pouvez pas voir les serveurs, ou un autre problème ? Consultez la page [Dépannage](/wiki/Client-Troubleshooting), ou posez vos questions dans la section [Discussions](https://github.com/jamulussoftware/jamulus/discussions).
-
-

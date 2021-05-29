@@ -8,7 +8,7 @@ permalink: "/wiki/Installation-for-Windows"
 {% include breadcrumb.html root="Jamulus Nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 # Installation auf Windows
-Stelle sicher, dass du die [Erste Schritte](Setup) Seite bereits gelesen hast.
+Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
 1. **Downloade und installiere einen ASIO-Treiber**. Wir empfehlen, eine Soundkarte/Interface mit einem nativen, herstellereigenen ASIO-Treiber zu verwenden. Wenn kein nativer ASIO-Treiber vorhanden ist (v.A. bei integrierten Soundkarten), brauchst du einen generischen Treiber wie ASIO4ALL. Mehr Informationen findest du im [ASIO](#asio) Abschnitt unten auf dieser Seite.
 1. [Downloade Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
 **Alternativ-Download:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
@@ -72,4 +72,4 @@ Offizielle und ausführliche Infos zur Konfiguration von ASIO4ALL sind auch in d
 ## Alles installiert?
 Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
-[Nach der Installation](Onboarding){: .button}
+[Nach der Installation](Getting-Started){: .button}

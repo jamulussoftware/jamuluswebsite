@@ -1,7 +1,7 @@
 ---
 layout: redirect
-redirect: "/wiki/Central-Servers"
+redirect: "/wiki/Directory-Servers"
 lang: "en"
-permalink: "/wiki/Directory-Servers"
+permalink: "/wiki/Central-Servers"
 category: "hidden"
 ---

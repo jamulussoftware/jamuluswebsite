@@ -23,7 +23,7 @@ Lors de l'exécution sans l'interface graphique ("headless"), la procédure suiv
 
 ~~~
 Jamulus --nogui --server \
-        --centralserver genreServer:port \
+        --directoryserver genreServer:port \
         --serverinfo "yourServerName;yourCity;[country ID]"
 ~~~
 
@@ -52,12 +52,12 @@ La configuration de votre serveur en tant que serveur annuaire ne doit être eff
 
 Pour afficher les serveurs répertoriés par un serveur d'annuaire personnalisé, les musiciens doivent saisir l'adresse dans le champ de paramètres "Adresse personnalisée du serveur annuaire" de leur client. Ils verront alors une liste de configuration de connexion générée par ce serveur d'annuaire.
 
-Les opérateurs de serveurs normaux peuvent également s'inscrire auprès de votre serveur d'annuaire personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en définissant le votre comme option `--centralserver`.
+Les opérateurs de serveurs normaux peuvent également s'inscrire auprès de votre serveur d'annuaire personnalisé afin que leurs serveurs apparaissent dans votre liste de serveurs en définissant le votre comme option `--directoryserver`.
 
-Pour faire fonctionner un serveur en tant que serveur central, il doit être configuré avec `--centralserver localhost` (c'est-à-dire qu'il doit se spécifier comme le serveur d'annuaire à interroger).
+Pour faire fonctionner un serveur en tant que serveur annuaire, il doit être configuré avec `--directoryserver localhost` (c'est-à-dire qu'il doit se spécifier comme le serveur d'annuaire à interroger).
 
 #### Points de configuration à noter
 
-Si vous voulez contrôler quels serveurs peuvent s'enregistrer grâce à votre serveur central, vous pouvez activer une liste blanche avec l'option de ligne de commande `--listfilter`. Consultez la page [Options de la ligne de commande](Command-Line-Options) pour plus d'informations sur cette fonctionnalité et les autres paramètres que vous pouvez définir.
+Si vous voulez contrôler quels serveurs peuvent s'enregistrer grâce à votre serveur annuaire, vous pouvez activer une liste blanche avec l'option de ligne de commande `--listfilter`. Consultez la page [Options de la ligne de commande](Command-Line-Options) pour plus d'informations sur cette fonctionnalité et les autres paramètres que vous pouvez définir.
 
 Lorsque vous exécutez un serveur annuaire public derrière un pare-feu NAT sur un réseau privé, utilisez l'option `--serverpublicip` pour spécifier l'adresse IP publique du ou des serveurs listés par votre serveur annuaire. Ceci est nécessaire pour permettre aux clients de l'Internet public de se connecter à eux via NAT. Notez que pour les serveurs utilisant cette option, vous aurez toujours besoin d'une redirection de port appropriée dans votre routeur/pare-feu.

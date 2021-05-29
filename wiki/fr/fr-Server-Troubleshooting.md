@@ -43,7 +43,7 @@ Oui. Il suffit de cocher la case "Rendre mon serveur public" dans la fenêtre du
 
 ### **_Headless Linux_** : J'ai créé un serveur mais il rejoint le serveur annuaire et je ne le souhaite pas.
 
-Pour activer un serveur privé, n'utilisez pas l'option `--centralserver` (`-e`) lors du lancement de la ligne de commande de votre serveur.
+Pour activer un serveur privé, n'utilisez pas l'option `--directoryserver` (`-e`) lors du lancement de la ligne de commande de votre serveur.
 
 ### Personne ne peut se connecter à mon serveur - mais je peux me connecter localement
 

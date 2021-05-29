@@ -30,7 +30,10 @@ Using video is not difficult. Just create a meeting and don't join computer audi
 
 #### Disable joining with audio
 
-You should disable joining with audio, which can be done by adding the config parameter `config.startSilent=true` to the Jitsi link. A Jitsi URL look like that: `https://<add-jitsi-server-here>/myMeeting#config.startSilent=true`.
+You should disable joining with audio, which can be done by adding the config parameter `config.startSilent=true` to the Jitsi link. A Jitsi URL look like that:
+```
+https://<add-jitsi-server-here>/myMeeting#config.startSilent=true
+```
 
 #### Reduce video quality
 
@@ -42,13 +45,25 @@ Reducing video quality might give Jamulus more bandwidth. However, this might no
 
 **Notes:**
 1. Setting low quality video might not work on Linux
-2. You might be able to force low video quality by adding specific configuration parameters to the Jitsi link: A valid link might look like this: `https://<add-jitsi-server-here>/myMeeting#config.resolution=180&config.constraints.video.aspectRatio=16/9&config.constraints.video.height.ideal=200&config.constraints.video.height.max=200&config.constraints.video.height.min=200`
+2. You might be able to force low video quality by adding specific configuration parameters to the Jitsi link: A valid link might look like this: 
+
+```
+https://<add-jitsi-server-here>/myMeeting#config.resolution=180&config.constraints.video.aspectRatio=16/9&config.constraints.video.height.ideal=200&config.constraints.video.height.max=200&config.constraints.video.height.min=200
+```
 
 #### Optimize Jitsi by disabling unneeded features
 
-To reduce PC load and disable audio, you can also use the following options: `https://<add-jitsi-server-here>/myMeeting#config.startSilent=true&config.prejoinPageEnabled=false&config.disableAudioLevels=true&config.enableLipSync=false&config.enableLayerSuspension=true&config.disableE2EE=true&config.p2p.enabled=false`.
+To reduce PC load and disable audio, you can also use the following options:
 
-An "all in one" example link with multiple other options might look like that: `https://meet.jit.si/MyJamulusExampleMeeting#config.prejoinPageEnabled=false&disableInviteFunctions=true&config.startSilent=true&config.startWithVideoMuted=true&config.disableAudioLevels=true&config.resolution=180&config.constraints.video.aspectRatio=16/9&config.constraints.video.height.ideal=200&config.constraints.video.height.max=200&config.constraints.video.height.min=200&config.p2p.enabled=false&config.disableAGC=true&config.disableHPF=true&config.disableNS=true&config.enableLipSync=false&config.enableLayerSuspension=true&config.disableE2EE=true&config.stereo=true&config.enableNoisyMicDetection=false&config.disableAP=true&config.requireDisplayName=true`
+```
+https://<add-jitsi-server-here>/myMeeting#config.startSilent=true&config.prejoinPageEnabled=false&config.disableAudioLevels=true&config.enableLipSync=false&config.enableLayerSuspension=true&config.disableE2EE=true&config.p2p.enabled=false
+```
+
+An "all in one" example link with multiple other options might look like that: 
+
+```
+https://meet.jit.si/MyJamulusExampleMeeting#config.prejoinPageEnabled=false&disableInviteFunctions=true&config.startSilent=true&config.startWithVideoMuted=true&config.disableAudioLevels=true&config.resolution=180&config.constraints.video.aspectRatio=16/9&config.constraints.video.height.ideal=200&config.constraints.video.height.max=200&config.constraints.video.height.min=200&config.p2p.enabled=false&config.disableAGC=true&config.disableHPF=true&config.disableNS=true&config.enableLipSync=false&config.enableLayerSuspension=true&config.disableE2EE=true&config.stereo=true&config.enableNoisyMicDetection=false&config.disableAP=true&config.requireDisplayName=true
+```
 
 
 ### Zoom
@@ -63,7 +78,7 @@ Before joining a meeting, you will be asked if you also want to join "Computer A
 
 Using Video and routing Audio from Jamulus into your video conferencing software is more difficult. Since there are multiple options on every operating system, they are not described here (yet). However, there are some hints which might help you:
 
-1. Linux users can user JACK and a PulseAudio bridge to route Jamulus audio into your web-browser or video conferencing app. This is quite easy with a program like QjackCtl or Carla. [JamulusOS](https://sourceforge.net/projects/jamulus-os/) has almost everything ready to use.
+1. Linux users can user JACK and a PulseAudio bridge to route Jamulus audio into your web-browser or video conferencing app. This is quite easy with a program like QjackCtl or Carla. [Ubuntu Studio](https://ubuntustudio.org/) has almost everything ready to use.
 2. MacOS users might use BlackHole.
 3. Windows users might use ASIO Link Pro or VoiceMeeter and virtual audio cables. However, audio routing on Windows might be more complicated than on macOS and Linux.
 

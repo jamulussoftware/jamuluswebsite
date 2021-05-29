@@ -39,4 +39,4 @@ For further information about this warning see [this Apple Support Page](https:/
 
 Jamulus has been installed and can be used now. You can now take a look at the
 
-[Jamulus Onboarding page](Onboarding){: .button}
+[Jamulus Onboarding page](Getting-Started){: .button}

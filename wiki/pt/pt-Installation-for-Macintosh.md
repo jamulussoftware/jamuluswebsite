@@ -38,4 +38,4 @@ Para mais informações sobre essa mensagem de alerta leia [essa página de supo
 ## Instalou tudo?
 Jamulus foi instalado e pode ser usado agora. Talvez você queira dar uma olhada na página
 
-[Jamulus Onboarding](Onboarding){: .button}
+[Jamulus Onboarding](Getting-Started){: .button}

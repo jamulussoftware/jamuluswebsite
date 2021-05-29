@@ -40,8 +40,8 @@ _Notez que les options suivantes ne modifieront pas les reglages définis dans l
 | Raccourci | Nom long      | `[...]` signifie paramètre facultatif 																| Notes									  |
 |-------|-------------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------|
 | `-d`  | `--discononquit`  | Déconnecter tous les clients en quittant   														    | 										  | 
-| `-e`  | `--centralserver` | Rend le serveur public et définit son genre. Voir aussi `-o`. 										| Voir [Type de serveur](Choosing-a-Server-Type#3-central) |
-| `-f`  | `--listfilter`    | Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format  `ip address 1[;ip address 2]` | Serveur seulement. [Voir note](Choosing-a-Server-Type#3-central) |
+| `-e`  | `--directoryserver` | Rend le serveur public et définit son genre. Voir aussi `-o`. 										| Voir [Type de serveur](Choosing-a-Server-Type#3. Serveur annuaire) |
+| `-f`  | `--listfilter`    | Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format  `ip address 1[;ip address 2]` | Serveur seulement. [Voir note](Choosing-a-Server-Type#3. Serveur annuaire) |
 | `-F`  | `--fastupdate`    | Réduit la latence des clients connectés avec l'option "Activer les petits tampons réseau". Nécessite un processeur plus rapide pour éviter les pertes de données et plus de bande passante pour les clients activés. | |
 | `-l`  | `--log`           | Active l'enregistrement, définir le chemin et le nom de fichier 										|										  |
 | `-L`  | `--licence`       | Affiche une fenêtre d'accord avant que les utilisateurs puissent se connecter						    |										  |
