@@ -8,9 +8,9 @@ on:
 
 jobs:
   build:
-
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Build the site in the jekyll/builder container
