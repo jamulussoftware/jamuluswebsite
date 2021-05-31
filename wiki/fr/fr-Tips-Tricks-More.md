@@ -75,9 +75,9 @@ Voici le script :
  amixer sset 'Line' playback 60% unmute
  amixer sset 'Audigy Analog/Digital Output Jack' unmute
  amixer sset 'Analog Mix' capture 100%
- amixer sset 'Analog Mix' capture 100%
+ amixer sset 'Analog Mix' playback 0%
  amixer sset 'Wave' 100%
- amixer sset 'Mic' capture 30% cap
+ amixer sset 'Master' capture 100% cap
  amixer sset 'Master' playback 100%
  amixer sset 'Master' playback 100%
  amixer sset 'PCM' playback 100%
@@ -88,7 +88,7 @@ Voici le script :
  jack_disconnect system:capture_1 Jamulus:'input left'
  jack_disconnect system:capture_2 Jamulus:'input right'
  jack_connect system:capture_1 gx_head_amp:in_0
- jack_connect system:capture_0 gx_head_amp:in_0
+ jack_connect gx_head_amp:out_0 gx_head_fx:in_0
  jack_connect gx_head_fx:out_0 Jamulus:'input left'
  jack_connect gx_head_fx:out_1 Jamulus:'input right'
  jack_connect Jamulus:'output left' system:playback_1

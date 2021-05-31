@@ -10,7 +10,7 @@ title: "Installation d'un serveur - Windows et macOS"
 # Installation pour Windows et macOS
 
 
-**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur] (Running-a-Server)_**
+**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur](Running-a-Server)_**
 
 * **Utilisateurs de Windows** - Démarrez le serveur en utilisant l'entrée "Serveur Jamulus" dans le menu de démarrage de Windows.
 
@@ -18,7 +18,7 @@ title: "Installation d'un serveur - Windows et macOS"
 
 * **Linux users** - Please refer to the [GUI server instructions](Server-Linux#running-a-server-with-the-gui).
 
-<figure><img src="{{site.url}}/assets/img/fr-screenshots/server-window-setup.png" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
+<figure><img src="{{site.url}}/assets/img/fr-screenshots/server-window-setup.png" loading="lazy" alt="Image de la fenêtre de configuration du serveur Jamulus"></figure>
 
 ### Configuration du serveur public
 
@@ -53,17 +53,17 @@ Pour les serveurs sans tête : vous pouvez contrôler la fonction d'enregistreme
 
 Cette option utilise les petites différences de temps d'arrivée du son entre les deux oreilles. Elle produit un effet stéréo similaire à l'audition humaine naturelle par rapport à un panoramique normal de "volume". Notez que pour obtenir cet effet, tous les clients doivent être réglés sur 'mono in / stereo out' (ou sur 'stereo', mais seulement s'ils transmettent un signal stéréo).
 
-### Adresse du serveur central personnalisé
+### Adresse du serveur annuaire personnalisé
 
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
-Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-central)).
+Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-Serveur-annuaire)).
 
 
 **Utilisateurs de Windows** - Si vous voulez que le serveur démarre automatiquement au démarrage du système, activez la case à cocher correspondante.
 
-(Laissez le champ "Custom Directory Server Address" vide, sauf si vous devez inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-directory)).
+(Laissez le champ "Adresse personalisée du serveur annuaire" vide, sauf si vous devez inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-Serveur-annuaire)).
 
 
 ***

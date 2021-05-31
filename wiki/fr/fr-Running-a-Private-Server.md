@@ -9,7 +9,7 @@ title: "Exécuter d'un serveur privé"
 
 # Exécuter d'un serveur privé
 
-**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur] (Running-a-Server)_**
+**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur](Running-a-Server)_**
 
 Ce guide part du principe que vous allez exécuter un serveur privé sur votre réseau domestique, mais certains des problèmes abordés ici peuvent également s'appliquer à ceux qui fonctionnent sur des hôtes en nuage (par exemple Amazon EC2).
 
@@ -27,7 +27,7 @@ Normalement, les personnes extérieures à votre réseau domestique ne peuvent p
 
 La configuration exacte de la redirection de port diffère pour chaque routeur. Voici un exemple des paramètres de la redirection de port dans un routeur Linksys :
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/linksys-port-forward.png" loading="lazy" alt="Image of a Linksys router's port forwarding settings"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/linksys-port-forward.png" loading="lazy" alt="Image des paramètres de redirection de port d'un routeur Linksys"></figure>
 
 Pour obtenir de l'aide, consultez [portforward.com](https://portforward.com).
 

@@ -31,7 +31,7 @@ _Notez que les options suivantes ne modifieront pas les reglages définis dans l
 |  `-i`     | `--inifile`       | Définit l'emplacement du fichier d'initialisation (remplace la valeur par défaut)                 | Client (toujours) and server (avec IGU) |
 |  `-n`     | `--nogui`         | Désactive l'IGU                                                                                   | 										  |
 |  `-p`     | `--port`          | Numéro du port UDP local. La valeur par défaut est 22124                                          | 										  |
-|  `-Q`     | `--qos`           | Définit la valeur DSCP de la qualité de service. La valeur par défaut est 128. Désactiver avec 0.  | QoS ignorée par Windows, consultez [Tips & Tricks](Tips-Tricks-More#quality-of-service). |
+|  `-Q`     | `--qos`           | Définit la valeur DSCP de la qualité de service. La valeur par défaut est 128. Désactiver avec 0.  | QoS ignorée par Windows, consultez [Tips & Tricks](Tips-Tricks-More#qualité-de-service). |
 |  `-t`     | `--notranslation` | Désactive les traductions                                                                         |										  |
 |  `-v`     | `--version`       | Affiche les informations sur la version et quitte                                                 | 										  |
 

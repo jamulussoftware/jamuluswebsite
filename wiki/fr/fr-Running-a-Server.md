@@ -10,7 +10,7 @@ title: 'Exécuter un serveur'
 ## Dois-je faire tourner un serveur pour utiliser Jamulus ?
 
 NON.
- { : .doubletextsize .red }
+ {: .doubletextsize .red }
 
 
 Vous pouvez simplement choisir le serveur de quelqu'un d'autre dans votre liste et vous lancer.
@@ -25,7 +25,7 @@ Si vous voulez vraiment gérer un serveur, il est **très important** que vous l
   <a href="Choosing-a-Server-Type" class="button fx-col-100-xs" target="_blank" rel="noopener noreferrer">Lecture sur les types de serveurs</a>
 </div>
 
-... ... puis revenez ici.
+... puis revenez ici.
 
 ### Vitesse et latence
 

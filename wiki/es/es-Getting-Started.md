@@ -10,7 +10,7 @@ title: Configuración
 Para obtener el mejor resultado con Jamulus, como mínimo necesitarás:
 
 1. **Una conexión a internet por cable** (no utilices Wi-Fi - ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos)).
-1. **Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos))
+1. **Auriculares por cable** (no de Bluetooth o altavoces - ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos))
 1. **Un dispositivo de audio, tarjeta de sonido y/o micrófono decente** ([consulta esta lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) para ver ejemplos)
 
 Si tienes alguna duda, por favor consulta las [Discussions](https://github.com/jamulussoftware/jamulus/discussions)

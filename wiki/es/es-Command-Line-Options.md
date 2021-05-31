@@ -11,11 +11,11 @@ Las funciones más comunes de Jamulus pueden configurarse usando la interfaz gr�
 
 Por ejemplo, en Windows, para que un cliente utilice un archivo específico de configuración, haz clic derecho en el acceso directo de Jamulus y elige "Propiedades" > Destino. Añade los argumentos necesarios a Jamulus.exe:
 
-"C:\Archivos de Programa (x86)\Jamulus\Jamulus.exe" --inifile "C:\ruta\a\myinifile.ini"
+```shell "C:\Program Files (x86)\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini" ```
 
 Para macOS, arranca una ventana de Terminal y ejecuta Jamulus con las opciones deseadas como sigue:
 
-/Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/ruta/a/myinifile.ini"
+```shell /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini" ```
 
 ***
 
