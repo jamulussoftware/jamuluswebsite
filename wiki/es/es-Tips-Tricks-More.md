@@ -122,22 +122,24 @@ Para encender o apagar la grabación (dependiendo del estado actual):
 
 ~~~
  [Unit]
- Description=Toggle recording state of Jamulus server 
+ Description=Toggle recording state of Jamulus server
  Requisite=Jamulus-Server
 
  [Service]
- Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server 
+ Type=oneshot
+ ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
 ~~~
 
 Para empezar una nueva grabación:
 
 ~~~
  [Unit]
- Description=Start a new recording on Jamulus server 
+ Description=Start a new recording on Jamulus server
  Requisite=Jamulus-Server
 
  [Service]
- Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server 
+ Type=oneshot
+ ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
 ~~~
 
 _Nota: El nombre del servicio Jamulus en la línea de `ExecStart` tiene que ser el mismo que el nombre del archivo `.service` que creaste cuando configuraste systemd para controlar tu servidor Jamulus. Así que en este ejemplo sería `Jamulus-Server.service`_
@@ -160,5 +162,3 @@ La configuración de QoS en Jamulus (incluyendo la predeterminada) no tiene efec
 
 
 En el campo de Búsqueda al lado del menú de Arranque teclea: Editor de Directivas de Grupo Local (enter)<br> En la nueva ventana, (clic) en el icono del menú para mostrar el tercer panel de Acción<br> Mirando el primer panel del Editor de Directivas de Grupo Local<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (clic)<br> Mirando el tercer panel (Acción) del Editor de Directivas de Grupo Local<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;Más Acciones<br> &nbsp;&nbsp;&nbsp;Crear nueva Directiva (clic)<br> &nbsp;&nbsp;&nbsp;&nbsp;Nombre Directiva: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Especificar valor DSCP: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;Esta directiva QoS se aplica solo a las aplicaciones con el nombre Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Terminar<br> (Nota: la directiva para Jamulus en el panel central puede editarse)
-
-

@@ -15,7 +15,7 @@ Vous pouvez faire fonctionner votre serveur dans l'un des trois "modes" suivants
 
 Votre serveur sera répertorié dans la liste [serveurs annuaire](Directory-Servers) que les clients utilisent par défaut. Les musiciens peuvent alors le découvrir et s'y connecter. Il n'est pas nécessaire de fonctionner en tant que serveur public puisque de nombreuses autres personnes en utilisent déjà. Il suffit de se connecter à un serveur à faible latence et de commencer à jouer.
 
-<figure><img src="{{site.url}}/assets/img/fr-screenshots/diagram-public-server.png" loading="lazy" alt="Diagramme des connexions entre clients au sein d'un serveur public Jamulus"></figure>
+<figure><img src="{{site.url}}/assets/img/fr-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus public server"></figure>
 
 Ce mode est activé en cochant la case "Rendre mon serveur public..." et en saisissant (facultativement) les informations relatives à votre serveur.
 
@@ -58,6 +58,6 @@ Pour faire fonctionner un serveur en tant que serveur annuaire, il doit être co
 
 #### Points de configuration à noter
 
-Si vous voulez contrôler quels serveurs peuvent s'enregistrer grâce à votre serveur annuaire, vous pouvez activer une liste blanche avec l'option de ligne de commande `--listfilter`. Consultez la page [Options de la ligne de commande](Command-Line-Options) pour plus d'informations sur cette fonctionnalité et les autres paramètres que vous pouvez définir.
+Si vous voulez contrôler quels serveurs peuvent s'enregistrer grâce à votre serveur central, vous pouvez activer une liste blanche avec l'option de ligne de commande `--listfilter`. Consultez la page [Options de la ligne de commande](Command-Line-Options) pour plus d'informations sur cette fonctionnalité et les autres paramètres que vous pouvez définir.
 
 Lorsque vous exécutez un serveur annuaire public derrière un pare-feu NAT sur un réseau privé, utilisez l'option `--serverpublicip` pour spécifier l'adresse IP publique du ou des serveurs listés par votre serveur annuaire. Ceci est nécessaire pour permettre aux clients de l'Internet public de se connecter à eux via NAT. Notez que pour les serveurs utilisant cette option, vous aurez toujours besoin d'une redirection de port appropriée dans votre routeur/pare-feu.

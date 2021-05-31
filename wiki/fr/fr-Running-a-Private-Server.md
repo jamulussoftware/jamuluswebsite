@@ -27,7 +27,7 @@ Normalement, les personnes extérieures à votre réseau domestique ne peuvent p
 
 La configuration exacte de la redirection de port diffère pour chaque routeur. Voici un exemple des paramètres de la redirection de port dans un routeur Linksys :
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/linksys-port-forward.png" loading="lazy" alt="Image des paramètres de redirection de port d'un routeur Linksys"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/linksys-port-forward.png" loading="lazy" alt="Image of a Linksys router's port forwarding settings"></figure>
 
 Pour obtenir de l'aide, consultez [portforward.com](https://portforward.com).
 

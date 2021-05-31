@@ -28,7 +28,7 @@ Por tanto tiene sentido minimizar cualquier fuente de retardo u otros problemas 
 
 ### ¿Por qué no debería escuchar mi propia señal?
 
-Por la misma razón por la que necesitas minimizar el retardo de tu señal para tocar en sincronización, tienes que asegurarte de que tocas escuchando el audio que oyen los demás. Para más información sobre esto, y modos de probar tu configuración para asegurarte de que obedeces la “Regla de Oro” [ver aquí](/wiki/Client-Troubleshooting).
+Por la misma razón por la que necesitas minimizar el retardo de tu señal para tocar en sincronización, tienes que asegurarte de que tocas escuchando el audio que oyen los demás. Para más información sobre esto, y modos de probar tu configuración para asegurarte de que obedeces la “Regla de Oro” [ver aquí](/wiki/Client-Troubleshooting#todos-suenan-bien-pero-es-difícil-tocar-todos-juntos-manteniendo-el-tiempo).
 
 Por supuesto, si tocas un instrumento acústico o cantas, va a ser difícil excluir tu sonido "local". Pero debes al menos intentar hacerlo, por ejemplo utilizando auriculares cerrados con el volumen subido para tapar tu propio sonido. Esto te permitirá concentrarte en la mezcla que vuelve del servidor.
 

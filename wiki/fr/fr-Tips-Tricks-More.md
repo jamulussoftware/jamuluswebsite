@@ -75,9 +75,9 @@ Voici le script :
  amixer sset 'Line' playback 60% unmute
  amixer sset 'Audigy Analog/Digital Output Jack' unmute
  amixer sset 'Analog Mix' capture 100%
- amixer sset 'Analog Mix' playback 0%
+ amixer sset 'Analog Mix' capture 100%
  amixer sset 'Wave' 100%
- amixer sset 'Master' capture 100% cap
+ amixer sset 'Mic' capture 30% cap
  amixer sset 'Master' playback 100%
  amixer sset 'Master' playback 100%
  amixer sset 'PCM' playback 100%
@@ -88,7 +88,7 @@ Voici le script :
  jack_disconnect system:capture_1 Jamulus:'input left'
  jack_disconnect system:capture_2 Jamulus:'input right'
  jack_connect system:capture_1 gx_head_amp:in_0
- jack_connect gx_head_amp:out_0 gx_head_fx:in_0
+ jack_connect system:capture_0 gx_head_amp:in_0
  jack_connect gx_head_fx:out_0 Jamulus:'input left'
  jack_connect gx_head_fx:out_1 Jamulus:'input right'
  jack_connect Jamulus:'output left' system:playback_1
@@ -122,22 +122,24 @@ Pour activer ou désactiver l'enregistrement (selon l'état actuel) :
 
 ~~~
  [Unit]
- Description=Toggle recording state of Jamulus server 
+ Description=Toggle recording state of Jamulus server
  Requisite=Jamulus-Server
 
  [Service]
- Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server 
+ Type=oneshot
+ ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
 ~~~
 
 Pour demarrer un nouvel enregistrement :
 
 ~~~
  [Unit]
- Description=Start a new recording on Jamulus server 
+ Description=Start a new recording on Jamulus server
  Requisite=Jamulus-Server
 
  [Service]
- Type=oneshot ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server 
+ Type=oneshot
+ ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
 ~~~
 
 _Note : Le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de systemd pour contrôler votre serveur Jamulus. Donc dans cet exemple, ce serait `Jamulus-Server.service`_.
@@ -160,5 +162,3 @@ Les paramètres de qualité de service de Jamulus (y compris la valeur par défa
 
 
 Dans la boîte de recherche à côté du menu Démarrer, tapez : Local Group Policy Editor (entrer)<br> Dans la nouvelle fenêtre, (cliquer) sur l'icône du menu pour afficher le troisième panneau Actions.<br> Regardez le premier panneau de l'éditeur de stratégie du groupe local.<br> &nbsp;Stratégie de l'ordinateur local<br> &nbsp;&nbsp;Configuration<br> &nbsp;&nbsp;&nbsp;fenêtres paramètres<br> &nbsp;&nbsp;&nbsp;&nbsp;QoS basée sur la stratégie (cliquer)<br> Regarder le troisieme panneau (Actions) de l'éditeur de stratégie de groupe local<br> &nbsp;QoS basée sur la stratégie<br> &nbsp;&nbsp;Plus d'actions<br> &nbsp;&nbsp;&nbsp;créer une nouvelle stratégie (cliquer)<br> &nbsp;&nbsp;&nbsp;&nbsp;nom : Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specifier la valeur DSCP : 32<br> &nbsp;&nbsp;&nbsp;&nbsp;suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;Cette stratégie QoS s'applique seulement au programme Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Fin<br> (Avis : La stratégie de Jamulus dans le panneau central peut être modifiée)
-
-

@@ -23,7 +23,7 @@ Cuando se ejecuta sin GUI ("headless"), lo siguiente configuraría un servidor p
 
 ~~~
 Jamulus --nogui --server \
-        --centralserver genreServer:port \
+        --directoryserver genreServer:port \
         --serverinfo "yourServerName;yourCity;[country ID]"
 ~~~
 
@@ -54,7 +54,7 @@ Para ver servidores listados por un servidor de directorios personalizado, los m
 
 Los operadores de servidores convencionales también pueden registrarse con tu servidor de directorio personalizado para que los suyos aparezcan en tu lista de servidores, estableciéndolo con la opción de `--centralserver`.
 
-Para ejecutar un servidor como Servidor de Directorio, se debe configurar con `--centralserver localhost` (esto es, se especifica como el servidor de directorio que recibe consultas).
+Para ejecutar un servidor como Servidor de Directorio, se debe configurar con `--directoryserver localhost` (esto es, se especifica como el servidor de directorio que recibe consultas).
 
 #### Notas sobre la configuración
 

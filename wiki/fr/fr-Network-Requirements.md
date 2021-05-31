@@ -19,7 +19,7 @@ Les paramètres audio ont un impact sur la bande passante réseau requise. Le ta
 Avec les unités suivantes
 * ms : millisecondes
 * Kbit/s : Kilo-bits par seconde (Rappel : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)
-* Mbit/s : Méga-bits par seconde
+* Mbit/s : Méga-bits par seconded
 
 | Canaux | Qualité | Bande passante (pour le tampon : 2,67 ms) | Bande passante (pour le tampon : 5,33 ms) | Bande passante (pour le tampon : 10,67 ms) | Bande passante (pour le tampon : 21,33 ms) |
 | --------- | ------ | -------- | -------- | -------- | -------- |

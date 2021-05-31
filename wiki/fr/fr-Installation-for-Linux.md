@@ -20,7 +20,7 @@ Assurez-vous d'avoir déjà lu la page [Getting Started](Getting-Started).
 
 Notez que si vous devez mettre à jour Jamulus vers une version plus récente, téléchargez simplement le nouveau fichier .deb et réinstallez comme ci-dessus.
 
-Pour les installateurs sur d'autres distributions, voir [Repology](https://repology.org/project/jamulus/versions). Vous pouvez également utiliser l'un des [scripts d'installation](https://github.com/jamulussoftware/installscripts).
+Pour les installateurs sur d'autres distributions, voir [Repology](https://repology.org/project/jamulus/versions). Vous pouvez également utiliser l'un des [scripts d'installation](https://github.com/jamulussoftware/installscripts). 
 
 
 ## Configurer votre matériel
@@ -47,4 +47,4 @@ Si vous rencontrez des problèmes d'interruption du son (en particulier des erre
 
 Jetez un coup d'oeil à la
 
-[page d'installation de Jamulus](Getting-Started){: .button}
+[Jamulus setup page](Getting-Started){: .button}
