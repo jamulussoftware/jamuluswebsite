@@ -9,7 +9,7 @@ title: 'Exécuter un serveur'
 
 ## Dois-je faire tourner un serveur pour utiliser Jamulus ?
 
-NO.
+NON.
  {: .doubletextsize .red }
 
 

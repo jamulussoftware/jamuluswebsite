@@ -34,4 +34,4 @@ Nous sommes très heureux de recevoir les commentaires des utilisateurs et des d
 
 Jamulus a été installé et peut être utilisé dès maintenant. Vous pouvez maintenant jeter un coup d'œil à la
 
-[Page d'accueil de Jamulus](Getting-Started){ : .button}
+[Page d'accueil de Jamulus](Getting-Started){: .button}

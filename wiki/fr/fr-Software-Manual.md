@@ -5,8 +5,7 @@ permalink: /wiki/Software-Manual
 title: 'Manuel du logiciel'
 ---
 # Manuel du logiciel Jamulus
-
-{:.no_toc}
+ {:.no_toc}
 
 Ce manuel documente l'application client Jamulus destinée aux musiciens et chanteurs qui utilisent le logiciel pour se connecter à un serveur.
 

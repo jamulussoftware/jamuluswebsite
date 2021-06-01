@@ -9,8 +9,8 @@ title: Configuración
 
 Para obtener el mejor resultado con Jamulus, como mínimo necesitarás:
 
-1. **Una conexión a internet por cable** (no utilices Wi-Fi - ver las [FAQ](/wiki/FAQ)).
-1. **Auriculares por cable** (no de Bluetooth o altavoces - ver las [FAQ](/wiki/FAQ))
+1. **Una conexión a internet por cable** (no utilices Wi-Fi - ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos)).
+1. **Auriculares por cable** (no de Bluetooth o altavoces - ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos))
 1. **Un dispositivo de audio, tarjeta de sonido y/o micrófono decente** ([consulta esta lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) para ver ejemplos)
 
 Si tienes alguna duda, por favor consulta las [Discussions](https://github.com/jamulussoftware/jamulus/discussions)
@@ -51,7 +51,7 @@ Rellena al menos “Alias/Nombre” y cierra la ventana.
 
 **Antes de tocar con otros, recomendamos que te conectes a un servidor vacío para probar tu configuración**, y asegurarte de que escuchas la señal que vuelve del servidor (si es posible) y no tu audio directo.
 
-Antes de conectarte a un servidor **no** deberías de poder escucharte. Escuchar tu sonido desde Jamulus (y no tu audio directo) se denomina “La Regla de Oro” y te permite tocar en sincronización con otras personas ([ver las FAQ](/wiki/FAQ)).
+Antes de conectarte a un servidor **no** deberías de poder escucharte. Escuchar tu sonido desde Jamulus (y no tu audio directo) se denomina “La Regla de Oro” y te permite tocar en sincronización con otras personas ([ver las FAQ](/wiki/FAQ#por-qué-no-debería-escuchar-mi-propia-señal)).
 
 Ahora usa el botón de “Conectar” en la ventana principal de Jamulus para unirte a un servidor. Se abrirá una ventana:
 
@@ -62,7 +62,7 @@ Ahora usa el botón de “Conectar” en la ventana principal de Jamulus para un
 
 Lo más importante de los servidores es su “tiempo ping”. Cuanto mayor la cifra, más difícil será tocar en sincronización. Normalmente, se selecciona un servidor con un tiempo ping de 15 ms o menos, si es posible.
 
-Una vez establecida la conexión con un servidor, asegúrate de que te escuchas bien y arregla cualquier problema de volumen de entrada, etc. Y por supuesto, comprueba que también puedes obedecer [La Regla de Oro](/wiki/Client-Troubleshooting).
+Una vez establecida la conexión con un servidor, asegúrate de que te escuchas bien y arregla cualquier problema de volumen de entrada, etc. Y por supuesto, comprueba que también puedes obedecer [La Regla de Oro](/wiki/Client-Troubleshooting#todos-suenan-bien-pero-es-difícil-tocar-todos-juntos-manteniendo-el-tiempo).
 
 ## Tocar por primera vez
 

@@ -9,7 +9,7 @@ title: "Installation d'un serveur - Linux"
 
 # Installation d'un serveur - Linux
 
-**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur] (Running-a-Server)_**
+**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur](Running-a-Server)_**
 
 
 ## Exécution d'un serveur avec une interface graphique sur une machine de bureau

@@ -5,7 +5,7 @@ lang: "en"
 permalink: "/wiki/Software-Manual"
 ---
 # Jamulus User Manual
-{:.no_toc}
+ {:.no_toc}
 
 This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server.
 
@@ -14,7 +14,7 @@ This manual documents the Jamulus client application for use by musicians and si
 <summary>Table of contents</summary>
 
 * TOC
-{:toc}
+ {:toc}
 
 </details>  
 

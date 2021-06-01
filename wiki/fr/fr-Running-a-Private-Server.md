@@ -9,7 +9,7 @@ title: "Exécuter d'un serveur privé"
 
 # Exécuter d'un serveur privé
 
-**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur] (Running-a-Server)_**
+**_Veuillez vous assurer que vous avez lu la page [Exécuter un serveur](Running-a-Server)_**
 
 Ce guide part du principe que vous allez exécuter un serveur privé sur votre réseau domestique, mais certains des problèmes abordés ici peuvent également s'appliquer à ceux qui fonctionnent sur des hôtes en nuage (par exemple Amazon EC2).
 

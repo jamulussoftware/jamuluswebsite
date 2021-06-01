@@ -18,7 +18,7 @@ For example on Windows, to have a client use a specific settings file, right-cli
 For macOS, start a Terminal window and run Jamulus with the desired options like this:
 
 ```shell
-/Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
+ /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
 ```
 
 ***
@@ -44,7 +44,7 @@ _Note that the following options will not alter settings made in the GUI._
 | Short | Long name         | `[...]` means optional parameter                                                                                                                             | Notes                                                                    |
 |-------|-------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | `-d`  | `--discononquit`  | Disconnect all clients on quit                                                                                                                               |                                                                          |
-| `-e`  | `--centralserver` | Make the server public and sets its genre. See also `-o`                                                                                                    | See [server types](Choosing-a-Server-Type#3-directory)                     |
+| `-e`  | `--directoryserver` | Make the server public and sets its genre. See also `-o`                                                                                                    | See [server types](Choosing-a-Server-Type#3-directory)                     |
 | `-f`  | `--listfilter`    | Whitelist servers registering on the server list, format `ip address 1[;ip address 2]`                                                                       | Directory servers only. [See note](Choosing-a-Server-Type#3-directory)     |
 | `-F`  | `--fastupdate`    | Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients. |                                                                          |
 | `-l`  | `--log`           | Enable logging, set path and file name                                                                                                                       |                                                                          |
