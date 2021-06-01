@@ -12,6 +12,7 @@ title: 'Installation auf macOS'
 Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
 
 1. [Lade Jamulus herunter]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
+ **macOS Sierra (10.12) oder niedriger:** [Legacy Version herunterladen]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\
  **Alternativ-Download:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Installiere Jamulus**: Öffne die `.dmg` Datei, stimme der Lizenz zu, *klicke und ziehe* beide Icons (Jamulus-Client und -Server) in den Ordner „Programme“ (oder "Applications"). Danach kannst du das Fenster schließen.
 1. **Starte Jamulus**. Nun kannst du Jamulus benutzen wie jede andere App. Falls du eine Meldung siehst, die besagt, dass Jamulus nicht geöffnet werden kann, da der Entwickler nicht überprüft werden kann, lese den nächsten Abschnitt weiter.
