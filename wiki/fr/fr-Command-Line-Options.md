@@ -61,5 +61,5 @@ _Notez que les options suivantes ne modifieront pas les reglages définis dans l
 |       | `--mutemyown`     | Me silencer dans le mix personnel 																 | Headless seulement 						|
 | `-c`  | `--connect`       | Se connecter à l'adresse du serveur donné au démarrage, format `address[:port]` 					 |								 			|
 | `-j`  | `--nojackconnect` | Désactive les connections automatique de JACK 													 |											|
-|       | `--ctrlmidich`    | Canal du contrôleur MIDI à écouter, décalage du numéro de contrôle et numéros CC consécutifs (canaux). Format: `channel[;f*][;p*][;s*][;m*]` 	| voir [Trucs & Astuces](Tips-Tricks-More#Utilisation-de-ctrlmidich-pour-les-contrôleurs-MIDI) |
+|       | `--ctrlmidich`    | Canal du contrôleur MIDI à écouter, décalage du numéro de contrôle et numéros CC consécutifs (canaux). Format: `channel[;f*][;p*][;s*][;m*]` 	| voir [Trucs & Astuces](Tips-Tricks-More#utilisation-de-ctrlmidich-pour-les-contrôleurs-midi) |
 |       | `--clientname`    | Titre de la fenêtre et nom du client JACK 														 |											|
