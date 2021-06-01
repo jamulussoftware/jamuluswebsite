@@ -23,7 +23,7 @@ _Vous pouvez éjecter le volume "Jamulus" de votre bureau et supprimer le dossie
 
 ## "Jamulus" ne peut pas être ouvert car le développeur ne peut pas être vérifié
 
-<figure><img src="{{site.url}}/assets/img/fr-screenshots/verification-mac.png" loading="lazy" alt="Image of a macOS warning screen for Jamulus warning the developer cannot be verified"></figure>
+<figure><img src="{{site.url}}/assets/img/fr-screenshots/verification-mac.png" loading="lazy" alt="Image de la fenêtre d'avertissement de macOS pour Jamulus indiquant que le développeur ne peut être vérifié."></figure>
 
 La première fois que vous double-cliquerez sur Jamulus pour l'ouvrir, vous verrez probablement un message disant qu'il ne peut pas être ouvert. Nous ne signons pas encore le code de Jamulus (c'est plutôt cher).
 
