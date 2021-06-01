@@ -28,7 +28,7 @@ Para pacotes de instalação em outras distribuições, dê uma olhada em [Repol
 ### Configure JACK com QjackCtl
 
 Clientes Jamulus precisam de [JACK](https://jackaudio.org/) para rodar, mas você tem que configurá-lo primeiro. O método recomendado é usando `QjackCtl`.
-1. Execute o comando `QjackCtl`. Você vai ver a **Página principal do utilitário Qt JACK**
+1. Execute o comando `qjackctl`. Você vai ver a **Página principal do utilitário Qt JACK**
 2. Configure seu equipamento de áudio da seguinte maneira (as exatas configurações do JACK vão depender seu equipamento):
 
 - Configure a **Interface** de áudio usando a que você quiser (pode haver várias na lista)
@@ -47,4 +47,4 @@ Se você tiver problemas com o som interrompendo (em particular erros XRUN que o
 
 Dê uma olhada na página
 
-[Jamulus setup page](Getting-Started){: .button}
+[Configurando o Jamulus](Getting-Started){: .button}

@@ -9,7 +9,7 @@ title: 'Installation auf macOS'
 
 # Installation auf macOS
 
-Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
+Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
 
 1. [Lade Jamulus herunter]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
  **Alternativ-Download:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
@@ -36,6 +36,6 @@ Jetzt siehst du eine leicht veränderte Version der gleichen Meldung, aber nun k
 
 ## Alles installiert?
 
-Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
+Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
 [Nach der Installation](Getting-Started){: .button}

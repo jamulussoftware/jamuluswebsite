@@ -10,7 +10,7 @@ title: 'Installation auf Android'
 
 # Installation auf Android
 
-Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
+Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
 
 ## Was du über Android wissen solltest
 
@@ -32,6 +32,6 @@ Wir freuen uns über jedes Feedback von Android Nutzern und Entwicklern. Schau e
 
 ## Alles installiert?
 
-Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
+Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
 [Nach der Installation](Getting-Started){: .button}
