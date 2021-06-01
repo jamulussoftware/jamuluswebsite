@@ -5,7 +5,7 @@ permalink: /wiki/Installation-for-Linux
 title: 'Installation auf Linux'
 ---
 
-{% include breadcrumb.html root="Verwendung von Jamulus" branch1="Erste Schritte" branch1-url="Getting-Started" %}
+{% include breadcrumb.html root="Jamulus Nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 # Installation auf Linux
 
@@ -16,7 +16,7 @@ Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits geles
 1. Downloade die [neuste .deb Datei]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
 1. Update apt: `sudo apt-get update`
 1. Installiere das Paket: `sudo apt install /path/to/{{ site.download_file_names.deb-gui }}`.
-1. Danach kannst du das Fenster schließen.
+1. Da Jamulus den JACK Server benötigt, musst du ihn auch installieren. Wir empfehlen, dass du `QjackCtl` zur Konfiguration von JACK benutzt. Installiere das Programm mit `sudo apt-get install qjackctl`
 
 Wenn du Jamulus auf eine neue Version upgradest, kannst du die neue .deb Datei einfach herunterladen und wie oben beschrieben neu installieren.
 
@@ -39,7 +39,7 @@ Starte JACK neu, um die neuen Einstellungen zu übernehmen.
 
 ### Jamulus starten
 
-Nun dass JACK konfiguriert und am Laufen ist, kannst du Jamulus aus dem Launcher starten (oder mit der Kommandozeile, führe den Befehl `jamulus` aus).
+Nachdem JACK konfiguriert und am Laufen ist, kannst du Jamulus aus dem Launcher starten (oder mit der Kommandozeile, führe den Befehl `jamulus` aus).
 
 Wenn du Soundprobleme (kurze Unterbrechungen, Knistern o.Ä.) hast (insbesondere XRUNs, die von Jack/QjackCtl gemeldet werden), versuche größere Werte (z.B. 256 Frames oder 3 Perioden) zu setzen. Niedrigere Einstellungen (z.B. 64 Frames) bieten zwar eine bessere Leistung, aber möglicherweise mehr Soundprobleme. Siehe auch die [Fehlerbehebungsseite](Client-Troubleshooting).
 

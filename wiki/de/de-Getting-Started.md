@@ -23,7 +23,7 @@ Um Jamulus mit deiner Hardware zum Laufen zu bringen, folge bitte die Installati
 * [macOS](/wiki/Installation-for-Macintosh)
 * [Linux](/wiki/Installation-for-Linux)
 
-Und nun schließe alle anderen Programme. Es ist besser unkompliziert zu beginnen.
+Und nun schließe alle anderen Programme. Es ist besser simpel zu beginnen.
 
 ## Jamulus Hauptfenster
 
@@ -37,7 +37,7 @@ Wenn du Jamulus öffnest, siehst du ein Fenster, welches so aussieht:
 
 ## Profil einrichten
 
-Zuerst lass die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” (Menüleiste oben) > “Mein Profil…”, dann siehst du folgendes:
+Lasse zuerst die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” (Menüleiste oben) > “Mein Profil…”, dann siehst du folgendes:
 
 <figure>
   <img src="{{site.url}}/assets/img/de-screenshots/settings-profile.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
@@ -45,9 +45,9 @@ Zuerst lass die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” 
 </figure>
 
 
-Fülle mindestens das Feld “Alias/Name” aus und dann kannst du dieses Fenster schließen.
+Fülle mindestens das Feld “Alias/Name” aus. Dann kannst du das Fenster schließen.
 
-## Mit einem Server verbinden und das Audio testen
+## Mit einem Server verbinden und Audio testen
 
 **Bevor du anfängst mit anderen Leuten zu musizieren, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst vor Ort.
 
@@ -60,22 +60,22 @@ Nun klicke auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutre
   <figcaption>Einem Server beitreten</figcaption>
 </figure>
 
-Das Wichtigste über die Server ist ihre “Ping-Zeit”. Je höher der Wert, desto schwerieger ist, im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15ms ist.
+Die wichtigste Eigenschaft von Servern ist ihre “Ping-Zeit”. Je höher der Wert, desto schwerieger ist, im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15 ms ist.
 
 Einmal mit einem Server verbunden, siehe zu, dass du dich gut hören kannst, pass deine Eingangslautstärke an und korrigiere eventuelle Probleme. Und natürlich halte dich an [Die goldene Regel](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
 
 ## Das erstmalige Musizieren
 
-Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit einem Server verbunden hast (du kannst ein Genre aus der Liste wählen), sind die Regler rechts in der Ansicht dein privates Mischpult. Alles was du hier änderst, hat Einfluss auf das was du hörst, aber nicht auf das was die anderen hören. Wenn du einen Regler runterziehst, wird dieser Kanal leiser, wenn du ihn nach oben ziehst, wird der Kanal für dich lauter.
+Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit einem Server verbunden hast (du kannst ein Genre aus der Liste wählen), sind die Regler rechts in der Ansicht dein privates Mischpult. Alles was du hier änderst, hat Einfluss auf das, was du hörst, aber nicht auf das, was die anderen hören. Wenn du einen Regler runterziehst, wird dieser Kanal leiser, wenn du ihn nach oben ziehst, wird der Kanal für dich lauter.
 
 <figure>
   <img src="{{site.url}}/assets/img/de-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>Das Hauptfenster wenn du mit einem Server verbunden bist</figcaption>
 </figure>
 
-Falls du nicht möchtest, dass die anderen dich hören, klick auf “Stummschalten”. Das verhindert, dass dein Audiosignal an andere Leute gesendet wird und niemand erfährt, ob du das gemacht hast. Aber wenn du das Symbol “mute” über einem Regler siehst, das bedeutet sie können dich nicht hören, weil sie deinen Kanal in ihrem Mix stummgeschaltet haben.
+Falls du nicht möchtest, dass die anderen dich hören, klick auf “Stummschalten”. Das verhindert, dass dein Audiosignal an andere Leute gesendet wird. Niemand erfährt, ob du das gemacht hast. Wenn du hingegen das Symbol “mute” über einem Regler siehst, bedeutet das, dass diese Person dich nicht hören kann, weil sie deinen Kanal in ihrem Mix stummgeschaltet hat.
 
-Achte auch darauf, dass du die Chatfunktion nutzen kannst während du online bist, um eine Nachricht an die anderen Teilnehmer zu schreiben. Die Willkommensbotschaft im Chat kann auch einige Richtlinien anzeigen.
+Während du online bist, kannst du die Chatfunktion nutzen, um eine Nachricht an die anderen Teilnehmer zu schreiben. Die Willkommensbotschaft im Chat kann auch einige Richtlinien anzeigen.
 
 Weitere Informationen über die Verwendung von Jamulus kann man im [Software Handbuch](/wiki/Software-Manual) finden.
 
