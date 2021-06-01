@@ -5,16 +5,16 @@ permalink: /wiki/Installation-for-Windows
 title: 'Installation auf Windows'
 ---
 
-{% include breadcrumb.html root="Jamulus Nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
+{% include breadcrumb.html root="Verwendung von Jamulus" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 # Installation auf Windows
 
-Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
+Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
 1. **Downloade und installiere einen ASIO-Treiber**. Wir empfehlen, eine Soundkarte/Interface mit einem nativen, herstellereigenen ASIO-Treiber zu verwenden. Wenn kein nativer ASIO-Treiber vorhanden ist (v.A. bei integrierten Soundkarten), brauchst du einen generischen Treiber wie ASIO4ALL. Mehr Informationen findest du im [ASIO](#asio) Abschnitt unten auf dieser Seite.
-1. [Lade Jamulus herunter]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
- **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
+1. [Downloade Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
+ **Alternativ-Download:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Installiere Jamulus**: Doppelklicke auf Installer, um die Installation zu starten. Wenn du eine Warnung von SmartScreen bekommst, klicke auf „Mehr Infos“ und „Trotzdem ausführen“, um Jamulus zu installieren. (Wenn du eine neue Version von Jamulus heruntergeladen hast und auch einer der Ersten warst, wird Jamulus noch nicht auf der SmartScreen-Whitelist sein. Du erhältst diese Meldung, da wir momentan nicht für ein Software Zertifikat für Jamulus zahlen.)
-1. **Starte Jamulus**. Nun kannst du Jamulus benutzen wie jede andere App.
+1. **Starte Jamulus**. Jetzt kannst du Jamulus wie jedes andere Programm öffnen.
 1. **Richte deine Soundkarte ein**. Wenn du Jamulus installiert hast, musst du deine Audio-Hardware einrichten. Falls du ASIO4ALL nutzt, schau dir die [Einrichtung](#asio4all-einrichten) und/oder das [Hardware-Setup](Hardware-Setup) an.
 
 ***
@@ -23,7 +23,7 @@ Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, sol
 
 Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um mit der möglicht geringsten Audiolatenz zu arbeiten.
 * Wenn du eine externe Soundkarte bzw. -interface besitzt, nutze den offiziellen ASIO-Treiber (normalerweise bieten sie die beste Qualität).
-* Wenn du keine externe Soundkarte besitzt, wird es wahrscheinlich keinen ASIO-Treiber haben. Deshalb musst du einen generischen Treiber nutzen, wie ASIO4ALL:
+* Wenn du keine externe Soundkarte besitzt, wirst du wahrscheinlich keinen ASIO-Treiber haben. Deshalb musst du einen generischen Treiber nutzen, wie ASIO4ALL:
 
 Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaround für einen Bug, der eventuell Probleme mit anderen Funktionen auslöst.
 

@@ -15,7 +15,9 @@ Por ejemplo, en Windows, para que un cliente utilice un archivo específico de c
 
 Para macOS, arranca una ventana de Terminal y ejecuta Jamulus con las opciones deseadas como sigue:
 
-```shell /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini" ```
+```shell
+ /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
+```
 
 ***
 

@@ -18,7 +18,7 @@ For example on Windows, to have a client use a specific settings file, right-cli
 For macOS, start a Terminal window and run Jamulus with the desired options like this:
 
 ```shell
-/Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
+ /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
 ```
 
 ***

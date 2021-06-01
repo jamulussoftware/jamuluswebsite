@@ -15,7 +15,9 @@ Par exemple, sous Windows, pour qu'un client utilise un fichier de paramètres s
 
 Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :
 
-```shell /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini" ```
+```shell
+ /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
+```
 
 ***
 

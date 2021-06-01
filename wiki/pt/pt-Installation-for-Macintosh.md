@@ -11,10 +11,10 @@ title: 'Instalação no macOS'
 
 Primeiro tenha certeza que você já leu a página [Começando](Getting-Started).
 
-1. [Baixe o Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
+1. [Baixe o Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
  **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Instale o Jamulus**: Abra o arquivo `.dmg` que você baixou, concorde com os termos de licensa, *clique e arraste* os dois ícones que você está vendo (Jamulus - cliente e servidor) na sua *Pasta de programas*. Feito isso, Você pode fechar essa janela.
-1. **Inicie o Jamulus**. Agora você vai poder abrir o Jamulus como qualquer outro aplicativo. Se você vir uma mensagem dizendo que Jamulus não pode ser aberto porque o desenvolvedor não pode ser verificado, continue lendo e dê uma olhada na próxima seção.
+1. **Inicie o Jamulus**. Agora você pode usar o Jamulus como qualquer outra aplicação. Se você vir uma mensagem dizendo que Jamulus não pode ser aberto porque o desenvolvedor não pode ser verificado, continue lendo e dê uma olhada na próxima seção.
 
 _Você pode ejetar o drive "Jamulus" do seu desktop e deletar a pasta no seu diretório de Downloads que contém o `.dmg`. Você não vai mais precisar deles._
 
@@ -38,4 +38,4 @@ Você verá uma versão ligeiramente diferente da mesma mensagem, agora aparecer
 
 Jamulus foi instalado e pode ser usado agora. Talvez você queira dar uma olhada na página
 
-[Jamulus Onboarding page](Getting-Started){: .button}
+[Jamulus Onboarding](Getting-Started){: .button}

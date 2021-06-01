@@ -1,7 +1,7 @@
 ---
 lang: es
 layout: wikioverview
-permalink: wiki/
+permalink: /wiki/
 title: Descripción
 ---
 # Descripción de la página
