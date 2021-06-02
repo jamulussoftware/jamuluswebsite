@@ -27,7 +27,7 @@ Jamulus faz uso do [ASIO](https://pt.wikipedia.org/wiki/Audio_Stream_Input/Outpu
 
 Você pode experimentar duas versões diferentes de ASIO4ALL. A versão 2.14 inclui uma solução para um bug que pode causar conflito com outras funções.
 
-[ASIO4ALL v2.15 Beta 1 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_Beta1_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL v2.15 Beta 2 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_Beta2_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
 [ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
