@@ -31,7 +31,7 @@ Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaro
 
 [ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
-[ASIO4ALL website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL Website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
 
 ### ASIO4ALL einrichten
