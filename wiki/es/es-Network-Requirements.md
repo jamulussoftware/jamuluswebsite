@@ -32,6 +32,6 @@ Con las siguientes unidades
 
 ## Ancho de banda de red
 
-Hay un flujo de datos de subida (músico enviando al servidor) y otro de bajada (el servidor enviando la mezcla de vuelta al músico) <figure><img src="{{site.url}}/assets/img/es-screenshots/bandwidth-diagram.png" loading="lazy" alt="A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high"></figure>
+Hay un flujo de datos de subida (músico enviando al servidor) y otro de bajada (el servidor enviando la mezcla de vuelta al músico) <figure><img src="{{site.url}}/assets/img/es-screenshots/bandwidth-diagram.png" loading="lazy" alt="Un diagrama de anchos de banda en Jamulus con diferentes calidades de audio, de baja a alta"></figure>
 
 Nótese que la tasa de transferencia media de ADSL2 es de 10 Mbit/s para bajada y 1 Mbit/s para subida. El rendimiento real depende de la distancia al proveedor, que puede [variar en teoría de 24 Mbit/s a 0,3 km hasta 1,5 Mbit/s a 5,2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) para la tasa de descarga.

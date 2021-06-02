@@ -31,7 +31,7 @@ Cuando abras Jamulus, verás una ventana con este aspecto:
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>The main window before you connect to a server</figcaption>
+  <figcaption>La ventana principal antes de conectarte a un servidor</figcaption>
 </figure>
 
 
@@ -41,7 +41,7 @@ Primero muestra a los demás quién eres. Haz clic en “Ver” (barra superior)
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/settings-profile.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>Let people know who you are</figcaption>
+  <figcaption>Muestra quién eres</figcaption>
 </figure>
 
 
@@ -57,7 +57,7 @@ Ahora usa el botón de “Conectar” en la ventana principal de Jamulus para un
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>Connect to a server</figcaption>
+  <figcaption>Conéctate a un servidor</figcaption>
 </figure>
 
 Lo más importante de los servidores es su “tiempo ping”. Cuanto mayor la cifra, más difícil será tocar en sincronización. Normalmente, se selecciona un servidor con un tiempo ping de 15 ms o menos, si es posible.
@@ -70,7 +70,7 @@ Con el sonido configurado, ya puedes empezar. Cuando te conectas a un servidor (
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>The main window when you are connected to a sever</figcaption>
+  <figcaption>La ventana principal cuando te conectas a un servidor</figcaption>
 </figure>
 
 Si no quieres que otros escuchen tu audio, haz clic en el botón de “Silenciarme Yo”, que impedirá que tu audio sea enviado a otras personas. No podrán saber que lo has hecho. Pero si ves un icono de "silenciado" sobre un fader, significa que esa persona no te escucha porque ha silenciado tu canal en su mezcla.
