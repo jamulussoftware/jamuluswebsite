@@ -5,8 +5,7 @@ permalink: /wiki/Software-Manual
 title: 'Manual del Software'
 ---
 # Manual de Usuario de Jamulus
-
-{:.no_toc}
+ {:.no_toc}
 
 Este manual documenta la aplicación del cliente de Jamulus para su uso por parte de músicos y cantantes para utilizar el software con el fin de conectarse a un servidor.
 
@@ -24,22 +23,22 @@ Este manual documenta la aplicación del cliente de Jamulus para su uso por part
 
 <figure>
 	<img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
-	<figcaption>Your local mix when connected to a Server</figcaption>
+	<figcaption>Tu mezcla local cuando te conectas a un Servidor</figcaption>
 </figure>
 
 ## LEDs de retardo y buffer
 
 **Retardo** muestra el estado de la latencia de audio actual:
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Imagen del símbolo de un LED verde"></figure>
 
 **Verde** - El retardo es perfecto para una jam session
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/led-yellow.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/led-yellow.png" style="float:left; margin-right:10px;" loading="lazy" alt="Imagen del símbolo de un LED amarillo"></figure>
 
 **Amarillo** - Una sesión aún es posible pero quizá sea más difícil tocar
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/led-red.png" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/led-red.png" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Imagen del símbolo de un LED rojo"></figure>
 
 **Rojo** - El retardo es demasiado grande para tocar
 
@@ -72,7 +71,7 @@ El texto escrito en la ventana del chat es enviado a todos los clientes conectad
 
 Abre una ventana donde puedes seleccionar un servidor. Si estás conectado, pulsar este botón finalizará la sesión.
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a server connection window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" style="border: 5px solid grey;" loading="lazy" alt="Imagen de la ventana de conexión del servidor"></figure>
 
 La ventana de Configuración de Conexión muestra una lista de servidores disponibles junto con el número de usuarios conectados y el número máximo de los mismos soportado. Los operadores de servidores los registran en listas (mayormente definidas por género, aunque algunas pueden referirse a ubicación o a todos los géneros). Utiliza el menú desplegable de Lista para elegir un género, haz clic sobre el servidor al que te quieres unir y otra vez sobre el botón de Conectar para conectarte. También puedes hacer doble clic sobre el nombre del servidor. Los servidores permanentes (aquellos que llevan más de 24 horas en la lista) se muestran en negrita.
 
@@ -82,7 +81,7 @@ Si conoces la dirección IP o URL de un servidor, puedes conectarte a él utiliz
 
 ## Mezclador de audio del servidor
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/mixer-channles.png" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/mixer-channles.png" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Imagen de un par de controles del mezclador de audio del servidor"></figure>
 
 La ventana del mezclador de audio muestra a cada usuario conectado al servidor (incluyéndote a ti). Los faders te permiten ajustar el nivel de lo que escuchas sin afectar a lo que escuchan los demás.
 
@@ -111,11 +110,11 @@ Si el operador del servidor ha habilitado la grabación, verás un mensaje sobre
 
 Desde el menú de Ver, selecciona "Mi Perfil..." para establecer tu Alias/Nombre, mostrado debajo de tu fader en la ventana principal del cliente de Jamulus.
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Imagen de la ventana de perfil"></figure>
 
 Si se establece un instrumento y/o un país, los iconos de estas selecciones también se mostrarán bajo tu fader. El nivel de habilidad cambia el color de fondo de la etiqueta del fader y la ciudad se muestra en el tooltip de la etiqueta:
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Imagen de un tooltip mostrando información del perfil"></figure>
 
 
 ### Skin
@@ -129,7 +128,7 @@ Esto establece el número de filas mostrado en el mezclador de audio, para su us
 
 ## Configuración Audio/Red
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/settings-network.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/settings-network.png" style="border: 5px solid grey;" loading="lazy" alt="Imagen de la ventana de perfil"></figure>
 
 ### Dispositivo
 
@@ -137,7 +136,7 @@ En el sistema operativo de Windows, el driver ASIO (tarjeta de sonido) se puede 
 
 ### Mapeo canales entrada/salida
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/channel-mapping.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/channel-mapping.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Imagen del mapeo de canales de entrada y salida"></figure>
 
 Si el dispositivo de audio ofrece más de un canal de entrada o salida, son visibles las configuraciones para el _Mapeo de Canales de Entrada y de Salida_. Para cada canal de entrada/salida (canal Izquierdo y Derecho) de Jamulus se puede seleccionar un canal diferente de la tarjeta de audio.
 
@@ -199,7 +198,7 @@ La Tasa de Subida de Audio depende del tamaño actual de los paquetes de audio y
 
 ## Configuración Avanzada
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/settings-advanced.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/settings-advanced.png" style="border: 5px solid grey;" loading="lazy" alt="Imagen de la ventana de perfil"></figure>
 
 ### Dirección personalizada de servidor de directorio
 

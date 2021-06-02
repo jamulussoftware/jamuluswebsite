@@ -47,4 +47,4 @@ Si tienes problemas con cortes de sonido (en particular errores de XRUN mostrado
 
 Echa un vistazo a la
 
-[página de configuración de Jamulus](Getting-Started){: .button}
+[página de Iniciación a Jamulus](Getting-Started){: .button}

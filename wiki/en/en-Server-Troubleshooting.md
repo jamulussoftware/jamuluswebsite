@@ -43,7 +43,7 @@ Yes. Simply check the "Make my Server Public" box in the server window and fill 
 
 ### **_Headless Linux_**: I have created a server but it is joining the Directory Server and I don't want it to.
 
-To enable a private server, do not use the `--centralserver` (`-e`) option when starting your server command line.
+To enable a private server, do not use the `--directoryserver` (`-e`) option when starting your server command line.
 
 ### Nobody can connect to my server - but I can connect locally
 

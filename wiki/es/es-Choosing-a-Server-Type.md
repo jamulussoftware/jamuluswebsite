@@ -15,7 +15,7 @@ Puedes ejecutar tu servidor en uno de tres "modos" (bien en casa o en un host de
 
 Tu servidor aparecerá en la lista del [servidor de directorio](Directory-Servers) que los clientes utilizan por defecto. Los músicos ya pueden ver y conectarse a tu servidor. No es necesario ejecutarlo como un servidor público ya que muchas otras personas ya los están ejecutando. Simplemente conéctate a uno con latencia baja y empieza a tocar.
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus public server"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/diagram-public-server.png" loading="lazy" alt="Diagrama de conexiones entre clientes en un servidor Jamulus público"></figure>
 
 Este modo se activa con la casilla de "Registrar mi servidor..." y (opcionalmente) rellenando los campos de información sobre tu servidor.
 
@@ -23,7 +23,7 @@ Cuando se ejecuta sin GUI ("headless"), lo siguiente configuraría un servidor p
 
 ~~~
 Jamulus --nogui --server \
-        --centralserver genreServer:port \
+        --directoryserver genreServer:port \
         --serverinfo "yourServerName;yourCity;[country ID]"
 ~~~
 
@@ -36,7 +36,7 @@ Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otr
 
 Este tipo de servidor no figurará en una lista de servidores de directorios. Debes proporcionar a los músicos la dirección de tu servidor para que puedan conectar sus clientes. Ver también [Ejecutar un Servidor Privado](Running-a-Private-Server) para ver lo necesario para que otros se conecten a él.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus private server"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagrama de conexiones entre clientes en un servidor Jamulus privado"></figure>
 
 Este modo se habilita desactivando "Mi Servidor es Público...".
 
@@ -54,7 +54,7 @@ Para ver servidores listados por un servidor de directorios personalizado, los m
 
 Los operadores de servidores convencionales también pueden registrarse con tu servidor de directorio personalizado para que los suyos aparezcan en tu lista de servidores, estableciéndolo con la opción de `--centralserver`.
 
-Para ejecutar un servidor como Servidor de Directorio, se debe configurar con `--centralserver localhost` (esto es, se especifica como el servidor de directorio que recibe consultas).
+Para ejecutar un servidor como Servidor de Directorio, se debe configurar con `--directoryserver localhost` (esto es, se especifica como el servidor de directorio que recibe consultas).
 
 #### Notas sobre la configuración
 

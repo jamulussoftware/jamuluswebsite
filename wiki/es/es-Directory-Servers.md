@@ -16,7 +16,7 @@ Cuando arrancas un servidor público, verás un mensaje informando sobre si tu s
 
 ## Servidores 'Headless'
 
-Establece el servidor central (género) utilizando la opción `--centralserver` (`-e`) como sigue:
+Establece el servidor de directorio (género) utilizando la opción `--directoryserver` (`-e`) como sigue:
 
 
 | Género | Dirección Servidor |

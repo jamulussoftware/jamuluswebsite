@@ -43,7 +43,7 @@ Sí. Simplemente activa la casilla de "Mi Servidor es Público" en la ventana de
 
 ### **_Linux Headless_**: He creado un servidor pero se está registrando con el Servidor de Directorio y no quiero que lo haga.
 
-Para habilitar un servidor privado, no utilices la opción `--centralserver` (`-e`) cuando arranques tu servidor desde la línea de comandos.
+Para habilitar un servidor privado, no utilices la opción `--directoryserver` (`-e`) cuando arranques tu servidor desde la línea de comandos.
 
 ### Nadie se puede conectar a mi servidor - pero yo me puedo conectar localmente
 

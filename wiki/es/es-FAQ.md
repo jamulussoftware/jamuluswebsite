@@ -28,7 +28,7 @@ Por tanto tiene sentido minimizar cualquier fuente de retardo u otros problemas 
 
 ### ¿Por qué no debería escuchar mi propia señal?
 
-Por la misma razón por la que necesitas minimizar el retardo de tu señal para tocar en sincronización, tienes que asegurarte de que tocas escuchando el audio que oyen los demás. Para más información sobre esto, y modos de probar tu configuración para asegurarte de que obedeces la “Regla de Oro” [ver aquí](/wiki/Client-Troubleshooting).
+Por la misma razón por la que necesitas minimizar el retardo de tu señal para tocar en sincronización, tienes que asegurarte de que tocas escuchando el audio que oyen los demás. Para más información sobre esto, y modos de probar tu configuración para asegurarte de que obedeces la “Regla de Oro” [ver aquí](/wiki/Client-Troubleshooting#todos-suenan-bien-pero-es-difícil-tocar-todos-juntos-manteniendo-el-tiempo).
 
 Por supuesto, si tocas un instrumento acústico o cantas, va a ser difícil excluir tu sonido "local". Pero debes al menos intentar hacerlo, por ejemplo utilizando auriculares cerrados con el volumen subido para tapar tu propio sonido. Esto te permitirá concentrarte en la mezcla que vuelve del servidor.
 
@@ -42,7 +42,7 @@ No. Si solo tienes intención de conectarte a los servidores de otros, lo único
 
 ¿Cómo funciona Jamulus (en general)?
 
-<img src="{{site.url}}/assets/img/es-screenshots/diagram-overview.png" loading="lazy" alt="Diagram showing how Jamulus works">
+<img src="{{site.url}}/assets/img/es-screenshots/diagram-overview.png" loading="lazy" alt="Diagrama mostrando cómo funciona Jamulus">
 
 
 Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, donde se procesa. Después, el audio se envía de vuelta a cada cliente. Si un servidor es público y está registrado en un servidor de directorio, su información será emitida a todos los clientes.

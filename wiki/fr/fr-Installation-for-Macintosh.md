@@ -12,7 +12,8 @@ title: 'Installation sous macOS'
 Assurez-vous d'avoir déjà lu la page [Getting Started](Getting-Started).
 
 1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
-**Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
+ **macOS Sierra (10.12) ou inférieurs:** [Téléchargement pour les systèmes historiques]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\
+ **Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Installez Jamulus**: Ouvrez le fichier `.dmg` téléchargé, acceptez la licence, *copiez collez* les deux icônes que vous voyez dans la fenêtre (Jamulus client et serveur) dans votre *dossier Applications*. Après cela, vous pouvez fermer cette fenêtre.
 1. **Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application. Si vous voyez un message qui vous dit que Jamulus ne peut pas être ouvert parce que le développeur ne peut pas être vérifié, lisez les explications dans la section suivante.
 
@@ -22,7 +23,7 @@ _Vous pouvez éjecter le volume "Jamulus" de votre bureau et supprimer le dossie
 
 ## "Jamulus" ne peut pas être ouvert car le développeur ne peut pas être vérifié
 
-<figure><img src="{{site.url}}/assets/img/fr-screenshots/verification-mac.png" loading="lazy" alt="Image of a macOS warning screen for Jamulus warning the developer cannot be verified"></figure>
+<figure><img src="{{site.url}}/assets/img/fr-screenshots/verification-mac.png" loading="lazy" alt="Image de la fenêtre d'avertissement de macOS pour Jamulus indiquant que le développeur ne peut être vérifié."></figure>
 
 La première fois que vous double-cliquerez sur Jamulus pour l'ouvrir, vous verrez probablement un message disant qu'il ne peut pas être ouvert. Nous ne signons pas encore le code de Jamulus (c'est plutôt cher).
 
@@ -38,4 +39,4 @@ Vous aurez alors une version légèrement différente du même message, qui vous
 
 Jamulus a été installé et peut être utilisé dès maintenant. Vous pouvez maintenant jeter un coup d'œil à la
 
-[Page d'accueil de Jamulus](Getting-Started){ : .button}
+[Page d'accueil de Jamulus](Getting-Started){: .button}

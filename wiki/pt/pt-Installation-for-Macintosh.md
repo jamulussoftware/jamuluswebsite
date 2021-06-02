@@ -1,17 +1,19 @@
 ---
+lang: pt
 layout: wiki
-title: "Installation for macOS"
-lang: "pt"
-permalink: "/wiki/Installation-for-Macintosh"
+permalink: /wiki/Installation-for-Macintosh
+title: 'Instalação no macOS'
 ---
 
 {% include breadcrumb.html root="Usand Jamulus" branch1="Começando" branch1-url="Getting-Started" %}
 
 # Instalação no macOS
-Primeiro tenha certeza que você já leu a página [Começando](Getting-Started)
+
+Primeiro tenha certeza que você já leu a página [Começando](Getting-Started).
 
 1. [Baixe o Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
-**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
+ **macOS Sierra (10.12) or lower:** [Download legacy version]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\
+ **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Instale o Jamulus**: Abra o arquivo `.dmg` que você baixou, concorde com os termos de licensa, *clique e arraste* os dois ícones que você está vendo (Jamulus - cliente e servidor) na sua *Pasta de programas*. Feito isso, Você pode fechar essa janela.
 1. **Inicie o Jamulus**. Agora você pode usar o Jamulus como qualquer outra aplicação. Se você vir uma mensagem dizendo que Jamulus não pode ser aberto porque o desenvolvedor não pode ser verificado, continue lendo e dê uma olhada na próxima seção.
 
@@ -31,11 +33,10 @@ Para contornar esse problema:
 1. Feche essa mensagem clicando em "Cancelar"
 1. Segure a tecla Control e clique (ou clique com o botão direito) no Jamulus, então selecione "Abrir" no topo do menu.
 
-Você verá uma versão ligeiramente diferente da mesma mensagem, agora aparecerá um botão "Abrir", que você pode clicar para continar e abrir o Jamulus. Essa mensagem de alerta não vai aparecer de novo - nas próximas vezes basta abrí-lo normalmente com um clique duplo.
+Você verá uma versão ligeiramente diferente da mesma mensagem, agora aparecerá um botão "Abrir", que você pode clicar para continar e abrir o Jamulus. Essa mensagem de alerta não vai aparecer de novo - nas próximas vezes basta abrí-lo normalmente com um clique duplo. Para mais informações sobre essa mensagem de alerta leia [essa página de suporte da Apple](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
 
-Para mais informações sobre essa mensagem de alerta leia [essa página de suporte da Apple](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
+## Tudo instalado?
 
-## Instalou tudo?
 Jamulus foi instalado e pode ser usado agora. Talvez você queira dar uma olhada na página
 
 [Jamulus Onboarding](Getting-Started){: .button}

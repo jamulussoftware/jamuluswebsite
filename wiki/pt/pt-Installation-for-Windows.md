@@ -1,17 +1,18 @@
 ---
+lang: pt
 layout: wiki
-title: "Installation for Windows"
-lang: "pt"
-permalink: "/wiki/Installation-for-Windows"
+permalink: /wiki/Installation-for-Windows
+title: 'Instalação no Windows'
 ---
+
 {% include breadcrumb.html root="Usand Jamulus" branch1="Começando" branch1-url="Getting-Started" %}
 
 # Instalação no Windows
-Primeiro tenha certeza que você já leu a página [Começando](Getting-Started)
 
+Primeiro tenha certeza que você já leu a página [Começando](Getting-Started)
 1. **Baixe e instale um driver ASIO**. É recomendável usar uma placa ou interface de som com um driver ASIO nativo. Se você não possui uma placa de som externa, você provavelmente deve instalar um driver genérico como ASIO4ALL. Para mais informações vá até a seção [ASIO](#asio) abaixo.
 1. [Baixe o Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
-**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
+ **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Instale o Jamulus**: Dê um clique duplo no instalador para rodá-lo. Se você vir uma mensagem de alerta do SmartScreen, clique em "Mais informações" e "Iniciar assim mesmo" para instalar o Jamulus. (Se você for uma das primeiras pessoas a baixar uma nova versão do Jamulus, ele ainda não vai estar na lista do SmartScreen. Nós não pagamos por assinatura de código.)
 1. **Inicie o Jamulus**. Agora você vai poder abrir o Jamulus como qualquer outro aplicativo.
 1. **Configure sua placa de som**. Em seguida você deve configurar o seu hardware de áudio. Dê uma olhada de como configurar ASIO4ALL se você estiver usando este driver e/ou [Hardware Setup](Hardware-Setup).
@@ -19,13 +20,14 @@ Primeiro tenha certeza que você já leu a página [Começando](Getting-Started)
 ***
 
 ## ASIO
+
 Jamulus faz uso do [ASIO](https://pt.wikipedia.org/wiki/Audio_Stream_Input/Output) para poder trabalhar com a menor latência possível.
 * Se você usa uma placa ou interface de áudio externa, use seu driver ASIO oficial (eles oferecem a melhor qualidade).
 * Se você não possui uma placa externa de som, provavelmente não existe tem um driver ASIO específico. Nesse caso instale um driver genérico, como ASIO4ALL:
 
 Você pode experimentar duas versões diferentes de ASIO4ALL. A versão 2.14 inclui uma solução para um bug que pode causar conflito com outras funções.
 
-[ASIO4ALL v2.15 Beta 1 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_Beta1_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL v2.15 Beta 2 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_Beta2_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
 [ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
@@ -33,16 +35,16 @@ Você pode experimentar duas versões diferentes de ASIO4ALL. A versão 2.14 inc
 
 
 ### Configurando o ASIO4ALL
+
 *ASIO4ALL não é recomendado se sua placa ou interface de áudio fornecer seu próprio driver ASIO, uma vez que este tem a melhor latência.*
 
 No ASIO4ALL você pode ter que experimentar até achar a configuração certa, já que computadores diferem um pouco um do outro.
 
 **Dica:** Configure sua placa de som enquanto estiver [conectado com um servidor](Onboarding#2-connecting-to-a-server) para poder ouvir sua própria voz ou instrumento e checar se tudo está correto; mas antes disso continue lendo.
 
+
 Antes de começar a usar o Jamulus:
-
 1. **Feche todos os programas** (especialmente aqueles que acessam sua placa de som, como navegador ou reprodutor de mídia) pois Jamulus precisa de acesso exclusivo à sua placa de som. Outros programas não vão poder usar o áudio se ASIO4ALL e Jamulus estiverem rodando.
-
 1. Se o áudio do Jamulus não funcionar diretamente, assegure-se que somente as **entradas e saídas corretas** no ASIO4ALL **estejam ativadas**. Todo o resto deve estar desligado. Procure nas [listas comunitárias de configurações válidas para ASIO4ALL](/kb/2021/03/20/ASIO4ALL-Examples.html) para o seu sistema ou configure-o manualmente se não achá-lo:
 
 ### Como configurar as entradas no ASIO4ALL (Guia)

@@ -9,8 +9,8 @@ title: Configuración
 
 Para obtener el mejor resultado con Jamulus, como mínimo necesitarás:
 
-1. **Una conexión a internet por cable** (no utilices Wi-Fi - ver las [FAQ](/wiki/FAQ)).
-1. **Auriculares por cable** (no de Bluetooth o altavoces - ver las [FAQ](/wiki/FAQ))
+1. **Una conexión a internet por cable** (no utilices Wi-Fi - ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos)).
+1. **Auriculares por cable** (no de Bluetooth o altavoces - ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos))
 1. **Un dispositivo de audio, tarjeta de sonido y/o micrófono decente** ([consulta esta lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) para ver ejemplos)
 
 Si tienes alguna duda, por favor consulta las [Discussions](https://github.com/jamulussoftware/jamulus/discussions)
@@ -31,7 +31,7 @@ Cuando abras Jamulus, verás una ventana con este aspecto:
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>The main window before you connect to a server</figcaption>
+  <figcaption>La ventana principal antes de conectarte a un servidor</figcaption>
 </figure>
 
 
@@ -41,7 +41,7 @@ Primero muestra a los demás quién eres. Haz clic en “Ver” (barra superior)
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/settings-profile.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>Let people know who you are</figcaption>
+  <figcaption>Muestra quién eres</figcaption>
 </figure>
 
 
@@ -51,18 +51,18 @@ Rellena al menos “Alias/Nombre” y cierra la ventana.
 
 **Antes de tocar con otros, recomendamos que te conectes a un servidor vacío para probar tu configuración**, y asegurarte de que escuchas la señal que vuelve del servidor (si es posible) y no tu audio directo.
 
-Antes de conectarte a un servidor **no** deberías de poder escucharte. Escuchar tu sonido desde Jamulus (y no tu audio directo) se denomina “La Regla de Oro” y te permite tocar en sincronización con otras personas ([ver las FAQ](/wiki/FAQ)).
+Antes de conectarte a un servidor **no** deberías de poder escucharte. Escuchar tu sonido desde Jamulus (y no tu audio directo) se denomina “La Regla de Oro” y te permite tocar en sincronización con otras personas ([ver las FAQ](/wiki/FAQ#por-qué-no-debería-escuchar-mi-propia-señal)).
 
 Ahora usa el botón de “Conectar” en la ventana principal de Jamulus para unirte a un servidor. Se abrirá una ventana:
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>Connect to a server</figcaption>
+  <figcaption>Conéctate a un servidor</figcaption>
 </figure>
 
 Lo más importante de los servidores es su “tiempo ping”. Cuanto mayor la cifra, más difícil será tocar en sincronización. Normalmente, se selecciona un servidor con un tiempo ping de 15 ms o menos, si es posible.
 
-Una vez establecida la conexión con un servidor, asegúrate de que te escuchas bien y arregla cualquier problema de volumen de entrada, etc. Y por supuesto, comprueba que también puedes obedecer [La Regla de Oro](/wiki/Client-Troubleshooting).
+Una vez establecida la conexión con un servidor, asegúrate de que te escuchas bien y arregla cualquier problema de volumen de entrada, etc. Y por supuesto, comprueba que también puedes obedecer [La Regla de Oro](/wiki/Client-Troubleshooting#todos-suenan-bien-pero-es-difícil-tocar-todos-juntos-manteniendo-el-tiempo).
 
 ## Tocar por primera vez
 
@@ -70,7 +70,7 @@ Con el sonido configurado, ya puedes empezar. Cuando te conectas a un servidor (
 
 <figure>
   <img src="{{site.url}}/assets/img/es-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>The main window when you are connected to a sever</figcaption>
+  <figcaption>La ventana principal cuando te conectas a un servidor</figcaption>
 </figure>
 
 Si no quieres que otros escuchen tu audio, haz clic en el botón de “Silenciarme Yo”, que impedirá que tu audio sea enviado a otras personas. No podrán saber que lo has hecho. Pero si ves un icono de "silenciado" sobre un fader, significa que esa persona no te escucha porque ha silenciado tu canal en su mezcla.
