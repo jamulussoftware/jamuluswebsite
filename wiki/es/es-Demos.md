@@ -21,4 +21,4 @@ title: 'Jamulus Demos'
 * [Un vídeo introductorio mostrando una configuración con instrumentos acústicos](https://www.youtube.com/watch?v=lB4ZxDb9vnU) (no una demo exactamente)
 * [WorldJam](https://worldjam.vip/homepage.php) Cada sábado por la noche hay una jam internacional emitida por la red en streaming
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/main-screen-large.png" loading="lazy" alt="Image of a Jamulus main screen"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/main-screen-large.png" loading="lazy" alt="Imagen de la ventana principal de Jamulus"></figure>

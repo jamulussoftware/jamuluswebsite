@@ -27,7 +27,7 @@ Normalmente, las personas de fuera de tu red doméstica no pueden ver lo que suc
 
 La configuración exacta del redireccionamiento de puertos difiere para cada router. Aquí hay un ejemplo de esta configuración en un router Linksys:
 
-<figure><img src="{{site.url}}/assets/img/es-screenshots/linksys-port-forward.png" loading="lazy" alt="Image of a Linksys router's port forwarding settings"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/linksys-port-forward.png" loading="lazy" alt="Imagen de la configuración de redireccionamiento de puertos de un router Linksys"></figure>
 
 Para más ayuda ver [portforward.com](https://portforward.com).
 
