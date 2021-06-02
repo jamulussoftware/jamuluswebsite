@@ -15,7 +15,7 @@ permalink: "/wiki/Server-Troubleshooting"
 
 If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option).
 
-If you are seeing a message that says the server is full, please [see this note](Central-Servers) on Central Servers.
+If you are seeing a message that says the server is full, please [see this note](Directory-Servers) on Directory Servers.
 
 You can verify that your server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/).
 
@@ -33,7 +33,7 @@ This should be your **public** IP address (find that with [Google](https://www.g
 
 Keep the default UDP ports. The actual default port is documented by the [command line](Command-Line-Options). At the time of writing this documentation, the port number is **22124**.
 
-### Is a private server a direct server without contact to the Jamulus Central Server?
+### Is a private server a direct server without contact to the Jamulus Directory Server?
 
 Yes. Please see [Server Types](Choosing-a-Server-Type)
 
@@ -41,9 +41,9 @@ Yes. Please see [Server Types](Choosing-a-Server-Type)
 
 Yes. Simply check the "Make my Server Public" box in the server window and fill out the details. If you register your server, do not use port forwarding as it may prevent others using your server.
 
-### **_Headless Linux_**: I have created a server but it is joining the Central Server and I don't want it to.
+### **_Headless Linux_**: I have created a server but it is joining the Directory Server and I don't want it to.
 
-To enable a private server, do not use the `--centralserver` (`-e`) option when starting your server command line.
+To enable a private server, do not use the `--directoryserver` (`-e`) option when starting your server command line.
 
 ### Nobody can connect to my server - but I can connect locally
 

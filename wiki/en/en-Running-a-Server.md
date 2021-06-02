@@ -10,7 +10,7 @@ permalink: "/wiki/Running-a-Server"
 ## Do I need to run a server to use Jamulus?
 
 NO.
-{: .doubletextsize .red }
+ {: .doubletextsize .red }
 
 
 You can just choose somebody else's server from your list and get going.
@@ -55,6 +55,7 @@ A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800
 
 
 ## All OK? Get set up!
+
 <div class="fx-row fx-row-start-xs button-container">
     <a href="Server-Win-Mac" class="button fx-col-100-xs">For Windows or macOS users</a>
     <a href="Server-Linux" class="button fx-col-100-xs">For Linux users</a>

@@ -2,20 +2,21 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-polyglot
   - jekyll-minifier
-languages:                   ["en", "es", "de", "it", "fr"]
+languages:                   ["en", "es", "de", "it", "fr", "pt"]
 default_lang:                "en"
 exclude_from_localization:   ["assets", "images", "css", "README.md", "manifest.json", "humans.txt", "sitemap.xml"]
 parallel_localization:       true
 a_rootpage:                  "https://jamulus.io"
 
 # Jamulus release binary links
-download_root_link:          "https://github.com/jamulussoftware/jamulus/releases/download/r3_7_0/"
+download_root_link:          "https://github.com/jamulussoftware/jamulus/releases/download/r3_8_0/"
 download_file_names:
-  deb-gui:                   "jamulus_3.7.0_ubuntu_amd64.deb"
-  deb-headless:              "jamulus_headless_3.7.0_ubuntu_amd64.deb"
-  windows:                   "jamulus_3.7.0_win.exe"
-  mac:                       "jamulus_3.7.0_mac.dmg"
-  android:                   "jamulus_3.7.0_android.apk"
+  deb-gui:                   "jamulus_3.8.0_ubuntu_amd64.deb"
+  deb-headless:              "jamulus_headless_3.8.0_ubuntu_amd64.deb"
+  windows:                   "jamulus_3.8.0_win.exe"
+  mac:                       "jamulus_3.8.0_mac.dmg"
+  mac-legacy:                "jamulus_3.8.0_mac_legacy.dmg"
+  android:                   "jamulus_3.8.0_android.apk"
 download_overview_link:      "https://github.com/jamulussoftware/jamulus/releases/latest"
 
 githubrepoeditbase:          "https://github.com/jamulussoftware/jamuluswebsite/edit/release"

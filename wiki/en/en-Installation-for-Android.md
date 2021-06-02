@@ -31,6 +31,7 @@ We are very happy to get feedback from Android users and developers. Just head o
 ***
 
 ## All installed?
+
 Jamulus has been installed and can be used now. You can now take a look at the
 
-[Jamulus Onboarding page](Onboarding){: .button}
+[Jamulus Onboarding page](Getting-Started){: .button}

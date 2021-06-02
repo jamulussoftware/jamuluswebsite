@@ -8,9 +8,22 @@ permalink: "/wiki/Client-Troubleshooting"
 # Troubleshooting
 
 ### Don’t hear any sound/Others don’t hear you?
+
 Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your sound card. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://github.com/jamulussoftware/jamulus/discussions) for guidance.
 
 **Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4LL setup section](Installation-for-Windows#setting-up-asio4all)
+
+### Getting a loud squeal if you connect to a server
+
+You're creating feedback since your microphone is recording the signal of your speaker. Disconnect from the server and select the correct input and output devices. See the Jamulus installation page for your OS to get more information on how to do that.
+
+### Not seeing the headphone or microphone you just connected to your PC?
+
+Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded. 
+
+### Your sound is stuttering
+
+Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency. 
 
 ### You all sound OK, but it's difficult to keep together
 

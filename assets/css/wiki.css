@@ -10,14 +10,17 @@
   margin-top: 0;
   line-height: 1.5em;
   border-bottom: 3px solid;
+  clear: both;
 }
 
 .wikisite main h2 {
    margin-bottom: 0.2em;
+   clear: both;
 }
 
 .wikisite main h3 {
    margin-bottom: 0.5em;
+   clear: both;
 }
 
 .wikisite #ftext {
@@ -38,6 +41,21 @@
     margin: .25em 0;
 }
 
+
+figure img {
+  display: block;
+  border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  position: relative;
+  top: 5px;
+  bottom: 10px;
+}
+
 @media (prefers-color-scheme: dark) {
   .wikisite #ftext {
     border-top-color: #0a5067;
@@ -47,4 +65,20 @@
   .wikisite #editsitecontent svg {
     color: #1b90b5;
   }
+}
+
+details {
+  font: 16px;
+  font-style: bold;
+  width: 620px;
+}
+
+details > summary {
+  font-size: 20px;
+  padding: 5px 6px;
+  width: 15em;
+  background-color: #eaf8fd;
+  border: none;
+  color: #1882A1;
+  cursor: pointer;
 }

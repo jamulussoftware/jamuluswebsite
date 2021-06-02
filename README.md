@@ -6,7 +6,7 @@ This is the content repository for [jamulus.io](https://jamulus.io). Text appear
 
 ## Making changes to the English version
 
-(Note that any significant changes must be made to the English first. See the translation process later in this document if you want to get involved with that.)
+**Note** Any significant changes **must** be made to the English first. See the translation process later in this document if you want to get involved with that.
 
 To edit an individual file, you can use the Github web interface or make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit multiple website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
 
@@ -32,7 +32,7 @@ If you want to add a new image, use .png format if possible, and if it’s not a
 ### Please note: As of April 2021 we are only translating the following sections of the website:
 
 - Home page
-- Getting Started
+- Setup/Getting Started
 - Installation pages
 
 For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/TRANSLATING.md)

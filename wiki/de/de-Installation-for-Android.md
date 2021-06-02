@@ -1,14 +1,14 @@
 ---
+lang: de
 layout: wiki
-title: "Installation auf Android"
-lang: "de"
-permalink: "/wiki/Installation-for-Android"
+permalink: /wiki/Installation-for-Android
+title: 'Installation auf Android'
 ---
 
 {% include breadcrumb.html root="Jamulus Nutzen" branch1="Erste Schritte" branch1-url="Getting-Started" %}
 
 
-# Installation for Android
+# Installation auf Android
 
 Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
 
@@ -31,6 +31,7 @@ Wir freuen uns über jedes Feedback von Android Nutzern und Entwicklern. Schau e
 ***
 
 ## Alles installiert?
+
 Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
 
-[Nach der Installation](Onboarding){: .button}
+[Nach der Installation](Getting-Started){: .button}

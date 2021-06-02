@@ -16,7 +16,9 @@ This guide assumes you will be running a private server on your home network, bu
 It is highly recommended to test your server in **public mode first** so as to narrow down any subsequent problems in private mode.
 
 ## Operating a private server behind a home network router
+
 ### Port forwarding
+
 To run a private server, you need to set up port forwarding on your router. _(If you are curious about why you need to do this for private but not public servers, see [this footnote](#footnote-for-geeks).)_
 
 Normally, people from outside your home network cannot see things inside it. So if you want to operate a Jamulus server at home, you need to open a hole in your router to let Jamulus clients connect to it.
@@ -25,7 +27,7 @@ Normally, people from outside your home network cannot see things inside it. So 
 
 The exact setup of port forwarding differs for every router. Here's an example of the port forwarding settings in a Linksys router:
 
-![Linksysportforwarding](https://user-images.githubusercontent.com/4561747/97542495-bc62bc00-19be-11eb-8e54-b6e906e676f6.jpg)
+<figure><img src="{{site.url}}/assets/img/en-screenshots/linksys-port-forward.png" loading="lazy" alt="Image of a Linksys router's port forwarding settings"></figure>
 
 For help see [portforward.com](https://portforward.com).
 
@@ -49,6 +51,6 @@ Note also that your home router may also change the IP address of the machine th
 
 One of the many features of Jamulus that make it orgasmically wonderful is the fact that you can set up a server in seconds. But why do public servers not need port forwarding to do this?
 
-Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets _relating to an outbound request_ (strictly speaking, "related" and "established" packets to an initial outbound connection). In public mode, when your Jamulus server connects to a Central Server it of course initiates an outbound connection. From then on, the Central Server sends (established/related) connection "pings" (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall.
+Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets _relating to an outbound request_ (strictly speaking, "related" and "established" packets to an initial outbound connection). In public mode, when your Jamulus server connects to a Directory Server it of course initiates an outbound connection. From then on, the Directory Server sends (established/related) connection "pings" (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall.
 
 However, in private mode clients have to _initiate_ connections into the server's network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding.

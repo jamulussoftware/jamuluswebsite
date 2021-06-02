@@ -1,70 +1,84 @@
 ---
+lang: de
 layout: wiki
-title: "Erste Schritte"
-lang: "de"
-permalink: "/wiki/Getting-Started"
+permalink: /wiki/Getting-Started
+title: Setup
 ---
 
-# Erste Schritte mit Jamulus
+# Setup - Erste Schritte mit Jamulus
 
-## Du brauchst
+Um das Beste von Jamulus genießen zu können, brauchst du mindestens:
 
-1.  **Einen Computer** (**Windows 10**, **macOS** (**MacOS X** El Capitan v10.11 oder neuer), **Linux**)
-2.  **Eine kabelgebundene Internetverbindung** (LAN, _kein WLAN_, sonst gibt es Qualitätsprobleme). Die meisten Internetverbindungen sind ausreichend[^1].
-3.  **Kabelgebundene Kopfhörer – keine Lautsprecher** um Echo/Rückkopplungen zu vermeiden und die Latenz zu verringern[^2].
+1. **Eine kabelgebundene Internetverbindung** (kein WLAN - siehe [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))
+1. **Kabelgebundene Kopfhörer (weder Bluetooth noch Lautsprecher** - siehe [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))
+1. **Ein passendes Audiointerface oder Soundkarte und Mikrofon** ([siehe diese Auflistung](/kb/2021/01/05/Jamulus-Sound-Devices.html) für Beispiele)
 
-## Qualität maximieren, Verzögerung minimieren
+Falls du Fragen dazu hast, schau mal rein in die [Diskussionen](https://github.com/jamulussoftware/jamulus/discussions)
 
-### 1. Verringere die Latenz durch wenig Internetverkehr und schließe alle Programme auf deinem PC
+## Installation
 
-Während du Jamulus verwendest sollten keine anderen Programme auf deinem PC bzw. andere Familienmitglieder in deinem Netzwerk das Internet benutzen. Das heißt, dass du parallel z.B. keinen Videostream anschauen solltest, da sonst die Tonqualität massiv leidet.
+Um Jamulus mit deiner Hardware zum Laufen zu bringen, folge bitte die Installationsanleitung für deine Plattform:
 
-### 2. Nutze ein Audiointerface/USB-Mikrofon, nicht deine interne Soundkarte
+* [Windows](/wiki/Installation-for-Windows)
+* [macOS](/wiki/Installation-for-Macintosh)
+* [Linux](/wiki/Installation-for-Linux)
 
-Obwohl du auch das eingebaute Mikrofon und damit die Soundkarte deines Computers nutzen kannst, ist die Qualität und Latenz von externen Soundkarten/Interfaces normalerweise deutlich besser (das ist eine Box, an die du ein Mikrofon/Instrument anschließen kannst und die man z.B. per USB mit dem PC verbindet). Du kannst natürlich auch ein externes USB-Mikrofon nutzen. Mehr Infos findest du unter [Audiohardware](#audiohardware).
+Und nun schließe alle anderen Programme. Es ist besser simpel zu beginnen.
+
+## Jamulus Hauptfenster
+
+Wenn du Jamulus öffnest, siehst du ein Fenster, welches so aussieht:
+
+<figure>
+  <img src="{{site.url}}/assets/img/de-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
+  <figcaption>Das Hauptfenster bevor du dich mit einem Server verbindest</figcaption>
+</figure>
 
 
-### 3. Verbinde dich mit Servern mit niedrigem Ping
-Der Ping (Zeit, die ein Signal von deinem PC zum Jamulus Server und zurück benötigt) sollte so gering wie möglich sein. Verbinde dich immer mit den Servern mit den niedrigsten Ping-Zeiten. 15 ms oder weniger sind perfekt.
+## Profil einrichten
 
-Die wichtigsten Faktoren kennst du jetzt! Los geht's:
+Lasse zuerst die anderen Teilnehmer wissen, wer du bist. Klick auf “Ansicht” (Menüleiste oben) > “Mein Profil…”, dann siehst du folgendes:
 
-<div class="fx-row fx-row-start-xs button-container">
-  <a href="Installation-for-Windows" class="button fx-col-100-xs">Installation auf Windows</a>
-  <a href="Installation-for-Macintosh" class="button fx-col-100-xs">Installation auf macOS</a>
-  <a href="Installation-for-Linux" class="button fx-col-100-xs">Installation auf Linux</a>
-  <a href="Installation-for-Android" class="button fx-col-100-xs">Installation auf Android (PoC)</a>
-</div>
-[Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/){: target="_blank" rel="noopener noreferrer"}
+<figure>
+  <img src="{{site.url}}/assets/img/de-screenshots/settings-profile.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
+  <figcaption>Lass die Leute wissen, wer du bist</figcaption>
+</figure>
 
-Auf fast jedem PC (nur 64-Bit-Systeme) kannst du Jamulus mit einem USB-Stick starten! [Jamulus OS!](https://sourceforge.net/projects/jamulus-os/files/JamulusOS/) prüft deine Hardware automatisch und richtet sie ein.
 
-## Audiohardware
-Dein Gerät muss eine Abtastrate (Sample Rate) von **48kHz** (DVD-Qualität) unterstützen. Auch sollte es möglich sein, dass es den Ton deines Computers ausgeben kann. Unter Windows sollte das Gerät einen herstellereigenen [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output) Treiber unterstützen.
+Fülle mindestens das Feld “Alias/Name” aus. Dann kannst du das Fenster schließen.
 
-Du kannst auch in die [Liste der von der Community getesteten Geräte schauen](/kb/2021/01/05/Jamulus-Sound-Devices.html).
+## Mit einem Server verbinden und Audio testen
 
-## Weitere Anleitungen
+**Bevor du anfängst mit anderen Leuten zu musizieren, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst vor Ort.
 
-* [Diese ausgezeichnete Anleitung](https://www.facebook.com/notes/jamulus-online-musicianssingers-jamming/idiots-guide-to-jamulus-app/510044532903831/){: target="_blank" rel="noopener noreferrer"} von [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a){: target="_blank" rel="noopener noreferrer"} (_Facebook_) kann dir weiterhelfen!
+Bevor du dich mit einem Server verbindest, solltest du dich selbst **nicht** hören können. Die “Goldene Regel” von Jamulus ist: auf deinen eigenen Klang über das Programm zu hören; nicht das direkte Signal von deinem Instrument. Dadurch kannst du mit anderen einfacher im Takt spielen ([siehe FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal)).
 
-## Schwierigkeiten? Probleme? Kannst du den Rhythmus nicht einhalten?
+Nun klicke auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutreten. Ein weiteres Fenster geht auf:
 
-**HÖRE. NUR. AUF. DAS. SIGNAL. VOM. SERVER!**
+<figure>
+  <img src="{{site.url}}/assets/img/de-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
+  <figcaption>Einem Server beitreten</figcaption>
+</figure>
 
-Oder anders ausgedrückt, höre **nicht** auf dein direktes Signal.
+Die wichtigste Eigenschaft von Servern ist ihre “Ping-Zeit”. Je höher der Wert, desto schwerieger ist, im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15 ms ist.
 
-Auch wenn du eine gute Internetverbindung hast, ist es besser (um den Rhythmus halten zu können), wenn du dich auf das Signal vom Server und nicht auf dein Live-Signal konzentrierst. _(Um Zweifel auszuschließen: das hat nichts mit den „Mute“-Reglern in Jamulus zu tun.)_
+Einmal mit einem Server verbunden, siehe zu, dass du dich gut hören kannst, pass deine Eingangslautstärke an und korrigiere eventuelle Probleme. Und natürlich halte dich an [Die goldene Regel](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
 
-Weitere Informationen darüber, wie du vermeiden kannst, auf dich selbst zu hören (und Hilfe bei anderen Problemen), findest du auf der [Fehlerbehebung FAQ](Client-Troubleshooting) Seite. (_momentan in Arbeit_)
+## Das erstmalige Musizieren
 
-## Wie Jamulus funktioniert (kurz und knapp)
+Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit einem Server verbunden hast (du kannst ein Genre aus der Liste wählen), sind die Regler rechts in der Ansicht dein privates Mischpult. Alles was du hier änderst, hat Einfluss auf das, was du hörst, aber nicht auf das, was die anderen hören. Wenn du einen Regler runterziehst, wird dieser Kanal leiser, wenn du ihn nach oben ziehst, wird der Kanal für dich lauter.
 
-**Millionen von Menschen benutzen Jamulus um mit anderen Menschen auf der ganzen Welt in Echtzeit zu spielen, zu singen und Musik zu unterrichten. Das funktioniert ganz einfach:**
+<figure>
+  <img src="{{site.url}}/assets/img/de-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
+  <figcaption>Das Hauptfenster wenn du mit einem Server verbunden bist</figcaption>
+</figure>
 
-![Overview](https://user-images.githubusercontent.com/4561747/79309764-bd387280-7ef2-11ea-9d81-1e81302525e6.png)
-_Jamulus arbeitet nach dem Client-Server Prinzip. Das Audiosignal von allen Musikern wird an einen Server geschickt, dort gemischt und verarbeitet. Danach wird das Audiosignal an jeden Client gesendet. Wenn ein Server öffentlich gemacht und auf einem zentralen Server registriert wird, werden seine Informationen an alle Clients gesendet._
+Falls du nicht möchtest, dass die anderen dich hören, klick auf “Stummschalten”. Das verhindert, dass dein Audiosignal an andere Leute gesendet wird. Niemand erfährt, ob du das gemacht hast. Wenn du hingegen das Symbol “mute” über einem Regler siehst, bedeutet das, dass diese Person dich nicht hören kann, weil sie deinen Kanal in ihrem Mix stummgeschaltet hat.
 
-## Fußnoten
-[^1]: Empfohlen werden mindestens 10 Mbit/s Download und 1 Mbit/s Upload ([vollständige Details hier](Network-Requirements){: target="_blank" rel="noopener noreferrer"}). Wenn du keine LAN Buchse mehr an deinem Laptop hast, kannst du einen USB zu LAN-Adapter versuchen.
-[^2]: Die Zeitverzögerung von Bluetooth Kopfhörern ist normalerweise zu hoch. Deshalb solltest du einen kabelgebundenen Kopfhörer nutzen. Besonders beim Singen oder Spielen akustischer Instrumente sind Kopfhörer auch eine gute Hilfe um sicherzustellen, dass du mit anderen im Takt bleibst (siehe [diesen Hinweis](Getting-Started#schwierigkeiten-probleme-kannst-du-den-rhythmus-nicht-einhalten)).
+Während du online bist, kannst du die Chatfunktion nutzen, um eine Nachricht an die anderen Teilnehmer zu schreiben. Die Willkommensbotschaft im Chat kann auch einige Richtlinien anzeigen.
+
+Weitere Informationen über die Verwendung von Jamulus kann man im [Software Handbuch](/wiki/Software-Manual) finden.
+
+## Fehlerbehebung
+
+Hast du Probleme mit dem Audio? Kannst du die Serverliste nicht sehen, oder irgendeine andere Angelegenheit? Schau dir die [Fehlerbehebungsseite](/wiki/Client-Troubleshooting) an, oder frage gerne bei den [Diskussionen](https://github.com/jamulussoftware/jamulus/discussions).
