@@ -11,7 +11,7 @@ title: 'Dépannage du client'
 
 Commencez par les choses simples : vérifiez que votre instrument/microphone et vos écouteurs sont connectés aux bonnes prises. Assurez-vous qu'aucune autre application (navigateur, outil de vidéoconférence, etc...) n'utilise également votre carte son. Vous devez les fermer lorsque vous utilisez Jamulus. Si tout semble correct et que le problème persiste, il est probable qu'il y ait un problème avec les paramètres de votre périphérique audio. Cela dépendra de votre configuration particulière (plate-forme, matériel, logiciels et pilotes), il est donc préférable de demander conseil sur [les forums] (https://github.com/jamulussoftware/jamulus/discussions).
 
-**Utilisateurs de Windows (ASIO4ALL)** : Si vous utilisez le pilote ASIO4ALL, consultez la section [Configuration de ASIO4LL](Installation-for-Windows#setting-up-asio4all).
+**Utilisateurs de Windows (ASIO4ALL)** : Si vous utilisez le pilote ASIO4ALL, consultez la section [Configuration de ASIO4LL](Installation-for-Windows#configuration-de-asio4all).
 
 ### Un son très fort est émis si vous vous connectez à un serveur
 

@@ -69,7 +69,7 @@ Ensuite, *réglez les entrées/sorties*. Les entrées/sorties activées et acces
 
 Regardez [cette vidéo] (https://youtu.be/_GzOsitVgLI) par [trombonepizza] (https://github.com/trombonepizza) qui donne des informations plus détaillées sur la configuration de ASIO4ALL.
 
-Des informations officielles et supplémentaires sur la façon de configurer ASIO4ALL sont documentées dans la [FAQ officielle d'ASIO4ALL sur le site web d'ASIO4ALL](https://www.asio4all.org/index.php/help/faq/){ : target="_blank" rel="noopener noreferrer"} et dans le manuel d'ASIO4ALL qui se trouve sur votre bureau ou dans le dossier où le binaire d'ASIO4ALL est installé (généralement `C:\Program Files (x86)\ASIO4ALL v2\`)).
+Des informations officielles et supplémentaires sur la façon de configurer ASIO4ALL sont documentées dans la [FAQ officielle d'ASIO4ALL sur le site web d'ASIO4ALL](https://www.asio4all.org/index.php/help/faq/){: target="_blank" rel="noopener noreferrer"} et dans le manuel d'ASIO4ALL qui se trouve sur votre bureau ou dans le dossier où le binaire d'ASIO4ALL est installé (généralement `C:\Program Files (x86)\ASIO4ALL v2\`)).
 
 ## Tout est installé ?
 

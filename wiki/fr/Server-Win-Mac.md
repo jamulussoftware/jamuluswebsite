@@ -47,7 +47,7 @@ Activez l'enregistrement du serveur en définissant d'abord le répertoire d'enr
 
 _Remarque : Lorsque votre serveur enregistre, les clients affichent un message indiquant que l'enregistrement est en cours._
 
-Pour les serveurs sans tête : vous pouvez contrôler la fonction d'enregistrement [en utilisant ces instructions](Server-Linux#controlling-recordings).
+Pour les serveurs sans tête : vous pouvez contrôler la fonction d'enregistrement [en utilisant ces instructions](Server-Linux#enregistrement).
 
 ### Retardement du panoramique
 
@@ -58,12 +58,12 @@ Cette option utilise les petites différences de temps d'arrivée du son entre l
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
-Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-Serveur-annuaire)).
+Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-serveur-annuaire)).
 
 
 **Utilisateurs de Windows** - Si vous voulez que le serveur démarre automatiquement au démarrage du système, activez la case à cocher correspondante.
 
-(Laissez le champ "Adresse personalisée du serveur annuaire" vide, sauf si vous devez inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-Serveur-annuaire)).
+(Laissez le champ "Adresse personalisée du serveur annuaire" vide, sauf si vous devez inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-serveur-annuaire)).
 
 
 ***

@@ -62,7 +62,7 @@ Utilisez maintenant le bouton "Connecter" dans la fenêtre principale de Jamulus
 
 La chose la plus importante concernant les serveurs est leur "temps de ping". Plus le chiffre est élevé, plus il sera difficile de jouer en rythme avec les autres. Habituellement, vous devriez choisir un serveur avec un ping de moins de 15ms si vous le pouvez.
 
-Une fois connecté à un serveur, assurez-vous que vous pouvez vous entendre correctement et corrigez tout problème de volume d'entrée ou autre. Et bien sûr, vérifiez que vous êtes également capable d'obéir à [La règle d'or](/wiki/Client-Troubleshooting#Vous-avez-tous-un-son-correct-mais-il-est-difficile-de-jouer-ensemble).
+Une fois connecté à un serveur, assurez-vous que vous pouvez vous entendre correctement et corrigez tout problème de volume d'entrée ou autre. Et bien sûr, vérifiez que vous êtes également capable d'obéir à [La règle d'or](/wiki/Client-Troubleshooting#vous-avez-tous-un-son-correct-mais-il-est-difficile-de-jouer-ensemble).
 
 ## Jouer pour la première fois
 

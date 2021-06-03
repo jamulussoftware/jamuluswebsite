@@ -58,7 +58,7 @@ This option uses small differences in sound arrival time between the two ears. I
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
-Leave this field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-central))
+Leave this field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-directory))
 
 
 **Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.
