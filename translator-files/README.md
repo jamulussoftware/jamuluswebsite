@@ -22,8 +22,9 @@ If you wish to translate to a language for which there is no folder in `translat
 ### Suggested editors:
 
 - OmegaT (cross-platform): the most complete and advanced, but also somewhat more complex. A guide is included in this folder.
-- QtLinguist (cross-platform): if you've done app translations you should feel comfortable with this. However, you have to open files one by one and until you do, you can't know the state of the translation. This is true of all these editors except for OmegaT.
-- Lokalize (Linux): similar to QtLinguist.
+- QtLinguist (cross-platform): if you've done app translations you should feel comfortable with this. However, you have to open files one by one and until you do, you can't know the state of the translation.
+- Lokalize (Linux): GUI similar to QtLinguist but more complete.
+    - This application can give you an overview of the translation progress of all files. Click on `Project > Create software translation project`. A window will open asking where to store the `index` file - choose anywhere you want. Now another window will open. In "Root folder" point it to the directory where all the .po files for your language are. Click on "Apply" and "OK". Now you will be shown an overview of the state of all the translations. Double-click on one to go to that file. If you are comfortable with this editor and use Linux, it's a very recommendable option if you don't want to get into the complexities of OmegaT.
 - Virtaal (cross-platform)
 - Gtranslator (Linux)
 
