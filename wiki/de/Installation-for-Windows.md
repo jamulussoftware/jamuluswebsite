@@ -73,6 +73,6 @@ Offizielle und ausführliche Infos zur Konfiguration von ASIO4ALL sind auch in d
 
 ## Alles installiert?
 
-Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an: 
+Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
 [Nach der Installation](Getting-Started){: .button}
