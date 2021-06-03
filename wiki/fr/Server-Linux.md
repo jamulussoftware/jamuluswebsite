@@ -71,4 +71,4 @@ Pour mettre à niveau votre serveur vers une version plus récente, télécharge
 
 ### Enregistrement
 
-Voir [cette information](/wiki/Tips-Tricks-More#controlling-recording-on-linux-headless-servers) sur le contrôle des enregistrements sur les serveurs headless.
+Voir [cette information](/wiki/Tips-Tricks-More#contrôle-des-enregistrements-sur-les-serveurs-headless-linux) sur le contrôle des enregistrements sur les serveurs headless.
