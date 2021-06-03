@@ -1,7 +1,7 @@
 # Translation:
 
 -   Navigate to `l10n/po/YOUR-LANGUAGE/`. Translate the content of the .po files in your editor of choice (QtLinguist, Lokalize, OmegaT...).
-    - A number of files in this folder no not need to be translated. These are:
+    - A number of files in this folder do not need to be translated. These are:
         - Administration.po
         - Central-Servers.po
         - Compiling.po
