@@ -2,16 +2,16 @@
 
 -   Navigate to `l10n/po/YOUR-LANGUAGE/`. Translate the content of the .po files in your editor of choice (QtLinguist, Lokalize, OmegaT...).
     - A number of files in this folder no not need to be translated. These are:
-     -Administration.po
-     -Central-Servers.po
-     -Compiling.po
-     -Linux-Install-Script.po
-     -Multiple-Audio-Interfaces.po
-     -Onboarding.po
-     -Server-Rpi.po
-     -Software-Synth.po
-     -Sound-Devices.po
-     -index.po
+        - Administration.po
+        - Central-Servers.po
+        - Compiling.po
+        - Linux-Install-Script.po
+        - Multiple-Audio-Interfaces.po
+        - Onboarding.po
+        - Server-Rpi.po
+        - Software-Synth.po
+        - Sound-Devices.po
+        - index.po
 -   Set the lang: parameter to your language code at the beginning of the file (it, fr, de, etc.) and make sure the permalink: parameter (e.g. /wiki/Client-Troubleshooting) stays the same.
 -   Submit a Pull Request with the translated .po files. **DO NOT** edit any .md files in the /wiki/ folder.
 
