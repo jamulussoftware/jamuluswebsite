@@ -58,7 +58,7 @@ Cette option utilise les petites différences de temps d'arrivée du son entre l
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/server-window-options.png" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
-(Leave this field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-directory))
+(Laissez ce champ vide à moins que vous n'ayez besoin d'inscrire votre serveur sur un [serveur annuaire privé](Choosing-a-Server-Type#3-serveur-annuaire)).
 
 
 **Utilisateurs de Windows** - Si vous voulez que le serveur démarre automatiquement au démarrage du système, activez la case à cocher correspondante.
