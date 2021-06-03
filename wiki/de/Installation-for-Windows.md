@@ -31,7 +31,7 @@ Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen Workaro
 
 [ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
-[ASIO4ALL website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL Website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
 
 ### ASIO4ALL einrichten
@@ -73,6 +73,6 @@ Offizielle und ausführliche Infos zur Konfiguration von ASIO4ALL sind auch in d
 
 ## Alles installiert?
 
-Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
+Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an: 
 
 [Nach der Installation](Getting-Started){: .button}
