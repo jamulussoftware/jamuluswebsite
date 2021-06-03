@@ -9,7 +9,7 @@ title: 'Installation auf macOS'
 
 # Installation auf macOS
 
-Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits gelesen hast.
+Wenn du die [Erste Schritte](Getting-Started) Seite noch nicht gelesen hast, solltest du das nachholen.
 
 1. [Lade Jamulus herunter]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
  **macOS Sierra (10.12) oder niedriger:** [Legacy Version herunterladen]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\
@@ -37,6 +37,6 @@ Jetzt siehst du eine leicht veränderte Version der gleichen Meldung, aber nun k
 
 ## Alles installiert?
 
-Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
+Jamulus wurde installiert und kann jetzt benutzt werden. Wenn du willst, kannst du jetzt auf die folgende Seite gehen:
 
 [Nach der Installation](Getting-Started){: .button}
