@@ -71,4 +71,4 @@ To upgrade your server to a newer version, simply download a new .deb and re-ins
 
 ### Recording
 
-See [this information](/wiki/Tips-Tricks-More#controlling-recording-on-linux-headless-servers) on controlling recordings on headless servers.
+See [this information](/wiki/Tips-Tricks-More#controlling-recordings-on-linux-headless-servers) on controlling recordings on headless servers.
