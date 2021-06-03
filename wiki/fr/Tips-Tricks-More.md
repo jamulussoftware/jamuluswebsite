@@ -112,7 +112,7 @@ Assurez-vous de connecter le port de sortie de votre appareil MIDI au port d'ent
 
 ## Contrôle des enregistrements sur les serveurs headless Linux
 
-Lorsque vous utilisez la [fonction d'enregistrement](Server-Win-Mac#recording) avec l'[option de ligne de commande] `-R`(Command-Line-Options), si le serveur reçoit un signal SIGUSR1 pendant un enregistrement, il démarre un nouvel enregistrement dans un nouveau répertoire. SIGUSR2 permet d'activer ou de désactiver l'enregistrement.
+Lorsque vous utilisez la [fonction d'enregistrement](Server-Win-Mac#enregistrement) avec l'[option de ligne de commande] `-R`(Command-Line-Options), si le serveur reçoit un signal SIGUSR1 pendant un enregistrement, il démarre un nouvel enregistrement dans un nouveau répertoire. SIGUSR2 permet d'activer ou de désactiver l'enregistrement.
 
 Pour envoyer ces signaux en utilisant systemd, créez les deux fichiers `.service` suivants dans `/etc/systemd/system`, en les appelant de manière appropriée (par exemple `newRecording-Jamulus-server.service`).
 

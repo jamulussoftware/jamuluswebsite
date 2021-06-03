@@ -58,7 +58,7 @@ Esta opción utiliza las pequeñas diferencias en el tiempo de llegada del sonid
 
 <figure><img src="{{site.url}}/assets/img/es-screenshots/server-window-options.png" loading="lazy" alt="Imagen de la ventana de opciones del servidor Jamulus"></figure>
 
-Deja este campo vacío a menos que necesites listar tu servidor en un [servidor de directorio privado](Choosing-a-Server-Type#3-directorio))
+(Leave this field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-directory))
 
 
 **Usuarios de Windows** - Si quieres que el servidor arranque automáticamente al iniciar el sistema, activa la casilla correspondiente.
