@@ -39,7 +39,7 @@ If you want to add a new image, use .png format if possible, and if it’s not a
 
 For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/TRANSLATING.md)
 
-We collect changes to the English version of the site on a "changes" branch first. We then freeze changes prior to a Jamulus software release, and do a translation "sprint" over a couple of weeks when all translation takes place.
+We collect changes to the English version of the site on a "next-release" branch first. We then freeze changes prior to a Jamulus software release, and do a translation "sprint" over a couple of weeks when all translation takes place.
 
 ### Here’s the overall workflow
 
