@@ -10,7 +10,7 @@ If you add a new file to the wiki/en folder, running the same script will create
 
 ## Generating .md files from the translated .po files
 
-When translated.po files have been submitted and you wish to generate the translated .md files, run the `po4a-create-all-targets.sh` script, which will generate the target .md files for all languages in `wiki/`. If you want to set a threshold below which translated .md files do not get created, edit line 70 in the script and change the number to the percentage you want to set. The default has been set at 80%.
+When translated.po files have been submitted and you wish to generate the translated .md files, run the `po4a-create-all-targets.sh` script, which will generate the target .md files for all languages in `wiki/`. If you want to set a threshold below which translated .md files do not get created, edit `THRESHOLD` at the top of the script and change the number to the percentage you want to set. The default has been set at 80%.
 
 ### Using po4a locally to update templates/create translated .md files
 
