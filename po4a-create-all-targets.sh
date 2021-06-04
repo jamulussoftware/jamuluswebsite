@@ -44,9 +44,14 @@ fi
 # REMOVE .md FILE FOLDER
 ####################################
 
-cd ./wiki/
-rm -rf de es fr it pt
-cd ../
+while IFS= read -r -d '' dir
+do
+	lang=$(basename -s .md "$dir")
+	echo "delete $lang folder"
+    cd ./wiki/
+	rm -rf "$lang" 
+    cd ../  
+done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
 
 ####################################
 # DEFINE ANTARA MODULES (md files)
