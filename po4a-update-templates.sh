@@ -28,12 +28,17 @@ fi
 # TEST IF IT CAN WORK
 ####################################
 
+# Check if po4a is installed
+if ! [ -x "$(command -v po4a)" ] ; then
+    echo 'Error: please install po4a.' >&2
+    exit 1
+fi
+
 if [ ! -d "$SRCDIR_MODULE" ] ; then
     echo "Error, please check that SRCDIR matches the root of the documentation repository"
     echo "Your specified modules are in $SRCDIR_MODULE"
     exit 1
 fi
-
 
 ####################################
 # Process the documents

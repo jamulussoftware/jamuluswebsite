@@ -11,6 +11,7 @@
 # INITIALISE VARIABLES
 ####################################
 
+THRESHOLD="80"
 SRCDIR_MODULE="./wiki/en"
 
 # place where the po files are
@@ -27,6 +28,12 @@ fi
 ####################################
 # TEST IF IT CAN WORK
 ####################################
+
+# Check if po4a is installed
+if ! [ -x "$(command -v po4a)" ] ; then
+    echo 'Error: please install po4a.' >&2
+    exit 1
+fi
 
 if [ ! -d "$SRCDIR_MODULE" ] ; then
 	echo "Please run this script from the documentation' root folder"
@@ -50,12 +57,12 @@ use_po_module () {
 
 	while IFS= read -r -d '' file
 	do
-		basename=$(basename -s .md "$file")
+		basename="$(basename -s .md "$file")"
 		dirname=$(dirname "$file")
 		path="${dirname#$SRCDIR_MODULE/}"
 
 		if [ "$dirname" = "$SRCDIR_MODULE" ]; then
-			potname=$basename
+			potname=${basename}
 			localized_file="$PUB_DIR/$lang/$basename.md"
 		else
 			potname=$path/$basename
@@ -69,7 +76,7 @@ use_po_module () {
 			--master-charset "UTF-8" \
 			--po "$PO_DIR/$lang/$potname.po" \
 			--localized "$localized_file" --localized-charset "UTF-8" \
-			--keep 80
+			--keep "$THRESHOLD"
 	done <   <(find -L "$SRCDIR_MODULE" -name "*.md"  -print0)
 
 }
@@ -82,15 +89,6 @@ while IFS= read -r -d '' dir
 do
 	lang=$(basename -s .md "$dir")
 	echo "$lang"
-	use_po_module "$lang"
-
-# Rename translated .md files with correct language prefixes
-#    cd $PUB_DIR
-#    if [ -d $lang ]; then
-#       cd "$lang"
-#        rename "s/^en-/$lang-/" *.md
-#        cd ../
-#    fi
-    
+	use_po_module "$lang"   
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
 
