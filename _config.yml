@@ -4,7 +4,7 @@ plugins:
   - jekyll-minifier
 languages:                   ["en", "es", "de", "it", "fr", "pt"]
 default_lang:                "en"
-exclude_from_localization:   ["assets", "images", "css", "README.md", "manifest.json", "humans.txt", "sitemap.xml"]
+exclude_from_localization:   ["assets", "images", "css", "README.md", "manifest.json", "humans.txt", "sitemap.xml", "robots.txt", "/translator-files", "/po4a-*.sh", "404.html", "CNAME", "/*.pdf"]
 parallel_localization:       true
 a_rootpage:                  "https://jamulus.io"
 
