@@ -1,18 +1,18 @@
 #!/bin/bash
 # You need po4a > 0.54, see https://github.com/mquinson/po4a/releases
-# There is no need of system-wide installation of po4a
-# Usage: PERLLIB=/path/to/po4a/lib use_po.sh
-# you may set following variables
-# SRCDIR root of the documentation repository
-# PODIR place where to create the po
-# PUB_DIR place where to publish the localised files
+# There is no need for system-wide installation of po4a
+# You may set the following variables:
+# SRC_DIR folder for original source English .md files
+# PO_DIR directory where .po files are stored
+# PUB_DIR directory to publish the localised files in
+# THRESHOLD translation % below which translated .md files are not generated
 
 ####################################
 # INITIALISE VARIABLES
 ####################################
 
 THRESHOLD="80"
-SRCDIR_MODULE="./wiki/en"
+SRC_DIR="./wiki/en"
 
 # place where the po files are
 if [ -z "$PO_DIR" ] ; then
@@ -35,14 +35,15 @@ if ! [ -x "$(command -v po4a)" ] ; then
     exit 1
 fi
 
-if [ ! -d "$SRCDIR_MODULE" ] ; then
-	echo "Please run this script from the documentation' root folder"
+# Check if source document folder exists in the right place
+if [ ! -d "$SRC_DIR" ] ; then
+	echo "Error: please run this script from the root folder"
 	exit 1
 fi
 
-####################################
-# REMOVE .md FILE FOLDER
-####################################
+##################################################
+# REMOVE .md FILE FOLDERS BEFORE REGENERATING THEM
+##################################################
 
 while IFS= read -r -d '' dir
 do
@@ -53,20 +54,21 @@ do
     cd ../  
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
 
-####################################
-# DEFINE ANTARA MODULES (md files)
-####################################
+########################################################
+# FUNCTION TO CREATE .md FILES FROM .po FILES USING PO4A
+########################################################
 
 use_po_module () {
 	lang=$1
 
+    # Determine target file/folder names
 	while IFS= read -r -d '' file
 	do
 		basename="$(basename -s .md "$file")"
 		dirname=$(dirname "$file")
-		path="${dirname#$SRCDIR_MODULE/}"
+		path="${dirname#$SRC_DIR/}"
 
-		if [ "$dirname" = "$SRCDIR_MODULE" ]; then
+		if [ "$dirname" = "$SRC_DIR" ]; then
 			potname=${basename}
 			localized_file="$PUB_DIR/$lang/$basename.md"
 		else
@@ -74,7 +76,7 @@ use_po_module () {
 			localized_file="$PUB_DIR/$lang/$path/$basename.md"
 		fi
 
-
+        # Run po4a-translate and create target files
 		po4a-translate \
 			--format asciidoc \
 			--master "$file" \
@@ -82,13 +84,13 @@ use_po_module () {
 			--po "$PO_DIR/$lang/$potname.po" \
 			--localized "$localized_file" --localized-charset "UTF-8" \
 			--keep "$THRESHOLD"
-	done <   <(find -L "$SRCDIR_MODULE" -name "*.md"  -print0)
+	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
 
 }
 
-####################################
-# HANDLE ANTARA MODULES (md files)
-####################################
+##########################################################
+# LOOK INTO EACH .po FILE DIR AND RUN PO4A ON EACH OF THEM
+##########################################################
 
 while IFS= read -r -d '' dir
 do
