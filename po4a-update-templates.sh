@@ -3,7 +3,8 @@
 # There is no need for system-wide installation of po4a
 # You may set following variables
 # SRC_DIR folder for original English .md files
-# POTDIR folder where the .pot template files are created/updated
+# POT_DIR folder where the .pot template files are created/updated
+# PO_DIR directory where .po files are stored
 
 
 ####################################
@@ -14,8 +15,8 @@
 SRC_DIR="./wiki/en"
 
 # folder where the .pot template files are created/updated
-if [ -z "$POTDIR" ] ; then
-    POTDIR="./translator-files/l10n/templates"
+if [ -z "$POT_DIR" ] ; then
+    POT_DIR="./translator-files/l10n/templates"
 fi
 
 # place where the po files are
@@ -39,12 +40,13 @@ if [ ! -d "$SRC_DIR" ] ; then
     exit 1
 fi
 
-####################################
-# CREATE/UPDATE .pot TEMPLATES
-####################################
+############################################
+# CREATE/UPDATE .pot TEMPLATES and .po files
+############################################
 
 while IFS= read -r -d '' file
 do
+    # Determine target file/folder names
     basename=$(basename -s .md "$file")
     dirname=$(dirname "$file")
     path="${dirname#$SRC_DIR/}"
@@ -53,15 +55,15 @@ do
         potname=$basename.pot
     else
         potname=$path/$basename.pot
-        mkdir -p "$POTDIR/$path"
+        mkdir -p "$POT_DIR/$path"
     fi
 
-    # Use source .md files in English to update/create .pot templates
+    # Use source .md files in English to update/create .pot templates and .po files
     po4a-gettextize \
         --format asciidoc \
         --master "$file" \
         --master-charset "UTF-8" \
-        --po "$POTDIR/$potname"
+        --po "$POT_DIR/$potname"
 
     for lang in $(ls "$PO_DIR" ); do
 
