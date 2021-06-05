@@ -63,7 +63,7 @@ We collect changes to the English version of the site on a "next-release" branch
 
 ## Adding a new language
 
-First open an issue so that the relevant folders and files can be created for your language in `translator-files/l10n/po/`.
+Copy the `translator-files/l10n/templates` folder, paste it into `translator-files/l10n/po/`and rename it to your language code. Now rename all the .pot files inside it, changing the .pot file extension to .po.
 
 Make sure to add the language to the \_config.yml file (in the languages array).  At a minimum, the main includes for the wiki (see \_includes/wiki/) have to be translated.
 
