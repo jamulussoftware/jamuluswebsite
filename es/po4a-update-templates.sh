@@ -1,10 +1,10 @@
 #!/bin/bash
 # You need po4a > 0.54, see https://github.com/mquinson/po4a/releases
-# There is no need of system-wide installation of po4a
-# Usage: PERLLIB=/path/to/po4a/lib make_pot.sh
-# you may set following variables
-# SRCDIR root of the documentation repository
-# POTDIR place where to create the .pot templates
+# There is no need for system-wide installation of po4a
+# You may set following variables
+# SRC_DIR folder for original English .md files
+# POT_DIR folder where the .pot template files are created/updated
+# PO_DIR directory where .po files are stored
 
 
 ####################################
@@ -12,11 +12,11 @@
 ####################################
 
 # root of the documentation repository
-SRCDIR_MODULE="./wiki/en"
+SRC_DIR="./wiki/en"
 
-# place where to create the .pot template files
-if [ -z "$POTDIR" ] ; then
-    POTDIR="./translator-files/l10n/templates"
+# folder where the .pot template files are created/updated
+if [ -z "$POT_DIR" ] ; then
+    POT_DIR="./translator-files/l10n/templates"
 fi
 
 # place where the po files are
@@ -34,40 +34,42 @@ if ! [ -x "$(command -v po4a)" ] ; then
     exit 1
 fi
 
-if [ ! -d "$SRCDIR_MODULE" ] ; then
-    echo "Error, please check that SRCDIR matches the root of the documentation repository"
-    echo "Your specified modules are in $SRCDIR_MODULE"
+# Check if source document folder exists in the right place
+if [ ! -d "$SRC_DIR" ] ; then
+    echo "Error: please run this script from the root folder"
     exit 1
 fi
 
-####################################
-# Process the documents
-####################################
+############################################
+# CREATE/UPDATE .pot TEMPLATES and .po files
+############################################
 
 while IFS= read -r -d '' file
 do
+    # Determine target file/folder names
     basename=$(basename -s .md "$file")
     dirname=$(dirname "$file")
-    path="${dirname#$SRCDIR_MODULE/}"
+    path="${dirname#$SRC_DIR/}"
 
-    if [ "$dirname" = "$SRCDIR_MODULE" ]; then
+    if [ "$dirname" = "$SRC_DIR" ]; then
         potname=$basename.pot
     else
         potname=$path/$basename.pot
-        mkdir -p "$POTDIR/$path"
+        mkdir -p "$POT_DIR/$path"
     fi
 
+    # Use source .md files in English to update/create .pot templates and .po files
     po4a-gettextize \
         --format asciidoc \
         --master "$file" \
         --master-charset "UTF-8" \
-        --po "$POTDIR/$potname"
+        --po "$POT_DIR/$potname"
 
     for lang in $(ls "$PO_DIR" ); do
 
         po_file="$PO_DIR/$lang/${potname%.pot}.po"
 
-        # po4a-updatepo would be angry otherwise
+        # po4a-updatepo will complain if the following is not met
         sed -i 's/Content-Type: text\/plain; charset=CHARSET/Content-Type: text\/plain; charset=UTF-8/g' "$po_file"
 
         if ! po4a-updatepo \
@@ -81,7 +83,7 @@ do
         fi
     done
 
-done <   <(find -L "$SRCDIR_MODULE" -name "*.md" -print0)
+done <   <(find -L "$SRC_DIR" -name "*.md" -print0)
 
 echo ""
 echo "REMOVE TEMPORARY FILES"
