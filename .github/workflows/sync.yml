@@ -1,8 +1,6 @@
 name: Sync release to changes
 on:
-  push:
-    branches:
-      - 'release'
+  workflow_dispatch:
 jobs:
   sync-branch:
     permissions:
