@@ -1,5 +1,8 @@
 name: Sync release to changes
 on:
+  push:
+    branches:
+      - release
   workflow_dispatch:
 jobs:
   sync-branch:
@@ -14,5 +17,5 @@ jobs:
         with:
           type: now
           from_branch: release
-          target_branch: changes
+          target_branch: next-release
           github_token: ${{ github.token }}
