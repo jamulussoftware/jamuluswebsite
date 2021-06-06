@@ -30,7 +30,7 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo 'Error: please install po4a.' >&2
+    echo "Error: please install po4a." >&2
     exit 1
 fi
 
@@ -52,9 +52,9 @@ do
     path="${dirname#$SRC_DIR/}"
 
     if [ "$dirname" = "$SRC_DIR" ]; then
-        potname=$basename.pot
+        potname="$basename".pot
     else
-        potname=$path/$basename.pot
+        potname="$path/$basename".pot
         mkdir -p "$POT_DIR/$path"
     fi
 
