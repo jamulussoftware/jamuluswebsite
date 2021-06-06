@@ -1,6 +1,11 @@
 # Jamulus Website
 
-This is the content repository for [jamulus.io](https://jamulus.io). Text appearing in the Jamulus software application itself is part of the [main code repository](https://github.com/jamulussoftware/jamulus). The web site is built with Jekyll and Fox-CSS.
+This is the content repository for [jamulus.io](https://jamulus.io). Text appearing in the Jamulus software application itself is part of the [main code repository](https://github.com/jamulussoftware/jamulus). See also the [general overview](https://jamulus.io/wiki/Contribution) to getting involved. 
+
+
+## Want to help translate?
+
+To make updates or translations for jamulus.io you will need a GitHub account and be familiar with GitHub in general. If you want to get more involved, you’ll need to be familiar with the use of git on the command line, as well as Jekyll. Note that translating the Jamulus application itself is done by a different process, but you are welcome to help with that too. Introduce yourself on the [GitHub Discussion](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
 
 ### Please also note that discussions should be in English so as to be open to all. 
 
