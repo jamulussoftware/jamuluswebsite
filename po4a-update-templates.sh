@@ -11,15 +11,15 @@
 # INITIALISE VARIABLES
 ####################################
 
-# root of the documentation repository
+# Folder where source English .md files are
 SRC_DIR="./wiki/en"
 
-# folder where the .pot template files are created/updated
+# Folder where the .pot template files are created/updated
 if [ -z "$POT_DIR" ] ; then
     POT_DIR="./translator-files/l10n/templates"
 fi
 
-# place where the po files are
+# Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
 	PO_DIR="./translator-files/l10n/po"
 fi
@@ -30,7 +30,7 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo 'Error: please install po4a.' >&2
+    echo "Error: please install po4a." >&2
     exit 1
 fi
 
@@ -52,9 +52,9 @@ do
     path="${dirname#$SRC_DIR/}"
 
     if [ "$dirname" = "$SRC_DIR" ]; then
-        potname=$basename.pot
+        potname="$basename".pot
     else
-        potname=$path/$basename.pot
+        potname="$path/$basename".pot
         mkdir -p "$POT_DIR/$path"
     fi
 
