@@ -67,7 +67,7 @@ use_po_module () {
 		dirname=$(dirname "$file")
 		path="${dirname#$SRC_DIR/}"
 
-		if [ "$dirname" = "$SRC_DIR" ]; then
+		if [ "$dirname" = "$SRC_DIR" ] ; then
 			potname=${basename}
 			localized_file="$PUB_DIR/$lang/$basename.md"
 		else
