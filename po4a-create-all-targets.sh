@@ -49,9 +49,9 @@ while IFS= read -r -d '' dir
 do
 	lang=$(basename -s .md "$dir")
 	echo "delete $lang folder"
-    cd ./wiki/
+	cd ./wiki/
 	rm -rf "$lang" 
-    cd ../  
+	cd ../  
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
 
 ########################################################
