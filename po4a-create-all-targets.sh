@@ -40,8 +40,8 @@ fi
 
 # Check if source document folder exists in the right place
 if [ ! -d "$SRC_DIR" ] ; then
-	echo "Error: please run this script from the root folder"
-	exit 1
+    echo "Error: please run this script from the root folder"
+    exit 1
 fi
 
 ##################################################
