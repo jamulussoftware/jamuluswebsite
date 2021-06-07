@@ -47,23 +47,23 @@ Jamulus se connectera au fichier système si vous avez laissé le paramètre `St
 
 Pour visualiser le journal, utilisez `journalctl` (pour quitter, appuyez sur Ctrl-C). Par exemple, pour lire le fichier journal du système, filtré pour le service Jamulus :
 
-`journalctl -u jamulus`
+`journalctl -u jamulus-headless`
 
 Pour les entrées d'aujourd'hui :
 
-`journalctl -u jamulus --since today`
+`journalctl -u jamulus-headless --since today`
 
 Pour la dernière heure :
 
-`journalctl -u jamulus --since "1 hour ago"`
+`journalctl -u jamulus-headless --since "1 hour ago"`
 
 Filtrez le journal pour voir les messages de connexion de votre serveur Jamulus :
 
-`journalctl -u jamulus | grep connected`
+`journalctl -u jamulus-headless | grep connected`
 
 Suivez (affichez à l'écran) les messages du journal de Jamulus au fur et à mesure qu'ils se produisent :
 
-`journalctl -f -u jamulus`
+`journalctl -f -u jamulus-headless`
 
 ### Mise à niveau
 

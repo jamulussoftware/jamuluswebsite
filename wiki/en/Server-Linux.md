@@ -47,23 +47,23 @@ Jamulus will log to the system file if you left the `StandardOutput=journal` set
 
 To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:
 
-`journalctl -u jamulus`
+`journalctl -u jamulus-headless`
 
 For today’s entries:
 
-`journalctl -u jamulus --since today`
+`journalctl -u jamulus-headless --since today`
 
 For the last hour:
 
-`journalctl -u jamulus --since "1 hour ago"`
+`journalctl -u jamulus-headless --since "1 hour ago"`
 
 Filter the log to see connection messages for your Jamulus server:
 
-`journalctl -u jamulus | grep connected`
+`journalctl -u jamulus-headless | grep connected`
 
 Follow (show on screen) Jamulus log messages as they occur:
 
-`journalctl -f -u jamulus`
+`journalctl -f -u jamulus-headless`
 
 ### Upgrading
 
