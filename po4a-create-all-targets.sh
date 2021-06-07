@@ -11,15 +11,18 @@
 # INITIALISE VARIABLES
 ####################################
 
+# Set % threshold for translated .md files to be created
 THRESHOLD="80"
+
+# Folder where source English .md files are
 SRC_DIR="./wiki/en"
 
-# place where the po files are
+# Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
 	PO_DIR="./translator-files/l10n/po"
 fi
 
-# place where the localised files will be
+# Directory where the translated file folders will be
 if [ -z "$PUB_DIR" ] ; then
 	PUB_DIR="./wiki/"
 fi
@@ -31,8 +34,8 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo 'Error: please install po4a.' >&2
-    exit 1
+	echo "Error: please install po4a." >&2
+	exit 1
 fi
 
 # Check if source document folder exists in the right place
@@ -49,9 +52,9 @@ while IFS= read -r -d '' dir
 do
 	lang=$(basename -s .md "$dir")
 	echo "delete $lang folder"
-    cd ./wiki/
+	cd "$PUB_DIR"
 	rm -rf "$lang" 
-    cd ../  
+	cd ../  
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
 
 ########################################################

@@ -47,23 +47,23 @@ Jamulus dejará registros en el archivo del sistema si dejaste la configuración
 
 Para ver el registro, utiliza `journalctl` (para salir pulsa Ctrl-C). Por ejemplo, para leer el archivo de registro del sistema, filtrado para el servicio Jamulus:
 
-`journalctl -u jamulus`
+`journalctl -u jamulus-headless`
 
 Para los registros de hoy:
 
-`journalctl -u jamulus --since today`
+`journalctl -u jamulus-headless --since today`
 
 Para la última hora:
 
-`journalctl -u jamulus --since "1 hour ago"`
+`journalctl -u jamulus-headless --since "1 hour ago"`
 
 Filtrar el registro para ver mensajes de conexión de tu servidor Jamulus:
 
-`journalctl -u jamulus | grep connected`
+`journalctl -u jamulus-headless | grep connected`
 
 Mostrar (en pantalla) mensajes de registro de Jamulus según ocurren:
 
-`journalctl -f -u jamulus`
+`journalctl -f -u jamulus-headless`
 
 ### Actualización
 
