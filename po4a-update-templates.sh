@@ -89,5 +89,5 @@ echo ""
 echo "REMOVE TEMPORARY FILES"
 
 for lang in $(ls "$PO_DIR" ); do
-	rm "./translator-files/l10n/po/$lang/"*.po~
+	rm "$PO_DIR/$lang/"*.po~
 done

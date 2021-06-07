@@ -34,8 +34,8 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-	echo "Error: please install po4a." >&2
-	exit 1
+    echo "Error: please install po4a." >&2
+    exit 1
 fi
 
 # Check if source document folder exists in the right place
@@ -48,14 +48,10 @@ fi
 # REMOVE .md FILE FOLDERS BEFORE REGENERATING THEM
 ##################################################
 
-while IFS= read -r -d '' dir
-do
-	lang=$(basename -s .md "$dir")
-	echo "delete $lang folder"
-	cd "$PUB_DIR"
-	rm -rf "$lang" 
-	cd ../  
-done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
+for lang in $(ls "$PO_DIR" ); do
+    rm -rf "$PUB_DIR/$lang"
+	echo "$lang folder deleted"
+done
 
 ########################################################
 # FUNCTION TO CREATE .md FILES FROM .po FILES USING PO4A
