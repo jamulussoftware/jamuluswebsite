@@ -11,15 +11,15 @@
 # INITIALISE VARIABLES
 ####################################
 
-# root of the documentation repository
+# Folder where source English .md files are
 SRC_DIR="./wiki/en"
 
-# folder where the .pot template files are created/updated
+# Folder where the .pot template files are created/updated
 if [ -z "$POT_DIR" ] ; then
     POT_DIR="./translator-files/l10n/templates"
 fi
 
-# place where the po files are
+# Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
 	PO_DIR="./translator-files/l10n/po"
 fi
