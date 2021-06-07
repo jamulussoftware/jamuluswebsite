@@ -51,7 +51,7 @@ do
     dirname=$(dirname "$file")
     path="${dirname#$SRC_DIR/}"
 
-    if [ "$dirname" = "$SRC_DIR" ]; then
+    if [ "$dirname" = "$SRC_DIR" ] ; then
         potname="$basename".pot
     else
         potname="$path/$basename".pot
@@ -65,7 +65,7 @@ do
         --master-charset "UTF-8" \
         --po "$POT_DIR/$potname"
 
-    for lang in $(ls "$PO_DIR" ); do
+    for lang in $(ls "$PO_DIR" ) ; do
 
         po_file="$PO_DIR/$lang/${potname%.pot}.po"
 
@@ -88,6 +88,6 @@ done <   <(find -L "$SRC_DIR" -name "*.md" -print0)
 echo ""
 echo "REMOVE TEMPORARY FILES"
 
-for lang in $(ls "$PO_DIR" ); do
+for lang in $(ls "$PO_DIR" ) ; do
 	rm "$PO_DIR/$lang/"*.po~
 done
