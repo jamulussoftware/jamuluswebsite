@@ -48,8 +48,8 @@ fi
 # REMOVE .md FILE FOLDERS BEFORE REGENERATING THEM
 ##################################################
 
-for lang in $(ls "$PO_DIR" ); do
-    rm -rf "$PUB_DIR/$lang"
+for lang in $(ls "$PO_DIR" ) ; do
+	rm -rf "$PUB_DIR/$lang"
 	echo "$lang folder deleted"
 done
 
