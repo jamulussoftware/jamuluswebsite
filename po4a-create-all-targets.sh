@@ -34,8 +34,8 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo "Error: please install po4a." >&2
-    exit 1
+	echo "Error: please install po4a." >&2
+	exit 1
 fi
 
 # Check if source document folder exists in the right place
