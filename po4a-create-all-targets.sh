@@ -40,7 +40,7 @@ fi
 
 # Check if source document folder exists in the right place
 if ! [ -d "$SRC_DIR" ] ; then
-	echo 'Error: please run this script from the root folder'
+	echo 'Error: please run this script from the root folder.'
 	exit 1
 fi
 
@@ -50,7 +50,7 @@ fi
 
 for lang in $(ls "$PO_DIR" ) ; do
 	rm -rf "$PUB_DIR/$lang"
-	echo '$lang folder deleted'
+	echo "$lang" folder deleted
 done
 
 ########################################################
@@ -94,7 +94,7 @@ use_po_module () {
 while IFS= read -r -d '' dir
 do
 	lang=$(basename -s .md "$dir")
-	echo '$lang'
+	echo "$lang"
 	use_po_module "$lang"   
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
 

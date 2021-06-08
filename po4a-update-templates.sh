@@ -36,7 +36,7 @@ fi
 
 # Check if source document folder exists in the right place
 if [ ! -d "$SRC_DIR" ] ; then
-    echo 'Error: please run this script from the root folder'
+    echo 'Error: please run this script from the root folder.'
     exit 1
 fi
 
@@ -78,7 +78,7 @@ do
             --master-charset "UTF-8" \
             --po "$po_file" ; then
         echo ''
-        echo 'Error updating $lang PO file for: $adoc_file'
+        echo "Error updating $lang PO file for: $adoc_file"
 
         fi
     done
