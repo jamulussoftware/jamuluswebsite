@@ -34,13 +34,13 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-	echo 'Error: please install po4a.' >&2
+	echo Error: please install po4a. >&2
 	exit 1
 fi
 
 # Check if source document folder exists in the right place
 if ! [ -d "$SRC_DIR" ] ; then
-	echo 'Error: please run this script from the root folder.'
+	echo Error: please run this script from the root folder. >&2
 	exit 1
 fi
 
