@@ -19,9 +19,11 @@ If you have any questions, please see the [Discussions](https://github.com/jamul
 
 To get Jamulus working with your hardware, please follow the installation guide for your platform:
 
-* [Windows](/wiki/Installation-for-Windows)
-* [macOS](/wiki/Installation-for-Macintosh)
-* [Linux](/wiki/Installation-for-Linux)
+<div class="fx-row fx-row-start-xs button-container">
+    <a href="Installation-for-Windows" class="button fx-col-100-xs">Windows</a>
+    <a href="Installation-for-Macintosh" class="button fx-col-100-xs">macOS</a>
+    <a href= "Installation-for-Linux" class="button fx-col-100-xs">Linux</a>
+</div>
 
 And for now, close all other applications. It’s best to start simple at first.
 
