@@ -39,6 +39,8 @@ jamulus --nogui --server \
         --serverinfo "yourServerName;yourCity;[country ID]"
 ~~~
 
+**Note**: Semicolon and newline characters are not allowed in `--serverinfo`
+
 Set your Directory (genre) server using the `--directoryserver` (`-e`) option as follows:
 
 
