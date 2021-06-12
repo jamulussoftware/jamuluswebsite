@@ -6,8 +6,18 @@ permalink: "/wiki/FAQ"
 ---
 
 # Jamulus FAQ
+ {:.no_toc}
 
-This is an overview of common questions. For common problems and their solutions, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
+
+**For common problems and their solutions when using Jamulus, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.**
 
 
 ### Is there a metronome, synchronization, or some other way of keeping in time?
@@ -16,7 +26,7 @@ No. Musicians on a Jamulus server simply play in real time time together as they
 
 ### How do I know if I can join a server? Are there rules?
 
-In general, if somebody sets up a public server, then [by definition](/wiki/Choosing-a-Server-Type) they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
+In general, if somebody sets up a public server they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
 
 You can also set up a private server on Jamulus and give others your address to connect to that. Have a look at [this page for more information](/wiki/Running-a-Server).
 
@@ -34,7 +44,7 @@ Of course, if you are playing an acoustic instrument, or are a singer, it will b
 
 ### Do I need a fast Internet connection?
 
-For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your upstream bandwidth is lower than about 5 Mbit/s. [More information on network requirements here](/wiki/Network-Requirements).
+For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your upstream bandwidth is lower than about 5 Mbit/s. 
 
 ### Do I need to run a server?
 

@@ -164,10 +164,14 @@ If the selected sound card device offers more than one input or output channel, 
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
 a different actual sound card channel can be selected.
 
+
 ### Audio channels
 
-Selects the number of audio channels to be used for communication between client and server. There are three modes
-available:
+Selects the number of audio channels to be used for communication between client and server. 
+
+**Note**: It is preferable to run separate client instances per voice/instrument, with each client given its own ini file, rather than using this built-in mono pair to stereo mixer.
+
+There are three modes available:
 
 **Mono** and **Stereo** modes use one and two audio channels respectively.
 
@@ -297,7 +301,7 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
  /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
 ```
 
-### Available options
+**Note**: Command-line options will not alter settings made in the GUI. 
 
 - `-M` or `--mutestream`  Starts Jamulus in muted state                                                      
 - `--mutemyown`  Mute me in my personal mix ("headless" mode only)                                                      

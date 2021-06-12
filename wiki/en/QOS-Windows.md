@@ -1,11 +1,11 @@
 
 [comment]: # (This is an include file for use in multiple documents)
 
-## Quality of Service (QoS)
+# Quality of Service (QoS)
 
 Jamulus uses DSCP/CS4 opportunistically to deal with buffer bloat, and uses a default DSCP/CS4 value of 128 (or 0x80). This is compatible with IPv4 and IPv6. Other values can be set using the -Q option, eg -Q [0..255] (where 0 disables QoS). If you want to explore the effect of non-default settings, see RFC4594. However, most people will have no need to do this.
 
-### Use of QoS on Windows
+## Use of QoS on Windows
 
 Jamulus's QoS settings (including the default) have no effect on Windows because the operating system ignores them. To enable it, you must follow these instructions. Note also that you may need to repeat this procedure every time Jamulus is updated.
 

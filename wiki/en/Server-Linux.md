@@ -1,39 +1,27 @@
 ---
 layout: wiki
-title: "Server Installation - Linux"
+title: "Headless Linux Server Installation"
 lang: "en"
 permalink: "/wiki/Server-Linux"
 ---
 
-{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+{% include breadcrumb.html root="More" branch1="Server Administration" branch1-url="Running-a-Server" %}
 
-# Server Installation - Linux
+# Running a Headless Server
 
-**_Please ensure you have read the [server overview](Running-a-Server)_**
+The following is for running Jamulus as a "pure" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. 
 
-
-## Running a server with a GUI on a desktop machine
-
-If you have installed the Jamulus client, you can run it in your chosen [server mode](Choosing-a-Server-Type) by running Jamulus with the `-s` option as follows:
-
-1. Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros).
-1. Assuming Jamulus is in `/usr/local/bin`, type `Jamulus -s`
-
-Hit return and you should see the server control window. You can stop the server by closing the server window, or by using `CTRL+C` in the terminal.
-
-**To configure the server**, please refer to [the Windows & macOS instructions](Server-Win-Mac), and [Command Line Options](Command-Line-Options) for other parameters you can set.
-
-## Running a "headless" server
-
-The following is for running Jamulus as a "pure" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. We also have instructions for [Raspberry Pi](Server-Rpi).
+If you want to run a server on a Raspberry Pi, this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) is maintained by Jamulus user fredsiva. 
 
 1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
 1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
 1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`
 1. Enable the headless server process via systemd: `sudo systemctl enable jamulus-headless`
-1. Add your desired [command line options](Command-Line-Options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running a private server).
+1. Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running a private server).
 1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
 1. Check all is well with `service jamulus-headless status` (hit `q` to get back to the command prompt).
+
+You may also be interested in downloading [this set of useful tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 
 ## Notes
 
@@ -41,29 +29,37 @@ You can control Jamulus with the `service` command. For example, to stop the ser
 
 `sudo service jamulus-headless stop`
 
+### Running in public mode
+
+The following minimum setup is required to [run a public server](Running-a-Server#server-types):
+
+~~~
+jamulus --nogui --server \
+        --directoryserver genreServer:port \
+        --serverinfo "yourServerName;yourCity;[country ID]"
+~~~
+
+Set your Directory (genre) server using the `--directoryserver` (`-e`) option as follows:
+
+
+| Genre |   Server address           |
+|-----------|------------------|
+|**Any Genre 1** |`anygenre1.jamulus.io:22124`|
+|**Any Genre 2** |`anygenre2.jamulus.io:22224`|
+|**Any Genre 3** |`anygenre3.jamulus.io:22624`|
+|**Genre Rock** |`rock.jamulus.io:22424`|
+|**Genre Jazz** |`jazz.jamulus.io:22324`|
+|**Genre Classical/Folk** |`classical.jamulus.io:22524`|
+|**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
+
 ### Viewing The Logs
 
-Jamulus will log to the system file if you left the `StandardOutput=journal` setting in the unit file. Logging to the system log is recommended, as the system will manage the log file for you - no need to come back and purge it later or worry about filling up your disk space.
+Jamulus will log to the system log file if you left the `StandardOutput=journal` setting in the unit file. 
 
 To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:
 
-`journalctl -u jamulus-headless`
-
-For today’s entries:
-
-`journalctl -u jamulus-headless --since today`
-
-For the last hour:
-
-`journalctl -u jamulus-headless --since "1 hour ago"`
-
-Filter the log to see connection messages for your Jamulus server:
-
-`journalctl -u jamulus-headless | grep connected`
-
-Follow (show on screen) Jamulus log messages as they occur:
-
 `journalctl -f -u jamulus-headless`
+
 
 ### Upgrading
 
@@ -71,4 +67,66 @@ To upgrade your server to a newer version, simply download a new .deb and re-ins
 
 ### Recording
 
-See [this information](/wiki/Tips-Tricks-More#controlling-recordings-on-linux-headless-servers) on controlling recordings on headless servers.
+When using the recording function with the `-R` command line option, if the server receives a SIGUSR1 signal during a re
+cording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
+
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-serv
+er.service`).
+
+**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
+
+For turning recording on or off (depending on the current state):
+
+~~~
+ [Unit]
+ Description=Toggle recording state of Jamulus server
+ Requisite=Jamulus-Server
+
+ [Service]
+ Type=oneshot
+ ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+~~~
+
+For starting a new recording:
+
+~~~
+ [Unit]
+ Description=Start a new recording on Jamulus server
+ Requisite=Jamulus-Server
+
+ [Service]
+ Type=oneshot
+ ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
+~~~
+
+_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_
+
+Run `sudo systemctl daemon-reload` to register them for first use.
+
+Now you can run these with the `service start` command, for example:
+
+`sudo service jamulusTogglerec start` (assuming you named your unit file `jamulusTogglerec.service`)
+
+You can see the result of these commands if you run `service jamulus status`, or by viewing the logs.
+
+## Making a server status page
+
+With the `-m` command line argument, server statistics can be generated to be put on a web page.
+
+Here is an example php script using the server status file to display the current server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):
+
+~~~
+<?php
+function loadserverstat ( $statfilename )
+{
+   $datei = fopen ( $statfilename, "r" );
+   while ( !feof ( $datei ) )
+   {
+          $buffer = fgets ( $datei, 4096 );
+          echo $buffer;
+   }
+   fclose($datei);
+}
+?>
+<?php loadserverstat ( "stat1.dat" ); ?>
+~~~

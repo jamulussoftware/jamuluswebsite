@@ -37,32 +37,6 @@ Jamulus user [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/) has wri
 
 Jamulus user [BTDT](https://sourceforge.net/u/btdt/profile/) has written a system called [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), a web application that allows a "Jam leader" to push song sheets (in PDF format) to "Jammers" in real time using standard web browsers.
 
-## Making a server status page
-
-With the `-m` command line argument, server statistic information can be generated to be put on a web page.
-
-Here is an example php script using the server status file to display the current server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):
-
-~~~
-<?php
-function loadserverstat ( $statfilename )
-{
-   $datei = fopen ( $statfilename, "r" );
-   while ( !feof ( $datei ) )
-   {
-	  $buffer = fgets ( $datei, 4096 );
-	  echo $buffer;
-   }
-   fclose($datei);
-}
-?>
-<?php loadserverstat ( "stat1.dat" ); ?>
-~~~
-
-## Saving and loading client mix states
-
-You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Do this with "File > Save Mixer Channels Setup" in your client and load them using "Load Mixer Channels Setup" (or drag/drop them to the mixer window).
-
 ## Converting a public server to a private one on the fly
 
 You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
@@ -118,47 +92,4 @@ Fader strips in the mixer window are controlled in ascending order from left to 
 *Note*: Jamulus does not provide feedback on the state of the Solo and Mute buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself.
 
 Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
-
-
-## Controlling recordings on Linux headless servers
-
-When using the [recording function](Server-Win-Mac#recording) with the `-R` [command line option](Command-Line-Options), if the server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off.
-
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
-
-**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
-
-For turning recording on or off (depending on the current state):
-
-~~~
- [Unit]
- Description=Toggle recording state of Jamulus server
- Requisite=Jamulus-Server
-
- [Service]
- Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
-~~~
-
-For starting a new recording:
-
-~~~
- [Unit]
- Description=Start a new recording on Jamulus server
- Requisite=Jamulus-Server
-
- [Service]
- Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
-~~~
-
-_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_
-
-Run `sudo systemctl daemon-reload` to register them for first use.
-
-Now you can run these with the `service start` command, for example:
-
-`sudo service jamulusTogglerec start` (assuming you named your unit file `jamulusTogglerec.service`)
-
-You can see the result of these commands if you run `service jamulus status`, or by viewing the logs.
 

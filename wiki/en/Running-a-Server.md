@@ -21,13 +21,13 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a server?
 
-The short answer is **no**. For various (sometimes non-obvious) reasons, you should try to use other people's servers, at least at first while getting set up with Jamulus client. 
+The short answer is **no**. For various reasons, you should try to use other people's servers, at least at first while getting your sound set up with the Jamulus client. 
 
-Note that you can have a "private" session on a public server by simply soling each other. You will then not be able to hear anyone else if they enter your server.
+Note that you can have a "private" session with other people on a public server by simply soling each other. You will then not be able to hear anyone else if they enter your server.
 
 ### Speed and latency
 
-Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' [hardware](Hardware-Setup), the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). 
+Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' hard/software setup, the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). 
 
 **_The capability of the server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**
 
@@ -37,7 +37,7 @@ Once any issues with musicians have been solved in this way, you can then invest
 
 ### Bandwidth – do you have enough?
 
-A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800 Kbit/s (0.8 Mbit/s) up and down. So if you have a 10 Mbit/s down and 1 Mbit/s up broadband connection, **you may start running out of bandwidth if a fifth player joins**, particularly if other musicians choose settings that increase their usage. You may want to [check that you have enough speed](https://fast.com) for that. [Read more about bandwidth use](Network-Requirements) at different quality settings.
+A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800 Kbit/s (0.8 Mbit/s) up and down. So if you have a 10 Mbit/s down and 1 Mbit/s up broadband connection, **you may start running out of bandwidth if a fifth player joins**, particularly if other musicians choose settings that increase their usage. You may want to [check that you have enough speed](https://fast.com) for that. You can read more about network requirements at different quality settings later in this document.
 
 
 ### In general
@@ -48,7 +48,7 @@ A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800
 
 - Running a server may require you to adjust any firewalls running on or outside of your machine or cloud host.
 
-- Running a **private server at home** (but not a public one) will require you to [port forward](Running-a-Private-Server) on your router.
+- Running a **private server at home** (but not a public one) will require you to [port forward](#running-a-private-server) on your router.
 
 - Jamulus doesn't currently support IPv6
 
@@ -59,12 +59,12 @@ You can run your server in one of three "modes" (either at home or on a 3rd part
 
 ### 1. Public
 
-Use this mode when you want anyone to join your server.   
+Use this mode when you want anyone to join your server, whoever they are.   
 
-Your server will be listed in the [directory server](Directory-Servers) list that clients use by default. Musicians can then discover and connect to your server. 
+Your server will be listed in the Directory that clients use by default. Musicians can then discover and connect to your server.
 
 
-**Note**: It is **not** necessary to port-forward or otherwise configure your router to run a public server.
+**Note**: It is **not** necessary to port-forward or otherwise configure your router to run a public server. 
 
 <figure>
 	<img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus public server">
@@ -75,9 +75,7 @@ Your server will be listed in the [directory server](Directory-Servers) list tha
 
 ### 2. Private
 
-This is the default when starting a server for the first time.
-
-This type of server will not be listed on a directory server list. You must give musicians your server address to connect their clients to. See [Running a Private Server](#running-a-private-server) for configuration.
+This is the default when starting a server for the first time. Private servers are not listed by Directories, so only musicians who know your server's address to will be able to connect to it. This is useful because Jamulus does not (in any server mode) let you control who can connect to a server. 
 
 
 <figure>
@@ -89,19 +87,19 @@ This type of server will not be listed on a directory server list. You must give
 
 ### 3. Directory
 
-For when you want to run several private servers, possibly behind a firwall or on a LAN. Examples include online events or musical associations, sectional rehearsals or music lessons. Most people can ignore this type.  
+For when you want to run a number of private servers, possibly also behind a firewall or on a LAN. Examples include online events, music associations, sectional rehearsals or music lessons for schools. 
 
-To view servers listed by a custom directory server, musicians must enter the address in their client’s "Custom Directory Server" settings field.  They will then see a Connection Setup list which is generated by that directory server.
+To view servers listed by a custom Directory Server, musicians must enter the address in their client’s "Custom Directory Server" settings field.  They will then see a Connection Setup list which is generated by your Directory.
 
-Normal server operators can also register with your custom directory server so their servers can show up in your server list by setting yours as their `--directoryserver` option.
+Normal server operators can register with your Directory so their servers can show up in your server list by setting your Directory address as their `--directoryserver` option at startup.
 
-To run a server as a Directory Server, it should be configured with `--directoryserver localhost` (that is, specify itself as the directory server to query).
+To run a server as a Directory, it should be configured with `--directoryserver localhost` (that is, making itself the Directory to query for servers).
 
-#### Directory Server points to note
+#### Points to note about Directories
 
-- If you want to control which servers can register with your Directory Server, you can enable a whitelist with the `--listfilter` command line option. See the [command line options page](Command-Line-Options) for further information about this feature and other parameters you can set.
+- If you want to control which servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option. See the section on command line options later in this document. 
 
-- When running a public Directory Server behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the server(s) being listed by your Directory Server. This is necessary to allow clients on the public Internet to connect to them via NAT. Note that for the servers using this option, you will still need proper port forwarding in your router/firewall.
+- When running a public Directory Server behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the server(s) being listed by your Directory. This is necessary to allow clients on the public Internet to connect to them via NAT. Note that for the servers using this option, you will still need proper port forwarding in your router/firewall.
 
 
 # Bandwidth use
@@ -139,14 +137,22 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 
 
-# Running the server
+# Starting the server
 
 
-* **Windows users** - Start the server using the entry for "Jamulus server" in the Windows start menu.
+* **Windows users** - Use the "Jamulus Server" icon in the Windows Start menu.
 
-* **macOS users** - Double-click the "Jamulus server" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).
+* **macOS users** - Double-click the "Jamulus Server" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).
 
-* **Linux users** - Please refer to the [GUI server instructions](Server-Linux#running-a-server-with-the-gui).
+* **Linux users** 
+
+If you have installed the Jamulus client, you can run it in server mode by running Jamulus with the `-s` option as follows:
+
+1. Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros).
+1. Assuming Jamulus is in `/usr/local/bin`, type `jamulus -s`
+
+Hit return and you should see the server control window. You can stop the server by closing the server window, or by using `CTRL+C` in the terminal.
+
 
 ## Server Setup
 
@@ -156,12 +162,12 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 By default, you will be running a private server and need to [read these instructions](Running-a-Private-Server) to have others connect to you in this mode.
 
-When checking this, you should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available.
+When making your server public, you should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available.
 
 
 ### Genre
 
-Because there is a limit of 150 servers per directory server, you need to select which directory server you want to advertise your server on. Select a genre if you intend to limit players to that style (players can then see your server in their genre list). This will make your server appear in the relevant server list for clients.
+Because there is a limit of 150 servers per Directory, you need to select which Directory Server you want to advertise your server on. Select a genre if you intend to limit players to that style (players can then see your server in their genre list). This will make your server appear in the relevant server list for clients.
 
 
 ### My Server Info
@@ -179,9 +185,9 @@ The text entered here appears to all users when they join the server (the chat w
 
 ### Recording Directory
 
-This sets the path to where server's recording will be stored. With this path set, the "Enable Jam Recoder" function in the Server Setup tab will make recording start once the first person connects to the server, and stops when the last person leaves. Use the "New Recording" button to create a new sub-directory in which the recordings will be stored. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
+This sets the path to where server's recording will be stored. With this path set, the "Enable Jam Recoder" function in the Server Setup tab will make recording start once the first person connects to the server, and stops when the last person leaves. Use the "New Recording" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
 
-_Note: When your server is recording, clients will display a message that recording is on._
+**Note**: When your server is recording, clients will display a message that recording is on.
 
 ### Delay panning
 
@@ -220,7 +226,7 @@ Note also that your home router may also change the IP address of the machine th
 
 # Running a headless Linux server 
 
-Those wishing to run a "headless" server, typically on a Linux cloud host or Raspberry Pi should read this guide. [link] 
+Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).   
 
 # Command line options
 
@@ -229,29 +235,35 @@ Most common functions in Jamulus can be set using the GUI, but these and others 
 For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose "Properties" > Target. Add the necessary arguments to Jamulus.exe:
 
 ```shell
-"C:\Program Files (x86)\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini"
+"C:\Program Files (x86)\Jamulus\Jamulus.exe" --serverbindip 192.168.0.100 
 ```
 
 For macOS, start a Terminal window and run Jamulus with the desired options like this:
 
 ```shell
- /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
+ /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100 
 ```
 
-### Available options
+**Note**: Command-line options will not alter settings made in the GUI.
 
-- `-d`  or `--discononquit`   Disconnect all clients on quit
-- `-e`  or `--directoryserver`  Make the server public and sets its genre. See also `-o` See [server types](Choosing-a-Server-Type#3-directory)  
-- `-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory servers only. [See note](Choosing-a-Server-Type#3-directory)  
+- `-d`  or `--discononquit`   Disconnect all clients on quit. Normally, when a server is stopped or restarted, any clients that have not used their "Disconnect" buttons will re-establish connection when the server comes back up again. Using this option forces clients to manually re-establish their connections to the server.  
+- `-e`  or `--directoryserver`  Make the server public and sets its genre (see also `-o`). See [server types](#server-types) for further information.  
+- `-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  
 -  `-F`  or `--fastupdate`     Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients. 
 -  `-l`  or `--log`            Enable logging, set path and file name                                                                    
 - `-L`  or `--licence`        Show an agreement window before users can connect
 - `-m`  or `--htmlstatus`     Enable HTML status file, set path and file name 
 - `-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only 
-- `-P`  or `--delaypan`       Start with delay panning enabled See [Server Setup](Server-Win-Mac#other-options) 
-- `-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Server Setup](Server-Win-Mac#recording).  
+- `-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning)) 
+- `-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  
 - `--norecord`       Disable recording when enabled by default by `-R`                                                 
+- `-s` or `--server` Start in server mode
 - `--serverbindip`  Specify the IP address to bind to              
+-  `-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more clients
+-  `-u` or `--numchannels`   Maximum number of channels (clients)
+-  `-w` or `--welcomemessage`  Welcome message on connect
+-  `-z` or `--startminimized`  Start minimizied
+-  `--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)
 
 {% include_relative Shared-Commands.md %}
 {% include_relative QOS-Windows.md %}
@@ -259,25 +271,10 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 # Troubleshooting 
 
-Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers when possible.
+Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers at first to isolate any issues that may in fact be due to client configuration. 
 
-If you are having problems, see this guide [link].
+If you are having problems, [see this guide](Server-Troubleshooting).
  
 
-===
 
 
-## All OK? Get set up!
-
-<div class="fx-row fx-row-start-xs button-container">
-    <a href="Server-Win-Mac" class="button fx-col-100-xs">For Windows or macOS users</a>
-    <a href="Server-Linux" class="button fx-col-100-xs">For Linux users</a>
-</div>
-
-If you want to run a server on a Raspberry Pi, have a look at the [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) by fredsiva.
-
-Server operators may also be interested in downloading [this set of useful tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
-
-## Having problems? Got issues?
-
-See the [Server Troubleshooting FAQ](Server-Troubleshooting)
