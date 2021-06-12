@@ -23,7 +23,7 @@ permalink: "/wiki/Running-a-Server"
 
 The short answer is **no**. For various reasons, you should try to use other people's servers, at least at first while getting your sound set up with the Jamulus client. 
 
-Note that you can have a "private" session with other people on a public server by simply soling each other. You will then not be able to hear anyone else if they enter your server.
+Note that you can have a "private" session with other people on a Public Server by simply soling each other. You will then not be able to hear anyone else if they enter your server.
 
 ### Speed and latency
 
@@ -31,7 +31,7 @@ Many people attribute problems to the server that are in fact problems with the 
 
 **_The capability of the server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**
 
-If you plan to be playing regularly with the same people, **you are strongly advised** to first make sure that each member of the group is set up to use Jamulus properly. Do this by finding a public server with a reasonable ping time for all of you (20 ms or less perhaps), all connect to that and work to fix any individual issues (verifying that they can [follow Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) in particular). Use the solo technique above to prevent being interrupted if needed.
+If you plan to be playing regularly with the same people, **you are strongly advised** to first make sure that each member of the group is set up to use Jamulus properly. Do this by finding a Public Server with a reasonable ping time for all of you (20 ms or less perhaps), all connect to that and work to fix any individual issues (verifying that they can [follow Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) in particular). Use the solo technique above to prevent being interrupted if needed.
 
 Once any issues with musicians have been solved in this way, you can then investigate hosting your own server either at home or on a cloud host such as Amazon, which may result in better latency than servers run at home. For example, [see this guide](https://www.facebook.com/notes/jamulus-worldjam/howto-idiots-guide-to-installing-or-upgrading-a-jamulus-server-on-amazon-aws-lig/818091045662521/) for using AWS Lightsail, by Jamulus user [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_)
 
@@ -48,7 +48,7 @@ A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800
 
 - Running a server may require you to adjust any firewalls running on or outside of your machine or cloud host.
 
-- Running a **private server at home** (but not a public one) will require you to [port forward](#running-a-private-server) on your router.
+- Running a Private Server at home (but not a public one) will require you to [port forward](#running-a-private-server) on your router.
 
 - Jamulus doesn't currently support IPv6
 
@@ -64,34 +64,34 @@ Use this mode when you want anyone to join your server, whoever they are.
 Your server will be listed in the Directory that clients use by default. Musicians can then discover and connect to your server.
 
 
-**Note**: It is **not** necessary to port-forward or otherwise configure your router to run a public server. 
+**Note**: It is **not** necessary to port-forward or otherwise configure your router to run a Public Server. 
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus public server">
-<figcaption>How public servers work</figcaption>
+	<img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus Public Server">
+<figcaption>How Public Servers work</figcaption>
 </figure>
 
 
 
 ### 2. Private
 
-This is the default when starting a server for the first time. Private servers are not listed by Directories, so only musicians who know your server's address to will be able to connect to it. This is useful because Jamulus does not (in any server mode) let you control who can connect to a server. 
+This is the default when starting a server for the first time. Private Servers are not listed by Directories, so only musicians who know your server's address to will be able to connect to it. This is useful because Jamulus does not (in any server mode) let you control who can connect to a server. 
 
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus private server">
-	<figcaption>How private servers work</figcaption>
+	<img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus Private Server">
+	<figcaption>How Private Servers work</figcaption>
 </figure>
 
 
 
 ### 3. Directory
 
-For when you want to run a number of private servers, possibly also behind a firewall or on a LAN. Examples include online events, music associations, sectional rehearsals or music lessons for schools. 
+For when you want to run a number of Private Servers, possibly also behind a firewall or on a LAN. Examples include online events, music associations, sectional rehearsals or music lessons for schools. 
 
 To view servers listed by a custom Directory Server, musicians must enter the address in their client’s "Custom Directory Server" settings field.  They will then see a Connection Setup list which is generated by your Directory.
 
-Normal server operators can register with your Directory so their servers can show up in your server list by setting your Directory address as their `--directoryserver` option at startup.
+Up to 150 servers can then register with your Directory by setting your Directory address in their `--directoryserver` option at startup. 
 
 To run a server as a Directory, it should be configured with `--directoryserver localhost` (that is, making itself the Directory to query for servers).
 
@@ -137,7 +137,7 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 
 
-# Starting the server
+# Starting a server
 
 
 * **Windows users** - Use the "Jamulus Server" icon in the Windows Start menu.
@@ -160,7 +160,7 @@ Hit return and you should see the server control window. You can stop the server
 
 ### Make My Server Public 
 
-By default, you will be running a private server and need to [read these instructions](#running-a-private-server) to have others connect to you in this mode.
+By default, you will be running a Private Server and need to [read these instructions](#running-a-private-server) to have others connect to you in this mode.
 
 When making your server public, you should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available.
 
@@ -195,7 +195,7 @@ This option uses small differences in sound arrival time between the two ears. I
 
 ### Custom Central Server Address
 
-Leave this field empty unless you need to list your server on a [private central server](#3-directory)
+Leave this field empty unless you need to list your server on a [private Central Server](#3-directory)
 
 
 ### Start Minimised 
@@ -204,7 +204,7 @@ Leave this field empty unless you need to list your server on a [private central
 
 
 
-# Running a private server
+# Running a Private Server
 
 It is highly recommended to test your server in **public mode first** so as to narrow down any subsequent problems in private mode.
 
