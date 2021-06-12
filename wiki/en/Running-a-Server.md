@@ -160,7 +160,7 @@ Hit return and you should see the server control window. You can stop the server
 
 ### Make My Server Public 
 
-By default, you will be running a private server and need to [read these instructions](Running-a-Private-Server) to have others connect to you in this mode.
+By default, you will be running a private server and need to [read these instructions](#running-a-private-server) to have others connect to you in this mode.
 
 When making your server public, you should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available.
 
@@ -195,7 +195,7 @@ This option uses small differences in sound arrival time between the two ears. I
 
 ### Custom Central Server Address
 
-Leave this field empty unless you need to list your server on a [private central server](Choosing-a-Server-Type#3-directory)
+Leave this field empty unless you need to list your server on a [private central server](#3-directory)
 
 
 ### Start Minimised 
