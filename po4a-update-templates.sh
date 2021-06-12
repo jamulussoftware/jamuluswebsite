@@ -30,13 +30,13 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo "Error: please install po4a." >&2
+    echo Error: please install po4a. >&2
     exit 1
 fi
 
 # Check if source document folder exists in the right place
 if [ ! -d "$SRC_DIR" ] ; then
-    echo "Error: please run this script from the root folder"
+    echo Error: please run this script from the root folder. >&2
     exit 1
 fi
 
@@ -51,10 +51,10 @@ do
     dirname=$(dirname "$file")
     path="${dirname#$SRC_DIR/}"
 
-    if [ "$dirname" = "$SRC_DIR" ]; then
-        potname="$basename".pot
+    if [ "$dirname" = "$SRC_DIR" ] ; then
+        potname="$basename.pot"
     else
-        potname="$path/$basename".pot
+        potname="$path/$basename.pot"
         mkdir -p "$POT_DIR/$path"
     fi
 
@@ -65,7 +65,7 @@ do
         --master-charset "UTF-8" \
         --po "$POT_DIR/$potname"
 
-    for lang in $(ls "$PO_DIR" ); do
+    for lang in $(ls "$PO_DIR" ) ; do
 
         po_file="$PO_DIR/$lang/${potname%.pot}.po"
 
@@ -77,17 +77,17 @@ do
             --master "$file" \
             --master-charset "UTF-8" \
             --po "$po_file" ; then
-        echo ""
-        echo "Error updating $lang PO file for: $adoc_file"
+        echo ''
+        echo Error updating "$lang" PO file for: "$adoc_file"
 
         fi
     done
 
 done <   <(find -L "$SRC_DIR" -name "*.md" -print0)
 
-echo ""
-echo "REMOVE TEMPORARY FILES"
+echo ''
+echo 'REMOVE TEMPORARY FILES'
 
-for lang in $(ls "$PO_DIR" ); do
-	rm "./translator-files/l10n/po/$lang/"*.po~
+for lang in $(ls "$PO_DIR" ) ; do
+	rm "$PO_DIR/$lang/"*.po~
 done
