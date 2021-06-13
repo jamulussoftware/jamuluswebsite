@@ -11,7 +11,7 @@ permalink: "/wiki/Server-Linux"
 
 The following is for running Jamulus as a "pure" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd. 
 
-If you want to run a server on a Raspberry Pi, this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) is maintained by Jamulus user fredsiva. 
+If you want to run a server on a Raspberry Pi, you will need to [compile from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). See also this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) maintained by Jamulus user fredsiva. 
 
 1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
 1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
