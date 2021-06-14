@@ -37,7 +37,7 @@ Once any issues with musicians have been solved in this way, you can then invest
 
 ### Bandwidth – do you have enough?
 
-A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800 Kbit/s (0.8 Mbit/s) up and down. So if you have a 10 Mbit/s down and 1 Mbit/s up broadband connection, **you may start running out of bandwidth if a fifth player joins**, particularly if other musicians choose settings that increase their usage. You may want to [check that you have enough speed](https://fast.com) for that. You can read more about network requirements at different quality settings later in this document.
+Unless you plan on hosting more than about 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up), then you are unlikely to run out of bandwidth. You can read more about network requirements at different quality settings later in this document.
 
 
 ### In general
@@ -48,7 +48,7 @@ A typical jam might have 4 people, for which you would need 200 Kbit/s * 4 = 800
 
 - Running a server may require you to adjust any firewalls running on or outside of your machine or cloud host.
 
-- Running a Private Server at home (but not a public one) will require you to [port forward](#running-a-private-server) on your router.
+- Running a Private Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Private Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode. 
 
 - Jamulus doesn't currently support IPv6
 
