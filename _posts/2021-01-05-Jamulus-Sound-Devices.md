@@ -147,7 +147,7 @@ The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com
 
 **macOS**: Should work.
 
-**Linux**: Not yet tested.
+**Linux**: Works great, as soon as you manage to route 2 of the 18 inputs and outputs through QJackCtl and the XR18-settings
 
 ***
 
