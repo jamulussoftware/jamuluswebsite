@@ -292,7 +292,7 @@ Most common functions in Jamulus can be set using the GUI, but these and others 
 For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose "Properties" > Target. Add the necessary arguments to Jamulus.exe:
 
 ```shell
-"C:\Program Files (x86)\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini"
+"C:\Program Files\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini"
 ```
 
 For macOS, start a Terminal window and run Jamulus with the desired options like this:
@@ -310,4 +310,4 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 -  `--ctrlmidich`  MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f*][;p*][;s*][;m*]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) 
 - `--clientname`  Window title and JACK client name 
 {% include_relative Shared-Commands.md %}
-{% include_relative QOS-Windows.md %}
+
