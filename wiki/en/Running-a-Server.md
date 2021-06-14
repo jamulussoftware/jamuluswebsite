@@ -193,9 +193,9 @@ This sets the path to where server's recording will be stored. With this path se
 
 This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal "volume" panning. Note that to achieve the effect, all clients should be set to 'mono in / stereo out' (or to 'stereo', but only if transmitting a stereo signal).
 
-### Custom Central Server Address
+### Custom Directory Server Address
 
-Leave this field empty unless you need to list your server on a [private Central Server](#3-directory)
+Leave this field empty unless you need to list your server on a [private Directory](#3-directory)
 
 
 ### Start Minimised 
