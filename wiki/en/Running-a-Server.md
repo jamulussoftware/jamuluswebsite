@@ -23,7 +23,7 @@ permalink: "/wiki/Running-a-Server"
 
 The short answer is **no**. For various reasons, you should try to use other people's servers, at least at first while getting your sound set up with the Jamulus client. 
 
-Note that you can have a "private" session with other people on a Public Server by simply soling each other. You will then not be able to hear anyone else if they enter your server.
+Note that you can have a "private" session with other people on a Public Server by simply soloing each other. You will then not be able to hear anyone else if they enter your server.
 
 ### Speed and latency
 
