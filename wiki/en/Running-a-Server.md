@@ -235,7 +235,7 @@ Most common functions in Jamulus can be set using the GUI, but these and others 
 For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose "Properties" > Target. Add the necessary arguments to Jamulus.exe:
 
 ```shell
-"C:\Program Files (x86)\Jamulus\Jamulus.exe" --serverbindip 192.168.0.100 
+"C:\Program Files\Jamulus\Jamulus.exe" --serverbindip 192.168.0.100 
 ```
 
 For macOS, start a Terminal window and run Jamulus with the desired options like this:
@@ -266,7 +266,6 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 -  `--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)
 
 {% include_relative Shared-Commands.md %}
-{% include_relative QOS-Windows.md %}
 
 
 # Troubleshooting 
