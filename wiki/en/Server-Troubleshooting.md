@@ -8,6 +8,16 @@ permalink: "/wiki/Server-Troubleshooting"
 {% include breadcrumb.html root="More" branch1="Server Administration" branch1-url="Running-a-Server" %}
 
 # Server Troubleshooting
+ {:.no_toc}
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
 
 ## Servers - Public
 
