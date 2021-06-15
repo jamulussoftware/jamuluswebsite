@@ -20,3 +20,4 @@ In order to run the `po4a-update-templates.sh` and `po4a-create-all-targets.sh` 
 
 - If you want something displayed on a new line immediately below one that does not end with a period, the second line must start with a space; e.g. if you want a line break after } or ). For code blocks introduced with ``` or ~~~, these characters must be followed by a line break (enter) and a space at the start of the next line. The closing formatting characters should be on their own line too.
 - Any corrections made to languages other than EN **must** be done to their .po files. Directly editing .md files won't break anything but any changes done that way will be lost the next time `po4a-create-all-targets.sh` is run.
+- Headings introduced with # must have double spacing before the text body.
