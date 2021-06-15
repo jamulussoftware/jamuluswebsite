@@ -70,12 +70,12 @@ to the right and move the fader upwards until the desired reverb level is reache
 ## Chat
 
 Opens the chat window. Text entered is sent to
-all connected clients. If a new chat message arrives and the Chat dialoge is not already open, it will
+all connected clients. If a new chat message arrives and the Chat dialogue is not already open, it will
 open automatically for all clients.
 
 ## Connect/disconnect button
 
-Opens a dialoge where you can select a server to connect to. If you are connected,
+Opens a dialogue where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a server connection window"></figure>
