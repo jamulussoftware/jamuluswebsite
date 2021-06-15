@@ -146,10 +146,7 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 * **Linux users** 
 
-If you have installed the Jamulus client, you can run it in server mode by running Jamulus with the `-s` option as follows:
-
-1. Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros).
-1. Assuming Jamulus is in `/usr/local/bin`, type `jamulus -s`
+Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros) and type `jamulus -s` 
 
 Hit return and you should see the server control window. You can stop the server by closing the server window, or by using `CTRL+C` in the terminal.
 
