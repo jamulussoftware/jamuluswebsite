@@ -265,8 +265,7 @@ Increases the gain from your device. Use this if your device delivers a gain tha
 
 ### Feedback Protection
 
-Attempts to detect audio feedback loops. Once detected, this feature will activate the "Mute Myself" button and show an explanation message to enable you to fix the problem.
-
+Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the "Mute Myself" button to mute you in your own mix. 
 
 ### Input Balance
 
