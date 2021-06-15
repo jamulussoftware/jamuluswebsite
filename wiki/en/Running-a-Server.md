@@ -63,9 +63,6 @@ Use this mode when you want anyone to join your server, whoever they are.
 
 Your server will be listed in the Directory that clients use by default. Musicians can then discover and connect to your server.
 
-
-**Note**: It is **not** necessary to port-forward or otherwise configure your router to run a Public Server. 
-
 <figure>
 	<img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus Public Server">
 <figcaption>How Public Servers work</figcaption>
