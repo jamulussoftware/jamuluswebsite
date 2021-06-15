@@ -19,15 +19,15 @@ If you want to run a server on a Raspberry Pi, you will need to [compile from so
 1. Enable the headless server process via systemd: `sudo systemctl enable jamulus-headless`
 1. Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running a private server).
 1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
-1. Check all is well with `service jamulus-headless status` (hit `q` to get back to the command prompt).
+1. Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt).
 
 You may also be interested in downloading [this set of useful tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 
 ## Notes
 
-You can control Jamulus with the `service` command. For example, to stop the server cleanly:
+You can control Jamulus with the `systemctl` command. For example, to stop the server cleanly:
 
-`sudo service jamulus-headless stop`
+`sudo systemctl stop jamulus-headless`
 
 ### Running in public mode
 
