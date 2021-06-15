@@ -19,12 +19,12 @@ SRC_DIR="./wiki/en"
 
 # Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
-	PO_DIR="./translator-files/l10n/po"
+	PO_DIR="./translator-files/po"
 fi
 
 # Directory where the translated file folders will be
 if [ -z "$PUB_DIR" ] ; then
-	PUB_DIR="./wiki/"
+	PUB_DIR="./wiki"
 fi
 
 
@@ -48,7 +48,7 @@ fi
 # REMOVE .md FILE FOLDERS BEFORE REGENERATING THEM
 ##################################################
 
-for lang in $(ls "$PO_DIR" ) ; do
+for lang in $(ls "$PO_DIR") ; do
 	rm -rf "$PUB_DIR/$lang"
 	echo "$lang" folder deleted
 done
