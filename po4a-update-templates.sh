@@ -34,9 +34,9 @@ if ! [ -d "$SRC_DIR" ] ; then
     exit 1
 fi
 
-############################################
-# CREATE/UPDATE .pot TEMPLATES and .po files
-############################################
+####################################
+# CREATE/UPDATE .po FILES
+####################################
 
 while IFS= read -r -d '' file ; do
     # Determine target file/folder names
