@@ -71,7 +71,9 @@ echo Removing temporary files
 for lang in $(ls "$PO_DIR") ; do
 
     # Check if the temporary files exist before removing them to prevent misleading error message
-    if [ -f "$PO_DIR/$lang/*.po~" ] ; then
+    temp_file="$PO_DIR/$lang/*.po~"
+
+    if ls $temp_file 1> /dev/null 2>&1 ; then
 	    rm "$PO_DIR/$lang/"*.po~
     fi
 done
