@@ -61,8 +61,7 @@ use_po_module () {
 	lang=$1
 
     # Determine target file/folder names
-	while IFS= read -r -d '' file
-	do
+	while IFS= read -r -d '' file ; do
 		basename="$(basename -s .md "$file")"
 		dirname=$(dirname "$file")
 		path="${dirname#$SRC_DIR/}"
@@ -84,15 +83,13 @@ use_po_module () {
 			--localized "$localized_file" --localized-charset "UTF-8" \
 			--keep "$THRESHOLD"
 	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
-
 }
 
 ##########################################################
 # LOOK INTO EACH .po FILE DIR AND RUN PO4A ON EACH OF THEM
 ##########################################################
 
-while IFS= read -r -d '' dir
-do
+while IFS= read -r -d '' dir ; do
 	lang=$(basename -s .md "$dir")
 	echo "$lang"
 	use_po_module "$lang"   

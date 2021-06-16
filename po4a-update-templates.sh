@@ -29,7 +29,7 @@ if ! [ -x "$(command -v po4a)" ] ; then
 fi
 
 # Check if source document folder exists in the right place
-if [ ! -d "$SRC_DIR" ] ; then
+if ! [ -d "$SRC_DIR" ] ; then
     echo Error: please run this script from the root folder. >&2
     exit 1
 fi
@@ -38,8 +38,7 @@ fi
 # CREATE/UPDATE .pot TEMPLATES and .po files
 ############################################
 
-while IFS= read -r -d '' file
-do
+while IFS= read -r -d '' file ; do
     # Determine target file/folder names
     basename=$(basename -s .md "$file")
 
@@ -51,7 +50,7 @@ do
         sed -i 's/Content-Type: text\/plain; charset=CHARSET/Content-Type: text\/plain; charset=UTF-8/g' "$po_file"
         
         # If a new file has been added to /wiki/en/, add message after sed error to clarify it will be created
-        if ! test -f "$po_file" ; then
+        if ! [ -f "$po_file" ] ; then
             echo creating "$po_file"
         fi
 
@@ -62,16 +61,17 @@ do
             --po "$po_file" ; then
         echo ''
         echo Error updating "$lang" PO file for: "$adoc_file"
-
         fi
-
     done
-
 done <   <(find -L "$SRC_DIR" -name "*.md" -print0)
 
-echo  
-echo REMOVE TEMPORARY FILES
+echo '' 
+echo Removing temporary files
 
 for lang in $(ls "$PO_DIR") ; do
-	rm "$PO_DIR/$lang/"*.po~
+
+    # Check if the temporary files exist before removing them to prevent misleading error message
+    if [ -f "$PO_DIR/$lang/*.po~" ] ; then
+	    rm "$PO_DIR/$lang/"*.po~
+    fi
 done
