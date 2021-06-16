@@ -65,7 +65,7 @@ while IFS= read -r -d '' file ; do
     done
 done <   <(find -L "$SRC_DIR" -name "*.md" -print0)
 
-echo '' 
+echo ''
 echo Removing temporary files
 
 for lang in $(ls "$PO_DIR") ; do
