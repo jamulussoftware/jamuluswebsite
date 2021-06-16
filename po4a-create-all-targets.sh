@@ -72,7 +72,7 @@ use_po_module () {
 			localized_file="$PUB_DIR/$lang/$path/$basename.md"
 		fi
 
-        # Run po4a-translate and create target files
+		# Run po4a-translate and create target files
 		po4a-translate \
 			--format asciidoc \
 			--master "$file" \
@@ -81,12 +81,12 @@ use_po_module () {
 			--localized "$localized_file" --localized-charset "UTF-8" \
 			--keep "$THRESHOLD"
 
-        # Display message if translated file is created
-        trans_file="$PUB_DIR/$lang/$basename.md"
+		# Display message if translated file is created
+		trans_file="$PUB_DIR/$lang/$basename.md"
 
-        if [ -f $trans_file ] ; then
-            echo "$basename".md translated into "$lang"
-        fi
+		if [ -f $trans_file ] ; then
+		    echo "$basename".md translated into "$lang"
+		fi
 	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
 }
 
