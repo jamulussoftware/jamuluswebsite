@@ -16,7 +16,7 @@ This manual documents the Jamulus client application for use by musicians and si
 * TOC
  {:toc}
 
-</details>  
+</details> 
 
 # Main Window
 
@@ -38,7 +38,7 @@ This manual documents the Jamulus client application for use by musicians and si
 
 **Yellow** - A session is still possible but it may be harder to play
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png"  style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
 
 **Red** - The delay is too large for jamming
 
@@ -52,8 +52,8 @@ This manual documents the Jamulus client application for use by musicians and si
 
 ## Input
 
-This shows the level of the two stereo channels for your audio input.
-Make sure not to clip the input signal to avoid distortions of the audio signal (the LEDs will indicate clipping when it occurs).
+Shows the level of the two stereo channels for your audio input.
+Make sure not to clip the input signal to avoid distortions of your sound (the LEDs will indicate clipping when it occurs).
 
 ## Mute Myself button
 
@@ -61,7 +61,7 @@ Cuts your audio stream to the server so that you will be able to hear yourself a
 
 ## Reverb effect
 
-Reverb can be applied to one local mono audio channel or to both channels in stereo mode.
+Adds reverb to your local mono audio channel, or to both channels in stereo mode.
 The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed
 in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector
 to the right and move the fader upwards until the desired reverb level is reached.
@@ -69,13 +69,13 @@ to the right and move the fader upwards until the desired reverb level is reache
 
 ## Chat
 
-The chat text entered in that dialog is sent to
-all connected clients. If a new chat message arrives and the Chat dialog is not already open, it will
+Opens the chat window. Text entered is sent to
+all connected clients. If a new chat message arrives and the Chat dialogue is not already open, it will
 open automatically for all clients.
 
 ## Connect/disconnect button
 
-Opens a dialog where you can select a server to connect to. If you are connected,
+Opens a dialogue where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a server connection window"></figure>
@@ -101,9 +101,19 @@ If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you
 
 If you see a "mute" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero.
 
-Using the **Mute button** prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected.
+### Grp button
 
-The **Solo button** allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a "muted" icon above your fader.
+Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others Up to 8 groups can be defined.
+
+### Mute button
+
+Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected. 
+
+Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using "[Mute Myself](#mute-myself-button)".
+
+### Solo button
+
+Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a "muted" icon above your fader.
 
 Users are listed left to right in the order that they connect. You can change the sort order using the Edit option in the application menu.
 
@@ -154,10 +164,14 @@ If the selected sound card device offers more than one input or output channel, 
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
 a different actual sound card channel can be selected.
 
+
 ### Audio channels
 
-Selects the number of audio channels to be used for communication between client and server. There are three modes
-available:
+Selects the number of audio channels to be used for communication between client and server. 
+
+**Note**: It is preferable to run separate client instances per voice/instrument, with each client given its own ini file, rather than using this built-in mono pair to stereo mixer.
+
+There are three modes available:
 
 **Mono** and **Stereo** modes use one and two audio channels respectively.
 
@@ -251,11 +265,48 @@ Increases the gain from your device. Use this if your device delivers a gain tha
 
 ### Feedback Protection
 
-Attempts to detect audio feedback loops. Once detected, this feature will activate the "Mute Myself" button and show an explanation message to enable you to fix the problem.
-
+Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the "Mute Myself" button to mute you in your own mix. 
 
 ### Input Balance
 
 Controls the relative levels of the left and right local audio channels. For a mono signal
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
 an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
+
+# Menu commands
+
+### File > Load/Save Mixer Channels Setup
+ 
+You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window.
+
+
+### Edit > Auto-Adjust All Faders 
+
+Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece. 
+
+# Command Line Options
+
+Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system.
+
+For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose "Properties" > Target. Add the necessary arguments to Jamulus.exe:
+
+```shell
+ "C:\Program Files\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini"
+```
+
+For macOS, start a Terminal window and run Jamulus with the desired options like this:
+
+```shell
+ /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
+```
+
+**Note**: Command-line options will not alter settings made in the GUI. 
+
+- `-M` or `--mutestream`  Starts Jamulus in muted state                                                      
+- `--mutemyown`  Mute me in my personal mix ("headless" mode only)                                                      
+-  `-c` or `--connect`  Connect to given server address on startup, format `address[:port]`  
+-  `-j` or `--nojackconnect`  Disable auto JACK connections  
+-  `--ctrlmidich`  MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f*][;p*][;s*][;m*]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) 
+- `--clientname`  Window title and JACK client name 
+{% include_relative Shared-Commands.md %}
+

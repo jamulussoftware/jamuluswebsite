@@ -6,6 +6,16 @@ permalink: "/wiki/Client-Troubleshooting"
 ---
 
 # Troubleshooting
+ {:.no_toc}
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
 
 ### Don’t hear any sound/Others don’t hear you?
 

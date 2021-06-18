@@ -6,8 +6,18 @@ permalink: "/wiki/FAQ"
 ---
 
 # Jamulus FAQ
+ {:.no_toc}
 
-This is an overview of common questions. For common problems and their solutions, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
+
+**For common problems and their solutions when using Jamulus, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.**
 
 
 ### Is there a metronome, synchronization, or some other way of keeping in time?
@@ -16,7 +26,7 @@ No. Musicians on a Jamulus server simply play in real time time together as they
 
 ### How do I know if I can join a server? Are there rules?
 
-In general, if somebody sets up a public server, then [by definition](/wiki/Choosing-a-Server-Type) they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
+In general, if somebody sets up a public server they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
 
 You can also set up a private server on Jamulus and give others your address to connect to that. Have a look at [this page for more information](/wiki/Running-a-Server).
 
@@ -34,7 +44,7 @@ Of course, if you are playing an acoustic instrument, or are a singer, it will b
 
 ### Do I need a fast Internet connection?
 
-For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your upstream bandwidth is lower than about 5 Mbit/s. [More information on network requirements here](/wiki/Network-Requirements).
+For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your upstream bandwidth is lower than about 5 Mbit/s. 
 
 ### Do I need to run a server?
 
@@ -50,3 +60,14 @@ Jamulus works on the client-server principle. Everybody’s audio is sent to a s
 ### Why doesn't Jamulus provide video support?
 
 Adding video support adds a lot of complexity. You can use other software like Jitsi or Zoom if you want to see others when playing (or have an "audience"), but the video will be significantly behind the Jamulus audio.
+
+
+## Server FAQ
+
+### Why do public servers not need port forwarding?
+
+Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In public server mode, when your Jamulus server connects to a Directory Server it of course initiates an outbound connection. From then on, the Directory Server sends (established/related) connection “pings” (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall.
+
+However, in private mode, clients have to **initiate** connections into the server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding.
+
+

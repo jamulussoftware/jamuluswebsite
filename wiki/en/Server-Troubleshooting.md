@@ -5,15 +5,25 @@ lang: "en"
 permalink: "/wiki/Server-Troubleshooting"
 ---
 
-{% include breadcrumb.html root="Using Jamulus" branch1="Running a Server" branch1-url="Running-a-Server" %}
+{% include breadcrumb.html root="More" branch1="Server Administration" branch1-url="Running-a-Server" %}
 
-# Troubleshooting
+# Server Troubleshooting
+ {:.no_toc}
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
 
 ## Servers - Public
 
 ### Why doesn't my server show up in the list? Why isn't it registering?
 
-If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see this page](Command-Line-Options) on how to start your client with a config option).
+If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your client with a config option).
 
 If you are seeing a message that says the server is full, please [see this note](Directory-Servers) on Directory Servers.
 
@@ -31,7 +41,7 @@ This should be your **public** IP address (find that with [Google](https://www.g
 
 ### What port numbers can I use?
 
-Keep the default UDP ports. The actual default port is documented by the [command line](Command-Line-Options). At the time of writing this documentation, the port number is **22124**.
+You can set your server to listen on a custom port with the `--port` option. If you you this, you will need to tell people which port to connect connect on. They will need to append the port number the the address of your server in the format `[serverAddress]:[portNumber]`.
 
 ### Is a private server a direct server without contact to the Jamulus Directory Server?
 
