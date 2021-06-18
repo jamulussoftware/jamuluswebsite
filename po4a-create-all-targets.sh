@@ -19,12 +19,12 @@ SRC_DIR="./wiki/en"
 
 # Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
-	PO_DIR="./translator-files/l10n/po"
+	PO_DIR="./translator-files/po"
 fi
 
 # Directory where the translated file folders will be
 if [ -z "$PUB_DIR" ] ; then
-	PUB_DIR="./wiki/"
+	PUB_DIR="./wiki"
 fi
 
 
@@ -48,7 +48,7 @@ fi
 # REMOVE .md FILE FOLDERS BEFORE REGENERATING THEM
 ##################################################
 
-for lang in $(ls "$PO_DIR" ) ; do
+for lang in $(ls "$PO_DIR") ; do
 	rm -rf "$PUB_DIR/$lang"
 	echo "$lang" folder deleted
 done
@@ -61,38 +61,40 @@ use_po_module () {
 	lang=$1
 
     # Determine target file/folder names
-	while IFS= read -r -d '' file
-	do
+	while IFS= read -r -d '' file ; do
 		basename="$(basename -s .md "$file")"
 		dirname=$(dirname "$file")
 		path="${dirname#$SRC_DIR/}"
 
 		if [ "$dirname" = "$SRC_DIR" ] ; then
-			potname=${basename}
 			localized_file="$PUB_DIR/$lang/$basename.md"
 		else
-			potname=$path/$basename
 			localized_file="$PUB_DIR/$lang/$path/$basename.md"
 		fi
 
-        # Run po4a-translate and create target files
+		# Run po4a-translate and create target files
 		po4a-translate \
 			--format asciidoc \
 			--master "$file" \
 			--master-charset "UTF-8" \
-			--po "$PO_DIR/$lang/$potname.po" \
+			--po "$PO_DIR/$lang/$basename.po" \
 			--localized "$localized_file" --localized-charset "UTF-8" \
 			--keep "$THRESHOLD"
-	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
 
+		# Display message if translated file is created
+		trans_file="$PUB_DIR/$lang/$basename.md"
+
+		if [ -f $trans_file ] ; then
+		    echo "$basename".md translated into "$lang"
+		fi
+	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
 }
 
 ##########################################################
 # LOOK INTO EACH .po FILE DIR AND RUN PO4A ON EACH OF THEM
 ##########################################################
 
-while IFS= read -r -d '' dir
-do
+while IFS= read -r -d '' dir ; do
 	lang=$(basename -s .md "$dir")
 	echo "$lang"
 	use_po_module "$lang"   
