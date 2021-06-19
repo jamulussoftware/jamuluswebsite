@@ -17,13 +17,17 @@ If you have any questions, please see the [Discussions](https://github.com/jamul
 
 ## Installation
 
-To get Jamulus working with your hardware, please follow the installation guide for your platform:
+To get Jamulus working with your operating system, please follow the installation guide for your platform:
 
 * [Windows](/wiki/Installation-for-Windows)
 * [macOS](/wiki/Installation-for-Macintosh)
 * [Linux](/wiki/Installation-for-Linux)
 
 And for now, close all other applications. It’s best to start simple at first.
+
+## Hardware Setup
+
+If you use external audio hardware, plug that in before you start Jamulus. If you haven't configured your hardware, please see the installation guides mentioned above.
 
 ## Jamulus main window
 
@@ -49,9 +53,9 @@ Fill in at least “Alias/Name” and close the window.
 
 ## Connecting to a server and testing your sound
 
-**Before playing with others, we recommend that you connect to an empty server to test your setup**, and make sure you are listening to the signal coming back from the server (if possible) and not yourself.
-
 Before you connect to a server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal)).
+
+**Before playing with others, we recommend that you connect to an empty server to test your setup**, and make sure you are listening to the signal coming back from the server (if possible) and not yourself.
 
 Now use the “Connect” button in the Jamulus main window to join a server. A window will now open:
 
@@ -60,9 +64,9 @@ Now use the “Connect” button in the Jamulus main window to join a server. A 
   <figcaption>Connect to a server</figcaption>
 </figure>
 
-The most important thing about servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a server with a ping of less than 15ms if you can.
+The most important thing about servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a server with a ping of less than 50ms if you can.
 
-Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
+Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
 
 ## Playing for the first time
 
