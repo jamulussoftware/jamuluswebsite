@@ -226,6 +226,16 @@ _More testing required._
 
 ***
 
+**[Presonus Audiobox USB](https://www.presonus.com/products/AudioBox-USB)** USB digital audio interface
+
+**Windows**: Works great with provided ASIO driver.
+
+**macOS**: Not yet tested.
+
+**Linux**: Works great with ALSA + JACK.
+
+***
+
 **[Presonus Studio 24C](https://www.presonus.com/products/Studio-24c)** USB digital audio interface
 
 **Windows**: Works great with provided ASIO driver. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X Big Sur: `4.1ms`. Note this is **only the interface latency** not the latency in Jamulus)
