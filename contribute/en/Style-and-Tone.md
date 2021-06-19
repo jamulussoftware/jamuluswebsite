@@ -42,14 +42,15 @@ Try not to sound like a robot. Write conversationally, as if you were talking to
 
 
 
-## Capitalisation and reference
+## Capitalisation and references
 
 Headings use sentence case “This is a heading” unless delineated (“Look - This is a heading”).
 
 Nouns use lower case unless they have a formal definition in this style guide (eg “Directory”, “Fader”). The only exception to this is the word “person” or “people” which can remain in lower case.
 
 Refer to UI labels in inverted commas (eg “click on the “mute” button)
-Standard terms
+
+## Standard terms
 
 “Sound card” (not “audio device” or “sound device”) to refer to on-board audio interfaces only. “Your sound card will be listed by default”, “Most computers have compatible sound cards”.
 
