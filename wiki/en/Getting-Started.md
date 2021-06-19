@@ -27,7 +27,7 @@ And for now, close all other applications. It’s best to start simple at first.
 
 ## Hardware Setup
 
-If you use external audio hardware, plug that in before you start Jamulus. If you haven't set it up, please see the installation guides mentioned above.
+If you use external audio hardware, plug that in before you start Jamulus. If you haven't configured your hardware, please see the installation guides mentioned above.
 
 ## Jamulus main window
 
