@@ -1,5 +1,5 @@
 #!/bin/bash
-# You need po4a > 0.63, see https://github.com/mquinson/po4a/releases
+# You need po4a >= 0.63, see https://github.com/mquinson/po4a/releases
 # There is no need for system-wide installation of po4a
 # You may set following variables:
 # SRC_DIR folder for original English .md files
