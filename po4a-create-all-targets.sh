@@ -39,7 +39,7 @@ if ! [ -x "$(command -v po4a)" ] ; then
 fi
 
 # Check if the right version is installed
-if ! [[ $(po4a --version | grep po4a | awk '{print $3}') > 0.63 ]]; then
+if ! [[ $(po4a --version | grep po4a | awk '{print $3}') > 0.63 ]] ; then
 	echo Error: po4a version 0.63 or higher is required. >&2
 	exit 1
 fi
