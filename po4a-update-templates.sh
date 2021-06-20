@@ -24,20 +24,20 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo Error: please install po4a. >&2
-    exit 1
+	echo Error: please install po4a. >&2
+	exit 1
 fi
 
 # Check if the right version is installed
 if ! [[ $(po4a --version | grep po4a | awk '{print $3}') > 0.63 ]]; then
-    echo Error: po4a version 0.63 or higher is required. >&2
-    exit 1
+	echo Error: po4a version 0.63 or higher is required. >&2
+	exit 1
 fi
 
 # Check if source document folder exists in the right place
 if ! [ -d "$SRC_DIR" ] ; then
-    echo Error: please run this script from the root folder. >&2
-    exit 1
+	echo Error: please run this script from the root folder. >&2
+	exit 1
 fi
 
 ####################################
