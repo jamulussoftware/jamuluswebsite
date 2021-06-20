@@ -1,5 +1,5 @@
 #!/bin/bash
-# You need po4a > 0.54, see https://github.com/mquinson/po4a/releases
+# You need po4a > 0.63, see https://github.com/mquinson/po4a/releases
 # There is no need for system-wide installation of po4a
 # You may set the following variables:
 # SRC_DIR folder for original source English .md files
@@ -36,6 +36,12 @@ fi
 if ! [ -x "$(command -v po4a)" ] ; then
 	echo Error: please install po4a. >&2
 	exit 1
+fi
+
+# Check if the right version is installed
+if ! [[ $(po4a --version | grep po4a | awk '{print $3}') > 0.63 ]]; then
+    echo po4a version 0.63 or higher is required. >&2
+    exit 1
 fi
 
 # Check if source document folder exists in the right place

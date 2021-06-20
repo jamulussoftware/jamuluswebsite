@@ -14,7 +14,7 @@ When translated.po files have been submitted and you wish to generate the transl
 
 ### Using po4a locally to update templates/create translated .md files
 
-In order to run the `po4a-update-templates.sh` and `po4a-create-all-targets.sh` scripts locally, you will need to do so on a Linux distro with `po4a` installed. It is available from the official repositories. You can also compile the latest version from [its GitHub page](https://github.com/mquinson/po4a).
+In order to run the `po4a-update-templates.sh` and `po4a-create-all-targets.sh` scripts locally, you will need to do so on a Linux distro with `po4a` installed. The minimum version required is 0.63, which may not be available from official repos, meaning you would have to compile it from [its GitHub page](https://github.com/mquinson/po4a). Instructions can be found there on compiling po4a.
 
 ### Notes:
 
