@@ -7,7 +7,7 @@ This is the content repository for [jamulus.io](https://jamulus.io). Text appear
 
 To make updates or translations for jamulus.io you will need a GitHub account and be familiar with GitHub in general. If you want to get more involved, you’ll need to be familiar with the use of git on the command line, as well as Jekyll. Note that translating the Jamulus application itself is done by a different process, but you are welcome to help with that too. Introduce yourself on the [GitHub Discussion](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
 
-### Please also note that discussions should be in English so as to be open to all. 
+### Please also note that discussions should be in English so as to be open to all.
 
 ## Making changes to the English version
 
@@ -19,15 +19,15 @@ To view the website offline one your own machine, you will need to clone it loca
 
 ## Formatting and style
 
-We use [GitHub markdown](https://guides.github.com/features/mastering-markdown/) to format the basic text. Have a look at the markdown in existing pages for examples. 
+We use [GitHub markdown](https://guides.github.com/features/mastering-markdown/) to format the basic text. Have a look at the markdown in existing pages for examples.
 
-Note that we use British English spelling and grammar conventions. 
+Note that we use British English spelling and grammar conventions.
 
 ## Adding pictures
 
 Use the `{{site.url}}` variable to call an existing image in the corresponding directory for that language. This ensures the correct URL is used:
 
-`<img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" …` 
+`<img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" …`
 
 If you want to add a new image, use .png format if possible, and if it’s not a screenshot, ask about where you should store it. Localised images must go in a directory for that language (see the example for English, above).
 
@@ -35,6 +35,10 @@ If you want to add a new image, use .png format if possible, and if it’s not a
 ## Translating
 
 ### For details on the website translation process, please consult the README file contained in the `translator-files/` folder
+
+### Style and tone
+
+Language on the website should be consistent. Please have a look at our [style and tone guide](https://jamulus.io/contribute/Style-and-Tone).
 
 #### Please note: if your language has no translated documents, please start with the following sections of the website:
 
@@ -55,7 +59,7 @@ We collect changes to the English version of the site on a "next-release" branch
 
 ### Points to note
 
-- Each page on the site has a .md or .html language suffixed version.  Some of the website content is in \_includes/wiki/[langCode]. These files must be translated in order not to break the site. 
+- Each page on the site has a .md or .html language suffixed version.  Some of the website content is in \_includes/wiki/[langCode]. These files must be translated in order not to break the site.
 
 - The homepage (https://jamulus.io/) is located in the repo root and named 1-[langCode]-index.html
 
