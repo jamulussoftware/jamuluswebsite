@@ -44,7 +44,7 @@ Unless you plan on hosting more than about 5 players on a slower-speed home conn
 
 - Consider using a cloud host to get better ping times if you're having problems
 
-- Any server should have at least 1.6GHz CPU frequency and 1GB RAM
+- Any server should have at least 1.6 GHz CPU frequency and 1 GB RAM
 
 - Running a server may require you to adjust any firewalls running on or outside of your machine or cloud host.
 
