@@ -11,7 +11,7 @@ permalink: "/wiki/Hardware-Setup"
 
 ## General info
 
-**For Jamulus to run stable it is recommended to use a PC with at least 1.5GHz CPU frequency.**
+**For Jamulus to run stable it is recommended to use a PC with at least 1.5 GHz CPU frequency.**
 
 **Windows users**: You need to install an ASIO driver. A sound card with a native ASIO driver is recommended. Have a look at the [Windows installation page](Installation-for-Windows) for further information.
 
