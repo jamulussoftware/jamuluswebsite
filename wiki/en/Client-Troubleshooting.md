@@ -41,7 +41,7 @@ Your audio device may not work with the buffer size you selected. Select a bigge
 
 You can test whether you are hearing your signal correctly by doing the following:
 
-1. Run Jamulus and connect to a server with a long ping time (greater than 200ms)
+1. Run Jamulus and connect to a server with a long ping time (greater than 200 ms)
 2. Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus server come back, but significantly delayed.
 3. Click the "Mute" button under your Jamulus name/slider in the main Jamulus mixer window (**NOT** the "Mute Myself" button on the left).
 4. Clap your hands again.
