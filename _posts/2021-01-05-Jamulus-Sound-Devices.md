@@ -19,7 +19,7 @@ Just [edit this page and wait for an approval](https://github.com/jamulussoftwar
 
 ## Audio devices known to work with Jamulus
 
-Your device must support a sample rate of *48kHz (DVD quality)* - which many devices do - and should allow you to listen to the computer’s audio signal. On Windows it’s recommended to choose a device with a *native ASIO driver* - not ASIO4ALL.
+Your device must support a sample rate of *48 kHz (DVD quality)* - which many devices do - and should allow you to listen to the computer’s audio signal. On Windows it’s recommended to choose a device with a *native ASIO driver* - not ASIO4ALL.
 Whether the following devices work or not can *depend on your operating system* (Linux, MacOS, Windows, etc.)!
 
 ### USB/USB-C devices
@@ -80,7 +80,7 @@ _**Note:** The Ammoon AGM04 appears to be a re-branded [ART USBMix4](https://art
 
 ***
 
-**[ART USBMIX4](https://artproaudio.com/product/usbmix4-four-channel-mixer-usb-audio-interface/)**, USB 4-channel compact mixing console (_see above_), lower retail price than the AGM04 in Canada and includes CD-ROM with ART ASIO driver plus 5VDC power adapter for standalone use or when computer USB port cannot supply suffciient juice. Audio from USB can be monitored without the direct feed from the microphone.  
+**[ART USBMIX4](https://artproaudio.com/product/usbmix4-four-channel-mixer-usb-audio-interface/)**, USB 4-channel compact mixing console (_see above_), lower retail price than the AGM04 in Canada and includes CD-ROM with ART ASIO driver plus 5 VDC power adapter for standalone use or when computer USB port cannot supply suffciient juice. Audio from USB can be monitored without the direct feed from the microphone.  
 
 **Windows**: Works well on Windows 10. Latency added via the ART ASIO driver v1.1 = ~14 ms; via ASIO4ALL v2 = ~24 ms
 
@@ -125,7 +125,7 @@ The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com
 
 **Windows**: Works great. [ASIO driver Windows 7 to 10](https://mediadl.musictribe.com/download/software/behringer/UMC/UMC-Driver_4-59-0.zip)
 
-**macOS**: Works great (measured interface latency with Oblique Audio RTL Utility, 48000 64 samples and cable from output to input on Mac OS X Big Sur: `10.625ms`. Note this is **only the interface latency** not the latency in Jamulus)
+**macOS**: Works great (measured interface latency with Oblique Audio RTL Utility, 48000 64 samples and cable from output to input on Mac OS X Big Sur: `10.625 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **Linux**: Works great (measured interface latency of UMC202HD with `alsa_delay hw:1 hw:1 48000 64 2` and cable from output to microphone input on Debian 10: `8.451 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
@@ -180,7 +180,7 @@ _More testing required._
 
 **Windows**: Works great. If you have issues with the buffer size going to 136, download the updated driver version `4.64.15.598` from [http://beta.focusrite.com/](http://beta.focusrite.com/)
 
-**macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X: around `7.5ms`. Note this is **only the interface latency** not the latency in Jamulus)
+**macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000 Hz, 64 samples and cable from output to input on Mac OS X: around `7.5 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **Linux**: works.
 
@@ -206,7 +206,7 @@ _More testing required._
 
 ***
 
-**[M-audio M-track Solo/Duo](https://m-audio.com/m-track-solo, https://m-audio.com/m-track-duo)**, 48-KHz, 2-channel USB Audio Interface
+**[M-audio M-track Solo/Duo](https://m-audio.com/m-track-solo, https://m-audio.com/m-track-duo)**, 48 kHz, 2-channel USB Audio Interface
 
 **Windows**: Works both with dedicated driver (M-Track Solo and Duo Windows Driver v1.0.3) and ASIO4ALL 2.15 Beta 1 with 64 sample buffer size. However, the ASIO4ALL driver results in lower delay of about 5 ms and less audio device buffer jitter.
 
@@ -238,7 +238,7 @@ _More testing required._
 
 **[Presonus Studio 24C](https://www.presonus.com/products/Studio-24c)** USB digital audio interface
 
-**Windows**: Works great with provided ASIO driver. (measured interface latency with Oblique Audio RTL Utility, 48000hz, 64 samples and cable from output to input on Mac OS X Big Sur: `4.1ms`. Note this is **only the interface latency** not the latency in Jamulus)
+**Windows**: Works great with provided ASIO driver. (measured interface latency with Oblique Audio RTL Utility, 48000 Hz, 64 samples and cable from output to input on Mac OS X Big Sur: `4.1 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **macOS**: Works great.
 
@@ -283,7 +283,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **[Yamaha AG03](https://usa.yamaha.com/products/music_production/interfaces/ag_series/index.html)**, USB digital audio/MIDI interface
 
-**Windows**: Tested on *Windows 10* with 64 sample buffer and am getting great sound and total latency around 15ms over the ping time.
+**Windows**: Tested on *Windows 10* with 64 sample buffer and am getting great sound and total latency around 15 ms over the ping time.
 
 **macOS**: Should work
 
@@ -293,7 +293,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **[ZOOM LiveTrak L-8](https://zoomcorp.com/en/us/digital-mixer-multi-track-recorders/digital-mixer-recorder/LIVETRAK-L-8/)**, Mixer
 
-**Windows**: Latency is around 19ms (measured with local server with ping time of 0 ms) using "L-8 Driver" (ASIO, 07/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
+**Windows**: Latency is around 19 ms (measured with local server with ping time of 0 ms) using "L-8 Driver" (ASIO, 07/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
 
 **macOS**: Not yet tested
 
@@ -349,7 +349,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **[Zoom H2](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h2/)**, USB portable recorder
 
-**Windows**: Latency is around 26ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
+**Windows**: Latency is around 26 ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
 
 **macOS**: Not yet tested
 
@@ -359,7 +359,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **[Zoom H1N](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h1n-handy-recorder/)**, USB portable recorder
 
-**Windows**: Latency is around 22ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
+**Windows**: Latency is around 22 ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads".
 
 **macOS**: Not yet tested
 
@@ -416,7 +416,7 @@ This device provides the **lowest latency**.
 
 **[HiFiBerry DAC+ ADC (Pro)](https://www.hifiberry.com/shop/boards/hifiberry-dac-adc/)**, Raspberry Pi compatible HAC internal sound card.
 
-**Linux**: Virtually no jitter and good latency (20 milliseconds). No headphone amp, so you'll need one. Used with a mini console [Rolls MX122](https://rolls.com/product/MX22s). Tested on several distributions, kernel versions 4.19, 5.4 and 5.8. (measured interface latency with jack_delay, 48000Hz, 64 samples/buffer, 2 periods, asynchronous mode and cable from output to input, with DSP mode set to low latency in alsamixer: `4.9ms`. Note this is **only the interface latency** not the latency in Jamulus)
+**Linux**: Virtually no jitter and good latency (20 milliseconds). No headphone amp, so you'll need one. Used with a mini console [Rolls MX122](https://rolls.com/product/MX22s). Tested on several distributions, kernel versions 4.19, 5.4 and 5.8. (measured interface latency with jack_delay, 48000 Hz, 64 samples/buffer, 2 periods, asynchronous mode and cable from output to input, with DSP mode set to low latency in alsamixer: `4.9 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **Windows**: Not yet tested (if anybody runs Windows ARM on a Raspberry Pi feel free to test it). Probably no ASIO Driver available.
 
