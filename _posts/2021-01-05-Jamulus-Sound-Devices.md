@@ -180,7 +180,7 @@ _More testing required._
 
 **Windows**: Works great. If you have issues with the buffer size going to 136, download the updated driver version `4.64.15.598` from [http://beta.focusrite.com/](http://beta.focusrite.com/)
 
-**macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000 hz, 64 samples and cable from output to input on Mac OS X: around `7.5 ms`. Note this is **only the interface latency** not the latency in Jamulus)
+**macOS**: Works great. (measured interface latency with Oblique Audio RTL Utility, 48000 Hz, 64 samples and cable from output to input on Mac OS X: around `7.5 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **Linux**: works.
 
@@ -238,7 +238,7 @@ _More testing required._
 
 **[Presonus Studio 24C](https://www.presonus.com/products/Studio-24c)** USB digital audio interface
 
-**Windows**: Works great with provided ASIO driver. (measured interface latency with Oblique Audio RTL Utility, 48000 hz, 64 samples and cable from output to input on Mac OS X Big Sur: `4.1 ms`. Note this is **only the interface latency** not the latency in Jamulus)
+**Windows**: Works great with provided ASIO driver. (measured interface latency with Oblique Audio RTL Utility, 48000 Hz, 64 samples and cable from output to input on Mac OS X Big Sur: `4.1 ms`. Note this is **only the interface latency** not the latency in Jamulus)
 
 **macOS**: Works great.
 
