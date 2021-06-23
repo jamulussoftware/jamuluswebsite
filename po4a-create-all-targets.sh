@@ -1,5 +1,5 @@
 #!/bin/bash
-# You need po4a > 0.54, see https://github.com/mquinson/po4a/releases
+# You need po4a >= 0.63, see https://github.com/mquinson/po4a/releases
 # There is no need for system-wide installation of po4a
 # You may set the following variables:
 # SRC_DIR folder for original source English .md files
@@ -19,12 +19,12 @@ SRC_DIR="./wiki/en"
 
 # Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
-	PO_DIR="./translator-files/l10n/po"
+	PO_DIR="./translator-files/po"
 fi
 
 # Directory where the translated file folders will be
 if [ -z "$PUB_DIR" ] ; then
-	PUB_DIR="./wiki/"
+	PUB_DIR="./wiki"
 fi
 
 
@@ -38,6 +38,12 @@ if ! [ -x "$(command -v po4a)" ] ; then
 	exit 1
 fi
 
+# Check if the right version is installed
+if ! [[ $(po4a --version | grep po4a | awk '{print $3}') > 0.63 ]] ; then
+	echo Error: po4a version 0.63 or higher is required. >&2
+	exit 1
+fi
+
 # Check if source document folder exists in the right place
 if ! [ -d "$SRC_DIR" ] ; then
 	echo Error: please run this script from the root folder. >&2
@@ -48,7 +54,7 @@ fi
 # REMOVE .md FILE FOLDERS BEFORE REGENERATING THEM
 ##################################################
 
-for lang in $(ls "$PO_DIR" ) ; do
+for lang in $(ls "$PO_DIR") ; do
 	rm -rf "$PUB_DIR/$lang"
 	echo "$lang" folder deleted
 done
@@ -61,38 +67,40 @@ use_po_module () {
 	lang=$1
 
     # Determine target file/folder names
-	while IFS= read -r -d '' file
-	do
+	while IFS= read -r -d '' file ; do
 		basename="$(basename -s .md "$file")"
 		dirname=$(dirname "$file")
 		path="${dirname#$SRC_DIR/}"
 
 		if [ "$dirname" = "$SRC_DIR" ] ; then
-			potname=${basename}
 			localized_file="$PUB_DIR/$lang/$basename.md"
 		else
-			potname=$path/$basename
 			localized_file="$PUB_DIR/$lang/$path/$basename.md"
 		fi
 
-        # Run po4a-translate and create target files
+		# Run po4a-translate and create target files
 		po4a-translate \
 			--format asciidoc \
 			--master "$file" \
 			--master-charset "UTF-8" \
-			--po "$PO_DIR/$lang/$potname.po" \
+			--po "$PO_DIR/$lang/$basename.po" \
 			--localized "$localized_file" --localized-charset "UTF-8" \
 			--keep "$THRESHOLD"
-	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
 
+		# Display message if translated file is created
+		trans_file="$PUB_DIR/$lang/$basename.md"
+
+		if [ -f $trans_file ] ; then
+		    echo "$basename".md translated into "$lang"
+		fi
+	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
 }
 
 ##########################################################
 # LOOK INTO EACH .po FILE DIR AND RUN PO4A ON EACH OF THEM
 ##########################################################
 
-while IFS= read -r -d '' dir
-do
+while IFS= read -r -d '' dir ; do
 	lang=$(basename -s .md "$dir")
 	echo "$lang"
 	use_po_module "$lang"   

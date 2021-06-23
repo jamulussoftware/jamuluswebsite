@@ -54,7 +54,7 @@ We collect changes to the English version of the site on a "next-release" branch
 
 1. Changes are first made to EN (= English) *.md files and committed to the “next-release” branch.
 1. Once we’ve agreed the changes can go live (usually just before a software release), we then create GitHub issues for each language, tagged for that release. You can ask questions about the work there.
-1. Translators for each language then update any affected files by editing the .po files for their language in `translator-files/l10n/po/LANGUAGE/` and open pull requests to merge them into the "next-release” branch. Those pull requests are linked to the relevant GitHub issue in step 2 so they can be tracked.
+1. Translators for each language then update any affected files by editing the .po files for their language in `translator-files/po/LANGUAGE/` and open pull requests to merge them into the "next-release” branch. Those pull requests are linked to the relevant GitHub issue in step 2 so they can be tracked.
 1. When all translations are merged (issues will then close automatically), we merge that new branch into the `release` branch, which is automatically made live on the production site.
 
 ### Points to note
@@ -72,7 +72,7 @@ We collect changes to the English version of the site on a "next-release" branch
 
 ## Adding a new language
 
-Copy the `translator-files/l10n/templates` folder, paste it into `translator-files/l10n/po/`and rename it to your language code. Now rename all the .pot files inside it, changing the .pot file extension to .po.
+Navigate to `translator-files/po/` and create an empty folder naming it with the language code. Run the `po4a-update-templates.sh` script. The folder should now be populated with all the necessary .po files for that language.
 
 Make sure to add the language to the \_config.yml file (in the languages array).  At a minimum, the main includes for the wiki (see \_includes/wiki/) have to be translated.
 
