@@ -1,8 +1,8 @@
 ---
 layout: wiki
-title: "Adminstration"
+title: "Administration"
 lang: "en"
-permalink: "/contribute/Adminstration"
+permalink: "/contribute/Administration"
 ---
 # Administration
 
@@ -19,7 +19,7 @@ This means:
 - We bump the major version (e.g. Jamulus 3.21.0 to 4.0.0) only in case of backwards-incompatible or large architectural changes.
 - We bump the minor version (e.g. Jamulus 3.9.0 to 3.10.0) for new features and backwards-compatible improvements.
 - We bump the patch level version (e.g. 3.7.0 to 3.7.1) for small bugfixes. Examples include:
-  - Bug fixes for issues introduced with by the last release.
+  - Bug fixes for issues introduced by the last release.
   - Addition of translations which were too late to be included into the last release.
 
 Contrary to Semantic Versioning, we currently do not place a hyphen between the version and pre-release suffixes.
@@ -91,7 +91,7 @@ When a new Issue or Pull Request comes in, do the following:
    1. Verify that the issue is about a bug, an improvement or about a well-specified new feature. Move support requests or "it would be nice" entries to a Discussion first. Motivate requesters to open a new Issue once the Discussion has reached agreement what to implement.
 1. For Pull Requests, additionally do the following:
    1. Project Board: Move to *Waiting on Team*
-   1. Request Review from two main developers who topic specialists for the PR.
+   1. Request Review from two main developers who are topic specialists for the PR.
 
 #### Reviewing Pull Requests
 1. Add the appropriate Milestone once it is clear that it will go into the next release.
@@ -121,7 +121,7 @@ When a new Issue or Pull Request comes in, do the following:
 We use the Discord/Matrix chat for quicker, loose interaction.
 All decision and results should still be documented in permanent Github Issues, Discussions or Comments.
 
-## Decision making
+## Decision-making
 We use [lazy consensus](https://couchdb.apache.org/bylaws.html#lazy) by default.
 This means that any reversible decision is considered supported by the team as long as nobody objects.
 This also means that everyone must be transparent about their intentions and actions in order for every other member to have a chance to comment.
