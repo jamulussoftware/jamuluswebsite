@@ -66,7 +66,7 @@ while IFS= read -r -d '' file ; do
             --master-charset "UTF-8" \
             --po "$po_file" ; then
         echo ''
-        echo Error updating "$lang" PO file for: "$adoc_file"
+        echo Error updating "$lang" PO file for: "$basename.md"
         fi
     done
 done <   <(find -L "$SRC_DIR" -name "*.md" -print0)
