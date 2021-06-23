@@ -11,7 +11,7 @@ While contributing to Jamulus or the website, you should also keep style and ton
 
 ## Keep it concise and specific.
 
-Avoid long-winded phrases and overly stylized language. Start simple, expand to details later, if at all (“inverted pyramid” style).
+Avoid long-winded phrases and overly stylised language. Start simple, expand to details later, if at all (“inverted pyramid” style).
 
 ## Be direct, but not demanding.
 
@@ -71,3 +71,15 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 “Server” The general term for the machine that a client connects to. Not to be confused with “Directory”.
 
 “Directory” The general term for a server that a client uses to get its list of public servers from. Use the term “Directory server” cautiously - it may be confusing in the presence of “Server”.
+
+## Units
+
+We use the following abbreviations:
+
+Kbit/s; Mbit/s; KByte/s; MByte/s.
+
+Values followed by units such as `ms`, `s`, `m`, `km`, `GHz` etc. should be separated by a space; e.g. "20 ms" and "1 GHz" not "20ms" and "1GHz".
+
+## Note
+
+It is very important to thoroughly proofread content before submitting it, as any corrections made later have a knock-on effect on translations.
