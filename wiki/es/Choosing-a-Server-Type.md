@@ -36,7 +36,7 @@ Ver también [Opciones de Línea de Comandos](Command-Line-Options) para ver otr
 
 Este tipo de servidor no figurará en una lista de servidores de directorios. Debes proporcionar a los músicos la dirección de tu servidor para que puedan conectar sus clientes. Ver también [Ejecutar un Servidor Privado](Running-a-Private-Server) para ver lo necesario para que otros se conecten a él.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagrama de conexiones entre clientes en un servidor Jamulus privado"></figure>
+<figure><img src="{{site.url}}/assets/img/es-screenshots/diagram-private-server.png" loading="lazy" alt="Diagrama de conexiones entre clientes en un servidor Jamulus privado"></figure>
 
 Este modo se habilita desactivando "Mi Servidor es Público...".
 
