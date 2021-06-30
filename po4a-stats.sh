@@ -1,16 +1,5 @@
 #!/bin/bash
 # You need gettext
-# You may set the following variables:
-# SRC_DIR folder for original source English .md files
-# PO_DIR directory where .po files are stored
-
-# Folder where source English .md files are
-#SRC_DIR="./wiki/en"
-
-# Directory where the po file folders are
-#if [ -z "$PO_DIR" ] ; then
-#	PO_DIR="./translator-files/po"
-#fi
 
 # Remove stats file before creating new one
 rm -f "translator-files/statistics"
