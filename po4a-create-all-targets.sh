@@ -83,7 +83,7 @@ use_po_module () {
 			--format asciidoc \
 			--master "$file" \
 			--master-charset "UTF-8" \
-			--po "$PO_DIR/$lang/$basename.po" \
+			--po "$PO_DIR/$lang/${basename}.po" \
 			--localized "$localized_file" --localized-charset "UTF-8" \
 			--keep "$THRESHOLD"
 
@@ -93,6 +93,7 @@ use_po_module () {
 		if [ -f $trans_file ] ; then
 		    echo "$basename".md translated into "$lang"
 		fi
+		
 	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
 }
 
@@ -105,4 +106,7 @@ while IFS= read -r -d '' dir ; do
 	echo "$lang"
 	use_po_module "$lang"   
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
+
+# Produce a file with translation status of all .po files
+source ./po4a-stats.sh
 

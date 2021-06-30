@@ -46,7 +46,7 @@ fi
 
 while IFS= read -r -d '' file ; do
     # Determine target file/folder names
-    basename=$(basename -s .md "$file")
+    basename="$(basename -s .md "$file")"
 
     for lang in $(ls "$PO_DIR") ; do
 
@@ -83,3 +83,6 @@ for lang in $(ls "$PO_DIR") ; do
 	    rm "$PO_DIR/$lang/"*.po~
     fi
 done
+
+# Produce a file with translation status of all .po files
+source ./po4a-stats.sh
