@@ -1,5 +1,4 @@
 #!/bin/bash
-# You need gettext
 
 # Remove stats file before creating new one
 rm -f "translator-files/statistics"
@@ -9,7 +8,7 @@ produce_stats () {
 	while IFS= read -r -d '' file ; do
 		basename="$(basename -s .md "$file")"
 		
-		# Stats printed to translator-files/statistics.txt
+		# Stats printed to translator-files/statistics
 		echo "$lang"/"$basename".po >> translator-files/statistics
 		msgfmt --statistics "$PO_DIR/$lang/$basename".po &>> translator-files/statistics
 		echo '' >> translator-files/statistics
