@@ -32,11 +32,11 @@ Le voyant d'état **Delay** indique l'état actuel du délai audio :
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image d'un symbole diode verte"></figure>
 
-**Vert** - Le délai est parfait pour une session de jam.
+**Vert** - Le délai est parfait pour une session de jam
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/led-yellow.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image d'un symbole diode jaune"></figure>
 
-**Jaune** - Une session est toujours possible mais elle peut être plus difficile à jouer.
+**Jaune** - Une session est toujours possible mais elle peut être plus difficile à jouer
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/led-red.png" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image d'un symbole diode rouge"></figure>
 
@@ -91,9 +91,19 @@ Si vous avez réglé votre canal audio sur Stéréo ou Sortie stéréo dans vos 
 
 Si vous voyez une icône "silencé" au-dessus d'un utilisateur, cela signifie que cette personne ne peut pas vous entendre. Soit il a coupé votre son, soit il a mis en solo un ou plusieurs utilisateurs dont vous ne faites pas parti, soit il a mis votre chariot à zéro dans son mixage.
 
-L'utilisation du bouton **Silencer** empêche les utilisateurs d'être entendus dans votre mixage local. Sachez que lorsque vous mettez quelqu'un en sourdine, une icône "sourdine" apparaît au-dessus de votre chariot pour indiquer que vous ne pouvez pas l'entendre. Notez également que vous continuerez à voir leurs VU-mètres bouger si le son de l'utilisateur mis en sourdine atteint le serveur. La position de votre fader pour eux n'est pas affectée non plus.
+### Bouton grp
 
-Le bouton **Solo** vous permet d'entendre un ou plusieurs utilisateurs seuls. Ceux qui ne sont pas en solo seront mis en sourdine. Notez également que les personnes qui ne sont pas en solo verront une icône "silencé" au-dessus de votre chariot.
+Définit un groupe de canaux audio. Déplacer le chariot d'un membre du groupe déplace les chariots de tous les autres. Jusqu'à 8 groupes peuvent être définis.
+
+## Bouton me silencer
+
+L'utilisation du bouton **Silencer** empêche les utilisateurs d'être entendus dans votre mixage local. Sachez que lorsque vous mettez quelqu'un en sourdine, une icône "sourdine" apparaît au-dessus de votre chariot pour indiquer que vous ne pouvez pas l'entendre. Notez également que vous continuerez à voir leurs VU-mètres bouger si le son de l'utilisateur mis en sourdine atteint le serveur. La position de votre chariot pour eux n'est pas affectée non plus.
+
+Notez que le fait de mettre votre **propre** canal en sourdine signifie simplement que vous n'entendrez pas votre signal du serveur (et n'est pas conseillé car cela peut vous conduire à être en décalage avec les autres musiciens). Ce n'est donc pas la même chose que d'utiliser "[Me silencer](#mute-myself-button)".
+
+## Bouton solo
+
+Le bouton **Solo** vous permet d'entendre un ou plusieurs utilisateurs seuls. Ceux qui ne sont pas en solo seront mis en sourdine. Notez également que les personnes qui ne sont pas en solo verront une icône "sourdine" au-dessus de votre chariot.
 
 Les utilisateurs sont répertoriés de gauche à droite dans l'ordre de leur connexion. Vous pouvez modifier l'ordre de tri en utilisant l'option Editer dans le menu de l'application.
 
@@ -112,7 +122,7 @@ Dans le menu Affichage, sélectionnez Mon profil... Pour définir votre alias/no
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Image de la fenêtre de profil"></figure>
 
-Si un instrument et/ou un pays est défini, les icônes de ces sélections s'affichent également sous votre chariot. Le paramètre de compétence change la couleur de fond de l'étiquette du fader et l'entrée de la ville s'affiche dans l'info-bulle de l'étiquette du chariot.
+Si un instrument et/ou un pays est défini, les icônes de ces sélections s'affichent également sous votre chariot. Le paramètre de compétence change la couleur de fond de l'étiquette du fader et le nom de la ville s'affiche dans l'info-bulle de l'étiquette du chariot :
 
 <figure><img src="{{site.url}}/assets/img/fr-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Image d'une infobulle montrant les informations du profil"></figure>
 
@@ -140,9 +150,14 @@ Sous le système d'exploitation Windows, le pilote ASIO (carte son) peut être s
 
 Si le périphérique de la carte son sélectionné offre plus d'un canal d'entrée ou de sortie, les paramètres _Input Channel Mapping et Output Channel Mapping_ sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droit) un canal réel différent de la carte son peut être sélectionné.
 
+
 ### Canaux audio
 
-Permet de sélectionner le nombre de canaux audio à utiliser pour la communication entre le client et le serveur. Trois modes sont disponibles :
+Permet de sélectionner le nombre de canaux audio à utiliser pour la communication entre le client et le serveur.
+
+**Note** : Il est préférable d'exécuter des instances de client séparées par voix/instrument, avec chaque client ayant son propre fichier ini, plutôt que d'utiliser ce mélangeur intégré de paire mono à stéréo.
+
+Trois modes sont disponibles :
 
 Les modes **Mono** et **Stereo** utilisent respectivement un et deux canaux audio.
 
@@ -160,8 +175,8 @@ Plus la qualité audio est élevée, plus le débit de données de votre flux au
 
 Le paramètre de délai de mise en mémoire tampon est un paramètre fondamental du logiciel Jamulus. Ce paramètre a une influence sur de nombreuses propriétés de la connexion. Trois tailles de tampon sont prises en charge :
 
-- **64 échantillons** Le paramètre préféré. Fournit la latence la plus faible mais ne fonctionne pas avec toutes les cartes son.
-- **128 échantillons** Devrait fonctionner avec la plupart des cartes son disponibles.
+- **64 échantillons** Fournit la latence la plus faible mais ne fonctionne pas avec toutes les cartes son.
+- **128 échantillons** Le paramètrage préféré. Devrait fonctionner avec la plupart des cartes son disponibles.
 - **256 échantillons** Ne doit être utilisé que sur des ordinateurs très lents, ou avec une connexion Internet lente.
 
 Certains pilotes de carte son ne permettent pas de modifier le délai de mise en mémoire tampon à partir du logiciel Jamulus. Dans ce cas, le réglage du délai de mise en mémoire tampon est désactivé et doit être modifié à l'aide du pilote de la carte son. Sous Windows, appuyez sur le bouton ASIO Setup pour ouvrir le panneau de configuration du pilote.
@@ -214,9 +229,46 @@ Augmente le gain de votre appareil. Utilisez cette fonction si votre appareil d�
 
 ### Protection contre le larsen
 
-Tente de détecter les boucles de rétroaction audio. Une fois détectée, cette fonction active le bouton "Me silencer" et affiche un message d'explication pour vous permettre de résoudre le problème.
-
+Tente de détecter les boucles de retour audio ou les bruits forts dans les trois premières secondes suivant votre connexion à un serveur. Une fois détectée, cette fonction affiche un message et active le bouton "Me silencer" pour vous mettre en sourdine dans votre propre mix.
 
 ### Balance d'entrée
 
 Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. Pour un signal mono il agit comme un panoramique entre les deux canaux. Par exemple, si un microphone est connecté au canal d'entrée droit et qu'un instrument est connecté au canal d'entrée gauche, la balance d'entrée agit comme un panoramique entre les deux canaux. Un instrument est connecté au canal d'entrée gauche et est beaucoup plus fort que le microphone, déplacez le fader audio pour augmenter le volume relatif du microphone.
+
+# Menu commandes
+
+### Fichier > Charger la configuration des canaux du mixeur
+ 
+Vous pouvez sauvegarder et restaurer le mixage que vous avez pour les répétitions de votre groupe (fader, mute, pan, solo etc.) et le charger à tout moment (même pendant que vous jouez). Le chargement peut également se faire par glisser/déposer dans la fenêtre du mixeur.
+
+
+### Editer > Regler tous les chariots sur le niveau d'un nouveau client
+
+Applique un réglage de chariot unique à chaque canal en fonction de son volume. Utile pour les grands ensembles afin d'obtenir un mixage global raisonnable, bien que des ajustements individuels puissent encore être nécessaires. A appliquer de préférence pendant un échauffement ou une partie uniforme du morceau de musique.
+
+# Options de la ligne de commande
+
+La plupart des fonctions courantes de Jamulus peuvent être définies à l'aide de l'interface graphique, mais ces fonctions et d'autres peuvent également être définies à l'aide d'options données dans une fenêtre de terminal. La manière exacte de procéder dépend de votre système d'exploitation.
+
+Par exemple, sous Windows, pour utiliser un fichier de paramètres spécifique, faites un clic droit sur le raccourci de Jamulus et choisissez "Propriétés" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :
+
+```shell
+ "C:\Program Files\Jamulus\Jamulus.exe" --inifile "C:\path\to\myinifile.ini"
+```
+
+Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :
+
+```shell
+ /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
+```
+
+**Note** : Les options de la ligne de commande ne modifieront pas les réglages effectués dans l'interface graphique. 
+
+- `-M` or `--mutestream`  Démarre Jamulus en mode sourdine                                                      
+- `--mutemyown`  Me silencer dans mon mixage personnel (mode "headless" seulement)                                                      
+-  `-c` or `--connect`  Se connecter à l'adresse du serveur donné au démarrage, format `adresse[:port]`  
+-  `-j` or `--nojackconnect`  Disactive l'auto-connection de JACK  
+-  `--ctrlmidich` Canal du contrôleur MIDI à écouter, décalage du numéro de contrôle et numéros CC consécutifs (canaux). Format : `canal[;f*][;p*][;s*][;m*]` Voir [Trucs et astuces](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) 
+- `--clientname`  Titre de la fenêtre et nom du client JACK 
+  {% include_relative Shared-Commands.md %}
+
