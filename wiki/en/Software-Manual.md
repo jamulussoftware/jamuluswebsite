@@ -193,8 +193,8 @@ The higher the audio quality, the higher your audio stream's data rate. Make sur
 The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many
 connection properties. Three buffer sizes are supported:
 
-- **64 samples** The preferred setting. Provides the lowest latency but does not work with all sound cards.
-- **128 samples** Should work for most available sound cards.
+- **64 samples** Provides the lowest latency but does not work with all sound cards.
+- **128 samples** The preferred setting. Should work for most available sound cards.
 - **256 samples** Should only be used on very slow computers, or with a slow internet connection.
 
 Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.
