@@ -24,7 +24,7 @@ Whether the following devices work or not can *depend on your operating system* 
 
 ✅: This device works reasonably well with Jamulus. You might need to set up some things, but sound quality and latency are fine.
 
-😐: This device works so-so and there might be some difficulties. If you want to buy a new device, don't buy this one. There might be similar devices available which work better.
+😐: This device works, but there might be some difficulties. If you want to buy a new device, don't buy this one. There might be similar devices available which work better.
 
 ❌: This device will not work correctly. If you succeed, there might be severe issues. Therefore, search for another device.
 
