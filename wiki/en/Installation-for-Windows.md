@@ -15,7 +15,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
  **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on "More info" and "Run anyway" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
-1. **Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL if you're using that and/or [Hardware Setup](Hardware-Setup).
+1. **Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL below, if you're using that.
 
 ***
 
