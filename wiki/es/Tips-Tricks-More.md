@@ -5,7 +5,17 @@ permalink: /wiki/Tips-Tricks-More
 title: 'Consejos, Trucos y Más'
 ---
 
-# Consejos y Trucos
+# Tips & Tricks
+ {:.no_toc}
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
 
 ## Aprendiendo sobre ensayos a distancia
 
@@ -26,32 +36,6 @@ El usuario de Jamulus [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/
 ## Compartir partituras
 
 El usuario de Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/) ha escrito un sistema llamado [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), una aplicación web que permite a un "Jam leader" repartir partituras (en formato PDF) entre "Jammers" en tiempo real utilizando navegadores de red estándares.
-
-## Hacer una página de estado del servidor
-
-Con el argumento de línea de comando `-m` se puede generar una página de información estadística del servidor en una página web.
-
-Aquí hay un ejemplo de script php utilizando el archivo de estado del servidor para mostrar el estado del servidor en una página html (hay que utilizar los siguientes argumentos en la línea de comandos: `-m /var/www/stat1.dat`):
-
-~~~
-<?php
-function loadserverstat ( $statfilename )
-{
-   $datei = fopen ( $statfilename, "r" );
-   while ( !feof ( $datei ) )
-   {
-	  $buffer = fgets ( $datei, 4096 );
-	  echo $buffer;
-   }
-   fclose($datei);
-}
-?>
-<?php loadserverstat ( "stat1.dat" ); ?>
-~~~
-
-## Guardar y cargar estados de mezcla de clientes
-
-Puedes guardar y restaurar la mezcla que tienes para los ensayos de tu grupo (fader, mute, pan, solo, etc.) y cargarlos en cualquier momento (incluso mientras tocas). Hazlo con "Archivo > Guardar Configuración Canales Mezclador" en tu cliente, y cárgalos con "Cargar Configuración Canales Mezclador" (o con arrastrar/dejar caer sobre la ventana del mezclador).
 
 ## Convertir un servidor público en privado sobre la marcha
 
@@ -109,56 +93,3 @@ Las columnas de faders y controles de la ventana del mezclador se controlan en o
 
 Asegúrate de que el puerto de salida de tu dispositivo MIDI esté conectado al puerto de entrada MIDI de Jamulus (QjackCtl (Linux), MIDI Studio (macOS) o lo que sea que utilices para gestionar las conexiones). En Linux tendrás que instalar y arrancar a2jmidid para que tu dispositivo aparezca en la pestaña MIDI de QjackCtl.
 
-
-## Controlar grabaciones en servidores Linux "headless"
-
-Cuando se utiliza la [función de grabación](Server-Win-Mac#grabación) con la [opción de la línea de comandos](Command-Line-Options) `-R`, si el servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un directorio nuevo. SIGUSR2 conmutará entre grabación activa/inactiva.
-
-Para enviar estas señales utilizando systemd, crea los siguientes dos archivos `.service` en `/etc/systemd/system`, dándoles un nombre apropiado (por ej. `nuevaGrabación-Jamulus-server.service`).
-
-**Nota:** Deberás guardar las grabaciones a una ruta _fuera_ del directorio raiz de Jamulus, o quita `ProtectHome=true` del archivo de unidad systemd (ten en cuenta que hacerlo acarrea un potencial riesgo de seguridad).
-
-Para encender o apagar la grabación (dependiendo del estado actual):
-
-~~~
- [Unit]
- Description=Toggle recording state of Jamulus server
- Requisite=Jamulus-Server
-
- [Service]
- Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
-~~~
-
-Para empezar una nueva grabación:
-
-~~~
- [Unit]
- Description=Start a new recording on Jamulus server
- Requisite=Jamulus-Server
-
- [Service]
- Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
-~~~
-
-_Nota: El nombre del servicio Jamulus en la línea de `ExecStart` tiene que ser el mismo que el nombre del archivo `.service` que creaste cuando configuraste systemd para controlar tu servidor Jamulus. Así que en este ejemplo sería `Jamulus-Server.service`_
-
-Ejecuta `sudo systemctl daemon-reload` para registrarlos para su primer uso.
-
-Ahora puedes ejecutarlos con el comando `service start`, por ejemplo:
-
-`sudo service jamulusTogglerec start` (suponiendo que has nombrado tu archivo de unidad `jamulusTogglerec.service`)
-
-Puedes ver el resultado de estos comandos si ejecutas `service jamulus status`, o viendo los registros.
-
-## Quality of Service
-
-Jamulus utiliza DSCP/CS4 oportunísticamente para ocuparse del "bufferbloat" (valor DSCP/CS4 de 128 (o 0x80). Esto es compatible con IPv4 y IPv6. Se pueden establecer otros valores utilizando la opción `-Q`, por ejemplo `-Q [0..255]` (donde 0 deshabilita QoS). Si quieres explorar el efecto de configuraciones no predeterminadas, ver [RFC4594](https://tools.ietf.org/html/rfc4594). Sin embargo, la mayoría de las personas no tendrán necesidad de hacer esto.
-
-### Utilizar Quality of Service en Windows
-
-La configuración de QoS en Jamulus (incluyendo la predeterminada) no tiene efecto en Windows porque el sistema operativo la ignora. Para habilitar Quality of Service para Jamulus, debes seguir estas instrucciones. También ten en cuenta que quizá tengas que repetir este procedimiento cada vez que se actualiza Jamulus.
-
-
-En el campo de Búsqueda al lado del menú de Arranque teclea: Editor de Directivas de Grupo Local (enter)<br> En la nueva ventana, (clic) en el icono del menú para mostrar el tercer panel de Acción<br> Mirando el primer panel del Editor de Directivas de Grupo Local<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (clic)<br> Mirando el tercer panel (Acción) del Editor de Directivas de Grupo Local<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;Más Acciones<br> &nbsp;&nbsp;&nbsp;Crear nueva Directiva (clic)<br> &nbsp;&nbsp;&nbsp;&nbsp;Nombre Directiva: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Especificar valor DSCP: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;Esta directiva QoS se aplica solo a las aplicaciones con el nombre Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;Siguiente<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Terminar<br> (Nota: la directiva para Jamulus en el panel central puede editarse)

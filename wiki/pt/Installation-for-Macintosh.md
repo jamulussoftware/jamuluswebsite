@@ -39,4 +39,4 @@ Você verá uma versão ligeiramente diferente da mesma mensagem, agora aparecer
 
 Jamulus foi instalado e pode ser usado agora. Talvez você queira dar uma olhada na página
 
-[Jamulus Onboarding](Getting-Started){: .button}
+[Jamulus setup page](Getting-Started){: .button}

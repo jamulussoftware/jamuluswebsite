@@ -5,7 +5,17 @@ permalink: /wiki/Tips-Tricks-More
 title: 'Trucs et astuces'
 ---
 
-# Trucs et astuces
+# Tips & Tricks
+ {:.no_toc}
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
 
 ## Découvrir les répétitions de groupes à distance
 
@@ -26,32 +36,6 @@ L'utilisateur Jamulus [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/
 ## Partage de paroles de chansons/accords
 
 L'utilisateur Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/) a écrit un système appelé [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), une application ouèbe qui permet a un "responsable du boeuf" de mettre à disposition les fiches des chansons (au format PDF) aux autres participants en temps réel en utilisant un navigateur ouèbe standard.
-
-## Faire une page de status de serveur
-
-Avec l'argument `-m` de la ligne de commande, des informations statistiques sur le serveur peuvent être générées pour être mises sur une page web.
-
-Voici un exemple de script php utilisant le fichier d'état du serveur pour afficher l'état actuel du serveur sur une page html (en supposant que l'argument de ligne de commande suivant soit utilisé : `-m /var/www/stat1.dat`):
-
-~~~
-<?php
-function loadserverstat ( $statfilename )
-{
-   $datei = fopen ( $statfilename, "r" );
-   while ( !feof ( $datei ) )
-   {
-	  $buffer = fgets ( $datei, 4096 );
-	  echo $buffer;
-   }
-   fclose($datei);
-}
-?>
-<?php loadserverstat ( "stat1.dat" ); ?>
-~~~
-
-## Sauvegarde et chargement des états de mixage du client
-
-Vous pouvez sauvegarder et restaurer le mixage que vous avez pour les répétitions de votre groupe (fader, mute, pan, solo etc...) et les charger à tout moment (même pendant que vous jouez). Faites-le avec "File > Save Mixer Channels Setup" dans votre client et chargez-les avec "Load Mixer Channels Setup" (ou glissez/déposez-les dans la fenêtre du mixeur).
 
 ## Conversion d'un serveur public en serveur privé à la volée
 
@@ -109,56 +93,3 @@ Les bandes de faders dans la fenêtre de mixage sont contrôlées dans l'ordre c
 
 Assurez-vous de connecter le port de sortie de votre appareil MIDI au port d'entrée MIDI de Jamulus (QjackCtl (Linux), MIDI Studio (macOS) ou tout autre outil que vous utilisez pour gérer les connexions). Sous Linux, vous devrez installer et lancer a2jmidid pour que votre périphérique apparaisse dans l'onglet MIDI de Qjackctl.
 
-
-## Contrôle des enregistrements sur les serveurs headless Linux
-
-Lorsque vous utilisez la [fonction d'enregistrement](Server-Win-Mac#enregistrement) avec l'[option de ligne de commande] `-R`(Command-Line-Options), si le serveur reçoit un signal SIGUSR1 pendant un enregistrement, il démarre un nouvel enregistrement dans un nouveau répertoire. SIGUSR2 permet d'activer ou de désactiver l'enregistrement.
-
-Pour envoyer ces signaux en utilisant systemd, créez les deux fichiers `.service` suivants dans `/etc/systemd/system`, en les appelant de manière appropriée (par exemple `newRecording-Jamulus-server.service`).
-
-**Note:** Vous devrez sauvegarder les enregistrements dans un chemin _extérieur_ au répertoire personnel de jamulus, ou enlever `ProtectHome=true` de votre fichier d'unité systemd (soyez conscient que faire cela est cependant un risque potentiel de sécurité).
-
-Pour activer ou désactiver l'enregistrement (selon l'état actuel) :
-
-~~~
- [Unit]
- Description=Toggle recording state of Jamulus server
- Requisite=Jamulus-Server
-
- [Service]
- Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
-~~~
-
-Pour demarrer un nouvel enregistrement :
-
-~~~
- [Unit]
- Description=Start a new recording on Jamulus server
- Requisite=Jamulus-Server
-
- [Service]
- Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
-~~~
-
-_Note : Le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de systemd pour contrôler votre serveur Jamulus. Donc dans cet exemple, ce serait `Jamulus-Server.service`_.
-
-Lancez `sudo systemctl daemon-reload` pour les enregistrer pour la première utilisation.
-
-Maintenant vous pouvez les lancer avec la commande `service start`, par exemple :
-
-`sudo service jamulusTogglerec start` (en supposant que vous avez nommé votre fichier unité `jamulusTogglerec.service`)
-
-Vous pouvez voir le résultat de ces commandes si vous exécutez `service jamulus status`, ou en consultant les logs.
-
-## Qualité de service
-
-Jamulus utilise DSCP/CS4 de manière opportuniste pour gérer le gonflement de la mémoire tampon, et utilise une valeur DSCP/CS4 par défaut de 128 (ou 0x80). Cette valeur est compatible avec IPv4 et IPv6. D'autres valeurs peuvent être définies en utilisant l'option `-Q`, par exemple `-Q [0..255]` (où 0 désactive la QoS). Si vous souhaitez explorer l'effet des paramètres par défaut, consultez [RFC4594](https://tools.ietf.org/html/rfc4594). Cependant, la plupart des gens n'auront pas besoin de le faire.
-
-### Utilisation de la qualité de service sous Windows
-
-Les paramètres de qualité de service de Jamulus (y compris la valeur par défaut) n'ont aucun effet sur Windows car le système d'exploitation les ignore. Pour activer la qualité de service pour Jamulus, vous devez suivre ces instructions. Notez également que vous devrez peut-être répéter cette procédure à chaque mise à jour de Jamulus.
-
-
-Dans la boîte de recherche à côté du menu Démarrer, tapez : Local Group Policy Editor (entrer)<br> Dans la nouvelle fenêtre, (cliquer) sur l'icône du menu pour afficher le troisième panneau Actions.<br> Regardez le premier panneau de l'éditeur de stratégie du groupe local.<br> &nbsp;Stratégie de l'ordinateur local<br> &nbsp;&nbsp;Configuration<br> &nbsp;&nbsp;&nbsp;fenêtres paramètres<br> &nbsp;&nbsp;&nbsp;&nbsp;QoS basée sur la stratégie (cliquer)<br> Regarder le troisieme panneau (Actions) de l'éditeur de stratégie de groupe local<br> &nbsp;QoS basée sur la stratégie<br> &nbsp;&nbsp;Plus d'actions<br> &nbsp;&nbsp;&nbsp;créer une nouvelle stratégie (cliquer)<br> &nbsp;&nbsp;&nbsp;&nbsp;nom : Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specifier la valeur DSCP : 32<br> &nbsp;&nbsp;&nbsp;&nbsp;suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;Cette stratégie QoS s'applique seulement au programme Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Fin<br> (Avis : La stratégie de Jamulus dans le panneau central peut être modifiée)
