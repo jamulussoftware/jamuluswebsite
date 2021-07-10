@@ -17,13 +17,19 @@ Falls du Fragen dazu hast, schau mal rein in die [Diskussionen](https://github.c
 
 ## Installation
 
-Um Jamulus mit deiner Hardware zum Laufen zu bringen, folge bitte die Installationsanleitung für deine Plattform:
+To get Jamulus working with your operating system, please follow the installation guide for your platform:
 
-* [Windows](/wiki/Installation-for-Windows)
-* [macOS](/wiki/Installation-for-Macintosh)
-* [Linux](/wiki/Installation-for-Linux)
+<div class="fx-row fx-row-start-xs button-container">
+    <a href="Installation-for-Windows" class="button fx-col-100-xs">Windows</a>
+    <a href="Installation-for-Macintosh" class="button fx-col-100-xs">macOS</a>
+    <a href= "Installation-for-Linux" class="button fx-col-100-xs">Linux</a>
+</div>
 
 Und nun schließe alle anderen Programme. Es ist besser simpel zu beginnen.
+
+## Hardware Setup
+
+If you use external audio hardware, plug that in before you start Jamulus. If you haven't configured your hardware, please see the installation guides mentioned above.
 
 ## Jamulus Hauptfenster
 
@@ -49,9 +55,9 @@ Fülle mindestens das Feld “Alias/Name” aus. Dann kannst du das Fenster schl
 
 ## Mit einem Server verbinden und Audio testen
 
-**Bevor du anfängst mit anderen Leuten zu musizieren, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst vor Ort.
-
 Bevor du dich mit einem Server verbindest, solltest du dich selbst **nicht** hören können. Die “Goldene Regel” von Jamulus ist: auf deinen eigenen Klang über das Programm zu hören; nicht das direkte Signal von deinem Instrument. Dadurch kannst du mit anderen einfacher im Takt spielen ([siehe FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal)).
+
+**Bevor du anfängst mit anderen Leuten zu musizieren, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stell sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst vor Ort.
 
 Nun klicke auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutreten. Ein weiteres Fenster geht auf:
 
@@ -60,9 +66,9 @@ Nun klicke auf “Verbinden” im Jamulus-Hauptfenster, um einem Server beizutre
   <figcaption>Einem Server beitreten</figcaption>
 </figure>
 
-Die wichtigste Eigenschaft von Servern ist ihre “Ping-Zeit”. Je höher der Wert, desto schwerieger ist, im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15 ms ist.
+The most important thing about servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a server with a ping of less than 50ms if you can.
 
-Einmal mit einem Server verbunden, siehe zu, dass du dich gut hören kannst, pass deine Eingangslautstärke an und korrigiere eventuelle Probleme. Und natürlich halte dich an [Die goldene Regel](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
+Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
 
 ## Das erstmalige Musizieren
 

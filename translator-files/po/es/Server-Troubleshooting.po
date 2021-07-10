@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-06-06 08:34+0200\n"
+"POT-Creation-Date: 2021-07-07 08:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Daryl Hanlon <darylo1@hotmail.com>\n"
 "Language-Team: Jamulus Translators <jamulus.io>\n"
@@ -41,38 +41,78 @@ msgstr "Resolución de Problemas del Servidor"
 
 #. type: Plain text
 #: wiki/en/Server-Troubleshooting.md:9
+#, fuzzy
+#| msgid ""
+#| "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Running a "
+#| "Server\" branch1-url=\"Running-a-Server\" %}"
 msgid ""
-"{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Running a Server"
-"\" branch1-url=\"Running-a-Server\" %}"
+"{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" "
+"branch1-url=\"Running-a-Server\" %}"
 msgstr ""
 "{% include breadcrumb.html root=\"Más\" branch1=\"Ejecutar un Servidor\" "
 "branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:11
-msgid "# Troubleshooting"
-msgstr "# Resolución de Problemas"
+#: wiki/en/Server-Troubleshooting.md:12
+#, fuzzy, no-wrap
+#| msgid "Server Troubleshooting"
+msgid ""
+"# Server Troubleshooting\n"
+" {:.no_toc}\n"
+msgstr "Resolución de Problemas del Servidor"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:13
+#: wiki/en/Server-Troubleshooting.md:14
+msgid "<details markdown=\"1\">"
+msgstr ""
+
+#. type: Plain text
+#: wiki/en/Server-Troubleshooting.md:16
+msgid "<summary>Table of contents</summary>"
+msgstr ""
+
+#. type: Plain text
+#: wiki/en/Server-Troubleshooting.md:18
+msgid "TOC"
+msgstr ""
+
+#. type: Plain text
+#: wiki/en/Server-Troubleshooting.md:19
+msgid "{:toc}"
+msgstr ""
+
+#. type: Plain text
+#: wiki/en/Server-Troubleshooting.md:21
+msgid "</details>"
+msgstr ""
+
+#. type: Plain text
+#: wiki/en/Server-Troubleshooting.md:23
 msgid "## Servers - Public"
 msgstr "## Servidores - Públicos"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:15
+#: wiki/en/Server-Troubleshooting.md:25
 msgid ""
 "### Why doesn't my server show up in the list? Why isn't it registering?"
 msgstr ""
 "### ¿Por qué no aparece mi servidor en la lista? ¿Por qué no se registra?"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:17
+#: wiki/en/Server-Troubleshooting.md:27
+#, fuzzy
+#| msgid ""
+#| "If you are registered OK (you can [see it here](https://explorer.jamulus."
+#| "io/)) and you or your friends can't see your server, you may need to "
+#| "wait, or start your client with the `--showallservers` option and try "
+#| "connecting from there ([see this page](Command-Line-Options) on how to "
+#| "start your client with a config option)."
 msgid ""
 "If you are registered OK (you can [see it here](https://explorer.jamulus."
 "io/)) and you or your friends can't see your server, you may need to wait, "
 "or start your client with the `--showallservers` option and try connecting "
-"from there ([see this page](Command-Line-Options) on how to start your "
-"client with a config option)."
+"from there ([see command line options](Software-Manual#command-line-"
+"options)) on how to start your client with a config option)."
 msgstr ""
 "Si se ha registrado correctamente (lo puedes [ver aquí](https://explorer."
 "jamulus.io/)) y tú o los demás músicos no pueden ver el servidor, quizá "
@@ -81,7 +121,7 @@ msgstr ""
 "cómo arrancar tu cliente con una opción de configuración)."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:19
+#: wiki/en/Server-Troubleshooting.md:29
 msgid ""
 "If you are seeing a message that says the server is full, please [see this "
 "note](Directory-Servers) on Directory Servers."
@@ -90,7 +130,7 @@ msgstr ""
 "esta nota](Directory-Servers) sobre Servidores de Directorio."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:21
+#: wiki/en/Server-Troubleshooting.md:31
 msgid ""
 "You can verify that your server is listed in the relevant genre by [checking "
 "it here](https://explorer.jamulus.io/)."
@@ -99,12 +139,12 @@ msgstr ""
 "[comprobándolo aquí](https://explorer.jamulus.io/)."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:23
+#: wiki/en/Server-Troubleshooting.md:33
 msgid "## Servers - Private"
 msgstr "## Servidores - Privados"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:25
+#: wiki/en/Server-Troubleshooting.md:35
 msgid ""
 "### I'm running my client on the same machine/network as my server but I "
 "can't connect to it"
@@ -113,7 +153,7 @@ msgstr ""
 "no me puedo conectar a él"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:27
+#: wiki/en/Server-Troubleshooting.md:37
 msgid ""
 "Connect your client to `127.0.0.1` (or `localhost` if that works for you). "
 "If you're running the client on a different machine to the server but on the "
@@ -126,14 +166,14 @@ msgstr ""
 "conectes con la dirección pública (WAN) del servidor."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:29
+#: wiki/en/Server-Troubleshooting.md:39
 msgid ""
 "### What address do I give to people so that they can connect to my server?"
 msgstr ""
 "### ¿Qué dirección debo dar a la gente para que se conecten a mi servidor?"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:31
+#: wiki/en/Server-Troubleshooting.md:41
 msgid ""
 "This should be your **public** IP address (find that with [Google](https://"
 "www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus client to "
@@ -149,24 +189,21 @@ msgstr ""
 "Private-Server)."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:33
+#: wiki/en/Server-Troubleshooting.md:43
 msgid "### What port numbers can I use?"
 msgstr "### ¿Qué números de puerto puedo utilizar?"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:35
+#: wiki/en/Server-Troubleshooting.md:45
 msgid ""
-"Keep the default UDP ports. The actual default port is documented by the "
-"[command line](Command-Line-Options). At the time of writing this "
-"documentation, the port number is **22124**."
+"You can set your server to listen on a custom port with the `--port` option. "
+"If you you this, you will need to tell people which port to connect connect "
+"on. They will need to append the port number the the address of your server "
+"in the format `[serverAddress]:[portNumber]`."
 msgstr ""
-"Utiliza los puertos UDP predeterminados. El puerto predeterminado en "
-"concreto está documentado por la [línea de comandos](Command-Line-Options). "
-"En el momento de escribir esta documentación el número del puerto es "
-"**22124**."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:37
+#: wiki/en/Server-Troubleshooting.md:47
 msgid ""
 "### Is a private server a direct server without contact to the Jamulus "
 "Directory Server?"
@@ -175,17 +212,17 @@ msgstr ""
 "Servidor de Directorio de Jamulus?"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:39
+#: wiki/en/Server-Troubleshooting.md:49
 msgid "Yes. Please see [Server Types](Choosing-a-Server-Type)"
 msgstr "Sí. Lee sobre [Tipos de Servidor](Choosing-a-Server-Type)"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:41
+#: wiki/en/Server-Troubleshooting.md:51
 msgid "### Can I convert my private server to being a public one?"
 msgstr "### ¿Puedo convertir mi servidor privado en uno público?"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:43
+#: wiki/en/Server-Troubleshooting.md:53
 msgid ""
 "Yes. Simply check the \"Make my Server Public\" box in the server window and "
 "fill out the details. If you register your server, do not use port "
@@ -196,7 +233,7 @@ msgstr ""
 "redirecciones puertos ya que puedes impedir que otros utilicen tu servidor."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:45
+#: wiki/en/Server-Troubleshooting.md:55
 msgid ""
 "### **_Headless Linux_**: I have created a server but it is joining the "
 "Directory Server and I don't want it to."
@@ -205,7 +242,7 @@ msgstr ""
 "el Servidor de Directorio y no quiero que lo haga."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:47
+#: wiki/en/Server-Troubleshooting.md:57
 msgid ""
 "To enable a private server, do not use the `--directoryserver` (`-e`) option "
 "when starting your server command line."
@@ -215,14 +252,14 @@ msgstr ""
 "comandos."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:49
+#: wiki/en/Server-Troubleshooting.md:59
 msgid "### Nobody can connect to my server - but I can connect locally"
 msgstr ""
 "### Nadie se puede conectar a mi servidor - pero yo me puedo conectar "
 "localmente"
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:51
+#: wiki/en/Server-Troubleshooting.md:61
 msgid ""
 "Some ISPs are using techniques like [Address plus Port (A+P)](https://en."
 "wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://"
@@ -241,7 +278,7 @@ msgstr ""
 "net/p/llcon/discussion/server/thread/f72b293af0/))."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:53
+#: wiki/en/Server-Troubleshooting.md:63
 msgid ""
 "To detect if CGN is the issue, go to your router's configuration screen "
 "(typically, 192.168.X.X) and look at the WAN Status page. If your listed "
@@ -261,7 +298,7 @@ msgstr ""
 "operador de internet."
 
 #. type: Plain text
-#: wiki/en/Server-Troubleshooting.md:54
+#: wiki/en/Server-Troubleshooting.md:64
 msgid ""
 "To fix the issue: if you are running a public server, try [port forwarding]"
 "(Running-a-Private-Server#port-forwarding). If you are running a private "
@@ -282,3 +319,16 @@ msgstr ""
 "uso de DDNS, si es posible). Si nada de esto funciona, considera utilizar "
 "una plataforma en la nube (algunos proveedores ofrecen periodos gratuitos de "
 "prueba)."
+
+#~ msgid "# Troubleshooting"
+#~ msgstr "# Resolución de Problemas"
+
+#~ msgid ""
+#~ "Keep the default UDP ports. The actual default port is documented by the "
+#~ "[command line](Command-Line-Options). At the time of writing this "
+#~ "documentation, the port number is **22124**."
+#~ msgstr ""
+#~ "Utiliza los puertos UDP predeterminados. El puerto predeterminado en "
+#~ "concreto está documentado por la [línea de comandos](Command-Line-"
+#~ "Options). En el momento de escribir esta documentación el número del "
+#~ "puerto es **22124**."

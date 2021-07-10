@@ -39,4 +39,4 @@ Jetzt siehst du eine leicht veränderte Version der gleichen Meldung, aber nun k
 
 Jamulus wurde installiert und kann jetzt benutzt werden. Nun schau dir die folgende Seite an:
 
-[Nach der Installation](Getting-Started){: .button}
+[Jamulus setup page](Getting-Started){: .button}

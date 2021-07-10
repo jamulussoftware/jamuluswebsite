@@ -5,7 +5,17 @@ permalink: /wiki/Client-Troubleshooting
 title: 'Resolución de Problemas del Cliente'
 ---
 
-# Resolución de Problemas
+# Troubleshooting
+ {:.no_toc}
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
 
 ### ¿No escuchas nada/Otros no pueden escucharte?
 

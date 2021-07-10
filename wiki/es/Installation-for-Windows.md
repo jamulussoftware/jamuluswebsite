@@ -15,7 +15,7 @@ Asegúrate de haber leído la página de [Cómo Empezar](Getting-Started).
  **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Instala Jamulus**: Haz doble-clic en el instalador para ejecutarlo. Si ves un aviso de SmartScreen, haz clic en "Más info" y "Ejecutar de todas formas" para instalar Jamulus. (Si descargaste una versión nueva de Jamulus y eres de las primeras personas en descargarlo, Jamulus no entrará en la lista blanca de SmartScreen aún. No pagamos para la firma de código).
 1. **Ejecuta Jamulus**. Ahora deberías de poder usar Jamulus como cualquier otra aplicación.
-1. **Configura tu tarjeta de sonido**. Una vez hecho, tienes que configurar tu hardware de audio. Mira cómo configurar ASIO4ALL si es lo que vas a utilizar y/o la [Configuración de Hardware](Hardware-Setup).
+1. **Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL below, if you're using that.
 
 ***
 
@@ -38,13 +38,13 @@ Puedes probar dos versiones de ASIO4ALL. ASIO4ALL v2.14 incluye una actualizaci�
 
 *No se recomienda ASIO4ALL si tu tarjeta de sonido/interfaz de audio tiene su propio driver ASIO, puesto que este último podría proporcionar mejor latencia.*
 
-Para ASIO4ALL, quizá necesites experimentar un poco para encontrar la configuración adecuada ya que cada ordenador es un poco diferente.
+For ASIO4ALL, you may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything.
 
-**Consejo:** Configura tu tarjeta mientras estés en [conexión con un servidor](Onboarding#2-conectarse-a-un-servidor) para escuchar tu instrumento o tu voz y comprobar que todo está bien configurado; pero sigue leyendo.
+**Tip:** Set up your sound card while you're [connected to a server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.
 
 
 Antes de empezar con Jamulus:
-1. **Cierra todas las aplicaciones** (sobre todo aquellas que podrían acceder a tu tarjeta de sonido como tu navegador/reproductor de audio) ya que Jamulus necesita acceso exclusivo a tu tarjeta de audio. Otros programas no podrán usar audio si ASIO4ALL y Jamulus están activos.
+1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.
 1. Si el audio de Jamulus no funciona directamente, asegúrate de que solo **las entradas/salidas correctas** en ASIO4ALL **están activadas**. Todo lo demás debería estar apagado. Busca [configuraciones funcionales de ASIO4ALL en la lista comunitaria](/kb/2021/03/20/ASIO4ALL-Examples.html) para tu configuración o hazlo manualmente si no encuentras la tuya:
 
 ### Cómo configurar las entradas de ASIO4ALL (Guía)
@@ -59,7 +59,7 @@ Antes de empezar con Jamulus:
 **Consejos:**
 1. Muchas tarjetas internas se denominan Realtek High Definition Audio, Conexant o similar.
 1. A menudo los auriculares y los altavoces están etiquetados como 'output' y los micrófonos como 'input' o 'capture'.
-1. 'Stereo Mix' normalmente no es la entrada/salida que buscas, por tanto puedes desactivarlo si lo ves.
+1. Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.
 
 ### ¿Tienes problemas con la configuración de ASIO4ALL?
 
@@ -69,10 +69,10 @@ Después, *configura de nuevo las entradas/salidas*. Las entradas/salidas activa
 
 Mírate [este vídeo](https://youtu.be/_GzOsitVgLI) de [trombonepizza](https://github.com/trombonepizza) que ofrece más información detallada sobre la configuración de ASIO4ALL.
 
-Información oficial y más detallada sobre cómo configurar ASIO4ALL se encuentra en la sección [ASIO4All FAQs en la página web de ASIO4ALL](https://www.asio4all.org/index.php/help/faq/){: target="_blank" rel="noopener noreferrer"} y en el manual de ASIO4ALL. Normalmente se encuentra en tu escritorio o en la carpeta donde se instala el archivo binario de ASIO4ALL (normalmente `C:\Archivos de Programa (x86)\ASIO4ALL v2\`).
+Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target="_blank" rel="noopener noreferrer"}.
 
 ## ¿Todo instalado?
 
 Jamulus ha sido instalado y puede utilizarse. Ahora puedes echar un vistazo a la
 
-[página de Iniciación a Jamulus](Getting-Started){: .button}
+[Jamulus setup page](Getting-Started){: .button}

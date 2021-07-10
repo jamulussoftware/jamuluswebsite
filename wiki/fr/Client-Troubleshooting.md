@@ -5,7 +5,17 @@ permalink: /wiki/Client-Troubleshooting
 title: 'Dépannage du client'
 ---
 
-# Dépannage
+# Troubleshooting
+ {:.no_toc}
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details>
 
 ### Vous n'entendez aucun son/les autres ne vous entendent pas?
 

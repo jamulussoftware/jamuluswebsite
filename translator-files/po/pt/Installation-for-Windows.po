@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-06-06 08:34+0200\n"
+"POT-Creation-Date: 2021-07-07 08:32+0200\n"
 "PO-Revision-Date: 2021-06-02 22:00+0200\n"
 "Last-Translator: daryl <darylo1@hotmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -92,8 +92,9 @@ msgstr "**Inicie o Jamulus**. Agora você vai poder abrir o Jamulus como qualque
 
 #. type: Plain text
 #: wiki/en/Installation-for-Windows.md:19
-#, no-wrap
-msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL if you're using that and/or [Hardware Setup](Hardware-Setup).\n"
+#, fuzzy, no-wrap
+#| msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL if you're using that and/or [Hardware Setup](Hardware-Setup).\n"
+msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL below, if you're using that.\n"
 msgstr "**Configure sua placa de som**. Em seguida você deve configurar o seu hardware de áudio. Dê uma olhada de como configurar ASIO4ALL se você estiver usando este driver e/ou [Hardware Setup](Hardware-Setup).\n"
 
 #. type: Plain text
@@ -188,16 +189,16 @@ msgstr "*ASIO4ALL não é recomendado se sua placa ou interface de áudio fornec
 #. type: Plain text
 #: wiki/en/Installation-for-Windows.md:42
 msgid ""
-"For ASIO4ALL, you may need to experiment a bit to find the right "
-"configuration since every computer is a bit different."
+"For ASIO4ALL, you may or may not need to experiment a bit depending on your "
+"sound hardware. If everything works out of the box, you don't need to do "
+"anything."
 msgstr ""
-"No ASIO4ALL você pode ter que experimentar até achar a configuração certa, "
-"já que computadores diferem um pouco um do outro."
 
 #. type: Plain text
 #: wiki/en/Installation-for-Windows.md:44
-#, no-wrap
-msgid "**Tip:** Set up your sound card while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
+#, fuzzy, no-wrap
+#| msgid "**Tip:** Set up your sound card while you're [connected to a server](Onboarding#2-connecting-to-a-server) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
+msgid "**Tip:** Set up your sound card while you're [connected to a server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
 msgstr "**Dica:** Configure sua placa de som enquanto estiver [conectado com um servidor](Onboarding#2-connecting-to-a-server) para poder ouvir sua própria voz ou instrumento e checar se tudo está correto; mas antes disso continue lendo.\n"
 
 #. type: Plain text
@@ -207,8 +208,9 @@ msgstr "Antes de começar a usar o Jamulus:"
 
 #. type: Plain text
 #: wiki/en/Installation-for-Windows.md:48
-#, no-wrap
-msgid "**Close all applications** (especially those which could access your sound card like your browser/media player) since Jamulus needs exclusive access to your sound card. Other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
+#, fuzzy, no-wrap
+#| msgid "**Close all applications** (especially those which could access your sound card like your browser/media player) since Jamulus needs exclusive access to your sound card. Other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
+msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
 msgstr "**Feche todos os programas** (especialmente aqueles que acessam sua placa de som, como navegador ou reprodutor de mídia) pois Jamulus precisa de acesso exclusivo à sua placa de som. Outros programas não vão poder usar o áudio se ASIO4ALL e Jamulus estiverem rodando.\n"
 
 #. type: Plain text
@@ -295,8 +297,9 @@ msgstr "Fones de ouvido e auto-falantes são frequentemente nomeados \"output\" 
 
 #. type: Plain text
 #: wiki/en/Installation-for-Windows.md:63
-#, no-wrap
-msgid "Stereo Mix is usually not the input/output you're looking for and therefore you should switch it off if you see it.\n"
+#, fuzzy, no-wrap
+#| msgid "Stereo Mix is usually not the input/output you're looking for and therefore you should switch it off if you see it.\n"
+msgid "Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
 msgstr "Via de regra Stereo Mix não é o input/output que você está procurando, e portanto deve ser desabilitado, caso você o veja.\n"
 
 #. type: Plain text
@@ -340,13 +343,19 @@ msgstr ""
 
 #. type: Plain text
 #: wiki/en/Installation-for-Windows.md:73
+#, fuzzy
+#| msgid ""
+#| "Official and further information about how to configure ASIO4ALL is "
+#| "documented in the official [ASIO4ALL FAQs on the ASIO4ALL website]"
+#| "(https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel="
+#| "\"noopener noreferrer\"} and in the ASIO4ALL manual which can be found on "
+#| "your desktop or in the folder where the ASIO4ALL binary is installed "
+#| "(usually `C:\\Program Files (x86)\\ASIO4ALL v2\\`))."
 msgid ""
 "Official and further information about how to configure ASIO4ALL is "
 "documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://"
 "www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener "
-"noreferrer\"} and in the ASIO4ALL manual which can be found on your desktop "
-"or in the folder where the ASIO4ALL binary is installed (usually `C:"
-"\\Program Files (x86)\\ASIO4ALL v2\\`))."
+"noreferrer\"}."
 msgstr ""
 "Outras informações, oficiais e informais, sobre como configurar ASIO4ALL "
 "você encontra nos [FAQs ASIO4ALL no site ASIO4ALL](https://www.asio4all.org/"
@@ -371,5 +380,14 @@ msgstr ""
 
 #. type: Plain text
 #: wiki/en/Installation-for-Windows.md:78
-msgid "[Jamulus Onboarding page](Getting-Started){: .button}"
+#, fuzzy
+#| msgid "[Jamulus Onboarding page](Getting-Started){: .button}"
+msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgstr "[Jamulus Onboarding](Getting-Started){: .button}"
+
+#~ msgid ""
+#~ "For ASIO4ALL, you may need to experiment a bit to find the right "
+#~ "configuration since every computer is a bit different."
+#~ msgstr ""
+#~ "No ASIO4ALL você pode ter que experimentar até achar a configuração "
+#~ "certa, já que computadores diferem um pouco um do outro."
