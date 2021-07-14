@@ -5,17 +5,22 @@
 # SRC_DIR folder for original English .md files
 # PO_DIR directory where .po files are stored
 
+# Get absolute path and CD to parent directory of script. Will work locally without it, but not via GH actions.
+PARENT_PATH=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+
+cd "$PARENT_PATH"
+
 
 ####################################
 # INITIALISE VARIABLES
 ####################################
 
 # Folder where source English .md files are
-SRC_DIR="./wiki/en"
+SRC_DIR="../wiki/en"
 
 # Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
-	PO_DIR="./translator-files/po"
+	PO_DIR="../_translator-files/po"
 fi
 
 ####################################
@@ -46,7 +51,7 @@ fi
 
 while IFS= read -r -d '' file ; do
     # Determine target file/folder names
-    basename=$(basename -s .md "$file")
+    basename="$(basename -s .md "$file")"
 
     for lang in $(ls "$PO_DIR") ; do
 
@@ -54,7 +59,7 @@ while IFS= read -r -d '' file ; do
 
         # po4a-updatepo will complain if the following is not met
         sed -i 's/Content-Type: text\/plain; charset=CHARSET/Content-Type: text\/plain; charset=UTF-8/g' "$po_file"
-        
+
         # If a new file has been added to /wiki/en/, add message after sed error to clarify it will be created
         if ! [ -f "$po_file" ] ; then
             echo creating "$po_file"
