@@ -7,10 +7,10 @@
 # PUB_DIR directory to publish the localised files in
 # THRESHOLD translation % below which translated .md files are not generated
 
-# Get absolute path and CD to parent directory of script. Will work locally without it, but not via GH actions.
-PARENT_PATH=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+# Sometimes the script needs help to establish where it is in the file system
+SCRIPT_DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 
-cd "$PARENT_PATH"
+cd "$SCRIPT_DIR"
 
 ####################################
 # INITIALISE VARIABLES
@@ -73,7 +73,7 @@ use_po_module () {
 
     # Determine target file/folder names
 	while IFS= read -r -d '' file ; do
-		basename="$(basename -s .md "$file")"
+		basename=$(basename -s .md "$file")
 		dirname=$(dirname "$file")
 		path="${dirname#$SRC_DIR/}"
 

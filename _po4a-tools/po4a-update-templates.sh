@@ -5,10 +5,10 @@
 # SRC_DIR folder for original English .md files
 # PO_DIR directory where .po files are stored
 
-# Get absolute path and CD to parent directory of script. Will work locally without it, but not via GH actions.
-PARENT_PATH=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+# Sometimes the script needs help to establish where it is in the file system
+SCRIPT_DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 
-cd "$PARENT_PATH"
+cd "$SCRIPT_DIR"
 
 
 ####################################
@@ -51,7 +51,7 @@ fi
 
 while IFS= read -r -d '' file ; do
     # Determine target file/folder names
-    basename="$(basename -s .md "$file")"
+    basename=$(basename -s .md "$file")
 
     for lang in $(ls "$PO_DIR") ; do
 
