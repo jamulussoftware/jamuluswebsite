@@ -7,6 +7,11 @@
 # PUB_DIR directory to publish the localised files in
 # THRESHOLD translation % below which translated .md files are not generated
 
+# Sometimes the script needs help to establish where it is in the file system
+SCRIPT_DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+
+cd "$SCRIPT_DIR"
+
 ####################################
 # INITIALISE VARIABLES
 ####################################
@@ -15,16 +20,16 @@
 THRESHOLD="80"
 
 # Folder where source English .md files are
-SRC_DIR="./wiki/en"
+SRC_DIR="../wiki/en"
 
 # Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
-	PO_DIR="./translator-files/po"
+	PO_DIR="../_translator-files/po"
 fi
 
 # Directory where the translated file folders will be
 if [ -z "$PUB_DIR" ] ; then
-	PUB_DIR="./wiki"
+	PUB_DIR="../wiki"
 fi
 
 
@@ -68,7 +73,7 @@ use_po_module () {
 
     # Determine target file/folder names
 	while IFS= read -r -d '' file ; do
-		basename="$(basename -s .md "$file")"
+		basename=$(basename -s .md "$file")
 		dirname=$(dirname "$file")
 		path="${dirname#$SRC_DIR/}"
 
@@ -83,7 +88,7 @@ use_po_module () {
 			--format asciidoc \
 			--master "$file" \
 			--master-charset "UTF-8" \
-			--po "$PO_DIR/$lang/$basename.po" \
+			--po "$PO_DIR/$lang/${basename}.po" \
 			--localized "$localized_file" --localized-charset "UTF-8" \
 			--keep "$THRESHOLD"
 
@@ -93,6 +98,7 @@ use_po_module () {
 		if [ -f $trans_file ] ; then
 		    echo "$basename".md translated into "$lang"
 		fi
+
 	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
 }
 
@@ -103,6 +109,5 @@ use_po_module () {
 while IFS= read -r -d '' dir ; do
 	lang=$(basename -s .md "$dir")
 	echo "$lang"
-	use_po_module "$lang"   
+	use_po_module "$lang"
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
-

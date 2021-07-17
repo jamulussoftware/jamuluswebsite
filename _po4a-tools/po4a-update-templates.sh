@@ -5,17 +5,22 @@
 # SRC_DIR folder for original English .md files
 # PO_DIR directory where .po files are stored
 
+# Sometimes the script needs help to establish where it is in the file system
+SCRIPT_DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+
+cd "$SCRIPT_DIR"
+
 
 ####################################
 # INITIALISE VARIABLES
 ####################################
 
 # Folder where source English .md files are
-SRC_DIR="./wiki/en"
+SRC_DIR="../wiki/en"
 
 # Directory where the po file folders are
 if [ -z "$PO_DIR" ] ; then
-	PO_DIR="./translator-files/po"
+	PO_DIR="../_translator-files/po"
 fi
 
 ####################################
@@ -54,7 +59,7 @@ while IFS= read -r -d '' file ; do
 
         # po4a-updatepo will complain if the following is not met
         sed -i 's/Content-Type: text\/plain; charset=CHARSET/Content-Type: text\/plain; charset=UTF-8/g' "$po_file"
-        
+
         # If a new file has been added to /wiki/en/, add message after sed error to clarify it will be created
         if ! [ -f "$po_file" ] ; then
             echo creating "$po_file"
