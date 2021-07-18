@@ -230,7 +230,7 @@ timing jitter. If the Auto check is enabled, the jitter buffer size faders are d
 
 Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the
 lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
-also increases.
+also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality.
 
 ### Measurements
 
