@@ -5,7 +5,7 @@ on:
   push:
     branches: [ next-release ]
 jobs:
-  Jekyll_site_CI:
+  jekyll_site_ci:
     permissions:
       contents: write
     runs-on: ubuntu-latest
