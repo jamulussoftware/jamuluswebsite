@@ -16,7 +16,7 @@ cd "$SCRIPT_DIR"
 ####################################
 
 # Set % threshold for translated .md files to be created
-THRESHOLD="0"
+THRESHOLD="80"
 
 # Folder where source English .md files are
 SRC_DIR="../wiki/en"

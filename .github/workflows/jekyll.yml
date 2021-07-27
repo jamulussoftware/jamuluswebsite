@@ -44,17 +44,17 @@ jobs:
             templates:
               - 'wiki/en/*.md'
       - name: Update templates
-        if: steps.filter.outputs.templates == 'true'
+        if: ${{ steps.filter.outputs.templates == 'true' || github.event.pull_request.title == 'Add new language' }}
         run: ./_po4a-tools/po4a-update-templates.sh
-        
+
 # This step only runs if a PR is merged:
       - name: Push changes to repo if action triggered on:push and templates need updating
-        if: ${{ github.event_name == 'push' && steps.filter.outputs.templates == 'true' }}
+        if: ${{ github.event_name == 'push' && steps.filter.outputs.templates == 'true' || github.event.pull_request.title == 'Add new language' }}
         uses: EndBug/add-and-commit@v7
         with:
           default_author: github_actions
           message: 'AUTO: Update templates'
-        
+
 # Create translated .md files. Never pushed to the repo.
       - name: Create translated .md docs and stats
         run: ./_po4a-tools/po4a-create-all-targets.sh
@@ -64,7 +64,7 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --future"
+          jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 755 /srv/jekyll && jekyll build --future"
       - name: Zip Website
         run: zip -r ${{ github.workspace }}/website.zip _site/*
       - uses: actions/upload-artifact@v2
