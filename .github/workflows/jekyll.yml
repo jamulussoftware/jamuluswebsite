@@ -48,9 +48,9 @@ jobs:
               - 'wiki/en/*.md'
             new-lang:
               added:
-              - '_translator-files/po/**'
+              '_translator-files/po/*/temp.po~'
 
-# If there have been changes to English .md files in /wiki, or files have been added to _translator-files/po/, run po4a-update-templates:
+# If there have been changes to English .md files in /wiki, or a temp.po~ file has been added to _translator-files/po/*/, run po4a-update-templates:
       - name: Update templates or add new language
         env:
           TEMPLATES: ${{ steps.filter.outputs.templates }}

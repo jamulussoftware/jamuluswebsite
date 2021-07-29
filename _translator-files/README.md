@@ -12,7 +12,7 @@ Installation pages (Win, Linux, macOS)
 
 ## Adding a new language
 
-- Navigate to `_translator-files/po/` and create an empty folder naming it with the language code. 
+- Navigate to `_translator-files/po/` and create a new folder naming it with the language code. 
 - Inside this folder, create an empty text file and name it `temp.po~`. 
 - Make a pull request against the 'next-release' branch and make the title of the pull request "Add new language [LANGUAGE]". When your PR is merged, a script will run that will create the .po files for the new language. Update your branch to pull in the new files for translation. 
 
