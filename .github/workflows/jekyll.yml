@@ -38,7 +38,7 @@ jobs:
             done
           fi
 
-# Paths changes filter. If there's been a change to any files defined in the filter, the step (update templates) runs:
+# Paths changes filter. Detects if there's been a change to any files defined in the filter:
       - uses: dorny/paths-filter@v2
         id: filter
         with:
@@ -46,13 +46,27 @@ jobs:
           filters: |
             templates:
               - 'wiki/en/*.md'
-      - name: Update templates
-        if: ${{ steps.filter.outputs.templates == 'true' || github.event.pull_request.title == 'Add new language' }}
-        run: ./_po4a-tools/po4a-update-templates.sh
+            new-lang:
+              added:
+              - '_translator-files/po/**'
+
+# If there have been changes to English .md files in /wiki, or files have been added to _translator-files/po/, run po4a-update-templates:
+      - name: Update templates or add new language
+        env:
+          TEMPLATES: ${{ steps.filter.outputs.templates }}
+          NEW_LANG: ${{ steps.filter.outputs.new-lang }}
+        if: ${{ env.TEMPLATES == 'true' || env.NEW_LANG == 'true' }}
+        run: |
+          ./_po4a-tools/po4a-update-templates.sh
+          if [[ "$NEW_LANG" == 'true' ]]; then
+            echo .po files added for new language
+          else
+            echo Templates updated
+          fi
 
 # This step only runs if a PR is merged:
       - name: Push changes to repo if action triggered on:push and templates need updating
-        if: ${{ github.event_name == 'push' && steps.filter.outputs.templates == 'true' || github.event.pull_request.title == 'Add new language' }}
+        if: ${{ github.event_name == 'push' && steps.filter.outputs.templates == 'true' || github.event_name == 'push' && steps.filter.outputs.new-lang == 'true' }}
         uses: EndBug/add-and-commit@v7
         with:
           default_author: github_actions

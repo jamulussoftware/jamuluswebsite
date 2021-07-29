@@ -21,7 +21,7 @@ produce_stats () {
 	while IFS= read -r -d '' file ; do
 		basename="$(basename -s .md "$file")"
 
-		# Stats printed to translator-files/statistics.md
+		# Stats printed to wiki/statistics.md
 		echo -n "|**"$lang"**| **"$basename".po**|" >> "$STATS_FILE"
 		msgfmt --statistics "$PO_DIR/$lang/$basename".po &>> "$STATS_FILE"
 
