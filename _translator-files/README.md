@@ -12,10 +12,12 @@ Installation pages (Win, Linux, macOS)
 
 ## Adding a new language
 
-- Navigate to `_translator-files/po/` and create a new folder naming it with the language code. 
-- Inside this folder, create an empty text file and name it `temp.po~`. 
-- Make a pull request against the 'next-release' branch and make the title of the pull request "Add new language [LANGUAGE]". When your PR is merged, a script will run that will create the .po files for the new language. Update your branch to pull in the new files for translation. 
+Open an issue ([here](https://github.com/jamulussoftware/jamuluswebsite/issues)) with the language code of the new language you want to add in square brackets (e.g. "Add Basque [eu]"). It is important that you use the following format for the language code:
 
+- Lower case if it is a two-character code; e.g. [en].
+- Lower case + underscore + upper case for regional variations; e.g. [en_US].
+
+You will be notified on the issue thread you opened when the language files have been created. You can then fork the repository and work on the translations.
 Please also take into account the following:
 
 ### Points to note
