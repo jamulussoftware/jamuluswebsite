@@ -45,7 +45,7 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
         run: |
           NEW_LANG=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
-          if [[ $NEW_LANG  =~ ^[a-z]{2}(_[A-Z]{2})?$ ]]; then
+          if [[ $NEW_LANG =~ ^[a-z]{2}(_[A-Z]{2})?$ ]]; then
             mkdir _translator-files/po/$NEW_LANG
             ./_po4a-tools/po4a-update-templates.sh
           else
