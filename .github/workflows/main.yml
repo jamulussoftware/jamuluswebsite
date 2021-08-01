@@ -23,19 +23,7 @@ jobs:
           CACHE_HIT: ${{steps.cache-po4a.outputs.cache-hit}}
 
 # If CACHE_HIT: true, retrieve the cache. If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
-        run: |
-          if [[ "$CACHE_HIT" == 'true' ]]; then
-            sudo cp --recursive ~/po4a/* /
-          else
-            sudo apt install -yq gettext libsgmls-perl libyaml-tiny-perl opensp
-            wget -O po4a.deb https://github.com/jamulussoftware/assets/raw/main/po4a/po4a_0.64-alpha.deb
-            sudo dpkg -i po4a.deb
-            mkdir -p ~/po4a
-
-            for dep in po4a libcroco3 libosp5 sgml-base gettext libsgmls-perl libyaml-tiny-perl opensp; do
-                dpkg -L $dep | while IFS= read -r f; do if test -f $f; then echo $f; fi; done | xargs cp --parents --target-directory ~/po4a/
-            done
-          fi
+        run: ./_po4a-tools/po4a-cache.sh
 
 # Paths changes filter. If there's been a change to any files defined in the filter, the step (update templates) runs:
       - uses: dorny/paths-filter@v2
