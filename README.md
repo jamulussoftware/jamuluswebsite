@@ -34,17 +34,11 @@ If you want to add a new image, use .png format if possible, and if it’s not a
 
 ## Translating
 
-### For details on the website translation process, please consult the README file contained in the `translator-files/` folder
+**For details on the website translation process, please consult the README file contained in the `_translator-files/` folder**
 
 ### Style and tone
 
 Language on the website should be consistent. Please have a look at our [style and tone guide](https://jamulus.io/contribute/Style-and-Tone).
-
-#### Please note: if your language has no translated documents, please start with the following sections of the website:
-
-- Home page
-- Setup/Getting Started
-- Installation pages (Win, Linux, macOS)
 
 For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/TRANSLATING.md)
 
@@ -54,26 +48,11 @@ We collect changes to the English version of the site on a "next-release" branch
 
 1. Changes are first made to EN (= English) *.md files and committed to the “next-release” branch.
 1. Once we’ve agreed the changes can go live (usually just before a software release), we then create GitHub issues for each language, tagged for that release. You can ask questions about the work there.
-1. Translators for each language then update any affected files by editing the .po files for their language in `translator-files/po/LANGUAGE/` and open pull requests to merge them into the "next-release” branch. Those pull requests are linked to the relevant GitHub issue in step 2 so they can be tracked.
+1. Translators for each language then update any affected files by editing the .po files for their language in `_translator-files/po/LANGUAGE/` and open pull requests to merge them into the "next-release” branch. Those pull requests are linked to the relevant GitHub issue in step 2 so they can be tracked.
 1. When all translations are merged (issues will then close automatically), we merge that new branch into the `release` branch, which is automatically made live on the production site.
 
 ### Points to note
 
-- Each page on the site has a .md or .html language suffixed version.  Some of the website content is in \_includes/wiki/[langCode]. These files must be translated in order not to break the site.
-
-- The homepage (https://jamulus.io/) is located in the repo root and named 1-[langCode]-index.html
-
 - Please do not add new or significantly modified content to a non-English .html file and do not edit **any** non-English .md files, as these changes would later be lost. All content changes must be made on the "next-release" branch in English **first** after being [discussed here](https://github.com/jamulussoftware/jamulus/discussions).
 
 - Please make sure you are aware of what stage of the workflow we are currently at by monitoring the [project board](https://github.com/orgs/jamulussoftware/projects/2), and on the Discord (or Matrix) discussion channel that you will be invited to join. This is where relevant deadlines and information will be posted during the translation sprint.
-
-- Pull requests for translations should have a title which looks like this: `[Tag (Translation)][language code (e.g. en)] {short description of your changes}`
-
-
-## Adding a new language
-
-Navigate to `translator-files/po/` and create an empty folder naming it with the language code. Run the `po4a-update-templates.sh` script. The folder should now be populated with all the necessary .po files for that language.
-
-Make sure to add the language to the \_config.yml file (in the languages array).  At a minimum, the main includes for the wiki (see \_includes/wiki/) have to be translated.
-
-The navigation and general site-wide strings (see the \_data/ folder) and the homepage (see the 1-index.html file in the root of this repo) should also be translated.

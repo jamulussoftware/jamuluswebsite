@@ -1,20 +1,69 @@
 name: Jekyll site CI
-
 on:
-  push:
-    branches: [ changes, release, translate ]
   pull_request:
-    branches: [ changes, release, translate ]
-
+    branches: [ next-release, release ]
+  push:
+    branches: [ next-release ]
 jobs:
-  build:
+  jekyll_site_ci:
     permissions:
-      contents: read
+      contents: write
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --future"
+      - uses: actions/checkout@v2
+
+# Retrieve po4a installation cache or create it if not found:
+      - name: Cache po4a dependencies
+        uses: actions/cache@v1.0.3
+        id: cache-po4a
+        with:
+          path: "~/po4a"
+          key: ${{ runner.os }}-po4a
+      - name: Install or retrieve po4a from cache
+        env:
+          CACHE_HIT: ${{steps.cache-po4a.outputs.cache-hit}}
+
+# If CACHE_HIT: true, retrieve the cache. If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
+        run: ./_po4a-tools/po4a-cache.sh
+
+# Paths changes filter. Detects if there's been a change to any files defined in the filter:
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          base: ${{ github.ref }}
+          filters: |
+            templates:
+              - 'wiki/en/*.md'
+
+# If there have been changes to English .md files in /wiki, run po4a-update-templates:
+      - name: Update templates
+        if: ${{ steps.filter.outputs.templates == 'true' }}
+        run: ./_po4a-tools/po4a-update-templates.sh
+
+# This step only runs if a PR is merged:
+      - name: Push changes to repo if action triggered on:push and templates need updating
+        if: ${{ github.event_name == 'push' && steps.filter.outputs.templates == 'true' }}
+        uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: 'AUTO: Update templates'
+
+# Create translated .md files. Never pushed to the repo.
+      - name: Create translated .md docs and stats
+        run: ./_po4a-tools/po4a-create-all-targets.sh
+
+# Build, zip and upload site
+      - name: Build the site in the jekyll/builder container
+        run: |
+          docker run \
+          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+          jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 755 /srv/jekyll && jekyll build --future"
+      - name: Zip Website
+        run: zip -r ${{ github.workspace }}/website.zip _site/*
+      - uses: actions/upload-artifact@v2
+        name: Upload Website
+        with:
+          name: Website
+          path: ${{ github.workspace }}/website.zip
+          retention-days: 15
+          if-no-files-found: error # 'warn' or 'ignore' are also available, defaults to `warn`
