@@ -29,7 +29,7 @@ If you want to add a new image, use .png format if possible, and if it’s not a
 
 ## Translating
 
-### For details on the website translation process, please consult the README file contained in the `_translator-files/` folder
+**For details on the website translation process, please consult the README file contained in the `_translator-files/` folder**
 
 ### Style and tone
 
