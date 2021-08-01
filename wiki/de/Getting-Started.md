@@ -4,7 +4,7 @@ layout: wiki
 permalink: /wiki/Getting-Started
 title: Setup
 ---
-
+Test zip
 # Setup - Erste Schritte mit Jamulus
 
 Um das Beste von Jamulus genießen zu können, brauchst du mindestens:
