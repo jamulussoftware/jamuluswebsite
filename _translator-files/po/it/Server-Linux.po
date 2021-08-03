@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-07-13 21:18+0200\n"
+"POT-Creation-Date: 2021-08-02 10:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,43 +16,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: lang
-#: wiki/en/Server-Linux.md:1
+#: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "en"
 msgstr "it"
 
 #. type: YAML Front Matter: layout
-#: wiki/en/Server-Linux.md:1
+#: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
 #. type: YAML Front Matter: permalink
-#: wiki/en/Server-Linux.md:1
+#: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "/wiki/Server-Linux"
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: wiki/en/Server-Linux.md:1
+#: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "Headless Linux Server Installation"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:9
+#: ../wiki/en/Server-Linux.md:9
 msgid ""
 "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" "
 "branch1-url=\"Running-a-Server\" %}"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:11
+#: ../wiki/en/Server-Linux.md:11
 msgid "# Running a Headless Server"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:13
+#: ../wiki/en/Server-Linux.md:13
 msgid ""
 "The following is for running Jamulus as a \"pure\" server on **hardware "
 "without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian "
@@ -60,7 +60,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:15
+#: ../wiki/en/Server-Linux.md:15
 msgid ""
 "If you want to run a server on a Raspberry Pi, you will need to [compile "
 "from source](https://github.com/jamulussoftware/jamulus/blob/master/"
@@ -69,35 +69,35 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:17
+#: ../wiki/en/Server-Linux.md:17
 msgid ""
 "Download the [latest headless .deb file]({{ site.download_root_link }}"
 "{{ site.download_file_names.deb-headless }})"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:18
+#: ../wiki/en/Server-Linux.md:18
 msgid ""
 "Update apt to make sure you have a current list of standard packages: `sudo "
 "apt update`"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:19
+#: ../wiki/en/Server-Linux.md:19
 msgid ""
 "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names."
 "deb-headless }}`"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:20
+#: ../wiki/en/Server-Linux.md:20
 msgid ""
 "Enable the headless server process via systemd: `sudo systemctl enable "
 "jamulus-headless`"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:21
+#: ../wiki/en/Server-Linux.md:21
 msgid ""
 "Add your desired [command line options](Running-a-Server#command-line-"
 "options) to the `ExecStart` line in the systemd service file in `/lib/"
@@ -106,21 +106,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:22
+#: ../wiki/en/Server-Linux.md:22
 msgid ""
 "Reload the systemd files `sudo systemctl daemon-reload` and restart the "
 "headless server: `sudo systemctl restart jamulus-headless`"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:23
+#: ../wiki/en/Server-Linux.md:23
 msgid ""
 "Check all is well with `systemctl status jamulus-headless` (hit `q` to get "
 "back to the command prompt)."
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:25
+#: ../wiki/en/Server-Linux.md:25
 msgid ""
 "You may also be interested in downloading [this set of useful tools](https://"
 "github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus "
@@ -128,36 +128,36 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:27
+#: ../wiki/en/Server-Linux.md:27
 msgid "## Notes"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:29
+#: ../wiki/en/Server-Linux.md:29
 msgid ""
 "You can control Jamulus with the `systemctl` command. For example, to stop "
 "the server cleanly:"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:31
+#: ../wiki/en/Server-Linux.md:31
 msgid "`sudo systemctl stop jamulus-headless`"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:33
+#: ../wiki/en/Server-Linux.md:33
 msgid "### Running in public mode"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:35
+#: ../wiki/en/Server-Linux.md:35
 msgid ""
 "The following minimum setup is required to [run a public server](Running-a-"
 "Server#server-types):"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:41
+#: ../wiki/en/Server-Linux.md:41
 #, no-wrap
 msgid ""
 "~~~\n"
@@ -168,20 +168,20 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:43
+#: ../wiki/en/Server-Linux.md:43
 #, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `--serverinfo`\n"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:45
+#: ../wiki/en/Server-Linux.md:45
 msgid ""
 "Set your Directory (genre) server using the `--directoryserver` (`-e`) "
 "option as follows:"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:56
+#: ../wiki/en/Server-Linux.md:56
 #, no-wrap
 msgid ""
 "| Genre |   Server address           |\n"
@@ -196,48 +196,48 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:58
+#: ../wiki/en/Server-Linux.md:58
 msgid "### Viewing The Logs"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:60
+#: ../wiki/en/Server-Linux.md:60
 msgid ""
 "Jamulus will log to the system log file if you left the "
 "`StandardOutput=journal` setting in the unit file."
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:62
+#: ../wiki/en/Server-Linux.md:62
 msgid ""
 "To view the log, use `journalctl` (to exit press Ctrl-C). For example, to "
 "read the system log file, filtered for the Jamulus service:"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:64
+#: ../wiki/en/Server-Linux.md:64
 msgid "`journalctl -f -u jamulus-headless`"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:67
+#: ../wiki/en/Server-Linux.md:67
 msgid "### Upgrading"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:69
+#: ../wiki/en/Server-Linux.md:69
 msgid ""
 "To upgrade your server to a newer version, simply download a new .deb and re-"
 "install as step 3."
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:71
+#: ../wiki/en/Server-Linux.md:71
 msgid "### Recording"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:74
+#: ../wiki/en/Server-Linux.md:74
 msgid ""
 "When using the recording function with the `-R` command line option, if the "
 "server receives a SIGUSR1 signal during a re cording, it will start a new "
@@ -245,7 +245,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:77
+#: ../wiki/en/Server-Linux.md:77
 msgid ""
 "To send these signals using systemd, create the following two `.service` "
 "files in `/etc/systemd/system`, calling them something appropriate (e.g. "
@@ -253,18 +253,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:79
+#: ../wiki/en/Server-Linux.md:79
 #, no-wrap
 msgid "**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).\n"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:81
+#: ../wiki/en/Server-Linux.md:81
 msgid "For turning recording on or off (depending on the current state):"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:86
+#: ../wiki/en/Server-Linux.md:86
 #, no-wrap
 msgid ""
 "~~~\n"
@@ -274,7 +274,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:91
+#: ../wiki/en/Server-Linux.md:91
 #, no-wrap
 msgid ""
 " [Service]\n"
@@ -284,12 +284,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:93
+#: ../wiki/en/Server-Linux.md:93
 msgid "For starting a new recording:"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:98
+#: ../wiki/en/Server-Linux.md:98
 #, no-wrap
 msgid ""
 "~~~\n"
@@ -299,7 +299,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:103
+#: ../wiki/en/Server-Linux.md:103
 #, no-wrap
 msgid ""
 " [Service]\n"
@@ -309,7 +309,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:105
+#: ../wiki/en/Server-Linux.md:105
 msgid ""
 "_Note: The Jamulus service name in the `ExecStart` line needs to be the same "
 "as the `.service` file name you created when setting systemd to control your "
@@ -317,43 +317,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:107
+#: ../wiki/en/Server-Linux.md:107
 msgid "Run `sudo systemctl daemon-reload` to register them for first use."
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:109
+#: ../wiki/en/Server-Linux.md:109
 msgid "Now you can run these with the `service start` command, for example:"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:111
+#: ../wiki/en/Server-Linux.md:111
 msgid ""
 "`sudo service jamulusTogglerec start` (assuming you named your unit file "
 "`jamulusTogglerec.service`)"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:113
+#: ../wiki/en/Server-Linux.md:113
 msgid ""
 "You can see the result of these commands if you run `service jamulus "
 "status`, or by viewing the logs."
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:115
+#: ../wiki/en/Server-Linux.md:115
 msgid "## Making a server status page"
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:117
+#: ../wiki/en/Server-Linux.md:117
 msgid ""
 "With the `-m` command line argument, server statistics can be generated to "
 "be put on a web page."
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:119
+#: ../wiki/en/Server-Linux.md:119
 msgid ""
 "Here is an example php script using the server status file to display the "
 "current server status on a html page (assuming the following command line "
@@ -361,7 +361,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: wiki/en/Server-Linux.md:134
+#: ../wiki/en/Server-Linux.md:134
 #, no-wrap
 msgid ""
 "~~~\n"

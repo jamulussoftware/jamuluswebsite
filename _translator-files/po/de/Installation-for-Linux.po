@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-07 08:32+0200\n"
+"POT-Creation-Date: 2021-08-02 10:01+0200\n"
 "PO-Revision-Date: 2021-05-24 09:48+0200\n"
 "Last-Translator: daryl <darylo1@hotmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -17,31 +17,31 @@ msgstr ""
 "X-Generator: Lokalize 19.12.3\n"
 
 #. type: YAML Front Matter: lang
-#: wiki/en/Installation-for-Linux.md:1
+#: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "en"
 msgstr "de"
 
 #. type: YAML Front Matter: layout
-#: wiki/en/Installation-for-Linux.md:1
+#: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
 #. type: YAML Front Matter: permalink
-#: wiki/en/Installation-for-Linux.md:1
+#: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Linux"
 msgstr "/wiki/Installation-for-Linux"
 
 #. type: YAML Front Matter: title
-#: wiki/en/Installation-for-Linux.md:1
+#: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "Installation for Linux"
 msgstr "Installation auf Linux"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:9
+#: ../wiki/en/Installation-for-Linux.md:9
 msgid ""
 "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started"
 "\" branch1-url=\"Getting-Started\" %}"
@@ -50,24 +50,24 @@ msgstr ""
 "\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:11
+#: ../wiki/en/Installation-for-Linux.md:11
 msgid "# Installation for Linux"
 msgstr "# Installation auf Linux"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:13
+#: ../wiki/en/Installation-for-Linux.md:13
 msgid "Make sure you read the [Getting Started](Getting-Started) page."
 msgstr ""
 "Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite bereits "
 "gelesen hast."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:15
+#: ../wiki/en/Installation-for-Linux.md:15
 msgid "### Debian and Ubuntu"
 msgstr "### Debian and Ubuntu"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:17
+#: ../wiki/en/Installation-for-Linux.md:17
 msgid ""
 "Download the [latest .deb file]({{ site.download_root_link }}{{ site."
 "download_file_names.deb-gui }})"
@@ -76,14 +76,14 @@ msgstr ""
 "download_file_names.deb-gui }})"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:18
+#: ../wiki/en/Installation-for-Linux.md:18
 msgid ""
 "Update apt by opening a console window (CTRL+ALT+T should work) and type: "
 "`sudo apt-get update`"
 msgstr "Update apt: `sudo apt-get update`"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:19
+#: ../wiki/en/Installation-for-Linux.md:19
 msgid ""
 "Navigate to where you downloaded the installer and either double-click on "
 "it, or use the command line: `sudo apt install ./{{ site.download_file_names."
@@ -93,7 +93,7 @@ msgstr ""
 "download_file_names.deb-gui }}`."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:20
+#: ../wiki/en/Installation-for-Linux.md:20
 msgid "Once installed, you can delete the file and close any console windows."
 msgstr ""
 "Da Jamulus den JACK Server benötigt, musst du ihn auch installieren. Wir "
@@ -101,7 +101,7 @@ msgstr ""
 "Installiere das Programm mit `sudo apt-get install qjackctl`"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:22
+#: ../wiki/en/Installation-for-Linux.md:22
 msgid ""
 "Note that if you need to upgrade Jamulus to a newer version, just download "
 "the new .deb file and re-install as above."
@@ -110,7 +110,7 @@ msgstr ""
 "Datei einfach herunterladen und wie oben beschrieben neu installieren."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:24
+#: ../wiki/en/Installation-for-Linux.md:24
 msgid ""
 "For installers on other distributions, see [Repology](https://repology.org/"
 "project/jamulus/versions). You may also wish to use one of the contributed "
@@ -122,17 +122,17 @@ msgstr ""
 "installscripts) verwenden."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:27
+#: ../wiki/en/Installation-for-Linux.md:27
 msgid "## Set up your hardware"
 msgstr "## Richte deine Hardware ein"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:29
+#: ../wiki/en/Installation-for-Linux.md:29
 msgid "### Configure JACK with QjackCtl"
 msgstr "### Konfiguriere Jack mit QjackCtl"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:31
+#: ../wiki/en/Installation-for-Linux.md:31
 msgid ""
 "Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to "
 "configure that first. The recommended method is to use `QjackCtl`."
@@ -141,14 +141,14 @@ msgstr ""
 "zuerst einrichten. Am Besten machst du das mit `QjackCtl`."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:32
+#: ../wiki/en/Installation-for-Linux.md:32
 msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
 msgstr ""
 "Führe `qjackctl` aus und warte,  bis sich das **Jack Audio Connection Kit** "
 "öffnet."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:33
+#: ../wiki/en/Installation-for-Linux.md:33
 msgid ""
 "Configure your audio hardware as follows (the exact settings for JACK will "
 "depend on what your audio hardware is capable of):"
@@ -157,7 +157,7 @@ msgstr ""
 "JACK hängen von den Funktionen deiner Soundkarte ab):"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:35
+#: ../wiki/en/Installation-for-Linux.md:35
 msgid ""
 "Set the audio **Interface** to the one you want (there may be several in the "
 "list)"
@@ -166,34 +166,34 @@ msgstr ""
 "sein)"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:36
+#: ../wiki/en/Installation-for-Linux.md:36
 msgid "Set the **Sample Rate to 48000**"
 msgstr "Setzte die **Sample Rate auf 48000**"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:37
+#: ../wiki/en/Installation-for-Linux.md:37
 msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
 msgstr "Setze die **Frames/Period auf 128** und Periods/Buffer zunächst auf 2"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:39
+#: ../wiki/en/Installation-for-Linux.md:39
 msgid "Restart JACK for the new settings to take effect"
 msgstr "Starte JACK neu, um die neuen Einstellungen zu übernehmen."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:41
+#: ../wiki/en/Installation-for-Linux.md:41
 msgid "### Start Jamulus"
 msgstr "### Jamulus starten"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:43
+#: ../wiki/en/Installation-for-Linux.md:43
 msgid "With JACK running and configured, launch Jamulus."
 msgstr ""
 "Nachdem JACK konfiguriert und am Laufen ist, kannst du Jamulus aus dem "
 "Launcher starten (oder mit der Kommandozeile über den Befehl `jamulus`)."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:45
+#: ../wiki/en/Installation-for-Linux.md:45
 msgid ""
 "If you get problems with sound breaking up (in particular XRUN errors "
 "reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 "
@@ -209,17 +209,17 @@ msgstr ""
 "(Client-Troubleshooting)."
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:47
+#: ../wiki/en/Installation-for-Linux.md:47
 msgid "## All installed?"
 msgstr "## Alles installiert?"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:49
+#: ../wiki/en/Installation-for-Linux.md:49
 msgid "Take a look at the"
 msgstr "Nun schau dir die folgende Seite an:"
 
 #. type: Plain text
-#: wiki/en/Installation-for-Linux.md:50
+#: ../wiki/en/Installation-for-Linux.md:50
 msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgstr "[Nach der Installation](Getting-Started){: .button}"
 

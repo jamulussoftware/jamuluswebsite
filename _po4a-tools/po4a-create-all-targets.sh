@@ -16,7 +16,7 @@ cd "$SCRIPT_DIR"
 ####################################
 
 # Set % threshold for translated .md files to be created
-THRESHOLD="80"
+THRESH_VAL="80"
 
 # Folder where source English .md files are
 SRC_DIR="../wiki/en"
@@ -80,6 +80,13 @@ use_po_module () {
 			localized_file="$PUB_DIR/$lang/$basename.md"
 		else
 			localized_file="$PUB_DIR/$lang/$path/$basename.md"
+		fi
+
+		# Exclude certain files from the threshold requirement
+		if [[ "$basename" == 'Shared-'* ]] ; then
+			THRESHOLD="0"
+		else
+			THRESHOLD="$THRESH_VAL"
 		fi
 
 		# Run po4a-translate and create target files
