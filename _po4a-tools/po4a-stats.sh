@@ -2,14 +2,14 @@
 
 
 # Stats file location
-STATS_FILE="../wiki/Statistics.md"
+STATS_FILE="../contribute/en/Statistics.md"
 
 # Print yaml front matter and table title/header
 echo '---
 layout: wiki
 title: "Statistics"
 lang: "en"
-permalink: "/wiki/Statistics"
+permalink: "/contribute/Statistics"
 ---
 # Current status of website translations
 
@@ -21,7 +21,7 @@ produce_stats () {
 	while IFS= read -r -d '' file ; do
 		basename="$(basename -s .md "$file")"
 
-		# Stats printed to wiki/statistics.md
+		# Stats printed to file Statistics.md
 		echo -n "|**"$lang"**| **"$basename".po**|" >> "$STATS_FILE"
 		msgfmt --statistics "$PO_DIR/$lang/$basename".po &>> "$STATS_FILE"
 

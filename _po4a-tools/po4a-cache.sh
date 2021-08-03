@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# If the po4a cache already exists, this script copies all the dependencies to their locations.
+# If not, it installs po4a and its dependencies, then copies them all to a folder to be cached/retrieved by the GH action.
+
 if [[ "$CACHE_HIT" == 'true' ]]; then
 	sudo cp --force --recursive ~/po4a/* /
 else
