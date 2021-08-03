@@ -83,7 +83,7 @@ use_po_module () {
 		fi
 
 		# Exclude certain files from the threshold requirement
-		if [[ "$basename" == "^Shared-"* ]] ; then
+		if [[ "$basename" == 'Shared-'* ]] ; then
 			THRESHOLD="0"
 		else
 			THRESHOLD="$THRESH_VAL"
