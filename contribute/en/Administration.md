@@ -70,7 +70,7 @@ TODO: Link to / integrate @gilgongo's document?
 ### Milestones
 
 ### Issues and Pull Requests for jamulussoftware/jamulus
-<!-- TODO: Should we extend this to work for jamuluswebesite as well? If so, how? -->
+*TODO: Should we extend this to work for jamuluswebesite as well? If so, how?*
 We aim to give early feedback and try to keep an overview by using the Project board.
 
 #### Triage
@@ -78,10 +78,10 @@ When a new Issue or Pull Request comes in, do the following:
 1. Add it to the Tracking Project board.
 1. Check for duplicates.
 1. Decide whether to accept this Issue/PR:
-   1. Reject if it is a feature which goes against Jamulus' core principles. <!-- TODO: Link CONTRIBUTE.md -->
-   1. Accept if it is about a plausible or reproducible bug.
-   1. Accept if it is a well-specified feature request or implementation.
-   1. Accept PRs if there is a related, accepted Issue.
+   1. Reject if it is a feature which goes against Jamulus' core principles. See [CONTRIBUTING.md on the main Jamulus repo](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md#jamulus-projectsource-code-general-principles).
+   3. Accept if it is about a plausible or reproducible bug.
+   4. Accept if it is a well-specified feature request or implementation.
+   5. Accept PRs if there is a related, accepted Issue.
 1. Check if the title provides enough context. Improve generic titles. For example, change `Fix bug` to `Recorder: Fix crash on full disk`.
 1. Give a quick initial feedback
    - `Thanks for your report/PR`
@@ -130,8 +130,8 @@ This also means that everyone must be transparent about their intentions and act
 Adding or removing team members requires a majority vote by all main developers.
 
 ### Accepting new team members
-- Invite to Github org and add permissions <!-- TODO: which/where? -->
-- Add mail address to team@ <!-- TODO: how? -->
+- Invite to Github org and add permissions [on the people page](https://github.com/orgs/jamulussoftware/people).
+- Add mail address to team@ *TODO: how?*
 - Invite to Discord server or the bridged Matrix channel
 - Subscribe to notifications for the jamulussoftware repositories
 
@@ -140,12 +140,16 @@ Reverse the onboarding checklist.
 
 ## Repositories
 ### Jamulus
+The main code repo. Most development happens here.
 ### Jamulus website
+The website repo. All text content and translations go here.
 ### Assets (ASIO4ALL)
+For bigger binary files like ASIO drivers, (big) pictures.
 ### Install scripts
-
+Not part of the official maintenance process. These scripts were contributed by @niebert.
 ## Infrastructure
 ### Official Directory Servers
+@pljones and @corrados are hosting the official directories. 
 TODO: @pljones'/@corrados' infra
 
 ### Update check servers
@@ -170,8 +174,8 @@ TODO: @gilgongo?
 ## Credential management
 Credentials for access to common infrastructure
 TODO: Discuss
-<!--
+
+Comment by @hoffie:
 - Cloud password manager?
 - Github secrets (I've never used them and I
 - File-based password manager in a private repo (Keepass, Command line tools, ...)?
--->
