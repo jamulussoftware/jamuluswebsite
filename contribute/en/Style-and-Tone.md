@@ -72,6 +72,8 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 “Directory” The general term for a server that a client uses to get its list of public servers from. Use the term “Directory server” cautiously - it may be confusing in the presence of “Server”.
 
+“Country/Region” Keep in mind that some areas of the world have a controversal (political) status. If possible, be generic and remain neutral. Instead of just saying country, use “Country/Region“ or “Location“.
+
 ## Units
 
 We use the following abbreviations:
