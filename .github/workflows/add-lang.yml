@@ -31,11 +31,14 @@ jobs:
       - name: Make new lang directory and create .po files
         env:
           ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUM: ${{ github.event.issue.number }}
         run: |
           NEW_LANG=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
           if [[ $NEW_LANG =~ ^[a-z]{2}(_[A-Z]{2})?$ ]]; then
             mkdir _translator-files/po/$NEW_LANG
             ./_po4a-tools/po4a-update-templates.sh
+            echo "new_lang=$NEW_LANG" >> $GITHUB_ENV
+            echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
           else
             echo Language code in wrong format
             exit 1
@@ -47,7 +50,7 @@ jobs:
         with:
           branch: next-release
           default_author: github_actions
-          message: 'AUTO: Add language'
+          message: 'AUTO: Add new language: (${{ env.new_lang }}) #${{ env.issue_num }}'
 
 # Create translated .md files. Never pushed to the repo.
       - name: Create translated .md docs and stats
