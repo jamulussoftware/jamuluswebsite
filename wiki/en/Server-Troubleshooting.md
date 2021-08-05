@@ -41,7 +41,7 @@ This should be your **public** IP address (find that with [Google](https://www.g
 
 ### What port numbers can I use?
 
-You can set your server to listen on a custom port with the `--port` option. If you you this, you will need to tell people which port to connect connect on. They will need to append the port number the the address of your server in the format `[serverAddress]:[portNumber]`.
+You can set your server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your server in the format `[serverAddress]:[portNumber]`.
 
 ### Is a private server a direct server without contact to the Jamulus Directory Server?
 

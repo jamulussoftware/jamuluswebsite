@@ -103,7 +103,7 @@ If you see a "mute" icon above a user, it means that person cannot hear you. Eit
 
 ### Grp button
 
-Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others Up to 8 groups can be defined.
+Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others. Up to 8 groups can be defined.
 
 ### Mute button
 
