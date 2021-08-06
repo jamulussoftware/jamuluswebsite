@@ -68,6 +68,7 @@ while IFS= read -r -d '' file ; do
             --format asciidoc \
             --master "$file" \
             --master-charset "UTF-8" \
+            --wrap-po no \
             --po "$po_file" ; then
         echo ''
         echo Error updating "$lang" PO file for: "$basename.md"
