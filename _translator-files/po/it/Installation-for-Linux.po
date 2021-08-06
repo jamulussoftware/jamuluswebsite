@@ -3,29 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-02 10:01+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+msgstr "Project-Id-Version: PACKAGE VERSION\nPOT-Creation-Date: 2021-08-06 11:55+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nLanguage: \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "en"
-msgstr "it"
+msgstr ""
 
 #. type: YAML Front Matter: layout
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "wiki"
-msgstr "wiki"
+msgstr ""
 
 #. type: YAML Front Matter: permalink
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -41,12 +33,8 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:9
-msgid ""
-"{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started"
-"\" branch1-url=\"Getting-Started\" %}"
+msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr ""
-"{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started"
-"\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:11
@@ -65,24 +53,17 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
-msgid ""
-"Download the [latest .deb file]({{ site.download_root_link }}{{ site."
-"download_file_names.deb-gui }})"
+msgid "Download the [latest .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:18
-msgid ""
-"Update apt by opening a console window (CTRL+ALT+T should work) and type: "
-"`sudo apt-get update`"
+msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
-msgid ""
-"Navigate to where you downloaded the installer and either double-click on "
-"it, or use the command line: `sudo apt install ./{{ site.download_file_names."
-"deb-gui }}`."
+msgid "Navigate to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}`."
 msgstr ""
 
 #. type: Plain text
@@ -92,17 +73,12 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:22
-msgid ""
-"Note that if you need to upgrade Jamulus to a newer version, just download "
-"the new .deb file and re-install as above."
+msgid "Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:24
-msgid ""
-"For installers on other distributions, see [Repology](https://repology.org/"
-"project/jamulus/versions). You may also wish to use one of the contributed "
-"[installation scripts](https://github.com/jamulussoftware/installscripts)."
+msgid "For installers on other distributions, see [Repology](https://repology.org/project/jamulus/versions). You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
 msgstr ""
 
 #. type: Plain text
@@ -117,9 +93,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:31
-msgid ""
-"Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to "
-"configure that first. The recommended method is to use `QjackCtl`."
+msgid "Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
 msgstr ""
 
 #. type: Plain text
@@ -129,16 +103,12 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:33
-msgid ""
-"Configure your audio hardware as follows (the exact settings for JACK will "
-"depend on what your audio hardware is capable of):"
+msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:35
-msgid ""
-"Set the audio **Interface** to the one you want (there may be several in the "
-"list)"
+msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
 msgstr ""
 
 #. type: Plain text
@@ -168,18 +138,13 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:45
-msgid ""
-"If you get problems with sound breaking up (in particular XRUN errors "
-"reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 "
-"periods). Lower ones (e.g. 64 frames) could bring better performance but "
-"maybe more sound problems. See the [troubleshooting page](Client-"
-"Troubleshooting) otherwise."
+msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:47
 msgid "## All installed?"
-msgstr "## Installato?"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:49

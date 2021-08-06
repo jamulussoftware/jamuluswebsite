@@ -9,6 +9,7 @@ else
 	sudo apt install -yq gettext libsgmls-perl libyaml-tiny-perl opensp
 	wget -O po4a.deb https://github.com/jamulussoftware/assets/raw/main/po4a/po4a_0.64-alpha.deb
 	sudo dpkg -i po4a.deb
+	rm po4a.deb
 	mkdir -p ~/po4a
 
 for dep in po4a libcroco3 libosp5 sgml-base gettext libsgmls-perl libyaml-tiny-perl opensp; do
