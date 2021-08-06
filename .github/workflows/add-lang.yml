@@ -43,7 +43,7 @@ jobs:
 
 # Create new lang dir. If CACHE_HIT: true, retrieve the cache. If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
         run: |
-         mkdir _translator-files/po/${{ env.new_lang }}
+          mkdir _translator-files/po/${{ env.new_lang }}
           ./_po4a-tools/po4a-cache.sh
 
 # Create .po files for new language:
