@@ -13,6 +13,22 @@ jobs:
         with:
           ref: next-release
 
+# Check whether the language has been written correctly:
+      - name: Check issue title format
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUM: ${{ github.event.issue.number }}
+        run: |
+          NEW_LANG=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
+          if [[ $NEW_LANG =~ ^[a-z]{2}(_[A-Z]{2})?$ ]]; then
+            mkdir _translator-files/po/$NEW_LANG
+            echo "new_lang=$NEW_LANG" >> $GITHUB_ENV
+            echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
+          else
+            echo Language code in wrong format
+            exit 1
+          fi
+
 # Retrieve po4a installation cache or create it if not found:
       - name: Cache po4a dependencies
         uses: actions/cache@v1.0.3
@@ -29,20 +45,7 @@ jobs:
 
 # Get language from issue title and create files for it:
       - name: Make new lang directory and create .po files
-        env:
-          ISSUE_TITLE: ${{ github.event.issue.title }}
-          ISSUE_NUM: ${{ github.event.issue.number }}
-        run: |
-          NEW_LANG=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
-          if [[ $NEW_LANG =~ ^[a-z]{2}(_[A-Z]{2})?$ ]]; then
-            mkdir _translator-files/po/$NEW_LANG
-            ./_po4a-tools/po4a-update-templates.sh
-            echo "new_lang=$NEW_LANG" >> $GITHUB_ENV
-            echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
-          else
-            echo Language code in wrong format
-            exit 1
-          fi
+        run: ./_po4a-tools/po4a-update-templates.sh
 
 # Push changes to 'next-release':
       - name: Push changes to repo
