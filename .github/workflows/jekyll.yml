@@ -4,6 +4,8 @@ on:
     branches: [ next-release, release ]
   push:
     branches: [ next-release ]
+    paths:
+      - 'wiki/en/*.md'
 jobs:
   jekyll_site_ci:
     permissions:
@@ -11,6 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+# Paths changes filter. Detects if there's been a change to any files defined in the filter:
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          base: ${{ github.ref }}
+          filters: |
+            templates:
+              - 'wiki/en/*.md'
 
 # Retrieve po4a installation cache or create it if not found:
       - name: Cache po4a dependencies
@@ -25,15 +36,6 @@ jobs:
 
 # If CACHE_HIT: true, retrieve the cache. If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
         run: ./_po4a-tools/po4a-cache.sh
-
-# Paths changes filter. Detects if there's been a change to any files defined in the filter:
-      - uses: dorny/paths-filter@v2
-        id: filter
-        with:
-          base: ${{ github.ref }}
-          filters: |
-            templates:
-              - 'wiki/en/*.md'
 
 # If there have been changes to English .md files in /wiki, run po4a-update-templates:
       - name: Update templates
