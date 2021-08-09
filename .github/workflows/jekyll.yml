@@ -52,16 +52,19 @@ jobs:
       - name: Create translated .md docs and stats
         run: ./_po4a-tools/po4a-create-all-targets.sh
 
-# Build, zip and upload site
+# Build, zip and upload site only when triggered by PR to avoid duplicating checks and uploads:
       - name: Build the site in the jekyll/builder container
+        if: ${{ github.event_name == 'pull_request' }}
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --future"
       - name: Zip Website
+        if: ${{ github.event_name == 'pull_request' }}
         run: zip -r ${{ github.workspace }}/website.zip _site/*
       - uses: actions/upload-artifact@v2
         name: Upload Website
+        if: ${{ github.event_name == 'pull_request' }}
         with:
           name: Website
           path: ${{ github.workspace }}/website.zip
