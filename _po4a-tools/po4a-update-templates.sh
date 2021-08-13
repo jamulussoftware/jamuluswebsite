@@ -36,7 +36,7 @@ fi
 PO4A_VER=$(po4a --version | grep po4a | awk '{print $3}')
 
 if [[ $PO4A_VER < 0.63 ]] ; then
-    echo Error: po4a v"$PO4A_VER" is installed >&2
+	echo Error: po4a v"$PO4A_VER" is installed >&2
 	echo po4a v0.63 or higher is required. >&2
 	exit 1
 fi
