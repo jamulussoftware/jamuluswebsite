@@ -15,7 +15,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 #### Debian repository (convenient)
 
-Jamulus is included in the Debian Bulleseye repository and can be installed by typing the following in terminal (Open it with e.g. CTRL+ALT+T):
+Jamulus is included in the Debian 11 (“bullseye”) repository and can be installed by typing the following in terminal (Open it with e.g. CTRL+ALT+T):
 
 ```
 sudo apt update && sudo apt install qjackctl jamulus
