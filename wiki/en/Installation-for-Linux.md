@@ -13,14 +13,29 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 ### Debian and Ubuntu
 
-1. Download the [latest .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})
+#### Debian repository (convenient)
+
+Jamulus is included in the Debian 11 (“bullseye”) repository and can be installed by typing the following in terminal (Open it with e.g. CTRL+ALT+T):
+
+```
+sudo apt update && sudo apt install qjackctl jamulus
+```
+
+This is the easiest and most convenient way to install Jamulus although it won't give you the latest features.
+
+#### Manual install (latest version)
+
+If you want to get the most recent release, you need to install or update Jamulus manually:
+
+1. [Download Jamulus (.deb)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}
 1. Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`
 1. Navigate to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}`.
 1. Once installed, you can delete the file and close any console windows.
 
 Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
 
-For installers on other distributions, see [Repology](https://repology.org/project/jamulus/versions). You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts).
+### Other distributions
+For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts).
 
 
 ## Set up your hardware
