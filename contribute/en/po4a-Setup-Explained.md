@@ -15,8 +15,8 @@ First though, a brief overview.
 
 In broad terms, there are three types of activity that take place on the website repository:
 
-- Editing/adding/updating translatable documentation in English, the source language that all translations are based on. Translators now need to know _where_ these changes have taken place, preferably without having to actually scan the documents in English or trawl through PRs.
-- Translating these documents into each respective language. As translations now take place in special .po files, these need to be converted back into .md format for the website.
+- Editing/adding/updating translatable documentation in English, the source language that all translations are based on. Translators need to know _where_ these changes have taken place, preferably without having to actually scan the documents in English or trawl through PRs.
+- Translating these documents into each respective language. As translations take place in special .po files, these need to be converted back into .md format for the website.
 - Editing other content in the repository that is not necessarily the documentation itself (scripts, config files, images, etc.). This activity is largely unaffected by the new setup.
 
 So here the focus is on the first two points, as they are what the po4a setup seeks to address, namely:
@@ -92,7 +92,7 @@ This is the more complex script. A distinction between 'pull request' and 'push'
 
     3- If the above filter is 'true', update/add .po files with `po4a-update-templates.sh`. If not, skip.
 
-    4- The output from the previous step is never pushed (even if it is 'true') when the trigger is a PR, as this would mean pushing the changes to the contributor's repository, which in turn would require them to enable GitHub actions beforehand. As this cannot be assumed to always be the case, it is left until their PR is merged and then the output is pushed to the Jamulus repository.
+    4- The output from the previous step is never pushed (even if it is 'true') when the trigger is a PR, as this would mean pushing the changes to the contributor's repository, which in turn would require them to enable GitHub actions beforehand (note: this hasn't been verified). As this cannot be assumed to always be the case, it is left until their PR is merged and then the output is pushed to the Jamulus repository.
 
     5- Translated .md files are created with `po4a-create-all-targets.sh`.
 
