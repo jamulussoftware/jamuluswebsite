@@ -96,7 +96,7 @@ This is the more complex script. A distinction between 'pull request' and 'push'
 
     5- Translated .md files are created with `po4a-create-all-targets.sh`.
 
-    6- Site is built, zipped and uploaded as an artifact. This is so the contributor can download and view the site locally, to check translations as they would appear on the website or the overall appearance of the website if other content has been edited (config files, images, etc.) before the PR is merged. Only happens if the trigger was a PR.
+    6- Site is built, zipped and uploaded as an artifact. This is so the contributor can download, unzip twice and view the site locally (e.g. with a [local webserver](https://pythonbasics.org/webserver/)), to check translations as they would appear on the website or the overall appearance of the website if other content has been edited (config files, images, etc.) before the PR is merged. Only happens if the trigger was a PR.
 
 - **Push events**. Only applicable to 'next-release':
 
