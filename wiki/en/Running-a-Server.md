@@ -241,7 +241,7 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 **Note**: Command-line options will not alter settings made in the GUI.
 
 - `-d`  or `--discononquit`   Disconnect all clients on quit. Normally, when a server is stopped or restarted, any clients that have not used their "Disconnect" buttons will re-establish connection when the server comes back up again. Using this option forces clients to manually re-establish their connections to the server.  
-- `-e`  or `--directoryserver`  Make the server public and sets its genre (see also `-o`). See [server types](#server-types) for further information.
+- `-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.
 - `--directoryfile` Enable directory to remember registered servers even if the directory is restarted. You'll need to specify a path to a writable file location in which server information is stored.
 - `-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  
 -  `-F`  or `--fastupdate`     Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients.
