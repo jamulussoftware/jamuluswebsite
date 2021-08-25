@@ -128,7 +128,7 @@ If the server operator has enabled recording, you will see a message above the m
 
 ## My Profile
 
-From the View menu, select "My Profile..." to set your Alias/Name
+From the Settings menu, select "My Profile..." to set your Alias/Name
 which is displayed below your fader in the server audio mixer board.
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
