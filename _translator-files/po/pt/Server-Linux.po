@@ -4,7 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
-msgstr "Project-Id-Version: PACKAGE VERSION\n"
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +126,12 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:41
 #, no-wrap
-msgid "~~~\njamulus --nogui --server \\\n        --directoryserver genreServer:port \\\n        --serverinfo \"yourServerName;yourCity;[country ID]\"\n~~~\n"
+msgid ""
+"~~~\n"
+"jamulus --nogui --server \\\n"
+"        --directoryserver genreServer:port \\\n"
+"        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
+"~~~\n"
 msgstr ""
 
 #. type: Plain text
@@ -142,7 +148,16 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:56
 #, no-wrap
-msgid "| Genre |   Server address           |\n|-----------|------------------|\n|**Any Genre 1** |`anygenre1.jamulus.io:22124`|\n|**Any Genre 2** |`anygenre2.jamulus.io:22224`|\n|**Any Genre 3** |`anygenre3.jamulus.io:22624`|\n|**Genre Rock** |`rock.jamulus.io:22424`|\n|**Genre Jazz** |`jazz.jamulus.io:22324`|\n|**Genre Classical/Folk** |`classical.jamulus.io:22524`|\n|**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|\n"
+msgid ""
+"| Genre |   Server address           |\n"
+"|-----------|------------------|\n"
+"|**Any Genre 1** |`anygenre1.jamulus.io:22124`|\n"
+"|**Any Genre 2** |`anygenre2.jamulus.io:22224`|\n"
+"|**Any Genre 3** |`anygenre3.jamulus.io:22624`|\n"
+"|**Genre Rock** |`rock.jamulus.io:22424`|\n"
+"|**Genre Jazz** |`jazz.jamulus.io:22324`|\n"
+"|**Genre Classical/Folk** |`classical.jamulus.io:22524`|\n"
+"|**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|\n"
 msgstr ""
 
 #. type: Plain text
@@ -204,13 +219,21 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:86
 #, no-wrap
-msgid "~~~\n [Unit]\n Description=Toggle recording state of Jamulus server\n Requisite=Jamulus-Server\n"
+msgid ""
+"~~~\n"
+" [Unit]\n"
+" Description=Toggle recording state of Jamulus server\n"
+" Requisite=Jamulus-Server\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:91
 #, no-wrap
-msgid " [Service]\n Type=oneshot\n ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n~~~\n"
+msgid ""
+" [Service]\n"
+" Type=oneshot\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
+"~~~\n"
 msgstr ""
 
 #. type: Plain text
@@ -221,13 +244,21 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:98
 #, no-wrap
-msgid "~~~\n [Unit]\n Description=Start a new recording on Jamulus server\n Requisite=Jamulus-Server\n"
+msgid ""
+"~~~\n"
+" [Unit]\n"
+" Description=Start a new recording on Jamulus server\n"
+" Requisite=Jamulus-Server\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:103
 #, no-wrap
-msgid " [Service]\n Type=oneshot\n ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n~~~\n"
+msgid ""
+" [Service]\n"
+" Type=oneshot\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
+"~~~\n"
 msgstr ""
 
 #. type: Plain text
@@ -273,5 +304,20 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:134
 #, no-wrap
-msgid "~~~\n<?php\nfunction loadserverstat ( $statfilename )\n{\n   $datei = fopen ( $statfilename, \"r\" );\n   while ( !feof ( $datei ) )\n   {\n          $buffer = fgets ( $datei, 4096 );\n          echo $buffer;\n   }\n   fclose($datei);\n}\n?>\n<?php loadserverstat ( \"stat1.dat\" ); ?>\n~~~\n"
+msgid ""
+"~~~\n"
+"<?php\n"
+"function loadserverstat ( $statfilename )\n"
+"{\n"
+"   $datei = fopen ( $statfilename, \"r\" );\n"
+"   while ( !feof ( $datei ) )\n"
+"   {\n"
+"          $buffer = fgets ( $datei, 4096 );\n"
+"          echo $buffer;\n"
+"   }\n"
+"   fclose($datei);\n"
+"}\n"
+"?>\n"
+"<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
+"~~~\n"
 msgstr ""
