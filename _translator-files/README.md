@@ -1,6 +1,6 @@
 # Website docs translation:
 
--   Navigate to `_translator-files/po/YOUR-LANGUAGE/`. Translate the content of the .po files in your editor of choice (QtLinguist, Lokalize, OmegaT...).
+-   Navigate to `_translator-files/po/YOUR-LANGUAGE/`. Translate the content of the .po files in your editor of choice (Poedit, OmegaT...).
 -   Set the lang: parameter to your language code at the beginning of the file (it, fr, de, etc.) and make sure the permalink: parameter (e.g. /wiki/Client-Troubleshooting) stays the same.
 -   Submit a Pull Request with the translated .po files. **DO NOT** edit any .md files in the /wiki/ folder.
 
@@ -34,11 +34,15 @@ Please also take into account the following:
 
 #### Suggested po file editors:
 
-- OmegaT (cross-platform): the most complete and advanced, but also somewhat more complex. A guide is included in this folder.
-- QtLinguist (cross-platform): if you've done app translations you should feel comfortable with this. However, you have to open files one by one and until you do, you can't know the state of the translation.
-- Lokalize (Linux): GUI similar to QtLinguist but more complete.
-    - This application can give you an overview of the translation progress of all files. Click on `Project > Create software translation project`. A window will open asking where to store the `index` file - choose anywhere you want. Now another window will open. In "Root folder" point it to the directory where all the .po files for your language are. Click on "Apply" and "OK". Now you will be shown an overview of the state of all the translations. Double-click on one to go to that file. If you are comfortable with this editor and use Linux, it's a very recommendable option if you don't want to get into the complexities of OmegaT.
-- Virtaal (cross-platform)
-- Gtranslator (Linux)
+- [OmegaT](https://omegat.org/) (cross-platform): the most complete and advanced, but also somewhat more complex. A guide is included in this folder.
+- [Poedit](https://github.com/vslavik/poedit) (cross-platform): Intuitive to use, though a couple of things need to be configured before starting to translate with it for the first time:
+    - Go to Edit > Preferences
+    - In the "General" tab, uncheck "Automatically compile MO file when saving"
+    - In the "Advanced" tab, uncheck "Wrap at:". Otherwise it will wrap all the strings at a given column and we don't want that, as changes in text wrapping cause a flood of edits to be added to pull requests. Each editor seems to have its own criterion for text wrapping, so it has been disabled by the po4a scripts running on the repository.
+    For an overall view of all files and their status, go to File > Catalogs Manager. Click on New > Browse and  enter the path to your .po files. Click on "OK". You should now see a list of all the .po files and their current translation status. Double-click on any one of them to open it in a new window.
 
-For short edits or single file translations, QtLinguist, Lokalize or a similar editor might be simpler to use. For working through all the files, OmegaT will be much more suitable (see guide).
+- Qt Linguist or Lokalize can also be used, but they are strongly discouraged as they do not offer the option to disable text wrapping (Lokalize does, but it still messes it up).
+
+If you use a different editor to those listed, please make sure you can disable text wrapping (but still preserve the wrapping of the metadata at the top - this is important), and tell us about it so we can add it to the list.
+
+For short edits or single file translations, Poedit or a similar editor might be simpler to use. For working through all the files, OmegaT will be more suitable (see guide).

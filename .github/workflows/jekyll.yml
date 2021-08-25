@@ -4,6 +4,8 @@ on:
     branches: [ next-release, release ]
   push:
     branches: [ next-release ]
+    paths:
+      - 'wiki/en/*.md'
 jobs:
   jekyll_site_ci:
     permissions:
@@ -12,8 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+# Paths changes filter. Detects if there's been a change to any files defined in the filter:
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          base: ${{ github.ref }}
+          filters: |
+            src_files_changed:
+              - 'wiki/en/*.md'
+
 # Retrieve po4a installation cache or create it if not found:
-      - name: Cache po4a dependencies
+      - name: Check for po4a cache
         uses: actions/cache@v1.0.3
         id: cache-po4a
         with:
@@ -26,42 +37,36 @@ jobs:
 # If CACHE_HIT: true, retrieve the cache. If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
         run: ./_po4a-tools/po4a-cache.sh
 
-# Paths changes filter. Detects if there's been a change to any files defined in the filter:
-      - uses: dorny/paths-filter@v2
-        id: filter
-        with:
-          base: ${{ github.ref }}
-          filters: |
-            templates:
-              - 'wiki/en/*.md'
-
 # If there have been changes to English .md files in /wiki, run po4a-update-templates:
-      - name: Update templates
-        if: ${{ steps.filter.outputs.templates == 'true' }}
+      - name: Update .po files
+        if: ${{ steps.filter.outputs.src_files_changed == 'true' }}
         run: ./_po4a-tools/po4a-update-templates.sh
 
 # This step only runs if a PR is merged:
-      - name: Push changes to repo if action triggered on:push and templates need updating
-        if: ${{ github.event_name == 'push' && steps.filter.outputs.templates == 'true' }}
+      - name: Push changes to repo if action triggered on:push and .po files need updating
+        if: ${{ github.event_name == 'push' && steps.filter.outputs.src_files_changed == 'true' }}
         uses: EndBug/add-and-commit@v7
         with:
           default_author: github_actions
-          message: 'AUTO: Update templates'
+          message: 'AUTO: Updated .po files'
 
 # Create translated .md files. Never pushed to the repo.
       - name: Create translated .md docs and stats
         run: ./_po4a-tools/po4a-create-all-targets.sh
 
-# Build, zip and upload site
+# Build, zip and upload site only when triggered by PR to avoid duplicating checks and uploads:
       - name: Build the site in the jekyll/builder container
+        if: ${{ github.event_name == 'pull_request' }}
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --future"
       - name: Zip Website
+        if: ${{ github.event_name == 'pull_request' }}
         run: zip -r ${{ github.workspace }}/website.zip _site/*
       - uses: actions/upload-artifact@v2
         name: Upload Website
+        if: ${{ github.event_name == 'pull_request' }}
         with:
           name: Website
           path: ${{ github.workspace }}/website.zip
