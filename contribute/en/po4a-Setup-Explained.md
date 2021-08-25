@@ -17,7 +17,7 @@ In broad terms, there are three types of activity that take place on the website
 
 - Editing/adding/updating translatable documentation in English, the source language that all translations are based on. Translators need to know _where_ these changes have taken place, preferably without having to actually scan the documents in English or trawl through PRs.
 - Translating these documents into each respective language. As translations take place in special .po files, these need to be converted back into .md format for the website.
-- Editing other content in the repository that is not necessarily the documentation itself (scripts, config files, images, etc.). This activity is largely unaffected by the new setup.
+- Editing other content in the repository that is not necessarily the documentation itself (scripts, config files, images, etc.).
 
 So here the focus is on the first two points, as they are what the po4a setup seeks to address, namely:
 
