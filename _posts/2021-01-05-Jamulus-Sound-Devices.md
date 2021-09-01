@@ -9,7 +9,7 @@ lang: "en"
 You can of course use Jamulus with your computer's built-in sound card or microphone.
 {: .doubletextsize .blue }
 
-However, most people use external devices like USB microphones or audio interfaces. These usually perform much better than "stock" hardware in terms of audio quality and latency. Most are quite inexpensive and easy to set up.
+However, most people use external devices like USB microphones or audio interfaces. These usually perform much better than "stock" hardware in terms of audio quality, latency and time needed to set them up. Most are quite inexpensive and work "plug and play".
 
 <!--more-->
 
@@ -19,7 +19,7 @@ Just [edit this page and wait for an approval](https://github.com/jamulussoftwar
 
 ## Audio devices known to work with Jamulus
 
-Your device must support a sample rate of *48 kHz (DVD quality)* - which many devices do - and should allow you to listen to the computer’s audio signal. On Windows it’s recommended to choose a device with a *native ASIO driver* - not ASIO4ALL.
+Your device must support a sample rate of *48 kHz (DVD quality)* - which many devices do - and should allow you to listen to the computer’s audio signal. On Windows it’s recommended to choose a device with a *native ASIO driver* - not ASIO4ALL (or other generic ASIO drivers).
 Whether the following devices work or not can *depend on your operating system* (Linux, MacOS, Windows, etc.). We've added symbols after each OS to make judging easier:
 
 ✅: This device works reasonably well with Jamulus. You might need to set up some things, but sound quality and latency are fine.
