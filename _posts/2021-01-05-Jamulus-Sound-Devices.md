@@ -307,7 +307,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **Linux**: ❓ Not yet tested
 
-*Note:* In the Zoom L-8 Settings ensure that you have the correct Sample Rate - (48kHz) otherwise Jamulus will report that an ASIO Driver error. On the L-8 - Settings switch, toggle to [System] , <push to enter>, toggle to [Sample Rate], <push to enter>, select 48kHz, <push to enter>, "Are you sure?" [Yes] <push to enter>, select Settings switch to complete (doesn't commit till this is done!).
+*Note:* In the Zoom L-8 Settings ensure that you have the correct Sample Rate - (48kHz) otherwise Jamulus will report that an ASIO Driver error. On the L-8 - Settings switch, toggle to [System] , \<push to enter\>, toggle to [Sample Rate], \<push to enter\>, select 48kHz, \<push to enter\>, "Are you sure?" [Yes] \<push to enter\>, select Settings switch to complete (doesn't commit till this is done!).
 
 ***
 
