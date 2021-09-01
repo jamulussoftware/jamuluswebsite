@@ -301,13 +301,13 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **[ZOOM LiveTrak L-8](https://zoomcorp.com/en/us/digital-mixer-multi-track-recorders/digital-mixer-recorder/LIVETRAK-L-8/)**, Mixer
 
-**NOTE** All OS - In the Zoom L-8 Settings ensure that you have the correct Sample Rate - (48kHz) otherwise Jamulus will report that an ASIO Driver error - On the L-8 - Settings switch, toggle to [System] , <push to enter>, toggle to [Sample Rate], <push to enter>, select 48kHz, <push to enter>, "Are you sure?" [Yes] <push to enter>, select Settings switch to complete (doesn't commit till this is done!)
-
 **Windows**: ✅ Works. Latency is around 19 ms (measured with local server with ping time of 0 ms) using "L-8 Driver" (ASIO, 07/02/2020) from [zoomcorp.com](https://zoomcorp.com/). Driver can be downloaded from link to device and clicking "Support & Downloads". 
 
 **macOS**: ❓ Not yet tested
 
 **Linux**: ❓ Not yet tested
+
+*Note:* In the Zoom L-8 Settings ensure that you have the correct Sample Rate - (48kHz) otherwise Jamulus will report that an ASIO Driver error. On the L-8 - Settings switch, toggle to [System] , <push to enter>, toggle to [Sample Rate], <push to enter>, select 48kHz, <push to enter>, "Are you sure?" [Yes] <push to enter>, select Settings switch to complete (doesn't commit till this is done!).
 
 ***
 
