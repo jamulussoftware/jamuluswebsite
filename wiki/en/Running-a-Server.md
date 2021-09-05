@@ -52,7 +52,7 @@ Unless you plan on hosting more than about 5 players on a slower-speed home conn
 
 - Running a Private Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Private Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
 
-- Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the client and server. There are plans to expand IPv6 support for connections started from the server list.
+- Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the client and server. There are plans to expand IPv6 support.
 
 
 # Server Types
