@@ -25,6 +25,8 @@ The short answer is **no**. For various reasons, you should try to use other peo
 
 Note that you can have a "private" session with other people on a Public Server by simply soloing each other. You will then not be able to hear anyone else if they enter your server.
 
+If you do decide to run a server, please read the following. Setting up a server is easy, however it is better to know the theory first:
+
 ### Speed and latency
 
 Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' hard/software setup, the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
