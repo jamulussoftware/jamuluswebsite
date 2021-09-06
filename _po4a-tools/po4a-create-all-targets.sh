@@ -16,7 +16,7 @@ cd "$SCRIPT_DIR"
 ####################################
 
 # Set % threshold for translated .md files to be created
-THRESHOLD="80"
+THRESH_VAL="80"
 
 # Folder where source English .md files are
 SRC_DIR="../wiki/en"
@@ -38,19 +38,22 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-	echo Error: please install po4a. >&2
+	echo Error: Please install po4a. v0.63 or higher is required >&2
 	exit 1
 fi
 
 # Check if the right version is installed
-if ! [[ $(po4a --version | grep po4a | awk '{print $3}') > 0.63 ]] ; then
-	echo Error: po4a version 0.63 or higher is required. >&2
+PO4A_VER=$(po4a --version | grep po4a | awk '{print $3}')
+
+if [[ $PO4A_VER < 0.63 ]] ; then
+	echo Error: po4a v"$PO4A_VER" is installed >&2
+	echo po4a v0.63 or higher is required. >&2
 	exit 1
 fi
 
 # Check if source document folder exists in the right place
 if ! [ -d "$SRC_DIR" ] ; then
-	echo Error: please run this script from the root folder. >&2
+	echo Error: Please make sure the source English file directory exists. >&2
 	exit 1
 fi
 
@@ -80,6 +83,13 @@ use_po_module () {
 			localized_file="$PUB_DIR/$lang/$basename.md"
 		else
 			localized_file="$PUB_DIR/$lang/$path/$basename.md"
+		fi
+
+		# Exclude certain files from the threshold requirement
+		if [[ "$basename" == 'Shared-'* ]] ; then
+			THRESHOLD="0"
+		else
+			THRESHOLD="$THRESH_VAL"
 		fi
 
 		# Run po4a-translate and create target files
