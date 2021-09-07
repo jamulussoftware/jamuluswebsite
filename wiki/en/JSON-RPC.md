@@ -49,6 +49,25 @@ Jamulus will also send **notifications** to the consumer:
 
 <!-- prettier-ignore-end -->
 
+---
+
+> 🤔 Should I list all the methods in the documentation or should I just do this…?
+
+## Available methods
+
+To see what methods are available, take a look at these files:
+
+- [`clientrpc.cpp`](https://github.com/dtinth/jamulus/blob/json-rpc/src/clientrpc.cpp)
+- [`serverrpc.cpp`](https://github.com/dtinth/jamulus/blob/json-rpc/src/serverrpc.cpp)
+
+For requests from the consumer to Jamulus, search for `pRpcServer->HandleMethod`.
+
+For notifications from Jamulus to the consumer, search for `pRpcServer->BroadcastNotification`.
+
+---
+
+> 🤔 Here’s a draft list of all methods. But keeping them up to date may be a pain.
+
 ## Common methods
 
 ### `jamulus/getMode`
