@@ -28,19 +28,22 @@ fi
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-	echo Error: please install po4a. >&2
+	echo Error: Please install po4a. v0.63 or higher is required >&2
 	exit 1
 fi
 
 # Check if the right version is installed
-if ! [[ $(po4a --version | grep po4a | awk '{print $3}') > 0.63 ]] ; then
-	echo Error: po4a version 0.63 or higher is required. >&2
+PO4A_VER=$(po4a --version | grep po4a | awk '{print $3}')
+
+if [[ $PO4A_VER < 0.63 ]] ; then
+	echo Error: po4a v"$PO4A_VER" is installed >&2
+	echo po4a v0.63 or higher is required. >&2
 	exit 1
 fi
 
 # Check if source document folder exists in the right place
 if ! [ -d "$SRC_DIR" ] ; then
-	echo Error: please run this script from the root folder. >&2
+	echo Error: Please make sure the source English file directory exists. >&2
 	exit 1
 fi
 
@@ -64,14 +67,17 @@ while IFS= read -r -d '' file ; do
             echo creating "$po_file"
         fi
 
+        # Update/create .po files
         if ! po4a-updatepo \
             --format asciidoc \
             --master "$file" \
             --master-charset "UTF-8" \
+            --msgmerge-opt  --no-wrap \
             --po "$po_file" ; then
         echo ''
         echo Error updating "$lang" PO file for: "$basename.md"
         fi
+
     done
 done <   <(find -L "$SRC_DIR" -name "*.md" -print0)
 
@@ -86,4 +92,7 @@ for lang in $(ls "$PO_DIR") ; do
     if ls $temp_file 1> /dev/null 2>&1 ; then
 	    rm "$PO_DIR/$lang/"*.po~
     fi
+
+    # Delete line in file header that pollutes commits
+    sed -i '/^"POT-Creation-Date:/d' $PO_DIR/$lang/*.po
 done
