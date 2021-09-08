@@ -5,7 +5,15 @@
 #
 #, fuzzy
 msgid ""
-msgstr "Project-Id-Version: PACKAGE VERSION\nPOT-Creation-Date: 2021-08-06 11:55+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nLanguage: \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n"
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Client-Troubleshooting.md:1
@@ -34,7 +42,9 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:10
 #, no-wrap
-msgid "# Troubleshooting\n {:.no_toc}\n"
+msgid ""
+"# Troubleshooting\n"
+" {:.no_toc}\n"
 msgstr ""
 
 #. type: Plain text
@@ -80,202 +90,192 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:27
-msgid "### Getting a loud squeal if you connect to a server"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:29
-msgid "You're creating feedback since your microphone is recording the signal of your speaker. Disconnect from the server and select the correct input and output devices. See the Jamulus installation page for your OS to get more information on how to do that."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:31
 msgid "### Not seeing the headphone or microphone you just connected to your PC?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:33
+#: ../wiki/en/Client-Troubleshooting.md:29
 msgid "Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:35
+#: ../wiki/en/Client-Troubleshooting.md:31
 msgid "### Your sound is stuttering"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:37
+#: ../wiki/en/Client-Troubleshooting.md:33
 msgid "Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:39
+#: ../wiki/en/Client-Troubleshooting.md:35
 msgid "### You all sound OK, but it's difficult to keep together"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:41
+#: ../wiki/en/Client-Troubleshooting.md:37
 #, no-wrap
 msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:43
+#: ../wiki/en/Client-Troubleshooting.md:39
 msgid "You can test whether you are hearing your signal correctly by doing the following:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:45
+#: ../wiki/en/Client-Troubleshooting.md:41
 msgid "Run Jamulus and connect to a server with a long ping time (greater than 200ms)"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:46
+#: ../wiki/en/Client-Troubleshooting.md:42
 msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus server come back, but significantly delayed."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:47
+#: ../wiki/en/Client-Troubleshooting.md:43
 msgid "Click the \"Mute\" button under your Jamulus name/slider in the main Jamulus mixer window (**NOT** the \"Mute Myself\" button on the left)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:48
+#: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Clap your hands again."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:50
+#: ../wiki/en/Client-Troubleshooting.md:46
 msgid "If you hear two claps after step 2, or any claps after step 4, then you are **not** obeying Rule Number One - you have your local audio enabled and should disable it."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:52
+#: ../wiki/en/Client-Troubleshooting.md:48
 msgid "Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have \"monitor\" buttons (turn these off), or similar options. **If you are still having problems**, try asking on the [forum](https://github.com/jamulussoftware/jamulus/discussions)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:54
+#: ../wiki/en/Client-Troubleshooting.md:50
 msgid "Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:56
+#: ../wiki/en/Client-Troubleshooting.md:52
 msgid "### Can't work out your mic settings?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:58
+#: ../wiki/en/Client-Troubleshooting.md:54
 msgid "When using a microphone while playing your other instrument, you can use a stereo audio input signal in your settings where one channel is connected to the instrument and the other channel is connected to a microphone signal. On the microphone channel an optional reverberation effect can be applied."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:60
+#: ../wiki/en/Client-Troubleshooting.md:56
 msgid "### Buffer LEDs suddenly going red, outages, jittering, weird sounds?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:62
+#: ../wiki/en/Client-Troubleshooting.md:58
 msgid "The CPU in your computer may be having issues. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:64
+#: ../wiki/en/Client-Troubleshooting.md:60
 msgid "### Ping times and latency start well, then get worse, causing issues"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:66
+#: ../wiki/en/Client-Troubleshooting.md:62
 msgid "This can indicate something else is competing with Jamulus on your network, so make sure nobody is watching HD Netflix movies or taking part in Zoom video conferences while you are playing. A more permanent solution for technically-minded users may be found by investigating [the issue of buffer bloat](https://www.bufferbloat.net/projects/bloat/wiki/) on their router and whether you can implement Smart Queue Management (SQM). [More details here](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:68
+#: ../wiki/en/Client-Troubleshooting.md:64
 msgid "### Getting frustrated with software channels, audio routing, sample rates and more?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:70
+#: ../wiki/en/Client-Troubleshooting.md:66
 msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:72
-msgid "### Getting blasted by somebody joining your jam with feedback or noise?"
+#: ../wiki/en/Client-Troubleshooting.md:68
+msgid "### Somebody joining your jam and being too loud?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:74
+#: ../wiki/en/Client-Troubleshooting.md:70
 msgid "You can set your \"New Client Level\" to a low value (e.g. 10), or set the musicians you are playing with to \"Solo\" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:76
+#: ../wiki/en/Client-Troubleshooting.md:72
 msgid "### Can't see the server you want to join?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:78
+#: ../wiki/en/Client-Troubleshooting.md:74
 msgid "First check that you have the right genre server selected in your Connection Setup window. Sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the \"Server Name/Address\" field in the Connect Setup window to connect to it."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:80
+#: ../wiki/en/Client-Troubleshooting.md:76
 msgid "### Not seeing a list of servers at all?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:82
+#: ../wiki/en/Client-Troubleshooting.md:78
 msgid "In the UK (and possibly other regions/routers) the Virgin Media Cable Internet Modem setting can cause an issue. \"Block Fragmented IP Packets\" should not be checked. For other routers/ISP, also try turning off SPI (Stateful Packet Inspection) and if that fixes it, you can make a judgment about whether to leave that off or not."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:84
+#: ../wiki/en/Client-Troubleshooting.md:80
 msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my server\""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:86
+#: ../wiki/en/Client-Troubleshooting.md:82
 msgid "### Trouble using Garageband (or other DAW) with Jamulus?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:88
+#: ../wiki/en/Client-Troubleshooting.md:84
 msgid "See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:90
+#: ../wiki/en/Client-Troubleshooting.md:86
 msgid "### Using a Mac and your input is not heard?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:92
+#: ../wiki/en/Client-Troubleshooting.md:88
 msgid "(With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:94
+#: ../wiki/en/Client-Troubleshooting.md:90
 msgid "Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:95
+#: ../wiki/en/Client-Troubleshooting.md:91
 msgid "Go to `Preferences` > `Security & Privacy` > `Privacy` tab"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:96
+#: ../wiki/en/Client-Troubleshooting.md:92
 msgid "Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:98
+#: ../wiki/en/Client-Troubleshooting.md:94
 #, no-wrap
 msgid "***\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:99
+#: ../wiki/en/Client-Troubleshooting.md:95
 msgid "For anything else, please search or post on the [Discussion Forums](https://github.com/jamulussoftware/jamulus/discussions)"
 msgstr ""
