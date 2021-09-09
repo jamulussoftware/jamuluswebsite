@@ -29,9 +29,50 @@ nothing to commit, working tree clean
 
 ### Steps for a specific release
 
+#### 1. Ensure .ts files are up to date
+
 First make sure all Pull Requests that should be included in the release have been merged in Github.
 
 Next, change to the above directory `jamulus-upstream`, checkout `master` and ensure it is up to date:
+
+```
+$ cd jamulus-upstream
+$ git checkout master
+$ git pull
+$ git status
+```
+
+Make sure there are no pending changes shown by `git status`.
+
+Now update the `.ts` files to reflect the latest version of source code:
+
+```
+$ lupdate Jamulus.pro
+$ git status
+```
+
+It should list all the `.ts` files that have been updated. If there are any, they should be committed directly:
+
+```
+$ git commit -am'Update .ts files for <version>'
+$ git push
+```
+
+#### 2. Notify all the translators that translation is required
+
+This could be done via Github and/or Discord. Maybe by creating an issue for each language and assigning the issue
+to the translator.
+
+#### 3. Update the .ts files returned by translators
+
+Each translator should submit a PR containing just their new version of the `.ts` file. There is no need to submit
+a new `.qm` file, as they will all be regenerated below.
+
+A developer should check and merge each PR as it arrives.
+
+#### 4. When all translations have been submitted and merged.
+
+Change to the above directory `jamulus-upstream`, checkout `master` and ensure it is up to date:
 
 ```
 $ cd jamulus-upstream
