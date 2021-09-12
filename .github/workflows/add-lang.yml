@@ -6,6 +6,7 @@ jobs:
   add_new_language:
     permissions:
       contents: write
+      issues: write
     runs-on: ubuntu-latest
     if: github.event.label.name == 'new language'
     steps:
@@ -57,6 +58,16 @@ jobs:
           branch: next-release
           default_author: github_actions
           message: 'AUTO: Add new language: (${{ env.new_lang }}) #${{ env.issue_num }}'
+
+# Add comment to issue informing of the creation of the language files:
+      - name: Add comment to issue
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ env.issue_num }}
+          body: |
+            - The .po files have been created for **${{ env.new_lang }}** on the `next-release` branch.
+            - They can be found in `_translator-files/po/${{ env.new_lang }}/`.
+            - Please consult the README file in `_translator-files/` for information on the translation process.
 
 # Create translated .md files. Never pushed to the repo.
       - name: Create translated .md docs and stats
