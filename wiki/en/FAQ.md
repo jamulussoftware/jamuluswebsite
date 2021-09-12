@@ -44,7 +44,7 @@ Of course, if you are playing an acoustic instrument, or are a singer, it will b
 
 ### Do I need a fast Internet connection?
 
-For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your upstream bandwidth is lower than about 5 Mbit/s. 
+No, especially if you don't run a server. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your upstream bandwidth is lower than about 5 Mbit/s. 
 
 ### Do I need to run a server?
 
