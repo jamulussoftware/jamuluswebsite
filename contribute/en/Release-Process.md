@@ -60,8 +60,7 @@ $ git push
 
 #### 2. Notify all the translators that translation is required
 
-This could be done via Github and/or Discord. Maybe by creating an issue for each language and assigning the issue
-to the translator.
+Use `tools/create-translation-issues.sh` to create and assign issues (see usage notes in script). Also post on GH and Discord to notify.
 
 #### 3. Update the .ts files returned by translators
 
