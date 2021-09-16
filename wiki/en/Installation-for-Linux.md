@@ -35,6 +35,7 @@ If you want to get the most recent release, you need to install or update Jamulu
 Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
 
 ### Other distributions
+
 For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up to date version of Jamulus is not included in your distribution, you might want to [compile Jamulus from source following the compile guide](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md) You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts).
 
 
