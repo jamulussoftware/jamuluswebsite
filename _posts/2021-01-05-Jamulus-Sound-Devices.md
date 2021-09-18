@@ -353,7 +353,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **macOS**: ❓ Not yet tested
 
-**Linux**: ❓ Not yet tested
+**Linux**: ✅ Works. Tested on Ubuntu 21.04 with jack_delay using H2n internal speaker and lavalier mic on the line input. Latency is around 11ms.
 
 ***
 
