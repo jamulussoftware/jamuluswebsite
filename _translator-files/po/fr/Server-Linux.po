@@ -5,17 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-09-20 00:09+0200\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Server-Linux.md:1
@@ -47,8 +49,8 @@ msgid ""
 "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" "
 "branch1-url=\"Running-a-Server\" %}"
 msgstr ""
-"{% include breadcrumb.html root=\"More\" branch1=\"Running a Server\" "
-"branch1-url=\"Running-a-Server\" %}"
+"{% include breadcrumb.html root=\"More\" branch1=\"Running a Server\" branch1-"
+"url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:11
@@ -62,34 +64,32 @@ msgid ""
 "without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian "
 "distributions using systemd."
 msgstr ""
-"Ce qui suit concerne l'exécution de Jamulus en tant que serveur \"pur\" sur "
-"du **matériel sans audio** (par exemple, sur un hôte tiers/cloud) et suppose "
-"des distributions Ubuntu/Debian utilisant systemd. Nous avons également des "
+"Ce qui suit concerne l'exécution de Jamulus en tant que serveur \"pur\" sur du "
+"**matériel sans audio** (par exemple, sur un hôte tiers/cloud) et suppose des "
+"distributions Ubuntu/Debian utilisant systemd. Nous avons également des "
 "instructions pour [Raspberry Pi] (Server-Rpi)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:15
 msgid ""
-"If you want to run a server on a Raspberry Pi, you will need to [compile "
-"from "
+"If you want to run a server on a Raspberry Pi, you will need to [compile from "
 "source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). "
 "See also this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) "
 "maintained by Jamulus user fredsiva."
 msgstr ""
 "Si vous souhaitez faire fonctionner un serveur sur un Raspberry Pi, vous "
-"devrez [compiler à partir des "
-"sources](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). "
-"Voir aussi ce [guide pour Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) "
-"maintenu par l'utilisateur Jamulus fredsiva."
+"devrez [compiler à partir des sources](https://github.com/jamulussoftware/"
+"jamulus/blob/master/COMPILING.md). Voir aussi ce [guide pour Raspberry Pi](/"
+"kb/2020/03/28/Server-Rpi.html) maintenu par l'utilisateur Jamulus fredsiva."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:17
 msgid ""
-"Download the [latest headless .deb file]({{ site.download_root_link }}{{ "
-"site.download_file_names.deb-headless }})"
+"Download the [latest headless .deb file]({{ site.download_root_link }}{{ site."
+"download_file_names.deb-headless }})"
 msgstr ""
-"Téléchargez le [dernier fichier .deb sans tête]({{ site.download_root_link "
-"}}{ site.download_file_names.deb-headless }})"
+"Téléchargez le [dernier fichier .deb sans tête]({{ site.download_root_link }}"
+"{ site.download_file_names.deb-headless }})"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:18
@@ -103,17 +103,17 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:19
 msgid ""
-"Install the Jamulus package: `sudo apt install ./{{ "
-"site.download_file_names.deb-headless }}`"
+"Install the Jamulus package: `sudo apt install ./{{ site.download_file_names."
+"deb-headless }}`"
 msgstr ""
-"Installez le paquet Jamulus : `sudo apt install ./{{ "
-"site.download_file_names.deb-headless }}`"
+"Installez le paquet Jamulus : `sudo apt install ./{{ site.download_file_names."
+"deb-headless }}`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:20
 msgid ""
-"Enable the headless server process via systemd: `sudo systemctl enable "
-"jamulus-headless`"
+"Enable the headless server process via systemd: `sudo systemctl enable jamulus-"
+"headless`"
 msgstr ""
 "Activez le processus de serveur sans interface graphique via systemd : `sudo "
 "systemctl enable jamulus-headless`"
@@ -121,15 +121,13 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:21
 msgid ""
-"Add your desired [command line "
-"options](Running-a-Server#command-line-options) to the `ExecStart` line in "
-"the systemd service file in `/lib/systemd/system/jamulus-headless.service` "
-"(By default you will be running a private server)."
+"Add your desired [command line options](Running-a-Server#command-line-options) "
+"to the `ExecStart` line in the systemd service file in `/lib/systemd/system/"
+"jamulus-headless.service` (By default you will be running a private server)."
 msgstr ""
 "Ajoutez vos [options de ligne de commande] (Command-Line-Options) à la ligne "
-"`ExecStart` dans le fichier de service systemd dans "
-"`/lib/systemd/system/jamulus-headless.service` (Par défaut, vous allez "
-"exécuter un serveur privé)."
+"`ExecStart` dans le fichier de service systemd dans `/lib/systemd/system/"
+"jamulus-headless.service` (Par défaut, vous allez exécuter un serveur privé)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:22
@@ -137,8 +135,8 @@ msgid ""
 "Reload the systemd files `sudo systemctl daemon-reload` and restart the "
 "headless server: `sudo systemctl restart jamulus-headless`"
 msgstr ""
-"Rechargez les fichiers systemd `sudo systemctl daemon-reload` et redémarrez "
-"le serveur headless : `sudo systemctl restart jamulus-headless`"
+"Rechargez les fichiers systemd `sudo systemctl daemon-reload` et redémarrez le "
+"serveur headless : `sudo systemctl restart jamulus-headless`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:23
@@ -152,15 +150,13 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:25
 msgid ""
-"You may also be interested in downloading [this set of useful "
-"tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from "
-"the Jamulus repository (clone the Git repo and also call `git submodule "
-"update --init`)."
+"You may also be interested in downloading [this set of useful tools](https://"
+"github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus "
+"repository (clone the Git repo and also call `git submodule update --init`)."
 msgstr ""
 "Vous pouvez également être intéressé par le téléchargement de [cet ensemble "
-"d'outils "
-"utiles](https://github.com/jamulussoftware/jamulus/tree/master/tools) depuis "
-"le dépôt Jamulus (clonez le dépôt Git et appelez `git submodule update "
+"d'outils utiles](https://github.com/jamulussoftware/jamulus/tree/master/tools) "
+"depuis le dépôt Jamulus (clonez le dépôt Git et appelez `git submodule update "
 "--init`)."
 
 #. type: Plain text
@@ -171,8 +167,8 @@ msgstr "## Notes"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:29
 msgid ""
-"You can control Jamulus with the `systemctl` command. For example, to stop "
-"the server cleanly:"
+"You can control Jamulus with the `systemctl` command. For example, to stop the "
+"server cleanly:"
 msgstr ""
 "Vous pouvez contrôler Jamulus avec la commande `service`. Par exemple, pour "
 "arrêter le serveur proprement :"
@@ -190,8 +186,8 @@ msgstr "### Exécution en mode public"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:35
 msgid ""
-"The following minimum setup is required to [run a public "
-"server](Running-a-Server#server-types):"
+"The following minimum setup is required to [run a public server](Running-a-"
+"Server#server-types):"
 msgstr ""
 "La configuration minimale suivante est requise pour [exécuter un serveur "
 "public](Running-a-Server#server-types) :"
@@ -221,11 +217,11 @@ msgstr "**Note** : Les caractères point-virgule et saut de ligne ne sont pas au
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:45
 msgid ""
-"Set your Directory (genre) server using the `--directoryserver` (`-e`) "
-"option as follows:"
+"Set your Directory (genre) server using the `--directoryserver` (`-e`) option "
+"as follows:"
 msgstr ""
-"Définissez votre serveur annuaire (genre) en utilisant l'option "
-"`--directoryserver` (`-e`) comme suit :"
+"Définissez votre serveur annuaire (genre) en utilisant l'option `--"
+"directoryserver` (`-e`) comme suit :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:56
@@ -268,12 +264,12 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:62
 msgid ""
-"To view the log, use `journalctl` (to exit press Ctrl-C). For example, to "
-"read the system log file, filtered for the Jamulus service:"
+"To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read "
+"the system log file, filtered for the Jamulus service:"
 msgstr ""
 "Pour visualiser le journal, utilisez `journalctl` (pour quitter, appuyez sur "
-"Ctrl-C). Par exemple, pour lire le fichier journal du système, filtré pour "
-"le service Jamulus :"
+"Ctrl-C). Par exemple, pour lire le fichier journal du système, filtré pour le "
+"service Jamulus :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:64
@@ -283,17 +279,16 @@ msgstr "`journalctl -f -u jamulus-headless`"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:67
 msgid "### Upgrading"
-msgstr "### Mise à niveau"
+msgstr "### Mise à jour"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:69
 msgid ""
-"To upgrade your server to a newer version, simply download a new .deb and "
-"re-install as step 3."
+"To upgrade your server to a newer version, simply download a new .deb and re-"
+"install as step 3."
 msgstr ""
-"Pour mettre à niveau votre serveur vers une version plus récente, "
-"téléchargez simplement un nouveau fichier .deb et réinstallez comme à "
-"l'étape 3."
+"Pour mettre à jour votre serveur vers une version plus récente, téléchargez "
+"simplement un nouveau fichier .deb et réinstallez comme à l'étape 3."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:71
@@ -315,12 +310,12 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:77
 msgid ""
-"To send these signals using systemd, create the following two `.service` "
-"files in `/etc/systemd/system`, calling them something appropriate (e.g. "
+"To send these signals using systemd, create the following two `.service` files "
+"in `/etc/systemd/system`, calling them something appropriate (e.g. "
 "`newRecording-Jamulus-serv er.service`)."
 msgstr ""
-"Pour envoyer ces signaux en utilisant systemd, créez les deux fichiers "
-"`.service` suivants dans `/etc/systemd/system`, en les appelant de manière "
+"Pour envoyer ces signaux en utilisant systemd, créez les deux fichiers `."
+"service` suivants dans `/etc/systemd/system`, en les appelant de manière "
 "appropriée (par exemple `newRecording-Jamulus-server.service`)."
 
 #. type: Plain text
@@ -402,10 +397,10 @@ msgid ""
 "as the `.service` file name you created when setting systemd to control your "
 "Jamulus server. So in this example it would be `Jamulus-Server.service`_"
 msgstr ""
-"_Note : Le nom du service Jamulus dans la ligne `ExecStart` doit être le "
-"même que le nom du fichier `.service` que vous avez créé lors de la "
-"configuration de systemd pour contrôler votre serveur Jamulus. Donc dans cet "
-"exemple, ce serait `Jamulus-Server.service`_"
+"_Note : Le nom du service Jamulus dans la ligne `ExecStart` doit être le même "
+"que le nom du fichier `.service` que vous avez créé lors de la configuration "
+"de systemd pour contrôler votre serveur Jamulus. Donc dans cet exemple, ce "
+"serait `Jamulus-Server.service`_"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:107
@@ -427,14 +422,14 @@ msgid ""
 "`sudo service jamulusTogglerec start` (assuming you named your unit file "
 "`jamulusTogglerec.service`)"
 msgstr ""
-"`sudo service jamulusTogglerec start` (en supposant que vous avez nommé "
-"votre fichier unité `jamulusTogglerec.service`)"
+"`sudo service jamulusTogglerec start` (en supposant que vous avez nommé votre "
+"fichier unité `jamulusTogglerec.service`)"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:113
 msgid ""
-"You can see the result of these commands if you run `service jamulus "
-"status`, or by viewing the logs."
+"You can see the result of these commands if you run `service jamulus status`, "
+"or by viewing the logs."
 msgstr ""
 "Vous pouvez voir le résultat de ces commandes si vous exécutez `service "
 "jamulus status`, ou en consultant les logs."
@@ -442,13 +437,13 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:115
 msgid "## Making a server status page"
-msgstr "## Faire une page de status de serveur"
+msgstr "## Faire une page d'êtat du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:117
 msgid ""
-"With the `-m` command line argument, server statistics can be generated to "
-"be put on a web page."
+"With the `-m` command line argument, server statistics can be generated to be "
+"put on a web page."
 msgstr ""
 "Avec l'argument `-m` de la ligne de commande, des informations statistiques "
 "sur le serveur peuvent être générées pour être mises sur une page web."
@@ -462,8 +457,8 @@ msgid ""
 msgstr ""
 "Voici un exemple de script php utilisant le fichier d'état du serveur pour "
 "afficher l'état actuel du serveur sur une page html (en supposant que "
-"l'argument de ligne de commande suivant soit utilisé : `-m "
-"/var/www/stat1.dat`):"
+"l'argument de ligne de commande suivant soit utilisé : `-m /var/www/stat1."
+"dat`):"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:134
