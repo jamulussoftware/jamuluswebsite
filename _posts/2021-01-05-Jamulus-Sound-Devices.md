@@ -311,6 +311,16 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 ***
 
+**[Mackie ProFx6 v3](https://mackie.com/products/profxv3-professional-effects-mixers-usb)**, analog Mixer with USB-Interface
+
+**Windows**: ✅ Works. Needs the driver from the [User Manual](https://mackie.com/sites/default/files/Mackie_USB_Driver_Instructions(1).pdf)
+
+**macOS**: ❓ Not yet tested.
+
+**Linux**: ❓ Not yet tested.
+
+***
+
 #### Amp modelers/effects pedals for instruments
 
 **[Line 6 HX Stomp](https://line6.com/hx-stomp/)**, USB multi-effects pedal for guitar
