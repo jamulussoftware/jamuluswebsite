@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-09-20 00:09+0200\n"
+"PO-Revision-Date: 2021-09-24 13:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Server-Linux.md:1
@@ -55,7 +56,7 @@ msgstr "## Exécution d'un serveur \"headless\""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:13
 msgid "The following is for running Jamulus as a \"pure\" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd."
-msgstr "Ce qui suit concerne l'exécution de Jamulus en tant que serveur \"pur\" sur du **matériel sans audio** (par exemple, sur un hôte tiers/cloud) et suppose des distributions Ubuntu/Debian utilisant systemd. Nous avons également des instructions pour [Raspberry Pi] (Server-Rpi)."
+msgstr "Ce qui suit concerne l'exécution de Jamulus en tant que serveur \"pur\" sur du **matériel sans audio** (par exemple, sur un hôte tiers/cloud) et suppose des distributions Ubuntu/Debian utilisant systemd."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:15
@@ -115,7 +116,7 @@ msgstr "Vous pouvez contrôler Jamulus avec la commande `service`. Par exemple, 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:31
 msgid "`sudo systemctl stop jamulus-headless`"
-msgstr "`sudo service jamulus-headless stop`"
+msgstr "`sudo systemctl stop jamulus-headless`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:33
@@ -125,7 +126,7 @@ msgstr "### Exécution en mode public"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:35
 msgid "The following minimum setup is required to [run a public server](Running-a-Server#server-types):"
-msgstr "La configuration minimale suivante est requise pour [exécuter un serveur public](Running-a-Server#server-types) :"
+msgstr "La configuration minimale suivante est requise pour [exécuter un serveur public](Running-a-Server#Types-de-serveurs) :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:41
@@ -308,7 +309,7 @@ msgstr "Lancez `sudo systemctl daemon-reload` pour les enregistrer pour la premi
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:109
 msgid "Now you can run these with the `service start` command, for example:"
-msgstr "Vous pouvez contrôler Jamulus avec la commande `service`. Par exemple, pour arrêter le serveur proprement :"
+msgstr "Vous pouvez les lancer avec la commande `service start`, par exemple :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:111
