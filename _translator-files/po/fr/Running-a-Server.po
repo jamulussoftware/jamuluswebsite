@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-09-24 13:47+0200\n"
+"PO-Revision-Date: 2021-09-25 19:39+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -106,7 +106,7 @@ msgstr "### Vitesse et latence"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:33
 msgid "Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' hard/software setup, the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
-msgstr "De nombreuses personnes attribuent au serveur des problèmes qui sont en fait des problèmes du _client_. Cela dépend en grande partie du matériel, de la configuration des clients, des réseaux sur lesquels ils se trouvent et de leur respect de la [règle numéro un](Client-Troubleshooting#Vous-avez-tous-un-son-correct,-mais-il-est-difficile-de-jouer-ensemble)."
+msgstr "De nombreuses personnes attribuent au serveur des problèmes qui sont en fait des problèmes du _client_. Cela dépend en grande partie du matériel, de la configuration des clients, des réseaux sur lesquels ils se trouvent et de leur respect de la [règle numéro un](Client-Troubleshooting#vous-avez-tous-un-son-correct,-mais-il-est-difficile-de-jouer-ensemble)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:35
@@ -117,7 +117,7 @@ msgstr "**_La capacité du serveur lui-même (et du réseau sur lequel il se tro
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:37
 msgid "If you plan to be playing regularly with the same people, **you are strongly advised** to first make sure that each member of the group is set up to use Jamulus properly. Do this by finding a Public Server with a reasonable ping time for all of you (20 ms or less perhaps), all connect to that and work to fix any individual issues (verifying that they can [follow Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) in particular). Use the solo technique above to prevent being interrupted if needed."
-msgstr "Si vous prévoyez de jouer régulièrement avec les mêmes personnes, **il vous est fortement conseillé** de vous assurer d'abord que chaque membre du groupe est configuré pour utiliser Jamulus correctement. Pour ce faire, trouvez un serveur public avec un temps de ping raisonnable pour vous tous (20 ms ou moins, par exemple), connectez-vous tous à ce serveur et essayez de résoudre les problèmes individuels (en vérifiant qu'ils peuvent [suivre la règle numéro un](Client-Troubleshooting#Vous-avez-tous-un-son-correct,-mais-il-est-difficile-de-jouer-ensemble), en particulier). Utilisez la technique du solo ci-dessus pour éviter d'être interrompu si nécessaire."
+msgstr "Si vous prévoyez de jouer régulièrement avec les mêmes personnes, **il vous est fortement conseillé** de vous assurer d'abord que chaque membre du groupe est configuré pour utiliser Jamulus correctement. Pour ce faire, trouvez un serveur public avec un temps de ping raisonnable pour vous tous (20 ms ou moins, par exemple), connectez-vous tous à ce serveur et essayez de résoudre les problèmes individuels (en vérifiant qu'ils peuvent [suivre la règle numéro un](Client-Troubleshooting#vous-avez-tous-un-son-correct,-mais-il-est-difficile-de-jouer-ensemble), en particulier). Utilisez la technique du solo ci-dessus pour éviter d'être interrompu si nécessaire."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:39
@@ -157,7 +157,7 @@ msgstr "L'exécution d'un serveur peut nécessiter l'ajustement de tout pare-feu
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:54
 msgid "Running a Private Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Private Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
-msgstr "Pour exécuter un serveur privé à la maison, vous devez effectuer une [redirection de port](#running-a-private-server) sur votre routeur. Lorsque vous exécutez un serveur privé, la redirection de port ne devrait pas être nécessaire dans la plupart des cas, mais il est conseillé de le faire car certains réseaux peuvent ne pas fonctionner correctement avec Jamulus dans son mode par défaut."
+msgstr "Pour exécuter un serveur privé à la maison, vous devez effectuer une [redirection de port](#exécuter-un-serveur-privé) sur votre routeur. Lorsque vous exécutez un serveur privé, la redirection de port ne devrait pas être nécessaire dans la plupart des cas, mais il est conseillé de le faire car certains réseaux peuvent ne pas fonctionner correctement avec Jamulus dans son mode par défaut."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:56
@@ -417,7 +417,7 @@ msgstr "### Rendre mon serveur publique"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:160
 msgid "By default, you will be running a Private Server and need to [read these instructions](#running-a-private-server) to have others connect to you in this mode."
-msgstr "Par défaut, vous utilisez un serveur privé et vous devez [lire ces instructions](#running-a-private-server) pour que d'autres personnes puissent se connecter à vous dans ce mode."
+msgstr "Par défaut, vous utilisez un serveur privé et vous devez [lire ces instructions](#exécuter-un-serveur-privé) pour que d'autres personnes puissent se connecter à vous dans ce mode."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:162
@@ -498,7 +498,7 @@ msgstr "### Adresse du serveur de répertoire personnalisé"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:195
 msgid "Leave this field empty unless you need to list your server on a [private Directory](#3-directory)"
-msgstr "Laissez ce champ vide, sauf si vous devez inscrire votre serveur dans un [annuaire privé](#3-directory)"
+msgstr "Laissez ce champ vide, sauf si vous devez inscrire votre serveur dans un [annuaire privé](#3-serveur-annuaire)"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:198
@@ -514,7 +514,7 @@ msgstr "**Utilisateurs de Windows** - Si vous voulez que le serveur démarre aut
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:204
 msgid "# Running a Private Server"
-msgstr "# Exécuter un serveur"
+msgstr "# Exécuter un serveur privé"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:206
@@ -626,7 +626,7 @@ msgstr "`-d` ou `--discononquit` Déconnecte tous les clients lorsque le serveur
 #: ../wiki/en/Running-a-Server.md:247
 #, no-wrap
 msgid "`-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.\n"
-msgstr "`-e` ou `--directoryserver` Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](#server-types) pour plus d'informations.\n"
+msgstr "`-e` ou `--directoryserver` Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](#types-de-serveurs) pour plus d'informations.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:248
@@ -638,7 +638,7 @@ msgstr "`--directoryfile` Permet à l'annuaire de se souvenir des serveurs enreg
 #: ../wiki/en/Running-a-Server.md:249
 #, no-wrap
 msgid "`-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  \n"
-msgstr "`-f` ou `--listfilter` Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Serveurs d'annuaire uniquement. Voir [types de serveurs](#server-types)  \n"
+msgstr "`-f` ou `--listfilter` Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Serveurs d'annuaire uniquement. Voir [types de serveurs](#types-de-serveurs)  \n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:250
@@ -674,7 +674,7 @@ msgstr "`-o` ou `--serverinfo`     Détails de l'emplacement dans le format :  `
 #: ../wiki/en/Running-a-Server.md:255
 #, no-wrap
 msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning))\n"
-msgstr "`-P` ou `--delaypan`       Démarrer avec le panoramique du délai activé Voir [notes](#delay-panning))\n"
+msgstr "`-P` ou `--delaypan`       Démarrer avec le panoramique du délai activé Voir [notes](#retardement-du-panoramique))\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:256
@@ -728,7 +728,7 @@ msgstr "`-z` ou `--startminimized`  Démarrage minimisé\n"
 #: ../wiki/en/Running-a-Server.md:264
 #, no-wrap
 msgid "`--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)\n"
-msgstr "`--serverpublicip`  L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les serveurs d'annuaire](#points-to-note-about-directories)\n"
+msgstr "`--serverpublicip`  L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les serveurs d'annuaire](#points-à-noter-à-propos-des-annuaires)\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:266
