@@ -4,8 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+msgstr "Project-Id-Version: PACKAGE VERSION\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,15 +39,12 @@ msgstr "Ejecutar un Servidor"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:10
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# Server Administration Manual \n"
-#| " {:.no_toc}\n"
+#, no-wrap
 msgid ""
 "# Server Administration Manual\n"
 " {:.no_toc}\n"
 msgstr ""
-"# Manual Administración de Servidores \n"
+"# Manual Administración de Servidores\n"
 " {:.no_toc}\n"
 
 #. type: Plain text
@@ -94,7 +90,7 @@ msgstr "Ten en cuenta que puedes realizar una sesión \"privada\" con otras pers
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:29
 msgid "If you do decide to run a server, please read the following. Setting up a server is easy, however it is better to know the theory first:"
-msgstr ""
+msgstr "Si decides ejecutar un servidor, por favor lee lo siguiente. Configurar un servidor es fácil, sin embargo es mejor conocer la teoría primero:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:31
@@ -160,7 +156,7 @@ msgstr "Ejecutar un Servidor Privado en casa requerirá que [redirecciones puert
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:56
 msgid "Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the client and server. There are plans to expand IPv6 support."
-msgstr ""
+msgstr "Jamulus solo tiene soporte limitado para IPv6, que debe ser habilitado con un argumento en la línea de comandos en el cliente y el servidor. Hay intención de ampliar el soporte para IPv6."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:59
@@ -382,10 +378,9 @@ msgstr "**Usuarios de macOS** - Haz doble clic en el icono de \"Jamulus server\"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:147
-#, fuzzy, no-wrap
-#| msgid "**Linux users** \n"
+#, no-wrap
 msgid "**Linux users**\n"
-msgstr "**Usuarios de Linux** \n"
+msgstr "**Usuarios de Linux**\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:149
@@ -598,18 +593,14 @@ msgstr "Para macOS, arranca una ventana de Terminal y ejecuta Jamulus con las op
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:242
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```shell\n"
-#| " /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100 \n"
-#| "```\n"
+#, no-wrap
 msgid ""
 "```shell\n"
 " /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100\n"
 "```\n"
 msgstr ""
 "```shell\n"
-" /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100 \n"
+" /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100\n"
 "```\n"
 
 #. type: Plain text
@@ -626,16 +617,15 @@ msgstr "`-d`  or `--discononquit`   Desconectar todos los clientes al salir. Nor
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:247
-#, fuzzy, no-wrap
-#| msgid "`-e`  or `--directoryserver`  Make the server public and sets its genre (see also `-o`). See [server types](#server-types) for further information.  \n"
+#, no-wrap
 msgid "`-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.\n"
-msgstr "`-e`  o `--directoryserver`  Hace que el servidor sea público y establece su género (ver también `-o`). Ver [tipos de servidor](#tipos-de-servidor) para más información.  \n"
+msgstr "`-e`  o `--directoryserver`  Registra el servidor en un directorio (por ej. para establecer su género (ver también `-o`)). Ver [tipos de servidor](#tipos-de-servidor) para más información.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:248
 #, no-wrap
 msgid "`--directoryfile` Enable directory to remember registered servers even if the directory is restarted. You'll need to specify a path to a writable file location in which server information is stored.\n"
-msgstr ""
+msgstr "`--directoryfile` Para que el directorio recuerde los servidores registrados incluso si se reinicia el directorio. Necesitarás especificar una ruta a una ubicación con permisos de escritura en la cual se guarda la información del servidor.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:249
@@ -645,10 +635,9 @@ msgstr "`-f`  o `--listfilter`     Lista blanca de servidores que se registran e
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:250
-#, fuzzy, no-wrap
-#| msgid "`-F`  or `--fastupdate`     Reduces latency if clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients. \n"
+#, no-wrap
 msgid "`-F`  or `--fastupdate`     Reduces latency if clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients.\n"
-msgstr "`-F`  o `--fastupdate`     Reduce la latencia si el cliente se conecta con la opción \"Activar Buffers Pequeños\". Requiere un procesador potente para evitar cortes, y más ancho de banda hacia clientes activados. \n"
+msgstr "`-F`  o `--fastupdate`     Reduce la latencia si el cliente se conecta con la opción \"Activar Buffers Pequeños\". Requiere un procesador potente para evitar cortes, y más ancho de banda hacia clientes activados.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:251
@@ -664,24 +653,21 @@ msgstr "`-L`  o `--licence`        Muestra una ventana de aceptación para que l
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:253
-#, fuzzy, no-wrap
-#| msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name \n"
+#, no-wrap
 msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
-msgstr "`-m`  o `--htmlstatus`     Habilita un archivo de estado HTML, establece una ruta y un nombre de archivo \n"
+msgstr "`-m`  o `--htmlstatus`     Habilita un archivo de estado HTML, establece una ruta y un nombre de archivo\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:254
-#, fuzzy, no-wrap
-#| msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only \n"
+#, no-wrap
 msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only\n"
-msgstr "`-o`  o `--serverinfo`     Datos de ubicación en el formato:  `[nombre];[ciudad];[valor locale]` (ver [valores](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Solo servidores públicos \n"
+msgstr "`-o`  o `--serverinfo`     Datos de ubicación en el formato:  `[nombre];[ciudad];[valor locale]` (ver [valores](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Solo servidores públicos\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:255
-#, fuzzy, no-wrap
-#| msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning)) \n"
+#, no-wrap
 msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning))\n"
-msgstr "`-P`  o `--delaypan`       Inicia con paneo con retardo activado Ver [notas](#paneo-con-retardo)) \n"
+msgstr "`-P`  o `--delaypan`       Inicia con paneo con retardo activado Ver [notas](#paneo-con-retardo))\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:256
