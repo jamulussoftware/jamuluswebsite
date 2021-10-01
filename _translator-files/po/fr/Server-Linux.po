@@ -5,14 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-09-25 19:41+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Language: fr_FR\n"
+"X-Source-Language: en_150\n"
+"X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Server-Linux.md:1
@@ -51,12 +56,12 @@ msgstr "## Exécution d'un serveur \"headless\""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:13
 msgid "The following is for running Jamulus as a \"pure\" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd."
-msgstr "Ce qui suit concerne l'exécution de Jamulus en tant que serveur \"pur\" sur du **matériel sans audio** (par exemple, sur un hôte tiers/cloud) et suppose des distributions Ubuntu/Debian utilisant systemd. Nous avons également des instructions pour [Raspberry Pi] (Server-Rpi)."
+msgstr "Ce qui suit concerne l'exécution de Jamulus en tant que serveur \"pur\" sur du **matériel sans audio** (par exemple, sur un hôte tiers/cloud) et suppose des distributions Ubuntu/Debian utilisant systemd."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:15
 msgid "If you want to run a server on a Raspberry Pi, you will need to [compile from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). See also this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) maintained by Jamulus user fredsiva."
-msgstr ""
+msgstr "Si vous souhaitez faire fonctionner un serveur sur un Raspberry Pi, vous devrez [compiler à partir des sources](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). Voir aussi ce [guide pour Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) maintenu par l'utilisateur Jamulus fredsiva."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:17
@@ -76,7 +81,7 @@ msgstr "Installez le paquet Jamulus : `sudo apt install ./{{ site.download_file_
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:20
 msgid "Enable the headless server process via systemd: `sudo systemctl enable jamulus-headless`"
-msgstr "Activez le processus de serveur sans tête via systemd : `sudo systemctl enable jamulus-headless`."
+msgstr "Activez le processus de serveur sans interface graphique via systemd : `sudo systemctl enable jamulus-headless`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:21
@@ -96,7 +101,7 @@ msgstr "Vérifiez que tout va bien avec `service jamulus-headless status` (tapez
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:25
 msgid "You may also be interested in downloading [this set of useful tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`)."
-msgstr ""
+msgstr "Vous pouvez également être intéressé par le téléchargement de [cet ensemble d'outils utiles](https://github.com/jamulussoftware/jamulus/tree/master/tools) depuis le dépôt Jamulus (clonez le dépôt Git et appelez `git submodule update --init`)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:27
@@ -111,17 +116,17 @@ msgstr "Vous pouvez contrôler Jamulus avec la commande `service`. Par exemple, 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:31
 msgid "`sudo systemctl stop jamulus-headless`"
-msgstr "`sudo service jamulus-headless stop`"
+msgstr "`sudo systemctl stop jamulus-headless`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:33
 msgid "### Running in public mode"
-msgstr ""
+msgstr "### Exécution en mode public"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:35
 msgid "The following minimum setup is required to [run a public server](Running-a-Server#server-types):"
-msgstr ""
+msgstr "La configuration minimale suivante est requise pour [exécuter un serveur public](Running-a-Server#types-de-serveurs) :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:41
@@ -143,12 +148,12 @@ msgstr ""
 #: ../wiki/en/Server-Linux.md:43
 #, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `--serverinfo`\n"
-msgstr ""
+msgstr "**Note** : Les caractères point-virgule et saut de ligne ne sont pas autorisés dans `--serverinfo`\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:45
 msgid "Set your Directory (genre) server using the `--directoryserver` (`-e`) option as follows:"
-msgstr ""
+msgstr "Définissez votre serveur annuaire (genre) en utilisant l'option `--directoryserver` (`-e`) comme suit :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:56
@@ -197,12 +202,12 @@ msgstr "`journalctl -f -u jamulus-headless`"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:67
 msgid "### Upgrading"
-msgstr "### Mise à niveau"
+msgstr "### Mise à jour"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:69
 msgid "To upgrade your server to a newer version, simply download a new .deb and re-install as step 3."
-msgstr "Pour mettre à niveau votre serveur vers une version plus récente, téléchargez simplement un nouveau fichier .deb et réinstallez comme à l'étape 3."
+msgstr "Pour mettre à jour votre serveur vers une version plus récente, téléchargez simplement un nouveau fichier .deb et réinstallez comme à l'étape 3."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:71
@@ -212,7 +217,7 @@ msgstr "### Enregistrement"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:74
 msgid "When using the recording function with the `-R` command line option, if the server receives a SIGUSR1 signal during a re cording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off."
-msgstr ""
+msgstr "Lorsque vous utilisez la fonction d'enregistrement avec l'option de ligne de commande `-R`, si le serveur reçoit un signal SIGUSR1 pendant un enregistrement, il commencera un nouvel enregistrement dans un nouveau répertoire. SIGUSR2 permet d'activer ou de désactiver l'enregistrement."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:77
@@ -294,7 +299,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:105
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_"
-msgstr "_Note : Le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de systemd pour contrôler votre serveur Jamulus. Donc dans cet exemple, ce serait `Jamulus-Server.service`_."
+msgstr "_Note : Le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de systemd pour contrôler votre serveur Jamulus. Donc dans cet exemple, ce serait `Jamulus-Server.service`_"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:107
@@ -304,7 +309,7 @@ msgstr "Lancez `sudo systemctl daemon-reload` pour les enregistrer pour la premi
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:109
 msgid "Now you can run these with the `service start` command, for example:"
-msgstr "Vous pouvez contrôler Jamulus avec la commande `service`. Par exemple, pour arrêter le serveur proprement :"
+msgstr "Vous pouvez les lancer avec la commande `service start`, par exemple :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:111
@@ -319,7 +324,7 @@ msgstr "Vous pouvez voir le résultat de ces commandes si vous exécutez `servic
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:115
 msgid "## Making a server status page"
-msgstr "## Faire une page de status de serveur"
+msgstr "## Faire une page d'êtat du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:117

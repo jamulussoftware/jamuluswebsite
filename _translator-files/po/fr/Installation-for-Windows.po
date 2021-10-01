@@ -5,14 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-09-25 19:24+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Language: fr_FR\n"
+"X-Source-Language: en_150\n"
+"X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Windows.md:1
@@ -51,7 +56,7 @@ msgstr "# Installation sous Windows"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:13
 msgid "Make sure you read the [Getting Started](Getting-Started) page."
-msgstr "Assurez-vous d'avoir déjà lu la page [Getting Started](Getting-Started)."
+msgstr "Assurez-vous d'avoir déjà lu la page [Configuration](Getting-Started)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:14
@@ -75,7 +80,7 @@ msgstr "**Miroir 2:** [SourceForge](https://sourceforge.net/projects/llcon/files
 #: ../wiki/en/Installation-for-Windows.md:17
 #, no-wrap
 msgid "**Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
-msgstr "**Installez Jamulus** : Double-cliquez sur le programme d'installation pour le lancer. Si vous recevez un avertissement de SmartScreen, cliquez sur \"Plus d'infos\" et \"Exécuter quand même\" pour installer Jamulus. (Si vous avez récupéré une nouvelle version de Jamulus et que vous êtes l'une des premières personnes à l'avoir téléchargée, Jamulus ne sera pas encore sur la liste blanche de SmartScreen. Nous ne payons pas pour la signature du code).\n"
+msgstr "**Installez Jamulus** : Double-cliquez sur le programme d'installation pour le lancer. Si vous recevez un avertissement de SmartScreen, cliquez sur \"Plus d'infos\" et \"Exécuter quand même\" pour installer Jamulus. (Si vous avez récupéré une nouvelle version de Jamulus et que vous êtes l'une des premières personnes à l'avoir téléchargée, Jamulus ne sera pas encore sur la liste blanche de SmartScreen. Nous ne payons pas pour la signature du code.)\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:18
@@ -87,7 +92,7 @@ msgstr "**Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus 
 #: ../wiki/en/Installation-for-Windows.md:19
 #, no-wrap
 msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL below, if you're using that.\n"
-msgstr ""
+msgstr "**Préparez votre carte son**. Une fois que vous avez terminé, vous devez configurer votre matériel audio. Regardez comment configurer ASIO4ALL ci-dessous, si vous l'utilisez.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:21
@@ -149,13 +154,13 @@ msgstr "*ASIO4All n'est pas recommandé si votre interface audio fournit son pro
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:42
 msgid "For ASIO4ALL, you may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything."
-msgstr ""
+msgstr "Pour ASIO4ALL, vous devrez peut-être expérimenter un peu en fonction de votre matériel audio. Si tout fonctionne dès le départ, vous n'avez rien à faire."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:44
 #, no-wrap
 msgid "**Tip:** Set up your sound card while you're [connected to a server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
-msgstr ""
+msgstr "**Astuce : ** Configurez votre carte son pendant que vous êtes [connecté à un serveur] (Getting-Started#se-connecter-à-un-serveur-et-tester-son-son) pour entendre votre instrument ou votre voix et vérifier si tout est correctement configuré ; mais lisez d'abord ce qui suit.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:47
@@ -166,13 +171,13 @@ msgstr "Avant de démarrer avec Jamulus :"
 #: ../wiki/en/Installation-for-Windows.md:48
 #, no-wrap
 msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
-msgstr ""
+msgstr "**Fermez toutes les applications** (en particulier celles qui pourraient accéder à votre carte son comme votre navigateur/lecteur multimédia). ASIO4ALL a besoin d'un accès exclusif à votre carte son, ce qui signifie que les autres programmes ne pourront pas utiliser l'audio si ASIO4ALL et Jamulus sont en cours d'exécution.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:49
 #, no-wrap
 msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:\n"
-msgstr "Si l'audio ne fonctionne pas directement, assurez-vous que seules les **entrées/sorties correctes** dans ASIO4All **sont activées**. Tout le reste devrait être désactivé. Ça peut être fait comme suit :\n"
+msgstr "Si l'audio ne fonctionne pas directement, assurez-vous que seules les **entrées/sorties correctes** dans ASIO4All **sont activées**. Tout le reste devrait être désactivé. Recherchez votre configuration dans la [liste communautaire des configurations ASIO4ALL qui fonctionnent](/kb/2021/03/20/ASIO4ALL-Examples.html) ou faites-le manuellement si vous ne trouvez pas la vôtre :\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:51
@@ -231,7 +236,7 @@ msgstr "Les casques et les haut-parleurs sont souvent identifiés comme des sort
 #: ../wiki/en/Installation-for-Windows.md:63
 #, no-wrap
 msgid "Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
-msgstr ""
+msgstr "Stereo Mix/Stereo Input n'est généralement pas l'entrée/sortie que vous recherchez. Par conséquent, désactivez-la si vous la voyez.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:65
@@ -251,12 +256,12 @@ msgstr "Ensuite, *réglez les entrées/sorties*. Les entrées/sorties activées 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:71
 msgid "Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL."
-msgstr "Regardez [cette vidéo] (https://youtu.be/_GzOsitVgLI) par [trombonepizza] (https://github.com/trombonepizza) qui donne des informations plus détaillées sur la configuration de ASIO4ALL."
+msgstr "Regardez [cette vidéo](https://youtu.be/_GzOsitVgLI) par [trombonepizza](https://github.com/trombonepizza) qui donne des informations plus détaillées sur la configuration de ASIO4ALL."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:73
 msgid "Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}."
-msgstr "Des informations officielles et supplémentaires sur la façon de configurer ASIO4ALL sont documentées dans la [FAQ officielle d'ASIO4ALL sur le site web d'ASIO4ALL](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"} et dans le manuel d'ASIO4ALL qui se trouve sur votre bureau ou dans le dossier où le binaire d'ASIO4ALL est installé (généralement `C:\\Program Files (x86)\\ASIO4ALL v2\\`))."
+msgstr "Des informations officielles et supplémentaires sur la façon de configurer ASIO4ALL sont documentées dans la [FAQ officielle d'ASIO4ALL sur le site web d'ASIO4ALL](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:75

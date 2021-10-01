@@ -5,14 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-09-19 23:48+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Language: fr_FR\n"
+"X-Source-Language: en_150\n"
+"X-Generator: Poedit 3.0\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -61,39 +65,37 @@ msgstr "### Debian et Ubuntu"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
 msgid "#### Debian repository (convenient)"
-msgstr ""
+msgstr "#### Dépôt Debian (pratique)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
 msgid "Jamulus is included in the Debian 11 (“bullseye”) repository and can be installed by typing the following in terminal (Open it with e.g. CTRL+ALT+T):"
-msgstr ""
+msgstr "Jamulus est inclus dans le dépôt de Debian 11 (\"bullseye\") et peut être installé en tapant ce qui suit dans le terminal (Ouvrez-le avec CTRL+ALT+T par exemple) :"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:23
 msgid "``` sudo apt update && sudo apt install qjackctl jamulus ```"
-msgstr ""
+msgstr "``` sudo apt update && sudo apt install qjackctl jamulus ```"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:25
 msgid "This is the easiest and most convenient way to install Jamulus although it won't give you the latest features."
-msgstr ""
+msgstr "C'est le moyen le plus simple et le plus pratique d'installer Jamulus, même s'il ne vous offre pas les dernières fonctionnalités."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:27
 msgid "#### Manual install (latest version)"
-msgstr ""
+msgstr "#### Installation manuelle (dernière version)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:29
 msgid "If you want to get the most recent release, you need to install or update Jamulus manually:"
-msgstr ""
+msgstr "Si vous souhaitez obtenir la version la plus récente, vous devez installer ou mettre à jour Jamulus manuellement :"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:31
-#, fuzzy
-#| msgid "Download the [latest .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})"
 msgid "[Download Jamulus (.deb)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
-msgstr "Téléchargez le [dernier fichier .deb]({{ site.download_root_link }}{ site.download_file_names.deb-gui }})"
+msgstr "[Téléchargez Jamulus (.deb)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:32
@@ -118,14 +120,12 @@ msgstr "Notez que si vous devez mettre à jour Jamulus vers une version plus ré
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:38
 msgid "### Other distributions"
-msgstr ""
+msgstr "### Autres distributions"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:40
-#, fuzzy
-#| msgid "For installers on other distributions, see [Repology](https://repology.org/project/jamulus/versions). You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
 msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up to date version of Jamulus is not included in your distribution, you might want to [compile Jamulus from source following the compile guide](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md) You may also wish to use one of the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
-msgstr "Pour les installateurs sur d'autres distributions, voir [Repology](https://repology.org/project/jamulus/versions). Vous pouvez également utiliser l'un des [scripts d'installation](https://github.com/jamulussoftware/installscripts)."
+msgstr "Pour les installateurs sur d'autres distributions, consultez leurs gestionnaires de paquets et [Repology](https://repology.org/project/jamulus/versions). Si une version à jour de Jamulus n'est pas incluse dans votre distribution, vous pouvez [compiler Jamulus à partir des sources en suivant le guide de compilation](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md) Vous pouvez également utiliser l'un des [scripts d'installation](https://github.com/jamulussoftware/installscripts)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:43
@@ -145,7 +145,7 @@ msgstr "Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fo
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:48
 msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
-msgstr "Exécutez la commande `qjackctl`. Vous verrez la page principale de l'utilitaire **Qt JACK Control**."
+msgstr "Lancez QjackCtl. Vous verrez la **page principale de l'utilitaire de contrôle Qt JACK**"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:49
@@ -155,22 +155,22 @@ msgstr "Configurez votre matériel audio comme suit (les paramètres exacts de J
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:51
 msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
-msgstr "Réglez la **Interface** audio sur celle que vous voulez (il peut y en avoir plusieurs dans la liste)."
+msgstr "Réglez l'interface audio **Interface** sur celle que vous voulez (il peut y en avoir plusieurs dans la liste)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:52
 msgid "Set the **Sample Rate to 48000**"
-msgstr "Réglez la **Fréquence d'échantillonnage sur 48000**."
+msgstr "Réglez la **Fréquence d'échantillonnage sur 48000**"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:53
 msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
-msgstr "Définissez la **Frames/Période à 128** et Périodes/Buffer à 2 dans un premier temps."
+msgstr "Définissez la **Frames/Period à 128** et Periods/Buffer à 2 dans un premier temps"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:55
 msgid "Restart JACK for the new settings to take effect"
-msgstr "Redémarrez JACK pour que les nouveaux paramètres prennent effet."
+msgstr "Redémarrez JACK pour que les nouveaux paramètres prennent effet"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:57
