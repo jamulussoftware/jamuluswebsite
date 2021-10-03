@@ -2,13 +2,6 @@
 
 This is the content repository for [jamulus.io](https://jamulus.io). Text appearing in the Jamulus software application itself is part of the [main code repository](https://github.com/jamulussoftware/jamulus). See also the [general overview](https://jamulus.io/wiki/Contribution) to getting involved. 
 
-
-## Want to help translate?
-
-To make updates or translations for jamulus.io you will need a GitHub account and be familiar with GitHub in general. If you want to get more involved, you’ll need to be familiar with the use of git on the command line, as well as Jekyll. Note that translating the Jamulus application itself is done by a different process, but you are welcome to help with that too. Introduce yourself on the [GitHub Discussion](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
-
-### Please also note that discussions should be in English so as to be open to all.
-
 ## Making changes to the English version
 
 **Note** Any significant changes **must** be made to the English first. See the translation process later in this document if you want to get involved with that.
@@ -31,20 +24,23 @@ Use the `{{site.url}}` variable to call an existing image in the corresponding d
 
 If you want to add a new image, use .png format if possible, and if it’s not a screenshot, ask about where you should store it. Localised images must go in a directory for that language (see the example for English, above).
 
+### Style and tone
+
+Please have a look at our [style and tone guide](https://jamulus.io/contribute/Style-and-Tone).
 
 ## Translating
 
-**For details on the website translation process, please consult the README file contained in the `_translator-files/` folder**
+To make updates or translations for jamulus.io you will need a GitHub account and be familiar with GitHub in general. If you want to get more involved, you’ll need to be familiar with the use of git on the command line, as well as Jekyll. Note that translating the Jamulus application itself is done by a different process, but you are welcome to help with that too. Introduce yourself on the [GitHub Discussion](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
 
-### Style and tone
+### Please also note that discussions should be in English so as to be open to all.
 
-Language on the website should be consistent. Please have a look at our [style and tone guide](https://jamulus.io/contribute/Style-and-Tone).
+**For details on the website translation process, please consult the [README file here](https://github.com/jamulussoftware/jamuluswebsite/tree/release/_translator-files)**
 
-For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/TRANSLATING.md)
+For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/TRANSLATING.md) in the application repository.
+
+### Overall workflow
 
 We collect changes to the English version of the site on a "next-release" branch first. We then freeze changes prior to a Jamulus software release, and do a translation "sprint" over a couple of weeks when all translation takes place.
-
-### Here’s the overall workflow
 
 1. Changes are first made to EN (= English) *.md files and committed to the “next-release” branch.
 1. Once we’ve agreed the changes can go live (usually just before a software release), we then create GitHub issues for each language, tagged for that release. You can ask questions about the work there.
