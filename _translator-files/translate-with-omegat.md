@@ -1,6 +1,6 @@
 # Guide for translating .po files using OmegaT
 
-If you're just going to edit a single .po file, or translate a short one, it may be easier to simply use an editor like QtLinguist, Virtaal, Lokalize, Gtranslator, etc. which allow you to edit the .po file directly, in-place, without the need to copy/paste it anywhere, and without really needing to learn how to use these tools - they are very intuitive to use. However, if you intend to work through all the website documents, these applications have cluttered GUIs that will make translating a large volume of text quite uncomfortable. In addition, they can't give you (except for Lokalize) a complete overview of all the files as a single project, meaning that if you want to check the state of translations, you have to open them one by one, which is time-consuming and inefficient. 
+If you're just going to edit a single .po file, or translate a short one, it may be easier to simply use an editor like Poedit, which allows you to edit the .po file directly, in-place, without the need to copy/paste it anywhere, and without really needing to learn how to use this tool - it is very intuitive to use. However, if you intend to work through all the website documents, this application has a small, restricted text editor window that will make translating a large volume of text quite uncomfortable.
 
 OmegaT lets you group all files into a single project and can give you information on all of them in a single place. Its interface is also much more convenient to work with. However, as a more advanced tool, it requires some setting up. Once the initial setup has been done though, any future edits/translations are just a matter of copy/pasting a folder and firing up OmegaT.
 
@@ -23,4 +23,4 @@ OmegaT lets you group all files into a single project and can give you informati
 1. When you have finished your translations, go to `Project > Create Translated Documents`. Your translated files will be created in `path/to/_translator-files/po/`, replacing the ones there.
 
 
- From now on, when there are new files to translate or they have been updated on GitHub, it's simply a matter of copy/pasting the latest version of the .po file folder for your language to the "source" folder, as in point 3 above.
+ From now on, when there are new files to translate or they have been updated on GitHub, it's simply a matter of copy/pasting the latest version of the .po file folder for your language to the "source" folder, as in point 3 above, replacing it.
