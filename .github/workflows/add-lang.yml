@@ -22,7 +22,7 @@ jobs:
             echo "new_lang=$NEW_LANG" >> $GITHUB_ENV
             echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
           else
-            echo Language code in wrong format
+            echo Error: language code in wrong format.
             exit 1
           fi
 
@@ -31,25 +31,32 @@ jobs:
         with:
           ref: next-release
 
-# Check po4a cache:
+# Check if language has been added previously.
+      - name: Check if language is already present
+        run: |
+          if [ -d "_translator-files/po/${{ env.new_lang }}" ] ; then
+            echo Error: The language [${{ env.new_lang }}] seems to already exist.
+            exit 1
+          else
+            echo Language: [${{ env.new_lang }}] not detected. Proceeding to add [${{ env.new_lang }}].
+          fi
+
+# Check po4a cache. If CACHE_HIT: true, retrieve the cache.
+# If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
       - name: Check for po4a cache
         uses: actions/cache@v1.0.3
         id: cache-po4a
         with:
           path: "~/po4a"
           key: ${{ runner.os }}-po4a
-      - name: Install or retrieve po4a from cache
+      - name: Install/retrieve po4a from cache
         env:
           CACHE_HIT: ${{ steps.cache-po4a.outputs.cache-hit }}
+        run: ./_po4a-tools/po4a-cache.sh
 
-# Create new lang dir. If CACHE_HIT: true, retrieve the cache. If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
-        run: |
-          mkdir _translator-files/po/${{ env.new_lang }}
-          ./_po4a-tools/po4a-cache.sh
-
-# Create .po files for new language:
-      - name: Create .po files
-        run: ./_po4a-tools/po4a-update-templates.sh
+# Create dirs and files for new language:
+      - name: Create po files, non-wiki dirs, screenshots and symlinks for new lang
+        run: ./_po4a-tools/po4a-add-language.sh
 
 # Push changes to 'next-release':
       - name: Push changes to repo
@@ -69,8 +76,8 @@ jobs:
             - They can be found in `_translator-files/po/${{ env.new_lang }}/`.
             - Please consult the README file in `_translator-files/` for information on the translation process.
 
-# Create translated .md files. Never pushed to the repo.
-      - name: Create translated .md docs and stats
+# Create target translated files. Never pushed to the repo.
+      - name: Create translated docs and stats
         run: ./_po4a-tools/po4a-create-all-targets.sh
 
 # Build site

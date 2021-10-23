@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Creates a statistics file with information on the translation status of each file for every language.
 
 # Stats file location
 STATS_FILE="../contribute/en/Statistics.md"
@@ -18,23 +19,27 @@ permalink: "/contribute/Statistics"
 
 produce_stats () {
 # Determine file names
-	while IFS= read -r -d '' file ; do
-		basename="$(basename -s .md "$file")"
+    while IFS= read -r -d '' doc ; do
 
-		# Stats printed to file Statistics.md
-		echo -n "|**"$lang"**| **"$basename".po**|" >> "$STATS_FILE"
-		msgfmt --statistics "$PO_DIR/$lang/$basename".po &>> "$STATS_FILE"
+        # Get file extension
+        ext=$(echo "$doc" | sed 's/.*\.//')
 
-	done <   <(find -L "$SRC_DIR" -name "*.md"  -print0)
+        filename=$(basename "$doc" .$ext)
 
-	# Separator between languages
-	echo '|**-----**|**--------------------**|**--------------------**|' >> "$STATS_FILE"
+        # Stats printed to Statistics.md
+        echo -n "|**"$lang"**| **"$filename".po**|" >> "$STATS_FILE"
+        msgfmt --statistics "$PO_DIR/$lang/$filename".po &>> "$STATS_FILE"
+
+    done <   <(find -L "$SRC_DIR" -name "*.*"  -print0)
+
+    # Separator between languages
+    echo '|**-----**|**--------------------**|**--------------------**|' >> "$STATS_FILE"
 }
 
 # Run produce_stats on each language folder
 while IFS= read -r -d '' dir ; do
-	lang=$(basename -s .md "$dir")
-	produce_stats "$lang"
+    lang=$(basename "$dir")
+    produce_stats "$lang"
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
 
 # Remove unwanted messages.mo file created by msgfmt
