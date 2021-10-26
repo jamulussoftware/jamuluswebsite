@@ -1,1 +1,0 @@
-../../../wiki/xx_YY/footertext.md
