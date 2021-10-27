@@ -245,8 +245,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically)
   - [ ] Check for broken links with a link checker locally (run `_po4a-tools/po4a-create-all-targets.sh` locally first)
 - [ ] Finish App translations
-  - [ ] Review translation PRs according to [release process checklist](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#3-update-the-ts-files-returned-by-translators
-)
+  - [ ] Review translation PRs according to [release process checklist](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#3-update-the-ts-files-returned-by-translators)
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically).
   - [ ] Check for conflicting accelerator keys (see `tools/checkkeys.pl`)
   - [ ] Generate `.qm` files via `lrelease Jamulus.pro`  
