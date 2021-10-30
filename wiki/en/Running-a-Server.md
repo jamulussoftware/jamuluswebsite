@@ -128,7 +128,7 @@ With the following units
 
 There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/bandwidth-diagram.png" loading="lazy" alt="A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high">
+	<img src="{% include img/en-screenshots/bandwidth-diagram.inc %}" loading="lazy" alt="A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high">
 <figcaption>Calculate bandwidth use </figcaption>
 </figure>
 
