@@ -9,7 +9,7 @@ lang: "en"
 You can of course use Jamulus with your computer's built-in sound card or microphone.
 {: .doubletextsize .blue }
 
-However, most people use external devices like USB microphones or audio interfaces. These usually perform much better than "stock" hardware in terms of audio quality, latency and time needed to set them up. Most are quite inexpensive and work "plug and play".
+However, most people use external devices like USB microphones or audio interfaces. These usually perform much better than "stock" hardware in terms of audio quality, latency and time needed to set them up. Most are quite inexpensive and are "plug and play".
 
 <!--more-->
 
@@ -19,16 +19,25 @@ Just [edit this page and wait for an approval](https://github.com/jamulussoftwar
 
 ## Audio devices known to work with Jamulus
 
-Your device must support a sample rate of *48 kHz (DVD quality)* - which many devices do - and should allow you to listen to the computer’s audio signal. On Windows it’s recommended to choose a device with a *native ASIO driver* - not ASIO4ALL (or other generic ASIO drivers).
-Whether the following devices work or not can *depend on your operating system* (Linux, MacOS, Windows, etc.). We've added symbols after each OS to make judging easier:
+**NOTE** the device must have a sample rate of *48 kHz (DVD quality)* - which many devices do.
 
-✅: This device works reasonably well with Jamulus. You might need to set up some things, but sound quality and latency are fine.
+Additionally, it should _allow you to listen to the computer’s audio signal_. [See this explanation](https://jamulus.io/wiki/FAQ#why-should-i-not-listen-to-my-own-signal). This may or may not be significant depending on the instrument you play.
+ 
+On Windows, it’s recommended to choose a device with a *native ASIO driver* - not ASIO4ALL (or other generic ASIO drivers).
 
-😐: This device works, but there might be some difficulties. If you want to buy a new device, don't buy this one. There might be similar devices available which work better.
+---
 
-❌: This device will not work correctly. If you succeed, there might be severe issues. Therefore, search for another device.
+### Key
 
-❓: This device has no rating yet. Maybe it works, maybe not. If you own this device and test it, feel free to add a symbol from above.
+✅  Works reasonably well with Jamulus and lets you [turn monitoring off](https://jamulus.io/wiki/FAQ#why-should-i-not-listen-to-my-own-signal) (if applicable). You might need to set up some things, but sound quality and latency are fine.
+
+😐  - Works, but there might be some difficulties. If you want to buy a new device, don't buy this one.
+
+❌  - Will not work correctly, or does **not** allow you to [turn monitoring off](https://jamulus.io/wiki/FAQ#why-should-i-not-listen-to-my-own-signal) so will cause problems.
+
+❓  - Not yet rated. If you own this device and test it, feel free to the results here.
+
+---
 
 ### USB/USB-C devices
 
@@ -256,7 +265,7 @@ _More testing required._
 
 **[Roland TD-27](https://www.roland.com/uk/products/td-27/)** USB drum sound module 
 
-**Windows**: ✅ Works OK with provided ASIO driver (Tested Windows 10 only).
+**Windows**: ❌ Works (with provided ASIO driver, tested Windows 10), but **not** suitable for Jamulus as it does not allow you to listen to your computer's audio signal.
 
 **macOS**: ❓ Not yet tested.
 
