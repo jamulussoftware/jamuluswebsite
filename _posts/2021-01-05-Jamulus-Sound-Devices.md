@@ -265,7 +265,7 @@ _More testing required._
 
 **[Roland TD-27](https://www.roland.com/uk/products/td-27/)** USB drum sound module 
 
-**Windows**: ❌ Works (with provided ASIO driver, tested Windows 10), but **not** suitable for Jamulus as it does not allow you to listen to your computer's audio signal.
+**Windows**: ❌ Works (with provided ASIO driver, tested Windows 10), but **not** reccomended for Jamulus as you can't mute your direct sound.
 
 **macOS**: ❓ Not yet tested.
 
