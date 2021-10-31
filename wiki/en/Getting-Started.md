@@ -9,7 +9,7 @@ permalink: "/wiki/Getting-Started"
 
 To get the best from Jamulus, at a minimum you will need:
 
-1. **A wired internet connection** (not wi-fi - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))
+1. **A wired internet connection** (and turn wi-fi off. See the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))
 1. **Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))
 1. **A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)
 
