@@ -3,14 +3,14 @@
 # Creates a statistics file with information on the translation status of each file for every language.
 
 # Stats file location
-STATS_FILE="../contribute/en/Statistics.md"
+STATS_FILE="../wiki/Statistics.md"
 
 # Print yaml front matter and table title/header
 echo '---
 layout: wiki
 title: "Statistics"
 lang: "en"
-permalink: "/contribute/Statistics"
+permalink: "/wiki/Statistics"
 ---
 # Current status of website translations
 
