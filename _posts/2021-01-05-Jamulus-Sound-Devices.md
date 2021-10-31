@@ -254,6 +254,16 @@ _More testing required._
 
 ***
 
+**[Roland TD-27](https://www.roland.com/uk/products/td-27/)** USB drum sound module 
+
+**Windows**: ✅ Works OK with provided ASIO driver (Tested Windows 10 only).
+
+**macOS**: ❓ Not yet tested.
+
+**Linux**: ❓ Not yet tested.
+
+***
+
 **[Solid State Logic SSL2+](https://www.solidstatelogic.com/products/ssl2-plus)**, USB-C/USB digital audio/MIDI interface 2 in/4 out
 
 **Windows**: ✅ Works great with the [native ASIO driver](http://eu1.download.solidstatelogic.com/SSL%202/SolidStateLogic_UsbAudio_v4.67.0_2019-10-21_setup%20(3).exe).  
