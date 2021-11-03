@@ -238,7 +238,8 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Generate `.ts` files in master via `lupdate`
   - [ ] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
   - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
-- [ ] [Tag a beta release](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#steps-for-a-specific-release) (inform emlynmac for signing on macOS)
+- [ ] [Tag a beta release](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#steps-for-a-specific-release) 
+- [ ] Inform emlynmac for signing on macOS, and upload signed binary from https://github.com/emlynmac/jamulus/releases/ to https://github.com/jamulussoftware/jamulus/releases/ 
 - [ ] Announce the beta release on Github Discussions. Pin the thread.
 - [ ] Get feedback on the stability and resource usage (memleaks?, crashes?, installation issues?) of the beta release
 - [ ] Finish Website translations
@@ -249,13 +250,13 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically).
   - [ ] Check for conflicting accelerator keys (see `tools/checkkeys.pl`)
   - [ ] Generate `.qm` files via `lrelease Jamulus.pro`  
-- [ ] [Tag a release candidate](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#steps-for-a-specific-release) (inform emlynmac for signing on macOS)
+- [ ] [Tag a release candidate](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#steps-for-a-specific-release) (inform emlynmac for signing on macOS and upload signed binary from his repo to ours).
 - [ ] Announce the release candidate on Github Discussions. Pin the thread. Unpin and lock the beta thread.
 - [ ] Draft an announcement, include all contributors via `tools/get_release_contributors.py`
 - [ ] [Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#steps-for-a-specific-release)
 - [ ] Tag this commit as `r3_y_z`
 - [ ] Wait for the build to complete
-- [ ] Contact emlynmac for signing on macOS
+- [ ] Contact emlynmac for signing on macOS and upload signed binary from his repo to ours.
 - [ ] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
 - [ ] [Force tag that tag as `latest` and push.](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#if-this-is-a-proper-release-move-the-latest-tag)
 - [ ] Upload the artifacts to SourceForge and link latest (see #1814 for docs)
