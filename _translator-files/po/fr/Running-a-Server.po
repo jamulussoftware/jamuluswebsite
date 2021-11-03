@@ -384,221 +384,212 @@ msgstr "**Utilisateurs de macOS** - Double-cliquez sur l'icône \"Serveur Jamulu
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:147
-#, no-wrap
-msgid "**Linux users**\n"
-msgstr "**Utilisateurs Linux**\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:149
-msgid "Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros) and type `jamulus -s`"
-msgstr "Ouvrez une fenêtre de terminal (`CTRL+ALT+t` sur Ubuntu et les distros apparentées) et tapez `jamulus -s`"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:151
-msgid "Hit return and you should see the server control window. You can stop the server by closing the server window, or by using `CTRL+C` in the terminal."
+#, fuzzy, no-wrap
+#| msgid "Hit return and you should see the server control window. You can stop the server by closing the server window, or by using `CTRL+C` in the terminal."
+msgid "**Linux users** - Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros) and type `jamulus -s`. Hit return and you should see the server control window. You can stop the server by closing the server window, or by using `CTRL+C` in the terminal. _(To run a headless server [read this guide](Server-Linux))_\n"
 msgstr "Appuyez sur return et vous devriez voir la fenêtre de contrôle du serveur. Vous pouvez arrêter le serveur en fermant la fenêtre du serveur, ou en utilisant `CTRL+C` dans le terminal."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:154
+#: ../wiki/en/Running-a-Server.md:150
 msgid "## Server Setup"
 msgstr "## Configuration du serveur"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:156
+#: ../wiki/en/Running-a-Server.md:152
 msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/server-window-setup.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
 msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/server-window-setup.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de configuration du serveur Jamulus\"></figure>"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:158
+#: ../wiki/en/Running-a-Server.md:154
 msgid "### Make My Server Public"
 msgstr "### Rendre mon serveur publique"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:160
+#: ../wiki/en/Running-a-Server.md:156
 msgid "By default, you will be running a Private Server and need to [read these instructions](#running-a-private-server) to have others connect to you in this mode."
 msgstr "Par défaut, vous utilisez un serveur privé et vous devez [lire ces instructions](#exécuter-un-serveur-privé) pour que d'autres personnes puissent se connecter à vous dans ce mode."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:162
+#: ../wiki/en/Running-a-Server.md:158
 msgid "When making your server public, you should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available."
 msgstr "Lorsque vous rendez votre serveur public, vous devriez voir un message de confirmation indiquant si votre serveur a été enregistré avec succès. Si ce n'est pas le cas et que vous laissez votre serveur en fonctionnement, il continuera à essayer de s'enregistrer jusqu'à ce qu'un emplacement se libère."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:165
+#: ../wiki/en/Running-a-Server.md:161
 msgid "### Genre"
 msgstr "### Genre"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:167
+#: ../wiki/en/Running-a-Server.md:163
 msgid "Because there is a limit of 150 servers per Directory, you need to select which Directory Server you want to advertise your server on. Select a genre if you intend to limit players to that style (players can then see your server in their genre list). This will make your server appear in the relevant server list for clients."
 msgstr "Comme il y a une limite de 150 serveurs par annuaire, vous devez sélectionner le serveur d'annuaire sur lequel vous voulez annoncer votre serveur. Sélectionnez un genre si vous avez l'intention de limiter les joueurs à ce style (les joueurs pourront alors voir votre serveur dans leur liste de genres). Votre serveur apparaîtra alors dans la liste des serveurs pertinents pour les clients."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:170
+#: ../wiki/en/Running-a-Server.md:166
 msgid "### My Server Info"
 msgstr "### Informations de mon serveur"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:172
+#: ../wiki/en/Running-a-Server.md:168
 msgid "Type in the name, city and country so that other users can easily identify you."
 msgstr "Saisissez le nom, la ville et le pays afin que les autres utilisateurs puissent facilement vous identifier."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:174
+#: ../wiki/en/Running-a-Server.md:170
 msgid "### Chat Welcome Message"
 msgstr "### Message de bienvenue du tchat"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:176
+#: ../wiki/en/Running-a-Server.md:172
 msgid "The text entered here appears to all users when they join the server (the chat window will open automatically for them)."
 msgstr "Le texte saisi ici apparaît à tous les utilisateurs lorsqu'ils rejoignent le serveur (la fenêtre de tchat s'ouvre automatiquement pour eux)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:178
+#: ../wiki/en/Running-a-Server.md:174
 msgid "## Options"
 msgstr "## Options"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:181
+#: ../wiki/en/Running-a-Server.md:177
 msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/server-window-options.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus server window options\"></figure>"
 msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/server-window-options.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre options du serveur Jamulus\"></figure>"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:183
+#: ../wiki/en/Running-a-Server.md:179
 msgid "### Recording Directory"
 msgstr "### Répertoire d'enregistrement"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:185
+#: ../wiki/en/Running-a-Server.md:181
 msgid "This sets the path to where server's recording will be stored. With this path set, the \"Enable Jam Recoder\" function in the Server Setup tab will make recording start once the first person connects to the server, and stops when the last person leaves. Use the \"New Recording\" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
 msgstr "Cette option définit le chemin d'accès à l'endroit où l'enregistrement du serveur sera stocké. Une fois ce chemin défini, la fonction \"Enable Jam Recoder\" de l'onglet Server Setup fera en sorte que l'enregistrement démarre dès que la première personne se connectera au serveur et s'arrête lorsque la dernière personne partira. Utilisez le bouton \"New Recording\" pour créer un nouveau sous-répertoire dans lequel les enregistrements seront désormais stockés. Notez que les enregistrements sont par piste au format [Audacity](https://www.audacityteam.org/) `.lof` et [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Ouvrez les fichiers respectifs pour les écouter dans ces applications."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:187
+#: ../wiki/en/Running-a-Server.md:183
 #, no-wrap
 msgid "**Note**: When your server is recording, clients will display a message that recording is on.\n"
 msgstr "**Remarque** : Lorsque votre serveur enregistre, les clients affichent un message indiquant que l'enregistrement est en cours.\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:189
+#: ../wiki/en/Running-a-Server.md:185
 msgid "### Delay panning"
 msgstr "### Retardement du panoramique"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:191
+#: ../wiki/en/Running-a-Server.md:187
 msgid "This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal \"volume\" panning. Note that to achieve the effect, all clients should be set to 'mono in / stereo out' (or to 'stereo', but only if transmitting a stereo signal)."
 msgstr "Cette option utilise les petites différences de temps d'arrivée du son entre les deux oreilles. Elle produit un effet stéréo similaire à l'audition humaine naturelle par rapport à un panoramique normal de \"volume\". Notez que pour obtenir cet effet, tous les clients doivent être réglés sur 'mono in / stereo out' (ou sur 'stereo', mais seulement s'ils transmettent un signal stéréo)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:193
+#: ../wiki/en/Running-a-Server.md:189
 msgid "### Custom Directory Server Address"
 msgstr "### Adresse du serveur de répertoire personnalisé"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:195
+#: ../wiki/en/Running-a-Server.md:191
 msgid "Leave this field empty unless you need to list your server on a [private Directory](#3-directory)"
 msgstr "Laissez ce champ vide, sauf si vous devez inscrire votre serveur dans un [annuaire privé](#3-serveur-annuaire)"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:198
+#: ../wiki/en/Running-a-Server.md:194
 msgid "### Start Minimised"
 msgstr "### Démarrage Minimisé"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:200
+#: ../wiki/en/Running-a-Server.md:196
 #, no-wrap
 msgid "**Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.\n"
 msgstr "**Utilisateurs de Windows** - Si vous voulez que le serveur démarre automatiquement au démarrage du système, activez la case à cocher correspondante.\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:204
+#: ../wiki/en/Running-a-Server.md:200
 msgid "# Running a Private Server"
 msgstr "# Exécuter un serveur privé"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:206
+#: ../wiki/en/Running-a-Server.md:202
 msgid "It is highly recommended to test your server in **public mode first** so as to narrow down any subsequent problems in private mode."
 msgstr "Il est fortement recommandé de tester d'abord votre serveur en **mode public** afin de limiter les problèmes ultérieurs en mode privé."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:208
+#: ../wiki/en/Running-a-Server.md:204
 msgid "### Port forwarding"
 msgstr "### Redirection de port"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:210
+#: ../wiki/en/Running-a-Server.md:206
 msgid "Normally, people from outside your home network cannot see things inside it. So if you want to operate a Jamulus server at home, you need to open a hole in your router to let Jamulus clients connect to it."
 msgstr "Normalement, les personnes extérieures à votre réseau domestique ne peuvent pas voir ce qui s'y trouve. Ainsi, si vous souhaitez faire fonctionner un serveur Jamulus chez vous, vous devez ouvrir une brèche dans votre routeur pour permettre aux clients Jamulus de s'y connecter."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:212
+#: ../wiki/en/Running-a-Server.md:208
 #, no-wrap
 msgid "**The default port for the current version of Jamulus is UDP (not TCP) port 22124.**\n"
 msgstr "**Le port par défaut de la version actuelle de Jamulus est le port UDP (et non TCP) 22124.**\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:214
+#: ../wiki/en/Running-a-Server.md:210
 msgid "The exact setup of port forwarding differs for every router. For help see [portforward.com](https://portforward.com)."
 msgstr "La configuration exacte de la redirection de port diffère pour chaque routeur. Pour obtenir de l'aide, consultez [portforward.com](https://portforward.com)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:216
+#: ../wiki/en/Running-a-Server.md:212
 msgid "Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your server (_but see also the note on dynamic DNS below_). You yourself have to connect to your own computer instead, since your computer runs the server. Therefore **only you** need to connect to `127.0.0.1`."
 msgstr "Une fois que votre routeur est configuré, vous pouvez obtenir votre adresse IP externe (WAN), par exemple en [utilisant Google](https://www.google.com/search?q=what+is+my+ip). Donnez cette adresse à vos amis pour qu'ils puissent se connecter à votre serveur (_mais voir aussi la note sur le DNS dynamique ci-dessous_). Vous devez vous-même vous connecter à votre propre ordinateur à la place, puisque c'est votre ordinateur qui fait tourner le serveur. Donc **seulement vous** devez vous connecter à `127.0.0.1`."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:218
+#: ../wiki/en/Running-a-Server.md:214
 msgid "## Dynamic DNS and why you will probably need it"
 msgstr "## DNS dynamique et pourquoi vous en aurez probablement besoin"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:220
+#: ../wiki/en/Running-a-Server.md:216
 msgid "Most domestic Internet connections will change their IP address after a period (hours, days or weeks). To make it easier for people to connect to you, you may therefore also want set up a dynamic DNS address. You can do this on [the machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) that you are running the Jamulus server on, or preferably your router [may support it](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/)."
 msgstr "La plupart des connexions Internet domestiques changent d'adresse IP après un certain temps (heures, jours ou semaines). Pour que les gens puissent plus facilement se connecter à votre serveur, vous voudrez peut-être aussi configurer une adresse DNS dynamique. Vous pouvez le faire sur [la machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) sur laquelle vous exécutez le serveur Jamulus, ou de préférence sur votre routeur [qui peut le prendre en charge](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:222
+#: ../wiki/en/Running-a-Server.md:218
 msgid "Note also that your home router may also change the IP address of the machine that you are running your server on. In which case you may need either to give that machine a static IP in the router's DHCP configuration, or simply port forward to all the addresses in your LAN."
 msgstr "Notez également que votre routeur domestique peut également modifier l'adresse IP de la machine sur laquelle vous exécutez votre serveur. Dans ce cas, vous devrez soit donner à cette machine une adresse IP statique dans la configuration DHCP du routeur, soit simplement faire un transfert de port vers toutes les adresses de votre réseau local."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:224
+#: ../wiki/en/Running-a-Server.md:220
 msgid "# Running a headless Linux server"
 msgstr "# Exécuter un serveur"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:226
+#: ../wiki/en/Running-a-Server.md:222
 #, no-wrap
 msgid "Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).   \n"
 msgstr "Ceux qui souhaitent faire fonctionner un serveur sur un \"cloud\" Linux ou une autre plateforme d'hébergement tierce doivent [lire ce guide](Server-Linux).   \n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:228
+#: ../wiki/en/Running-a-Server.md:224
 msgid "# Command line options"
 msgstr "# Options de la ligne de commande"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:230
+#: ../wiki/en/Running-a-Server.md:226
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "La plupart des fonctions courantes de Jamulus peuvent être définies à l'aide de l'interface graphique, mais ces fonctions et d'autres peuvent également être définies à l'aide d'options données dans une fenêtre de terminal. La manière exacte de procéder dépend de votre système d'exploitation."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:232
+#: ../wiki/en/Running-a-Server.md:228
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
 msgstr "Par exemple, sous Windows, pour utiliser un fichier de paramètres spécifique, faites un clic droit sur le raccourci de Jamulus et choisissez \"Propriétés\" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:236
+#: ../wiki/en/Running-a-Server.md:232
 msgid "```shell \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100 ```"
 msgstr "```shell \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100 ```"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:238
+#: ../wiki/en/Running-a-Server.md:234
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:242
+#: ../wiki/en/Running-a-Server.md:238
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -610,144 +601,150 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:244
+#: ../wiki/en/Running-a-Server.md:240
 #, no-wrap
 msgid "**Note**: Command-line options will not alter settings made in the GUI.\n"
 msgstr "**Note** : Les options de la ligne de commande ne modifieront pas les réglages effectués dans l'interface graphique.\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:246
+#: ../wiki/en/Running-a-Server.md:242
 #, no-wrap
 msgid "`-d`  or `--discononquit`   Disconnect all clients on quit. Normally, when a server is stopped or restarted, any clients that have not used their \"Disconnect\" buttons will re-establish connection when the server comes back up again. Using this option forces clients to manually re-establish their connections to the server.  \n"
 msgstr "`-d` ou `--discononquit` Déconnecte tous les clients lorsque le serveur est arrêté. Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton \"Disconnect\" rétabliront la connexion lorsque le serveur sera de nouveau opérationnel. L'utilisation de cette option oblige les clients à rétablir manuellement leur connexion au serveur.  \n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:247
+#: ../wiki/en/Running-a-Server.md:243
 #, no-wrap
 msgid "`-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.\n"
 msgstr "`-e` ou `--directoryserver` Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](#types-de-serveurs) pour plus d'informations.\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:248
+#: ../wiki/en/Running-a-Server.md:244
 #, no-wrap
 msgid "`--directoryfile` Enable directory to remember registered servers even if the directory is restarted. You'll need to specify a path to a writable file location in which server information is stored.\n"
 msgstr "`--directoryfile` Permet à l'annuaire de se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Vous devrez spécifier un chemin vers un emplacement de fichier inscriptible dans lequel les informations sur les serveurs sont stockées.\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:249
+#: ../wiki/en/Running-a-Server.md:245
 #, no-wrap
 msgid "`-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  \n"
 msgstr "`-f` ou `--listfilter` Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Serveurs d'annuaire uniquement. Voir [types de serveurs](#types-de-serveurs)  \n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:250
+#: ../wiki/en/Running-a-Server.md:246
 #, no-wrap
 msgid "`-F`  or `--fastupdate`     Reduces latency if clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients.\n"
 msgstr "`-F` ou `--fastupdate` Réduit la latence si les clients se connectent avec l'option \"Enable Small Network Buffers\". Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés.\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:251
+#: ../wiki/en/Running-a-Server.md:247
 #, no-wrap
 msgid "`-l`  or `--log`            Enable logging, set path and file name                                                                    \n"
 msgstr "`-l` ou `--log`            Activer l'enregistrement, définir le chemin et le nom du fichier                                                                    \n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:252
+#: ../wiki/en/Running-a-Server.md:248
 #, no-wrap
 msgid "`-L`  or `--licence`        Show an agreement window before users can connect\n"
 msgstr "`-L` ou `--licence`        Afficher une fenêtre d'accord avant que les utilisateurs puissent se connecter\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:253
+#: ../wiki/en/Running-a-Server.md:249
 #, no-wrap
 msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
 msgstr "`-m` ou `--htmlstatus`     Active le fichier d'état HTML, définit le chemin et le nom du fichier\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:254
+#: ../wiki/en/Running-a-Server.md:250
 #, no-wrap
 msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only\n"
 msgstr "`-o` ou `--serverinfo`     Détails de l'emplacement dans le format :  `[nom];[ville];[valeur locale]` (voir [valeurs](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Serveurs publics uniquement\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:255
+#: ../wiki/en/Running-a-Server.md:251
 #, no-wrap
 msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning))\n"
 msgstr "`-P` ou `--delaypan`       Démarrer avec le panoramique du délai activé Voir [notes](#retardement-du-panoramique))\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:256
+#: ../wiki/en/Running-a-Server.md:252
 #, no-wrap
 msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
 msgstr "`-R` ou `--recording`      Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).  Voir [Options](#options).  \n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:257
+#: ../wiki/en/Running-a-Server.md:253
 #, no-wrap
 msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
 msgstr "`--norecord`       Désactive l'enregistrement lorsqu'il est activé par défaut par `-R`                                                 \n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:258
+#: ../wiki/en/Running-a-Server.md:254
 #, no-wrap
 msgid "`-s` or `--server` Start in server mode\n"
 msgstr "`-s` ou `--server` Démarrer en mode serveur\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:259
+#: ../wiki/en/Running-a-Server.md:255
 #, no-wrap
 msgid "`--serverbindip`  Specify the IP address to bind to              \n"
 msgstr "`--serverbindip`  Spécifiez l'adresse IP à laquelle se lier              \n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:260
+#: ../wiki/en/Running-a-Server.md:256
 #, no-wrap
 msgid "`-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more clients\n"
 msgstr "`-T` ou `--multithreading`  Utilisez le multithreading pour mieux utiliser les processeurs multi-cœurs afin de prendre en charge plus de clients\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:261
+#: ../wiki/en/Running-a-Server.md:257
 #, no-wrap
 msgid "`-u` or `--numchannels`   Maximum number of channels (clients)\n"
 msgstr "`-u` ou `--numchannels`  Nombre maximum de canaux (clients)\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:262
+#: ../wiki/en/Running-a-Server.md:258
 #, no-wrap
 msgid "`-w` or `--welcomemessage`  Welcome message on connect\n"
 msgstr "`-w` ou `--welcomemessage`  Message de bienvenue à la connexion\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:263
+#: ../wiki/en/Running-a-Server.md:259
 #, no-wrap
 msgid "`-z` or `--startminimized`  Start minimizied\n"
 msgstr "`-z` ou `--startminimized`  Démarrage minimisé\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:264
+#: ../wiki/en/Running-a-Server.md:260
 #, no-wrap
 msgid "`--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)\n"
 msgstr "`--serverpublicip`  L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les serveurs d'annuaire](#points-à-noter-à-propos-des-annuaires)\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:266
+#: ../wiki/en/Running-a-Server.md:262
 msgid "{% include_relative Shared-Commands.md %}"
 msgstr "{% include_relative Shared-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:269
+#: ../wiki/en/Running-a-Server.md:265
 msgid "# Troubleshooting"
 msgstr "# Dépannage"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:271
+#: ../wiki/en/Running-a-Server.md:267
 msgid "Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers at first to isolate any issues that may in fact be due to client configuration."
 msgstr "Divers problèmes peuvent survenir lors de la mise en place de serveurs, et nous encourageons généralement les gens à utiliser d'abord les serveurs (publics) d'autres personnes afin d'isoler tout problème qui pourrait en fait être dû à la configuration du client."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:272
+#: ../wiki/en/Running-a-Server.md:268
 msgid "If you are having problems, [see this guide](Server-Troubleshooting)."
 msgstr "Si vous avez un problème, [regardez ce guide](Server-Troubleshooting)."
+
+#~ msgid "**Linux users**\n"
+#~ msgstr "**Utilisateurs Linux**\n"
+
+#~ msgid "Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros) and type `jamulus -s`"
+#~ msgstr "Ouvrez une fenêtre de terminal (`CTRL+ALT+t` sur Ubuntu et les distros apparentées) et tapez `jamulus -s`"
 
 #~ msgid "Jamulus doesn't currently support IPv6"
 #~ msgstr "Jamulus ne prend pas actuellement en charge l'IPv6."
