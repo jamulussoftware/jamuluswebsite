@@ -9,13 +9,13 @@ permalink: "/wiki/Command-Line-Options"
 
 ## Shared commands 
 
-{% include_relative misc/Shared-Commands.md %}
+{% include_relative Include-Shared-Commands.md %}
 
 ## Client only commands
 
-{% include_relative misc/Client-Commands.md %}
+{% include_relative Include-Client-Commands.md %}
 
 ## Server only commands
 
-{% include_relative misc/Server-Commands.md %}
+{% include_relative Include-Server-Commands.md %}
 
