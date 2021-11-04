@@ -238,9 +238,9 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 **Note**: Command-line options will not alter settings made in the GUI.
 
-{% include_relative misc/Server-Commands.md %}
+{% include_relative Include-Server-Commands.md %}
 
-{% include_relative misc/Shared-Commands.md %}
+{% include_relative Include-Shared-Commands.md %}
 
 
 # Troubleshooting
