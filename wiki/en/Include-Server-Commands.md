@@ -16,4 +16,4 @@
 -  `-u` or `--numchannels`   Maximum number of channels (clients)
 -  `-w` or `--welcomemessage`  Welcome message on connect
 -  `-z` or `--startminimized`  Start minimizied
--  `--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)
+-  `--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](Running-a-Server#points-to-note-about-directories)
