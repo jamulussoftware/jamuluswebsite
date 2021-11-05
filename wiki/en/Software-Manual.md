@@ -300,13 +300,7 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
  /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
 ```
 
-**Note**: Command-line options will not alter settings made in the GUI. 
+{% include_relative Include-Client-Commands.md %}
 
-- `-M` or `--mutestream`  Starts Jamulus in muted state                                                      
-- `--mutemyown`  Mute me in my personal mix ("headless" mode only)                                                      
--  `-c` or `--connect`  Connect to given server address on startup, format `address[:port]`  
--  `-j` or `--nojackconnect`  Disable auto JACK connections  
--  `--ctrlmidich`  MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f*][;p*][;s*][;m*]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) 
-- `--clientname`  Window title and JACK client name 
-{% include_relative Shared-Commands.md %}
+{% include_relative Include-Shared-Commands.md %}
 
