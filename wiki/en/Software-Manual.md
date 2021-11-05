@@ -300,8 +300,6 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
  /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
 ```
 
-**Note**: Command-line options will not alter settings made in the GUI. 
-
 {% include_relative Include-Client-Commands.md %}
 
 {% include_relative Include-Shared-Commands.md %}
