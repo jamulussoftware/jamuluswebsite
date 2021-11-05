@@ -43,6 +43,14 @@ You will be notified on the issue thread you opened when the language files have
 
 - Qt Linguist or Lokalize can also be used, but they are strongly discouraged as they do not offer the option to disable text wrapping (Lokalize does, but it still messes it up).
 
+#### Note on translation memories
+
+A translation memory (TM) is a file that stores source text strings with their translations - a database that grows in size as translations of different files are added to it. They enable you to retrieve previously-translated strings in different documents. For example, you've translated a string in document A, and the same string appears in a new document you're working on, document B. A TM enables you to retrieve that translated string, avoiding the need to re-translate it.
+
+OmegaT uses TMs by default and there is no need to create one. Whenever you add a new document to a project, it will scan that project's TM for any 100% or fuzzy (partial) matches and will display them for you. In Poedit, to make sure the TM is enabled, go to Edit > Preferences > TM tab. Check "Use translation memory" if it is not already. If there are any previously-translated .po files, to ensure the TM is up to date, click on "Manage..." > "Import translation Files...". Navigate to where the previously-translated .po files are (`_translator-files/po/LANG/`), select them all, and click on "Open". It will extract all the source/translation pairs and add them to the TM. From now on, when translating new documents, any matches will be displayed on the right.
+
+#### Other editors
+
 If you use a different editor to those listed, please make sure you can disable text wrapping (but still preserve the wrapping of the metadata at the top - this is important), and tell us about it so we can add it to the list.
 
 For short edits or single file translations, Poedit or a similar editor might be simpler to use. For working through all the files, OmegaT will be more suitable (see guide).
