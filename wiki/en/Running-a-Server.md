@@ -236,7 +236,7 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
  /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100
 ```
 
-**Note**: Command-line options will not alter settings made in the GUI.
+**Note**: Command line options will set the server's defaults at startup. You can override them with their corresponding GUI controls while the server is running.
 
 {% include_relative Include-Server-Commands.md %}
 
