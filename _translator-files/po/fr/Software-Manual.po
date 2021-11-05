@@ -695,46 +695,35 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:304
-#, no-wrap
-msgid "**Note**: Command-line options will not alter settings made in the GUI. \n"
-msgstr "**Note** : Les options de la ligne de commande ne modifieront pas les réglages effectués dans l'interface graphique. \n"
+msgid "{% include_relative Include-Client-Commands.md %}"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:306
-#, no-wrap
-msgid "`-M` or `--mutestream`  Starts Jamulus in muted state                                                      \n"
-msgstr "`-M` or `--mutestream`  Démarre Jamulus en mode sourdine                                                      \n"
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:307
-#, no-wrap
-msgid "`--mutemyown`  Mute me in my personal mix (\"headless\" mode only)                                                      \n"
-msgstr "`--mutemyown`  Me silencer dans mon mixage personnel (mode \"headless\" seulement)                                                      \n"
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:308
-#, no-wrap
-msgid "`-c` or `--connect`  Connect to given server address on startup, format `address[:port]`  \n"
-msgstr "`-c` or `--connect`  Se connecter à l'adresse du serveur donné au démarrage, format `adresse[:port]`  \n"
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:309
-#, no-wrap
-msgid "`-j` or `--nojackconnect`  Disable auto JACK connections  \n"
-msgstr "`-j` or `--nojackconnect`  Disactive l'auto-connection de JACK  \n"
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:310
-#, no-wrap
-msgid "`--ctrlmidich`  MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f*][;p*][;s*][;m*]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) \n"
-msgstr "`--ctrlmidich` Canal du contrôleur MIDI à écouter, décalage du numéro de contrôle et numéros CC consécutifs (canaux). Format : `canal[;f*][;p*][;s*][;m*]` Voir [Trucs et astuces](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) \n"
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:312
-#, no-wrap
-msgid ""
-"`--clientname`  Window title and JACK client name \n"
-"{% include_relative Shared-Commands.md %}\n"
+msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr ""
-"`--clientname`  Titre de la fenêtre et nom du client JACK \n"
-"{% include_relative Shared-Commands.md %}\n"
+
+#~ msgid "**Note**: Command-line options will not alter settings made in the GUI. \n"
+#~ msgstr "**Note** : Les options de la ligne de commande ne modifieront pas les réglages effectués dans l'interface graphique. \n"
+
+#~ msgid "`-M` or `--mutestream`  Starts Jamulus in muted state                                                      \n"
+#~ msgstr "`-M` or `--mutestream`  Démarre Jamulus en mode sourdine                                                      \n"
+
+#~ msgid "`--mutemyown`  Mute me in my personal mix (\"headless\" mode only)                                                      \n"
+#~ msgstr "`--mutemyown`  Me silencer dans mon mixage personnel (mode \"headless\" seulement)                                                      \n"
+
+#~ msgid "`-c` or `--connect`  Connect to given server address on startup, format `address[:port]`  \n"
+#~ msgstr "`-c` or `--connect`  Se connecter à l'adresse du serveur donné au démarrage, format `adresse[:port]`  \n"
+
+#~ msgid "`-j` or `--nojackconnect`  Disable auto JACK connections  \n"
+#~ msgstr "`-j` or `--nojackconnect`  Disactive l'auto-connection de JACK  \n"
+
+#~ msgid "`--ctrlmidich`  MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f*][;p*][;s*][;m*]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) \n"
+#~ msgstr "`--ctrlmidich` Canal du contrôleur MIDI à écouter, décalage du numéro de contrôle et numéros CC consécutifs (canaux). Format : `canal[;f*][;p*][;s*][;m*]` Voir [Trucs et astuces](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) \n"
+
+#~ msgid ""
+#~ "`--clientname`  Window title and JACK client name \n"
+#~ "{% include_relative Shared-Commands.md %}\n"
+#~ msgstr ""
+#~ "`--clientname`  Titre de la fenêtre et nom du client JACK \n"
+#~ "{% include_relative Shared-Commands.md %}\n"

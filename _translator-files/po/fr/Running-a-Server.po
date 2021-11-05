@@ -603,142 +603,97 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:240
 #, no-wrap
-msgid "**Note**: Command-line options will not alter settings made in the GUI.\n"
-msgstr "**Note** : Les options de la ligne de commande ne modifieront pas les réglages effectués dans l'interface graphique.\n"
+msgid "**Note**: Command line options will set the server's defaults at startup. You can override them with their corresponding GUI controls while the server is running.\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:242
-#, no-wrap
-msgid "`-d`  or `--discononquit`   Disconnect all clients on quit. Normally, when a server is stopped or restarted, any clients that have not used their \"Disconnect\" buttons will re-establish connection when the server comes back up again. Using this option forces clients to manually re-establish their connections to the server.  \n"
-msgstr "`-d` ou `--discononquit` Déconnecte tous les clients lorsque le serveur est arrêté. Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton \"Disconnect\" rétabliront la connexion lorsque le serveur sera de nouveau opérationnel. L'utilisation de cette option oblige les clients à rétablir manuellement leur connexion au serveur.  \n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:243
-#, no-wrap
-msgid "`-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.\n"
-msgstr "`-e` ou `--directoryserver` Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](#types-de-serveurs) pour plus d'informations.\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:244
-#, no-wrap
-msgid "`--directoryfile` Enable directory to remember registered servers even if the directory is restarted. You'll need to specify a path to a writable file location in which server information is stored.\n"
-msgstr "`--directoryfile` Permet à l'annuaire de se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Vous devrez spécifier un chemin vers un emplacement de fichier inscriptible dans lequel les informations sur les serveurs sont stockées.\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:245
-#, no-wrap
-msgid "`-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  \n"
-msgstr "`-f` ou `--listfilter` Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Serveurs d'annuaire uniquement. Voir [types de serveurs](#types-de-serveurs)  \n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:246
-#, no-wrap
-msgid "`-F`  or `--fastupdate`     Reduces latency if clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients.\n"
-msgstr "`-F` ou `--fastupdate` Réduit la latence si les clients se connectent avec l'option \"Enable Small Network Buffers\". Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés.\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:247
-#, no-wrap
-msgid "`-l`  or `--log`            Enable logging, set path and file name                                                                    \n"
-msgstr "`-l` ou `--log`            Activer l'enregistrement, définir le chemin et le nom du fichier                                                                    \n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:248
-#, no-wrap
-msgid "`-L`  or `--licence`        Show an agreement window before users can connect\n"
-msgstr "`-L` ou `--licence`        Afficher une fenêtre d'accord avant que les utilisateurs puissent se connecter\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:249
-#, no-wrap
-msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
-msgstr "`-m` ou `--htmlstatus`     Active le fichier d'état HTML, définit le chemin et le nom du fichier\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:250
-#, no-wrap
-msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only\n"
-msgstr "`-o` ou `--serverinfo`     Détails de l'emplacement dans le format :  `[nom];[ville];[valeur locale]` (voir [valeurs](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Serveurs publics uniquement\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:251
-#, no-wrap
-msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning))\n"
-msgstr "`-P` ou `--delaypan`       Démarrer avec le panoramique du délai activé Voir [notes](#retardement-du-panoramique))\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:252
-#, no-wrap
-msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
-msgstr "`-R` ou `--recording`      Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).  Voir [Options](#options).  \n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:253
-#, no-wrap
-msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
-msgstr "`--norecord`       Désactive l'enregistrement lorsqu'il est activé par défaut par `-R`                                                 \n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:254
-#, no-wrap
-msgid "`-s` or `--server` Start in server mode\n"
-msgstr "`-s` ou `--server` Démarrer en mode serveur\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:255
-#, no-wrap
-msgid "`--serverbindip`  Specify the IP address to bind to              \n"
-msgstr "`--serverbindip`  Spécifiez l'adresse IP à laquelle se lier              \n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:256
-#, no-wrap
-msgid "`-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more clients\n"
-msgstr "`-T` ou `--multithreading`  Utilisez le multithreading pour mieux utiliser les processeurs multi-cœurs afin de prendre en charge plus de clients\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:257
-#, no-wrap
-msgid "`-u` or `--numchannels`   Maximum number of channels (clients)\n"
-msgstr "`-u` ou `--numchannels`  Nombre maximum de canaux (clients)\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:258
-#, no-wrap
-msgid "`-w` or `--welcomemessage`  Welcome message on connect\n"
-msgstr "`-w` ou `--welcomemessage`  Message de bienvenue à la connexion\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:259
-#, no-wrap
-msgid "`-z` or `--startminimized`  Start minimizied\n"
-msgstr "`-z` ou `--startminimized`  Démarrage minimisé\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:260
-#, no-wrap
-msgid "`--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)\n"
-msgstr "`--serverpublicip`  L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les serveurs d'annuaire](#points-à-noter-à-propos-des-annuaires)\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:262
-msgid "{% include_relative Shared-Commands.md %}"
+#, fuzzy
+#| msgid "{% include_relative Shared-Commands.md %}"
+msgid "{% include_relative Include-Server-Commands.md %}"
 msgstr "{% include_relative Shared-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:265
+#: ../wiki/en/Running-a-Server.md:244
+#, fuzzy
+#| msgid "{% include_relative Shared-Commands.md %}"
+msgid "{% include_relative Include-Shared-Commands.md %}"
+msgstr "{% include_relative Shared-Commands.md %}"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:247
 msgid "# Troubleshooting"
 msgstr "# Dépannage"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:267
+#: ../wiki/en/Running-a-Server.md:249
 msgid "Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers at first to isolate any issues that may in fact be due to client configuration."
 msgstr "Divers problèmes peuvent survenir lors de la mise en place de serveurs, et nous encourageons généralement les gens à utiliser d'abord les serveurs (publics) d'autres personnes afin d'isoler tout problème qui pourrait en fait être dû à la configuration du client."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:268
+#: ../wiki/en/Running-a-Server.md:250
 msgid "If you are having problems, [see this guide](Server-Troubleshooting)."
 msgstr "Si vous avez un problème, [regardez ce guide](Server-Troubleshooting)."
+
+#~ msgid "**Note**: Command-line options will not alter settings made in the GUI.\n"
+#~ msgstr "**Note** : Les options de la ligne de commande ne modifieront pas les réglages effectués dans l'interface graphique.\n"
+
+#~ msgid "`-d`  or `--discononquit`   Disconnect all clients on quit. Normally, when a server is stopped or restarted, any clients that have not used their \"Disconnect\" buttons will re-establish connection when the server comes back up again. Using this option forces clients to manually re-establish their connections to the server.  \n"
+#~ msgstr "`-d` ou `--discononquit` Déconnecte tous les clients lorsque le serveur est arrêté. Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton \"Disconnect\" rétabliront la connexion lorsque le serveur sera de nouveau opérationnel. L'utilisation de cette option oblige les clients à rétablir manuellement leur connexion au serveur.  \n"
+
+#~ msgid "`-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.\n"
+#~ msgstr "`-e` ou `--directoryserver` Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](#types-de-serveurs) pour plus d'informations.\n"
+
+#~ msgid "`--directoryfile` Enable directory to remember registered servers even if the directory is restarted. You'll need to specify a path to a writable file location in which server information is stored.\n"
+#~ msgstr "`--directoryfile` Permet à l'annuaire de se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Vous devrez spécifier un chemin vers un emplacement de fichier inscriptible dans lequel les informations sur les serveurs sont stockées.\n"
+
+#~ msgid "`-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  \n"
+#~ msgstr "`-f` ou `--listfilter` Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Serveurs d'annuaire uniquement. Voir [types de serveurs](#types-de-serveurs)  \n"
+
+#~ msgid "`-F`  or `--fastupdate`     Reduces latency if clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients.\n"
+#~ msgstr "`-F` ou `--fastupdate` Réduit la latence si les clients se connectent avec l'option \"Enable Small Network Buffers\". Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés.\n"
+
+#~ msgid "`-l`  or `--log`            Enable logging, set path and file name                                                                    \n"
+#~ msgstr "`-l` ou `--log`            Activer l'enregistrement, définir le chemin et le nom du fichier                                                                    \n"
+
+#~ msgid "`-L`  or `--licence`        Show an agreement window before users can connect\n"
+#~ msgstr "`-L` ou `--licence`        Afficher une fenêtre d'accord avant que les utilisateurs puissent se connecter\n"
+
+#~ msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
+#~ msgstr "`-m` ou `--htmlstatus`     Active le fichier d'état HTML, définit le chemin et le nom du fichier\n"
+
+#~ msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only\n"
+#~ msgstr "`-o` ou `--serverinfo`     Détails de l'emplacement dans le format :  `[nom];[ville];[valeur locale]` (voir [valeurs](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Serveurs publics uniquement\n"
+
+#~ msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning))\n"
+#~ msgstr "`-P` ou `--delaypan`       Démarrer avec le panoramique du délai activé Voir [notes](#retardement-du-panoramique))\n"
+
+#~ msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
+#~ msgstr "`-R` ou `--recording`      Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).  Voir [Options](#options).  \n"
+
+#~ msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
+#~ msgstr "`--norecord`       Désactive l'enregistrement lorsqu'il est activé par défaut par `-R`                                                 \n"
+
+#~ msgid "`-s` or `--server` Start in server mode\n"
+#~ msgstr "`-s` ou `--server` Démarrer en mode serveur\n"
+
+#~ msgid "`--serverbindip`  Specify the IP address to bind to              \n"
+#~ msgstr "`--serverbindip`  Spécifiez l'adresse IP à laquelle se lier              \n"
+
+#~ msgid "`-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more clients\n"
+#~ msgstr "`-T` ou `--multithreading`  Utilisez le multithreading pour mieux utiliser les processeurs multi-cœurs afin de prendre en charge plus de clients\n"
+
+#~ msgid "`-u` or `--numchannels`   Maximum number of channels (clients)\n"
+#~ msgstr "`-u` ou `--numchannels`  Nombre maximum de canaux (clients)\n"
+
+#~ msgid "`-w` or `--welcomemessage`  Welcome message on connect\n"
+#~ msgstr "`-w` ou `--welcomemessage`  Message de bienvenue à la connexion\n"
+
+#~ msgid "`-z` or `--startminimized`  Start minimizied\n"
+#~ msgstr "`-z` ou `--startminimized`  Démarrage minimisé\n"
+
+#~ msgid "`--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)\n"
+#~ msgstr "`--serverpublicip`  L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les serveurs d'annuaire](#points-à-noter-à-propos-des-annuaires)\n"
 
 #~ msgid "**Linux users**\n"
 #~ msgstr "**Utilisateurs Linux**\n"

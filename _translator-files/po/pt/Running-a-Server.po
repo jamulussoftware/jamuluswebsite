@@ -580,139 +580,30 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:240
 #, no-wrap
-msgid "**Note**: Command-line options will not alter settings made in the GUI.\n"
+msgid "**Note**: Command line options will set the server's defaults at startup. You can override them with their corresponding GUI controls while the server is running.\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:242
-#, no-wrap
-msgid "`-d`  or `--discononquit`   Disconnect all clients on quit. Normally, when a server is stopped or restarted, any clients that have not used their \"Disconnect\" buttons will re-establish connection when the server comes back up again. Using this option forces clients to manually re-establish their connections to the server.  \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:243
-#, no-wrap
-msgid "`-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.\n"
+msgid "{% include_relative Include-Server-Commands.md %}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:244
-#, no-wrap
-msgid "`--directoryfile` Enable directory to remember registered servers even if the directory is restarted. You'll need to specify a path to a writable file location in which server information is stored.\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:245
-#, no-wrap
-msgid "`-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:246
-#, no-wrap
-msgid "`-F`  or `--fastupdate`     Reduces latency if clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients.\n"
+msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:247
-#, no-wrap
-msgid "`-l`  or `--log`            Enable logging, set path and file name                                                                    \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:248
-#, no-wrap
-msgid "`-L`  or `--licence`        Show an agreement window before users can connect\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:249
-#, no-wrap
-msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:250
-#, no-wrap
-msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:251
-#, no-wrap
-msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning))\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:252
-#, no-wrap
-msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:253
-#, no-wrap
-msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:254
-#, no-wrap
-msgid "`-s` or `--server` Start in server mode\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:255
-#, no-wrap
-msgid "`--serverbindip`  Specify the IP address to bind to              \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:256
-#, no-wrap
-msgid "`-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more clients\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:257
-#, no-wrap
-msgid "`-u` or `--numchannels`   Maximum number of channels (clients)\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:258
-#, no-wrap
-msgid "`-w` or `--welcomemessage`  Welcome message on connect\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:259
-#, no-wrap
-msgid "`-z` or `--startminimized`  Start minimizied\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:260
-#, no-wrap
-msgid "`--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:262
-msgid "{% include_relative Shared-Commands.md %}"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:265
 msgid "# Troubleshooting"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:267
+#: ../wiki/en/Running-a-Server.md:249
 msgid "Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers at first to isolate any issues that may in fact be due to client configuration."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:268
+#: ../wiki/en/Running-a-Server.md:250
 msgid "If you are having problems, [see this guide](Server-Troubleshooting)."
 msgstr ""

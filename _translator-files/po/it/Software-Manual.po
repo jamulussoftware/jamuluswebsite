@@ -680,44 +680,10 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:304
-#, no-wrap
-msgid "**Note**: Command-line options will not alter settings made in the GUI. \n"
+msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:306
-#, no-wrap
-msgid "`-M` or `--mutestream`  Starts Jamulus in muted state                                                      \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:307
-#, no-wrap
-msgid "`--mutemyown`  Mute me in my personal mix (\"headless\" mode only)                                                      \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:308
-#, no-wrap
-msgid "`-c` or `--connect`  Connect to given server address on startup, format `address[:port]`  \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:309
-#, no-wrap
-msgid "`-j` or `--nojackconnect`  Disable auto JACK connections  \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:310
-#, no-wrap
-msgid "`--ctrlmidich`  MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels). Format: `channel[;f*][;p*][;s*][;m*]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:312
-#, no-wrap
-msgid ""
-"`--clientname`  Window title and JACK client name \n"
-"{% include_relative Shared-Commands.md %}\n"
+msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr ""
