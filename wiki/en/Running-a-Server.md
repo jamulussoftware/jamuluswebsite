@@ -222,9 +222,9 @@ Those wishing to run a server on a Linux cloud or other third party hosting plat
 
 # Backing up the server
 
-{% include_relative Include-Backing-Up.md %}
+_Note that headless servers do not use `.ini` files. All configuration is given as command line options._
 
-Note that headless servers do not use `.ini` files. All configuration is given as command line options.
+{% include_relative Include-Backing-Up.md %}
 
 # Command line options
 
