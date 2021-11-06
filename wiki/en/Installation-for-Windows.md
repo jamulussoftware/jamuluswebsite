@@ -10,6 +10,9 @@ permalink: "/wiki/Installation-for-Windows"
 # Installation for Windows
 
 Make sure you read the [Getting Started](Getting-Started) page.
+
+Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
+
 1. **Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install a generic driver like ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.
 1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\
  **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
