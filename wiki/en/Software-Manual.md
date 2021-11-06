@@ -288,7 +288,7 @@ Applies a one-off fader setting to each channel depending on its volume. Useful 
 
 {% include_relative Include-Backing-Up.md %}
 
-**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in a `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`
+**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`
 
 # Command Line Options
 
