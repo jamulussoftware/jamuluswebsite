@@ -10,5 +10,4 @@ For all other platforms, run the following from the command line to find where t
 
 * Do not back up or restore settings files when Jamulus is running.
 * It is not recommended to edit settings files by hand (they're not designed for that). 
-* You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want.
 * You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus). 
