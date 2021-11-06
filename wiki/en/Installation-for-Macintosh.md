@@ -11,6 +11,8 @@ permalink: "/wiki/Installation-for-Macintosh"
 
 Make sure you've already read the [Getting Started](Getting-Started) page.
 
+Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
+
 1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
  **macOS Sierra (10.12) or lower:** [Download legacy version]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\
  **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
