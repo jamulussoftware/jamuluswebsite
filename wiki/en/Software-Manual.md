@@ -284,6 +284,12 @@ You can save and restore the mix you have for your band rehearsals (fader, mute,
 
 Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece. 
 
+# Backing up Jamulus
+
+{% include_relative Include-Backing-Up.md %}
+
+**Note:** As of Jamulus 3.8.1, we have a signed macOS installer. This will store the settings in a `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`
+
 # Command Line Options
 
 Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system.
