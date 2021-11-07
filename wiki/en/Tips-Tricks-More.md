@@ -27,11 +27,12 @@ Several users have reported success allowing a "virtual audience" for a Jamulus 
 
 You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for macOS to route the Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time.
 
-
 ## Recording Jamulus on Windows with Reaper
 
 Jamulus user [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/) has written a [guide to recording the output of Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc) using the ReaRoute add-on for [Reaper](https://www.reaper.fm/).  
+## Remote management of headless Linux servers
 
+Jamulus user [vdellamea](https://github.com/vdellamea) has written a [web-based remote tool](https://github.com/vdellamea/jamulus-server-remote) for starting and stopping recordings, allowing you to then download them from your browser. 
 
 ## Sharing song/chord sheets
 
@@ -40,7 +41,6 @@ Jamulus user [BTDT](https://sourceforge.net/u/btdt/profile/) has written a syste
 ## Converting a public server to a private one on the fly
 
 You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
-
 
 ## Jamulus client Linux start script
 
