@@ -198,7 +198,26 @@ Close the shell or change out of the upstream directory to one's usual working d
 $ cd ../jamulus
 ```
 
+## Upload binaries to SourceForge:
+
+You will need an authorised SourceForge account.
+
+`sftp [your_accountname]@frs.sourceforge.net`
+
+`cd /home/pfs/project/l/ll/llcon`
+
+then you'll see "Jamulus" and "OldFiles" directories. "Jamulus" is the releases, one directory per release.
+
+```
+cd Jamulus
+mkdir 3.7.0
+cd 3.7.0
+```
+
+Upload all the files. Then in the SourceForge web UI, for each of the files uploaded, click the ℹ️ icon next to the file (in Files in the admin tools) and set it as "Default for (appropriate) platform)" Note that unsetting the default to "none" automatically picks the newest, so don't do that -- explicitly set the default when the release announcement is posted. Also note that legacy Mac, Headless and WinJACK users will need to just find those links on their own.
+
 ## Release checklist (for a full release)
+
 Before starting a full release process, an issue in the jamulussoftware/jamulus repository needs to be opened. The content of this issue should include the following checklist:
 
 ~~~
