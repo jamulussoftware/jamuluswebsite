@@ -220,6 +220,12 @@ Note also that your home router may also change the IP address of the machine th
 
 Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).   
 
+# Backing up the server
+
+_Note that headless servers do not use `.ini` files. All configuration is given as command line options._
+
+{% include_relative Include-Backing-Up.md %}
+
 # Command line options
 
 Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system.

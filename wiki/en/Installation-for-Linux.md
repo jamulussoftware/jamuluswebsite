@@ -9,7 +9,9 @@ permalink: "/wiki/Installation-for-Linux"
 
 # Installation for Linux
 
-Make sure you read the [Getting Started](Getting-Started) page.
+Make sure you read the [Getting Started](Getting-Started) page. 
+
+Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
 
 ### Debian and Ubuntu
 

@@ -284,6 +284,13 @@ You can save and restore the mix you have for your band rehearsals (fader, mute,
 
 Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece. 
 
+# Backing up Jamulus
+
+{% include_relative Include-Backing-Up.md %}
+* You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want.
+
+**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`
+
 # Command Line Options
 
 Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system.
