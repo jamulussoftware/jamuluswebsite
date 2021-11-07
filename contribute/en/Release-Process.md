@@ -21,7 +21,8 @@ Note: Besides the actual build, a full release of Jamulus should also follow the
 </details> 
 
 ## Release (Building)
-### Once to set up
+
+### Set up
 
 A direct clone of the Jamulus repo is required, not a fork. This should be set up in a separate directory just for the release process:
 
@@ -41,6 +42,7 @@ nothing to commit, working tree clean
 ### Steps for a specific release
 
 #### 1. Ensure .ts files are up to date
+{:.no_toc}
 
 First make sure all Pull Requests that should be included in the release have been merged in Github.
 
@@ -70,10 +72,12 @@ $ git push
 ```
 
 #### 2. Notify all the translators that translation is required
+{:.no_toc}
 
 Use `tools/create-translation-issues.sh` to create and assign issues (see usage notes in script). Also post on GH and Discord to notify.
 
 #### 3. Update the .ts files returned by translators
+{:.no_toc}
 
 Each translator should submit a PR containing just their new version of the `.ts` file. There is no need to submit
 a new `.qm` file, as they will all be regenerated below.
@@ -88,6 +92,7 @@ A developer should check and merge each PR as it arrives using this checklist:
 - Installer translations: Passes `tools/check-wininstaller-translations.sh`
 
 #### 4. When all translations have been submitted and merged.
+{:.no_toc}
 
 Change to the above directory `jamulus-upstream`, checkout `master` and ensure it is up to date:
 
@@ -160,6 +165,7 @@ $ git push origin tag r3_7_0
 ```
 
 ### If this is a proper release, move the `latest` tag
+{:.no_toc}
 
 This needs the `--force` option to overwrite the existing `latest` tag and move it to the current commit:
 
@@ -171,6 +177,7 @@ $ git push --force origin tag latest
 For a pre-release, the `latest` tag should not be updated, but continue to point to the last proper release.
 
 ### Make the master branch ready for post-release development
+{:.no_toc}
 
 This can be done immediately after pushing the above tag, there is no need to wait.
 
@@ -209,7 +216,7 @@ Close the shell or change out of the upstream directory to one's usual working d
 $ cd ../jamulus
 ```
 
-## Upload binaries to SourceForge:
+## Upload binaries to SourceForge
 
 You will need an authorised SourceForge account.
 
