@@ -6,9 +6,20 @@ permalink: "/contribute/Release-Process"
 ---
 
 # Release Process for Jamulus
+{:.no_toc}
 
 This document lists the exact steps required for a developer with write access to generate either a pre-release (beta, rc) or full release of Jamulus.
 Note: Besides the actual build, a full release of Jamulus should also follow the release checklist which can be copied below. This is to ensure a good release quality.
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details> 
+
 ## Release (Building)
 ### Once to set up
 
