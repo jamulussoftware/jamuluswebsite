@@ -565,31 +565,50 @@ msgstr "Ceux qui souhaitent faire fonctionner un serveur sur un \"cloud\" Linux 
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:224
+#, fuzzy
+#| msgid "# Starting a server"
+msgid "# Backing up the server"
+msgstr "# Exécuter un serveur"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:226
+msgid "_Note that headless servers do not use `.ini` files. All configuration is given as command line options._"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:228
+#, fuzzy
+#| msgid "{% include_relative Shared-Commands.md %}"
+msgid "{% include_relative Include-Backing-Up.md %}"
+msgstr "{% include_relative Shared-Commands.md %}"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:230
 msgid "# Command line options"
 msgstr "# Options de la ligne de commande"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:226
+#: ../wiki/en/Running-a-Server.md:232
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "La plupart des fonctions courantes de Jamulus peuvent être définies à l'aide de l'interface graphique, mais ces fonctions et d'autres peuvent également être définies à l'aide d'options données dans une fenêtre de terminal. La manière exacte de procéder dépend de votre système d'exploitation."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:228
+#: ../wiki/en/Running-a-Server.md:234
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
 msgstr "Par exemple, sous Windows, pour utiliser un fichier de paramètres spécifique, faites un clic droit sur le raccourci de Jamulus et choisissez \"Propriétés\" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:232
+#: ../wiki/en/Running-a-Server.md:238
 msgid "```shell \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100 ```"
 msgstr "```shell \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100 ```"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:234
+#: ../wiki/en/Running-a-Server.md:240
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:238
+#: ../wiki/en/Running-a-Server.md:244
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -601,37 +620,37 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:240
+#: ../wiki/en/Running-a-Server.md:246
 #, no-wrap
 msgid "**Note**: Command line options will set the server's defaults at startup. You can override them with their corresponding GUI controls while the server is running.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:242
+#: ../wiki/en/Running-a-Server.md:248
 #, fuzzy
 #| msgid "{% include_relative Shared-Commands.md %}"
 msgid "{% include_relative Include-Server-Commands.md %}"
 msgstr "{% include_relative Shared-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:244
+#: ../wiki/en/Running-a-Server.md:250
 #, fuzzy
 #| msgid "{% include_relative Shared-Commands.md %}"
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Shared-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:247
+#: ../wiki/en/Running-a-Server.md:253
 msgid "# Troubleshooting"
 msgstr "# Dépannage"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:249
+#: ../wiki/en/Running-a-Server.md:255
 msgid "Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers at first to isolate any issues that may in fact be due to client configuration."
 msgstr "Divers problèmes peuvent survenir lors de la mise en place de serveurs, et nous encourageons généralement les gens à utiliser d'abord les serveurs (publics) d'autres personnes afin d'isoler tout problème qui pourrait en fait être dû à la configuration du client."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:250
+#: ../wiki/en/Running-a-Server.md:256
 msgid "If you are having problems, [see this guide](Server-Troubleshooting)."
 msgstr "Si vous avez un problème, [regardez ce guide](Server-Troubleshooting)."
 

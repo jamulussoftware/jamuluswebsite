@@ -641,21 +641,42 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:288
-msgid "# Command Line Options"
+msgid "# Backing up Jamulus"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:290
+msgid "{% include_relative Include-Backing-Up.md %}"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:291
+msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:293
+#, no-wrap
+msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:295
+msgid "# Command Line Options"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:297
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:292
+#: ../wiki/en/Software-Manual.md:299
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:296
+#: ../wiki/en/Software-Manual.md:303
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -664,12 +685,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:298
+#: ../wiki/en/Software-Manual.md:305
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:302
+#: ../wiki/en/Software-Manual.md:309
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -678,11 +699,11 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:304
+#: ../wiki/en/Software-Manual.md:311
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:306
+#: ../wiki/en/Software-Manual.md:313
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr ""
