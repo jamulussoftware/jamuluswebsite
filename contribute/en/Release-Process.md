@@ -333,7 +333,7 @@ Please find all the details in the [Changelog](https://github.com/jamulussoftwar
 
 Downloads (primarily on Github, alternatively on [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)):
 - [Windows](<!-- direct link to Windows version -->) alternative: [JACK version](<!-- direct link to JACK version -->)
-- [macOS](<!-- direct link to macOS SIGNED version -->) (signed) for High Sierra (10.13) to Big Sur (11)
+- [macOS](<!-- direct link to macOS SIGNED version -->) for High Sierra (10.13) to Big Sur (11)
 - [macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Sierra (10.12), El Capitan (10.11) or Yosemite (10.10).
 - [Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->), alternative: [headless version](<!-- direct link to .deb [headless] version -->)
 - [Source code](https://github.com/jamulussoftware/jamulus/archive/r3_8_0.tar.gz)
