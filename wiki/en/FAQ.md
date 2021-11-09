@@ -34,7 +34,7 @@ You can also set up a private server on Jamulus and give others your address to 
 
 ### Why shouldn’t I use wireless equipment?
 
-Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal and whether you are all folowing [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). An overall delay much bigger than 50ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music or you just want to listen.
+Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal and whether you are all following [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). An overall delay much bigger than 50ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music or you just want to listen.
 
 So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50ms or more.
 
