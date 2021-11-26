@@ -43,7 +43,7 @@ When you open Jamulus, you will see a window which looks like this:
 
 ## Setting up a profile
 
-First, let others know who you are. Click on “View” (bar on the top) > “My Profile…” Now you will see this:
+First, let others know who you are. Click on the “Settings” button on the bottom left and go to “My Profile…”. Now you will see this:
 
 <figure>
   <img src="{{site.url}}/assets/img/en-screenshots/settings-profile.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
