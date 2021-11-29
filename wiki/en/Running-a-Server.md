@@ -248,6 +248,8 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 {% include_relative Include-Shared-Commands.md %}
 
+{% include_relative Include-QOS-Windows.md %}
+
 
 # Troubleshooting
 
