@@ -55,7 +55,7 @@ Resist the temptation to say why something happens before offering a solution fo
 ## Tone (Keep it Light)
  {:.no_toc}
 
-Informal English is preferred (eg “haven’t” not “have not”. “Try to” not “Please attempt to”.
+Informal English is preferred (eg “haven’t” not “have not”. “Try to” not “Please attempt to”).
 
 Try not to sound like a robot. Write conversationally, as if you were talking to a person.
 
@@ -64,11 +64,11 @@ Try not to sound like a robot. Write conversationally, as if you were talking to
 
 ## Capitalisation and references
 
-Headings use sentence case “This is a heading” unless delineated (“Look - This is a heading”).
+Headings use sentence case “This is a heading” unless delineated (eg “Look - This is a heading”).
 
 Nouns use lower case unless they have a formal definition in this style guide (eg “Directory”, “Fader”). The only exception to this is the word “person” or “people” which can remain in lower case.
 
-Refer to UI labels in inverted commas (eg “click on the “mute” button)
+Refer to UI labels in inverted commas (eg 'click on the “mute” button')
 
 ## Standard terms
 
@@ -82,11 +82,11 @@ Refer to UI labels in inverted commas (eg “click on the “mute” button)
 
 Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open source”)
 
-“Channel” The audio signal as part of a mix. “Mute a channel”, “Maximum number of channels” (not “Mute a person”, “Group channels together”).
+“Channel” The audio signal as part of a mix. “Mute a channel”, “Maximum number of channels”, “Group channels together” (not “Mute a person” becuause one person might be using multiple channels).
 
-“Fader” The UI that controls a channel. “Each fader has a mute button”, “The person’s fader” ,“Group faders together” (not “The person’s channel” or “Mute a Fader”, “Slider” or “Volume control”)
+“Fader” The UI that controls a channel. “Each fader has a mute button”, “The person’s fader” ,“Group faders together” (not “The person’s channel” or “Mute a Fader”, not “Slider” or “Volume control”)
 
-“Person” A human connected to a server (may be on multiple channels). “People on the server”, “People who have muted themselves” (not “Musicians”, “Maximum people on the server”)
+“Person” A human connected to a server (may be on multiple channels). “People on the server”, “People who have muted themselves” (not “Musicians” or "Channels").
 
 “Server” The general term for the machine that a client connects to. Not to be confused with “Directory”.
 
