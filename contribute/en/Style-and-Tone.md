@@ -6,34 +6,54 @@ permalink: "/contribute/Style-and-Tone"
 ---
 
 # Style and Tone
+ {:.no_toc}
 
 While contributing to Jamulus or the website, you should also keep style and tone in mind. Have a look at the following principles:
 
+**Note:** It is very important to thoroughly proofread content before submitting it, as any corrections made later have a knock-on effect on translations.
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details> 
+
+
 ## Keep it concise and specific.
+ {:.no_toc}
 
 Avoid long-winded phrases and overly stylised language. Start simple, expand to details later, if at all (“inverted pyramid” style).
 
 ## Be direct, but not demanding.
+ {:.no_toc}
 
 Let users know what they need to do, but don’t order them around.
 
 ## Know your audience.
+ {:.no_toc}
 
 Jamulus has users of varying skill levels ranging from complete beginner to audio professional. When writing content, identify your audience and make sure to use terms that they would understand.
 
 ## Avoid using slang and euphemisms.
+ {:.no_toc}
 
 Jamulus is used around the world and translated in five languages (possibly more!). Use plain english to provide users and translators an easier understanding of our content.
 
 ## Give solutions first.
+ {:.no_toc}
 
 Resist the temptation to say why something happens before offering a solution for it. Users are not engineers and do not care about causes. If you want to give reasons, put them in a footnote, but consider not doing so at all.
 
 ## We use British English.
+ {:.no_toc}
 
 “Colour”, “minimise”, “centre”
 
 ## Tone (Keep it Light)
+ {:.no_toc}
 
 Informal English is preferred (eg “haven’t” not “have not”. “Try to” not “Please attempt to”.
 
@@ -82,6 +102,3 @@ Kbit/s; Mbit/s; KByte/s; MByte/s.
 
 Values followed by units such as `ms`, `s`, `m`, `km`, `GHz` etc. should be separated by a space; e.g. "20 ms" and "1 GHz" not "20ms" and "1GHz".
 
-## Note
-
-It is very important to thoroughly proofread content before submitting it, as any corrections made later have a knock-on effect on translations.
