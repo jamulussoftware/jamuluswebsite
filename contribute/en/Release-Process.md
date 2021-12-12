@@ -331,12 +331,20 @@ Notes:
 <!-- if needed: Besides that, numerous usability improvements, enhancements, bugfixes and optimizations have been integrated. -->
 Please find all the details in the [Changelog](https://github.com/jamulussoftware/jamulus/releases/<!-- link to changelog-->).
 
-Downloads (primarily on Github, alternatively on [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)):
-- [Windows](<!-- direct link to Windows version -->) alternative: [JACK version](<!-- direct link to JACK version -->)
-- [macOS](<!-- direct link to macOS SIGNED version -->) for High Sierra (10.13) to Big Sur (11)
-- [macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Sierra (10.12), El Capitan (10.11) or Yosemite (10.10).
-- [Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->), alternative: [headless version](<!-- direct link to .deb [headless] version -->)
-- [Source code](https://github.com/jamulussoftware/jamulus/archive/r3_8_0.tar.gz)
+## Downloads
+
+_Windows users: Please note that in the first days after release SmartScreen will probably display warnings about this release being unknown upon download and/or execution of the installer. Let us know when you do not see this warning anymore and we will update this announcement accordingly._
+
+**[⭳ Windows](<!-- direct link to Windows version -->)** (ASIO version), alternative: [⭳ JACK version](<!-- direct link to JACK version -->)
+**[⭳ macOS](<!-- direct link to macOS SIGNED version -->)** for High Sierra (10.13) to Big Sur (11) and [⭳ macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Sierra (10.12), El Capitan (10.11) or Yosemite (10.10).
+**[⭳ Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->)**, alternative: [⭳ headless version](<!-- direct link to .deb [headless] version -->)
+**[⭳ Android](<!-- direct link to Android version -->)** (experimental)
+
+
+
+[Alternative Sourceforge mirror](https://sourceforge.net/projects/llcon/files/latest/download)
+[Source code](<!-- direct link to source code -->)
+
 
 Thanks to everyone who did their part to make this release happen:
 - Code contributors: <!-- in alphabetical order; see shell script to get contributors in jamulussoftware/jamulus -->
@@ -344,8 +352,6 @@ Thanks to everyone who did their part to make this release happen:
 - Website contributors/translators: <!-- in alphabetical order; see shell script to get contributors in jamulussoftware/jamulus -->
 - ... and lots of people who brought new ideas or suggestions, guided their local colleagues or helped in various other ways!
 
-Windows users: Please note that in the first days after release SmartScreen will probably display warnings about this release being unknown upon download and/or execution of the installer.
-Please let us know when you do *not* see this warning anymore and we will update this announcement accordingly.
 
 This Discussion thread will be locked in order to keep things organized.
 Feedback, questions or suspected bug reports are appreciated nevertheless -- please start a new [Discussion on Github](https://github.com/jamulussoftware/jamulus/discussions/new) for them.
