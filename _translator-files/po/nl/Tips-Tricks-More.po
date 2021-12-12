@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: ../wiki/en/Tips-Tricks-More.md:1
+#, no-wrap
+msgid "en"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: ../wiki/en/Tips-Tricks-More.md:1
+#, no-wrap
+msgid "wiki"
+msgstr ""
+
+#. type: YAML Front Matter: permalink
+#: ../wiki/en/Tips-Tricks-More.md:1
+#, no-wrap
+msgid "/wiki/Tips-Tricks-More"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: ../wiki/en/Tips-Tricks-More.md:1
+#, no-wrap
+msgid "Tips, Tricks and More"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:10
+#, no-wrap
+msgid ""
+"# Tips & Tricks\n"
+" {:.no_toc}\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:12
+msgid "<details markdown=\"1\">"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:14
+msgid "<summary>Table of contents</summary>"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:16
+msgid "TOC"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:17
+msgid "{:toc}"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:19
+msgid "</details>"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:21
+msgid "## Learning about remote band rehearsing"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:23
+msgid "Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has compiled a massive amount of information relating to [Remote Band Rehearsals](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc), which covers topics such as hardware and software configuration including examples and advice for newcomers to the field. He also includes a section on Jamulus in comparison to other solutions."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:25
+msgid "## Using Jamulus audio in Zoom (or other) meeting apps"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:27
+msgid "Several users have reported success allowing a \"virtual audience\" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through JackRouter to the target application (in this case, Zoom meetings)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:29
+msgid "You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for macOS to route the Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:31
+msgid "## Recording Jamulus on Windows with Reaper"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:34
+msgid "Jamulus user [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/) has written a [guide to recording the output of Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc) using the ReaRoute add-on for [Reaper](https://www.reaper.fm/).  ## Remote management of recordings"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:36
+msgid "Jamulus user [vdellamea](https://github.com/vdellamea) has written a [web-based remote tool](https://github.com/vdellamea/jamulus-server-remote) for starting and stopping recordings on Linux servers, allowing you to then download them from your browser. See also [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter) by [pljones](https://github.com/pljones), which also includes a server recording recovery script."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:38
+msgid "## Sharing song/chord sheets"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:40
+msgid "Jamulus user [BTDT](https://sourceforge.net/u/btdt/profile/) has written a system called [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), a web application that allows a \"Jam leader\" to push song sheets (in PDF format) to \"Jammers\" in real time using standard web browsers."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:42
+msgid "## Converting a public server to a private one on the fly"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:44
+msgid "You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:46
+msgid "## Jamulus client Linux start script"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:48
+msgid "Here's a Linux start script for Jamulus using an old Audigy4 sound card, the large number of available audio faders for which makes it hard to get the correct settings."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:50
+msgid "This script therefore includes the most important audio fader settings. The second part of the script deals with the JACK connections. I use Guitarix as my guitar effect processor which I plug in in the JACK audio path."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:52
+msgid "Finally I start Jamulus automatically connecting to the directory server."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:54
+msgid "Here is the script:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:81
+#, no-wrap
+msgid ""
+"~~~\n"
+" amixer sset 'Mic' capture 30% cap\n"
+" amixer sset 'Mic' playback 0%\n"
+" amixer sset 'Line' playback 60% unmute\n"
+" amixer sset 'Audigy Analog/Digital Output Jack' unmute\n"
+" amixer sset 'Analog Mix' capture 100%\n"
+" amixer sset 'Analog Mix' playback 0%\n"
+" amixer sset 'Wave' 100%\n"
+" amixer sset 'Master' capture 100% cap\n"
+" amixer sset 'Master' playback 100%\n"
+" amixer sset 'Master' playback 100%\n"
+" amixer sset 'PCM' playback 100%\n"
+" amixer sset 'PCM' capture 0%\n"
+" guitarix &\n"
+" /home/corrados/llcon/Jamulus -c myJamulusServer.domain.com &\n"
+" sleep 3\n"
+" jack_disconnect system:capture_1 Jamulus:'input left'\n"
+" jack_disconnect system:capture_2 Jamulus:'input right'\n"
+" jack_connect system:capture_1 gx_head_amp:in_0\n"
+" jack_connect gx_head_amp:out_0 gx_head_fx:in_0\n"
+" jack_connect gx_head_fx:out_0 Jamulus:'input left'\n"
+" jack_connect gx_head_fx:out_1 Jamulus:'input right'\n"
+" jack_connect Jamulus:'output left' system:playback_1\n"
+" jack_connect Jamulus:'output right' system:playback_2\n"
+"~~~\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:83
+msgid "## Using ctrlmidich for MIDI controllers"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:85
+msgid "The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo) with the offset (CC number to start from) and number of consecutive CC numbers. Take the following example:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:87
+msgid "`--ctrlmidich '1;f0*8;p16*8;s32*8;m48*8'`"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:89
+msgid "Here, Jamulus listens on MIDI channel 1. Volume fader CC numbers start at 0 and there are 8 of them (so end at CC number 7). Pan controls start at CC number 16 and end at 23; Solo 32 to 39 and Mute 48 to 55."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:91
+msgid "Fader strips in the mixer window are controlled in ascending order from left to right. Continuing with the above example, in strip number 1 (farthest left), the volume fader would be controlled by CC number 0; pan by 16; solo by 32 and mute by 48. As we have specified 8 consecutive controllers for each parameter, this would give us MIDI control over 8 strips (volume, pan, solo and mute in each one) in the mixer window. The next strip would be controlled by 1, 17, 33 and 49, and so forth."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:93
+#, no-wrap
+msgid "*Note*: Jamulus does not provide feedback on the state of the Solo and Mute buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself.\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:95
+msgid "Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl."
+msgstr ""
