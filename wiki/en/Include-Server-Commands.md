@@ -7,7 +7,7 @@
 - `-L`  or `--licence`        Show an agreement window before users can connect
 - `-m`  or `--htmlstatus`     Enable HTML status file, set path and file name
 - `-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only
-- `-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning))
+- `-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning)
 - `-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  
 - `--norecord`       Disable recording when enabled by default by `-R`                                                 
 - `-s` or `--server` Start in server mode
