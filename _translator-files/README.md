@@ -9,6 +9,7 @@ Proceed as follows:
 - Change the `lang: en` parameter in the files containing it at the beginning of the file to your language code (it, fr, de, etc.) and make sure the `permalink: [parameter]` (e.g. /wiki/Client-Troubleshooting) stays the same.
 - At times there are links to other docs or specific paragraphs in other parts of the website: `[translate this](don't translate this#translate-this-but-don't-use-capitals)`. Make sure the last part uses the exact same words as the relevant paragraph title.
 - Some documents contain links to screenshots. Make sure you change the language code in them to your own. You can create screenshots for your language in `/assets/img/[LANG]-screenshots` - just replace them (if they exist already in English) or create them using the English ones as a guide.
+- There are documents containing portions of text that do not require translation, e.g. scripts, links, etc., and which may constitute a full segment in your editor. In these cases, please do not leave the translation field empty, but insert the source text into the translation field. In OmegaT go to Options > Editor and enable "Allow translation to be equal to source". If you have chosen "Leave the segment empty" in Options > Editor, the `Ctrl+Shift+R` shortcut will insert it. In Poedit, `Ctrl+B` will copy it over.
 - Submit a Pull Request to the `next-release` branch with the translated .po files.
 - Pull requests for translations should have a title which looks like this: `Update [lang] web translation for [release number]`
 
@@ -42,6 +43,14 @@ You will be notified on the issue thread you opened when the language files have
     For an overall view of all files and their status, go to File > Catalogs Manager. Click on New > Browse and  enter the path to your .po files. Click on "OK". You should now see a list of all the .po files and their current translation status. Double-click on any one of them to open it in a new window.
 
 - Qt Linguist or Lokalize can also be used, but they are strongly discouraged as they do not offer the option to disable text wrapping (Lokalize does, but it still messes it up).
+
+#### Note on translation memories
+
+A translation memory (TM) is a file that stores source text strings with their translations - a database that grows in size as translations of different files are added to it. They enable you to retrieve previously-translated strings in different documents. For example, you've translated a string in document A, and the same string appears in a new document you're working on, document B. A TM enables you to retrieve that translated string, avoiding the need to re-translate it.
+
+OmegaT uses TMs by default and there is no need to create one. Whenever you add a new document to a project, it will scan that project's TM for any 100% or fuzzy (partial) matches and will display them for you. In Poedit, to make sure the TM is enabled, go to Edit > Preferences > TM tab. Check "Use translation memory" if it is not already. If there are any previously-translated .po files, to ensure the TM is up to date, click on "Manage..." > "Import translation Files...". Navigate to where the previously-translated .po files are (`_translator-files/po/LANG/`), select them all, and click on "Open". It will extract all the source/translation pairs and add them to the TM. From now on, when translating new documents, any matches will be displayed on the right.
+
+#### Other editors
 
 If you use a different editor to those listed, please make sure you can disable text wrapping (but still preserve the wrapping of the metadata at the top - this is important), and tell us about it so we can add it to the list.
 

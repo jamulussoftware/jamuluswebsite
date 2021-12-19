@@ -5,6 +5,7 @@ lang: "en"
 permalink: "/contribute/Administration"
 ---
 # Administration
+{:.no_toc}
 
 This document describes internal processes and guidelines.
 It is public for transparency.
@@ -12,8 +13,19 @@ There currently is no need to translate this page.
 
 This document is targeted at the project admins.
 
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details> 
+
 ## Releases
+
 ### Versioning
+
 We use [Semantic Versioning 2.0.0](https://semver.org/).
 This means:
 - We bump the major version (e.g. Jamulus 3.21.0 to 4.0.0) only in case of backwards-incompatible or large architectural changes.
@@ -34,12 +46,14 @@ The git tag is prefixed by `r` (for release) and all dots are replaced by unders
 Example: The git tag `r3_7_0beta1` refers to the user-visible version `3.7.0beta1`.
 
 #### Forks
+
 Forks of Jamulus must not use the same versioning scheme if they publish their own releases.
 Having a jamulussoftware/jamulus-3.7.0 release and a example.org/jamulus-3.7.0 release would be confusing to users.
 Instead, forks must distinguish their version, e.g. by adding an additional suffix.
 Example: 3.7.0-example.org-beta1
 
 ### Creating a (pre)release
+
   - Feature freeze, Code freeze
   - It's ok if translation PRs are not ready
   - Use issue template(s)?
@@ -49,6 +63,7 @@ Example: 3.7.0-example.org-beta1
   - Close the milestone
 
 ### Changelog
+
   - Biggest changes first
   - Refactorings, internal-only or build-related changes last
   - Full sentences on a single line, followed by issue and/or PR references in parentheses. Sentences should make the scope (e.g. Client, Server, UI, ...) clear as early as possible.
@@ -56,14 +71,17 @@ Example: 3.7.0-example.org-beta1
   - `(contributed by @<Github handle>)` in a subsequent line.
 
 ### Translations
+
 TODO: link to translation-specific documentation
 
 ## Project organization
 
 ### Long-term goals
+
 TODO: Link to / integrate @gilgongo's document?
 
 ### Project board
+
 `https://github.com/jamulussoftware/jamulus/projects/10?card_filter_query=milestone%3A%22release+3.7.0%22`,
 `https://github.com/jamulussoftware/jamulus/discussions/929#discussioncomment-420872`
 
@@ -74,6 +92,7 @@ TODO: Link to / integrate @gilgongo's document?
 We aim to give early feedback and try to keep an overview by using the Project board.
 
 #### Triage
+
 When a new Issue or Pull Request comes in, do the following:
 1. Add it to the Tracking Project board.
 1. Check for duplicates.
@@ -94,6 +113,7 @@ When a new Issue or Pull Request comes in, do the following:
    1. Request Review from two main developers who are topic specialists for the PR.
 
 #### Reviewing Pull Requests
+
 1. Add the appropriate Milestone once it is clear that it will go into the next release.
 1. Link any relevant Issues to the PR.
 1. Do a compile test, check for warnings.
@@ -118,60 +138,82 @@ When a new Issue or Pull Request comes in, do the following:
 
 
 ### Discord/Matrix Chat
+
 We use the Discord/Matrix chat for quicker, loose interaction.
 All decision and results should still be documented in permanent Github Issues, Discussions or Comments.
 
 ## Decision-making
+
 We use [lazy consensus](https://couchdb.apache.org/bylaws.html#lazy) by default.
 This means that any reversible decision is considered supported by the team as long as nobody objects.
 This also means that everyone must be transparent about their intentions and actions in order for every other member to have a chance to comment.
 
 ## Main developers team structure
+
 Adding or removing team members requires a majority vote by all main developers.
 
 ### Accepting new team members
+
 - Invite to Github org and add permissions [on the people page](https://github.com/orgs/jamulussoftware/people).
 - Add mail address to team@ *TODO: how?*
 - Invite to Discord server or the bridged Matrix channel
 - Subscribe to notifications for the jamulussoftware repositories
 
 ### Removing team members
+
 Reverse the onboarding checklist.
 
 ## Repositories
+
 ### Jamulus
+
 The main code repo. Most development happens here.
+
 ### Jamulus website
+
 The website repo. All text content and translations go here.
+
 ### Assets (ASIO4ALL)
+
 For bigger binary files like ASIO drivers, (big) pictures.
+
 ### Install scripts
+
 Not part of the official maintenance process. These scripts were contributed by @niebert.
+
 ## Infrastructure
+
 ### Official Directory Servers
+
 @pljones and @corrados are hosting the official directories. 
 TODO: @pljones'/@corrados' infra
 
 ### Update check servers
+
 TODO: @pljones'/@corrados' infra
 
 ### DNS
+
 TODO: @gilgongo?
 
 ### Email
+
 TODO: @gilgongo?
 
 ### Domain
+
 TODO: @gilgongo, @softins
 
 ### Website
+
 The website is hosted on Github Pages and is fed by the jamulussoftware/jamuluswebsite repository.
 
 ### Discord server
+
 TODO: @gilgongo?
 
-
 ## Credential management
+
 Credentials for access to common infrastructure
 TODO: Discuss
 

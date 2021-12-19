@@ -6,11 +6,23 @@ permalink: "/contribute/Release-Process"
 ---
 
 # Release Process for Jamulus
+{:.no_toc}
 
 This document lists the exact steps required for a developer with write access to generate either a pre-release (beta, rc) or full release of Jamulus.
 Note: Besides the actual build, a full release of Jamulus should also follow the release checklist which can be copied below. This is to ensure a good release quality.
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details> 
+
 ## Release (Building)
-### Once to set up
+
+### Set up
 
 A direct clone of the Jamulus repo is required, not a fork. This should be set up in a separate directory just for the release process:
 
@@ -30,6 +42,7 @@ nothing to commit, working tree clean
 ### Steps for a specific release
 
 #### 1. Ensure .ts files are up to date
+{:.no_toc}
 
 First make sure all Pull Requests that should be included in the release have been merged in Github.
 
@@ -59,10 +72,12 @@ $ git push
 ```
 
 #### 2. Notify all the translators that translation is required
+{:.no_toc}
 
 Use `tools/create-translation-issues.sh` to create and assign issues (see usage notes in script). Also post on GH and Discord to notify.
 
 #### 3. Update the .ts files returned by translators
+{:.no_toc}
 
 Each translator should submit a PR containing just their new version of the `.ts` file. There is no need to submit
 a new `.qm` file, as they will all be regenerated below.
@@ -77,6 +92,7 @@ A developer should check and merge each PR as it arrives using this checklist:
 - Installer translations: Passes `tools/check-wininstaller-translations.sh`
 
 #### 4. When all translations have been submitted and merged.
+{:.no_toc}
 
 Change to the above directory `jamulus-upstream`, checkout `master` and ensure it is up to date:
 
@@ -149,6 +165,7 @@ $ git push origin tag r3_7_0
 ```
 
 ### If this is a proper release, move the `latest` tag
+{:.no_toc}
 
 This needs the `--force` option to overwrite the existing `latest` tag and move it to the current commit:
 
@@ -160,6 +177,7 @@ $ git push --force origin tag latest
 For a pre-release, the `latest` tag should not be updated, but continue to point to the last proper release.
 
 ### Make the master branch ready for post-release development
+{:.no_toc}
 
 This can be done immediately after pushing the above tag, there is no need to wait.
 
@@ -198,7 +216,26 @@ Close the shell or change out of the upstream directory to one's usual working d
 $ cd ../jamulus
 ```
 
+## Upload binaries to SourceForge
+
+You will need an authorised SourceForge account.
+
+`sftp [your_accountname]@frs.sourceforge.net`
+
+`cd /home/pfs/project/l/ll/llcon`
+
+then you'll see "Jamulus" and "OldFiles" directories. "Jamulus" is the releases, one directory per release.
+
+```
+cd Jamulus
+mkdir 3.7.0
+cd 3.7.0
+```
+
+Upload all the files. Then in the SourceForge web UI, for each of the files uploaded, click the ℹ️ icon next to the file (in Files in the admin tools) and set it as "Default for (appropriate) platform)" Note that unsetting the default to "none" automatically picks the newest, so don't do that -- explicitly set the default when the release announcement is posted. Also note that legacy Mac, Headless and WinJACK users will need to just find those links on their own.
+
 ## Release checklist (for a full release)
+
 Before starting a full release process, an issue in the jamulussoftware/jamulus repository needs to be opened. The content of this issue should include the following checklist:
 
 ~~~
@@ -238,28 +275,29 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Generate `.ts` files in master via `lupdate`
   - [ ] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
   - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
-- [ ] [Tag a beta release](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#steps-for-a-specific-release) (inform emlynmac for signing on macOS)
+- [ ] [Tag a beta release](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) 
+- [ ] Inform emlynmac for signing on macOS, and upload signed binary from https://github.com/emlynmac/jamulus/releases/ to https://github.com/jamulussoftware/jamulus/releases/ 
 - [ ] Announce the beta release on Github Discussions. Pin the thread.
 - [ ] Get feedback on the stability and resource usage (memleaks?, crashes?, installation issues?) of the beta release
 - [ ] Finish Website translations
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically)
   - [ ] Check for broken links with a link checker locally (run `_po4a-tools/po4a-create-all-targets.sh` locally first)
 - [ ] Finish App translations
-  - [ ] Review translation PRs according to [release process checklist](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#3-update-the-ts-files-returned-by-translators)
+  - [ ] Review translation PRs according to [release process checklist](https://jamulus.io/contribute/Release-Process#3-update-the-ts-files-returned-by-translators)
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically).
   - [ ] Check for conflicting accelerator keys (see `tools/checkkeys.pl`)
   - [ ] Generate `.qm` files via `lrelease Jamulus.pro`  
-- [ ] [Tag a release candidate](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#steps-for-a-specific-release) (inform emlynmac for signing on macOS)
+- [ ] [Tag a release candidate](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) (inform emlynmac for signing on macOS and upload signed binary from his repo to ours).
 - [ ] Announce the release candidate on Github Discussions. Pin the thread. Unpin and lock the beta thread.
 - [ ] Draft an announcement, include all contributors via `tools/get_release_contributors.py`
-- [ ] [Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#steps-for-a-specific-release)
+- [ ] [Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release)
 - [ ] Tag this commit as `r3_y_z`
 - [ ] Wait for the build to complete
-- [ ] Contact emlynmac for signing on macOS
+- [ ] Contact emlynmac for signing on macOS and upload signed binary from his repo to ours.
 - [ ] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
-- [ ] [Force tag that tag as `latest` and push.](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#if-this-is-a-proper-release-move-the-latest-tag)
-- [ ] Upload the artifacts to SourceForge and link latest (see #1814 for docs)
-- [ ] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the next release](https://github.com/jamulussoftware/jamulus/blob/master/RELEASE-PROCESS.md#make-the-master-branch-ready-for-post-release-development)
+- [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
+- [ ] [Upload the artifacts to SourceForge and set defaults](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
+- [ ] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the next release](https://jamulus.io/contribute/Release-Process#make-the-master-branch-ready-for-post-release-development)
 - [ ] Update download links on the website by editing `config.yml`
 - [ ] Publish Website release by merging `next-release` into `release`
 - [ ] Announce the new release with a summary of changes (+ link to the changelog for details) and a link to the download page
@@ -293,12 +331,20 @@ Notes:
 <!-- if needed: Besides that, numerous usability improvements, enhancements, bugfixes and optimizations have been integrated. -->
 Please find all the details in the [Changelog](https://github.com/jamulussoftware/jamulus/releases/<!-- link to changelog-->).
 
-Downloads (primarily on Github, alternatively on [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)):
-- [Windows](<!-- direct link to Windows version -->) alternative: [JACK version](<!-- direct link to JACK version -->)
-- [macOS](<!-- direct link to macOS SIGNED version -->) (signed) for High Sierra (10.13) to Big Sur (11)
-- [macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Sierra (10.12), El Capitan (10.11) or Yosemite (10.10).
-- [Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->), alternative: [headless version](<!-- direct link to .deb [headless] version -->)
-- [Source code](https://github.com/jamulussoftware/jamulus/archive/r3_8_0.tar.gz)
+## Downloads
+
+_Windows users: Please note that in the first days after release SmartScreen will probably display warnings about this release being unknown upon download and/or execution of the installer. Let us know when you do not see this warning anymore and we will update this announcement accordingly._
+
+**[⭳ Windows](<!-- direct link to Windows version -->)** (ASIO version), alternative: [⭳ JACK version](<!-- direct link to JACK version -->)
+**[⭳ macOS](<!-- direct link to macOS SIGNED version -->)** for High Sierra (10.13) to Big Sur (11) and [⭳ macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Sierra (10.12), El Capitan (10.11) or Yosemite (10.10).
+**[⭳ Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->)**, alternative: [⭳ headless version](<!-- direct link to .deb [headless] version -->)
+**[⭳ Android](<!-- direct link to Android version -->)** (experimental)
+
+
+
+[Alternative Sourceforge mirror](https://sourceforge.net/projects/llcon/files/latest/download)
+[Source code](<!-- direct link to source code -->)
+
 
 Thanks to everyone who did their part to make this release happen:
 - Code contributors: <!-- in alphabetical order; see shell script to get contributors in jamulussoftware/jamulus -->
@@ -306,8 +352,6 @@ Thanks to everyone who did their part to make this release happen:
 - Website contributors/translators: <!-- in alphabetical order; see shell script to get contributors in jamulussoftware/jamulus -->
 - ... and lots of people who brought new ideas or suggestions, guided their local colleagues or helped in various other ways!
 
-Windows users: Please note that in the first days after release SmartScreen will probably display warnings about this release being unknown upon download and/or execution of the installer.
-Please let us know when you do *not* see this warning anymore and we will update this announcement accordingly.
 
 This Discussion thread will be locked in order to keep things organized.
 Feedback, questions or suspected bug reports are appreciated nevertheless -- please start a new [Discussion on Github](https://github.com/jamulussoftware/jamulus/discussions/new) for them.

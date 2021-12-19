@@ -6,36 +6,56 @@ permalink: "/contribute/Style-and-Tone"
 ---
 
 # Style and Tone
+ {:.no_toc}
 
 While contributing to Jamulus or the website, you should also keep style and tone in mind. Have a look at the following principles:
 
+**Note:** It is very important to thoroughly proofread content before submitting it, as any corrections made later have a knock-on effect on translations.
+
+<details markdown="1">
+
+<summary>Table of contents</summary>
+
+* TOC
+ {:toc}
+
+</details> 
+
+
 ## Keep it concise and specific.
+ {:.no_toc}
 
 Avoid long-winded phrases and overly stylised language. Start simple, expand to details later, if at all (“inverted pyramid” style).
 
 ## Be direct, but not demanding.
+ {:.no_toc}
 
 Let users know what they need to do, but don’t order them around.
 
 ## Know your audience.
+ {:.no_toc}
 
 Jamulus has users of varying skill levels ranging from complete beginner to audio professional. When writing content, identify your audience and make sure to use terms that they would understand.
 
 ## Avoid using slang and euphemisms.
+ {:.no_toc}
 
 Jamulus is used around the world and translated in five languages (possibly more!). Use plain english to provide users and translators an easier understanding of our content.
 
 ## Give solutions first.
+ {:.no_toc}
 
 Resist the temptation to say why something happens before offering a solution for it. Users are not engineers and do not care about causes. If you want to give reasons, put them in a footnote, but consider not doing so at all.
 
 ## We use British English.
+ {:.no_toc}
 
 “Colour”, “minimise”, “centre”
 
 ## Tone (Keep it Light)
+ {:.no_toc}
 
-Informal English is preferred (eg “haven’t” not “have not”. “Try to” not “Please attempt to”.
+Informal English is preferred (eg “haven’t” not “have not”. “Try to” not “Please attempt to”).
 
 Try not to sound like a robot. Write conversationally, as if you were talking to a person.
 
@@ -44,11 +64,11 @@ Try not to sound like a robot. Write conversationally, as if you were talking to
 
 ## Capitalisation and references
 
-Headings use sentence case “This is a heading” unless delineated (“Look - This is a heading”).
+Headings use sentence case “This is a heading” unless delineated (eg “Look - This is a heading”).
 
 Nouns use lower case unless they have a formal definition in this style guide (eg “Directory”, “Fader”). The only exception to this is the word “person” or “people” which can remain in lower case.
 
-Refer to UI labels in inverted commas (eg “click on the “mute” button)
+Refer to UI labels in inverted commas (eg 'click on the “mute” button')
 
 ## Standard terms
 
@@ -62,11 +82,11 @@ Refer to UI labels in inverted commas (eg “click on the “mute” button)
 
 Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open source”)
 
-“Channel” The audio signal as part of a mix. “Mute a channel”, “Maximum number of channels” (not “Mute a person”, “Group channels together”).
+“Channel” The audio signal as part of a mix. “Mute a channel”, “Maximum number of channels”, “Group channels together” (not “Mute a person” becuause one person might be using multiple channels).
 
-“Fader” The UI that controls a channel. “Each fader has a mute button”, “The person’s fader” ,“Group faders together” (not “The person’s channel” or “Mute a Fader”, “Slider” or “Volume control”)
+“Fader” The UI that controls a channel. “Each fader has a mute button”, “The person’s fader” ,“Group faders together” (not “The person’s channel” or “Mute a Fader”, not “Slider” or “Volume control”)
 
-“Person” A human connected to a server (may be on multiple channels). “People on the server”, “People who have muted themselves” (not “Musicians”, “Maximum people on the server”)
+“Person” A human connected to a server (may be on multiple channels). “People on the server”, “People who have muted themselves” (not “Musicians” or "Channels").
 
 “Server” The general term for the machine that a client connects to. Not to be confused with “Directory”.
 
@@ -82,6 +102,3 @@ Kbit/s; Mbit/s; KByte/s; MByte/s.
 
 Values followed by units such as `ms`, `s`, `m`, `km`, `GHz` etc. should be separated by a space; e.g. "20 ms" and "1 GHz" not "20ms" and "1GHz".
 
-## Note
-
-It is very important to thoroughly proofread content before submitting it, as any corrections made later have a knock-on effect on translations.
