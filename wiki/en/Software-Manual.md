@@ -149,7 +149,7 @@ This sets the number of rows displayed in the server audio mixer, for use with l
 
 ## Audio/Network Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-network.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-network.png" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
 
 ### Device
 
@@ -247,7 +247,7 @@ rate is not higher than your available internet upload speed (check this with a 
 
 ## Advanced Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-advanced.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-advanced.png" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
 
 ### Custom directory server address
 
