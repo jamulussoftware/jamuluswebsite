@@ -25,7 +25,7 @@ permalink: "/wiki/Server-Troubleshooting"
 
 If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your client with a config option).
 
-If you are seeing a message that says the server is full, please [see this note](Directory-Servers) on Directory Servers.
+If you are seeing a message that says the server is full, please [see this note](Running-a-Server#3-directory) on Directory Servers.
 
 You can verify that your server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/).
 
@@ -37,7 +37,7 @@ Connect your client to `127.0.0.1` (or `localhost` if that works for you). If yo
 
 ### What address do I give to people so that they can connect to my server?
 
-This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus client to the **local** IP address of your server (127.0.0.1 if it's on the same machine as your client). Note that your public IP address can change - see the note on "dynamic DNS" in [this guide](Running-a-Private-Server).
+This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus client to the **local** IP address of your server (127.0.0.1 if it's on the same machine as your client). Note that your public IP address can change - see the note on "dynamic DNS" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it).
 
 ### What port numbers can I use?
 
