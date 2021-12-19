@@ -3,126 +3,127 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-12-17 22:47+0100\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "nl"
 
 #. type: YAML Front Matter: layout
 #: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: YAML Front Matter: permalink
 #: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "/wiki/Server-Linux"
-msgstr ""
+msgstr "/wiki/Server-Linux"
 
 #. type: YAML Front Matter: title
 #: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "Headless Linux Server Installation"
-msgstr ""
+msgstr "Headless Linux server installatie"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Meer\" branch1=\"Serverbeheer\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:11
 msgid "# Running a Headless Server"
-msgstr ""
+msgstr "# Een headless server opzetten"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:13
 msgid "The following is for running Jamulus as a \"pure\" server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd."
-msgstr ""
+msgstr "Het volgende is voor het draaien van Jamulus als een \"pure\" server op **hardware zonder audio** (bijv. op een derde partij/cloudhost) en veronderstelt dat er Ubuntu/Debian-distributies gebruikt worden die systemd gebruiken."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:15
 msgid "If you want to run a server on a Raspberry Pi, you will need to [compile from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). See also this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) maintained by Jamulus user fredsiva."
-msgstr ""
+msgstr "Als je een server op een Raspberry Pi wilt draaien, dan moet je zelf [de broncode compileren](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). Zie ook deze [handleiding voor Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) onderhouden door Jamulus-gebruiker fredsiva."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:17
 msgid "Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})"
-msgstr ""
+msgstr "Download het [nieuwste headless .deb bestand]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:18
 msgid "Update apt to make sure you have a current list of standard packages: `sudo apt update`"
-msgstr ""
+msgstr "Werk apt bij om er zeker van te zijn dat je een actuele lijst met standaard packages hebt: `sudo apt update`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:19
 msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`"
-msgstr ""
+msgstr "Installeer het Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:20
 msgid "Enable the headless server process via systemd: `sudo systemctl enable jamulus-headless`"
-msgstr ""
+msgstr "Schakel het headless serverproces in via systemd: `sudo systemctl enable jamulus-headless`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:21
 msgid "Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running a private server)."
-msgstr ""
+msgstr "Voeg de gewenste [opdrachtregelopties](Running-a-Server#command-line-options) toe aan de `ExecStart`-regel in het systemd-servicebestand in `/lib/systemd/system/jamulus-headless.service` (standaard gebruikt is dit een prive server).."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:22
 msgid "Reload the systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`"
-msgstr ""
+msgstr "Herlaad de systemd bestanden `sudo systemctl daemon-reload` en herstart de headless server: `sudo systemctl restart jamulus-headless`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:23
 msgid "Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt)."
-msgstr ""
+msgstr "Controleer of alles in order is met `systemctl status jamulus-headless` (druk op `q` om terug te gaan naar de opdrachtregel)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:25
 msgid "You may also be interested in downloading [this set of useful tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`)."
-msgstr ""
+msgstr "Mogelijk ben je ook geïnteresseerd in het downloaden [van deze set handige tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) vanuit de Jamulus repository (clone de Git repo en voer `git submodule update --init` uit)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:27
 msgid "## Notes"
-msgstr ""
+msgstr "## Opmerkingen"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:29
 msgid "You can control Jamulus with the `systemctl` command. For example, to stop the server cleanly:"
-msgstr ""
+msgstr "Je kunt Jamulus bedienen met het `systemctl` commando. Om de server bijvoorbeeld netjes te stoppen gebruik je:"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:31
 msgid "`sudo systemctl stop jamulus-headless`"
-msgstr ""
+msgstr "`sudo systemctl stop jamulus-headless`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:33
 msgid "### Running in public mode"
-msgstr ""
+msgstr "### Uitvoeren in openbare mode"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:35
 msgid "The following minimum setup is required to [run a public server](Running-a-Server#server-types):"
-msgstr ""
+msgstr "De volgende minimale instellingen zijn vereist om een [openbare server](Running-a-Server#server-types) uit te voeren:"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:41
@@ -134,17 +135,22 @@ msgid ""
 "        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
 "~~~\n"
 msgstr ""
+"~~~\n"
+"jamulus --nogui --server \\\n"
+"        --directoryserver genreServer:port \\\n"
+"        --serverinfo \"jouwServerNaam;jouwStad;[land ID]\"\n"
+"~~~\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:43
 #, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `--serverinfo`\n"
-msgstr ""
+msgstr "**Opmerking**: Puntkomma's en nieuwe regeltekens zijn niet toegestaan in `--serverinfo`\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:45
 msgid "Set your Directory (genre) server using the `--directoryserver` (`-e`) option as follows:"
-msgstr ""
+msgstr "Stel de adresboek (genre) server als volgt in met behulp van de `--directoryserver` (`-e`) optie:"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:56
@@ -160,62 +166,71 @@ msgid ""
 "|**Genre Classical/Folk** |`classical.jamulus.io:22524`|\n"
 "|**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|\n"
 msgstr ""
+"| Genre |   Server adres           |\n"
+"|-----------|------------------|\n"
+"|**Ieder Genre 1** |`anygenre1.jamulus.io:22124`|\n"
+"|**Ieder Genre 2** |`anygenre2.jamulus.io:22224`|\n"
+"|**Ieder Genre 3** |`anygenre3.jamulus.io:22624`|\n"
+"|**Genre Rock** |`rock.jamulus.io:22424`|\n"
+"|**Genre Jazz** |`jazz.jamulus.io:22324`|\n"
+"|**Genre Klassiek/Folk** |`classical.jamulus.io:22524`|\n"
+"|**Genre Koor/Barbershop** |`choral.jamulus.io:22724`|\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:58
 msgid "### Viewing The Logs"
-msgstr ""
+msgstr "### De logboeken bekijken"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:60
 msgid "Jamulus will log to the system log file if you left the `StandardOutput=journal` setting in the unit file."
-msgstr ""
+msgstr "Jamulus logt in het systeemlogbestand als je de instelling `StandardOutput=journal` in het instellingenbestand hebt gelaten."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:62
 msgid "To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:"
-msgstr ""
+msgstr "Gebruik `journalctl` om het logboek te bekijken (om af te sluiten drukt je op Ctrl-C). Om bijvoorbeeld het systeemlogbestand te lezen, gefilterd voor de Jamulus-service:"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:64
 msgid "`journalctl -f -u jamulus-headless`"
-msgstr ""
+msgstr "`journalctl -f -u jamulus-headless`"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:67
 msgid "### Upgrading"
-msgstr ""
+msgstr "### Upgraden"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:69
 msgid "To upgrade your server to a newer version, simply download a new .deb and re-install as step 3."
-msgstr ""
+msgstr "Om je server te upgraden naar een nieuwere versie, downloadt je gewoon het nieuwste .deb bestand en installeer je deze opnieuw zoals in stap 3."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:71
 msgid "### Recording"
-msgstr ""
+msgstr "### Opnemen"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:74
 msgid "When using the recording function with the `-R` command line option, if the server receives a SIGUSR1 signal during a re cording, it will start a new recording in a new directory. SIGUSR2 will toggle recording enabled on/off."
-msgstr ""
+msgstr "Als de opnamefunctie wordt gebruikt met de opdrachtregeloptie `-R' en de server een SIGUSR1-signaal ontvangt tijdens een opname, zal deze een nieuwe opname starten in een nieuwe map. SIGUSR2 schakelt opname  in/uit."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:77
 msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-serv er.service`)."
-msgstr ""
+msgstr "Om deze signalen met systemd te verzenden, maakt je de volgende twee `.service`-bestanden in `/etc/systemd/system` en geef je ze een passende naam (bijv. `newRecording-Jamulus-server.service`)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:79
 #, no-wrap
 msgid "**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).\n"
-msgstr ""
+msgstr "**Opmerking:** Je moet de opnamen opslaan in een pad _buiten_ de jamulus homedirectory of `ProtectHome=true` uit het systemd bestand verwijderen (houd er rekening mee dat dit echter een potentieel veiligheidsrisico is).\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:81
 msgid "For turning recording on or off (depending on the current state):"
-msgstr ""
+msgstr "Voor het in- of uitschakelen van de opname (afhankelijk van de huidige status):"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:86
@@ -226,6 +241,10 @@ msgid ""
 " Description=Toggle recording state of Jamulus server\n"
 " Requisite=Jamulus-Server\n"
 msgstr ""
+"~~~\n"
+" [Unit]\n"
+" Description=Schakel de opname status van de Jamulus server om\n"
+" Requisite=Jamulus-Server\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:91
@@ -236,11 +255,15 @@ msgid ""
 " ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
 "~~~\n"
 msgstr ""
+" [Service]\n"
+" Type=oneshot\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
+"~~~\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:93
 msgid "For starting a new recording:"
-msgstr ""
+msgstr "Voor het starten van een nieuwe opname:"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:98
@@ -251,6 +274,10 @@ msgid ""
 " Description=Start a new recording on Jamulus server\n"
 " Requisite=Jamulus-Server\n"
 msgstr ""
+"~~~\n"
+" [Unit]\n"
+" Description=Start een nieuwe opname voor de Jamulus server\n"
+" Requisite=Jamulus-Server\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:103
@@ -261,46 +288,50 @@ msgid ""
 " ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
 "~~~\n"
 msgstr ""
+" [Service]\n"
+" Type=oneshot\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
+"~~~\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:105
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus server. So in this example it would be `Jamulus-Server.service`_"
-msgstr ""
+msgstr "_Opmerking: De Jamulus-servicenaam in de `ExecStart`-regel moet hetzelfde zijn als de `.service`-bestandsnaam die je hebt gemaakt toen je systemd instelde om je Jamulus-server te bedienen. Dus in dit voorbeeld zou het `Jamulus-Server.service` zijn._"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:107
 msgid "Run `sudo systemctl daemon-reload` to register them for first use."
-msgstr ""
+msgstr "Voer `sudo systemctl daemon-reload` uit om hem te registreren voor het eerste gebruik."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:109
 msgid "Now you can run these with the `service start` command, for example:"
-msgstr ""
+msgstr "Nu kunt je deze uitvoeren met het commando `service start`, bijvoorbeeld:"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:111
 msgid "`sudo service jamulusTogglerec start` (assuming you named your unit file `jamulusTogglerec.service`)"
-msgstr ""
+msgstr "`sudo service jamulusTogglerec start` (ervan uitgaande dat je je het bestand de naam `jamulusTogglerec.service` hebt gegeven)"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:113
 msgid "You can see the result of these commands if you run `service jamulus status`, or by viewing the logs."
-msgstr ""
+msgstr "Je kunt het resultaat van deze commando's zien als je `service jamulus status` uitvoert of door de logs te bekijken."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:115
 msgid "## Making a server status page"
-msgstr ""
+msgstr "## Een serverstatuspagina maken"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:117
 msgid "With the `-m` command line argument, server statistics can be generated to be put on a web page."
-msgstr ""
+msgstr "Met de `-m` opdrachtregeloptie kunnen serverstatistieken worden gegenereerd om op een webpagina te worden geplaatst."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:119
 msgid "Here is an example php script using the server status file to display the current server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):"
-msgstr ""
+msgstr "Hier is een voorbeeld van een php-script dat het serverstatusbestand gebruikt om de huidige serverstatus op een html-pagina weer te geven (ervan uitgaande dat het volgende opdrachtregelargument wordt gebruikt: `-m /var/www/stat1.dat`):"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:134
@@ -322,3 +353,18 @@ msgid ""
 "<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
 "~~~\n"
 msgstr ""
+"~~~\n"
+"<?php\n"
+"function loadserverstat ( $statfilename )\n"
+"{\n"
+"   $datei = fopen ( $statfilename, \"r\" );\n"
+"   while ( !feof ( $datei ) )\n"
+"   {\n"
+"          $buffer = fgets ( $datei, 4096 );\n"
+"          echo $buffer;\n"
+"   }\n"
+"   fclose($datei);\n"
+"}\n"
+"?>\n"
+"<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
+"~~~\n"
