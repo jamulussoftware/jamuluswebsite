@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-09-25 19:39+0200\n"
+"PO-Revision-Date: 2021-12-20 10:00+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 2.3\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -579,10 +580,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:228
-#, fuzzy
 #| msgid "{% include_relative Shared-Commands.md %}"
 msgid "{% include_relative Include-Backing-Up.md %}"
-msgstr "{% include_relative Shared-Commands.md %}"
+msgstr "{% include_relative Include-Backing-Up.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:230
@@ -601,8 +601,16 @@ msgstr "Par exemple, sous Windows, pour utiliser un fichier de paramètres spéc
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:238
-msgid "```shell \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100 ```"
-msgstr "```shell \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100 ```"
+#, no-wrap
+#| msgid "```shell \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100 ```"
+msgid ""
+"```shell\n"
+" \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100\n"
+"```\n"
+msgstr ""
+"```shell\n"
+" \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100\n"
+"```\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:240
@@ -629,24 +637,21 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:248
-#, fuzzy
 #| msgid "{% include_relative Shared-Commands.md %}"
 msgid "{% include_relative Include-Server-Commands.md %}"
-msgstr "{% include_relative Shared-Commands.md %}"
+msgstr "{% include_relative Include-Server-Commands.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:250
-#, fuzzy
 #| msgid "{% include_relative Shared-Commands.md %}"
 msgid "{% include_relative Include-Shared-Commands.md %}"
-msgstr "{% include_relative Shared-Commands.md %}"
+msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:252
-#, fuzzy
 #| msgid "{% include_relative Shared-Commands.md %}"
 msgid "{% include_relative Include-QOS-Windows.md %}"
-msgstr "{% include_relative Shared-Commands.md %}"
+msgstr "{% include_relative Include-QOS-Windows.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:255
