@@ -28,7 +28,7 @@ This manual documents the Jamulus client application for use by musicians and si
 
 ## Ping, Delay and Jitter
 
-**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable causes for a high ping are that your distance to the server is too large.   
+**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   
 
 **Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:
 
