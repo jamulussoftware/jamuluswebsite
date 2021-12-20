@@ -59,7 +59,7 @@ Before you start with Jamulus:
 
 **Hints:**
 1. It may not be obvious what the correct sound device is called. Many internal sound cards are named "Realtek High Definition Audio", "Conexant" or similar.
-1. Headphones and speakers are often labelled as output and microphones as "input" or "capture".
+1. Headphones and speakers are often labelled as "output" and microphones as "input" or "capture".
 1. Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.
 
 ### Troubleshooting
