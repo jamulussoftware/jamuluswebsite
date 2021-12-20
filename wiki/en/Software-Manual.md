@@ -26,9 +26,11 @@ This manual documents the Jamulus client application for use by musicians and si
 	<figcaption>Your local mix when connected to a Server</figcaption>
 </figure>
 
-## Delay and Buffer LEDs
+## Ping, Delay and Jitter
 
-**Delay** shows the status of the current audio latency:
+**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   
+
+**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
 
@@ -42,13 +44,12 @@ This manual documents the Jamulus client application for use by musicians and si
 
 **Red** - The delay is too large for jamming
 
-**Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
+**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:
 
 - The network jitter buffer is not large enough for the current network/audio interface jitter.
 - The sound card's buffer delay (buffer size) is too small (see Settings window).
 - The upload or download stream rate is too high for your internet bandwidth.
 - The CPU of the client or server is at 100%.
-
 
 ## Input
 
@@ -65,7 +66,6 @@ Adds reverb to your local mono audio channel, or to both channels in stereo mode
 The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed
 in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector
 to the right and move the fader upwards until the desired reverb level is reached.
-
 
 ## Chat
 
@@ -121,9 +121,6 @@ You can group users together using the "group" toggle. Moving the fader of any m
 
 If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
 
-
-
-
 # Settings
 
 ## My Profile
@@ -137,7 +134,6 @@ If you set an instrument and/or country, icons for these selections will also be
 
 <figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
 
-
 ### Skin
 
 This applies a skin to the main window, some of which are designed to accommodate larger ensembles.
@@ -145,7 +141,6 @@ This applies a skin to the main window, some of which are designed to accommodat
 ### Mixer rows
 
 This sets the number of rows displayed in the server audio mixer, for use with larger ensembles.
-
 
 ## Audio/Network Setup
 
@@ -163,7 +158,6 @@ driver is not valid an error message is shown and the previous valid driver is s
 If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
 a different actual sound card channel can be selected.
-
 
 ### Audio channels
 
@@ -208,8 +202,6 @@ higher the upload rate and the lower the overall delay.
 
 The buffer setting is therefore a trade-off between audio quality and overall delay.
 
-
-
 ### Jitter Buffer
 
 The jitter buffer compensates for network and sound card timing jitters. The size of the buffer
@@ -228,21 +220,12 @@ timing jitter. If the Auto check is enabled, the jitter buffer size faders are d
 
 ### Enable small network buffers
 
-Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the
-lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
+Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
 also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality.
 
-### Measurements
+### Audio Stream Rate
 
-The Ping Time is the time required for the audio stream to travel from the client to the server and back again.
-This delay is introduced by the network and ideally should be about 20-30 ms. When this delay is higher than about 50 ms, it starts to become
-more noticeable and you may find it harder to keep in time, though it is still possible once you get used to it. Factors such as tempo, the instrument
-played or headphone isolation will have an impact on the delay you find you can deal with.
-The most probable causes for a high delay are that your distance to the server is too large or your internet connection is not sufficient.
-
-Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings.
-
-Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream
+Depends on the current audio packet size and compression setting. Make sure that the upstream
 rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/)).
 
 ## Advanced Setup
@@ -278,7 +261,6 @@ an instrument is connected to the left input channel which is much louder than t
 ### File > Load/Save Mixer Channels Setup
  
 You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window.
-
 
 ### Edit > Auto-Adjust All Faders 
 
