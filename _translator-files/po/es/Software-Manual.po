@@ -5,14 +5,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-12-21 11:08+0100\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -99,23 +101,20 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:30
-#, fuzzy
-#| msgid "## Delay and Buffer LEDs"
 msgid "## Ping, Delay and Jitter"
-msgstr "## LEDs de retardo y buffer"
+msgstr "## Ping, Retardo y Jitter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
 #, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
-msgstr ""
+msgstr "**Ping** muestra tu latencia de red en milisegundos, y cuanto más bajo, mejor. El tiempo ping contribuye al retardo total (ver abajo). La causa más probable de un ping alto es que tu distancia al servidor es demasiado grande.   \n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
-#, fuzzy, no-wrap
-#| msgid "Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings."
+#, no-wrap
 msgid "**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:\n"
-msgstr "El retardo total se calcula con el ping y el retardo ocasionado por la configuración de buffers."
+msgstr "**Retardo** muestra la latencia total que se calcula con el ping actual y el retardo ocasionado por la configuración de buffers de audio. los LEDs muestran el estado como sigue:\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
@@ -152,10 +151,9 @@ msgstr "**Rojo** - El retardo es demasiado grande para tocar\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:48
-#, fuzzy, no-wrap
-#| msgid "**Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
+#, no-wrap
 msgid "**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
-msgstr "**Buffers** muestra el estado actual del flujo de audio. Si está **rojo**, hay interrupciones en el flujo de audio. Esto puede ser causado por alguno de los siguientes problemas:\n"
+msgstr "**Jitter** muestra el estado actual del flujo de audio. Si está en **rojo**, hay interrupciones en el flujo de audio. Esto puede ser causado por alguno de los siguientes problemas:\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:50
@@ -244,12 +242,8 @@ msgstr "Puedes filtrar la lista por nombre de servidor o ubicación. Para solo m
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:90
-#, fuzzy
-#| msgid "If you know the IP address or URL of a server, you can connect to it using the Server Name/Address field. An optional port number can be added after the IP address or URL using a colon as a separator, e.g, `jamulus.example.com:22124`. The field will also show a list of the most recently used server addresses."
 msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
-msgstr ""
-"Si conoces la dirección IP o URL de un servidor, puedes conectarte a él utilizando el campo de Nombre/Dirección del Servidor. Se puede añadir un número de puerto opcional tras la dirección IP o URL utilizando dos puntos como separador, por ej.\n"
-"`jamulus.ejemplo.org:22124`. El campo también mostrará una lista de los servidores utilizados recientemente."
+msgstr "Si conoces la dirección IP o URL de un servidor privado, puedes conectarte a él utilizando el campo de Nombre/Dirección del Servidor. Se puede añadir un número de puerto opcional tras la dirección utilizando dos puntos como separador, por ej. `jamulus.ejemplo.org:22124`. (Ten en cuenta que las direcciones IPv6 deben escribirse entre corchetes). El campo también mostrará una lista de los servidores utilizados recientemente."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
@@ -388,10 +382,9 @@ msgstr "## Configuración Audio/Red"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:148
-#, fuzzy
 #| msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
 msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/es-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Imagen de la ventana de perfil\"></figure>"
+msgstr "<figure><img src=\"{{site.url}}/assets/img/es-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Imagen de la ventana de configuración de audio/red\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:150
@@ -558,17 +551,13 @@ msgstr "Permite soporte para paquetes de audio por red muy reducidos. Solo se ut
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:227
-#, fuzzy
-#| msgid "### Audio quality"
 msgid "### Audio Stream Rate"
-msgstr "### Calidad del Audio"
+msgstr "### Tasa de Flujo de Audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:230
-#, fuzzy
-#| msgid "Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
-msgstr "La Tasa de Subida de Audio depende del tamaño actual de los paquetes de audio y la configuración de compresión de audio. Asegúrate de que la tasa de subida no es mayor que la velocidad de subida disponible (comprueba la tasa de subida de tu conexión a internet, por ejemplo con [librespeed.org](https://librespeed.org/)."
+msgstr "Depende del tamaño actual de los paquetes de audio y la configuración de compresión. Asegúrate de que la tasa de subida no es mayor que la velocidad de subida disponible (comprueba esto con un servicio como [librespeed.org](https://librespeed.org/)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:232
@@ -577,10 +566,9 @@ msgstr "## Configuración Avanzada"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:234
-#, fuzzy
 #| msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
 msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/es-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Imagen de la ventana de perfil\"></figure>"
+msgstr "<figure><img src=\"{{site.url}}/assets/img/es-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Imagen de la ventana de configuración avanzada\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:236
@@ -660,23 +648,23 @@ msgstr "Aplica una configuración puntual a cada canal dependiendo de su volumen
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:270
 msgid "# Backing up Jamulus"
-msgstr ""
+msgstr "# Copia seguridad Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:272
 msgid "{% include_relative Include-Backing-Up.md %}"
-msgstr ""
+msgstr "{% include_relative Include-Backing-Up.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:273
 msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
-msgstr ""
+msgstr "Puedes guardar y cargar diferentes configuraciones del mezclador utilizando [Cargar/Guardar Configuración Canales Mezclador](Software-Manual#archivo--cargarguardar-configuración-canales-mezclador) y guardar esos archivos donde quieras."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:275
 #, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
-msgstr ""
+msgstr "**Nota para usuarios de macOS:** Desde Jamulus 3.8.1, tenemos un instalador con firma. Éste guardará la configuración en  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:277
@@ -725,17 +713,17 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:293
 msgid "{% include_relative Include-Client-Commands.md %}"
-msgstr ""
+msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:295
 msgid "{% include_relative Include-Shared-Commands.md %}"
-msgstr ""
+msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:297
 msgid "{% include_relative Include-QOS-Windows.md %}"
-msgstr ""
+msgstr "{% include_relative Include-QOS-Windows.md %}"
 
 #~ msgid "**Delay** shows the status of the current audio latency:\n"
 #~ msgstr "**Retardo** muestra el estado de la latencia de audio actual:\n"

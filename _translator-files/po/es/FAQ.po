@@ -5,14 +5,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-12-21 10:41+0100\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/FAQ.md:1
@@ -86,15 +88,13 @@ msgstr "### ¿Hay un metrónomo, sincronización o alguna otra manera de mantene
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
-#, fuzzy
-#| msgid "No. Musicians on a Jamulus server simply play in real time time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try, but it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50ms."
 msgid "No. Musicians on a Jamulus server simply play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 msgstr "No. Los usuarios de un servidor Jamulus simplemente tocan juntos en tiempo real como si estuvieran en persona. Si quieres una señal de tiempo, entonces hay soluciones de metrónomos compartidos en Internet que puedes probar, pero probablemente sea mejor minimizar la latencia para que nadie tenga un retardo total de más de unos 30-50 ms."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:28
 msgid "Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly."
-msgstr ""
+msgstr "Ten en cuenta también que todos los participantes deben seguir [La Regla de Oro](/wiki/Client-Troubleshooting#todos-suenan-bien-pero-es-difícil-tocar-todos-juntos-manteniendo-el-tiempo) que asimismo determinará si podréis tocar bien en sincronización."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:30
@@ -103,8 +103,6 @@ msgstr "### ¿Cómo sé si puedo unirme a un servidor? ¿Hay normas?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:32
-#, fuzzy
-#| msgid "In general, if somebody sets up a public server they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window."
 msgid "In general, if somebody sets up a public server, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window."
 msgstr "En general, si alguien monta un servidor público, acepta que cualquiera puede utilizarlo. Jamulus no tiene protección con contraseña ni otros mecanismos de autenticación. Sin embargo, algunos servidores pueden establecer políticas en el mensaje de bienvenida que verás en la ventana del chat."
 
@@ -120,15 +118,11 @@ msgstr "### ¿Por qué no debería utilizar dispositivos inalámbricos?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:38
-#, fuzzy
-#| msgid "Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal. An overall delay much bigger than 50ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music."
 msgid "Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal and whether you are all following [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). An overall delay much bigger than 50 ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70 ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music or you just want to listen."
 msgstr "El que puedas o no tocar manteniendo el tiempo con otras personas depende principalmente de cuánta latencia (retardo) tienes en tu señal de audio. En general, un retardo total mayor de 50 ms hace que sea difícil tocar en sincronización a menos que entrenes para hacerlo. Algunos músicos dicen que pueden tocar sincronizados con retardos de hasta 70 ms, tocando por delante del ritmo. Pero mucho más que eso se vuelve demasiado difícil, a menos que la sincronización no sea un factor importante para la música."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:40
-#, fuzzy
-#| msgid "So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50ms or more."
 msgid "So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50 ms or more."
 msgstr "Por tanto tiene sentido minimizar cualquier fuente de retardo u otros problemas con la señal. Inluso la Wi-Fi rápida suele ser demasiado variable para usarla durante periodos largos con Jamulus, y los auriculares y micrófonos Bluetooth suelen introducir latencias de hasta 50 ms o más."
 
@@ -154,10 +148,8 @@ msgstr "### ¿Necesito una conexión rápida de Internet?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
-#, fuzzy
-#| msgid "No, especially if you don't run a server. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your upstream bandwidth is lower than about 5 Mbit/s."
 msgid "No, especially if you don't run a server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
-msgstr "No, sobre todo si no gestionas un servidor. Tener un ping bajo es más importante. Para la mayoría con banda ancha normal (por ej. 10 Mbit/s de bajada y 1 Mbit/s de subida) no habrá problemas. Para los que ejecutan servidores en casa, dependiendo de cuánta gente se conecta a él, podrías tener problemas si tu ancho de banda de subida es menor de unos 5 Mbit/s."
+msgstr "No, sobre todo si no gestionas un servidor para alojar a otros músicos. Tener un ping bajo es más importante. Para la mayoría con banda ancha normal (por ej. 10 Mbit/s de bajada y 1 Mbit/s de subida) no habrá problemas. Para los que ejecutan servidores en casa, dependiendo de cuánta gente se conecta a él, podrías tener problemas si tu ancho de banda de _subida_ es menor de unos 5 Mbit/s."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:52
@@ -181,10 +173,8 @@ msgstr "<img src=\"{{site.url}}/assets/img/es-screenshots/diagram-overview.png\"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61
-#, fuzzy
-#| msgid "Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a directory, its information will be broadcast to all clients."
 msgid "Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a public directory, its information will be broadcast to all clients."
-msgstr "Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, donde se procesa. Después, el audio se envía de vuelta a cada cliente. Si un servidor es público y está registrado en un servidor de directorio, su información será emitida a todos los clientes."
+msgstr "Jamulus funciona bajo el principio del cliente/servidor. El audio de todos se envía a un servidor, donde se mezcla y se procesa. Después, el audio se envía de vuelta a cada cliente. Si un servidor es público y está registrado en un directorio público, su información será emitida a todos los clientes."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:63
