@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-18 11:48+0100\n"
+"PO-Revision-Date: 2021-12-21 07:46+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -14,6 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -100,23 +101,20 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:30
-#, fuzzy
-#| msgid "## Delay and Buffer LEDs"
 msgid "## Ping, Delay and Jitter"
-msgstr "## Vertraging en Buffer LEDs"
+msgstr "## Ping, vertraging en jitter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
 #, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
-msgstr ""
+msgstr "**Ping** toont de netwerklatency in milliseconden, hoe lager hoe beter. De ping tijd draagt bij aan de algehele vertraging (zie hieronder). De meest waarschijnlijke oorzaak van een hoge ping waarde is dat je afstand tot de server te groot is.  \n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
-#, fuzzy, no-wrap
-#| msgid "Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings."
+#, no-wrap
 msgid "**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:\n"
-msgstr "De totale vertraging wordt berekend op basis van de huidige pingtijd en de vertraging die wordt geïntroduceerd door de huidige bufferinstellingen."
+msgstr "**Vertraging** toont de totale vertraging berekend op basis van de huidige ping tijd en de vertraging die wordt geïntroduceerd door de huidige bufferinstellingen. De LED geeft de status weer als:\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
@@ -153,8 +151,7 @@ msgstr "**Rood** - De vertraging is te groot om te jammen\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:48
-#, fuzzy, no-wrap
-#| msgid "**Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
+#, no-wrap
 msgid "**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
 msgstr "**Jitter** toont de huidige audio-/streamingstatus. Als het lampje **rood** is, wordt de audiostream onderbroken. Dit wordt veroorzaakt door een van de volgende problemen:\n"
 
@@ -553,17 +550,13 @@ msgstr "Biedt ondersteuning voor zeer kleine netwerkaudiopakketten. Deze worden 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:227
-#, fuzzy
-#| msgid "### Audio quality"
 msgid "### Audio Stream Rate"
-msgstr "### Audiokwaliteit"
+msgstr "### Audiobitsnelheid"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:230
-#, fuzzy
-#| msgid "Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
-msgstr "Audio-upstreamsnelheid is afhankelijk van de huidige audiopakketgrootte en compressie-instelling. Zorg ervoor dat de upstream-snelheid niet hoger is dan je beschikbare internet-uploadsnelheid (controleer dit met een service zoals [librespeed.org](https://librespeed.org/))."
+msgstr "De audiobitsnelheid is afhankelijk van de huidige audiopakketgrootte en compressie-instelling. Zorg ervoor dat de upstream-snelheid niet hoger is dan je beschikbare internet-uploadsnelheid (controleer dit met een service zoals [librespeed.org](https://librespeed.org/))."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:232
@@ -583,7 +576,7 @@ msgstr "### Eigen adresboek"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:238
 msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
-msgstr "Laat dit leeg tenzij je het adres van een andere adresboekserver dan de standaardserver moet invoeren."
+msgstr "Laat dit leeg tenzij je het adres van een andere adresboek server dan de standaardserver moet invoeren."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:240
