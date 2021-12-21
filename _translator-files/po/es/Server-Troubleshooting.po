@@ -5,14 +5,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-12-21 10:55+0100\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Server-Troubleshooting.md:1
@@ -95,10 +97,8 @@ msgstr "Si se ha registrado correctamente (lo puedes [ver aquí](https://explore
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:29
-#, fuzzy
-#| msgid "If you are seeing a message that says the server is full, please [see this note](Directory-Servers) on Directory Servers."
 msgid "If you are seeing a message that says the server is full, please [see this note](Running-a-Server#3-directory) on Directory Servers."
-msgstr "Si ves un mensaje diciendo que el servidor está completo, por favor [lee esta nota](Directory-Servers) sobre Servidores de Directorio."
+msgstr "Si ves un mensaje diciendo que el servidor está completo, por favor [lee esta nota](Running-a-Server#3-directorio) sobre Servidores de Directorio."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:31
@@ -127,10 +127,8 @@ msgstr "### ¿Qué dirección debo dar a la gente para que se conecten a mi serv
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
-#, fuzzy
-#| msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus client to the **local** IP address of your server (127.0.0.1 if it's on the same machine as your client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Private-Server)."
 msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus client to the **local** IP address of your server (127.0.0.1 if it's on the same machine as your client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
-msgstr "Tiene que ser tu dirección IP **pública** (encuéntrala con [Google](https://www.google.com/search?q=whatsmyip)). Conecta tu **propio** cliente Jamulus a la dirección IP **local** de tu servidor (127.0.0.1 si está en la misma máquina que tu cliente). Ten en cuenta que tu dirección IP pública puede cambiar - ver la nota sobre \"DNS dinámica\" en [esta guía](Running-a-Private-Server)."
+msgstr "Tiene que ser tu dirección IP **pública** (encuéntrala con [Google](https://www.google.com/search?q=whatsmyip)). Conecta tu **propio** cliente Jamulus a la dirección IP **local** de tu servidor (127.0.0.1 si está en la misma máquina que tu cliente). Ten en cuenta que tu dirección IP pública puede cambiar - ver la nota sobre \"DNS dinámica\" en [esta guía](Running-a-Server#dns-dinámica-y-por-qué-es-probable-que-lo-necesites)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:43
@@ -189,7 +187,5 @@ msgstr "Para detectar si el problema está causado por CGN, ve a la pantalla de 
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:64
-#, fuzzy
-#| msgid "To fix the issue: if you are running a public server, try [port forwarding](Running-a-Private-Server#port-forwarding). If you are running a private server and are port forwarding already, contact your ISP support and request them to remove you from CGN and assign you a real WAN IP address because you want to host a server. If CGN is not the issue, you may need to ask your ISP to give you a WAN IP address (or fixed one to avoid using DDNS, if possible). If all else fails, consider hosting on a cloud platform (some providers do free trial periods)."
 msgid "To fix the issue: if you are running a public server, try [port forwarding](Running-a-Server#port-forwarding). If you are running a private server and are port forwarding already, contact your ISP support and request them to remove you from CGN and assign you a real WAN IP address because you want to host a server. If CGN is not the issue, you may need to ask your ISP to give you a WAN IP address (or fixed one to avoid using DDNS, if possible). If all else fails, consider hosting on a cloud platform (some providers do free trial periods)."
-msgstr "Para arreglar el problema: si estás ejecutando un servidor público, prueba el [redireccionamiento de puertos](Running-a-Private-Server#redireccionamiento-de-puertos). Si estás ejecutando un servidor privado y ya has validado puertos, contacta con el soporte de tu operador y pide que te eliminen del CGN y te asignen una dirección WAN IP real porque quieres operar un servidor. Si el problema no es CGN, quizá tengas que pedir a tu operador que te asigne una dirección WAN IP (o una fija para evitar el uso de DDNS, si es posible). Si nada de esto funciona, considera utilizar una plataforma en la nube (algunos proveedores ofrecen periodos gratuitos de prueba)."
+msgstr "Para arreglar el problema: si estás ejecutando un servidor público, prueba el [redireccionamiento de puertos](Running-a-Server#redireccionamiento-de-puertos). Si estás ejecutando un servidor privado y ya has redireccionado puertos, contacta con el soporte de tu operador y pide que te eliminen del CGN y te asignen una dirección WAN IP real porque quieres operar un servidor. Si el problema no es CGN, quizá tengas que pedir a tu operador que te asigne una dirección WAN IP (o una fija para evitar el uso de DDNS, si es posible). Si nada de esto funciona, considera utilizar una plataforma en la nube (algunos proveedores ofrecen periodos gratuitos de prueba)."
