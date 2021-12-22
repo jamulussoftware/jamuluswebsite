@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-20 10:00+0100\n"
+"PO-Revision-Date: 2021-12-22 10:52+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 "X-Generator: Poedit 2.3\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -155,10 +156,8 @@ msgstr "L'exécution d'un serveur peut nécessiter l'ajustement de tout pare-feu
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:54
-#, fuzzy
-#| msgid "Running a Private Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Private Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
 msgid "Running a Private Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Public Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
-msgstr "Pour exécuter un serveur privé à la maison, vous devez effectuer une [redirection de port](#exécuter-un-serveur-privé) sur votre routeur. Lorsque vous exécutez un serveur privé, la redirection de port ne devrait pas être nécessaire dans la plupart des cas, mais il est conseillé de le faire car certains réseaux peuvent ne pas fonctionner correctement avec Jamulus dans son mode par défaut."
+msgstr "Pour exécuter un serveur privé à la maison, vous devez effectuer une [redirection de port](#exécuter-un-serveur-privé) sur votre routeur. Lorsque vous exécutez un serveur public, la redirection de port ne devrait pas être nécessaire dans la plupart des cas, mais il est conseillé de le faire car certains réseaux peuvent ne pas fonctionner correctement avec Jamulus dans son mode par défaut."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:56
@@ -334,12 +333,13 @@ msgid ""
 msgstr ""
 "| Canaux | Qualité | Bande passante (pour le tampon : 2,67 ms) | Bande passante (pour le tampon : 5,33 ms) | Bande passante (pour le tampon : 10,67 ms) | Bande passante (pour le tampon : 21,33 ms) |\n"
 "| --------- | ------ | -------- | -------- | -------- | -------- |\n"
-"| Stéréo haute qualité : 894 Kbit/s, 657 Kbit/s, 541 Kbit/s, 483 Kbit/s.\n"
-"| Stéréo | Moyen | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s | Stéréo | Faible | 606 Kbit/s | 444 Kbit/s | 541 Kbit/s | 483 Kbit/s\n"
-"| Stéréo basse : 606 Kbit/s, 372 Kbit/s, 256 Kbit/s et 198 Kbit/s.\n"
-"| Mono | Haut | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s | Mono | Moyen | 594 Kbit/s | 328 Kbit/s | 328 Kbit/s | 270 Kbit/s\n"
-"| Mono | Moyen | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s | Mono | Bas | 534 Kbit/s | 256 Kbit/s | 198 Kbit/s | 0,5 %.\n"
-"| Mono | Faible | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s | | Mono | Moyenne | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s\n"
+"| Stéréo    | Haute   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
+"| Stéréo    | Moyenne | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
+"| Stéréo    | Basse    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
+"| Mono      | Haute   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
+"| Mono      | Moyenne | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
+"| Mono      | Basse    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
+"\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:128
