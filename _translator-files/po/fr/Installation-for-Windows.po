@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-09-25 19:24+0200\n"
+"PO-Revision-Date: 2021-12-22 21:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 2.3\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Windows.md:1
@@ -118,15 +119,11 @@ msgstr "Jamulus utilise [ASIO] (https://fr.wikipedia.org/wiki/Audio_Stream_Input
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:29
-#, fuzzy
-#| msgid "If you own an external sound card/audio interface, use its official ASIO driver (they usually provide the best quality)."
 msgid "If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality)."
-msgstr "Si vous possédez une interface audio, utilisez son pilote ASIO officiel (il fournit généralement la meilleure qualité)."
+msgstr "Si vous possédez une carte son/interface audio externe, utilisez son pilote ASIO officiel si tu peux (il fournit généralement la meilleure qualité)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:30
-#, fuzzy
-#| msgid "If you don't have an external sound card, you will probably not have an ASIO driver. Therefore, you will need to install a generic one like ASIO4ALL:"
 msgid "If you don't have an external sound card, you will probably not have an ASIO driver so will need to install a generic one like ASIO4ALL:"
 msgstr "Si vous n'avez pas de carte son externe, vous n'aurez probablement pas de pilote ASIO. Vous devrez donc en installer un générique comme ASIO4ALL :"
 
@@ -157,10 +154,8 @@ msgstr "### Configuration de ASIO4All"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:43
-#, fuzzy
-#| msgid "For ASIO4ALL, you may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything."
 msgid "You may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything."
-msgstr "Pour ASIO4ALL, vous devrez peut-être expérimenter un peu en fonction de votre matériel audio. Si tout fonctionne dès le départ, vous n'avez rien à faire."
+msgstr "Vous devrez peut-être expérimenter un peu en fonction de votre matériel audio. Si tout fonctionne dès le départ, vous n'avez rien à faire."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:45
@@ -235,8 +230,7 @@ msgstr "De nombreuses cartes son internes sont appelées Realtek High Definition
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:63
-#, fuzzy, no-wrap
-#| msgid "Headphones and speakers are often labelled as output and microphones as inputs or capture.\n"
+#, no-wrap
 msgid "Headphones and speakers are often labelled as \"output\" and microphones as \"input\" or \"capture\".\n"
 msgstr "Les casques et les haut-parleurs sont souvent identifiés comme des sorties et les micros comme des entrées ou capture.\n"
 
@@ -249,7 +243,7 @@ msgstr "Stereo Mix/Stereo Input n'est généralement pas l'entrée/sortie que vo
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:66
 msgid "### Troubleshooting"
-msgstr ""
+msgstr "### Dépannage"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:68
@@ -258,8 +252,6 @@ msgstr "Si rien ne fonctionne, redémarrez d'abord Jamulus et/ou votre PC pour f
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:70
-#, fuzzy
-#| msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. browser, Zoom, etc)."
 msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons in the ASIO4ALL settings. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. web browser, Zoom, etc)."
 msgstr "Ensuite, *réglez les entrées/sorties*. Les entrées/sorties activées et accessibles sont représentées par des boutons d'alimentation et de lecture allumés. Si, au contraire, vous voyez une croix rouge ou un symbole jaune, fermez les autres applications qui peuvent accéder à votre carte son (par exemple, le navigateur, Zoom, etc.)."
 
@@ -280,10 +272,8 @@ msgstr "## Tout est installé ?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:77
-#, fuzzy
-#| msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgid "Take a look at [Jamulus setup page](Getting-Started){: .button}"
-msgstr "[page d'installation de Jamulus](Getting-Started){: .button}"
+msgstr "Consultez la [page de configuration de Jamulus](Getting-Started){: .button}"
 
 #~ msgid "*ASIO4ALL is not recommended if your sound card/audio interface provides its own ASIO driver, since that might have better latency.*\n"
 #~ msgstr "*ASIO4All n'est pas recommandé si votre interface audio fournit son propre pilote ASIO, car celui-ci pourrait avoir une meilleure latence.*\n"
