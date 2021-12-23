@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-09-20 00:15+0200\n"
+"PO-Revision-Date: 2021-12-22 17:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 2.3\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -248,10 +249,8 @@ msgstr "Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:90
-#, fuzzy
-#| msgid "If you know the IP address or URL of a server, you can connect to it using the Server Name/Address field. An optional port number can be added after the IP address or URL using a colon as a separator, e.g, `jamulus.example.com:22124`. The field will also show a list of the most recently used server addresses."
 msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
-msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur, vous pouvez vous y connecter en remplissant le champ Nom/adresse du serveur. Un numéro de port facultatif peut être ajouté après l'adresse IP ou l'URL en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`. Le champ affichera également une liste des adresses de serveur les plus récemment utilisées."
+msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur privé, vous pouvez vous y connecter en remplissant le champ Nom/adresse du serveur. Un numéro de port facultatif peut être ajouté après l'adresse IP ou l'URL en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`. Le champ affichera également une liste des adresses de serveur les plus récemment utilisées."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
@@ -567,10 +566,8 @@ msgstr "### Qualité audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:230
-#, fuzzy
-#| msgid "Audio Upstream Rate depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
-msgstr "Le débit audio en amont dépend de la taille actuelle des paquets audio et du paramètre de compression. Assurez-vous que le débit amont n'est pas supérieur à votre vitesse de téléchargement Internet disponible (vérifiez-le avec un service tel que [librespeed.org](https://librespeed.org/))."
+msgstr "Dépend de la taille actuelle des paquets audio et du paramètre de compression. Assurez-vous que le débit amont n'est pas supérieur à votre vitesse de téléchargement Internet disponible (vérifiez-le avec un service tel que [librespeed.org](https://librespeed.org/))."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:232
@@ -579,8 +576,6 @@ msgstr "## Configuration avancée"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:234
-#, fuzzy
-#| msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
 msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
 msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre paramètres avancés\"></figure>"
 
@@ -667,7 +662,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:272
 msgid "{% include_relative Include-Backing-Up.md %}"
-msgstr ""
+msgstr "{% include_relative Include-Backing-Up.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:273
@@ -727,17 +722,17 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:293
 msgid "{% include_relative Include-Client-Commands.md %}"
-msgstr ""
+msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:295
 msgid "{% include_relative Include-Shared-Commands.md %}"
-msgstr ""
+msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:297
 msgid "{% include_relative Include-QOS-Windows.md %}"
-msgstr ""
+msgstr "{% include_relative Include-QOS-Windows.md %}"
 
 #~ msgid "**Delay** shows the status of the current audio latency:\n"
 #~ msgstr "Le voyant d'état **Delay** indique l'état actuel du délai audio :\n"
