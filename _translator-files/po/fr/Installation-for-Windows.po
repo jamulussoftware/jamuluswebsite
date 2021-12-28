@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-22 21:45+0100\n"
+"PO-Revision-Date: 2021-12-28 20:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.0\n"
 "POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
@@ -61,14 +61,13 @@ msgstr "Assurez-vous d'avoir déjà lu la page [Configuration](Getting-Started).
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:15
 msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
-msgstr ""
+msgstr "Mise à jour ? Vous pouvez d'abord [sauvegarder votre configuration](Software-Manual#sauvegarde-de-jamulus)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:17
-#, fuzzy, no-wrap
-#| msgid "**Download and install an ASIO Driver**. It is recommended to use a sound card/interface with a native ASIO driver. If you don't have an external sound card, you probably need to install a generic driver like ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.\n"
+#, no-wrap
 msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.\n"
-msgstr "**Téléchargez et installez un pilote ASIO**. Il est recommandé d'utiliser une interface audio avec un pilote ASIO natif. Si vous n'avez pas d'interface audio externe, vous devrez probablement installer un pilote générique comme ASIO4ALL. Pour plus d'informations, consultez la section [ASIO](#asio).\n"
+msgstr "**Téléchargez et installez un pilote ASIO**. Essayez d'utiliser le pilote fourni par le fabricant de votre matériel. Si vous ne le trouvez pas, ou si vous n'avez pas de carte son externe, vous devrez probablement installer ASIO4ALL. Pour plus d'informations, consultez la section [ASIO](#asio).\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:18
@@ -96,8 +95,7 @@ msgstr "**Exécutez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus 
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:22
-#, fuzzy, no-wrap
-#| msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. Have a look at how to set up ASIO4ALL below, if you're using that.\n"
+#, no-wrap
 msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
 msgstr "**Préparez votre carte son**. Une fois que vous avez terminé, vous devez configurer votre matériel audio. Regardez comment configurer ASIO4ALL ci-dessous, si vous l'utilisez.\n"
 
@@ -120,7 +118,7 @@ msgstr "Jamulus utilise [ASIO] (https://fr.wikipedia.org/wiki/Audio_Stream_Input
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:29
 msgid "If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality)."
-msgstr "Si vous possédez une carte son/interface audio externe, utilisez son pilote ASIO officiel si tu peux (il fournit généralement la meilleure qualité)."
+msgstr "Si vous possédez une carte son/interface audio externe, utilisez son pilote ASIO officiel (il permet généralement d'obtenir la meilleure performance)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:30
@@ -161,7 +159,7 @@ msgstr "Vous devrez peut-être expérimenter un peu en fonction de votre matéri
 #: ../wiki/en/Installation-for-Windows.md:45
 #, no-wrap
 msgid "**Tip:** Set up your sound card while you're [connected to a server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
-msgstr "**Astuce : ** Configurez votre carte son pendant que vous êtes [connecté à un serveur] (Getting-Started#se-connecter-à-un-serveur-et-tester-son-son) pour entendre votre instrument ou votre voix et vérifier si tout est correctement configuré ; mais lisez d'abord ce qui suit.\n"
+msgstr "**Astuce : ** Configurez votre carte son pendant que vous êtes [connecté à un serveur](Getting-Started#se-connecter-à-un-serveur-et-tester-son-son) pour entendre votre instrument ou votre voix et vérifier si tout est correctement configuré ; mais lisez d'abord ce qui suit.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:48

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-22 10:42+0100\n"
+"PO-Revision-Date: 2021-12-28 20:07+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.0\n"
 "POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
@@ -97,7 +97,7 @@ msgstr "Non. Les musiciens sur un serveur Jamulus jouent simplement en temps ré
 #. type: Plain text
 #: ../wiki/en/FAQ.md:28
 msgid "Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly."
-msgstr ""
+msgstr "N'oubliez pas non plus que tous les participants doivent suivre la [Règle d'or] (/wiki/Client-Troubleshooting#vous-avez-tous-un-son-correct,-mais-il-est-difficile-de-jouer-ensemble), qui déterminera également si vous pouvez jouer en rythme correctement."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:30
@@ -107,7 +107,7 @@ msgstr "### Comment puis-je savoir si je peux rejoindre un serveur ? Existe-t-il
 #. type: Plain text
 #: ../wiki/en/FAQ.md:32
 msgid "In general, if somebody sets up a public server, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window."
-msgstr "En général, si quelqu'un met en place un serveur public, alors il accepte que tout le monde puisse y jouer. Jamulus n'a pas de protection par mot de passe ni d'autres mécanismes d'authentification. Cependant, certains serveurs peuvent indiquer leur politique dans le message de bienvenue que vous verrez dans la fenêtre de discussion."
+msgstr "En général, si quelqu'un met en place un serveur public, alors il accepte que tout le monde puisse y jouer. Jamulus n'a pas de protection par mot de passe ni d'autres mécanismes d'authentification. Cependant, certains serveurs peuvent indiquer leur politique dans le message de bienvenue que vous verrez dans la fenêtre de tchate."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
@@ -122,7 +122,7 @@ msgstr "### Pourquoi ne devrais-je pas utiliser un équipement sans fil ?"
 #. type: Plain text
 #: ../wiki/en/FAQ.md:38
 msgid "Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal and whether you are all following [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). An overall delay much bigger than 50 ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70 ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music or you just want to listen."
-msgstr "Votre capacité à jouer en rythme avec les autres musiciens dépend principalement de la latence (retard) de votre signal sonore. Si le retard global est supérieur à 50 ms, il est généralement trop difficile de jouer en rythme, sauf si vous vous entraînez à le faire. Certains musiciens affirment qu'ils peuvent jouer en rythme avec des retards allant jusqu'à 70 ms en jouant en avance sur le rythme. Mais au-delà, cela devient trop difficile, à moins que le synchronisme ne soit pas un facteur important dans la musique."
+msgstr "Votre capacité à jouer en rythme avec les autres musiciens dépend principalement de la latence (retard) de votre signal sonore et du respect de la [Règle d'or] (/wiki/Client-Troubleshooting#vous-avez-tous-un-son-correct,-mais-il-est-difficile-de-jouer-ensemble). Un retard global bien supérieur à 50 ms rend généralement trop difficile le fait de jouer en rythme, à moins que vous ne vous entraîniez à le faire. Certains musiciens affirment qu'ils peuvent jouer en rythme avec des retards allant jusqu'à 70 ms en jouant en avance sur le rythme. Mais au-delà, cela devient trop difficile, sauf si le timing n'est pas un facteur important dans la musique ou si vous voulez simplement écouter."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:40
@@ -177,7 +177,7 @@ msgstr "<img src=\"{{site.url}}/assets/img/fr-screenshots/diagram-overview.png\"
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61
 msgid "Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a public directory, its information will be broadcast to all clients."
-msgstr "Jamulus fonctionne sur le principe client-serveur. L'audio de chaque musicien est envoyé à un serveur, où il est mixé et traité. Ensuite, l'audio est renvoyé à chaque client. Si un serveur est rendu public et enregistré sur un répertoire, ses informations seront diffusées à tous les clients."
+msgstr "Jamulus fonctionne sur le principe client-serveur. L'audio de chaque musicien est envoyé à un serveur, où il est mixé et traité. Ensuite, l'audio est renvoyé à chaque client. Si un serveur est rendu public et enregistré sur un serveur annuaire public, ses informations seront diffusées à tous les clients."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:63
@@ -197,12 +197,12 @@ msgstr "## FAQ Serveur"
 #. type: Plain text
 #: ../wiki/en/FAQ.md:70
 msgid "### Why do public servers not need port forwarding?"
-msgstr "### Pourquoi les serveurs publics n'ont-ils pas besoin de la redirection de port pour ce faire ?"
+msgstr "### Pourquoi les serveurs publics n'ont-ils pas besoin de redirection de port ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
 msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In public server mode, when your Jamulus server connects to a Directory Server it of course initiates an outbound connection. From then on, the Directory Server sends (established/related) connection “pings” (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
-msgstr "Normalement, les pare-feu NAT (Network Address Translation) empêchent les requêtes entrantes provenant de l'extérieur du réseau local. Le trafic entrant n'est possible que pour les paquets relatifs à une demande sortante (à proprement parler, les paquets \"relatifs\" et \"établis\" à une connexion sortante initiale). En mode public, lorsque votre serveur Jamulus se connecte à un serveur d'annuaire, il initie bien sûr une connexion sortante. À partir de ce moment-là, le serveur d'annuaire envoie des \"pings\" (pas des pings ICMP) de connexion (établie/liée) à votre serveur à intervalles réguliers pour maintenir le ou les ports NAT pertinents ouverts sur votre routeur/pare-feu."
+msgstr "Normalement, les pare-feu NAT (Network Address Translation) empêchent les requêtes entrantes provenant de l'extérieur du réseau local. Le trafic entrant n'est possible que pour les paquets relatifs à une demande sortante (à proprement parler, les paquets \"relatifs\" et \"établis\" à une connexion sortante initiale). En mode public, lorsque votre serveur Jamulus se connecte à un serveur annuaire, il initie bien sûr une connexion sortante. À partir de ce moment-là, le serveur d'annuaire envoi des \"pings\" (non ICMP) de connexion (établie/liée) à votre serveur à intervalles réguliers pour maintenir le ou les ports NAT pertinents ouverts sur votre routeur/pare-feu."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:74

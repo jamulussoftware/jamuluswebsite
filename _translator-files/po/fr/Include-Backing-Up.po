@@ -3,60 +3,61 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-12-28 20:14+0100\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:2
 msgid "<!-- NOTE: This must apply to both client and server, and all operating systems -->"
-msgstr ""
+msgstr "<!-- NOTE : Ceci doit s'appliquer à la fois au client et au serveur, et à tous les systèmes d'exploitation -->"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:4
 msgid "Once installed and running, you may want to keep a copy of your settings. Having a backup is always a good idea, and settings files are not backwardly compatible between versions of Jamulus. So if you want to go back to the previous version, you will need to restore the settings you had."
-msgstr ""
+msgstr "Une fois installé et en fonctionnement, vous voudrez peut-être conserver une copie de vos paramètres. Avoir une sauvegarde est toujours une bonne idée, et les fichiers de paramètres ne sont pas rétrocompatibles entre les versions de Jamulus. Ainsi, si vous souhaitez revenir à la version précédente, vous devrez restaurer les paramètres que vous aviez."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:6
 msgid "To find your settings file on Windows, look in the `%APPDATA%` folder. There will be one or more `.ini` files in a folder there named `Jamulus`."
-msgstr ""
+msgstr "Pour trouver votre fichier de paramètres sous Windows, regardez dans le dossier `%APPDATA%`. Vous trouverez un ou plusieurs fichiers `.ini` dans un dossier nommé `Jamulus`."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:8
 msgid "For all other platforms, run the following from the command line to find where they live:"
-msgstr ""
+msgstr "Pour toutes les autres plateformes, exécutez la commande suivante à partir de la ligne de commande pour trouver leur emplacement :"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:10
 msgid "`find ~ -name Jamulus.ini -ls`"
-msgstr ""
+msgstr "`find ~ -name Jamulus.ini -ls`"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:12
 #, no-wrap
 msgid "**Points to note**\n"
-msgstr ""
+msgstr "**Points à noter**\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:14
 msgid "Do not back up or restore settings files when Jamulus is running."
-msgstr ""
+msgstr "Ne pas sauvegarder ou restaurer les fichiers de paramètres lorsque Jamulus est en cours d'exécution."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:15
 msgid "It is not recommended to edit settings files by hand (they're not designed for that)."
-msgstr ""
+msgstr "Il n'est pas recommandé de modifier les fichiers de paramètres à la main (ils ne sont pas conçus pour cela)."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:15
 msgid "You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus)."
-msgstr ""
+msgstr "Vous pouvez rétablir tous les paramètres par défaut en supprimant simplement le fichier de paramètres (après avoir fermé Jamulus)."
