@@ -18,7 +18,7 @@ If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.r
 
 * To install Jamulus on your iOS device, you need a computer running macOS. 
 * If you don't pay for an apple developer account, Jamulus will only run for at most 7 days before you need to re-install it.
-* Jamulus on iOS works quite well on new devices if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. To connect these to your iOS device, you should use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered USB-hub).
+* Jamulus on iOS works quite well on new devices if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. To connect these to your iOS device, you should use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub.
 
 
 ## Install for iOS (for experienced users only)
