@@ -75,7 +75,7 @@ process_with_po4a () {
 
         # Files excluded from the threshold requirement
         if [[
-            "$filename" == 'Shared-'* || \
+            "$filename" == 'Include-'* || \
             "$filename" == *'-index' || \
             "$filename" == 'footertext' || \
             "$filename" == 'general' || \

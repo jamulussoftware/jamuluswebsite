@@ -22,19 +22,21 @@ permalink: "/wiki/FAQ"
 
 ### Is there a metronome, synchronization, or some other way of keeping in time?
 
-No. Musicians on a Jamulus server simply play in real time time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try, but it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50ms.
+No. Musicians on a Jamulus server simply play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms. 
+
+Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly.
 
 ### How do I know if I can join a server? Are there rules?
 
-In general, if somebody sets up a public server they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
+In general, if somebody sets up a public server, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
 
 You can also set up a private server on Jamulus and give others your address to connect to that. Have a look at [this page for more information](/wiki/Running-a-Server).
 
 ### Why shouldn’t I use wireless equipment?
 
-Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal. An overall delay much bigger than 50ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music.
+Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal and whether you are all following [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). An overall delay much bigger than 50 ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70 ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music or you just want to listen.
 
-So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50ms or more.
+So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50 ms or more.
 
 ### Why should I not listen to my own signal?
 
@@ -44,7 +46,7 @@ Of course, if you are playing an acoustic instrument, or are a singer, it will b
 
 ### Do I need a fast Internet connection?
 
-No, especially if you don't run a server. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your upstream bandwidth is lower than about 5 Mbit/s. 
+No, especially if you don't run a server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s. 
 
 ### Do I need to run a server?
 
@@ -55,7 +57,7 @@ No. If you just intend to connect to other people’s servers, then all you need
 <img src="{{site.url}}/assets/img/en-screenshots/diagram-overview.png" loading="lazy" alt="Diagram showing how Jamulus works">
 
 
-Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a directory, its information will be broadcast to all clients.
+Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a public directory, its information will be broadcast to all clients.
 
 ### Why doesn't Jamulus provide video support?
 
