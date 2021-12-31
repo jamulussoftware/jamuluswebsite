@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-09-25 19:41+0200\n"
+"PO-Revision-Date: 2021-12-28 21:19+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -40,7 +40,7 @@ msgstr "/wiki/Server-Linux"
 #: ../wiki/en/Server-Linux.md:1
 #, no-wrap
 msgid "Headless Linux Server Installation"
-msgstr "# Installation d'un serveur - Linux"
+msgstr "Installation d'un serveur \"headless\" Linux"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:9
@@ -50,7 +50,7 @@ msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Running a Server\" br
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:11
 msgid "# Running a Headless Server"
-msgstr "## Exécution d'un serveur \"headless\""
+msgstr "# Exécution d'un serveur headless"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:13
@@ -65,7 +65,7 @@ msgstr "Si vous souhaitez faire fonctionner un serveur sur un Raspberry Pi, vous
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:17
 msgid "Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})"
-msgstr "Téléchargez le [dernier fichier .deb sans tête]({{ site.download_root_link }}{ site.download_file_names.deb-headless }})"
+msgstr "Téléchargez le [dernier fichier .deb headless]({{ site.download_root_link }}{ site.download_file_names.deb-headless }})"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:18
@@ -110,7 +110,7 @@ msgstr "## Notes"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:29
 msgid "You can control Jamulus with the `systemctl` command. For example, to stop the server cleanly:"
-msgstr "Vous pouvez contrôler Jamulus avec la commande `service`. Par exemple, pour arrêter le serveur proprement :"
+msgstr "Vous pouvez contrôler Jamulus avec la commande `systemctl`. Par exemple, pour arrêter le serveur proprement :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:31

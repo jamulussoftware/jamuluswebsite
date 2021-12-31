@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-12-21 11:21+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:2
+msgid "<!-- NOTE: This must apply to both client and server, and all operating systems -->"
+msgstr "<!-- NOTE: This must apply to both client and server, and all operating systems -->"
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:4
+msgid "Once installed and running, you may want to keep a copy of your settings. Having a backup is always a good idea, and settings files are not backwardly compatible between versions of Jamulus. So if you want to go back to the previous version, you will need to restore the settings you had."
+msgstr "Una vez instalado y en marcha, quizá quieras guardar una copia de tu configuración. Tener una copia de seguridad siempre es buena idea, y los archivos de configuración no son compatibles con versiones previas de Jamulus. Por lo que si quieres volver a la versión anterior, deberás reestablecer la configuración que tenías."
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:6
+msgid "To find your settings file on Windows, look in the `%APPDATA%` folder. There will be one or more `.ini` files in a folder there named `Jamulus`."
+msgstr "Para encontrar el archivo de configuración en Windows, mira en la carpeta `%APPDATA%`. Habrá uno o más archivos `.ini` en una carpeta llamada `Jamulus`."
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:8
+msgid "For all other platforms, run the following from the command line to find where they live:"
+msgstr "Para las demás plataformas, ejecuta lo siguiente desde la línea de comandos para encontrar su ubicación:"
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:10
+msgid "`find ~ -name Jamulus.ini -ls`"
+msgstr "`find ~ -name Jamulus.ini -ls`"
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:12
+#, no-wrap
+msgid "**Points to note**\n"
+msgstr "**Puntos a tener en cuenta**\n"
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:14
+msgid "Do not back up or restore settings files when Jamulus is running."
+msgstr "No realices copias de seguridad ni restaures archivos de configuración mientras se ejecuta Jamulus."
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:15
+msgid "It is not recommended to edit settings files by hand (they're not designed for that)."
+msgstr "No se recomienda editar los archivos de configuración a mano (no están diseñados para eso)."
+
+#. type: Plain text
+#: ../wiki/en/Include-Backing-Up.md:15
+msgid "You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus)."
+msgstr "Puedes revertir toda la configuración a los valores predeterminados simplemente eliminando el archivo de configuración (tras cerrar Jamulus)."

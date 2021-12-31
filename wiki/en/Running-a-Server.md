@@ -50,7 +50,7 @@ Unless you plan on hosting more than about 5 players on a slower-speed home conn
 
 - Running a server may require you to adjust any firewalls running on or outside of your machine or cloud host.
 
-- Running a Private Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Private Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
+- Running a Private Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Public Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
 
 - Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the client and server. There are plans to expand IPv6 support.
 
@@ -220,6 +220,12 @@ Note also that your home router may also change the IP address of the machine th
 
 Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).   
 
+# Backing up the server
+
+_Note that headless servers do not use `.ini` files. All configuration is given as command line options._
+
+{% include_relative Include-Backing-Up.md %}
+
 # Command line options
 
 Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system.
@@ -227,7 +233,7 @@ Most common functions in Jamulus can be set using the GUI, but these and others 
 For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose "Properties" > Target. Add the necessary arguments to Jamulus.exe:
 
 ```shell
-"C:\Program Files\Jamulus\Jamulus.exe" --serverbindip 192.168.0.100
+ "C:\Program Files\Jamulus\Jamulus.exe" --serverbindip 192.168.0.100
 ```
 
 For macOS, start a Terminal window and run Jamulus with the desired options like this:
@@ -236,29 +242,13 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
  /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100
 ```
 
-**Note**: Command-line options will not alter settings made in the GUI.
+**Note**: Command line options will set the server's defaults at startup. You can override them with their corresponding GUI controls while the server is running.
 
-- `-d`  or `--discononquit`   Disconnect all clients on quit. Normally, when a server is stopped or restarted, any clients that have not used their "Disconnect" buttons will re-establish connection when the server comes back up again. Using this option forces clients to manually re-establish their connections to the server.  
-- `-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.
-- `--directoryfile` Enable directory to remember registered servers even if the directory is restarted. You'll need to specify a path to a writable file location in which server information is stored.
-- `-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  
--  `-F`  or `--fastupdate`     Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients.
--  `-l`  or `--log`            Enable logging, set path and file name                                                                    
-- `-L`  or `--licence`        Show an agreement window before users can connect
-- `-m`  or `--htmlstatus`     Enable HTML status file, set path and file name
-- `-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only
-- `-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning))
-- `-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  
-- `--norecord`       Disable recording when enabled by default by `-R`                                                 
-- `-s` or `--server` Start in server mode
-- `--serverbindip`  Specify the IP address to bind to              
--  `-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more clients
--  `-u` or `--numchannels`   Maximum number of channels (clients)
--  `-w` or `--welcomemessage`  Welcome message on connect
--  `-z` or `--startminimized`  Start minimizied
--  `--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](#points-to-note-about-directories)
+{% include_relative Include-Server-Commands.md %}
 
-{% include_relative Shared-Commands.md %}
+{% include_relative Include-Shared-Commands.md %}
+
+{% include_relative Include-QOS-Windows.md %}
 
 
 # Troubleshooting
