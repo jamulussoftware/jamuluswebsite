@@ -1,0 +1,19 @@
+- `-d` ou `--discononquit`   Déconnecte tous les clients lorsque le serveur est arrêté. Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton "Disconnect" rétabliront la connexion lorsque le serveur sera de nouveau opérationnel. L'utilisation de cette option oblige les clients à rétablir manuellement leur connexion au serveur.  
+- `-e` ou `--directoryserver`  Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](#types-de-serveurs) pour plus d'informations.
+- `--directoryfile` Permet à l'annuaire de se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Vous devrez spécifier un chemin vers un emplacement de fichier inscriptible dans lequel les informations sur les serveurs sont stockées.
+- `-f` ou `--listfilter`     Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Serveurs d'annuaire uniquement. Voir [types de serveurs](#types-de-serveurs)  
+-  `-F` ou `--fastupdate`     Réduit la latence si les clients se connectent avec l'option "Enable Small Network Buffers". Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés.
+-  `-l` ou `--log`            Activer l'enregistrement, définir le chemin et le nom du fichier                                                                    
+- `-L` ou `--licence`        Afficher une fenêtre d'accord avant que les utilisateurs puissent se connecter
+- `-m` ou `--htmlstatus`     Active le fichier d'état HTML, définit le chemin et le nom du fichier
+- `-o` ou `--serverinfo`     Détails de l'emplacement dans le format :  `[nom];[ville];[valeur locale]` (voir [valeurs](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Serveurs publics uniquement
+- `-P` ou `--delaypan`       Démarrer avec le panoramique du délai activé Voir [notes](#retardement-du-panoramique))
+- `-R` ou `--recording`      Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).  Voir [Options](#options).  
+- `--norecord`       Désactive l'enregistrement lorsqu'il est activé par défaut par `-R`                                                 
+- `-s` ou `--server` Démarrer en mode serveur
+- `--serverbindip`  Spécifiez l'adresse IP à laquelle se lier              
+-  `-T` ou `--multithreading`  Utilisez le multithreading pour mieux utiliser les processeurs multi-cœurs afin de prendre en charge plus de clients
+-  `-u` ou `--numchannels`  Nombre maximum de canaux (clients)
+-  `-w` ou `--welcomemessage`  Message de bienvenue à la connexion
+-  `-z` ou `--startminimized`  Démarrage minimisé
+-  `--serverpublicip`  L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les serveurs d'annuaire](#points-à-noter-à-propos-des-annuaires)

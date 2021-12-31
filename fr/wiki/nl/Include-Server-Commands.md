@@ -1,0 +1,19 @@
+- `-d`  of `--discononquit`   Verbreek de verbinding met alle clients bij afsluiten. Normaal gesproken, wanneer een server wordt gestopt of opnieuw wordt opgestart, zullen alle clients die hun "Verbinding verbreken"-knop niet hebben gebruikt, de verbinding herstellen wanneer de server weer actief is. Als je deze optie gebruikt, worden clients gedwongen hun verbinding met de server handmatig opnieuw tot stand te brengen.  
+- `-e`  of `--directoryserver`  Registreer de server op een adresboek (bijv. om het genre in te stellen (zie ook `-o`)). Zie [servertypen](#servertypen) voor meer informatie.
+- `--directoryfile` Activeer het adresboek om geregistreerde servers te onthouden, zelfs als het adresboek opnieuw wordt gestart. Je moet een pad opgeven naar een beschrijfbare bestandslocatie waarin de serverinformatie wordt opgeslagen.
+- `-f`  of `--listfilter`     Whitelist-servers die zich registreren op de serverlijst, formaat `ip-adres 1[;ip-adres 2]` Alleen voor adresboek servers. Zie [servertypen](#servertypen)  
+-  `-F`  of `--fastupdate`     Vermindert de latency als clients verbinding maken met de optie "Kleine netwerkbuffers inschakelen". Vereist een snellere CPU om uitval te voorkomen en meer bandbreedte voor clients die dit ingeschakeld hebben.
+-  `-l`  of `--log`            Logboek inschakelen, pad en bestandsnaam instellen                                                                    
+- `-L`  of `--licence`        Laat een venster zien voordat gebruikers verbinding kunnen maken
+- `-m`  of `--htmlstatus`     HTML-statusbestand inschakelen, pad en bestandsnaam instellen
+- `-o`  of `--serverinfo`     Locatie details in het formaat:  `[naam];[stad];[Qlocale waarde]` (zie [waarden](https://doc.qt.io/qt-5/qlocale.html#Country-enum)). Alleen openbare servers.
+- `-P`  of `--delaypan`       Start met delay panning ingeschakeld. Zie [opmerking](#delay-panning)
+- `-R`  of `--recording`      Geef een beschrijfbaar pad op waar de opnamebestanden moeten worden opgeslagen (indien nodig tussen aanhalingstekens).  Zie [opties](#opties).  
+- `--norecord`       Opname uitschakelen indien standaard ingeschakeld door `-R`                                                 
+- `-s` of `--server` Start in server modus
+- `--serverbindip`  Geef het IP-adres op om aan te binden              
+-  `-T` of `--multithreading`  Gebruik multithreading om beter gebruik te maken van multi-core CPU's om meer clients te ondersteunen
+-  `-u` of `--numchannels`   Maximum aantal kanalen (clients)
+-  `-w` of `--welcomemessage`  Welkomstbericht bij verbindingmaken
+-  `-z` of `--startminimized`  Start geminimaliseerd
+-  `--serverpublicip`  Het openbare IP-adres van de server als verbinding wordt gemaakt met een adresboek achter dezelfde NAT. Zie [aandachtpunten voor adresboek servers](#aandachtspunten-voor-adresboeken)

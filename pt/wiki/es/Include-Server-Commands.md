@@ -1,0 +1,19 @@
+- `-d`  o `--discononquit`   Desconectar todos los clientes al salir. Normalmente, cuando un servidor se detiene o se reinicia, los clientes que no hayan utilizado su botón de "Desconectar" reestablecerán su conexión cuando el servidor vuelva a estar operativo. Utilizar esta opción obliga a los clientes a reestablecer su conexión con el servidor manualmente.  
+- `-e`  o `--directoryserver`  Registra el servidor en un directorio (por ej. para establecer su género (ver también `-o`)). Ver [tipos de servidor](#tipos-de-servidor) para más información.
+- `--directoryfile` Para que el directorio recuerde los servidores registrados incluso si se reinicia el directorio. Necesitarás especificar una ruta a una ubicación con permisos de escritura en la cual se guarda la información del servidor.
+- `-f`  o `--listfilter`     Lista blanca de servidores que se registran en la lista de servidores, formato `dirección ip 1[;dirección ip 2]` Solo Servidores de Directorio. Ver [tipos de servidor](#tipos-de-servidor)  
+-  `-F`  o `--fastupdate`     Reduce la latencia si el cliente se conecta con la opción "Activar Buffers Pequeños". Requiere un procesador potente para evitar cortes, y más ancho de banda hacia clientes activados.
+-  `-l`  o `--log`            Habilitar registro, establece ruta y nombre del archivo                                                                    
+- `-L`  o `--licence`        Muestra una ventana de aceptación para que los usuarios se puedan conectar
+- `-m`  o `--htmlstatus`     Habilita un archivo de estado HTML, establece una ruta y un nombre de archivo
+- `-o`  o `--serverinfo`     Datos de ubicación en el formato:  `[nombre];[ciudad];[valor locale]` (ver [valores](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Solo servidores públicos
+- `-P`  o `--delaypan`       Inicia con paneo con retardo activado Ver [notas](#paneo-con-retardo)
+- `-R`  o `--recording`      Incluye una ruta editable donde se deben guardar los archivos (entrecomillado si procede).  Ver [Opciones](#opciones).  
+- `--norecord`       Desactiva la grabación cuando se habilita por defecto con `-R`                                                 
+- `-s` o `--server` Arranca en modo servidor
+- `--serverbindip`  Especifica la dirección IP a la que vincularse              
+-  `-T` o `--multithreading`  Utiliza multithreading para hacer un mejor uso de CPUs multi-núcleo, para dar soporte a más clientes
+-  `-u` o `--numchannels`   Número máximo de canales (clientes)
+-  `-w` o `--welcomemessage`  Mensaje de bienvenida al conectarse
+-  `-z` o `--startminimized`  Arranca minimizado
+-  `--serverpublicip`  La dirección IP del servidor si se conecta a un Directorio tras el mismo NAT. Ver las [Notas sobre Servidores de Directorio](#a-tener-en-cuenta-sobre-los-directorios)

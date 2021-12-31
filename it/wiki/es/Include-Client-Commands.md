@@ -1,0 +1,6 @@
+- `-M` o `--mutestream`  Inicia Jamulus en estado silenciado                                                      
+- `--mutemyown`  Silenciarme en mi mezcla personal (solo modo "headless")                                                      
+-  `-c` o `--connect`  Conectar con una dirección de servidor al arrancar, formato `dirección[:puerto]`  
+-  `-j` o `--nojackconnect`  Deshabilitar conexiones automáticas de JACK  
+-  `--ctrlmidich`  Canal para recibir mensajes de controlador MIDI, compensación de número de control y números CC consecutivos (canales). Formato: `canall[;f*][;p*][;s*][;m*]` Ver [Consejos y Trucos](Tips-Tricks-More#utilizar-ctrlmidich-para-controladores-midi) 
+- `--clientname`  Título de ventana y nombre de cliente en JACK 
