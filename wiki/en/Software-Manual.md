@@ -22,7 +22,7 @@ This manual documents the Jamulus client application for use by musicians and si
 
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
+	<img src="{% include img/en-screenshots/main-screen-medium.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
 	<figcaption>Your local mix when connected to a Server</figcaption>
 </figure>
 
@@ -32,15 +32,15 @@ This manual documents the Jamulus client application for use by musicians and si
 
 **Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-green.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
 
 **Green** - The delay is perfect for a jam session
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-yellow.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-yellow.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
 
 **Yellow** - A session is still possible but it may be harder to play
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-red.inc %}" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
 
 **Red** - The delay is too large for jamming
 

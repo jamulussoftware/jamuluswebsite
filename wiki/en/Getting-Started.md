@@ -36,7 +36,7 @@ If you use external audio hardware, plug that in before you start Jamulus. If yo
 When you open Jamulus, you will see a window which looks like this:
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-default.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
+  <img src="{% include img/en-screenshots/main-screen-default.inc %}" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>The main window before you connect to a server</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Once connected to a server, make sure you can hear yourself OK and fix any input
 With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you.
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
+  <img src="{% include img/en-screenshots/main-screen-medium.inc %}" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>The main window when you are connected to a sever</figcaption>
 </figure>
 
