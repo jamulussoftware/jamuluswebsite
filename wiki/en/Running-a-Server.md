@@ -148,7 +148,7 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 ## Server Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-setup.png" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
+<figure><img src="{% include img/en-screenshots/server-window-setup.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
 ### Make My Server Public
 
@@ -173,7 +173,7 @@ The text entered here appears to all users when they join the server (the chat w
 ## Options
 
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of Jamulus server window options"></figure>
+<figure><img src="{% include img/en-screenshots/server-window-options.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
 ### Recording Directory
 

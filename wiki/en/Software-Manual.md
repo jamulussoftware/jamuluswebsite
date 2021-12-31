@@ -90,7 +90,7 @@ field. An optional port number can be added after the address using a colon as a
 
 ## Server audio mixer
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
+<figure><img src="{% include img/en-screenshots/mixer-channels.inc %}" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
 
 The audio mixer screen shows each user connected to the server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
@@ -128,11 +128,11 @@ If the server operator has enabled recording, you will see a message above the m
 From the Settings menu, select "My Profile..." to set your Alias/Name
 which is displayed below your fader in the server audio mixer board.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-profile.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
 
 If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+<figure><img src="{% include img/en-screenshots/profile-tooltip.inc %}" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
 
 ### Skin
 
@@ -144,7 +144,7 @@ This sets the number of rows displayed in the server audio mixer, for use with l
 
 ## Audio/Network Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-network.png" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-network.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
 
 ### Device
 
@@ -230,7 +230,7 @@ rate is not higher than your available internet upload speed (check this with a 
 
 ## Advanced Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-advanced.png" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-advanced.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
 
 ### Custom directory server address
 

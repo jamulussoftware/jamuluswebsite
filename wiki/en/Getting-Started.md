@@ -46,7 +46,7 @@ When you open Jamulus, you will see a window which looks like this:
 First, let others know who you are. Click on the “Settings” button on the bottom left and go to “My Profile…”. Now you will see this:
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/settings-profile.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
+  <img src="{% include img/en-screenshots/settings-profile.inc %}" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
   <figcaption>Let people know who you are</figcaption>
 </figure>
 
