@@ -45,7 +45,7 @@ You can set your server to listen on a custom port with the `--port` option. If 
 
 ### Is a private server a direct server without contact to the Jamulus Directory Server?
 
-Yes. Please see [Server Types](Choosing-a-Server-Type)
+Yes. Please see [Server Types](Running-a-Server#server-types)
 
 ### Can I convert my private server to being a public one?
 
