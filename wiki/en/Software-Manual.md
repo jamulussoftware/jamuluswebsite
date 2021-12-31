@@ -78,7 +78,7 @@ open automatically for all clients.
 Opens a dialogue where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a server connection window"></figure>
+<figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
 The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
@@ -153,7 +153,7 @@ driver is not valid an error message is shown and the previous valid driver is s
 
 ### Input/output channel mapping
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/channel-mapping.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
+<figure><img src="{% include img/en-screenshots/channel-mapping.inc %}" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
 
 If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)

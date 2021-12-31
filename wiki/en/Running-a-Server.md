@@ -66,7 +66,7 @@ Use this mode when you want anyone to join your server, whoever they are.
 Your server will be listed in the Directory that clients use by default. Musicians can then discover and connect to your server.
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus Public Server">
+	<img src="{% include img/en-screenshots/diagram-public-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Public Server">
 <figcaption>How Public Servers work</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ This is the default when starting a server for the first time. Private Servers a
 
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus Private Server">
+	<img src="{% include img/en-screenshots/diagram-private-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Private Server">
 	<figcaption>How Private Servers work</figcaption>
 </figure>
 

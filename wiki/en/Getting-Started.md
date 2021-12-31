@@ -62,7 +62,7 @@ Before you connect to a server, you should **not** be able to hear yourself.  Li
 Now use the “Connect” button in the Jamulus main window to join a server. A window will now open:
 
 <figure>
-  <img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
+  <img src="{% include img/en-screenshots/connection-setup-window.inc %}" loading="lazy" alt="Screenshot of the connection window" style="border: 5px solid grey;">
   <figcaption>Connect to a server</figcaption>
 </figure>
 
