@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-28 20:30+0100\n"
+"PO-Revision-Date: 2022-01-02 18:09+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -103,23 +104,20 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:30
-#, fuzzy
-#| msgid "## Delay and Buffer LEDs"
 msgid "## Ping, Delay and Jitter"
-msgstr "## Diodes d'êtat"
+msgstr "## Ping, Délai et Gigue"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
 #, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
-msgstr ""
+msgstr "**Ping** indique la latence de votre réseau en millisecondes, le plus bas étant le mieux. Le temps de ping contribue au délai global (voir ci-dessous). La cause la plus probable d'un ping élevé est que votre distance au serveur est trop grande.   \n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
-#, fuzzy, no-wrap
-#| msgid "Overall Delay is calculated from the current Ping Time and the delay introduced by the current buffer settings."
+#, no-wrap
 msgid "**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:\n"
-msgstr "Le délai global est calculé à partir du temps de ping actuel et du délai introduit par les paramètres actuels de la mémoire tampon."
+msgstr "Le délai global est calculé à partir du temps de ping actuel et du délai introduit par les paramètres actuels de la mémoire tampon.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
@@ -156,10 +154,9 @@ msgstr "**Rouge** - Le délai est trop important pour une session\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:48
-#, fuzzy, no-wrap
-#| msgid "**Buffers** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
+#, no-wrap
 msgid "**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
-msgstr "Le voyant d'état **Buffers** indique l'état actuel du flux audio/du streaming. Si le voyant est **rouge**, le flux audio est interrompu. Cela est dû à l'un des problèmes suivants :\n"
+msgstr "**Gigue** indique l'état actuel du flux audio/de la diffusion en continu. Si le voyant est **rouge**, le flux audio est interrompu. Cela est dû à l'un des problèmes suivants :\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:50
@@ -388,10 +385,8 @@ msgstr "## Configuration audio/réseau"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:148
-#, fuzzy
-#| msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
 msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre réseau\"></figure>"
+msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre des paramètres audio/réseau\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:150
@@ -558,10 +553,8 @@ msgstr "Permet la prise en charge de très petits paquets audio réseau. Ceux-ci
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:227
-#, fuzzy
-#| msgid "### Audio quality"
 msgid "### Audio Stream Rate"
-msgstr "### Qualité audio"
+msgstr "### Débit du flux audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:230
@@ -636,7 +629,7 @@ msgstr "# Menu commandes"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:262
 msgid "### File > Load/Save Mixer Channels Setup"
-msgstr "### Fichier > Charger la configuration des canaux du mixeur"
+msgstr "### Fichier > Charger/sauvegarder la configuration des canaux du mixeur"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:264
@@ -666,13 +659,13 @@ msgstr "{% include_relative Include-Backing-Up.md %}"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:273
 msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
-msgstr ""
+msgstr "Vous pouvez sauvegarder et charger différents réglages du mélangeur en utilisant [charger/sauvegarder la configuration des canaux du mixeur](Software-Manual#fichier--charger-sauvegarder-la-configuration-des-canaux-du-mixeurl) et stocker ces fichiers où vous voulez."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:275
 #, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
-msgstr ""
+msgstr "**Note pour les utilisateurs de macOS:** A partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:277
