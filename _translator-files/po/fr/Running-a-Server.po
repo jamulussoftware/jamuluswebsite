@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-28 21:14+0100\n"
+"PO-Revision-Date: 2022-01-03 16:20+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -194,12 +195,12 @@ msgstr "Votre serveur sera répertorié dans le serveur annuaire que les clients
 #, no-wrap
 msgid ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/en-screenshots/diagram-public-server.png\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Public Server\">\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-public-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Public Server\">\n"
 "<figcaption>How Public Servers work</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/fr-screenshots/diagram-public-server.png\" loading=\"lazy\" alt=\"Diagramme des connexions entre clients au sein d'un serveur public Jamulus\">\n"
+"\t<img src=\"{% include img/fr-screenshots/diagram-public-server.inc %}\" loading=\"lazy\" alt=\"Diagramme des connexions entre clients au sein d'un serveur public Jamulus\">\n"
 "<figcaption>Fonctionnement des serveurs publics</figcaption>\n"
 "</figure>\n"
 
@@ -218,12 +219,12 @@ msgstr "Il s'agit de la valeur par défaut lorsque vous démarrez un serveur pou
 #, no-wrap
 msgid ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/en-screenshots/diagram-private-server.png\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Private Server\">\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-private-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Private Server\">\n"
 "\t<figcaption>How Private Servers work</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/fr-screenshots/diagram-private-server.png\" loading=\"lazy\" alt=\"Diagramme des connexions entre clients au sein d'un serveur privé Jamulus\">\n"
+"\t<img src=\"{% include img/fr-screenshots/diagram-private-server.inc %}\" loading=\"lazy\" alt=\"Diagramme des connexions entre clients au sein d'un serveur privé Jamulus\">\n"
 "\t<figcaption>Fonctionnement des serveurs privés</figcaption>\n"
 "</figure>\n"
 
@@ -351,13 +352,13 @@ msgstr "## Largeur de bande du réseau"
 msgid ""
 "There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)\n"
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/en-screenshots/bandwidth-diagram.png\" loading=\"lazy\" alt=\"A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high\">\n"
+"\t<img src=\"{% include img/en-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high\">\n"
 "<figcaption>Calculate bandwidth use </figcaption>\n"
 "</figure>\n"
 msgstr ""
 "Il y a un amont (le musicien envoie au serveur) et un aval (le serveur renvoie le mix au musicien).\n"
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/fr-screenshots/bandwidth-diagram.png\" loading=\"lazy\" alt=\"Diagramme de la largeur de bande du réseau Jamulus pour différentes qualités audio, de faible à forte.\">\n"
+"\t<img src=\"{% include img/fr-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"Diagramme de la largeur de bande du réseau Jamulus pour différentes qualités audio, de faible à forte.\">\n"
 "<figcaption>Calculer l'utilisation de la bande passante </figcaption>\n"
 "</figure>\n"
 
@@ -396,8 +397,8 @@ msgstr "## Configuration du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:152
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/server-window-setup.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/server-window-setup.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de configuration du serveur Jamulus\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de configuration du serveur Jamulus\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:154
@@ -451,8 +452,8 @@ msgstr "## Options"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:177
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/server-window-options.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus server window options\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/server-window-options.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre options du serveur Jamulus\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus server window options\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre options du serveur Jamulus\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:179

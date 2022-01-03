@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-21 07:46+0100\n"
+"PO-Revision-Date: 2022-01-03 16:32+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -14,6 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -89,12 +90,12 @@ msgstr "# Hoofdvenster"
 #, no-wrap
 msgid ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/en-screenshots/main-screen-medium.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus main window\">\n"
+"\t<img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus main window\">\n"
 "\t<figcaption>Your local mix when connected to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/nl-screenshots/main-screen-medium.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus hoofdvenster\">\n"
+"\t<img src=\"{% include img/nl-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus hoofdvenster\">\n"
 "\t<figcaption>Je eigen mix wanneer je verbinding hebt met een server</figcaption>\n"
 "</figure>\n"
 
@@ -117,8 +118,8 @@ msgstr "**Vertraging** toont de totale vertraging berekend op basis van de huidi
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/led-green.png\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/led-green.png\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelindg van een groen LED symbool\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelindg van een groen LED symbool\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:38
@@ -128,8 +129,8 @@ msgstr "**Groen** - De vertraging is perfect voor een jam sessie\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/led-yellow.png\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/led-yellow.png\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelding van een geel LED symbool\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelding van een geel LED symbool\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:42
@@ -139,8 +140,8 @@ msgstr "**Geel** - Een sessie is nog steeds mogelijk maar het kan moeilijker zij
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/led-red.png\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/led-red.png\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"afbeelding van een rood LED symbool\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"afbeelding van een rood LED symbool\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:46
@@ -226,8 +227,8 @@ msgstr "Opent een venster waarin je een server kunt selecteren om verbinding mee
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:82
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/connection-setup-window.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a server connection window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/connection-setup-window.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het server verbindingsvenster\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het server verbindingsvenster\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:84
@@ -251,8 +252,8 @@ msgstr "## Server audio mengpaneel"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:94
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/mixer-channles.png\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/mixer-channles.png\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van een paar server mixer opties\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van een paar server mixer opties\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:97
@@ -341,8 +342,8 @@ msgstr "In het Instellingen menu kies je \"Mijn profiel...\" om je alias/naam di
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:132
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-profile.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/settings-profile.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het profiel venster\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het profiel venster\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:134
@@ -351,8 +352,8 @@ msgstr "Als je een instrument en/of land instelt, worden de pictogrammen voor de
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:136
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/profile-tooltip.png\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/profile-tooltip.png\" style=\"width:30%;\" loading=\"lazy\" alt=\"afbeelding van een tooltop waarin de profiel informatie zichtbaar is\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"afbeelding van een tooltop waarin de profiel informatie zichtbaar is\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:138
@@ -381,8 +382,8 @@ msgstr "## Audio-/netwerk-instellingen"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:148
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het audio-/netwerk-instellingen venster\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het audio-/netwerk-instellingen venster\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:150
@@ -401,8 +402,8 @@ msgstr "### In-/uitvoerkanaaltoewijzing"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:157
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/channel-mapping.png\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/channel-mapping.png\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"afbeelding van invoer- en uitvoerkanaaltoewijzing\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"afbeelding van invoer- en uitvoerkanaaltoewijzing\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:161
@@ -564,8 +565,8 @@ msgstr "## Geavanceerde instellingen"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:234
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/nl-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het geavanceeerde instellingen venster\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het geavanceeerde instellingen venster\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:236
