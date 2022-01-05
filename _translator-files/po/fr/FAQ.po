@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-31 08:50+0100\n"
+"PO-Revision-Date: 2022-01-03 16:16+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/FAQ.md:1
@@ -170,8 +171,8 @@ msgstr "### Comment fonctionne Jamulus (en général) ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:58
-msgid "<img src=\"{{site.url}}/assets/img/en-screenshots/diagram-overview.png\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">"
-msgstr "<img src=\"{{site.url}}/assets/img/fr-screenshots/diagram-overview.png\" loading=\"lazy\" alt=\"Diagramme montrant le fonctionnement de Jamulus\">"
+msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">"
+msgstr "<img src=\"{% include img/fr-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagramme montrant le fonctionnement de Jamulus\">"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61

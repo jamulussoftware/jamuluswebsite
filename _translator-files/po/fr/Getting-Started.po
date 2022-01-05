@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-01-02 17:39+0100\n"
+"PO-Revision-Date: 2022-01-03 16:15+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -132,12 +132,12 @@ msgstr "Lorsque vous ouvrez Jamulus, vous verrez une fenêtre qui ressemble à c
 #, no-wrap
 msgid ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/en-screenshots/main-screen-default.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/en-screenshots/main-screen-default.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>The main window before you connect to a server</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/fr-screenshots/main-screen-default.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/fr-screenshots/main-screen-default.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>La fenêtre principale avant de se connecter à un serveur</figcaption>\n"
 "</figure>\n"
 
@@ -156,12 +156,12 @@ msgstr "Tout d'abord, faites savoir aux autres qui vous êtes. Cliquez sur le bo
 #, no-wrap
 msgid ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/en-screenshots/settings-profile.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/en-screenshots/settings-profile.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>Let people know who you are</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/fr-screenshots/settings-profile.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/fr-screenshots/settings-profile.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>Laissez les gens savoir qui vous êtes</figcaption>\n"
 "</figure>\n"
 
@@ -196,12 +196,12 @@ msgstr "Utilisez maintenant le bouton \"Connecter\" dans la fenêtre principale 
 #, no-wrap
 msgid ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/en-screenshots/connection-setup-window.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" loading=\"lazy\" alt=\"Screenshot of the connection window\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>Connect to a server</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/fr-screenshots/connection-setup-window.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/fr-screenshots/connection-setup-window.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>Connexion à un serveur</figcaption>\n"
 "</figure>\n"
 
@@ -230,12 +230,12 @@ msgstr "Une fois votre son configuré, vous êtes prêt à jouer. Lorsque vous v
 #, no-wrap
 msgid ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/en-screenshots/main-screen-medium.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>The main window when you are connected to a sever</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/fr-screenshots/main-screen-medium.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/fr-screenshots/main-screen-medium.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>La fenêtre principale lorsque vous êtes connecté à un serveur</figcaption>\n"
 "</figure>\n"
 

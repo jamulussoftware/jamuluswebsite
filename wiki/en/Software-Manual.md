@@ -22,7 +22,7 @@ This manual documents the Jamulus client application for use by musicians and si
 
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
+	<img src="{% include img/en-screenshots/main-screen-medium.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
 	<figcaption>Your local mix when connected to a Server</figcaption>
 </figure>
 
@@ -32,15 +32,15 @@ This manual documents the Jamulus client application for use by musicians and si
 
 **Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-green.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
 
 **Green** - The delay is perfect for a jam session
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-yellow.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-yellow.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
 
 **Yellow** - A session is still possible but it may be harder to play
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-red.inc %}" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
 
 **Red** - The delay is too large for jamming
 
@@ -78,7 +78,7 @@ open automatically for all clients.
 Opens a dialogue where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a server connection window"></figure>
+<figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
 The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
@@ -90,7 +90,7 @@ field. An optional port number can be added after the address using a colon as a
 
 ## Server audio mixer
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
+<figure><img src="{% include img/en-screenshots/mixer-channels.inc %}" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
 
 The audio mixer screen shows each user connected to the server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
@@ -128,11 +128,11 @@ If the server operator has enabled recording, you will see a message above the m
 From the Settings menu, select "My Profile..." to set your Alias/Name
 which is displayed below your fader in the server audio mixer board.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-profile.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
 
 If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+<figure><img src="{% include img/en-screenshots/profile-tooltip.inc %}" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
 
 ### Skin
 
@@ -144,7 +144,7 @@ This sets the number of rows displayed in the server audio mixer, for use with l
 
 ## Audio/Network Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-network.png" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-network.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
 
 ### Device
 
@@ -153,7 +153,7 @@ driver is not valid an error message is shown and the previous valid driver is s
 
 ### Input/output channel mapping
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/channel-mapping.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
+<figure><img src="{% include img/en-screenshots/channel-mapping.inc %}" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
 
 If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
@@ -230,7 +230,7 @@ rate is not higher than your available internet upload speed (check this with a 
 
 ## Advanced Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-advanced.png" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-advanced.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
 
 ### Custom directory server address
 

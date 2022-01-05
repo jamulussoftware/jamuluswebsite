@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-01-02 18:09+0100\n"
+"PO-Revision-Date: 2022-01-04 19:22+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -93,12 +93,12 @@ msgstr "# Fenêtre principale"
 #, no-wrap
 msgid ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/en-screenshots/main-screen-medium.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus main window\">\n"
+"\t<img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus main window\">\n"
 "\t<figcaption>Your local mix when connected to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/fr-screenshots/main-screen-medium.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre principale de Jamulus\">\n"
+"\t<img src=\"{% include img/fr-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre principale de Jamulus\">\n"
 "\t<figcaption>Votre mixage local lorsqu'il est connecté à un serveur</figcaption>\n"
 "</figure>\n"
 
@@ -121,8 +121,8 @@ msgstr "Le délai global est calculé à partir du temps de ping actuel et du d�
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/led-green.png\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/led-green.png\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image d'un symbole diode verte\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image d'un symbole diode verte\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:38
@@ -132,8 +132,8 @@ msgstr "**Vert** - Le délai est parfait pour une session de boeuf\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/led-yellow.png\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/led-yellow.png\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image d'un symbole diode jaune\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image d'un symbole diode jaune\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:42
@@ -143,8 +143,8 @@ msgstr "**Jaune** - Une session est toujours possible mais elle peut être plus 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/led-red.png\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/led-red.png\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image d'un symbole diode rouge\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image d'un symbole diode rouge\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:46
@@ -230,8 +230,8 @@ msgstr "Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:82
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/connection-setup-window.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a server connection window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/connection-setup-window.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une fenêtre de connexion au serveurs\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une fenêtre de connexion au serveurs\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:84
@@ -255,8 +255,8 @@ msgstr "## Mélangeur audio du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:94
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/mixer-channles.png\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/mixer-channles.png\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une paire de commandes de mélangeur de serveur\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une paire de commandes de mélangeur de serveur\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:97
@@ -345,8 +345,8 @@ msgstr "Dans le menu Paramètres, sélectionnez \"Mon profil...\" pour définir 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:132
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-profile.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/settings-profile.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de profil\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de profil\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:134
@@ -355,8 +355,8 @@ msgstr "Si un instrument et/ou un pays est défini, les icônes de ces sélectio
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:136
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/profile-tooltip.png\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/profile-tooltip.png\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image d'une infobulle montrant les informations du profil\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image d'une infobulle montrant les informations du profil\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:138
@@ -385,8 +385,8 @@ msgstr "## Configuration audio/réseau"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:148
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/settings-network.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre des paramètres audio/réseau\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre des paramètres audio/réseau\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:150
@@ -405,8 +405,8 @@ msgstr "### Mappage des canaux d'entrée/sortie"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:157
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/channel-mapping.png\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/channel-mapping.png\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image du mappage des canaux d'entrée et de sortie\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image du mappage des canaux d'entrée et de sortie\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:161
@@ -568,8 +568,8 @@ msgstr "## Configuration avancée"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:234
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/settings-advanced.png\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre paramètres avancés\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre paramètres avancés\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:236

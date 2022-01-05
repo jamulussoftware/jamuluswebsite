@@ -125,10 +125,15 @@ msgstr "Quando você abre o Jamulus, você vê a seguinte janela parecida com es
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:42
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<figure>\n"
+#| "  <img src=\"{{site.url}}/assets/img/en-screenshots/main-screen-default.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+#| "  <figcaption>The main window before you connect to a server</figcaption>\n"
+#| "</figure>\n"
 msgid ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/en-screenshots/main-screen-default.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/en-screenshots/main-screen-default.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>The main window before you connect to a server</figcaption>\n"
 "</figure>\n"
 msgstr ""
@@ -151,10 +156,15 @@ msgstr "Primeiro, deixe os outros saberem quem você é. Clique em “Ver” (ba
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:52
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<figure>\n"
+#| "  <img src=\"{{site.url}}/assets/img/en-screenshots/settings-profile.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+#| "  <figcaption>Let people know who you are</figcaption>\n"
+#| "</figure>\n"
 msgid ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/en-screenshots/settings-profile.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/en-screenshots/settings-profile.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>Let people know who you are</figcaption>\n"
 "</figure>\n"
 msgstr ""
@@ -191,10 +201,15 @@ msgstr "Agora use o botão “Conectar” na janela principal do Jamulus para se
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:68
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<figure>\n"
+#| "  <img src=\"{{site.url}}/assets/img/en-screenshots/connection-setup-window.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+#| "  <figcaption>Connect to a server</figcaption>\n"
+#| "</figure>\n"
 msgid ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/en-screenshots/connection-setup-window.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" loading=\"lazy\" alt=\"Screenshot of the connection window\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>Connect to a server</figcaption>\n"
 "</figure>\n"
 msgstr ""
@@ -225,10 +240,15 @@ msgstr "Com o sistema configurado, você está pronto para começar. Quando voc�
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:81
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<figure>\n"
+#| "  <img src=\"{{site.url}}/assets/img/en-screenshots/main-screen-medium.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+#| "  <figcaption>The main window when you are connected to a sever</figcaption>\n"
+#| "</figure>\n"
 msgid ""
 "<figure>\n"
-"  <img src=\"{{site.url}}/assets/img/en-screenshots/main-screen-medium.png\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
 "  <figcaption>The main window when you are connected to a sever</figcaption>\n"
 "</figure>\n"
 msgstr ""

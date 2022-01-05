@@ -66,7 +66,7 @@ Use this mode when you want anyone to join your server, whoever they are.
 Your server will be listed in the Directory that clients use by default. Musicians can then discover and connect to your server.
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/diagram-public-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus Public Server">
+	<img src="{% include img/en-screenshots/diagram-public-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Public Server">
 <figcaption>How Public Servers work</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ This is the default when starting a server for the first time. Private Servers a
 
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/diagram-private-server.png" loading="lazy" alt="Diagram of connections between clients within a Jamulus Private Server">
+	<img src="{% include img/en-screenshots/diagram-private-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Private Server">
 	<figcaption>How Private Servers work</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ With the following units
 
 There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/bandwidth-diagram.png" loading="lazy" alt="A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high">
+	<img src="{% include img/en-screenshots/bandwidth-diagram.inc %}" loading="lazy" alt="A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high">
 <figcaption>Calculate bandwidth use </figcaption>
 </figure>
 
@@ -148,7 +148,7 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 ## Server Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-setup.png" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
+<figure><img src="{% include img/en-screenshots/server-window-setup.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
 ### Make My Server Public
 
@@ -173,7 +173,7 @@ The text entered here appears to all users when they join the server (the chat w
 ## Options
 
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/server-window-options.png" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of Jamulus server window options"></figure>
+<figure><img src="{% include img/en-screenshots/server-window-options.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of Jamulus server window options"></figure>
 
 ### Recording Directory
 
