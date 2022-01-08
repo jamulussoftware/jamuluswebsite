@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-31 08:53+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Windows.md:1
@@ -57,7 +58,7 @@ msgstr "Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite berei
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:15
 msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
-msgstr ""
+msgstr "Updatest du? Es macht Sinn die [Konfiguration](Software-Manual#backing-up-jamulus) zu sichern."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:17
@@ -93,7 +94,7 @@ msgstr "**Starte Jamulus**. Jetzt kannst du Jamulus wie jedes andere Programm ö
 #: ../wiki/en/Installation-for-Windows.md:22
 #, no-wrap
 msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
-msgstr ""
+msgstr "**Richte deine Soundkarte ein**. Wenn du fertig bist, musst du deine Audiohardware einrichten. Wenn du ASIO4ALL nutzt, sieh dir die Anleitung zur Einrichtung von ASIO4ALL unten an.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:24
@@ -149,13 +150,13 @@ msgstr "### ASIO4ALL einrichten"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:43
 msgid "You may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything."
-msgstr ""
+msgstr "Je nach Hardware musst du ein bisschen herumprobieren. Wenn alles funktioniert, musst du nichts tun."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:45
 #, no-wrap
 msgid "**Tip:** Set up your sound card while you're [connected to a server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
-msgstr ""
+msgstr "**Tipp:** Richte deine Sondkarte ein, während du [mit einem Server verbunden bist](Getting-Started#mit-einem-server-verbinden-und-audio-testen), damit du dein Instrument oder deine Stimme hören kannst. Dadurch kannst du prüfen, ob alles richtig eingerichtet ist, aber lies ersteinmal weiter.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:48
@@ -166,9 +167,7 @@ msgstr "Bevor du Jamulus startest:"
 #: ../wiki/en/Installation-for-Windows.md:49
 #, no-wrap
 msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
-msgstr ""
-"**Schließe alle anderen Programme** (besonders die, die (wie z.B. dein Browser/Media Player) auf deine Soundkarte zugreifen könnten), weil Jamulus exklusiven Zugriff auf die Soundkarte benötigt. Andere Programme werden keinen Ton ausgeben/aufnehmen können, wenn Jamulus mit ASIO4ALL läuft.\n"
-"\n"
+msgstr "**Schließe alle anderen Programme** (besonders die, die (wie z.B. dein Browser/Media Player) auf deine Soundkarte zugreifen könnten). ASIO4ALL benötigt exklusiven Zugriff auf die Soundkarte, das bedeutet, dass andere Programme keinen Ton ausgeben/aufnehmen können, wenn Jamulus mit ASIO4ALL läuft.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:50
@@ -209,7 +208,7 @@ msgstr "Öffne deine Soundkarte über das _Plus-Icon_ neben der Soundkarte, um d
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:59
 msgid "Now enable the correct inputs/outputs in the list under your sound card and disable everything else. You can hover over the inputs/outputs to see which of both they are and if they support the required sample rate for Jamulus of 48kHz (DVD quality)."
-msgstr "Aktiviere die richtigen Ein/Ausgänge in der Liste unter deiner Soundkarte und deaktiviere alle anderen Ein/Ausgänge. Du kannst über den Ein/Ausgängen hovern (mit dem Mauszeiger auf über dem Ein/Ausgang ruhen) ob sie die richtige Sample Rate für Jamulus unterstützen (48kHz; DVD-Qualität)"
+msgstr "Aktiviere die richtigen Ein/Ausgänge in der Liste unter deiner Soundkarte und deaktiviere alle anderen Ein/Ausgänge. Du kannst über den Ein/Ausgängen hovern (mit dem Mauszeiger auf über dem Ein/Ausgang ruhen) ob sie die richtige Sample Rate für Jamulus unterstützen (48kHz; DVD-Qualität)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:61
@@ -233,9 +232,7 @@ msgstr "Kopfhörer und Lautsprecher werden oft als „Output“ und Mikrofone al
 #: ../wiki/en/Installation-for-Windows.md:64
 #, no-wrap
 msgid "Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
-msgstr ""
-"Stereo Mix/Stereo Input ist normalerweise nicht der Ein-/Ausgang, den du brauchst. Wenn du diesen Ein-/Ausgang siehst, solltest du ihn ausschalten.\n"
-"\n"
+msgstr "Stereo Mix/Stereo Input ist normalerweise nicht der Ein-/Ausgang, den du brauchst. Wenn du diesen Ein-/Ausgang siehst, solltest du ihn ausschalten.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:66
@@ -249,7 +246,6 @@ msgstr "Wenn es scheint, das nichts funktioniert, versuche zuerst Jamulus und/od
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:70
-#, fuzzy
 #| msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. browser, Zoom, etc)."
 msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons in the ASIO4ALL settings. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. web browser, Zoom, etc)."
 msgstr "Danach versuche *die Ein-/Ausgänge nochmal neu einzurichten*. Aktivierte und zugängliche Ein-/Ausgänge zeigen ein leuchtendes An/Aus- und ein Play-Symbol. Wenn du ein rotes Kreuz oder ein gelbes Symbol siehst, musst du eventuell andere Anwendungen schließen (z.B. deinen Browser, Zoom, usw.) oder deinen PC neu starten."
