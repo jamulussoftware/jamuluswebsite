@@ -41,7 +41,6 @@ Once any issues with musicians have been solved in this way, you can then invest
 
 Unless you plan on hosting more than about 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up), then you are unlikely to run out of bandwidth. You can read more about network requirements at different quality settings later in this document.
 
-
 ### In general
 
 - Consider using a cloud host to get better ping times if you're having problems
@@ -53,7 +52,6 @@ Unless you plan on hosting more than about 5 players on a slower-speed home conn
 - Running an Uregistered Server at home will require you to [port forward](#running-an-unregistered-server) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
 
 - Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the client and server. There are plans to expand IPv6 support.
-
 
 # Server Types
 
@@ -68,17 +66,14 @@ Your server will be listed in a Directory. By default, Jamulus has a list of Pub
 <figcaption>How Registered Servers work</figcaption>
 </figure>
 
-
 ### 2. Unregistered 
 
 This is the default when starting a server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a server.
-
 
 <figure>
 	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Unregistered Server">
 	<figcaption>How Unregistered Servers work</figcaption>
 </figure>
-
 
 ### 3. Custom Directory
 
@@ -88,9 +83,7 @@ To view servers listed by a Custom Directory, musicians must enter its address i
 
 Up to 150 servers can then register with your Directory by setting your Directory address in their `--directoryserver` option at startup.
 
-<!-- can be done in GUI now, so move to relevant GUI/CLUI sections 
-To run a server as a Directory, it should be configured with `--directoryserver localhost` (that is, making itself the Directory to query for servers).
--->
+To run a server as a Directory, it should be configured with `--directoryserver localhost` (that is, making itself the Directory to query for servers). When running a server with the GUI, select "Custom" from the Directory drop-down list. 
 
 #### Points to note about Custom Directories
 
@@ -148,22 +141,17 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 <figure><img src="{% include img/en-screenshots/server-window-setup.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
-<!-- sort out this section pending on the UI -->
-### Make My Server Public
+### The Directory list 
 
-By default, you will be running a Private Server and need to [read these instructions](#running-a-private-server) to have others connect to you in this mode.
+**None**: By default, you will not be connected to a directory and will be running in unregistered mode.  [Read these instructions](#running-an-unregistered-server) to have other people connect to your server in this mode.
 
-When making your server public, you should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available.
+**Genre**: To allow other people to see your server on one of the built-in public directories, select your desired genre directory. You should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available.  
 
-
-### Genre
-
-Because there is a limit of 150 servers per Directory, you need to select which Directory Server you want to advertise your server on. Select a genre if you intend to limit players to that style (players can then see your server in their genre list). This will make your server appear in the relevant server list for clients.
-
+**Custom**: This sets your server to be a directory on which other servers can be listed. Note that when setting this mode, you may want also to specify the location of server list file (See "Options" below) unless you want to disconnect all listed servers when restarting Jamulus.  
 
 ### My Server Info
 
-Type in the name, city and country so that other users can easily identify you.
+When running as a registered server this displays the server's name, city and country so that other users can easily identify it in the directory listing.
 
 ### Chat Welcome Message
 
@@ -180,14 +168,17 @@ This sets the path to where server's recording will be stored. With this path se
 
 **Note**: When your server is recording, clients will display a message that recording is on.
 
-### Delay panning
-
-This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal "volume" panning. Note that to achieve the effect, all clients should be set to 'mono in / stereo out' (or to 'stereo', but only if transmitting a stereo signal).
-
 ### Custom Directory Server Address
 
 Leave this field empty unless you need to list your server on a [Custom Directory](#3-directory)
 
+### Server List Filename
+
+If you are running your server as a custom directory and need to restart it for any reason (for example when rebooting the host), servers connected to it will be disconnected until they re-register. This does not mean that clients connected to those servers will be disconnected, but does mean that new clients will be not able to see servers listed by your directory until those servers reconnect. To enable the list of registered servers to persist between restarts, specify the location and name of a file that the directory can read and write to here.  
+
+### Delay panning
+
+This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal "volume" panning. Note that to achieve the effect, all clients should be set to 'mono in / stereo out' (or to 'stereo', but only if transmitting a stereo signal).
 
 ### Start Minimised
 

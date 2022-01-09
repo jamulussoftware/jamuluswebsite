@@ -54,6 +54,11 @@ Set your Directory (genre) server using the `--directoryserver` (`-e`) option as
 |**Genre Classical/Folk** |`classical.jamulus.io:22524`|
 |**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
 
+
+### Running a Custom Directory
+
+Set the server to use itself (in most cases this will be `localhost`) as the Directory with the `-e` or `--directoryserver` option. Note also that you may want to set the `--directoryfile` option. See [this explanation](Running-a-Server#server-list-filename). 
+
 ### Viewing The Logs
 
 Jamulus will log to the system log file if you left the `StandardOutput=journal` setting in the unit file. 
