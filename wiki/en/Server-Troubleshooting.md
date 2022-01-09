@@ -23,7 +23,7 @@ permalink: "/wiki/Server-Troubleshooting"
 
 ### Why doesn't my server show up in the list? Why isn't it registering?
 
-If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your client with a config option).
+If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router.
 
 If you are seeing a message that says the server is full, you will need to wait until a slot becomes free.
 
