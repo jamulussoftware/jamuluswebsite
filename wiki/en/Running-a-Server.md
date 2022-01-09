@@ -90,7 +90,7 @@ To view servers listed by a Custom Directory, musicians must enter its address i
 
 Up to 150 servers can then register with your Directory by setting your Directory address in their `--directoryserver` option at startup.
 
-<!-- remove? 
+<!-- can be done in GUI now, so move to relevant GUI/CLUI sections 
 To run a server as a Directory, it should be configured with `--directoryserver localhost` (that is, making itself the Directory to query for servers).
 -->
 
