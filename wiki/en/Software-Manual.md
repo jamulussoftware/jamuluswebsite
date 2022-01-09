@@ -86,7 +86,7 @@ Use the List dropdown to select a genre, click on the server you want to join an
 
 You can filter the list by server name or location using the Filter field. To list only occupied servers, enter a "#" character.
 
-If you know the address of an unregistered server, you can connect to it using the Server Address field. A port number may also be needed if the server is not running on the default port 22124 e.g,`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets, e.g. `[fe80::7285:c2ff:fe80:f4ae]:22345`).
+If you know the address of a server, you can connect to it using the Server Address field. A port number will also be needed if the server is not running on the default port 22124 e.g,`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets, e.g. `[fe80::7285:c2ff:fe80:f4ae]:22345`).
 
 ## Server audio mixer
 
