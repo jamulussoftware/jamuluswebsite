@@ -188,7 +188,7 @@ This option uses small differences in sound arrival time between the two ears. I
 
 # Running an Unregistered Server
 
-It is highly recommended to test your server on a **Public Directory** first so as to narrow down any subsequent problems in uregistered mode.
+It is highly recommended to test your server on a **Public Directory** first so as to narrow down any subsequent problems in unregistered mode.
 
 ### Port forwarding 
 
