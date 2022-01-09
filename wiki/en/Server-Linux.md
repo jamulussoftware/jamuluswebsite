@@ -55,9 +55,9 @@ Set your Directory (genre) server using the `--directoryserver` (`-e`) option as
 |**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
 
 
-### Running a Custom Directory
+### Running as a Directory
 
-Set the server to use itself (in most cases this will be `localhost`) as the Directory with the `-e` or `--directoryserver` option. Note also that you may want to set the `--directoryfile` option. See [this explanation](Running-a-Server#server-list-filename). 
+Set the server to use itself ('localhost' or '127.0.0.1') as the Directory with the `-e` or `--directoryserver` option. Note also that you may want to set the `--directoryfile` option. See [this explanation](Running-a-Server#server-list-filename). 
 
 ### Viewing The Logs
 
