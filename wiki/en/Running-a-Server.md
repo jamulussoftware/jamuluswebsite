@@ -83,7 +83,7 @@ To view servers listed by a Custom Directory, musicians must enter its address i
 
 Up to 150 servers can then register with your Directory by setting your Directory address in their `--directoryserver` option at startup.
 
-To run a server as a Directory, it should be configured with `--directoryserver localhost` (that is, making itself the Directory to query for servers). When running a server with the GUI, select "Custom" from the Directory drop-down list. 
+To run a server as a Directory, it should be configured with `--directoryserver` (that is, making itself the Directory to query for servers). When running a server with the GUI, select "Custom" from the Directory drop-down list. 
 
 #### Points to note about Directories
 
@@ -174,11 +174,11 @@ Leave this field empty unless you need to list your server on a [Custom Director
 
 ### Server List Filename
 
-If you are running your server as a custom directory and need to restart it for any reason (for example when rebooting the host), servers connected to it will be disconnected until they re-register. This does not mean that clients connected to those servers will be disconnected, but does mean that new clients will be not able to see servers listed by your directory until those servers reconnect. To enable the list of registered servers to persist between restarts, specify the location and name of a file that the directory can read and write to here.  
+If you are running your server as a Directory and need to restart it for any reason (for example when rebooting the host), servers connected to it will be disconnected until they re-register. This does not mean that clients connected to those servers will be disconnected, but does mean that new clients will be not able to see servers listed by your directory until those servers reconnect. To enable the list of registered servers to persist between restarts, specify the location and name of a file that the directory can read and write to here.  
 
 ### Delay panning
 
-This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal "volume" panning. Note that to achieve the effect, all clients should be set to 'mono in / stereo out' (or to 'stereo', but only if transmitting a stereo signal).
+This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal "volume" panning. 
 
 ### Start Minimised
 
