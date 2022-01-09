@@ -28,9 +28,9 @@ Bear in mind also that all participants should follow [The Golden Rule](/wiki/Cl
 
 ### How do I know if I can join a server? Are there rules?
 
-In general, if somebody sets up a Registered Server, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
+In general, if somebody lists a Server on one of the Public Directories provided by Jamulus by default, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms built in. However, some servers may state their policies in the welcome message you will see in the chat window.
 
-You can also set up Unregistered Server on Jamulus and give others your address to connect to that. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types).
+Note also that servers do not have to be registered on a Directory in order for Jamulus clients to connect to them. Server operators can simply give out the address of their  servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types).
 
 ### Why shouldn’t I use wireless equipment?
 
@@ -57,7 +57,7 @@ No. If you just intend to connect to other people’s servers, then all you need
 <img src="{% include img/en-screenshots/diagram-overview.inc %}" loading="lazy" alt="Diagram showing how Jamulus works">
 
 
-Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is registered in a Jamulus directory, the server's information will be broadcast to all clients using that directory.
+Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is registered in a Jamulus directory, the server's information will be provided to all clients using that directory.
 
 ### Why doesn't Jamulus provide video support?
 
