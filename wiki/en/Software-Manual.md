@@ -80,11 +80,13 @@ pressing this button will end the session.
 
 <figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). 
 
-You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
+Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
-If you know the address an unregistered server, you can connect to it using the Server Address field. An optional port number can be added after the address using a colon as a separator, e.g,`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses.
+You can filter the list by server name or location using the Filter field. To list only occupied servers, enter a "#" character.
+
+If you know the address of an unregistered server, you can connect to it using the Server Address field. A port number may also be needed if the server is not running on the default port 22124 e.g,`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets, e.g. `[fe80::7285:c2ff:fe80:f4ae]:22345`).
 
 ## Server audio mixer
 
