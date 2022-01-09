@@ -17,7 +17,7 @@ If you want to run a server on a Raspberry Pi, you will need to [compile from so
 1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
 1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`
 1. Enable the headless server process via systemd: `sudo systemctl enable jamulus-headless`
-1. Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running a private server).
+1. Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running an Unregistered Server).
 1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless server: `sudo systemctl restart jamulus-headless`
 1. Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt).
 
@@ -29,9 +29,9 @@ You can control Jamulus with the `systemctl` command. For example, to stop the s
 
 `sudo systemctl stop jamulus-headless`
 
-### Running in public mode
+### Running in Registered mode
 
-The following minimum setup is required to [run a public server](Running-a-Server#server-types):
+The following minimum setup is required to [run a Registered Server](Running-a-Server#server-types):
 
 ~~~
 jamulus --nogui --server \

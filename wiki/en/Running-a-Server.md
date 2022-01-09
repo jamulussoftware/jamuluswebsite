@@ -50,7 +50,7 @@ Unless you plan on hosting more than about 5 players on a slower-speed home conn
 
 - Running a server may require you to adjust any firewalls running on or outside of your machine or cloud host.
 
-- Running an Uregistered Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
+- Running an Uregistered Server at home will require you to [port forward](#running-an-unregistered-server) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
 
 - Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the client and server. There are plans to expand IPv6 support.
 
@@ -69,7 +69,6 @@ Your server will be listed in a Directory. By default, Jamulus has a list of Pub
 </figure>
 
 
-
 ### 2. Unregistered 
 
 This is the default when starting a server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a server.
@@ -79,7 +78,6 @@ This is the default when starting a server for the first time. Unregistered Serv
 	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Unregistered Server">
 	<figcaption>How Unregistered Servers work</figcaption>
 </figure>
-
 
 
 ### 3. Custom Directory
@@ -150,6 +148,7 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 <figure><img src="{% include img/en-screenshots/server-window-setup.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of the Jamulus server setup window"></figure>
 
+<!-- sort out this section pending on the UI -->
 ### Make My Server Public
 
 By default, you will be running a Private Server and need to [read these instructions](#running-a-private-server) to have others connect to you in this mode.

@@ -84,7 +84,7 @@ The Connection Setup window shows a list of available servers together with the 
 
 You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
 
-If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address
+If you know the IP address or URL of unregistered server, you can connect to it using the Server Name/Address
 field. An optional port number can be added after the address using a colon as a separator, e.g,
 `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses.
 

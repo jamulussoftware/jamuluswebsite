@@ -28,9 +28,9 @@ Bear in mind also that all participants should follow [The Golden Rule](/wiki/Cl
 
 ### How do I know if I can join a server? Are there rules?
 
-In general, if somebody sets up a public server, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
+In general, if somebody sets up a Registered Server, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window.
 
-You can also set up a private server on Jamulus and give others your address to connect to that. Have a look at [this page for more information](/wiki/Running-a-Server).
+You can also set up Unregistered Server on Jamulus and give others your address to connect to that. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types).
 
 ### Why shouldn’t I use wireless equipment?
 
@@ -57,7 +57,7 @@ No. If you just intend to connect to other people’s servers, then all you need
 <img src="{% include img/en-screenshots/diagram-overview.inc %}" loading="lazy" alt="Diagram showing how Jamulus works">
 
 
-Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a public directory, its information will be broadcast to all clients.
+Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is registered in a Jamulus directory, the server's information will be broadcast to all clients using that directory.
 
 ### Why doesn't Jamulus provide video support?
 
@@ -66,10 +66,10 @@ Adding video support adds a lot of complexity. You can use other software like J
 
 ## Server FAQ
 
-### Why do public servers not need port forwarding?
+### Why do Registered Servers not need port forwarding?
 
-Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In public server mode, when your Jamulus server connects to a Directory Server it of course initiates an outbound connection. From then on, the Directory Server sends (established/related) connection “pings” (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall.
+Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall.
 
-However, in private mode, clients have to **initiate** connections into the server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding.
+However, in Unregistered mode, clients have to **initiate** connections into the server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding.
 
 
