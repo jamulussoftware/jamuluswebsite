@@ -23,7 +23,7 @@ permalink: "/wiki/Running-a-Server"
 
 The short answer is **no**. For various reasons, you should try to use other people's servers, at least at first while getting your sound set up with the Jamulus client.
 
-Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your server.
+Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your server (note that this does not stop them from using the chat function, or seeing your profile information).
 
 If you do decide to run a server, please read the following. Setting up a server is easy, however it is better to know the theory first:
 
@@ -85,11 +85,11 @@ Up to 150 servers can then register with your Directory by setting your Director
 
 To run a server as a Directory, it should be configured with `--directoryserver localhost` (that is, making itself the Directory to query for servers). When running a server with the GUI, select "Custom" from the Directory drop-down list. 
 
-#### Points to note about Custom Directories
+#### Points to note about Directories
 
 - If you want to control which servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option. See the section on command line options later in this document.
 
-- When running a Directory behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the server(s) being listed by your Directory. This is necessary to allow clients on the public Internet to connect to them via NAT. Note that for the servers using this option, you will still need proper port forwarding in your router/firewall.
+- When running a Directory behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the server(s) being listed by your Directory if those servers are on the same LAN / with the same public IP as the Directory. This is necessary to allow clients on the public Internet to connect to them via NAT. Note that for the servers using this option, you will still need proper port forwarding in your router/firewall.
 
 
 # Bandwidth use
@@ -143,11 +143,11 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 ### The Directory list 
 
-**None**: By default, you will not be connected to a directory and will be running in unregistered mode.  [Read these instructions](#running-an-unregistered-server) to have other people connect to your server in this mode.
+**None**: By default, you will not be connected to a directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your server in this mode.
 
 **Genre**: To allow other people to see your server on one of the built-in public directories, select your desired genre directory. You should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available.  
 
-**Custom**: This sets your server to be a directory on which other servers can be listed. Note that when setting this mode, you may want also to specify the location of server list file (See "Options" below) unless you want to disconnect all listed servers when restarting Jamulus.  
+**Custom**: This sets your server to be a directory on which other servers can be listed. Note that when setting this mode, you may want also to specify the location of server list file (See "Options" below) unless you want to disconnect all listed servers when restarting Jamulus.
 
 ### My Server Info
 
@@ -192,7 +192,7 @@ It is highly recommended to test your server on a **Public Directory** first so 
 
 ### Port forwarding 
 
-If you are running a server on your home network, people from outside will not be able to see things inside it. So if you want to operate a Jamulus server, you need to open a hole in your router to let Jamulus clients connect to it   
+If you are running a server on your home network, people from outside will not be able to see things inside it. So if you want to operate a Jamulus server, you need to open a hole in your router to let Jamulus clients connect to it.
 
 **The default port for the current version of Jamulus is UDP (not TCP) port 22124.**
 
@@ -208,7 +208,7 @@ Note also that your home router may also change the IP address of the machine th
 
 # Running a headless Linux server
 
-Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).   
+Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).
 
 # Backing up the server
 
