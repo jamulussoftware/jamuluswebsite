@@ -1,1 +1,0 @@
-../../../wiki/pt/footertext.md
