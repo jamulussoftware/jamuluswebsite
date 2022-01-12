@@ -43,10 +43,6 @@ This should be your **public** IP address (find that with [Google](https://www.g
 
 You can set your server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your server in the format `[serverAddress]:[portNumber]`.
 
-### **_Headless Linux_**: I have created a server but it is joining a directory and I don't want it to.
-
-To prevent registration, do not use the `--directoryserver` (`-e`) option when starting your server.
-
 ### Nobody can connect to my server - but I can connect locally
 
 Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space. This makes it impossible to host services like Jamulus at home (and may mean you also cannot see server lists in your client, or you may be missing [some specific servers](https://sourceforge.net/p/llcon/discussion/server/thread/f72b293af0/)).
