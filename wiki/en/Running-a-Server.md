@@ -184,6 +184,13 @@ This option uses small differences in sound arrival time between the two ears. I
 
 **Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.
 
+### Server status icon
+
+When the server is running, the operating system will show an icon in the system tray or status area to represent whether the server is active:  
+
+<figure><img src="{% include img/en-screenshots/server-inactive.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of the Jamulus server icon"></figure> The server is empty
+
+<figure><img src="{% include img/en-screenshots/server-active.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of the Jamulus server icon"></figure> The server is occupied
 
 
 # Running an Unregistered Server
