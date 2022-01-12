@@ -23,8 +23,10 @@ SRC_DIR="../wiki/en"
 # Directory where the po file folders are
 PO_DIR="../_translator-files/po"
 
-# Directory where the translated file folders will be
-TARG_DIR="../wiki"
+# Directories where the translated files will be
+WIKI_DIR="../wiki"
+DATA_DIR="../_data"
+INCLUDES_DIR="../_includes/wiki"
 
 # CHECK FOR PO4A INSTALLATION
 
@@ -49,12 +51,22 @@ if ! [ -d "$SRC_DIR" ] ; then
     exit 1
 fi
 
-# REMOVE TARGET FILE FOLDERS IF PRESENT BEFORE REGENERATING THEM
+# REMOVE TARGET FILES IF PRESENT BEFORE REGENERATING THEM
 
 for lang in $(ls "$PO_DIR") ; do
-    if [ -d "$TARG_DIR/$lang" ] ; then
-        rm -rf "$TARG_DIR/$lang"
-        echo "$lang" folder deleted
+    if [ -d "$WIKI_DIR/$lang" ] ; then
+        rm -rf "$WIKI_DIR/$lang"
+        echo "$lang" folder deleted from ./wiki
+    fi
+
+    if [ -d "$DATA_DIR/$lang" ] ; then
+        rm -rf "$DATA_DIR/$lang"
+        echo "$lang" folder deleted from ./_data
+    fi
+
+    if [ -d "$INCLUDES_DIR/$lang" ] ; then
+        rm -rf "$INCLUDES_DIR/$lang"
+        echo "$lang" folder deleted from ./_includes
     fi
 done
 
@@ -71,6 +83,17 @@ process_with_po4a () {
 
         # Get source doc names and set target file names and dirs
         filename=$(basename "$doc" .$ext)
+
+        if [[ $filename == 'general' || $filename == 'navigation' ]] ; then
+            TARG_DIR="$DATA_DIR"
+
+        elif [[ $filename == 'footertext' ]] ; then
+            TARG_DIR="$INCLUDES_DIR"
+
+        else
+            TARG_DIR="$WIKI_DIR"
+        fi
+
         targ_doc="$TARG_DIR/$lang/$filename.$ext"
 
         # Files excluded from the threshold requirement
