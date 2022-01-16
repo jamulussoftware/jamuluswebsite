@@ -88,7 +88,7 @@ You can filter the list by Server name or location using the Filter field. To li
 
 If you know the address of a Server, you can connect to it using the Server Address field. A port number will also be needed if the Server is not running on the default port 22124 e.g,`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets, e.g. `[fe80::7285:c2ff:fe80:f4ae]:22345`).
 
-For more information about Server types, see [this guide](Running-a-Server#server-types).
+For more information about Server types, see [the Server Administration guide](Running-a-Server#server-types).
 
 ## Server audio mixer
 
