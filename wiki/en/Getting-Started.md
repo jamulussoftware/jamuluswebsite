@@ -76,7 +76,7 @@ With your sound all set up, you are ready to go. When you connect to a Server (y
 
 <figure>
   <img src="{% include img/en-screenshots/main-screen-medium.inc %}" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
-  <figcaption>The main window when you are connected to a sever</figcaption>
+  <figcaption>The main window when you are connected to a Server</figcaption>
 </figure>
 
 If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other people. They won’t be able to tell you have done this though. But if you see a “mute” icon above a fader, that means they can’t hear you because they've muted your channel in their mix.
