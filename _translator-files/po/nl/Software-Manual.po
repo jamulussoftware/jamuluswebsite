@@ -658,28 +658,33 @@ msgid "You can save and load different mixer settings using [Load/Save Mixer Cha
 msgstr "Je kunt verschillende mixerinstellingen opslaan en laden met [Mixer kanaalinstellingen laden/opslaan](Software-Manual#bestand--mixer-kanaalinstellingen-ladenopslaan) en deze bestanden opslaan waar je maar wilt."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:275
-#, no-wrap
-msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
+#: ../wiki/en/Software-Manual.md:278
+#, fuzzy, no-wrap
+#| msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
+msgid ""
+"**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
+"```shell\n"
+"$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
+"```\n"
 msgstr "**Opmerking voor macOS-gebruikers:** Vanaf Jamulus 3.8.1 hebben we een ondertekend installatieprogramma. Hierbij worden de instellingen opgeslagen in `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:277
+#: ../wiki/en/Software-Manual.md:280
 msgid "# Command Line Options"
 msgstr "# Opdrachtregelopties"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:279
+#: ../wiki/en/Software-Manual.md:282
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "De meest voorkomende functies in Jamulus kunnen worden ingesteld met behulp van de GUI, maar deze en andere kunnen ook worden ingesteld met behulp van opties die in een terminalvenster/opdrachtprompt worden ingegeven. Hoe je dit precies doet, hangt af van je besturingssysteem."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:281
+#: ../wiki/en/Software-Manual.md:284
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
 msgstr "Als je bijvoorbeeld in Windows een specifiek instellingenbestand wilt gebruiken, klikt je met de rechtermuisknop op de Jamulus-snelkoppeling en kies je \"Eigenschappen\" > Doel. Voeg de benodigde argumenten toe aan Jamulus.exe:"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:285
+#: ../wiki/en/Software-Manual.md:288
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -691,12 +696,12 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:287
+#: ../wiki/en/Software-Manual.md:290
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "Voor macOS, start een terminal venster en voer Jamulus uit met gewenste opties op deze manier:"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:291
+#: ../wiki/en/Software-Manual.md:294
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -708,17 +713,17 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:293
+#: ../wiki/en/Software-Manual.md:296
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:295
+#: ../wiki/en/Software-Manual.md:298
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:297
+#: ../wiki/en/Software-Manual.md:300
 msgid "{% include_relative Include-QOS-Windows.md %}"
 msgstr "{% include_relative Include-QOS-Windows.md %}"
 
