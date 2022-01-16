@@ -7,7 +7,7 @@ permalink: "/wiki/Software-Manual"
 # Jamulus User Manual
  {:.no_toc}
 
-This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server.
+This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a Server.
 
 <details markdown="1">
 
@@ -28,7 +28,7 @@ This manual documents the Jamulus client application for use by musicians and si
 
 ## Ping, Delay and Jitter
 
-**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   
+**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the Server is too large.   
 
 **Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:
 
@@ -49,7 +49,7 @@ This manual documents the Jamulus client application for use by musicians and si
 - The network jitter buffer is not large enough for the current network/audio interface jitter.
 - The sound card's buffer delay (buffer size) is too small (see Settings window).
 - The upload or download stream rate is too high for your internet bandwidth.
-- The CPU of the client or server is at 100%.
+- The CPU of the client or Server is at 100%.
 
 ## Input
 
@@ -58,7 +58,7 @@ Make sure not to clip the input signal to avoid distortions of your sound (the L
 
 ## Mute Myself button
 
-Cuts your audio stream to the server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself.
+Cuts your audio stream to the Server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself.
 
 ## Reverb effect
 
@@ -75,27 +75,27 @@ open automatically for all clients.
 
 ## Connect/disconnect button
 
-Opens a dialogue where you can select a server to connect to. If you are connected,
+Opens a dialogue where you can select a Server to connect to. If you are connected,
 pressing this button will end the session.
 
-<figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
+<figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the Server connection window"></figure>
 
-The Connect window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). 
+The Connect window shows a list of available Servers together with the number of occupants and the maximum number supported. Server operators register their Servers on lists (mostly defined by genre, though some could be location-specific or for all genres). 
 
-Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+Use the List dropdown to select a genre, click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the Server name. Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold.
 
-You can filter the list by server name or location using the Filter field. To list only occupied servers, enter a "#" character.
+You can filter the list by Server name or location using the Filter field. To list only occupied Servers, enter a "#" character.
 
-If you know the address of a server, you can connect to it using the Server Address field. A port number will also be needed if the server is not running on the default port 22124 e.g,`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets, e.g. `[fe80::7285:c2ff:fe80:f4ae]:22345`).
+If you know the address of a Server, you can connect to it using the Server Address field. A port number will also be needed if the Server is not running on the default port 22124 e.g,`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets, e.g. `[fe80::7285:c2ff:fe80:f4ae]:22345`).
 
 ## Server audio mixer
 
-<figure><img src="{% include img/en-screenshots/mixer-channels.inc %}" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
+<figure><img src="{% include img/en-screenshots/mixer-channels.inc %}" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of Server mixer controls"></figure>
 
-The audio mixer screen shows each user connected to the server (including yourself).
+The audio mixer screen shows each user connected to the Server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
 
-The VU meter shows the input level at the server - that is, the sound being sent.
+The VU meter shows the input level at the Server - that is, the sound being sent.
 
 If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset).
 
@@ -107,9 +107,9 @@ Defines a group of audio channels. Moving the fader of one member of the group m
 
 ### Mute button
 
-Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected. 
+Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the Server. Your fader position for them is also unaffected. 
 
-Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using "[Mute Myself](#mute-myself-button)".
+Note that muting your **own** channel simply means you will not hear your signal from the Server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using "[Mute Myself](#mute-myself-button)".
 
 ### Solo button
 
@@ -119,14 +119,14 @@ Users are listed left to right in the order that they connect. You can change th
 
 You can group users together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag.
 
-If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
+If the Server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
 
 # Settings
 
 ## My Profile
 
 From the Settings menu, select "My Profile..." to set your Alias/Name
-which is displayed below your fader in the server audio mixer board.
+which is displayed below your fader in the Server audio mixer board.
 
 <figure><img src="{% include img/en-screenshots/settings-profile.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
 
@@ -140,7 +140,7 @@ This applies a skin to the main window, some of which are designed to accommodat
 
 ### Mixer rows
 
-This sets the number of rows displayed in the server audio mixer, for use with larger ensembles.
+This sets the number of rows displayed in the Server audio mixer, for use with larger ensembles.
 
 ## Audio/Network Setup
 
@@ -161,7 +161,7 @@ a different actual sound card channel can be selected.
 
 ### Audio channels
 
-Selects the number of audio channels to be used for communication between client and server. 
+Selects the number of audio channels to be used for communication between client and Server. 
 
 **Note**: It is preferable to run separate client instances per voice/instrument, with each client given its own ini file, rather than using this built-in mono pair to stereo mixer.
 
@@ -169,8 +169,8 @@ There are three modes available:
 
 **Mono** and **Stereo** modes use one and two audio channels respectively.
 
-**Mono-in/Stereo-out**: The audio signal sent to the server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case
-the two input signals can be mixed to one mono channel but the server mix is heard in stereo.
+**Mono-in/Stereo-out**: The audio signal sent to the Server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case
+the two input signals can be mixed to one mono channel but the Server mix is heard in stereo.
 
 Enabling stereo mode will increase your stream's data rate. Make sure your upload rate does
 not exceed the available upload speed of your internet connection.
@@ -208,14 +208,14 @@ The jitter buffer compensates for network and sound card timing jitters. The siz
 therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
 (the longer the buffer, the higher the delay).
 
-You can set the jitter buffer size manually for your local client and the remote server. For the local jitter
+You can set the jitter buffer size manually for your local client and the remote Server. For the local jitter
 buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.
 If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted.
 
 The jitter buffer setting is therefore a trade-off between audio quality and overall delay.
 
 If the Auto setting is enabled, the jitter buffers
-of your local client and the remote server are set automatically based on measurements of the network and sound card
+of your local client and the remote Server are set automatically based on measurements of the network and sound card
 timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse).
 
 ### Enable small network buffers
@@ -232,15 +232,15 @@ rate is not higher than your available internet upload speed (check this with a 
 
 <figure><img src="{% include img/en-screenshots/settings-advanced.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
 
-### Custom directory server address
+### Custom Directory Server address
 
-Leave this blank unless you need to enter the address of a directory server other than the default.
+Leave this blank unless you need to enter the address of a Directory Server other than the default.
 
 ### New Client Level
 
 This setting defines the fader level of a newly connected client in percent. If a new user connects
-to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
-that user was already stored. You can set all users in an occupied server to this level using Edit > "Set All Faders to New Client Level".
+to the current Server, they will get the specified initial fader level if no other fader level from a previous connection of
+that user was already stored. You can set all users in an occupied Server to this level using Edit > "Set All Faders to New Client Level".
 
 ### Input Boost
 
@@ -248,7 +248,7 @@ Increases the gain from your device. Use this if your device delivers a gain tha
 
 ### Feedback Protection
 
-Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the "Mute Myself" button to mute you in your own mix. 
+Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a Server. Once detected, this feature will show a message and activate the "Mute Myself" button to mute you in your own mix. 
 
 ### Input Balance
 

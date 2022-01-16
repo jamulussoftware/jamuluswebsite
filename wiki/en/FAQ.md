@@ -22,15 +22,15 @@ permalink: "/wiki/FAQ"
 
 ### Is there a metronome, synchronization, or some other way of keeping in time?
 
-No. Musicians on a Jamulus server simply play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms. 
+No. Musicians on a Jamulus Server simply play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms. 
 
 Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly.
 
-### How do I know if I can join a server? Are there rules?
+### How do I know if I can join a Server? Are there rules?
 
-In general, if somebody lists a Server on one of the Public Directories provided by Jamulus by default, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms built in. However, some servers may state their policies in the welcome message you will see in the chat window.
+In general, if somebody lists a Server on one of the Public Directories provided by Jamulus by default, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms built in. However, some Servers may state their policies in the welcome message you will see in the chat window.
 
-Note also that servers do not have to be registered on a Directory in order for Jamulus clients to connect to them. Server operators can simply give out the address of their  servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types).
+Note also that Servers do not have to be registered on a Directory in order for Jamulus clients to connect to them. Server operators can simply give out the address of their  Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types).
 
 ### Why shouldn’t I use wireless equipment?
 
@@ -42,22 +42,22 @@ So it makes sense to minimise any sources of delay or other problems with the si
 
 For the same reason as you need to minimise delay in your signal in order to play in time, you need to make sure you are playing to your own sound that other musicians are hearing. More information on this, and a way of testing your setup to make sure you are obeying this “Golden Rule” [can be found here](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
 
-Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the server.
+Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server.
 
 ### Do I need a fast Internet connection?
 
-No, especially if you don't run a server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s. 
+No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s. 
 
-### Do I need to run a server?
+### Do I need to run a Server?
 
-No. If you just intend to connect to other people’s servers, then all you need is a client. [Read this if you think you need to run your own server](/wiki/Running-a-Server).
+No. If you just intend to connect to other people’s Servers, then all you need is a client. [Read this if you think you need to run your own Server](/wiki/Running-a-Server).
 
 ### How does Jamulus work (in general)?
 
 <img src="{% include img/en-screenshots/diagram-overview.inc %}" loading="lazy" alt="Diagram showing how Jamulus works">
 
 
-Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is registered in a Jamulus directory, the server's information will be provided to all clients using that directory.
+Jamulus works on the client-server principle. Everybody’s audio is sent to a Server, mixed and processed there. Afterwards, the audio is sent back to each client. If a Server is registered in a Jamulus Directory, the Server's information will be provided to all clients using that Directory.
 
 ### Why doesn't Jamulus provide video support?
 
@@ -68,8 +68,8 @@ Adding video support adds a lot of complexity. You can use other software like J
 
 ### Why do Registered Servers not need port forwarding?
 
-Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall.
+Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall.
 
-However, in Unregistered mode, clients have to **initiate** connections into the server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding.
+However, in Unregistered mode, clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding.
 
 

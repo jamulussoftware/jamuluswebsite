@@ -41,7 +41,7 @@ You can try two versions of ASIO4ALL. ASIO4ALL v2.14 includes a workaround for a
 
 You may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything.
 
-**Tip:** Set up your sound card while you're [connected to a server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.
+**Tip:** Set up your sound card while you're [connected to a Server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.
 
 
 Before you start with Jamulus:
