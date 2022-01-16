@@ -41,7 +41,7 @@ jamulus --nogui --server \
 
 **Note**: Semicolon and newline characters are not allowed in `--serverinfo`
 
-Set your Directory (genre) server using the `--directoryserver` (`-e`) option as follows:
+Replace `genreServer:port` in the example above with one of the following options:
 
 
 | Genre |   Server address           |
@@ -57,7 +57,7 @@ Set your Directory (genre) server using the `--directoryserver` (`-e`) option as
 
 ### Running as a Directory
 
-Set the server to use itself ('localhost' or '127.0.0.1') as the Directory with the `-e` or `--directoryserver` option. Note also that you may want to set the `--directoryfile` option. See [this explanation](Running-a-Server#server-list-filename). 
+If you wish to run a [Custom Directory](Running-a-Server#3-custom-directory) please see [this guide](Custom-Directories).
 
 ### Viewing The Logs
 

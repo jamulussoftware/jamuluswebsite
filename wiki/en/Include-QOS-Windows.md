@@ -29,5 +29,5 @@ Looking at the third panel (Actions) of the Local Group Policy Editor<br>
 &nbsp;&nbsp;&nbsp;&nbsp;UDP<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>
 
-(Notice Jamulus policy in center panel may be edited)
+(Notice that the Jamulus policy in the center panel may be edited)
 
