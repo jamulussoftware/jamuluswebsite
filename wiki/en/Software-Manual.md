@@ -271,7 +271,10 @@ Applies a one-off fader setting to each channel depending on its volume. Useful 
 {% include_relative Include-Backing-Up.md %}
 * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want.
 
-**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`
+**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in 
+```shell
+$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/
+```
 
 # Command Line Options
 
