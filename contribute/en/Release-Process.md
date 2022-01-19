@@ -239,14 +239,6 @@ Upload all the files. Then in the SourceForge web UI, for each of the files uplo
 Before starting a full release process, an issue in the jamulussoftware/jamulus repository needs to be opened. The content of this issue should include the following checklist:
 
 ~~~
----
-name: 'For maintainers: Release a new version'
-about: This is the Developer-only template which we use for tracking the process of future releases.
-title: 'Prepare Release 3.y.z'
-labels: release
-assignees: ''
----
-
 **Target timeline**
 Scheduled feature freeze / Start of translation process: <!-- Add a date, usually about 6-8 weeks from the last release, e.g. 2021-04-20. Allow approx. 4-6 weeks to complete a release -->
 Targeted translation completion date: <!-- E.g. two weeks after feature freeze, e.g. 2021-05-04 -->
