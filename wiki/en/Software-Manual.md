@@ -138,6 +138,10 @@ If you set an instrument and/or country, icons for these selections will also be
 
 This applies a skin to the main window, some of which are designed to accommodate larger ensembles.
 
+### Meter style
+
+This changes the visual style of the audio meter indication, independently of the chosen skin. 
+
 ### Mixer rows
 
 This sets the number of rows displayed in the server audio mixer, for use with larger ensembles.
