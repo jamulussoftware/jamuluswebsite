@@ -63,7 +63,7 @@ Your Server will be listed in a Directory. By default, Jamulus has a list of Pub
 
 <figure>
 	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Registered Server">
-<figcaption>How Registered Servers work</figcaption>
+  <figcaption>How Registered Servers work</figcaption>
 </figure>
 
 ### 2. Unregistered 
@@ -147,7 +147,6 @@ When running as a registered Server this displays the Server's name, city and co
 The text entered here appears to all users when they join the Server (the chat window will open automatically for them).
 
 ## Options
-
 
 <figure><img src="{% include img/en-screenshots/server-window-options.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of Jamulus Server window options"></figure>
 
