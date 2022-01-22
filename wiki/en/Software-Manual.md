@@ -140,7 +140,7 @@ This applies a skin to the main window, some of which are designed to accommodat
 
 ### Meter style
 
-This changes the visual style of the audio meter indication, independently of the chosen skin. 
+This changes the visual style of the audio meters, independently of the chosen skin. 
 
 ### Mixer rows
 
