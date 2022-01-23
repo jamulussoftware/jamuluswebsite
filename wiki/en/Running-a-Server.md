@@ -194,6 +194,14 @@ Leave this field empty unless you need to list your server on a [private Directo
 
 **Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.
 
+### Server status icon
+
+When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:  
+
+<figure><img src="{% include img/en-screenshots/server-inactive.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of the Jamulus Server icon"></figure> The Server is empty
+
+<figure><img src="{% include img/en-screenshots/server-active.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of the Jamulus Server icon"></figure> The Server is occupied
+
 
 
 # Running a Private Server
