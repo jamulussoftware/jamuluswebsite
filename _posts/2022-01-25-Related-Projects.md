@@ -9,6 +9,8 @@ heading: "Other projects related to Jamulus"
 This document lists a number of third-party projects related to Jamulus, which users may find interesting.
 Certainly it is not an official list of officially supported projects. 
 
+<!--more-->
+
 ## jamulus-php
 
 [jamulus-php](https://github.com/softins/jamulus-php) implements a simplified Jamulus client in a
