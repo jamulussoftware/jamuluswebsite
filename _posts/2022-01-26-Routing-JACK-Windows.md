@@ -22,6 +22,7 @@ Optionally, you can also install the Jamulus JACK version for Windows, instead o
 
 ### Setting everything up
 After having installed everything, you need to set the your system audio to "Hi-Fi Cable Input (VB-Audio Hi-Fi Cable)". This can be done by clicking on the loudspeaker icon at the bottom right of the task bar, clicking on the arrow next to the volume fader and selecting this device:
+
 ![Windows 11 Audio settings](https://user-images.githubusercontent.com/20726856/151227279-87337325-e672-4475-bef8-e78ab3cd2441.png)
 
 Now open ASIO Bridge and Qjackctl (you can search for both e.g. in the start menu).
