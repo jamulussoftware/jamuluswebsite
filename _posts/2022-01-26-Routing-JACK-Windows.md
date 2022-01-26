@@ -46,7 +46,9 @@ Ensure the Sample Rate is set to 48000, the driver is portaudio, Frames/Period i
 
 ![Jamulus device settings](https://user-images.githubusercontent.com/20726856/151231033-615dcc9a-5f30-4d0a-b64a-c538d46a387a.png).
 
-Afterwards - if needed click on the ASIO OFF button in ASIO Bridge if ASIO is still off.
+Now connect to any server.
+
+Afterwards - if needed click on the "ASIO OFF" button to turn ASIO on in ASIO Bridge. Unfortunately the button is labelled in a confusing way.
 
 Next, you can minimise ASIO Bridge to the taskbar and open the Graph in Qjackctl. This button is at the bottom right:
 
@@ -56,8 +58,8 @@ Now you'll be able to all the cables I've been talking about:
 
 ![Jamulus in Qjackctl](https://user-images.githubusercontent.com/20726856/151231206-3bede3ca-131c-4ec9-a8ae-08bc519e412c.png)
 
-Next, right click on AVCABLE_AsioBridge and click on Disconnect. Do the same with Jamulus and drag and drop the cables, such that the Graph looks like that:
+Next, right click on AVCABLE_AsioBridge and click on Disconnect. Do the same with Jamulus and drag and drop the cables by clicking on capture_1 and dragging it to In1 etc., such that the graph looks like that:
 
 ![Qjackctl Graph](https://user-images.githubusercontent.com/20726856/151233403-0a749152-54bc-411b-8f30-d20480de44f8.png)
 
-As one can see, the audio from system (that's your audio interface) gets sent to Jamulus plus the audio coming from ASIO Bridge is mixed into Jamulus. We remember that the audio from ASIO Bridge is your normal Windows audio. So you can now start any Video player, MuseScore, mp3 file and play it while others will be able to hear it via Jamulus. 
+This graph shows you that the audio from "system" (that's your audio interface) gets sent to Jamulus plus the audio coming from ASIO Bridge is mixed into Jamulus. We remember that the audio from ASIO Bridge is your normal Windows audio. So you can now start any Video player, MuseScore, mp3 file and play it while others will be able to hear it via Jamulus. A lot of other things can be done with this setup. You could also start multiple instances of Jamulus, route your system audio into one and your microphone into another instance or similar. 
