@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-01-03 16:27+0000\n"
+"PO-Revision-Date: 2022-01-28 14:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -14,6 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -196,7 +197,7 @@ msgid ""
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{% include img/nl-screenshots/diagram-public-server.inc %}\" loading=\"lazy\" alt=\"diagram met verbingen tussen clients en een openbare Jamulus server\">\n"
+"\t<img src=\"{% include img/nl-screenshots/diagram-public-server.inc %}\" loading=\"lazy\" alt=\"diagram met verbindingen tussen clients en een openbare Jamulus server\">\n"
 "<figcaption>Hoe openbare servers werken</figcaption>\n"
 "</figure>\n"
 
@@ -220,7 +221,7 @@ msgid ""
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{% include img/nl-screenshots/diagram-private-server.inc %}\" loading=\"lazy\" alt=\"diagram met verbinden tussen clients en een prive Jamulus server\">\n"
+"\t<img src=\"{% include img/nl-screenshots/diagram-private-server.inc %}\" loading=\"lazy\" alt=\"diagram met verbindingen tussen clients en een prive Jamulus server\">\n"
 "\t<figcaption>Hoe prive servers werken</figcaption>\n"
 "</figure>\n"
 
@@ -499,29 +500,23 @@ msgstr "**Windows gebruikers** - Als je wilt dat de server automatisch start bij
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:198
-#, fuzzy
-#| msgid "## Server Setup"
 msgid "### Server status icon"
-msgstr "## Serverconfiguratie"
+msgstr "## Server status icoon"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:200
 msgid "When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:"
-msgstr ""
+msgstr "Wanneer de server actief is, toont het besturingssysteem een icoon in het systeemvak of het statusgebied om aan te geven of de server actief is:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:202
-#, fuzzy
-#| msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty"
-msgstr "<figure><img src=\"{% include img/nl-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus server configuratie venster\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus Server icoon\"></figure> De server is niet ingebruik"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:204
-#, fuzzy
-#| msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied"
-msgstr "<figure><img src=\"{% include img/nl-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus server configuratie venster\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus Server icoon\"></figure> De server is in gebruik"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:208
