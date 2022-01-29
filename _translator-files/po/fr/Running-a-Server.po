@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-01-03 16:20+0000\n"
+"PO-Revision-Date: 2022-01-29 01:29+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -60,7 +61,7 @@ msgstr "<details markdown=\"1\">"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:14
 msgid "<summary>Table of contents</summary>"
-msgstr "<summary>Table of contents</summary>"
+msgstr "<summary>Table des matières</summary>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:16
@@ -503,29 +504,23 @@ msgstr "**Utilisateurs de Windows** - Si vous voulez que le serveur démarre aut
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:198
-#, fuzzy
-#| msgid "## Server Setup"
 msgid "### Server status icon"
-msgstr "## Configuration du serveur"
+msgstr "## Icône de status du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:200
 msgid "When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:"
-msgstr ""
+msgstr "Lorsque le serveur fonctionne, le système d'exploitation affiche une icône dans la barre d'état système ou dans la zone d'état pour indiquer si le serveur est actif :"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:202
-#, fuzzy
-#| msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de configuration du serveur Jamulus\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image de l'icône de status du serveur Jamulus\"></figure> Le serveur est vide"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:204
-#, fuzzy
-#| msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de configuration du serveur Jamulus\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image de l'icône de status du serveur Jamulus\"></figure> Le serveur est occupé"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:208
