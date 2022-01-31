@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-01-04 19:23+0000\n"
+"PO-Revision-Date: 2022-01-28 14:52+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -14,6 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -118,7 +119,7 @@ msgstr "**Vertraging** toont de totale vertraging berekend op basis van de huidi
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
 msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
-msgstr "<figure><img src=\"{% include img/nl-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelindg van een groen LED symbool\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelding van een groen LED symbool\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:38
@@ -252,7 +253,7 @@ msgstr "## Server audio mengpaneel"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:94
 msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>"
-msgstr "<figure><img src=\"{% include img/nl-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van een paar server mixer opties\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van een aantal server mixer kanalen\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:97
@@ -352,7 +353,7 @@ msgstr "Als je een instrument en/of land instelt, worden de pictogrammen voor de
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:136
 msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
-msgstr "<figure><img src=\"{% include img/nl-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"afbeelding van een tooltop waarin de profiel informatie zichtbaar is\"></figure>"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"afbeelding van een tooltip waarin de profiel informatie zichtbaar is\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:138
@@ -366,15 +367,13 @@ msgstr "Dit past een skin toe op het hoofdvenster, waarvan sommige zijn ontworpe
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:142
-#, fuzzy
-#| msgid "### Mixer rows"
 msgid "### Meter style"
-msgstr "### Mengpaneel rijen"
+msgstr "### Meterstijl"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:144
 msgid "This changes the visual style of the audio meters, independently of the chosen skin."
-msgstr ""
+msgstr "Dit verandert de weergavestijl van de VU-meters, onafhankelijk van de gekozen skin."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:146
@@ -399,7 +398,7 @@ msgstr "<figure><img src=\"{% include img/nl-screenshots/settings-network.inc %}
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:154
 msgid "### Device"
-msgstr "### Apparaat"
+msgstr "### Audio apparaat"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:157
@@ -419,7 +418,7 @@ msgstr "<figure><img src=\"{% include img/nl-screenshots/channel-mapping.inc %}\
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:165
 msgid "If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)  a different actual sound card channel can be selected."
-msgstr "Als het geselecteerde apparaat meer dan één ingangs- of uitgangskanaal biedt, zijn de instellingen _Invoerkanaaltoewijzing en Uitvoerkaneeltoewijzing_ zichtbaar. Voor elk Jamulus ingangs-/uitgangskanaal (linker- en rechterkanaal) kan een ander daadwerkelijk geluidskaartkanaal worden geselecteerd."
+msgstr "Als het geselecteerde apparaat meer dan één ingangs- of uitgangskanaal biedt, zijn de instellingen _Invoerkanaaltoewijzing en Uitvoerkanaaltoewijzing_ zichtbaar. Voor elk Jamulus ingangs-/uitgangskanaal (linker- en rechterkanaal) kan een ander daadwerkelijk geluidskaartkanaal worden geselecteerd."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:167
@@ -671,14 +670,18 @@ msgstr "Je kunt verschillende mixerinstellingen opslaan en laden met [Mixer kana
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:282
-#, fuzzy, no-wrap
-#| msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
+#, no-wrap
 msgid ""
 "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
 "```shell\n"
 "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 "```\n"
-msgstr "**Opmerking voor macOS-gebruikers:** Vanaf Jamulus 3.8.1 hebben we een ondertekend installatieprogramma. Hierbij worden de instellingen opgeslagen in `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
+msgstr ""
+"**Opmerking voor macOS-gebruikers:** Vanaf Jamulus 3.8.1 hebben we een ondertekend installatieprogramma. Hierbij worden de instellingen opgeslagen in \n"
+"```shell\n"
+"$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
+"```\n"
+"\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:284

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-20 22:39+0100\n"
+"PO-Revision-Date: 2022-01-28 14:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -14,6 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Tips-Tricks-More.md:1
@@ -227,17 +228,13 @@ msgstr "## Ctrlmidich gebruiken voor MIDI controllers"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:86
-#, fuzzy
-#| msgid "The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo) with the offset (CC number to start from) and number of consecutive CC numbers. Take the following example:"
 msgid "The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo) with the offset (CC number to start from) and number of consecutive CC numbers. Take the following example:"
-msgstr "De volumefader, balanscontrole en demp- en solo-knoppen in het mengpaneelvenster van de client kunnen worden bediend met een MIDI-controller met behulp van de parameter `--ctrlmidich` (opmerking: alleen beschikbaar voor gebruik met macOS en Linux met Jamulus versie 3.7.0 of hoger). Om deze functie in te schakelen, moet Jamulus worden gestart met `--ctrlmidich`. Er is één globale MIDI-kanaalparameter (1-16) en twee parameters die je voor elk te bedienen item kunt instellen: `offset` en `opeenvolgende CC-nummers`. Stel de eerste parameter in op het kanaal waarnaar je Jamulus wilt laten luisteren (0 voor alle kanalen) en specificeer vervolgens de items die je wilt regelen (f = volumefader; p = balans; m = demp; s = solo) met de offset ( CC-nummer om mee te beginnen) en het aantal opeenvolgende CC-nummers. Neem het volgende voorbeeld:"
+msgstr "De volumefader, balanscontrole en demp- en solo-knoppen in het mengpaneelvenster van de client kunnen worden bediend met een MIDI-controller met behulp van de parameter `--ctrlmidich` (opmerking: alleen beschikbaar voor gebruik met macOS en Linux met Jamulus versie 3.7.0 of hoger en voor Windows door gebruik te maken van de versie met ondersteuning voor JACK). Om deze functie in te schakelen, moet Jamulus worden gestart met `--ctrlmidich`. Er is één globale MIDI-kanaalparameter (1-16) en twee parameters die je voor elk te bedienen item kunt instellen: `offset` en `opeenvolgende CC-nummers`. Stel de eerste parameter in op het kanaal waarnaar je Jamulus wilt laten luisteren (0 voor alle kanalen) en specificeer vervolgens de items die je wilt regelen (f = volumefader; p = balans; m = demp; s = solo) met de offset ( CC-nummer om mee te beginnen) en het aantal opeenvolgende CC-nummers. Neem het volgende voorbeeld:"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:88
-#, fuzzy
-#| msgid "`--ctrlmidich '1;f0*8;p16*8;s32*8;m48*8'`"
 msgid "`--ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8\"`"
-msgstr "`--ctrlmidich '1;f0*8;p16*8;s32*8;m48*8'`"
+msgstr "`--ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8\"`"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:90
@@ -257,13 +254,11 @@ msgstr "*Opmerking*: Jamulus geeft geen feedback over de status van de Solo- en 
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:96
-#, fuzzy
-#| msgid "Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl."
 msgid "Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl."
-msgstr "Zorg ervoor dat je de uitvoerpoort van je MIDI-apparaat aansluit op de Jamulus MIDI-ingang (QjackCtl (Linux), MIDI Studio (macOS) of wat je ook gebruikt voor het beheren van verbindingen). In Linux moet je a2jmidid installeren en starten, zodat je apparaat verschijnt op het MIDI-tabblad in Qjackctl."
+msgstr "Zorg ervoor dat je de uitvoerpoort van je MIDI-apparaat aansluit op de Jamulus MIDI-ingang (QjackCtl (Linux/Windows), MIDI Studio (macOS) of wat je ook gebruikt voor het beheren van verbindingen). In Linux moet je a2jmidid installeren en starten, zodat je apparaat verschijnt op het MIDI-tabblad in Qjackctl."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:97
 #, no-wrap
 msgid "*Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to \"View\" on the top menu bar and choose \"Sort Users by Name\".\n"
-msgstr ""
+msgstr "*Tip*: Wanneer je MIDI-besturing in Jamulus inschakelt dan wordt de naam van iedere gebruiker voorafgegaan door een nummer, waarbij de meest linkse gebruiker begint bij 0, dan 1, enz. Met standaardinstellingen, wanneer gebruikers de sessie verlaten en anderen erbij komen, kan het zijn dat de links-rechts volgorde in de GUI niet meer overeenkomt met de numerieke volgorde waardoor het moeilijker wordt om te weten wie met welke fysieke fader/knop op jouw MIDI-controller overeenkomt. Om de faders in numerieke volgorde te houden, ga je naar \"Weergave\" in de menubalk en kies je \"Sorteer muzikanten op Naam\".\n"
