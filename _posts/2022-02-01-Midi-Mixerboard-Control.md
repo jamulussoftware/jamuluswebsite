@@ -3,30 +3,30 @@ layout: post
 title: "Control the Jamulus Mixerboard using MIDI"
 lang: "en"
 author: "henkdegroot"
-heading: "How to control the Jamulus Mixerboard using a MIDI Control Surface in Windows using JACK"
+heading: "How to control the Jamulus Mixerboard using a MIDI Control Surface using JACK"
 ---
 
 This guide explains how to setup your system in order to control the Jamulus Mixerboard using a MIDI Control Surface device (or similar) using JACK.
-The process will be similar for Linux (this also requires JACK and a2jmidid), while for macOS you can use MIDI Studio.
+In this article Windows is used as an example, however it will be possible to perform this on other platforms as well. For Linux, the process will be very similar as this platform also uses JACK. You will need to install an extra component (like a2jmidid) to allow the midi device to connect to JACK. For macOS you can use MIDI Studio to ensure the midi connection is linked properly to Jamulus.
 
 ## What do you need?
-1. Jamulus with JACK support (not the standard ASIO version), you can [download the Jamulus JACK version for Windows here]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})).
+1. Jamulus with JACK support (not the standard ASIO version if you are using Windows), you can [download the Jamulus JACK version for Windows here]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})).
 2. You need an audio device with ASIO support or you can use a universal ASIO driver like ASIO4ALL.
 3. You need a MIDI Control Surface. Many different models are available. I am using a Worlde EasyControl 9.
  ![worlde-easycontrol-9](https://user-images.githubusercontent.com/13550012/152056661-a446f24e-0598-4164-bc0f-a2510ab33c5e.png)
-4. JACK for Winodws [get it from the JACK audio page](https://jackaudio.org/downloads/).
+4. JACK for Windows [get it from the JACK audio page](https://jackaudio.org/downloads/).
 
 ### What do you need to know?
 You need to know the MIDI Control Change numbers which are assigned to the buttons/faders/knobs of your MIDI Control Surface device. For the device I use, the setup is:
 
 ![easycontrol-config](https://user-images.githubusercontent.com/13550012/152056700-9a70b7b0-ea67-4d7f-b56f-a6bc88824394.png)
 
-When your device has buttons which you want to use to control the Mute or Solo option, then you should configure these with the Toggle option (instead of Momentary). In Toggle mode the signal will only be sent once when you press the button and not when you let the button go. In Momentary mode the "ON" signal will be sent when pressed and when let go the "OFF" signal will be sent.
+When your device has buttons which you want to use to control the Mute or Solo option, then you should configure these with the Toggle option (instead of Momentary). In Toggle mode the signal will only be send once when you press the button and not when you let the button go. In Momentary mode the "ON" signal will be send when pressed and when let go the "OFF" signal will be send.
 
 ### What to install?
 1. Install JACK for Windows, accepting the default options should be sufficient.
 2. Install Jamulus with JACK for Windows, accepting the default options but don't run Jamulus at the end.
-3. Install ASIO4ALL (if you do not have an audio device with an ASIO driver).
+3. Install an ASIO Driver (if one is not provided with your audio device/soundcard, then you can use a generic driver like ASIO4ALL).
 
 ### Setting everything up
 *Plug in your MIDI Control Surface into your computer. This needs to be done before you start QjackCtl and Jamulus.*
@@ -58,7 +58,7 @@ After this is started, click the **Graph** button to show the Graph dialog:
 Now let's update the Jamulus shortcut:
 
 The Jamulus installation has created a Desktop Shortcut, which we need to modify. We need to tell Jamulus that we want to use the MIDI Control Surface.
-Locate the icon on the desktop, right click and select "Properties"
+Locate the icon on the desktop, right click on the icon and select "Properties"
 
 ![jamulus-desktop-shortcut-properties](https://user-images.githubusercontent.com/13550012/152057006-b1878219-e661-4548-9bd3-0fa36422ddb0.png)
 
@@ -70,10 +70,10 @@ The mixing section of my device contains 9 faders, 9 knobs and 9 buttons. As I o
 - The knobs section starts with CC# 14 and ends with CC# 22.
 - The button sections starts with CC# 23 and ends with CC# 31.
 
-We need to tell Jamulus that these Control Change numbers are being used. When the Control Change is sent, it will also sent a value for the CC. The value will be in the range from 0 till 127.
-The fader at the zero position will sent value 0 and at the max. position it will sent value 127.
-The knob rotate and will sent 0 when turned fully to the left, 64 when in top centre and 127 when turned fully to the right.
-The button will sent OFF (0 value) or ON (127 value).
+We need to tell Jamulus that these Control Change numbers are being used. When the Control Change is send, it will also send a value for the CC. The value will be in the range from 0 till 127.
+The fader at the zero position will send value 0 and at the max. position it will send value 127.
+The knob will send 0 when turned fully to the left, 64 when in top centre and 127 when turned fully to the right.
+The button will send OFF (0 value) or ON (127 value).
 
 The option we need to use for Jamulus is: **--ctrlmidich**
 
@@ -115,8 +115,8 @@ You notice that there is an extra connect option available for Jamulus, which in
 
 *NOTE: This is only available when the --ctrlmidich option is used when starting Jamulus.*
 
-Use the mouse and click the "System Midi Capture_1" and drag this to the "Jamulus input midi" connector.
-This will allow the MIDI signals to be sent from the MIDI device to Jamulus.
+Use the mouse and click on "System Midi Capture_1" and drag this to the "Jamulus input midi" connector.
+This will allow the MIDI signals to be send from the MIDI device to Jamulus.
 
 ![QjackCtl-connect-midi](https://user-images.githubusercontent.com/13550012/152057248-b089ab04-72b6-4340-a5d1-2500a9938dd9.png)
 
