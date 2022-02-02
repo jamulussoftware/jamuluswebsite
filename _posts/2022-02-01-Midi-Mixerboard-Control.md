@@ -9,6 +9,8 @@ heading: "How to control the Jamulus Mixerboard using a MIDI Control Surface usi
 This guide explains how to setup your system in order to control the Jamulus Mixerboard using a MIDI Control Surface device (or similar) using JACK.
 In this article Windows is used as an example, however it will be possible to perform this on other platforms as well. For Linux, the process will be very similar as this platform also uses JACK. You will need to install an extra component (like a2jmidid) to allow the midi device to connect to JACK. For macOS you can use MIDI Studio to ensure the midi connection is linked properly to Jamulus.
 
+<!--more-->
+
 ## What do you need?
 1. Jamulus with JACK support (not the standard ASIO version if you are using Windows), you can [download the Jamulus JACK version for Windows here]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})).
 2. You need an audio device with ASIO support or you can use a universal ASIO driver like ASIO4ALL.
