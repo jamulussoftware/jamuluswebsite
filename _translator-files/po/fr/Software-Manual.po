@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-01-04 19:22+0000\n"
+"PO-Revision-Date: 2022-01-31 23:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 "X-Generator: Poedit 3.0\n"
+"POT-Creation-Date: \n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -65,7 +66,7 @@ msgstr "<details markdown=\"1\">"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:15
 msgid "<summary>Table of contents</summary>"
-msgstr "<summary>Table of contents</summary>"
+msgstr "<summary>Table des matières</summary>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:17
@@ -116,7 +117,7 @@ msgstr "**Ping** indique la latence de votre réseau en millisecondes, le plus b
 #: ../wiki/en/Software-Manual.md:34
 #, no-wrap
 msgid "**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:\n"
-msgstr "Le délai global est calculé à partir du temps de ping actuel et du délai introduit par les paramètres actuels de la mémoire tampon.\n"
+msgstr "**Délai** affiche la latence globale calculée à partir du temps de ping actuel et du retard introduit par les paramètres actuels du tampon audio. Les diodes lumisneuses indiquent l'état de cette situation comme suit : \n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
@@ -369,15 +370,13 @@ msgstr "Ceci applique un habillage à la fenêtre principale, dont certains sont
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:142
-#, fuzzy
-#| msgid "### Mixer rows"
 msgid "### Meter style"
-msgstr "### Rangées du mixeur"
+msgstr "### Style de vu-mètre"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:144
 msgid "This changes the visual style of the audio meters, independently of the chosen skin."
-msgstr ""
+msgstr "Cela change le style visuel des vu-mètres audio, indépendamment de l'habillage choisi."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:146
@@ -674,14 +673,17 @@ msgstr "Vous pouvez sauvegarder et charger différents réglages du mélangeur e
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:282
-#, fuzzy, no-wrap
-#| msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in  `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
+#, no-wrap
 msgid ""
 "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
 "```shell\n"
 "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 "```\n"
-msgstr "**Note pour les utilisateurs de macOS:** A partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans `$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/`\n"
+msgstr ""
+"**Note pour les utilisateurs de macOS:** A partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans \n"
+"```shell\n"
+"$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
+"```\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:284
