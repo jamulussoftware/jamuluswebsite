@@ -3,10 +3,10 @@ layout: post
 title: "Control the Jamulus Mixerboard using MIDI"
 lang: "en"
 author: "henkdegroot"
-heading: "How to control the Jamulus Mixerboard using a MIDI Surface Control in Windows using JACK"
+heading: "How to control the Jamulus Mixerboard using a MIDI Control Surface in Windows using JACK"
 ---
 
-This guide explains how to setup your system in order to control the Jamulus Mixerboard using a MIDI Surface Control device (or similar) using JACK.
+This guide explains how to setup your system in order to control the Jamulus Mixerboard using a MIDI Control Surface device (or similar) using JACK.
 The process will be similar for Linux (this also requires JACK and a2jmidid), while for macOS you can use MIDI Studio.
 
 ## What do you need?
@@ -17,7 +17,7 @@ The process will be similar for Linux (this also requires JACK and a2jmidid), wh
 4. JACK for Winodws [get it from the JACK audio page](https://jackaudio.org/downloads/).
 
 ### What do you need to know?
-You need to know the MIDI Control Change numbers which are assigned to the buttons/faders/knobs of your MIDI Surface Control device. For the device I use, the setup is:
+You need to know the MIDI Control Change numbers which are assigned to the buttons/faders/knobs of your MIDI Control Surface device. For the device I use, the setup is:
 
 ![easycontrol-config](https://user-images.githubusercontent.com/13550012/152056700-9a70b7b0-ea67-4d7f-b56f-a6bc88824394.png)
 
@@ -29,7 +29,7 @@ When your device has buttons which you want to use to control the Mute or Solo o
 3. Install ASIO4ALL (if you do not have an audio device with an ASIO driver).
 
 ### Setting everything up
-*Plug in your MIDI Surface Control into your computer. This needs to be done before you start QjackCtl and Jamulus.*
+*Plug in your MIDI Control Surface into your computer. This needs to be done before you start QjackCtl and Jamulus.*
 
 Now let's setup JACK:
 
@@ -57,14 +57,14 @@ After this is started, click the **Graph** button to show the Graph dialog:
 
 Now let's update the Jamulus shortcut:
 
-The Jamulus installation has created a Desktop Shortcut, which we need to modify. We need to tell Jamulus that we want to use the MIDI Surface Control.
+The Jamulus installation has created a Desktop Shortcut, which we need to modify. We need to tell Jamulus that we want to use the MIDI Control Surface.
 Locate the icon on the desktop, right click and select "Properties"
 
 ![jamulus-desktop-shortcut-properties](https://user-images.githubusercontent.com/13550012/152057006-b1878219-e661-4548-9bd3-0fa36422ddb0.png)
 
 We need to add an option to the Target field.
 
-The information you need to provide will depend on the MIDI Surface Control device configuration.
+The information you need to provide will depend on the MIDI Control Surface device configuration.
 The mixing section of my device contains 9 faders, 9 knobs and 9 buttons. As I only have 1 button row, I need to decide to use the Mute or Solo option.
 - The fader section starts with CC# 3 and ends with CC# 11.
 - The knobs section starts with CC# 14 and ends with CC# 22.
