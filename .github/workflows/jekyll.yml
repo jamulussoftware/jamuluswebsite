@@ -77,6 +77,6 @@ jobs:
         uses: lycheeverse/lychee-action@7c5c1f6e14771e717069e942bbbfed6e13960b92
         with:
           fail: true
-          args: _site/**.html --offline
+          args: _site/**.html _site/**/*.html --offline
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
