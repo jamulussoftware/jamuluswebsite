@@ -42,7 +42,7 @@ To make updates or translations for jamulus.io you will need a GitHub account an
 
 **For details on the website translation process, please consult the [README file here](https://github.com/jamulussoftware/jamuluswebsite/tree/release/_translator-files)**
 
-For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/TRANSLATING.md) in the application repository.
+For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/docs/TRANSLATING.md) in the application repository.
 
 ### Overall workflow
 
