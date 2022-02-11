@@ -82,15 +82,17 @@ Here is the script:
 
 ## Using ctrlmidich for MIDI controllers
 
-The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo) with the offset (CC number to start from) and number of consecutive CC numbers. Take the following example:
+The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo; o = mute myself) with the offset (CC number to start from) and number of consecutive CC numbers. There is one exception that does not require establishing consecutive CC numbers which is the "Mute Myself" command - it only requires a single CC number as it is only applied to one's own audio stream. Take the following example:
 
-`--ctrlmidich "1;f0*8;p16*8;s32*8;m48*8"`
+`--ctrlmidich "1;f0*8;p16*8;s32*8;m48*8;o64"`
 
-Here, Jamulus listens on MIDI channel 1. Volume fader CC numbers start at 0 and there are 8 of them (so end at CC number 7). Pan controls start at CC number 16 and end at 23; Solo 32 to 39 and Mute 48 to 55.
+Here, Jamulus listens on MIDI channel 1. Volume fader CC numbers start at 0 and there are 8 of them (so end at CC number 7). Pan controls start at CC number 16 and end at 23; Solo 32 to 39 and Mute 48 to 55. Mute Myself is enabled/disabled by CC number 64.
+
+Please note that for the functions controlled by buttons to work properly, your MIDI controller needs the buttons to be set to "toggle" mode. This means that when pressed to 'turn on' a control, it must send a MIDI CC number with a value >=64, and to 'turn off' the control it must send the same CC number with a value <64. You can read your controller's manual to find out how to set this.
+
+*Note*: Jamulus does not provide feedback on the on/off state of buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself.
 
 Fader strips in the mixer window are controlled in ascending order from left to right. Continuing with the above example, in strip number 1 (farthest left), the volume fader would be controlled by CC number 0; pan by 16; solo by 32 and mute by 48. As we have specified 8 consecutive controllers for each parameter, this would give us MIDI control over 8 strips (volume, pan, solo and mute in each one) in the mixer window. The next strip would be controlled by 1, 17, 33 and 49, and so forth.
-
-*Note*: Jamulus does not provide feedback on the state of the Solo and Mute buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself.
 
 Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
 
