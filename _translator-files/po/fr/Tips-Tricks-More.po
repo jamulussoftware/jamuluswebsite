@@ -8,6 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "PO-Revision-Date: 2022-01-29 11:20+0100\n"
 =======
 "PO-Revision-Date: 2022-01-29 01:27+0100\n"
@@ -15,6 +16,9 @@ msgstr ""
 =======
 "PO-Revision-Date: 2022-01-29 11:20+0100\n"
 >>>>>>> b1cf8861 (Update fr web translation for 3.8.2)
+=======
+"PO-Revision-Date: 2022-01-29 11:20+0100\n"
+>>>>>>> 1ced7256fbeb6f1770b4fc168f34808a15cb2e36
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -237,21 +241,28 @@ msgstr "## Utilisation de ctrlmidich pour les contrôleurs MIDI"
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:86
 <<<<<<< HEAD
+<<<<<<< HEAD
 #, fuzzy
 #| msgid "The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo) with the offset (CC number to start from) and number of consecutive CC numbers. Take the following example:"
 msgid "The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo; o = mute myself) with the offset (CC number to start from) and number of consecutive CC numbers. There is one exception that does not require establishing consecutive CC numbers which is the \"Mute Myself\" command - it only requires a single CC number as it is only applied to one's own audio stream. Take the following example:"
 =======
 msgid "The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo) with the offset (CC number to start from) and number of consecutive CC numbers. Take the following example:"
 >>>>>>> e28a28bf (Update fr web translation for 3.8.2)
+=======
+msgid "The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo) with the offset (CC number to start from) and number of consecutive CC numbers. Take the following example:"
+>>>>>>> 1ced7256fbeb6f1770b4fc168f34808a15cb2e36
 msgstr "Le chariot de volume, la commande de panoramique et les boutons de sourdine et de solo dans les bandes de fenêtre de mixage du client peuvent être contrôlés à l'aide d'un contrôleur MIDI en utilisant le paramètre `--ctrlmidich` (note : uniquement disponible pour une utilisation avec macOS et Linux utilisant Jamulus version 3.7.0 ou supérieure et avec Windows en utilisant la version avec support de JACK). Pour activer cette fonctionnalité, Jamulus doit être lancé avec `--ctrlmidich`. Un paramètre global de canal MIDI (1-16) et deux paramètres sont réglables pour chaque élément contrôlé : `offset` et `consecutive CC numbers`. Réglez le premier paramètre sur le canal que vous voulez que Jamulus écoute (0 pour tous les canaux) et ensuite spécifiez les éléments que vous voulez contrôler (f = chariot de volume ; p = panoramique ; m = silencer ; s = solo) avec l'offset (numéro de CC pour commencer) et le nombre de numéros de CC consécutifs. Prenons l'exemple suivant :"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:88
 <<<<<<< HEAD
+<<<<<<< HEAD
 #, fuzzy
 #| msgid "`--ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8\"`"
 msgid "`--ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8;o64\"`"
 =======
+=======
+>>>>>>> 1ced7256fbeb6f1770b4fc168f34808a15cb2e36
 msgid "`--ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8\"`"
 >>>>>>> e28a28bf (Update fr web translation for 3.8.2)
 msgstr "`--ctrlmidich '1;f0*8;p16*8;s32*8;m48*8'`"
@@ -280,9 +291,12 @@ msgstr "*Note*: Jamulus ne fournit pas de retour sur l'état des boutons Solo et
 #: ../wiki/en/Tips-Tricks-More.md:96
 msgid "Fader strips in the mixer window are controlled in ascending order from left to right. Continuing with the above example, in strip number 1 (farthest left), the volume fader would be controlled by CC number 0; pan by 16; solo by 32 and mute by 48. As we have specified 8 consecutive controllers for each parameter, this would give us MIDI control over 8 strips (volume, pan, solo and mute in each one) in the mixer window. The next strip would be controlled by 1, 17, 33 and 49, and so forth."
 msgstr "Les bandes de chariots dans la fenêtre de mixage sont contrôlées dans l'ordre croissant de gauche à droite. En continuant avec l'exemple ci-dessus, dans la bande numéro 1 (la plus à gauche), le chariot de volume serait contrôlé par le CC numéro 0 ; le pan par 16 ; le solo par 32 et le silencé par 48. Comme nous avons spécifié 8 contrôleurs consécutifs pour chaque paramètre, cela nous donnerait un contrôle MIDI sur 8 bandes (volume, panoramique, solo et silencé dans chacune d'elles) dans la fenêtre du mixeur. La bande suivante serait contrôlée par 1, 17, 33 et 49, et ainsi de suite."
+<<<<<<< HEAD
 =======
 msgid "Fader strips in the mixer window are controlled in ascending order from left to right. Continuing with the above example, in strip number 1 (farthest left), the volume fader would be controlled by CC number 0; pan by 16; solo by 32 and mute by 48. As we have specified 8 consecutive controllers for each parameter, this would give us MIDI control over 8 strips (volume, pan, solo and mute in each one) in the mixer window. The next strip would be controlled by 1, 17, 33 and 49, and so forth."
 msgstr "Les bandes de chariots dans la fenêtre de mixage sont contrôlées dans l'ordre croissant de gauche à droite. En continuant avec l'exemple ci-dessus, dans la bande numéro 1 (la plus à gauche), le chariot de volume serait contrôlé par le CC numéro 0 ; le pan par 16 ; le solo par 32 et le silencé par 48. Comme nous avons spécifié 8 contrôleurs consécutifs pour chaque paramètre, cela nous donnerait un contrôle MIDI sur 8 bandes (volume, panoramique, solo et silencé dans chacune d'elles) dans la fenêtre du mixeur. La bande suivante serait contrôlée par 1, 17, 33 et 49, et ainsi de suite."
+=======
+>>>>>>> 1ced7256fbeb6f1770b4fc168f34808a15cb2e36
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:94
@@ -294,7 +308,10 @@ msgstr "*Note*: Jamulus ne fournit pas de retour sur l'état des boutons Solo et
 #: ../wiki/en/Tips-Tricks-More.md:96
 msgid "Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl."
 msgstr "Assurez-vous de connecter le port de sortie de votre appareil MIDI au port d'entrée MIDI de Jamulus (QjackCtl (Linux/Windows), MIDI Studio (macOS) ou tout autre outil que vous utilisez pour gérer les connexions). Sous Linux, vous devrez installer et lancer a2jmidid pour que votre périphérique apparaisse dans l'onglet MIDI de Qjackctl."
+<<<<<<< HEAD
 >>>>>>> e28a28bf (Update fr web translation for 3.8.2)
+=======
+>>>>>>> 1ced7256fbeb6f1770b4fc168f34808a15cb2e36
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:98
