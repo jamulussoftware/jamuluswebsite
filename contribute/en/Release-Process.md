@@ -253,7 +253,6 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
 - [ ] Declare a freeze for code and website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
 - [ ] Check the `needs documentation` label for any outstanding PRs flagged for this release and remove that label if done.
 - [ ] Check ./Jamulus -h output against the Include-Client/Server-Commands.md pages (wiki/en) and man page (distributions/Jamulus.1). Update if necessary.
-- [ ] Write the Changelog based on the list of PRs in "done" state ([example for 3.8.1](https://github.com/orgs/jamulussoftware/projects/2?card_filter_query=milestone%3A%22release+3.8.1%22+is%3Amerged))
 - [ ] Start Website translations
   - [ ] Check for broken links with a link checker on the `next-release` branch and fix them
   - [ ] Open a Pull Request from `next-release` to release, set it as "Draft", sanity check for conflicts and any obvious problems. 
@@ -265,6 +264,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Generate `.ts` files in master via `lupdate`
   - [ ] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
   - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
+- [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
 - [ ] [Tag a beta release](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) 
   - [ ] Inform emlynmac for signing on macOS, and upload signed binary from [his repo](https://github.com/emlynmac/jamulus/releases/) to [ours](https://github.com/jamulussoftware/jamulus/releases/)
   - [ ] Announce the beta release on Github Discussions. Pin the thread.
@@ -278,11 +278,12 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically)
   - [ ] Check for broken links with a link checker locally (run `_po4a-tools/po4a-create-all-targets.sh` locally first)
 - [ ] Check the milestone for mergable stuff again
-- [ ] Update the changelog again
+- [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
 - [ ] [Tag a release candidate](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) (inform emlynmac for signing on macOS and upload signed binary from his repo to ours).
   - [ ] Announce the release candidate on Github Discussions. Pin the thread. Unpin and lock the beta thread.
   - [ ] Draft an announcement, include all contributors via `tools/get_release_contributors.py`
 - [ ] [Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release)
+- [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
 - [ ] Tag this commit as `r3_y_z`
   - [ ] Wait for the build to complete
   - [ ] Contact emlynmac for signing on macOS and upload signed binary [from his](https://github.com/emlynmac/jamulus/releases/) repo [to ours](https://github.com/jamulussoftware/jamulus/releases).
@@ -348,3 +349,9 @@ This Discussion thread will be locked in order to keep things organized.
 Feedback, questions or suspected bug reports are appreciated nevertheless -- please start a new [Discussion on Github](https://github.com/jamulussoftware/jamulus/discussions/new) for them.
 
 ~~~
+
+### Updating the Changelog
+- Run `./tools/changelog-helper.sh add-missing-entries` to scan Git history and Github milestone for PRs and to auto-add them to the changelog.
+- Run `./tools/changelog-helper.sh group-entries` to group all entries for the current release
+- Verify manually (`git diff`) & edit as necessary
+- Commit & push
