@@ -54,7 +54,7 @@ No. If you just intend to connect to other people’s servers, then all you need
 
 ### How does Jamulus work (in general)?
 
-<img src="{{site.url}}/assets/img/en-screenshots/diagram-overview.png" loading="lazy" alt="Diagram showing how Jamulus works">
+<img src="{% include img/en-screenshots/diagram-overview.inc %}" loading="lazy" alt="Diagram showing how Jamulus works">
 
 
 Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a public directory, its information will be broadcast to all clients.

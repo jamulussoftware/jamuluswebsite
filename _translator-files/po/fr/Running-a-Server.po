@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-28 21:14+0100\n"
+"PO-Revision-Date: 2022-01-29 01:29+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -60,7 +60,7 @@ msgstr "<details markdown=\"1\">"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:14
 msgid "<summary>Table of contents</summary>"
-msgstr "<summary>Table of contents</summary>"
+msgstr "<summary>Table des matières</summary>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:16
@@ -194,12 +194,12 @@ msgstr "Votre serveur sera répertorié dans le serveur annuaire que les clients
 #, no-wrap
 msgid ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/en-screenshots/diagram-public-server.png\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Public Server\">\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-public-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Public Server\">\n"
 "<figcaption>How Public Servers work</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/fr-screenshots/diagram-public-server.png\" loading=\"lazy\" alt=\"Diagramme des connexions entre clients au sein d'un serveur public Jamulus\">\n"
+"\t<img src=\"{% include img/fr-screenshots/diagram-public-server.inc %}\" loading=\"lazy\" alt=\"Diagramme des connexions entre clients au sein d'un serveur public Jamulus\">\n"
 "<figcaption>Fonctionnement des serveurs publics</figcaption>\n"
 "</figure>\n"
 
@@ -218,12 +218,12 @@ msgstr "Il s'agit de la valeur par défaut lorsque vous démarrez un serveur pou
 #, no-wrap
 msgid ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/en-screenshots/diagram-private-server.png\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Private Server\">\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-private-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Private Server\">\n"
 "\t<figcaption>How Private Servers work</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/fr-screenshots/diagram-private-server.png\" loading=\"lazy\" alt=\"Diagramme des connexions entre clients au sein d'un serveur privé Jamulus\">\n"
+"\t<img src=\"{% include img/fr-screenshots/diagram-private-server.inc %}\" loading=\"lazy\" alt=\"Diagramme des connexions entre clients au sein d'un serveur privé Jamulus\">\n"
 "\t<figcaption>Fonctionnement des serveurs privés</figcaption>\n"
 "</figure>\n"
 
@@ -351,13 +351,13 @@ msgstr "## Largeur de bande du réseau"
 msgid ""
 "There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)\n"
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/en-screenshots/bandwidth-diagram.png\" loading=\"lazy\" alt=\"A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high\">\n"
+"\t<img src=\"{% include img/en-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high\">\n"
 "<figcaption>Calculate bandwidth use </figcaption>\n"
 "</figure>\n"
 msgstr ""
 "Il y a un amont (le musicien envoie au serveur) et un aval (le serveur renvoie le mix au musicien).\n"
 "<figure>\n"
-"\t<img src=\"{{site.url}}/assets/img/fr-screenshots/bandwidth-diagram.png\" loading=\"lazy\" alt=\"Diagramme de la largeur de bande du réseau Jamulus pour différentes qualités audio, de faible à forte.\">\n"
+"\t<img src=\"{% include img/fr-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"Diagramme de la largeur de bande du réseau Jamulus pour différentes qualités audio, de faible à forte.\">\n"
 "<figcaption>Calculer l'utilisation de la bande passante </figcaption>\n"
 "</figure>\n"
 
@@ -396,8 +396,8 @@ msgstr "## Configuration du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:152
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/server-window-setup.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/server-window-setup.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de configuration du serveur Jamulus\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de configuration du serveur Jamulus\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:154
@@ -451,8 +451,8 @@ msgstr "## Options"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:177
-msgid "<figure><img src=\"{{site.url}}/assets/img/en-screenshots/server-window-options.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus server window options\"></figure>"
-msgstr "<figure><img src=\"{{site.url}}/assets/img/fr-screenshots/server-window-options.png\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre options du serveur Jamulus\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus server window options\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre options du serveur Jamulus\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:179
@@ -502,99 +502,119 @@ msgid "**Windows users** - If you want the server to start automatically on syst
 msgstr "**Utilisateurs de Windows** - Si vous voulez que le serveur démarre automatiquement au démarrage du système, activez la case à cocher correspondante.\n"
 
 #. type: Plain text
+#: ../wiki/en/Running-a-Server.md:198
+msgid "### Server status icon"
+msgstr "## Icône de status du serveur"
+
+#. type: Plain text
 #: ../wiki/en/Running-a-Server.md:200
+msgid "When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:"
+msgstr "Lorsque le serveur fonctionne, le système d'exploitation affiche une icône dans la barre d'état système ou dans la zone d'état pour indiquer si le serveur est actif :"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:202
+msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image de l'icône de status du serveur Jamulus\"></figure> Le serveur est vide"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:204
+msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image de l'icône de status du serveur Jamulus\"></figure> Le serveur est occupé"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:208
 msgid "# Running a Private Server"
 msgstr "# Exécuter un serveur privé"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:202
+#: ../wiki/en/Running-a-Server.md:210
 msgid "It is highly recommended to test your server in **public mode first** so as to narrow down any subsequent problems in private mode."
 msgstr "Il est fortement recommandé de tester d'abord votre serveur en **mode public** afin de limiter les problèmes ultérieurs en mode privé."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:204
+#: ../wiki/en/Running-a-Server.md:212
 msgid "### Port forwarding"
 msgstr "### Redirection de port"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:206
+#: ../wiki/en/Running-a-Server.md:214
 msgid "Normally, people from outside your home network cannot see things inside it. So if you want to operate a Jamulus server at home, you need to open a hole in your router to let Jamulus clients connect to it."
 msgstr "Normalement, les personnes extérieures à votre réseau domestique ne peuvent pas voir ce qui s'y trouve. Ainsi, si vous souhaitez faire fonctionner un serveur Jamulus chez vous, vous devez ouvrir une brèche dans votre routeur pour permettre aux clients Jamulus de s'y connecter."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:208
+#: ../wiki/en/Running-a-Server.md:216
 #, no-wrap
 msgid "**The default port for the current version of Jamulus is UDP (not TCP) port 22124.**\n"
 msgstr "**Le port par défaut de la version actuelle de Jamulus est le port UDP (et non TCP) 22124.**\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:210
+#: ../wiki/en/Running-a-Server.md:218
 msgid "The exact setup of port forwarding differs for every router. For help see [portforward.com](https://portforward.com)."
 msgstr "La configuration exacte de la redirection de port diffère pour chaque routeur. Pour obtenir de l'aide, consultez [portforward.com](https://portforward.com)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:212
+#: ../wiki/en/Running-a-Server.md:220
 msgid "Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your server (_but see also the note on dynamic DNS below_). You yourself have to connect to your own computer instead, since your computer runs the server. Therefore **only you** need to connect to `127.0.0.1`."
 msgstr "Une fois que votre routeur est configuré, vous pouvez obtenir votre adresse IP externe (WAN), par exemple en [utilisant Google](https://www.google.com/search?q=what+is+my+ip). Donnez cette adresse à vos amis pour qu'ils puissent se connecter à votre serveur (_mais voir aussi la note sur le DNS dynamique ci-dessous_). Vous devez vous-même vous connecter à votre propre ordinateur à la place, puisque c'est votre ordinateur qui fait tourner le serveur. Donc **seulement vous** devez vous connecter à `127.0.0.1`."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:214
+#: ../wiki/en/Running-a-Server.md:222
 msgid "## Dynamic DNS and why you will probably need it"
 msgstr "## DNS dynamique et pourquoi vous en aurez probablement besoin"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:216
+#: ../wiki/en/Running-a-Server.md:224
 msgid "Most domestic Internet connections will change their IP address after a period (hours, days or weeks). To make it easier for people to connect to you, you may therefore also want set up a dynamic DNS address. You can do this on [the machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) that you are running the Jamulus server on, or preferably your router [may support it](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/)."
 msgstr "La plupart des connexions Internet domestiques changent d'adresse IP après un certain temps (heures, jours ou semaines). Pour que les gens puissent plus facilement se connecter à votre serveur, vous voudrez peut-être aussi configurer une adresse DNS dynamique. Vous pouvez le faire sur [la machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) sur laquelle vous exécutez le serveur Jamulus, ou de préférence sur votre routeur [qui peut le prendre en charge](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:218
+#: ../wiki/en/Running-a-Server.md:226
 msgid "Note also that your home router may also change the IP address of the machine that you are running your server on. In which case you may need either to give that machine a static IP in the router's DHCP configuration, or simply port forward to all the addresses in your LAN."
 msgstr "Notez également que votre routeur domestique peut également modifier l'adresse IP de la machine sur laquelle vous exécutez votre serveur. Dans ce cas, vous devrez soit donner à cette machine une adresse IP statique dans la configuration DHCP du routeur, soit simplement faire un transfert de port vers toutes les adresses de votre réseau local."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:220
+#: ../wiki/en/Running-a-Server.md:228
 msgid "# Running a headless Linux server"
 msgstr "# Exécuter un serveur \"headless\" Linux"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:222
+#: ../wiki/en/Running-a-Server.md:230
 #, no-wrap
 msgid "Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).   \n"
 msgstr "Ceux qui souhaitent faire fonctionner un serveur sur un \"cloud\" Linux ou une autre plateforme d'hébergement tierce doivent [lire ce guide](Server-Linux).   \n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:224
+#: ../wiki/en/Running-a-Server.md:232
 msgid "# Backing up the server"
 msgstr "# Sauvegarder le serveur"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:226
+#: ../wiki/en/Running-a-Server.md:234
 msgid "_Note that headless servers do not use `.ini` files. All configuration is given as command line options._"
 msgstr "_Notez que les serveurs headless n'utilisent pas de fichiers `.ini`. Toute la configuration est donnée sous forme d'options de ligne de commande._"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:228
+#: ../wiki/en/Running-a-Server.md:236
 msgid "{% include_relative Include-Backing-Up.md %}"
 msgstr "{% include_relative Include-Backing-Up.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:230
+#: ../wiki/en/Running-a-Server.md:238
 msgid "# Command line options"
 msgstr "# Options de la ligne de commande"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:232
+#: ../wiki/en/Running-a-Server.md:240
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "La plupart des fonctions courantes de Jamulus peuvent être définies à l'aide de l'interface graphique, mais ces fonctions et d'autres peuvent également être définies à l'aide d'options données dans une fenêtre de terminal. La manière exacte de procéder dépend de votre système d'exploitation."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:234
+#: ../wiki/en/Running-a-Server.md:242
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
 msgstr "Par exemple, sous Windows, pour utiliser un fichier de paramètres spécifique, faites un clic droit sur le raccourci de Jamulus et choisissez \"Propriétés\" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:238
+#: ../wiki/en/Running-a-Server.md:246
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -606,12 +626,12 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:240
+#: ../wiki/en/Running-a-Server.md:248
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:244
+#: ../wiki/en/Running-a-Server.md:252
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -623,38 +643,38 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:246
+#: ../wiki/en/Running-a-Server.md:254
 #, no-wrap
 msgid "**Note**: Command line options will set the server's defaults at startup. You can override them with their corresponding GUI controls while the server is running.\n"
 msgstr "**Note** : Les options de la ligne de commande définissent les valeurs par défaut du serveur au démarrage. Vous pouvez les remplacer par les contrôles GUI correspondants lorsque le serveur est en cours d'exécution.\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:248
+#: ../wiki/en/Running-a-Server.md:256
 msgid "{% include_relative Include-Server-Commands.md %}"
 msgstr "{% include_relative Include-Server-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:250
+#: ../wiki/en/Running-a-Server.md:258
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:252
+#: ../wiki/en/Running-a-Server.md:260
 msgid "{% include_relative Include-QOS-Windows.md %}"
 msgstr "{% include_relative Include-QOS-Windows.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:255
+#: ../wiki/en/Running-a-Server.md:263
 msgid "# Troubleshooting"
 msgstr "# Dépannage"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:257
+#: ../wiki/en/Running-a-Server.md:265
 msgid "Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers at first to isolate any issues that may in fact be due to client configuration."
 msgstr "Divers problèmes peuvent survenir lors de la mise en place de serveurs, et nous encourageons généralement les gens à utiliser d'abord les serveurs (publics) d'autres personnes afin d'isoler tout problème qui pourrait en fait être dû à la configuration du client."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:258
+#: ../wiki/en/Running-a-Server.md:266
 msgid "If you are having problems, [see this guide](Server-Troubleshooting)."
 msgstr "Si vous avez un problème, [regardez ce guide](Server-Troubleshooting)."
 
