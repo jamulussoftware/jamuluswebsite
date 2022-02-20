@@ -2,5 +2,5 @@
 - `--mutemyown`  Demp mij in mijn persoonlijke mix (alleen in "headless" mode)                                                      
 -  `-c` of `--connect`  Verbind met het opgegeven serveradres bij het opstarten, formaat `adres[:port]`  
 -  `-j` of `--nojackconnect`  Schakel automatisch JACK verbindingen uit  
--  `--ctrlmidich`  MIDI controller kanaal om naar te luisteren, control nummer offset en opeenvolgend CC nummers (kanalen). Formaat: `kanaal[;f*][;p*][;s*][;m*]` Zie [Tips & trucs](Tips-Tricks-More#gebruik-ctrlmidich-voor-midi-controllers) 
+-  `--ctrlmidich`  MIDI controller kanaal om naar te luisteren, control nummer offset en opeenvolgend CC nummers (kanalen). Formaat: `kanaal[;f*][;p*][;s*][;m*][;o]` Zie [Tips & trucs](Tips-Tricks-More#ctrlmidich-gebruiken-voor-midi-controllers) 
 - `--clientname`  Venster titel en JACK client naam 
