@@ -67,10 +67,10 @@ Locate the icon on the desktop, right click on the icon and select "Properties"
 We need to add an option to the Target field.
 
 The information you need to provide will depend on the MIDI Control Surface device configuration.
-The mixing section of my device contains 9 faders, 9 knobs and 9 buttons. As I only have 1 button row, I need to decide to use the Mute or Solo option.
+The mixing section of my device contains 9 faders, 9 knobs and 9 buttons. As my controller has only 1 button row, I need to decide to use the Mute or Solo option.
 - The fader section starts with CC# 3 and ends with CC# 11.
 - The knobs section starts with CC# 14 and ends with CC# 22.
-- The button sections starts with CC# 23 and ends with CC# 31.
+- The button section starts with CC# 23 and ends with CC# 31.
 
 We need to tell Jamulus that these Control Change numbers are being used. When the Control Change is send, it will also send a value for the CC. The value will be in the range from 0 till 127.
 The fader at the zero position will send value 0 and at the max. position it will send value 127.
@@ -81,7 +81,7 @@ The option we need to use for Jamulus is: **--ctrlmidich**
 
 We need to add the information described above in the following format:
 
-**"1;f3\*9;p14\*9;m23\*9"**
+**"1;f3\*9;p14\*9;m23\*9;o2"**
 
 The first number indicates the MIDI channel Jamulus needs to listen to. A zero can be used if you want Jamulus to listen to all midi channels. The channel used will depend on your device and can be configurable as well.
 After the first number we enter a ;
@@ -94,9 +94,11 @@ Next we start with the letter m (for mute), enter the first CC# number for the b
 
 *NOTE: if you want to use the Solo option instead of Mute, then you replace the letter m by s (for solo). Or if you have another row with buttons, then you can add the sequence for that button row.*
 
+Next we start with the letter o (for own channel mute), enter the CC# number for the button (in this case 2) to control this. As this is a single function, there is no need to indicate how many buttons are used for this.
+
 You also need to make sure to start and end the values with double quotes.
 
-The final command will look like this: --ctrlmidich "1;f3\*9;p14\*9;m23\*9"
+The final command will look like this: --ctrlmidich "1;f3\*9;p14\*9;m23\*9;o2"
 
 Add this in the **Target** field:
 
