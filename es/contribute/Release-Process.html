@@ -56,63 +56,62 @@ Approximate release date: &lt;!-- E.g. one week after targeted translation compl
 Current state: &lt;!-- Planning|Translations (beta)|Code freeze (rc)|Released --&gt;
 
 **Checklist**
-- [ ] Assign this issue to the release shepherd who is in charge of managing this checklist (I won’t since I‘ll focus on the website)
-- [ ] Pin this issue
-- [ ] Create a milestone and add all relevant issues
-- [ ] Ensure that all issues/PR targeted for this release are done by checking the Project board with an appropriate filter (e.g. [`milestone:"Release 3.8.0"`](https://github.com/orgs/jamulussoftware/projects/2?card_filter_query=milestone%3A"release+3.8.0")). Reminder main developers to review entries in *Waiting on team* state. De-tag unfinished Issues/PRs.
-- [ ] Declare a freeze for code website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
-- [ ] Check ./Jamulus -h output against the Include-Client/Server-Commands.md pages (wiki/en) and man page (distributions/Jamulus.1). Update if necessary.
-- [ ] Write the Changelog based on the list of PRs in "done" state ([example for 3.8.1](https://github.com/orgs/jamulussoftware/projects/2?card_filter_query=milestone%3A%22release+3.8.1%22+is%3Amerged))
-- [ ] Start Website translations
-  - [ ] Check for broken links with a link checker on the `next-release` branch and fix them
-  - [ ] Check again if all issues tagged to this release are merged to `next-release`
-  - [ ] Check if all merged Pull Requests on the jamulussoftware/jamulus repository which needed documentation have been documented and everything is in sync
-  - [ ] Check for conflicts between the `release` and `next-release` branch (e.g. by opening a Pull Request from `release` to `next-release`)
-  - [ ] Open a Pull Request from `next-release` to release, set it as "Draft" and briefly scan the changes for typos or errors in the English version
-  - [ ] Declare a full freeze of the `next-release` and `release` branch. No changes should be made from now on to ensure translators don't have to work twice.
-  - [ ] Check if the list of translators in `tools/create-translation-issues.sh` and issue texts are up-to-date
-  - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `web` argument (see notes in script). 
-  - [ ] If anyone finds critical issues now, all translators must be made aware of them and all languages should be updated.
-- [ ] Start App translations
-  - [ ] Generate `.ts` files in master via `lupdate`
-  - [ ] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
-  - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
-- [ ] [Tag a beta release](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) 
-- [ ] Inform emlynmac for signing on macOS, and upload signed binary from https://github.com/emlynmac/jamulus/releases/ to https://github.com/jamulussoftware/jamulus/releases/ 
-- [ ] Announce the beta release on Github Discussions. Pin the thread.
-- [ ] Get feedback on the stability and resource usage (memleaks?, crashes?, installation issues?) of the beta release
-- [ ] Finish Website translations
-  - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically)
-  - [ ] Check for broken links with a link checker locally (run `_po4a-tools/po4a-create-all-targets.sh` locally first)
-- [ ] Finish App translations
-  - [ ] Review translation PRs according to [release process checklist](https://jamulus.io/contribute/Release-Process#3-update-the-ts-files-returned-by-translators)
-  - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically).
-  - [ ] Check for conflicting accelerator keys (see `tools/checkkeys.pl`)
-  - [ ] Generate `.qm` files via `lrelease Jamulus.pro`  
-- [ ] [Tag a release candidate](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) (inform emlynmac for signing on macOS and upload signed binary from his repo to ours).
-- [ ] Announce the release candidate on Github Discussions. Pin the thread. Unpin and lock the beta thread.
-- [ ] Draft an announcement, include all contributors via `tools/get_release_contributors.py`
-- [ ] [Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release)
-- [ ] Tag this commit as `r3_y_z`
-- [ ] Wait for the build to complete
-- [ ] Contact emlynmac for signing on macOS and upload signed binary from his repo to ours.
-- [ ] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
-- [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
-- [ ] [Upload the artifacts to SourceForge and set defaults](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
-- [ ] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the next release](https://jamulus.io/contribute/Release-Process#make-the-master-branch-ready-for-post-release-development)
-- [ ] Update download links on the website by editing `config.yml`
-- [ ] Publish Website release by merging `next-release` into `release`
-- [ ] Announce the new release with a summary of changes (+ link to the changelog for details) and a link to the download page
-  - [ ] On Github Discussions in the Announcements section. Lock the announcement thread. Pin the thread. Unpin and lock release candidate thread.
-  - [ ] On Facebook in the group "Jamulus (official group)". Turn off replies.
-- [ ] Trigger the update notification by updating both Update Check Servers with the new version (@pljones for update02, email corrados for update01)
-- [ ] Delete the `next-release` branch from the Website repo
-- [ ] Check that all Issues and PRs tagged for this release are in Done/Closed state.
-- [ ] Close the release milestone in both jamulus and jamuluswebsite repos
-- [ ] Create a milestone for the next minor release in jamulus and jamuluswebsite repos
+- [ ] Assign this issue to the release shepherd who is in charge of managing this checklist.
+- [x] Pin this issue
+- [x] Ensure that all issues/PR targeted for this release are done by checking the Project board with [the appropriate filter for this release](https://github.com/orgs/jamulussoftware/projects/2?card_filter_query=milestone%3A%22release+3.8.2%22). Remind main developers to review entries in *Waiting on team* state. 
+- [x] Agree to de-tag unfinished Issues/PRs.
+- [x] Declare a freeze for code and website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
+- [x] Check the `needs documentation` label for any outstanding PRs flagged for this release and remove that label if done.
+- [x] Check ./Jamulus -h output against the Include-Client/Server-Commands.md pages (wiki/en) and man page (distributions/Jamulus.1). Update if necessary.
+- [x] Write the Changelog based on the list of PRs in "done" state ([example for 3.8.1](https://github.com/orgs/jamulussoftware/projects/2?card_filter_query=milestone%3A%22release+3.8.1%22+is%3Amerged))
+- [x] Start Website translations
+  - [x] Check for broken links with a link checker on the `next-release` branch and fix them
+  - [x] Open a Pull Request from `next-release` to release, set it as "Draft", sanity check for conflicts and any obvious problems. 
+  - [x] Declare a full freeze of the `next-release` and `release` branch. No changes should be made from now on to ensure translators don't have to work twice.
+  - [x] Check if the list of translators in `tools/create-translation-issues.sh`. Make sure issue text is up-to-date. Add any URLs that will need localisation into the "New/Changed screenshots" section.
+  - [x] Create a translation issue for each language with `tools/create-translation-issues.sh` using `web` argument (see notes in script). 
+  - [x] If anyone finds critical issues now, all translators must be made aware of them and all languages should be updated.
+- [x] Start App translations
+  - [x] Generate `.ts` files in master via `lupdate`
+  - [x] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
+  - [x] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
+- [x] [Tag a beta release](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) 
+  - [x] Inform emlynmac for signing on macOS, and upload signed binary from [his repo](https://github.com/emlynmac/jamulus/releases/) to [ours](https://github.com/jamulussoftware/jamulus/releases/)
+  - [x] Announce the beta release on Github Discussions. Pin the thread.
+  - [x] Get feedback on the stability and resource usage (memleaks?, crashes?, installation issues?) of the beta release
+- [x] Finish App translations
+  - [x] Review translation PRs according to [release process checklist](https://jamulus.io/contribute/Release-Process#3-update-the-ts-files-returned-by-translators)
+  - [x] Wait for all PRs to be merged (missing translations will revert to English automatically).
+  - [x] Check for conflicting accelerator keys (see `tools/checkkeys.pl`)
+  - [x] Generate `.qm` files via `lrelease Jamulus.pro`  
+- [x] Finish Website translations
+  - [x] Wait for all PRs to be merged (missing translations will revert to English automatically)
+  - [x] Check for broken links with a link checker locally (run `_po4a-tools/po4a-create-all-targets.sh` locally first)
+- [x] Check the milestone for mergable stuff again
+- [x] Update the changelog again (we did have post-beta PRs which do not have an entry yet, so this is indepdendent of the previous item)
+- [x] [Tag a release candidate](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) (inform emlynmac for signing on macOS and upload signed binary from his repo to ours).
+  - [x] Announce the release candidate on Github Discussions. Pin the thread. Unpin and lock the beta thread.
+  - [x] Draft an announcement, include all contributors via `tools/get_release_contributors.py`
+- [x] [Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release)
+- [x] Tag this commit as `r3_y_z`
+  - [x] Wait for the build to complete
+  - [x] Contact emlynmac for signing on macOS and upload signed binary [from his](https://github.com/emlynmac/jamulus/releases/) repo [to ours](https://github.com/jamulussoftware/jamulus/releases).
+  - [x] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
+  - [x] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
+  - [x] [Upload the artifacts to SourceForge and set defaults](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
+  - [x] Update download links on the website by editing `config.yml` in `next-release`
+  - [x] Publish Website release by merging `next-release` into `release`
+- [x] Announce the new release with a summary of changes (+ link to the changelog for details) and a link to the download page
+    - [x] On Github Discussions in the Announcements section. Lock the announcement thread. Pin the thread. Unpin and lock release candidate thread.
+    - [x] On Facebook in the group "Jamulus (official group)". Turn off replies.
+- [x] Trigger the update notification by updating both Update Check Servers with the new version (@pljones for update02, email corrados for update01)
+- [x] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the [next release](https://jamulus.io/contribute/Release-Process#make-the-master-branch-ready-for-post-release-development)
+- [x] Check that all Issues and PRs tagged for this release are in Done/Closed state.
+- [x] Close the release milestone in both jamulus and jamuluswebsite repos
+- [x] Create a milestone for the next minor release in jamulus and jamuluswebsite repos
+- [ ] Update this template in https://jamulus.io/contribute/Release-Process with any improvements if needed.
 - [ ] Determine if a release retrospective is needed, create on Discussions if required
 - [ ] Unpin and close this issue
-- [ ] Update this template in https://jamulus.io/contribute/Release-Process with any improvements if needed.
 </code></pre></div></div><h2 id="release-announcement">Release announcement</h2><p>This is a draft for a release announcement on GitHub discussions:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>We're excited to announce the availability of Jamulus 3.x.y!
 
 Some highlights include:
