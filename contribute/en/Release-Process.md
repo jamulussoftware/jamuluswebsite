@@ -300,8 +300,8 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
 - [ ] Close the release milestone in both jamulus and jamuluswebsite repos
 - [ ] Create a milestone for the next minor release in jamulus and jamuluswebsite repos
 - [ ] Update this template in https://jamulus.io/contribute/Release-Process with any improvements if needed.
-- [ ] Determine if a release retrospective is needed, create on Discussions if required
 - [ ] Unpin and close this issue
+- [ ] Determine if a release retrospective is needed, create on Discussions if required
 ~~~
 
 ## Release announcement
