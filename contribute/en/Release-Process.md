@@ -278,7 +278,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically)
   - [ ] Check for broken links with a link checker locally (run `_po4a-tools/po4a-create-all-targets.sh` locally first)
 - [ ] Check the milestone for mergable stuff again
-- [ ] Update the changelog again (we did have post-beta PRs which do not have an entry yet, so this is indepdendent of the previous item)
+- [ ] Update the changelog again
 - [ ] [Tag a release candidate](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) (inform emlynmac for signing on macOS and upload signed binary from his repo to ours).
   - [ ] Announce the release candidate on Github Discussions. Pin the thread. Unpin and lock the beta thread.
   - [ ] Draft an announcement, include all contributors via `tools/get_release_contributors.py`
