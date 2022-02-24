@@ -23,7 +23,7 @@ permalink: "/wiki/Running-a-Server"
 
 The short answer is **no**. For various reasons, you should try to use other people's Servers, at least at first while getting your sound set up with the Jamulus client.
 
-Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from using the chat function, or seeing your profile information).
+Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
 
 If you do decide to run a Server, please read the following. Setting up a Server is easy, however it is better to know the theory first:
 
@@ -144,7 +144,7 @@ When running as a registered Server this displays the Server's name, city and co
 
 ### Chat Welcome Message
 
-The text entered here appears to all users when they join the Server (the chat window will open automatically for them).
+The text entered here appears to all users when they join the Server (the chat window will open automatically for them). HTML is also supported.
 
 ## Options
 
@@ -153,13 +153,13 @@ The text entered here appears to all users when they join the Server (the chat w
 
 ### Recording Directory
 
-This sets the path to where Server's recording will be stored. With this path set, the "Enable Jam Recoder" function in the Server Setup tab will make recording start once the first person connects to the Server, and stops when the last person leaves. Use the "New Recording" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
+This sets the path to where Server's recordings will be stored. With this path set, the "Enable Jam Recoder" function in the Server Setup tab will make recording start once the first person connects to the Server, and stops when the last person leaves. Use the "New Recording" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
 
 **Note**: When your Server is recording, clients will display a message that recording is on.
 
 ### Custom Directory Server Address
 
-Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory)
+Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory.
 
 ### Server List Filename
 
@@ -186,9 +186,9 @@ When the Server is running, the operating system will show an icon in the system
 
 It is highly recommended to test your Server on a **Public Directory** first so as to narrow down any subsequent problems in unregistered mode.
 
-### Port forwarding 
+### Port forwarding
 
-If you are running a Server on your home network, people from outside will not be able to see things inside it. So if you want to operate a Jamulus Server, you need to open a hole in your router to let Jamulus clients connect to it.
+If you are running a Server on your home network, people from outside will not be able to see things inside it. So if you want to operate a Jamulus Server, you need to open a hole in your router's firewall to let Jamulus clients connect to it.
 
 **The default port for the current version of Jamulus is UDP (not TCP) port 22124.**
 
