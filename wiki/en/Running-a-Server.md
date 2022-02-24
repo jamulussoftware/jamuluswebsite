@@ -200,7 +200,7 @@ Once you have your router set up, you can get your external (WAN) IP address e.g
 
 Most domestic Internet connections will change their IP address after a period (hours, days or weeks). To make it easier for people to connect to you, you may therefore also want set up a dynamic DNS address. You can do this on [the machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) that you are running the Jamulus Server on, or preferably your router [may support it](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/).
 
-Note also that your home router may also change the IP address of the machine that you are running your Server on. In which case you may need either to give that machine a static IP in the router's DHCP configuration, or simply port forward to all the addresses in your LAN.
+Note also that your home router may also change the IP address of the machine that you are running your Server on. In which case you may need either to give that machine a static IP in the router's DHCP configuration.
 
 # Running a headless Linux Server
 
