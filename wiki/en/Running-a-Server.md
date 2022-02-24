@@ -21,11 +21,11 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a Server?
 
-The short answer is **no**. For various reasons, you should try to use other people's Servers, at least at first while getting your sound set up with the Jamulus client.
+The short answer is **no**. For various reasons, you should try to use Servers listed by the Directories, at least at first while getting your sound set up with the Jamulus client. You may also be able to use a Server hosted by a third party. Doing so will save you the trouble of setting one up yourself.  
 
 Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
 
-If you do decide to run a Server, please read the following. Setting up a Server is easy, however it is better to know the theory first:
+If you do decide to run a Server, please read the following. Setting up a Server is easy, however it is better to know the theory first. 
 
 ### Speed and latency
 
