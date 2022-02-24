@@ -16,7 +16,7 @@ To view Servers listed by a Custom Directory, users must enter the address of th
 
 To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, 'localhost' or '127.0.0.1') the Directory to query for Servers.
 
-When running a Server with the GUI, select "Custom" from the Directory drop-down list, and set the Custom Directory Address field in the Options tab.  
+When running a Server with the GUI, set the Custom Directory server address in the Options tab to "localhost", then select "Custom" from the Directory drop-down list.  
 
 
 ### Points to note about Directories
