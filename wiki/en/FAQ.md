@@ -30,7 +30,7 @@ Bear in mind also that all participants should follow [The Golden Rule](/wiki/Cl
 
 In general, if somebody lists a Server on one of the Public Directories provided by Jamulus by default, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms built in. However, some Servers may state their policies in the welcome message you will see in the chat window.
 
-Note also that Servers do not have to be registered on a Directory in order for Jamulus clients to connect to them. Server operators can simply give out the address of their  Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types).
+Note also that Servers do not have to be registered on a Directory in order for Jamulus clients to connect to them. Server operators can simply give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types).
 
 ### Why shouldn’t I use wireless equipment?
 
