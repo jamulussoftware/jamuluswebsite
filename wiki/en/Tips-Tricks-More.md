@@ -49,7 +49,7 @@ Here's a Linux start script for Jamulus using an old Audigy4 sound card, the lar
 
 This script therefore includes the most important audio fader settings. The second part of the script deals with the JACK connections. I use Guitarix as my guitar effect processor which I plug in in the JACK audio path.
 
-Finally I start Jamulus automatically connecting to the Directory Server.
+Finally I start Jamulus automatically connecting to the Directory.
 
 Here is the script:
 
