@@ -166,8 +166,7 @@ Leave this field empty unless you need to list your Server on a [Custom Director
 
 ### Server List Filename
 
-Leave this field empty unless you need to list your Server on a [
-Directory](#3-directory)
+Leave this field empty unless you need to run your Server as a [Directory](#3-directory)
 
 ### Delay panning
 
