@@ -136,7 +136,9 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 **Genre**: To allow other people to see your Server on one of the built-in Public Directories, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.  
 
-**Custom**: This sets your Server to be a Directory on which other Servers can be listed. Note that when setting this mode, you may want also to specify the location of Server list file (See "Options" below) unless you want to disconnect all listed Servers when restarting Jamulus.
+**Custom**: This allows you to specify a custom directory on which to be listed. See the "Options" tab for the Custom Directory server address you want to use.
+
+To run your Server _as_ a Directory, you need to set the Custom Directory server address as "localhost" or "127.0.0.1" and set the "Genre" to "Custom". [Read this guide](Custom-Directories) for further details.
 
 ### My Server Info
 
@@ -148,7 +150,6 @@ The text entered here appears to all users when they join the Server (the chat w
 
 ## Options
 
-
 <figure><img src="{% include img/en-screenshots/server-window-options.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of Jamulus Server window options"></figure>
 
 ### Recording Directory
@@ -157,13 +158,16 @@ This sets the path to where Server's recordings will be stored. With this path s
 
 **Note**: When your Server is recording, clients will display a message that recording is on.
 
-### Custom Directory Server Address
+### 
+
+Directory Server Address
 
 Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory.
 
 ### Server List Filename
 
-Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory)
+Leave this field empty unless you need to list your Server on a [
+Directory](#3-directory)
 
 ### Delay panning
 
