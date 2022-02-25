@@ -74,8 +74,7 @@ To upgrade your Server to a newer version, simply download a new .deb and re-ins
 
 ### Recording
 
-When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a re
-cording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off.
+When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off.
 
 To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-serv
 er.service`).
