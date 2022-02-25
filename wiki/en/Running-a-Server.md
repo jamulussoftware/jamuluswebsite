@@ -115,7 +115,6 @@ There is one upstream (musician sending to the Server) and one downstream (serve
 Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate.
 
 
-
 # Starting a Server
 
 
@@ -203,7 +202,7 @@ Once you have your router set up, you can get your external (WAN) IP address e.g
 
 Most domestic Internet connections will change their IP address after a period (hours, days or weeks). To make it easier for people to connect to you, you may therefore also want set up a dynamic DNS address. You can do this on [the machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) that you are running the Jamulus Server on, or preferably your router [may support it](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/).
 
-Note also that your home router may also change the IP address of the machine that you are running your Server on. In which case you may need either to give that machine a static IP in the router's DHCP configuration.
+Note also that your home router may also change the IP address of the machine that you are running your Server on. In which case you may need to give that machine a static IP in the router's DHCP configuration.
 
 # Running a headless Linux Server
 
@@ -242,6 +241,6 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 # Troubleshooting
 
-Various problems can arise when setting up Servers, and we generally ecourage people to use other people's (public) Servers at first to isolate any issues that may in fact be due to client configuration.
+Various problems can arise when setting up Servers, and we generally encourage people to use other people's (public) Servers at first to isolate any issues that may in fact be due to client configuration.
 
 If you are having problems, [see this guide](Server-Troubleshooting).
