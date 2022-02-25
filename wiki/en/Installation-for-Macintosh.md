@@ -19,7 +19,7 @@ Upgrading? You may want to [back up your configuration](Software-Manual#backing-
 1. **Install Jamulus**: Open the downloaded `.dmg` file, agree to the licence, *drag and drop* each icon you see in the window (Jamulus client and Server) into your *Applications folder*. After that, you can close this window.
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application. 
 
-_You can remove the folder in the Downloads Directory containing the `.dmg` and eject the "Jamulus" drive on your desktop. They are no longer needed._
+_You can remove the folder in the Downloads directory containing the `.dmg` and eject the "Jamulus" drive on your desktop. They are no longer needed._
 
 ***
 

@@ -35,7 +35,7 @@ Many people attribute problems to the Server that are in fact problems with the 
 
 If you plan to be playing regularly with the same people, **you are strongly advised** to first make sure that each member of the group is set up to use Jamulus properly. Do this by finding a Public Server with a reasonable ping time for all of you (20 ms or less perhaps), all connect to that and work to fix any individual issues (verifying that they can [follow Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) in particular). Use the solo technique above to prevent being interrupted if needed.
 
-Once any issues with musicians have been solved in this way, you can then investigate hosting your own Server either at home or on a cloud host such as Amazon, which may result in better latency than Servers run at home. For example, [see this guide](https://www.facebook.com/notes/jamulus-worldjam/howto-idiots-guide-to-installing-or-upgrading-a-jamulus-server-on-amazon-aws-lig/818091045662521/) for using AWS Lightsail, by Jamulus user [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_)
+Once any issues with musicians have been solved in this way, you can then investigate hosting your own Server either at home or on a cloud host such as Amazon, which may result in better latency than Servers run at home.
 
 ### Bandwidth – do you have enough?
 
@@ -59,7 +59,7 @@ You can run your Server in different ways (either at home or on a 3rd party host
 
 ### 1. Registered 
 
-Your Server will be listed in a Directory. By default, Jamulus has a list of Public Directories that clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. 
+Your Server will be listed in a Directory. By default, Jamulus has a list of Public Directories that clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs. 
 
 <figure>
 	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Registered Server">
@@ -165,7 +165,7 @@ Leave this field empty unless you need to list your Server on a [Custom Director
 
 ### Server List Filename
 
-Leave this field empty unless you need to run your Server as a [Directory](#3-directory)
+Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing "empty" until the Servers re-register.
 
 ### Delay panning
 
@@ -196,7 +196,7 @@ If you are running a Server on your home network, people from outside will not b
 
 The exact setup of port forwarding differs for every router. For help see [portforward.com](https://portforward.com).
 
-Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your Server (_but see also the note on dynamic DNS below_). You yourself have to connect to your own computer instead, since your computer runs the Server. Therefore **only you** need to connect to `127.0.0.1`.
+Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your Server (_but see also the note on dynamic DNS below_). You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a client on the same machine as your Server, that would be `127.0.0.1`. 
 
 ## Dynamic DNS and why you will probably need it
 
