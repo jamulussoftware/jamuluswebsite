@@ -25,7 +25,7 @@ The short answer is **no**. For various reasons, you should try to use Servers l
 
 Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
 
-If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see server types) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
+If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
 
 While setting up a Server isn't difficult, it's a good idea to read the following backround information to avoid some problems:
 
