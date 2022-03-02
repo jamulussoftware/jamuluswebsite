@@ -21,11 +21,13 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a Server?
 
-The short answer is **no**. For various reasons, you should try to use Servers listed by the Directories, at least at first while getting your sound set up with the Jamulus Client. You may also be able to use a Server hosted by a third party. Doing so will save you the trouble of setting one up yourself.  
+The short answer is **no**. For various reasons, you should try to use Servers listed by the built in Directories, at least at first while getting your sound set up with the Jamulus Client. You may also be able to use a Server hosted by a third party. Doing so will save you the trouble of setting one up yourself.  
 
 Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
 
-If you do decide to run a Server, please read the following. Setting up a Server is easy, however it is better to know the theory first. 
+If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see server types) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
+
+While setting up a Server isn't difficult, it's a good idea to read the following backround information to avoid some problems:
 
 ### Speed and latency
 
@@ -137,7 +139,7 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 **Custom**: This allows you to specify a custom directory on which to be listed. See the "Options" tab for the Custom Directory server address you want to use.
 
-To run your Server _as_ a Directory, you need to set the Custom Directory server address as "localhost" or "127.0.0.1" and set the "Genre" to "Custom". [Read this guide](Custom-Directories) for further details.
+To run your Server _as_ a Directory, you need to set the Custom Directory server address as `localhost` or `127.0.0.1` and set the "Genre" to "Custom". [Read this guide](Custom-Directories) for further details.
 
 ### My Server Info
 
