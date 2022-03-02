@@ -21,7 +21,7 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a Server?
 
-The short answer is **no**. For various reasons, you should try to use Servers listed by the Directories, at least at first while getting your sound set up with the Jamulus client. You may also be able to use a Server hosted by a third party. Doing so will save you the trouble of setting one up yourself.  
+The short answer is **no**. For various reasons, you should try to use Servers listed by the Directories, at least at first while getting your sound set up with the Jamulus Client. You may also be able to use a Server hosted by a third party. Doing so will save you the trouble of setting one up yourself.  
 
 Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
 
@@ -29,7 +29,7 @@ If you do decide to run a Server, please read the following. Setting up a Server
 
 ### Speed and latency
 
-Many people attribute problems to the Server that are in fact problems with the _client_. Much depends on the clients' hard/software setup, the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
+Many people attribute problems to the Server that are in fact problems with the _Client_. Much depends on the Clients' hard/software setup, the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
 
 **_The capability of the Server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**
 
@@ -51,7 +51,7 @@ Unless you plan on hosting more than about 5 players on a slower-speed home conn
 
 - Running an Uregistered Server at home will require you to [port forward](#running-an-unregistered-server) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
 
-- Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the client and Server. There are plans to expand IPv6 support.
+- Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. There are plans to expand IPv6 support.
 
 # Server Types
 
@@ -59,10 +59,10 @@ You can run your Server in different ways (either at home or on a 3rd party host
 
 ### 1. Registered 
 
-Your Server will be listed in a Directory. By default, Jamulus has a list of Public Directories that clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs. 
+Your Server will be listed in a Directory. By default, Jamulus has a list of Public Directories that Clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs. 
 
 <figure>
-	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Registered Server">
+	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Registered Server">
 <figcaption>How Registered Servers work</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ Your Server will be listed in a Directory. By default, Jamulus has a list of Pub
 This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server.
 
 <figure>
-	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between clients within a Jamulus Unregistered Server">
+	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Unregistered Server">
 	<figcaption>How Unregistered Servers work</figcaption>
 </figure>
 
@@ -155,11 +155,9 @@ The text entered here appears to all users when they join the Server (the chat w
 
 This sets the path to where the Server's recordings will be stored. With this path set, the "Enable Jam Recoder" function in the Server Setup tab will make recording start once the first person connects to the Server, and stops when the last person leaves. Use the "New Recording" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
 
-**Note**: When your Server is recording, clients will display a message that recording is on.
+**Note**: When your Server is recording, Clients will display a message that recording is on.
 
-### 
-
-Directory Server Address
+### Directory Server Address
 
 Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory.
 
@@ -190,13 +188,13 @@ It is highly recommended to test your Server on a **Public Directory** first so 
 
 ### Port forwarding
 
-If you are running a Server on your home network, people from outside will not be able to see things inside it. So if you want to operate a Jamulus Server, you need to open a hole in your router's firewall to let Jamulus clients connect to it.
+If you are running a Server on your home network, people from outside will not be able to see things inside it. So if you want to operate a Jamulus Server, you need to open a hole in your router's firewall to let Jamulus Clients connect to it.
 
 **The default port for the current version of Jamulus is UDP (not TCP) port 22124.**
 
 The exact setup of port forwarding differs for every router. For help see [portforward.com](https://portforward.com).
 
-Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your Server (_but see also the note on dynamic DNS below_). You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a client on the same machine as your Server, that would be `127.0.0.1`. 
+Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your Server (_but see also the note on dynamic DNS below_). You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `127.0.0.1`. 
 
 ## Dynamic DNS and why you will probably need it
 
@@ -241,6 +239,6 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 # Troubleshooting
 
-Various problems can arise when setting up Servers, and we generally encourage people to use other people's (public) Servers at first to isolate any issues that may in fact be due to client configuration.
+Various problems can arise when setting up Servers, and we generally encourage people to use other people's (public) Servers at first to isolate any issues that may in fact be due to Client configuration.
 
 If you are having problems, [see this guide](Server-Troubleshooting).

@@ -23,7 +23,7 @@ permalink: "/wiki/Server-Troubleshooting"
 
 ### Why doesn't my Server show up in the list? Why isn't it registering?
 
-If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router.
+If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router.
 
 If you are seeing a message that says the Server is full, you will need to wait until a slot becomes free.
 
@@ -31,13 +31,13 @@ You can verify that your Server is listed in the relevant genre by [checking it 
 
 ## Servers - Unregistered 
 
-### I'm running my client on the same machine/network as my Server but I can't connect to it
+### I'm running my Client on the same machine/network as my Server but I can't connect to it
 
-Connect your client to `127.0.0.1` (or `localhost` if that works for you). If you're running the client on a different machine to the Server but on the same network, then connect to the _local network_ address of the Server. Do not connect via the Server's public (WAN) address.
+Connect your Client to `127.0.0.1` (or `localhost` if that works for you). If you're running the Client on a different machine to the Server but on the same network, then connect to the _local network_ address of the Server. Do not connect via the Server's public (WAN) address.
 
 ### What address do I give to people so that they can connect to my Server?
 
-This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus client to the **local** IP address of your Server (127.0.0.1 if it's on the same machine as your client). Note that your public IP address can change - see the note on "dynamic DNS" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it).
+This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (127.0.0.1 if it's on the same machine as your Client). Note that your public IP address can change - see the note on "dynamic DNS" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it).
 
 ### What port numbers can I use?
 
@@ -45,7 +45,7 @@ You can set your Server to listen on a custom port with the `--port` option. If 
 
 ### Nobody can connect to my Server - but I can connect locally
 
-Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space. This makes it impossible to host services like Jamulus at home (and may mean you also cannot see Server lists in your client, or you may be missing [some specific Servers](https://sourceforge.net/p/llcon/discussion/server/thread/f72b293af0/)).
+Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space. This makes it impossible to host services like Jamulus at home (and may mean you also cannot see Server lists in your Client, or you may be missing [some specific Servers](https://sourceforge.net/p/llcon/discussion/server/thread/f72b293af0/)).
 
 To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address does not match with the address you see [here](https://ifconfig.me), then this means CGN may be enabled. Or if you experience problems such as being unable to [connect to Servers or an empty Server list](https://sourceforge.net/p/llcon/discussion/533517/thread/b3eea395c4/) this may also be an indicator that your ISP is the problem too.
 
