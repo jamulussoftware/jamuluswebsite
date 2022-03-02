@@ -25,7 +25,7 @@ The short answer is **no**. For various reasons, you should try to use Servers l
 
 Note that you can have a "private" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
 
-If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
+If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
 
 While setting up a Server isn't difficult, it's a good idea to read the following backround information to avoid some problems:
 
@@ -59,7 +59,7 @@ Unless you plan on hosting more than about 5 players on a slower-speed home conn
 
 You can run your Server in different ways (either at home or on a 3rd party host):
 
-### 1. Registered 
+### 1. Registered
 
 Your Server will be listed in a Directory. By default, Jamulus has a list of Public Directories that Clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs. 
 
@@ -68,7 +68,7 @@ Your Server will be listed in a Directory. By default, Jamulus has a list of Pub
 <figcaption>How Registered Servers work</figcaption>
 </figure>
 
-### 2. Unregistered 
+### 2. Unregistered
 
 This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server.
 
@@ -131,7 +131,7 @@ Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s
 
 <figure><img src="{% include img/en-screenshots/server-window-setup.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of the Jamulus Server setup window"></figure>
 
-### The Directory list 
+### The Directory list
 
 **None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.
 
