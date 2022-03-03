@@ -161,11 +161,11 @@ This sets the path to where the Server's recordings will be stored. With this pa
 
 ### Directory Server Address
 
-Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory.
+Leave this field empty unless you need to list your Server on a [Custom Directory](#3-custom-directory) or run a Directory.
 
 ### Server List Filename
 
-Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing "empty" until the Servers re-register.
+Leave this field empty unless you need to run your Server as a [Directory](#3-custom-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing "empty" until the Servers re-register.
 
 ### Delay panning
 
