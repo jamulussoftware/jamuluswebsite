@@ -7,7 +7,7 @@ permalink: "/wiki/Software-Manual"
 # Jamulus User Manual
  {:.no_toc}
 
-This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server.
+This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server.
 
 <details markdown="1">
 
@@ -49,7 +49,7 @@ This manual documents the Jamulus client application for use by musicians and si
 - The network jitter buffer is not large enough for the current network/audio interface jitter.
 - The sound card's buffer delay (buffer size) is too small (see Settings window).
 - The upload or download stream rate is too high for your internet bandwidth.
-- The CPU of the client or server is at 100%.
+- The CPU of the Client or server is at 100%.
 
 ## Input
 
@@ -70,8 +70,8 @@ to the right and move the fader upwards until the desired reverb level is reache
 ## Chat
 
 Opens the chat window. Text entered is sent to
-all connected clients. If a new chat message arrives and the Chat dialogue is not already open, it will
-open automatically for all clients.
+all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will
+open automatically for all Clients.
 
 ## Connect/disconnect button
 
@@ -165,9 +165,9 @@ a different actual sound card channel can be selected.
 
 ### Audio channels
 
-Selects the number of audio channels to be used for communication between client and server. 
+Selects the number of audio channels to be used for communication between Client and server. 
 
-**Note**: It is preferable to run separate client instances per voice/instrument, with each client given its own ini file, rather than using this built-in mono pair to stereo mixer.
+**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.
 
 There are three modes available:
 
@@ -212,14 +212,14 @@ The jitter buffer compensates for network and sound card timing jitters. The siz
 therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
 (the longer the buffer, the higher the delay).
 
-You can set the jitter buffer size manually for your local client and the remote server. For the local jitter
+You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter
 buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.
 If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted.
 
 The jitter buffer setting is therefore a trade-off between audio quality and overall delay.
 
 If the Auto setting is enabled, the jitter buffers
-of your local client and the remote server are set automatically based on measurements of the network and sound card
+of your local Client and the remote server are set automatically based on measurements of the network and sound card
 timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse).
 
 ### Enable small network buffers
@@ -242,7 +242,7 @@ Leave this blank unless you need to enter the address of a directory server othe
 
 ### New Client Level
 
-This setting defines the fader level of a newly connected client in percent. If a new user connects
+This setting defines the fader level of a newly connected Client in percent. If a new user connects
 to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
 that user was already stored. You can set all users in an occupied server to this level using Edit > "Set All Faders to New Client Level".
 

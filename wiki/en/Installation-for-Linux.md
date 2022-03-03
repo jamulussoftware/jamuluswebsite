@@ -30,7 +30,7 @@ For installers on other distributions, see their package managers and [Repology]
 
 ### Configure JACK with QjackCtl
 
-Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
+Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
 1. Launch QjackCtl. You will see the **Qt JACK Control utility main page**
 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):
 
