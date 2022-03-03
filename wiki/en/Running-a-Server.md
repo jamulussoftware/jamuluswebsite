@@ -118,9 +118,9 @@ jamulus --nogui --server \
         --serverinfo "yourServerName;yourCity;[country ID]"
 ~~~
 
-**Note**: Semicolon and newline characters are not allowed in `--serverinfo`
+**Note**: Semicolon and newline characters are not allowed in `yourServerNam`e and `yourCity` within the `--serverinfo` argument
 
-Replace `genreServer:port` in the example above with one of the following options:
+To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` in the example above with one of the following options:
 
 
 | Genre |   Server address           |
@@ -133,6 +133,7 @@ Replace `genreServer:port` in the example above with one of the following option
 |**Genre Classical/Folk** |`classical.jamulus.io:22524`|
 |**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
 
+You can also specify a [Custom Directory](#3-custom-directory) in the same way from the command line, providing the Server Address in the same format.
 
 #### Running as a Directory
 
