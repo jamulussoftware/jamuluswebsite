@@ -143,7 +143,7 @@ If you wish to run a [Custom Directory](Running-a-Server#3-custom-directory) ple
 
 #### Upgrading
 
-To upgrade your Server to a newer version, simply download a new .deb and re-install as step 3.
+To upgrade your Server to a newer version, simply download a new .deb and [re-install as step 3](#installation).
 
 #### Viewing The Logs
 
