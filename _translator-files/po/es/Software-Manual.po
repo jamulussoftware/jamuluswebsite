@@ -51,7 +51,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:11
-msgid "This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server."
+#, fuzzy
+#| msgid "This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server."
+msgid "This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server."
 msgstr "Este manual documenta la aplicación del cliente de Jamulus para su uso por parte de músicos y cantantes para utilizar el software con el fin de conectarse a un servidor."
 
 #. type: Plain text
@@ -171,7 +173,9 @@ msgstr "La tasa de subida o bajada is demasiado alta para tu ancho de banda de i
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:53
-msgid "The CPU of the client or server is at 100%."
+#, fuzzy
+#| msgid "The CPU of the client or server is at 100%."
+msgid "The CPU of the Client or server is at 100%."
 msgstr "La CPU del cliente o del servidor está al 100%."
 
 #. type: Plain text
@@ -211,7 +215,9 @@ msgstr "## Chat"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
-msgid "Opens the chat window. Text entered is sent to all connected clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all clients."
+#, fuzzy
+#| msgid "Opens the chat window. Text entered is sent to all connected clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all clients."
+msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients."
 msgstr "Abre la ventana de chat. El texto escrito aquí es enviado a todos los clientes conectados. Si llega un nuevo mensaje de chat y la ventana del Chat no está abierta, se abrirá automáticamente para todos los clientes."
 
 #. type: Plain text
@@ -426,13 +432,16 @@ msgstr "### Canales de Audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:169
-msgid "Selects the number of audio channels to be used for communication between client and server."
+#, fuzzy
+#| msgid "Selects the number of audio channels to be used for communication between client and server."
+msgid "Selects the number of audio channels to be used for communication between Client and server."
 msgstr "Selecciona el número de canales de audio a utilizar para la comunicación entre cliente y servidor."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:171
-#, no-wrap
-msgid "**Note**: It is preferable to run separate client instances per voice/instrument, with each client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+#, fuzzy, no-wrap
+#| msgid "**Note**: It is preferable to run separate client instances per voice/instrument, with each client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
 msgstr "**Nota**: Es preferible ejecutar instancias separadas del cliente para cada voz/instrumento, donde cada cliente tiene su propio archivo ini, en lugar de utilizar este mezclador interno de dos canales mono a estéreo.\n"
 
 #. type: Plain text
@@ -534,7 +543,9 @@ msgstr "El jitter buffer compensa el jitter de la red y la tarjeta de sonido. El
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:218
-msgid "You can set the jitter buffer size manually for your local client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
+#, fuzzy
+#| msgid "You can set the jitter buffer size manually for your local client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
+msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgstr "El tamaño del jitter buffer se puede establecer manualmente para el cliente local y para el servidor remoto. Para el jitter buffer local, las caídas del flujo de audio se indican mediante la luz debajo de los faders del jitter buffer.  Si la luz se vuelve roja, significa que ha habido una interrupción del flujo de audio."
 
 #. type: Plain text
@@ -544,7 +555,9 @@ msgstr "Por tanto la configuración del jitter buffer es un compromiso entre cal
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:224
-msgid "If the Auto setting is enabled, the jitter buffers of your local client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
+#, fuzzy
+#| msgid "If the Auto setting is enabled, the jitter buffers of your local client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
+msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr "Si se activa la casilla de Auto, los jitter buffers del cliente local y del servidor remoto se configuran automáticamente basándose en mediciones del jitter de la red y la tarjeta de audio. Si se activa esta opción, los faders quedan deshabilitados (no pueden moverse con el ratón)."
 
 #. type: Plain text
@@ -594,7 +607,9 @@ msgstr "### Nivel cliente nuevo"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:248
-msgid "This setting defines the fader level of a newly connected client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
+#, fuzzy
+#| msgid "This setting defines the fader level of a newly connected client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
+msgid "This setting defines the fader level of a newly connected Client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
 msgstr "Este ajuste define el nivel del fader de una nueva conexión de cliente, en porcentaje. Si se conecta un nuevo usuario al servidor actual, el nivel inicial de su fader tomará este valor si no se ha especificado anteriormente un valor para ese usuario de una conexión anterior. Puedes establecer en este nivel a todos los usuarios en un servidor ocupado con Editar > \"Poner Todos Faders a Nivel Cliente Nuevo\"."
 
 #. type: Plain text

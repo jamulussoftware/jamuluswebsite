@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: ../wiki/en/Custom-Directories.md:1
+#, no-wrap
+msgid "en"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: ../wiki/en/Custom-Directories.md:1
+#, no-wrap
+msgid "wiki"
+msgstr ""
+
+#. type: YAML Front Matter: permalink
+#: ../wiki/en/Custom-Directories.md:1
+#, no-wrap
+msgid "/wiki/Custom-Directories"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: ../wiki/en/Custom-Directories.md:1
+#, no-wrap
+msgid "Custom Directories"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:9
+msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:12
+msgid "# Running a Custom Directory"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:14
+msgid "This is a specialised Jamulus Server configuration, as described in [Server Types](Running-a-Server#server-types)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:16
+msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:18
+msgid "To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, 'localhost' or '127.0.0.1') the Directory to query for Servers."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:20
+msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:23
+msgid "### Points to note about Directories"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:25
+msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:27
+msgid "When running a Directory behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the Server(s) being listed by your Directory if those Servers are on the same LAN / with the same public IP as the Directory. This is necessary to allow Clients on the public Internet to connect to them via NAT. Note that for the Servers using this option, you will still need proper port forwarding in your router/firewall."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:29
+msgid "If you are running your Server as a Directory and need to restart it for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Custom-Directories.md:30
+msgid "Up to 150 Servers can then register with a Directory."
+msgstr ""

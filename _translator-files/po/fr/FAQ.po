@@ -90,7 +90,9 @@ msgstr "### Y a-t-il un métronome, une synchronisation ou un autre moyen de res
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
-msgid "No. Musicians on a Jamulus server simply play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
+#, fuzzy
+#| msgid "No. Musicians on a Jamulus server simply play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
+msgid "No. Musicians on a Jamulus Server simply play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 msgstr "Non. Les musiciens sur un serveur Jamulus jouent simplement en temps réel ensemble comme ils le feraient en personne. Si vous souhaitez disposer d'un signal temporel, il existe des solutions de métronome partagé sur Internet que vous pouvez essayer, mais il est probablement préférable de minimiser la latence afin que personne n'ait un retard global supérieur à environ 30-50 ms."
 
 #. type: Plain text
@@ -100,18 +102,22 @@ msgstr "N'oubliez pas non plus que tous les participants doivent suivre la [Règ
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:30
-msgid "### How do I know if I can join a server? Are there rules?"
+#, fuzzy
+#| msgid "### How do I know if I can join a server? Are there rules?"
+msgid "### How do I know if I can join a Server? Are there rules?"
 msgstr "### Comment puis-je savoir si je peux rejoindre un serveur ? Existe-t-il des règles ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:32
-msgid "In general, if somebody sets up a public server, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window."
+#, fuzzy
+#| msgid "In general, if somebody sets up a public server, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. However, some servers may state their policies in the welcome message you will see in the chat window."
+msgid "In general, if somebody lists a Server on one of the Public Directories provided by Jamulus by default, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms built in. However, some Servers may state their policies in the welcome message you will see in the chat window."
 msgstr "En général, si quelqu'un met en place un serveur public, alors il accepte que tout le monde puisse y jouer. Jamulus n'a pas de protection par mot de passe ni d'autres mécanismes d'authentification. Cependant, certains serveurs peuvent indiquer leur politique dans le message de bienvenue que vous verrez dans la fenêtre de tchate."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
-msgid "You can also set up a private server on Jamulus and give others your address to connect to that. Have a look at [this page for more information](/wiki/Running-a-Server)."
-msgstr "Vous pouvez également créer un serveur privé sur Jamulus et donner aux autres votre adresse pour qu'ils s'y connectent. Consultez [cette page pour plus d'informations](/wiki/Running-a-Server)."
+msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can simply give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:36
@@ -140,7 +146,9 @@ msgstr "Pour la même raison que vous devez minimiser le retard de votre signal 
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:46
-msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the server."
+#, fuzzy
+#| msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the server."
+msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server."
 msgstr "Bien sûr, si vous jouez d'un instrument acoustique ou si vous êtes chanteur, il sera difficile d'exclure votre son \"local\". Mais vous devriez au moins essayer de le faire, par exemple en utilisant un casque fermé, réglé aussi fort que possible pour masquer votre propre son. Vous pourrez ainsi vous concentrer sur le mixage qui vous parvient du serveur."
 
 #. type: Plain text
@@ -150,17 +158,23 @@ msgstr "### Ai-je besoin d'une connexion Internet rapide ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
-msgid "No, especially if you don't run a server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
+#, fuzzy
+#| msgid "No, especially if you don't run a server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
+msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
 msgstr "Non, surtout si vous ne gérez pas de serveur. Il est plus important d'avoir un ping faible. Pour la plupart des personnes disposant d'une bande passante standard (par exemple, 10 Mbit/s en aval et 1 Mbit/s en amont), vous n'aurez aucun problème. Pour ceux qui gèrent des serveurs à domicile, en fonction du nombre de participants, vous pouvez rencontrer des problèmes si votre bande passante _en amont_ est inférieure à environ 5 Mbit/s."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:52
-msgid "### Do I need to run a server?"
+#, fuzzy
+#| msgid "### Do I need to run a server?"
+msgid "### Do I need to run a Server?"
 msgstr "### Dois-je faire tourner un serveur ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:54
-msgid "No. If you just intend to connect to other people’s servers, then all you need is a client. [Read this if you think you need to run your own server](/wiki/Running-a-Server)."
+#, fuzzy
+#| msgid "No. If you just intend to connect to other people’s servers, then all you need is a client. [Read this if you think you need to run your own server](/wiki/Running-a-Server)."
+msgid "No. If you just intend to connect to other people’s Servers, then all you need is a Client. [Read this if you think you need to run your own Server](/wiki/Running-a-Server)."
 msgstr "Non. Si vous souhaitez simplement vous connecter aux serveurs d'autres personnes, tout ce dont vous avez besoin est un client. Lisez ceci si vous pensez avoir besoin de [faire tourner votre propre serveur](/wiki/Running-a-Server)."
 
 #. type: Plain text
@@ -175,7 +189,9 @@ msgstr "<img src=\"{% include img/fr-screenshots/diagram-overview.inc %}\" loadi
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61
-msgid "Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a public directory, its information will be broadcast to all clients."
+#, fuzzy
+#| msgid "Jamulus works on the client-server principle. Everybody’s audio is sent to a server, mixed and processed there. Afterwards, the audio is sent back to each client. If a server is made public and registered on a public directory, its information will be broadcast to all clients."
+msgid "Jamulus works on the Client-server principle. Everybody’s audio is sent to a Server, mixed and processed there. Afterwards, the audio is sent back to each Client. If a Server is registered in a Jamulus Directory, the Server's information will be provided to all Clients using that Directory."
 msgstr "Jamulus fonctionne sur le principe client-serveur. L'audio de chaque musicien est envoyé à un serveur, où il est mixé et traité. Ensuite, l'audio est renvoyé à chaque client. Si un serveur est rendu public et enregistré sur un serveur annuaire public, ses informations seront diffusées à tous les clients."
 
 #. type: Plain text
@@ -195,15 +211,24 @@ msgstr "## FAQ Serveur"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:70
-msgid "### Why do public servers not need port forwarding?"
+#, fuzzy
+#| msgid "### Why do public servers not need port forwarding?"
+msgid "### Why do Registered Servers not need port forwarding?"
 msgstr "### Pourquoi les serveurs publics n'ont-ils pas besoin de redirection de port ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
-msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In public server mode, when your Jamulus server connects to a Directory Server it of course initiates an outbound connection. From then on, the Directory Server sends (established/related) connection “pings” (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
+#, fuzzy
+#| msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In public server mode, when your Jamulus server connects to a Directory Server it of course initiates an outbound connection. From then on, the Directory Server sends (established/related) connection “pings” (not ICMP pings) to your server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
+msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
 msgstr "Normalement, les pare-feu NAT (Network Address Translation) empêchent les requêtes entrantes provenant de l'extérieur du réseau local. Le trafic entrant n'est possible que pour les paquets relatifs à une demande sortante (à proprement parler, les paquets \"relatifs\" et \"établis\" à une connexion sortante initiale). En mode public, lorsque votre serveur Jamulus se connecte à un serveur annuaire, il initie bien sûr une connexion sortante. À partir de ce moment-là, le serveur d'annuaire envoi des \"pings\" (non ICMP) de connexion (établie/liée) à votre serveur à intervalles réguliers pour maintenir le ou les ports NAT pertinents ouverts sur votre routeur/pare-feu."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:74
-msgid "However, in private mode, clients have to **initiate** connections into the server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
+#, fuzzy
+#| msgid "However, in private mode, clients have to **initiate** connections into the server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
+msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
 msgstr "Cependant, en mode privé, les clients doivent **initier** les connexions au réseau du serveur. Les pare-feu NAT empêchent cela, vous devez donc leur dire d'autoriser les demandes de connexion entrantes sur le port Jamulus en utilisant la redirection de port."
+
+#~ msgid "You can also set up a private server on Jamulus and give others your address to connect to that. Have a look at [this page for more information](/wiki/Running-a-Server)."
+#~ msgstr "Vous pouvez également créer un serveur privé sur Jamulus et donner aux autres votre adresse pour qu'ils s'y connectent. Consultez [cette page pour plus d'informations](/wiki/Running-a-Server)."
