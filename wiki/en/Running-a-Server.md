@@ -190,11 +190,11 @@ _Note: The Jamulus service name in the `ExecStart` line needs to be the same as 
 
 Run `sudo systemctl daemon-reload` to register them for first use.
 
-Now you can run these with the `service start` command, for example:
+Now you can run these with the `systemctl` command, for example:
 
-`sudo service jamulusTogglerec start` (assuming you named your unit file `jamulusTogglerec.service`)
+`sudo systemctl start jamulusTogglerec` (assuming you named your unit file `jamulusTogglerec.service`)
 
-You can see the result of these commands if you run `service jamulus status`, or by viewing the logs.
+You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs.
 
 ### Making a Server status page
 
