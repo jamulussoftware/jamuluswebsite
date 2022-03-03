@@ -118,7 +118,7 @@ jamulus --nogui --server \
         --serverinfo "yourServerName;yourCity;[country ID]"
 ~~~
 
-**Note**: Semicolon and newline characters are not allowed in `yourServerNam`e and `yourCity` within the `--serverinfo` argument
+**Note**: Semicolon and newline characters are not allowed in `yourServerName` and `yourCity` within the `--serverinfo` argument
 
 To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` in the example above with one of the following options:
 
@@ -227,7 +227,7 @@ Jamulus can be configured to run in server mode on the desktop. This gives you a
 
 * **macOS users** - Double-click the "Jamulus Server" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).
 
-* **Linux users** - Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros) and type `jamulus -s`. Hit return and you should see the Server control window. You can stop the Server by closing the Server window, or by using `CTRL+C` in the terminal. _(To run a headless Server [read this guide](#installing-and-running-a-server))_
+* **Linux users** - Open a terminal window (`CTRL+ALT+t` on Debian and related distros) and type `jamulus -s`. Hit return and you should see the Server control window. You can stop the Server by closing the Server window, or by using `CTRL+C` in the terminal. _(To run a headless Server [read this guide](#installing-and-running-a-server))_
 
 
 ## Server Setup
