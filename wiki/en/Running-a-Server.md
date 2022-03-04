@@ -220,7 +220,7 @@ function loadserverstat ( $statfilename )
 
 # Servers on the desktop
 
-Jamulus can be configured to run in server mode on the desktop. This gives you a graphical user interface to control most of the settings. 
+Jamulus can be configured to run in Server mode on the desktop. This gives you a graphical user interface to control most of the settings. 
 
 * **Windows users** - Use the "Jamulus Server" icon in the Windows Start menu.
 
