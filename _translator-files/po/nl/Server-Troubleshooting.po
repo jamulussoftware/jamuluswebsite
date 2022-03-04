@@ -81,110 +81,131 @@ msgstr "</details>"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:23
-msgid "## Servers - Public"
-msgstr "## Servers - openbaar"
+#, fuzzy
+#| msgid "## Servers - Private"
+msgid "## Servers - Registered"
+msgstr "## Servers - Prive"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:25
-msgid "### Why doesn't my server show up in the list? Why isn't it registering?"
+#, fuzzy
+#| msgid "### Why doesn't my server show up in the list? Why isn't it registering?"
+msgid "### Why doesn't my Server show up in the list? Why isn't it registering?"
 msgstr "### Waarom wordt mijn server niet weergegeven in de lijst? Waarom registreert hij zich niet?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
-msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your client with a config option)."
+#, fuzzy
+#| msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your server, you may need to wait, or start your client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your client with a config option)."
+msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
 msgstr "Als je correct geregistreerd bent (dit kun [je hier zien](https://explorer.jamulus.io/)) en jij of je vrienden kunnen je server niet zien, dan kan het zijn dat je moet wachten of je client moet starten met de `--showallservers` optie en vanaf daar verbinding proberen te maken ([zie opdrachtregelopties](Software-Manual#opdrachtregelopties) hoe je een client start met een configuratie optie)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:29
-msgid "If you are seeing a message that says the server is full, please [see this note](Running-a-Server#3-directory) on Directory Servers."
+#, fuzzy
+#| msgid "If you are seeing a message that says the server is full, please [see this note](Running-a-Server#3-directory) on Directory Servers."
+msgid "If you are seeing a message that says the Server is full, you will need to wait until a slot becomes free."
 msgstr "Als je een bericht ziet dat de server vol is, raadplaag dan [deze opmerking](Running-a-Server#3-adresboek) over adresboek servers."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:31
-msgid "You can verify that your server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/)."
+#, fuzzy
+#| msgid "You can verify that your server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/)."
+msgid "You can verify that your Server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/)."
 msgstr "Je kunt controleren of de server in het relevante genre wordt vermeld door deze [hier te controleren](https://explorer.jamulus.io/)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:33
-msgid "## Servers - Private"
+#, fuzzy
+#| msgid "## Servers - Private"
+msgid "## Servers - Unregistered"
 msgstr "## Servers - Prive"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:35
-msgid "### I'm running my client on the same machine/network as my server but I can't connect to it"
+#, fuzzy
+#| msgid "### I'm running my client on the same machine/network as my server but I can't connect to it"
+msgid "### I'm running my Client on the same machine/network as my Server but I can't connect to it"
 msgstr "### Ik gebruik mijn client op dezelfde machine/hetzelfde netwerk als mijn server, maar ik kan er geen verbinding mee maken"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:37
-msgid "Connect your client to `127.0.0.1` (or `localhost` if that works for you). If you're running the client on a different machine to the server but on the same network, then connect to the _local network_ address of the server. Do not connect via the server's public (WAN) address."
+#, fuzzy
+#| msgid "Connect your client to `127.0.0.1` (or `localhost` if that works for you). If you're running the client on a different machine to the server but on the same network, then connect to the _local network_ address of the server. Do not connect via the server's public (WAN) address."
+msgid "Connect your Client to `localhost` or `127.0.0.1`. If you're running the Client on a different machine to the Server but on the same network, then connect to the _local network_ address of the Server. Do not connect via the Server's public (WAN) address."
 msgstr "Verbind je client met `127.0.0.1` (of `localhost` als dat werkt). Als je de client op een andere machine dan de server uitvoert maar op hetzelfde netwerk, maak dan verbinding met het _lokale netwerk_ adres van de server. Maak geen verbinding via het openbare (WAN) adres van de server."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:39
-msgid "### What address do I give to people so that they can connect to my server?"
+#, fuzzy
+#| msgid "### What address do I give to people so that they can connect to my server?"
+msgid "### What address do I give to people so that they can connect to my Server?"
 msgstr "### Welk adres geef ik aan mensen zodat ze verbinding kunnen maken met mijn server?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
-msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus client to the **local** IP address of your server (127.0.0.1 if it's on the same machine as your client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
+#, fuzzy
+#| msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus client to the **local** IP address of your server (127.0.0.1 if it's on the same machine as your client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
+msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
 msgstr "Dit moet je **openbare** IP-adres zijn (zoek dat op bij [Google](https://www.google.com/search?q=whatsmyip)). Verbind je **eigen** Jamulus-client met het **lokale** IP-adres van de server (127.0.0.1 als deze zich op dezelfde machine als je client bevindt). Houd er rekening mee dat je openbare IP-adres kan veranderen - zie de opmerking over \"dynamische DNS\" in [deze handleiding](Running-a-Server#dynamische-dns-en-waarom-je-het-waarschijnlijk-nodig-hebt)."
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:43
+#: ../wiki/en/Server-Troubleshooting.md:44
 msgid "### What port numbers can I use?"
 msgstr "### Welke poort nummers kan ik gebruiken?"
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:45
-msgid "You can set your server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your server in the format `[serverAddress]:[portNumber]`."
+#: ../wiki/en/Server-Troubleshooting.md:46
+#, fuzzy
+#| msgid "You can set your server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your server in the format `[serverAddress]:[portNumber]`."
+msgid "You can set your Server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your Server in the format `[serverAddress]:[portNumber]`."
 msgstr "Je kunt de server zo instellen dat deze op een aangepaste poort luistert met de optie `--port'. Als je dit doet, moet je mensen vertellen op welke poort ze verbinding moeten maken. Ze moeten het poortnummer toevoegen aan het adres van je server in het formaat `[serveradres]:[poortnummer]`."
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:47
-msgid "### Is a private server a direct server without contact to the Jamulus Directory Server?"
-msgstr "### Is een prive server een directe server zonder contact met de Jamulus adresboek server?"
-
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:49
-msgid "Yes. Please see [Server Types](Running-a-Server#server-types)"
-msgstr "Ja. Zie [servertypen](Running-a-Server#servertypen)"
-
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:51
-msgid "### Can I convert my private server to being a public one?"
-msgstr "### Kan ik mijn prive server omzetten in een openbare?"
-
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:53
-msgid "Yes. Simply check the \"Make my Server Public\" box in the server window and fill out the details. If you register your server, do not use port forwarding as it may prevent others using your server."
-msgstr "Ja. Vink gewoon het vakje \"Maak mijn server openbaar\" in het servervenster aan en vul de details in. Als je de server registreert, gebruik dan geen port forwarding aangezien dit kan voorkomen dat anderen je server gebruiken."
-
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:55
-msgid "### **_Headless Linux_**: I have created a server but it is joining the Directory Server and I don't want it to."
-msgstr "### **_Headless Linux_**: Ik heb een server gemaakt, maar deze registreert zich bij de adresboek server en dat wil ik niet."
-
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:57
-msgid "To enable a private server, do not use the `--directoryserver` (`-e`) option when starting your server command line."
-msgstr "Gebruik de optie `--directoryserver` (`-e`) niet bij het starten van je server om een prive server te maken."
-
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:59
-msgid "### Nobody can connect to my server - but I can connect locally"
+#: ../wiki/en/Server-Troubleshooting.md:48
+#, fuzzy
+#| msgid "### Nobody can connect to my server - but I can connect locally"
+msgid "### Nobody can connect to my Server - but I can connect locally"
 msgstr "### Niemand kan verbinding maken met mijn server - maar ik kan lokaal verbinding maken"
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:61
-msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space. This makes it impossible to host services like Jamulus at home (and may mean you also cannot see server lists in your client, or you may be missing [some specific servers](https://sourceforge.net/p/llcon/discussion/server/thread/f72b293af0/))."
+#: ../wiki/en/Server-Troubleshooting.md:50
+#, fuzzy
+#| msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space. This makes it impossible to host services like Jamulus at home (and may mean you also cannot see server lists in your client, or you may be missing [some specific servers](https://sourceforge.net/p/llcon/discussion/server/thread/f72b293af0/))."
+msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space. This makes it impossible to host services like Jamulus at home (and may mean you also cannot see Server lists in your Client, or you may be missing [some specific Servers](https://sourceforge.net/p/llcon/discussion/server/thread/f72b293af0/))."
 msgstr "Sommige ISP's gebruiken technieken zoals [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) of [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) om adresruimte te besparen. Dit maakt het onmogelijk om services zoals Jamulus thuis te hosten (en kan betekenen dat je ook geen serverlijsten in je client kunt zien, of dat je een [aantal specifieke servers](https://sourceforge.net/p/llcon/discussion/server/thread/f72b293af0/) mist)."
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:63
-msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address does not match with the address you see [here](https://ifconfig.me), then this means CGN may be enabled. Or if you experience problems such as being unable to [connect to servers or an empty server list](https://sourceforge.net/p/llcon/discussion/533517/thread/b3eea395c4/) this may also be an indicator that your ISP is the problem too."
+#: ../wiki/en/Server-Troubleshooting.md:52
+#, fuzzy
+#| msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address does not match with the address you see [here](https://ifconfig.me), then this means CGN may be enabled. Or if you experience problems such as being unable to [connect to servers or an empty server list](https://sourceforge.net/p/llcon/discussion/533517/thread/b3eea395c4/) this may also be an indicator that your ISP is the problem too."
+msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address does not match with the address you see [here](https://ifconfig.me), then this means CGN may be enabled. Or if you experience problems such as being unable to [connect to Servers or an empty Server list](https://sourceforge.net/p/llcon/discussion/533517/thread/b3eea395c4/) this may also be an indicator that your ISP is the problem too."
 msgstr "Om te detecteren of CGN het probleem is, gaat je naar het configuratiescherm van jouw router (meestal 192.168.X.X) en kijk je naar de WAN-statuspagina. Als je vermelde IPv4-adres niet overeenkomt met het adres dat je [hier](https://ifconfig.me) ziet, betekent dit dat CGN mogelijk is ingeschakeld. Of als je problemen ondervindt, zoals het niet kunnen [verbinden met servers of een lege serverlijst](https://sourceforge.net/p/llcon/discussion/533517/thread/b3eea395c4/), dan kan dit ook een aanwijzing zijn dat je ISP het probleem is."
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:64
-msgid "To fix the issue: if you are running a public server, try [port forwarding](Running-a-Server#port-forwarding). If you are running a private server and are port forwarding already, contact your ISP support and request them to remove you from CGN and assign you a real WAN IP address because you want to host a server. If CGN is not the issue, you may need to ask your ISP to give you a WAN IP address (or fixed one to avoid using DDNS, if possible). If all else fails, consider hosting on a cloud platform (some providers do free trial periods)."
+#: ../wiki/en/Server-Troubleshooting.md:54
+#, fuzzy
+#| msgid "To fix the issue: if you are running a public server, try [port forwarding](Running-a-Server#port-forwarding). If you are running a private server and are port forwarding already, contact your ISP support and request them to remove you from CGN and assign you a real WAN IP address because you want to host a server. If CGN is not the issue, you may need to ask your ISP to give you a WAN IP address (or fixed one to avoid using DDNS, if possible). If all else fails, consider hosting on a cloud platform (some providers do free trial periods)."
+msgid "To fix the issue: if you are running a registered Server, try [port forwarding](Running-a-Server#port-forwarding). If you are running an unregistered Server and are port forwarding already, contact your ISP support and request them to remove you from CGN and assign you a real WAN IP address because you want to host a Server. If CGN is not the issue, you may need to ask your ISP to give you a WAN IP address (or fixed one to avoid using DDNS, if possible). If all else fails, consider hosting on a cloud platform (some providers do free trial periods)."
 msgstr "Om het probleem op te lossen: als je een openbare server gebruikt, probeer dan [port forwarding](Running-a-Server#port-forwarding). Als je een prive server gebruikt en al port forwarding uitvoert, neem dan contact op met je ISP-ondersteuning en vraag hen om je uit CGN te verwijderen en je een echt WAN IP-adres toe te wijzen omdat je een server wilt hosten. Als CGN niet het probleem is, moet je mogelijk je ISP vragen om je een WAN IP-adres te geven (of een vast adres om het gebruik van DDNS te vermijden, indien mogelijk). Als al het andere faalt, overweeg dan om op een cloudplatform te hosten (sommige providers hebben gratis proefperiodes)."
+
+#~ msgid "## Servers - Public"
+#~ msgstr "## Servers - openbaar"
+
+#~ msgid "### Is a private server a direct server without contact to the Jamulus Directory Server?"
+#~ msgstr "### Is een prive server een directe server zonder contact met de Jamulus adresboek server?"
+
+#~ msgid "Yes. Please see [Server Types](Running-a-Server#server-types)"
+#~ msgstr "Ja. Zie [servertypen](Running-a-Server#servertypen)"
+
+#~ msgid "### Can I convert my private server to being a public one?"
+#~ msgstr "### Kan ik mijn prive server omzetten in een openbare?"
+
+#~ msgid "Yes. Simply check the \"Make my Server Public\" box in the server window and fill out the details. If you register your server, do not use port forwarding as it may prevent others using your server."
+#~ msgstr "Ja. Vink gewoon het vakje \"Maak mijn server openbaar\" in het servervenster aan en vul de details in. Als je de server registreert, gebruik dan geen port forwarding aangezien dit kan voorkomen dat anderen je server gebruiken."
+
+#~ msgid "### **_Headless Linux_**: I have created a server but it is joining the Directory Server and I don't want it to."
+#~ msgstr "### **_Headless Linux_**: Ik heb een server gemaakt, maar deze registreert zich bij de adresboek server en dat wil ik niet."
+
+#~ msgid "To enable a private server, do not use the `--directoryserver` (`-e`) option when starting your server command line."
+#~ msgstr "Gebruik de optie `--directoryserver` (`-e`) niet bij het starten van je server om een prive server te maken."

@@ -7,7 +7,7 @@ permalink: "/wiki/Software-Manual"
 # Jamulus User Manual
  {:.no_toc}
 
-This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server.
+This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server.
 
 <details markdown="1">
 
@@ -22,7 +22,7 @@ This manual documents the Jamulus client application for use by musicians and si
 
 
 <figure>
-	<img src="{{site.url}}/assets/img/en-screenshots/main-screen-medium.png" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
+	<img src="{% include img/en-screenshots/main-screen-medium.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of the Jamulus main window">
 	<figcaption>Your local mix when connected to a Server</figcaption>
 </figure>
 
@@ -32,15 +32,15 @@ This manual documents the Jamulus client application for use by musicians and si
 
 **Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-green.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-green.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a green LED symbol"></figure>
 
 **Green** - The delay is perfect for a jam session
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-yellow.png" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-yellow.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of a yellow LED symbol"></figure>
 
 **Yellow** - A session is still possible but it may be harder to play
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/led-red.png" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
+<figure><img src="{% include img/en-screenshots/led-red.inc %}" style="float:left; margin-right:10px; clear: both;" loading="lazy" alt="Image of a green red symbol"></figure>
 
 **Red** - The delay is too large for jamming
 
@@ -49,7 +49,7 @@ This manual documents the Jamulus client application for use by musicians and si
 - The network jitter buffer is not large enough for the current network/audio interface jitter.
 - The sound card's buffer delay (buffer size) is too small (see Settings window).
 - The upload or download stream rate is too high for your internet bandwidth.
-- The CPU of the client or server is at 100%.
+- The CPU of the Client or server is at 100%.
 
 ## Input
 
@@ -70,15 +70,15 @@ to the right and move the fader upwards until the desired reverb level is reache
 ## Chat
 
 Opens the chat window. Text entered is sent to
-all connected clients. If a new chat message arrives and the Chat dialogue is not already open, it will
-open automatically for all clients.
+all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will
+open automatically for all Clients.
 
 ## Connect/disconnect button
 
 Opens a dialogue where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/connection-setup-window.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a server connection window"></figure>
+<figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
 The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
 
@@ -90,7 +90,7 @@ field. An optional port number can be added after the address using a colon as a
 
 ## Server audio mixer
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
+<figure><img src="{% include img/en-screenshots/mixer-channels.inc %}" style="float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;" loading="lazy" alt="Image of a pair of server mixer controls"></figure>
 
 The audio mixer screen shows each user connected to the server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
@@ -128,15 +128,19 @@ If the server operator has enabled recording, you will see a message above the m
 From the Settings menu, select "My Profile..." to set your Alias/Name
 which is displayed below your fader in the server audio mixer board.
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-profile.png" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-profile.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of a profile window"></figure>
 
 If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/profile-tooltip.png" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+<figure><img src="{% include img/en-screenshots/profile-tooltip.inc %}" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
 
 ### Skin
 
 This applies a skin to the main window, some of which are designed to accommodate larger ensembles.
+
+### Meter style
+
+This changes the visual style of the audio meters, independently of the chosen skin. 
 
 ### Mixer rows
 
@@ -144,7 +148,7 @@ This sets the number of rows displayed in the server audio mixer, for use with l
 
 ## Audio/Network Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-network.png" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-network.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
 
 ### Device
 
@@ -153,7 +157,7 @@ driver is not valid an error message is shown and the previous valid driver is s
 
 ### Input/output channel mapping
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/channel-mapping.png" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
+<figure><img src="{% include img/en-screenshots/channel-mapping.inc %}" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of Input and output channel mapping"></figure>
 
 If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping
 and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)
@@ -161,9 +165,9 @@ a different actual sound card channel can be selected.
 
 ### Audio channels
 
-Selects the number of audio channels to be used for communication between client and server. 
+Selects the number of audio channels to be used for communication between Client and server. 
 
-**Note**: It is preferable to run separate client instances per voice/instrument, with each client given its own ini file, rather than using this built-in mono pair to stereo mixer.
+**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.
 
 There are three modes available:
 
@@ -208,14 +212,14 @@ The jitter buffer compensates for network and sound card timing jitters. The siz
 therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
 (the longer the buffer, the higher the delay).
 
-You can set the jitter buffer size manually for your local client and the remote server. For the local jitter
+You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter
 buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.
 If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted.
 
 The jitter buffer setting is therefore a trade-off between audio quality and overall delay.
 
 If the Auto setting is enabled, the jitter buffers
-of your local client and the remote server are set automatically based on measurements of the network and sound card
+of your local Client and the remote server are set automatically based on measurements of the network and sound card
 timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse).
 
 ### Enable small network buffers
@@ -230,7 +234,7 @@ rate is not higher than your available internet upload speed (check this with a 
 
 ## Advanced Setup
 
-<figure><img src="{{site.url}}/assets/img/en-screenshots/settings-advanced.png" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
+<figure><img src="{% include img/en-screenshots/settings-advanced.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
 
 ### Custom directory server address
 
@@ -238,7 +242,7 @@ Leave this blank unless you need to enter the address of a directory server othe
 
 ### New Client Level
 
-This setting defines the fader level of a newly connected client in percent. If a new user connects
+This setting defines the fader level of a newly connected Client in percent. If a new user connects
 to the current server, they will get the specified initial fader level if no other fader level from a previous connection of
 that user was already stored. You can set all users in an occupied server to this level using Edit > "Set All Faders to New Client Level".
 
@@ -296,6 +300,5 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 {% include_relative Include-Shared-Commands.md %}
 
-{% include_relative Include-QOS-Windows.md %}
 
 

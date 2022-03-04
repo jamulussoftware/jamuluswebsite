@@ -1,0 +1,1 @@
+../en-screenshots/server-inactive.inc

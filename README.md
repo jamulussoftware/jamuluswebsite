@@ -16,13 +16,19 @@ We use [GitHub markdown](https://guides.github.com/features/mastering-markdown/)
 
 Note that we use British English spelling and grammar conventions.
 
-## Adding pictures
+## Adding screenshots
 
-Use the `{{site.url}}` variable to call an existing image in the corresponding directory for that language. This ensures the correct URL is used:
+In order to keep the size of the respository under control when images change over time, we do not store screenshots locally. Instead we use Jekyll's `include` function to call a file containing an external URL to the image itself:
 
-`<img src="{{site.url}}/assets/img/en-screenshots/mixer-channles.png" …`
+`<img src="{% include img/en-screenshots/main-screen-default.inc %}"  …`
 
 If you want to add a new image, use .png format if possible, and if it’s not a screenshot, ask about where you should store it. Localised images must go in a directory for that language (see the example for English, above).
+
+To get the URL for the `.inc` file, open a Github issue (in any repository) and add your image to it. Github will generate a URL for it like this:
+
+`![your-image-name](https://user-images.githubusercontent.com/45617 … .png)`
+
+Put that URL (only the part within the brackets) into the `.inc` file, saving that in the appropriate directory to be used as above for `<img src=`. Note that because Github generates unique "anonymous" URLs for every image, the `include` method allows us easily to manage the same image used in multiple places if necessary. 
 
 ### Style and tone
 
