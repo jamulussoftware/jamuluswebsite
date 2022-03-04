@@ -21,3 +21,4 @@ Jamulus (mostly the GUI-Client, not the headless server) is included in the main
 ## Android
 There is a [request to include Jamulus for Android in F-Droid](https://gitlab.com/fdroid/rfp/-/issues/2011). However, compiling Qt is a bigger task, which is why it is probably not yet available.
 ## iOS
+Since distributing on iOS is difficult, there is no known distribution available. It might be possible to put the app on TestFlight.
