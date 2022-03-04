@@ -20,7 +20,7 @@ Upgrading? You may want to [back up your configuration](Software-Manual#backing-
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
 1. **Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.
 
-_You are permitted to redistribute this binary without acquiring a licence agreement from Steinberg._
+_You are not permitted to redistribute this binary without acquiring a licence agreement from Steinberg._
 
 ***
 
