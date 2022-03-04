@@ -5,7 +5,7 @@ lang: "en"
 heading: "Alternative, not-officially supported install methods"
 ---
 
-This guide page lists alternative install methods for Jamulus. Feel free to add another method here and link it. Please note: These links are not officially supported and might be outdated.
+This guide page lists alternative install methods for Jamulus. Feel free to [edit this page](https://github.com/jamulussoftware/jamuluswebsite/edit/release/_posts/2022-03-04-Linux-Alternative-Install-Methods.md) and add another method here and link it. Please note: These links are not officially supported and might be outdated.
 
 <!--more-->
 ## General notes
