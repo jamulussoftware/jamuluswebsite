@@ -139,7 +139,7 @@ You can also specify a [Custom Directory](#3-custom-directory) in the same way f
 
 If you wish to run a [Custom Directory](Running-a-Server#3-custom-directory) please see [this guide](Custom-Directories).
 
-### Maintainance
+### Maintenance
 
 #### Upgrading
 
@@ -157,8 +157,7 @@ To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read t
 
 When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off.
 
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-serv
-er.service`).
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
 
 **Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
 
