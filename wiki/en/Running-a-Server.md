@@ -298,7 +298,7 @@ If you are running a Server on your home network, people from outside will not b
 
 The exact setup of port forwarding differs for every router. For help see [portforward.com](https://portforward.com).
 
-Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your Server (_but see also the note on dynamic DNS below_). You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `127.0.0.1`. 
+Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your Server (_but see also the note on dynamic DNS below_). You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `localhost` or `127.0.0.1`. 
 
 ## Dynamic DNS and why you will probably need it
 
