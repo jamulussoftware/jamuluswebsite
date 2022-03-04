@@ -41,7 +41,7 @@ Once any issues with musicians have been solved in this way, you can then invest
 
 ### Bandwidth – do you have enough?
 
-Unless you plan on hosting more than about 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up), then you are unlikely to run out of bandwidth. You can read more about network requirements at different quality settings later in this document.
+Unless you plan on hosting more than about 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up), then you are unlikely to run out of bandwidth. You can read more about network requirements at [different quality settings here](Server-Bandwidth).
 
 ### In general
 
@@ -83,48 +83,150 @@ If you want to run a number of Servers, possibly also behind a firewall or on a 
 
 To run a Custom Directory [read this guide](Custom-Directories)
 
-# Bandwidth use
 
-## Audio bandwidth
+# Installing and running a Server 
 
-The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:
-* Channels : stereo/mono
-* Quality : high/medium/low
-* Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms
+Most people run Jamulus as a "pure" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following guide assumes you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop).  
 
-With the following units
-* ms : milliseconds
-* Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)
-* Mbit/s : Mega-bits per second
+If you want to run a Server on a Raspberry Pi, you will need to [compile from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). See also this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) maintained by Jamulus user fredsiva. 
 
-| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |
-| --------- | ------ | -------- | -------- | -------- | -------- |
-| Stereo    | High   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |
-| Stereo    | Medium | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |
-| Stereo    | Low    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |
-| Mono      | High   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|
-| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |
-| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |
+### Installation
 
-## Network bandwidth
+1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
+1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
+1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`
+1. Enable the headless Server process via systemd: `sudo systemctl enable jamulus-headless`
+1. Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running an Unregistered Server).
+1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`
+1. Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt).
 
-There is one upstream (musician sending to the Server) and one downstream (server sending back the mix to the musician)
-<figure>
-	<img src="{% include img/en-screenshots/bandwidth-diagram.inc %}" loading="lazy" alt="A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high">
-<figcaption>Calculate bandwidth use </figcaption>
-</figure>
+You may also be interested in downloading [this set of useful tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
 
-Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate.
+### Configuration
+
+You can control Jamulus with the `systemctl` command. For example, to stop the Server cleanly:
+
+`sudo systemctl stop jamulus-headless`
+
+#### Running in Registered mode
+
+The following minimum setup is required to [run a Registered Server](Running-a-Server#server-types):
+
+~~~
+jamulus --nogui --server \
+        --directoryserver genreServer:port \
+        --serverinfo "yourServerName;yourCity;[country ID]"
+~~~
+
+**Note**: Semicolon and newline characters are not allowed in `yourServerName` and `yourCity` within the `--serverinfo` argument
+
+To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` in the example above with one of the following options:
 
 
-# Starting a Server
+| Genre |   Server Address           |
+|-----------|------------------|
+|**Any Genre 1** |`anygenre1.jamulus.io:22124`|
+|**Any Genre 2** |`anygenre2.jamulus.io:22224`|
+|**Any Genre 3** |`anygenre3.jamulus.io:22624`|
+|**Genre Rock** |`rock.jamulus.io:22424`|
+|**Genre Jazz** |`jazz.jamulus.io:22324`|
+|**Genre Classical/Folk** |`classical.jamulus.io:22524`|
+|**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
 
+You can also specify a [Custom Directory](#3-custom-directory) in the same way from the command line, providing the Server Address in the same format.
+
+#### Running as a Directory
+
+If you wish to run a [Custom Directory](Running-a-Server#3-custom-directory) please see [this guide](Custom-Directories).
+
+### Maintenance
+
+#### Upgrading
+
+To upgrade your Server to a newer version, simply download a new .deb and [re-install as step 3](#installation).
+
+#### Viewing The Logs
+
+Jamulus will log to the system log file if you left the `StandardOutput=journal` setting in the unit file. 
+
+To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:
+
+`journalctl -f -u jamulus-headless`
+
+#### Recording
+
+When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off.
+
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
+
+**Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
+
+For turning recording on or off (depending on the current state):
+
+~~~
+ [Unit]
+ Description=Toggle recording state of Jamulus Server
+ Requisite=Jamulus-Server
+
+ [Service]
+ Type=oneshot
+ ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+~~~
+
+For starting a new recording:
+
+~~~
+ [Unit]
+ Description=Start a new recording on Jamulus Server
+ Requisite=Jamulus-Server
+
+ [Service]
+ Type=oneshot
+ ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
+~~~
+
+_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_
+
+Run `sudo systemctl daemon-reload` to register them for first use.
+
+Now you can run these with the `systemctl` command, for example:
+
+`sudo systemctl start jamulusTogglerec` (assuming you named your unit file `jamulusTogglerec.service`)
+
+You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs.
+
+### Making a Server status page
+
+With the `-m` command line argument, Server statistics can be generated to be put on a web page.
+
+Here is an example php script using the Server status file to display the current Server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):
+
+~~~
+<?php
+function loadserverstat ( $statfilename )
+{
+   $datei = fopen ( $statfilename, "r" );
+   while ( !feof ( $datei ) )
+   {
+          $buffer = fgets ( $datei, 4096 );
+          echo $buffer;
+   }
+   fclose($datei);
+}
+?>
+<?php loadserverstat ( "stat1.dat" ); ?>
+~~~
+
+
+# Servers on the desktop
+
+Jamulus can be configured to run in Server mode on the desktop. This gives you a graphical user interface to control most of the settings. 
 
 * **Windows users** - Use the "Jamulus Server" icon in the Windows Start menu.
 
 * **macOS users** - Double-click the "Jamulus Server" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).
 
-* **Linux users** - Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros) and type `jamulus -s`. Hit return and you should see the Server control window. You can stop the Server by closing the Server window, or by using `CTRL+C` in the terminal. _(To run a headless Server [read this guide](Server-Linux))_
+* **Linux users** - Open a terminal window (`CTRL+ALT+t` on Debian and related distros) and type `jamulus -s`. Hit return and you should see the Server control window. You can stop the Server by closing the Server window, or by using `CTRL+C` in the terminal. _(To run a headless Server [read this guide](#installing-and-running-a-server))_
 
 
 ## Server Setup
@@ -196,17 +298,13 @@ If you are running a Server on your home network, people from outside will not b
 
 The exact setup of port forwarding differs for every router. For help see [portforward.com](https://portforward.com).
 
-Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your Server (_but see also the note on dynamic DNS below_). You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `127.0.0.1`. 
+Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your Server (_but see also the note on dynamic DNS below_). You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `localhost` or `127.0.0.1`. 
 
 ## Dynamic DNS and why you will probably need it
 
 Most domestic Internet connections will change their IP address after a period (hours, days or weeks). To make it easier for people to connect to you, you may therefore also want set up a dynamic DNS address. You can do this on [the machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) that you are running the Jamulus Server on, or preferably your router [may support it](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/).
 
 Note also that your home router may also change the IP address of the machine that you are running your Server on. In which case you may need to give that machine a static IP in the router's DHCP configuration.
-
-# Running a headless Linux Server
-
-Those wishing to run a Server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).
 
 # Backing up the Server
 
@@ -235,8 +333,6 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 {% include_relative Include-Server-Commands.md %}
 
 {% include_relative Include-Shared-Commands.md %}
-
-{% include_relative Include-QOS-Windows.md %}
 
 
 # Troubleshooting
