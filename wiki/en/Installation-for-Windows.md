@@ -30,7 +30,7 @@ Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to 
 
 You can try two versions of ASIO4ALL. ASIO4ALL v2.14 includes a workaround for a bug which might break other functionality.
 
-[ASIO4ALL v2.15 Beta 3 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_Beta3_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL v2.15 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
 [ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
