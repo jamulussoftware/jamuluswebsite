@@ -20,12 +20,11 @@ Upgrading? You may want to [back up your configuration](Software-Manual#backing-
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
 1. **Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.
 
-_You are not permitted to redistribute this binary without acquiring a [licence agreement from Steinberg](https://www.steinberg.net/developers/)._
-
 ***
 
-## Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) 
+## ASIO
 
+Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to provide the lowest latency.
 * If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality).
 * If you don't have an external sound card, you will probably not have an ASIO driver so will need to install a generic one like ASIO4ALL:
 
@@ -34,6 +33,8 @@ You can try two versions of ASIO4ALL. ASIO4ALL v2.14 includes a workaround for a
 [ASIO4ALL v2.15 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_English.exe){: .button target="_blank" rel="noopener noreferrer"}
 
 [ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target="_blank" rel="noopener noreferrer"}
+
+[ASIO4ALL website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
 
 ### Setting up ASIO4ALL
