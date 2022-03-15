@@ -100,8 +100,6 @@ If you want to run a Server on a Raspberry Pi, you will need to [compile from so
 1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`
 1. Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt).
 
-You may also be interested in downloading [this set of useful tools](https://github.com/jamulussoftware/jamulus/tree/master/tools) from the Jamulus repository (clone the Git repo and also call `git submodule update --init`).
-
 ### Configuration
 
 You can control Jamulus with the `systemctl` command. For example, to stop the Server cleanly:
@@ -226,7 +224,7 @@ Jamulus can be configured to run in Server mode on the desktop. This gives you a
 
 * **macOS users** - Double-click the "Jamulus Server" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).
 
-* **Linux users** - Open a terminal window (`CTRL+ALT+t` on Debian and related distros) and type `jamulus -s`. Hit return and you should see the Server control window. You can stop the Server by closing the Server window, or by using `CTRL+C` in the terminal. _(To run a headless Server [read this guide](#installing-and-running-a-server))_
+* **Linux users** - Launch the "Jamulus Server" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return. _(To run a headless Server [read this guide](#installing-and-running-a-server))_
 
 
 ## Server Setup
