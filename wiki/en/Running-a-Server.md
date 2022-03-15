@@ -92,7 +92,7 @@ If you want to run a Server on a Raspberry Pi, you will need to [compile from so
 
 ### Installation
 
-1. Download the latest headless .deb file: `wget {{ site.download_root_link }}{{ site.download_file_names.deb-headless }}`
+1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
 1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
 1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`
 1. Enable the headless Server process via systemd: `sudo systemctl enable jamulus-headless`
