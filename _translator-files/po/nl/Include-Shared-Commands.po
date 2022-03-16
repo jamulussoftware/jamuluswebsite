@@ -22,53 +22,72 @@ msgstr "[comment]: # (Dit bestand is opgenomen in meerdere documenten)"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:5
-#, no-wrap
-msgid "`-h` or `--help`     Display help text         \n"
+#, fuzzy, no-wrap
+#| msgid "`-h` or `--help`     Display help text         \n"
+msgid "`-h` or `--help`           Display help text         \n"
 msgstr "`-h` of `--help`     Laat de help tekst zien         \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:6
-#, no-wrap
-msgid "`-i` or `--inifile`   Set location of initialization file (overrides default) \n"
+#, fuzzy, no-wrap
+#| msgid "`-i` or `--inifile`   Set location of initialization file (overrides default) \n"
+msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
 msgstr "`-i` of `--inifile`   Stel de locatie in van het ini-bestand (overschrijft de standaard) \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:7
-#, no-wrap
-msgid "`-n` or `--nogui`    Disable GUI (for use in headless mode)                      \n"
+#, fuzzy, no-wrap
+#| msgid "`-n` or `--nogui`    Disable GUI (for use in headless mode)                      \n"
+msgid "`-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
 msgstr "`-n` of `--nogui`    Schakel de GUI uit (voor gebruik in headless mode)                      \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:8
-#, no-wrap
-msgid "`-p` or `--port`    Sets the local UDP port number. Default is 22124 \n"
+#, fuzzy, no-wrap
+#| msgid "`-p` or `--port`    Sets the local UDP port number. Default is 22124 \n"
+msgid "`-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
 msgstr "`-p` of `--port`    Stelt het lokale UDP poort number in. Standaard is dit: 22124 \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:9
+#, no-wrap
+msgid "`--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md).\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Include-Shared-Commands.md:10
+#, no-wrap
+msgid "`--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Include-Shared-Commands.md:11
 #, fuzzy, no-wrap
 #| msgid ""
 #| "`-Q` or `--qos`     Sets the quality of service DSCP value. Default is 128. Disable with 0. QoS is ignored by Windows. To enable it, see\n"
 #| "section below\n"
-msgid "`-Q` or `--qos`     Sets the quality of service DSCP value. Default is 128. Disable with 0. QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
+msgid "`-Q` or `--qos`            Sets the quality of service DSCP value. Default is 128. Disable with 0. QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
 msgstr ""
 "`-Q` of `--qos`     Stelt de DSCP-waarde van de Quality of Service in. Standaard is dit: 128. Uitschakelen met: 0. QoS wordt genegeerd door Windows. Om het in te schakelen, zie\n"
 "sectie hieronder\n"
 
 #. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:10
-#, no-wrap
-msgid "`-t` or `--notranslation`   Disable UI language translations\n"
+#: ../wiki/en/Include-Shared-Commands.md:12
+#, fuzzy, no-wrap
+#| msgid "`-t` or `--notranslation`   Disable UI language translations\n"
+msgid "`-t` or `--notranslation`  Disable UI language translations\n"
 msgstr "`-t` of `--notranslation`   Schakelt UI-vertaling uit\n"
 
 #. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:11
-#, no-wrap
-msgid "`-6` or `--enableipv6`      Enable IPv6 addressing (IPv4 is always enabled)\n"
+#: ../wiki/en/Include-Shared-Commands.md:13
+#, fuzzy, no-wrap
+#| msgid "`-6` or `--enableipv6`      Enable IPv6 addressing (IPv4 is always enabled)\n"
+msgid "`-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
 msgstr "`-6` of `--enableipv6`      Schakelt IPv6 adressen in (IPv4 is altijd ingeschakeld)\n"
 
 #. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:11
-#, no-wrap
-msgid "`-v` or `--version`   Output version information and exit \n"
+#: ../wiki/en/Include-Shared-Commands.md:13
+#, fuzzy, no-wrap
+#| msgid "`-v` or `--version`   Output version information and exit \n"
+msgid "`-v` or `--version`        Output version information and exit\n"
 msgstr "`-v` of `--version`   Laat de versie informatie zien \n"
