@@ -64,6 +64,8 @@ This is the default when starting a Server for the first time. Unregistered Serv
 	<figcaption>How Unregistered Servers work</figcaption>
 </figure>
 
+If you are running an unregistered server behind a home internet connection, you might need to enable [port forwarding](#port-forwarding) as described below.
+
 ### 3. Custom Directory
 
 If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
@@ -87,15 +89,13 @@ If you want to run a Server on a Raspberry Pi, you will need to [compile from so
 1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`
 1. Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt).
 
-_To upgrade your Server, just repeat the steps above._
-
-If you are running an unregistered server behind a home internet connection, you might need to enable [port forwarding](#port-forwarding) as described below.
-
-### Controlling the Server
-
 You can control Jamulus with the `systemctl` command. For example, to stop the Server cleanly:
 
 `sudo systemctl stop jamulus-headless`
+
+_To upgrade your Server, just repeat the steps above._
+
+### Configuration
 
 #### Running in Registered mode
 
