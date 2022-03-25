@@ -20,7 +20,9 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a Server?
 
-**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](tips-tricks-more#have-a-undisturbed-session-on-any-server).
+**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](tips-tricks-more#have-a-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
+
+## Basic requirements
 
 While setting up a Server isn't difficult, it's a good idea to read the following backround information to avoid some problems:
 
@@ -30,13 +32,11 @@ While setting up a Server isn't difficult, it's a good idea to read the followin
 
 Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed.
 Various problems can arise when setting up Servers - especially when run on a low-bandwidth home connection.
-Therefore:
-* Use other peoples' (public) Servers at first to isolate any issues that may in fact be due to Client configuration.
-* Ensure you have enough bandwidth: Less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up) are fine. You can read more about network requirements at [different quality settings here](Server-Bandwidth).
+
+Therefore: Ensure you have enough bandwidth: Less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up) are fine. You can read more about network requirements at [different quality settings here](Server-Bandwidth). Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems.
 
 ### General notes
 
-* Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems
 * Any Server should have at least 1.6GHz CPU frequency and 1GB RAM
 * Running a Server may require you to adjust any firewalls running on or outside of your machine or cloud host.
 * Running an Uregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
@@ -66,14 +66,14 @@ This is the default when starting a Server for the first time. Unregistered Serv
 
 If you are running an unregistered server behind a home internet connection, you might need to enable [port forwarding](#port-forwarding) as described below.
 
-### 3. Custom Directory
+### 3. Directory
 
 If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
 
 To run a Directory [read this guide](Custom-Directories)
 
 
-## Installing and running a Server
+## Installation and Configuration
 
 Most people run Jamulus as a "pure" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop).  
 
@@ -122,11 +122,11 @@ To register with one of the Directories built into the Jamulus Client, replace `
 |**Genre Classical/Folk** |`classical.jamulus.io:22524`|
 |**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
 
-You can also specify a [Custom Directory](#3-custom-directory) in the same way from the command line, providing the Server Address in the same format.
+You can also specify a [Directory](#3-directory) in the same way from the command line, providing the Server Address in the same format.
 
 #### Running as a Directory
 
-If you wish to run a [Custom Directory](Running-a-Server#3-custom-directory) please see [this guide](Custom-Directories).
+If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Custom-Directories).
 
 ### Maintenance
 
@@ -138,7 +138,7 @@ To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read t
 
 `journalctl -f -u jamulus-headless`
 
-#### Recording
+#### Controlling Recording
 
 When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off.
 
@@ -200,9 +200,9 @@ Jamulus can be run in Server mode from the desktop. This gives you a graphical u
 
 **Genre**: To allow other people to see your Server on one of the built-in Public Directories, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.  
 
-**Custom**: This allows you to specify a custom directory on which to be listed. See the "Options" tab for the Custom Directory server address you want to use.
+**Custom**: This allows you to specify a custom directory on which to be listed. See the "Options" tab for the Custom Directory address you want to use.
 
-To run your Server _as_ a Directory, you need to set the Custom Directory server address as `localhost` or `127.0.0.1` and set the "Genre" to "Custom". [Read this guide](Custom-Directories) for further details.
+To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the "Genre" to "Custom". [Read this guide](Custom-Directories) for further details.
 
 ### My Server Info
 
@@ -222,13 +222,13 @@ This sets the path to where the Server's recordings will be stored. With this pa
 
 **Note**: When your Server is recording, Clients will display a message that recording is on.
 
-### Directory Server Address
+### Custom Directory Address
 
-Leave this field empty unless you need to list your Server on a [Custom Directory](#3-custom-directory) or run a Directory.
+Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory.
 
 ### Server List Filename
 
-Leave this field empty unless you need to run your Server as a [Directory](#3-custom-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing "empty" until the Servers re-register.
+Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing "empty" until the Servers re-register.
 
 ### Delay panning
 
@@ -293,7 +293,7 @@ You yourself should connect using the local network (LAN) address of the machine
 
 #### Dynamic DNS and why you will probably need it
 
-Most domestic internet connections change their external IP address after a short period, you might want to set up a "dynamic DNS" which gives you a static (sub-)domain you can access and share with others. For further information, please look if your router already provides this feature or use an external DynamicDNS provider.
+Most domestic internet connections change their external IP address after a short period. To avoid problems with this, you might want to set up "dynamic DNS" to get a static (sub-)domain you can share with others. Please research how to do that for your specic set up. Your router might support some "dynamic DNS" providers out of the box. If this is not the case, set up a dynamic DNS client as described by the dynamic DNS provider you chose.
 
 ## Backing up the Server
 
