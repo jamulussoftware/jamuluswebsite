@@ -23,15 +23,6 @@
    clear: both;
 }
 
-.wikisite #ftext {
-  margin-top: 2em;
-  border-top: solid #1181a4;
-  line-height: 90%;
-  font-size: 0.85em;
-  background-color: #edebeb;
-  padding: 20px;
-}
-
 .wikisite #breadcrumb {
   line-height: 90%;
   font-size: 0.90em;
@@ -60,13 +51,6 @@ figcaption {
   bottom: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .wikisite #ftext {
-    border-top-color: #0a5067;
-    background-color: #2b2f2f;
-  }
-}
-
 details {
   font: 16px;
   font-style: bold;
@@ -82,3 +66,19 @@ details > summary {
   color: #1882A1;
   cursor: pointer;
 }
+
+#cc {
+   margin-top: 1.5em;
+   font-style: italic;
+   font-size: 0.75em;
+   color: #696969;
+   clear: both;
+}
+
+
+#asio {
+   font-style: italic;
+   font-size: 0.75em;
+   clear: both;
+}
+
