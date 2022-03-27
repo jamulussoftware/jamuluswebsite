@@ -21,6 +21,10 @@ permalink: "/wiki/Tips-Tricks-More"
 
 Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has compiled a massive amount of information relating to [Remote Band Rehearsals](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc), which covers topics such as hardware and software configuration including examples and advice for newcomers to the field. He also includes a section on Jamulus in comparison to other solutions.
 
+##  Have a undisturbed session on any Server
+
+You can have a "private", undisturbed session with other people on any Server, including publically listed Servers, by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
+
 ##  Using Jamulus audio in Zoom (or other) meeting apps
 
 Several users have reported success allowing a "virtual audience" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through JackRouter to the target application (in this case, Zoom meetings).
@@ -29,7 +33,7 @@ You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) 
 
 ## Recording Jamulus on Windows with Reaper
 
-Jamulus user [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/) has written a [guide to recording the output of Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc) using the ReaRoute add-on for [Reaper](https://www.reaper.fm/). 
+Jamulus user [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/) has written a [guide to recording the output of Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc) using the ReaRoute add-on for [Reaper](https://www.reaper.fm/).
 
 ## Remote management of recordings
 
@@ -98,3 +102,24 @@ Make sure you connect your MIDI device's output port to the Jamulus MIDI in port
 
 *Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to "View" on the top menu bar and choose "Sort Users by Name".
 
+## Making a Server status page
+
+With the `-m` command line argument, Server statistics can be generated to be put on a web page.
+
+Here is an example php script using the Server status file to display the current Server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):
+
+~~~
+<?php
+function loadserverstat ( $statfilename )
+{
+   $datei = fopen ( $statfilename, "r" );
+   while ( !feof ( $datei ) )
+   {
+          $buffer = fgets ( $datei, 4096 );
+          echo $buffer;
+   }
+   fclose($datei);
+}
+?>
+<?php loadserverstat ( "stat1.dat" ); ?>
+~~~
