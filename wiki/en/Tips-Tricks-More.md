@@ -21,7 +21,7 @@ permalink: "/wiki/Tips-Tricks-More"
 
 Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has compiled a massive amount of information relating to [Remote Band Rehearsals](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc), which covers topics such as hardware and software configuration including examples and advice for newcomers to the field. He also includes a section on Jamulus in comparison to other solutions.
 
-# Using the Jamulus Client
+## Using the Jamulus Client
 
 ##  Have a undisturbed session on any Server
 
