@@ -20,7 +20,7 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a Server?
 
-**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](tips-tricks-more#have-a-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
+**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-a-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
 
 ## Basic requirements
 
@@ -31,9 +31,11 @@ While setting up a Server isn't difficult, it's a good idea to read the followin
 **_The capability of the Server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**
 
 Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed.
-Various problems can arise when setting up Servers - especially when run on a low-bandwidth home connection.
 
-Therefore: Ensure you have enough bandwidth: Less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up) are fine. You can read more about network requirements at [different quality settings here](Server-Bandwidth). Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems.
+However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth). 
+
+Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems.
+
 
 ### General notes
 
