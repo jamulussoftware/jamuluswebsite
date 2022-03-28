@@ -96,7 +96,7 @@ Make sure you connect your MIDI device's output port to the Jamulus MIDI in port
 
 *Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to "View" on the top menu bar and choose "Sort Users by Name".
 
-# For Server admins
+## For Server admins
 
 ## Converting a public Server to a private one on the fly
 
