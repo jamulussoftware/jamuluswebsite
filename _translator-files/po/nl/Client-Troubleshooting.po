@@ -117,8 +117,9 @@ msgstr "### Jullie klinken allemaal goed, maar het is moeilijk om gelijk te blij
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:37
-#, no-wrap
-msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
+#, fuzzy, no-wrap
+#| msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
+msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the Server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
 msgstr "**Luister, indien mogelijk, NIET naar je directe signaal.** Zorg ervoor dat je zoveel mogelijk luistert naar het geluid van je eigen instrument/stem dat _terugkomt van de server_. Dit signaal zorgt ervoor dat jij en je medespelers synchroon met elkaar vermengd zijn en zal het signaal zijn dat je bandleden ook horen. Dus ernaar luisteren betekent dat je synchroon loopt met elkaar (ervan uitgaande dat jullie allemaal een redelijk lage latency hebben). Als een of meer muzikanten/zangers deze regel niet volgen, kunnen ze langzamer gaan spelen of zingen.\n"
 
 #. type: Plain text
@@ -128,12 +129,16 @@ msgstr "Je kunt als volgt testen of je jouw signaal goed hoort:"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:41
-msgid "Run Jamulus and connect to a server with a long ping time (greater than 200ms)"
+#, fuzzy
+#| msgid "Run Jamulus and connect to a server with a long ping time (greater than 200ms)"
+msgid "Run Jamulus and connect to a Server with a long ping time (greater than 200ms)"
 msgstr "Voer Jamulus uit en maak verbinding met een server met een hoge ping-tijd (groter dan 200 ms)"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:42
-msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus server come back, but significantly delayed."
+#, fuzzy
+#| msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus server come back, but significantly delayed."
+msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus Server come back, but significantly delayed."
 msgstr "Klap één keer in je handen (of speel een korte noot op een instrument). Je zou het geluid van de Jamulus-server moeten horen terugkomen, maar aanzienlijk vertraagd."
 
 #. type: Plain text
@@ -158,7 +163,9 @@ msgstr "Hoe je precies vermijdt om naar je directe signaal te luisteren, hangt a
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:50
-msgid "Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
+#, fuzzy
+#| msgid "Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
+msgid "Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
 msgstr "Houd er rekening mee dat wanneer je naar het signaal van de server luistert, je ervoor zorgt dat je synchroon loopt met andere muzikanten maar dat je ook problemen kunt ondervinden als jouw algehele latency (aangegeven door het \"Vertraging\"-lampje in Jamulus) niet groen of op zijn minst geel is voor de meeste tijd. Raadpleeg de [gebruikershandleiding](/wiki/Software-Manual) om te begrijpen hoe je jouw installatie kunt aanpassen om hierbij te helpen."
 
 #. type: Plain text
@@ -198,7 +205,9 @@ msgstr "### Raak je gefrustreerd door softwarekanalen, audioroutering, samplefre
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:66
-msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
+#, fuzzy
+#| msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
+msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus Server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
 msgstr "Het is meestal veel gemakkelijker en betrouwbaarder om een [mixer](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) aan te sluiten op je apparatuur (instrumenten, microfoons, opname-apparaat, etc.) en stuur vervolgens een stereosignaal naar je geluidsinterface (luister echter wel naar het resulterende geluid van de Jamulus-server via je computer!). De enorme verscheidenheid aan mogelijke hardware-, software- en instrumentcombinaties betekent dat het instellen van je geluidskaart om te werken met jouw specifieke configuratie anders zeer snel ingewikkeld kan worden."
 
 #. type: Plain text
@@ -213,17 +222,23 @@ msgstr "Je kunt het \"nieuw client-niveau\" op een lage waarde zetten (bijv. 10)
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:72
-msgid "### Can't see the server you want to join?"
+#, fuzzy
+#| msgid "### Can't see the server you want to join?"
+msgid "### Can't see the Server you want to join?"
 msgstr "### Zie je de server waaraan je wilt deelnemen niet?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:74
-msgid "First check that you have the right genre server selected in your Connection Setup window. Sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the \"Server Name/Address\" field in the Connect Setup window to connect to it."
+#, fuzzy
+#| msgid "First check that you have the right genre server selected in your Connection Setup window. Sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the \"Server Name/Address\" field in the Connect Setup window to connect to it."
+msgid "First check that you have the right genre Server selected in your Connect window. Sometimes network issues mean your Client won't list all the available Servers. If you know the name of the Server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter that address in the \"Server Address\" field in the Connect Setup window to connect to it."
 msgstr "Controleer eerst of je de juiste genre server hebt geselecteerd in het verbindingsinstellingen venster. Soms zorgen netwerkproblemen ervoor dat je client niet alle beschikbare servers laat zien. Als je de naam weet van de server waaraan je wilt deelnemen, kun je [het IP-adres hier opzoeken](https://explorer.jamulus.io/). Voer het IP-adres in het \"Serveradres\" veld in het verbindinginstellingen venster om daar mee verbinding te maken."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:76
-msgid "### Not seeing a list of servers at all?"
+#, fuzzy
+#| msgid "### Not seeing a list of servers at all?"
+msgid "### Not seeing a list of Servers at all?"
 msgstr "### Ziet je helemaal geen lijst met servers?"
 
 #. type: Plain text
@@ -233,7 +248,9 @@ msgstr "In het VK (en mogelijk andere regio's/routers) kan de instelling van de 
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:80
-msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my server\""
+#, fuzzy
+#| msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my server\""
+msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my Server\""
 msgstr "In sommige gevallen kan het je ISP zijn die het gebruik van Jamulus blokkeert. Zie de opmerking op de [server problemen oplossen pagina](Server-Troubleshooting#niemand-kan-verbinding-maken-met-mijn-server---maar-ik-kan-lokaal-verbinding-maken) over \"Niemand kan met mijn server verbinding maken\""
 
 #. type: Plain text

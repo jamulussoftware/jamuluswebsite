@@ -73,521 +73,595 @@ msgid "</details>"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:23
-msgid "## Do I need to run a server?"
+#: ../wiki/en/Running-a-Server.md:22
+msgid "## Do I need to run a Server?"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:25
-msgid "The short answer is **no**. For various reasons, you should try to use other people's servers, at least at first while getting your sound set up with the Jamulus client."
+#: ../wiki/en/Running-a-Server.md:24
+#, no-wrap
+msgid "**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-a-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:27
-msgid "Note that you can have a \"private\" session with other people on a Public Server by simply soloing each other. You will then not be able to hear anyone else if they enter your server."
+#: ../wiki/en/Running-a-Server.md:26
+msgid "## Basic requirements"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:29
-msgid "If you do decide to run a server, please read the following. Setting up a server is easy, however it is better to know the theory first:"
+#: ../wiki/en/Running-a-Server.md:28
+msgid "While setting up a Server isn't difficult, it's a good idea to read the following backround information to avoid some problems:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:31
+#: ../wiki/en/Running-a-Server.md:30
 msgid "### Speed and latency"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:33
-msgid "Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' hard/software setup, the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:35
+#: ../wiki/en/Running-a-Server.md:32
 #, no-wrap
-msgid "**_The capability of the server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**\n"
+msgid "**_The capability of the Server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:37
-msgid "If you plan to be playing regularly with the same people, **you are strongly advised** to first make sure that each member of the group is set up to use Jamulus properly. Do this by finding a Public Server with a reasonable ping time for all of you (20 ms or less perhaps), all connect to that and work to fix any individual issues (verifying that they can [follow Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) in particular). Use the solo technique above to prevent being interrupted if needed."
+#: ../wiki/en/Running-a-Server.md:34
+msgid "Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:39
-msgid "Once any issues with musicians have been solved in this way, you can then investigate hosting your own server either at home or on a cloud host such as Amazon, which may result in better latency than servers run at home. For example, [see this guide](https://www.facebook.com/notes/jamulus-worldjam/howto-idiots-guide-to-installing-or-upgrading-a-jamulus-server-on-amazon-aws-lig/818091045662521/) for using AWS Lightsail, by Jamulus user [Simon Tomlinson](https://www.facebook.com/simon.james.tomlinson?eid=ARBQoY3KcZAtS3pGdLJuqvQTeRSOo4gHdQZT7nNzOt1oPMGgZ4_3GERe-rOyH5PxsSHVYYXjWwcqd71a) (_Facebook_)"
+#: ../wiki/en/Running-a-Server.md:36
+msgid "However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:38
+msgid "Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:41
-msgid "### Bandwidth – do you have enough?"
+msgid "### General notes"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:43
-msgid "Unless you plan on hosting more than about 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up), then you are unlikely to run out of bandwidth. You can read more about network requirements at different quality settings later in this document."
+msgid "Any Server should have at least 1.6GHz CPU frequency and 1GB RAM"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:44
+msgid "Running a Server may require you to adjust any firewalls running on or outside of your machine or cloud host."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:45
+msgid "Running an Uregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:46
-msgid "### In general"
+msgid "Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. (There are plans to expand IPv6 support.)"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:48
-msgid "Consider using a cloud host to get better ping times if you're having problems"
+msgid "## Server Types"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:50
-msgid "Any server should have at least 1.6GHz CPU frequency and 1GB RAM"
+msgid "You can run your Server in different ways (either at home or on a 3rd party host):"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:52
-msgid "Running a server may require you to adjust any firewalls running on or outside of your machine or cloud host."
+msgid "### 1. Registered"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:54
-msgid "Running a Private Server at home will require you to [port forward](#running-a-private-server) on your router. When running a Public Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:56
-msgid "Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the client and server. There are plans to expand IPv6 support."
+msgid "Your Server will be listed in a Directory. By default, Jamulus has a list of built-in Directories that Clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:59
-msgid "# Server Types"
+#, no-wrap
+msgid ""
+"<figure>\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Registered Server\">\n"
+"<figcaption>How Registered Servers work</figcaption>\n"
+"</figure>\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:61
-msgid "You can run your server in one of three \"modes\" (either at home or on a 3rd party host):"
+msgid "### 2. Unregistered"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:63
-msgid "### 1. Public"
+msgid "This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:65
+#: ../wiki/en/Running-a-Server.md:68
 #, no-wrap
-msgid "Use this mode when you want anyone to join your server, whoever they are.   \n"
+msgid ""
+"<figure>\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Unregistered Server\">\n"
+"\t<figcaption>How Unregistered Servers work</figcaption>\n"
+"</figure>\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:67
-msgid "Your server will be listed in the Directory that clients use by default. Musicians can then discover and connect to your server."
+#: ../wiki/en/Running-a-Server.md:70
+msgid "If you are running an unregistered server behind a home internet connection, you might need to enable [port forwarding](#port-forwarding) as described below."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:72
-#, no-wrap
-msgid ""
-"<figure>\n"
-"\t<img src=\"{% include img/en-screenshots/diagram-public-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Public Server\">\n"
-"<figcaption>How Public Servers work</figcaption>\n"
-"</figure>\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:76
-msgid "### 2. Private"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:78
-msgid "This is the default when starting a server for the first time. Private Servers are not listed by Directories, so only musicians who know your server's address to will be able to connect to it. This is useful because Jamulus does not (in any server mode) let you control who can connect to a server."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:84
-#, no-wrap
-msgid ""
-"<figure>\n"
-"\t<img src=\"{% include img/en-screenshots/diagram-private-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between clients within a Jamulus Private Server\">\n"
-"\t<figcaption>How Private Servers work</figcaption>\n"
-"</figure>\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:88
 msgid "### 3. Directory"
 msgstr ""
 
 #. type: Plain text
+#: ../wiki/en/Running-a-Server.md:74
+msgid "If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:76
+msgid "To run a Directory [read this guide](Custom-Directories)"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:79
+msgid "## Installation and Configuration"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:81
+msgid "Most people run Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:83
+msgid "If you want to run a Server on a Raspberry Pi, you will need to [compile from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). See also this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) maintained by Jamulus user fredsiva."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:85
+msgid "### Installation"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:87
+msgid "Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:88
+msgid "Update apt to make sure you have a current list of standard packages: `sudo apt update`"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:89
+msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`"
+msgstr ""
+
+#. type: Plain text
 #: ../wiki/en/Running-a-Server.md:90
-msgid "For when you want to run a number of Private Servers, possibly also behind a firewall or on a LAN. Examples include online events, music associations, sectional rehearsals or music lessons for schools."
+msgid "Enable the headless Server process via systemd: `sudo systemctl enable jamulus-headless`"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:91
+msgid "Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server)."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:92
-msgid "To view servers listed by a custom Directory Server, musicians must enter the address in their client’s \"Custom Directory Server\" settings field.  They will then see a Connection Setup list which is generated by your Directory."
+msgid "Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:94
-msgid "Up to 150 servers can then register with your Directory by setting your Directory address in their `--directoryserver` option at startup."
+#: ../wiki/en/Running-a-Server.md:93
+msgid "Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:96
-msgid "To run a server as a Directory, it should be configured with `--directoryserver localhost` (that is, making itself the Directory to query for servers)."
+#: ../wiki/en/Running-a-Server.md:95
+msgid "You can control Jamulus with the `systemctl` command. For example, to stop the Server cleanly:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:98
-msgid "#### Points to note about Directories"
+#: ../wiki/en/Running-a-Server.md:97
+msgid "`sudo systemctl stop jamulus-headless`"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:100
-msgid "If you want to control which servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option. See the section on command line options later in this document."
+#: ../wiki/en/Running-a-Server.md:99
+msgid "_To upgrade your Server, just repeat the steps above._"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:102
-msgid "When running a public Directory Server behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the server(s) being listed by your Directory. This is necessary to allow clients on the public Internet to connect to them via NAT. Note that for the servers using this option, you will still need proper port forwarding in your router/firewall."
+#: ../wiki/en/Running-a-Server.md:101
+msgid "### Configuration"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:103
+msgid "#### Running in Registered mode"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:105
-msgid "# Bandwidth use"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:107
-msgid "## Audio bandwidth"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:109
-msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:110
-msgid "Channels : stereo/mono"
+msgid "The following minimum setup is required to [run a Registered Server](Running-a-Server#server-types):"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:111
-msgid "Quality : high/medium/low"
+#, no-wrap
+msgid ""
+"~~~\n"
+"jamulus --nogui --server \\\n"
+"        --directoryserver genreServer:port \\\n"
+"        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
+"~~~\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:112
-msgid "Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:114
-msgid "With the following units"
+#: ../wiki/en/Running-a-Server.md:113
+#, no-wrap
+msgid "**Note**: Semicolon and newline characters are not allowed in `yourServerName` and `yourCity` within the `--serverinfo` argument\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:115
-msgid "ms : milliseconds"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:116
-msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:117
-msgid "Mbit/s : Mega-bits per second"
+msgid "To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` in the example above with one of the following options:"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:126
 #, no-wrap
 msgid ""
-"| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
-"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
-"| Stereo    | High   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
-"| Stereo    | Medium | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
-"| Stereo    | Low    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
-"| Mono      | High   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
-"| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
-"| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
+"| Genre |   Server Address           |\n"
+"|-----------|------------------|\n"
+"|**Any Genre 1** |`anygenre1.jamulus.io:22124`|\n"
+"|**Any Genre 2** |`anygenre2.jamulus.io:22224`|\n"
+"|**Any Genre 3** |`anygenre3.jamulus.io:22624`|\n"
+"|**Genre Rock** |`rock.jamulus.io:22424`|\n"
+"|**Genre Jazz** |`jazz.jamulus.io:22324`|\n"
+"|**Genre Classical/Folk** |`classical.jamulus.io:22524`|\n"
+"|**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:128
-msgid "## Network bandwidth"
+msgid "You can also specify a [Directory](#3-directory) in the same way from the command line, providing the Server Address in the same format."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:130
+msgid "#### Running as a Directory"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:132
+msgid "If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Custom-Directories)."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:134
-#, no-wrap
-msgid ""
-"There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)\n"
-"<figure>\n"
-"\t<img src=\"{% include img/en-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high\">\n"
-"<figcaption>Calculate bandwidth use </figcaption>\n"
-"</figure>\n"
+msgid "### Maintenance"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:136
-msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
+msgid "#### Viewing The Logs"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:138
+msgid "Jamulus will log to the system log file if you left the `StandardOutput=journal` setting in the unit file."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:140
-msgid "# Starting a server"
+msgid "To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:143
+#: ../wiki/en/Running-a-Server.md:142
+msgid "`journalctl -f -u jamulus-headless`"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:144
+msgid "#### Controlling Recording"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:146
+msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:148
+msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:150
+#, no-wrap
+msgid "**Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:152
+msgid "For turning recording on or off (depending on the current state):"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:157
+#, no-wrap
+msgid ""
+"~~~\n"
+" [Unit]\n"
+" Description=Toggle recording state of Jamulus Server\n"
+" Requisite=Jamulus-Server\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:162
+#, no-wrap
+msgid ""
+" [Service]\n"
+" Type=oneshot\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
+"~~~\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:164
+msgid "For starting a new recording:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:169
+#, no-wrap
+msgid ""
+"~~~\n"
+" [Unit]\n"
+" Description=Start a new recording on Jamulus Server\n"
+" Requisite=Jamulus-Server\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:174
+#, no-wrap
+msgid ""
+" [Service]\n"
+" Type=oneshot\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
+"~~~\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:176
+msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:178
+msgid "Run `sudo systemctl daemon-reload` to register them for first use."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:180
+msgid "Now you can run these with the `systemctl` command, for example:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:182
+msgid "`sudo systemctl start jamulusTogglerec` (assuming you named your unit file `jamulusTogglerec.service`)"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:184
+msgid "You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:187
+msgid "## Servers on the desktop"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:189
+msgid "Jamulus can be run in Server mode from the desktop. This gives you a graphical user interface to control most of the settings."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:191
 #, no-wrap
 msgid "**Windows users** - Use the \"Jamulus Server\" icon in the Windows Start menu.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:145
+#: ../wiki/en/Running-a-Server.md:192
 #, no-wrap
 msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:147
+#: ../wiki/en/Running-a-Server.md:193
 #, no-wrap
-msgid "**Linux users** - Open a terminal window (`CTRL+ALT+t` on Ubuntu and related distros) and type `jamulus -s`. Hit return and you should see the server control window. You can stop the server by closing the server window, or by using `CTRL+C` in the terminal. _(To run a headless server [read this guide](Server-Linux))_\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:150
-msgid "## Server Setup"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:152
-msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus server setup window\"></figure>"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:154
-msgid "### Make My Server Public"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:156
-msgid "By default, you will be running a Private Server and need to [read these instructions](#running-a-private-server) to have others connect to you in this mode."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:158
-msgid "When making your server public, you should see a confirmation message saying whether your server has registered successfully. If not, and you leave your server running, it will keep trying to register until a free slot becomes available."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:161
-msgid "### Genre"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:163
-msgid "Because there is a limit of 150 servers per Directory, you need to select which Directory Server you want to advertise your server on. Select a genre if you intend to limit players to that style (players can then see your server in their genre list). This will make your server appear in the relevant server list for clients."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:166
-msgid "### My Server Info"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:168
-msgid "Type in the name, city and country so that other users can easily identify you."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:170
-msgid "### Chat Welcome Message"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:172
-msgid "The text entered here appears to all users when they join the server (the chat window will open automatically for them)."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:174
-msgid "## Options"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:177
-msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus server window options\"></figure>"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:179
-msgid "### Recording Directory"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:181
-msgid "This sets the path to where server's recording will be stored. With this path set, the \"Enable Jam Recoder\" function in the Server Setup tab will make recording start once the first person connects to the server, and stops when the last person leaves. Use the \"New Recording\" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:183
-#, no-wrap
-msgid "**Note**: When your server is recording, clients will display a message that recording is on.\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:185
-msgid "### Delay panning"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:187
-msgid "This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal \"volume\" panning. Note that to achieve the effect, all clients should be set to 'mono in / stereo out' (or to 'stereo', but only if transmitting a stereo signal)."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:189
-msgid "### Custom Directory Server Address"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:191
-msgid "Leave this field empty unless you need to list your server on a [private Directory](#3-directory)"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:194
-msgid "### Start Minimised"
+msgid "**Linux users** - Launch the \"Jamulus Server\" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return.\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:196
-#, no-wrap
-msgid "**Windows users** - If you want the server to start automatically on system start, enable the corresponding check box.\n"
+msgid "## Server Setup"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:198
-msgid "### Server status icon"
+msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus Server setup window\"></figure>"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:200
-msgid "When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:"
+msgid "### The Directory list"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:202
-msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty"
+#, no-wrap
+msgid "**None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:204
-msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied"
+#, no-wrap
+msgid "**Genre**: To allow other people to see your Server on one of the built-in Public Directories, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.  \n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:206
+#, no-wrap
+msgid "**Custom**: This allows you to specify a custom directory on which to be listed. See the \"Options\" tab for the Custom Directory address you want to use.\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:208
-msgid "# Running a Private Server"
+msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Custom-Directories) for further details."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:210
-msgid "It is highly recommended to test your server in **public mode first** so as to narrow down any subsequent problems in private mode."
+msgid "### My Server Info"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:212
-msgid "### Port forwarding"
+msgid "When running as a registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:214
-msgid "Normally, people from outside your home network cannot see things inside it. So if you want to operate a Jamulus server at home, you need to open a hole in your router to let Jamulus clients connect to it."
+msgid "### Chat Welcome Message"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:216
-#, no-wrap
-msgid "**The default port for the current version of Jamulus is UDP (not TCP) port 22124.**\n"
+msgid "The text entered here appears to all users when they join the Server (the chat window will open automatically for them). HTML is also supported."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:218
-msgid "The exact setup of port forwarding differs for every router. For help see [portforward.com](https://portforward.com)."
+msgid "## Options"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:220
-msgid "Once you have your router set up, you can get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip). Give this address to your friends so they can connect to your server (_but see also the note on dynamic DNS below_). You yourself have to connect to your own computer instead, since your computer runs the server. Therefore **only you** need to connect to `127.0.0.1`."
+msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus Server window options\"></figure>"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:222
-msgid "## Dynamic DNS and why you will probably need it"
+msgid "### Recording Directory"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:224
-msgid "Most domestic Internet connections will change their IP address after a period (hours, days or weeks). To make it easier for people to connect to you, you may therefore also want set up a dynamic DNS address. You can do this on [the machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) that you are running the Jamulus server on, or preferably your router [may support it](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/)."
+msgid "This sets the path to where the Server's recordings will be stored. With this path set, the \"Enable Jam Recoder\" function in the Server Setup tab will make recording start once the first person connects to the Server, and stops when the last person leaves. Use the \"New Recording\" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:226
-msgid "Note also that your home router may also change the IP address of the machine that you are running your server on. In which case you may need either to give that machine a static IP in the router's DHCP configuration, or simply port forward to all the addresses in your LAN."
+#, no-wrap
+msgid "**Note**: When your Server is recording, Clients will display a message that recording is on.\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:228
-msgid "# Running a headless Linux server"
+msgid "### Custom Directory Address"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:230
-#, no-wrap
-msgid "Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).   \n"
+msgid "Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:232
-msgid "# Backing up the server"
+msgid "### Server List Filename"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:234
-msgid "_Note that headless servers do not use `.ini` files. All configuration is given as command line options._"
+msgid "Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing \"empty\" until the Servers re-register."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:236
-msgid "{% include_relative Include-Backing-Up.md %}"
+msgid "### Delay panning"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:238
-msgid "# Command line options"
+msgid "This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal \"volume\" panning."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:240
-msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
+msgid "### Start Minimised"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:242
-msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
+#, no-wrap
+msgid "**Windows users** - If you want the Server to start automatically on system start, enable the corresponding check box.\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:244
+msgid "### Server status icon"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:246
+msgid "When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:248
+msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:250
+msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:252
+msgid "## Command line options"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:254
+msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:256
+msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:260
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -596,12 +670,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:248
+#: ../wiki/en/Running-a-Server.md:262
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:252
+#: ../wiki/en/Running-a-Server.md:266
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -610,37 +684,104 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:254
+#: ../wiki/en/Running-a-Server.md:268
 #, no-wrap
-msgid "**Note**: Command line options will set the server's defaults at startup. You can override them with their corresponding GUI controls while the server is running.\n"
+msgid "**Note**: Command line options will set the Server's defaults at startup. You can override them with their corresponding GUI controls while the Server is running.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:256
+#: ../wiki/en/Running-a-Server.md:270
 msgid "{% include_relative Include-Server-Commands.md %}"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:258
+#: ../wiki/en/Running-a-Server.md:272
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:260
-msgid "{% include_relative Include-QOS-Windows.md %}"
+#: ../wiki/en/Running-a-Server.md:275
+msgid "## Running an Unregistered Server"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:263
-msgid "# Troubleshooting"
+#: ../wiki/en/Running-a-Server.md:277
+msgid "It is highly recommended to test your Server on a **Public Directory** first so as to narrow down any subsequent problems in unregistered mode."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:265
-msgid "Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers at first to isolate any issues that may in fact be due to client configuration."
+#: ../wiki/en/Running-a-Server.md:279
+msgid "### Setting up a Server behind a home router"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:266
-msgid "If you are having problems, [see this guide](Server-Troubleshooting)."
+#: ../wiki/en/Running-a-Server.md:281
+msgid "If you set up your server at home, you will probably need to change some settings in your router/firewall:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:283
+msgid "#### Port forwarding"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:285
+msgid "People from outside your home network will not be able to see things inside it. To let external Jamulus clients connect to your server, you need to set up port forwarding in your Router's settings. The exact setup differs for every router. For help see your Router's documentation or [portforward.com](https://portforward.com)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:287
+#, no-wrap
+msgid "**Note:** The default port for the current version of Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the machine running the Server.\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:289
+#, no-wrap
+msgid "**Note:** Your home router may change the IP address of the machine you're running your Server on. Depending on your router, you might need to give this machine a static IP address (often under DHCP settings of your router).\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:291
+msgid "#### Getting the external IP"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:294
+msgid "To allow others to connect to your Server from the internet, get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip) and give it to them.  You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `localhost` or `127.0.0.1`."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:297
+msgid "#### Dynamic DNS and why you will probably need it"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:299
+msgid "Most domestic internet connections change their external IP address after a short period. To avoid problems with this, you might want to set up \"dynamic DNS\" to get a static (sub-)domain you can share with others. Please research how to do that for your specic set up. Your router might support some \"dynamic DNS\" providers out of the box. If this is not the case, set up a dynamic DNS client as described by the dynamic DNS provider you chose."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:301
+msgid "## Backing up the Server"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:303
+msgid "_Note that headless Servers do not use `.ini` files. All configuration is given as command line options._"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:305
+msgid "{% include_relative Include-Backing-Up.md %}"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:307
+msgid "## Troubleshooting"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:308
+msgid "If you are having other problems, [see this guide](Server-Troubleshooting)."
 msgstr ""

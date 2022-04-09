@@ -134,7 +134,7 @@ msgstr "Quando você abre o Jamulus, você vê a seguinte janela parecida com es
 msgid ""
 "<figure>\n"
 "  <img src=\"{% include img/en-screenshots/main-screen-default.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
-"  <figcaption>The main window before you connect to a server</figcaption>\n"
+"  <figcaption>The main window before you connect to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
@@ -180,23 +180,30 @@ msgstr "Preencha pelo menos o campo “Apelido/Nome” e feche a janela."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:57
-msgid "## Connecting to a server and testing your sound"
+#, fuzzy
+#| msgid "## Connecting to a server and testing your sound"
+msgid "## Connecting to a Server and testing your sound"
 msgstr "## Conectando a um servidor e testando o som"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:59
-msgid "Before you connect to a server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal))."
+#, fuzzy
+#| msgid "Before you connect to a server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal))."
+msgid "Before you connect to a Server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal))."
 msgstr "Antes de se conectar a um servidor, você **não** deve conseguir ouvir a si mesmo.  A “Regra de ouro” do Jamulus é ouvir seu próprio som através do programa (e não direto de você mesmo). Isso possibilita tocar em tempo com os outros ([veja o FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal))."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:61
-#, no-wrap
-msgid "**Before playing with others, we recommend that you connect to an empty server to test your setup**, and make sure you are listening to the signal coming back from the server (if possible) and not yourself.\n"
+#, fuzzy, no-wrap
+#| msgid "**Before playing with others, we recommend that you connect to an empty server to test your setup**, and make sure you are listening to the signal coming back from the server (if possible) and not yourself.\n"
+msgid "**Before playing with others, we recommend that you connect to an empty Server to test your setup**, and make sure you are listening to the signal coming back from the Server (if possible) and not yourself.\n"
 msgstr "**Antes de começar a tocar com outros, é recomendável se conectar a um servidor vazio para testar o seu setup**, para ter certeza que você está ouvindo o sinal vindo direto do servidor (se possível) e não o seu próprio som.\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:63
-msgid "Now use the “Connect” button in the Jamulus main window to join a server. A window will now open:"
+#, fuzzy
+#| msgid "Now use the “Connect” button in the Jamulus main window to join a server. A window will now open:"
+msgid "Now use the “Connect” button in the Jamulus main window to join a Server. A window will now open:"
 msgstr "Agora use o botão “Conectar” na janela principal do Jamulus para se juntar a um servidor. A seguinte janela vai se abrir:"
 
 #. type: Plain text
@@ -210,7 +217,7 @@ msgstr "Agora use o botão “Conectar” na janela principal do Jamulus para se
 msgid ""
 "<figure>\n"
 "  <img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" loading=\"lazy\" alt=\"Screenshot of the connection window\" style=\"border: 5px solid grey;\">\n"
-"  <figcaption>Connect to a server</figcaption>\n"
+"  <figcaption>Connect to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
@@ -220,12 +227,16 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:70
-msgid "The most important thing about servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a server with a ping of less than 50ms if you can."
+#, fuzzy
+#| msgid "The most important thing about servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a server with a ping of less than 50ms if you can."
+msgid "The most important thing about Servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a Server with a ping of less than 50ms if you can."
 msgstr "A coisa mais importante sobre servidores é o “ping”. Quanto maior o número, mais difícil será tocar em tempo com outros. Em regra você deverá escolher um servidor cujo ping seja menor que 15 ms se possível."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:72
-msgid "Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
+#, fuzzy
+#| msgid "Once connected to a server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
+msgid "Once connected to a Server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 msgstr "Uma vez conectado a um servidor, tenha certeza de que você se ouve bem e corrija o volume de entrada ou qualquer outro problema. E claro, não esqueça de obedecer [a regra de ouro](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 
 #. type: Plain text
@@ -235,7 +246,9 @@ msgstr "## Tocando pela primeira vez"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:76
-msgid "With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you."
+#, fuzzy
+#| msgid "With your sound all set up, you are ready to go. When you connect to a server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you."
+msgid "With your sound all set up, you are ready to go. When you connect to a Server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you."
 msgstr "Com o sistema configurado, você está pronto para começar. Quando você se conectar a um servidor (escolha um gênero da lista se quiser), os controles que você vê à direita é a sua mesa de som pessoal. Tudo o que você alterar ali vai mudar o que você ouve, mas isso não afeta os outros. Se você mover um botão para baixo, esse canal vai ficar mais fraco, se você movê-lo para cima, o canal ficará mais forte para você."
 
 #. type: Plain text
@@ -249,7 +262,7 @@ msgstr "Com o sistema configurado, você está pronto para começar. Quando voc�
 msgid ""
 "<figure>\n"
 "  <img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
-"  <figcaption>The main window when you are connected to a sever</figcaption>\n"
+"  <figcaption>The main window when you are connected to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
@@ -279,5 +292,7 @@ msgstr "## Solução de Problemas"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:90
-msgid "Having audio trouble? Can't see servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)."
+#, fuzzy
+#| msgid "Having audio trouble? Can't see servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)."
+msgid "Having audio trouble? Can't see Servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)."
 msgstr "Você está tendo problemas com o áudio? Não consegue ver os servidores, ou algum outro problema? Dá uma olhada em [Troubleshooting page](/wiki/Client-Troubleshooting), ou fique livre para postar sua pergunta nas [Discussões](https://github.com/jamulussoftware/jamulus/discussions)."
