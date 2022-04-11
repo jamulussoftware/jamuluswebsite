@@ -43,7 +43,7 @@ In the QjackCtl Setup dialog choose the sound hardware you want to use (e.g. you
 
 ![QjackCtl audio setup](https://user-images.githubusercontent.com/20726856/151229690-55f02313-7dde-4950-9f66-b78e5704ed82.png)
 
-Ensure the Sample Rate is set to 48000, the driver is portaudio, Frames/Period is set to something low like 64 or 128. You can now close this window with "OK". Next, click on the Start button in Qjackctl and open Jamulus and go into settings. There select "JackRouter" as device:
+Ensure the Sample Rate is set to 48000, the driver is portaudio, Frames/Period is set to something low like 64 or 128. You can now close this window with "OK". Next, click on the Start button in QjackCtl. If you use ASIO4ALL and get a starting error due to the timeout, you might need to go to the "Advanced" tab and set the "Start Delay" to something high like 10 seconds. After QjackCtl has started JACK, open Jamulus and go into its settings. There select "JackRouter" as device:
 
 ![Jamulus device settings](https://user-images.githubusercontent.com/20726856/151231033-615dcc9a-5f30-4d0a-b64a-c538d46a387a.png).
 
@@ -63,4 +63,4 @@ Next, right click on AVCABLE_AsioBridge and click on Disconnect. Do the same wit
 
 ![Qjackctl Graph](https://user-images.githubusercontent.com/20726856/151233403-0a749152-54bc-411b-8f30-d20480de44f8.png)
 
-This graph shows you that the audio from "system" (that's your audio interface) gets sent to Jamulus plus the audio coming from ASIO Bridge is mixed into Jamulus. We remember that the audio from ASIO Bridge is your normal Windows audio. So you can now start any Video player, MuseScore, mp3 file and play it while others will be able to hear it via Jamulus. A lot of other things can be done with this setup. You could also start multiple instances of Jamulus, route your system audio into one and your microphone into another instance or similar. 
+This graph shows you that the audio from "system" (that's your audio interface) gets sent to Jamulus plus the audio coming from ASIO Bridge is mixed into Jamulus. We remember that the audio from ASIO Bridge is your normal Windows audio. So you can now start any Video player, MuseScore, mp3 file and play it while others will be able to hear it via Jamulus. A lot of other things can be done with this setup. You could also start multiple instances of Jamulus, route your system audio into one and your microphone into another instance or similar.
