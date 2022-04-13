@@ -7,7 +7,7 @@ if [[ "$CACHE_HIT" == 'true' ]] ; then
     sudo cp --force --recursive ~/po4a/* /
 else
     sudo apt install -yq gettext libsgmls-perl libyaml-tiny-perl opensp
-    wget -O po4a.deb https://github.com/jamulussoftware/assets/raw/main/po4a/po4a_0.64.deb
+    wget -O po4a.deb https://github.com/jamulussoftware/assets/raw/main/po4a/po4a_0.66.deb
     sudo dpkg -i po4a.deb
 
 if [ -f po4a.deb ] ; then
