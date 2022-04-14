@@ -32,7 +32,7 @@ While setting up a Server isn't difficult, it's a good idea to read the followin
 
 Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed.
 
-However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth). 
+However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth).
 
 Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems.
 
@@ -79,13 +79,14 @@ To run a Directory [read this guide](Custom-Directories)
 
 Most people run Jamulus as a "pure" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop).  
 
-If you want to run a Server on a Raspberry Pi, you will need to [compile from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). See also this [guide for Raspberry Pi](/kb/2020/03/28/Server-Rpi.html) maintained by Jamulus user fredsiva.
+If you want to run a Server on a Raspberry Pi (or a different armhf based device), you will need to download the `.deb` files for `armhf`, not the default `amd64` ones you'd use on an Intel/AMD based machine.
+
 
 ### Installation
 
-1. Download the [latest headless .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }})
+1. Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})
 1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
-1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}`
+1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`
 1. Enable the headless Server process via systemd: `sudo systemctl enable jamulus-headless`
 1. Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server).
 1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`
