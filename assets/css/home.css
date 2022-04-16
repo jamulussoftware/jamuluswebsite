@@ -56,6 +56,13 @@ header {
   text-decoration: underline;
 }
 
+body.is-os-deb #quick_dl_container a.os-deb,
+body.is-os-mac #quick_dl_container a.os-mac,
+body.is-os-win #quick_dl_container a.os-win,
+body.is-os-other #quick_dl_container a.os-other {
+  font-weight: bold;
+}
+
 #bannercontainer {
   margin-top: 10px;
 }
