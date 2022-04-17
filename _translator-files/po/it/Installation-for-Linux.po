@@ -66,110 +66,137 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
-msgid "[Download Jamulus (.deb)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:20
-msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
+msgid "We provide two equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:21
-msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}`."
+#, no-wrap
+msgid "**For Intel/AMD based machines (amd64):**\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:22
-msgid "Once installed, you can delete the file and close any console windows."
+#: ../wiki/en/Installation-for-Linux.md:23
+msgid "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:24
-msgid "Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above."
+#: ../wiki/en/Installation-for-Linux.md:25
+#, no-wrap
+msgid "**For ARM based machines (e.g. Raspberry Pi, armhf):**\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:26
-msgid "### Other distributions"
+#: ../wiki/en/Installation-for-Linux.md:27
+msgid "[Download Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:28
-msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
+#: ../wiki/en/Installation-for-Linux.md:29
+msgid "After you downloaded the correct file:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:30
-msgid "## Set up your hardware"
+#: ../wiki/en/Installation-for-Linux.md:31
+msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:32
-msgid "### Configure JACK with QjackCtl"
+msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:34
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+#: ../wiki/en/Installation-for-Linux.md:33
+msgid "Once installed, you can delete the file and close any console windows."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:35
-msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+msgid "Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:36
-msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:38
-msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
+#: ../wiki/en/Installation-for-Linux.md:37
+msgid "### Other distributions"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:39
-msgid "Set the **Sample Rate to 48000**"
+msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:40
-msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
+#: ../wiki/en/Installation-for-Linux.md:41
+msgid "## Set up your hardware"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:42
-msgid "Restart JACK for the new settings to take effect"
+#: ../wiki/en/Installation-for-Linux.md:43
+msgid "### Configure JACK with QjackCtl"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:44
-msgid "### Start Jamulus"
+#: ../wiki/en/Installation-for-Linux.md:45
+msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:46
-msgid "With JACK running and configured, launch Jamulus."
+msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:48
-msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
+#: ../wiki/en/Installation-for-Linux.md:47
+msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:49
+msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:50
-msgid "## All installed?"
+msgid "Set the **Sample Rate to 48000**"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:52
-msgid "Take a look at the"
+#: ../wiki/en/Installation-for-Linux.md:51
+msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:53
+msgid "Restart JACK for the new settings to take effect"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:55
+msgid "### Start Jamulus"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:57
+msgid "With JACK running and configured, launch Jamulus."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:59
+msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:61
+msgid "## All installed?"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:63
+msgid "Take a look at the"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:64
 msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgstr ""
