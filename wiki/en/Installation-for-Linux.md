@@ -9,15 +9,26 @@ permalink: "/wiki/Installation-for-Linux"
 
 # Installation for Linux
 
-Make sure you read the [Getting Started](Getting-Started) page. 
+Make sure you read the [Getting Started](Getting-Started) page.
 
 Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
 
 ### Debian and Ubuntu
 
-1. [Download Jamulus (.deb)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}
+We provide two equivalent `.deb` files for the most common architectures. Please download the appropriate one:
+
+**For Intel/AMD based machines (amd64):**
+
+[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}
+
+**For ARM based machines (e.g. Raspberry Pi, armhf):**
+
+[Download Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}
+
+After you downloaded the correct file:
+
 1. Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`
-1. Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}`.
+1. Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`
 1. Once installed, you can delete the file and close any console windows.
 
 Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
