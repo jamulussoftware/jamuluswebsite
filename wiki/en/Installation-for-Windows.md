@@ -22,9 +22,13 @@ Upgrading? You may want to [back up your configuration](Software-Manual#backing-
 
 _Please note that you are not permitted to redistribute this binary without acquiring a [licence agreement from Steinberg](https://www.steinberg.net/developers/)._
 
+If you don't want to use ASIO or prefer [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), you can also use the [JACK version of Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }}).
+
 ***
 
-## Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) 
+## ASIO
+
+Jamulus can use [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output).
 
 * If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality).
 * If you don't have an external sound card, you will probably not have an ASIO driver so will need to install a generic one like ASIO4ALL:
