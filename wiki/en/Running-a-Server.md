@@ -24,7 +24,7 @@ permalink: "/wiki/Running-a-Server"
 
 ## Basic requirements
 
-While setting up a Server isn't difficult, it's a good idea to read the following backround information to avoid some problems:
+While setting up a Server isn't difficult, it's a good idea to read the following background information to avoid some problems:
 
 ### Speed and latency
 
