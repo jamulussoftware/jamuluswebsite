@@ -41,7 +41,7 @@ Consider using a cloud host, not your home internet connection, to get better pi
 
 * Any Server should have at least 1.6GHz CPU frequency and 1GB RAM
 * Running a Server may require you to adjust any firewalls running on or outside of your machine or cloud host.
-* Running an Uregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
+* Running an Unregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
 * Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. (There are plans to expand IPv6 support.)
 
 ## Server Types
