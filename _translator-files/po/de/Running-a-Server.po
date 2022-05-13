@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-05-12 16:04+0200\n"
+"PO-Revision-Date: 2022-05-13 20:13+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "en"
 msgstr "de"
 
@@ -84,7 +84,7 @@ msgstr "## Muss ich einen Server betreiben?"
 #: ../wiki/en/Running-a-Server.md:24
 #, no-wrap
 msgid "**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-a-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.\n"
-msgstr "**Nein**. Du kannst die in den vorhandenen Verzeichnissen aufgelisteten Server verwenden und Jamulus nutzen, ohne einen Server zu betreiben oder einen Hosting-Dienst eines Drittanbieters wählen. Wenn du nur eine ungestörte Sitzung möchtest, verwende die [SOLO Technik, die auf der Seite Tipps und Tricks beschrieben ist](Tips-Tricks-More#have-a-undisturbed-session-on-any-server). Wenn du keinen der von den vorhandenen Verzeichnissen aufgelisteten Server verwenden möchtest, kannst du möglicherweise einen Server verwenden (entweder einen in einem benutzerdefinierten Verzeichnis registrierten oder einen nicht registrierten - siehe [Servertypen](#server-types)), der von einer dritten Partei betrieben wird. Dies erspart dir die Mühe, selbst einen Server einzurichten.\n"
+msgstr "**Nein**. Du kannst die in den vorhandenen Verzeichnissen aufgelisteten Server verwenden und Jamulus nutzen, ohne einen Server zu betreiben oder einen Hosting-Dienst eines Drittanbieters wählen. Wenn du nur eine ungestörte Sitzung möchtest, verwende die [SOLO Technik, die auf der Seite Tipps und Tricks beschrieben ist](Tips-Tricks-More#Eine ungestörte Sitzung auf einem beliebigen Server einrichten). Wenn du keinen der von den vorhandenen Verzeichnissen aufgelisteten Server verwenden möchtest, kannst du möglicherweise einen Server verwenden (entweder einen in einem benutzerdefinierten Verzeichnis registrierten oder einen nicht registrierten - siehe [Server Typen](#Server Typen)), der von einer dritten Partei betrieben wird. Dies erspart dir die Mühe, selbst einen Server einzurichten.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:26
@@ -115,7 +115,7 @@ msgstr "Normalerweise liegen die Probleme auf der _Client_-Seite und sollten dor
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:36
 msgid "However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth)."
-msgstr "Bei der Einrichtung von Servern können jedoch auch verschiedene Probleme auftreten, insbesondere wenn sie über einen Heimanschluss mit geringer Bandbreite betrieben werden. Normalerweise ist das in Ordnung wenn weniger als 5 Teilnehmer verbunden sind. (z.B. 10 Mbit/s down und 1 Mbit/s up). Weitere Informationen zu den Netzwerkanforderungen findest du unter [verschiedene Qualitätseinstellungen hier](Server-Bandbreite)."
+msgstr "Bei der Einrichtung von Servern können jedoch auch verschiedene Probleme auftreten, insbesondere wenn sie über einen Heimanschluss mit geringer Bandbreite betrieben werden. Normalerweise ist das in Ordnung wenn weniger als 5 Teilnehmer verbunden sind. (z.B. 10 Mbit/s down und 1 Mbit/s up). Weitere Informationen zu den Netzwerkanforderungen findest du unter [verschiedene Qualitätseinstellungen hier](Server-Bandwidth)"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:38
@@ -140,7 +140,7 @@ msgstr "Für den Betrieb eines Servers musst du möglicherweise Firewalls anpass
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:45
 msgid "Running an Unregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
-msgstr "Wenn du zu Hause einen nicht registrierten/privaten Server betreibst, musst du auf deinem Router eine [Portweiterleitung](#running-a-private-server) einrichten. Wenn du einen öffentlichen Server betreibst, sollte eine Portweiterleitung in den meisten Fällen nicht notwendig sein, aber es ist ratsam, dies zu tun, da einige Netzwerke mit Jamulus im Standardmodus möglicherweise nicht richtig funktionieren."
+msgstr "Wenn du zu Hause einen nicht registrierten/privaten Server betreibst, musst du auf deinem Router eine [Portweiterleitung](#Portweiterleitung) einrichten. Wenn du einen öffentlichen Server betreibst, sollte eine Portweiterleitung in den meisten Fällen nicht notwendig sein, aber es ist ratsam, dies zu tun, da einige Netzwerke mit Jamulus im Standardmodus möglicherweise nicht richtig funktionieren."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:46
@@ -150,7 +150,7 @@ msgstr "Jamulus bietet nur eine begrenzte IPv6-Unterstützung, die mit einem Bef
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:48
 msgid "## Server Types"
-msgstr "# Server-Typen"
+msgstr "# Server Typen"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:50
@@ -177,7 +177,7 @@ msgid ""
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{% include img/en-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Registered Server\">\n"
+"\t<img src=\"{% include img/de-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=„Diagramm der Verbindungen zwischen Clients eines registrierten Jamulus-Servers“>\n"
 "<figcaption>So funktionieren registrierte /öffentliche Server</figcaption>\n"
 "</figure>\n"
 
@@ -201,14 +201,14 @@ msgid ""
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{% include img/en-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Unregistered Server\">\n"
-"\t<figcaption>Wie unregistrierte - private Server funktionieren</figcaption>\n"
+"\t<img src=\"{% include img/de-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=„Diagramm der Verbindungen zwischen Clients eines nicht registrierten Jamulus-Servers“>\n"
+"\t<figcaption>Wie unregistrierte/private Server funktionieren</figcaption>\n"
 "</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:70
 msgid "If you are running an unregistered server behind a home internet connection, you might need to enable [port forwarding](#port-forwarding) as described below."
-msgstr "Wenn du einen unregistrierten/privaten Server über eine private Internetverbindung betreibst, musst du möglicherweise die [Portweiterleitung](#port-forwarding) wie unten beschrieben aktivieren."
+msgstr "Wenn du einen unregistrierten/privaten Server über eine private Internetverbindung betreibst, musst du möglicherweise die [Portweiterleitung](#Portweiterleitung) wie unten beschrieben aktivieren."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:72
@@ -308,7 +308,7 @@ msgstr "#### Betrieb im registrierten/öffentlichen Modus"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:106
 msgid "The following minimum setup is required to [run a Registered Server](Running-a-Server#server-types):"
-msgstr "Die folgende Mindestkonfiguration ist für den [Betrieb eines registrierten Servers] erforderlich (Running-a-Server#server-types):"
+msgstr "Die folgende Mindestkonfiguration ist für den [Betrieb eines registrierten Servers] erforderlich (Running-a-Server#Server Typen):"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:112
@@ -364,7 +364,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:129
 msgid "You can also specify a [Directory](#3-directory) in the same way from the command line, providing the Server Address in the same format."
-msgstr "Du kannst auch ein [Verzeichnis](#3-directory) auf dieselbe Weise in der Befehlszeile angeben, indem du die Serveradresse im selben Format angibst."
+msgstr "Du kannst auch ein [Verzeichnis](#3. Verzeichnis Server) auf dieselbe Weise in der Befehlszeile angeben, indem du die Serveradresse im selben Format angibst."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:131
@@ -374,7 +374,7 @@ msgstr "#### Als Verzeichnis Server betreiben"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:133
 msgid "If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Custom-Directories)."
-msgstr "Wenn du einen [Verzeichnis Server](Running-a-Server#3-directory) betreiben möchtest, lesen bitte [diese Anleitung](Custom-Directories)."
+msgstr "Wenn du einen [Verzeichnis Server](Running-a-Server#3. Verzeichnis Server) betreiben möchtest, lesen bitte [diese Anleitung](Custom-Directories)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:135
@@ -521,7 +521,7 @@ msgstr "## Server auf dem Desktop"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:190
 msgid "Jamulus can be run in Server mode from the desktop. This gives you a graphical user interface to control most of the settings."
-msgstr "Jamulus kann im Server-Modus vom Desktop aus gestartet werden. Dadurch erhälst du eine grafische Benutzeroberfläche zur Steuerung der meisten Einstellungen."
+msgstr "Jamulus kann im Server-Modus vom Desktop aus gestartet werden. Dadurch erhältst du eine grafische Benutzeroberfläche zur Steuerung der meisten Einstellungen."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:192
@@ -533,7 +533,7 @@ msgstr "**Windows-Benutzer** - Verwende das Symbol \"Jamulus Server\" im Windows
 #: ../wiki/en/Running-a-Server.md:193
 #, no-wrap
 msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).\n"
-msgstr "**MacOS-Benutzer** - Doppelklicke auf das \"Jamulus Server\"-Symbol in \"Programme\" (vorausgesetzt, du hast die Dateien der Installation gemäß [dieser Anleitung] (Installation-for-Macintosh) dort gespeichert).\n"
+msgstr "**MacOS-Benutzer** - Doppelklicke auf das \"Jamulus Server\"-Symbol in \"Programme\" (vorausgesetzt, du hast die Dateien der Installation gemäß [dieser Anleitung](Installation-for-Macintosh) dort gespeichert).\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:194
@@ -544,12 +544,12 @@ msgstr "**Linux-Benutzer** - Starte die Verknüpfung \"Jamulus Server\". Oder ö
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:197
 msgid "## Server Setup"
-msgstr "## Server-Einrichtung"
+msgstr "## Server Einrichtung"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:199
 msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus Server setup window\"></figure>"
-msgstr "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=„Darstellung eines Jamulus Server Setup Fensters></figure>"
+msgstr "<figure><img src=\"{% include img/de-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=„Darstellung eines Jamulus Server Setup Fensters></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:201
@@ -560,7 +560,7 @@ msgstr "### Die Server Verzeichnisliste"
 #: ../wiki/en/Running-a-Server.md:203
 #, no-wrap
 msgid "**None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.\n"
-msgstr "**Keine**: Standardmäßig bist du nicht mit einem Verzeichnis verbunden und befindest dich im unregistrierten/privaten Modus. [Lese diese Anleitung](#running-an-unregistered-server), um andere Personen in diesem Modus mit Ihrem Server zu verbinden.\n"
+msgstr "**Keine**: Standardmäßig bist du nicht mit einem Verzeichnis verbunden und befindest dich im unregistrierten/privaten Modus. [Lese diese Anleitung](#Ausführen eines unregistrierten/privaten Servers), um andere Personen in diesem Modus mit Ihrem Server zu verbinden.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:205
@@ -577,7 +577,7 @@ msgstr "**Benutzerdefiniert**: Hier kannst du ein benutzerdefiniertes Server Ver
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:209
 msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Custom-Directories) for further details."
-msgstr "Um deinen Server _als_ Verzeichnis zu betreiben, musst du die Adresse des benutzerdefinierten Verzeichnisses auf `localhost` oder `127.0.0.1` setzen und das \"Genre\" auf \"Custom\" einstellen. [Lese diese Anleitung](Custom-Directories) für weitere Details."
+msgstr "Um deinen Server _als_ Verzeichnis zu betreiben, musst du die Adresse des benutzerdefinierten Verzeichnisses auf `localhost` oder `127.0.0.1` setzen und das \"Genre\" auf \"Custom\" einstellen. [Lese diese Anleitung](Benutzerdefinierte Verzeichnisadresse) für weitere Details."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:211
@@ -607,7 +607,7 @@ msgstr "## Optionen"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:221
 msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus Server window options\"></figure>"
-msgstr "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=„Jamulus Server Options\"></figure>"
+msgstr "<figure><img src=\"{% include img/de-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=„Bild der Jamulus Server Fensteroptionen“></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:223
@@ -633,7 +633,7 @@ msgstr "### Benutzerdefinierte Verzeichnisadresse"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:231
 msgid "Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory."
-msgstr "Lasse dieses Feld leer, es sei denn, du möchtest deinen Server in einem [benutzerdefinierten Verzeichnis] (#3-directory) auflisten oder ein Verzeichnis betreiben."
+msgstr "Lasse dieses Feld leer, es sei denn, du möchtest deinen Server in einem [benutzerdefinierten Verzeichnis] (#3. Verzeichnis Server) auflisten oder ein Verzeichnis betreiben."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:233
@@ -643,7 +643,7 @@ msgstr "### Verzeichnis Server - Server Liste"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:235
 msgid "Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing \"empty\" until the Servers re-register."
-msgstr "Lass dieses Feld leer, es sei denn, du möchtest deinen Server als [Verzeichnis Server](#3-directory) betreiben. Wenn das Feld benutzt wird, wird die Liste der registrierten Server angezeigt, während das Verzeichnis neu gestartet wird. Dies verhindert, dass die Server Liste \"leer\" erscheint, bis sich die Server neu registrieren."
+msgstr "Lass dieses Feld leer, es sei denn, du möchtest deinen Server als [Verzeichnis Server](#3. Verzeichnis Server) betreiben. Wenn das Feld benutzt wird, wird die Liste der registrierten Server angezeigt, während das Verzeichnis neu gestartet wird. Dies verhindert, dass die Server Liste \"leer\" erscheint, bis sich die Server neu registrieren."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:237
@@ -679,12 +679,12 @@ msgstr "Das Betriebssystem zeigt ein Symbol in der Taskleiste oder im Statusbere
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:249
 msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty"
-msgstr "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> Der Server ist leer"
+msgstr "<figure><img src=\"{% include img/de-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> Der Server ist leer"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:251
 msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied"
-msgstr "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> Der Server ist belegt"
+msgstr "<figure><img src=\"{% include img/de-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> Der Server ist belegt"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:253
