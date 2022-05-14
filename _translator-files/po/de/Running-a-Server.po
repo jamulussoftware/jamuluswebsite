@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-05-13 22:12+0200\n"
+"PO-Revision-Date: 2022-05-14 15:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -223,7 +223,7 @@ msgstr "Wenn du mehrere Server betreiben willst, möglicherweise auch hinter ein
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:76
 msgid "To run a Directory [read this guide](Custom-Directories)"
-msgstr "So betreibst du einen Verzeichnis Server aus [lese diese Anleitung] (Custom-Directories)"
+msgstr "So betreibst du einen Verzeichnis Server aus [lese diese Anleitung](Custom-Directories)"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:79
@@ -268,7 +268,7 @@ msgstr "Aktiviere den Headless-Server-Prozess über systemd: `sudo systemctl ena
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:92
 msgid "Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server)."
-msgstr "Füge die gewünschten [Befehlszeilen Kommandos] (Running-a-Server#command-line-options) zur `ExecStart`-Zeile in der systemd-Dienstdatei hinzu, indem du `sudo systemctl edit --full jamulus-headless` ausführen (standardmäßig wird ein nicht registrierter Server ausgeführt)."
+msgstr "Füge die gewünschten [Befehlszeilen Kommandos](Running-a-Server#command-line-options) zur `ExecStart`-Zeile in der systemd-Dienstdatei hinzu, indem du `sudo systemctl edit --full jamulus-headless` ausführen (standardmäßig wird ein nicht registrierter Server ausgeführt)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:93
@@ -633,7 +633,7 @@ msgstr "### Benutzerdefinierte Verzeichnisadresse"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:231
 msgid "Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory."
-msgstr "Lasse dieses Feld leer, es sei denn, du möchtest deinen Server in einem [benutzerdefinierten Verzeichnis] (#3. Verzeichnis Server) auflisten oder ein Verzeichnis betreiben."
+msgstr "Lasse dieses Feld leer, es sei denn, du möchtest deinen Server in einem [benutzerdefinierten Verzeichnis](#3. Verzeichnis Server) auflisten oder ein Verzeichnis betreiben."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:233
@@ -689,7 +689,7 @@ msgstr "<figure><img src=\"{% include img/de-screenshots/server-active.inc %}\" 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:253
 msgid "## Command line options"
-msgstr "# Kommandozeilen Befehle - Optionen"
+msgstr "# Kommandozeilen Optionen"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:255
@@ -734,7 +734,7 @@ msgstr ""
 #: ../wiki/en/Running-a-Server.md:269
 #, no-wrap
 msgid "**Note**: Command line options will set the Server's defaults at startup. You can override them with their corresponding GUI controls while the Server is running.\n"
-msgstr "**Hinweis**: Mit den Kommandozeilen Befehlen werden die Standardeinstellungen des Servers beim Start festgelegt. Du kannst die Einstellungen mit den entsprechenden GUI-Steuerelementen überschreiben, während der Server läuft.\n"
+msgstr "**Hinweis**: Mit den Kommandozeilen Optionen werden die Standardeinstellungen des Servers beim Start festgelegt. Du kannst die Einstellungen mit den entsprechenden GUI-Steuerelementen überschreiben, während der Server läuft.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:271
@@ -816,7 +816,7 @@ msgstr "## Backup des Servers"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:304
 msgid "_Note that headless Servers do not use `.ini` files. All configuration is given as command line options._"
-msgstr "_beachte bitte, dass Headless-Server keine `.ini`-Dateien verwenden. Alle Konfigurationen werden als Kommandozeilen Befehle angegeben_"
+msgstr "_beachte bitte, dass Headless-Server keine `.ini`-Dateien verwenden. Alle Konfigurationen werden als Kommandozeilen Optionen angegeben_"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:306
