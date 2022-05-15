@@ -189,7 +189,7 @@ msgstr "### 2. Unregistriert - Privat"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:63
 msgid "This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server."
-msgstr "Dies ist die Standardeinstellung, wenn du einen Server zum ersten Mal startest. Unregistrierte/private Server werden nicht in Verzeichnissen aufgeführt, so dass nur Musiker, die die Adresse Ihres Servers kennen, eine Verbindung zum Server herstellen können. Dies ist nützlich, da du in Jamulus nicht kontrollieren kannst, wer sich mit deinem Server verbindet."
+msgstr "Dies ist die Standardeinstellung, wenn du einen Server zum ersten Mal startest. Unregistrierte/private Server werden nicht in Verzeichnissen aufgeführt, so dass nur Musiker, die die Adresse deines Servers kennen, eine Verbindung zum Server herstellen können. Dies ist nützlich, da du in Jamulus nicht kontrollieren kannst, wer sich mit deinem Server verbindet."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:68
@@ -233,7 +233,7 @@ msgstr "## Installation und Konfiguration"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:81
 msgid "Most people run Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop)."
-msgstr "Die meisten Leute betreiben Jamulus als \"reinen\" Server auf **Hardware ohne Audio** (z. B. auf einem Drittanbieter/Cloud-Host) unter Linux. Die folgenden Schritte setzen voraus, dass du mit der Kommandozeile und Debian/Ubuntu oder einer ähnlichen Distribution mit systemd vertraut bist. Um einen Server unter Windows oder auf dem Desktop mit einer grafischen Benutzeroberfläche zu betreiben, [siehe diesen Abschnitt](#servers-on-the-desktop)."
+msgstr "Die meisten Leute betreiben Jamulus als \"reinen\" Server auf **Hardware ohne Audio** (z. B. auf einem Drittanbieter/Cloud-Host) unter Linux. Die folgenden Schritte setzen voraus, dass du mit der Kommandozeile und Debian/Ubuntu oder einer ähnlichen Distribution mit systemd vertraut bist. Um einen Server unter Windows oder auf dem Desktop mit einer grafischen Benutzeroberfläche zu betreiben, [siehe diesen Abschnitt](#Server auf dem Desktopp)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:83
@@ -491,7 +491,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:177
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
-msgstr "_Hinweis: Der Name des Jamulus-Dienstes in der \"ExecStart\"-Zeile muss mit dem Namen der \"service\"-Datei übereinstimmen, die du beim Einrichten von systemd zur Steuerung Ihres Jamulus-Servers erstellt hast. In diesem Beispiel wäre das also `Jamulus-Server.service`_"
+msgstr "_Hinweis: Der Name des Jamulus-Dienstes in der \"ExecStart\"-Zeile muss mit dem Namen der \"service\"-Datei übereinstimmen, die du beim Einrichten von systemd zur Steuerung deines Jamulus-Servers erstellt hast. In diesem Beispiel wäre das also `Jamulus-Server.service`_"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:179
@@ -560,7 +560,7 @@ msgstr "### Die Server Verzeichnisliste"
 #: ../wiki/en/Running-a-Server.md:203
 #, no-wrap
 msgid "**None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.\n"
-msgstr "**Keine**: Standardmäßig bist du nicht mit einem Verzeichnis verbunden und befindest dich im unregistrierten/privaten Modus. [Lese diese Anleitung](#Ausführen eines unregistrierten/privaten Servers), um andere Personen in diesem Modus mit Ihrem Server zu verbinden.\n"
+msgstr "**Keine**: Standardmäßig bist du nicht mit einem Verzeichnis verbunden und befindest dich im unregistrierten/privaten Modus. [Lese diese Anleitung](#Ausführen eines unregistrierten/privaten Servers), um andere Personen in diesem Modus mit deinem Server zu verbinden.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:205
@@ -780,7 +780,7 @@ msgstr "Personen, die sich nicht in deinem Heimnetzwerk aufhalten, können nicht
 #: ../wiki/en/Running-a-Server.md:288
 #, no-wrap
 msgid "**Note:** The default port for the current version of Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the machine running the Server.\n"
-msgstr "**Hinweis:** Der Standardport für die aktuelle Version von Jamulus ist **UDP** (nicht TCP) Port **22124**. Normalerweise leitest du den Port **22124** von außerhalb Ihres Netzwerks an den Port **22124** des Rechners weiter, auf dem der Server läuft.\n"
+msgstr "**Hinweis:** Der Standardport für die aktuelle Version von Jamulus ist **UDP** (nicht TCP) Port **22124**. Normalerweise leitest du den Port **22124** von außerhalb deines Netzwerks an den Port **22124** des Rechners weiter, auf dem der Server läuft.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:290
