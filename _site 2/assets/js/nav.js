@@ -1,1 +1,0 @@
-function showNav(){var l=document.getElementById("mnv");"block"===l.style.display?l.style.display="none":l.style.display="block"}
