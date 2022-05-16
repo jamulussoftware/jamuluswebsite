@@ -1,0 +1,19 @@
+- `-d` oder `--discononquit` Trennt alle Clients beim Beenden. Wenn ein Server angehalten oder neu gestartet wird, werden normalerweise alle Clients, die ihre "Disconnect"-Schaltflächen nicht benutzt haben, die Verbindung wiederherstellen, wenn der Server wieder hochfährt. Mit dieser Option werden die Clients gezwungen, ihre Verbindungen zum Server manuell wiederherzustellen.  
+- `-e` oder `--directoryserver` Registriert den Server in einem Verzeichnis (z.B. um sein Genre zu setzen (siehe auch `-o`)). Siehe [Server-Typen](#server-typen) für weitere Informationen.
+- `--directoryfile` Erinnert registrierte Server, auch wenn das Verzeichnis neu gestartet wird. Nur für Verzeichnis-Server. Siehe [dieses Handbuch](Benutzerdefinierte Verzeichnisse) für weitere Informationen
+- `-f` oder `--listfilter` Whitelist Server, die in der Serverliste registriert sind, Format `ip address 1[;ip address 2]` Nur Verzeichnisse
+-  `-F` oder `--fastupdate` Verringert die Latenzzeit, wenn Clients mit der Option "Kleine Netzwerkpuffer aktivieren" verbunden sind. Erfordert eine schnellere CPU, um Aussetzer zu vermeiden, und mehr Bandbreite für aktivierte Clients.
+-  `-l` oder `--log` Protokollierung einschalten, Pfad und Dateiname festlegen
+- `-L`  or `—licence` Zeigt ein Zustimmungsfenster an, bevor Benutzer eine Verbindung herstellen können
+- `-m` oder `--htmlstatus` HTML-Statusdatei aktivieren, Pfad und Dateiname festlegen
+- `-o` oder `--serverinfo` Ortsangaben im Format:  `[Name];[Stadt];[Gebietsschema-Wert]` (siehe [Werte](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Nur registrierte Server
+- `-P` oder `--delaypan` Start mit aktiviertem Delay-Panning Siehe [Notizen](#delay---panning---stereo-effekt)
+- `-R` oder `--recording` Gib einen beschreibbaren Pfad ein, in dem die Dateien gespeichert werden sollen (in Anführungszeichen, falls erforderlich). Siehe [Optionen](#optionen).  
+- `--norecord` Aufnahme deaktivieren. Durch Angabe von `-R` wird die Aufnahme standardmäßig aktiviert
+- `-s` or `--server` Start in Server Modus
+- `--serverbindip` Spezifiziert die IP Address mit der sich der Client verbinden soll.
+-  `-T` or `—multithreading` Multi Threading verwenden, um Mehrkern-CPUs besser zu nutzen und mehr Clients zu unterstützen
+-  `-u` oder `--numchannels` Maximale Anzahl von Clients (Kanälen) 
+-  `-w` oder `--welcomemessage` Willkommens Nachricht für neue Teilnehmer nach Aufbau der Verbindung. Kann als Zeichenkette oder Dateiname angegeben werden und kann HTML enthalten.
+-  `-z` or `--startminimized`  Start minimiert
+-  `--serverpublicip` Die öffentliche IP-Adresse des Servers, wenn eine Verbindung zu einem Verzeichnis hinter demselben NAT besteht. Siehe [Informationen zum Verzeichnis Server](Running-a-Server#3. Verzeichnis Server)

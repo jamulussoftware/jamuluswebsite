@@ -1,0 +1,19 @@
+- `-d`  or `--discononquit`   Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their "Disconnect" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.  
+- `-e`  or `--directoryserver`  Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](#server-types) for further information.
+- `--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Custom-Directories) for further information. 
+- `-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. 
+-  `-F`  or `--fastupdate`     Reduces latency if Clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.
+-  `-l`  of `--log`            Logboek inschakelen, pad en bestandsnaam instellen                                                                    
+- `-L`  of `--licence`        Laat een venster zien voordat gebruikers verbinding kunnen maken
+- `-m`  of `--htmlstatus`     HTML-statusbestand inschakelen, pad en bestandsnaam instellen
+- `-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only
+- `-P`  of `--delaypan`       Start met delay panning ingeschakeld. Zie [opmerking](#delay-panning)
+- `-R`  of `--recording`      Geef een beschrijfbaar pad op waar de opnamebestanden moeten worden opgeslagen (indien nodig tussen aanhalingstekens).  Zie [opties](#opties).  
+- `--norecord`       Opname uitschakelen indien standaard ingeschakeld door `-R`                                                 
+- `-s` or `--server` Start in Server mode
+- `--serverbindip`  Geef het IP-adres op om aan te binden              
+-  `-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more Clients
+-  `-u` or `--numchannels`   Maximum number of channels (Clients)
+-  `-w` or `--welcomemessage`  Welcome message on connect. Can be given as a string or filename, and can contain HTML.
+-  `-z` of `--startminimized`  Start geminimaliseerd
+-  `--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](Running-a-Server#points-to-note-about-directories)
