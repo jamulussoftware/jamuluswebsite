@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-05-18 13:09+0200\n"
+"PO-Revision-Date: 2022-05-18 15:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -133,12 +133,12 @@ msgstr "### Warum sollte ich nicht auf mein eigenes Signal hören?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:44
-msgid "For the same reason as you need to minimise delay in your signal in order to play in time, you need to make sure you are playing to your own sound that other musicians are hearing. More information on this, and a way of testing your setup to make sure you are obeying this \"Golden Rule\" [can be found here](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
+msgid "For the same reason as you need to minimise delay in your signal in order to play in time, you need to make sure you are playing to your own sound that other musicians are hearing. More information on this, and a way of testing your setup to make sure you are obeying this “Golden Rule” [can be found here](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 msgstr "Aus dem gleichen Grund, aus dem du die Verzögerung deines Signals minimieren musst, um im Takt zu spielen, musst du sicherstellen, dass du zu deinem eigenen Sound spielst, den auch die anderen Musiker hören. Weitere Informationen dazu und eine Möglichkeit, dein Setup zu testen, um sicherzustellen, dass du diese \"Goldene Regel\" befolgst, findest du hier [Goldene Regel](/wiki/Client-Troubleshooting#der-sound-ist-gut-aber-es-ist-schwierig-im-Takt-zu-bleiben)"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:46
-msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your \"local\" sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server."
+msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server."
 msgstr "Wenn du ein akustisches Instrument spielst oder singst, wird es natürlich schwierig sein, deinen \"lokalen\" Klang auszublenden. Aber du solltest es zumindest versuchen, indem du z. B. geschlossene Kopfhörer verwendest, die du so laut wie möglich aufdrehst, um deinen eigenen/direkte Sound zu überdecken. So kannst du dich auf die Mischung konzentrieren, die vom Server zu dir zurückkommt."
 
 #. type: Plain text
@@ -198,7 +198,7 @@ msgstr "### Warum brauchen registrierte Server keine Portweiterleitung?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
-msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, \"related\" and \"established\" packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection \"pings\" (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
+msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
 msgstr "Normalerweise verhindern NAT-Firewalls (Network Address Translation) eingehende Anfragen, die von außerhalb des lokalen Netzes kommen. Eingehender Verkehr ist nur für Pakete möglich, die sich auf eine ausgehende Anfrage beziehen (streng genommen \"verwandte\" und \"aufgebaute\" Pakete zu einer ursprünglichen ausgehenden Verbindung). Wenn dein Jamulus Server im Modus \"Registrierter Server\" eine Verbindung zu einem Verzeichnis herstellt, initiiert er natürlich eine ausgehende Verbindung. Von da an sendet das Verzeichnis in regelmäßigen Abständen \"Pings\" (keine ICMP-Pings) an deinen Server, um den/die entsprechenden NAT-Port(s) auf deinem Router/Firewall offen zu halten."
 
 #. type: Plain text
