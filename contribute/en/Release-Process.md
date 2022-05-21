@@ -330,6 +330,7 @@ _Windows users: Please note that in the first days after release SmartScreen wil
 **[↓ Windows](<!-- direct link to Windows version -->)** (ASIO version), alternative: [↓ JACK version](<!-- direct link to JACK version -->)
 **[↓ macOS](<!-- direct link to macOS SIGNED version -->)** for High Sierra (10.13) to Big Sur (11) and [↓ macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Sierra (10.12), El Capitan (10.11) or Yosemite (10.10).
 **[↓ Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] version -->)
+**[↓ Debian/Ubuntu (armhf)](<!-- direct link to .deb [GUI] armhf version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] armhf version -->)
 **[↓ Android](<!-- direct link to Android version -->)** (experimental)
 **[↓ iOS](<!-- direct link to iOS version -->)** (experimental. Unsigned: Needs to be signed before installation on device. Please see the [iOS install page](https://jamulus.io/wiki/Installation-for-iOS))
 
