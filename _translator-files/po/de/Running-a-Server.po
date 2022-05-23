@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-05-20 19:13+0200\n"
+"PO-Revision-Date: 2022-05-23 09:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -145,7 +145,7 @@ msgstr "Wenn du zu Hause einen nicht registrierten/privaten Server betreibst, mu
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:46
 msgid "Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. (There are plans to expand IPv6 support.)"
-msgstr "Jamulus bietet nur eine begrenzte IPv6-Unterstützung, die mit einem Befehlszeilen Kommando auf dem Client und dem Server aktiviert werden muss. Es gibt Pläne, die IPv6-Unterstützung zu erweitern."
+msgstr "Jamulus bietet nur eine begrenzte IPv6-Unterstützung, die mit einer Befehlszeilenoption auf dem Client und dem Server aktiviert werden muss. Es gibt Pläne, die IPv6-Unterstützung zu erweitern."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:48
@@ -268,7 +268,7 @@ msgstr "Aktiviere den Headless-Server-Prozess über systemd: `sudo systemctl ena
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:92
 msgid "Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server)."
-msgstr "Füge die gewünschten [Kommandozeilen Optionen](Running-a-Server#kommandozeilen-optionen) zur `ExecStart`-Zeile in der systemd-Dienstdatei hinzu, indem du `sudo systemctl edit --full jamulus-headless` ausführen (standardmäßig wird ein nicht registrierter Server ausgeführt)."
+msgstr "Füge die gewünschten [Befehlszeilen Optionen](Running-a-Server#befehlszeilen-optionen) zur `ExecStart`-Zeile in der systemd-Dienstdatei hinzu, indem du `sudo systemctl edit --full jamulus-headless` ausführen (standardmäßig wird ein nicht registrierter Server ausgeführt)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:93
@@ -689,7 +689,7 @@ msgstr "<figure><img src=\"{% include img/de-screenshots/server-active.inc %}\" 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:253
 msgid "## Command line options"
-msgstr "# Kommandozeilen Optionen"
+msgstr "# Befehlszeilen Optionen"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:255
@@ -734,7 +734,7 @@ msgstr ""
 #: ../wiki/en/Running-a-Server.md:269
 #, no-wrap
 msgid "**Note**: Command line options will set the Server's defaults at startup. You can override them with their corresponding GUI controls while the Server is running.\n"
-msgstr "**Hinweis**: Mit den Kommandozeilen Optionen werden die Standardeinstellungen des Servers beim Start festgelegt. Du kannst die Einstellungen mit den entsprechenden GUI-Steuerelementen überschreiben, während der Server läuft.\n"
+msgstr "**Hinweis**: Mit den Befehlszeilen Optionen werden die Standardeinstellungen des Servers beim Start festgelegt. Du kannst die Einstellungen mit den entsprechenden GUI-Steuerelementen überschreiben, während der Server läuft.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:271
@@ -816,7 +816,7 @@ msgstr "## Backup des Servers"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:304
 msgid "_Note that headless Servers do not use `.ini` files. All configuration is given as command line options._"
-msgstr "_beachte bitte, dass Headless-Server keine `.ini`-Dateien verwenden. Alle Konfigurationen werden als Kommandozeilen Optionen angegeben_"
+msgstr "_beachte bitte, dass Headless-Server keine `.ini`-Dateien verwenden. Alle Konfigurationen werden als Befehlszeilenoptionen angegeben_"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:306

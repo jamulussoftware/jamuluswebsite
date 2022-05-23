@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-05-20 21:29+0200\n"
+"PO-Revision-Date: 2022-05-23 09:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -83,7 +83,7 @@ msgstr "Aktiviere den Headless-Server Prozess über systemd: `sudo systemctl ena
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:21
 msgid "Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file in `/lib/systemd/system/jamulus-headless.service` (By default you will be running an Unregistered Server)."
-msgstr "Füge die gewünschten [Kommandozeilen Optionen](Running-a-Server#kommandozeilen-optionen) in die `ExecStart`-Zeile der systemd-Dienstdatei in `/lib/systemd/system/jamulus-headless.service` ein (standardmäßig wird ein nicht registrierter Server ausgeführt)."
+msgstr "Füge die gewünschten [Befehlszeilen Optionen](Running-a-Server#befehlszeilen-optionen) in die `ExecStart`-Zeile der systemd-Dienstdatei in `/lib/systemd/system/jamulus-headless.service` ein (standardmäßig wird ein nicht registrierter Server ausgeführt)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:22
@@ -336,12 +336,12 @@ msgstr "## Erstellen einer Server-Statusseite"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:121
 msgid "With the `-m` command line argument, Server statistics can be generated to be put on a web page."
-msgstr "Mit dem Befehlszeilen Kommando `-m` können Server Statistiken für eine Webseite erstellt werden."
+msgstr "Mit der Befehlszeilenoption `-m` können Server Statistiken für eine Webseite erstellt werden."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:123
 msgid "Here is an example php script using the Server status file to display the current Server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):"
-msgstr "Hier ist ein Beispiel für ein PHP-Skript, das die Server-Statusdatei verwendet, um den aktuellen Server-Status auf einer HTML-Seite anzuzeigen (unter der Annahme, dass das folgende Befehlszeilen Kommando verwendet wird): `-m /var/www/stat1.dat`):"
+msgstr "Hier ist ein Beispiel für ein PHP-Skript, das die Server-Statusdatei verwendet, um den aktuellen Server-Status auf einer HTML-Seite anzuzeigen (unter der Annahme, dass die folgende Befehlszeilenoption verwendet wird): `-m /var/www/stat1.dat`):"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:138
