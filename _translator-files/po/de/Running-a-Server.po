@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-05-23 09:30+0200\n"
+"PO-Revision-Date: 2022-05-24 22:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -145,7 +145,7 @@ msgstr "Wenn du zu Hause einen nicht registrierten/privaten Server betreibst, mu
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:46
 msgid "Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. (There are plans to expand IPv6 support.)"
-msgstr "Jamulus bietet nur eine begrenzte IPv6-Unterstützung, die mit einer Befehlszeilenoption auf dem Client und dem Server aktiviert werden muss. Es gibt Pläne, die IPv6-Unterstützung zu erweitern."
+msgstr "Jamulus bietet nur eine begrenzte IPv6-Unterstützung, die mit einer Befehlszeilen Option auf dem Client und dem Server aktiviert werden muss. Es gibt Pläne, die IPv6-Unterstützung zu erweitern."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:48
@@ -177,7 +177,7 @@ msgid ""
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{% include img/de-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagramm der Verbindungen zwischen Clients eines registrierten Jamulus-Servers\">\n"
+"\t<img src=\"{% include img/de-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagramm: der Verbindungen zwischen Clients eines registrierten Jamulus-Servers\">\n"
 "<figcaption>So funktionieren registrierte /öffentliche Server</figcaption>\n"
 "</figure>\n"
 
@@ -201,7 +201,7 @@ msgid ""
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{% include img/de-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"Diagramm der Verbindungen zwischen Clients eines nicht registrierten Jamulus-Servers\">\n"
+"\t<img src=\"{% include img/de-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"Diagramm: der Verbindungen zwischen Clients eines nicht registrierten Jamulus-Servers\">\n"
 "\t<figcaption>Wie unregistrierte/private Server funktionieren</figcaption>\n"
 "</figure>\n"
 
@@ -409,7 +409,7 @@ msgstr "#### Steuerung der Aufzeichnung"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:147
 msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off."
-msgstr "Wenn die Aufzeichnungsfunktion mit der Befehlszeilenoption \"R\" verwendet wird und der Server während einer Aufzeichnung ein SIGUSR1-Signal empfängt, beginnt er eine neue Aufzeichnung in einem neuen Verzeichnis. SIGUSR2 schaltet die Aufzeichnungsfunktion ein und aus."
+msgstr "Wenn die Aufzeichnungsfunktion mit der Befehlszeilen Option \"R\" verwendet wird und der Server während einer Aufzeichnung ein SIGUSR1-Signal empfängt, beginnt er eine neue Aufzeichnung in einem neuen Verzeichnis. SIGUSR2 schaltet die Aufzeichnungsfunktion ein und aus."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:149
@@ -539,7 +539,7 @@ msgstr "**MacOS-Benutzer** - Doppelklicke auf das \"Jamulus Server\"-Symbol in \
 #: ../wiki/en/Running-a-Server.md:194
 #, no-wrap
 msgid "**Linux users** - Launch the \"Jamulus Server\" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return.\n"
-msgstr "**Linux-Benutzer** - Starte die Verknüpfung \"Jamulus Server\". Oder öffne ein Terminal-Fenster (`CTRL+ALT+t` unter Debian und verwandten Distributionen), anschliessend `jamulus -s` eingeben und die Eingabetaste drücken.\n"
+msgstr "**Linux-Benutzer** - Starte die Verknüpfung \"Jamulus Server\". Oder öffne ein Terminalfenster (`CTRL+ALT+t` unter Debian und verwandten Distributionen), anschliessend `jamulus -s` eingeben und die Eingabetaste drücken.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:197
@@ -694,7 +694,7 @@ msgstr "# Befehlszeilen Optionen"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:255
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
-msgstr "Die meisten gängigen Funktionen in Jamulus können über die grafische Benutzeroberfläche eingestellt werden, aber diese und andere können auch über Optionen in einem Terminal Fenster eingestellt werden. Wie genau das gemacht werden muss hängt von deinem Betriebssystem ab."
+msgstr "Die meisten gängigen Funktionen in Jamulus können über die grafische Benutzeroberfläche eingestellt werden, aber diese und andere können auch über Befehlszeilen Optionen in einem Terminalfenster eingestellt werden. Wie genau das gemacht werden muss hängt von deinem Betriebssystem ab."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:257
@@ -716,7 +716,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:263
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
-msgstr "Unter macOS startest du ein Terminal-Fenster und führst Jamulus mit den gewünschten Optionen wie folgt aus:"
+msgstr "Unter macOS startest du ein Terminalfenster und führst Jamulus mit den gewünschten Optionen wie folgt aus:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:267
@@ -816,7 +816,7 @@ msgstr "## Backup des Servers"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:304
 msgid "_Note that headless Servers do not use `.ini` files. All configuration is given as command line options._"
-msgstr "_beachte bitte, dass Headless-Server keine `.ini`-Dateien verwenden. Alle Konfigurationen werden als Befehlszeilenoptionen angegeben_"
+msgstr "_beachte bitte, dass Headless-Server keine `.ini`-Dateien verwenden. Alle Konfigurationen werden als Befehlszeilen Optionen angegeben_"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:306
