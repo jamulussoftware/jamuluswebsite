@@ -54,7 +54,7 @@ When using a microphone while playing your other instrument, you can use a stere
 
 ### Buffer LEDs suddenly going red, outages, jittering, weird sounds?
 
-The CPU in your computer may be having issues. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have.
+Your computer may be under too much load. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have.
 
 ### Ping times and latency start well, then get worse, causing issues
 
