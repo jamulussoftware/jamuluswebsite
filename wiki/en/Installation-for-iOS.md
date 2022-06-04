@@ -14,7 +14,7 @@ Make sure you've already read the [Getting Started](Getting-Started) page.
 
 ## Things to note about iOS
 
-If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target="_blank" rel="noopener noreferrer" } which is an inexpensive and small device that performs very well with Jamulus. iOS support is just a proof of concept and needs certain skills.
+If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target="_blank" rel="noopener noreferrer" } which is an inexpensive and small device that performs very well with Jamulus. iOS support is just a proof of concept.
 
 * To install Jamulus on your iOS device, you need a (free or paid) Apple Developer account and preferably a computer.
 * If you don't pay for an Apple developer account, Jamulus will only run for at most 7 days before you need to re-install it.
