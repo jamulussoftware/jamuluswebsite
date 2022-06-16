@@ -7,7 +7,7 @@ Jamulus uses DSCP/CS4 to opportunistically deal with buffer bloat. Setting the D
 
 ## Use of QoS on Windows
 
-Jamulus' QoS settings (including the default) are set to 0 on recent Windows and Apple because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated.
+Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated.
 
 In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br>
 In new window, (click) on the menu icon to display the Actions third panel<br>
