@@ -3,7 +3,7 @@
 
 # Quality of Service (QoS)
 
-Jamulus uses DSCP/CS4 to opportunistically deal with buffer bloat. Setting the DS field byte to 128 (or 0x80) in a IPv4 or IPv6 packet header selects DSCP/CS4. Other byte values can be set using the -Q option, e.g. -Q [0..255] (where 0 cripples QoS). If you want to explore the effect of non-default settings, see RFC4594. However, most people will have no need to do this.
+Jamulus uses the DSCP/CS4 quality of service to mitigate network jitter delays. Setting the DS field byte to 128 (or 0x80) in an IPv4 or IPv6 packet header selects DSCP/CS4. Other byte values can be set using the -Q option, e.g. -Q [0..255]. If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) page 18. However, most people will have no need to do this.
 
 ## Use of QoS on Windows
 
