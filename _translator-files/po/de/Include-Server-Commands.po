@@ -20,7 +20,7 @@ msgstr ""
 #: ../wiki/en/Include-Server-Commands.md:2
 #, no-wrap
 msgid "`-d`  or `--discononquit`   Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.  \n"
-msgstr "`-d` oder `--discononquit` Trennt alle Clients beim Beenden. Wenn ein Server angehalten oder neu gestartet wird, werden normalerweise alle Clients, die ihre \"Disconnect\"-Schaltflächen nicht benutzt haben, die Verbindung wiederherstellen, wenn der Server wieder hochfährt. Mit dieser Option werden die Clients gezwungen, ihre Verbindungen zum Server manuell wiederherzustellen.  \n"
+msgstr "`-d` oder `--discononquit` Trennt alle Clients beim Beenden. Wenn ein Server gestoppt oder neu gestartet wird, werden normalerweise alle Clients, die ihre \"Trennen\"-Schaltflächen nicht benutzt haben, die Verbindung wiederherstellen, wenn der Server wieder hochfährt. Mit dieser Option werden die Clients gezwungen, ihre Verbindungen zum Server manuell wiederherzustellen.  \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:3
@@ -32,13 +32,13 @@ msgstr "`-e` oder `--directoryserver` Registriert den Server in einem Verzeichni
 #: ../wiki/en/Include-Server-Commands.md:4
 #, no-wrap
 msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Custom-Directories) for further information. \n"
-msgstr "`--directoryfile` Registrierte Server speichern, auch wenn das Verzeichnis neu gestartet wird. Nur für Verzeichnis-Server. Siehe [dieses Handbuch](Custom-Directories) für weitere Informationen. \n"
+msgstr "`--directoryfile` Registrierte Server speichern, auch wenn das Verzeichnis neu gestartet wird. Nur für Verzeichnis-Server. Siehe [diese Anleitung](Custom-Directories) für weitere Informationen. \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
 #, no-wrap
 msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
-msgstr "`-f` oder `--listfilter` Whitelist Server, die in der Serverliste registriert sind, Format `ip address 1[;ip address 2]` Nur Verzeichnisse\n"
+msgstr "`-f` oder `--listfilter` Erlaubte (Whitelist) Server, die in der Serverliste registriert sind, Format `ip address 1[;ip address 2]` Nur Verzeichnisse\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:6
@@ -98,7 +98,7 @@ msgstr "`-s` oder `--server` Start in Server Modus\n"
 #: ../wiki/en/Include-Server-Commands.md:15
 #, no-wrap
 msgid "`--serverbindip`  Specify the IP address to bind to              \n"
-msgstr "`--serverbindip` Spezifiziert die IP Address mit der sich der Client verbinden soll.\n"
+msgstr "`--serverbindip` Spezifiziert die IP Adresse auf die der Server hört   \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:16
