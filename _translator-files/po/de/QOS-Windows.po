@@ -50,15 +50,18 @@ msgstr "{% include breadcrumb.html root=\"More\" %}"
 msgid "## Use of QoS on Windows"
 msgstr "## Verwendung von QoS unter Windows"
 
-#. type: Plain text
-#: ../wiki/en/QOS-Windows.md:13
-msgid "Jamulus uses DSCP/CS4 opportunistically to deal with buffer bloat, and uses a default DSCP/CS4 value of 128 (or 0x80). This is compatible with IPv4 and IPv6. Other values can be set using the -Q option, eg -Q [0..255] (where 0 disables QoS). If you want to explore the effect of non-default settings, see RFC4594. However, most people will have no need to do this."
-msgstr "Jamulus verwendet DSCP/CS4 opportunistisch, um mit Pufferüberlastung (Bufferbloat) umzugehen, und verwendet einen Standard-DSCP/CS4-Wert von 128 (oder 0x80). Dieser Wert ist mit IPv4 und IPv6 kompatibel. Andere Werte können mit der Option -Q festgelegt werden, z. B. -Q [0..255] (wobei 0 die QoS deaktiviert). Wenn du die Auswirkungen von nicht standardmäßigen Einstellungen untersuchen möchtest, lese die RFC4594. Die meisten Benutzer werden dies jedoch nicht benötigen."
+msgid "Jamulus uses Quality of Service (QoS) to mitigate network jitter delays."
+msgstr "Jamulus verwendet Quality of Service (QoS) um die Auswirkungen von Netzwerk Jitter Verzögerungen abzumildern."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:15
-msgid "Jamulus's QoS settings (including the default) have no effect on Windows because the operating system ignores them. To enable it, you must follow these instructions. Note also that you may need to repeat this procedure every time Jamulus is updated."
-msgstr "Die QoS-Einstellungen von Jamulus (einschließlich der Standardeinstellungen) haben unter Windows keine Wirkung, da das Betriebssystem sie ignoriert. Um sie zu aktivieren, musst du diese Anweisungen befolgen. Beachte auch, dass du diesen Vorgang möglicherweise bei jeder Aktualisierung von Jamulus wiederholen musst."
+msgid "If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18.  Jamulus sets the DS Field byte to 128 (or 0x80) to select DSCP/CS4 in an IPv4 or IPv6 packet header. Other byte values can be set using the -Q option, e.g. -Q [0..255].  However, most people will have no need to do this."
+msgstr "Wenn du die Auswirkungen von nicht standardmäßigen Einstellungen untersuchen möchtest, lese die [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) Seiten 16-18.  Jamulus setzt das DS-Feldbyte auf 128 (oder 0x80), um DSCP/CS4 in einem IPv4- oder IPv6-Paketheader auszuwählen. Andere Byte-Werte können mit der Option -Q gesetzt werden, z.B. -Q [0..255].  Die meisten Benutzer werden dies jedoch nicht benötigen."
+
+#. type: Plain text
+#: ../wiki/en/QOS-Windows.md:17
+msgid "Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated."
+msgstr "Die QoS-Einstellungen von Jamulus (einschließlich der Standardeinstellung) sind unter neueren Windows- und macOS-Betriebssystemen auf 0 gesetzt. Um QoS unter Windows zu verwenden, befolge diese Anweisungen. Beachte, dass du diesen Vorgang möglicherweise bei jeder Aktualisierung von Jamulus wiederholen musst."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:35
