@@ -9,11 +9,13 @@ permalink: "/wiki/QOS-Windows"
 
 ## Use of QoS on Windows
 
-Jamulus uses DSCP/CS4 opportunistically to deal with buffer bloat, and uses a default DSCP/CS4 value of 128 (or 0x80). This is compatible with IPv4 and IPv6. Other values can be set using the -Q option, eg -Q [0..255] (where 0 disables QoS). If you want to explore the effect of non-default settings, see RFC4594. However, most people will have no need to do this.
+Jamulus uses Quality of Service (QoS) to mitigate network jitter delays.
 
-Jamulus's QoS settings (including the default) have no effect on Windows because the operating system ignores them. To enable it, you must follow these instructions. Note also that you may need to repeat this procedure every time Jamulus is updated.
+If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18.  Jamulus sets the DS Field byte to 128 (or 0x80) to select DSCP/CS4 in an IPv4 or IPv6 packet header. Other byte values can be set using the -Q option, e.g. -Q [0..255].  However, most people will have no need to do this.
 
-In Search box beside Start menu Type: Local Group Policy Editor (enter)<br>
+Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated.
+
+In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br>
 In new window, (click) on the menu icon to display the Actions third panel<br>
 Looking at the first panel of the Local Group Policy Editor<br>
 &nbsp;Local Computer Policy<br>
