@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-06-19 20:30+0200\n"
+"PO-Revision-Date: 2022-06-20 11:34+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -53,7 +53,7 @@ msgstr "# Betrieb eines Headless Servers"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:13
 msgid "The following is for running Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) and assumes Ubuntu/Debian distributions using systemd."
-msgstr "Die folgenden Ausführungen beziehen sich auf den Betrieb von Jamulus als \"reinen\" Server auf **Hardware ohne Audio** (z.B. auf einem Drittanbieter/Cloud-Host) und setzen Ubuntu/Debian-Distributionen mit systemd voraus."
+msgstr "Die folgenden Ausführungen beziehen sich auf den Betrieb von Jamulus als „reinen“ Server auf **Hardware ohne Audio** (z.B. auf einem Drittanbieter/Cloud-Host) und setzen Ubuntu/Debian-Distributionen mit systemd voraus."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:15
@@ -224,7 +224,7 @@ msgstr "### Aufnahme"
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:78
 msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off."
-msgstr "Wenn die Aufzeichnungsfunktion mit der Befehlszeilen Option \"R\" verwendet wird und der Server während einer Aufzeichnung ein SIGUSR1-Signal empfängt, beginnt er eine neue Aufzeichnung in einem neuen Verzeichnis. SIGUSR2 schaltet die Aufzeichnungsfunktion ein und aus."
+msgstr "Wenn die Aufzeichnungsfunktion mit der Befehlszeilen Option „R“ verwendet wird und der Server während einer Aufzeichnung ein SIGUSR1-Signal empfängt, beginnt er eine neue Aufzeichnung in einem neuen Verzeichnis. SIGUSR2 schaltet die Aufzeichnungsfunktion ein und aus."
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:81
@@ -306,7 +306,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:109
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
-msgstr "_Hinweis: Der Name des Jamulus-Dienstes in der \"ExecStart\"-Zeile muss mit dem Namen der \"service\"-Datei übereinstimmen, die du beim Einrichten von systemd zur Steuerung deines Jamulus-Servers erstellt hast. In diesem Beispiel wäre das also `Jamulus-Server.service`_"
+msgstr "_Hinweis: Der Name des Jamulus-Dienstes in der „ExecStart“-Zeile muss mit dem Namen der „service“-Datei übereinstimmen, die du beim Einrichten von systemd zur Steuerung deines Jamulus-Servers erstellt hast. In diesem Beispiel wäre das also `Jamulus-Server.service`_"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:111
@@ -316,7 +316,7 @@ msgstr "Führe `sudo systemctl daemon-reload` aus, um die `.service` Dateien fü
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:113
 msgid "Now you can run these with the `service start` command, for example:"
-msgstr "Jetzt kannst du die Befehle zum Beispiel mit dem Befehl \"service start\" ausführen:"
+msgstr "Jetzt kannst du die Befehle zum Beispiel mit dem Befehl „service start“ ausführen:"
 
 #. type: Plain text
 #: ../wiki/en/Server-Linux.md:115

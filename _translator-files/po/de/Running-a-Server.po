@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-06-19 21:31+0200\n"
+"PO-Revision-Date: 2022-06-20 11:34+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -233,7 +233,7 @@ msgstr "## Installation und Konfiguration"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:81
 msgid "Most people run Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop)."
-msgstr "Die meisten Leute betreiben Jamulus als \"reinen\" Server auf **Hardware ohne Audio** (z. B. auf einem Drittanbieter/Cloud-Host) unter Linux. Die folgenden Schritte setzen voraus, dass du mit der Kommandozeile und Debian/Ubuntu oder einer ähnlichen Distribution mit systemd vertraut bist. Um einen Server unter Windows oder auf dem Desktop mit einer grafischen Benutzeroberfläche zu betreiben, [siehe diesen Abschnitt](#server-auf-dem-desktop)."
+msgstr "Die meisten Leute betreiben Jamulus als „reinen“ Server auf **Hardware ohne Audio** (z. B. auf einem Drittanbieter/Cloud-Host) unter Linux. Die folgenden Schritte setzen voraus, dass du mit der Kommandozeile und Debian/Ubuntu oder einer ähnlichen Distribution mit systemd vertraut bist. Um einen Server unter Windows oder auf dem Desktop mit einer grafischen Benutzeroberfläche zu betreiben, [siehe diesen Abschnitt](#server-auf-dem-desktop)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:83
@@ -409,7 +409,7 @@ msgstr "#### Steuerung der Aufzeichnung"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:147
 msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off."
-msgstr "Wenn die Aufzeichnungsfunktion mit der Befehlszeilen Option \"R\" verwendet wird und der Server während einer Aufzeichnung ein SIGUSR1-Signal empfängt, beginnt er eine neue Aufzeichnung in einem neuen Verzeichnis. SIGUSR2 schaltet die Aufzeichnungsfunktion ein und aus."
+msgstr "Wenn die Aufzeichnungsfunktion mit der Befehlszeilen Option „R“ verwendet wird und der Server während einer Aufzeichnung ein SIGUSR1-Signal empfängt, beginnt er eine neue Aufzeichnung in einem neuen Verzeichnis. SIGUSR2 schaltet die Aufzeichnungsfunktion ein und aus."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:149
@@ -491,7 +491,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:177
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
-msgstr "_Hinweis: Der Name des Jamulus-Dienstes in der \"ExecStart\"-Zeile muss mit dem Namen der \"service\"-Datei übereinstimmen, die du beim Einrichten von systemd zur Steuerung deines Jamulus-Servers erstellt hast. In diesem Beispiel wäre das also `Jamulus-Server.service`_"
+msgstr "_Hinweis: Der Name des Jamulus-Dienstes in der „ExecStart“-Zeile muss mit dem Namen der „service“-Datei übereinstimmen, die du beim Einrichten von systemd zur Steuerung deines Jamulus-Servers erstellt hast. In diesem Beispiel wäre das also `Jamulus-Server.service`_"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:179
@@ -506,7 +506,7 @@ msgstr "Jetzt kannst du diese zum Beispiel mit dem Befehl `systemctl` ausführen
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:183
 msgid "`sudo systemctl start jamulusTogglerec` (assuming you named your unit file `jamulusTogglerec.service`)"
-msgstr "sudo systemctl start jamulusTogglerec\" (vorausgesetzt, du hast deine Unit-Datei \"jamulusTogglerec.service\" genannt)"
+msgstr "sudo systemctl start jamulusTogglerec\" (vorausgesetzt, du hast deine Unit-Datei `jamulusTogglerec.service` genannt)"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:185
@@ -527,19 +527,19 @@ msgstr "Jamulus kann im Server-Modus vom Desktop aus gestartet werden. Dadurch e
 #: ../wiki/en/Running-a-Server.md:192
 #, no-wrap
 msgid "**Windows users** - Use the \"Jamulus Server\" icon in the Windows Start menu.\n"
-msgstr "**Windows-Benutzer** - Verwende das Symbol \"Jamulus Server\" im Windows-Startmenü.\n"
+msgstr "**Windows-Benutzer** - Verwende das Symbol „Jamulus Server“ im Windows-Startmenü.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:193
 #, no-wrap
 msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).\n"
-msgstr "**macOS-Benutzer** - Doppelklicke auf das \"Jamulus Server\"-Symbol in \"Programme\" (vorausgesetzt, du hast die Dateien der Installation gemäß [dieser Anleitung](Installation-for-Macintosh) dort gespeichert).\n"
+msgstr "**macOS-Benutzer** - Doppelklicke auf das „Jamulus Server“-Symbol in „Programme“ (vorausgesetzt, du hast die Dateien der Installation gemäß [dieser Anleitung](Installation-for-Macintosh) dort gespeichert).\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:194
 #, no-wrap
 msgid "**Linux users** - Launch the \"Jamulus Server\" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return.\n"
-msgstr "**Linux-Benutzer** - Starte die Verknüpfung \"Jamulus Server\". Oder öffne ein Terminalfenster (`CTRL+ALT+t` unter Debian und verwandten Distributionen), anschliessend `jamulus -s` eingeben und die Eingabetaste drücken.\n"
+msgstr "**Linux-Benutzer** - Starte die Verknüpfung „Jamulus Server“. Oder öffne ein Terminalfenster (`CTRL+ALT+t` unter Debian und verwandten Distributionen), anschliessend `jamulus -s` eingeben und die Eingabetaste drücken.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:197
@@ -572,12 +572,12 @@ msgstr "**Genre**: Um anderen Personen zu ermöglichen, deinen Server in einem d
 #: ../wiki/en/Running-a-Server.md:207
 #, no-wrap
 msgid "**Custom**: This allows you to specify a custom directory on which to be listed. See the \"Options\" tab for the Custom Directory address you want to use.\n"
-msgstr "**Benutzerdefiniert**: Hier kannst du ein benutzerdefiniertes Server Verzeichnis angeben, in dem dein Server aufgeführt werden soll. Auf der Registerkarte \"Optionen\" findest du die Adresse des benutzerdefinierten Verzeichnisses, die du verwenden möchtest.\n"
+msgstr "**Benutzerdefiniert**: Hier kannst du ein benutzerdefiniertes Server Verzeichnis angeben, in dem dein Server aufgeführt werden soll. Auf der Registerkarte „Optionen“ findest du die Adresse des benutzerdefinierten Verzeichnisses, die du verwenden möchtest.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:209
 msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Custom-Directories) for further details."
-msgstr "Um deinen Server _als_ Verzeichnis zu betreiben, musst du die Adresse des benutzerdefinierten Verzeichnisses auf `localhost` oder `127.0.0.1` setzen und das \"Genre\" auf \"Benutzerdefiniert\" einstellen. [Lese diese Anleitung](Custom-Directories) für weitere Details."
+msgstr "Um deinen Server _als_ Verzeichnis zu betreiben, musst du die Adresse des benutzerdefinierten Verzeichnisses auf `localhost` oder `127.0.0.1` setzen und das „Genre“ auf „Benutzerdefiniert“ einstellen. [Lese diese Anleitung](Custom-Directories) für weitere Details."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:211
@@ -617,7 +617,7 @@ msgstr "### Aufnahmeverzeichnis"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:225
 msgid "This sets the path to where the Server's recordings will be stored. With this path set, the \"Enable Jam Recorder\" function in the Server Setup tab will make recording start once the first person connects to the Server, and stops when the last person leaves. Use the \"New Recording\" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
-msgstr "Hier wird der Pfad festgelegt, in dem die Aufzeichnungen des Servers gespeichert werden sollen. Wenn dieser Pfad festgelegt ist, startet die Funktion \"Jam-Recorder aktivieren\" auf der Registerkarte \"Server-Setup\" die Aufzeichnung, sobald sich die erste Person mit dem Server verbindet, und stoppt, wenn die letzte Person den Server verlässt. Verwende die Schaltfläche \"Neue Aufnahme\", um ein neues Unterverzeichnis zu erstellen, in dem die Aufnahmen von nun an gespeichert werden sollen. Beachten, dass die Aufnahmen pro Spur im Format [Audacity](https://www.audacityteam.org/) `.lof` und [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp` vorliegen. Öffne die entsprechenden Dateien, um die Aufnahmen in diesen Anwendungen anzuhören."
+msgstr "Hier wird der Pfad festgelegt, in dem die Aufzeichnungen des Servers gespeichert werden sollen. Wenn dieser Pfad festgelegt ist, startet die Funktion „Jam-Recorder aktivieren“ auf der Registerkarte „Server-Setup“ die Aufzeichnung, sobald sich die erste Person mit dem Server verbindet, und stoppt, wenn die letzte Person den Server verlässt. Verwende die Schaltfläche „Neue Aufnahme“, um ein neues Unterverzeichnis zu erstellen, in dem die Aufnahmen von nun an gespeichert werden sollen. Beachten, dass die Aufnahmen pro Spur im Format [Audacity](https://www.audacityteam.org/) `.lof` und [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp` vorliegen. Öffne die entsprechenden Dateien, um die Aufnahmen in diesen Anwendungen anzuhören."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:227
@@ -643,7 +643,7 @@ msgstr "### Verzeichnis Server - Server Liste"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:235
 msgid "Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing \"empty\" until the Servers re-register."
-msgstr "Lass dieses Feld leer, es sei denn, du möchtest deinen Server als [Verzeichnis Server](#3-verzeichnis-server) betreiben. Wenn das Feld benutzt wird, wird die Liste der registrierten Server angezeigt, während das Verzeichnis neu gestartet wird. Dies verhindert, dass die Server Liste \"leer\" erscheint, bis sich die Server neu registrieren."
+msgstr "Lass dieses Feld leer, es sei denn, du möchtest deinen Server als [Verzeichnis Server](#3-verzeichnis-server) betreiben. Wenn das Feld benutzt wird, wird die Liste der registrierten Server angezeigt, während das Verzeichnis neu gestartet wird. Dies verhindert, dass die Server Liste „leer“ erscheint, bis sich die Server neu registrieren."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:237
@@ -653,7 +653,7 @@ msgstr "### Verzögertes Panning"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:239
 msgid "This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal \"volume\" panning."
-msgstr "Diese Option nutzt kleine Unterschiede in der Ankunftszeit des Schalls zwischen den beiden Ohren. Sie erzeugt einen Stereoeffekt, der dem natürlichen menschlichen Gehör ähnlich ist, im Vergleich zum normalen \"Lautstärken\"-Panning."
+msgstr "Diese Option nutzt kleine Unterschiede in der Ankunftszeit des Schalls zwischen den beiden Ohren. Sie erzeugt einen Stereoeffekt, der dem natürlichen menschlichen Gehör ähnlich ist, im Vergleich zum normalen „Lautstärken“-Panning."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:241
@@ -699,7 +699,7 @@ msgstr "Die meisten gängigen Funktionen in Jamulus können über die grafische 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:257
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
-msgstr "Um beispielsweise unter Windows eine bestimmte Einstellungsdatei zu verwenden, klickst du mit der rechten Maustaste auf die Jamulus-Verknüpfung und wählst \"Eigenschaften\" > Ziel. Füge die erforderlichen Argumente zu Jamulus.exe hinzu:"
+msgstr "Um beispielsweise unter Windows eine bestimmte Einstellungsdatei zu verwenden, klickst du mit der rechten Maustaste auf die Jamulus-Verknüpfung und wählst „Eigenschaften“ > Ziel. Füge die erforderlichen Argumente zu Jamulus.exe hinzu:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:261
@@ -806,7 +806,7 @@ msgstr "## Dynamisches DNS und warum du es wahrscheinlich brauchen wirst"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:300
 msgid "Most domestic internet connections change their external IP address after a short period. To avoid problems with this, you might want to set up \"dynamic DNS\" to get a static (sub-)domain you can share with others. Please research how to do that for your specic set up. Your router might support some \"dynamic DNS\" providers out of the box. If this is not the case, set up a dynamic DNS client as described by the dynamic DNS provider you chose."
-msgstr "Die meisten nicht-gewerblichen Internetverbindungen ändern ihre externe IP-Adresse nach kurzer Zeit. Um Probleme damit zu vermeiden, solltest du ein \"dynamisches DNS\" einrichten, um eine statische (Sub-)Domain zu erhalten, die du mit anderen teilen kannst. Bitte recherchiere wie du das für dein Setup einrichten kannst. Möglicherweise unterstützt dein Router von Haus aus einige \"dynamische DNS\"-Anbieter. Wenn dies nicht der Fall ist, richte einen dynamischen DNS-Client ein, wie von dem von dir gewählten dynamischen DNS-Anbieter beschrieben."
+msgstr "Die meisten nicht-gewerblichen Internetverbindungen ändern ihre externe IP-Adresse nach kurzer Zeit. Um Probleme damit zu vermeiden, solltest du ein „dynamisches DNS“ einrichten, um eine statische (Sub-)Domain zu erhalten, die du mit anderen teilen kannst. Bitte recherchiere wie du das für dein Setup einrichten kannst. Möglicherweise unterstützt dein Router von Haus aus einige „dynamische DNS“-Anbieter. Wenn dies nicht der Fall ist, richte einen dynamischen DNS-Client ein, wie von dem von dir gewählten dynamischen DNS-Anbieter beschrieben."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:302
