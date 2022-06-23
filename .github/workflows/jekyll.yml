@@ -29,7 +29,7 @@ jobs:
         id: cache-po4a
         with:
           path: "~/po4a"
-          key: ${{ runner.os }}-po4a
+          key: ${{ runner.os }}-po4a2
       - name: Install or retrieve po4a from cache
         env:
           CACHE_HIT: ${{steps.cache-po4a.outputs.cache-hit}}
