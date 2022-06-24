@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-06-20 12:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Windows.md:1
@@ -42,7 +43,7 @@ msgstr "Installation auf Windows"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
-msgstr "{% include breadcrumb.html root=\"Jamulus Nutzen\" branch1=\"Erste Schritte\" branch1-url=\"Getting-Started\" %}"
+msgstr "{% include breadcrumb.html root=\"Jamulus verwenden\" branch1=\"Erste Schritte\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:11
@@ -57,7 +58,7 @@ msgstr "Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite berei
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:15
 msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
-msgstr "Updatest du? Es macht Sinn die [Konfiguration](Software-Manual#backing-up-jamulus) zu sichern."
+msgstr "Updatest du? Es macht Sinn die [Konfiguration](Software-Manual#sicherung-von-jamulus) zu sichern."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:17
@@ -69,13 +70,13 @@ msgstr "**Downloade und installiere einen ASIO-Treiber**. Wir empfehlen, eine So
 #: ../wiki/en/Installation-for-Windows.md:18
 #, no-wrap
 msgid "[Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
-msgstr "[Downloade Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
+msgstr "[Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:19
 #, no-wrap
 msgid "**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
-msgstr "**Alternativ-Download:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+msgstr "**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:20
@@ -98,12 +99,12 @@ msgstr "**Richte deine Soundkarte ein**. Wenn du fertig bist, musst du deine Aud
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:24
 msgid "_Please note that you are not permitted to redistribute this binary without acquiring a [licence agreement from Steinberg](https://www.steinberg.net/developers/)._"
-msgstr ""
+msgstr "_Bitte beachte, dass du diese Binärdatei nicht weitergeben darfst, ohne eine [Lizenzvereinbarung von Steinberg](https://www.steinberg.net/developers/) zu beantragen._"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:26
 msgid "If you don't want to use ASIO or prefer [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), you can also use the [JACK version of Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})."
-msgstr ""
+msgstr "Wenn du ASIO nicht verwenden möchtest oder [JACK unter Windows](https://jackaudio.org/faq/jack_on_windows.html) bevorzugst, kannst du auch die [JACK-Version von Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }}) verwenden."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:28
@@ -118,10 +119,8 @@ msgstr "## ASIO"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:32
-#, fuzzy
-#| msgid "Jamulus uses [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) to provide the lowest latency."
 msgid "Jamulus can use [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output)."
-msgstr "Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um mit der möglicht geringsten Audiolatenz zu arbeiten."
+msgstr "Jamulus nutzt [ASIO](https://de.wikipedia.org/wiki/Audio_Stream_Input/Output), um mit der möglichst geringsten Audiolatenz zu ermöglichen."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:34
@@ -140,10 +139,8 @@ msgstr "Du kannst zwei Versionen von ASIO4ALL testen. ASIO4ALL v2.14 nutzt einen
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:39
-#, fuzzy
-#| msgid "[ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
 msgid "[ASIO4ALL v2.15 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
-msgstr "[ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
+msgstr "[ASIO4ALL v2.15 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:41
@@ -163,14 +160,13 @@ msgstr "### ASIO4ALL einrichten"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:48
 msgid "You may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything."
-msgstr "Je nach Hardware musst du ein bisschen herumprobieren. Wenn alles funktioniert, musst du nichts tun."
+msgstr "Je nach Hardware musst du verschiedene Einstellungen ausprobieren. Wenn alles funktioniert, musst du nichts tun."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:50
-#, fuzzy, no-wrap
-#| msgid "**Tip:** Set up your sound card while you're [connected to a server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
+#, no-wrap
 msgid "**Tip:** Set up your sound card while you're [connected to a Server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
-msgstr "**Tipp:** Richte deine Sondkarte ein, während du [mit einem Server verbunden bist](Getting-Started#mit-einem-server-verbinden-und-audio-testen), damit du dein Instrument oder deine Stimme hören kannst. Dadurch kannst du prüfen, ob alles richtig eingerichtet ist, aber lies ersteinmal weiter.\n"
+msgstr "**Tipp:** Richte deine Soundkarte ein, während du [mit einem Server verbunden bist](Getting-Started#mit-einem-server-verbinden-und-audio-testen), damit du dein Instrument oder deine Stimme hören kannst. Dadurch kannst du prüfen, ob alles richtig eingerichtet ist, aber lies erst einmal weiter.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:53
@@ -192,7 +188,7 @@ msgstr "Wenn das Audio nicht sofort funktioniert, stelle sicher, dass die **rich
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:57
 msgid "### How to set up ASIO4ALL inputs (Guide)"
-msgstr "### ASIO4ALL Ein/Ausgänge einrichten (Anleitung)"
+msgstr "### ASIO4ALL Ein- und Ausgänge einrichten (Anleitung)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:59
@@ -234,7 +230,7 @@ msgstr "**Tipps:**\n"
 #: ../wiki/en/Installation-for-Windows.md:67
 #, no-wrap
 msgid "It may not be obvious what the correct sound device is called. Many internal sound cards are named \"Realtek High Definition Audio\", \"Conexant\" or similar.\n"
-msgstr "Viele interne Soundkarten heißen „Realtek High Definition Audio“, „Conexant“ oder ähnlich.\n"
+msgstr "Es ist möglicherweise nicht offensichtlich, wie das richtige Soundgerät heißt. Viele interne Soundkarten heißen „Realtek High Definition Audio“, „Conexant“ oder ähnlich.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:68
@@ -256,7 +252,7 @@ msgstr "### Fehlerbehebung"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:73
 msgid "If nothing works, first restart Jamulus and/or your PC to close background processes that may be accessing your sound card."
-msgstr "Wenn es scheint, das nichts funktioniert, versuche zuerst Jamulus und/oder deinen PC **neuzustarten**, damit Hintergrundprozesse, die auf die Soundkarte zugreifen könnten, geschlossen werden."
+msgstr "Wenn es scheint, das nichts funktioniert, versuche zuerst Jamulus und/oder deinen PC **neu zu starten**, damit Hintergrundprozesse, die auf die Soundkarte zugreifen könnten, geschlossen werden."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:75
@@ -266,7 +262,7 @@ msgstr "Danach versuche *die Ein-/Ausgänge nochmal neu einzurichten*. Aktiviert
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:77
 msgid "Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL."
-msgstr "Wirf einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI){: target=\"_blank\" rel=\"noopener noreferrer\"} von [trombonepizza](https://github.com/trombonepizza), das ausführlichere Informationen zur Einrichtung von ASIO4ALL gibt (English)."
+msgstr "Werfe einen Blick auf [dieses Video](https://youtu.be/_GzOsitVgLI) von [trombonepizza](https://github.com/trombonepizza), das detailliertere Informationen zur Einrichtung von ASIO4ALL enthält."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:79

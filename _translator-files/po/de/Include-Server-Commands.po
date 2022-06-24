@@ -3,128 +3,129 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-06-20 12:02+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:2
 #, no-wrap
 msgid "`-d`  or `--discononquit`   Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.  \n"
-msgstr ""
+msgstr "`-d` oder `--discononquit` Trennt alle Clients beim Beenden. Wenn ein Server gestoppt oder neu gestartet wird, werden normalerweise alle Clients, die ihre „Trennen“-Schaltflächen nicht benutzt haben, die Verbindung wiederherstellen, wenn der Server wieder hochfährt. Mit dieser Option werden die Clients gezwungen, ihre Verbindungen zum Server manuell wiederherzustellen.  \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:3
 #, no-wrap
 msgid "`-e`  or `--directoryserver`  Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](#server-types) for further information.\n"
-msgstr ""
+msgstr "`-e` oder `--directoryserver` Registriert den Server in einem Verzeichnis (z.B. um sein Genre zu setzen (siehe auch `-o`)). Siehe [Server-Typen](/wiki/Running-a-Server#server-typen) für weitere Informationen.\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:4
 #, no-wrap
 msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Custom-Directories) for further information. \n"
-msgstr ""
+msgstr "`--directoryfile` Registrierte Server speichern, auch wenn das Verzeichnis neu gestartet wird. Nur für Verzeichnis-Server. Siehe [diese Anleitung](Custom-Directories) für weitere Informationen. \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
 #, no-wrap
 msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
-msgstr ""
+msgstr "`-f` oder `--listfilter` Erlaubte (Whitelist) Server, die in der Serverliste registriert sind, Format `ip address 1[;ip address 2]` Nur Verzeichnisse\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:6
 #, no-wrap
 msgid "`-F`  or `--fastupdate`     Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.\n"
-msgstr ""
+msgstr "`-F` oder `--fastupdate` Verringert die Latenz, wenn Clients mit der Option „Aktiviere kleine Netzwerkpuffer“ verbunden sind. Erfordert eine schnelle CPU, um Aussetzer zu vermeiden, und mehr Bandbreite für aktivierte Clients.\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:7
 #, no-wrap
 msgid "`-l`  or `--log`            Enable logging, set path and file name                                                                    \n"
-msgstr ""
+msgstr "`-l` oder `--log` Protokollierung einschalten, Pfad und Dateiname festlegen\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:8
 #, no-wrap
 msgid "`-L`  or `--licence`        Show an agreement window before users can connect\n"
-msgstr ""
+msgstr "`-L`  oder --licence` Zeigt ein Zustimmungsfenster an, bevor Benutzer eine Verbindung herstellen können\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:9
 #, no-wrap
 msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
-msgstr ""
+msgstr "`-m` oder `--htmlstatus` HTML-Statusdatei aktivieren, Pfad und Dateiname festlegen\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:10
 #, no-wrap
 msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only\n"
-msgstr ""
+msgstr "`-o` oder `--serverinfo` Ortsangaben im Format:  `[Name];[Stadt];[Gebietsschema-Wert]` (siehe [Werte](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Nur registrierte Server\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:11
 #, no-wrap
 msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning)\n"
-msgstr ""
+msgstr "`-P` oder `--delaypan` Start mit aktiviertem Delay-Panning Siehe [Notizen](/wiki/Running-a-Server#verzögertes-panning)\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:12
 #, no-wrap
 msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
-msgstr ""
+msgstr "`-R` oder `--recording` Gib einen beschreibbaren Pfad ein, in dem die Dateien gespeichert werden sollen (in Anführungszeichen, falls erforderlich). Siehe [Optionen](#optionen).  \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:13
 #, no-wrap
 msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
-msgstr ""
+msgstr "`--norecord` Aufnahme deaktivieren. Durch Angabe von `-R` wird die Aufnahme standardmäßig aktiviert\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:14
 #, no-wrap
 msgid "`-s` or `--server` Start in Server mode\n"
-msgstr ""
+msgstr "`-s` oder `--server` Start in Server Modus\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:15
 #, no-wrap
 msgid "`--serverbindip`  Specify the IP address to bind to              \n"
-msgstr ""
+msgstr "`--serverbindip` Spezifiziert die IP Adresse auf die der Server hört   \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:16
 #, no-wrap
 msgid "`-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more Clients\n"
-msgstr ""
+msgstr "`-T` oder `--multithreading` Multithreading verwenden, um Mehrkern-CPUs besser zu nutzen und mehr Clients zu unterstützen\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:17
 #, no-wrap
 msgid "`-u` or `--numchannels`   Maximum number of channels (Clients)\n"
-msgstr ""
+msgstr "`-u` oder `--numchannels` Maximale Anzahl von Clients (Kanälen) \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:18
 #, no-wrap
 msgid "`-w` or `--welcomemessage`  Welcome message on connect. Can be given as a string or filename, and can contain HTML.\n"
-msgstr ""
+msgstr "`-w` oder `--welcomemessage` Willkommens Nachricht für neue Teilnehmer nach Aufbau der Verbindung. Kann als Zeichenkette oder Dateiname angegeben werden und kann HTML enthalten.\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
 #, no-wrap
 msgid "`-z` or `--startminimized`  Start minimizied\n"
-msgstr ""
+msgstr "`-z` oder `--startminimized`  Start minimiert\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
 #, no-wrap
 msgid "`--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](Running-a-Server#points-to-note-about-directories)\n"
-msgstr ""
+msgstr "`--serverpublicip` Die öffentliche IP-Adresse des Servers, wenn eine Verbindung zu einem Verzeichnis hinter demselben NAT besteht. Siehe [Informationen zum Verzeichnis Server](Running-a-Server#3-verzeichnis-server)\n"

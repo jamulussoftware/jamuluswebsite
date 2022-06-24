@@ -3,93 +3,94 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-06-20 12:01+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Custom-Directories.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "de"
 
 #. type: YAML Front Matter: layout
 #: ../wiki/en/Custom-Directories.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: YAML Front Matter: permalink
 #: ../wiki/en/Custom-Directories.md:1
 #, no-wrap
 msgid "/wiki/Custom-Directories"
-msgstr ""
+msgstr "/wiki/Custom-Directories"
 
 #. type: YAML Front Matter: title
 #: ../wiki/en/Custom-Directories.md:1
 #, no-wrap
 msgid "Custom Directories"
-msgstr ""
+msgstr "Benutzerdefinierte Verzeichnisse"
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Mehr\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:12
 msgid "# Running a Custom Directory"
-msgstr ""
+msgstr "### Betrieb als Verzeichnis Server"
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:14
 msgid "This is a specialised Jamulus Server configuration, as described in [Server Types](Running-a-Server#server-types)."
-msgstr ""
+msgstr "Der Betrieb als Verzeichnis Server ist eine spezielle Jamulus Server-Konfiguration, wie in [Server Typen](/wiki/Running-a-Server#server-typen) beschrieben."
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:16
 msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them."
-msgstr ""
+msgstr "Um die von einem benutzerdefinierten Verzeichnis aufgelisteten Server zu betrachten, müssen Benutzer die Adresse dieses Verzeichnisses in das Feld Einstellungen > Erweiterte Einrichtung > Benutzerdefinierte Verzeichnisse deines Clients eingeben. Bei Bedarf können mehrere Adressen auf diese Weise hinzugefügt werden. Benutzerdefinierte Verzeichnisse erscheinen dann in der Dropdown-Liste „Verzeichnis“ in ihrem Verbindungsfenster. Benutzerdefinierte Verzeichnisse funktionieren für Clients auf dieselbe Weise wie öffentliche Verzeichnisse und zeigen eine Liste der bei ihnen registrierten Server an."
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:18
 msgid "To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, 'localhost' or '127.0.0.1') the Directory to query for Servers."
-msgstr ""
+msgstr "Um einen Server als Verzeichnis zu betreiben, sollte er mit der Option `--directoryserver` gestartet werden, um sich selbst (d.h. 'localhost' oder '127.0.0.1') zum Verzeichnis für die Abfrage nach Servern zu machen."
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:20
 msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
-msgstr ""
+msgstr "Wenn du einen Server mit der grafischen Benutzeroberfläche betreibst, setze die Adresse des benutzerdefinierten Verzeichnisservers auf der Registerkarte Optionen auf „localhost“ und wähle dann „Benutzerdefiniert“ aus der Dropdown-Liste Verzeichnis."
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:23
 msgid "### Points to note about Directories"
-msgstr ""
+msgstr "### Wissenswertes über Verzeichnisse"
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:25
 msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
-msgstr ""
+msgstr "Wenn du kontrollieren möchtest, welche Server sich in deinem Verzeichnis registrieren können, kannst du mit der Befehlszeilen Option `--listfilter` eine Whitelist im Format `ip address 1[;ip address 2]` aktivieren."
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:27
 msgid "When running a Directory behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the Server(s) being listed by your Directory if those Servers are on the same LAN / with the same public IP as the Directory. This is necessary to allow Clients on the public Internet to connect to them via NAT. Note that for the Servers using this option, you will still need proper port forwarding in your router/firewall."
-msgstr ""
+msgstr "Wenn du ein Verzeichnis hinter einer NAT-Firewall in einem privaten Netzwerk betreibst, verwende die Option `--serverpublicip`, um die öffentliche IP-Adresse des/der Server(s) anzugeben, der/die von deinem Verzeichnis aufgelistet wird/werden, wenn sich diese Server im gleichen LAN / mit der gleichen öffentlichen IP wie das Verzeichnis befinden. Dies ist notwendig, damit sich Clients im öffentlichen Internet über NAT mit deinem Server verbinden können. Beachte, dass du für die Server, die diese Option verwenden, trotzdem eine korrekte Portweiterleitung in deinem Router/Firewall einrichten musst."
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:29
 msgid "If you are running your Server as a Directory and need to restart it for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
-msgstr ""
+msgstr "Wenn du deinen Server als Verzeichnis betreibst und ihn aus irgendeinem Grund neu starten musst (z. B. beim Neustart des Hosts), werden die mit ihm verbundenen Server getrennt, bis sie sich neu registrieren. Dies bedeutet nicht, dass Clients, die mit diesen Servern verbunden sind, getrennt werden, aber es bedeutet, dass neue Clients die von deinem Verzeichnis aufgelisteten Server nicht sehen können, bis diese Server wieder verbunden sind. Damit die Liste der registrierten Server zwischen den Neustarts bestehen bleibt, verwende die Option `--directoryfile`, um den Ort und den Namen einer Datei anzugeben, die das Verzeichnis lesen und beschreiben kann."
 
 #. type: Plain text
 #: ../wiki/en/Custom-Directories.md:30
 msgid "Up to 150 Servers can then register with a Directory."
-msgstr ""
+msgstr "Bis zu 150 Server können sich in ein Verzeichnis eintragen."
