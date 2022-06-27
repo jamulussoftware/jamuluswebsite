@@ -6,7 +6,6 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: \n"
 "PO-Revision-Date: 2022-06-20 12:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -152,15 +151,21 @@ msgstr "Vergewissere dich zunächst, dass du die [Portweiterleitung](Running-a-S
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
-msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space. That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
+#, fuzzy
+#| msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space. That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
+msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
 msgstr "Einige ISPs verwenden Techniken wie [Adresse plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) oder [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT), um Adressraum zu sparen. Das macht es unmöglich, Dienste wie Jamulus zu Hause zu hosten, da sie außerhalb deines lokalen Netzes nicht sichtbar sind."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:54
-msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address doesn't match with your public IP address (check it [here](https://ifconfig.me)), it suggests that CGN may be enabled."
+#, fuzzy
+#| msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address doesn't match with your public IP address (check it [here](https://ifconfig.me)), it suggests that CGN may be enabled."
+msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address doesn't match with your public IPv4 address (check it [here](https://ifconfig.me)), it suggests that CGN may be enabled. You can try using an IPv6 connection by starting clients and server with the `-6` flag if IPv6 is available for the server and all clients."
 msgstr "Um festzustellen, ob CGN das Problem ist, rufst du den Konfigurationsbildschirm deines Routers auf (normalerweise 192.168.X.X) und schau dir die Seite WAN-Status an. Wenn deine angegebene IPv4-Adresse nicht mit deiner öffentlichen IP-Adresse übereinstimmt (überprüfe das [hier](https://ifconfig.me)), deutet dies darauf hin, dass CGN aktiviert sein könnte."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:56
-msgid "To fix the issue, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
+#, fuzzy
+#| msgid "To fix the issue, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
+msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
 msgstr "Um das Problem zu beheben, wende dich an den technischen Support deines Internetanbieters und teile ihm mit, dass du einen öffentlichen Server zu Hause hosten möchtest und daher eine echte WAN-IP-Adresse benötigst. Außerdem kannst du den Support mit der Information helfen, dass CGN das Problem sein könnte. Du kannst auch um eine statische IP-Adresse bitten, um die Verwendung von DDNS zu vermeiden."
