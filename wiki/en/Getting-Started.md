@@ -24,6 +24,7 @@ To get Jamulus working with your operating system, please follow the installatio
     <a href="Installation-for-Macintosh" class="button fx-col-100-xs">macOS</a>
     <a href= "Installation-for-Linux" class="button fx-col-100-xs">Linux</a>
 </div>
+_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are not officially supported._
 
 And for now, close all other applications. It’s best to start simple at first.
 
