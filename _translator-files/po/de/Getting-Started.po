@@ -83,14 +83,21 @@ msgid "To get Jamulus working with your operating system, please follow the inst
 msgstr "Um Jamulus auf deinem Betriebssystem einzurichten, folge bitte der Installationsanleitung für deine Plattform:"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:27
-#, no-wrap
+#: ../wiki/en/Getting-Started.md:28
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<div class=\"fx-row fx-row-start-xs button-container\">\n"
+#| "    <a href=\"Installation-for-Windows\" class=\"button fx-col-100-xs\">Windows</a>\n"
+#| "    <a href=\"Installation-for-Macintosh\" class=\"button fx-col-100-xs\">macOS</a>\n"
+#| "    <a href= \"Installation-for-Linux\" class=\"button fx-col-100-xs\">Linux</a>\n"
+#| "</div>\n"
 msgid ""
 "<div class=\"fx-row fx-row-start-xs button-container\">\n"
 "    <a href=\"Installation-for-Windows\" class=\"button fx-col-100-xs\">Windows</a>\n"
 "    <a href=\"Installation-for-Macintosh\" class=\"button fx-col-100-xs\">macOS</a>\n"
 "    <a href= \"Installation-for-Linux\" class=\"button fx-col-100-xs\">Linux</a>\n"
 "</div>\n"
+"_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are still considered experimental._\n"
 msgstr ""
 "<div class=\"fx-row fx-row-start-xs button-container\">\n"
 "    <a href=\"Installation-for-Windows\" class=\"button fx-col-100-xs\">Windows</a>\n"
@@ -99,32 +106,32 @@ msgstr ""
 "</div>\n"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:29
+#: ../wiki/en/Getting-Started.md:30
 msgid "And for now, close all other applications. It’s best to start simple at first."
 msgstr "Beende jetzt alle anderen Programme. Dies verhindert Konflikte und vereinfacht die Installation."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:31
+#: ../wiki/en/Getting-Started.md:32
 msgid "## Hardware Setup"
 msgstr "## Hardware Setup"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:33
+#: ../wiki/en/Getting-Started.md:34
 msgid "If you use external audio hardware, plug that in before you start Jamulus. If you haven't configured your hardware, please see the installation guides mentioned above."
 msgstr "Wenn du externe Audiohardware nutzt, schließe sie vor dem Start von Jamulus an. Wenn du deine Hardware noch nicht konfiguriert hast, beachte bitte die oben genannten Installationsanleitungen."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:35
+#: ../wiki/en/Getting-Started.md:36
 msgid "## Jamulus main window"
 msgstr "## Jamulus Hauptfenster"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:37
+#: ../wiki/en/Getting-Started.md:38
 msgid "When you open Jamulus, you will see a window which looks like this:"
 msgstr "Sobald du Jamulus öffnest, siehst du folgendes Fenster:"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:42
+#: ../wiki/en/Getting-Started.md:43
 #, no-wrap
 msgid ""
 "<figure>\n"
@@ -138,17 +145,17 @@ msgstr ""
 "</figure>\n"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:45
+#: ../wiki/en/Getting-Started.md:46
 msgid "## Setting up a profile"
 msgstr "## Profil einrichten"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:47
+#: ../wiki/en/Getting-Started.md:48
 msgid "First, let others know who you are. Click on the “Settings” button on the bottom left and go to “My Profile…”. Now you will see this:"
 msgstr "Lasse zuerst die anderen Teilnehmer wissen, wer du bist. Klick dazu auf den „Einstellungen“ Knopf unten links und navigiere zum Tab „Mein Profil…“. Dort siehst du folgendes:"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:52
+#: ../wiki/en/Getting-Started.md:53
 #, no-wrap
 msgid ""
 "<figure>\n"
@@ -162,33 +169,33 @@ msgstr ""
 "</figure>\n"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:55
+#: ../wiki/en/Getting-Started.md:56
 msgid "Fill in at least “Alias/Name” and close the window."
 msgstr "Fülle mindestens das Feld „Alias/Name“ aus. Dann kannst du das Fenster schließen."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:57
+#: ../wiki/en/Getting-Started.md:58
 msgid "## Connecting to a Server and testing your sound"
 msgstr "## Mit einem Server verbinden und Audio testen"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:59
+#: ../wiki/en/Getting-Started.md:60
 msgid "Before you connect to a Server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal))."
 msgstr "Bevor du dich mit einem Server verbindest, solltest du dich selbst **nicht** hören können. Die „Goldene Regel“ von Jamulus ist auf deinen eigenen Klang über das Programm zu hören; nicht das direkte Signal von deinem Instrument. Dadurch kannst einfacher mit anderen im Takt spielen ([siehe FAQ](/wiki/FAQ#warum-sollte-ich-keine-drahtlosen-geräte-verwenden))"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:61
+#: ../wiki/en/Getting-Started.md:62
 #, no-wrap
 msgid "**Before playing with others, we recommend that you connect to an empty Server to test your setup**, and make sure you are listening to the signal coming back from the Server (if possible) and not yourself.\n"
 msgstr "**Bevor du anfängst mit anderen Leuten zu musizieren, empfehlen wir, dass du dich zuerst mit einem leeren Server verbindest, um deine Konfiguration zu testen.** Und stelle sicher, dass du auf das Signal vom Server hörst (wenn möglich) und nicht auf dich selbst vor Ort.\n"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:63
+#: ../wiki/en/Getting-Started.md:64
 msgid "Now use the “Connect” button in the Jamulus main window to join a Server. A window will now open:"
 msgstr "Nun klicke auf „Verbinden“ im Jamulus-Hauptfenster, um einem Server beizutreten. Ein weiteres Fenster öffnet sich:"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:68
+#: ../wiki/en/Getting-Started.md:69
 #, no-wrap
 msgid ""
 "<figure>\n"
@@ -202,27 +209,27 @@ msgstr ""
 "</figure>\n"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:70
+#: ../wiki/en/Getting-Started.md:71
 msgid "The most important thing about Servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a Server with a ping of less than 50ms if you can."
 msgstr "Die wichtigste Eigenschaft von Servern ist ihre „Ping-Zeit“. Je höher der Wert, desto schwieriger ist, im Tempo mit anderen zu spielen. In der Regel solltest du möglichst einen Server auswählen, dessen Ping-Zeit geringer als 15 ms ist."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:72
+#: ../wiki/en/Getting-Started.md:73
 msgid "Once connected to a Server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 msgstr "Sobald du dich mit einem Server verbunden hast, stelle sicher, dass du dich gut hören kannst; passe deine Eingangslautstärke an und korrigiere eventuelle Probleme. Und halte dich an [Die goldene Regel](/wiki/Client-Troubleshooting#der-sound-ist-gut-aber-es-ist-schwierig-im-takt-zu-bleiben)."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:74
+#: ../wiki/en/Getting-Started.md:75
 msgid "## Playing for the first time"
 msgstr "## Das erste Musizieren"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:76
+#: ../wiki/en/Getting-Started.md:77
 msgid "With your sound all set up, you are ready to go. When you connect to a Server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you."
 msgstr "Wenn die Audioeinstellungen fertig sind, kannst du loslegen. Nachdem du dich mit einem Server verbunden hast (du kannst ein Genre aus der Liste wählen), sind die Regler rechts in der Ansicht dein privates Mischpult. Alles was du hier änderst, hat Einfluss auf das, was du hörst, aber nicht auf das, was die anderen hören. Wenn du einen Regler runterziehst, wird dieser Kanal leiser, wenn du ihn nach oben ziehst, wird der Kanal für dich lauter."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:81
+#: ../wiki/en/Getting-Started.md:82
 #, no-wrap
 msgid ""
 "<figure>\n"
@@ -236,26 +243,26 @@ msgstr ""
 "</figure>\n"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:83
+#: ../wiki/en/Getting-Started.md:84
 msgid "If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other people. They won’t be able to tell you have done this though. But if you see a “mute” icon above a fader, that means they can’t hear you because they've muted your channel in their mix."
 msgstr "Falls du nicht möchtest, dass die anderen dich hören, klick auf „Stummschalten“. Das verhindert, dass dein Audiosignal an andere Leute gesendet wird. Niemand erfährt, ob du das gemacht hast. Wenn du hingegen das Symbol „Mute“ über einem Regler siehst, bedeutet das, dass diese Person dich nicht hören kann, weil sie deinen Kanal in ihrem Mix stummgeschaltet hat."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:85
+#: ../wiki/en/Getting-Started.md:86
 msgid "Note that you can use the Chat facility at any time to message other people while you are connected. The welcome message in the chat may also state some guidelines for use."
 msgstr "Während du online bist, kannst du die Chat Funktion nutzen, um eine Nachricht an die anderen Teilnehmer zu schreiben. Die Willkommensnachricht im Chat kann auch einige Richtlinien anzeigen."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:87
+#: ../wiki/en/Getting-Started.md:88
 msgid "More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual)."
 msgstr "Weitere Informationen über die Verwendung von Jamulus kannst du im [Software Handbuch](/wiki/Software-Manual) finden."
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:89
+#: ../wiki/en/Getting-Started.md:90
 msgid "## Troubleshooting"
 msgstr "## Fehlerbehebung"
 
 #. type: Plain text
-#: ../wiki/en/Getting-Started.md:90
+#: ../wiki/en/Getting-Started.md:91
 msgid "Having audio trouble? Can't see Servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)."
 msgstr "Hast du Probleme mit dem Audio? Kannst du die Serverliste nicht sehen, oder irgendein anderes Problem? Schau dir die [Fehlerbehebungsseite](/wiki/Client-Troubleshooting) an, oder frage gerne im [Diskussionsforum](https://github.com/jamulussoftware/jamulus/discussions)."
