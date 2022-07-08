@@ -86,79 +86,82 @@ msgid "Jamulus on iOS works quite well on new devices if everything is set up co
 msgstr "Jamulus op iOS werkt best goed op nieuwe apparaten als alles correct is ingesteld. We raden je echter ten zeerste aan om een ​​audio-interface en een USB-ethernet-adapter te gebruiken. Om deze met jouw iOS-apparaat te verbinden, moet je iets gebruiken zoals de [Lightning naar USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) en een USB-hub met stroomvoorziening."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:26
-msgid "## Install for iOS (for experienced users only)  **Note**: We provide an unsigned .ipa file which you need to sign and then install on your device. If you are not Jailbroken (and have AppSync installed), you might need additional software to install Jamulus. There are multiple ways to do that, but this guide only explains the most standard approach. Please note that we assume you already have a (free) Apple developer account. If you don't have one, create an Apple ID and [Sign up for a developer account](https://developer.apple.com/membercenter). We recommend to create one without two factor authentification and unrelated to your potential personal account. You will need to enter the password in non-Apple software."
-msgstr ""
+#: ../wiki/en/Installation-for-iOS.md:25
+msgid "## Install for iOS (for experienced users only)"
+msgstr "## Installatie voor iOS (alleen voor gevorderde gebruikers)"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:28
-msgid "[Download Jamulus (.ipa) on a PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
+#: ../wiki/en/Installation-for-iOS.md:27
+#, no-wrap
+msgid "**Note**: We provide an unsigned .ipa file which you need to sign and then install on your device. If you are not Jailbroken (and have AppSync installed), you might need additional software to install Jamulus. There are multiple ways to do that, but this guide only explains the most standard approach. Please note that we assume you already have a (free) Apple developer account. If you don't have one, create an Apple ID and [Sign up for a developer account](https://developer.apple.com/membercenter). We recommend to create one without two factor authentification and unrelated to your potential personal account. You will need to enter the password in non-Apple software.\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:29
-msgid "Sign the .ipa file (e.g. via Xcode or some other **trusted** app. We won't give recommendations here, but there exist apps for every operating system)"
+msgid "[Download Jamulus (.ipa) on a PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:30
-msgid "Once signed and installed; on your iOS device open Settings, navigate to General>Profiles (or VPN and Device Management). Tap on the developer account corresponding to your account and trust the account."
+msgid "Sign the .ipa file (e.g. via Xcode or some other **trusted** app. We won't give recommendations here, but there exist apps for every operating system)"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:31
-msgid "Open Jamulus from your home-screen"
+msgid "Once signed and installed; on your iOS device open Settings, navigate to General>Profiles (or VPN and Device Management). Tap on the developer account corresponding to your account and trust the account."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:32
+msgid "Open Jamulus from your home-screen"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-iOS.md:33
 msgid "After 7 days you will need to re-sign Jamulus if you are using a free developer account. Re-do everything from Step 4."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:34
+#: ../wiki/en/Installation-for-iOS.md:35
 #, fuzzy
 #| msgid "If you do want to try Jamulus on iOS, please have at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
 msgid "If you own a Mac and have Xcode installed, compiling Jamulus from source might be another, more native option. Please have a look at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
 msgstr "Als je Jamulus op iOS wilt proberen, bekijk dan de [compilatie instructies voor iOS (engelstalig)](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:37
+#: ../wiki/en/Installation-for-iOS.md:38
 msgid "## Feedback and development"
 msgstr "## Feedback en ontwikkeling"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:40
+#: ../wiki/en/Installation-for-iOS.md:41
 msgid "iOS support isn't mature yet and far from ready to be published on the AppStore. Feel free to help out: Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)."
 msgstr "iOS-ondersteuning staat nog in de kinderschoenen en is nog lang niet klaar om in de AppStore te worden gepubliceerd. Voel je vrij om mee te helpen: ga gewoon naar de [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:42
+#: ../wiki/en/Installation-for-iOS.md:43
 msgid "Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/master/APPLEAPPSTORE.LICENCE.WAIVER) concerning Jamulus being published via the Apple AppStore."
 msgstr "Lees ook de [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/master/APPLEAPPSTORE.LICENCE.WAIVER) betreffende het beschikbaar maken van Jamulus via de Apple AppStore."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:44
+#: ../wiki/en/Installation-for-iOS.md:45
 #, no-wrap
 msgid "***\n"
 msgstr "***\n"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:46
+#: ../wiki/en/Installation-for-iOS.md:47
 msgid "## All installed?"
 msgstr "## Alles geïnstalleerd?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:48
+#: ../wiki/en/Installation-for-iOS.md:49
 msgid "Jamulus has been installed and can be used now. You can now take a look at the"
 msgstr "Jamulus is geïnstalleerd en kan nu worden gebruikt. Bekijk de"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:49
+#: ../wiki/en/Installation-for-iOS.md:50
 #, fuzzy
 #| msgid "[Jamulus Onboarding page](Getting-Started){: .button}"
 msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgstr "[Jamulus aan de slag pagina](Getting-Started){: .button}"
-
-#~ msgid "## Install for iOS (for experienced users only)"
-#~ msgstr "## Installatie voor iOS (alleen voor gevorderde gebruikers)"
