@@ -7,6 +7,8 @@ permalink: "/wiki/Privacy-Statement"
 
 # Privacy Statement
 
+Please note that the English version of this privacy statement is the original and, as such, the binding version. To access the English version, go to the top/top right of this page and click on the "en" link.
+
 ## Definition of Terms
 
 - "**Server**" The Jamulus Server software, as opposed to the host machine/OS it is running on.
@@ -41,4 +43,4 @@ When you type a message in the Chat Window, other connected players can see that
 
 ### Data Transmission
 
-Please note that all audio and text data is sent and received between the Jamulus Server and Client without encryption. 
+Please note that all audio and text data is sent and received between the Jamulus Server and Client without encryption.
