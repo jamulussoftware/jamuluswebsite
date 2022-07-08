@@ -17,7 +17,7 @@ Upgrading? You may want to [back up your configuration](Software-Manual#backing-
  **macOS Mojave (10.14) or lower:** [Download legacy version]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\
  **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Install Jamulus**: Open the downloaded `.dmg` file, agree to the licence, *drag and drop* each icon you see in the window (Jamulus Client and Server) into your *Applications folder*. After that, you can close this window.
-1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application. 
+1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
 
 _You can remove the folder in the Downloads directory containing the `.dmg` and eject the "Jamulus" drive on your desktop. They are no longer needed._
 
@@ -25,7 +25,7 @@ _You can remove the folder in the Downloads directory containing the `.dmg` and 
 
 ## "Jamulus" can't be opened because the developer cannot be verified
 
-If you are using the "legacy" version of Jamulus (because you are running an older version of macOS), the first time you run Jamulus, you will see a message saying it cannot be opened. 
+If you are using the "legacy" version of Jamulus (because you are running an older version of macOS), the first time you run Jamulus, you will see a message saying it cannot be opened.
 
 To open Jamulus
 1. Go to the Applications folder via Finder
@@ -37,4 +37,6 @@ You will then get a slightly different version of the same message, which allows
 
 ## All installed?
 
-Take a look at the [Jamulus setup page](Getting-Started){: .button}
+Take a look at the
+
+[Jamulus setup page](Getting-Started){: .button}

@@ -79,4 +79,6 @@ Official and further information about how to configure ASIO4ALL is documented i
 
 ## All installed?
 
-Take a look at [Jamulus setup page](Getting-Started){: .button}
+Take a look at
+
+[Jamulus setup page](Getting-Started){: .button}
