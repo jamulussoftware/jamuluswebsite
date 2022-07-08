@@ -22,6 +22,7 @@ If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.r
 
 
 ## Install for iOS (for experienced users only)
+
 **Note**: We provide an unsigned .ipa file which you need to sign and then install on your device. If you are not Jailbroken (and have AppSync installed), you might need additional software to install Jamulus. There are multiple ways to do that, but this guide only explains the most standard approach. Please note that we assume you already have a (free) Apple developer account. If you don't have one, create an Apple ID and [Sign up for a developer account](https://developer.apple.com/membercenter). We recommend to create one without two factor authentification and unrelated to your potential personal account. You will need to enter the password in non-Apple software.
 
 1. [Download Jamulus (.ipa) on a PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}
