@@ -13,7 +13,8 @@ Make sure you've already read the [Getting Started](Getting-Started) page.
 
 Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
 
-1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
+1. [Download Jamulus (Intel)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
+[Download Jamulus (Apple Silicon)]({{ site.download_root_link }}{{ site.download_file_names.mac-arm }}){: .button}\\
  **macOS Mojave (10.14) or lower:** [Download legacy version]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\
  **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)
 1. **Install Jamulus**: Open the downloaded `.dmg` file, agree to the licence, *drag and drop* each icon you see in the window (Jamulus Client and Server) into your *Applications folder*. After that, you can close this window.
