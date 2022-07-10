@@ -71,7 +71,7 @@ to the right and move the fader upwards until the desired reverb level is reache
 
 Opens the chat window. Text entered is sent to
 all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will
-open automatically for all Clients.
+open automatically for all Clients. See Settings to optionally turn on a sound alert for when someone joins or when receiving a new chat message. 
 
 ## Connect/disconnect button
 
