@@ -8,6 +8,7 @@ For all other platforms, run the following from the command line to find where t
 
 `find ~ -name Jamulus.ini -ls`
 
+If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.
 **Points to note**
 
 * Do not back up or restore settings files when Jamulus is running.
