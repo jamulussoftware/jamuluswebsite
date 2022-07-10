@@ -148,7 +148,7 @@ This sets the number of rows displayed in the server audio mixer, for use with l
 
 ### Audio Alerts
 
-This turns on a sound alert for when someone joins or when receiving a new chat message.
+This turns on a sound alert for when someone joins a chat, or when receiving a new chat message.
 
 ## Audio/Network Setup
 
