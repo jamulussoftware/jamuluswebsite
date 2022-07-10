@@ -146,6 +146,10 @@ This changes the visual style of the audio meters, independently of the chosen s
 
 This sets the number of rows displayed in the server audio mixer, for use with larger ensembles.
 
+### Audio Alerts
+
+This turns on a sound alert for when someone joins or when receiving a new chat message.
+
 ## Audio/Network Setup
 
 <figure><img src="{% include img/en-screenshots/settings-network.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
