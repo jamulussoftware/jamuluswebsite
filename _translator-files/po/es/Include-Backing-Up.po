@@ -29,12 +29,16 @@ msgstr "Una vez instalado y en marcha, quizá quieras guardar una copia de tu co
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:6
-msgid "To find your settings file on Windows, look in the `%APPDATA%` folder. There will be one or more `.ini` files in a folder there named `Jamulus`."
+#, fuzzy
+#| msgid "To find your settings file on Windows, look in the `%APPDATA%` folder. There will be one or more `.ini` files in a folder there named `Jamulus`."
+msgid "To find your settings file on Windows, type `%APPDATA%` into the search bar and look for a folder named `Jamulus`. There will be one or more `.ini` files in this folder. Now back up Jamulus' settings."
 msgstr "Para encontrar el archivo de configuración en Windows, mira en la carpeta `%APPDATA%`. Habrá uno o más archivos `.ini` en una carpeta llamada `Jamulus`."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:8
-msgid "For all other platforms, run the following from the command line to find where they live:"
+#, fuzzy
+#| msgid "For all other platforms, run the following from the command line to find where they live:"
+msgid "For all other platforms, run the following from the command line to find where they live and copy the files to another location:"
 msgstr "Para las demás plataformas, ejecuta lo siguiente desde la línea de comandos para encontrar su ubicación:"
 
 #. type: Plain text
@@ -43,22 +47,26 @@ msgid "`find ~ -name Jamulus.ini -ls`"
 msgstr "`find ~ -name Jamulus.ini -ls`"
 
 #. type: Plain text
-#: ../wiki/en/Include-Backing-Up.md:12
-#, no-wrap
-msgid "**Points to note**\n"
-msgstr "**Puntos a tener en cuenta**\n"
+#: ../wiki/en/Include-Backing-Up.md:13
+msgid "If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.  **Points to note**"
+msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Include-Backing-Up.md:14
+#: ../wiki/en/Include-Backing-Up.md:15
 msgid "Do not back up or restore settings files when Jamulus is running."
 msgstr "No realices copias de seguridad ni restaures archivos de configuración mientras se ejecuta Jamulus."
 
 #. type: Plain text
-#: ../wiki/en/Include-Backing-Up.md:15
-msgid "It is not recommended to edit settings files by hand (they're not designed for that)."
+#: ../wiki/en/Include-Backing-Up.md:16
+#, fuzzy
+#| msgid "It is not recommended to edit settings files by hand (they're not designed for that)."
+msgid "It is not recommended to manually edit settings files (they're not designed for that)."
 msgstr "No se recomienda editar los archivos de configuración a mano (no están diseñados para eso)."
 
 #. type: Plain text
-#: ../wiki/en/Include-Backing-Up.md:15
+#: ../wiki/en/Include-Backing-Up.md:16
 msgid "You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus)."
 msgstr "Puedes revertir toda la configuración a los valores predeterminados simplemente eliminando el archivo de configuración (tras cerrar Jamulus)."
+
+#~ msgid "**Points to note**\n"
+#~ msgstr "**Puntos a tener en cuenta**\n"
