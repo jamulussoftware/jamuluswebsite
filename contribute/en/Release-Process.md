@@ -252,7 +252,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
 - [ ] Agree to de-tag unfinished Issues/PRs.
 - [ ] Declare a freeze for code and website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
 - [ ] Check the `needs documentation` label for any outstanding PRs flagged for this release and remove that label if done.
-- [ ] Check ./Jamulus -h output against the Include-Client/Server-Commands.md pages (wiki/en) and man page (distributions/Jamulus.1). Update if necessary.
+- [ ] Check ./Jamulus -h output against the [Include-Client](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Client-Commands.md)/[Server-Commands](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Server-Commands.md).md pages and [man page (distributions/Jamulus.1)[(https://github.com/jamulussoftware/jamulus/blob/master/distributions/Jamulus.1). Update if necessary.
 - [ ] Start Website translations
   - [ ] Check for broken links with a link checker on the `next-release` branch and fix them
   - [ ] Open a Pull Request from `next-release` to release, set it as "Draft", sanity check for conflicts and any obvious problems.
