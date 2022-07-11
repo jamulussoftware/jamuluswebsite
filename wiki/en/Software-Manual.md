@@ -71,7 +71,7 @@ to the right and move the fader upwards until the desired reverb level is reache
 
 Opens the chat window. Text entered is sent to
 all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will
-open automatically for all Clients. See Settings to optionally turn on a sound alert for when someone joins or when receiving a new chat message. 
+open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received. 
 
 ## Connect/disconnect button
 
@@ -148,7 +148,7 @@ This sets the number of rows displayed in the server audio mixer, for use with l
 
 ### Audio Alerts
 
-This turns on a sound alert for when someone joins a chat, or when receiving a new chat message.
+This turns on a sound alert for when someone joins a server, or when receiving a new chat message.
 
 ## Audio/Network Setup
 
