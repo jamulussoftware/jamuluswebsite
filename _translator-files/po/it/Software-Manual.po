@@ -205,7 +205,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
-msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients."
+msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
 msgstr ""
 
 #. type: Plain text
@@ -380,68 +380,78 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:150
-msgid "## Audio/Network Setup"
+msgid "### Audio Alerts"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:152
-msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
+msgid "This turns on a sound alert for when someone joins a Server, or when receiving a new chat message."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:154
+msgid "## Audio/Network Setup"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:156
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:158
 msgid "### Device"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:157
+#: ../wiki/en/Software-Manual.md:161
 msgid "Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:159
+#: ../wiki/en/Software-Manual.md:163
 msgid "### Input/output channel mapping"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:161
+#: ../wiki/en/Software-Manual.md:165
 msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:165
+#: ../wiki/en/Software-Manual.md:169
 msgid "If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)  a different actual sound card channel can be selected."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:167
+#: ../wiki/en/Software-Manual.md:171
 msgid "### Audio channels"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:169
-msgid "Selects the number of audio channels to be used for communication between Client and server."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:171
-#, no-wrap
-msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
-msgstr ""
-
-#. type: Plain text
 #: ../wiki/en/Software-Manual.md:173
-msgid "There are three modes available:"
+msgid "Selects the number of audio channels to be used for communication between Client and server."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:175
 #, no-wrap
+msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:177
+msgid "There are three modes available:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:179
+#, no-wrap
 msgid "**Mono** and **Stereo** modes use one and two audio channels respectively.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:178
+#: ../wiki/en/Software-Manual.md:182
 #, no-wrap
 msgid ""
 "**Mono-in/Stereo-out**: The audio signal sent to the server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case\n"
@@ -449,220 +459,220 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:181
+#: ../wiki/en/Software-Manual.md:185
 msgid "Enabling stereo mode will increase your stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:184
+#: ../wiki/en/Software-Manual.md:188
 msgid "In stereo streaming mode, no audio channel selection for the reverb effect will be available on the main window since the effect is applied to both channels in this case."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:186
+#: ../wiki/en/Software-Manual.md:190
 msgid "### Audio quality"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:188
+#: ../wiki/en/Software-Manual.md:192
 msgid "The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:190
+#: ../wiki/en/Software-Manual.md:194
 msgid "### Buffer Delay"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:193
+#: ../wiki/en/Software-Manual.md:197
 msgid "The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many connection properties. Three buffer sizes are supported:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:195
+#: ../wiki/en/Software-Manual.md:199
 #, no-wrap
 msgid "**64 samples** Provides the lowest latency but does not work with all sound cards.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:196
+#: ../wiki/en/Software-Manual.md:200
 #, no-wrap
 msgid "**128 samples** The preferred setting. Should work for most available sound cards.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:197
+#: ../wiki/en/Software-Manual.md:201
 #, no-wrap
 msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:200
+#: ../wiki/en/Software-Manual.md:204
 msgid "Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.  In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:202
+#: ../wiki/en/Software-Manual.md:206
 msgid "On Linux, use the JACK configuration tool to change the buffer size."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:206
+#: ../wiki/en/Software-Manual.md:210
 msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:208
+#: ../wiki/en/Software-Manual.md:212
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:210
+#: ../wiki/en/Software-Manual.md:214
 msgid "### Jitter Buffer"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:214
+#: ../wiki/en/Software-Manual.md:218
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:218
+#: ../wiki/en/Software-Manual.md:222
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:220
+#: ../wiki/en/Software-Manual.md:224
 msgid "The jitter buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:224
+#: ../wiki/en/Software-Manual.md:228
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:226
+#: ../wiki/en/Software-Manual.md:230
 msgid "### Enable small network buffers"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:229
+#: ../wiki/en/Software-Manual.md:233
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:231
+#: ../wiki/en/Software-Manual.md:235
 msgid "### Audio Stream Rate"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:234
+#: ../wiki/en/Software-Manual.md:238
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:236
+#: ../wiki/en/Software-Manual.md:240
 msgid "## Advanced Setup"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:238
+#: ../wiki/en/Software-Manual.md:242
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:240
+#: ../wiki/en/Software-Manual.md:244
 msgid "### Custom directory server address"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:242
+#: ../wiki/en/Software-Manual.md:246
 msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:244
+#: ../wiki/en/Software-Manual.md:248
 msgid "### New Client Level"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:248
+#: ../wiki/en/Software-Manual.md:252
 msgid "This setting defines the fader level of a newly connected Client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:250
+#: ../wiki/en/Software-Manual.md:254
 msgid "### Input Boost"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:252
+#: ../wiki/en/Software-Manual.md:256
 msgid "Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:254
+#: ../wiki/en/Software-Manual.md:258
 msgid "### Feedback Protection"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:256
+#: ../wiki/en/Software-Manual.md:260
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:258
+#: ../wiki/en/Software-Manual.md:262
 msgid "### Input Balance"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:262
+#: ../wiki/en/Software-Manual.md:266
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:264
+#: ../wiki/en/Software-Manual.md:268
 msgid "# Menu commands"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:266
+#: ../wiki/en/Software-Manual.md:270
 msgid "### File > Load/Save Mixer Channels Setup"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:268
+#: ../wiki/en/Software-Manual.md:272
 msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:270
+#: ../wiki/en/Software-Manual.md:274
 msgid "### Edit > Auto-Adjust All Faders"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:272
+#: ../wiki/en/Software-Manual.md:276
 msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:274
+#: ../wiki/en/Software-Manual.md:278
 msgid "# Backing up Jamulus"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:276
+#: ../wiki/en/Software-Manual.md:280
 msgid "{% include_relative Include-Backing-Up.md %}"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:277
+#: ../wiki/en/Software-Manual.md:281
 msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:282
+#: ../wiki/en/Software-Manual.md:286
 #, no-wrap
 msgid ""
 "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
@@ -672,22 +682,22 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:284
+#: ../wiki/en/Software-Manual.md:288
 msgid "# Command Line Options"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:286
+#: ../wiki/en/Software-Manual.md:290
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:288
+#: ../wiki/en/Software-Manual.md:292
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:292
+#: ../wiki/en/Software-Manual.md:296
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -696,12 +706,12 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:294
+#: ../wiki/en/Software-Manual.md:298
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:298
+#: ../wiki/en/Software-Manual.md:302
 #, no-wrap
 msgid ""
 "```shell\n"
@@ -710,11 +720,11 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:300
+#: ../wiki/en/Software-Manual.md:304
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:302
+#: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr ""
