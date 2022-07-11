@@ -18,7 +18,7 @@ Note: Besides the actual build, a full release of Jamulus should also follow the
 * TOC
  {:toc}
 
-</details> 
+</details>
 
 ## Release (Building)
 
@@ -87,7 +87,7 @@ A developer should check and merge each PR as it arrives using this checklist:
 - Translator listed in the `src/util.cpp` *optionally add link to PR or code*
 - Punctuation and spacing consistent
 - Signal words consistent ("ASIO", "Buffer")
-- App translations: No untranslated strings (`grep unfinished -5 src/res/translation/translation_$TRANSLATION*.ts`)
+- App translations: No untranslated strings (`grep unfinished -5 src/translation/translation_$TRANSLATION*.ts`)
 - App translations: Only a single `.ts` file checked in (`.qm` in addition is also OK)
 - Installer translations: Passes `tools/check-wininstaller-translations.sh`
 
@@ -248,24 +248,24 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
 **Checklist**
 - [ ] Assign this issue to the release shepherd who is in charge of managing this checklist.
 - [ ] Pin this issue
-- [ ] Ensure that all issues/PR targeted for this release are done by checking the Project board with [the appropriate filter for this release](https://github.com/orgs/jamulussoftware/projects/2?card_filter_query=milestone%3A%22release+3.8.2%22). Remind main developers to review entries in *Waiting on team* state. 
+- [ ] Ensure that all issues/PR targeted for this release are done by checking the Project board with [the appropriate filter for this release](https://github.com/orgs/jamulussoftware/projects/2?card_filter_query=milestone%3A%22release+3.8.2%22). Remind main developers to review entries in *Waiting on team* state.
 - [ ] Agree to de-tag unfinished Issues/PRs.
 - [ ] Declare a freeze for code and website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
 - [ ] Check the `needs documentation` label for any outstanding PRs flagged for this release and remove that label if done.
-- [ ] Check ./Jamulus -h output against the Include-Client/Server-Commands.md pages (wiki/en) and man page (distributions/Jamulus.1). Update if necessary.
+- [ ] Check ./Jamulus -h output against the [Include-Client](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Client-Commands.md)/[Server-Commands](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Server-Commands.md).md pages and [man page (distributions/Jamulus.1)[(https://github.com/jamulussoftware/jamulus/blob/master/distributions/Jamulus.1). Update if necessary.
 - [ ] Start Website translations
   - [ ] Check for broken links with a link checker on the `next-release` branch and fix them
-  - [ ] Open a Pull Request from `next-release` to release, set it as "Draft", sanity check for conflicts and any obvious problems. 
+  - [ ] Open a Pull Request from `next-release` to release, set it as "Draft", sanity check for conflicts and any obvious problems.
   - [ ] Declare a full freeze of the `next-release` and `release` branch. No changes should be made from now on to ensure translators don't have to work twice.
   - [ ] Check if the list of translators in `tools/create-translation-issues.sh`. Make sure issue text is up-to-date. Add any URLs that will need localisation into the "New/Changed screenshots" section.
-  - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `web` argument (see notes in script). 
+  - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `web` argument (see notes in script).
   - [ ] If anyone finds critical issues now, all translators must be made aware of them and all languages should be updated.
 - [ ] Start App translations
   - [ ] Generate `.ts` files in master via `lupdate`
   - [ ] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
   - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
 - [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
-- [ ] [Tag a beta release](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) 
+- [ ] [Tag a beta release](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release)
   - [ ] Inform emlynmac for signing on macOS, and upload signed binary from [his repo](https://github.com/emlynmac/jamulus/releases/) to [ours](https://github.com/jamulussoftware/jamulus/releases/)
   - [ ] Announce the beta release on Github Discussions. Pin the thread.
   - [ ] Get feedback on the stability and resource usage (memleaks?, crashes?, installation issues?) of the beta release
@@ -328,7 +328,8 @@ Please find all the details in the [Changelog](https://github.com/jamulussoftwar
 _Windows users: Please note that in the first days after release SmartScreen will probably display warnings about this release being unknown upon download and/or execution of the installer. Let us know when you do not see this warning anymore and we will update this announcement accordingly._
 
 **[↓ Windows](<!-- direct link to Windows version -->)** (ASIO version), alternative: [↓ JACK version](<!-- direct link to JACK version -->)
-**[↓ macOS](<!-- direct link to macOS SIGNED version -->)** for High Sierra (10.13) to Big Sur (11) and [↓ macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Sierra (10.12), El Capitan (10.11) or Yosemite (10.10).
+**[↓ macOS (Intel)](<!-- direct link to macOS SIGNED Intel version -->)** for Catalina (10.15) and higher and [↓ macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Mojave (10.14) down to Yosemite (10.10).
+**[↓ macOS (Apple Silicon)](<!-- direct link to macOS SIGNED ARM version -->)** for Big Sur (11.0) or later (needs ARM chip)
 **[↓ Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] version -->)
 **[↓ Debian/Ubuntu (armhf)](<!-- direct link to .deb [GUI] armhf version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] armhf version -->)
 **[↓ Android](<!-- direct link to Android version -->)** (experimental)
