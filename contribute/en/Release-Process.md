@@ -236,7 +236,7 @@ Upload all the files. Then in the SourceForge web UI, for each of the files uplo
 
 ## Website: check links
 
-We have used [linkchecker](https://manpages.ubuntu.com/manpages/bionic/man1/linkchecker.1.html) on Debian/Ubuntu in the past. Note that Knowldge Base links are not checked:
+We have used [linkchecker](https://manpages.ubuntu.com/manpages/bionic/man1/linkchecker.1.html) on Debian/Ubuntu in the past. Note that Knowledge Base links are not checked:
 
 ```
 $ git clone https://github.com/jamulussoftware/jamuluswebsite.git
