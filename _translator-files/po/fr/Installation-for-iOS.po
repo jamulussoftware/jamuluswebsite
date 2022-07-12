@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-01-29 09:40+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-07-14 12:29+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-iOS.md:1
@@ -61,22 +62,16 @@ msgstr "## Ce qu'il faut savoir sur iOS"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:18
-#, fuzzy
-#| msgid "If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus. iOS support is just a proof of concept and needs certain skills."
 msgid "If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus. iOS support is just a proof of concept."
 msgstr "Si vous ne possédez pas de PC, nous vous suggérons d'acheter un [Raspberry Pi](https://www.raspberrypi.org/){ : target=\"_blank\" rel=\"noopener noreferrer\" } qui est un petit appareil peu coûteux qui fonctionne très bien avec Jamulus. Le support iOS n'est qu'une preuve de concept et nécessite certaines compétences."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:20
-#, fuzzy
-#| msgid "To install Jamulus on your iOS device, you need a computer running macOS."
 msgid "To install Jamulus on your iOS device, you need a (free or paid) Apple Developer account and preferably a computer."
-msgstr "Pour installer Jamulus sur votre appareil iOS, vous devez disposer d'un ordinateur équipé de macOS."
+msgstr "Pour installer Jamulus sur votre appareil iOS, vous avez besoin d'un compte développeur Apple (gratuit ou payant) et, de préférence, d'un ordinateur."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:21
-#, fuzzy
-#| msgid "If you don't pay for an apple developer account, Jamulus will only run for at most 7 days before you need to re-install it."
 msgid "If you don't pay for an Apple developer account, Jamulus will only run for at most 7 days before you need to re-install it."
 msgstr "Si vous ne payez pas pour un compte développeur Apple, Jamulus ne fonctionnera que pendant 7 jours au maximum avant que vous ne deviez le réinstaller."
 
@@ -94,39 +89,37 @@ msgstr "##Installation pour iOS (pour utilisateurs expérimentées seulement)"
 #: ../wiki/en/Installation-for-iOS.md:27
 #, no-wrap
 msgid "**Note**: We provide an unsigned .ipa file which you need to sign and then install on your device. If you are not Jailbroken (and have AppSync installed), you might need additional software to install Jamulus. There are multiple ways to do that, but this guide only explains the most standard approach. Please note that we assume you already have a (free) Apple developer account. If you don't have one, create an Apple ID and [Sign up for a developer account](https://developer.apple.com/membercenter). We recommend to create one without two factor authentification and unrelated to your potential personal account. You will need to enter the password in non-Apple software.\n"
-msgstr ""
+msgstr "**Note** : Nous fournissons un fichier .ipa non signé que vous devez signer et installer sur votre appareil. Si vous n'êtes pas \"jailbreaké\" (et que AppSync est installé), vous aurez peut-être besoin d'un logiciel supplémentaire pour installer Jamulus. Il existe plusieurs façons de procéder, mais ce guide n'explique que l'approche la plus standard. Veuillez noter que nous supposons que vous disposez déjà d'un compte (gratuit) de développeur Apple. Si vous n'en avez pas, créez un Apple ID et [Créer un compte de développeur](https://developer.apple.com/membercenter). Nous vous recommandons d'en créer un sans authentification à deux facteurs et sans lien avec votre éventuel compte personnel. Vous devrez saisir le mot de passe dans les logiciels non Apple.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:29
 msgid "[Download Jamulus (.ipa) on a PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
-msgstr ""
+msgstr "[Téléchargez Jamulus (.ipa) sur un PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:30
 msgid "Sign the .ipa file (e.g. via Xcode or some other **trusted** app. We won't give recommendations here, but there exist apps for every operating system)"
-msgstr ""
+msgstr "Signez le fichier .ipa (par exemple via Xcode ou une autre application **de confiance**. Nous ne donnerons pas de recommandations ici, mais il existe des applications pour chaque système d'exploitation)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:31
 msgid "Once signed and installed; on your iOS device open Settings, navigate to General>Profiles (or VPN and Device Management). Tap on the developer account corresponding to your account and trust the account."
-msgstr ""
+msgstr "Une fois signée et installée ; Ouvrez Paramètres sur votre périphérique iOS, naviguez jusqu'a Général>Profils (ou VPN and Gestion de l'appareil). Choisissez le compte développeur correspondant à votre compte et validez."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:32
 msgid "Open Jamulus from your home-screen"
-msgstr ""
+msgstr "Ouvrez Jamulus depuis votre écran d'accueil"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:33
 msgid "After 7 days you will need to re-sign Jamulus if you are using a free developer account. Re-do everything from Step 4."
-msgstr ""
+msgstr "Après 7 jours, vous devrez signer à nouveau Jamulus si vous utilisez un compte développeur gratuit. Reprenez tout à partir de l'étape 4."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:35
-#, fuzzy
-#| msgid "If you do want to try Jamulus on iOS, please have at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
 msgid "If you own a Mac and have Xcode installed, compiling Jamulus from source might be another, more native option. Please have a look at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
-msgstr "Si vous voulez essayer Jamulus sur iOS, veuillez consulter les [instructions de compilation pour iOS] (https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
+msgstr "Si vous possedez un Mac et que Xcode est installé, compiler Jamulus depuis les sources pourrait être une autre option, plus native. Veuillez consulter les [instructions de compilation pour iOS] (https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:38
@@ -161,7 +154,5 @@ msgstr "Jamulus a été installé et peut être utilisé maintenant. Vous pouvez
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:50
-#, fuzzy
-#| msgid "[Jamulus Onboarding page](Getting-Started){: .button}"
 msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgstr "[page de configuration de Jamulus](Getting-Started){: .button}"

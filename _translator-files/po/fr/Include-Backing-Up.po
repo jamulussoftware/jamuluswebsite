@@ -6,19 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-28 20:14+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-07-12 22:04+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:2
-#, fuzzy
-#| msgid "<!-- NOTE: This must apply to both client and server, and all operating systems -->"
 msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->"
 msgstr "<!-- NOTE : Ceci doit s'appliquer à la fois au client et au serveur, et à tous les systèmes d'exploitation -->"
 
@@ -29,17 +28,13 @@ msgstr "Une fois installé et en fonctionnement, vous voudrez peut-être conserv
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:6
-#, fuzzy
-#| msgid "To find your settings file on Windows, look in the `%APPDATA%` folder. There will be one or more `.ini` files in a folder there named `Jamulus`."
 msgid "To find your settings file on Windows, type `%APPDATA%` into the search bar and look for a folder named `Jamulus`. There will be one or more `.ini` files in this folder. Now back up Jamulus' settings."
-msgstr "Pour trouver votre fichier de paramètres sous Windows, regardez dans le dossier `%APPDATA%`. Vous trouverez un ou plusieurs fichiers `.ini` dans un dossier nommé `Jamulus`."
+msgstr "Pour trouver votre fichier de paramètres sous Windows, regardez dans le dossier `%APPDATA%` dans la barre de recherche et cherchez un dossier nommé `Jamulus`. Vous trouverez un ou plusieurs fichiers `.ini` dans ce dossier. Maintenant sauvegardez les paramètres de Jamulus."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:8
-#, fuzzy
-#| msgid "For all other platforms, run the following from the command line to find where they live:"
 msgid "For all other platforms, run the following from the command line to find where they live and copy the files to another location:"
-msgstr "Pour toutes les autres plateformes, exécutez la commande suivante à partir de la ligne de commande pour trouver leur emplacement :"
+msgstr "Pour toutes les autres plateformes, exécutez la commande suivante à partir de la ligne de commande pour trouver leur emplacement et copier les fichiers à un autre endroit :"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:10
@@ -49,7 +44,7 @@ msgstr "`find ~ -name Jamulus.ini -ls`"
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:13
 msgid "If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.  **Points to note**"
-msgstr ""
+msgstr "Si vous avez utilisé le paramètre `--inifile` pour sauvegarder un fichier ini à un endroit différent, n'oubliez pas de sauvegarder également ces fichiers.  **Points à noter**"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:15
@@ -58,8 +53,6 @@ msgstr "Ne pas sauvegarder ou restaurer les fichiers de paramètres lorsque Jamu
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:16
-#, fuzzy
-#| msgid "It is not recommended to edit settings files by hand (they're not designed for that)."
 msgid "It is not recommended to manually edit settings files (they're not designed for that)."
 msgstr "Il n'est pas recommandé de modifier les fichiers de paramètres à la main (ils ne sont pas conçus pour cela)."
 
