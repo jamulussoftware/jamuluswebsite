@@ -236,7 +236,7 @@ Upload all the files. Then in the SourceForge web UI, for each of the files uplo
 
 ## Website: check links
 
-We have used [linkchecker](https://manpages.ubuntu.com/manpages/bionic/man1/linkchecker.1.html) on Debian/Ubuntu in the past. Note that Knowledge Base links are not checked:
+We have used [linkcheck](https://github.com/filiph/linkcheck)) in the past. 
 
 ```
 $ git clone https://github.com/jamulussoftware/jamuluswebsite.git
@@ -244,7 +244,7 @@ $ cd jamuluswebsite
 $ git checkout next-release
 $ _po4a-tools/po4a-create-all-targets.sh
 $ bundle exec jekyll serve
-$ linkchecker  --ignore-url=/kb http://localhost:4000 > linkcheck.log
+$ linkcheck http://localhost:4000 > linkcheck.log
 ```
 
 ## Release checklist (for a full release)
