@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2021-12-21 10:44+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-07-14 09:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:3
@@ -22,70 +23,62 @@ msgstr "[comment]: # (This is an include file for use in multiple documents)"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:5
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "`-h` or `--help`     Display help text         \n"
 msgid "`-h` or `--help`           Display help text         \n"
-msgstr "`-h` o `--help`     Mostrar texto de ayuda         \n"
+msgstr "`-h` or `--help`           Mostrar texto de ayuda         \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:6
-#, fuzzy, no-wrap
-#| msgid "`-i` or `--inifile`   Set location of initialization file (overrides default) \n"
+#, no-wrap
 msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
-msgstr "`-i` o `--inifile`   Establece ubicación de archivo de inicialización (anula la predeterminada) \n"
+msgstr "`-i` o `--inifile`        Establece ubicación de archivo de inicialización (anula la predeterminada) \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:7
-#, fuzzy, no-wrap
+#, no-wrap
 #| msgid "`-n` or `--nogui`    Disable GUI (for use in headless mode)                      \n"
 msgid "`-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
-msgstr "`-n` o `--nogui`    Desactivar interfaz gráfica (para usar en modo \"headless\")                      \n"
+msgstr "`-n` or `--nogui`          Desactivar interfaz gráfica (para usar en modo \"headless\")                      \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:8
-#, fuzzy, no-wrap
-#| msgid "`-p` or `--port`    Sets the local UDP port number. Default is 22124 \n"
+#, no-wrap
 msgid "`-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
-msgstr "`-p` o `--port`    Establece el número de puerto UDP local. Por defecto es 22124 \n"
+msgstr "`-p` o `--port`           Establece el número de puerto UDP local. Por defecto es 22124 \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:9
 #, no-wrap
 msgid "`--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md).\n"
-msgstr ""
+msgstr "`--jsonrpcport`            Activa el servidor JSON-RPC API para controlar la aplicación, establecer número de puerto TCP (EXPERIMENTAL, las APIs pueden cambiar; solo accesible desde localhost). Por favor ver [la documentación sobre JSON-RPC API](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md).\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:10
 #, no-wrap
 msgid "`--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
-msgstr ""
+msgstr "`--jsonrpcsecretfile`      Necesario cuando se utiliza `--jsonrpcport`. Establece una ruta a un archivo de texto que contiene la cadena de caracteres de autenticación para acceder a la API de JSON-RPC.\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:11
-#, fuzzy, no-wrap
-#| msgid ""
-#| "`-Q` or `--qos`     Sets the quality of service DSCP value. Default is 128. Disable with 0. QoS is ignored by Windows. To enable it, see\n"
-#| "section below\n"
+#, no-wrap
 msgid "`-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
-msgstr "`-Q` o `--qos`     Establece el valor de la calidad de servicio (QoS) DSCP. Por defecto 128. Desactivado con 0. QoS es ignorado por Windows. Para habilitarlo, ver la sección de abajo\n"
+msgstr "`-Q` o `--qos`            Establece el DS Field byte de la calidad de servicio (QoS). Por defecto 128 (DSCP/CS4). QoS es ignorado por Windows. Para habilitarlo, [ver esta página](QOS-Windows)\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:12
-#, fuzzy, no-wrap
-#| msgid "`-t` or `--notranslation`   Disable UI language translations\n"
+#, no-wrap
 msgid "`-t` or `--notranslation`  Disable UI language translations\n"
-msgstr "`-t` o `--notranslation`   Deshabilitar traducciones de la interfaz gráfica\n"
+msgstr "`-t` o `--notranslation`  Deshabilitar traducciones de la interfaz gráfica\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:13
-#, fuzzy, no-wrap
-#| msgid "`-6` or `--enableipv6`      Enable IPv6 addressing (IPv4 is always enabled)\n"
+#, no-wrap
 msgid "`-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
-msgstr "`-6` o `--enableipv6`      Habilita direccionado IPv6 (IPv4 siempre está habilitado)\n"
+msgstr "`-6` o `--enableipv6`     Habilita direccionado IPv6 (IPv4 siempre está habilitado)\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:13
-#, fuzzy, no-wrap
-#| msgid "`-v` or `--version`   Output version information and exit \n"
+#, no-wrap
 msgid "`-v` or `--version`        Output version information and exit\n"
-msgstr "`-v` o `--version`   Mostrar información de la versión y salir \n"
+msgstr "`-v` o `--version`        Mostrar información de la versión y salir \n"
