@@ -3,91 +3,92 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-07-15 15:03+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "fr"
 
 #. type: YAML Front Matter: layout
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: YAML Front Matter: permalink
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "/wiki/Server-Bandwidth"
-msgstr ""
+msgstr "/wiki/Server-Bandwidth"
 
 #. type: YAML Front Matter: title
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "Bandwidth Use"
-msgstr ""
+msgstr "Utilisation de la bande passante"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:11
 msgid "## Audio bandwidth"
-msgstr ""
+msgstr "## Bande passante audio"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:13
 msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
-msgstr ""
+msgstr "Les paramètres audio ont un impact sur la bande passante réseau requise. Le tableau ci-dessous résume les exigences du réseau en ce qui concerne la configuration de :"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:14
 msgid "Channels : stereo/mono"
-msgstr ""
+msgstr "Canaux : stéréo/mono"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:15
 msgid "Quality : high/medium/low"
-msgstr ""
+msgstr "Qualité : élevée/moyenne/faible"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
 msgid "Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr ""
+msgstr "Durée de la mémoire tampon audio : 2,67 ms, 5,33 ms, 10,67 ms, 21,33 ms"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:18
 msgid "With the following units"
-msgstr ""
+msgstr "Avec les unités suivantes"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:19
 msgid "ms : milliseconds"
-msgstr ""
+msgstr "ms : millisecondes"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:20
 msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
-msgstr ""
+msgstr "Kbit/s : Kilo-bits par seconde (Rappel : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
 msgid "Mbit/s : Mega-bits per second"
-msgstr ""
+msgstr "Mbit/s : Méga-bits par seconde"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
@@ -102,11 +103,19 @@ msgid ""
 "| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
 "| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 msgstr ""
+"| Chaînes | Qualité | Bande passante (pour tampon : 2.67 ms) | Bande passante (pour tampon : 5,33 ms) | Bande passante (pour tampon : 10.67 ms) | Bande passante (pour tampon : 21.33 ms) |\n"
+"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
+"| Stéréo | Haut | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
+"| Stéréo | Moyen | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
+"| Stéréo | Bas | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
+"| Mono | Haut | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
+"| Mono | Moyen | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
+"| Mono | Bas | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:32
 msgid "## Network bandwidth"
-msgstr ""
+msgstr "## Bande passante réseau"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38
@@ -118,8 +127,13 @@ msgid ""
 "<figcaption>Calculate bandwidth use </figcaption>\n"
 "</figure>\n"
 msgstr ""
+"Il y en a un en amont (le musicien envoie au serveur) et un en aval (le serveur renvoie le mix au musicien)\n"
+"<figure>\n"
+"        <img src=\"{% include img/fr-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"Un diagramme des bandes passantes du réseau Jamulus de différentes qualités audio allant de faible à élevé\">\n"
+"<figcaption>Calculer l'utilisation de la bande passante </figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:40
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
-msgstr ""
+msgstr "Notez également que le taux de transfert ADSL2 moyen est de 10 Mbit/s pour l'aval et de 1 Mbit/s pour l'amont. Les performances réelles dépendent de la distance jusqu'au fournisseur, qui peut [théoriquement aller de 24 Mbit/s à 0,3 km à 1,5 Mbit/s à 5,2 km](https://fr.wikipedia.org/wiki/ADSL) pour le taux de téléchargement ."
