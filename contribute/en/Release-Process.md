@@ -84,12 +84,14 @@ a new `.qm` file, as they will all be regenerated below.
 
 A developer should check and merge each PR as it arrives using this checklist:
 
-- Translator listed in the `src/util.cpp` *optionally add link to PR or code*
-- Punctuation and spacing consistent
-- Signal words consistent ("ASIO", "Buffer")
-- App translations: No untranslated strings (`grep unfinished -5 src/translation/translation_$TRANSLATION*.ts`)
-- App translations: Only a single `.ts` file checked in (`.qm` in addition is also OK)
-- Installer translations: Passes `tools/check-wininstaller-translations.sh`
+~~~
+- [ ] Translator listed in the `src/util.cpp` *optionally add link to PR or code*
+- [ ] Punctuation and spacing consistent
+- [ ] Signal words consistent ("ASIO", "Buffer")
+- [ ] App translations: No untranslated strings (`grep unfinished -5 src/translation/translation_$TRANSLATION*.ts`)
+- [ ] App translations: Only a single `.ts` file checked in (`.qm` in addition is also OK)
+- [ ] Installer translations: Passes `tools/check-wininstaller-translations.sh`
+~~~
 
 #### 4. When all translations have been submitted and merged.
 {:.no_toc}
