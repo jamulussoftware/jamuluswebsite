@@ -27,8 +27,7 @@ We provide two equivalent `.deb` files for the most common architectures. Please
 
 After you downloaded the correct file:
 
-1. *Ubuntu only* - Enable the Ubuntu "universe" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645)
- or [CLI-based approach](https://askubuntu.com/a/227788)).
+1. *Ubuntu only* - Enable the Ubuntu "universe" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).
 1. Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`
 1. Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`
 1. Once installed, you can delete the file and close any console windows.
