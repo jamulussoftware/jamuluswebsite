@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-02-12 21:28+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-07-20 12:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Tips-Tricks-More.md:1
@@ -76,10 +77,8 @@ msgstr "</details>"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:21
-#, fuzzy
-#| msgid "## Learning about remote band rehearsing"
 msgid "### Learning about remote band rehearsing"
-msgstr "## Aprendiendo sobre ensayos a distancia"
+msgstr "### Aprendiendo sobre ensayos a distancia"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:23
@@ -89,24 +88,22 @@ msgstr "El usuario de Jamulus [Chris Rimple](https://sourceforge.net/u/chrisrimp
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:25
 msgid "## Using the Jamulus Client"
-msgstr ""
+msgstr "## Usar el cliente de Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:27
 msgid "### Have a undisturbed session on any Server"
-msgstr ""
+msgstr "### Cómo tener una sesión sin molestias en cualquier Servidor"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:29
 msgid "You can have a \"private\", undisturbed session with other people on any Server, including publically listed Servers, by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information)."
-msgstr ""
+msgstr "Puedes tener una sesión \"privada\" y sin molestias con otras personas en cualquier Servidor, incluyendo los Servidores en listas públicas, simplemente activando la función de \"solo\" en aquellas personas que deseas escuchar. No escucharàs a nadie más que se una a tu Servidor (ten en cuenta que esto no les impide escucharte a ti, ni utilizar el chat o ver la información de tu perfil)."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:31
-#, fuzzy
-#| msgid "## Using Jamulus audio in Zoom (or other) meeting apps"
 msgid "### Using Jamulus audio in Zoom (or other) meeting apps"
-msgstr "## Utilizar el audio de Jamulus en Zoom o en otras aplicaciones similares"
+msgstr "### Utilizar el audio de Jamulus en Zoom o en otras aplicaciones similares"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:33
@@ -120,10 +117,8 @@ msgstr "También puedes usar [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:37
-#, fuzzy
-#| msgid "## Recording Jamulus on Windows with Reaper"
 msgid "### Recording Jamulus on Windows with Reaper"
-msgstr "## Grabar Jamulus en Windows con Reaper"
+msgstr "### Grabar Jamulus en Windows con Reaper"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:39
@@ -132,10 +127,8 @@ msgstr "El usuario de Jamulus [Rob Durkin](https://sourceforge.net/u/bentwrench/
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:41
-#, fuzzy
-#| msgid "## Sharing song/chord sheets"
 msgid "### Sharing song/chord sheets"
-msgstr "## Compartir partituras"
+msgstr "### Compartir partituras"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:43
@@ -144,10 +137,8 @@ msgstr "El usuario de Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/) ha
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:45
-#, fuzzy
-#| msgid "## Jamulus client Linux start script"
 msgid "### Jamulus Client Linux start script"
-msgstr "## Script de arranque para cliente en Linux"
+msgstr "### Script de arranque para Cliente en Linux"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:47
@@ -161,10 +152,8 @@ msgstr "Por tanto, este script incluye la configuración más importante para lo
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:51
-#, fuzzy
-#| msgid "Finally I start Jamulus automatically connecting to the directory server."
 msgid "Finally I start Jamulus automatically connecting to the Directory."
-msgstr "Finalmente, arranco Jamulus automáticamente, conectándose al servidor central."
+msgstr "Finalmente, arranco Jamulus automáticamente, conectándose al Directorio."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:53
@@ -229,17 +218,13 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:82
-#, fuzzy
-#| msgid "## Using ctrlmidich for MIDI controllers"
 msgid "### Using ctrlmidich for MIDI controllers"
-msgstr "## Utilizar ctrlmidich para controladores MIDI"
+msgstr "### Utilizar ctrlmidich para controladores MIDI"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:84
-#, fuzzy
-#| msgid "The volume fader, pan control and mute and solo buttons in the client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo; o = mute myself) with the offset (CC number to start from) and number of consecutive CC numbers. There is one exception that does not require establishing consecutive CC numbers which is the \"Mute Myself\" command - it only requires a single CC number as it is only applied to one's own audio stream. Take the following example:"
 msgid "The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo; o = mute myself) with the offset (CC number to start from) and number of consecutive CC numbers. There is one exception that does not require establishing consecutive CC numbers which is the \"Mute Myself\" command - it only requires a single CC number as it is only applied to one's own audio stream. Take the following example:"
-msgstr "Los faders de volumen y paneo, y los botones de mute y solo en la ventana del mezclador del usuario se pueden controlar mediante un controlador MIDI usando el parámetro `--ctrlmidich` (nota: solo disponible para macOS y Linux utilizando la versión de Jamulus 3.7.0 o superior, y en Windows utilizando la versión de Jamulus con soporte para JACK). Para habilitar esta función, Jamulus debe arrancarse con `--ctrlmidich`. Hay un parámetro MIDI global que es el canal (1-16) y dos parámetros que puedes establecer para cada mando: `compensación` y `cifra de números CC consecutivos`. Establece el primer parámetro al canal MIDI por el que te comunicarás con Jamulus (0 para todos los canales) y luego especifica los mandos que quieres controlar (f = fader volumen; p = pan; m = mute; s = solo; o = silenciarme yo) con la compensación (número CC inicial) y cifra de números CC consecutivos. Hay una excepción que no requiere establecer números CC consecutivos que es el comando de \"Silenciarme Yo\" - solo requiere un único número CC ya que únicamente se aplica al flujo de audio propio. Observa el siguiente ejemplo:"
+msgstr "Los faders de volumen y paneo, y los botones de mute y solo en la ventana del mezclador del Cliente se pueden controlar mediante un controlador MIDI usando el parámetro `--ctrlmidich` (nota: solo disponible para macOS y Linux utilizando la versión de Jamulus 3.7.0 o superior, y en Windows utilizando la versión de Jamulus con soporte para JACK). Para habilitar esta función, Jamulus debe arrancarse con `--ctrlmidich`. Hay un parámetro MIDI global que es el canal (1-16) y dos parámetros que puedes establecer para cada mando: `compensación` y `cifra de números CC consecutivos`. Establece el primer parámetro al canal MIDI por el que te comunicarás con Jamulus (0 para todos los canales) y luego especifica los mandos que quieres controlar (f = fader volumen; p = pan; m = mute; s = solo; o = silenciarme yo) con la compensación (número CC inicial) y cifra de números CC consecutivos. Hay una excepción que no requiere establecer números CC consecutivos que es el comando de \"Silenciarme Yo\" - solo requiere un único número CC ya que únicamente se aplica al flujo de audio propio. Observa el siguiente ejemplo:"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:86
@@ -281,50 +266,42 @@ msgstr "*Consejo*: Cuando activas el control MIDI en Jamulus, el nombre de cada 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:100
 msgid "## For Server admins"
-msgstr ""
+msgstr "## Para administradores de Servidores"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:102
-#, fuzzy
-#| msgid "## Converting a public server to a private one on the fly"
 msgid "### Converting a public Server to a private one on the fly"
-msgstr "## Convertir un servidor público en privado sobre la marcha"
+msgstr "## Convertir un Servidor público en privado sobre la marcha"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:104
-#, fuzzy
-#| msgid "You can run a public server long enough for your band to connect, then go private by simply unchecking the 'Make my server Public' box in the server GUI. Your band mates will still be connected to the server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)"
 msgid "You can run a public Server long enough for your band to connect, then go private by simply unchecking the 'Make my Server Public' box in the Server GUI. Your band mates will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)"
-msgstr "Puedes ejecutar un servidor público el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del servidor. Seguiréis conectados al servidor hasta que os desconectéis. (¡Gracias a [David Savinkoff](https://github.com/DavidSavinkoff) por este truco!)"
+msgstr "Puedes ejecutar un Servidor el tiempo suficiente para que tu grupo se conecte, y luego hacerlo privado simplemente desactivando 'Mi Servidor es Público' el la ventana del Servidor. Seguiréis conectados al Servidor hasta que os desconectéis. (¡Gracias a [David Savinkoff](https://github.com/DavidSavinkoff) por este truco!)"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:106
-#, fuzzy
-#| msgid "## Remote management of recordings"
 msgid "### Remote management of recordings"
-msgstr "## Gestión remota de grabaciones"
+msgstr "### Gestión remota de grabaciones"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:108
-#, fuzzy
-#| msgid "Jamulus user [vdellamea](https://github.com/vdellamea) has written a [web-based remote tool](https://github.com/vdellamea/jamulus-server-remote) for starting and stopping recordings on Linux servers, allowing you to then download them from your browser. See also [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter) by [pljones](https://github.com/pljones), which also includes a server recording recovery script."
 msgid "Jamulus user [vdellamea](https://github.com/vdellamea) has written a [web-based remote tool](https://github.com/vdellamea/jamulus-server-remote) for starting and stopping recordings on Linux Servers, allowing you to then download them from your browser. See also [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter) by [pljones](https://github.com/pljones), which also includes a Server recording recovery script."
-msgstr "El usuario de Jamulus [vdellamea](https://github.com/vdellamea) ha escrito una [herramienta web](https://github.com/vdellamea/jamulus-server-remote) para iniciar y detener grabaciones en servidores Linux, permitiéndote descargarlas luego desde tu navegador. Ver también [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter) de [pljones](https://github.com/pljones), que también incluye un script de recuperación de grabaciones del servidor."
+msgstr "El usuario de Jamulus [vdellamea](https://github.com/vdellamea) ha escrito una [herramienta web remota](https://github.com/vdellamea/jamulus-server-remote) para iniciar y detener grabaciones en Servidores en Linux, permitiéndote descargarlas luego desde tu navegador. Ver también [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter) de [pljones](https://github.com/pljones), que también incluye un script de recuperación de grabaciones del Servidor."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:110
 msgid "### Making a Server status page"
-msgstr ""
+msgstr "### Hacer una página de estado del Servidor"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:112
 msgid "With the `-m` command line argument, Server statistics can be generated to be put on a web page."
-msgstr ""
+msgstr "Con el parámetro `-m` de la línea de comandos, se pueden generar estadísticas del Servidor para mostrarlas en una página web."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:114
 msgid "Here is an example php script using the Server status file to display the current Server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):"
-msgstr ""
+msgstr "Este es un ejemplo de script php utilizando el archivo de estado del Servidor para mostrar el estado actual del Servidor en una página html (asumiendo que se utiliza el siguiente parámetro de la línea de comandos: `-m /var/www/stat1.dat`):"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:129
@@ -346,3 +323,18 @@ msgid ""
 "<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
 "~~~\n"
 msgstr ""
+"~~~\n"
+"<?php\n"
+"function loadserverstat ( $statfilename )\n"
+"{\n"
+"   $datei = fopen ( $statfilename, \"r\" );\n"
+"   while ( !feof ( $datei ) )\n"
+"   {\n"
+"          $buffer = fgets ( $datei, 4096 );\n"
+"          echo $buffer;\n"
+"   }\n"
+"   fclose($datei);\n"
+"}\n"
+"?>\n"
+"<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
+"~~~\n"

@@ -5,14 +5,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-07-20 12:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Client-Troubleshooting.md:1
@@ -112,14 +114,13 @@ msgstr "Quizá tu dispositivo de audio no funciona con el tamaño de buffer que 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:35
 msgid "### You all sound OK, but it's difficult to keep together"
-msgstr "### Todos suenan bien pero es difícil tocar todos juntos manteniendo el tiempo."
+msgstr "### Todos suenan bien pero es difícil tocar todos juntos manteniendo el tiempo"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:37
-#, fuzzy, no-wrap
-#| msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
+#, no-wrap
 msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the Server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
-msgstr "**Si es posible, NO escuches tu señal directa.** Intenta en lo posible escuchar la señal de tu instrumento/voz que viene _desde el servidor_. Esta señal lleva la mezcla sincronizada de tu audio y la de los demás músicos, y será la señal que los demás escuchen también. Por tanto, ceñirse a esa señal significa que estaréis todos sincronizados (suponiendo que todos tenéis una latencia razonablemente baja). Nótese que si uno o más músicos no siguen esta norma, irán ralentizándose según vayan tocando o cantando.\n"
+msgstr "**Si es posible, NO escuches tu señal directa.** Intenta en lo posible escuchar la señal de tu instrumento/voz que viene _desde el Servidor_. Esta señal lleva la mezcla sincronizada de tu audio y la de los demás músicos, y será la señal que los demás escuchen también. Por tanto, ceñirse a esa señal significa que estaréis todos sincronizados (suponiendo que todos tenéis una latencia razonablemente baja). Nótese que si uno o más músicos no siguen esta norma, irán ralentizándose según vayan tocando o cantando.\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:39
@@ -128,17 +129,13 @@ msgstr "Puedes probar si estás escuchando correctamente tu señal haciendo lo s
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:41
-#, fuzzy
-#| msgid "Run Jamulus and connect to a server with a long ping time (greater than 200ms)"
 msgid "Run Jamulus and connect to a Server with a long ping time (greater than 200ms)"
-msgstr "Inicia Jamulus y conéctate a un servidor con un ping muy alto (mayor de 200 ms)"
+msgstr "Inicia Jamulus y conéctate a un Servidor con un ping muy alto (mayor de 200 ms)"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:42
-#, fuzzy
-#| msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus server come back, but significantly delayed."
 msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus Server come back, but significantly delayed."
-msgstr "Choca las manos una vez (o toca una nota breve en un instrumento). Deberías de escuchar el sonido que vuelve del servidor de Jamulus, pero con un retardo importante."
+msgstr "Choca las manos una vez (o toca una nota breve en un instrumento). Deberías de escuchar el sonido que vuelve del Servidor de Jamulus, pero con un retardo importante."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:43
@@ -162,10 +159,8 @@ msgstr "Exactamente cómo evitas escuchar tu señal directa dependerá de tu con
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:50
-#, fuzzy
-#| msgid "Be aware that while listening to the server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
 msgid "Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
-msgstr "Ten en cuenta que aunque escuches la señal del servidor y esto asegura que estás en sincronización con los demás músicos, puedes experimentar problemas si tu retardo total (indicado por la luz de \"Retardo\" en Jamulus) no está en verde o al menos en amarillo la mayor parte del tiempo. Consulta el [manual de software](/wiki/Software-Manual) para entender cómo ajustar tu configuración para mejorar este aspecto."
+msgstr "Ten en cuenta que aunque escuches la señal del Servidor y esto asegura que estás en sincronización con los demás músicos, puedes experimentar problemas si tu retardo total (indicado por la luz de \"Retardo\" en Jamulus) no está en verde o al menos en amarillo la mayor parte del tiempo. Consulta el [manual de software](/wiki/Software-Manual) para entender cómo ajustar tu configuración para mejorar este aspecto."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:52
@@ -179,17 +174,13 @@ msgstr "Cuando utilizas un micrófono mientras también tocas un instrumento, pu
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:56
-#, fuzzy
-#| msgid "### Buffer LEDs suddenly going red, outages, jittering, weird sounds?"
 msgid "### Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
-msgstr "### ¿El LED del buffer se vuelve rojo, cortes, jitter, sonidos raros?"
+msgstr "### ¿El LED del buffer se vuelve rojo, cortes, [jitter](https://en.wikipedia.org/wiki/Jitter), sonidos raros?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:58
-#, fuzzy
-#| msgid "The CPU in your computer may be having issues. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
 msgid "Your computer may be under too much load. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
-msgstr "El CPU de tu ordenador podría estar en apuros. Intenta que no haya nada compitiendo con Jamulus (como reuniones por Zoom o streaming en Facebook) en tu máquina. O al menos apágalos mientras tocas. Evita cosas como escaneos del antivirus o actualizaciones de software, etc. Ten en cuenta que la configuración de reverb en Jamulus también consume más CPU cuanto más reverb se aplique."
+msgstr "Tu ordenador podría estar sobrecargado. Intenta que no haya nada compitiendo con Jamulus (como reuniones por Zoom o streaming en Facebook) en tu máquina. O al menos apágalos mientras tocas. Evita cosas como escaneos del antivirus o actualizaciones de software, etc. Ten en cuenta que la configuración de reverb en Jamulus también consume más CPU cuanto más reverb se aplique."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:60
@@ -208,10 +199,8 @@ msgstr "### ¿Te frustras con los canales de software, ruteo de audio, tasas de 
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:66
-#, fuzzy
-#| msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
 msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus Server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
-msgstr "Normalmente es mucho más fácil y fiable tener una [mesa de mezclas](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) para conectar tu equipo (instrumentos, micrófono, grabadora, etc.) y luego enviar una simple señal estéreo a tu interfaz de audio (¡pero asegúrate de escuchar el sonido resultante del servidor Jamulus a través del ordenador!). La enorme variedad de combinaciones posibles de hardware, software e instrumentos significa que configurar tu tarjeta de audio para funcionar con tu equipo en particular se puede complicar rápidamente."
+msgstr "Normalmente es mucho más fácil y fiable tener una [mesa de mezclas](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) para conectar tu equipo (instrumentos, micrófono, grabadora, etc.) y luego enviar una simple señal estéreo a tu interfaz de audio (¡pero asegúrate de escuchar el sonido resultante del Servidor Jamulus a través del ordenador!). La enorme variedad de combinaciones posibles de hardware, software e instrumentos significa que configurar tu tarjeta de audio para funcionar con tu equipo en particular se puede complicar rápidamente."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:68
@@ -225,24 +214,18 @@ msgstr "Puedes establecer el \"Nivel Cliente Nuevo\" a un valor bajo (por ej. 10
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:72
-#, fuzzy
-#| msgid "### Can't see the server you want to join?"
 msgid "### Can't see the Server you want to join?"
-msgstr "### ¿No ves el servidor al que te quieres unir?"
+msgstr "### ¿No ves el Servidor al que te quieres unir?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:74
-#, fuzzy
-#| msgid "First check that you have the right genre server selected in your Connection Setup window. Sometimes network issues mean your client won't list all the available servers. If you know the name of the server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter the IP address in the \"Server Name/Address\" field in the Connect Setup window to connect to it."
 msgid "First check that you have the right genre Server selected in your Connect window. Sometimes network issues mean your Client won't list all the available Servers. If you know the name of the Server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter that address in the \"Server Address\" field in the Connect Setup window to connect to it."
-msgstr "Primero comprueba que tienes el género de servidor correcto seleccionado en la ventana de Configuración de Conexión. En ocasiones los problemas de red hacen que tu cliente no muestre todos los servidores disponibles. Si conoces el nombre del servidor al que te quieres unir, puedes [mirar su dirección IP aquí](https://explorer.jamulus.io/). Introduce la dirección IP en el campo de \"Nombre/Dirección Servidor\" en la ventana de Configuración de Conexión para conectarte."
+msgstr "Primero comprueba que tienes el género de Servidor correcto seleccionado en la ventana de Conectar. En ocasiones los problemas de red hacen que tu Cliente no muestre todos los Servidores disponibles. Si conoces el nombre del Servidor al que te quieres unir, puedes [mirar su dirección IP aquí](https://explorer.jamulus.io/). Introduce esa dirección en el campo de \"Dirección Servidor\" en la ventana de Configuración de Conexión para conectarte."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:76
-#, fuzzy
-#| msgid "### Not seeing a list of servers at all?"
 msgid "### Not seeing a list of Servers at all?"
-msgstr "### ¿No ves ninguna lista de servidores?"
+msgstr "### ¿No ves ninguna lista de Servidores?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:78
@@ -251,10 +234,8 @@ msgstr "En el Reino Unido (y posiblemente en otras regiones/routers) la configur
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:80
-#, fuzzy
-#| msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my server\""
 msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my Server\""
-msgstr "En algunos casos, puede ser que tu ISP esté bloqueando Jamulus. Ver la nota en la página [resolución de problemas del servidor](Server-Troubleshooting#nadie-se-puede-conectar-a-mi-servidor---pero-yo-me-puedo-conectar-localmente) sobre \"Nadie se puede conectar a mi servidor\""
+msgstr "En algunos casos, puede ser que tu ISP esté bloqueando Jamulus. Ver la nota en la página [resolución de problemas del servidor](Server-Troubleshooting#nadie-se-puede-conectar-a-mi-servidor---pero-yo-me-puedo-conectar-localmente) sobre \"Nadie se puede conectar a mi Servidor\""
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:82
