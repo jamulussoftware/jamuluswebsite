@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-01-28 14:52+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-07-15 21:11+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -51,8 +52,6 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:11
-#, fuzzy
-#| msgid "This manual documents the Jamulus client application for use by musicians and singers using the software to connect to a server."
 msgid "This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server."
 msgstr "Deze handleiding documenteert de Jamulus-client toepassing voor gebruik door muzikanten en zangers die de software gebruiken om verbinding te maken met een server."
 
@@ -173,8 +172,6 @@ msgstr "De upload- of downloadstreamsnelheid is te hoog voor je internetbandbree
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:53
-#, fuzzy
-#| msgid "The CPU of the client or server is at 100%."
 msgid "The CPU of the Client or server is at 100%."
 msgstr "De CPU van de client of server staat op 100%."
 
@@ -215,10 +212,8 @@ msgstr "## Chat"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
-#, fuzzy
-#| msgid "Opens the chat window. Text entered is sent to all connected clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all clients."
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
-msgstr "Opent het chatvenster. De ingevoerde tekst wordt naar alle aangesloten clients verzonden. Als er een nieuw chatbericht binnenkomt en de chatdialoog nog niet is geopend, wordt deze automatisch geopend voor alle clients."
+msgstr "Opent het chatvenster. De ingevoerde tekst wordt naar alle aangesloten clients verzonden. Als er een nieuw chatbericht binnenkomt en de chatdialoog nog niet is geopend, wordt deze automatisch geopend voor alle clients. Zie instellingen om optioneel een geluidswaarschuwing in te schakelen wanneer een nieuw chatbericht wordt ontvangen."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:77
@@ -392,15 +387,13 @@ msgstr "Dit stelt het aantal rijen in dat wordt weergegeven in de server audiome
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:150
-#, fuzzy
-#| msgid "### Audio quality"
 msgid "### Audio Alerts"
-msgstr "### Audiokwaliteit"
+msgstr "### Audiowaarschuwingen"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:152
 msgid "This turns on a sound alert for when someone joins a Server, or when receiving a new chat message."
-msgstr ""
+msgstr "Hiermee wordt een geluidswaarschuwing ingeschakeld voor wanneer iemand lid wordt van een server of wanneer een nieuw chatbericht wordt ontvangen."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:154
@@ -444,15 +437,12 @@ msgstr "### Audiokanalen"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:173
-#, fuzzy
-#| msgid "Selects the number of audio channels to be used for communication between client and server."
 msgid "Selects the number of audio channels to be used for communication between Client and server."
 msgstr "Selecteert het aantal audiokanalen dat moet worden gebruikt voor communicatie tussen client en server."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:175
-#, fuzzy, no-wrap
-#| msgid "**Note**: It is preferable to run separate client instances per voice/instrument, with each client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+#, no-wrap
 msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
 msgstr "**Opmerking**: Het verdient de voorkeur om afzonderlijke client-instanties per stem/instrument te gebruiken, waarbij elke client zijn eigen ini-bestand krijgt, in plaats van dit ingebouwde monopaar naar stereomix te gebruiken.\n"
 
@@ -555,8 +545,6 @@ msgstr "De jitterbuffer compenseert voor netwerk- en geluidskaarttimingjitters. 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:222
-#, fuzzy
-#| msgid "You can set the jitter buffer size manually for your local client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgstr "Je kunt de jitterbuffergrootte handmatig instellen voor je lokale client en de externe server. Voor de lokale jitterbuffer word uitval in de audiostream aangegeven door het lampje onder de invoer VU-meters. Als het lampje op rood springt, heeft er een buffer over-/underrun plaatsgevonden en wordt de audiostream onderbroken."
 
@@ -567,8 +555,6 @@ msgstr "De jitterbufferinstelling is daarom een afweging tussen audiokwaliteit e
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:228
-#, fuzzy
-#| msgid "If the Auto setting is enabled, the jitter buffers of your local client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr "Als de Auto-instelling is ingeschakeld, dan worden de jitterbuffers van je lokale client en de externe server automatisch ingesteld op basis van metingen van de netwerk- en geluidskaarttimingjitter. Als de automatische controle is ingeschakeld dan zijn de faders van de jitterbuffergrootte uitgeschakeld (ze kunnen niet met de muis worden verplaatst)."
 
@@ -619,8 +605,6 @@ msgstr "### Nieuw client-niveau"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:252
-#, fuzzy
-#| msgid "This setting defines the fader level of a newly connected client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
 msgid "This setting defines the fader level of a newly connected Client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
 msgstr "Deze instelling definieert het faderniveau van een nieuw aangesloten client in procenten. Als een nieuwe gebruiker verbinding maakt met de huidige server, krijgt hij het gespecificeerde initiële faderniveau als er geen ander faderniveau van een eerdere verbinding van die gebruiker was opgeslagen. Je kunt alle gebruikers in een gebruikte server op dit niveau instellen met Bewerken > \"Zet alle faders op nieuw client-niveau\"."
 
@@ -722,7 +706,7 @@ msgstr "De meest voorkomende functies in Jamulus kunnen worden ingesteld met beh
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:292
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
-msgstr "Als je bijvoorbeeld in Windows een specifiek instellingenbestand wilt gebruiken, klikt je met de rechtermuisknop op de Jamulus-snelkoppeling en kies je \"Eigenschappen\" > Doel. Voeg de benodigde argumenten toe aan Jamulus.exe:"
+msgstr "Als je bijvoorbeeld in Windows een specifiek instellingenbestand wilt gebruiken, klik je met de rechtermuisknop op de Jamulus-snelkoppeling en kies je \"Eigenschappen\" > Doel. Voeg de benodigde argumenten toe aan Jamulus.exe:"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:296
