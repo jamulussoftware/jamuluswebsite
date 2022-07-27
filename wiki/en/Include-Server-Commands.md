@@ -15,5 +15,5 @@
 -  `-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more Clients
 -  `-u` or `--numchannels`   Maximum number of channels (Clients)
 -  `-w` or `--welcomemessage`  Welcome message on connect. Can be given as a string or filename, and can contain HTML.
--  `-z` or `--startminimized`  Start minimizied
--  `--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](Running-a-Server#points-to-note-about-directories)
+-  `-z` or `--startminimized`  Start minimized
+-  `--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Custom-Directories#points-to-note-about-directories)
