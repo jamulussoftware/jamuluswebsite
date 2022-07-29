@@ -1,6 +1,8 @@
-- `-M` or `--mutestream`  Starts Jamulus in muted state                                                      
-- `--mutemyown`  Mute me in my personal mix ("headless" mode only)                                                      
--  `-c` or `--connect`  Connect to given server address on startup, format `address[:port]`  
--  `-j` or `--nojackconnect`  Disable auto JACK connections  
--  `--ctrlmidich`  MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels) and Mute Myself CC number. Format: `channel[;f*][;p*][;s*][;m*][;o]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers) 
-- `--clientname`  Window title and JACK client name 
+- `-M` oder `--mutestream`  Startet Jamulus im stummen Zustand                                                      
+  
+- `--mutemyown` Persönlichen Mix stummschalten (nur im „headless“ Modus)                                                      
+  
+-  `-c` oder `--connect` Beim Start mit der angegebenen Serveradresse verbinden, Format `address[:port]`
+-  `-j` oder `--nojackconnect` Nicht automatisch mit JACK verbinden 
+-  `--ctrlmidich`  MIDI-Controller-Kanal, der genutzt werden soll, Offset der Kontrollnummer und fortlaufende CC-Nummern (Kanäle) und Mute Myself CC-Nummer. Format: `kanal[;f*][;p*][;s*][;m*][;o]` Siehe [Tipps & Tricks](Tips-Tricks-More#verwendung-von-ctrlmidich-für-midi-controller) 
+- `--clientname`  Fenster-Titel und JACK Client Name 

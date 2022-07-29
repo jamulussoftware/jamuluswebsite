@@ -1,19 +1,22 @@
-- `-d`  or `--discononquit`   Disconnect all clients on quit. Normally, when a server is stopped or restarted, any clients that have not used their "Disconnect" buttons will re-establish connection when the server comes back up again. Using this option forces clients to manually re-establish their connections to the server.  
-- `-e`  or `--directoryserver`  Register the server on a directory (e.g. to set its genre (see also `-o`)). See [server types](#server-types) for further information.
-- `--directoryfile` Enable directory to remember registered servers even if the directory is restarted. You'll need to specify a path to a writable file location in which server information is stored.
-- `-f`  or `--listfilter`     Whitelist servers registering on the server list, format `ip address 1[;ip address 2]` Directory Servers only. See [server types](#server-types)  
--  `-F`  or `--fastupdate`     Reduces latency if clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled clients.
--  `-l`  or `--log`            Enable logging, set path and file name                                                                    
-- `-L`  or `--licence`        Show an agreement window before users can connect
-- `-m`  or `--htmlstatus`     Enable HTML status file, set path and file name
-- `-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Public servers only
-- `-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning)
-- `-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  
-- `--norecord`       Disable recording when enabled by default by `-R`                                                 
-- `-s` or `--server` Start in server mode
-- `--serverbindip`  Specify the IP address to bind to              
--  `-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more clients
--  `-u` or `--numchannels`   Maximum number of channels (clients)
--  `-w` or `--welcomemessage`  Welcome message on connect
--  `-z` or `--startminimized`  Start minimizied
--  `--serverpublicip`  The public IP address of the server if connecting to a Directory behind the same NAT. See [Notes on Directory Servers](Running-a-Server#points-to-note-about-directories)
+- `-d` oder `--discononquit`   Trennt alle Clients beim Beenden. Wenn ein Server gestoppt oder neu gestartet wird, werden normalerweise alle Clients, die ihre „Trennen“-Schaltflächen nicht benutzt haben, die Verbindung wiederherstellen, wenn der Server wieder hochfährt. Mit dieser Option werden die Clients gezwungen, ihre Verbindungen zum Server manuell wiederherzustellen.  
+- `-e`  oder `--directoryserver`  Registriert den Server in einem Verzeichnis (z.B. um sein Genre zu setzen (siehe auch `-o`)). Siehe [Server-Typen](/wiki/Running-a-Server#server-typen) für weitere Informationen.
+- `--directoryfile` Registrierte Server speichern, auch wenn das Verzeichnis neu gestartet wird. Nur für Verzeichnis-Server. Siehe [diese Anleitung](Custom-Directories) für weitere Informationen. 
+- `-f` oder `--listfilter`     Erlaubte (Whitelist) Server, die in der Serverliste registriert sind, Format `ip address 1[;ip address 2]` Nur Verzeichnisse
+-  `-F` oder `--fastupdate`     Verringert die Latenz, wenn Clients mit der Option „Aktiviere kleine Netzwerkpuffer“ verbunden sind. Erfordert eine schnelle CPU, um Aussetzer zu vermeiden, und mehr Bandbreite für aktivierte Clients.
+-  `-l`  oder `--log`            Protokollierung einschalten, Pfad und Dateiname festlegen                                                                    
+   
+- `-L`  oder --licence`        Zeigt ein Zustimmungsfenster an, bevor Benutzer eine Verbindung herstellen können
+- `-m`  oder `--htmlstatus`     HTML-Statusdatei aktivieren, Pfad und Dateiname festlegen
+- `-o`  oder `--serverinfo`     Ortsangaben im Format:  `[Name];[Stadt];[Gebietsschema-Wert]` (siehe [Werte](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Nur registrierte Server
+- `-P`  oder `--delaypan`       Start mit aktiviertem Delay-Panning Siehe [Notizen](/wiki/Running-a-Server#verzögertes-panning)
+- `-R`  oder `--recording`      Gib einen beschreibbaren Pfad ein, in dem die Dateien gespeichert werden sollen (in Anführungszeichen, falls erforderlich). Siehe [Optionen](#optionen).  
+- `--norecord`       Aufnahme deaktivieren. Durch Angabe von `-R` wird die Aufnahme standardmäßig aktiviert                                                 
+  
+- `-s` oder `--server` Start in Server Modus
+- `--serverbindip`  Spezifiziert die IP Adresse auf die der Server hört              
+  
+-  `-T` oder `--multithreading`  Multithreading verwenden, um Mehrkern-CPUs besser zu nutzen und mehr Clients zu unterstützen
+-  `-u` oder `--numchannels`  Maximale Anzahl von Clients (Kanälen) 
+-  `-w` oder `--welcomemessage`  Willkommens Nachricht für neue Teilnehmer nach Aufbau der Verbindung. Kann als Zeichenkette oder Dateiname angegeben werden und kann HTML enthalten.
+-  `-z` oder `--startminimized`  Start minimiert
+-  `--serverpublicip`  Die öffentliche IP-Adresse des Servers, wenn eine Verbindung zu einem Verzeichnis hinter demselben NAT besteht. Siehe [Informationen zum Verzeichnisse](Custom-Directories#wissenswertes-über-verzeichnisse)
