@@ -23,7 +23,7 @@ The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. We
 
 ### Use of Profile Information
 
-When you connect to a Server, whatever you put in My Profile (in Settings) will be shown to others on that Server while you are connected to it. The Server does not otherwise store or record your Profile information and the Server operator has no access to it unless they are also connected as using a Client.
+When you connect to a Server, whatever you put in My Profile (in Settings) will be shown to others on that Server while you are connected to it. The Server does not otherwise store or record your Profile information and the Server operator has no access to it unless they are also connected as using a Client or using JSON-RPC.
 
 When you connect to a Server, your profile may also be available to third parties from the Directory to which that Server is registered. This can be for informational purposes about the status of the public Jamulus network (for example, [here](https://explorer.jamulus.io/)), but may not be limited to that. Profile information is not otherwise logged or stored by the Jamulus Server you are connected to, or by the Jamulus Directory, but may be stored or processed by third parties.
 
