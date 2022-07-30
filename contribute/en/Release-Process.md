@@ -238,7 +238,7 @@ Upload all the files. Then in the SourceForge web UI, for each of the files uplo
 
 ## Website: check links
 
-We have used [linkcheck](https://github.com/filiph/linkcheck)) in the past. 
+We have used [linkcheck](https://github.com/filiph/linkcheck) in the past. 
 
 ```
 $ git clone https://github.com/jamulussoftware/jamuluswebsite.git
@@ -306,7 +306,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
   - [ ] [Upload the artifacts to SourceForge and set defaults](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
   - [ ] Update download links on the website by editing `config.yml` in `next-release`
-  - [ ] Publish Website release by merging `next-release` into `release`
+  - [ ] Publish Website release by squashing and merging `next-release` into `release`
 - [ ] Announce the new release with a summary of changes (+ link to the changelog for details) and a link to the download page
     - [ ] On Github Discussions in the Announcements section. Lock the announcement thread. Pin the thread. Unpin and lock release candidate thread.
     - [ ] On Facebook in the group "Jamulus (official group)". Turn off replies.
