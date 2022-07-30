@@ -383,12 +383,12 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:147
-msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off."
+msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will recording enabled on/off."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:149
-msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`)."
+msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`)."
 msgstr ""
 
 #. type: Plain text
