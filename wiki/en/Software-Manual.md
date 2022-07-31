@@ -242,7 +242,7 @@ rate is not higher than your available internet upload speed (check this with a 
 
 ### Custom Directory server address
 
-Leave this blank unless you need to enter the address of a Directory other than the default.
+If you need to add Directory addresses other than the built-in ones, you can do so here.
 
 ### New Client Level
 
