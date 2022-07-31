@@ -274,7 +274,7 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 ## Running an Unregistered Server
 
-It is highly recommended to test your Server by listing it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode.
+It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode.
 
 ### Setting up a Server behind a home router
 
