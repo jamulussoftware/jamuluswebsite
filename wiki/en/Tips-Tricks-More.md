@@ -23,9 +23,11 @@ Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has 
 
 ## Using the Jamulus Client
 
-###  Have a undisturbed session on any Server
+###  Have an undisturbed session on any Server
 
-You can have a "private", undisturbed session with other people on any Server, including those listed on a Directory, by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
+You can have a "private", undisturbed session with other people on any Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server.
+
+**NOTE:** This does not stop people from hearing you, using the chat function, or seeing your profile information.
 
 ###  Using Jamulus audio in Zoom (or other) meeting apps
 
