@@ -25,7 +25,7 @@ Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has 
 
 ###  Have an undisturbed session on any Server
 
-You can have a "private", undisturbed session with other people on any Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server.
+You can have an undisturbed session with other people on any Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server.
 
 **NOTE:** This does not stop people from hearing you, using the chat function, or seeing your profile information.
 
