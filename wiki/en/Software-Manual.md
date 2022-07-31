@@ -240,9 +240,9 @@ rate is not higher than your available internet upload speed (check this with a 
 
 <figure><img src="{% include img/en-screenshots/settings-advanced.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
 
-### Custom directory server address
+### Custom Directory server address
 
-Leave this blank unless you need to enter the address of a directory server other than the default.
+Leave this blank unless you need to enter the address of a Directory other than the default.
 
 ### New Client Level
 
