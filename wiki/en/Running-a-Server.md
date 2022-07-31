@@ -201,7 +201,7 @@ Jamulus can be run in Server mode from the desktop. This gives you a graphical u
 
 **None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.
 
-**Genre**: To allow other people to see your Server on one of the built-in Directories, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.  
+**Genre**: To allow other people to see your Server on one of the Directories built into the Client, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.
 
 **Custom**: This allows you to specify a custom directory on which to be listed. See the "Options" tab for the Custom Directory address you want to use.
 
