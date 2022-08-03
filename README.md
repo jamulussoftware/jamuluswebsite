@@ -2,6 +2,17 @@
 
 This is the content repository for [jamulus.io](https://jamulus.io). Text appearing in the Jamulus software application itself is part of the [main code repository](https://github.com/jamulussoftware/jamulus). See also the [general overview](https://jamulus.io/wiki/Contribution) to getting involved. 
 
+## Translation
+
+<a href="https://hosted.weblate.org/engage/jamulus/">
+<img src="https://hosted.weblate.org/widgets/jamulus/-/multi-auto.svg" alt="Translation status" />
+</a>
+The Jamulus website is translated using [Weblate](https://hosted.weblate.org/engage/jamulus/). If you prefer you may also submit translations via Pull Requests. Note that translating the Jamulus application itself is done by a different process, but you are welcome to help with that too. Introduce yourself on the [GitHub Discussion](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
+
+#### Please also note that discussions should be in English so as to be open to all.
+
+For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/docs/TRANSLATING.md) in the application repository.
+
 ## Making changes to the English version
 
 **Note** Any significant changes **must** be made to the English first. See the translation process later in this document if you want to get involved with that.
@@ -34,27 +45,17 @@ Put that URL (only the part within the brackets) into the `.inc` file, saving th
 
 Please have a look at our [style and tone guide](https://jamulus.io/contribute/Style-and-Tone).
 
-## Translating
-
-To make updates or translations for jamulus.io you will need a GitHub account and be familiar with GitHub in general. If you want to get more involved, you’ll need to be familiar with the use of git on the command line, as well as Jekyll. Note that translating the Jamulus application itself is done by a different process, but you are welcome to help with that too. Introduce yourself on the [GitHub Discussion](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
-
-### Please also note that discussions should be in English so as to be open to all.
-
-**For details on the website translation process, please consult the [README file here](https://github.com/jamulussoftware/jamuluswebsite/tree/release/_translator-files)**
-
-For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/docs/TRANSLATING.md) in the application repository.
-
 ### Overall workflow
 
 We collect changes to the English version of the site on a "next-release" branch first. We then freeze changes prior to a Jamulus software release, and do a translation "sprint" over a couple of weeks when all translation takes place.
 
 1. Changes are first made to EN (= English) *.md files and committed to the “next-release” branch.
 1. Once we’ve agreed the changes can go live (usually just before a software release), we then create GitHub issues for each language, tagged for that release. You can ask questions about the work there.
-1. Translators for each language then update any affected files by editing the .po files for their language in `_translator-files/po/LANGUAGE/` and open pull requests to merge them into the "next-release” branch. Those pull requests are linked to the relevant GitHub issue in step 2 so they can be tracked.
+1. Translators for each language then update them on Weblate, or edit the .po files for their language in `_translator-files/po/LANGUAGE/` and open pull requests to merge them into the "next-release” branch.
 1. When all translations are merged (issues will then close automatically), we merge that new branch into the `release` branch, which is automatically made live on the production site.
 
 ### Points to note
 
-- Please do not add new or significantly modified content to a non-English .html file and do not edit **any** non-English .md files, as these changes would later be lost. All content changes must be made on the "next-release" branch in English **first** after being [discussed here](https://github.com/jamulussoftware/jamulus/discussions).
+- Please do not add new or significantly modified content to a translation. All content changes must be made on the "next-release" branch in English **first** after being [discussed here](https://github.com/jamulussoftware/jamulus/discussions).
 
 - Please make sure you are aware of what stage of the workflow we are currently at by monitoring the [project board](https://github.com/orgs/jamulussoftware/projects/2), and on the Discord (or Matrix) discussion channel that you will be invited to join. This is where relevant deadlines and information will be posted during the translation sprint.
