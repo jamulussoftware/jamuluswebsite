@@ -1,6 +1,6 @@
 # Website docs translation:
 
-The recommended way to translate the website documentation is by using [Weblate](https://hosted.weblate.org/projects/jamulus/). If you are comfortable using GitHub and .po file editors, and still want to contribute your translation via a Pull Request, the files for each language are contained in: `_translator-files/po/LANGUAGE/`. Please make your PR against the `next-release` branch.
+The recommended way to translate the website documentation is by using [Weblate](https://hosted.weblate.org/projects/jamulus/). If you are comfortable using GitHub and .po file editors, and still want to contribute your translation via a Pull Request, the files for each language are contained in: `_translator-files/po/LANGUAGE/`. You can find a guide on .po file editors [here](https://github.com/jamulussoftware/jamuluswebsite/tree/release/_posts2022-08-04-Translating-po-files.md). Please make your PR against the `next-release` branch.
 
 #####Some tips regarding translations:
 

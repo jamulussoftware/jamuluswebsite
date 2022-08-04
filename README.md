@@ -11,11 +11,9 @@ The Jamulus website is translated using [Weblate](https://hosted.weblate.org/eng
 
 ***PLEASE NOTE:*** Discussions should be in English so as to be open to all.
 
-For translating text in the Jamulus application itself, please see [TRANSLATING.md](https://github.com/jamulussoftware/jamulus/blob/master/docs/TRANSLATING.md) in the application repository.
+## Making changes to the documentation
 
-## Making changes to the English version
-
-**Note** Any significant changes **must** be made to the English first. See the translation process later in this document if you want to get involved with that.
+**Important:** Any changes to the content of the documentation **must** be made to the English version first, as it is the source for all translations.
 
 To edit an individual file, you can use the Github web interface or make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit multiple website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
 
@@ -56,6 +54,6 @@ We collect changes to the English version of the site on a "next-release" branch
 
 ### Points to note
 
-- Please do not add new or significantly modified content to a translation. All content changes must be made on the "next-release" branch in English **first** after being [discussed here](https://github.com/jamulussoftware/jamulus/discussions).
+- Translations should stay as close as possible to the original English text. If you see content in English that is incorrect or unclear, please do not attempt to correct or modify it in your translation, but rather make it known by [discussing it here](https://github.com/jamulussoftware/jamulus/discussions) so it can be corrected in the English files **first** and thus be applied to all other translations.
 
 - Please make sure you are aware of what stage of the workflow we are currently at by monitoring the [project board](https://github.com/orgs/jamulussoftware/projects/2), and on the Discord (or Matrix) discussion channel that you will be invited to join. This is where relevant deadlines and information will be posted during the translation sprint.
