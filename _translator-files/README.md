@@ -2,7 +2,7 @@
 
 The recommended way to translate the website documentation is by using [Weblate](https://hosted.weblate.org/projects/jamulus/). If you are comfortable using GitHub and .po file editors, and still want to contribute your translation via a Pull Request, the files for each language are contained in: `_translator-files/po/LANGUAGE/`. You can find a guide on .po file editors [here](https://jamulus.io/kb/2022/08/04/Translating-po-files.html). Please make your PR against the `next-release` branch.
 
-#####Some tips regarding translations:
+**Some tips regarding translations:**
 
 - Change the `lang: en` parameter in the files containing it at the beginning of the file to your language code (it, fr, de, etc.) and make sure the `permalink: [parameter]` (e.g. /wiki/Client-Troubleshooting) stays the same.
 - At times there are links to other docs or specific paragraphs in other parts of the website: `[translate this](don't translate this#translate-this-but-don't-use-capitals)`. Make sure the last part uses the exact same words as the relevant paragraph title.
@@ -10,7 +10,7 @@ The recommended way to translate the website documentation is by using [Weblate]
 - There are documents containing portions of text that do not require translation, e.g. scripts, links, etc. In these cases, please do not leave the translation field empty, but copy the source text into the translation field.
 - Pull Requests for translations should have a title which looks like this: `Update [lang] web translation for [release number]`
 
-#### Please note: if your language has no translated documents, please start with the following:
+**Please note: if your language has no translated documents, please start with the following:**
 
 - 1-index.po
 - general.po
