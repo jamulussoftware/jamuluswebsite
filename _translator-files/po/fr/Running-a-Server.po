@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-28 11:17+0200\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-08-04 20:31+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -86,7 +87,7 @@ msgstr "## Dois-je faire tourner un serveur ?"
 #: ../wiki/en/Running-a-Server.md:24
 #, no-wrap
 msgid "**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-a-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.\n"
-msgstr "**Non**. Vous pouvez utiliser les serveurs enregistrés sur les annuaires intégrés et utiliser Jamulus sans exécuter de serveur ou choisir un service d'hébergement tiers. Si vous voulez juste une session non perturbée, utilisez la [technique de mise en solo décrite sur la page Trucs et astuces](Tips-Tricks-More#avoir-une-session-non-perturbée-sur-nimporte-quel-serveur). Si vous décidez que vous ne pouvez utiliser aucun des serveurs répertoriés par les répertoires intégrés, vous pourrez peut-être utiliser un serveur (soit enregistré dans un répertoire personnalisé, soit non enregistré - voir [Types de serveur](#types-de-serveur)) hébergé par un tiers. Cela vous évitera d'avoir à en installer un vous-même.\n"
+msgstr "**Non**. Vous pouvez utiliser les serveurs enregistrés sur les annuaires intégrés et utiliser Jamulus sans exécuter de serveur ou choisir un service d'hébergement tiers. Si vous voulez juste une session non perturbée, utilisez la [technique de mise en solo décrite sur la page Trucs et astuces](Tips-Tricks-More#avoir-une-session-non-perturbée-sur-nimporte-quel-serveur). Si vous décidez que vous ne pouvez utiliser aucun des serveurs répertoriés par les annuaires intégrés, vous pourrez peut-être utiliser un serveur (soit enregistré dans un annuaire personnalisé, soit non enregistré - voir [Types de serveur](#types-de-serveur)) hébergé par un tiers. Cela vous évitera d'avoir à en installer un vous-même.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:26
@@ -117,7 +118,7 @@ msgstr "Habituellement, les problèmes se situent du côté _Client_ et doivent 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:36
 msgid "However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth)."
-msgstr "Cependant, divers problèmes peuvent également survenir lors de la configuration des serveurs, en particulier lorsqu'ils sont exécutés sur une connexion domestique à faible bande passante. Il est généralement acceptable d'avoir moins de 5 joueurs sur une connexion domestique à vitesse plus lente (par exemple, 10 Mbit/s aval et 1 Mbit/s amont). Vous pouvez en savoir plus sur les exigences du réseau sur [différents paramètres de qualité ici](Server-Bandwidth)."
+msgstr "Cependant, divers problèmes peuvent également survenir lors de la configuration des serveurs, en particulier lorsqu'ils sont exécutés sur une connexion domestique à faible bande passante. Il est généralement acceptable d'avoir moins de 5 musiciens sur une connexion domestique à vitesse plus lente (par exemple, 10 Mbit/s aval et 1 Mbit/s amont). Vous pouvez en savoir plus sur les exigences du réseau sur [différents paramètres de qualité ici](Server-Bandwidth)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:38
@@ -132,7 +133,7 @@ msgstr "### Notes générales"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:43
 msgid "Any Server should have at least 1.6GHz CPU frequency and 1GB RAM"
-msgstr "Tout serveur doit avoir une fréquence de CPU d'au moins 1,6 GHz et 1 Go de RAM"
+msgstr "Tout serveur doit avoir une fréquence de CPU d'au moins 1,6 GHz et 1 Go de RAM."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:44
@@ -152,7 +153,7 @@ msgstr "Jamulus ne dispose que d'un support limité d'IPv6 qui doit être activ�
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:48
 msgid "## Server Types"
-msgstr "# Types de serveur"
+msgstr "## Types de serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:50
@@ -235,12 +236,12 @@ msgstr "# Installation et configuration"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:81
 msgid "Most people run Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop)."
-msgstr "La plupart des gens exécutent Jamulus en tant que serveur \"pur\" sur du **matériel sans audio** (par exemple sur un hôte tiers/cloud) exécutant Linux. Les étapes suivantes supposent que vous êtes familiarisé avec la ligne de commande et Debian/Ubuntu ou une distribution similaire utilisant systemd. Pour exécuter un serveur sous Windows ou sur le bureau avec une interface utilisateur graphique, [voir cette section](#serveurs-sur-le-bureau)."
+msgstr "La plupart des gens exécutent Jamulus en tant que serveur \"pur\" sur du **matériel sans audio** (par exemple sur un hôte tiers/cloud) sous Linux. Les étapes suivantes supposent que vous êtes familiarisé avec la ligne de commande et Debian/Ubuntu ou une distribution similaire utilisant systemd. Pour exécuter un serveur sous Windows ou sur le bureau avec une interface utilisateur graphique, [voir cette section](#serveurs-sur-le-bureau)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:83
 msgid "If you want to run a Server on a Raspberry Pi (or a different armhf based device), you will need to download the `.deb` files for `armhf`, not the default `amd64` ones you'd use on an Intel/AMD based machine."
-msgstr "Si vous souhaitez exécuter un serveur sur un Raspberry Pi (ou un autre appareil basé sur armhf), vous devrez télécharger les fichiers `.deb` pour `armhf`, pas les fichiers par défaut `amd64` que vous utiliseriez sur un Intel /Machine basée sur AMD."
+msgstr "Si vous souhaitez exécuter un serveur sur un Raspberry Pi (ou un autre appareil basé sur armhf), vous devrez télécharger les fichiers `.deb` pour `armhf`, pas les fichiers par défaut `amd64` que vous utiliseriez sur un Intel/Machine basée sur AMD."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:86
@@ -250,7 +251,7 @@ msgstr "### Installation"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:88
 msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})"
-msgstr "Téléchargez la [dernière sans interface (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) ou, Si vous utilisez un Raspberry Pi etc. téléchargez la [dernière armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})"
+msgstr "Téléchargez la [dernière version sans interface (amd64).deb]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) ou, Si vous utilisez un Raspberry Pi etc. téléchargez la [dernière version (armhf).deb]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:89
@@ -280,7 +281,7 @@ msgstr "Rechargez le fichier systemd `sudo systemctl daemon-reload` et redémarr
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:94
 msgid "Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt)."
-msgstr "Vérifiez que tout et en ordre avec `systemctl status jamulus-headless` (tapez `q` pour revenir au prompt)."
+msgstr "Vérifiez que tout est en ordre avec `systemctl status jamulus-headless` (tapez `q` pour revenir au prompt)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:96
@@ -644,7 +645,7 @@ msgstr "Laissez ce champ vide sauf si vous devez inscrire votre serveur dans un 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:233
 msgid "### Server List Filename"
-msgstr "## Nom du fichier de la liste des serveurs"
+msgstr "### Nom du fichier de la liste des serveurs"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:235
@@ -675,7 +676,7 @@ msgstr "**Utilisateurs de Windows** - Si vous voulez que le serveur démarre aut
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:245
 msgid "### Server status icon"
-msgstr "## Icône de status du serveur"
+msgstr "### Icône de status du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:247
@@ -695,7 +696,7 @@ msgstr "<figure><img src=\"{% include img/fr-screenshots/server-active.inc %}\" 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:253
 msgid "## Command line options"
-msgstr "# Options de la ligne de commande"
+msgstr "## Options de la ligne de commande"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:255
@@ -755,7 +756,7 @@ msgstr "{% include_relative Include-Shared-Commands.md %}"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:276
 msgid "## Running an Unregistered Server"
-msgstr "# Exécuter un serveur non enregistré"
+msgstr "## Exécuter un serveur non enregistré"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:278
@@ -775,7 +776,7 @@ msgstr "Si vous configurez votre serveur chez vous, vous devrez probablement mod
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:284
 msgid "#### Port forwarding"
-msgstr "### Redirection de port"
+msgstr "#### Redirection de port"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:286
@@ -807,7 +808,7 @@ msgstr "Pour autoriser d'autres personnes à se connecter à votre serveur à pa
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:298
 msgid "#### Dynamic DNS and why you will probably need it"
-msgstr "## DNS dynamique et pourquoi vous en aurez probablement besoin"
+msgstr "#### DNS dynamique et pourquoi vous en aurez probablement besoin"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:300
@@ -817,7 +818,7 @@ msgstr "La plupart des connexions Internet nationales changent leur adresse IP e
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:302
 msgid "## Backing up the Server"
-msgstr "# Sauvegarder le serveur"
+msgstr "## Sauvegarder le serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:304
@@ -832,7 +833,7 @@ msgstr "{% include_relative Include-Backing-Up.md %}"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:308
 msgid "## Troubleshooting"
-msgstr "# Dépannage"
+msgstr "## Dépannage"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:309
