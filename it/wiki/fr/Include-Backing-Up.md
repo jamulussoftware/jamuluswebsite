@@ -2,7 +2,7 @@
 
 Une fois installé et en fonctionnement, vous voudrez peut-être conserver une copie de vos paramètres. Avoir une sauvegarde est toujours une bonne idée, et les fichiers de paramètres ne sont pas rétrocompatibles entre les versions de Jamulus. Ainsi, si vous souhaitez revenir à la version précédente, vous devrez restaurer les paramètres que vous aviez.
 
-Pour trouver votre fichier de paramètres sous Windows, regardez dans le dossier `%APPDATA%` dans la barre de recherche et cherchez un dossier nommé `Jamulus`. Vous trouverez un ou plusieurs fichiers `.ini` dans ce dossier. Maintenant sauvegardez les paramètres de Jamulus.
+Pour trouver votre fichier de paramètres sous Windows, tapez `%APPDATA%` dans la barre de recherche et cherchez un dossier nommé `Jamulus`. Vous trouverez un ou plusieurs fichiers `.ini` dans ce dossier. Maintenant sauvegardez les paramètres de Jamulus.
 
 Pour toutes les autres plateformes, exécutez la commande suivante à partir de la ligne de commande pour trouver leur emplacement et copier les fichiers à un autre endroit :
 
