@@ -6,7 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-13 19:13+0200\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2022-08-04 21:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -103,28 +104,25 @@ msgstr "Après avoir téléchargé le bon fichier :"
 #: ../wiki/en/Installation-for-Linux.md:31
 #, no-wrap
 msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).\n"
-msgstr ""
+msgstr "*Ubuntu seulement* - Activer le dépôt Ubuntu \"universe\" (vous pouvez utiliser l'[interface utilisateur](https://askubuntu.com/a/148645) ou le [terminal](https://askubuntu.com/a/227788)).\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:32
-#, fuzzy, no-wrap
-#| msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
+#, no-wrap
 msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`\n"
-msgstr "Mettez à jour apt en ouvrant une fenêtre de console (CTRL+ALT+T devrait fonctionner) et tapez : `sudo apt-get update`"
+msgstr "Mettez à jour apt en ouvrant une fenêtre de console (CTRL+ALT+T devrait fonctionner) et tapez : `sudo apt-get update`\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:33
-#, fuzzy, no-wrap
-#| msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`"
+#, no-wrap
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`\n"
-msgstr "Naviguez jusqu'à l'endroit où vous avez téléchargé le programme d'installation et double-cliquez dessus, ou utilisez la ligne de commande : `sudo apt install ./{{ site.download_file_names.deb-gui }}` ou pour armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`"
+msgstr "Naviguez jusqu'à l'endroit où vous avez téléchargé le programme d'installation et double-cliquez dessus, ou utilisez la ligne de commande : `sudo apt install ./{{ site.download_file_names.deb-gui }}` ou pour armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:34
-#, fuzzy, no-wrap
-#| msgid "Once installed, you can delete the file and close any console windows."
+#, no-wrap
 msgid "Once installed, you can delete the file and close any console windows.\n"
-msgstr "Une fois installé, vous pouvez supprimer le fichier et fermer toutes les fenêtres de la console."
+msgstr "Une fois installé, vous pouvez supprimer le fichier et fermer toutes les fenêtres de la console.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:36
@@ -199,7 +197,7 @@ msgstr "Une fois JACK lancé et configuré, démarrez Jamulus."
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:60
 msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
-msgstr "Si vous rencontrez des problèmes d'interruption du son (en particulier des erreurs XRUN signalées par JACK/QjackCtl), essayez de définir des valeurs plus élevées (par exemple, 256 images ou 3 périodes). Des valeurs plus faibles (par exemple 64 frames) peuvent apporter de meilleures performances mais peut-être plus de problèmes de son. Voir la page [dépannage](Client-Troubleshooting) sinon."
+msgstr "Si vous rencontrez des problèmes d'interruption du son (en particulier des décrochages signalés par JACK/QjackCtl), essayez de définir des valeurs plus élevées (par exemple, 256 frames ou 3 périods). Des valeurs plus faibles (par exemple 64 frames) peuvent apporter de meilleures performances mais peut-être plus de problèmes de son. Voir la page [dépannage](Client-Troubleshooting) sinon."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:62
