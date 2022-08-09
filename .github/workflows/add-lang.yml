@@ -72,9 +72,8 @@ jobs:
         with:
           issue-number: ${{ env.issue_num }}
           body: |
-            - The .po files have been created for **${{ env.new_lang }}** on the `next-release` branch.
-            - They can be found in `_translator-files/po/${{ env.new_lang }}/`.
-            - Please consult the README file in `_translator-files/` for information on the translation process.
+            - The .po files have been created for **${{ env.new_lang }}** and are now available on [Weblate](https://hosted.weblate.org/projects/jamulus/#languages). If you prefer not to use Weblate and intend to submit translations via a Pull Request, your language files can be found on the `next-release` branch in `_translator-files/po/${{ env.new_lang }}/`.
+            - Please consult [this README file](https://github.com/jamulussoftware/jamuluswebsite/tree/next-release/_translator-files#readme) for more information on the translation process.
 
 # Create target translated files. Never pushed to the repo.
       - name: Create translated docs and stats
