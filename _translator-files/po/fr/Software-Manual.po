@@ -592,13 +592,15 @@ msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-advanced.inc %
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:244
-msgid "### Custom directory server address"
+#, fuzzy
+#| msgid "### Custom directory server address"
+msgid "### Custom Directories"
 msgstr "### Adresse du serveur de répertoire personnalisé"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:246
-msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
-msgstr "Laissez ce champ vide, sauf si vous devez entrer l'adresse d'un annuaire autre que celui par défaut."
+msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:248
@@ -747,6 +749,9 @@ msgstr "{% include_relative Include-Client-Commands.md %}"
 #: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
+
+#~ msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
+#~ msgstr "Laissez ce champ vide, sauf si vous devez entrer l'adresse d'un annuaire autre que celui par défaut."
 
 #~ msgid "{% include_relative Include-QOS-Windows.md %}"
 #~ msgstr "{% include_relative Include-QOS-Windows.md %}"
