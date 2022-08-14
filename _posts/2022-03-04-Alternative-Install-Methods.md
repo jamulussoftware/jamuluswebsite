@@ -21,6 +21,7 @@ Jamulus (mostly the GUI-Client, not the headless server) is included in the main
 * Jamulus is available in the [Debian repository](https://packages.debian.org/sid/sound/jamulus). It might be outdated, especially in Debian Stable. To install the client, just use apt: `sudo apt install jamulus`
 * Jamulus is available as [Flatpak on Flathub](https://flathub.org/apps/details/io.jamulus.Jamulus). You might need to set up Pipewire in order to get Jamulus to run.
 * Tormod Volden provides a [PPA for Ubuntu (and probably Debian) on launchpad.net](https://launchpad.net/~tormodvolden/+archive/ubuntu/jam/+packages)
+* Jamulus is available for archlinux in the [AUR repository](https://aur.archlinux.org/packages?O=0&K=jamulus). 3 versions are provided. jamulus is the regular one with client and server with GUI, jamulus-headless is the headless server version without GUI and jamulus-git, a VCS with the git actual state. If you dont want to build from source and prefer a binary repository, you can have a look to [osam-cologne repository](https://github.com/osam-cologne/archlinux-proaudio) and that you will be able to install jamulus with pacman.
 
 ## macOS
 * Jamulus is [available on Homebrew](https://formulae.brew.sh/cask/jamulus). You can install the Client via `brew install --cask jamulus`
