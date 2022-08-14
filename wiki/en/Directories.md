@@ -1,14 +1,14 @@
 ---
 layout: wiki
-title: "Custom Directories"
+title: "Directories"
 lang: "en"
-permalink: "/wiki/Custom-Directories"
+permalink: "/wiki/Directories"
 ---
 
 {% include breadcrumb.html root="More" branch1="Server Administration" branch1-url="Running-a-Server" %}
 
 
-# Running a Custom Directory
+# Running a Directory
 
 This is a specialised Jamulus Server configuration, as described in [Server Types](Running-a-Server#server-types).
 
@@ -16,7 +16,7 @@ To view Servers listed by a Custom Directory, users must enter the address of th
 
 To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers.
 
-When running a Server with the GUI, set the Custom Directory server address in the Options tab to "localhost", then select "Custom" from the Directory drop-down list.  
+When running a Server with the GUI, set the Custom Directory server address in the Options tab to "localhost", then select "Custom" from the Directory drop-down list.
 
 
 ### Points to note about Directories

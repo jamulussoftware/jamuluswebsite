@@ -72,7 +72,7 @@ If you are running an unregistered server behind a home internet connection, you
 
 If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
 
-To run a Directory [read this guide](Custom-Directories)
+To run a Directory [read this guide](Directories)
 
 
 ## Installation and Configuration
@@ -129,7 +129,7 @@ You can also specify a [Directory](#3-directory) in the same way from the comman
 
 #### Running as a Directory
 
-If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Custom-Directories).
+If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Directories).
 
 ### Maintenance
 
@@ -201,15 +201,15 @@ Jamulus can be run in Server mode from the desktop. This gives you a graphical u
 
 **None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.
 
-**Genre**: To allow other people to see your Server on one of the built-in Public Directories, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.  
+**Genre**: To allow other people to see your Server on one of the Directories built into the Client, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.
 
 **Custom**: This allows you to specify a custom directory on which to be listed. See the "Options" tab for the Custom Directory address you want to use.
 
-To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the "Genre" to "Custom". [Read this guide](Custom-Directories) for further details.
+To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the "Genre" to "Custom". [Read this guide](Directories) for further details.
 
 ### My Server Info
 
-When running as a registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing.
+When running as a Registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing.
 
 ### Chat Welcome Message
 
@@ -274,7 +274,7 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 ## Running an Unregistered Server
 
-It is highly recommended to test your Server on a **Public Directory** first so as to narrow down any subsequent problems in unregistered mode.
+It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode.
 
 ### Setting up a Server behind a home router
 

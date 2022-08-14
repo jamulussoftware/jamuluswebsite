@@ -1,6 +1,6 @@
 - `-d`  or `--discononquit`   Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their "Disconnect" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.  
 - `-e`  or `--directoryserver`  Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](#server-types) for further information.
-- `--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Custom-Directories) for further information. 
+- `--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information. 
 - `-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. 
 -  `-F`  or `--fastupdate`     Reduces latency if Clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.
 -  `-l`  or `--log`            Enable logging, set path and file name                                                                    
@@ -16,4 +16,4 @@
 -  `-u` or `--numchannels`   Maximum number of channels (Clients)
 -  `-w` or `--welcomemessage`  Welcome message on connect. Can be given as a string or filename, and can contain HTML.
 -  `-z` or `--startminimized`  Start minimized
--  `--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Custom-Directories#points-to-note-about-directories)
+-  `--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)
