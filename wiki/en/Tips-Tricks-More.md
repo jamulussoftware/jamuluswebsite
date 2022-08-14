@@ -100,7 +100,7 @@ Make sure you connect your MIDI device's output port to the Jamulus MIDI in port
 
 ## For Server admins
 
-### Converting a Registered Server to an Unregisterd one on the fly
+### Converting a Registered Server to an Unregistered one on the fly
 
 You can run as a Registered Server long enough for your band to connect, then go "private" (Unregistered) by setting the Directory to "none" in the Server GUI. Your band mates will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
 
