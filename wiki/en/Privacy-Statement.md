@@ -8,6 +8,7 @@ permalink: "/wiki/Privacy-Statement"
 # Privacy Statement
 
 Please note that the English version of this privacy statement is the original and, as such, the binding version. To access the English version, go to the top/top right of this page and click on the "en" link.
+The following only applies to the version you can download from this website, [jamulus.io](https://jamulus.io). 
 
 ## Definition of Terms
 
