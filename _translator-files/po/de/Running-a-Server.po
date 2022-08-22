@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-06-23 08:59+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-08-15 21:26+0000\n"
+"Last-Translator: ann0see <please@seeGitHubOrWeblate.local>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -168,12 +169,7 @@ msgstr "Dein Server wird in einem Server Verzeichnis aufgeführt. Standardmäßi
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:59
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<figure>\n"
-#| "\t<img src=\"{% include img/en-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Registered Server\">\n"
-#| "<figcion>How Registered Servers work</figcaption>\n"
-#| "</figure>\n"
+#, no-wrap
 msgid ""
 "<figure>\n"
 "\t<img src=\"{% include img/en-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Registered Server\">\n"
@@ -181,8 +177,10 @@ msgid ""
 "</figure>\n"
 msgstr ""
 "<figure>\n"
-"\t<img src=\"{% include img/de-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagramm: der Verbindungen zwischen Clients eines registrierten Jamulus-Servers\">\n"
-"<figcaption>So funktionieren registrierte Server</figcaption>\n"
+"\t<img src=\"{% include img/de-screenshots/diagram-reg-server.inc %}\" "
+"loading=\"lazy\" alt=\"Diagramm: der Verbindungen zwischen Clients eines "
+"registrierten Jamulus-Servers\">\n"
+"\t<figcaption>So funktionieren registrierte Server</figcaption>\n"
 "</figure>\n"
 
 #. type: Plain text
@@ -226,10 +224,9 @@ msgstr "Wenn du mehrere Server betreiben willst, möglicherweise auch hinter ein
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:76
-#, fuzzy
-#| msgid "To run a Directory [read this guide](Custom-Directories)"
 msgid "To run a Directory [read this guide](Directories)"
-msgstr "Um einen Verzeichnis Server zu betreiben [lese diese Anleitung](Custom-Directories)"
+msgstr ""
+"Um einen Verzeichnis Server zu betreiben [lese diese Anleitung](Directories)"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:79
