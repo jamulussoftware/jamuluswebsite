@@ -145,17 +145,17 @@ In `ChangeLog`, for a pre-release, change the first version heading as follows:
 ### 3.7.0rc2 <- NOTE: the release version number will be 3.7.0 ###
 ```
 
-for a proper release, change it as follows, removing the NOTE and including the release date:
+for a proper release, change it as follows, removing the NOTE and including the release date such that the headline looks exactly like this (including all `###`):
 
 ```
 ### 3.7.0 (2021-03-17) ###
 ```
 
-Check only those two files have changed, then commit and push the changes:
+Check only those two files have changed, then commit and push the changes with the following commit message:
 
 ```
 $ git status
-$ git commit -am'Update version to 3.7.0 for release'
+$ git commit -am'Update version to <version> for release'
 $ git push
 ```
 
@@ -305,8 +305,10 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
   - [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
   - [ ] [Upload the artifacts to SourceForge and set defaults](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
-  - [ ] Update download links on the website by editing `config.yml` in `next-release`
-  - [ ] Publish Website release by squashing and merging `next-release` into `release`
+  - [ ] Update download links on the website by editing `_config.yml` in `next-release`
+  - [ ] Disable branch protection rule of the `release` branch by clicking on "Edit" on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches) and adding a `_` behind `release`.  
+  - [ ] Publish Website release by **squashing** and merging `next-release` into `release`
+  - [ ] Enable branch protection rule of the `release` branch after the site and the `.po` files are published by removing the `_` from the branch protection rule you edited on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches). 
 - [ ] Announce the new release with a summary of changes (+ link to the changelog for details) and a link to the download page
     - [ ] On Github Discussions in the Announcements section. Lock the announcement thread. Pin the thread. Unpin and lock release candidate thread.
     - [ ] On Facebook in the group "Jamulus (official group)". Turn off replies.
