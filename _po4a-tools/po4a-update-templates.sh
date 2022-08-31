@@ -74,8 +74,6 @@ while IFS= read -r -d '' doc ; do
             --format "$FILE_FORMAT" \
             --master "$doc" \
             --master-charset "UTF-8" \
-            --msgmerge-opt  --no-wrap \
-            --wrap-po newlines \
             --po "$po_file" ; then
         echo ''
         echo Error updating "$lang" PO file for: "$filename".$ext
