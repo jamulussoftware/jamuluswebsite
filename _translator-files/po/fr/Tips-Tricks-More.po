@@ -8,8 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "PO-Revision-Date: 2022-08-15 18:48+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/jamulus/"
-"tips-tricks-more/fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/jamulus/tips-tricks-more/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,19 +98,13 @@ msgstr "### Avoir une session non perturbée sur n'importe quel serveur"
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:29
 msgid "You can have an undisturbed session with other people on any Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server."
-msgstr ""
-"Vous pouvez avoir une session sans être dérangé avec d'autres personnes sur "
-"n'importe quel serveur en mettant les membres de votre groupe simplement en "
-"solo. Vous ne pourrez alors entendre personne d'autre qui entre dans votre "
-"serveur."
+msgstr "Vous pouvez avoir une session sans être dérangé avec d'autres personnes sur n'importe quel serveur en mettant les membres de votre groupe simplement en solo. Vous ne pourrez alors entendre personne d'autre qui entre dans votre serveur."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:31
 #, no-wrap
 msgid "**NOTE:** This does not stop people from hearing you, using the chat function, or seeing your profile information.\n"
-msgstr ""
-"**NOTE :** cela ne les empêche pas de vous entendre, d'utiliser la fonction "
-"tchate ou de voir les informations de votre profil.\n"
+msgstr "**NOTE :** cela ne les empêche pas de vous entendre, d'utiliser la fonction tchate ou de voir les informations de votre profil.\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:33
@@ -237,23 +230,7 @@ msgstr "### Utilisation de ctrlmidich pour les contrôleurs MIDI"
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:86
 msgid "The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo; o = mute myself) with the offset (CC number to start from) and number of consecutive CC numbers. There is one exception that does not require establishing consecutive CC numbers which is the \"Mute Myself\" command - it only requires a single CC number as it is only applied to one's own audio stream. Take the following example:"
-msgstr ""
-"Le chariot de volume, la commande de panoramique et les boutons de sourdine "
-"et de solo dans les bandes de mixage du client peuvent être contrôlés à "
-"l'aide d'un contrôleur MIDI en utilisant le paramètre `--ctrlmidich` (note : "
-"uniquement disponible pour une utilisation avec macOS et Linux utilisant "
-"Jamulus version 3.7.0 ou supérieure et avec Windows en utilisant la version "
-"avec support de JACK). Pour activer cette fonctionnalité, Jamulus doit être "
-"lancé avec `--ctrlmidich`. Un paramètre global de canal MIDI (1-16) et deux "
-"paramètres sont réglables pour chaque élément contrôlé : `offset` et `"
-"consecutive CC numbers`. Réglez le premier paramètre sur le canal que vous "
-"voulez que Jamulus écoute (0 pour tous les canaux) et ensuite spécifiez les "
-"éléments que vous voulez contrôler (f = chariot de volume ; p = panoramique ;"
-" m = me silencer ; s = solo ; o = muet) avec l'offset (numéro de CC de "
-"départ) et le nombre de numéros de CC consécutifs. Il existe une exception "
-"qui ne nécessite pas l'établissement de numéros CC consécutifs, à savoir la "
-"commande \"muet\" - elle ne nécessite qu'un seul numéro CC car elle ne "
-"s'applique qu'à son propre flux audio. Prenons l'exemple suivant :"
+msgstr "Le chariot de volume, la commande de panoramique et les boutons de sourdine et de solo dans les bandes de mixage du client peuvent être contrôlés à l'aide d'un contrôleur MIDI en utilisant le paramètre `--ctrlmidich` (note : uniquement disponible pour une utilisation avec macOS et Linux utilisant Jamulus version 3.7.0 ou supérieure et avec Windows en utilisant la version avec support de JACK). Pour activer cette fonctionnalité, Jamulus doit être lancé avec `--ctrlmidich`. Un paramètre global de canal MIDI (1-16) et deux paramètres sont réglables pour chaque élément contrôlé : `offset` et `consecutive CC numbers`. Réglez le premier paramètre sur le canal que vous voulez que Jamulus écoute (0 pour tous les canaux) et ensuite spécifiez les éléments que vous voulez contrôler (f = chariot de volume ; p = panoramique ; m = me silencer ; s = solo ; o = muet) avec l'offset (numéro de CC de départ) et le nombre de numéros de CC consécutifs. Il existe une exception qui ne nécessite pas l'établissement de numéros CC consécutifs, à savoir la commande \"muet\" - elle ne nécessite qu'un seul numéro CC car elle ne s'applique qu'à son propre flux audio. Prenons l'exemple suivant :"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:88
@@ -274,11 +251,7 @@ msgstr "Veuillez noter que pour que les fonctions contrôlées par les boutons f
 #: ../wiki/en/Tips-Tricks-More.md:94
 #, no-wrap
 msgid "*Note*: Jamulus does not provide feedback on the on/off state of buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself.\n"
-msgstr ""
-"*Note :* Jamulus ne fournit pas de retour sur l'état marche/arrêt des "
-"boutons, ce qui signifie que votre contrôleur doit garder la trace et "
-"basculer les diode lumineuses (le cas échéant) sur \"on\" ou \"off\" lui-"
-"même.\n"
+msgstr "*Note :* Jamulus ne fournit pas de retour sur l'état marche/arrêt des boutons, ce qui signifie que votre contrôleur doit garder la trace et basculer les diode lumineuses (le cas échéant) sur \"on\" ou \"off\" lui-même.\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:96
@@ -304,19 +277,12 @@ msgstr "## Pour les administrateurs de serveurs"
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:104
 msgid "### Converting a Registered Server to an Unregistered one on the fly"
-msgstr ""
-"### Convertir un serveur enregistré en serveur non enregistré à la volée"
+msgstr "### Convertir un serveur enregistré en serveur non enregistré à la volée"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:106
 msgid "You can run as a Registered Server long enough for your band to connect, then go \"private\" (Unregistered) by setting the Directory to \"none\" in the Server GUI. Your band mates will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)"
-msgstr ""
-"Vous pouvez faire tourner un serveur enregistré suffisamment longtemps pour "
-"que votre groupe se connecte, puis le rendre \"privé\" (non enregistré) en "
-"mettant l'annuaire sur \"aucun\" dans l'interface graphique du serveur. Les "
-"membres de votre groupe seront toujours connectés au serveur jusqu'à ce "
-"qu'ils se déconnectent. (Merci à [David Savinkoff](https://github.com/"
-"DavidSavinkoff) pour cette astuce !)"
+msgstr "Vous pouvez faire tourner un serveur enregistré suffisamment longtemps pour que votre groupe se connecte, puis le rendre \"privé\" (non enregistré) en mettant l'annuaire sur \"aucun\" dans l'interface graphique du serveur. Les membres de votre groupe seront toujours connectés au serveur jusqu'à ce qu'ils se déconnectent. (Merci à [David Savinkoff](https://github.com/DavidSavinkoff) pour cette astuce !)"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:108
