@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-08-15 21:26+0000\n"
+"PO-Revision-Date: 2022-08-30 11:22+0000\n"
 "Last-Translator: ignotus <darylo1@hotmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -222,10 +222,8 @@ msgstr "Si quieres ejecutar varios Servidores, posiblemente también tras un cor
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:76
-#, fuzzy
-#| msgid "To run a Directory [read this guide](Custom-Directories)"
 msgid "To run a Directory [read this guide](Directories)"
-msgstr "Para ejecutar un Directorio [lee esta guía](Custom-Directories)"
+msgstr "Para ejecutar un Directorio [lee esta guía](Directories)"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:79
@@ -375,10 +373,10 @@ msgstr "### Ejecutar como Directorio"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:133
-#, fuzzy
-#| msgid "If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Custom-Directories)."
 msgid "If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Directories)."
-msgstr "Si quieres ejecutar un [Directorio](Running-a-Server#3-directorio) por favor consulta [esta guía](Custom-Directories)."
+msgstr ""
+"Si quieres ejecutar un [Directorio](Running-a-Server#3-directorio) por favor "
+"consulta [esta guía](Directories)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:135
@@ -412,17 +410,20 @@ msgstr "#### Controlar la Grabación"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:147
-#, fuzzy
-#| msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off."
 msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will recording enabled on/off."
-msgstr "Cuando se utiliza la función de grabación con la opción de la línea de comandos `-R`, si el Servidor recibe una señal SIGUSR1 durante una grabación, comenzará una nueva grabación en un Directorio nuevo. SIGUSR2 conmutará entre grabación activa/inactiva."
+msgstr ""
+"Cuando se utiliza la función de grabación con la opción de la línea de "
+"comandos `-R`, si el Servidor recibe una señal SIGUSR1 durante una "
+"grabación, comenzará una nueva grabación en un Directorio nuevo. SIGUSR2 "
+"conmutará entre grabación activa/inactiva."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:149
-#, fuzzy
-#| msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`)."
 msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`)."
-msgstr "Para enviar estas señales utilizando systemd, crea los siguientes dos archivos `.service` en `/etc/systemd/system`, dándoles un nombre apropiado (por ej. `nuevaGrabación-Jamulus-server.service`)."
+msgstr ""
+"Para enviar estas señales utilizando systemd, crea los siguientes dos "
+"archivos `.service` en `/etc/systemd/system`, dándoles un nombre apropiado ("
+"por ej. `jamulusTogglerec.service`)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:151
@@ -572,10 +573,14 @@ msgstr "**Ninguno**: Por defecto, no te conectarás a un Directorio estarás en 
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:205
-#, fuzzy, no-wrap
-#| msgid "**Genre**: To allow other people to see your Server on one of the built-in Public Directories, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.  \n"
+#, no-wrap
 msgid "**Genre**: To allow other people to see your Server on one of the Directories built into the Client, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.\n"
-msgstr "**Género**: Para permitir a otras personas ver tu Servidor en uno de los Directorios Públicos incluidos, selecciona el Directorio del género que desees. Deberías de ver un mensaje de confirmación informándote de si tu Servidor se ha registrado con éxito o no. Si es que no, y dejas tu Servidor arrancado, seguirá intentando registrarse hasta que haya un hueco libre.\n"
+msgstr ""
+"**Género**: Para permitir a otras personas ver tu Servidor en uno de los "
+"Directorios incluidos en el Cliente, selecciona el Directorio del género que "
+"desees. Deberías de ver un mensaje de confirmación informándote de si tu "
+"Servidor se ha registrado con éxito o no. Si es que no, y dejas tu Servidor "
+"arrancado, seguirá intentando registrarse hasta que haya un hueco libre.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:207
@@ -585,10 +590,12 @@ msgstr "**Personalizado**: Esto te permite especificar un Directorio personaliza
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:209
-#, fuzzy
-#| msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Custom-Directories) for further details."
 msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Directories) for further details."
-msgstr "Para ejecutar tu Servidor _como_ un Directorio, necesitas establecer la dirección del Directorio Personalizado como `localhost` o `127.0.0.1` elegir el \"Género\" como \"Personalizado\". [Lee esta guía](Custom-Directories) para más detalles."
+msgstr ""
+"Para ejecutar tu Servidor _como_ un Directorio, necesitas establecer la "
+"dirección del Directorio Personalizado como `localhost` o `127.0.0.1` elegir "
+"el \"Género\" como \"Personalizado\". [Lee esta guía](Directories) para más "
+"detalles."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:211
@@ -597,10 +604,11 @@ msgstr "### Info Mi Servidor"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:213
-#, fuzzy
-#| msgid "When running as a registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing."
 msgid "When running as a Registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing."
-msgstr "Al ejecutar un Servidor como registrado, esto muestra el nombre, la ciudad y el país del Servidor para que otras personas usuarias puedan identificarlo en la lista del Directorio."
+msgstr ""
+"Al ejecutar un Servidor como Registrado, esto muestra el nombre, la ciudad y "
+"el país del Servidor para que otras personas usuarias puedan identificarlo "
+"en la lista del Directorio."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:215
@@ -766,10 +774,11 @@ msgstr "## Ejecutar un Servidor Sin Registrar"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:278
-#, fuzzy
-#| msgid "It is highly recommended to test your Server on a **Public Directory** first so as to narrow down any subsequent problems in unregistered mode."
 msgid "It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode."
-msgstr "Se recomienda encarecidamente que pruebes tu Servidor en un **Directorio Público** primero, para así acotar cualquier problema posterior en modo sin registrar."
+msgstr ""
+"Se recomienda encarecidamente que pruebes tu Servidor registrándolo en uno "
+"de los Directorios incluidos **primero**, para así acotar cualquier problema "
+"posterior en modo sin registrar."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:280
