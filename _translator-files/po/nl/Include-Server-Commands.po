@@ -31,13 +31,14 @@ msgstr "`-e`  of `--directoryserver`  Registreer de server op een adresboek (bij
 #: ../wiki/en/Include-Server-Commands.md:4
 #, fuzzy, no-wrap
 #| msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Custom-Directories) for further information. \n"
-msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information. \n"
+msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information.\n"
 msgstr "`--directoryfile` Onthoud geregistreerde servers, zelfs als het adresboek opnieuw wordt gestart. Alleen adresboek servers. Zie [deze handleiding](Custom-Directories) voor meer informatie. \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
-#, no-wrap
-msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
+#, fuzzy, no-wrap
+#| msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
+msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only.\n"
 msgstr "`-f`  of `--listfilter`     Whitelist-servers die zich registreren op de serverlijst, formaat `ip-adres 1[;ip-adres 2]`. Alleen voor adresboeken. \n"
 
 #. type: Plain text
@@ -78,15 +79,16 @@ msgstr "`-P`  of `--delaypan`       Start met delay panning ingeschakeld. Zie [o
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:12
-#, no-wrap
-msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
+#, fuzzy, no-wrap
+#| msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
+msgid "`-R`  or `--recording`      Set server recording directory; Server will record when a session is active by default. See [Options](#options).  \n"
 msgstr "`-R`  of `--recording`      Geef een beschrijfbaar pad op waar de opnamebestanden moeten worden opgeslagen (indien nodig tussen aanhalingstekens).  Zie [opties](#opties).  \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:13
 #, no-wrap
-msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
-msgstr "`--norecord`       Opname uitschakelen indien standaard ingeschakeld door `-R`                                                 \n"
+msgid "`--norecord`                Set server not to record by default (when recording is configured e.g via `-R`)\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:14
@@ -130,3 +132,6 @@ msgstr "`-z` of `--startminimized`  Start geminimaliseerd\n"
 #| msgid "`--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Custom-Directories#points-to-note-about-directories)\n"
 msgid "`--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)\n"
 msgstr "`--serverpublicip`  Het openbare IP-adres van de server als verbinding wordt gemaakt met een adresboek achter dezelfde NAT. Zie [aandachtspunten voor adresboeken](Custom-Directories#aandachtspunten-voor-adresboeken)\n"
+
+#~ msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
+#~ msgstr "`--norecord`       Opname uitschakelen indien standaard ingeschakeld door `-R`                                                 \n"
