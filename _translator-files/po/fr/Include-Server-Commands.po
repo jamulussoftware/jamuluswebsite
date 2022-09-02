@@ -30,14 +30,16 @@ msgstr "`-e` ou `--directoryserver`  Enregistrer le serveur sur un annuaire (par
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:4
-#, no-wrap
-msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information. \n"
+#, fuzzy, no-wrap
+#| msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information. \n"
+msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information.\n"
 msgstr "`--directoryfile` Se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Annuaires seulement. Voir [ce guide](Directories) pour plus d'informations. \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
-#, no-wrap
-msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
+#, fuzzy, no-wrap
+#| msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
+msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only.\n"
 msgstr "`-f` ou `--listfilter`     Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Annuaires uniquement. \n"
 
 #. type: Plain text
@@ -78,15 +80,16 @@ msgstr "`-P` ou `--delaypan`       Démarrer avec le panoramique du délai activ
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:12
-#, no-wrap
-msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
+#, fuzzy, no-wrap
+#| msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
+msgid "`-R`  or `--recording`      Set server recording directory; Server will record when a session is active by default. See [Options](#options).  \n"
 msgstr "`-R` ou `--recording`      Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).  Voir [Options](#options).  \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:13
 #, no-wrap
-msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
-msgstr "`--norecord`       Désactive l'enregistrement lorsqu'il est activé par défaut par `-R`                                                 \n"
+msgid "`--norecord`                Set server not to record by default (when recording is configured e.g via `-R`)\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:14
@@ -129,3 +132,6 @@ msgstr "`-z` ou `--startminimized`  Démarrage minimisé\n"
 #, no-wrap
 msgid "`--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)\n"
 msgstr "`--serverpublicip`  L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les Annuaire](Directories#points-a-noter-concernant-des-annuaires)\n"
+
+#~ msgid "`--norecord`       Disable recording when enabled by default by `-R`                                                 \n"
+#~ msgstr "`--norecord`       Désactive l'enregistrement lorsqu'il est activé par défaut par `-R`                                                 \n"
