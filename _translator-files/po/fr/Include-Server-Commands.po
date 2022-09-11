@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-08-15 15:17+0000\n"
+"PO-Revision-Date: 2022-09-04 18:16+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/include-server-commands/fr/>\n"
 "Language: fr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:2
@@ -30,17 +30,15 @@ msgstr "`-e` ou `--directoryserver`  Enregistrer le serveur sur un annuaire (par
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:4
-#, fuzzy, no-wrap
-#| msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information. \n"
+#, no-wrap
 msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information.\n"
-msgstr "`--directoryfile` Se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Annuaires seulement. Voir [ce guide](Directories) pour plus d'informations. \n"
+msgstr "`--directoryfile` Se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Annuaires seulement. Voir [ce guide](Directories) pour plus d'informations.\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
-#, fuzzy, no-wrap
-#| msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
+#, no-wrap
 msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only.\n"
-msgstr "`-f` ou `--listfilter`     Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Annuaires uniquement. \n"
+msgstr "`-f`  ou `--listfilter`     Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Annuaires uniquement.\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:6
@@ -80,16 +78,15 @@ msgstr "`-P` ou `--delaypan`       Démarrer avec le panoramique du délai activ
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:12
-#, fuzzy, no-wrap
-#| msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
+#, no-wrap
 msgid "`-R`  or `--recording`      Set server recording directory; Server will record when a session is active by default. See [Options](#options).  \n"
-msgstr "`-R` ou `--recording`      Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).  Voir [Options](#options).  \n"
+msgstr "`-R`  ou `--recording`      Définir le répertoire d'enregistrement du serveur ; par défaut, le serveur enregistre lorsqu'une session est active. Voir [Options](#options).  \n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:13
 #, no-wrap
 msgid "`--norecord`                Set server not to record by default (when recording is configured e.g via `-R`)\n"
-msgstr ""
+msgstr "`--norecord`                Configurer le serveur pour qu'il n'enregistre pas par défaut (lorsque l'enregistrement est configuré via `-R` par exemple)\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:14
