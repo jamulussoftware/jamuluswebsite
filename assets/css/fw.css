@@ -35,7 +35,7 @@ a:hover {
 }
 
 .blue {
-  color: #1181a4!important;
+  color: #1181a4 !important;
 }
 
 .doubletextsize {
@@ -295,6 +295,22 @@ main>div {
   margin: 0 .3em 0 0;
 }
 
+details {
+  font: 16px;
+  font-style: bold;
+  width: 620px;
+}
+
+details>summary {
+  font-size: 20px;
+  padding: 5px 6px;
+  width: 15em;
+  background-color: #eaf8fd;
+  border: none;
+  color: #1882A1;
+  cursor: pointer;
+}
+
 @media (min-width:940px) {
   #langselect ul li {
     margin: 0 0.3em 0 0;
@@ -336,7 +352,7 @@ main>div {
   }
 
   .blue {
-    color: #3daed2!important;
+    color: #3daed2 !important;
   }
 
   #langselect .selected, #paginator .selected {
@@ -398,9 +414,13 @@ main>div {
     background-color: #2b2f2f;
   }
 
-
   pre code {
     border-left-color: #3daed2;
+  }
+
+  details>summary {
+    background-color: #2b2f2f;
+    color: #3daed2;
   }
 
   .red {
@@ -417,16 +437,16 @@ main>div {
 }
 
 #cc {
-   margin-top: 1.5em;
-   font-style: italic;
-   font-size: 0.75em;
-   color: #696969;
-   clear: both;
+  margin-top: 1.5em;
+  font-style: italic;
+  font-size: 0.75em;
+  color: #696969;
+  clear: both;
 }
 
 #asio-footer {
-   margin-top: 20px;
-   font-style: italic;
-   font-size: 0.75em;
-   clear: both;
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 0.75em;
+  clear: both;
 }
