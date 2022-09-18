@@ -42,12 +42,8 @@ msgstr "Annuaires"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:9
-msgid ""
-"{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" "
-"branch1-url=\"Running-a-Server\" %}"
-msgstr ""
-"{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" "
-"branch1-url=\"Running-a-Server\" %}"
+msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:12
@@ -56,54 +52,23 @@ msgstr "# Administrer un annuaire"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:14
-msgid ""
-"This is a specialised Jamulus Server configuration, as described in [Server "
-"Types](Running-a-Server#server-types)."
-msgstr ""
-"Il s'agit d'une configuration spécialisée du serveur Jamulus, comme décrit "
-"dans [Types de serveurs](Running-a-Server#types-de-serveurs)."
+msgid "This is a specialised Jamulus Server configuration, as described in [Server Types](Running-a-Server#server-types)."
+msgstr "Il s'agit d'une configuration spécialisée du serveur Jamulus, comme décrit dans [Types de serveurs](Running-a-Server#types-de-serveurs)."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:16
-msgid ""
-"To view Servers listed by a Custom Directory, users must enter the address "
-"of that Directory in their Client's Settings > Advanced Setup > Custom "
-"Directories field. Multiple addresses can be added in this way if needed. "
-"Custom Directories will then appear in the Directory drop-down list on their "
-"Connect window. Custom Directories otherwise work for Clients in the same "
-"way as Public Directories, displaying a list of Servers registered with them."
-msgstr ""
-"Pour afficher les serveurs répertoriés par un annuaire personnalisé, les "
-"utilisateurs doivent entrer l'adresse de cet annuaire dans le champ "
-"Paramètres > Configuration avancée > Annuaires de leur client. Plusieurs "
-"adresses peuvent être ajoutées de cette manière si nécessaire. Les annuaires "
-"personnalisés apparaîtront alors dans la liste déroulante des annuaires dans "
-"leur fenêtre de connexion. Les annuaires personnalisés fonctionnent pour les "
-"clients de la même manière que les annuaires publics, en affichant une liste "
-"de serveurs enregistrés auprès d'eux."
+msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them."
+msgstr "Pour afficher les serveurs répertoriés par un annuaire personnalisé, les utilisateurs doivent entrer l'adresse de cet annuaire dans le champ Paramètres > Configuration avancée > Annuaires de leur client. Plusieurs adresses peuvent être ajoutées de cette manière si nécessaire. Les annuaires personnalisés apparaîtront alors dans la liste déroulante des annuaires dans leur fenêtre de connexion. Les annuaires personnalisés fonctionnent pour les clients de la même manière que les annuaires publics, en affichant une liste de serveurs enregistrés auprès d'eux."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:18
-msgid ""
-"To run a Server as a Directory, it should be started with the `--"
-"directoryserver` option to make itself (that is, `localhost` or `127.0.0.1`) "
-"the Directory to query for Servers."
-msgstr ""
-"Pour faire fonctionner un serveur en tant qu'annuaire, il faut le démarrer "
-"avec l'option `--directoryserver` pour faire de lui-même (c'est-à-dire "
-"`localhost` ou `127.0.0.1`) l'annuaire à interroger pour les serveurs."
+msgid "To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
+msgstr "Pour faire fonctionner un serveur en tant qu'annuaire, il faut le démarrer avec l'option `--directoryserver` pour faire de lui-même (c'est-à-dire `localhost` ou `127.0.0.1`) l'annuaire à interroger pour les serveurs."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:20
-msgid ""
-"When running a Server with the GUI, set the Custom Directory server address "
-"in the Options tab to \"localhost\", then select \"Custom\" from the "
-"Directory drop-down list."
-msgstr ""
-"Lorsque vous exécutez un serveur avec l'interface graphique, définissez "
-"l'adresse du serveur annuaire personnalisé dans l'onglet Options sur "
-"\"localhost\", puis sélectionnez \"Personnalisé\" dans la liste déroulante "
-"Annuaire."
+msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
+msgstr "Lorsque vous exécutez un serveur avec l'interface graphique, définissez l'adresse du serveur annuaire personnalisé dans l'onglet Options sur \"localhost\", puis sélectionnez \"Personnalisé\" dans la liste déroulante Annuaire."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:23
@@ -112,95 +77,31 @@ msgstr "### Points à noter concernant les annuaires"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:25
-msgid ""
-"If you want to control which Servers can register with your Directory, you "
-"can enable a whitelist with the `--listfilter` command line option in the "
-"format `ip address 1[;ip address 2]`."
-msgstr ""
-"Si vous voulez contrôler quels serveurs peuvent s'enregistrer dans votre "
-"annuaire, vous pouvez activer une liste blanche avec l'option de ligne de "
-"commande `--listfilter` au format `ip address 1[;ip address 2]`."
+msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
+msgstr "Si vous voulez contrôler quels serveurs peuvent s'enregistrer dans votre annuaire, vous pouvez activer une liste blanche avec l'option de ligne de commande `--listfilter` au format `ip address 1[;ip address 2]`."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:27
-msgid ""
-"When running a Directory behind a NAT firewall on a private network, use the "
-"`--serverpublicip` option to specify the public IP address of the Server(s) "
-"being listed by your Directory if those Servers are on the same LAN / with "
-"the same public IP as the Directory. This is necessary to allow Clients on "
-"the public Internet to connect to them via NAT. Note that for the Servers "
-"using this option, you will still need proper port forwarding in your router/"
-"firewall."
-msgstr ""
-"Lorsque vous exécutez un annuaire derrière un pare-feu NAT sur un réseau "
-"privé, utilisez l'option `--serverpublicip` pour spécifier l'adresse IP "
-"publique du ou des serveurs listés par votre annuaire si ces serveurs sont "
-"sur le même LAN / avec la même IP publique que l'annuaire. Ceci est "
-"nécessaire pour permettre aux clients de l'Internet public de se connecter à "
-"eux via NAT. Notez que pour les serveurs utilisant cette option, vous aurez "
-"toujours besoin d'une redirection de port appropriée dans votre routeur/pare-"
-"feu."
-
-#. type: Plain text
-#: ../wiki/en/Directories.md:29
-msgid ""
-"If you are running your Server as a Directory and need to restart it for any "
-"reason (for example when rebooting the host), Servers connected to it will "
-"be disconnected until they re-register. This does not mean that Clients "
-"connected to those Servers will be disconnected, but does mean that new "
-"Clients will be not able to see Servers listed by your Directory until those "
-"Servers reconnect. To enable the list of registered Servers to persist "
-"between restarts, use the `--directoryfile` option to specify the location "
-"and name of a file that the Directory can read and write to."
-msgstr ""
-"Si vous exécutez votre serveur en tant qu'annuaire et que vous devez le "
-"redémarrer pour une raison quelconque (par exemple lors du redémarrage de "
-"l'hôte), les serveurs qui y sont connectés seront déconnectés jusqu'à ce "
-"qu'ils se réenregistrent. Cela ne signifie pas que les clients connectés à "
-"ces serveurs seront déconnectés, mais que les nouveaux clients ne pourront "
-"pas voir les serveurs listés par votre annuaire jusqu'à ce que ces serveurs "
-"se reconnectent. Pour permettre à la liste des serveurs enregistrés de "
-"persister entre les redémarrages, utilisez l'option `--directoryfile` pour "
-"spécifier l'emplacement et le nom d'un fichier dans lequel l'annuaire peut "
-"lire et écrire."
-
-#. type: Plain text
-#: ../wiki/en/Directories.md:30 ../wiki/en/Directories.md:32
-msgid "Up to 150 Servers can then register with a Directory."
-msgstr "Jusqu'à 150 serveurs peuvent alors s'enregistrer dans un annuaire."
-
-#. type: Plain text
-#: ../wiki/en/Directories.md:27
-msgid ""
-"When running a Server behind a NAT firewall on a private network and "
-"registering with a Directory on the same network, run the Server using the "
-"`--serverpublicip` option to specify the public IP address.  This is "
-"necessary to allow Clients on the public Internet to connect to the correct "
-"address.  Note that for the Server(s) using this option, you will still need "
-"proper port forwarding in your router/firewall."
+msgid "When running a Server behind a NAT firewall on a private network and registering with a Directory on the same network, run the Server using the `--serverpublicip` option to specify the public IP address.  This is necessary to allow Clients on the public Internet to connect to the correct address.  Note that for the Server(s) using this option, you will still need proper port forwarding in your router/firewall."
 msgstr "Lorsque vous exécutez un serveur derrière un pare-feu NAT sur un réseau privé et que vous vous enregistrez avec un répertoire sur le même réseau, exécutez le serveur en utilisant l'option `--serverpublicip` pour spécifier l'adresse IP publique.  Ceci est nécessaire pour permettre aux clients sur l'Internet public de se connecter à la bonne adresse.  Notez que pour le(s) serveur(s) utilisant cette option, vous aurez toujours besoin d'une redirection de port appropriée dans votre routeur/pare-feu."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:29
-msgid ""
-"When running a Client behind a NAT firewall on a private network with a "
-"Directory on the same network, the Directory itself needs to be run using "
-"the `--serverpublicip` option to specify the public IP address, so that any "
-"Servers on the public Internet registering with the Directory that require "
-"the \"hole punch\" can be accessed by the Client(s). (This is because "
-"otherwise the Directory would provide the local network address of the "
-"Client to the Server and the \"hole punch\" would fail.)"
+msgid "When running a Client behind a NAT firewall on a private network with a Directory on the same network, the Directory itself needs to be run using the `--serverpublicip` option to specify the public IP address, so that any Servers on the public Internet registering with the Directory that require the \"hole punch\" can be accessed by the Client(s). (This is because otherwise the Directory would provide the local network address of the Client to the Server and the \"hole punch\" would fail.)"
 msgstr "Lorsqu'on exécute un client derrière un pare-feu NAT sur un réseau privé avec un annuaire sur le même réseau, l'annuaire lui-même doit être exécuté en utilisant l'option `--serverpublicip` pour spécifier l'adresse IP publique, de sorte que tous les serveurs sur l'Internet public s'enregistrant avec l'annuaire et nécessitant le \"hole punch\" soient accessibles au(x) Client(s). (En effet, dans le cas contraire, l'annuaire fournirait l'adresse du réseau local du client au serveur et le \"hole punch\" échouerait.)"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:31
-msgid ""
-"If you need to restart your Directory for any reason (for example when "
-"rebooting the host), Servers connected to it will be disconnected until they "
-"re-register. This does not mean that Clients connected to those Servers will "
-"be disconnected, but does mean that new Clients will be not able to see "
-"Servers listed by your Directory until those Servers reconnect. To enable "
-"the list of registered Servers to persist between restarts, use the `--"
-"directoryfile` option to specify the location and name of a file that the "
-"Directory can read and write to."
+msgid "If you need to restart your Directory for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
 msgstr "Si vous devez redémarrer votre annuaire pour une raison quelconque (par exemple lors du redémarrage de l'hôte), les serveurs qui y sont connectés seront déconnectés jusqu'à ce qu'ils se réenregistrent. Cela ne signifie pas que les clients connectés à ces serveurs seront déconnectés, mais que les nouveaux clients ne pourront pas voir les serveurs listés par votre annuaire jusqu'à ce que ces serveurs se reconnectent. Pour permettre à la liste des serveurs enregistrés de persister entre les redémarrages, utilisez l'option `--directoryfile` pour spécifier l'emplacement et le nom d'un fichier dans lequel l'annuaire peut lire et écrire."
+
+#. type: Plain text
+#: ../wiki/en/Directories.md:32
+msgid "Up to 150 Servers can then register with a Directory."
+msgstr "Jusqu'à 150 serveurs peuvent alors s'enregistrer dans un annuaire."
+
+#~ msgid "When running a Directory behind a NAT firewall on a private network, use the `--serverpublicip` option to specify the public IP address of the Server(s) being listed by your Directory if those Servers are on the same LAN / with the same public IP as the Directory. This is necessary to allow Clients on the public Internet to connect to them via NAT. Note that for the Servers using this option, you will still need proper port forwarding in your router/firewall."
+#~ msgstr "Lorsque vous exécutez un annuaire derrière un pare-feu NAT sur un réseau privé, utilisez l'option `--serverpublicip` pour spécifier l'adresse IP publique du ou des serveurs listés par votre annuaire si ces serveurs sont sur le même LAN / avec la même IP publique que l'annuaire. Ceci est nécessaire pour permettre aux clients de l'Internet public de se connecter à eux via NAT. Notez que pour les serveurs utilisant cette option, vous aurez toujours besoin d'une redirection de port appropriée dans votre routeur/pare-feu."
+
+#~ msgid "If you are running your Server as a Directory and need to restart it for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
+#~ msgstr "Si vous exécutez votre serveur en tant qu'annuaire et que vous devez le redémarrer pour une raison quelconque (par exemple lors du redémarrage de l'hôte), les serveurs qui y sont connectés seront déconnectés jusqu'à ce qu'ils se réenregistrent. Cela ne signifie pas que les clients connectés à ces serveurs seront déconnectés, mais que les nouveaux clients ne pourront pas voir les serveurs listés par votre annuaire jusqu'à ce que ces serveurs se reconnectent. Pour permettre à la liste des serveurs enregistrés de persister entre les redémarrages, utilisez l'option `--directoryfile` pour spécifier l'emplacement et le nom d'un fichier dans lequel l'annuaire peut lire et écrire."
