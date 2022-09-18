@@ -72,4 +72,3 @@ Normally, network address translation (NAT) firewalls prevent incoming requests 
 
 However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding.
 
-
