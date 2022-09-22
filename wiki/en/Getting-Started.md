@@ -13,28 +13,28 @@ To get the best from Jamulus, at a minimum you will need:
 1. **Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))
 1. **A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)
 
-If you have any questions, please see the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)
+Questions? See the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)
 
 ## Installation
 
-To get Jamulus working with your operating system, please follow the installation guide for your platform:
+To get Jamulus working with your operating system, follow the installation guide for your platform:
 
 <div class="fx-row fx-row-start-xs button-container">
     <a href="Installation-for-Windows" class="button fx-col-100-xs">Windows</a>
     <a href="Installation-for-Macintosh" class="button fx-col-100-xs">macOS</a>
     <a href= "Installation-for-Linux" class="button fx-col-100-xs">Linux</a>
 </div>
-_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are still considered experimental._
+_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are still experimental._
 
-And for now, close all other applications. It’s best to start simple at first.
+For now, close all other applications. It’s best to start simple at first.
 
 ## Hardware Setup
 
-If you use external audio hardware, plug that in before you start Jamulus. If you haven't configured your hardware, please see the installation guides mentioned above.
+If you use external audio hardware, plug it in before you start Jamulus. If you haven't configured your hardware, see the installation guides mentioned above.
 
 ## Jamulus main window
 
-When you open Jamulus, you will see a window which looks like this:
+When you open Jamulus, you will see a window that looks like this:
 
 <figure>
   <img src="{% include img/en-screenshots/main-screen-default.inc %}" loading="lazy" alt="Screenshot" style="border: 5px solid grey;">
@@ -60,7 +60,7 @@ Before you connect to a Server, you should **not** be able to hear yourself.  Li
 
 **Before playing with others, we recommend that you connect to an empty Server to test your setup**, and make sure you are listening to the signal coming back from the Server (if possible) and not yourself.
 
-Now use the “Connect” button in the Jamulus main window to join a Server. A window will now open:
+Now use the “Connect” button in the Jamulus main window to join a Server. A window will open:
 
 <figure>
   <img src="{% include img/en-screenshots/connection-setup-window.inc %}" loading="lazy" alt="Screenshot of the connection window" style="border: 5px solid grey;">
@@ -69,7 +69,7 @@ Now use the “Connect” button in the Jamulus main window to join a Server. A 
 
 The most important thing about Servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a Server with a ping of less than 50ms if you can.
 
-Once connected to a Server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
+Once connected to a Server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. Also check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together).
 
 ## Playing for the first time
 

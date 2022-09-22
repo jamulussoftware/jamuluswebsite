@@ -10,7 +10,7 @@ This is the content repository for [jamulus.io](https://jamulus.io). Text appear
 
 The Jamulus website is translated using [Weblate](https://hosted.weblate.org/engage/jamulus/). If you prefer you may also submit translations via Pull Requests. Note that translating the Jamulus application itself is done by a different process, but you are welcome to help with that too. Introduce yourself on the [GitHub Discussion](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
 
-***PLEASE NOTE:*** Discussions should be in English so as to be open to all.
+***PLEASE NOTE:*** Discussions should be in English.
 
 ## Making changes to the documentation
 

@@ -11,7 +11,7 @@ This guide shows you how to install Jamulus on a Raspberry Pi.
 
 ## Server Installation - Raspberry Pi
 
-We now recommend you use the official armhf .deb files ([GUI download]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) [headless download]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})).  However, you can still compile Jamulus for your Pi from source, if you wish.
+We recommend you use the official armhf .deb files ([GUI download]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [headless download]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})).  However, you can still compile Jamulus for your Pi from source, if you wish.
 
 **_Please ensure you have read the [server overview](/wiki/Running-a-Server)_**
 
@@ -19,7 +19,7 @@ _Jamulus has been tested on a Raspberry Pi 4 2Gb by Jamulus user [SIVA Frédéri
 
 1. Install Raspbian Buster (allow [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) and [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) for comfort, but will ultimately run without VNC for higher speed)
 
-1. Edit [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) to enable boot without HDMI by adding `hdmi_force_hotplug=0`
+1. Edit [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) to allow boot without HDMI by adding `hdmi_force_hotplug=0`
 
 1. [Compile Jamulus for Linux](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md).
 
