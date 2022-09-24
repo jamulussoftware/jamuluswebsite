@@ -41,7 +41,7 @@ The simplest to use is **Poedit**. Once downloaded and installed, to get up and 
 1. When you have finished your translations, go to Project > Create Translated Documents. Your translated files will be created in `path/to/_translator-files/po/`, replacing the ones there.
 
 
- From now on, when there are new files to translate or they have been updated on GitHub, it's simply a matter of copy/pasting the latest version of the .po file folder for your language to the "source" folder, as in point 3 above, replacing it.
+ From now on, when there are new files to translate or they have been updated on GitHub, it's only a matter of copy/pasting the latest version of the .po file folder for your language to the "source" folder, as in point 3 above, replacing it.
 
 #### Note on translation memories
 
