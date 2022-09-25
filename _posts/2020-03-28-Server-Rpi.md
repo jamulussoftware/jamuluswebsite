@@ -11,7 +11,7 @@ This guide shows you how to install Jamulus on a Raspberry Pi.
 
 ## Server Installation - Raspberry Pi
 
-We recommend you use the official armhf .deb files ([GUI download]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [headless download]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})).  However, you can still compile Jamulus for your Pi from source, if you wish.
+We now recommend you use the official armhf .deb files ([GUI download]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) [headless download]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})).  However, you can still compile Jamulus for your Pi from source, if you wish.
 
 **_Please ensure you have read the [server overview](/wiki/Running-a-Server)_**
 
