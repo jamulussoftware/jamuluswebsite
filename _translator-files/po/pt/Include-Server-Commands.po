@@ -17,114 +17,95 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:2
-#, no-wrap
-msgid "`-d`  or `--discononquit`   Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.  \n"
+msgid "`-d` or `--discononquit` Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:3
-#, no-wrap
-msgid "`-e`  or `--directoryserver`  Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](#server-types) for further information.\n"
+msgid "`-e` or `--directoryserver` Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](#server-types) for further information."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:4
-#, no-wrap
-msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information.\n"
+msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
-#, no-wrap
-msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only.\n"
+msgid "`-f` or `--listfilter` Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:6
-#, no-wrap
-msgid "`-F`  or `--fastupdate`     Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.\n"
+msgid "`-F` or `--fastupdate` Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:7
-#, no-wrap
-msgid "`-l`  or `--log`            Enable logging, set path and file name                                                                    \n"
+msgid "`-l` or `--log` Enable logging, set path and file name"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:8
-#, no-wrap
-msgid "`-L`  or `--licence`        Show an agreement window before users can connect\n"
+msgid "`-L` or `--licence` Show an agreement window before users can connect"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:9
-#, no-wrap
-msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
+msgid "`-m` or `--htmlstatus` Enable HTML status file, set path and file name"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:10
-#, no-wrap
-msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only\n"
+msgid "`-o` or `--serverinfo` Location details in the format: `[name];[city];[country as two-letter ISO country code or Qt5 Locale]` (see [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) or [Qt5 Locale values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:11
-#, no-wrap
-msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning)\n"
+msgid "`-P` or `--delaypan` Start with delay panning enabled See [notes](#delay-panning)"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:12
-#, no-wrap
-msgid "`-R`  or `--recording`      Set server recording directory; Server will record when a session is active by default. See [Options](#options).  \n"
+msgid "`-R` or `--recording` Set server recording directory; Server will record when a session is active by default. See [Options](#options)."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:13
-#, no-wrap
-msgid "`--norecord`                Set server not to record by default (when recording is configured e.g via `-R`)\n"
+msgid "`--norecord` Set server not to record by default (when recording is configured e.g via `-R`)"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:14
-#, no-wrap
-msgid "`-s` or `--server` Start in Server mode\n"
+msgid "`-s` or `--server` Start in Server mode"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:15
-#, no-wrap
-msgid "`--serverbindip`  Specify the IP address to bind to              \n"
+msgid "`--serverbindip` Specify the IP address to bind to"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:16
-#, no-wrap
-msgid "`-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more Clients\n"
+msgid "`-T` or `--multithreading` Use multithreading to make better use of multi-core CPUs to support more Clients"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:17
-#, no-wrap
-msgid "`-u` or `--numchannels`   Maximum number of channels (Clients)\n"
+msgid "`-u` or `--numchannels` Maximum number of channels (Clients)"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:18
-#, no-wrap
-msgid "`-w` or `--welcomemessage`  Welcome message on connect. Can be given as a string or filename, and can contain HTML.\n"
+msgid "`-w` or `--welcomemessage` Welcome message on connect. Can be given as a string or filename, and can contain HTML."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
-#, no-wrap
-msgid "`-z` or `--startminimized`  Start minimized\n"
+msgid "`-z` or `--startminimized` Start minimized"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
-#, no-wrap
-msgid "`--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)\n"
+msgid "`--serverpublicip` The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)"
 msgstr ""
