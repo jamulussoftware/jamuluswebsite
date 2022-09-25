@@ -127,7 +127,7 @@ The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com
 
 **[Behringer UCA222](https://www.behringer.com/product.html?modelCode=P0A31)** & **Behringer UCA202 U-Control**, 2-in/2-out USB Audio Interface with Digital Output
 
-**Windows**: 😐 Doesn't work great with [ASIO4ALL](http://www.asio4all.org/). Behringer withdrew support for a [native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) a while ago, and therefore removed it from their download section.
+**Windows**: 😐 Doesn't work great with [ASIO4ALL](http://www.asio4all.org/). Behringer withdrew support for a [native driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) a while ago, and removed it from their download section.
 
 **macOS**: ✅ Works better than on Windows.
 
@@ -378,7 +378,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **[Zoom H2N](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h2n-handy-recorder/)**, USB portable recorder
 
-**Windows**: ✅ Works. Latency is around 26ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/) and therefore a bit high. Driver can be downloaded from link to device and clicking "Support & Downloads".
+**Windows**: ✅ Works. Latency is around 26ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/), which is a bit high. Driver can be downloaded from link to device and clicking "Support & Downloads".
 
 **macOS**: ❓ Not yet tested
 
@@ -388,7 +388,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **[Zoom H2](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h2/)**, USB portable recorder
 
-**Windows**: ✅ Works. Latency is around 26 ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/) and therefore a bit high. Driver can be downloaded from link to device and clicking "Support & Downloads".
+**Windows**: ✅ Works. Latency is around 26 ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/), which is a bit high. Driver can be downloaded from link to device and clicking "Support & Downloads".
 
 **macOS**: ❓ Not yet tested
 
@@ -398,7 +398,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **[Zoom H1N](https://zoomcorp.com/en/us/handheld-recorders/handheld-recorders/h1n-handy-recorder/)**, USB portable recorder
 
-**Windows**: ✅ Works. Latency is around 22 ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/) and therefore a bit high. Driver can be downloaded from link to device and clicking "Support & Downloads".
+**Windows**: ✅ Works. Latency is around 22 ms (measured with local server with ping time of 0 ms) using "Stereo ASIO Driver" (06/02/2020) from [zoomcorp.com](https://zoomcorp.com/), which is a bit high. Driver can be downloaded from link to device and clicking "Support & Downloads".
 
 **macOS**: ❓ Not yet tested
 
