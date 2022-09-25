@@ -41,7 +41,7 @@ See also [Command Line Options](/wiki/Command-Line-Options) for other parameters
 
 ### To upgrade Jamulus
 
-Stop the server and simply obtainin the sources and compile as above.
+Stop the server, obtain the source code, and compile as above.
 
 If you want to install a specific release, you can do the following using git (where `[RELEASE]` is a release ID such as r3_5_8). See the [official tagged releases](https://github.com/jamulussoftware/jamulus/releases).
 
