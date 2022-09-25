@@ -101,23 +101,25 @@ If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you
 
 If you see a "mute" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero.
 
+Users are listed left to right in the order that they connect. You can change the sort order using the Edit option in the application menu.
+
 ### Grp button
 
 Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others. Up to 8 groups can be defined.
+You can isolate a channel from the group temporarily with shift-click-drag.
+
 
 ### Mute button
 
 Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected. 
 
-Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using "[Mute Myself](#mute-myself-button)".
+Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using "[Mute Myself](#mute-myself-button)".
 
 ### Solo button
 
 Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a "muted" icon above your fader.
 
-Users are listed left to right in the order that they connect. You can change the sort order using the Edit option in the application menu.
-
-You can group users together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag.
+### Recording notice
 
 If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
 
@@ -171,7 +173,7 @@ a different actual sound card channel can be selected.
 
 Selects the number of audio channels to be used for communication between Client and server. 
 
-**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.
+**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.
 
 There are three modes available:
 
@@ -213,7 +215,7 @@ The buffer setting is therefore a trade-off between audio quality and overall de
 ### Jitter Buffer
 
 The jitter buffer compensates for network and sound card timing jitters. The size of the buffer
-therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
+influences the quality of the audio stream (how many dropouts occur) and the overall delay
 (the longer the buffer, the higher the delay).
 
 You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter
