@@ -296,7 +296,9 @@ msgstr "Voorkomt dat je gebruikers hoort in je lokale mix. Houd er rekening mee 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:113
-msgid "Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
+#, fuzzy
+#| msgid "Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
+msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgstr "Houd er rekening mee dat het dempen van je **eigen** kanaal betekent dat je het signaal van de server niet zult horen (en dit wordt niet aangeraden omdat het ertoe kan leiden dat je niet meer gelijk bent met andere spelers). Dit is dus niet hetzelfde als het gebruik van \"[Demp mijzelf](#demp-mijzelf-knop)\"."
 
 #. type: Plain text
@@ -441,8 +443,9 @@ msgstr "Selecteert het aantal audiokanalen dat moet worden gebruikt voor communi
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:175
-#, no-wrap
-msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+#, fuzzy, no-wrap
+#| msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+msgid "**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
 msgstr "**Opmerking**: Het verdient de voorkeur om afzonderlijke client-instanties per stem/instrument te gebruiken, waarbij elke client zijn eigen ini-bestand krijgt, in plaats van dit ingebouwde monopaar naar stereomix te gebruiken.\n"
 
 #. type: Plain text
@@ -539,7 +542,9 @@ msgstr "### Jitterbuffer"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:218
-msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
+#, fuzzy
+#| msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
+msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgstr "De jitterbuffer compenseert voor netwerk- en geluidskaarttimingjitters. De grootte van de buffer heeft dus invloed op de kwaliteit van de audiostream (hoeveel dropouts zijn er) en de totale vertraging (hoe langer de buffer, hoe groter de vertraging)."
 
 #. type: Plain text

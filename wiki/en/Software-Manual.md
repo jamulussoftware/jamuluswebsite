@@ -109,7 +109,7 @@ Defines a group of audio channels. Moving the fader of one member of the group m
 
 Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected. 
 
-Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using "[Mute Myself](#mute-myself-button)".
+Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using "[Mute Myself](#mute-myself-button)".
 
 ### Solo button
 
@@ -171,7 +171,7 @@ a different actual sound card channel can be selected.
 
 Selects the number of audio channels to be used for communication between Client and server. 
 
-**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.
+**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.
 
 There are three modes available:
 
@@ -213,7 +213,7 @@ The buffer setting is therefore a trade-off between audio quality and overall de
 ### Jitter Buffer
 
 The jitter buffer compensates for network and sound card timing jitters. The size of the buffer
-therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay
+influences the quality of the audio stream (how many dropouts occur) and the overall delay
 (the longer the buffer, the higher the delay).
 
 You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter

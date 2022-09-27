@@ -41,7 +41,7 @@ This script takes all the .po files in `_translator-files/po/*LANG*/` and uses t
 This creates a file that provides information on the translation status of all .po files, for each language. It shows how many strings have been translated, how many remain to be translated and how many fuzzy matches (partially translated strings) there are in each file. This file is created as `contribute/en/Statistics.md` and like the target files, it is not stored in the repository.
 
 **po4a-cache.sh**:
-This simply contains a series of commands that are common to all the GitHub actions workflow files and is called when the relevant step is triggered.
+This script contains a series of commands that are common to all the GitHub actions workflow files and is called when the relevant step is triggered.
 
 **po4a-add-language.sh**:
 Triggered when a new language is added. First it creates a folder for the new language in `_translator-files/po/` and calls `po4a-update-templates.sh`to populate it with .po files. It also adds the new language code to the array in `/_config.yml` and creates a screenshots folder for it in `assets/img/`. Thus, when a new language is added, translators need only concern themselves with the files in their /po folder and don't have to worry about editing anything else other than creating screenshots in their language.
