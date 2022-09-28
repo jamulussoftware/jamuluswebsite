@@ -101,7 +101,7 @@ If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you
 
 If you see a "mute" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero.
 
-Users are listed left to right in the order that they connect. You can change the sort order using the Edit option in the application menu.
+Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu.
 
 ### Grp button
 
