@@ -43,7 +43,7 @@ See also [Command Line Options](/wiki/Command-Line-Options) for other parameters
 
 Stop the server, obtain the sources, and compile as above.
 
-If you want to install a specific release, you can do the following using git, where `[RELEASE]` is a release ID such as r3_5_8. (See the [official tagged releases](https://github.com/jamulussoftware/jamulus/releases).
+If you want to install a specific release, you can do the following using git, where `[RELEASE]` is a release ID such as r3_5_8. (See the [official tagged releases](https://github.com/jamulussoftware/jamulus/releases).)
 
 First, `cd` inside the directory in which the Jamulus sources were unpacked/downloaded, then use the following commands:
 
