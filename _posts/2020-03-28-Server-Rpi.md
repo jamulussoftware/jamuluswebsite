@@ -11,13 +11,13 @@ This guide shows you how to install Jamulus on a Raspberry Pi.
 
 ## Server Installation - Raspberry Pi
 
-We now recommend you use the official armhf .deb files ([GUI download]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) [headless download]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})).  However, you can still compile Jamulus for your Pi from source, if you wish.
+We recommend you use the official armhf .deb files ([GUI download]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [headless download]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})).  However, you can still compile Jamulus for your Pi from source, if you wish.
 
 **_Please ensure you have read the [server overview](/wiki/Running-a-Server)_**
 
 _Jamulus has been tested on a Raspberry Pi 4 2Gb by Jamulus user [SIVA Frédéric](https://sourceforge.net/u/fredsiva/profile/)_
 
-1. Install Raspbian Buster (allow [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) and [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) for comfort, but will ultimately run without VNC for higher speed)
+1. Install Raspbian Buster (Allow [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) and [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) for comfort, but will ultimately run without VNC for higher speed.)
 
 1. Edit [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) to enable boot without HDMI by adding `hdmi_force_hotplug=0`
 
@@ -25,7 +25,7 @@ _Jamulus has been tested on a Raspberry Pi 4 2Gb by Jamulus user [SIVA Frédéri
 
 This will build Jamulus and put it in `/usr/local/bin/Jamulus` (note the capital `J`).
 
-Connect Raspberry Pi with Ethernet cable to your router.
+Connect Raspberry Pi to your router using an Ethernet cable.
 
 If you are running a server, test by starting with the `--server` option, and watch GUI on VNC (or HDMI). When running as a client, you should see the GUI start.
 
@@ -35,15 +35,15 @@ If all is well, run in your chosen [server mode](/wiki/Choosing-a-Server-Type) a
 
 `sudo chrt 99 ionice -c1 nice -n -20 Jamulus -s -n -e [yourCentralServer] -o "yourServerName;yourCity;[country ID]"&`
 
-**Please also see this [important note on Directory Servers](/wiki/Directory-Servers).**
+**Please see this [important note on Directory Servers](/wiki/Directory-Servers).**
 
 See also [Command Line Options](/wiki/Command-Line-Options) for other parameters you can set.
 
 ### To upgrade Jamulus
 
-Stop the server and simply obtainin the sources and compile as above.
+Stop the server, obtain the sources, and compile as above.
 
-If you want to install a specific release, you can do the following using git (where `[RELEASE]` is a release ID such as r3_5_8). See the [official tagged releases](https://github.com/jamulussoftware/jamulus/releases).
+If you want to install a specific release, you can do the following using git, where `[RELEASE]` is a release ID such as r3_5_8. (See the [official tagged releases](https://github.com/jamulussoftware/jamulus/releases).
 
 First, `cd` inside the directory in which the Jamulus sources were unpacked/downloaded, then use the following commands:
 
