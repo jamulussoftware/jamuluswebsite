@@ -17,11 +17,11 @@ We recommend you use the official armhf .deb files ([GUI download]({{ site.downl
 
 _Jamulus has been tested on a Raspberry Pi 4 2Gb by Jamulus user [SIVA Frédéric](https://sourceforge.net/u/fredsiva/profile/)_
 
-1. Install Raspbian Buster (Allow [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) and [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) for comfort, but will ultimately run without VNC for higher speed.)
+1. Install Raspbian Buster (allow [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) and [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) for comfort, but ultimately run without VNC for higher speed)
 
 1. Edit [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) to enable boot without HDMI by adding `hdmi_force_hotplug=0`
 
-1. [Compile Jamulus for Linux](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md).
+1. [Compile Jamulus for Linux](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md)
 
 This will build Jamulus and put it in `/usr/local/bin/Jamulus` (note the capital `J`).
 
