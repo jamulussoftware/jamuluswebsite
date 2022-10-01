@@ -47,4 +47,4 @@ Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulusso
 
 Jamulus has been installed and can be used now. You can now take a look at the
 
-[Jamulus setup page](Getting-Started){: .button}
+[Getting Started page](Getting-Started){: .button}

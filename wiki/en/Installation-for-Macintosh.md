@@ -39,4 +39,4 @@ You will then get a slightly different version of the same message, which allows
 
 Take a look at the
 
-[Jamulus setup page](Getting-Started){: .button}
+[Getting Started page](Getting-Started){: .button}
