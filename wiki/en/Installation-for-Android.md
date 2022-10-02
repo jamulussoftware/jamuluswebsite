@@ -34,4 +34,4 @@ We are very happy to get feedback from Android users and developers. Just head o
 
 Jamulus has been installed and can be used now. You can now take a look at the
 
-[Jamulus setup page](Getting-Started){: .button}
+[Getting Started page](Getting-Started){: .button}

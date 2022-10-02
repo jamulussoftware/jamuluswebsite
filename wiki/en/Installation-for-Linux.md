@@ -62,4 +62,4 @@ If you get problems with sound breaking up (in particular XRUN errors reported b
 
 Take a look at the
 
-[Jamulus setup page](Getting-Started){: .button}
+[Getting Started page](Getting-Started){: .button}
