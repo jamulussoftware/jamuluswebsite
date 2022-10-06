@@ -11,6 +11,8 @@ permalink: "/wiki/Installation-for-Windows"
 
 Make sure you read the [Getting Started](Getting-Started) page.
 
+{% include infobox_each_os.html %}
+
 Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
 
 1. **Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.

@@ -12,6 +12,8 @@ permalink: "/wiki/Installation-for-Android"
 
 Make sure you've already read the [Getting Started](Getting-Started) page.
 
+{% include infobox_each_os.html %}
+
 ## Things to note about Android
 
 Although you **can** install Jamulus on Android devices (and hear sound), we strongly recommend **not** doing so. Sound quality - especially over WiFi - is usually bad and latency is high. If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target="_blank" rel="noopener noreferrer" } which is an inexpensive and small device that performs very well with Jamulus. Android support is just a proof of concept.

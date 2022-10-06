@@ -11,6 +11,8 @@ permalink: "/wiki/Installation-for-Linux"
 
 Make sure you read the [Getting Started](Getting-Started) page.
 
+{% include infobox_each_os.html %}
+
 Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
 
 ### Debian and Ubuntu
