@@ -238,7 +238,7 @@ Upload all the files. Then in the SourceForge web UI, for each of the files uplo
 
 ## Website: check links
 
-We have used [linkcheck](https://github.com/filiph/linkcheck) in the past. 
+We have used [linkcheck](https://github.com/filiph/linkcheck) in the past.
 
 ```
 $ git clone https://github.com/jamulussoftware/jamuluswebsite.git
@@ -308,7 +308,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Update download links on the website by editing `_config.yml` in `next-release`
   - [ ] Disable branch protection rule of the `release` branch by clicking on "Edit" on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches) and adding a `_` behind `release`.  
   - [ ] Publish Website release by **squashing** and merging `next-release` into `release`
-  - [ ] Enable branch protection rule of the `release` branch after the site and the `.po` files are published by removing the `_` from the branch protection rule you edited on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches). 
+  - [ ] Enable branch protection rule of the `release` branch after the site and the `.po` files are published by removing the `_` from the branch protection rule you edited on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches).
 - [ ] Announce the new release with a summary of changes (+ link to the changelog for details) and a link to the download page
     - [ ] On Github Discussions in the Announcements section. Lock the announcement thread. Pin the thread. Unpin and lock release candidate thread.
     - [ ] On Facebook in the group "Jamulus (official group)". Turn off replies.
@@ -349,6 +349,7 @@ _Windows users: Please note that in the first days after release SmartScreen wil
 **[↓ macOS (Apple Silicon)](<!-- direct link to macOS SIGNED ARM version -->)** for Big Sur (11.0) or later (needs ARM chip)
 **[↓ Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] version -->)
 **[↓ Debian/Ubuntu (armhf)](<!-- direct link to .deb [GUI] armhf version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] armhf version -->)
+**[↓ Debian/Ubuntu (arm64)](<!-- direct link to .deb [GUI] armhf version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] arm64 version -->)
 **[↓ Android](<!-- direct link to Android version -->)** (experimental)
 **[↓ iOS](<!-- direct link to iOS version -->)** (experimental. Unsigned: Needs to be signed before installation on device. Please see the [iOS install page](https://jamulus.io/wiki/Installation-for-iOS))
 
