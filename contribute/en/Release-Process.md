@@ -345,8 +345,7 @@ Please find all the details in the [Changelog](https://github.com/jamulussoftwar
 _Windows users: Please note that in the first days after release SmartScreen will probably display warnings about this release being unknown upon download and/or execution of the installer. Let us know when you do not see this warning anymore and we will update this announcement accordingly._
 
 **[↓ Windows](<!-- direct link to Windows version -->)** (ASIO version), alternative: [↓ JACK version](<!-- direct link to JACK version -->)
-**[↓ macOS (Intel)](<!-- direct link to macOS SIGNED Intel version -->)** for Catalina (10.15) and higher and [↓ macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Mojave (10.14) down to Yosemite (10.10).
-**[↓ macOS (Apple Silicon)](<!-- direct link to macOS SIGNED ARM version -->)** for Big Sur (11.0) or later (needs ARM chip)
+**[↓ macOS (Universal)](<!-- direct link to macOS SIGNED Universal version -->)** for Catalina (10.15) and higher and [↓ macOS legacy build](<!-- direct link to macOS legacy version -->) (unsigned) for macOS Mojave (10.14) down to Yosemite (10.10).
 **[↓ Debian/Ubuntu (amd64)](<!-- direct link to .deb [GUI] version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] version -->)
 **[↓ Debian/Ubuntu (armhf)](<!-- direct link to .deb [GUI] armhf version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] armhf version -->)
 **[↓ Debian/Ubuntu (arm64)](<!-- direct link to .deb [GUI] armhf version -->)**, alternative: [↓ headless version](<!-- direct link to .deb [headless] arm64 version -->)
