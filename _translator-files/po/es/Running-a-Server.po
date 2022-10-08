@@ -237,7 +237,9 @@ msgstr "La mayoría de las personas ejecutan Jamulus como Servidor \"puro\" en *
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:83
-msgid "If you want to run a Server on a Raspberry Pi (or a different armhf based device), you will need to download the `.deb` files for `armhf`, not the default `amd64` ones you'd use on an Intel/AMD based machine."
+#, fuzzy
+#| msgid "If you want to run a Server on a Raspberry Pi (or a different armhf based device), you will need to download the `.deb` files for `armhf`, not the default `amd64` ones you'd use on an Intel/AMD based machine."
+msgid "If you want to run a Server on a Raspberry Pi (or a different armhf/arm64 debian-based device), you will need to download the `.deb` files for 32 bit `armhf` or 64 bit `arm64`, not the default `amd64` ones you'd use on an Intel/AMD based machine."
 msgstr "Si quieres ejecutar un Servidor en un Raspberry Pi (u otro dispositivo basado en armhf), tendrás que descargarte los archivos `.deb` para `armhf`, no los `amd64` que utilizarías por defecto en una máquina basada en Intel/AMD."
 
 #. type: Plain text
@@ -247,7 +249,9 @@ msgstr "### Instalación"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:88
-msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})"
+#, fuzzy
+#| msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})"
+msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or the [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }})"
 msgstr "Descarga el [último archivo .deb para headless (amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) o si utilizas Raspberry Pi etc. descarga [el último archivo .deb para armhf]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})"
 
 #. type: Plain text
@@ -257,7 +261,9 @@ msgstr "Actualiza apt para asegurarte de que tienes la lista actual de paquetes 
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:90
-msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`"
+#, fuzzy
+#| msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`"
+msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc. armhf: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`"
 msgstr "Instala el paquete de Jamulus: `sudo apt install ./{{ site.download_file_names.deb-headless }}` o para RasPi etc: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`"
 
 #. type: Plain text
