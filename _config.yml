@@ -2,7 +2,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-polyglot
   - jekyll-minifier
-languages:                   ["en", "nl", "es", "de", "it", "fr", "pt"]
+languages:                   ["en", "pt_BR", "nl", "es", "de", "it", "fr", "pt"]
 default_lang:                "en"
 exclude_from_localization:   ["assets", "images", "css", "README.md", "manifest.json", "humans.txt", "sitemap.xml", "robots.txt", "404.html", "CNAME", "LICENSE.md"]
 parallel_localization:       true
@@ -12,13 +12,14 @@ a_rootpage:                  "https://jamulus.io"
 download_root_link:          "https://github.com/jamulussoftware/jamulus/releases/download/r3_9_0/"
 download_file_names:
   deb-gui:                   "jamulus_3.9.0_ubuntu_amd64.deb"
-  deb-headless:              "jamulus_headless_3.9.0_ubuntu_amd64.deb"
+  deb-headless:              "jamulus-headless_3.9.0_ubuntu_amd64.deb"
   deb-gui-armhf:             "jamulus_3.9.0_ubuntu_armhf.deb"
-  deb-headless-armhf:        "jamulus_headless_3.9.0_ubuntu_armhf.deb"
+  deb-headless-armhf:        "jamulus-headless_3.9.0_ubuntu_armhf.deb"
+  deb-gui-arm64:             "jamulus_3.9.0_ubuntu_arm64.deb"
+  deb-headless-arm64:        "jamulus-headless_3.9.0_ubuntu_arm64.deb"
   windows:                   "jamulus_3.9.0_win.exe"
   windows-jack:              "jamulus_3.9.0_win_jack.exe"
   mac:                       "jamulus_3.9.0_mac.dmg"
-  mac-arm:                   "jamulus_3.9.0_mac_arm64.dmg"
   mac-legacy:                "jamulus_3.9.0_mac_legacy.dmg"
   android:                   "jamulus_3.9.0_android.apk"
   ios:                       "jamulus_3.9.0_iOSUnsigned.ipa"

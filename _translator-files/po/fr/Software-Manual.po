@@ -6,17 +6,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-08-04 01:28+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: fr_FR\n"
+"PO-Revision-Date: 2022-09-28 19:55+0000\n"
+"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/jamulus/software-manual/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 3.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -299,10 +299,8 @@ msgstr "Empêche les utilisateurs d'être entendus dans votre mixage local. Sach
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:113
-#, fuzzy
-#| msgid "Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
-msgstr "Notez que le fait de mettre votre **propre** canal en sourdine signifie simplement que vous n'entendrez pas votre signal revenant du serveur (et n'est pas conseillé car cela peut vous conduire à être en décalage avec les autres musiciens). Ce n'est donc pas la même chose que d'utiliser \"[Me silencer](#bouton-me-silencer)\"."
+msgstr "Notez que le fait de mettre votre **propre** canal en sourdine signifie uniquement que vous n'entendrez pas votre signal revenant du serveur (et n'est pas conseillé car cela peut vous conduire à être en décalage avec les autres musiciens). Ce n'est donc pas la même chose que d'utiliser \"[Me silencer](#bouton-me-silencer)\"."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:115
@@ -446,10 +444,9 @@ msgstr "Permet de sélectionner le nombre de canaux audio à utiliser pour la co
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:175
-#, fuzzy, no-wrap
-#| msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+#, no-wrap
 msgid "**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
-msgstr "**Note** : Il est préférable d'exécuter des instances de client séparées par voix/instrument, avec chaque client ayant son propre fichier ini, plutôt que d'utiliser ce mélangeur intégré de paire mono à stéréo.\n"
+msgstr "**Note** : c'est mieux d'exécuter des instances de client séparées par voix/instrument, où chaque client a son propre fichier ini, plutôt que d'utiliser ce mélangeur intégré de paire mono à stéréo.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:177
@@ -545,10 +542,8 @@ msgstr "### Tampon de gigue"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:218
-#, fuzzy
-#| msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
-msgstr "Le tampon de gigue compense les glissements de temps du réseau et de la carte son. La taille de la mémoire tampon. La taille de la mémoire tampon influe donc sur la qualité du flux audio (nombre d'interruptions) et sur le délai global (plus la mémoire tampon est longue, plus le délai est élevé)."
+msgstr "Le tampon de gigue compense les glissements de temps du réseau et de la carte son. La taille de la mémoire tampon influe sur la qualité du flux audio (nombre d'interruptions) et sur le délai global (plus la mémoire tampon est longue, plus le délai est élevé)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:222
@@ -597,13 +592,13 @@ msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-advanced.inc %
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:244
-msgid "### Custom directory server address"
-msgstr "### Adresse du serveur de répertoire personnalisé"
+msgid "### Custom Directories"
+msgstr "### Annuaires personnalisés"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:246
-msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
-msgstr "Laissez ce champ vide, sauf si vous devez entrer l'adresse d'un annuaire autre que celui par défaut."
+msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
+msgstr "Si vous devez ajouter des adresses d'annuaires autres que celles qui sont intégrées, vous pouvez le faire ici."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:248
@@ -752,6 +747,9 @@ msgstr "{% include_relative Include-Client-Commands.md %}"
 #: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
+
+#~ msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
+#~ msgstr "Laissez ce champ vide, sauf si vous devez entrer l'adresse d'un annuaire autre que celui par défaut."
 
 #~ msgid "{% include_relative Include-QOS-Windows.md %}"
 #~ msgstr "{% include_relative Include-QOS-Windows.md %}"

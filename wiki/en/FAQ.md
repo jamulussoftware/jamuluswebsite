@@ -28,7 +28,7 @@ Bear in mind also that all participants should follow [The Golden Rule](/wiki/Cl
 
 ### How do I know if I can join a Server? Are there rules?
 
-In general, if somebody lists a Server on one of the Public Directories provided by Jamulus by default, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms built in. However, some Servers may state their policies in the welcome message you will see in the chat window.
+If somebody lists a Server on one of the Directories built into Jamulus, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. Whilst some Servers may state their policies in the welcome message you will see in the chat window, Jamulus itself does nothing to enforce these.
 
 Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types).
 
@@ -71,5 +71,4 @@ Adding video support adds a lot of complexity. You can use other software like J
 Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall.
 
 However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding.
-
 

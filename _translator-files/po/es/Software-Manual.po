@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-28 12:22+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-09-28 19:55+0000\n"
+"Last-Translator: ignotus <darylo1@hotmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -282,7 +283,7 @@ msgstr "### Botón Grp"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:107
 msgid "Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others. Up to 8 groups can be defined."
-msgstr "Define un grupo de canales de audio. Mover el fader de un miembro del grupo mueve los faders de todos los demás.  Se pueden definir hasta 8 grupos."
+msgstr "Define un grupo de canales de audio. Mover el fader de un miembro del grupo mueve los faders de todos los demás. Se pueden definir hasta 8 grupos."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:109
@@ -296,10 +297,8 @@ msgstr "Evita que se escuche a otros usuarios en tu mezcla local. Ten en cuenta 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:113
-#, fuzzy
-#| msgid "Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
-msgstr "Ten en cuenta que silenciar tu **propio** canal simplemente significa que no escucharás tu señal desde el servidor (y no se aconseja ya que puede llevar a que pierdas la sincronización con las demás personas). Por lo tanto, esto no es lo mismo que utilizar \"[Silenciarme Yo](#botón-de-silenciarme-yo)\"."
+msgstr "Ten en cuenta que silenciar tu **propio** canal solo significa que no escucharás tu señal desde el servidor (y no se aconseja ya que puede llevar a que pierdas la sincronización con las demás personas). Por lo tanto, esto no es lo mismo que utilizar \"[Silenciarme Yo](#botón-de-silenciarme-yo)\"."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:115
@@ -443,10 +442,9 @@ msgstr "Selecciona el número de canales de audio a utilizar para la comunicaci�
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:175
-#, fuzzy, no-wrap
-#| msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+#, no-wrap
 msgid "**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
-msgstr "**Nota**: Es preferible ejecutar instancias separadas del Cliente para cada voz/instrumento, donde cada Cliente tiene su propio archivo ini, en lugar de utilizar este mezclador interno de dos canales mono a estéreo.\n"
+msgstr "**Nota**: Es mejor ejecutar instancias separadas del Cliente para cada voz/instrumento, donde cada Cliente tiene su propio archivo ini, en lugar de utilizar este mezclador interno de dos canales mono a estéreo.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:177
@@ -542,10 +540,8 @@ msgstr "### Jitter Buffer"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:218
-#, fuzzy
-#| msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
-msgstr "El jitter buffer compensa el jitter de la red y la tarjeta de sonido. El tamaño de este buffer tiene por tanto un impacto sobre la calidad del flujo de audio (el número de caídas de la señal) y el retardo total (a mayor buffer, mayor retardo)."
+msgstr "El jitter buffer compensa el jitter de la red y la tarjeta de sonido. El tamaño de este buffer tiene un impacto sobre la calidad del flujo de audio (el número de caídas de la señal) y el retardo total (a mayor buffer, mayor retardo)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:222
@@ -594,13 +590,13 @@ msgstr "<figure><img src=\"{% include img/es-screenshots/settings-advanced.inc %
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:244
-msgid "### Custom directory server address"
-msgstr "### Dirección personalizada de servidor de directorio"
+msgid "### Custom Directories"
+msgstr "### Directorios Personalizados"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:246
-msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
-msgstr "Deja esto en blanco a menos que necesites escribir la dirección de un servidor de directorio distinto a los que hay por defecto."
+msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
+msgstr "Si necesitas añadir direcciones de Directorios distintas a las incluidas, lo puedes hacer aquí."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:248
@@ -749,6 +745,9 @@ msgstr "{% include_relative Include-Client-Commands.md %}"
 #: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
+
+#~ msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
+#~ msgstr "Deja esto en blanco a menos que necesites escribir la dirección de un servidor de directorio distinto a los que hay por defecto."
 
 #~ msgid "{% include_relative Include-QOS-Windows.md %}"
 #~ msgstr "{% include_relative Include-QOS-Windows.md %}"

@@ -240,9 +240,9 @@ rate is not higher than your available internet upload speed (check this with a 
 
 <figure><img src="{% include img/en-screenshots/settings-advanced.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of advanced settings window"></figure>
 
-### Custom directory server address
+### Custom Directories
 
-Leave this blank unless you need to enter the address of a directory server other than the default.
+If you need to add Directory addresses other than the built-in ones, you can do so here.
 
 ### New Client Level
 
@@ -272,7 +272,7 @@ You can save and restore the mix you have for your band rehearsals (fader, mute,
 
 ### Edit > Auto-Adjust All Faders 
 
-Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece. 
+Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece.
 
 # Backing up Jamulus
 
