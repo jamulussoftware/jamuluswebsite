@@ -11,6 +11,8 @@ permalink: "/wiki/Installation-for-Macintosh"
 
 Make sure you've already read the [Getting Started](Getting-Started) page.
 
+{% include infobox_each_os.html %}
+
 Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
 
 1. [Download Jamulus (Universal build)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\
