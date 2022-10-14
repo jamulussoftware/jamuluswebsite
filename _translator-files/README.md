@@ -1,6 +1,6 @@
 # Website docs translation:
 
-The recommended way to translate the website documentation is by using [Weblate](https://hosted.weblate.org/projects/jamulus/). If you don't already have one, we recommend that you create a GitHub account and log in to Weblate using that.  If you are comfortable using GitHub and .po file editors, and still want to contribute your translation via a pull request, the files for each language are contained in: `_translator-files/po/LANGUAGE/`. You can find a guide on .po file editors [here](https://jamulus.io/kb/2022/08/04/Translating-po-files.html). Please make your PR against the `next-release` branch.
+The recommended way to translate the website documentation is by using [Weblate](https://hosted.weblate.org/projects/jamulus/). If you don't already have one, we recommend that you create a GitHub account and log in to Weblate using that. If you are comfortable using GitHub and .po file editors, and still want to contribute your translation via a pull request, the files for each language are contained in: `_translator-files/po/LANGUAGE/`. You can find a guide on .po file editors [here](https://jamulus.io/kb/2022/08/04/Translating-po-files.html). Please make your PR against the `next-release` branch.
 
 All the Jamulus project files (application and website) are listed together on Weblate. The files ("components") corresponding to the application itself are "Jamulus app" and "Windows Installer". All the rest correspond to the website.
 
