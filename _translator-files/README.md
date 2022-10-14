@@ -6,11 +6,11 @@ All the Jamulus project files (application and website) are listed together on W
 
 **Some tips regarding translations:**
 
-- Change the `lang: en` parameter in the files containing it at the beginning of the file to your language code (it, fr, de, etc.). Remember that if you are translating a regional variation (e.g. `pt_BR`), that's what you must use. Also make sure the `permalink: [parameter]` (e.g. /wiki/Client-Troubleshooting) stays the same
+- Change the `lang: en` parameter in the files containing it at the beginning of the file to your language code (it, fr, de, etc.). Remember that if you are translating a regional variation (e.g. `pt_BR`), that's what you must use. Also make sure the `permalink: [parameter]` (e.g. /wiki/Client-Troubleshooting) stays the same.
 - At times there are links to other docs: `[translate this](don't translate this)`, or specific paragraphs in other parts of the website: `[translate this](don't translate this#translate-this-but-don't-use-capitals)`. Make sure the last part after the hashtag uses the exact same words as the relevant paragraph title you use in your translation.
 - Some documents contain links to screenshots. Make sure you change the language code in them to your own. You can create screenshots for your language in `/assets/img/[LANG]-screenshots` - note that we do not store these image locally but instead use include files calling an external URL to them. Please see README.md on the website repository for further information. Also note that screenshots that do not need to be localised are symlinked to the English version from each `[LANG]-screenshots` directory.
 - There are documents containing portions of text that do not require translation, e.g. scripts, links, etc. In these cases, please do not leave the translation field empty, but copy the source text into the translation field.
-- Pull Requests for translations should have a title which looks like this: `Update [lang] web translation for [release number]`
+- If editing the po file directly, rather than using Weblate, please make sure your pull requests for translations should have a title which looks like this: `Update [lang] web translation for [release number]`.
 
 **Please note: if your language has no translated documents, please start with the following:**
 

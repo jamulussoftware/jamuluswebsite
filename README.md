@@ -8,7 +8,11 @@ This is the content repository for [jamulus.io](https://jamulus.io). Text appear
 <img src="https://hosted.weblate.org/widgets/jamulus/-/multi-auto.svg" alt="Translation status" />
 </a>
 
-The Jamulus application and website are translated using [Weblate](https://hosted.weblate.org/engage/jamulus/), where you can check the status of each separate file. If you would like to help with translations, before you start, please read the instructions for [translating the website](https://github.com/jamulussoftware/jamuluswebsite/tree/release/_translator-files) or the [Jamulus application](https://github.com/jamulussoftware/jamulus/blob/master/docs/TRANSLATING.md). If you prefer you may also submit translations via Pull Requests. Introduce yourself on the [GitHub Discussions](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
+The Jamulus application and website are translated using [Weblate](https://hosted.weblate.org/engage/jamulus/), where you can check the status of each separate file. If you would like to help with translations, before you start, please read the instructions for [translating the website](https://github.com/jamulussoftware/jamuluswebsite/tree/release/_translator-files) or the [Jamulus application](https://github.com/jamulussoftware/jamulus/blob/master/docs/TRANSLATING.md).
+
+Introduce yourself on the [GitHub Discussions](https://github.com/jamulussoftware/jamulus/discussions) and tell us what you’d like to do.
+
+If you prefer to submit translations via pull requests rather than using Weblate, feel free to do so. However, make sure you coordinate with other possible translators to your language in order to avoid duplicating work and the risk of conflicts on GitHub.
 
 ***PLEASE NOTE:*** Discussions should be in English so as to be open to all.
 
