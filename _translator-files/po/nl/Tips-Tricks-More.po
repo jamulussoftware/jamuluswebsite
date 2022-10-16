@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-14 06:56+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-10-13 11:24+0000\n"
+"Last-Translator: Henk De Groot <henk@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Tips-Tricks-More.md:1
@@ -91,23 +92,19 @@ msgstr "## De Jamulus-client gebruiken"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:27
-#, fuzzy
-#| msgid "### Have a undisturbed session on any Server"
 msgid "### Have an undisturbed session on any Server"
 msgstr "### Zorg voor een ongestoorde sessie op elke server"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:29
-#, fuzzy
-#| msgid "You can have a \"private\", undisturbed session with other people on any Server, including publically listed Servers, by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information)."
 msgid "You can have an undisturbed session with other people on any Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server."
-msgstr "Je kunt een \"privé\", ongestoorde sessie hebben met andere mensen op elke server, inclusief openbaar vermelde servers, door simpelweg voor iedereen de solo optie in te schakelen. Je kunt dan niemand anders horen als ze je server betreden (merk op dat dit hen er niet van weerhoudt jullie te horen, de chatfunctie te gebruiken of de profielinformatie te zien)."
+msgstr "Je kunt een ongestoorde sessie hebben met andere mensen op elke server door simpelweg voor iedereen de solo optie in te schakelen. Je kunt dan niemand anders horen als ze je server betreden."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:31
 #, no-wrap
 msgid "**NOTE:** This does not stop people from hearing you, using the chat function, or seeing your profile information.\n"
-msgstr ""
+msgstr "**Opmerking:** Dit weerhoudt mensen er niet van om jullie te horen, de chatfunctie te gebruiken of de profielinformatie te zien.\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:33
@@ -268,10 +265,9 @@ msgstr "Zorg ervoor dat je de uitvoerpoort van je MIDI-apparaat aansluit op de J
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:100
-#, fuzzy, no-wrap
-#| msgid "*Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to \"View\" on the top menu bar and choose \"Sort Users by Name\".\n"
+#, no-wrap
 msgid "*Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to \"View\" on the top menu bar and switch between \"No User Sorting\" and another option and then back again (e.g. type `Ctrl+N`, `Ctrl+O`).\n"
-msgstr "*Tip*: Wanneer je MIDI-besturing in Jamulus inschakelt dan wordt de naam van iedere gebruiker voorafgegaan door een nummer, waarbij de meest linkse gebruiker begint bij 0, dan 1, enz. Met standaardinstellingen, wanneer gebruikers de sessie verlaten en anderen erbij komen, kan het zijn dat de links-rechts volgorde in de GUI niet meer overeenkomt met de numerieke volgorde waardoor het moeilijker wordt om te weten wie met welke fysieke fader/knop op jouw MIDI-controller overeenkomt. Om de faders in numerieke volgorde te houden, ga je naar \"Weergave\" in de menubalk en kies je \"Sorteer muzikanten op Naam\".\n"
+msgstr "*Tip*: Wanneer je MIDI-besturing in Jamulus inschakelt dan wordt de naam van iedere gebruiker voorafgegaan door een nummer, waarbij de meest linkse gebruiker begint bij 0, dan 1, enz. Met standaardinstellingen, wanneer gebruikers de sessie verlaten en anderen erbij komen, kan het zijn dat de links-rechts volgorde in de GUI niet meer overeenkomt met de numerieke volgorde waardoor het moeilijker wordt om te weten wie met welke fysieke fader/knop op jouw MIDI-controller overeenkomt. Om de faders in numerieke volgorde te houden, ga je naar \"Weergave\" in de menubalk en wissel je tussen de \"Kanalen niet sorteren\" en een andere optie en dan weer terug (bijv. typ `Ctrl+N`, `Ctrl+O`).\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:102
@@ -280,17 +276,13 @@ msgstr "## Voor serverbeheerders"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:104
-#, fuzzy
-#| msgid "### Converting a public Server to a private one on the fly"
 msgid "### Converting a Registered Server to an Unregistered one on the fly"
-msgstr "### On-the-fly een openbare server naar een privéserver omzetten"
+msgstr "### On-the-fly een geregistreerde server naar een niet geregistreerde server omzetten"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:106
-#, fuzzy
-#| msgid "You can run a public Server long enough for your band to connect, then go private by simply unchecking the 'Make my Server Public' box in the Server GUI. Your band mates will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)"
 msgid "You can run as a Registered Server long enough for your band to connect, then go \"private\" (Unregistered) by setting the Directory to \"none\" in the Server GUI. Your band mates will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)"
-msgstr "Je kunt een openbare server draaien die lang genoeg beschikbaar is om je band verbinding te laten maken en vervolgens kun je prive gaan door simpelweg het vakje 'Maak mijn server openbaar' in de server GUI uit te vinken. Je bandleden zijn nog steeds verbonden met de server totdat ze de verbinding verbreken.(Met dank aan [David Savinkoff](https://github.com/DavidSavinkoff) voor deze tip!)"
+msgstr "Je kunt een geregistreerde server draaien die lang genoeg beschikbaar is om je band verbinding te laten maken en vervolgens kun je \"prive\" (niet geregistreerd) gaan door het adresboek in de server GUI op \"Geen\" te zetten. Je bandleden zijn nog steeds verbonden met de server totdat ze de verbinding verbreken.(Met dank aan [David Savinkoff](https://github.com/DavidSavinkoff) voor deze tip!)"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:108

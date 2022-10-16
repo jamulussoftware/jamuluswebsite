@@ -6,21 +6,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-28 11:57+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-10-12 20:27+0000\n"
+"Last-Translator: Henk De Groot <henk@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:2
-#, fuzzy
-#| msgid "`-d`  or `--discononquit`   Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.  \n"
 msgid "`-d` or `--discononquit` Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server."
-msgstr "`-d`  of `--discononquit`   Verbreek de verbinding met alle clients bij afsluiten. Normaal gesproken, wanneer een server wordt gestopt of opnieuw wordt opgestart, zullen alle clients die hun \"Verbinding verbreken\"-knop niet hebben gebruikt, de verbinding herstellen wanneer de server weer actief is. Als je deze optie gebruikt, worden clients gedwongen hun verbinding met de server handmatig opnieuw tot stand te brengen.  \n"
+msgstr "`-d` of `--discononquit` Verbreek de verbinding met alle clients bij afsluiten. Normaal gesproken, wanneer een server wordt gestopt of opnieuw wordt opgestart, zullen alle clients die hun \"Verbinding verbreken\"-knop niet hebben gebruikt, de verbinding herstellen wanneer de server weer actief is. Als je deze optie gebruikt, worden clients gedwongen hun verbinding met de server handmatig opnieuw tot stand te brengen."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:3
@@ -31,52 +30,38 @@ msgstr "`-e`  of `--directoryserver`  Registreer de server op een adresboek (bij
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:4
-#, fuzzy
-#| msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Custom-Directories) for further information. \n"
 msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information."
-msgstr "`--directoryfile` Onthoud geregistreerde servers, zelfs als het adresboek opnieuw wordt gestart. Alleen adresboek servers. Zie [deze handleiding](Custom-Directories) voor meer informatie. \n"
+msgstr "`--directoryfile` Onthoud geregistreerde servers, zelfs als het adresboek opnieuw wordt gestart. Alleen adresboek servers. Zie [deze handleiding](Directories) voor meer informatie."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
-#, fuzzy
-#| msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
 msgid "`-f` or `--listfilter` Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only."
-msgstr "`-f`  of `--listfilter`     Whitelist-servers die zich registreren op de serverlijst, formaat `ip-adres 1[;ip-adres 2]`. Alleen voor adresboeken. \n"
+msgstr "`-f` of `--listfilter` Whitelist-servers die zich registreren op de serverlijst, formaat `ip-adres 1[;ip-adres 2]`. Alleen voor adresboeken."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:6
-#, fuzzy
-#| msgid "`-F`  or `--fastupdate`     Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.\n"
 msgid "`-F` or `--fastupdate` Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
-msgstr "`-F`  of `--fastupdate`     Vermindert de latency als clients verbinding maken met de optie \"Kleine netwerkbuffers inschakelen\". Vereist een snellere CPU om uitval te voorkomen en meer bandbreedte voor clients die dit ingeschakeld hebben.\n"
+msgstr "`-F` of `--fastupdate` Vermindert de latency als clients verbinding maken met de optie \"Kleine netwerkbuffers inschakelen\". Vereist een snellere CPU om uitval te voorkomen en meer bandbreedte voor clients die dit ingeschakeld hebben."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:7
-#, fuzzy
-#| msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
 msgid "`-l` or `--log` Enable logging, set path and file name"
-msgstr "`-m`  of `--htmlstatus`     HTML-statusbestand inschakelen, pad en bestandsnaam instellen\n"
+msgstr "`-l` of `--log` Loggen inschakelen, pad en bestandsnaam instellen"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:8
-#, fuzzy
-#| msgid "`-L`  or `--licence`        Show an agreement window before users can connect\n"
 msgid "`-L` or `--licence` Show an agreement window before users can connect"
-msgstr "`-L`  of `--licence`        Laat een venster zien voordat gebruikers verbinding kunnen maken\n"
+msgstr "`-L` of `--licence` Laat een overeenkomst venster zien voordat gebruikers verbinding kunnen maken"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:9
-#, fuzzy
-#| msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
 msgid "`-m` or `--htmlstatus` Enable HTML status file, set path and file name"
-msgstr "`-m`  of `--htmlstatus`     HTML-statusbestand inschakelen, pad en bestandsnaam instellen\n"
+msgstr "`-m` of `--htmlstatus` HTML-statusbestand inschakelen, pad en bestandsnaam instellen"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:10
-#, fuzzy
-#| msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only\n"
 msgid "`-o` or `--serverinfo` Location details in the format: `[name];[city];[country as two-letter ISO country code or Qt5 Locale]` (see [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) or [Qt5 Locale values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only"
-msgstr "`-o`  of `--serverinfo`     Locatie details in het formaat:  `[naam];[stad];[locale waarde]` (zie [waarden](https://doc.qt.io/qt-5/qlocale.html#Country-enum)). Alleen geregistreerde servers.\n"
+msgstr "`-o` of `--serverinfo` Locatie details in het formaat: `[naam];[stad];[land als tweeletterige ISO landcode of Qt5 locale waarde]` (zie [tweeletterige ISO landcodes](https://nl.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officieel_toegewezen_code-elementen) of [Qt5 locale waarden](https://doc.qt.io/qt-5/qlocale.html#Country-enum)). Alleen geregistreerde servers."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:11
@@ -95,56 +80,42 @@ msgstr "`-R`  of `--recording`      Geef een beschrijfbaar pad op waar de opname
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:13
 msgid "`--norecord` Set server not to record by default (when recording is configured e.g via `-R`)"
-msgstr ""
+msgstr "`--norecord` Stel de server in om standaard niet op te nemen (wanneer de opname is geconfigureerd, bijvoorbeeld via `-R`)"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:14
-#, fuzzy
-#| msgid "`-s` or `--server` Start in Server mode\n"
 msgid "`-s` or `--server` Start in Server mode"
-msgstr "`-s` of `--server` Start in server modus\n"
+msgstr "`-s` of `--server` Start in server modus"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:15
-#, fuzzy
-#| msgid "`--serverbindip`  Specify the IP address to bind to              \n"
 msgid "`--serverbindip` Specify the IP address to bind to"
-msgstr "`--serverbindip`  Geef het IP-adres op om aan te binden              \n"
+msgstr "`--serverbindip` Geef het IP-adres op om aan te binden"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:16
-#, fuzzy
-#| msgid "`-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more Clients\n"
 msgid "`-T` or `--multithreading` Use multithreading to make better use of multi-core CPUs to support more Clients"
-msgstr "`-T` of `--multithreading`  Gebruik multithreading om beter gebruik te maken van multi-core CPU's om meer clients te ondersteunen\n"
+msgstr "`-T` of `--multithreading` Gebruik multithreading om beter gebruik te maken van multi-core CPU's om meer clients te ondersteunen"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:17
-#, fuzzy
-#| msgid "`-u` or `--numchannels`   Maximum number of channels (Clients)\n"
 msgid "`-u` or `--numchannels` Maximum number of channels (Clients)"
-msgstr "`-u` of `--numchannels`   Maximum aantal kanalen (clients)\n"
+msgstr "`-u` of `--numchannels` Maximum aantal kanalen (clients)"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:18
-#, fuzzy
-#| msgid "`-w` or `--welcomemessage`  Welcome message on connect. Can be given as a string or filename, and can contain HTML.\n"
 msgid "`-w` or `--welcomemessage` Welcome message on connect. Can be given as a string or filename, and can contain HTML."
-msgstr "`-w` of `--welcomemessage`  Welkomstbericht bij verbindingmaken. Kan worden opgegeven als een tekenreeks of bestandsnaam en kan HTML bevatten.\n"
+msgstr "`-w` of `--welcomemessage` Welkomstbericht bij verbindingmaken. Kan worden opgegeven als een tekenreeks of bestandsnaam en kan HTML bevatten."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
-#, fuzzy
-#| msgid "`-z` or `--startminimized`  Start minimized\n"
 msgid "`-z` or `--startminimized` Start minimized"
-msgstr "`-z` of `--startminimized`  Start geminimaliseerd\n"
+msgstr "`-z` of `--startminimized` Start geminimaliseerd"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
-#, fuzzy
-#| msgid "`--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Custom-Directories#points-to-note-about-directories)\n"
 msgid "`--serverpublicip` The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)"
-msgstr "`--serverpublicip`  Het openbare IP-adres van de server als verbinding wordt gemaakt met een adresboek achter dezelfde NAT. Zie [aandachtspunten voor adresboeken](Custom-Directories#aandachtspunten-voor-adresboeken)\n"
+msgstr "`--serverpublicip` Het openbare IP-adres van de server als verbinding wordt gemaakt met een adresboek achter dezelfde NAT. Zie [aandachtspunten voor adresboeken](Directories#aandachtspunten-voor-adresboeken)"
 
 #~ msgid "`-l`  or `--log`            Enable logging, set path and file name                                                                    \n"
 #~ msgstr "`-l`  of `--log`            Logboek inschakelen, pad en bestandsnaam instellen                                                                    \n"

@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# ignotus <darylo1@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-20 12:38+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-10-14 13:50+0000\n"
+"Last-Translator: ignotus <darylo1@hotmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -57,7 +57,7 @@ msgstr "Asegúrate de haber leído la página de [Cómo Empezar](Getting-Started
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:15
 msgid "{% include infobox_each_os.html %}"
-msgstr ""
+msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
@@ -71,10 +71,8 @@ msgstr "### Debian y Ubuntu"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:21
-#, fuzzy
-#| msgid "We provide two equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
 msgid "We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
-msgstr "Ofrecemos dos archivos `.deb`equivalentes para las arquitecturas más comunes. Por favor descarga el apropiado:"
+msgstr "Ofrecemos tres archivos `.deb`equivalentes para las arquitecturas más comunes. Por favor descarga el apropiado:"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:23
@@ -89,17 +87,14 @@ msgstr "[Descarga Jamulus(.deb, amd64)]({{ site.download_root_link }}{{ site.dow
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:27
-#, fuzzy, no-wrap
-#| msgid "**For ARM based machines (e.g. Raspberry Pi, armhf):**\n"
+#, no-wrap
 msgid "**For ARM based machines (e.g. Raspberry Pi, armhf, arm64):**\n"
-msgstr "**Para máquinas basadas en ARM (por ej. Raspberry Pi, armhf):**\n"
+msgstr "**Para máquinas basadas en ARM (por ej. Raspberry Pi, armhf, arm64):**\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:30
-#, fuzzy
-#| msgid "[Download Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}"
 msgid "[Download Jamulus 32 bit (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button} [Download Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
-msgstr "[Descarga Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}"
+msgstr "[Descarga Jamulus 32 bit (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button} [Descarga Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:32
@@ -120,10 +115,9 @@ msgstr "Actualiza apt abriendo una consola (CTRL+ALT+T debería funcionar) y esc
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:36
-#, fuzzy, no-wrap
-#| msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`\n"
+#, no-wrap
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` for arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
-msgstr "Ve hasta donde descargaste el instalador y, o bien haz doble-clic sobre él, o utiliza la línea de comandos: `sudo apt install ./{{ site.download_file_names.deb-gui }}` o para armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`\n"
+msgstr "Ve hasta donde descargaste el instalador y, o bien haz doble-clic sobre él, o utiliza la línea de comandos: `sudo apt install ./{{ site.download_file_names.deb-gui }}` para armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` para arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:37
@@ -218,10 +212,8 @@ msgstr "Echa un vistazo a la"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:68
-#, fuzzy
-#| msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgid "[Getting Started page](Getting-Started){: .button}"
-msgstr "[página de Iniciación a Jamulus](Getting-Started){: .button}"
+msgstr "[página de Cómo Empezar](Getting-Started){: .button}"
 
 #~ msgid "#### Debian repository (convenient)"
 #~ msgstr "#### Repositorio de Debian (conveniente)"
