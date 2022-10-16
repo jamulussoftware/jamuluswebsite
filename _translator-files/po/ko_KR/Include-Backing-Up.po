@@ -1,61 +1,61 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 이정희 <daemul72@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2022-10-16 15:25+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:2
 msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->"
-msgstr ""
+msgstr "<!-- 참고: 이것은 클라이언트와 서버, 그리고 모든 운영 체제에 모두 적용되어야 합니다 -->"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:4
 msgid "Once installed and running, you may want to keep a copy of your settings. Having a backup is always a good idea, and settings files are not backwardly compatible between versions of Jamulus. So if you want to go back to the previous version, you will need to restore the settings you had."
-msgstr ""
+msgstr "설치 및 실행이 완료되면 설정 복사본을 보관할 수 있습니다. 백업을하는 것은 항상 좋은 생각이며 설정 파일은 Jamulus 버전간에 이전 버전과 호환되지 않습니다. 따라서 이전 버전으로 돌아가려면 사용 중인 설정을 복원해야 합니다."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:6
 msgid "To find your settings file on Windows, type `%APPDATA%` into the search bar and look for a folder named `Jamulus`. There will be one or more `.ini` files in this folder. Now back up Jamulus' settings."
-msgstr ""
+msgstr "Windows에서 사용자의 설정 파일을 찾으려면 검색 창에 '%APPDATA%'를 입력하고 'Jamulus'라는 폴더를 찾습니다. 이 폴더에는 하나 이상의 '.ini'파일이 있습니다. 이제 Jamulus의 설정을 백업하십시오."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:8
 msgid "For all other platforms, run the following from the command line to find where they live and copy the files to another location:"
-msgstr ""
+msgstr "다른 모든 플랫폼의 경우 명령줄에서 다음을 실행하여 해당 플랫폼이 있는 위치를 찾고 파일을 다른 위치로 복사합니다:"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:10
 msgid "`find ~ -name Jamulus.ini -ls`"
-msgstr ""
+msgstr "`find ~ -name Jamulus.ini -ls`"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:13
 msgid "If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.  **Points to note**"
-msgstr ""
+msgstr "'--inifile'매개 변수를 사용하여 inifile을 다른 위치에 저장했다면 이 파일도 백업하는 것을 잊지 마십시오.  **주의할 점들**"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:15
 msgid "Do not back up or restore settings files when Jamulus is running."
-msgstr ""
+msgstr "Jamulus가 실행 중일 때 설정 파일을 백업하거나 복원하지 마십시오."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:16
 msgid "It is not recommended to manually edit settings files (they're not designed for that)."
-msgstr ""
+msgstr "설정 파일을 수동으로 편집하는 것은 권장되지 않습니다(이를 위해 설계되지 않음)."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:16
 msgid "You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus)."
-msgstr ""
+msgstr "Jamulus를 닫은 후 설정 파일을 삭제하여 모든 설정을 기본값으로 되돌릴 수 있습니다."

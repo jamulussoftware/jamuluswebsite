@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-18 08:05+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-10-13 11:24+0000\n"
+"Last-Translator: Henk De Groot <henk@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -57,7 +58,7 @@ msgstr "Zorg dat je de [aan de slag](Getting-Started) pagina hebt gelezen."
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:15
 msgid "{% include infobox_each_os.html %}"
-msgstr ""
+msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
@@ -71,10 +72,8 @@ msgstr "### Debian en Ubuntu"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:21
-#, fuzzy
-#| msgid "We provide two equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
 msgid "We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
-msgstr "We bieden twee equivalente `.deb`-bestanden voor de meest voorkomende architecturen. Download de juiste:"
+msgstr "We bieden drie equivalente `.deb`-bestanden voor de meest voorkomende architecturen. Download de juiste:"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:23
@@ -89,17 +88,14 @@ msgstr "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.do
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:27
-#, fuzzy, no-wrap
-#| msgid "**For ARM based machines (e.g. Raspberry Pi, armhf):**\n"
+#, no-wrap
 msgid "**For ARM based machines (e.g. Raspberry Pi, armhf, arm64):**\n"
-msgstr "**Voor op ARM gebaseerde machines (bijv. Raspberry Pi, armhf):**\n"
+msgstr "**Voor op ARM gebaseerde machines (bijv. Raspberry Pi, armhf, arm64):**\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:30
-#, fuzzy
-#| msgid "[Download Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}"
 msgid "[Download Jamulus 32 bit (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button} [Download Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
-msgstr "[Download Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}"
+msgstr "[Download Jamulus 32 bit (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button} [Download Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:32
@@ -120,10 +116,9 @@ msgstr "Werk apt bij door een consolevenster te openen (CTRL+ALT+T zou moeten we
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:36
-#, fuzzy, no-wrap
-#| msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`\n"
+#, no-wrap
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` for arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
-msgstr "Ga naar de locatie waar je het installatieprogramma hebt gedownload en dubbelklik erop of gebruik de opdrachtregel: `sudo apt install ./{{ site.download_file_names.deb-gui }}` of voor armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`.\n"
+msgstr "Ga naar de locatie waar je het installatieprogramma hebt gedownload en dubbelklik erop of gebruik de opdrachtregel: `sudo apt install ./{{ site.download_file_names.deb-gui }}` voor armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` voor arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:37
@@ -218,7 +213,5 @@ msgstr "Kijk eens naar de"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:68
-#, fuzzy
-#| msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgid "[Getting Started page](Getting-Started){: .button}"
-msgstr "[Jamulus aan de slag pagina](Getting-Started){: .button}"
+msgstr "[Aan de slag pagina](Getting-Started){: .button}"

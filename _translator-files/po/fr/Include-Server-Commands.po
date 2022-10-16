@@ -1,151 +1,114 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Olivier Humbert <trebmuh@tuxfamily.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-08-15 15:17+0000\n"
-"Last-Translator: Olivier Humbert <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2022-10-16 15:25+0000\n"
+"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/include-server-commands/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:2
-#, fuzzy
-#| msgid "`-d`  or `--discononquit`   Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.  \n"
 msgid "`-d` or `--discononquit` Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server."
-msgstr "`-d` ou `--discononquit`   Déconnecte tous les clients lorsque le serveur est arrêté. Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton \"Déconnecter\" rétabliront la connexion lorsque le serveur sera de nouveau opérationnel. L'utilisation de cette option oblige les clients à rétablir manuellement leur connexion au serveur.  \n"
+msgstr "`-d` ou `--discononquit` Déconnecte tous les clients lorsque le serveur est arrêté. Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton \"Déconnecter\" rétabliront la connexion lorsque le serveur sera de nouveau opérationnel. L'utilisation de cette option oblige les clients à rétablir manuellement leur connexion au serveur."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:3
-#, fuzzy
-#| msgid "`-e`  or `--directoryserver`  Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](#server-types) for further information.\n"
 msgid "`-e` or `--directoryserver` Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](Running-a-Server#server-types) for further information."
-msgstr "`-e` ou `--directoryserver`  Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](#types-de-serveur) pour plus d'informations.\n"
+msgstr "`-e` ou `--directoryserver` Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](Running-a-Server#types-de-serveur) pour plus d'informations."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:4
-#, fuzzy
-#| msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information. \n"
 msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information."
-msgstr "`--directoryfile` Se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Annuaires seulement. Voir [ce guide](Directories) pour plus d'informations. \n"
+msgstr "`--directoryfile` Se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Annuaires seulement. Voir [ce guide](Directories) pour plus d'informations."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
-#, fuzzy
-#| msgid "`-f`  or `--listfilter`     Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only. \n"
 msgid "`-f` or `--listfilter` Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only."
-msgstr "`-f` ou `--listfilter`     Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Annuaires uniquement. \n"
+msgstr "`-f` ou `--listfilter` Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Annuaires uniquement."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:6
-#, fuzzy
-#| msgid "`-F`  or `--fastupdate`     Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.\n"
 msgid "`-F` or `--fastupdate` Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
-msgstr "`-F` ou `--fastupdate`     Réduit la latence si les clients se connectent avec l'option \"Activer les petits tampons de réseau\". Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés.\n"
+msgstr "`-F` ou `--fastupdate` Réduit la latence si les clients se connectent avec l'option \"Activer les petits tampons de réseau\". Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:7
-#, fuzzy
-#| msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
 msgid "`-l` or `--log` Enable logging, set path and file name"
-msgstr "`-m` ou `--htmlstatus`     Active le fichier d'état HTML, définit le chemin et le nom du fichier\n"
+msgstr "`-l` ou `--log` Activer l'enregistrement, définir le chemin et le nom du fichier"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:8
-#, fuzzy
-#| msgid "`-L`  or `--licence`        Show an agreement window before users can connect\n"
 msgid "`-L` or `--licence` Show an agreement window before users can connect"
-msgstr "`-L` ou `--licence`        Afficher une fenêtre d'accord avant que les utilisateurs puissent se connecter\n"
+msgstr "`-L` ou `--licence` Afficher une fenêtre d'accord avant que les utilisateurs puissent se connecter"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:9
-#, fuzzy
-#| msgid "`-m`  or `--htmlstatus`     Enable HTML status file, set path and file name\n"
 msgid "`-m` or `--htmlstatus` Enable HTML status file, set path and file name"
-msgstr "`-m` ou `--htmlstatus`     Active le fichier d'état HTML, définit le chemin et le nom du fichier\n"
+msgstr "`-m` ou `--htmlstatus` Active le fichier d'état HTML, définit le chemin et le nom du fichier"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:10
-#, fuzzy
-#| msgid "`-o`  or `--serverinfo`     Location details in the format:  `[name];[city];[locale value]` (see [values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only\n"
 msgid "`-o` or `--serverinfo` Location details in the format: `[name];[city];[country as two-letter ISO country code or Qt5 Locale]` (see [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) or [Qt5 Locale values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only"
-msgstr "`-o` ou `--serverinfo`     Détails de l'emplacement dans le format :  `[nom];[ville];[valeur locale]` (voir [valeurs](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Serveurs enregistrés uniquement\n"
+msgstr "`-o` ou `--serverinfo` Détails de l'emplacement dans le format : `[nom] ;[ville] ;[pays sous forme de code de pays ISO à deux lettres ou de Qt5 Locale]` (voir [codes de pays ISO à deux lettres](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) (en anglais) ou [valeurs Qt5 Locale](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) (en anglais) Serveurs enregistrés uniquement"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:11
-#, fuzzy
-#| msgid "`-P`  or `--delaypan`       Start with delay panning enabled See [notes](#delay-panning)\n"
 msgid "`-P` or `--delaypan` Start with delay panning enabled See [notes](Running-a-Server#delay-panning)"
-msgstr "`-P` ou `--delaypan`       Démarrer avec le panoramique du délai activé Voir [notes](#retardement-du-panoramique))\n"
+msgstr "`-P` ou `--delaypan` Démarrer avec le panoramique du délai activé Voir [notes](Running-a-Server#retardement-du-panoramique))"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:12
-#, fuzzy
-#| msgid "`-R`  or `--recording`      Include a writeable path where the files should be stored (in quotes if needed).  See [Options](#options).  \n"
 msgid "`-R` or `--recording` Set server recording directory; Server will record when a session is active by default. See [Options](Running-a-Server#options)."
-msgstr "`-R` ou `--recording`      Inclure un chemin accessible en écriture où les fichiers doivent être stockés (entre guillemets si nécessaire).  Voir [Options](#options).  \n"
+msgstr "`-R` ou `--recording` Définir le répertoire d'enregistrement du serveur ; par défaut, le serveur enregistre lorsqu'une session est active. Voir [Options](Running-a-Server#options)."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:13
 msgid "`--norecord` Set server not to record by default (when recording is configured e.g via `-R`)"
-msgstr ""
+msgstr "`--norecord` Configurer le serveur pour qu'il n'enregistre pas par défaut (lorsque l'enregistrement est configuré par exemple via `-R`)"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:14
-#, fuzzy
-#| msgid "`-s` or `--server` Start in Server mode\n"
 msgid "`-s` or `--server` Start in Server mode"
-msgstr "`-s` ou `--server` Démarrer en mode serveur\n"
+msgstr "`-s` ou `--server` Démarrer en mode serveur"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:15
-#, fuzzy
-#| msgid "`--serverbindip`  Specify the IP address to bind to              \n"
 msgid "`--serverbindip` Specify the IP address to bind to"
-msgstr "`--serverbindip`  Spécifiez l'adresse IP à laquelle se lier              \n"
+msgstr "`--serverbindip` Spécifiez l'adresse IP à laquelle se lier"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:16
-#, fuzzy
-#| msgid "`-T` or `--multithreading`  Use multithreading to make better use of multi-core CPUs to support more Clients\n"
 msgid "`-T` or `--multithreading` Use multithreading to make better use of multi-core CPUs to support more Clients"
-msgstr "`-T` ou `--multithreading`  Utilisez le multithreading pour mieux utiliser les processeurs multi-cœurs afin de prendre en charge plus de clients\n"
+msgstr "`-T` ou `--multithreading` Utilisez le multithreading pour mieux utiliser les processeurs multi-cœurs afin de prendre en charge plus de clients"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:17
-#, fuzzy
-#| msgid "`-u` or `--numchannels`   Maximum number of channels (Clients)\n"
 msgid "`-u` or `--numchannels` Maximum number of channels (Clients)"
-msgstr "`-u` ou `--numchannels`  Nombre maximum de canaux (clients)\n"
+msgstr "`-u` ou `--numchannels` Nombre maximum de canaux (clients)"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:18
-#, fuzzy
-#| msgid "`-w` or `--welcomemessage`  Welcome message on connect. Can be given as a string or filename, and can contain HTML.\n"
 msgid "`-w` or `--welcomemessage` Welcome message on connect. Can be given as a string or filename, and can contain HTML."
-msgstr "`-w` ou `--welcomemessage`  Message de bienvenue à la connexion. Peut être donné comme une chaîne de caractères ou un nom de fichier, et peut contenir du HTML.\n"
+msgstr "`-w` ou `--welcomemessage` Message de bienvenue à la connexion. Peut être donné comme une chaîne de caractères ou un nom de fichier, et peut contenir du HTML."
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
-#, fuzzy
-#| msgid "`-z` or `--startminimized`  Start minimized\n"
 msgid "`-z` or `--startminimized` Start minimized"
-msgstr "`-z` ou `--startminimized`  Démarrage minimisé\n"
+msgstr "`-z` ou `--startminimized` Démarrage minimisé"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
-#, fuzzy
-#| msgid "`--serverpublicip`  The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)\n"
 msgid "`--serverpublicip` The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)"
-msgstr "`--serverpublicip`  L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les Annuaire](Directories#points-a-noter-concernant-des-annuaires)\n"
+msgstr "`--serverpublicip` L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les Annuaire](Directories#points-a-noter-concernant-des-annuaires)"
 
 #~ msgid "`-l`  or `--log`            Enable logging, set path and file name                                                                    \n"
 #~ msgstr "`-l` ou `--log`            Activer l'enregistrement, définir le chemin et le nom du fichier                                                                    \n"
