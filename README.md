@@ -22,7 +22,7 @@ If you prefer to submit translations via pull requests rather than using Weblate
 
 To edit an individual file, you can use the Github web interface or make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit multiple website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
 
-To view the website offline on your own machine, you will need to clone it locally and use [Jekyll](https://jekyllrb.com/) to build it. Please ask on [the discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
+To view the website offline on your own machine, you will need to clone it locally and use [Jekyll](https://jekyllrb.com/) to build it. Please ask in [Discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
 
 ## Formatting and style
 
