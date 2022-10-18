@@ -23,9 +23,11 @@ Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has 
 
 ## Using the Jamulus Client
 
-###  Have a undisturbed session on any Server
+###  Have an undisturbed session on any Server
 
-You can have a "private", undisturbed session with other people on any Server, including publically listed Servers, by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information).
+You can have an undisturbed session with other people on any Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server.
+
+**NOTE:** This does not stop people from hearing you, using the chat function, or seeing your profile information.
 
 ###  Using Jamulus audio in Zoom (or other) meeting apps
 
@@ -94,13 +96,13 @@ Fader strips in the mixer window are controlled in ascending order from left to 
 
 Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl.
 
-*Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to "View" on the top menu bar and choose "Sort Users by Name".
+*Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to "View" on the top menu bar and switch between "No User Sorting" and another option and then back again (e.g. type `Ctrl+N`, `Ctrl+O`).
 
 ## For Server admins
 
-### Converting a public Server to a private one on the fly
+### Converting a Registered Server to an Unregistered one on the fly
 
-You can run a public Server long enough for your band to connect, then go private by simply unchecking the 'Make my Server Public' box in the Server GUI. Your band mates will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
+You can run as a Registered Server long enough for your band to connect, then go "private" (Unregistered) by setting the Directory to "none" in the Server GUI. Your band mates will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)
 
 ### Remote management of recordings
 

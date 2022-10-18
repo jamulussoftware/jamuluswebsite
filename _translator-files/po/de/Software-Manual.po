@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-06-20 12:02+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-10-10 21:10+0000\n"
+"Last-Translator: ann0see <please@seeGitHubOrWeblate.local>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -100,6 +101,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:30
+#, fuzzy
 msgid "## Ping, Delay and Jitter"
 msgstr "## Ping, Delay and Jitter"
 
@@ -298,8 +300,6 @@ msgstr "Verhindert, dass Benutzer in deiner lokalen Mischung zu hören ist. Beac
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:113
-#, fuzzy
-#| msgid "Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgstr "Beachte, dass das Stummschalten deines **eigenen** Kanals lediglich bedeutet, dass du dein eigenes Signal vom Server nicht mehr hören kannst (Das ist nicht ratsam ist, da es dazu führen kann, dass du mit anderen Spielern aus dem Takt kommst). Dies ist also nicht dasselbe wie die Verwendung von „[Stummschalten](#mich-stummschalten)“."
 
@@ -600,13 +600,15 @@ msgstr "<figure><img src=\"{% include img/de-screenshots/settings-advanced.inc %
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:244
-msgid "### Custom directory server address"
+#, fuzzy
+#| msgid "### Custom directory server address"
+msgid "### Custom Directories"
 msgstr "### Benutzerdefinierte Verzeichnisse"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:246
-msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
-msgstr "Lass dieses Feld leer, es sei denn, du musst die Adresse eines anderen Verzeichnis Servers als das des Standardverzeichnis Servers eingeben."
+msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:248
@@ -755,3 +757,6 @@ msgstr "{% include_relative Include-Client-Commands.md %}"
 #: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
+
+#~ msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
+#~ msgstr "Lass dieses Feld leer, es sei denn, du musst die Adresse eines anderen Verzeichnis Servers als das des Standardverzeichnis Servers eingeben."

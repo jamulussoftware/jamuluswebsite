@@ -11,25 +11,28 @@ permalink: "/wiki/Installation-for-Linux"
 
 Make sure you read the [Getting Started](Getting-Started) page.
 
+{% include infobox_each_os.html %}
+
 Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
 
 ### Debian and Ubuntu
 
-We provide two equivalent `.deb` files for the most common architectures. Please download the appropriate one:
+We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:
 
 **For Intel/AMD based machines (amd64):**
 
 [Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}
 
-**For ARM based machines (e.g. Raspberry Pi, armhf):**
+**For ARM based machines (e.g. Raspberry Pi, armhf, arm64):**
 
-[Download Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}
+[Download Jamulus 32 bit (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}
+[Download Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}
 
 After you downloaded the correct file:
 
 1. *Ubuntu only* - Enable the Ubuntu "universe" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).
 1. Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`
-1. Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`
+1. Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` for arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`
 1. Once installed, you can delete the file and close any console windows.
 
 Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
@@ -62,4 +65,4 @@ If you get problems with sound breaking up (in particular XRUN errors reported b
 
 Take a look at the
 
-[Jamulus setup page](Getting-Started){: .button}
+[Getting Started page](Getting-Started){: .button}
