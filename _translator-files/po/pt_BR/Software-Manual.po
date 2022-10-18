@@ -1,13 +1,12 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Melcon Moraes <melcon@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-13 15:15+0000\n"
-"Last-Translator: ignotus <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2022-10-18 04:03+0000\n"
+"Last-Translator: Melcon Moraes <melcon@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/jamulus/software-manual/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -32,13 +31,13 @@ msgstr "wiki"
 #: ../wiki/en/Software-Manual.md:1
 #, no-wrap
 msgid "/wiki/Software-Manual"
-msgstr ""
+msgstr "/wiki/Software-Manual"
 
 #. type: YAML Front Matter: title
 #: ../wiki/en/Software-Manual.md:1
 #, no-wrap
 msgid "Software Manual"
-msgstr ""
+msgstr "Manual do Software"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:9
@@ -47,41 +46,43 @@ msgid ""
 "# Jamulus User Manual\n"
 " {:.no_toc}\n"
 msgstr ""
+"# Manual do Usuário do Jamulus \n"
+" {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:11
 msgid "This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server."
-msgstr ""
+msgstr "Este manual documenta o aplicativo Cliente Jamulus para uso por músicos e cantores que usam o software para conectar-se a um servidor."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:13
 msgid "<details markdown=\"1\">"
-msgstr ""
+msgstr "<details markdown=\"1\">"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:15
 msgid "<summary>Table of contents</summary>"
-msgstr ""
+msgstr "<summary>Índice</summary>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:17
 msgid "TOC"
-msgstr ""
+msgstr "TOC"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:18
 msgid "{:toc}"
-msgstr ""
+msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
 msgid "</details>"
-msgstr ""
+msgstr "</details>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:22
 msgid "# Main Window"
-msgstr ""
+msgstr "# Janela Principal"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:28
@@ -92,87 +93,91 @@ msgid ""
 "\t<figcaption>Your local mix when connected to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"\t<img src=\"{% include img/pt_BR-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Imagem da janela principal do Jamulus\">\n"
+"\t<figcaption>Sua mixagem local quando conectado a um Servidor</figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:30
 msgid "## Ping, Delay and Jitter"
-msgstr ""
+msgstr "## Ping, Atraso and Jitter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
 #, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
-msgstr ""
+msgstr "**Ping** mostra a latência da rede em milissegundos, quanto menor, melhor. O tempo de ping contribui para o atraso geral (veja abaixo). A causa mais provável de um ping alto é que sua distância para o servidor é muito grande.   \n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
 #, no-wrap
 msgid "**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:\n"
-msgstr ""
+msgstr "**Atraso** mostra a latência geral calculada a partir do tempo de ping atual e o atraso introduzido pelas configurações atuais do buffer de áudio. Os LEDs mostram o status disso como:\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
 msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/pt_BR-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED verde\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:38
 #, no-wrap
 msgid "**Green** - The delay is perfect for a jam session\n"
-msgstr ""
+msgstr "**Verde** - O delay é perfeito para uma jam session\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
 msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/pt_BR-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED amarelo\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:42
 #, no-wrap
 msgid "**Yellow** - A session is still possible but it may be harder to play\n"
-msgstr ""
+msgstr "**Amarelo** - Uma sessão ainda é possível, mas pode ser mais difícil de tocar\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
 msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/pt_BR-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED vermelho\"></figure>"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:46
 #, no-wrap
 msgid "**Red** - The delay is too large for jamming\n"
-msgstr ""
+msgstr "**Vermelho** - O atraso é muito grande para tocar\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:48
 #, no-wrap
 msgid "**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
-msgstr ""
+msgstr "**Jitter** mostra o status atual de áudio/streaming. Se a luz estiver **vermelha**, o fluxo de áudio será interrompido. Isso é causado por um dos seguintes problemas:\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:50
 msgid "The network jitter buffer is not large enough for the current network/audio interface jitter."
-msgstr ""
+msgstr "O jitter buffer da rede não é grande o suficiente para o jitter atual da interface de rede/áudio."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:51
 msgid "The sound card's buffer delay (buffer size) is too small (see Settings window)."
-msgstr ""
+msgstr "O atraso do buffer (tamanho do buffer) da placa de som é demasiado pequeno (verificar janela das Definições)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:52
 msgid "The upload or download stream rate is too high for your internet bandwidth."
-msgstr ""
+msgstr "A taxa de upload ou download é muito elevada para a sua largura de banda da Internet."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:53
 msgid "The CPU of the Client or server is at 100%."
-msgstr ""
+msgstr "A CPU do cliente ou servidor está em 100%."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:55
 msgid "## Input"
-msgstr ""
+msgstr "## Entrada"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:58
