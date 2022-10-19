@@ -6,14 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-15 21:11+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2022-10-13 11:25+0000\n"
+"Last-Translator: Henk De Groot <please@seeGitHubOrWeblate.local>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -296,10 +297,8 @@ msgstr "Voorkomt dat je gebruikers hoort in je lokale mix. Houd er rekening mee 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:113
-#, fuzzy
-#| msgid "Note that muting your **own** channel simply means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
-msgstr "Houd er rekening mee dat het dempen van je **eigen** kanaal betekent dat je het signaal van de server niet zult horen (en dit wordt niet aangeraden omdat het ertoe kan leiden dat je niet meer gelijk bent met andere spelers). Dit is dus niet hetzelfde als het gebruik van \"[Demp mijzelf](#demp-mijzelf-knop)\"."
+msgstr "Houd er rekening mee dat het dempen van je **eigen** kanaal alleen betekent dat je je eigen signaal van de server niet zult horen (en dit wordt niet aangeraden omdat het ertoe kan leiden dat je niet meer gelijk bent met andere spelers). Dit is dus niet hetzelfde als het gebruik van \"[Demp mijzelf](#demp-mijzelf-knop)\"."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:115
@@ -443,10 +442,9 @@ msgstr "Selecteert het aantal audiokanalen dat moet worden gebruikt voor communi
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:175
-#, fuzzy, no-wrap
-#| msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
+#, no-wrap
 msgid "**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
-msgstr "**Opmerking**: Het verdient de voorkeur om afzonderlijke client-instanties per stem/instrument te gebruiken, waarbij elke client zijn eigen ini-bestand krijgt, in plaats van dit ingebouwde monopaar naar stereomix te gebruiken.\n"
+msgstr "**Opmerking**: Het is beter om afzonderlijke client-instanties per stem/instrument te gebruiken, waarbij elke client zijn eigen ini-bestand heeft, in plaats van dit ingebouwde monopaar naar stereomixer te gebruiken.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:177
@@ -542,10 +540,8 @@ msgstr "### Jitterbuffer"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:218
-#, fuzzy
-#| msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
-msgstr "De jitterbuffer compenseert voor netwerk- en geluidskaarttimingjitters. De grootte van de buffer heeft dus invloed op de kwaliteit van de audiostream (hoeveel dropouts zijn er) en de totale vertraging (hoe langer de buffer, hoe groter de vertraging)."
+msgstr "De jitterbuffer compenseert voor netwerk- en geluidskaarttimingjitters. De grootte van de buffer heeft invloed op de kwaliteit van de audiostream (hoeveel dropouts zijn er) en de totale vertraging (hoe langer de buffer, hoe groter de vertraging)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:222
@@ -594,13 +590,13 @@ msgstr "<figure><img src=\"{% include img/nl-screenshots/settings-advanced.inc %
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:244
-msgid "### Custom directory server address"
+msgid "### Custom Directories"
 msgstr "### Eigen adresboek"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:246
-msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
-msgstr "Laat dit leeg tenzij je het adres van een andere adresboek server dan de standaardserver moet invoeren."
+msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
+msgstr "Als je andere adresboek adressen dan de ingebouwde adressen wilt toevoegen dan kun je dat hier doen."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:248
@@ -695,7 +691,6 @@ msgstr ""
 "```shell\n"
 "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 "```\n"
-"\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:288
@@ -750,6 +745,9 @@ msgstr "{% include_relative Include-Client-Commands.md %}"
 #: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
+
+#~ msgid "Leave this blank unless you need to enter the address of a directory server other than the default."
+#~ msgstr "Laat dit leeg tenzij je het adres van een andere adresboek server dan de standaardserver moet invoeren."
 
 #~ msgid "{% include_relative Include-QOS-Windows.md %}"
 #~ msgstr "{% include_relative Include-QOS-Windows.md %}"

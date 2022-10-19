@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
+# Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-08-04 20:31+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: fr_FR\n"
+"PO-Revision-Date: 2022-10-16 15:25+0000\n"
+"Last-Translator: Olivier Humbert <please@seeGitHubOrWeblate.local>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/jamulus/running-a-server/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
-"X-Generator: Poedit 3.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -85,7 +85,7 @@ msgstr "## Dois-je faire tourner un serveur ?"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:24
 #, no-wrap
-msgid "**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-a-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.\n"
+msgid "**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.\n"
 msgstr "**Non**. Vous pouvez utiliser les serveurs enregistrés sur les annuaires intégrés et utiliser Jamulus sans exécuter de serveur ou choisir un service d'hébergement tiers. Si vous voulez juste une session non perturbée, utilisez la [technique de mise en solo décrite sur la page Trucs et astuces](Tips-Tricks-More#avoir-une-session-non-perturbée-sur-nimporte-quel-serveur). Si vous décidez que vous ne pouvez utiliser aucun des serveurs répertoriés par les annuaires intégrés, vous pourrez peut-être utiliser un serveur (soit enregistré dans un annuaire personnalisé, soit non enregistré - voir [Types de serveur](#types-de-serveur)) hébergé par un tiers. Cela vous évitera d'avoir à en installer un vous-même.\n"
 
 #. type: Plain text
@@ -132,7 +132,7 @@ msgstr "### Notes générales"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:43
 msgid "Any Server should have at least 1.6GHz CPU frequency and 1GB RAM"
-msgstr "Tout serveur doit avoir une fréquence de CPU d'au moins 1,6 GHz et 1 Go de RAM."
+msgstr "Tout serveur doit avoir une fréquence de CPU d'au moins 1,6 GHz et 1 Go de RAM"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:44
@@ -224,8 +224,8 @@ msgstr "Lorsque vous souhaitez faire fonctionner plusieurs serveurs, éventuelle
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:76
-msgid "To run a Directory [read this guide](Custom-Directories)"
-msgstr "Pour exécuter un annuaire [lisez ce guide](Custom-Directories)"
+msgid "To run a Directory [read this guide](Directories)"
+msgstr "Pour faire tourner un annuaire [lisez ce guide](Directories)"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:79
@@ -239,8 +239,8 @@ msgstr "La plupart des gens exécutent Jamulus en tant que serveur \"pur\" sur d
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:83
-msgid "If you want to run a Server on a Raspberry Pi (or a different armhf based device), you will need to download the `.deb` files for `armhf`, not the default `amd64` ones you'd use on an Intel/AMD based machine."
-msgstr "Si vous souhaitez exécuter un serveur sur un Raspberry Pi (ou un autre appareil basé sur armhf), vous devrez télécharger les fichiers `.deb` pour `armhf`, pas les fichiers par défaut `amd64` que vous utiliseriez sur un Intel/Machine basée sur AMD."
+msgid "If you want to run a Server on a Raspberry Pi (or a different armhf/arm64 debian-based device), you will need to download the `.deb` files for 32 bit `armhf` or 64 bit `arm64`, not the default `amd64` ones you'd use on an Intel/AMD based machine."
+msgstr "Si vous souhaitez exécuter un serveur sur un Raspberry Pi (ou un autre appareil arnhf/arm64 basé sur debian), vous devrez télécharger les fichiers `.deb` pour `armhf`32 bits ou arm64`64 bits, pas les fichiers par défaut `amd64` que vous utiliseriez sur un Intel/machine basée sur AMD."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:86
@@ -249,8 +249,8 @@ msgstr "### Installation"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:88
-msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})"
-msgstr "Téléchargez la [dernière version sans interface (amd64).deb]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) ou, Si vous utilisez un Raspberry Pi etc. téléchargez la [dernière version (armhf).deb]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})"
+msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or the [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }})"
+msgstr "Téléchargez la [dernière version sans interface (amd64).deb]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) ou, Si vous utilisez un Raspberry Pi etc. téléchargez la [dernière version (armhf).deb]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) ou le [dernier fichier .deb arm64]({{ site.download_root_link }}{ site.download_file_names.deb-headless-arm64 }})"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:89
@@ -259,8 +259,8 @@ msgstr "Mettez à jour apt pour vous assurer que vous disposez d'une liste à jo
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:90
-msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`"
-msgstr "Installez le paquet Jamulus : `sudo apt install ./{{ site.download_file_names.deb-headless }}` ou pour RasPi etc: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`"
+msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc. armhf: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`"
+msgstr "Installez le paquet Jamulus : `sudo apt install ./{{ site.download_file_names.deb-headless }}` ou pour RasPi etc: armhf : `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:91
@@ -375,8 +375,8 @@ msgstr "#### Exécuter comme Annuaire"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:133
-msgid "If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Custom-Directories)."
-msgstr "Si vous voulez exécuter un [annuaire](Running-a-Server#3-annuaire) veuillez consulter [ce guide](Custom-Directories)."
+msgid "If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Directories)."
+msgstr "Si vous voulez faire tourner un [annuaire](Running-a-Server#3-annuaire) veuillez consulter [ce guide](Directories)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:135
@@ -410,13 +410,13 @@ msgstr "#### Controller l'enregistrement"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:147
-msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off."
-msgstr "Lors de l'utilisation de la fonction d'enregistrement avec l'option de ligne de commande `-R`, si le serveur reçoit un signal SIGUSR1 pendant un enregistrement, il démarrera un nouvel enregistrement dans un nouveau répertoire. SIGUSR2 active/désactive l'enregistrement."
+msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will recording enabled on/off."
+msgstr "Lors de l'utilisation de la fonction d'enregistrement avec l'option de ligne de commande `-R`, si le serveur reçoit un signal SIGUSR1 pendant un enregistrement, il démarrera un nouvel enregistrement dans un nouveau répertoire. SIGUSR2 dés/activera l'enregistrement."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:149
-msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`)."
-msgstr "Pour envoyer ces signaux à l'aide de systemd, créez les deux fichiers `.service` suivants dans `/etc/systemd/system`, en les appelant de manière appropriée (par exemple, `newRecording-Jamulus-server.service`)."
+msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`)."
+msgstr "Pour envoyer ces signaux en utilisant systemd, créez les deux fichiers `.service` suivants dans `/etc/systemd/system`, en les appelant de manière appropriée (par exemple, `jamulusTogglerec.service`)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:151
@@ -567,8 +567,8 @@ msgstr "**Aucun** : par défaut, vous ne serez pas connecté à un annuaire et v
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:205
 #, no-wrap
-msgid "**Genre**: To allow other people to see your Server on one of the built-in Public Directories, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.  \n"
-msgstr "**Genre** : pour permettre à d'autres personnes de voir votre serveur sur l'un des annuaires publics intégrés, sélectionnez le genre d'annuaire souhaité. Vous devriez voir un message de confirmation indiquant si votre serveur s'est enregistré avec succès. Si ce n'est pas le cas et que vous laissez votre serveur en cours d'exécution, il continuera d'essayer de s'enregistrer jusqu'à ce qu'un emplacement libre se libère.\n"
+msgid "**Genre**: To allow other people to see your Server on one of the Directories built into the Client, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.\n"
+msgstr "**Genre** : pour permettre à d'autres personnes de voir votre serveur sur l'un des annuaires publics embarqués dans le client, sélectionnez le genre d'annuaire souhaité. Vous devriez voir un message de confirmation indiquant si votre serveur s'est enregistré avec succès. Si ce n'est pas le cas et que vous laissez votre serveur en cours d'exécution, il continuera d'essayer de s'enregistrer jusqu'à ce qu'un emplacement libre se libère.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:207
@@ -578,8 +578,8 @@ msgstr "**Personnalisé** : Cela vous permet de spécifier un répertoire person
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:209
-msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Custom-Directories) for further details."
-msgstr "Pour exécuter votre serveur _comme_ un annuaire, vous devez définir l'adresse de l'annuaire personnalisé sur `localhost` ou `127.0.0.1` et définir le \"Genre\" sur \"Personnalisé\". [Lire ce guide](Custom-Directories) pour plus de détails."
+msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Directories) for further details."
+msgstr "Pour exécuter votre serveur _comme_ un annuaire, vous devez définir l'adresse de l'annuaire personnalisé sur `localhost` ou `127.0.0.1` et définir le \"genre\" sur \"personnalisé\". [Lire ce guide](Directories) pour plus de détails."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:211
@@ -588,8 +588,8 @@ msgstr "### Informations de mon serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:213
-msgid "When running as a registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing."
-msgstr "Lors de l'exécution en tant que serveur enregistré, cela affiche le nom, la ville et le pays du serveur afin que les autres utilisateurs puissent facilement l'identifier dans la liste du répertoire."
+msgid "When running as a Registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing."
+msgstr "Lors de l'exécution en tant que serveur enregistré, cela affiche le nom du serveur, la ville et le pays afin que les autres utilisateurs puissent facilement l'identifier dans la liste d'annuaire."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:215
@@ -755,8 +755,8 @@ msgstr "## Exécuter un serveur non enregistré"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:278
-msgid "It is highly recommended to test your Server on a **Public Directory** first so as to narrow down any subsequent problems in unregistered mode."
-msgstr "Il est fortement recommandé de tester d'abord votre serveur sur un **Annuaire publique** afin de limiter les problèmes ultérieurs en mode non enregistré."
+msgid "It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode."
+msgstr "Il est fortement recommandé de tester votre serveur en l'enregistrant sur l'un des annuaires embarqués **d'abord** afin de limiter les problèmes ultérieurs en mode non enregistré."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:280
@@ -836,17 +836,14 @@ msgid "If you are having other problems, [see this guide](Server-Troubleshooting
 msgstr "Si vous avez un autre problème, [regardez ce guide](Server-Troubleshooting)."
 
 #, fuzzy
-#~| msgid "The short answer is **no**. For various reasons, you should try to use other people's servers, at least at first while getting your sound set up with the Jamulus client."
 #~ msgid "The short answer is **no**. For various reasons, you should try to use Servers listed by the built in Directories, at least at first while getting your sound set up with the Jamulus Client. You may also be able to use a Server hosted by a third party. Doing so will save you the trouble of setting one up yourself."
 #~ msgstr "La réponse courte est **non**. Pour diverses raisons, vous devriez essayer d'utiliser les serveurs d'autres personnes, du moins au début, le temps de configurer votre son avec le client Jamulus."
 
 #, fuzzy
-#~| msgid "Note that you can have a \"private\" session with other people on a Public Server by simply soloing each other. You will then not be able to hear anyone else if they enter your server."
 #~ msgid "Note that you can have a \"private\" session with other people on a Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server (note that this does not stop them from hearing you, using the chat function, or seeing your profile information)."
 #~ msgstr "Notez que vous pouvez avoir une session \"privée\" avec d'autres personnes sur un serveur public en vous mettant simplement en solo. Vous ne serez alors pas en mesure d'entendre les autres s'ils entrent dans votre serveur."
 
 #, fuzzy
-#~| msgid "Many people attribute problems to the server that are in fact problems with the _client_. Much depends on the clients' hard/software setup, the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 #~ msgid "Many people attribute problems to the Server that are in fact problems with the _Client_. Much depends on the Clients' hard/software setup, the networks that _they_ are on, and whether they are sticking to [Rule Number One](Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 #~ msgstr "De nombreuses personnes attribuent au serveur des problèmes qui sont en fait des problèmes du _client_. Cela dépend en grande partie du matériel, de la configuration des clients, des réseaux sur lesquels ils se trouvent et de leur respect de la [règle numéro un](Client-Troubleshooting#vous-avez-tous-un-son-correct,-mais-il-est-difficile-de-jouer-ensemble)."
 
@@ -860,22 +857,18 @@ msgstr "Si vous avez un autre problème, [regardez ce guide](Server-Troubleshoot
 #~ msgstr "### En général"
 
 #, fuzzy
-#~| msgid "### Port forwarding"
 #~ msgid "#### Upgrading"
 #~ msgstr "### Redirection de port"
 
 #, fuzzy
-#~| msgid "### Server status icon"
 #~ msgid "### Making a Server status page"
 #~ msgstr "## Icône de status du serveur"
 
 #, fuzzy
-#~| msgid "### Custom Directory Server Address"
 #~ msgid "### Directory Server Address"
 #~ msgstr "### Adresse du serveur de répertoire personnalisé"
 
 #, fuzzy
-#~| msgid "Normally, people from outside your home network cannot see things inside it. So if you want to operate a Jamulus server at home, you need to open a hole in your router to let Jamulus clients connect to it."
 #~ msgid "If you are running a Server on your home network, people from outside will not be able to see things inside it. So if you want to operate a Jamulus Server, you need to open a hole in your router's firewall to let Jamulus Clients connect to it."
 #~ msgstr "Normalement, les personnes extérieures à votre réseau domestique ne peuvent pas voir ce qui s'y trouve. Ainsi, si vous souhaitez faire fonctionner un serveur Jamulus chez vous, vous devez ouvrir une brèche dans votre routeur pour permettre aux clients Jamulus de s'y connecter."
 
@@ -886,12 +879,10 @@ msgstr "Si vous avez un autre problème, [regardez ce guide](Server-Troubleshoot
 #~ msgstr "La configuration exacte de la redirection de port diffère pour chaque routeur. Pour obtenir de l'aide, consultez [portforward.com](https://portforward.com)."
 
 #, fuzzy
-#~| msgid "Most domestic Internet connections will change their IP address after a period (hours, days or weeks). To make it easier for people to connect to you, you may therefore also want set up a dynamic DNS address. You can do this on [the machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) that you are running the Jamulus server on, or preferably your router [may support it](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/)."
 #~ msgid "Most domestic Internet connections will change their IP address after a period (hours, days or weeks). To make it easier for people to connect to you, you may therefore also want set up a dynamic DNS address. You can do this on [the machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) that you are running the Jamulus Server on, or preferably your router [may support it](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/)."
 #~ msgstr "La plupart des connexions Internet domestiques changent d'adresse IP après un certain temps (heures, jours ou semaines). Pour que les gens puissent plus facilement se connecter à votre serveur, vous voudrez peut-être aussi configurer une adresse DNS dynamique. Vous pouvez le faire sur [la machine](https://www.online-tech-tips.com/computer-tips/ddns-dynamic-dns-service/) sur laquelle vous exécutez le serveur Jamulus, ou de préférence sur votre routeur [qui peut le prendre en charge](https://www.noip.com/support/knowledgebase/how-to-configure-ddns-in-router/)."
 
 #, fuzzy
-#~| msgid "Various problems can arise when setting up servers, and we generally ecourage people to use other people's (public) servers at first to isolate any issues that may in fact be due to client configuration."
 #~ msgid "Various problems can arise when setting up Servers, and we generally encourage people to use other people's (public) Servers at first to isolate any issues that may in fact be due to Client configuration."
 #~ msgstr "Divers problèmes peuvent survenir lors de la mise en place de serveurs, et nous encourageons généralement les gens à utiliser d'abord les serveurs (publics) d'autres personnes afin d'isoler tout problème qui pourrait en fait être dû à la configuration du client."
 
@@ -949,12 +940,6 @@ msgstr "Si vous avez un autre problème, [regardez ce guide](Server-Troubleshoot
 #~ msgstr "## Largeur de bande du réseau"
 
 #, fuzzy
-#~| msgid ""
-#~| "There is one upstream (musician sending to the server) and one downstream (server sending back the mix to the musician)\n"
-#~| "<figure>\n"
-#~| "\t<img src=\"{% include img/en-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high\">\n"
-#~| "<figcaption>Calculate bandwidth use </figcaption>\n"
-#~| "</figure>\n"
 #~ msgid ""
 #~ "There is one upstream (musician sending to the Server) and one downstream (server sending back the mix to the musician)\n"
 #~ "<figure>\n"
@@ -972,12 +957,10 @@ msgstr "Si vous avez un autre problème, [regardez ce guide](Server-Troubleshoot
 #~ msgstr "Notez également que le débit moyen de l'ADSL2 est de 10 Mbit/s en aval et de 1 Mbit/s en amont. Les performances réelles dépendent de la distance au fournisseur, qui peut [théoriquement aller de 24 Mbit/s à 0,3 km à 1,5 Mbit/s à 5,2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) pour le débit descendant."
 
 #, fuzzy
-#~| msgid "# Running a headless Linux server"
 #~ msgid "# Running a headless Linux Server"
 #~ msgstr "# Exécuter un serveur \"headless\" Linux"
 
 #, fuzzy
-#~| msgid "Those wishing to run a server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux).   \n"
 #~ msgid "Those wishing to run a Server on a Linux cloud or other third party hosting platform should [read this guide](Server-Linux)."
 #~ msgstr "Ceux qui souhaitent faire fonctionner un serveur sur un \"cloud\" Linux ou une autre plateforme d'hébergement tierce doivent [lire ce guide](Server-Linux).   \n"
 

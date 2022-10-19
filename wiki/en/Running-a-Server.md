@@ -20,7 +20,7 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a Server?
 
-**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-a-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
+**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
 
 ## Basic requirements
 
@@ -72,21 +72,21 @@ If you are running an unregistered server behind a home internet connection, you
 
 If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
 
-To run a Directory [read this guide](Custom-Directories)
+To run a Directory [read this guide](Directories)
 
 
 ## Installation and Configuration
 
 Most people run Jamulus as a "pure" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop).  
 
-If you want to run a Server on a Raspberry Pi (or a different armhf based device), you will need to download the `.deb` files for `armhf`, not the default `amd64` ones you'd use on an Intel/AMD based machine.
+If you want to run a Server on a Raspberry Pi (or a different armhf/arm64 debian-based device), you will need to download the `.deb` files for 32 bit `armhf` or 64 bit `arm64`, not the default `amd64` ones you'd use on an Intel/AMD based machine.
 
 
 ### Installation
 
-1. Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }})
+1. Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or the [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }})
 1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
-1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`
+1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc. armhf: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`
 1. Enable the headless Server process via systemd: `sudo systemctl enable jamulus-headless`
 1. Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server).
 1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`
@@ -129,7 +129,7 @@ You can also specify a [Directory](#3-directory) in the same way from the comman
 
 #### Running as a Directory
 
-If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Custom-Directories).
+If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Directories).
 
 ### Maintenance
 
@@ -143,9 +143,9 @@ To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read t
 
 #### Controlling Recording
 
-When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording enabled on/off.
+When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will recording enabled on/off.
 
-To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `newRecording-Jamulus-server.service`).
+To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`).
 
 **Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
 
@@ -201,15 +201,15 @@ Jamulus can be run in Server mode from the desktop. This gives you a graphical u
 
 **None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.
 
-**Genre**: To allow other people to see your Server on one of the built-in Public Directories, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.  
+**Genre**: To allow other people to see your Server on one of the Directories built into the Client, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.
 
 **Custom**: This allows you to specify a custom directory on which to be listed. See the "Options" tab for the Custom Directory address you want to use.
 
-To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the "Genre" to "Custom". [Read this guide](Custom-Directories) for further details.
+To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the "Genre" to "Custom". [Read this guide](Directories) for further details.
 
 ### My Server Info
 
-When running as a registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing.
+When running as a Registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing.
 
 ### Chat Welcome Message
 
@@ -274,7 +274,7 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 ## Running an Unregistered Server
 
-It is highly recommended to test your Server on a **Public Directory** first so as to narrow down any subsequent problems in unregistered mode.
+It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode.
 
 ### Setting up a Server behind a home router
 
