@@ -8,7 +8,11 @@ This is the content repository for [jamulus.io](https://jamulus.io). Text appear
 <img src="https://hosted.weblate.org/widgets/jamulus/-/multi-auto.svg" alt="Translation status" />
 </a>
 
-The Jamulus website is translated using [Weblate](https://hosted.weblate.org/engage/jamulus/). If you prefer you may also submit translations via Pull Requests. Note that translating the Jamulus application itself is done by a different process, but you are welcome to help with that too. Introduce yourself on the [GitHub Discussion](https://github.com/jamulussoftware/jamulus/discussions) and say what you’d like to do.
+The Jamulus application and website are translated using [Weblate](https://hosted.weblate.org/engage/jamulus/), where you can check the status of each separate file. If you would like to help with translations, before you start, please read the instructions for [translating the website](https://github.com/jamulussoftware/jamuluswebsite/tree/release/_translator-files) or the [Jamulus application](https://github.com/jamulussoftware/jamulus/blob/master/docs/TRANSLATING.md).
+
+Introduce yourself on the [GitHub Discussions](https://github.com/jamulussoftware/jamulus/discussions) and tell us what you’d like to do.
+
+If you prefer to submit translations via pull requests rather than using Weblate, feel free to do so. However, make sure you coordinate with other possible translators to your language in order to avoid duplicating work and the risk of conflicts on GitHub.
 
 ***PLEASE NOTE:*** Discussions should be in English so as to be open to all.
 
@@ -18,7 +22,9 @@ The Jamulus website is translated using [Weblate](https://hosted.weblate.org/eng
 
 To edit an individual file, you can use the Github web interface or make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit multiple website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
 
-To view the website offline one your own machine, you will need to clone it locally and use [Jekyll](https://jekyllrb.com/) to build it. Please ask on [in the discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
+### Viewing the website offline
+
+To view the website offline on your own machine, you will need to [use Jekyll](https://jekyllrb.com/) to build it. You can find instructions on installing Jekyll and building the website [here](https://docs.github.com/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll?platform=linux). The easiest way is to make a pull request with your changes, click on the "Checks" tab of your pull request, on the right click on "Artifacts" and download the zipped website file. Unzip it (twice), cd into the extracted folder and run `bundle exec jekyll serve`. Type `http://127.0.0.1:4000/` into your browser's address bar and you should see the website. Please [ask in Discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
 
 ## Formatting and style
 
@@ -31,6 +37,8 @@ Note that we use British English spelling and grammar conventions.
 In order to keep the size of the respository under control when images change over time, we do not store screenshots locally. Instead we use Jekyll's `include` function to call a file containing an external URL to the image itself:
 
 `<img src="{% include img/en-screenshots/main-screen-default.inc %}"  …`
+
+These files are located in `_assets/img/LANG-screenshots`.
 
 If you want to add a new image, use .png format if possible, and if it’s not a screenshot, ask about where you should store it. Localised images must go in a directory for that language (see the example for English, above).
 
