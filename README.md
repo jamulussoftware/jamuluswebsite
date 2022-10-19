@@ -22,7 +22,9 @@ If you prefer to submit translations via pull requests rather than using Weblate
 
 To edit an individual file, you can use the Github web interface or make a fork of the Jamulus repository (button at [top right here](https://github.com/jamulussoftware/jamuluswebsite)). In your fork, you can edit multiple website pages (or of course use git on the command line if you prefer). When you are done, create a pull request that we will review, translate and publish in the next release.
 
-To view the website offline on your own machine, you will need to clone it locally and use [Jekyll](https://jekyllrb.com/) to build it. Please ask in [Discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
+### Viewing the website offline
+
+To view the website offline on your own machine, you will need to [use Jekyll](https://jekyllrb.com/) to build it. You can find instructions on installing Jekyll and building the website [here](https://docs.github.com/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll?platform=linux). The easiest way is to make a pull request with your changes, click on the "Checks" tab of your pull request, on the right click on "Artifacts" and download the zipped website file. Unzip it (twice), cd into the extracted folder and run `bundle exec jekyll serve`. Type `http://127.0.0.1:4000/` into your browser's address bar and you should see the website. Please [ask in Discussions](https://github.com/jamulussoftware/jamulus/discussions) for help with this if necessary.
 
 ## Formatting and style
 
