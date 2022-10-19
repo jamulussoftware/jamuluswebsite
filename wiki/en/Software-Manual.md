@@ -101,9 +101,12 @@ If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you
 
 If you see a "mute" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero.
 
+Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu.
+
 ### Grp button
 
-Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others. Up to 8 groups can be defined.
+Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others. Up to 8 groups can be defined. You can isolate a channel from the group temporarily
+with shift-click-drag.
 
 ### Mute button
 
@@ -114,8 +117,6 @@ Note that muting your **own** channel only means you will not hear your signal f
 ### Solo button
 
 Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a "muted" icon above your fader.
-
-Users are listed left to right in the order that they connect. You can change the sort order using the Edit option in the application menu.
 
 You can group users together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag.
 
