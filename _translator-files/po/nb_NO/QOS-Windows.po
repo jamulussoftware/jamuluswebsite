@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: YAML Front Matter: lang
+#: ../wiki/en/QOS-Windows.md:1
+#, no-wrap
+msgid "en"
+msgstr ""
+
+#. type: YAML Front Matter: layout
+#: ../wiki/en/QOS-Windows.md:1
+#, no-wrap
+msgid "wiki"
+msgstr ""
+
+#. type: YAML Front Matter: permalink
+#: ../wiki/en/QOS-Windows.md:1
+#, no-wrap
+msgid "/wiki/QOS-Windows"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: ../wiki/en/QOS-Windows.md:1
+#, no-wrap
+msgid "Quality of Service (QoS)"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/QOS-Windows.md:9
+msgid "{% include breadcrumb.html root=\"More\" %}"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/QOS-Windows.md:11
+msgid "## Use of QoS on Windows"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/QOS-Windows.md:13
+msgid "Jamulus uses Quality of Service (QoS) to mitigate network jitter delays."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/QOS-Windows.md:15
+msgid "If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18.  Jamulus sets the DS Field byte to 128 (or 0x80) to select DSCP/CS4 in an IPv4 or IPv6 packet header. Other byte values can be set using the -Q option, e.g. -Q [0..255].  However, most people will have no need to do this."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/QOS-Windows.md:17
+msgid "Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/QOS-Windows.md:37
+msgid "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br> In new window, (click) on the menu icon to display the Actions third panel<br> Looking at the first panel of the Local Group Policy Editor<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br> Looking at the third panel (Actions) of the Local Group Policy Editor<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;More Actions<br> &nbsp;&nbsp;&nbsp;Create new Policy (click)<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/QOS-Windows.md:39
+msgid "(Notice Jamulus policy in center panel may be edited)"
+msgstr ""
