@@ -2,18 +2,19 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
+# 이정희 <daemul72@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-13 20:26+0000\n"
-"Last-Translator: 이정희 <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2022-10-21 04:04+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Server-Troubleshooting.md:1
@@ -31,13 +32,13 @@ msgstr "wiki"
 #: ../wiki/en/Server-Troubleshooting.md:1
 #, no-wrap
 msgid "/wiki/Server-Troubleshooting"
-msgstr ""
+msgstr "/wiki/Server-Troubleshooting"
 
 #. type: YAML Front Matter: title
 #: ../wiki/en/Server-Troubleshooting.md:1
 #, no-wrap
 msgid "Server Troubleshooting"
-msgstr ""
+msgstr "서버 문제 해결"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:9
@@ -51,113 +52,115 @@ msgid ""
 "# Server Troubleshooting\n"
 " {:.no_toc}\n"
 msgstr ""
+"# 서버 문제 해결\n"
+" {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:14
 msgid "<details markdown=\"1\">"
-msgstr ""
+msgstr "<details markdown=\"1\">"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:16
 msgid "<summary>Table of contents</summary>"
-msgstr ""
+msgstr "<summary> 목차</summary>"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:18
 msgid "TOC"
-msgstr ""
+msgstr "목차"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:19
 msgid "{:toc}"
-msgstr ""
+msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:21
 msgid "</details>"
-msgstr ""
+msgstr "</details>"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:23
 msgid "## Servers - Registered"
-msgstr ""
+msgstr "## 서버 - 등록"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:25
 msgid "### Why doesn't my Server show up in the list? Why isn't it registering?"
-msgstr ""
+msgstr "### 내 서버가 목록에 표시되지 않는 이유는 무엇입니까? 왜 등록이 안되나요?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
 msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
-msgstr ""
+msgstr "사용자가 정상적([여기서 볼 수 있음](https://explorer.jamulus.io/))으로 등록되어 있고, 사용자 또는 사용자의 친구가 서버를 볼 수 없는 경우, 기다리거나 `--showallservers` 옵션으로 클라이언트를 시작하고 거기서 클라이언트를 시작하는 방법([명령줄 옵션](Software-Manual#command-line-options) 참조)을 시도해야 합니다. 일부 네트워크 구성에서는 사용자의 라우터를 [포트 포워딩](Running-a-Server#port-forwarding)해야 할 수도 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:29
 msgid "If you are seeing a message that says the Server is full, you will need to wait until a slot becomes free."
-msgstr ""
+msgstr "서버가 꽉 찼다는 메시지가 표시되면 슬롯이 비워질 때까지 기다려야 합니다."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:31
 msgid "You can verify that your Server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/)."
-msgstr ""
+msgstr "사용자의 서버가 관련 장르에 나열되는지 [여기에서 확인](https://explorer.jamulus.io/)하여 확인할 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:33
 msgid "## Servers - Unregistered"
-msgstr ""
+msgstr "## 서버 - 등록 해제"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:35
 msgid "### I'm running my Client on the same machine/network as my Server but I can't connect to it"
-msgstr ""
+msgstr "### 내 서버와 동일한 시스템/네트워크에서 내 클라이언트를 실행하고 있지만 연결할 수 없습니다"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:37
 msgid "Connect your Client to `localhost` or `127.0.0.1`. If you're running the Client on a different machine to the Server but on the same network, then connect to the _local network_ address of the Server. Do not connect via the Server's public (WAN) address."
-msgstr ""
+msgstr "클라이언트를 `localhost` 또는 `127.0.0.1`에 연결합니다. 서버와 다른 시스템에서 동일한 네트워크에서 클라이언트를 실행하는 경우 서버의 _로컬 네트워크_ 주소에 연결합니다. 서버의 공용(WAN) 주소를 통해 연결하지 마십시오."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:39
 msgid "### What address do I give to people so that they can connect to my Server?"
-msgstr ""
+msgstr "### 사람들이 내 서버에 연결할 수 있도록 어떤 주소를 제공해야 합니까?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
 msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
-msgstr ""
+msgstr "이것은 사용자의 **공용** IP 주소여야 합니다([Google](https://www.google.com/search?q=whatsmyip)에서 찾을 수 있음). 사용자 **자신의** Jamulus 클라이언트를 서버의 **로컬** IP 주소(`localhost` 또는 클라이언트와 동일한 시스템에 있는 경우, `127.0.0.1`)에 연결합니다. 사용자의 공용 IP 주소는 변경될 수 있습니다. [이 가이드](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)의 \"동적 DNS\"에 대한 참고 사항을 참조하십시오."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:44
 msgid "### What port numbers can I use?"
-msgstr ""
+msgstr "### 어떤 포트 번호를 사용할 수 있습니까?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:46
 msgid "You can set your Server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your Server in the format `[serverAddress]:[portNumber]`."
-msgstr ""
+msgstr "`--port` 옵션을 사용하여 사용자 지정 포트에서 수신 대기하도록 사용자의 서버를 설정할 수 있습니다. 이렇게 하면 연결할 포트를 사람들에게 알려야 합니다. 포트 번호를 `[serverAddress]:[portNumber]` 형식으로 서버 주소에 추가해야 합니다."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:48
 msgid "### Nobody can connect to my Server - but I can connect locally"
-msgstr ""
+msgstr "### 아무도 내 서버에 연결할 수 없지만, 로컬로 연결할 수 있습니다"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:50
 msgid "First of all, make sure you've enabled [port forwarding](Running-a-Server#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
-msgstr ""
+msgstr "우선, [포트포워딩](Running-a-Server#port-forwarding)을 활성화했는지 확인합니다. 여전히 사용자의 로컬 네트워크 외부에서 서버가 표시되지 않으면 ISP(인터넷 서비스 공급자)에 문제가 있을 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
 msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
-msgstr ""
+msgstr "일부 ISP는 [Address plus Port(A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) 또는 [Carrier-grade NAT(CGN)](https://en.wikipedia. org/wiki/Carrier-grade_NAT) 주소 공간을 절약합니다(일반적으로 IPv4의 경우). 따라서 로컬 네트워크 외부에서 볼 수 없기 때문에 집에서 Jamulus와 같은 서비스를 호스팅하는 것이 불가능합니다."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:54
 msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address doesn't match with your public IPv4 address (check it [here](https://ifconfig.me)), it suggests that CGN may be enabled. You can try using an IPv6 connection by starting clients and server with the `-6` flag if IPv6 is available for the server and all clients."
-msgstr ""
+msgstr "CGN이 문제인지 감지하려면 라우터의 구성 화면(일반적으로 192.168.X.X)으로 이동하여 WAN 상태 페이지를 확인하십시오. 나열된 IPv4 주소가 공용 IPv4 주소와 일치하지 않는 경우([여기](https://ifconfig.me) 확인) CGN이 활성화되었을 수 있음을 나타냅니다. 서버와 모든 클라이언트에서 IPv6을 사용할 수 있는 경우 '-6' 플래그로 클라이언트와 서버를 시작하여 IPv6 연결을 사용해 볼 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:56
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
-msgstr ""
+msgstr "IPv4 문제를 해결하려면 ISP 기술 지원 팀에 연락하여 집에서 공용 서버를 호스팅하고 싶다고 말하여 실제 WAN IP 주소가 필요합니다. 또한 CGN이 문제일 수 있다는 정보로 그들을 도울 수 있습니다. 또한 DDNS 사용을 피하기 위해 고정 IP 주소를 요청할 수 있습니다."
