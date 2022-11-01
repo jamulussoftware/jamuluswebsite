@@ -2,18 +2,19 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
+# 이정희 <redacted@invalid.local>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-16 15:25+0000\n"
-"Last-Translator: 이정희 <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2022-10-21 04:04+0000\n"
+"Last-Translator: 이정희 <redacted@invalid.local>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -37,7 +38,7 @@ msgstr "/wiki/Running-a-Server"
 #: ../wiki/en/Running-a-Server.md:1
 #, no-wrap
 msgid "Running a Server"
-msgstr ""
+msgstr "서버 실행"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:10
@@ -46,73 +47,75 @@ msgid ""
 "# Server Administration Manual\n"
 " {:.no_toc}\n"
 msgstr ""
+"# 서버 관리 설명서\n"
+" {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:12
 msgid "<details markdown=\"1\">"
-msgstr ""
+msgstr "<details markdown=\"1\">"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:14
 msgid "<summary>Table of contents</summary>"
-msgstr ""
+msgstr "<summary> 목차</summary>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:16
 msgid "TOC"
-msgstr ""
+msgstr "목차"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:17
 msgid "{:toc}"
-msgstr ""
+msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:19
 msgid "</details>"
-msgstr ""
+msgstr "</details>"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:22
 msgid "## Do I need to run a Server?"
-msgstr ""
+msgstr "## 서버를 실행해야 합니까?"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:24
 #, no-wrap
 msgid "**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.\n"
-msgstr ""
+msgstr "**아니요**. 기본 제공 디렉터리에 나열된 서버를 사용하고 서버를 실행하지 않고, Jamulus를 사용하거나 타사 호스팅 서비스를 선택할 수 있습니다. 방해받지 않는 세션을 원하면 [팁과 트릭 페이지에 설명된 솔로잉 기법](Tips-Tricks-More#have-an-undisturbed-session-on-any-server)을 사용하세요. 기본 제공 디렉터리에 나열된 서버를 사용할 수 없다고 결정한 경우 다음에서 호스팅하는 서버(사용자 지정 디렉터리에 등록 또는 등록 해제 - [서버 유형](#server-types) 참조)를 사용할 수 있습니다. 제3자. 이렇게 하면 직접 설정하는 수고를 덜 수 있습니다.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:26
 msgid "## Basic requirements"
-msgstr ""
+msgstr "## 기본 요구 사항"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:28
 msgid "While setting up a Server isn't difficult, it's a good idea to read the following background information to avoid some problems:"
-msgstr ""
+msgstr "서버를 설정하는 것은 어렵지 않지만 몇 가지 문제를 피하기 위해 다음 배경 정보를 읽는 것이 좋습니다:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:30
 msgid "### Speed and latency"
-msgstr ""
+msgstr "### 속도 및 레이턴시"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:32
 #, no-wrap
 msgid "**_The capability of the Server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**\n"
-msgstr ""
+msgstr "**_서버 자체(및 서버가 있는 네트워크)의 기능은 Jamulus 세션의 품질을 결정하는 주요 요소가 아닙니다!_**\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:34
 msgid "Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed."
-msgstr ""
+msgstr "일반적으로 문제는 _Client_ 측에 있으며 거기에서 수정해야 합니다. 필요한 경우 [문제 해결 페이지](/wiki/Client-Troubleshooting)를 살펴보십시오."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:36
 msgid "However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth)."
-msgstr ""
+msgstr "그러나 특히 낮은 대역폭의 홈 연결에서 실행할 때 서버를 설정할 때 다양한 문제가 발생할 수도 있습니다. 느린 속도의 홈 연결(예: 10Mbit/s 다운 및 1Mbit/s 업)에 5명 미만의 플레이어가 있는 것은 일반적으로 괜찮습니다. 네트워크 요구 사항에 대한 자세한 내용은 [여기에서 다른 품질 설정](서버 대역폭)을 참조하세요."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:38
@@ -132,37 +135,37 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:44
 msgid "Running a Server may require you to adjust any firewalls running on or outside of your machine or cloud host."
-msgstr ""
+msgstr "서버를 실행하려면 컴퓨터 또는 클라우드 호스트에서 실행되거나 외부에서 실행되는 방화벽을 조정해야 할 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:45
 msgid "Running an Unregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
-msgstr ""
+msgstr "홈에서 등록되지 않은 서버를 실행하려면 라우터에서 [포트 포워딩](#port-forwarding)이 필요합니다. 등록된 서버를 실행할 때 대부분의 경우 포트 포워딩이 필요하지 않지만 일부 네트워크는 기본 모드에서 Jamulus가 제대로 작동하지 않을 수 있으므로 포트 포워딩을 수행하는 것이 좋습니다."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:46
 msgid "Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. (There are plans to expand IPv6 support.)"
-msgstr ""
+msgstr "Jamulus는 클라이언트 및 서버에서 명령줄 인수를 사용하여 사용하도록 설정해야 하는 제한된 IPv6 지원만 제공합니다. (IPv6 지원을 확대할 계획입니다.)"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:48
 msgid "## Server Types"
-msgstr ""
+msgstr "## 서버 유형"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:50
 msgid "You can run your Server in different ways (either at home or on a 3rd party host):"
-msgstr ""
+msgstr "다양한 방법으로 서버를 실행할 수 있습니다(집에서 또는 타사 호스트에서):"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:52
 msgid "### 1. Registered"
-msgstr ""
+msgstr "### 1. 등록"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:54
 msgid "Your Server will be listed in a Directory. By default, Jamulus has a list of built-in Directories that Clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs."
-msgstr ""
+msgstr "사용자의 서버가 디렉터리에 나열됩니다. 기본적으로 Jamulus에는 클라이언트가 연결할 수 있는 기본 제공 디렉터리 목록이 있습니다. 이 중 하나에 등록하면 누구나 서버를 검색하고 연결할 수 있습니다. 필요에 더 잘 맞는 경우 사용자 지정 디렉터리에 서버를 나열할 수도 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:59
@@ -173,16 +176,20 @@ msgid ""
 "<figcaption>How Registered Servers work</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Jamulus 등록 서버 내 클라이언트 간 연결 다이어그램\">\n"
+"<figcaption>등록된 서버의 작동 방법</figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:61
 msgid "### 2. Unregistered"
-msgstr ""
+msgstr "### 2. 등록 해제"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:63
 msgid "This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server."
-msgstr ""
+msgstr "서버를 처음 시작할 때 기본값입니다. 등록되지 않은 서버는 디렉터리별로 나열되지 않으므로 서버 주소를 알고 있는 뮤지션들만 연결할 수 있습니다. 이 기능은 Jamulus가 서버에 연결할 수 있는 사용자를 제어할 수 없기 때문에 유용합니다."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:68
@@ -193,6 +200,10 @@ msgid ""
 "\t<figcaption>How Unregistered Servers work</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"등록 해제된 Jamulus 서버 내 클라이언트 간 연결 다이어그램\">\n"
+"\t<figcaption>등록 해제된 서버의 작동 방법</figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:70
@@ -492,7 +503,7 @@ msgstr ""
 #: ../wiki/en/Running-a-Server.md:193
 #, no-wrap
 msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).\n"
-msgstr ""
+msgstr "**macOS 사용자** - 응용 프로그램에서 \"Jamulus 서버\" 아이콘을 두 번 클릭합니다([이 지침](Macintosh용 설치)에 따라 설치 파일을 거기에 넣었다고 가정).\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:194
