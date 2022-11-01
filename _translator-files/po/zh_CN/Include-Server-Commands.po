@@ -1,111 +1,111 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2022-11-01 00:11+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:2
 msgid "`-d` or `--discononquit` Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server."
-msgstr ""
+msgstr "`-d` 或 `--discononquit` 在退出时断开所有客户端的连接。通常，当服务器停止或重新启动时，任何未使用“断开连接”按钮的客户端将在服务器再次恢复时重新建立连接。使用此选项会强制客户端手动重新建立与服务器的连接。"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:3
 msgid "`-e` or `--directoryserver` Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](Running-a-Server#server-types) for further information."
-msgstr ""
+msgstr "`-e` 或 `--directoryserver` 在目录上注册服务器（例如，设置其流派（另见 `-o`））。有关详细信息，请参阅 [服务器类型](Running-a-Server#服务器类型)。"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:4
 msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information."
-msgstr ""
+msgstr "`--directoryfile` 即使目录重新启动，也要记住注册的服务器。仅限目录服务器。有关详细信息，请参阅 [本指南](Directories)。"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:5
 msgid "`-f` or `--listfilter` Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only."
-msgstr ""
+msgstr "`-f` 或 `--listfilter` 白名单服务器列表中注册的服务器，格式为 ` ip address 1[;ip address 2]`仅目录。"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:6
 msgid "`-F` or `--fastupdate` Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
-msgstr ""
+msgstr "`-F` 或 `--fastupdate` 如果客户端使用“启用小型网络缓冲区”选项连接，则减少延迟。需要更快的 CPU 以避免丢失，并为启用的客户端提供更多带宽。"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:7
 msgid "`-l` or `--log` Enable logging, set path and file name"
-msgstr ""
+msgstr "`-l` 或 `--log` 启用日志记录，设置路径和文件名"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:8
 msgid "`-L` or `--licence` Show an agreement window before users can connect"
-msgstr ""
+msgstr "`-L` 或 `--licence` 在用户连接之前显示一个协议窗口"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:9
 msgid "`-m` or `--htmlstatus` Enable HTML status file, set path and file name"
-msgstr ""
+msgstr "`-m` 或 `--htmlstatus` 启用 HTML 状态文件，设置路径和文件名"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:10
 msgid "`-o` or `--serverinfo` Location details in the format: `[name];[city];[country as two-letter ISO country code or Qt5 Locale]` (see [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) or [Qt5 Locale values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only"
-msgstr ""
+msgstr "`-o` 或 `--serverinfo` 位置详细信息，格式为:`[name];[city];[country as two-letter ISO country code or Qt5 Locale]`（参见 [two-letter ISO country codes]( https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) 或 [Qt5 语言环境值](https://doc.qt.io/qt-5/qlocale.html#Country-enum))仅限注册服务器"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:11
 msgid "`-P` or `--delaypan` Start with delay panning enabled See [notes](Running-a-Server#delay-panning)"
-msgstr ""
+msgstr "`-P` 或 `--delaypan` 开始时启用延迟平移参见 [notes](Running-a-Server#延迟平移)"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:12
 msgid "`-R` or `--recording` Set server recording directory; Server will record when a session is active by default. See [Options](Running-a-Server#options)."
-msgstr ""
+msgstr "`-R` 或 `--recording` 设置服务器录音目录;默认情况下，服务器将记录会话何时处于活动状态。请参阅 [选项](Running-a-Server#选项)。"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:13
 msgid "`--norecord` Set server not to record by default (when recording is configured e.g via `-R`)"
-msgstr ""
+msgstr "`--norecord` 设置服务器默认不记录（当配置记录时，例如通过`-R`）"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:14
 msgid "`-s` or `--server` Start in Server mode"
-msgstr ""
+msgstr "`-s` 或 `--server` 以服务器模式启动"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:15
 msgid "`--serverbindip` Specify the IP address to bind to"
-msgstr ""
+msgstr "`--serverbindip` 指定要绑定的 IP 地址"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:16
 msgid "`-T` or `--multithreading` Use multithreading to make better use of multi-core CPUs to support more Clients"
-msgstr ""
+msgstr "`-T` 或 `--multithreading` 使用多线程更好地利用多核 CPU 来支持更多的客户端"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:17
 msgid "`-u` or `--numchannels` Maximum number of channels (Clients)"
-msgstr ""
+msgstr "`-u`或` --numchannels` 最大通道数（客户端）"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:18
 msgid "`-w` or `--welcomemessage` Welcome message on connect. Can be given as a string or filename, and can contain HTML."
-msgstr ""
+msgstr "`-w` 或 `--welcomemessage` 连接时的欢迎消息。可以作为字符串或文件名给出，并且可以包含 HTML。"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-z` or `--startminimized` Start minimized"
-msgstr ""
+msgstr "`-z` 或 `--startminimized` 开始最小化"
 
 #. type: Plain text
 #: ../wiki/en/Include-Server-Commands.md:19
 msgid "`--serverpublicip` The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)"
-msgstr ""
+msgstr "`--serverpublicip` 如果连接到同一 NAT 后面的目录，则服务器的公共 IP 地址。参见[目录注释](Directories#关于目录的注意事项)"
