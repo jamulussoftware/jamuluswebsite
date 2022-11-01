@@ -1,4 +1,4 @@
-- `-d` or `--discononquit` Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their "Disconnect" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.
+- `-d` o `--discononquit` Disconnetti tutti i client all'uscita dal programma. Normalmente, quando un Server viene arrestato o riavviato, tutti i Client che non hanno utilizzato i pulsanti "Disconnetti" ristabiliranno la connessione quando il Server si riattiva. L'utilizzo di questa opzione obbliga i client a ristabilire manualmente le connessioni al server.
 - `-e` or `--directoryserver` Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](Running-a-Server#server-types) for further information.
 - `--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information.
 - `-f` or `--listfilter` Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only.

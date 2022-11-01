@@ -1,10 +1,10 @@
 
-[comment]: # (This is an include file for use in multiple documents)
+[commento]: # (Questo è un file di inclusione da utilizzare in più documenti)
 
-- `-h` or `--help`           Display help text         
-- `-i` or `--inifile`        Set location of initialization file (overrides default)
-- `-n` or `--nogui`          Disable GUI (for use in headless mode)                      
-- `-p` or `--port`           Sets the local UDP port number. Default is 22124
+- `-h` or `--help`           Visualizza il testo della guida         
+- `-i` o `--inifile` Imposta la posizione del file di inizializzazione (sostituisce l'impostazione predefinita)
+- `-n` or `--nogui`          Disabilita la GUI (usato per essere lanciato senza interfaccia grafica)                      
+- `-p` or `--port`           Imposta la porta UDP del server. Di default è 22124
 - `--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md).
 - `--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.
 - `-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)

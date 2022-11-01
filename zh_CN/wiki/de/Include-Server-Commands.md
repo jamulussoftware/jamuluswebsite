@@ -1,0 +1,19 @@
+- `-d` or `--discononquit` Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their "Disconnect" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.
+- `-e` or `--directoryserver` Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](Running-a-Server#server-types) for further information.
+- `--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information.
+- `-f` or `--listfilter` Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only.
+- `-F` or `--fastupdate` Reduces latency if Clients connect with "Enable Small Network Buffers" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.
+- `-l` or `--log` Enable logging, set path and file name
+- `-L` or `--licence` Show an agreement window before users can connect
+- `-m` or `--htmlstatus` Enable HTML status file, set path and file name
+- `-o` or `--serverinfo` Location details in the format: `[name];[city];[country as two-letter ISO country code or Qt5 Locale]` (see [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) or [Qt5 Locale values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only
+- `-P` or `--delaypan` Start with delay panning enabled See [notes](Running-a-Server#delay-panning)
+- `-R` or `--recording` Set server recording directory; Server will record when a session is active by default. See [Options](Running-a-Server#options).
+- `--norecord` Set server not to record by default (when recording is configured e.g via `-R`)
+- `-s` or `--server` Start in Server mode
+- `--serverbindip` Specify the IP address to bind to
+- `-T` or `--multithreading` Use multithreading to make better use of multi-core CPUs to support more Clients
+- `-u` or `--numchannels` Maximum number of channels (Clients)
+- `-w` or `--welcomemessage` Welcome message on connect. Can be given as a string or filename, and can contain HTML.
+- `-z` or `--startminimized` Start minimized
+- `--serverpublicip` The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)

@@ -1,0 +1,19 @@
+- `-d` 或 `--discononquit` 在退出时断开所有客户端的连接。通常，当服务器停止或重新启动时，任何未使用“断开连接”按钮的客户端将在服务器再次恢复时重新建立连接。使用此选项会强制客户端手动重新建立与服务器的连接。
+- `-e` 或 `--directoryserver` 在目录上注册服务器（例如，设置其流派（另见 `-o`））。有关详细信息，请参阅 [服务器类型](Running-a-Server#服务器类型)。
+- `--directoryfile` 即使目录重新启动，也要记住注册的服务器。仅限目录服务器。有关详细信息，请参阅 [本指南](Directories)。
+- `-f` 或 `--listfilter` 白名单服务器列表中注册的服务器，格式为 ` ip address 1[;ip address 2]`仅目录。
+- `-F` 或 `--fastupdate` 如果客户端使用“启用小型网络缓冲区”选项连接，则减少延迟。需要更快的 CPU 以避免丢失，并为启用的客户端提供更多带宽。
+- `-l` 或 `--log` 启用日志记录，设置路径和文件名
+- `-L` 或 `--licence` 在用户连接之前显示一个协议窗口
+- `-m` 或 `--htmlstatus` 启用 HTML 状态文件，设置路径和文件名
+- `-o` 或 `--serverinfo` 位置详细信息，格式为:`[name];[city];[country as two-letter ISO country code or Qt5 Locale]`（参见 [two-letter ISO country codes]( https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) 或 [Qt5 语言环境值](https://doc.qt.io/qt-5/qlocale.html#Country-enum))仅限注册服务器
+- `-P` 或 `--delaypan` 开始时启用延迟平移参见 [notes](Running-a-Server#延迟平移)
+- `-R` 或 `--recording` 设置服务器录音目录;默认情况下，服务器将记录会话何时处于活动状态。请参阅 [选项](Running-a-Server#选项)。
+- `--norecord` 设置服务器默认不记录（当配置记录时，例如通过`-R`）
+- `-s` 或 `--server` 以服务器模式启动
+- `--serverbindip` 指定要绑定的 IP 地址
+- `-T` 或 `--multithreading` 使用多线程更好地利用多核 CPU 来支持更多的客户端
+- `-u`或` --numchannels` 最大通道数（客户端）
+- `-w` 或 `--welcomemessage` 连接时的欢迎消息。可以作为字符串或文件名给出，并且可以包含 HTML。
+- `-z` 或 `--startminimized` 开始最小化
+- `--serverpublicip` 如果连接到同一 NAT 后面的目录，则服务器的公共 IP 地址。参见[目录注释](Directories#关于目录的注意事项)
