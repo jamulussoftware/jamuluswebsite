@@ -46,4 +46,4 @@ It is possible for connected Clients to make recordings of sessions outside of J
 
 ## Directories
 
-Directories are central connection points for locating Servers.  The Jamulus Client comes with a pre-defined list of Directories for the convenience of users.  These Directories are independently operated but are represented as running unmodified versions of the Jamulus software.
+Directories are central connection points for locating Servers. The Jamulus Client comes with a pre-defined list of Directories for the convenience of users. These Directories are independently operated but are represented as running unmodified versions of the Jamulus software.
