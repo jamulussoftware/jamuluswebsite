@@ -36,7 +36,7 @@ When you connect to a Server, either directly or through a Directory, the operat
 
 ## Chat Exchanges
 
-Chats are textual messages that can be exchanged between Clients connected to the same Server.  Everyone connected to a Server can see all chats and there should be no expectation of privacy with respect to information sent through the chat feature of Jamulus.  While unmodified Servers do not log or store chats, some modified Servers may do this.
+Chats are textual messages that can be exchanged between Clients connected to the same Server. Everyone connected to a Server can see all chats and there should be no expectation of privacy with respect to information sent through the chat feature of Jamulus. While unmodified Servers do not log or store chats, some modified Servers may do this.
 
 ## Audio Recordings
 
