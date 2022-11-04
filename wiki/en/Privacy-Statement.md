@@ -7,7 +7,7 @@ permalink: "/wiki/Privacy-Statement"
 
 # Privacy Statement
 
-**The English version of this document represents the official privacy statement.  If there are conflicts with other translations the English version governs.  This statement applies to the _current version_ of the Jamulus software.  Earlier versions may have had different privacy  terms which are no longer supported.  Users are encouraged to use the most current version of the Jamulus software.**
+**The English version of this document represents the official privacy statement. Should a conflict arise between the English language version and any translation hereof, the English version shall prevail. This statement applies to the _current version_ of the Jamulus software. Earlier versions may have had different privacy terms which are no longer applicable. Users are encouraged to use the most current version of the Jamulus software.**
  
 
 ## Definition of Terms
