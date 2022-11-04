@@ -32,7 +32,7 @@ All communications between and among Clients, Servers, Directories, and third-pa
 
 ## Jamulus Servers
 
-When you connect to a Server, either directly or through a Directory, the operator of that Server is responsible for its operation policy, privacy policy, and data use policy.  While unmodified Servers do not log or store your connection or profile information, some modified Servers may do this; and you should have no expectation of privacy with respect to your profile information or internet address.  
+When you connect to a Server, either directly or through a Directory, the operator of that Server is responsible for its operation policy, privacy policy, and data use policy. While unmodified Servers do not log or store your connection or profile information, some modified Servers may do this; therefore, you should have no expectation of privacy with respect to your profile information or internet address.
 
 ## Chat Exchanges
 
