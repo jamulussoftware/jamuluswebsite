@@ -26,7 +26,7 @@ Jamulus is open source software and can therefore be modified by others. As such
 
 ## General Information
 
-Under normal use with unmodified software, your user profile information is exchanged with Servers you connect to, peers connected to those same Servers, and to any interested third party (including Directories) that uses the Jamulus protocol.  This information is limited to your Jamulus name, city, country, instrument, and skill level as you have set them in your profile.  The Servers you connect to will also have access to your internet address (IP Address) as it is required for the software to work; but this information is not shared with peers on the same Server or normally available to third parties. 
+Under normal use with unmodified software, your user profile information is exchanged with Servers you connect to, peers connected to those same Servers, and to any interested third party (including Directories) that uses the Jamulus protocol.  This information is limited to your Jamulus name, city, country, instrument, and skill level as you have set them in your profile.  The Servers you connect to will also have access to your internet address (IP Address) as it is required for the software to work; but this information is not shared with peers on the same Server or available to third parties. 
 
 All communications between and among Clients, Servers, Directories, and third-party protocol users are sent without encryption.
 
