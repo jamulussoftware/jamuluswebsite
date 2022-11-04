@@ -42,7 +42,7 @@ Chats are textual messages that can be exchanged between Clients connected to th
 
 Unmodified Servers will display a notice if recording is turned on. Recordings of each player are stored by the Server and are controlled by the Server operator.
 
-It is possible for connected clients to make recordings of sessions outside of Jamulus itself for which there may be no notice or indication.  Jamulus has no way to detect or control these situations and makes no representations as to the collection or use of such recording data.
+It is possible for connected Clients to make recordings of sessions outside of Jamulus itself, for which there may be no notice or indication. Jamulus has no way to detect or control these situations and makes no representations as to the collection or use of such recording data.
 
 ## Directories
 
