@@ -7,7 +7,7 @@ permalink: "/wiki/Privacy-Statement"
 
 # Privacy Statement
 
-**The English version of this document represents the official privacy statement. Should a conflict arise between the English language version and any translation hereof, the English version shall prevail. This statement applies to the _current version_ of the Jamulus software. Earlier versions may have had different privacy terms which are no longer applicable. Users are encouraged to use the most current version of the Jamulus software.**
+**The English version of this document represents the official privacy statement for the _current version_ of the software available on this website. If there is a conflict between the English language version and any translation, the English version shall apply. This statement applies to the _current version_ of the Jamulus software. Earlier versions may have had different privacy terms which are no longer applicable or supported. Users are encouraged to use the most current version of the Jamulus software.**
  
 
 ## Definition of Terms
@@ -22,11 +22,11 @@ The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. Se
 
 ## Jamulus Software
 
-Jamulus is open source software and can therefore be modified by others. As such, the Jamulus project makes no representations related to privacy, data collection, or security with respect to your use of the software.  
+Jamulus is open source software and can therefore be modified by others. As such, the Jamulus project makes no representations related to privacy, data collection, or security with respect to your use of the software.
 
 ## General Information
 
-Under normal use with unmodified software, your user profile information is exchanged with Servers you connect to, peers connected to those same Servers, and to any interested third party (including Directories) that uses the Jamulus protocol.  This information is limited to your Jamulus name, city, country, instrument, and skill level as you have set them in your profile.  The Servers you connect to will also have access to your internet address (IP Address) as it is required for the software to work; but this information is not shared with peers on the same Server or available to third parties. 
+Under normal use with unmodified software, your user profile information is exchanged with Servers you connect to, peers connected to those same Servers, and to third parties (including Directories) that uses the Jamulus protocol. This information is limited to your Jamulus name, city, country, instrument, and skill level as you have set them in your profile. The Servers you connect to will also have access to your internet address (IP Address) as it is required for the software to work; but this information is not shared with peers on the same Server or available to third parties. 
 
 All communications between and among Clients, Servers, Directories, and third-party protocol users are sent without encryption.
 
