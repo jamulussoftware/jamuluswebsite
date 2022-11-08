@@ -27,7 +27,7 @@ jobs:
           fi
 
 # Check out repo:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: next-release
 
@@ -44,7 +44,7 @@ jobs:
 # Check po4a cache. If CACHE_HIT: true, retrieve the cache.
 # If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
       - name: Check for po4a cache
-        uses: actions/cache@v1.0.3
+        uses: actions/cache@v3
         id: cache-po4a
         with:
           path: "~/po4a"

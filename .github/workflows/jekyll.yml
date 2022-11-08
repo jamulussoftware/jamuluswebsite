@@ -12,7 +12,7 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
 # Paths changes filter. Detects if there's been a change to any files defined in the filter:
       - uses: dorny/paths-filter@v2
@@ -25,7 +25,7 @@ jobs:
 
 # Retrieve po4a installation cache or create it if not found:
       - name: Check for po4a cache
-        uses: actions/cache@v1.0.3
+        uses: actions/cache@v3
         id: cache-po4a
         with:
           path: "~/po4a"
@@ -65,7 +65,7 @@ jobs:
       - name: Zip Website
         if: ${{ github.event_name == 'pull_request' }}
         run: zip -r ${{ github.workspace }}/website.zip _site/*
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         name: Upload Website
         if: ${{ github.event_name == 'pull_request' }}
         with:
