@@ -271,6 +271,21 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 {% include_relative Include-Shared-Commands.md %}
 
+#### DNS SRV record support
+
+While port-mapping can be used to serve Jamulus on a non-standard port while presenting the standard Jamulus port (22124) to the clients, there are situations where it is necessary to have Jamulus clients connect to the server on a non-standard port. A Jamulus server address can contain the port information, such as ```myjamserver.mydomain.com:12345```, however a Jamulus server administrator may want to give users a simple address with no port information ```myjamserver.mydomain.com```. In this case, the port information can be linked to the domain name of the Jamulus server using [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record).
+
+If Jamulus client finds an SRV record associated with the Jamulus server's domain, it will use the settings in the SRV record to further refine the endpoint host:port destination. This all happens without the user being aware, and nothing will appear different or changed in the connection window. If no SRV records are found on the DNS server, Jamulus client will attempt to connect to Jamulus server exactly as specified in the Connection window.
+
+SRV records are created by the administrator of the domain being used to host the Jamulus server. The SRV records are added through the administration portal of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this.
+
+~~~
+  _service._proto.name. ttl IN SRV priority weight port target
+  
+  # or, more specifically
+  
+  _jamulus._udp.example.com. 60 IN SRV 0 5 22333 jamulus.example.com
+~~~
 
 ## Running an Unregistered Server
 
