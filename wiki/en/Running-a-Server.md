@@ -271,24 +271,6 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 {% include_relative Include-Shared-Commands.md %}
 
-## DNS SRV record support
-
-Jamulus client can connect to a server on a non-standard port by specifying the port as part of the server address ```myjamserver.mydomain.com:12345```, however a server administrator may want to give users a simple address without the port information ```myjamserver.mydomain.com```. In this case, the port information can be acquired from [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record).
-
-If Jamulus client finds an SRV record associated with the Jamulus server's domain, it will use the information in the SRV record to refine the endpoint host:port destination. This all happens without any special input from the user, and nothing will appear different or changed in the connection window. If no SRV records are found on the DNS server, Jamulus client will attempt to connect to Jamulus server as specified in the connection window.
-
-SRV records are created by the administrator of the domain being used to host the Jamulus server. The SRV records are added through the administration portal (or API if available) of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this.
-
-~~~
-  _service._proto.name. ttl IN SRV priority weight port target
-  
-  # or, more specifically
-  
-  _jamulus._udp.example.com. 60 IN SRV 0 5 22333 jamulus.example.com
-~~~
-
-See the documentation of your DNS provider for instructions on creating SRV records for that provider.
-
 ## Running an Unregistered Server
 
 It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode.
@@ -314,6 +296,32 @@ You yourself should connect using the local network (LAN) address of the machine
 #### Dynamic DNS and why you will probably need it
 
 Most domestic internet connections change their external IP address after a short period. To avoid problems with this, you might want to set up "dynamic DNS" to get a static (sub-)domain you can share with others. Please research how to do that for your specic set up. Your router might support some "dynamic DNS" providers out of the box. If this is not the case, set up a dynamic DNS client as described by the dynamic DNS provider you chose.
+
+## DNS SRV record support
+
+Jamulus client can connect to a server on a non-standard port by specifying the port as part of the server address.
+
+```  myjamserver.mydomain.com:12345  ```
+
+However, a server administrator may want to give users a simple address without the port information.
+
+```  myjamserver.mydomain.com  ```
+
+For this case, the port information can be acquired from [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record).
+
+If Jamulus client finds an SRV record associated with the Jamulus server's domain, it will use the information in the SRV record to refine the endpoint host:port destination. This all happens without any special input from the user or any extra configuration of the Jamulus server (other than specifying which port to listen on). If no SRV records are found on the DNS server, Jamulus client will attempt to connect to Jamulus server as specified in the connection window.
+
+SRV records are created by the administrator of the domain being used to host the Jamulus server. The SRV records are added through the administration portal (or API if available) of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this.
+
+~~~
+  _service._proto.name. ttl IN SRV priority weight port target
+  
+  # or, more specifically
+  
+  _jamulus._udp.example.com. 60 IN SRV 0 5 22333 jamulus.example.com
+~~~
+
+See the documentation of your DNS provider for instructions on creating SRV records for that provider.
 
 ## Backing up the Server
 
