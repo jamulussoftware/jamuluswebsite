@@ -26,6 +26,7 @@ PO_DIR="../_translator-files/po"
 # Directories where the translated files will be
 WIKI_DIR="../wiki"
 DATA_DIR="../_data"
+# INCLUDES_DIR="../_includes/wiki"
 
 # CHECK FOR PO4A INSTALLATION
 
@@ -62,6 +63,11 @@ for lang in $(ls "$PO_DIR") ; do
         rm -rf "$DATA_DIR/$lang"
         echo "$lang" folder deleted from ./_data
     fi
+
+#    if [ -d "$INCLUDES_DIR/$lang" ] ; then
+#       rm -rf "$INCLUDES_DIR/$lang"
+#        echo "$lang" folder deleted from ./_includes
+#    fi
 done
 
 # FUNCTION TO CREATE TARGET FILES FROM .po FILES USING PO4A
@@ -81,6 +87,9 @@ process_with_po4a () {
         if [[ $filename == 'general' || $filename == 'navigation' ]] ; then
             TARG_DIR="$DATA_DIR"
 
+#        elif [[ $filename == 'footertext' ]] ; then
+#            TARG_DIR="$INCLUDES_DIR"
+
         else
             TARG_DIR="$WIKI_DIR"
         fi
@@ -91,6 +100,7 @@ process_with_po4a () {
         if [[
             "$filename" == 'Include-'* || \
             "$filename" == *'-index' || \
+#            "$filename" == 'footertext' || \
             "$filename" == 'general' || \
             "$filename" == 'navigation'
            ]] ; then
@@ -102,10 +112,13 @@ process_with_po4a () {
         # Determine file format to be used
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
+            OPTION="skip_array"
         elif [ $ext == html ] ; then
             FILE_FORMAT=xml
+            OPTION="ontagerror=warn"
         elif [ $ext == md ] ; then
-            FILE_FORMAT=asciidoc
+            FILE_FORMAT=text
+            OPTION="markdown"
         fi
 
         # Run po4a-translate and create target files
@@ -116,6 +129,8 @@ process_with_po4a () {
             --po "$PO_DIR/$lang/${filename}.po" \
             --localized "$targ_doc" \
             --localized-charset "UTF-8" \
+            --no-deprecation \
+            --option "$OPTION" \
             --keep "$THRESHOLD"
 
         # Display message if translated file is created
@@ -136,4 +151,4 @@ while IFS= read -r -d '' dir ; do
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
 
 # Produce a file with translation status of all .po files
-source ./po4a-stats.sh
+# source ./po4a-stats.sh

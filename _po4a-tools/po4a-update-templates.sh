@@ -63,10 +63,13 @@ while IFS= read -r -d '' doc ; do
         # Determine file format to be used
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
+            OPTION="skip_array"
         elif [ $ext == html ] ; then
             FILE_FORMAT=xml
+            OPTION="ontagerror=warn"
         elif [ $ext == md ] ; then
-            FILE_FORMAT=asciidoc
+            FILE_FORMAT=text
+            OPTION="markdown"
         fi
 
         # Update/create .po files
@@ -76,6 +79,8 @@ while IFS= read -r -d '' doc ; do
             --master-charset "UTF-8" \
             --msgmerge-opt  --no-wrap \
             --wrap-po newlines \
+            --no-deprecation \
+            --option "$OPTION" \
             --po "$po_file" ; then
         echo ''
         echo Error updating "$lang" PO file for: "$filename".$ext
