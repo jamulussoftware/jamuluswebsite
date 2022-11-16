@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-31 06:27+0000\n"
-"Last-Translator: yangyangdaji <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +74,7 @@ msgstr "如果你没有电脑，我们建议你买一个[Raspberry Pi](https://w
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:22
 msgid "To install Jamulus on your iOS device, you need a (free or paid) Apple Developer account and preferably a computer."
-msgstr "要在您的 iOS 设备上安装 Jamulus，您需要一个（免费或付费）Apple Developer 帐户，最好是一台计算机。"
+msgstr "要在您的 iOS 设备上安装 Jamulus，您需要一个(免费或付费)Apple Developer 帐户，最好是一台计算机。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:23
@@ -83,18 +84,18 @@ msgstr "如果您不为 Apple 开发者帐户付费，Jamulus 最多只能运行
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:24
 msgid "Jamulus on iOS works quite well on new devices if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. To connect these to your iOS device, you should use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub."
-msgstr "如果一切设置正确，iOS 上的 Jamulus 在新设备上运行良好。但是，我们强烈建议您使用音频接口和 USB 以太网适配器。要将它们连接到您的iOS设备，您应该使用[闪电转USB相机适配器]（https://www.apple.com/uk/shop/product/MD821ZM/A/lightning 到 USB 相机适配器）和（供电）USB 集线器之类的东西。"
+msgstr "如果一切设置正确，iOS 上的 Jamulus 在新设备上运行良好。但是，我们强烈建议您使用音频接口和 USB 以太网适配器。要将它们连接到您的iOS设备，您应该使用[闪电转USB相机适配器](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning 到 USB 相机适配器)和(供电)USB 集线器之类的东西。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:27
 msgid "## Install for iOS (for experienced users only)"
-msgstr "## 为 iOS 安装（仅限有经验的用户）"
+msgstr "## 为 iOS 安装(仅限有经验的用户)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:29
 #, no-wrap
 msgid "**Note**: We provide an unsigned .ipa file which you need to sign and then install on your device. If you are not Jailbroken (and have AppSync installed), you might need additional software to install Jamulus. There are multiple ways to do that, but this guide only explains the most standard approach. Please note that we assume you already have a (free) Apple developer account. If you don't have one, create an Apple ID and [Sign up for a developer account](https://developer.apple.com/membercenter). We recommend to create one without two factor authentification and unrelated to your potential personal account. You will need to enter the password in non-Apple software.\n"
-msgstr "**注意**:我们提供了一个未签名的 .ipa 文件，您需要对其进行签名然后安装在您的设备上。如果您没有越狱（并且安装了 AppSync），您可能需要其他软件来安装 Jamulus。有多种方法可以做到这一点，但本指南仅解释最标准的方法。请注意，我们假设您已经拥有（免费）Apple 开发者帐户。如果您没有，请创建一个 Apple ID 并[注册开发者帐户](https://developer.apple.com/membercenter)。我们建议创建一个没有两个因素身份验证且与您的潜在个人帐户无关的帐户。您需要在非 Apple 软件中输入密码。\n"
+msgstr "**注意**:我们提供了一个未签名的 .ipa 文件，您需要对其进行签名然后安装在您的设备上。如果您没有越狱(并且安装了 AppSync)，您可能需要其他软件来安装 Jamulus。有多种方法可以做到这一点，但本指南仅解释最标准的方法。请注意，我们假设您已经拥有(免费)Apple 开发者帐户。如果您没有，请创建一个 Apple ID 并[注册开发者帐户](https://developer.apple.com/membercenter)。我们建议创建一个没有两个因素身份验证且与您的潜在个人帐户无关的帐户。您需要在非 Apple 软件中输入密码。\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:31
@@ -104,12 +105,12 @@ msgstr "[在PC/Mac上下载Jamulus (.ipa)]({{ site.download_root_link }}{{ site.
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:32
 msgid "Sign the .ipa file (e.g. via Xcode or some other **trusted** app. We won't give recommendations here, but there exist apps for every operating system)"
-msgstr "签署 .ipa 文件（例如，通过 Xcode 或其他一些**受信任的**应用程序。我们不会在这里给出建议，但每个操作系统都有应用程序）"
+msgstr "签署 .ipa 文件(例如，通过 Xcode 或其他一些**受信任的**应用程序。我们不会在这里给出建议，但每个操作系统都有应用程序)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:33
 msgid "Once signed and installed; on your iOS device open Settings, navigate to General>Profiles (or VPN and Device Management). Tap on the developer account corresponding to your account and trust the account."
-msgstr "一旦签署并安装;在您的 iOS 设备上打开设置，导航到常规>配置文件（或 VPN 和设备管理）。点击与您的帐户对应的开发者帐户并信任该帐户。"
+msgstr "一旦签署并安装;在您的 iOS 设备上打开设置，导航到常规>配置文件(或 VPN 和设备管理)。点击与您的帐户对应的开发者帐户并信任该帐户。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:34
@@ -124,7 +125,7 @@ msgstr "如果您使用免费的开发者帐户，7 天后您将需要重新签�
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:37
 msgid "If you own a Mac and have Xcode installed, compiling Jamulus from source might be another, more native option. Please have a look at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
-msgstr "如果你拥有一台 Mac 并且安装了 Xcode，从源代码编译 Jamulus 可能是另一个更本源的选择。请看一下[iOS 的编译说明]（https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios）。"
+msgstr "如果你拥有一台 Mac 并且安装了 Xcode，从源代码编译 Jamulus 可能是另一个更本源的选择。请看一下[iOS 的编译说明](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:40

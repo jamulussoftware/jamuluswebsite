@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-31 12:31+0000\n"
-"Last-Translator: yangyangdaji <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -63,7 +64,7 @@ msgstr "要查看自定义目录列出的服务器，用户必须在其客户端
 #. type: Plain text
 #: ../wiki/en/Directories.md:18
 msgid "To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
-msgstr "要将服务器作为目录运行，它应该使用 `--directoryserver` 选项启动，以使其自身（即 `localhost` 或 `127.0.0.1`）成为查询服务器的目录。"
+msgstr "要将服务器作为目录运行，它应该使用 `--directoryserver` 选项启动，以使其自身(即 `localhost` 或 `127.0.0.1`)成为查询服务器的目录。"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:20
@@ -88,12 +89,12 @@ msgstr "当在专用网络上的 NAT 防火墙后面运行服务器并在同一�
 #. type: Plain text
 #: ../wiki/en/Directories.md:29
 msgid "When running a Client behind a NAT firewall on a private network with a Directory on the same network, the Directory itself needs to be run using the `--serverpublicip` option to specify the public IP address, so that any Servers on the public Internet registering with the Directory that require the \"hole punch\" can be accessed by the Client(s). (This is because otherwise the Directory would provide the local network address of the Client to the Server and the \"hole punch\" would fail.)"
-msgstr "当在私有网络上的 NAT 防火墙后面运行客户端和同一网络上的目录时，目录本身需要使用 `--serverpublicip` 选项来指定公共 IP 地址，以便公共 Internet 上的任何服务器客户可以访问需要“打孔”的目录注册。 （这是因为否则目录会将客户端的本地网络地址提供给服务器，并且“打孔”会失败。）"
+msgstr "当在私有网络上的 NAT 防火墙后面运行客户端和同一网络上的目录时，目录本身需要使用 `--serverpublicip` 选项来指定公共 IP 地址，以便公共 Internet 上的任何服务器客户可以访问需要“打孔”的目录注册。 (这是因为否则目录会将客户端的本地网络地址提供给服务器，并且“打孔”会失败。)"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:31
 msgid "If you need to restart your Directory for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
-msgstr "如果您出于任何原因需要重新启动目录（例如重新启动主机时），连接到它的服务器将断开连接，直到它们重新注册。这并不意味着连接到这些服务器的客户端将断开连接，但确实意味着在这些服务器重新连接之前，新客户端将无法看到您的目录中列出的服务器。要使已注册的服务器列表在重新启动之间保持不变，请使用 `--directoryfile`选项指定目录可以读取和写入的文件的位置和名称。"
+msgstr "如果您出于任何原因需要重新启动目录(例如重新启动主机时)，连接到它的服务器将断开连接，直到它们重新注册。这并不意味着连接到这些服务器的客户端将断开连接，但确实意味着在这些服务器重新连接之前，新客户端将无法看到您的目录中列出的服务器。要使已注册的服务器列表在重新启动之间保持不变，请使用 `--directoryfile`选项指定目录可以读取和写入的文件的位置和名称。"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:32
