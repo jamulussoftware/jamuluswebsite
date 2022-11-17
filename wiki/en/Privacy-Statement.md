@@ -16,7 +16,7 @@ permalink: "/wiki/Privacy-Statement"
 - "**Client**" The Jamulus software used to connect to a Server
 - "**Directory**" A Jamulus Server configured to supply a list of Servers to Clients
 
-## Jamulus.io Web site
+## Jamulus.io Website
 
 The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. See Github's [privacy policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) for information relating to data collection and privacy.
 
