@@ -12,7 +12,7 @@ permalink: "/wiki/Privacy-Statement"
 
 ## Definition of Terms
 
-- "**Server**" The Jamulus Server software running on a remote computer to which Clients connect
+- "**Server**" The Jamulus software running as a Server and accepting connections from Clients
 - "**Client**" The Jamulus software used to connect to a Server
 - "**Directory**" A Jamulus Server configured to supply a list of Servers to Clients
 
