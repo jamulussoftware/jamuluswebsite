@@ -321,6 +321,8 @@ SRV records are created by the administrator of the domain being used to host th
   _jamulus._udp.mydomain.com. 60 IN SRV 0 5 12345 jamulus.mydomain.com
 ~~~
 
+**Tip:** You can host many Jamulus Servers at different ports on one host by giving each its own SRV record.
+
 See the documentation of your DNS provider for instructions on creating SRV records for that provider.
 
 ## Backing up the Server
