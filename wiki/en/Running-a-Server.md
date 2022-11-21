@@ -303,7 +303,7 @@ Jamulus client supports [DNS SRV records ("service" records)](https://en.wikiped
 
 #### Why is this helpful?
 
-Jamulus client can connect to a server on a non-standard port by specifying the port as part of the server address. However, a server administrator may want to give users a simple address without the port information, while still serving Jamulus on a non-standard port. For this case, the port information can be acquired from a SRV record.
+Jamulus client can connect to a server on a non-standard port by specifying the port as part of the server address. A server administrator may want to give users a simple address without the port details, while still serving Jamulus on a non-standard port. For this case, the port information can be acquired from a SRV record.
 
 For example, an address given in Jamulus client Connect window could look like ```jamulus.mydomain.com```. If a DNS SRV record is found for this domain, Jamulus client will try to connect to Jamulus server on the host:port given in the SRV record ```jamulus.mydomain.com:12345```.
 
