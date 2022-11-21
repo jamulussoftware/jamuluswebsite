@@ -325,6 +325,21 @@ SRV records are created by the administrator of the domain being used to host th
 
 See the documentation of your DNS provider for instructions on creating an SRV record for that provider.
 
+#### Example use case with SRV records
+
+Assuming a DNS A or CNAME record resolves server1.mydomain.com, and server1.mydomain.com has three Jamulus server instances each listening on one of the three specified ports below.
+
+Alternatively, server1.mydomain.com can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers).
+
+
+| JAMULUS CLIENT     |  DNS SRV RECORD                                                             | JAMULUS SERVER             |
+| ------------------ | --------------------------------------------------------------------------- | -------------------------- |
+| rock.mydomain.com  |  _jamulus._udp.rock.mydomain.com 300 IN SRV 0 5 22124 server1.mydomain.com  | server1.mydomain.com:22124 |
+| jazz.mydomain.com  |  _jamulus._udp.jazz.mydomain.com 300 IN SRV 0 5 22125 server1.mydomain.com  | server1.mydomain.com:22125 |
+| blues.mydomain.com |  _jamulus._udp.blues.mydomain.com 300 IN SRV 0 5 22126 server1.mydomain.com | server1.mydomain.com:22126 |
+
+*It's important to remember that DNS is not forwarding connections. It's simply telling Jamulus client what public host:port to connect to.*
+
 ## Backing up the Server
 
 _Note that headless Servers do not use `.ini` files. All configuration is given as command line options._
