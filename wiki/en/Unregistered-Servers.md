@@ -17,7 +17,7 @@ If you set up your server at home, you will probably need to change some setting
 
 ### Port forwarding
 
-People from outside your home network will not be able to see things inside it. To let external Jamulus clients connect to your server, you need to set up port forwarding in your Router's settings. The exact setup differs for every router. For help see your Router's documentation or [portforward.com](https://portforward.com).
+Normally, people from outside your home network cannot see things inside it. To let external Jamulus clients connect to your server, you need to set up port forwarding in your router's settings. The exact setup differs for every router. For help, see your router's documentation or [portforward.com](https://portforward.com).
 
 **Note:** The default port for Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the computer running the Server.
 
