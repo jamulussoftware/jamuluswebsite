@@ -26,7 +26,7 @@ People from outside your home network will not be able to see things inside it. 
 ### Getting the external IP
 
 To allow others to connect to your Server from the internet, get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip) and give it to them.
-You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `localhost` or `127.0.0.1`.
+You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`.
 
 
 ### Dynamic DNS and why you will probably need it
