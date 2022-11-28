@@ -279,7 +279,7 @@ Jamulus can be run in Server mode from the desktop. This gives you a graphical u
 
 While most common functions in Jamulus can be set using the GUI, others can only be set using options given in a terminal window when the server is launched. Exactly how you do this will depend on your operating system.
 
-For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose “Properties” > Target. Add the necessary arguments to Jamulus.exe:
+For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose **Properties** > **Target**. Add the necessary arguments to Jamulus.exe:
 
  `"C:\Program Files\Jamulus\Jamulus.exe" --serverbindip 192.168.0.100`
 
