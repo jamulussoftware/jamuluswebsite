@@ -9,7 +9,7 @@ permalink: "/wiki/Unregistered-Servers"
 
 # Running an Unregistered Server
 
-It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode.
+It is highly recommended to test your Server by registering it on one of the built-in Directories **first**. This will help you tackle general problems before you try unregistered mode.
 
 ## Setting up a Server behind a home router
 
