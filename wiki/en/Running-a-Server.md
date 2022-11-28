@@ -19,7 +19,7 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a Server?
 
-**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server yourself. Or you can use a third party hosting service such as [melomax](https://melomax.live/jamulus-hosting/). 
+**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server yourself. Or you can use a third party hosting service such as [melomax](https://melomax.live/jamulus-hosting/) or [KOORD](https://koord.live/). 
 
 If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). 
 
