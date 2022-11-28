@@ -21,7 +21,7 @@ permalink: "/wiki/Running-a-Server"
 
 **No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server yourself. Or you can use a third party hosting service such as [melomax](https://melomax.live/jamulus-hosting/) or [KOORD](https://koord.live/). 
 
-If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). 
+If you just want an undisturbed session, use the soloing technique described on the [Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). 
 
 ---
 
@@ -84,7 +84,7 @@ Servers can be run in one of three modes (either at home or on a 3rd party host)
 
 This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server.
 
-For information about running an Unregistered Server [see this guide](Unregistered-Servers).
+**For information about running an Unregistered Server [see this guide](Unregistered-Servers).**
 
 <figure>
 	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Unregistered Server">
@@ -104,7 +104,7 @@ Note that Directories can only register up to 150 Servers. If you see a message 
 
 If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
 
-For information about running a Directory [see this guide](Directories).
+For information, [see the Directories guide](Directories).
 
 # Configuration
 
@@ -162,13 +162,13 @@ Show an agreement window before users can connect
 Welcome message on connect. Can be given as a string or filename, and can contain HTML.
 
 #### `--serverpublicip` 
-The public IP address of the Server if connecting to a Directory behind the same NAT. See [this guide](Directories) for further information.
+The public IP address of the Server if connecting to a Directory behind the same NAT. See [the Directories guide](Directories) for further information.
 
 #### `--directoryfile` 
-_Directories only:_ Remember registered Servers even if the Directory is restarted. See [this guide](Directories) for further information.
+_Directories only:_ Remember registered Servers even if the Directory is restarted. See [the Directories guide](Directories) for further information.
 
 #### `-f or --listfilter` 
-_Directories only:_ Whitelist Servers registering on the Server. See [this guide](Directories) for further information.
+_Directories only:_ Whitelist Servers registering on the Server. See [the Directories guide](Directories) for further information.
 
 ---
 
