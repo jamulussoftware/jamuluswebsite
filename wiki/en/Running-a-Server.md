@@ -291,7 +291,7 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 ### The Server status icon
 
-When a Server is running in GUI mode, the operating system will show an icon in the system tray or status area to represent whether the Server is active:  
+When a Server is running in GUI mode, the operating system will show an icon in the system tray or status area that indicates whether the Server is active:  
 
 <figure><img src="{% include img/en-screenshots/server-inactive.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of the Jamulus Server icon"></figure> The Server is empty
 
