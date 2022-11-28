@@ -48,9 +48,9 @@ Consider using a cloud host, not your home internet connection, to get better pi
 
 ## Installation
 
-Most people run Jamulus as a "pure" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. To run a server on Windows or on a **desktop environment** with a graphical user interface, [see this section](#servers-on-the-desktop).
+Most people run Jamulus on a 3rd party/cloud host as a "pure" Server (also known as "headless") on **hardware without audio** running Linux. You can also run a Server in a [**desktop environment**](#servers-on-the-desktop).
 
-The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. 
+To run a headless server on Linux, the following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. 
 
 If you want to run a Server on a **Raspberry Pi** (or a different armhf/arm64 debian-based device), you will need to download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }}) depending on your CPU - not the default `amd64` ones for use on Intel/AMD machines.
 
