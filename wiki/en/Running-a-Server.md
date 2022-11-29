@@ -134,7 +134,7 @@ Required for a [Registered Server](Running-a-Server#2-registered). Also required
 
 This option takes the format:
 
-`--directoryserver genreServer:port`
+`--directoryserver hostname:port` where `hostname` is the Genre Directory host name and `port` is its port number.
 
 To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` with one of the following options:
 
