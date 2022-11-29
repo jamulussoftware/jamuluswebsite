@@ -151,7 +151,7 @@ To register with one of the Directories built into the Jamulus Client, replace `
 
 ##### `-o or --serverinfo` 
 
-When registering a server on a Directory, this lets you display a server name and location details so that users can then search or sort by these values when connecting to Directories with their client.
+When registering your Server with a Directory, this lets you supply a server name and location details so that users can then search for these values from their Client.
 
 This option takes the format: 
 
