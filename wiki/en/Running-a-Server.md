@@ -230,7 +230,7 @@ Set server recording directory. By default, the Server will record when a sessio
 
 Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
 
-Note that when your Server is recording, Clients will display a message that recording is on.
+**Note:** When your Server is recording, Clients display a red banner message that the session is being recorded.
 
 ##### `--norecord` 
 Set server not to record by default when recording is configured.
