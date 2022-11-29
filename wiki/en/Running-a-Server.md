@@ -244,7 +244,7 @@ If the Server receives a SIGUSR1 signal during a recording, it will start a new 
 
 To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`).
 
-For turning recording on or off (depending on the current state):
+To turn recording on or off (depending on the current state):
 
 ~~~
  [Unit]
