@@ -224,7 +224,7 @@ Start the graphicial user interface minimized
 ## Recording
 
 ##### `-R or --recording` 
-Set server recording directory; Server will record when a session is active by default. 
+Set server recording directory. By default, the Server will record when a session is active. 
 
 **Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
 
