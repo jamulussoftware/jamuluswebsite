@@ -159,7 +159,7 @@ This option takes the format:
 
 See [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
 
-Note that semicolon and newline characters are not allowed in `name` and `city` values.
+**Note:** Semicolon and newline characters are not allowed in `name` and `city` values.
 
 ##### `-L or --licence` 
 Show an agreement window before users can connect.  The text of the agreement to be shown should be supplied as the `--welcomemessage` (see below).
