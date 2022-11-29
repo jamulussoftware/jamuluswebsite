@@ -138,7 +138,7 @@ This option takes the format:
 
 To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` with one of the following options:
 
-| Genre |   Server Address           |
+| Genre |   `hostname:port`  |
 |-----------|------------------|
 |**Any Genre 1** |`anygenre1.jamulus.io:22124`|
 |**Any Genre 2** |`anygenre2.jamulus.io:22224`|
