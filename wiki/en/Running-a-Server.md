@@ -162,7 +162,7 @@ See [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alph
 Note that semicolon and newline characters are not allowed in `name` and `city` values.
 
 ##### `-L or --licence` 
-Show an agreement window before users can connect
+Show an agreement window before users can connect.  The text of the agreement to be shown should be supplied as the `--welcomemessage` (see below).
 
 ##### `-w or --welcomemessage` 
 Welcome message on connect. Can be given as a string or filename, and can contain HTML.
