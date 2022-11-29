@@ -193,6 +193,8 @@ Enable logging, set path and file name
 ##### `-m or --htmlstatus` 
 Enable HTML status file, set path and file name
 
+**Note:** This feature is deprecated, and may disappear in a future release.
+
 ##### `-P or --delaypan` 
 Start with delay panning enabled.This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal “volume” panning.
 
