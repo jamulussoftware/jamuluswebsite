@@ -256,7 +256,7 @@ For turning recording on or off (depending on the current state):
  ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
 ~~~
 
-For starting a new recording:
+To start a new recording:
 
 ~~~
  [Unit]
