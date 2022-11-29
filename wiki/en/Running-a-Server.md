@@ -284,7 +284,7 @@ You can see the result of these commands if you run `systemctl status jamulus`, 
 
 Jamulus can be run in Server mode from the desktop. This gives you a graphical user interface to control most of the settings. To do this, first [install Jamulus](Getting-Started) for your platform, the do one of the following:
 
-* **Windows users** - Use the "Jamulus Server" icon in the Windows Start menu. If you want the Server to start automatically on system start, enable the corresponding check box.
+* **Windows users** - Use the "Jamulus Server" icon in the Windows Start menu. If you want the Server to start automatically when you start Windows, check the box for this option.
 
 * **macOS users** - Double-click the "Jamulus Server" icon in Applications.
 
