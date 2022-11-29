@@ -48,7 +48,7 @@ Consider using a cloud host, not your home internet connection, to get better pi
 
 ## Installation
 
-Most people run Jamulus on a 3rd party/cloud host as a "pure" Server (also known as "headless") on **hardware without audio** running Linux. You can also run a Server in a [**desktop environment**](#servers-on-the-desktop).
+Most people run Jamulus on a 3rd party/cloud host as a "headless" Server (no video display or keyboard) on **hardware without audio** running Linux. You can also run a Server in a [**desktop environment**](#servers-on-the-desktop).
 
 To run a headless server on Linux, the following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. 
 
