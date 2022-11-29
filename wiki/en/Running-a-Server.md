@@ -316,7 +316,7 @@ When a Server is running in GUI mode, the operating system will show an icon in 
 
 {% include_relative Include-Backing-Up.md %}
 
-- Headless Servers do not use `.ini` files. All configuration is given as command line options. If you are running a server in GUI mode, it will store its configuration (after reading any command line options on start) in the file `Jamululsserver.ini`
+- Headless Servers do not use `.ini` files. All configuration is given as command line options. If you are running a server in GUI mode, it will store its configuration (after reading any command line options on start) in the `Jamululsserver.ini` file.
 
 ## Troubleshooting
 
