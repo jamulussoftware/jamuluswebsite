@@ -240,7 +240,7 @@ Set server not to record by default when recording is configured.
 
 Recording starts once the first person connects to the Server, and stops when the last person leaves. 
 
-If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will toggle recording on/off.
+If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording on/off.
 
 To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`).
 
