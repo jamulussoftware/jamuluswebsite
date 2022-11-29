@@ -23,7 +23,7 @@ Normally, people from outside your home network cannot see things inside it. To 
 
 **Note:** Your home router might change the IP address of the computer you're running your Server on. Depending on your router, you might need to give this computer a static IP address (often under DHCP settings of your router).
 
-### Getting the external IP
+### Getting the public IP
 
 To allow others to connect to your Server from the internet, give them your public internet IP address. You can [learn your current address using Google](https://www.google.com/search?q=what+is+my+ip).
 You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`.
