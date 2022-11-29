@@ -31,4 +31,4 @@ You should connect yourself using the local network address of the computer the 
 
 ### Dynamic DNS and why you will probably need it
 
-Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. To avoid problems with this, you might want to set up "dynamic DNS" to get a static address you can share with others. Your router might support some "dynamic DNS" providers to do this. If this is not the case, these providers will have instructions to set up a dynamic DNS client.
+Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. To avoid problems with this, you might want to set up "dynamic DNS" to get a static address you can share with others. A "dynamic DNS" provider can supply you with a static IP address that you can share but you need to keep refreshing your dynamic IP with the provider. Your router might support certain providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client.
