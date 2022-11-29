@@ -106,26 +106,27 @@ If you want to run a number of Servers, possibly also behind a firewall or on a 
 
 For information, [see the Directories guide](Directories).
 
-# Configuration
+---
+
+## Configuration options
 
 Depending on your operating system and how you are running the server, you can set Server options and make them persistent between reloads as follows:
 
 **Linux headless mode** (Debian/Ubuntu using systemd) 
+
 Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless`
 
 **GUI mode** (all platforms)
+
 Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file (do not attempt to edit this file by hand). However, some options are not available via the GUI and need to be set via the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)
 
 ---
 
-## Server mode options
+### Server mode-related options
 
-#### `-s` or `--server` 
-Start Jamulus in Server mode
+##### `-e or --directoryserver` 
 
-#### `-e or --directoryserver` 
-
-Required for a [Registered Server](Running-a-Server#2-registered). Also required to run Jamulus as a [Directory](Directories).
+Required for a [Registered Server](Running-a-Server#2-registered). Also required to run Jamulus as a [Directory](Directories). 
 
 This option takes the format:
 
@@ -144,7 +145,8 @@ To register with one of the Directories built into the Jamulus Client, replace `
 |**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
 
 
-#### `-o or --serverinfo` 
+##### `-o or --serverinfo` 
+
 When registering a server on a Directory, this lets you display a server name and location details so that users can then search or sort by these values when connecting to Directories with their client.
 
 This option takes the format: 
@@ -155,52 +157,57 @@ See [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alph
 
 Note that semicolon and newline characters are not allowed in `name` and `city` values.
 
-#### `-L or --licence` 
+##### `-L or --licence` 
 Show an agreement window before users can connect
 
-#### `-w or --welcomemessage` 
+##### `-w or --welcomemessage` 
 Welcome message on connect. Can be given as a string or filename, and can contain HTML.
 
-#### `--serverpublicip` 
+##### `--serverpublicip` 
 The public IP address of the Server if connecting to a Directory behind the same NAT. See [the Directories guide](Directories) for further information.
 
-#### `--directoryfile` 
+##### `--directoryfile` 
 _Directories only:_ Remember registered Servers even if the Directory is restarted. See [the Directories guide](Directories) for further information.
 
-#### `-f or --listfilter` 
+##### `-f or --listfilter` 
 _Directories only:_ Whitelist Servers registering on the Server. See [the Directories guide](Directories) for further information.
 
 ---
 
-## General Server options
+### General Server options
 These options can be used regardless of which mode your server is running in (although some may not be relevant for Directories).
 
-#### `-d or --discononquit` 
+##### `-d or --discononquit` 
 Normally, when a Server is stopped or restarted, any Clients that have not used their “Disconnect” buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.
 
-#### `-F or --fastupdate` 
+##### `-F or --fastupdate` 
 Reduces latency if Clients connect with “Enable Small Network Buffers” option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.
 
-#### `-l or --log` 
+##### `-l or --log` 
 Enable logging, set path and file name
 
-#### `-m or --htmlstatus` 
+##### `-m or --htmlstatus` 
 Enable HTML status file, set path and file name
 
-#### `-P or --delaypan` 
+##### `-P or --delaypan` 
 Start with delay panning enabled.This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal “volume” panning.
 
-#### `--serverbindip` 
+##### `-s` or `--server`
+Start Jamulus in Server mode
+
+##### `--serverbindip` 
 Specify the IP address the Jamulus process will bind to
 
-#### `-T or --multithreading` 
+##### `-T or --multithreading` 
 Use multithreading to make better use of multi-core CPUs to support more Clients
 
-#### `-u or --numchannels` 
+##### `-u or --numchannels` 
 Maximum number of channels (Clients)
 
-#### `-z or --startminimized` 
+##### `-z or --startminimized` 
 Start the graphicial user interface minimized
+
+---
 
 ## Other options
 
@@ -210,7 +217,7 @@ Start the graphicial user interface minimized
 
 ## Recording
 
-#### `-R or --recording` 
+##### `-R or --recording` 
 Set server recording directory; Server will record when a session is active by default. 
 
 **Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
@@ -219,7 +226,7 @@ Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` for
 
 Note that when your Server is recording, Clients will display a message that recording is on.
 
-#### `--norecord` 
+##### `--norecord` 
 Set server not to record by default when recording is configured.
 
 
