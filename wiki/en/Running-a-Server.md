@@ -182,7 +182,7 @@ _Directories only:_ Allowlist Servers registering on the Server. See [the Direct
 These options can be used regardless of which mode your server is running in (although some may not be relevant for Directories).
 
 ##### `-d or --discononquit` 
-Normally, when a Server is stopped or restarted, any Clients that have not used their “Disconnect” buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server.
+Normally, when a Server is stopped or restarted, any Clients that have not pressed their **Disconnect** buttons will automatically re-establish the connection when the Server returns. This option forces Clients to manually re-establish their connections to the Server in this scenario.
 
 ##### `-F or --fastupdate` 
 Reduces latency if Clients connect with “Enable Small Network Buffers” option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.
