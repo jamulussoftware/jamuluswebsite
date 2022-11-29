@@ -174,7 +174,7 @@ The public IP address of the Server if connecting to a Directory behind the same
 _Directories only:_ Remember registered Servers even if the Directory is restarted. See [the Directories guide](Directories) for further information.
 
 ##### `-f or --listfilter` 
-_Directories only:_ Whitelist Servers registering on the Server. See [the Directories guide](Directories) for further information.
+_Directories only:_ Allowlist Servers registering on the Server. See [the Directories guide](Directories) for further information.
 
 ---
 
