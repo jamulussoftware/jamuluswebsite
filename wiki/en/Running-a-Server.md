@@ -299,13 +299,13 @@ Most domestic internet connections change their external IP address after a shor
 
 ## DNS SRV record support
 
-Jamulus client supports [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record). If Jamulus client finds a SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus client and the DNS server. Jamulus server is not involved in this interaction. Jamulus server just listens for connections on the same port listed in the SRV record.
+Jamulus client supports [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record). If Jamulus client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus client and the DNS server. Jamulus server is not involved in this interaction. Jamulus server just listens for connections on the same port listed in the SRV record.
 
 #### Why is this helpful?
 
-Jamulus client can connect to a server on a non-standard port by specifying the port as part of the server address. A server administrator may want to give users a simple address without the port details, while still serving Jamulus on a non-standard port. For this case, the port information can be acquired from a SRV record.
+Jamulus client can connect to a server on a non-standard port by specifying the port as part of the server address. A server administrator may want to give users a simple address without the port details, while still serving Jamulus on a non-standard port. For this case, the port information can be acquired from an SRV record.
 
-For example, an address given in Jamulus client Connect window could look like ```jamulus.mydomain.com```. If a DNS SRV record is found for this domain, Jamulus client will try to connect to Jamulus server on the host:port listed in the SRV record, such as ```jamulus.mydomain.com:12345```.
+For example, an address given in Jamulus client Connect window could look like ```jamulus.example.com```. If a DNS SRV record is found for this domain, Jamulus client will try to connect to Jamulus server on the host:port listed in the SRV record, such as ```jamulus.example.com:12345```.
 
 If no SRV records are found on the DNS server, Jamulus client will attempt to connect to Jamulus server as specified in the connection window.
 
@@ -327,16 +327,16 @@ See the documentation of your DNS provider for instructions on creating an SRV r
 
 #### Example use case with SRV records
 
-Assuming a DNS A or CNAME record resolves server1.mydomain.com, and server1.mydomain.com has three Jamulus server instances each listening on one of the three specified ports below.
+Assuming a DNS A or CNAME record resolves server1.example.com, and server1.example.com has three Jamulus server instances, each listening on one of the three specified ports below.
 
-Alternatively, server1.mydomain.com can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers).
+Alternatively, server1.example.com can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers).
 
 
 | JAMULUS CLIENT     |  DNS SRV RECORD                                                             | JAMULUS SERVER             |
 | ------------------ | --------------------------------------------------------------------------- | -------------------------- |
-| rock.mydomain.com  |  _jamulus._udp.rock.mydomain.com 300 IN SRV 0 5 22124 server1.mydomain.com  | server1.mydomain.com:22124 |
-| jazz.mydomain.com  |  _jamulus._udp.jazz.mydomain.com 300 IN SRV 0 5 22125 server1.mydomain.com  | server1.mydomain.com:22125 |
-| blues.mydomain.com |  _jamulus._udp.blues.mydomain.com 300 IN SRV 0 5 22126 server1.mydomain.com | server1.mydomain.com:22126 |
+| rock.example.com  |  _jamulus._udp.rock.example.com 300 IN SRV 0 5 22124 server1.example.com  | server1.example.com:22124 |
+| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |
+| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |
 
 *It's important to remember that DNS is not forwarding connections. It's simply telling Jamulus client what public host:port to connect to.*
 
