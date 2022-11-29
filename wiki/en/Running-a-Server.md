@@ -165,7 +165,7 @@ Note that semicolon and newline characters are not allowed in `name` and `city` 
 Show an agreement window before users can connect.  The text of the agreement to be shown should be supplied as the `--welcomemessage` (see below).
 
 ##### `-w or --welcomemessage` 
-Welcome message on connect. Can be given as a string or filename, and can contain HTML.
+A "welcome message" to display in the Client chat window on connect. Can be given as a string or filename, and can contain HTML.
 
 ##### `--serverpublicip` 
 The public IP address of the Server if connecting to a Directory behind the same NAT. See [the Directories guide](Directories) for further information.
