@@ -84,7 +84,7 @@ Servers can be run in one of three modes (either at home or on a 3rd party host)
 
 ### 1. Unregistered
 
-This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server.
+This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address can connect to it. 
 
 **For information about running an Unregistered Server [see this guide](Unregistered-Servers).**
 
