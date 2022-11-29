@@ -74,6 +74,8 @@ If you want to run a Server on a **Raspberry Pi** (or a different armhf/arm64 de
 
 _To upgrade your Server, just repeat the steps above._
 
+_To amend your Server configuration, just repeat the last two steps above._
+
 ---
 
 ## Server Types
