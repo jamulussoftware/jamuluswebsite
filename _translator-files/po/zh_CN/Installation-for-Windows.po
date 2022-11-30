@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-11-01 10:27+0000\n"
-"Last-Translator: ignotus <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -87,7 +88,7 @@ msgstr "**镜像源 2:** [SourceForge](https://sourceforge.net/projects/llcon/fi
 #: ../wiki/en/Installation-for-Windows.md:22
 #, no-wrap
 msgid "**Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
-msgstr "**安装 Jamulus**:双击安装程序以启动它。如果您从 SmartScreen 收到警告通知，请单击“更多信息”和“仍然运行”以安装 Jamulus。 （如果您获得了 Jamulus 的新版本并且是第一批下载它的人之一，那么 Jamulus 不会被 SmartScreen 列入白名单。我们不为代码签名付费。）\n"
+msgstr "**安装 Jamulus**:双击安装程序以启动它。如果您从 SmartScreen 收到警告通知，请单击“更多信息”和“仍然运行”以安装 Jamulus。 (如果您获得了 Jamulus 的新版本并且是第一批下载它的人之一，那么 Jamulus 不会被 SmartScreen 列入白名单。我们不为代码签名付费。)\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:23
@@ -130,7 +131,7 @@ msgstr "Jamulus 可以使用 [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_I
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:36
 msgid "If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality)."
-msgstr "如果您有外部声卡/音频接口，请尽可能使用其官方 ASIO 驱动程序（它们通常提供最佳质量）。"
+msgstr "如果您有外部声卡/音频接口，请尽可能使用其官方 ASIO 驱动程序(它们通常提供最佳质量)。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:37
@@ -182,7 +183,7 @@ msgstr "在开始使用 Jamulus 之前:"
 #: ../wiki/en/Installation-for-Windows.md:56
 #, no-wrap
 msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
-msgstr "**关闭所有应用程序**（尤其是那些可以访问您的声卡的应用程序，例如您的浏览器/媒体播放器）。 ASIO4ALL 需要独占访问您的声卡，这意味着如果 ASIO4ALL 和 Jamulus 正在运行，其他程序将无法使用音频。\n"
+msgstr "**关闭所有应用程序**(尤其是那些可以访问您的声卡的应用程序，例如您的浏览器/媒体播放器)。 ASIO4ALL 需要独占访问您的声卡，这意味着如果 ASIO4ALL 和 Jamulus 正在运行，其他程序将无法使用音频。\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:57
@@ -203,12 +204,12 @@ msgstr "打开 Jamulus 的设置"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:62
 msgid "Go to _\"ASIO Device Settings\"_ (column on the left; directly under the selection of the driver)"
-msgstr "转到_“ASIO设备设置”_（左侧列;直接在驱动程序的选择下）"
+msgstr "转到_“ASIO设备设置”_(左侧列;直接在驱动程序的选择下)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:63
 msgid "Enable _advanced view_ in ASIO4ALL (click the tool icon on the bottom right)"
-msgstr "在 ASIO4ALL 中启用_高级视图_（单击右下角的工具图标）"
+msgstr "在 ASIO4ALL 中启用_高级视图_(单击右下角的工具图标)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:64
@@ -223,7 +224,7 @@ msgstr "通过单击此声卡旁边的_加号图标_打开您的声卡输入/输
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:66
 msgid "Now enable the correct inputs/outputs in the list under your sound card and disable everything else. You can hover over the inputs/outputs to see which of both they are and if they support the required sample rate for Jamulus of 48kHz (DVD quality)."
-msgstr "现在在声卡下的列表中启用正确的输入/输出并禁用其他所有内容。您可以将鼠标悬停在输入/输出上以查看它们中的哪一个以及它们是否支持 48kHz（DVD 质量）的 Jamulus 所需的采样率。"
+msgstr "现在在声卡下的列表中启用正确的输入/输出并禁用其他所有内容。您可以将鼠标悬停在输入/输出上以查看它们中的哪一个以及它们是否支持 48kHz(DVD 质量)的 Jamulus 所需的采样率。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:68
@@ -262,7 +263,7 @@ msgstr "如果没有任何效果，首先重新启动 Jamulus 和/或您的 PC �
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:77
 msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons in the ASIO4ALL settings. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. web browser, Zoom, etc)."
-msgstr "之后，*再次设置输入/输出*。启用和可访问的输入/输出在 ASIO4ALL 设置中显示为亮起的电源按钮和播放按钮。相反，如果您看到红色叉号或黄色符号，请关闭可能正在访问您的声卡的其他应用程序（例如 Web 浏览器、Zoom 等）。"
+msgstr "之后，*再次设置输入/输出*。启用和可访问的输入/输出在 ASIO4ALL 设置中显示为亮起的电源按钮和播放按钮。相反，如果您看到红色叉号或黄色符号，请关闭可能正在访问您的声卡的其他应用程序(例如 Web 浏览器、Zoom 等)。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:79

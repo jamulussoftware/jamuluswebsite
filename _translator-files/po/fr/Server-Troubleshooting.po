@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <redacted@invalid.local>, 2022.
+# Olivier Humbert <trebmuh@tuxfamily.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-11-01 00:11+0000\n"
-"Last-Translator: Olivier Humbert <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-11 08:05+0000\n"
+"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -40,7 +41,7 @@ msgstr "/wiki/Server-Troubleshooting"
 #: ../wiki/en/Server-Troubleshooting.md:1
 #, no-wrap
 msgid "Server Troubleshooting"
-msgstr "Dépannage du Serveur"
+msgstr "Dépannage du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:9
@@ -54,7 +55,7 @@ msgid ""
 "# Server Troubleshooting\n"
 " {:.no_toc}\n"
 msgstr ""
-"# Dépannage du Serveur\n"
+"# Dépannage du serveur\n"
 " {:.no_toc}\n"
 
 #. type: Plain text
@@ -85,7 +86,7 @@ msgstr "</details>"
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:23
 msgid "## Servers - Registered"
-msgstr "## Serveurs - Enregistrés"
+msgstr "## Serveurs - enregistrés"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:25
@@ -95,12 +96,12 @@ msgstr "### Pourquoi mon serveur n'apparaît-il pas dans la liste ? Pourquoi ne 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
 msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
-msgstr "Si vous êtes enregistré correctement (vous pouvez le voir [ici](https://explorer.jamulus.io/)) et que vous ou vos amis ne voyez pas votre serveur, vous pouvez attendre, ou démarrer votre client avec l'option `--showallservers` et essayer de vous connecter à partir de là ([voir options de ligne de commande](Software-Manual#options-de-la-ligne-de-commande) sur la façon de démarrer votre client avec une option de configuration). Dans certaines configurations réseau, vous devrez peut-être également [ouvrir une brèche](Running-a-Server#redirection-de-port) dans votre routeur."
+msgstr "Si vous êtes enregistré correctement (vous pouvez [le voir ici](https://explorer.jamulus.io/)) et que vous ou vos amis ne voyez pas votre serveur, vous pourriez devoir attendre, ou démarrer votre client avec l'option `--showallservers` et essayer de vous connecter à partir de là ([voir options de ligne de commande](Software-Manual#options-de-la-ligne-de-commande) sur la façon de démarrer votre client avec une option de configuration). Dans certaines configurations réseau, vous devrez peut-être également [rediriger votre port](Running-a-Server#redirection-de-port) dans votre routeur."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:29
 msgid "If you are seeing a message that says the Server is full, you will need to wait until a slot becomes free."
-msgstr "Si vous voyez un message indiquant que le serveur est plein, vous devrez attendre qu'un créneau se libère."
+msgstr "Si vous voyez un message indiquant que le serveur est plein, vous devrez attendre qu'une place se libère."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:31
@@ -130,7 +131,7 @@ msgstr "### Quelle adresse dois-je donner aux gens pour qu'ils puissent se conne
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
 msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
-msgstr "Il doit s'agir de votre adresse IP **publique** (vous pouvez la trouver avec [Google](https://www.google.com/search?q=whatsmyip)). Connectez votre **propre** client Jamulus à l'adresse IP **locale** de votre serveur (`localhost` ou `127.0.0.1` s'il se trouve sur la même machine que votre client). Notez que votre adresse IP publique peut changer - voir la note sur le \"DNS dynamique\" dans [ce guide](Running-a-Server#dns-dynamique-et-pourquoi-vous-en-aurez-probablement-besoin)."
+msgstr "Ça devrait être votre adresse IP **publique** (vous pouvez la trouver avec [Google](https://www.google.com/search?q=whatsmyip)). Connectez votre **propre** client Jamulus à l'adresse IP **locale** de votre serveur (`localhost` ou `127.0.0.1` s'il se trouve sur la même machine que votre client). Notez que votre adresse IP publique peut changer - voir la note sur le \"DNS dynamique\" dans [ce guide](Running-a-Server#dns-dynamique-et-pourquoi-vous-en-aurez-probablement-besoin)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:44
@@ -140,7 +141,7 @@ msgstr "### Quels numéros de port puis-je utiliser ?"
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:46
 msgid "You can set your Server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your Server in the format `[serverAddress]:[portNumber]`."
-msgstr "Vous pouvez configurer votre serveur pour écouter sur un port personnalisé avec l'option `--port`. Si vous faites cela, vous devrez indiquer aux gens sur quel port ils doivent se connecter. Ils devront ajouter le numéro de port à l'adresse de votre serveur au format `[serverAddress]:[portNumber]`."
+msgstr "Vous pouvez configurer votre serveur pour écouter sur un port personnalisé avec l'option `--port`. Si vous faites cela, vous devrez indiquer aux gens sur quel port ils doivent se connecter. Ils devront ajouter le numéro de port à l'adresse de votre serveur dans le format `[AdresseDuServeur]:[NuméroDePort]`."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:48
@@ -155,17 +156,17 @@ msgstr "Tout d'abord, assurez-vous d'avoir activé [la redirection de port](Runn
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
 msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
-msgstr "Certains fournisseurs d'accès utilisent des techniques comme [Addresse plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) ou [NAT de qualité opérateur (CGN)](https://fr.wikipedia.org/wiki/Carrier-grade_NAT) pour conserver l'espace d'adressage (usuellement pour IPv4). Il est donc impossible d'héberger des services tels que Jamulus chez soi car il ne sont pas visible à l'extérieur de votre réseau local."
+msgstr "Certains fournisseurs d'accès utilisent des techniques comme [addresse plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) ou [NAT de qualité opérateur (CGN)](https://fr.wikipedia.org/wiki/Carrier-grade_NAT) pour conserver l'espace d'adressage (habituellement pour IPv4). Ceci rend impossible d'héberger des services tels que Jamulus chez soi car ils ne sont pas visibles à l'extérieur de votre réseau local."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:54
 msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address doesn't match with your public IPv4 address (check it [here](https://ifconfig.me)), it suggests that CGN may be enabled. You can try using an IPv6 connection by starting clients and server with the `-6` flag if IPv6 is available for the server and all clients."
-msgstr "Pour détecter si le CGN est le problème, allez à l'écran de configuration de votre routeur (généralement, 192.168.X.X) et regardez la page status WAN. Si votre adresse IPv4 répertoriée ne correspond pas à l'adresse que vous voyez [ici](https://ifconfig.me), cela signifie que le CGN est peut-être activé. Vous pouvez essayer d'utiliser une connexion IPv6 en démarrant les clients et le serveur avec le drapeau \"-6\" si IPv6 est disponible pour le serveur et tous les clients."
+msgstr "Pour détecter si le CGN est le problème, allez à l'écran de configuration de votre routeur (généralement, 192.168.X.X) et regardez la page statuts WAN. Si votre adresse IPv4 répertoriée ne correspond pas à votre adresse publique IPv4 (vérifier le [ici](https://ifconfig.me)), cela suggère que le CGN est peut-être activé. Vous pouvez essayer d'utiliser une connexion IPv6 en démarrant les clients et le serveur avec le drapeau `-6`si IPv6 est disponible pour le serveur et tous les clients."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:56
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
-msgstr "Pour résoudre le problème avec IPv4, contactez l'équipe de support technique de votre FAI et dites-lui que vous souhaitez héberger un serveur public à la maison, vous avez donc besoin d'une véritable adresse IP WAN. De plus, vous pouvez les aider avec des informations indiquant que CGN pourrait être le problème. De plus, vous pouvez demander une adresse IP statique pour éviter d'utiliser le DDNS."
+msgstr "Pour résoudre le problème avec IPv4, contactez l'équipe de support technique de votre FAI et dites-lui que vous souhaitez héberger un serveur public à la maison, vous avez donc besoin d'une véritable adresse IP WAN. De plus, vous pouvez les aider avec des informations indiquant que CGN pourrait être le problème. Aussi, vous pouvez demander une adresse IP statique pour éviter d'utiliser le DDNS."
 
 #, fuzzy
 #~| msgid "To fix the issue: if you are running a public server, try [port forwarding](Running-a-Server#port-forwarding). If you are running a private server and are port forwarding already, contact your ISP support and request them to remove you from CGN and assign you a real WAN IP address because you want to host a server. If CGN is not the issue, you may need to ask your ISP to give you a WAN IP address (or fixed one to avoid using DDNS, if possible). If all else fails, consider hosting on a cloud platform (some providers do free trial periods)."

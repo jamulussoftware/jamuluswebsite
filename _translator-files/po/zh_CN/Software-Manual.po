@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-11-01 10:07+0000\n"
-"Last-Translator: yangyangdaji <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -108,7 +109,7 @@ msgstr "## Ping、延迟和抖动"
 #: ../wiki/en/Software-Manual.md:32
 #, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
-msgstr "**Ping** 以毫秒为单位显示您的网络延迟，越低越好。 Ping 时间会导致整体延迟（见下文）。 ping 高的最可能原因是您与服务器的距离过大。   \n"
+msgstr "**Ping** 以毫秒为单位显示您的网络延迟，越低越好。 Ping 时间会导致整体延迟(见下文)。 ping 高的最可能原因是您与服务器的距离过大。   \n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
@@ -163,7 +164,7 @@ msgstr "为应对当前网络/音频接口延迟而言当前网络抖动缓冲�
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:51
 msgid "The sound card's buffer delay (buffer size) is too small (see Settings window)."
-msgstr "声卡的缓冲区延迟（缓冲区大小）过小（见设置窗口）。"
+msgstr "声卡的缓冲区延迟(缓冲区大小)过小(见设置窗口)。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:52
@@ -183,7 +184,7 @@ msgstr "## 输入"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:58
 msgid "Shows the level of the two stereo channels for your audio input.  Make sure not to clip the input signal to avoid distortions of your sound (the LEDs will indicate clipping when it occurs)."
-msgstr "显示音频输入的两个立体声通道的电平。确保不要削波输入信号以避免声音失真（发生削波时 LED 会指示）。"
+msgstr "显示音频输入的两个立体声通道的电平。确保不要削波输入信号以避免声音失真(发生削波时 LED 会指示)。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:60
@@ -233,7 +234,7 @@ msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/connection-setup-win
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:84
 msgid "The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold."
-msgstr "Connection Setup 窗口显示可用服务器列表以及占用者数量和支持的最大数量。服务器运营商在列表中注册他们的服务器（主要由流派定义，尽管有些可能是特定于位置的或适用于所有流派）。使用列表下拉选择一个流派，单击您要加入的服务器，然后按连接按钮连接到它。或者，双击服务器名称。永久服务器（已列出超过 24 小时的服务器）以粗体显示。"
+msgstr "Connection Setup 窗口显示可用服务器列表以及占用者数量和支持的最大数量。服务器运营商在列表中注册他们的服务器(主要由流派定义，尽管有些可能是特定于位置的或适用于所有流派)。使用列表下拉选择一个流派，单击您要加入的服务器，然后按连接按钮连接到它。或者，双击服务器名称。永久服务器(已列出超过 24 小时的服务器)以粗体显示。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:86
@@ -243,7 +244,7 @@ msgstr "您可以按服务器名称或位置过滤列表。要仅列出占用的
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:90
 msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
-msgstr "如果您知道私有服务器的 IP 地址或 URL，则可以使用服务器名称/地址字段连接到它。可以在地址后添加一个可选的端口号，使用冒号作为分隔符，例如，`jamulus.example.com:22124`（请注意，IPv6 地址必须完全括在方括号中）。该字段还将显示最近使用的服务器地址列表。"
+msgstr "如果您知道私有服务器的 IP 地址或 URL，则可以使用服务器名称/地址字段连接到它。可以在地址后添加一个可选的端口号，使用冒号作为分隔符，例如，`jamulus.example.com:22124`(请注意，IPv6 地址必须完全括在方括号中)。该字段还将显示最近使用的服务器地址列表。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
@@ -258,7 +259,7 @@ msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/mixer-channels.inc %
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:97
 msgid "The audio mixer screen shows each user connected to the server (including yourself).  The faders allow you to adjust the level of what you hear without affecting what others hear."
-msgstr "音频混合器屏幕显示连接到服务器的每个用户（包括您自己）。推子允许您调整您听到的音量，而不会影响其他人听到的声音。"
+msgstr "音频混合器屏幕显示连接到服务器的每个用户(包括您自己)。推子允许您调整您听到的音量，而不会影响其他人听到的声音。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:99
@@ -268,7 +269,7 @@ msgstr "VU 表显示服务器的输入电平 - 即正在发送的声音。"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:101
 msgid "If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset)."
-msgstr "如果您在设置中将音频通道设置为立体声或立体声输出，您还将看到一个平移控件（按住 shift 单击以重置）。"
+msgstr "如果您在设置中将音频通道设置为立体声或立体声输出，您还将看到一个平移控件(按住 shift 单击以重置)。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:103
@@ -412,7 +413,7 @@ msgstr "### 设备"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:159
 msgid "Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected."
-msgstr "在 Windows 操作系统下，可以使用 Jamulus 选择 ASIO 驱动程序（声卡）。如果所选的 ASIO 驱动程序无效，则会显示错误消息并选择之前的有效驱动程序。在 macOS 下，可以选择输入和输出硬件。"
+msgstr "在 Windows 操作系统下，可以使用 Jamulus 选择 ASIO 驱动程序(声卡)。如果所选的 ASIO 驱动程序无效，则会显示错误消息并选择之前的有效驱动程序。在 macOS 下，可以选择输入和输出硬件。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:161
@@ -427,7 +428,7 @@ msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/channel-mapping.inc 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:167
 msgid "If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)  a different actual sound card channel can be selected."
-msgstr "如果所选声卡设备提供多个输入或输出通道，则“_Input通道映射”和“输出通道”Mapping_设置可见。对于每个Jamulus输入/输出通道（左声道和右声道），可以选择不同的实际声卡声卡声道。"
+msgstr "如果所选声卡设备提供多个输入或输出通道，则“_Input通道映射”和“输出通道”Mapping_设置可见。对于每个Jamulus输入/输出通道(左声道和右声道)，可以选择不同的实际声卡声卡声道。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:169
@@ -527,7 +528,7 @@ msgstr "在 Linux 上，使用 JACK 配置工具更改缓冲区大小。"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:208
 msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
-msgstr "实际缓冲区延迟对连接状态、当前上传速率和整体延迟都有影响。缓冲区大小越小，状态指示器（丢失）中出现红灯的可能性就越高，上传速率越高，整体延迟越低。"
+msgstr "实际缓冲区延迟对连接状态、当前上传速率和整体延迟都有影响。缓冲区大小越小，状态指示器(丢失)中出现红灯的可能性就越高，上传速率越高，整体延迟越低。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:210
@@ -542,7 +543,7 @@ msgstr "### 抖动缓冲区"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:216
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
-msgstr "抖动缓冲器补偿网络和声卡定时抖动。缓冲区的大小会影响音频流的质量（发生多少丢失）和整体延迟（缓冲区越长，延迟越高）。"
+msgstr "抖动缓冲器补偿网络和声卡定时抖动。缓冲区的大小会影响音频流的质量(发生多少丢失)和整体延迟(缓冲区越长，延迟越高)。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:220
@@ -557,7 +558,7 @@ msgstr "因此，抖动缓冲区设置是音频质量和整体延迟之间的权
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:226
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
-msgstr "如果启用自动设置，本地客户端和远程服务器的抖动缓冲区将根据网络和声卡定时抖动的测量值自动设置。如果启用了自动检查，则抖动缓冲区大小推子将被禁用（它们不能用鼠标移动）。"
+msgstr "如果启用自动设置，本地客户端和远程服务器的抖动缓冲区将根据网络和声卡定时抖动的测量值自动设置。如果启用了自动检查，则抖动缓冲区大小推子将被禁用(它们不能用鼠标移动)。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:228
@@ -567,7 +568,7 @@ msgstr "### 启用小型网络缓冲区"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:231
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
-msgstr "允许支持非常小的网络音频数据包。这些仅在声卡缓冲区延迟小于 128 个样本时使用。网络缓冲区越小，音频延迟越低。但与此同时，网络负载增加，音频丢失的可能性也增加（特别是如果您的网络连接有任何明显的抖动）。如果您遇到高延迟或较差的音频质量，请尝试启用此选项。但是，禁用它通常意味着更好的音频质量。"
+msgstr "允许支持非常小的网络音频数据包。这些仅在声卡缓冲区延迟小于 128 个样本时使用。网络缓冲区越小，音频延迟越低。但与此同时，网络负载增加，音频丢失的可能性也增加(特别是如果您的网络连接有任何明显的抖动)。如果您遇到高延迟或较差的音频质量，请尝试启用此选项。但是，禁用它通常意味着更好的音频质量。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:233
@@ -577,7 +578,7 @@ msgstr "### 音频流速率"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:236
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
-msgstr "取决于当前的音频包大小和压缩设置。确保上行速率不高于您可用的互联网上传速度（通过 [librespeed.org](https://librespeed.org/) 等服务进行检查）。"
+msgstr "取决于当前的音频包大小和压缩设置。确保上行速率不高于您可用的互联网上传速度(通过 [librespeed.org](https://librespeed.org/) 等服务进行检查)。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:238
@@ -652,7 +653,7 @@ msgstr "### 文件 > 加载/保存混音器通道设置"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:270
 msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
-msgstr "您可以保存和恢复您为乐队排练所拥有的混音（推子、静音、声像、独奏等）并随时加载（即使在演奏时）。加载也可以通过拖放到混音器窗口来完成。"
+msgstr "您可以保存和恢复您为乐队排练所拥有的混音(推子、静音、声像、独奏等)并随时加载(即使在演奏时)。加载也可以通过拖放到混音器窗口来完成。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:272
@@ -677,7 +678,7 @@ msgstr "{% include_relative Include-Backing-Up.md %}"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:279
 msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
-msgstr "您可以使用 [加载/保存混音器频道设置](Software-Manual#文件-加载-保存混音器通道设置) 保存和加载不同的混音器设置，并将这些文件存储在您想要的任何位置。"
+msgstr "您可以使用 [加载/保存混音器频道设置](Software-Manual#文件--加载保存混音器通道设置) 保存和加载不同的混音器设置，并将这些文件存储在您想要的任何位置。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:284

@@ -2,11 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
+# Olivier Humbert <trebmuh@tuxfamily.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-14 11:50+0000\n"
-"Last-Translator: Julien Taverna <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2022-11-16 14:11+0000\n"
+"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/faq/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -80,12 +81,12 @@ msgstr "</details>"
 #: ../wiki/en/FAQ.md:21
 #, no-wrap
 msgid "**For common problems and their solutions when using Jamulus, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.**\n"
-msgstr "**Pour les problèmes courants et leurs solutions, voir la page [Dépannage](/wiki/Client-Troubleshooting).**\n"
+msgstr "**Pour les problèmes courants et leurs solutions lors de l'utilisation de Jamulus, voir la page [dépannage](/wiki/Client-Troubleshooting).**\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:24
 msgid "### Is there a metronome, synchronization, or some other way of keeping in time?"
-msgstr "### Y a-t-il un métronome, une synchronisation ou un autre moyen de rester dans le temps ?"
+msgstr "### Y a-t-il un métronome, une synchronisation ou un autre moyen de rester dans le tempo ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
@@ -95,7 +96,7 @@ msgstr "Non. Les musiciens sur un serveur Jamulus jouent en temps réel ensemble
 #. type: Plain text
 #: ../wiki/en/FAQ.md:28
 msgid "Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly."
-msgstr "N'oubliez pas non plus que tous les participants doivent suivre la [Règle d'or](/wiki/Client-Troubleshooting#vous-avez-tous-un-son-correct-mais-il-est-difficile-de-jouer-ensemble), qui déterminera également si vous pouvez jouer en rythme correctement."
+msgstr "Garder également à l'esprit que tous les participants devraient suivre [la règle d'or](/wiki/Client-Troubleshooting#vous-avez-tous-un-son-correct-mais-il-est-difficile-de-jouer-ensemble), qui déterminera aussi si vous pouvez jouer en rythme correctement."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:30
@@ -175,7 +176,7 @@ msgstr "<img src=\"{% include img/fr-screenshots/diagram-overview.inc %}\" loadi
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61
 msgid "Jamulus works on the Client-server principle. Everybody’s audio is sent to a Server, mixed and processed there. Afterwards, the audio is sent back to each Client. If a Server is registered in a Jamulus Directory, the Server's information will be provided to all Clients using that Directory."
-msgstr "Jamulus fonctionne sur le principe client-serveur. L'audio de chaque musicien est envoyé à un serveur, où il est mixé et traité. Ensuite, l'audio est renvoyé à chaque client. Si un serveur est enregistré sur un annuaire Jamulus publique, ses informations seront diffusées à tous les clients utilisant cet annuaire."
+msgstr "Jamulus fonctionne sur le principe client-serveur. L'audio de chaque musicien est envoyé à un serveur, où il est mixé et traité. Ensuite, l'audio est renvoyé à chaque client. Si un serveur est enregistré sur un annuaire Jamulus, ses informations seront diffusées à tous les clients utilisant cet annuaire."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:63
@@ -190,7 +191,7 @@ msgstr "L'ajout du support vidéo ajoute beaucoup de complexité. Vous pouvez ut
 #. type: Plain text
 #: ../wiki/en/FAQ.md:68
 msgid "## Server FAQ"
-msgstr "## FAQ Serveur"
+msgstr "## FAQ serveur"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:70
@@ -200,7 +201,7 @@ msgstr "### Pourquoi les serveurs enregistrés n'ont-ils pas besoin de redirecti
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
 msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
-msgstr "Normalement, les pare-feu NAT (Network Address Translation) empêchent les requêtes entrantes provenant de l'extérieur du réseau local. Le trafic entrant n'est possible que pour les paquets relatifs à une demande sortante (à proprement parler, les paquets \"relatifs\" et \"établis\" à une connexion sortante initiale). En mode enregistré, lorsque votre serveur Jamulus se connecte à un annuaire, il initie bien sûr une connexion sortante. À partir de ce moment-là, l'annuaire envoi des \"pings\" (non ICMP) de connexion (établie/liée) à votre serveur à intervalles réguliers pour maintenir le ou les ports NAT pertinents ouverts sur votre routeur/pare-feu."
+msgstr "Normalement, les pare-feu NAT (Network Address Translation) empêchent les requêtes entrantes provenant de l'extérieur du réseau local. Le trafic entrant n'est possible que pour les paquets relatifs à une demande sortante (à proprement parler, les paquets \"relatifs\" et \"établis\" à une connexion sortante initiale). En mode serveur enregistré, lorsque votre serveur Jamulus se connecte à un annuaire, il initie bien sûr une connexion sortante. À partir de ce moment-là, l'annuaire envoi des \"pings\" (non ICMP) de connexion (établie/liée) à votre serveur à intervalles réguliers pour maintenir le ou les ports NAT pertinents ouverts sur votre routeur/pare-feu."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:74

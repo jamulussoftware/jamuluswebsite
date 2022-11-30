@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-11-01 10:27+0000\n"
-"Last-Translator: ignotus <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -106,13 +107,13 @@ msgstr "在你下载了正确的文件后:"
 #: ../wiki/en/Installation-for-Linux.md:34
 #, no-wrap
 msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).\n"
-msgstr "*仅限 Ubuntu* - 启用 Ubuntu“universe”存储库（您可以使用 [基于 GUI 的方法](https://askubuntu.com/a/148645) 或 [基于 CLI 的方法](https://askubuntu. com/a/227788))。\n"
+msgstr "*仅限 Ubuntu* - 启用 Ubuntu“universe”存储库(您可以使用 [基于 GUI 的方法](https://askubuntu.com/a/148645) 或 [基于 CLI 的方法](https://askubuntu. com/a/227788))。\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:35
 #, no-wrap
 msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`\n"
-msgstr "通过打开命令行窗口更新 apt（CTRL+ALT+T 应该可以）并输入:`sudo apt-get update`\n"
+msgstr "通过打开命令行窗口更新 apt(CTRL+ALT+T 应该可以)并输入:`sudo apt-get update`\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:36
@@ -139,7 +140,7 @@ msgstr "### 其他发行版"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:43
 msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
-msgstr "对于其他发行版上的安装程序，请参阅其包管理器和 [Repology]（https://repology.org/project/jamulus/versions）。如果您的发行版中不包含最新版本的 Jamulus，您可以 [从源代码编译 Jamulus]（https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md）。另请注意贡献的 [安装脚本]（https://github.com/jamulussoftware/installscripts）。"
+msgstr "对于其他发行版上的安装程序，请参阅其包管理器和 [Repology](https://repology.org/project/jamulus/versions)。如果您的发行版中不包含最新版本的 Jamulus，您可以 [从源代码编译 Jamulus](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md)。另请注意贡献的 [安装脚本](https://github.com/jamulussoftware/installscripts)。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:45
@@ -164,12 +165,12 @@ msgstr "启动 QjackCtl。您将看到 **Qt JACK Control 实用程序主页**"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:51
 msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr "如下配置您的音频硬件（JACK 的确切设置将取决于您的音频硬件的能力）:"
+msgstr "如下配置您的音频硬件(JACK 的确切设置将取决于您的音频硬件的能力):"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:53
 msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
-msgstr "将音频 **接口** 设置为您想要的（列表中可能有几个）"
+msgstr "将音频 **接口** 设置为您想要的(列表中可能有几个)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:54
@@ -199,7 +200,7 @@ msgstr "随着 JACK 的运行和配置，启动 Jamulus。"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:63
 msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
-msgstr "如果您遇到声音中断问题（特别是 JACK/QjackCtl 报告的 XRUN 错误），请尝试设置更大的值（例如 256 帧或 3 个周期）。较低的（例如 64 帧）可以带来更好的性能，但可能会带来更多的声音问题。否则请参阅[故障排除页面]（客户端故障排除）。"
+msgstr "如果您遇到声音中断问题(特别是 JACK/QjackCtl 报告的 XRUN 错误)，请尝试设置更大的值(例如 256 帧或 3 个周期)。较低的(例如 64 帧)可以带来更好的性能，但可能会带来更多的声音问题。否则请参阅[故障排除页面](客户端故障排除)。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:65
