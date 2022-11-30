@@ -33,7 +33,7 @@ After you downloaded the correct file:
 	`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  
 1. Once installed, you can delete the file and close any console windows.
 
-Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
+**Upgrades:** If you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
 
 ### Other distributions
 
