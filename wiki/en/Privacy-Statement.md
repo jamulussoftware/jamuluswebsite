@@ -18,7 +18,7 @@ permalink: "/wiki/Privacy-Statement"
 
 ## Jamulus.io Website
 
-The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. See Github's [privacy policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) for information relating to data collection and privacy. The website at [jamulus.io](https://jamulus.io) does not set tracking cookies.
+The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. The Jamulus team have not constructed the website to set tracking cookies, but see Github's [privacy policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) for information relating to data collection and privacy overall. 
 
 ## Jamulus Software
 
