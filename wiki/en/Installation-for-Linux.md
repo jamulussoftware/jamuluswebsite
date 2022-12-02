@@ -21,7 +21,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 [Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}
 
-**ARM-based machines** (e.g. Raspberry Pi): [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})
+**ARM-based machines** (e.g. Raspberry Pi): Download [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})
 
 
 After you downloaded the correct file:
