@@ -202,7 +202,9 @@ Start with delay panning enabled. This option uses small differences in sound ar
 Start Jamulus in Server mode
 
 ##### `--serverbindip` 
-Specify the IP address the Jamulus process will bind to
+Specify the IP address the Jamulus process will bind to. 
+
+Normally, Jamulus will listen on all IP addresses on the host machine.  Where the host has multiple network addresses, this option allows one of the addresses to be chosen.
 
 ##### `-T or --multithreading` 
 Use multithreading to make better use of multi-core CPUs to support more Clients
