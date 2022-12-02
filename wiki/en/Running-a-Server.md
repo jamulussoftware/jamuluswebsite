@@ -98,7 +98,7 @@ In this mode your Server will be included in the server list supplied by a Direc
 
 You can also have your Server listed by a Custom Directory (see below), if that better meets your requirements.  Clients can then only see your Server if they also know the Custom Directory.
 
-Note that Directories can only register up to 150 Servers. If you see a message that says you cannot register your Server becuase the Directory is full, you can try registering on another. For a list of all public Directories and the Servers on them, see [explorer.jamulus.io](https://explorer.jamulus.io).
+Note that Directories can only register up to 150 Servers. If you see a message that says you cannot register your Server becuase the Directory is full, you can try registering on another. 
 
 <figure>
 	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Registered Server">
