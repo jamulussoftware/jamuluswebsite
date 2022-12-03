@@ -104,7 +104,7 @@ Note that Directories can only register up to 150 Servers. If you see a message 
 	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Registered Server">
 </figure>
 
-### 3. Directory
+### Directory
 
 If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
 
