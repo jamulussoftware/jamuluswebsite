@@ -92,7 +92,7 @@ This is the default when starting a Server for the first time. Unregistered Serv
 	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Unregistered Server">
 </figure>
 
-### 2. Registered
+### Registered
 
 In this mode your Server will be included in the server list supplied by a Directory. Jamulus has a list of built-in Directories that Clients can know, and if you register your Server with one of these, anyone can then discover and connect to it.
 
