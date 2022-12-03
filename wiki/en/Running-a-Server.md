@@ -78,11 +78,11 @@ _To amend your Server configuration, just repeat the last two steps above._
 
 ---
 
-## Server Types
+## Server Modes
 
 Servers can be run in one of three modes (either at home or on a 3rd party host), depending on your needs.
 
-### Unregistered
+### Unregistered mode
 
 This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address can connect to it. 
 
@@ -92,7 +92,7 @@ This is the default when starting a Server for the first time. Unregistered Serv
 	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Unregistered Server">
 </figure>
 
-### Registered
+### Registered mode
 
 In this mode your Server will be included in the server list supplied by a Directory. Jamulus has a list of built-in Directories that Clients can know, and if you register your Server with one of these, anyone can then discover and connect to it.
 
@@ -104,7 +104,7 @@ Note that Directories can only register up to 150 Servers. If you see a message 
 	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Registered Server">
 </figure>
 
-### Directory
+### Directory mode
 
 If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
 
@@ -116,11 +116,11 @@ For information, [see the Directories guide](Directories).
 
 Depending on your operating system and how you are running the server, you can set Server options and make them persistent between reloads as follows:
 
-**Linux headless mode** (Debian/Ubuntu using systemd) 
+**For Linux headless** (Debian/Ubuntu using systemd) 
 
 Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless`
 
-**GUI mode** (all platforms)
+**For the GUI** (all platforms)
 
 Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file (do not attempt to edit this file by hand). However, some options are not available via the GUI and need to be set via the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)
 
