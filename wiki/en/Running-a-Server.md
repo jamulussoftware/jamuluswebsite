@@ -215,9 +215,7 @@ Maximum number of channels (Clients)
 ##### `-z or --startminimized` 
 Start the Jamulus Server graphical user interface in the minimized window state.
 
----
-
-## Other options
+### Other options
 
 {% include_relative Include-Shared-Commands.md %}
 
