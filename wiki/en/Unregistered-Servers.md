@@ -21,8 +21,6 @@ Normally, people from outside your home network cannot see things inside it. To 
 
 **Note:** The default port for Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the computer running the Server.
 
-**Note:** Your home router might change the IP address of the computer you're running your Server on. Depending on your router, you might need to give this computer a static IP address (often under DHCP settings of your router).
-
 ### Getting the public IP
 
 To allow others to connect to your Server from the internet, give them your public internet IP address. You can [learn your current address using Google](https://www.google.com/search?q=what+is+my+ip).
