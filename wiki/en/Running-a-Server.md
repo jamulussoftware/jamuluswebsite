@@ -82,7 +82,7 @@ _To amend your Server configuration, just repeat the last two steps above._
 
 Servers can be run in one of three modes (either at home or on a 3rd party host), depending on your needs.
 
-### 1. Unregistered
+### Unregistered
 
 This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address can connect to it. 
 
