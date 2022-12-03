@@ -118,7 +118,7 @@ Depending on your operating system and how you are running the server, you can s
 
 **For Linux headless** (Debian/Ubuntu using systemd) 
 
-Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless`
+Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (You will need to reload the restart for the changes to take effect. See [Installation](#installation))
 
 **For the GUI** (all platforms)
 
