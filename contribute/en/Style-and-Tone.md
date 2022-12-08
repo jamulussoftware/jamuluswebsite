@@ -89,9 +89,11 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 “Person” A human connected to a server (may be on multiple channels). “People on the server”, “People who have muted themselves” (not “Musicians” or "Channels").
 
-“Server” The general term for the machine that a client connects to. Not to be confused with “Directory”.
+"Client" When capitalised, this means an instance of Jamulus running in client mode, used to connect to Jamulus Servers.
 
-“Directory” The general term for a server that a client uses to get its list of public servers from. Use the term “Directory server” cautiously - it may be confusing in the presence of “Server”.
+“Server” When capitalsed, this means an instance of Jamulus running in server mode. When lower case, this means the general term for the machine that runs the Server (eg "A Server running on an AWS server"). Not to be confused with “Directory”.
+
+“Directory” The term for a type of Server that a Client uses to get a list of Servers from. Avoid the use of the term “Directory Server” it may be confusing in the presence of “Server” on its own.
 
 “Country/Region” Keep in mind that some areas of the world have a controversal (political) status. If possible, be generic and remain neutral. Instead of just saying country, use “Country/Region“ or “Location“.
 
