@@ -323,7 +323,7 @@ SRV records are created by the administrator of the domain being used to host th
 
 **Tip:** You can host many Jamulus Servers at different ports on one host by giving each its own SRV record.
 
-See the documentation of your DNS provider for instructions on creating an SRV record for that provider.
+See the documentation of your DNS provider for instructions on creating an SRV record.
 
 #### Example use case with SRV records
 
