@@ -307,7 +307,7 @@ A Jamulus client can connect to a Server on a non-standard port by specifying th
 
 For example, an address given in Jamulus client Connect window could look like ```jamulus.example.com```. If a DNS SRV record is found for this domain, Jamulus client will try to connect to Jamulus server on the host:port listed in the SRV record, such as ```jamulus.example.com:12345```.
 
-If no SRV records are found on the DNS server, Jamulus client will attempt to connect to Jamulus server as specified in the connection window.
+If no SRV records are found on the DNS server, a Jamulus client will attempt to connect to the Jamulus Server as specified in the connection window.
 
 #### Creating SRV records
 
