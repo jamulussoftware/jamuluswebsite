@@ -299,7 +299,7 @@ Most domestic internet connections change their external IP address after a shor
 
 ## DNS SRV record support
 
-Jamulus client supports [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record). If Jamulus client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus client and the DNS server. Jamulus server is not involved in this interaction. Jamulus server just listens for connections on the same port listed in the SRV record.
+Jamulus clients support [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record). If a Jamulus client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record.
 
 #### Why is this helpful?
 
