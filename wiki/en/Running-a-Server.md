@@ -94,7 +94,7 @@ This is the default when starting a Server for the first time. Unregistered Serv
 
 ### Registered mode
 
-In this mode your Server will be included in the server list supplied by a Directory. Jamulus has a list of built-in Directories that Clients can know, and if you register your Server with one of these, anyone can then discover and connect to it.
+In this mode your Server will appear in the server list supplied by a Directory. Jamulus Clients come with a list of Directories built-in. If you register your Server with one of these, anyone can discover and connect to it.
 
 You can also have your Server listed by a Custom Directory (see below), if that better meets your requirements.  Clients can then only see your Server if they also know the Custom Directory.
 
