@@ -97,7 +97,7 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 “Country/Region” Keep in mind that some areas of the world have a controversal (political) status. If possible, be generic and remain neutral. Instead of just saying country, use “Country/Region“ or “Location“.
 
-Registration: When a Server is configured in Registered mode, it will be "listed" when successfully registered by a Directory. Note that if a Directory is full, a Registered Server may not therefore be "listed" becuase it has not been successfully "registered".
+Registration: When a Server is configured in Registered mode, it will be _listed_ when successfully registered by a Directory. Note that if a Directory is full, a Registered Server will not be _listed_ because it has not been successfully _registered_.
 
 ## Units
 
