@@ -96,7 +96,7 @@ This is the default when starting a Server for the first time. Unregistered Serv
 
 In this mode your Server will appear in the server list supplied by a Directory. Jamulus Clients come with a list of Directories built-in. If you register your Server with one of these, anyone can discover and connect to it.
 
-You can also have your Server listed by a Custom Directory (see below), if that better meets your requirements.  Clients can then only see your Server if they also know the Custom Directory.
+Alternatively, you can list your Server on a Custom Directory (see below).  Clients will only find your Server if they enter the Custom Directory's internet address.
 
 Note that Directories can only register up to 150 Servers. If you see a message that says you cannot register your Server becuase the Directory is full, you can try registering on another. 
 
