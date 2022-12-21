@@ -87,7 +87,7 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 “Fader” The UI that controls a channel. “Each fader has a mute button”, “The person’s fader” ,“Group faders together” (not “The person’s channel” or “Mute a Fader”, not “Slider” or “Volume control”)
 
-“Person” A human connected to a server (may be on multiple channels). “People on the server”, “People who have muted themselves” (not “Musicians” or "Channels").
+“Person” A human connected to a server (may be on multiple channels). We might say _people on the server_, or _people who have muted themselves_, rather than _Musicians_ or _Channels_.
 
 "Client" When capitalised, this means an instance of Jamulus running in client mode, used to connect to Jamulus Servers.
 
