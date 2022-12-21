@@ -91,7 +91,7 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 "Client" When capitalised, this means an instance of Jamulus running in client mode, used to connect to Jamulus Servers.
 
-“Server” When capitalsed, this means an instance of Jamulus running in server mode. When lower case, this means the general term for the machine that runs the Server (eg "A Server running on an AWS server"). Not to be confused with “Directory”.
+“Server” When capitalized, refers to an instance of Jamulus running in server mode. When lowercase as _server_, this refers to the computer that runs the Server (e.g. _A Server running on an AWS server_). Not to be confused with Directory.
 
 “Directory” The term for a type of Server that a Client uses to get a list of Servers from. Avoid the use of the term _Directory Server_ because it may be confusing in the presence of _Server_ on its own.
 
