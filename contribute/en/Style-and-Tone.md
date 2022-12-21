@@ -93,7 +93,7 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 “Server” When capitalsed, this means an instance of Jamulus running in server mode. When lower case, this means the general term for the machine that runs the Server (eg "A Server running on an AWS server"). Not to be confused with “Directory”.
 
-“Directory” The term for a type of Server that a Client uses to get a list of Servers from. Avoid the use of the term “Directory Server” it may be confusing in the presence of “Server” on its own.
+“Directory” The term for a type of Server that a Client uses to get a list of Servers from. Avoid the use of the term _Directory Server_ because it may be confusing in the presence of _Server_ on its own.
 
 “Country/Region” Keep in mind that some areas of the world have a controversial (political) status. If possible, be generic and remain neutral. Instead of just saying country, use _Country/Region_ or _Location_.
 
