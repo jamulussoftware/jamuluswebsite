@@ -95,7 +95,7 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 “Directory” The term for a type of Server that a Client uses to get a list of Servers from. Avoid the use of the term “Directory Server” it may be confusing in the presence of “Server” on its own.
 
-“Country/Region” Keep in mind that some areas of the world have a controversal (political) status. If possible, be generic and remain neutral. Instead of just saying country, use “Country/Region“ or “Location“.
+“Country/Region” Keep in mind that some areas of the world have a controversial (political) status. If possible, be generic and remain neutral. Instead of just saying country, use _Country/Region_ or _Location_.
 
 Registration: When a Server is configured in Registered mode, it will be _listed_ when successfully registered by a Directory. Note that if a Directory is full, a Registered Server will not be _listed_ because it has not been successfully _registered_.
 
