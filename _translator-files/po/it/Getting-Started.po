@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Giuseppe <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# Gico2006 <gradaellig@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-29 16:44+0000\n"
-"Last-Translator: ignotus <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-12-23 10:21+0000\n"
+"Last-Translator: Gico2006 <gradaellig@protonmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Getting-Started.md:1
@@ -54,34 +55,34 @@ msgstr "Per ottenere il meglio da Jamulus, come minimo avrai bisogno di:"
 #: ../wiki/en/Getting-Started.md:13
 #, no-wrap
 msgid "**A wired internet connection** (and turn wi-fi off. See the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))\n"
-msgstr ""
+msgstr "**Una connessione Internet cablata** (e disattiva il Wi-Fi. Consulta le [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:14
 #, no-wrap
 msgid "**Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))\n"
-msgstr ""
+msgstr "**Cuffie cablate** (non Bluetooth o altoparlanti - vedi [FAQ](/wiki/FAQ#why-should't-i-use-wireless-equipment))\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:15
 #, no-wrap
 msgid "**A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)\n"
-msgstr ""
+msgstr "**Un dispositivo audio ragionevole, una scheda audio e/o un microfono** ([vedi questo elenco](/kb/2021/01/05/Jamulus-Sound-Devices.html) per degli esempi)\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:17
 msgid "If you have any questions, please see the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)"
-msgstr ""
+msgstr "Per qualsiasi domanda, consulta la sezione [Discussioni](https://github.com/jamulussoftware/jamulus/discussions)"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:19
 msgid "## Installation"
-msgstr ""
+msgstr "## Installazione"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:21
 msgid "To get Jamulus working with your operating system, please follow the installation guide for your platform:"
-msgstr ""
+msgstr "Per far funzionare Jamulus con il tuo sistema operativo, segui la guida all'installazione della tua piattaforma:"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:28
@@ -94,31 +95,37 @@ msgid ""
 "</div>\n"
 "_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are still considered experimental._\n"
 msgstr ""
+"<div class=\"fx-row fx-row-start-xs button-container\">\n"
+"    <a href=\"Installation-for-Windows\" class=\"button fx-col-100-xs\">Windows</a>\n"
+"    <a href=\"Installation-for-Macintosh\" class=\"button fx-col-100-xs\">macOS</a>\n"
+"    <a href= \"Installation-for-Linux\" class=\"button fx-col-100-xs\">Linux</a>\n"
+"</div>\n"
+"_Possono essere utilizzati anche [Android](Installation-for-Android) e [iOS](Installation-for-iOS), ma sono ancora considerati sperimentali._\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:30
 msgid "And for now, close all other applications. It’s best to start simple at first."
-msgstr ""
+msgstr "Per ora, chiudi tutte le altre applicazioni. È meglio iniziare in modo semplice all'inizio."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:32
 msgid "## Hardware Setup"
-msgstr ""
+msgstr "## Configurazione hardware"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:34
 msgid "If you use external audio hardware, plug that in before you start Jamulus. If you haven't configured your hardware, please see the installation guides mentioned above."
-msgstr ""
+msgstr "Se utilizzi hardware audio esterno, collegalo prima di avviare Jamulus. Se non hai configurato il tuo hardware, consulta le guide all'installazione menzionate sopra."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:36
 msgid "## Jamulus main window"
-msgstr ""
+msgstr "## Finestra principale di Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:38
 msgid "When you open Jamulus, you will see a window which looks like this:"
-msgstr ""
+msgstr "Quando apri Jamulus, vedrai una finestra simile a questa:"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:43
@@ -129,16 +136,20 @@ msgid ""
 "  <figcaption>The main window before you connect to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"  <img src=\"{% include img/en-screenshots/main-screen-default.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <figcaption>La finestra principale prima della connessione a un server</figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:46
 msgid "## Setting up a profile"
-msgstr ""
+msgstr "## Impostazione di un profilo"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:48
 msgid "First, let others know who you are. Click on the “Settings” button on the bottom left and go to “My Profile…”. Now you will see this:"
-msgstr ""
+msgstr "Per prima cosa, fai sapere agli altri chi sei. Fare clic sul pulsante \"Impostazioni\" in basso a sinistra e andare su \"Il mio profilo...\". Ora vedrai questo:"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:53
@@ -149,32 +160,36 @@ msgid ""
 "  <figcaption>Let people know who you are</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"  <img src=\"{% include img/en-screenshots/settings-profile.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <figcaption>Fai sapere alle persone chi sei</figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:56
 msgid "Fill in at least “Alias/Name” and close the window."
-msgstr ""
+msgstr "Inserisci almeno \"Alias/Nome\" e chiudi la finestra."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:58
 msgid "## Connecting to a Server and testing your sound"
-msgstr ""
+msgstr "## Connessione a un server e test del suono"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:60
 msgid "Before you connect to a Server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal))."
-msgstr ""
+msgstr "Prima di connetterti a un server, **non** dovresti essere in grado di sentire te stesso.  Ascoltare il tuo suono da Jamulus (e non da te stesso) si chiama \"The Golden Rule\" e ti permette di suonare a tempo con gli altri ([vedi le FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal))."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:62
 #, no-wrap
 msgid "**Before playing with others, we recommend that you connect to an empty Server to test your setup**, and make sure you are listening to the signal coming back from the Server (if possible) and not yourself.\n"
-msgstr ""
+msgstr "**Prima di suonare con altri, ti consigliamo di connetterti a un server vuoto per testare la tua configurazione** e assicurarti di ascoltare il segnale proveniente dal server (se possibile) e non te stesso.\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:64
 msgid "Now use the “Connect” button in the Jamulus main window to join a Server. A window will now open:"
-msgstr ""
+msgstr "Ora usa il pulsante \"Connetti\" nella finestra principale di Jamulus per unirti a un server. Si aprirà una finestra:"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:69
@@ -185,26 +200,30 @@ msgid ""
 "  <figcaption>Connect to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"  <img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" loading=\"lazy\" alt=\"Screenshot della finestra di connessione\" style=\"border: 5px solid grey;\">\n"
+"  <figcaption>Connessione a un server</figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:71
 msgid "The most important thing about Servers is their “ping time”. The bigger the number, the harder it will be to play in time with others. Usually, you would select a Server with a ping of less than 50ms if you can."
-msgstr ""
+msgstr "La cosa più importante dei server è il loro \"tempo di ping\". Più grande è il numero, più difficile sarà suonare a tempo con gli altri. Di solito, se possibile, è meglio selezionare un server con un ping inferiore a 50 ms."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:73
 msgid "Once connected to a Server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
-msgstr ""
+msgstr "Una volta connesso a un server, assicurati di poterti sentire OK e risolvi eventuali volumi di input o altri problemi. Puoi dare un'occhiata alla [pagina di risoluzione dei problemi](/wiki/Client-Troubleshooting) per i problemi più comuni. E, naturalmente, controlla di essere anche in grado di obbedire alla [Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-hard-to-keep-together)."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:75
 msgid "## Playing for the first time"
-msgstr ""
+msgstr "## Suonare per la prima volta"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:77
 msgid "With your sound all set up, you are ready to go. When you connect to a Server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you."
-msgstr ""
+msgstr "Dopo aver configurato l'audio, sei pronto per partire. Quando ti connetti a un server (potresti voler selezionare un genere dall'elenco), i fader che vedi a destra sono il tuo mix personale. Tutto ciò che cambi qui cambierà ciò che senti, ma non influenzerà gli altri. Se sposti un fader verso il basso, quel canale sarà più silenzioso, se lo sposti verso l'alto, il canale sarà più forte per te."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:82
@@ -215,28 +234,32 @@ msgid ""
 "  <figcaption>The main window when you are connected to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"  <img src=\"{% include img/en-screenshots/main-screen-default.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <figcaption>La finestra principale quando si è connessi a un server</figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:84
 msgid "If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other people. They won’t be able to tell you have done this though. But if you see a “mute” icon above a fader, that means they can’t hear you because they've muted your channel in their mix."
-msgstr ""
+msgstr "Se non vuoi che altri ascoltino il tuo audio, fai clic sul pulsante \"Mute Myself\", che impedirà che il tuo audio venga inviato ad altre persone. Non saranno in grado di dire che l'hai fatto però. Ma se vedi un'icona \"muto\" sopra un fader, significa che non possono sentirti perché hanno disattivato l'audio del tuo canale nel loro mix."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:86
 msgid "Note that you can use the Chat facility at any time to message other people while you are connected. The welcome message in the chat may also state some guidelines for use."
-msgstr ""
+msgstr "Tieni presente che puoi utilizzare la funzione di chat in qualsiasi momento per inviare messaggi ad altre persone mentre sei connesso. Il messaggio di benvenuto nella chat può anche indicare alcune linee guida per l'uso."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:88
 msgid "More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual)."
-msgstr ""
+msgstr "Ulteriori informazioni sull'utilizzo di Jamulus possono essere trovate nel [Manuale del software](/wiki/Software-Manual)."
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:90
 msgid "## Troubleshooting"
-msgstr ""
+msgstr "## Risoluzione dei problemi"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:91
 msgid "Having audio trouble? Can't see Servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)."
-msgstr ""
+msgstr "Hai problemi con l'audio? Non riesci a vedere i server, o hai qualche altro problema? Dai un'occhiata alla [Pagina di risoluzione dei problemi](/wiki/Client-Troubleshooting), o sentiti libero di chiedere nelle [Discussioni](https://github.com/jamulussoftware/jamulus/discussions)."

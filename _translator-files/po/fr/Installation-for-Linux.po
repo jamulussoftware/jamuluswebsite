@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
+# Olivier Humbert <trebmuh@tuxfamily.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-16 15:25+0000\n"
-"Last-Translator: Olivier Humbert <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2022-12-12 07:41+0000\n"
+"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/installation-for-linux/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -64,16 +65,15 @@ msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
-#, fuzzy, no-wrap
-#| msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
+#, no-wrap
 msgid "**Upgrading?** You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.\n"
-msgstr "Mise à jour ? Vous pouvez d'abord [sauvegarder votre configuration](Software-Manual#sauvegarde-de-jamulus)."
+msgstr "**Mise à jour ?** Vous pouvez d'abord [sauvegarder votre configuration](Software-Manual#sauvegarde-de-jamulus).\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
 #, no-wrap
 msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first. \n"
-msgstr ""
+msgstr "**Installation d'un serveur?** Lisez d'abord le [guide pour les administrateurs de serveurs](Running-a-Server) \n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:21
@@ -87,10 +87,9 @@ msgstr "[Téléchargez Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ si
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:25
-#, fuzzy, no-wrap
-#| msgid "[Download Jamulus 32 bit (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button} [Download Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
+#, no-wrap
 msgid "**ARM-based machines** (e.g. Raspberry Pi): Download [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})\n"
-msgstr "[Téléchargez Jamulus 32 bits (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button} [Téléchargez Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
+msgstr "**Machines basées sur ARM** (ex : Raspberry Pi) : Télécharger [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}) ou [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:28
@@ -113,13 +112,13 @@ msgstr "Mettez à jour apt en ouvrant une fenêtre de console (CTRL+ALT+T devrai
 #: ../wiki/en/Installation-for-Linux.md:32
 #, no-wrap
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: \n"
-msgstr ""
+msgstr "Allez à l'endroit où vous avez téléchargé le programme d'installation et double-cliquez dessus, ou utilisez la ligne de commande : \n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:34
 #, no-wrap
 msgid "`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  \n"
-msgstr ""
+msgstr "`sudo apt install ./{{ site.download_file_names.deb-gui }}` (ou pour Raspberry Pi etc. comme ci-dessus)  \n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:35
@@ -129,10 +128,9 @@ msgstr "Une fois installé, vous pouvez supprimer le fichier et fermer toutes le
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:37
-#, fuzzy, no-wrap
-#| msgid "Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above."
+#, no-wrap
 msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.\n"
-msgstr "Notez que si vous devez mettre à jour Jamulus vers une version plus récente, téléchargez simplement le nouveau fichier .deb et réinstallez comme ci-dessus."
+msgstr "**Mises à jour :** si vous devez mettre à jour Jamulus vers une version plus récente, téléchargez simplement le nouveau fichier .deb et réinstallez comme ci-dessus.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:39
