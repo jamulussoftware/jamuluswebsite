@@ -22,7 +22,7 @@ The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. Th
 
 ## Jamulus Software
 
-Jamulus is open source software and can therefore be modified by others. As such, the Jamulus project makes no representations related to privacy, data collection, or security with respect to your use of the software.
+Jamulus is open source software that can be modified by anyone. As such, the Jamulus project can make no representations related to privacy, data collection, or security with respect to your use of the software.
 
 ## General Information
 
