@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,57 +41,31 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
+#, markdown-text
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:11
-msgid "## Audio bandwidth"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:13
-msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:14
-msgid "Channels : stereo/mono"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:15
-msgid "Quality : high/medium/low"
+#. type: Title ##
+#: ../wiki/en/Server-Bandwidth.md:10
+#, markdown-text, no-wrap
+msgid "Audio bandwidth"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
-msgid "Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:18
-msgid "With the following units"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:19
-msgid "ms : milliseconds"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:20
-msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
+#, markdown-text
+msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
-msgid "Mbit/s : Mega-bits per second"
+#, markdown-text
+msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
-#, no-wrap
+#, markdown-text, no-wrap
 msgid ""
 "| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
 "| --------- | ------ | -------- | -------- | -------- | -------- |\n"
@@ -103,14 +77,15 @@ msgid ""
 "| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:32
-msgid "## Network bandwidth"
+#. type: Title ##
+#: ../wiki/en/Server-Bandwidth.md:31
+#, markdown-text, no-wrap
+msgid "Network bandwidth"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38
-#, no-wrap
+#, markdown-text, no-wrap
 msgid ""
 "There is one upstream (musician sending to the Server) and one downstream (server sending back the mix to the musician)\n"
 "<figure>\n"
@@ -121,5 +96,6 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:40
+#, markdown-text
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
 msgstr ""

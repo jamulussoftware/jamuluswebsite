@@ -17,7 +17,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:2
-msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->"
+#, fuzzy, no-wrap
+#| msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->"
+msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->\n"
 msgstr "<!-- 참고: 이것은 클라이언트와 서버, 그리고 모든 운영 체제에 모두 적용되어야 합니다 -->"
 
 #. type: Plain text
@@ -45,17 +47,17 @@ msgstr "`find ~ -name Jamulus.ini -ls`"
 msgid "If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.  **Points to note**"
 msgstr "'--inifile'매개 변수를 사용하여 inifile을 다른 위치에 저장했다면 이 파일도 백업하는 것을 잊지 마십시오.  **주의할 점들**"
 
-#. type: Plain text
-#: ../wiki/en/Include-Backing-Up.md:15
+#. type: Bullet: '* '
+#: ../wiki/en/Include-Backing-Up.md:16
 msgid "Do not back up or restore settings files when Jamulus is running."
 msgstr "Jamulus가 실행 중일 때 설정 파일을 백업하거나 복원하지 마십시오."
 
-#. type: Plain text
+#. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
 msgid "It is not recommended to manually edit settings files (they're not designed for that)."
 msgstr "설정 파일을 수동으로 편집하는 것은 권장되지 않습니다(이를 위해 설계되지 않음)."
 
-#. type: Plain text
+#. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
 msgid "You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus)."
 msgstr "Jamulus를 닫은 후 설정 파일을 삭제하여 모든 설정을 기본값으로 되돌릴 수 있습니다."

@@ -33,8 +33,9 @@ msgstr "wiki"
 msgid "/wiki/Installation-for-Macintosh"
 msgstr "/wiki/Installation-for-Macintosh"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Installation-for-Macintosh.md:1
+#: ../wiki/en/Installation-for-Macintosh.md:10
 #, no-wrap
 msgid "Installation for macOS"
 msgstr "Instalación en macOS"
@@ -43,11 +44,6 @@ msgstr "Instalación en macOS"
 #: ../wiki/en/Installation-for-Macintosh.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr "{% include breadcrumb.html root=\"Utilización de Jamulus\" branch1=\"Cómo Empezar\" branch1-url=\"Getting-Started\" %}"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:11
-msgid "# Installation for macOS"
-msgstr "# Instalación en macOS"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:13
@@ -65,46 +61,26 @@ msgid "Upgrading? You may want to [back up your configuration](Software-Manual#b
 msgstr "Quieres actualizar Jamulus? Quizá te convenga [realizar una copia de seguridad de tu configuración](Software-Manual#copia-seguridad-jamulus) primero."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:19
-msgid "[Download Jamulus (Universal build)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\\\"
-msgstr "[Descarga Jamulus (Versión universal)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\\\"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:21
-#, no-wrap
-msgid ""
-"**macOS Mojave (10.14) or lower:** [Download legacy version]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\\\\n"
-"**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
-msgstr ""
-"**macOS Mojave (10.14) o inferior:** [Descargar versión heredada]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\\\\n"
-"**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:22
-#, no-wrap
-msgid "**Install Jamulus**: Open the downloaded `.dmg` file, agree to the licence, *drag and drop* each icon you see in the window (Jamulus Client and Server) into your *Applications folder*. After that, you can close this window.\n"
-msgstr "**Instala Jamulus**: Abre el archivo `.dmg` descargado, acepta la licencia, *arrastra y pega* cada icono que ves en la ventana (Cliente y Servidor Jamulus) en tu *Carpeta de aplicaciones*. Ahora puedes cerrar esta ventana.\n"
-
-#. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:23
 #, no-wrap
-msgid "**Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
-msgstr "**Ejecuta Jamulus**. Ahora deberías de poder usar Jamulus como cualquier otra aplicación.\n"
+msgid ""
+"1. [Download Jamulus (Universal build)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\\\\n"
+" **macOS Mojave (10.14) or lower:** [Download legacy version]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\\\\n"
+" **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+"1. **Install Jamulus**: Open the downloaded `.dmg` file, agree to the licence, *drag and drop* each icon you see in the window (Jamulus Client and Server) into your *Applications folder*. After that, you can close this window.\n"
+"1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:25
 msgid "_You can remove the folder in the Downloads directory containing the `.dmg` and eject the \"Jamulus\" drive on your desktop. They are no longer needed._"
 msgstr "_Puedes eliminar la carpeta en el directorio de Descargas que contiene el archivo `.dmg` y expulsar la unidad \"Jamulus\" del escritorio. Ya no son necesarios._"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:27
-#, no-wrap
-msgid "***\n"
-msgstr "***\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:29
-msgid "## \"Jamulus\" can't be opened because the developer cannot be verified"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Macintosh.md:28
+#, fuzzy, no-wrap
+#| msgid "## \"Jamulus\" can't be opened because the developer cannot be verified"
+msgid "\"Jamulus\" can't be opened because the developer cannot be verified"
 msgstr "## \"Jamulus\" no puede abrirse porque no se puede verificar el desarrollador"
 
 #. type: Plain text
@@ -113,38 +89,20 @@ msgid "If you are using the \"legacy\" version of Jamulus (because you are runni
 msgstr "Si estás utilizando la versión \"legacy\" de Jamulus (porque tienes una versión antigua de macOS) , la primera vez que ejecutes Jamulus verás un mensaje diciendo que no puede abrirse."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:33
-msgid "To open Jamulus"
-msgstr "Para abrir Jamulus"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:34
-msgid "Go to the Applications folder via Finder"
-msgstr "Ve a la carpeta de Aplicaciones con Finder"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:35
-msgid "Double-click on Jamulus and wait for the above-mentioned message"
-msgstr "Haz doble-clic en Jamulus y espera al mensaje mencionado arriba"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:36
-msgid "Close this message by clicking on \"Cancel\""
-msgstr "Cierra este mensaje haciendo clic en \"Cancelar\""
-
-#. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:37
-msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
-msgstr "Ahora haz control-clic (o clic derecho) en Jamulus y selecciona \"Abrir\" de la parte de arriba del menú."
+msgid "To open Jamulus 1. Go to the Applications folder via Finder 1. Double-click on Jamulus and wait for the above-mentioned message 1. Close this message by clicking on \"Cancel\" 1. Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:39
 msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From the on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
 msgstr "Ahora verás una versión ligeramente diferente del mismo mensaje, que te permite hacer clic en \"Abrir\". De ahora en adelante podrás ejecutar Jamulus de manera normal y no se te volverá a mostrar este mensaje. Para más información consulta [esta página de Soporte para Apple](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:41
-msgid "## All installed?"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Macintosh.md:40
+#, fuzzy, no-wrap
+#| msgid "## All installed?"
+msgid "All installed?"
 msgstr "## ¿Todo instalado?"
 
 #. type: Plain text
@@ -156,6 +114,47 @@ msgstr "Echa un vistazo a la"
 #: ../wiki/en/Installation-for-Macintosh.md:44
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[página de Cómo Empezar](Getting-Started){: .button}"
+
+#~ msgid "# Installation for macOS"
+#~ msgstr "# Instalación en macOS"
+
+#~ msgid "[Download Jamulus (Universal build)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\\\"
+#~ msgstr "[Descarga Jamulus (Versión universal)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\\\"
+
+#, no-wrap
+#~ msgid ""
+#~ "**macOS Mojave (10.14) or lower:** [Download legacy version]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\\\\n"
+#~ "**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+#~ msgstr ""
+#~ "**macOS Mojave (10.14) o inferior:** [Descargar versión heredada]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\\\\n"
+#~ "**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+
+#, no-wrap
+#~ msgid "**Install Jamulus**: Open the downloaded `.dmg` file, agree to the licence, *drag and drop* each icon you see in the window (Jamulus Client and Server) into your *Applications folder*. After that, you can close this window.\n"
+#~ msgstr "**Instala Jamulus**: Abre el archivo `.dmg` descargado, acepta la licencia, *arrastra y pega* cada icono que ves en la ventana (Cliente y Servidor Jamulus) en tu *Carpeta de aplicaciones*. Ahora puedes cerrar esta ventana.\n"
+
+#, no-wrap
+#~ msgid "**Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
+#~ msgstr "**Ejecuta Jamulus**. Ahora deberías de poder usar Jamulus como cualquier otra aplicación.\n"
+
+#, no-wrap
+#~ msgid "***\n"
+#~ msgstr "***\n"
+
+#~ msgid "To open Jamulus"
+#~ msgstr "Para abrir Jamulus"
+
+#~ msgid "Go to the Applications folder via Finder"
+#~ msgstr "Ve a la carpeta de Aplicaciones con Finder"
+
+#~ msgid "Double-click on Jamulus and wait for the above-mentioned message"
+#~ msgstr "Haz doble-clic en Jamulus y espera al mensaje mencionado arriba"
+
+#~ msgid "Close this message by clicking on \"Cancel\""
+#~ msgstr "Cierra este mensaje haciendo clic en \"Cancelar\""
+
+#~ msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
+#~ msgstr "Ahora haz control-clic (o clic derecho) en Jamulus y selecciona \"Abrir\" de la parte de arriba del menú."
 
 #~ msgid "We provide three downloads for macOS. Please download the appropriate one:"
 #~ msgstr "Ofrecemos tres descargas para macOS. Por favor descarga la apropiada:"

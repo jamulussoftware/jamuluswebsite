@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-11-01 10:14+0000\n"
-"Last-Translator: ignotus <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -34,8 +35,9 @@ msgstr "wiki"
 msgid "/wiki/Server-Troubleshooting"
 msgstr "/wiki/Server-Troubleshooting"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Server-Troubleshooting.md:1
+#: ../wiki/en/Server-Troubleshooting.md:10
 #, no-wrap
 msgid "Server Troubleshooting"
 msgstr "服务器故障排除"
@@ -47,53 +49,59 @@ msgstr "{% include breadcrumb.html root=\"更多\" branch1=\"服务器管理\" b
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:12
-#, no-wrap
-msgid ""
-"# Server Troubleshooting\n"
-" {:.no_toc}\n"
-msgstr ""
-"# 服务器故障排除\n"
-" {:.no_toc}\n"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid " {:.no_toc}\n"
+msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:14
-msgid "<details markdown=\"1\">"
+#, fuzzy, no-wrap
+#| msgid "<details markdown=\"1\">"
+msgid "<details markdown=\"1\">\n"
 msgstr "<details markdown=\"1\">"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:16
-msgid "<summary>Table of contents</summary>"
+#, fuzzy, no-wrap
+#| msgid "<summary>Table of contents</summary>"
+msgid "<summary>Table of contents</summary>\n"
 msgstr "<summary>目录</summary>"
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:18
-msgid "TOC"
-msgstr "TOC"
-
-#. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:19
-msgid "{:toc}"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid ""
+"* TOC\n"
+" {:toc}\n"
 msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:21
-msgid "</details>"
+#, fuzzy, no-wrap
+#| msgid "</details>"
+msgid "</details>\n"
 msgstr "</details>"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:23
-msgid "## Servers - Registered"
+#. type: Title ##
+#: ../wiki/en/Server-Troubleshooting.md:22
+#, fuzzy, no-wrap
+#| msgid "## Servers - Registered"
+msgid "Servers - Registered "
 msgstr "## 服务器 - 已注册"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:25
-msgid "### Why doesn't my Server show up in the list? Why isn't it registering?"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:24
+#, fuzzy, no-wrap
+#| msgid "### Why doesn't my Server show up in the list? Why isn't it registering?"
+msgid "Why doesn't my Server show up in the list? Why isn't it registering?"
 msgstr "### 为什么我的服务器没有出现在列表中？为什么不注册？"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
 msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
-msgstr "如果您注册成功（您可以[在此处查看](https://explorer.jamulus.io/)）并且您或您的朋友看不到您的服务器，您可能需要等待，或者启动您的客户端`--showallservers` 选项并尝试从那里连接（[参见命令行选项](Software-Manual#命令行选项)），了解如何使用配置选项启动客户端）。在某些网络配置中，您可能还需要 [端口转发](Running-a-Server#转发端口) 您的路由器。"
+msgstr "如果您注册成功(您可以[在此处查看](https://explorer.jamulus.io/))并且您或您的朋友看不到您的服务器，您可能需要等待，或者启动您的客户端`--showallservers` 选项并尝试从那里连接([参见命令行选项](Software-Manual#命令行选项))，了解如何使用配置选项启动客户端)。在某些网络配置中，您可能还需要 [端口转发](Running-a-Server#转发端口) 您的路由器。"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:29
@@ -105,24 +113,30 @@ msgstr "如果你看到一个消息说服务器已满，你将需要等待，直
 msgid "You can verify that your Server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/)."
 msgstr "您可以通过 [在此处检查](https://explorer.jamulus.io/) 来验证您的服务器是否列在相关类型中。"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:33
-msgid "## Servers - Unregistered"
+#. type: Title ##
+#: ../wiki/en/Server-Troubleshooting.md:32
+#, fuzzy, no-wrap
+#| msgid "## Servers - Unregistered"
+msgid "Servers - Unregistered "
 msgstr "## 服务器 - 未注册"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:35
-msgid "### I'm running my Client on the same machine/network as my Server but I can't connect to it"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:34
+#, fuzzy, no-wrap
+#| msgid "### I'm running my Client on the same machine/network as my Server but I can't connect to it"
+msgid "I'm running my Client on the same machine/network as my Server but I can't connect to it"
 msgstr "### 我在与我的服务器相同的机器/网络上运行我的客户端，但我无法连接到它"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:37
 msgid "Connect your Client to `localhost` or `127.0.0.1`. If you're running the Client on a different machine to the Server but on the same network, then connect to the _local network_ address of the Server. Do not connect via the Server's public (WAN) address."
-msgstr "将客户端连接到“localhost”或“127.0.0.1”。如果在与服务器不同的计算机上运行客户端，但在同一网络上，请连接到服务器的_local network_ 地址。不要通过服务器的公共 （WAN） 地址进行连接。"
+msgstr "将客户端连接到“localhost”或“127.0.0.1”。如果在与服务器不同的计算机上运行客户端，但在同一网络上，请连接到服务器的_local network_ 地址。不要通过服务器的公共 (WAN) 地址进行连接。"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:39
-msgid "### What address do I give to people so that they can connect to my Server?"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:38
+#, fuzzy, no-wrap
+#| msgid "### What address do I give to people so that they can connect to my Server?"
+msgid "What address do I give to people so that they can connect to my Server?"
 msgstr "### 我应该给人们什么地址，以便他们可以连接到我的服务器？"
 
 #. type: Plain text
@@ -130,9 +144,11 @@ msgstr "### 我应该给人们什么地址，以便他们可以连接到我的�
 msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
 msgstr "这应该是您的**公共** IP 地址(通过 [Google](https://www.google.com/search?q=whatsmyip) 查找)。将您的**自己的** Jamulus 客户端连接到服务器的**本地** IP 地址(`localhost` 或`127.0.0.1`，如果它与您的客户端在同一台机器上)。请注意，您的公共 IP 地址可能会更改 - 请参阅 [本指南](Running-a-Server#动态-DNS-以及您可能需要它的原因) 中有关“动态 DNS”的说明。"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:44
-msgid "### What port numbers can I use?"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:43
+#, fuzzy, no-wrap
+#| msgid "### What port numbers can I use?"
+msgid "What port numbers can I use?"
 msgstr "### 我可以使用哪些端口号？"
 
 #. type: Plain text
@@ -140,9 +156,11 @@ msgstr "### 我可以使用哪些端口号？"
 msgid "You can set your Server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your Server in the format `[serverAddress]:[portNumber]`."
 msgstr "您可以使用 `--port` 选项将服务器设置为侦听自定义端口。如果你这样做，你需要告诉人们连接哪个端口。他们需要以`[serverAddress]:[portNumber]`的格式将端口号附加到您的服务器地址。"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:48
-msgid "### Nobody can connect to my Server - but I can connect locally"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:47
+#, fuzzy, no-wrap
+#| msgid "### Nobody can connect to my Server - but I can connect locally"
+msgid "Nobody can connect to my Server - but I can connect locally"
 msgstr "### 没有人可以连接到我的服务器 - 但我可以在本地连接"
 
 #. type: Plain text
@@ -153,14 +171,25 @@ msgstr "首先，确保您已启用 [端口转发](Running-a-Server#转发端口
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
 msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
-msgstr "一些 ISP 正在使用 [地址加端口 (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) 或 [运营商级 NAT (CGN)](https://en.wikipedia. org/wiki/Carrier-grade_NAT）以节省地址空间（通常用于 IPv4）。这使得在家中托管像 Jamulus 这样的服务是不可能的，因为它们在本地网络之外是不可见的。"
+msgstr "一些 ISP 正在使用 [地址加端口 (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) 或 [运营商级 NAT (CGN)](https://en.wikipedia. org/wiki/Carrier-grade_NAT)以节省地址空间(通常用于 IPv4)。这使得在家中托管像 Jamulus 这样的服务是不可能的，因为它们在本地网络之外是不可见的。"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:54
 msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address doesn't match with your public IPv4 address (check it [here](https://ifconfig.me)), it suggests that CGN may be enabled. You can try using an IPv6 connection by starting clients and server with the `-6` flag if IPv6 is available for the server and all clients."
-msgstr "要检测 CGN 是否是问题，请转到路由器的配置屏幕（通常为 192.168.X.X）并查看 WAN 状态页面。如果您列出的 IPv4 地址与您的公共 IPv4 地址不匹配（在 [此处](https://ifconfig.me) 进行检查），则表明可能启用了 CGN。如果 IPv6 可用于服务器和所有客户端，您可以尝试通过使用 -6 标志启动客户端和服务器来使用 IPv6 连接。"
+msgstr "要检测 CGN 是否是问题，请转到路由器的配置屏幕(通常为 192.168.X.X)并查看 WAN 状态页面。如果您列出的 IPv4 地址与您的公共 IPv4 地址不匹配(在 [此处](https://ifconfig.me) 进行检查)，则表明可能启用了 CGN。如果 IPv6 可用于服务器和所有客户端，您可以尝试通过使用 -6 标志启动客户端和服务器来使用 IPv6 连接。"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:56
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
 msgstr "要解决 IPv4 问题，请联系您的 ISP 技术支持团队，并告诉他们您想在家中托管公共服务器，因此您需要一个真实的 WAN IP 地址。此外，您可以帮助他们了解 CGN 可能是问题所在。此外，您可以要求提供静态 IP 地址以避免使用 DDNS。"
+
+#, no-wrap
+#~ msgid ""
+#~ "# Server Troubleshooting\n"
+#~ " {:.no_toc}\n"
+#~ msgstr ""
+#~ "# 服务器故障排除\n"
+#~ " {:.no_toc}\n"
+
+#~ msgid "TOC"
+#~ msgstr "TOC"

@@ -9,103 +9,122 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:2
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-d` or `--discononquit` Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:3
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-e` or `--directoryserver` Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](Running-a-Server#server-types) for further information."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:4
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:5
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-f` or `--listfilter` Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:6
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-F` or `--fastupdate` Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:7
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-l` or `--log` Enable logging, set path and file name"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:8
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-L` or `--licence` Show an agreement window before users can connect"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:9
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-m` or `--htmlstatus` Enable HTML status file, set path and file name"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:10
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-o` or `--serverinfo` Location details in the format: `[name];[city];[country as two-letter ISO country code or Qt5 Locale]` (see [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) or [Qt5 Locale values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:11
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-P` or `--delaypan` Start with delay panning enabled See [notes](Running-a-Server#delay-panning)"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:12
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-R` or `--recording` Set server recording directory; Server will record when a session is active by default. See [Options](Running-a-Server#options)."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:13
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`--norecord` Set server not to record by default (when recording is configured e.g via `-R`)"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:14
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-s` or `--server` Start in Server mode"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:15
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`--serverbindip` Specify the IP address to bind to"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:16
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-T` or `--multithreading` Use multithreading to make better use of multi-core CPUs to support more Clients"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:17
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-u` or `--numchannels` Maximum number of channels (Clients)"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:18
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-w` or `--welcomemessage` Welcome message on connect. Can be given as a string or filename, and can contain HTML."
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`-z` or `--startminimized` Start minimized"
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Include-Server-Commands.md:19
+#, markdown-text
 msgid "`--serverpublicip` The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)"
 msgstr ""

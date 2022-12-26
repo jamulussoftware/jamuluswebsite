@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Giuseppe <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# Gico2006 <gradaellig@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-29 16:44+0000\n"
-"Last-Translator: ignotus <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-12-24 16:50+0000\n"
+"Last-Translator: Gico2006 <gradaellig@protonmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Android.md:1
@@ -32,96 +33,102 @@ msgstr "wiki"
 #: ../wiki/en/Installation-for-Android.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Android"
-msgstr ""
+msgstr "/wiki/Installation-for-Android"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Installation-for-Android.md:1
+#: ../wiki/en/Installation-for-Android.md:11
 #, no-wrap
 msgid "Installation for Android"
-msgstr ""
+msgstr "Installazione per Android"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Utilizzo di Jamulus\" branch1=\"Per iniziare\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:12
-msgid "# Installation for Android"
-msgstr ""
 
-#. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:14
 msgid "Make sure you've already read the [Getting Started](Getting-Started) page."
-msgstr ""
+msgstr "Assicurati di aver già letto la pagina [Guida introduttiva](Getting-Started)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:16
 msgid "{% include infobox_each_os.html %}"
-msgstr ""
+msgstr "{% include infobox_each_os.html %}"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:18
-msgid "## Things to note about Android"
-msgstr ""
+
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:17
+#, no-wrap
+msgid "Things to note about Android"
+msgstr "Cose da notare su Android"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:20
 msgid "Although you **can** install Jamulus on Android devices (and hear sound), we strongly recommend **not** doing so. Sound quality - especially over WiFi - is usually bad and latency is high. If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus. Android support is just a proof of concept."
-msgstr ""
+msgstr "Anche se **è possibile** installare Jamulus su dispositivi Android (e sentire l'audio), si consiglia vivamente di **non farlo**. La qualità del suono, specialmente tramite WiFi, è generalmente scadente e la latenza è elevata. Se non possiedi un PC, ti consigliamo di acquistare un [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" }, che è un dispositivo economico e piccolo che funziona molto bene con Jamulus. Il supporto Android è solo una prova di concetto."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:22
-msgid "## Install the Android PoC"
-msgstr ""
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:21
+#, no-wrap
+msgid "Install the Android PoC"
+msgstr "Installa il PoC Android"
+
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:24
 msgid "If you do want to try Jamulus on Android:"
-msgstr ""
+msgstr "Se vuoi provare Jamulus su Android:"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:26
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Android.md:28
 msgid "Allow the installation of apps from unknown sources (look in Settings>Security. Note: The exact way to do this depends on your device and OS-version)"
-msgstr ""
+msgstr "Consenti l'installazione di app da fonti sconosciute (guarda in Impostazioni>Sicurezza. Nota: il modo esatto per farlo dipende dal dispositivo e dalla versione del sistema operativo)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:27
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Android.md:28
 msgid "[Download and install Jamulus]({{ site.download_root_link }}{{ site.download_file_names.android }}){: .button}"
-msgstr ""
+msgstr "[Scarica e installa Jamulus]({{ site.download_root_link }}{{ site.download_file_names.android }}) {: .button}"
 
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Android.md:28
 msgid "You should now be able to run Jamulus on your Android device"
-msgstr ""
+msgstr "Ora dovresti essere in grado di eseguire Jamulus sul tuo dispositivo Android"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:30
-msgid "## Feedback and development"
-msgstr ""
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:29
+#, no-wrap
+msgid "Feedback and development"
+msgstr "Feedback e sviluppo"
+
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:32
 msgid "We are very happy to get feedback from Android users and developers. Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)."
-msgstr ""
+msgstr "Siamo molto felici di ricevere feedback da utenti e sviluppatori Android. Basta andare nel [repository Jamulus su GitHub] (https://github.com/jamulussoftware/jamulus/)."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:34
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:35
 #, no-wrap
 msgid "***\n"
-msgstr ""
+msgstr "***\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:36
 msgid "## All installed?"
-msgstr ""
+msgstr "## Tutto installato?"
+
+msgid "All installed?"
+msgstr "Tutto installato?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:38
 msgid "Jamulus has been installed and can be used now. You can now take a look at the"
-msgstr ""
+msgstr "Jamulus è stato installato e può essere utilizzato ora. Ora puoi dare un'occhiata al"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:39
 msgid "[Getting Started page](Getting-Started){: .button}"
-msgstr ""
+msgstr "[Pagina introduttiva](Getting-Started){: .button}"

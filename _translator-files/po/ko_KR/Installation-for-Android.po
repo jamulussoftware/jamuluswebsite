@@ -35,8 +35,9 @@ msgstr "wiki"
 msgid "/wiki/Installation-for-Android"
 msgstr "/wiki/Installation-for-Android"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Installation-for-Android.md:1
+#: ../wiki/en/Installation-for-Android.md:11
 #, no-wrap
 msgid "Installation for Android"
 msgstr "Android용 설치"
@@ -45,11 +46,6 @@ msgstr "Android용 설치"
 #: ../wiki/en/Installation-for-Android.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr "{% include breadcrumb.html root=\"Jamulus 사용\" branch1=\"시작하기\" branch1-url=\"시작하기\" %}"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:12
-msgid "# Installation for Android"
-msgstr "# Android용 설치"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:14
@@ -61,9 +57,11 @@ msgstr "[시작하기](시작하기) 페이지를 이미 읽었는지 확인합�
 msgid "{% include infobox_each_os.html %}"
 msgstr "{% include infobox_each_os.html %}"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:18
-msgid "## Things to note about Android"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:17
+#, fuzzy, no-wrap
+#| msgid "## Things to note about Android"
+msgid "Things to note about Android"
 msgstr "## Android에 대해 주의할 사항"
 
 #. type: Plain text
@@ -71,9 +69,11 @@ msgstr "## Android에 대해 주의할 사항"
 msgid "Although you **can** install Jamulus on Android devices (and hear sound), we strongly recommend **not** doing so. Sound quality - especially over WiFi - is usually bad and latency is high. If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus. Android support is just a proof of concept."
 msgstr "Android 기기에 Jamulus를 설치하고 소리를 들을 수 있지만 그렇게 하지 않는 것이 좋습니다. 특히 WiFi를 통한 음질은 일반적으로 좋지 않으며 대기 시간이 높습니다. PC가 없다면 저렴한 [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" }를 구입하는 것이 좋습니다. Jamulus와 매우 잘 어울리는 작은 장치. Android 지원은 개념 증명일 뿐입니다."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:22
-msgid "## Install the Android PoC"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:21
+#, fuzzy, no-wrap
+#| msgid "## Install the Android PoC"
+msgid "Install the Android PoC"
 msgstr "## Android PoC 설치"
 
 #. type: Plain text
@@ -81,24 +81,26 @@ msgstr "## Android PoC 설치"
 msgid "If you do want to try Jamulus on Android:"
 msgstr "Android에서 Jamulus를 사용해보고 싶다면:"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:26
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Android.md:28
 msgid "Allow the installation of apps from unknown sources (look in Settings>Security. Note: The exact way to do this depends on your device and OS-version)"
 msgstr "알 수 없는 출처의 앱 설치 허용(설정>보안에서 확인하세요. 참고: 정확한 방법은 기기 및 OS 버전에 따라 다름)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:27
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Android.md:28
 msgid "[Download and install Jamulus]({{ site.download_root_link }}{{ site.download_file_names.android }}){: .button}"
 msgstr "[Jamulus 다운로드 및 설치]({{ site.download_root_link }}{{ site.download_file_names.android }}){: .button}"
 
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Android.md:28
 msgid "You should now be able to run Jamulus on your Android device"
 msgstr "이제 Android 기기에서 Jamulus를 실행할 수 있습니다"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:30
-msgid "## Feedback and development"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:29
+#, fuzzy, no-wrap
+#| msgid "## Feedback and development"
+msgid "Feedback and development"
 msgstr "## 피드백 및 개발"
 
 #. type: Plain text
@@ -106,15 +108,11 @@ msgstr "## 피드백 및 개발"
 msgid "We are very happy to get feedback from Android users and developers. Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)."
 msgstr "Android 사용자와 개발자로부터 피드백을 받게 되어 매우 기쁩니다. [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)로 이동하세요."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:34
-#, no-wrap
-msgid "***\n"
-msgstr "***\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:36
-msgid "## All installed?"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:35
+#, fuzzy, no-wrap
+#| msgid "## All installed?"
+msgid "All installed?"
 msgstr "## 모두 설치되었습니까?"
 
 #. type: Plain text
@@ -126,3 +124,10 @@ msgstr "Jamulus가 설치되었으며 지금 사용할 수 있습니다. 이제 
 #: ../wiki/en/Installation-for-Android.md:39
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[시작하기 페이지](시작하기){: .button}"
+
+#~ msgid "# Installation for Android"
+#~ msgstr "# Android용 설치"
+
+#, no-wrap
+#~ msgid "***\n"
+#~ msgstr "***\n"

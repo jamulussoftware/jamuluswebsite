@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-30 08:26+0000\n"
-"Last-Translator: yangyangdaji <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -40,9 +41,11 @@ msgstr "/wiki/Privacy-Statement"
 msgid "Jamulus – Privacy Statement"
 msgstr "Jamulus – 隐私声明"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:9
-msgid "# Privacy Statement"
+#. type: Title #
+#: ../wiki/en/Privacy-Statement.md:8
+#, fuzzy, no-wrap
+#| msgid "# Privacy Statement"
+msgid "Privacy Statement"
 msgstr "# 隐私声明"
 
 #. type: Plain text
@@ -50,29 +53,33 @@ msgstr "# 隐私声明"
 msgid "Please note that the English version of this privacy statement is the original and, as such, the binding version. To access the English version, go to the top/top right of this page and click on the \"en\" link.  The following only applies to the version you can download from this website, [jamulus.io](https://jamulus.io)."
 msgstr "请注意，本隐私声明的英文版本是原始版本，因此具有约束力。要访问英文版本，请转到此页面的顶部/右上角，然后单击 “en” 链接。以下仅适用于您可以从本网站下载的版本，[jamulus.io](https://jamulus.io)。"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:14
-msgid "## Definition of Terms"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:13
+#, fuzzy, no-wrap
+#| msgid "## Definition of Terms"
+msgid "Definition of Terms"
 msgstr "## 术语的定义"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:16
+#. type: Bullet: '- '
+#: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Server**\" The Jamulus Server software, as opposed to the host machine/OS it is running on."
 msgstr "\"**服务器**\" Jamulus 服务器软件，而不是它所运行的主机/操作系统。"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:17
+#. type: Bullet: '- '
+#: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Client**\" The Jamulus software used to connect to a Server"
 msgstr "\"**客户端**\" 用于连接到服务器的 Jamulus 软件"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Directory**\" A Jamulus Server configured to supply a list of Servers to Clients"
 msgstr "\"**目录**\" 一个Jamulus 服务器被配置为向客户提供一个服务器的列表"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:20
-msgid "## Web site"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:19
+#, fuzzy, no-wrap
+#| msgid "## Web site"
+msgid "Web site"
 msgstr "## 网站"
 
 #. type: Plain text
@@ -80,44 +87,52 @@ msgstr "## 网站"
 msgid "The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. We do not collect your personal data or set tracking cookies. When you connect to the jamulus.io site, your IP is sent to [GitHub Pages](https://pages.github.com/)."
 msgstr "[jamulus.io](https://jamulus.io) 的网站使用 GitHub Pages 提供服务。我们不会收集您的个人数据或设置跟踪 cookie。当您连接到 jamulus.io 站点时，您的 IP 将被发送到 [GitHub Pages](https://pages.github.com/)。"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:24
-msgid "## Jamulus Software"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:23
+#, fuzzy, no-wrap
+#| msgid "## Jamulus Software"
+msgid "Jamulus Software"
 msgstr "## Jamulus 软件"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:26
-msgid "### Use of Profile Information"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:25
+#, fuzzy, no-wrap
+#| msgid "### Use of Profile Information"
+msgid "Use of Profile Information"
 msgstr "### 个人资料信息的使用"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:28
 msgid "When you connect to a Server, whatever you put in My Profile (in Settings) will be shown to others on that Server while you are connected to it.  Note that, depending on the other client, you may not see them.  Also, the Server operator can see the name you set in My Profile and your IP address, using the Server either through the GUI or JSON-RPC."
-msgstr "当您连接到服务器时，您在“我的个人资料”（在设置中）中输入的任何内容都会在您连接到该服务器时显示给该服务器上的其他人。请注意，根据其他客户端，您可能看不到它们。此外，服务器操作员可以通过 GUI 或 JSON-RPC 使用服务器查看您在我的个人资料中设置的名称和您的 IP 地址。"
+msgstr "当您连接到服务器时，您在“我的个人资料”(在设置中)中输入的任何内容都会在您连接到该服务器时显示给该服务器上的其他人。请注意，根据其他客户端，您可能看不到它们。此外，服务器操作员可以通过 GUI 或 JSON-RPC 使用服务器查看您在我的个人资料中设置的名称和您的 IP 地址。"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:30
 msgid "When you connect to a Server, your profile may also be available to third parties from the Directory to which that Server is registered. This can be for informational purposes about the status of the public Jamulus network (for example, [here](https://explorer.jamulus.io/)), but may not be limited to that. Profile information is not otherwise logged or stored by the Jamulus Server you are connected to, or by the Jamulus Directory, but may be stored or processed by third parties."
-msgstr "当您连接到服务器时，您的个人资料也可能会从该服务器注册到的目录中提供给第三方。这可以用于提供有关公共 Jamulus 网络状态的信息（例如，[此处](https://explorer.jamulus.io/)），但可能不限于此。配置文件信息不会由您连接到的 Jamulus 服务器或 Jamulus 目录以其他方式记录或存储，但可能由第三方存储或处理。"
+msgstr "当您连接到服务器时，您的个人资料也可能会从该服务器注册到的目录中提供给第三方。这可以用于提供有关公共 Jamulus 网络状态的信息(例如，[此处](https://explorer.jamulus.io/))，但可能不限于此。配置文件信息不会由您连接到的 Jamulus 服务器或 Jamulus 目录以其他方式记录或存储，但可能由第三方存储或处理。"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:32
-msgid "### Use of IP Addresses"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:31
+#, fuzzy, no-wrap
+#| msgid "### Use of IP Addresses"
+msgid "Use of IP Addresses"
 msgstr "### IP 地址的使用"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:34
 msgid "When you connect to Server, the Server operator can see your IP address while you are connected.  If the Server operator has enabled logging (which is off by default) your IP address will also be logged and stored in the Server's log file."
-msgstr "当您连接到服务器时，服务器操作员可以在您连接时看到您的 IP 地址。如果服务器运营商启用了日志记录（默认情况下关闭），您的 IP 地址也将被记录并存储在服务器的日志文件中。"
+msgstr "当您连接到服务器时，服务器操作员可以在您连接时看到您的 IP 地址。如果服务器运营商启用了日志记录(默认情况下关闭)，您的 IP 地址也将被记录并存储在服务器的日志文件中。"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:36
 msgid "The IP addresses of all Servers registered with the Directory can also be seen by third parties for informational or other purposes (for example [here](https://explorer.jamulus.io/)). Your public IP address is otherwise not logged or stored by Jamulus, but may be stored or processed by third parties."
-msgstr "第三方也可以出于提供信息或其他目的（例如 [此处](https://explorer.jamulus.io/)）查看在目录中注册的所有服务器的 IP 地址。 Jamulus 不会记录或存储您的公共 IP 地址，但可能会由第三方存储或处理。"
+msgstr "第三方也可以出于提供信息或其他目的(例如 [此处](https://explorer.jamulus.io/))查看在目录中注册的所有服务器的 IP 地址。 Jamulus 不会记录或存储您的公共 IP 地址，但可能会由第三方存储或处理。"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:38
-msgid "### Audio Recordings"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:37
+#, fuzzy, no-wrap
+#| msgid "### Audio Recordings"
+msgid "Audio Recordings"
 msgstr "### 录音"
 
 #. type: Plain text
@@ -125,9 +140,11 @@ msgstr "### 录音"
 msgid "You will see a notice if you are connected to a Jamulus Server when Server recording is turned on. Recordings of each player are stored by the Server separately as .WAV files and only the Server operator has access to them unless they choose to make them available to third parties."
 msgstr "当服务器录制打开时，如果您连接到 Jamulus 服务器，您将看到一条通知。每个播放器的录音由服务器单独存储为 .WAV 文件，只有服务器运营商才能访问它们，除非他们选择将它们提供给第三方。"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:42
-msgid "### Text Chat"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:41
+#, fuzzy, no-wrap
+#| msgid "### Text Chat"
+msgid "Text Chat"
 msgstr "### 文字聊天"
 
 #. type: Plain text
@@ -135,9 +152,11 @@ msgstr "### 文字聊天"
 msgid "When you type a message in the Chat Window, other connected players can see that, but chats are not stored by the Server and neither the Server operator nor any third parties have access to them."
 msgstr "当您在聊天窗口中输入消息时，其他连接的玩家可以看到，但聊天不会由服务器存储，服务器操作员或任何第三方都无法访问它们。"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:46
-msgid "### Data Transmission"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:45
+#, fuzzy, no-wrap
+#| msgid "### Data Transmission"
+msgid "Data Transmission"
 msgstr "### 数据传输"
 
 #. type: Plain text

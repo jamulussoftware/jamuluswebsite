@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-11-01 10:27+0000\n"
-"Last-Translator: ignotus <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -34,8 +35,9 @@ msgstr "wiki"
 msgid "/wiki/Installation-for-Windows"
 msgstr "/wiki/Installation-for-Windows"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Installation-for-Windows.md:1
+#: ../wiki/en/Installation-for-Windows.md:10
 #, no-wrap
 msgid "Installation for Windows"
 msgstr "为 Windows 安装"
@@ -44,11 +46,6 @@ msgstr "为 Windows 安装"
 #: ../wiki/en/Installation-for-Windows.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr "{% include breadcrumb.html root=\"使用 Jamulus\" branch1=\"快速入门\" branch1-url=\"Getting-Started\" %}"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:11
-msgid "# Installation for Windows"
-msgstr "# 为 Windows 安装"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:13
@@ -65,41 +62,24 @@ msgstr "{% include infobox_each_os.html %}"
 msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
 msgstr "升级？您可能需要先 [备份您的配置](Software-Manual#备份-jamulus)。"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:19
-#, no-wrap
-msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.\n"
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:24
+#, fuzzy
+#| msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.\n"
+msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section."
 msgstr "**下载并安装 ASIO 驱动程序**。尝试使用硬件制造商提供的驱动程序。如果你找不到，或者你没有外置声卡，你可能需要安装 ASIO4ALL。有关更多信息，请向下滚动到 [ASIO](#asio) 部分。\n"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:20
-#, no-wrap
-msgid "[Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
-msgstr "[下载 Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:21
-#, no-wrap
-msgid "**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
-msgstr "**镜像源 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:22
-#, no-wrap
-msgid "**Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
-msgstr "**安装 Jamulus**:双击安装程序以启动它。如果您从 SmartScreen 收到警告通知，请单击“更多信息”和“仍然运行”以安装 Jamulus。 （如果您获得了 Jamulus 的新版本并且是第一批下载它的人之一，那么 Jamulus 不会被 SmartScreen 列入白名单。我们不为代码签名付费。）\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:23
-#, no-wrap
-msgid "**Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
-msgstr "**运行 Jamulus**。现在您应该能够像使用任何其他应用程序一样使用 Jamulus。\n"
-
-#. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:24
-#, no-wrap
-msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
-msgstr "**设置您的声卡**。完成后，您需要设置音频硬件。如果您使用的是 ASIO4ALL，请查看下面的设置方法。\n"
+#, fuzzy, no-wrap
+#| msgid "**Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
+msgid ""
+"1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
+" **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+"1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
+"1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
+"1. **Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
+msgstr "**安装 Jamulus**:双击安装程序以启动它。如果您从 SmartScreen 收到警告通知，请单击“更多信息”和“仍然运行”以安装 Jamulus。 (如果您获得了 Jamulus 的新版本并且是第一批下载它的人之一，那么 Jamulus 不会被 SmartScreen 列入白名单。我们不为代码签名付费。)\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:26
@@ -111,15 +91,11 @@ msgstr "_请注意，在未获得 [Steinberg 的许可协议](https://www.steinb
 msgid "If you don't want to use ASIO or prefer [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), you can also use the [JACK version of Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})."
 msgstr "如果您不想使用 ASIO 或者更喜欢 [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), 也可以使用 [JACK 版本的 Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:30
-#, no-wrap
-msgid "***\n"
-msgstr "***\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:32
-msgid "## ASIO"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Windows.md:31
+#, fuzzy, no-wrap
+#| msgid "## ASIO"
+msgid "ASIO"
 msgstr "## ASIO"
 
 #. type: Plain text
@@ -127,12 +103,12 @@ msgstr "## ASIO"
 msgid "Jamulus can use [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output)."
 msgstr "Jamulus 可以使用 [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output)。"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:36
+#. type: Bullet: '* '
+#: ../wiki/en/Installation-for-Windows.md:37
 msgid "If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality)."
-msgstr "如果您有外部声卡/音频接口，请尽可能使用其官方 ASIO 驱动程序（它们通常提供最佳质量）。"
+msgstr "如果您有外部声卡/音频接口，请尽可能使用其官方 ASIO 驱动程序(它们通常提供最佳质量)。"
 
-#. type: Plain text
+#. type: Bullet: '* '
 #: ../wiki/en/Installation-for-Windows.md:37
 msgid "If you don't have an external sound card, you will probably not have an ASIO driver so will need to install a generic one like ASIO4ALL:"
 msgstr "如果你没有外置声卡，你可能没有 ASIO 驱动，所以需要安装一个通用的，比如 ASIO4ALL:"
@@ -157,9 +133,11 @@ msgstr "[下载 ASIO4ALL v2.14](https://github.com/jamulussoftware/assets/raw/ma
 msgid "[ASIO4ALL website](https://www.asio4all.org/){: target=\"_blank\" rel=\"noopener noreferrer\"}"
 msgstr "[ASIO4ALL 网站](https://www.asio4all.org/){: target=\"_blank\" rel=\"noopener noreferrer\"}"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:48
-msgid "### Setting up ASIO4ALL"
+#. type: Title ###
+#: ../wiki/en/Installation-for-Windows.md:47
+#, fuzzy, no-wrap
+#| msgid "### Setting up ASIO4ALL"
+msgid "Setting up ASIO4ALL"
 msgstr "### 设置 ASIO4ALL"
 
 #. type: Plain text
@@ -174,84 +152,64 @@ msgid "**Tip:** Set up your sound card while you're [connected to a Server](Gett
 msgstr "**提示:** 在 [连接到服务器](Getting-Started#连接到服务器并测试你的声音) 时设置您的声卡以听到您的乐器或声音并检查如果一切设置正确;但请先阅读。\n"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:55
-msgid "Before you start with Jamulus:"
-msgstr "在开始使用 Jamulus 之前:"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:56
-#, no-wrap
-msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
-msgstr "**关闭所有应用程序**（尤其是那些可以访问您的声卡的应用程序，例如您的浏览器/媒体播放器）。 ASIO4ALL 需要独占访问您的声卡，这意味着如果 ASIO4ALL 和 Jamulus 正在运行，其他程序将无法使用音频。\n"
-
-#. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:57
-#, no-wrap
-msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:\n"
+#, fuzzy
+#| msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:\n"
+msgid "Before you start with Jamulus: 1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.  1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
 msgstr "如果 Jamulus 音频无法开箱即用，请确保只有 ASIO4ALL 中的**正确的输入/输出**被打开**。其他一切都应该关闭。在 [ASIO4ALL 配置的社区列表](/kb/2021/03/20/ASIO4ALL-Examples.html) 中搜索您的配置，如果找不到您的配置，请手动进行:\n"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:59
-msgid "### How to set up ASIO4ALL inputs (Guide)"
+#. type: Title ###
+#: ../wiki/en/Installation-for-Windows.md:58
+#, fuzzy, no-wrap
+#| msgid "### How to set up ASIO4ALL inputs (Guide)"
+msgid "How to set up ASIO4ALL inputs (Guide)"
 msgstr "### 如何设置 ASIO4ALL 输入 (指南)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:61
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:66
 msgid "Open Jamulus's settings"
 msgstr "打开 Jamulus 的设置"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:62
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:66
 msgid "Go to _\"ASIO Device Settings\"_ (column on the left; directly under the selection of the driver)"
-msgstr "转到_“ASIO设备设置”_（左侧列;直接在驱动程序的选择下）"
+msgstr "转到_“ASIO设备设置”_(左侧列;直接在驱动程序的选择下)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:63
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:66
 msgid "Enable _advanced view_ in ASIO4ALL (click the tool icon on the bottom right)"
-msgstr "在 ASIO4ALL 中启用_高级视图_（单击右下角的工具图标）"
+msgstr "在 ASIO4ALL 中启用_高级视图_(单击右下角的工具图标)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:64
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:66
 msgid "Enable only the sound card you want to use by clicking on the button next to its name"
 msgstr "通过单击其名称旁边的按钮，仅启用您要使用的声卡"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:65
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:66
 msgid "Open your sound card inputs/outputs by clicking the _plus icon_ next to this sound card"
 msgstr "通过单击此声卡旁边的_加号图标_打开您的声卡输入/输出"
 
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:66
 msgid "Now enable the correct inputs/outputs in the list under your sound card and disable everything else. You can hover over the inputs/outputs to see which of both they are and if they support the required sample rate for Jamulus of 48kHz (DVD quality)."
-msgstr "现在在声卡下的列表中启用正确的输入/输出并禁用其他所有内容。您可以将鼠标悬停在输入/输出上以查看它们中的哪一个以及它们是否支持 48kHz（DVD 质量）的 Jamulus 所需的采样率。"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:68
-#, no-wrap
-msgid "**Hints:**\n"
-msgstr "**提示:**\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:69
-#, no-wrap
-msgid "It may not be obvious what the correct sound device is called. Many internal sound cards are named \"Realtek High Definition Audio\", \"Conexant\" or similar.\n"
-msgstr "正确的声音设备叫什么可能并不明显。许多内部声卡被命名为“Realtek High Definition Audio”、“Conexant”或类似名称。\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:70
-#, no-wrap
-msgid "Headphones and speakers are often labelled as \"output\" and microphones as \"input\" or \"capture\".\n"
-msgstr "耳机和扬声器通常被标记为“输出”，麦克风被标记为“输入”或“捕获”。\n"
+msgstr "现在在声卡下的列表中启用正确的输入/输出并禁用其他所有内容。您可以将鼠标悬停在输入/输出上以查看它们中的哪一个以及它们是否支持 48kHz(DVD 质量)的 Jamulus 所需的采样率。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:71
 #, no-wrap
-msgid "Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
-msgstr "立体声混音/立体声输入通常不是您要寻找的输入/输出。因此，如果您看到它，请将其关闭。\n"
+msgid ""
+"**Hints:**\n"
+"1. It may not be obvious what the correct sound device is called. Many internal sound cards are named \"Realtek High Definition Audio\", \"Conexant\" or similar.\n"
+"1. Headphones and speakers are often labelled as \"output\" and microphones as \"input\" or \"capture\".\n"
+"1. Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
+msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:73
-msgid "### Troubleshooting"
+#. type: Title ###
+#: ../wiki/en/Installation-for-Windows.md:72
+#, fuzzy, no-wrap
+#| msgid "### Troubleshooting"
+msgid "Troubleshooting"
 msgstr "### 故障排除"
 
 #. type: Plain text
@@ -262,7 +220,7 @@ msgstr "如果没有任何效果，首先重新启动 Jamulus 和/或您的 PC �
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:77
 msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons in the ASIO4ALL settings. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. web browser, Zoom, etc)."
-msgstr "之后，*再次设置输入/输出*。启用和可访问的输入/输出在 ASIO4ALL 设置中显示为亮起的电源按钮和播放按钮。相反，如果您看到红色叉号或黄色符号，请关闭可能正在访问您的声卡的其他应用程序（例如 Web 浏览器、Zoom 等）。"
+msgstr "之后，*再次设置输入/输出*。启用和可访问的输入/输出在 ASIO4ALL 设置中显示为亮起的电源按钮和播放按钮。相反，如果您看到红色叉号或黄色符号，请关闭可能正在访问您的声卡的其他应用程序(例如 Web 浏览器、Zoom 等)。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:79
@@ -274,9 +232,11 @@ msgstr "看看[这个视频](https://youtu.be/_GzOsitVgLI)由[trombonepizza](htt
 msgid "Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}."
 msgstr "关于如何配置 ASIO4ALL 的官方和更多信息记录在官方 [ASIO4ALL 网站上的 ASIO4ALL 常见问题解答](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}。"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:83
-msgid "## All installed?"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Windows.md:82
+#, fuzzy, no-wrap
+#| msgid "## All installed?"
+msgid "All installed?"
 msgstr "##全部安装完毕？"
 
 #. type: Plain text
@@ -288,3 +248,49 @@ msgstr "看一看"
 #: ../wiki/en/Installation-for-Windows.md:86
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[入门页面](Getting-Started){: .button}"
+
+#~ msgid "# Installation for Windows"
+#~ msgstr "# 为 Windows 安装"
+
+#, no-wrap
+#~ msgid "[Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
+#~ msgstr "[下载 Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
+
+#, no-wrap
+#~ msgid "**Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+#~ msgstr "**镜像源 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+
+#, no-wrap
+#~ msgid "**Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
+#~ msgstr "**运行 Jamulus**。现在您应该能够像使用任何其他应用程序一样使用 Jamulus。\n"
+
+#, no-wrap
+#~ msgid "**Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
+#~ msgstr "**设置您的声卡**。完成后，您需要设置音频硬件。如果您使用的是 ASIO4ALL，请查看下面的设置方法。\n"
+
+#, no-wrap
+#~ msgid "***\n"
+#~ msgstr "***\n"
+
+#~ msgid "Before you start with Jamulus:"
+#~ msgstr "在开始使用 Jamulus 之前:"
+
+#, no-wrap
+#~ msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
+#~ msgstr "**关闭所有应用程序**(尤其是那些可以访问您的声卡的应用程序，例如您的浏览器/媒体播放器)。 ASIO4ALL 需要独占访问您的声卡，这意味着如果 ASIO4ALL 和 Jamulus 正在运行，其他程序将无法使用音频。\n"
+
+#, no-wrap
+#~ msgid "**Hints:**\n"
+#~ msgstr "**提示:**\n"
+
+#, no-wrap
+#~ msgid "It may not be obvious what the correct sound device is called. Many internal sound cards are named \"Realtek High Definition Audio\", \"Conexant\" or similar.\n"
+#~ msgstr "正确的声音设备叫什么可能并不明显。许多内部声卡被命名为“Realtek High Definition Audio”、“Conexant”或类似名称。\n"
+
+#, no-wrap
+#~ msgid "Headphones and speakers are often labelled as \"output\" and microphones as \"input\" or \"capture\".\n"
+#~ msgstr "耳机和扬声器通常被标记为“输出”，麦克风被标记为“输入”或“捕获”。\n"
+
+#, no-wrap
+#~ msgid "Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
+#~ msgstr "立体声混音/立体声输入通常不是您要寻找的输入/输出。因此，如果您看到它，请将其关闭。\n"
