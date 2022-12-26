@@ -4,12 +4,12 @@ $ git remote -v
 origin  git@github.com:jamulussoftware/jamulus.git (fetch)
 origin  git@github.com:jamulussoftware/jamulus.git (push)
 $ git status
-On branch master
-Your branch is up to date with 'origin/master'.
+On branch main
+Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
-</code></pre></div></div><h3 id="steps-for-a-specific-release">Steps for a specific release</h3><h4 class="no_toc" id="1-ensure-ts-files-are-up-to-date">1. Ensure .ts files are up to date</h4><p>First make sure all Pull Requests that should be included in the release have been merged in Github.</p><p>Next, change to the above directory <code class="language-plaintext highlighter-rouge">jamulus-upstream</code>, checkout <code class="language-plaintext highlighter-rouge">master</code> and ensure it is up to date:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd jamulus-upstream
-$ git checkout master
+</code></pre></div></div><h3 id="steps-for-a-specific-release">Steps for a specific release</h3><h4 class="no_toc" id="1-ensure-ts-files-are-up-to-date">1. Ensure .ts files are up to date</h4><p>First make sure all Pull Requests that should be included in the release have been merged in Github.</p><p>Next, change to the above directory <code class="language-plaintext highlighter-rouge">jamulus-upstream</code>, checkout <code class="language-plaintext highlighter-rouge">main</code> and ensure it is up to date:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd jamulus-upstream
+$ git checkout main
 $ git pull
 $ git status
 </code></pre></div></div><p>Make sure there are no pending changes shown by <code class="language-plaintext highlighter-rouge">git status</code>.</p><p>Now update the <code class="language-plaintext highlighter-rouge">.ts</code> files to reflect the latest version of source code:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ lupdate Jamulus.pro
@@ -22,8 +22,8 @@ $ git push
 - [ ] App translations: No untranslated strings (`grep unfinished -5 src/translation/translation_$TRANSLATION*.ts`)
 - [ ] App translations: Only a single `.ts` file checked in (`.qm` in addition is also OK)
 - [ ] Installer translations: Passes `tools/check-wininstaller-translations.sh`
-</code></pre></div></div><h4 class="no_toc" id="4-when-all-translations-have-been-submitted-and-merged">4. When all translations have been submitted and merged.</h4><p>Change to the above directory <code class="language-plaintext highlighter-rouge">jamulus-upstream</code>, checkout <code class="language-plaintext highlighter-rouge">master</code> and ensure it is up to date:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd jamulus-upstream
-$ git checkout master
+</code></pre></div></div><h4 class="no_toc" id="4-when-all-translations-have-been-submitted-and-merged">4. When all translations have been submitted and merged.</h4><p>Change to the above directory <code class="language-plaintext highlighter-rouge">jamulus-upstream</code>, checkout <code class="language-plaintext highlighter-rouge">main</code> and ensure it is up to date:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd jamulus-upstream
+$ git checkout main
 $ git pull
 $ git status
 </code></pre></div></div><p>Make sure there are no pending changes shown by <code class="language-plaintext highlighter-rouge">git status</code>.</p><p>Now ensure the compiled translation files are up to date:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ lrelease Jamulus.pro
@@ -42,7 +42,7 @@ $ git push
 $ git push origin tag r3_7_0
 </code></pre></div></div><h3 class="no_toc" id="if-this-is-a-proper-release-move-the-latest-tag">If this is a proper release, move the <code class="language-plaintext highlighter-rouge">latest</code> tag</h3><p>This needs the <code class="language-plaintext highlighter-rouge">--force</code> option to overwrite the existing <code class="language-plaintext highlighter-rouge">latest</code> tag and move it to the current commit:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git tag --force latest
 $ git push --force origin tag latest
-</code></pre></div></div><p>For a pre-release, the <code class="language-plaintext highlighter-rouge">latest</code> tag should not be updated, but continue to point to the last proper release.</p><h3 class="no_toc" id="make-the-master-branch-ready-for-post-release-development">Make the master branch ready for post-release development</h3><p>This can be done immediately after pushing the above tag, there is no need to wait.</p><p>Edit both <code class="language-plaintext highlighter-rouge">Jamulus.pro</code> and <code class="language-plaintext highlighter-rouge">ChangeLog</code> to add <code class="language-plaintext highlighter-rouge">dev</code> to the version number and create a new section in the change log:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vim -o Jamulus.pro ChangeLog
+</code></pre></div></div><p>For a pre-release, the <code class="language-plaintext highlighter-rouge">latest</code> tag should not be updated, but continue to point to the last proper release.</p><h3 class="no_toc" id="make-the-main-branch-ready-for-post-release-development">Make the main branch ready for post-release development</h3><p>This can be done immediately after pushing the above tag, there is no need to wait.</p><p>Edit both <code class="language-plaintext highlighter-rouge">Jamulus.pro</code> and <code class="language-plaintext highlighter-rouge">ChangeLog</code> to add <code class="language-plaintext highlighter-rouge">dev</code> to the version number and create a new section in the change log:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vim -o Jamulus.pro ChangeLog
 </code></pre></div></div><p>In <code class="language-plaintext highlighter-rouge">Jamulus.pro</code>, edit the <code class="language-plaintext highlighter-rouge">VERSION</code> line to add <code class="language-plaintext highlighter-rouge">dev</code> to the current version number, e.g.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VERSION = 3.7.0dev
 </code></pre></div></div><p>In <code class="language-plaintext highlighter-rouge">ChangeLog</code>, add a new section with <code class="language-plaintext highlighter-rouge">dev</code> and restore the NOTE indicating the next version number:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### 3.7.0dev &lt;- NOTE: the release version number will be 3.7.1 ###
 
@@ -74,7 +74,7 @@ Current state: &lt;!-- Planning|Translations (beta)|Code freeze (rc)|Released --
 - [ ] Agree to de-tag unfinished Issues/PRs.
 - [ ] Declare a freeze for code and website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
 - [ ] Check the `needs documentation` label for any outstanding PRs flagged for this release and remove that label if done.
-- [ ] Check ./Jamulus -h output against the [Include-Client](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Client-Commands.md)/[Server-Commands](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Server-Commands.md).md pages and [man page (distributions/Jamulus.1)[(https://github.com/jamulussoftware/jamulus/blob/master/distributions/Jamulus.1). Update if necessary.
+- [ ] Check ./Jamulus -h output against the [Include-Client](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Client-Commands.md)/[Server-Commands](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Server-Commands.md).md pages and [man page (distributions/Jamulus.1)[(https://github.com/jamulussoftware/jamulus/blob/main/distributions/Jamulus.1). Update if necessary.
 - [ ] Start Website translations
   - [ ] [Check for broken links](https://github.com/jamulussoftware/jamuluswebsite/blob/release/contribute/en/Release-Process.md#website-check-links)
   - [ ] Open a Pull Request from `next-release` to release, set it as "Draft", sanity check for conflicts and any obvious problems.
@@ -83,7 +83,7 @@ Current state: &lt;!-- Planning|Translations (beta)|Code freeze (rc)|Released --
   - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `web` argument (see notes in script).
   - [ ] If anyone finds critical issues now, all translators must be made aware of them and all languages should be updated.
 - [ ] Start App translations
-  - [ ] Generate `.ts` files in master via `lupdate`
+  - [ ] Generate `.ts` files in main via `lupdate`
   - [ ] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
   - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
 - [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
@@ -120,7 +120,7 @@ Current state: &lt;!-- Planning|Translations (beta)|Code freeze (rc)|Released --
     - [ ] On Github Discussions in the Announcements section. Lock the announcement thread. Pin the thread. Unpin and lock release candidate thread.
     - [ ] On Facebook in the group "Jamulus (official group)". Turn off replies.
 - [ ] Trigger the update notification by updating both Update Check Servers with the new version (@pljones for update02, email corrados for update01)
-- [ ] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the [next release](https://jamulus.io/contribute/Release-Process#make-the-master-branch-ready-for-post-release-development)
+- [ ] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the [next release](https://jamulus.io/contribute/Release-Process#make-the-main-branch-ready-for-post-release-development)
 - [ ] Check that all Issues and PRs tagged for this release are in Done/Closed state.
 - [ ] Close the release milestone in both jamulus and jamuluswebsite repos
 - [ ] Create a milestone for the next minor release in jamulus and jamuluswebsite repos

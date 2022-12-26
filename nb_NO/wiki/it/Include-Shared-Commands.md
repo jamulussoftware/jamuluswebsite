@@ -5,7 +5,7 @@
 - `-i` o `--inifile` Imposta la posizione del file di inizializzazione (sostituisce l'impostazione predefinita)
 - `-n` or `--nogui`          Disabilita la GUI (usato per essere lanciato senza interfaccia grafica)                      
 - `-p` or `--port`           Imposta la porta UDP del server. Di default è 22124
-- `--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md).
+- `--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).
 - `--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.
 - `-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)
 - `-t` or `--notranslation`  Disable UI language translations
