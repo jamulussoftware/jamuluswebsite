@@ -6,7 +6,7 @@
 if [[ "$CACHE_HIT" == 'true' ]] ; then
     sudo cp --force --recursive ~/po4a/* /
 else
-    sudo apt install -yq gettext libsgmls-perl libyaml-tiny-perl opensp libsyntax-keyword-try-perl
+    sudo apt install -yq gettext libsgmls-perl libyaml-tiny-perl opensp libsyntax-keyword-try-perl libs-parse-keyword-perl
     wget -O po4a.deb https://github.com/jamulussoftware/assets/raw/main/po4a/po4a_0.68.deb
     sudo dpkg -i po4a.deb
 
