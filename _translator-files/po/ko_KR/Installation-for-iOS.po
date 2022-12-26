@@ -35,8 +35,8 @@ msgstr "wiki"
 msgid "/wiki/Installation-for-iOS"
 msgstr "/wiki/Installation-for-iOS"
 
-#. type: YAML Front Matter: title
-#: ../wiki/en/Installation-for-iOS.md:1
+#. type: Title #
+#: ../wiki/en/Installation-for-iOS.md:1 ../wiki/en/Installation-for-iOS.md:11
 #, no-wrap
 msgid "Installation for iOS"
 msgstr "iOS용 설치"
@@ -45,11 +45,6 @@ msgstr "iOS용 설치"
 #: ../wiki/en/Installation-for-iOS.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr "{% include breadcrumb.html root=\"Jamulus 사용\" branch1=\"시작하기\" branch1-url=\"시작하기\" %}"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:12
-msgid "# Installation for iOS"
-msgstr "# iOS용 설치"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:14
@@ -61,9 +56,11 @@ msgstr "[시작하기](시작하기) 페이지를 이미 읽었는지 확인합�
 msgid "{% include infobox_each_os.html %}"
 msgstr "{% include infobox_each_os.html %}"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:18
-msgid "## Things to note about iOS"
+#. type: Title ##
+#: ../wiki/en/Installation-for-iOS.md:17
+#, fuzzy, no-wrap
+#| msgid "## Things to note about iOS"
+msgid "Things to note about iOS"
 msgstr "## iOS에 대해 주의해야 할 사항"
 
 #. type: Plain text
@@ -71,24 +68,26 @@ msgstr "## iOS에 대해 주의해야 할 사항"
 msgid "If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus. iOS support is just a proof of concept."
 msgstr "PC를 가지고 있지 않다면, Jamulus에서 매우 잘 작동하는 저렴하고 작은 기기인 [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" }를 구입하는 것이 좋습니다. iOS 지원은 개념 증명일 뿐입니다."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:22
+#. type: Bullet: '* '
+#: ../wiki/en/Installation-for-iOS.md:24
 msgid "To install Jamulus on your iOS device, you need a (free or paid) Apple Developer account and preferably a computer."
 msgstr "iOS 기기에 Jamulus를 설치하려면, (무료 또는 유료) Apple 개발자 계정이 필요하고 가급적 컴퓨터가 필요합니다."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:23
+#. type: Bullet: '* '
+#: ../wiki/en/Installation-for-iOS.md:24
 msgid "If you don't pay for an Apple developer account, Jamulus will only run for at most 7 days before you need to re-install it."
 msgstr "Apple 개발자 계정에 대한 비용을 지불하지 않으면, Jamulus는 다시 설치해야 하기 전에 최대 7일 동안만 실행됩니다."
 
-#. type: Plain text
+#. type: Bullet: '* '
 #: ../wiki/en/Installation-for-iOS.md:24
 msgid "Jamulus on iOS works quite well on new devices if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. To connect these to your iOS device, you should use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub."
 msgstr "iOS의 Jamulus는 모든 것이 올바르게 설정되어 있으면 새 장치에서 아주 잘 작동합니다. 그러나 오디오 인터페이스와 USB 이더넷 어댑터를 사용하는 것이 좋습니다. 이것을 iOS 기기에 연결하려면, [라이트닝-USB 카메라 어댑터](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) 및 (전원이 공급되는) USB 허브와 같은 것을 사용해야 합니다."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:27
-msgid "## Install for iOS (for experienced users only)"
+#. type: Title ##
+#: ../wiki/en/Installation-for-iOS.md:26
+#, fuzzy, no-wrap
+#| msgid "## Install for iOS (for experienced users only)"
+msgid "Install for iOS (for experienced users only)"
 msgstr "## iOS용 설치(숙련된 사용자만 해당)"
 
 #. type: Plain text
@@ -97,27 +96,27 @@ msgstr "## iOS용 설치(숙련된 사용자만 해당)"
 msgid "**Note**: We provide an unsigned .ipa file which you need to sign and then install on your device. If you are not Jailbroken (and have AppSync installed), you might need additional software to install Jamulus. There are multiple ways to do that, but this guide only explains the most standard approach. Please note that we assume you already have a (free) Apple developer account. If you don't have one, create an Apple ID and [Sign up for a developer account](https://developer.apple.com/membercenter). We recommend to create one without two factor authentification and unrelated to your potential personal account. You will need to enter the password in non-Apple software.\n"
 msgstr "**참고**: 서명되지 않은 .ipa 파일을 제공하여 서명한 다음 장치에 설치해야 합니다. 탈옥되지 않은 경우(AppSync가 설치되어 있는 경우) Jamulus를 설치하려면 추가 소프트웨어가 필요할 수 있습니다. 이를 수행하는 방법에는 여러 가지가 있지만 이 가이드에서는 가장 표준적인 방법만 설명합니다. 이미 (무료) Apple 개발자 계정이 있다고 가정합니다. 없으시다면 Apple ID를 생성하시고 [개발자 계정 등록](https://developer.apple.com/membercenter)을 하시면 됩니다. 2단계 인증 없이 잠재적인 개인 계정과 관련이 없는 계정을 만드는 것이 좋습니다. Apple 이외의 소프트웨어에서는 암호를 입력해야 합니다.\n"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:31
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-iOS.md:35
 msgid "[Download Jamulus (.ipa) on a PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
 msgstr "[PC/Mac에서 Jamulus(.ipa) 다운로드]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:32
+#. type: Bullet: '2. '
+#: ../wiki/en/Installation-for-iOS.md:35
 msgid "Sign the .ipa file (e.g. via Xcode or some other **trusted** app. We won't give recommendations here, but there exist apps for every operating system)"
 msgstr ".ipa 파일에 서명합니다(예를 들어, Xcode 또는 다른 **신뢰할 수 있는** 앱을 통해. 여기서는 권장 사항을 제공하지 않겠지만 모든 운영 체제에는 앱이 있음)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:33
+#. type: Bullet: '3. '
+#: ../wiki/en/Installation-for-iOS.md:35
 msgid "Once signed and installed; on your iOS device open Settings, navigate to General>Profiles (or VPN and Device Management). Tap on the developer account corresponding to your account and trust the account."
 msgstr "일단 서명하고 설치합니다. 사용자의 iOS 기기에서 설정을 열고 일반>프로필(또는 VPN 및 기기 관리)로 이동합니다. 사용자의 계정에 해당하는 개발자 계정을 탭하고 계정을 신뢰하십시오."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:34
+#. type: Bullet: '4. '
+#: ../wiki/en/Installation-for-iOS.md:35
 msgid "Open Jamulus from your home-screen"
 msgstr "홈 화면에서 Jamulus 열기"
 
-#. type: Plain text
+#. type: Bullet: '5. '
 #: ../wiki/en/Installation-for-iOS.md:35
 msgid "After 7 days you will need to re-sign Jamulus if you are using a free developer account. Re-do everything from Step 4."
 msgstr "무료 개발자 계정을 사용하는 경우 7일 후에 Jamulus에 다시 서명해야 합니다. 4단계부터 모든 작업을 다시 수행합니다."
@@ -127,9 +126,11 @@ msgstr "무료 개발자 계정을 사용하는 경우 7일 후에 Jamulus에 �
 msgid "If you own a Mac and have Xcode installed, compiling Jamulus from source might be another, more native option. Please have a look at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)."
 msgstr "Mac을 소유하고 있고 Xcode가 설치되어 있는 경우, 소스에서 Jamulus를 컴파일하는 것이 또 다른 기본 옵션일 수 있습니다. [iOS용 컴파일 지침](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios)을 참조하십시오."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:40
-msgid "## Feedback and development"
+#. type: Title ##
+#: ../wiki/en/Installation-for-iOS.md:39
+#, fuzzy, no-wrap
+#| msgid "## Feedback and development"
+msgid "Feedback and development"
 msgstr "## 피드백 및 개발"
 
 #. type: Plain text
@@ -142,15 +143,11 @@ msgstr "iOS 지원은 아직 성숙되지 않았으며 앱스토어에 게시될
 msgid "Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/master/APPLEAPPSTORE.LICENCE.WAIVER) concerning Jamulus being published via the Apple AppStore."
 msgstr "Apple AppStore를 통해 게시되는 Jamulus에 관한 [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/master/APPLEAPPSTORE.LICENCE.WAIVER)도 읽어보십시오."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:47
-#, no-wrap
-msgid "***\n"
-msgstr "***\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-iOS.md:49
-msgid "## All installed?"
+#. type: Title ##
+#: ../wiki/en/Installation-for-iOS.md:48
+#, fuzzy, no-wrap
+#| msgid "## All installed?"
+msgid "All installed?"
 msgstr "## 모두 설치되었습니까?"
 
 #. type: Plain text
@@ -162,3 +159,10 @@ msgstr "Jamulus가 설치되었으며 지금 사용할 수 있습니다. 이제 
 #: ../wiki/en/Installation-for-iOS.md:52
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[시작하기 페이지](시작하기){: .button}"
+
+#~ msgid "# Installation for iOS"
+#~ msgstr "# iOS용 설치"
+
+#, no-wrap
+#~ msgid "***\n"
+#~ msgstr "***\n"

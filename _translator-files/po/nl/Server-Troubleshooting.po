@@ -34,8 +34,9 @@ msgstr "wiki"
 msgid "/wiki/Server-Troubleshooting"
 msgstr "/wiki/Server-Troubleshooting"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Server-Troubleshooting.md:1
+#: ../wiki/en/Server-Troubleshooting.md:10
 #, no-wrap
 msgid "Server Troubleshooting"
 msgstr "Server problemen oplossen"
@@ -47,47 +48,53 @@ msgstr "{% include breadcrumb.html root=\"Meer\" branch1=\"Serverbeheer\" branch
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:12
-#, no-wrap
-msgid ""
-"# Server Troubleshooting\n"
-" {:.no_toc}\n"
-msgstr ""
-"# Server problemen oplossen\n"
-" {:.no_toc}\n"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid " {:.no_toc}\n"
+msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:14
-msgid "<details markdown=\"1\">"
+#, fuzzy, no-wrap
+#| msgid "<details markdown=\"1\">"
+msgid "<details markdown=\"1\">\n"
 msgstr "<details markdown=\"1\">"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:16
-msgid "<summary>Table of contents</summary>"
+#, fuzzy, no-wrap
+#| msgid "<summary>Table of contents</summary>"
+msgid "<summary>Table of contents</summary>\n"
 msgstr "<summary>Inhoudsopgave</summary>"
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:18
-msgid "TOC"
-msgstr "TOC"
-
-#. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:19
-msgid "{:toc}"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid ""
+"* TOC\n"
+" {:toc}\n"
 msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:21
-msgid "</details>"
+#, fuzzy, no-wrap
+#| msgid "</details>"
+msgid "</details>\n"
 msgstr "</details>"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:23
-msgid "## Servers - Registered"
+#. type: Title ##
+#: ../wiki/en/Server-Troubleshooting.md:22
+#, fuzzy, no-wrap
+#| msgid "## Servers - Registered"
+msgid "Servers - Registered "
 msgstr "## Servers - geregistreerd"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:25
-msgid "### Why doesn't my Server show up in the list? Why isn't it registering?"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:24
+#, fuzzy, no-wrap
+#| msgid "### Why doesn't my Server show up in the list? Why isn't it registering?"
+msgid "Why doesn't my Server show up in the list? Why isn't it registering?"
 msgstr "### Waarom wordt mijn server niet weergegeven in de lijst? Waarom registreert hij zich niet?"
 
 #. type: Plain text
@@ -105,14 +112,18 @@ msgstr "Als je een bericht ziet dat de server vol is, moet je wachten tot er een
 msgid "You can verify that your Server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/)."
 msgstr "Je kunt controleren of de server in het relevante genre wordt vermeld door deze [hier te controleren](https://explorer.jamulus.io/)."
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:33
-msgid "## Servers - Unregistered"
+#. type: Title ##
+#: ../wiki/en/Server-Troubleshooting.md:32
+#, fuzzy, no-wrap
+#| msgid "## Servers - Unregistered"
+msgid "Servers - Unregistered "
 msgstr "## Servers - niet geregistreerd"
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:35
-msgid "### I'm running my Client on the same machine/network as my Server but I can't connect to it"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:34
+#, fuzzy, no-wrap
+#| msgid "### I'm running my Client on the same machine/network as my Server but I can't connect to it"
+msgid "I'm running my Client on the same machine/network as my Server but I can't connect to it"
 msgstr "### Ik gebruik mijn client op dezelfde machine/hetzelfde netwerk als mijn server, maar ik kan er geen verbinding mee maken"
 
 #. type: Plain text
@@ -120,9 +131,11 @@ msgstr "### Ik gebruik mijn client op dezelfde machine/hetzelfde netwerk als mij
 msgid "Connect your Client to `localhost` or `127.0.0.1`. If you're running the Client on a different machine to the Server but on the same network, then connect to the _local network_ address of the Server. Do not connect via the Server's public (WAN) address."
 msgstr "Verbind je client met `localhost` of `127.0.0.1`. Als je de client op een andere machine dan de server uitvoert maar op hetzelfde netwerk, maak dan verbinding met het _lokale netwerk_ adres van de server. Maak geen verbinding via het openbare (WAN) adres van de server."
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:39
-msgid "### What address do I give to people so that they can connect to my Server?"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:38
+#, fuzzy, no-wrap
+#| msgid "### What address do I give to people so that they can connect to my Server?"
+msgid "What address do I give to people so that they can connect to my Server?"
 msgstr "### Welk adres geef ik aan mensen zodat ze verbinding kunnen maken met mijn server?"
 
 #. type: Plain text
@@ -130,9 +143,11 @@ msgstr "### Welk adres geef ik aan mensen zodat ze verbinding kunnen maken met m
 msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
 msgstr "Dit moet je **openbare** IP-adres zijn (zoek dat op bij [Google](https://www.google.com/search?q=whatsmyip)). Verbind je **eigen** Jamulus-client met het **lokale** IP-adres van de server (`localhost` of `127.0.0.1` als deze zich op dezelfde machine als je client bevindt). Houd er rekening mee dat je openbare IP-adres kan veranderen - zie de opmerking over \"dynamische DNS\" in [deze handleiding](Running-a-Server#dynamische-dns-en-waarom-je-het-waarschijnlijk-nodig-hebt)."
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:44
-msgid "### What port numbers can I use?"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:43
+#, fuzzy, no-wrap
+#| msgid "### What port numbers can I use?"
+msgid "What port numbers can I use?"
 msgstr "### Welke poort nummers kan ik gebruiken?"
 
 #. type: Plain text
@@ -140,9 +155,11 @@ msgstr "### Welke poort nummers kan ik gebruiken?"
 msgid "You can set your Server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your Server in the format `[serverAddress]:[portNumber]`."
 msgstr "Je kunt de server zo instellen dat deze op een aangepaste poort luistert met de optie `--port'. Als je dit doet, moet je mensen vertellen op welke poort ze verbinding moeten maken. Ze moeten het poortnummer toevoegen aan het adres van je server in het formaat `[serveradres]:[poortnummer]`."
 
-#. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:48
-msgid "### Nobody can connect to my Server - but I can connect locally"
+#. type: Title ###
+#: ../wiki/en/Server-Troubleshooting.md:47
+#, fuzzy, no-wrap
+#| msgid "### Nobody can connect to my Server - but I can connect locally"
+msgid "Nobody can connect to my Server - but I can connect locally"
 msgstr "### Niemand kan verbinding maken met mijn server - maar ik kan lokaal wel verbinding maken"
 
 #. type: Plain text
@@ -164,6 +181,17 @@ msgstr "Om te detecteren of CGN het probleem is, ga je naar het configuratiesche
 #: ../wiki/en/Server-Troubleshooting.md:56
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
 msgstr "Om het probleem met IPv4 op te lossen, neem je contact op met het technische ondersteuningsteam van jouw ISP en vertel je hen dat je thuis een openbare server wilt hosten en dat je een echt WAN IP-adres nodig hebt. Bovendien kun je ze helpen met informatie dat CGN het probleem zou kunnen zijn. Je kunt ook om een statisch IP-adres vragen om het gebruik van DDNS te vermijden."
+
+#, no-wrap
+#~ msgid ""
+#~ "# Server Troubleshooting\n"
+#~ " {:.no_toc}\n"
+#~ msgstr ""
+#~ "# Server problemen oplossen\n"
+#~ " {:.no_toc}\n"
+
+#~ msgid "TOC"
+#~ msgstr "TOC"
 
 #, fuzzy
 #~| msgid "To fix the issue: if you are running a public server, try [port forwarding](Running-a-Server#port-forwarding). If you are running a private server and are port forwarding already, contact your ISP support and request them to remove you from CGN and assign you a real WAN IP address because you want to host a server. If CGN is not the issue, you may need to ask your ISP to give you a WAN IP address (or fixed one to avoid using DDNS, if possible). If all else fails, consider hosting on a cloud platform (some providers do free trial periods)."

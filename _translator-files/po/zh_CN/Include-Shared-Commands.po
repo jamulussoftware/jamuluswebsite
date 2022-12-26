@@ -22,67 +22,58 @@ msgid "[comment]: # (This is an include file for use in multiple documents)"
 msgstr "[comment]: # (这是一个用于多个文档的包含文件)"
 
 #. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:5
+#: ../wiki/en/Include-Shared-Commands.md:14
 #, no-wrap
-msgid "`-h` or `--help`           Display help text         \n"
-msgstr "`-h` 者 `--help`           显示帮助文本         \n"
-
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:6
-#, no-wrap
-msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
-msgstr "`-i` 或 `--inifile` 设置初始化文件的位置(覆盖默认值)\n"
-
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:7
-#, no-wrap
-msgid "`-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
-msgstr "`-n` 或 `--nogui` 禁用 GUI(用于 headless 模式)                      \n"
-
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:8
-#, no-wrap
-msgid "`-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
-msgstr "`-p` 或 `--port` 设置本地 UDP 端口号。默认为 22124\n"
-
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:9
-#, no-wrap
-msgid "`--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md).\n"
-msgstr "`--jsonrpcport` 启用 JSON-RPC API 服务器来控制应用程序，设置 TCP 端口号(实验性，API 可能会更改;只能从 localhost 访问)。请参阅 [JSON-RPC API 文档文件](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md)。\n"
-
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:10
-#, no-wrap
-msgid "`--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
-msgstr "`--jsonrpcsecretfile` 使用 `--jsonrpcport` 时需要。设置包含用于访问 JSON-RPC API 的身份验证字符串的文本文件的路径。\n"
-
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:11
-#, no-wrap
-msgid "`--jsonrpcbindip` \t\t The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)\n"
+msgid ""
+"- `-h` or `--help`           Display help text         \n"
+"- `-i` or `--inifile`        Set location of initialization file (overrides default)\n"
+"- `-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
+"- `-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
+"- `--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md).\n"
+"- `--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
+"- `--jsonrpcbindip` \t\t The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)\n"
+"- `-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
+"- `-t` or `--notranslation`  Disable UI language translations\n"
+"- `-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
+"- `-v` or `--version`        Output version information and exit\n"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:12
 #, no-wrap
-msgid "`-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
-msgstr "`-Q` 或 `--qos` 设置服务质量 DS 字段字节。默认值为 128 (DSCP/CS4)。 QoS 被 Windows 忽略。要启用它，[查看此页面](QOS-Windows)\n"
+#~ msgid "`-h` or `--help`           Display help text         \n"
+#~ msgstr "`-h` 者 `--help`           显示帮助文本         \n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:13
 #, no-wrap
-msgid "`-t` or `--notranslation`  Disable UI language translations\n"
-msgstr "`-t` 或 `--notranslation` 禁用 UI 语言翻译\n"
+#~ msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
+#~ msgstr "`-i` 或 `--inifile` 设置初始化文件的位置(覆盖默认值)\n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:14
 #, no-wrap
-msgid "`-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
-msgstr "`-6` 或 `--enableipv6` 启用 IPv6 寻址(始终启用 IPv4)\n"
+#~ msgid "`-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
+#~ msgstr "`-n` 或 `--nogui` 禁用 GUI(用于 headless 模式)                      \n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:14
 #, no-wrap
-msgid "`-v` or `--version`        Output version information and exit\n"
-msgstr "`-v` 或 `--version` 输出版本信息并退出\n"
+#~ msgid "`-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
+#~ msgstr "`-p` 或 `--port` 设置本地 UDP 端口号。默认为 22124\n"
+
+#, no-wrap
+#~ msgid "`--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md).\n"
+#~ msgstr "`--jsonrpcport` 启用 JSON-RPC API 服务器来控制应用程序，设置 TCP 端口号(实验性，API 可能会更改;只能从 localhost 访问)。请参阅 [JSON-RPC API 文档文件](https://github.com/jamulussoftware/jamulus/blob/master/docs/JSON-RPC.md)。\n"
+
+#, no-wrap
+#~ msgid "`--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
+#~ msgstr "`--jsonrpcsecretfile` 使用 `--jsonrpcport` 时需要。设置包含用于访问 JSON-RPC API 的身份验证字符串的文本文件的路径。\n"
+
+#, no-wrap
+#~ msgid "`-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
+#~ msgstr "`-Q` 或 `--qos` 设置服务质量 DS 字段字节。默认值为 128 (DSCP/CS4)。 QoS 被 Windows 忽略。要启用它，[查看此页面](QOS-Windows)\n"
+
+#, no-wrap
+#~ msgid "`-t` or `--notranslation`  Disable UI language translations\n"
+#~ msgstr "`-t` 或 `--notranslation` 禁用 UI 语言翻译\n"
+
+#, no-wrap
+#~ msgid "`-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
+#~ msgstr "`-6` 或 `--enableipv6` 启用 IPv6 寻址(始终启用 IPv4)\n"
+
+#, no-wrap
+#~ msgid "`-v` or `--version`        Output version information and exit\n"
+#~ msgstr "`-v` 或 `--version` 输出版本信息并退出\n"

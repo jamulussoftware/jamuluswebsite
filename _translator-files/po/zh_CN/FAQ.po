@@ -41,39 +41,47 @@ msgstr "/wiki/FAQ"
 msgid "FAQ"
 msgstr "常见问题"
 
+#. type: Title #
+#: ../wiki/en/FAQ.md:8
+#, no-wrap
+msgid "Jamulus FAQ"
+msgstr ""
+
 #. type: Plain text
 #: ../wiki/en/FAQ.md:10
-#, no-wrap
-msgid ""
-"# Jamulus FAQ\n"
-" {:.no_toc}\n"
-msgstr ""
-"# Jamulus 常见问题\n"
-" {:.no_toc}\n"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid " {:.no_toc}\n"
+msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:12
-msgid "<details markdown=\"1\">"
+#, fuzzy, no-wrap
+#| msgid "<details markdown=\"1\">"
+msgid "<details markdown=\"1\">\n"
 msgstr "<details markdown=\"1\">"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:14
-msgid "<summary>Table of contents</summary>"
+#, fuzzy, no-wrap
+#| msgid "<summary>Table of contents</summary>"
+msgid "<summary>Table of contents</summary>\n"
 msgstr "<summary>目录</summary>"
 
 #. type: Plain text
-#: ../wiki/en/FAQ.md:16
-msgid "TOC"
-msgstr "TOC"
-
-#. type: Plain text
 #: ../wiki/en/FAQ.md:17
-msgid "{:toc}"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid ""
+"* TOC\n"
+" {:toc}\n"
 msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:19
-msgid "</details>"
+#, fuzzy, no-wrap
+#| msgid "</details>"
+msgid "</details>\n"
 msgstr "</details>"
 
 #. type: Plain text
@@ -82,9 +90,11 @@ msgstr "</details>"
 msgid "**For common problems and their solutions when using Jamulus, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.**\n"
 msgstr "**有关使用 Jamulus 时的常见问题及其解决方案，请参阅 [疑难解答](/wiki/Client-Troubleshooting) 页面。**\n"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:24
-msgid "### Is there a metronome, synchronization, or some other way of keeping in time?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:23
+#, fuzzy, no-wrap
+#| msgid "### Is there a metronome, synchronization, or some other way of keeping in time?"
+msgid "Is there a metronome, synchronization, or some other way of keeping in time?"
 msgstr "### 是否有节拍器、同步或其他保持时间的方式？"
 
 #. type: Plain text
@@ -97,9 +107,11 @@ msgstr "不会。Jamulus 服务器上的音乐家可以实时一起演奏，就�
 msgid "Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly."
 msgstr "还请记住，所有参与者都应遵循 [黄金法则](/wiki/Client-Troubleshooting#你们听起来都不错但很难保持在一起) 这也将决定您是否可以使用及时正确。"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:30
-msgid "### How do I know if I can join a Server? Are there rules?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:29
+#, fuzzy, no-wrap
+#| msgid "### How do I know if I can join a Server? Are there rules?"
+msgid "How do I know if I can join a Server? Are there rules?"
 msgstr "### 我如何知道我是否可以加入服务器？有规则吗？"
 
 #. type: Plain text
@@ -112,9 +124,11 @@ msgstr "如果有人在 Jamulus 内置的目录之一上列出了服务器，他
 msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
 msgstr "另请注意，服务器不必在目录上注册以便 Jamulus 客户端连接到它们。服务器运营商只需将他们的服务器地址提供给他们想使用的人，然后他们就可以直接连接。查看 [此概述了解更多信息](/wiki/Running-a-Server#服务器类型)。"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:36
-msgid "### Why shouldn’t I use wireless equipment?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:35
+#, fuzzy, no-wrap
+#| msgid "### Why shouldn’t I use wireless equipment?"
+msgid "Why shouldn’t I use wireless equipment?"
 msgstr "### 为什么我不应该使用无线设备？"
 
 #. type: Plain text
@@ -127,9 +141,11 @@ msgstr "您是否能够及时与其他音乐家一起演奏主要取决于您的
 msgid "So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50 ms or more."
 msgstr "因此，尽量减少任何延迟源或信号的其他问题是有意义的。即使是快速的 wi-fi 通常也无法长时间与 Jamulus 一起使用，而且蓝牙耳机和麦克风通常会引入大约 50 毫秒或更长的延迟。"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:42
-msgid "### Why should I not listen to my own signal?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:41
+#, fuzzy, no-wrap
+#| msgid "### Why should I not listen to my own signal?"
+msgid "Why should I not listen to my own signal?"
 msgstr "### 为什么我不应该听自己的信号？"
 
 #. type: Plain text
@@ -142,9 +158,11 @@ msgstr "出于同样的原因，您需要最大限度地减少信号延迟以便
 msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server."
 msgstr "当然，如果您正在演奏原声乐器，或者是歌手，则很难排除您的“本地”声音。但是您至少应该尝试这样做，例如使用封闭式耳机，声音尽可能大，以掩盖自己的声音。这将使您专注于从服务器返回给您的混音。"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:48
-msgid "### Do I need a fast Internet connection?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:47
+#, fuzzy, no-wrap
+#| msgid "### Do I need a fast Internet connection?"
+msgid "Do I need a fast Internet connection?"
 msgstr "### 我需要一个快速的网络吗？"
 
 #. type: Plain text
@@ -152,9 +170,11 @@ msgstr "### 我需要一个快速的网络吗？"
 msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
 msgstr "不，特别是如果您不运行服务器来托管其他音乐家。低 ping 更重要。对于大多数使用标准宽带(例如 10 Mbit/s 下行和 1 Mbit/s 上行)的人来说，您不会有任何问题。对于那些在家里运行服务器的人，根据加入的人数，如果您的 _upstream_ 带宽低于约 5 Mbit/s，您可能会遇到问题。"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:52
-msgid "### Do I need to run a Server?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:51
+#, fuzzy, no-wrap
+#| msgid "### Do I need to run a Server?"
+msgid "Do I need to run a Server?"
 msgstr "### 我需要运行服务器吗？"
 
 #. type: Plain text
@@ -162,14 +182,18 @@ msgstr "### 我需要运行服务器吗？"
 msgid "No. If you just intend to connect to other people’s Servers, then all you need is a Client. [Read this if you think you need to run your own Server](/wiki/Running-a-Server)."
 msgstr "不，如果您只是想连接到其他人的服务器，那么您只需要一个客户端。 [如果您认为需要运行自己的服务器，请阅读这个](/wiki/Running-a-Server)。"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:56
-msgid "### How does Jamulus work (in general)?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:55
+#, fuzzy, no-wrap
+#| msgid "### How does Jamulus work (in general)?"
+msgid "How does Jamulus work (in general)?"
 msgstr "### Jamulus 是如何工作的(一般来说)？"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:58
-msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">"
+#, fuzzy, no-wrap
+#| msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">"
+msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">\n"
 msgstr "<img src=\"{% include img/zh_CN-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Jamulus 工作原理图\">"
 
 #. type: Plain text
@@ -177,9 +201,11 @@ msgstr "<img src=\"{% include img/zh_CN-screenshots/diagram-overview.inc %}\" lo
 msgid "Jamulus works on the Client-server principle. Everybody’s audio is sent to a Server, mixed and processed there. Afterwards, the audio is sent back to each Client. If a Server is registered in a Jamulus Directory, the Server's information will be provided to all Clients using that Directory."
 msgstr "Jamulus 遵循客户端-服务器原则。每个人的音频都被发送到服务器，在那里混合和处理。之后，音频被发送回每个客户端。如果服务器在 Jamulus 目录中注册，则服务器的信息将提供给使用该目录的所有客户端。"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:63
-msgid "### Why doesn't Jamulus provide video support?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:62
+#, fuzzy, no-wrap
+#| msgid "### Why doesn't Jamulus provide video support?"
+msgid "Why doesn't Jamulus provide video support?"
 msgstr "### 为什么 Jamulus 不提供视频支持？"
 
 #. type: Plain text
@@ -187,14 +213,18 @@ msgstr "### 为什么 Jamulus 不提供视频支持？"
 msgid "Adding video support adds a lot of complexity. You can use other software like Jitsi or Zoom if you want to see others when playing (or have an \"audience\"), but the video will be significantly behind the Jamulus audio."
 msgstr "添加视频支持会增加很多复杂性。如果您想在播放时看到其他人(或有“观众”)，您可以使用 Jitsi 或 Zoom 等其他软件，但视频将明显落后于 Jamulus 音频。"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:68
-msgid "## Server FAQ"
+#. type: Title ##
+#: ../wiki/en/FAQ.md:67
+#, fuzzy, no-wrap
+#| msgid "## Server FAQ"
+msgid "Server FAQ"
 msgstr "## 服务器常见问题"
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:70
-msgid "### Why do Registered Servers not need port forwarding?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:69
+#, fuzzy, no-wrap
+#| msgid "### Why do Registered Servers not need port forwarding?"
+msgid "Why do Registered Servers not need port forwarding?"
 msgstr "### 为什么已注册服务器不需要端口转发?"
 
 #. type: Plain text
@@ -206,3 +236,14 @@ msgstr "通常，网络地址转换 (NAT) 防火墙会阻止从本地网络外�
 #: ../wiki/en/FAQ.md:74
 msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
 msgstr "但是，在未注册模式下，客户端必须 **发起** 连接到服务器的网络。 NAT 防火墙阻止了这种情况，因此您需要告诉他们使用端口转发允许 Jamulus 端口上的传入连接请求。"
+
+#, no-wrap
+#~ msgid ""
+#~ "# Jamulus FAQ\n"
+#~ " {:.no_toc}\n"
+#~ msgstr ""
+#~ "# Jamulus 常见问题\n"
+#~ " {:.no_toc}\n"
+
+#~ msgid "TOC"
+#~ msgstr "TOC"

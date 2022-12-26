@@ -41,15 +41,23 @@ msgstr "/wiki/Software-Manual"
 msgid "Software Manual"
 msgstr "软件手册"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:9
-#, no-wrap
-msgid ""
-"# Jamulus User Manual\n"
-" {:.no_toc}\n"
+#. type: Title #
+#: ../wiki/en/Software-Manual.md:7
+#, fuzzy, no-wrap
+#| msgid ""
+#| "# Jamulus User Manual\n"
+#| " {:.no_toc}\n"
+msgid "Jamulus User Manual"
 msgstr ""
 "# Jamulus 用户手册\n"
 " {:.no_toc}\n"
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:9
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid " {:.no_toc}\n"
+msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:11
@@ -58,32 +66,39 @@ msgstr "本手册记录了 Jamulus 客户端应用程序，供音乐家和歌手
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:13
-msgid "<details markdown=\"1\">"
+#, fuzzy, no-wrap
+#| msgid "<details markdown=\"1\">"
+msgid "<details markdown=\"1\">\n"
 msgstr "<details markdown=\"1\">"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:15
-msgid "<summary>Table of contents</summary>"
+#, fuzzy, no-wrap
+#| msgid "<summary>Table of contents</summary>"
+msgid "<summary>Table of contents</summary>\n"
 msgstr "<summary>目录</summary>"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:17
-msgid "TOC"
-msgstr "TOC"
-
-#. type: Plain text
 #: ../wiki/en/Software-Manual.md:18
-msgid "{:toc}"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid ""
+"* TOC\n"
+" {:toc}\n"
 msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-msgid "</details>"
+#, fuzzy, no-wrap
+#| msgid "</details>"
+msgid "</details> \n"
 msgstr "</details>"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:22
-msgid "# Main Window"
+#. type: Title #
+#: ../wiki/en/Software-Manual.md:21
+#, fuzzy, no-wrap
+#| msgid "# Main Window"
+msgid "Main Window"
 msgstr "# 主窗口"
 
 #. type: Plain text
@@ -100,9 +115,11 @@ msgstr ""
 "<figcaption>连接到服务器时的本地混音</figcaption>\n"
 "</figure>\n"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:30
-msgid "## Ping, Delay and Jitter"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:29
+#, fuzzy, no-wrap
+#| msgid "## Ping, Delay and Jitter"
+msgid "Ping, Delay and Jitter"
 msgstr "## Ping、延迟和抖动"
 
 #. type: Plain text
@@ -119,7 +136,9 @@ msgstr "**延迟**显示根据当前 ping 时间和当前音频缓冲区设置�
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
-msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"绿色 LED 符号的图像\"></figure>"
 
 #. type: Plain text
@@ -130,7 +149,9 @@ msgstr "**绿色** - 延迟非常适合即兴演奏\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
-msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"黄色 LED 符号的图像\"></figure>"
 
 #. type: Plain text
@@ -141,7 +162,9 @@ msgstr "**黄色** - 仍然可以进行会话，但可能更难玩\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
-msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"绿色 LED 符号的图像\"></figure>"
 
 #. type: Plain text
@@ -156,29 +179,31 @@ msgstr "**红色** - 延迟太大而无法干扰\n"
 msgid "**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
 msgstr "**Jitter** 显示当前的音频/流媒体状态。如果灯是**红色**，则音频流被中断。这是由以下问题之一引起的:\n"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:50
+#. type: Bullet: '- '
+#: ../wiki/en/Software-Manual.md:53
 msgid "The network jitter buffer is not large enough for the current network/audio interface jitter."
 msgstr "为应对当前网络/音频接口延迟而言当前网络抖动缓冲大小不够大。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:51
+#. type: Bullet: '- '
+#: ../wiki/en/Software-Manual.md:53
 msgid "The sound card's buffer delay (buffer size) is too small (see Settings window)."
 msgstr "声卡的缓冲区延迟(缓冲区大小)过小(见设置窗口)。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:52
+#. type: Bullet: '- '
+#: ../wiki/en/Software-Manual.md:53
 msgid "The upload or download stream rate is too high for your internet bandwidth."
 msgstr "上行或下行流量频率对您的网络带宽而言过高。"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 msgid "The CPU of the Client or server is at 100%."
 msgstr "客户端或服务器的 CPU 为 100%。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:55
-msgid "## Input"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:54
+#, fuzzy, no-wrap
+#| msgid "## Input"
+msgid "Input"
 msgstr "## 输入"
 
 #. type: Plain text
@@ -186,9 +211,11 @@ msgstr "## 输入"
 msgid "Shows the level of the two stereo channels for your audio input.  Make sure not to clip the input signal to avoid distortions of your sound (the LEDs will indicate clipping when it occurs)."
 msgstr "显示音频输入的两个立体声通道的电平。确保不要削波输入信号以避免声音失真(发生削波时 LED 会指示)。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:60
-msgid "## Mute Myself button"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:59
+#, fuzzy, no-wrap
+#| msgid "## Mute Myself button"
+msgid "Mute Myself button"
 msgstr "## 静音自己按钮"
 
 #. type: Plain text
@@ -196,9 +223,11 @@ msgstr "## 静音自己按钮"
 msgid "Cuts your audio stream to the server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself."
 msgstr "将您的音频流剪切到服务器，以便您能够听到自己的声音并看到自己的输入电平，但其他音乐家不会。请注意，其他音乐家不会知道您是否已将自己静音。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:64
-msgid "## Reverb effect"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:63
+#, fuzzy, no-wrap
+#| msgid "## Reverb effect"
+msgid "Reverb effect"
 msgstr "## 混响效果"
 
 #. type: Plain text
@@ -206,9 +235,11 @@ msgstr "## 混响效果"
 msgid "Adds reverb to your local mono audio channel, or to both channels in stereo mode.  The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector to the right and move the fader upwards until the desired reverb level is reached."
 msgstr "将混响添加到本地单声道音频通道，或立体声模式下的两个通道。可以修改单声道选择和混响级别。例如，如果将麦克风信号馈入声卡的右声道并且需要应用混响效果，则将通道选择器设置在右侧并向上移动推子，直到达到所需的混响电平。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:71
-msgid "## Chat"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:70
+#, fuzzy, no-wrap
+#| msgid "## Chat"
+msgid "Chat"
 msgstr "## 聊天"
 
 #. type: Plain text
@@ -216,9 +247,11 @@ msgstr "## 聊天"
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
 msgstr "打开聊天窗口。输入的文本将发送到所有连接的客户端。如果有新的聊天消息到达并且聊天对话尚未打开，它将自动为所有客户打开。请参阅设置以在收到新聊天消息时选择性地打开声音警报。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:77
-msgid "## Connect/disconnect button"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:76
+#, fuzzy, no-wrap
+#| msgid "## Connect/disconnect button"
+msgid "Connect/disconnect button"
 msgstr "## 连接/断开按钮"
 
 #. type: Plain text
@@ -228,7 +261,9 @@ msgstr "打开一个对话框，您可以在其中选择要连接的服务器。
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:82
-msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"服务器连接窗口截图\"></figure>"
 
 #. type: Plain text
@@ -246,14 +281,18 @@ msgstr "您可以按服务器名称或位置过滤列表。要仅列出占用的
 msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
 msgstr "如果您知道私有服务器的 IP 地址或 URL，则可以使用服务器名称/地址字段连接到它。可以在地址后添加一个可选的端口号，使用冒号作为分隔符，例如，`jamulus.example.com:22124`(请注意，IPv6 地址必须完全括在方括号中)。该字段还将显示最近使用的服务器地址列表。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:92
-msgid "## Server audio mixer"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:91
+#, fuzzy, no-wrap
+#| msgid "## Server audio mixer"
+msgid "Server audio mixer"
 msgstr "## 服务器混音器"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:94
-msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"一对服务器混音器控件的图像\"></figure>"
 
 #. type: Plain text
@@ -286,9 +325,11 @@ msgstr "用户通常按照他们连接的顺序从左到右出现。您可以使
 msgid "If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded."
 msgstr "如果服务器操作员已启用录音，您将在混音器上方看到一条消息，表明您正在被录音。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:109
-msgid "### Grp button"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:108
+#, fuzzy, no-wrap
+#| msgid "### Grp button"
+msgid "Grp button"
 msgstr "### Grp 按钮"
 
 #. type: Plain text
@@ -296,9 +337,11 @@ msgstr "### Grp 按钮"
 msgid "You can group users together using the \"group\" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag. Up to 8 groups can be defined."
 msgstr "您可以使用“组”开关将用户分组在一起。移动组中任何成员的推子将移动该组中的其他推子相同的量。您可以通过 shift-单击-拖动将频道与组暂时隔离。最多可以定义 8 个组。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:113
-msgid "### Mute button"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:112
+#, fuzzy, no-wrap
+#| msgid "### Mute button"
+msgid "Mute button"
 msgstr "### 静音按钮"
 
 #. type: Plain text
@@ -311,9 +354,11 @@ msgstr "防止在您的本地混音中听到用户的声音。请注意，当您
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgstr "请注意，将您的**自己的**频道静音仅意味着您将听不到来自服务器的信号（不建议这样做，因为这会导致您与其他玩家失去时间）。因此，这与使用“[将自己静音](#静音自己按钮)”不同。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:119
-msgid "### Solo button"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:118
+#, fuzzy, no-wrap
+#| msgid "### Solo button"
+msgid "Solo button"
 msgstr "### 独奏按钮"
 
 #. type: Plain text
@@ -321,14 +366,18 @@ msgstr "### 独奏按钮"
 msgid "Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a \"muted\" icon above your fader."
 msgstr "允许您单独听到一位或多位用户的声音。那些未独奏的将被静音。另请注意，那些未独奏的人会在推子上方看到一个“静音”图标。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:123
-msgid "# Settings"
+#. type: Title #
+#: ../wiki/en/Software-Manual.md:122
+#, fuzzy, no-wrap
+#| msgid "# Settings"
+msgid "Settings"
 msgstr "# 设置"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:125
-msgid "## My Profile"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:124
+#, fuzzy, no-wrap
+#| msgid "## My Profile"
+msgid "My Profile"
 msgstr "## 我的个人资料"
 
 #. type: Plain text
@@ -338,7 +387,9 @@ msgstr "从“设置”菜单中，选择“我的个人资料...”以设置您
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:130
-msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"配置文件窗口的图像\"></figure>"
 
 #. type: Plain text
@@ -348,12 +399,16 @@ msgstr "如果您设置了乐器和/或国家，这些选择的图标也将显�
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:134
-msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"显示个人资料信息的工具提示图片\"></figure>"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:136
-msgid "### Skin"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:135
+#, fuzzy, no-wrap
+#| msgid "### Skin"
+msgid "Skin"
 msgstr "### 皮肤"
 
 #. type: Plain text
@@ -361,9 +416,11 @@ msgstr "### 皮肤"
 msgid "This applies a skin to the main window, some of which are designed to accommodate larger ensembles."
 msgstr "这会将皮肤应用于主窗口，其中一些设计用于容纳更大的合奏。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:140
-msgid "### Meter style"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:139
+#, fuzzy, no-wrap
+#| msgid "### Meter style"
+msgid "Meter style"
 msgstr "### 仪表样式"
 
 #. type: Plain text
@@ -371,9 +428,11 @@ msgstr "### 仪表样式"
 msgid "This changes the visual style of the audio meters, independently of the chosen skin."
 msgstr "这会改变音频表的视觉风格，与所选皮肤无关。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:144
-msgid "### Mixer rows"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:143
+#, fuzzy, no-wrap
+#| msgid "### Mixer rows"
+msgid "Mixer rows"
 msgstr "### 混合器的行"
 
 #. type: Plain text
@@ -381,9 +440,11 @@ msgstr "### 混合器的行"
 msgid "This sets the number of rows displayed in the server audio mixer, for use with larger ensembles."
 msgstr "这将设置服务器音频混音器中显示的行数，以用于更大的合奏。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:148
-msgid "### Audio Alerts"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:147
+#, fuzzy, no-wrap
+#| msgid "### Audio Alerts"
+msgid "Audio Alerts"
 msgstr "### 音频警报"
 
 #. type: Plain text
@@ -391,19 +452,25 @@ msgstr "### 音频警报"
 msgid "This turns on a sound alert for when someone joins a Server, or when receiving a new chat message."
 msgstr "当有人加入服务器或收到新的聊天消息时，这会打开声音警报。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:152
-msgid "## Audio/Network Setup"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:151
+#, fuzzy, no-wrap
+#| msgid "## Audio/Network Setup"
+msgid "Audio/Network Setup"
 msgstr "## 音频/网络设置"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:154
-msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"音频/网络设置窗口图片\"></figure>"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:156
-msgid "### Device"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:155
+#, fuzzy, no-wrap
+#| msgid "### Device"
+msgid "Device"
 msgstr "### 设备"
 
 #. type: Plain text
@@ -411,14 +478,18 @@ msgstr "### 设备"
 msgid "Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected."
 msgstr "在 Windows 操作系统下，可以使用 Jamulus 选择 ASIO 驱动程序(声卡)。如果所选的 ASIO 驱动程序无效，则会显示错误消息并选择之前的有效驱动程序。在 macOS 下，可以选择输入和输出硬件。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:161
-msgid "### Input/output channel mapping"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:160
+#, fuzzy, no-wrap
+#| msgid "### Input/output channel mapping"
+msgid "Input/output channel mapping"
 msgstr "### 输入/输出通道映射"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:163
-msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"输入输出通道映射图\"></figure>"
 
 #. type: Plain text
@@ -426,9 +497,11 @@ msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/channel-mapping.inc 
 msgid "If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)  a different actual sound card channel can be selected."
 msgstr "如果所选声卡设备提供多个输入或输出通道，则“_Input通道映射”和“输出通道”Mapping_设置可见。对于每个Jamulus输入/输出通道(左声道和右声道)，可以选择不同的实际声卡声卡声道。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:169
-msgid "### Audio channels"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:168
+#, fuzzy, no-wrap
+#| msgid "### Audio channels"
+msgid "Audio channels"
 msgstr "### 音频通道"
 
 #. type: Plain text
@@ -473,9 +546,11 @@ msgstr "启用立体声模式将提高流的数据速率。确保您的上传速
 msgid "In stereo streaming mode, no audio channel selection for the reverb effect will be available on the main window since the effect is applied to both channels in this case."
 msgstr "在立体声媒体流模式时，由于混响效果将被应用到所有的两个声道，故主窗口将不提供选择混响效果所应用到的声道的功能。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:188
-msgid "### Audio quality"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:187
+#, fuzzy, no-wrap
+#| msgid "### Audio quality"
+msgid "Audio quality"
 msgstr "### 音频质量"
 
 #. type: Plain text
@@ -483,9 +558,11 @@ msgstr "### 音频质量"
 msgid "The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
 msgstr "音频质量越高，音频流的数据速率就越高。确保您的上传速度不超过互联网连接的可用上传速度。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:192
-msgid "### Buffer Delay"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:191
+#, fuzzy, no-wrap
+#| msgid "### Buffer Delay"
+msgid "Buffer Delay"
 msgstr "### 缓冲延迟"
 
 #. type: Plain text
@@ -493,22 +570,25 @@ msgstr "### 缓冲延迟"
 msgid "The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many connection properties. Three buffer sizes are supported:"
 msgstr "缓冲延迟设置是 Jamulus 软件的基本设置。此设置会影响许多连接属性。支持三种缓冲区大小:"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:197
-#, no-wrap
-msgid "**64 samples** Provides the lowest latency but does not work with all sound cards.\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Software-Manual.md:199
+#, fuzzy
+#| msgid "**64 samples** Provides the lowest latency but does not work with all sound cards.\n"
+msgid "**64 samples** Provides the lowest latency but does not work with all sound cards."
 msgstr "**64 个样本** 提供最低延迟，但不适用于所有声卡。\n"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:198
-#, no-wrap
-msgid "**128 samples** The preferred setting. Should work for most available sound cards.\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Software-Manual.md:199
+#, fuzzy
+#| msgid "**128 samples** The preferred setting. Should work for most available sound cards.\n"
+msgid "**128 samples** The preferred setting. Should work for most available sound cards."
 msgstr "**128 个样本** 首选设置。应该适用于大多数可用的声卡。\n"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:199
-#, no-wrap
-msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection.\n"
+#, fuzzy
+#| msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection.\n"
+msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection."
 msgstr "**256 个样本** 只能在速度非常慢的计算机或互联网连接速度较慢的情况下使用。\n"
 
 #. type: Plain text
@@ -531,9 +611,11 @@ msgstr "实际缓冲区延迟对连接状态、当前上传速率和整体延迟
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "因此，缓冲区设置是音频质量和整体延迟之间的权衡。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:212
-msgid "### Jitter Buffer"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:211
+#, fuzzy, no-wrap
+#| msgid "### Jitter Buffer"
+msgid "Jitter Buffer"
 msgstr "### 抖动缓冲区"
 
 #. type: Plain text
@@ -556,9 +638,11 @@ msgstr "因此，抖动缓冲区设置是音频质量和整体延迟之间的权
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr "如果启用自动设置，本地客户端和远程服务器的抖动缓冲区将根据网络和声卡定时抖动的测量值自动设置。如果启用了自动检查，则抖动缓冲区大小推子将被禁用(它们不能用鼠标移动)。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:228
-msgid "### Enable small network buffers"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:227
+#, fuzzy, no-wrap
+#| msgid "### Enable small network buffers"
+msgid "Enable small network buffers"
 msgstr "### 启用小型网络缓冲区"
 
 #. type: Plain text
@@ -566,9 +650,11 @@ msgstr "### 启用小型网络缓冲区"
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
 msgstr "允许支持非常小的网络音频数据包。这些仅在声卡缓冲区延迟小于 128 个样本时使用。网络缓冲区越小，音频延迟越低。但与此同时，网络负载增加，音频丢失的可能性也增加(特别是如果您的网络连接有任何明显的抖动)。如果您遇到高延迟或较差的音频质量，请尝试启用此选项。但是，禁用它通常意味着更好的音频质量。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:233
-msgid "### Audio Stream Rate"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:232
+#, fuzzy, no-wrap
+#| msgid "### Audio Stream Rate"
+msgid "Audio Stream Rate"
 msgstr "### 音频流速率"
 
 #. type: Plain text
@@ -576,19 +662,25 @@ msgstr "### 音频流速率"
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgstr "取决于当前的音频包大小和压缩设置。确保上行速率不高于您可用的互联网上传速度(通过 [librespeed.org](https://librespeed.org/) 等服务进行检查)。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:238
-msgid "## Advanced Setup"
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:237
+#, fuzzy, no-wrap
+#| msgid "## Advanced Setup"
+msgid "Advanced Setup"
 msgstr "## 高级设置"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:240
-msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"高级设置窗口图片\"></figure>"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:242
-msgid "### Custom Directories"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:241
+#, fuzzy, no-wrap
+#| msgid "### Custom Directories"
+msgid "Custom Directories"
 msgstr "### 自定义目录"
 
 #. type: Plain text
@@ -596,19 +688,28 @@ msgstr "### 自定义目录"
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
 msgstr "如果您需要添加内置地址以外的目录地址，您可以在此处进行。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:246
-msgid "### New Client Level"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:245
+#, fuzzy, no-wrap
+#| msgid "### New Client Level"
+msgid "New Client Level"
 msgstr "### 新客户端级别"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:250
-msgid "This setting defines the fader level of a newly connected Client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
+#, fuzzy, no-wrap
+#| msgid "This setting defines the fader level of a newly connected Client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
+msgid ""
+"This setting defines the fader level of a newly connected Client in percent. If a new user connects\n"
+"to the current server, they will get the specified initial fader level if no other fader level from a previous connection of\n"
+"that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\".\n"
 msgstr "此设置以百分比定义新连接客户端的推子电平。如果新用户连接到当前服务器，如果该用户先前连接的其他推子电平尚未存储，他们将获得指定的初始推子电平。您可以使用“编辑”>“将所有推子设置为新客户端级别”将占用服务器中的所有用户设置为该级别。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:252
-msgid "### Input Boost"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:251
+#, fuzzy, no-wrap
+#| msgid "### Input Boost"
+msgid "Input Boost"
 msgstr "### 输入提升"
 
 #. type: Plain text
@@ -616,9 +717,11 @@ msgstr "### 输入提升"
 msgid "Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus."
 msgstr "增加设备的增益。如果您的设备提供的增益对于 Jamulus 来说过于安静，请使用此选项。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:256
-msgid "### Feedback Protection"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:255
+#, fuzzy, no-wrap
+#| msgid "### Feedback Protection"
+msgid "Feedback Protection"
 msgstr "### 反馈保护"
 
 #. type: Plain text
@@ -626,9 +729,11 @@ msgstr "### 反馈保护"
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
 msgstr "尝试在连接到服务器后的前三秒内检测音频反馈循环或噪音。一旦检测到，此功能将显示一条消息并激活“静音我自己”按钮以使您在自己的混音中静音。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:260
-msgid "### Input Balance"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:259
+#, fuzzy, no-wrap
+#| msgid "### Input Balance"
+msgid "Input Balance"
 msgstr "### 输入平衡"
 
 #. type: Plain text
@@ -636,14 +741,18 @@ msgstr "### 输入平衡"
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
 msgstr "控制左右本地音频通道的相对电平。对于单声道信号，它充当两个通道之间的声像。例如，如果麦克风连接到右输入通道，而乐器连接到比麦克风大得多的左输入通道，则移动音频推子以增加麦克风的相对音量。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:266
-msgid "# Menu commands"
+#. type: Title #
+#: ../wiki/en/Software-Manual.md:265
+#, fuzzy, no-wrap
+#| msgid "# Menu commands"
+msgid "Menu commands"
 msgstr "# 菜单命令"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:268
-msgid "### File > Load/Save Mixer Channels Setup"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:267
+#, fuzzy, no-wrap
+#| msgid "### File > Load/Save Mixer Channels Setup"
+msgid "File > Load/Save Mixer Channels Setup"
 msgstr "### 文件 > 加载/保存混音器通道设置"
 
 #. type: Plain text
@@ -651,9 +760,11 @@ msgstr "### 文件 > 加载/保存混音器通道设置"
 msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgstr "您可以保存和恢复您为乐队排练所拥有的混音(推子、静音、声像、独奏等)并随时加载(即使在演奏时)。加载也可以通过拖放到混音器窗口来完成。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:272
-msgid "### Edit > Auto-Adjust All Faders"
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:271
+#, fuzzy, no-wrap
+#| msgid "### Edit > Auto-Adjust All Faders"
+msgid "Edit > Auto-Adjust All Faders "
 msgstr "### 编辑 > 自动调整所有推子"
 
 #. type: Plain text
@@ -661,38 +772,46 @@ msgstr "### 编辑 > 自动调整所有推子"
 msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
 msgstr "根据音量将一次性推子设置应用于每个通道。对于大型合奏获得合理的整体混音很有用，尽管可能仍然需要进行个别调整。最好在热身或乐曲的统一部分使用。"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:276
-msgid "# Backing up Jamulus"
+#. type: Title #
+#: ../wiki/en/Software-Manual.md:275
+#, fuzzy, no-wrap
+#| msgid "# Backing up Jamulus"
+msgid "Backing up Jamulus"
 msgstr "# 备份 Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:278
-msgid "{% include_relative Include-Backing-Up.md %}"
-msgstr "{% include_relative Include-Backing-Up.md %}"
-
-#. type: Plain text
 #: ../wiki/en/Software-Manual.md:279
-msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
+#, fuzzy
+#| msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
+msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgstr "您可以使用 [加载/保存混音器频道设置](Software-Manual#文件--加载保存混音器通道设置) 保存和加载不同的混音器设置，并将这些文件存储在您想要的任何位置。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:284
-#, no-wrap
-msgid ""
-"**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
-"```shell\n"
-"$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
-"```\n"
+#: ../wiki/en/Software-Manual.md:281
+#, fuzzy, no-wrap
+#| msgid ""
+#| "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
+#| "```shell\n"
+#| "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
+#| "```\n"
+msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
 msgstr ""
 "**macOS 用户注意事项:** 从 Jamulus 3.8.1 开始，我们有一个签名的安装程序。这会将设置存储在 \n"
 "```shell\n"
 "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 "```\n"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:286
-msgid "# Command Line Options"
+#. type: Fenced code block (shell)
+#: ../wiki/en/Software-Manual.md:281
+#, no-wrap
+msgid "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
+msgstr ""
+
+#. type: Title #
+#: ../wiki/en/Software-Manual.md:285
+#, fuzzy, no-wrap
+#| msgid "# Command Line Options"
+msgid "Command Line Options"
 msgstr "# 命令行选项"
 
 #. type: Plain text
@@ -702,16 +821,19 @@ msgstr "Jamulus 中最常见的功能可以使用 GUI 设置，但这些和其�
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:290
-msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
+#, fuzzy, no-wrap
+#| msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
+msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
 msgstr "例如在 Windows 上，要使用特定的设置文件，请右键单击 Jamulus 快捷方式并选择“属性”>“目标”。将必要的参数添加到 Jamulus.exe:"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:294
-#, no-wrap
-msgid ""
-"```shell\n"
-" \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
-"```\n"
+#. type: Fenced code block (shell)
+#: ../wiki/en/Software-Manual.md:291
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```shell\n"
+#| " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
+#| "```\n"
+msgid " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
 msgstr ""
 "```shell\n"
 " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
@@ -722,13 +844,14 @@ msgstr ""
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "对于 macOS，启动终端窗口并使用所需的选项运行 Jamulus，如下所示:"
 
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:300
-#, no-wrap
-msgid ""
-"```shell\n"
-" /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
-"```\n"
+#. type: Fenced code block (shell)
+#: ../wiki/en/Software-Manual.md:297
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```shell\n"
+#| " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
+#| "```\n"
+msgid " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
 msgstr ""
 "```shell\n"
 " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
@@ -743,6 +866,12 @@ msgstr "{% include_relative Include-Client-Commands.md %}"
 #: ../wiki/en/Software-Manual.md:304
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
+
+#~ msgid "TOC"
+#~ msgstr "TOC"
+
+#~ msgid "{% include_relative Include-Backing-Up.md %}"
+#~ msgstr "{% include_relative Include-Backing-Up.md %}"
 
 #~ msgid "Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others. Up to 8 groups can be defined."
 #~ msgstr "定义一组音频通道。移动组中一个成员的推子会移动所有其他成员的推子。最多可以定义 8 个组。"

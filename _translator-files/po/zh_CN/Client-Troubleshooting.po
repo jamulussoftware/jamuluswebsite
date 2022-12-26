@@ -41,44 +41,55 @@ msgstr "/wiki/Client-Troubleshooting"
 msgid "Client Troubleshooting"
 msgstr "客户端故障排除"
 
+#. type: Title #
+#: ../wiki/en/Client-Troubleshooting.md:8
+#, fuzzy, no-wrap
+#| msgid "Client Troubleshooting"
+msgid "Troubleshooting"
+msgstr "客户端故障排除"
+
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:10
-#, no-wrap
-msgid ""
-"# Troubleshooting\n"
-" {:.no_toc}\n"
-msgstr ""
-"# 故障排除\n"
-" {:.no_toc}\n"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid " {:.no_toc}\n"
+msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:12
-msgid "<details markdown=\"1\">"
+#, fuzzy, no-wrap
+#| msgid "<details markdown=\"1\">"
+msgid "<details markdown=\"1\">\n"
 msgstr "<details markdown=\"1\">"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:14
-msgid "<summary>Table of contents</summary>"
+#, fuzzy, no-wrap
+#| msgid "<summary>Table of contents</summary>"
+msgid "<summary>Table of contents</summary>\n"
 msgstr "<summary>目录</summary>"
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:16
-msgid "TOC"
-msgstr "TOC"
-
-#. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:17
-msgid "{:toc}"
+#, fuzzy, no-wrap
+#| msgid "{:toc}"
+msgid ""
+"* TOC\n"
+" {:toc}\n"
 msgstr "{:toc}"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:19
-msgid "</details>"
+#, fuzzy, no-wrap
+#| msgid "</details>"
+msgid "</details>\n"
 msgstr "</details>"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:21
-msgid "### Don’t hear any sound/Others don’t hear you?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:20
+#, fuzzy, no-wrap
+#| msgid "### Don’t hear any sound/Others don’t hear you?"
+msgid "Don’t hear any sound/Others don’t hear you?"
 msgstr "### 没有听到任何声音/其他人没有听到你的声音？"
 
 #. type: Plain text
@@ -92,9 +103,11 @@ msgstr "从简单的东西开始:确保您的乐器/麦克风和耳机连接到�
 msgid "**Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4ALL setup section](Installation-for-Windows#setting-up-asio4all)\n"
 msgstr "**Windows 用户 (ASIO4ALL)**:如果您使用的是 ASIO4ALL 驱动程序，请查看 [ASIO4ALL 设置部分](Installation-for-Windows#设置-asio4all)\n"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:27
-msgid "### Not seeing the headphone or microphone you just connected to your PC?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:26
+#, fuzzy, no-wrap
+#| msgid "### Not seeing the headphone or microphone you just connected to your PC?"
+msgid "Not seeing the headphone or microphone you just connected to your PC?"
 msgstr "### 没有看到您刚刚连接到 PC 的耳机或麦克风？"
 
 #. type: Plain text
@@ -102,9 +115,11 @@ msgstr "### 没有看到您刚刚连接到 PC 的耳机或麦克风？"
 msgid "Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded."
 msgstr "只需在设备接通电源的情况下重新启动 Jamulus。Jamulus 目前不显示加载音响系统后插入的设备。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:31
-msgid "### Your sound is stuttering"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:30
+#, fuzzy, no-wrap
+#| msgid "### Your sound is stuttering"
+msgid "Your sound is stuttering"
 msgstr "### 你的声音断断续续"
 
 #. type: Plain text
@@ -112,9 +127,11 @@ msgstr "### 你的声音断断续续"
 msgid "Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency."
 msgstr "您的音频设备可能无法使用您选择的缓冲区大小。在 Jamulus 的设置中选择更大的缓冲区大小。如果可能，请使用其他设备，因为大缓冲区大小意味着更高的延迟。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:35
-msgid "### You all sound OK, but it's difficult to keep together"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:34
+#, fuzzy, no-wrap
+#| msgid "### You all sound OK, but it's difficult to keep together"
+msgid "You all sound OK, but it's difficult to keep together"
 msgstr "### 你们听起来都不错，但很难保持在一起"
 
 #. type: Plain text
@@ -128,22 +145,22 @@ msgstr "**如果可能，请不要听您的直接信号。** 确保您尽可能�
 msgid "You can test whether you are hearing your signal correctly by doing the following:"
 msgstr "您可以通过执行以下操作来测试您是否正确听到了信号:"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:41
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Run Jamulus and connect to a Server with a long ping time (greater than 200ms)"
 msgstr "运行 Jamulus 并连接到具有较长 ping 时间(大于 200 毫秒)的服务器"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:42
+#. type: Bullet: '2. '
+#: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus Server come back, but significantly delayed."
 msgstr "拍手一次(或在乐器上弹奏一个短音符)。您应该听到来自 Jamulus 服务器的声音回来了，但明显延迟。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:43
+#. type: Bullet: '3. '
+#: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Click the \"Mute\" button under your Jamulus name/slider in the main Jamulus mixer window (**NOT** the \"Mute Myself\" button on the left)."
 msgstr "单击主 Jamulus 混音器窗口中您的 Jamulus 名称/滑块下的“静音”按钮(**不是**左侧的“静音我自己”按钮)。"
 
-#. type: Plain text
+#. type: Bullet: '4. '
 #: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Clap your hands again."
 msgstr "再次拍拍手。"
@@ -163,9 +180,11 @@ msgstr "避免收听直接信号的具体方式取决于您的个人设置 - 您
 msgid "Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
 msgstr "请注意，虽然收听服务器的信号将确保您与其他音乐家同步，但如果您的整体延迟(由 Jamulus 中的“延迟”灯指示)不是绿色或至少大部分时间不是黄色，您也可能会遇到问题时间。请参阅 [软件手册](/wiki/Software-Manual) 以了解如何调整您的设置以帮助解决此问题。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:52
-msgid "### Can't work out your mic settings?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:51
+#, fuzzy, no-wrap
+#| msgid "### Can't work out your mic settings?"
+msgid "Can't work out your mic settings?"
 msgstr "### 无法确定您的麦克风设置？"
 
 #. type: Plain text
@@ -173,9 +192,11 @@ msgstr "### 无法确定您的麦克风设置？"
 msgid "When using a microphone while playing your other instrument, you can use a stereo audio input signal in your settings where one channel is connected to the instrument and the other channel is connected to a microphone signal. On the microphone channel an optional reverberation effect can be applied."
 msgstr "在演奏其他乐器时使用麦克风时，您可以在设置中使用立体声音频输入信号，其中一个通道连接到乐器，另一个通道连接到麦克风信号。在麦克风通道上可以应用可选的混响效果。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:56
-msgid "### Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:55
+#, fuzzy, no-wrap
+#| msgid "### Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
+msgid "Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
 msgstr "### 缓冲区 LED 突然变红、断电、[抖动](https://en.wikipedia.org/wiki/Jitter)、奇怪的声音？"
 
 #. type: Plain text
@@ -183,9 +204,11 @@ msgstr "### 缓冲区 LED 突然变红、断电、[抖动](https://en.wikipedia.
 msgid "Your computer may be under too much load. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
 msgstr "您的计算机可能负载过大。尽量不要在您的机器上与 Jamulus 竞争(例如 Zoom Meetings 或 Facebook 直播)。或者至少在你玩的时候退出它们。防止病毒扫描程序进行扫描或发生软件更新等事情。请注意，Jamulus 中的混响设置也会使用更多的 CPU，您拥有的混响越多。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:60
-msgid "### Ping times and latency start well, then get worse, causing issues"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:59
+#, fuzzy, no-wrap
+#| msgid "### Ping times and latency start well, then get worse, causing issues"
+msgid "Ping times and latency start well, then get worse, causing issues"
 msgstr "### Ping 时间和延迟开始良好，然后变得更糟，导致问题"
 
 #. type: Plain text
@@ -193,9 +216,11 @@ msgstr "### Ping 时间和延迟开始良好，然后变得更糟，导致问题
 msgid "This can indicate something else is competing with Jamulus on your network, so make sure nobody is watching HD Netflix movies or taking part in Zoom video conferences while you are playing. A more permanent solution for technically-minded users may be found by investigating [the issue of buffer bloat](https://www.bufferbloat.net/projects/bloat/wiki/) on their router and whether you can implement Smart Queue Management (SQM). [More details here](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
 msgstr "这可能表明有其他东西在你的网络上与 Jamulus 竞争，所以要确保在你玩的时候没有人在看高清 Netflix 电影或参加 Zoom 视频会议。对于有技术头脑的用户来说，可以通过调查他们的路由器上的[缓冲区膨胀问题](https://www.bufferbloat.net/projects/bloat/wiki/)以及你是否可以实现智能队列管理(SQM)来找到一个更持久的解决方案。[更多细节在这里](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:64
-msgid "### Getting frustrated with software channels, audio routing, sample rates and more?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:63
+#, fuzzy, no-wrap
+#| msgid "### Getting frustrated with software channels, audio routing, sample rates and more?"
+msgid "Getting frustrated with software channels, audio routing, sample rates and more?"
 msgstr "### 对软件通道、音频路由、采样率等感到沮丧？"
 
 #. type: Plain text
@@ -203,9 +228,11 @@ msgstr "### 对软件通道、音频路由、采样率等感到沮丧？"
 msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus Server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
 msgstr "拥有一个 [混音台](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) 来连接您的套件(乐器、麦克风、录音机等)通常更容易、更可靠，然后向您的声音接口发送一个简单的立体声信号(不过，请务必通过您的计算机收听来自 Jamulus 服务器的声音！)。各种可能的硬件、软件和乐器组合意味着将声卡设置为与您的特定配置一起使用可能会很快变得复杂。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:68
-msgid "### Somebody joining your jam and being too loud?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:67
+#, fuzzy, no-wrap
+#| msgid "### Somebody joining your jam and being too loud?"
+msgid "Somebody joining your jam and being too loud?"
 msgstr "### 有人加入你的乐队，声音太大了吗?"
 
 #. type: Plain text
@@ -213,9 +240,11 @@ msgstr "### 有人加入你的乐队，声音太大了吗?"
 msgid "You can set your \"New Client Level\" to a low value (e.g. 10), or set the musicians you are playing with to \"Solo\" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all."
 msgstr "您可以将“新客户端级别”设置为较低的值(例如 10)，或将您正在演奏的音乐家设置为“独奏”状态(在右侧的混音器面板中)。这样，要么新进入者会非常安静，要么你根本听不到他们的声音。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:72
-msgid "### Can't see the Server you want to join?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:71
+#, fuzzy, no-wrap
+#| msgid "### Can't see the Server you want to join?"
+msgid "Can't see the Server you want to join?"
 msgstr "### 看不到你想加入的服务器？"
 
 #. type: Plain text
@@ -223,9 +252,11 @@ msgstr "### 看不到你想加入的服务器？"
 msgid "First check that you have the right genre Server selected in your Connect window. Sometimes network issues mean your Client won't list all the available Servers. If you know the name of the Server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter that address in the \"Server Address\" field in the Connect Setup window to connect to it."
 msgstr "首先检查您是否在“连接”窗口中选择了正确的流派服务器。有时网络问题意味着您的客户端不会列出所有可用的服务器。如果您知道要加入的服务器的名称，您可以[在此处查找其 IP 地址](https://explorer.jamulus.io/)。在“连接设置”窗口的“服务器地址”字段中输入该地址以连接到它。"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:76
-msgid "### Not seeing a list of Servers at all?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:75
+#, fuzzy, no-wrap
+#| msgid "### Not seeing a list of Servers at all?"
+msgid "Not seeing a list of Servers at all?"
 msgstr "### 根本看不到服务器列表？"
 
 #. type: Plain text
@@ -238,9 +269,11 @@ msgstr "在英国(可能还有其他区域/路由器)，维珍媒体有线互联
 msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my Server\""
 msgstr "在某些情况下，可能是您的 ISP 阻止了您使用 Jamulus。请参阅[服务器故障排除页面](Server-Troubleshooting#没有人可以连接到我的服务器---但我可以在本地连接)上关于“没有人可以连接到我的服务器”的注释"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:82
-msgid "### Trouble using Garageband (or other DAW) with Jamulus?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:81
+#, fuzzy, no-wrap
+#| msgid "### Trouble using Garageband (or other DAW) with Jamulus?"
+msgid "Trouble using Garageband (or other DAW) with Jamulus?"
 msgstr "### 在 Jamulus 中使用 Garageband(或其他 DAW)时遇到问题？"
 
 #. type: Plain text
@@ -248,9 +281,11 @@ msgstr "### 在 Jamulus 中使用 Garageband(或其他 DAW)时遇到问题？"
 msgid "See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 msgstr "参见 [本论坛讨论](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:86
-msgid "### Using a Mac and your input is not heard?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:85
+#, fuzzy, no-wrap
+#| msgid "### Using a Mac and your input is not heard?"
+msgid "Using a Mac and your input is not heard?"
 msgstr "### 使用 Mac 并且您的输入没有被听到？"
 
 #. type: Plain text
@@ -259,27 +294,39 @@ msgid "(With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/6
 msgstr "(感谢 [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:90
-msgid "Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:"
-msgstr "也许您没有对“Jamulus 想要访问您的麦克风”挑战回答“是”。要解决这个问题:"
-
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:91
-msgid "Go to `Preferences` > `Security & Privacy` > `Privacy` tab"
-msgstr "转到“首选项”>“安全和隐私”>“隐私”选项卡"
-
-#. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:92
-msgid "Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list"
-msgstr "在左侧找到“麦克风”，然后确保在右侧列表中启用了“Jamulus”"
-
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:94
 #, no-wrap
-msgid "***\n"
-msgstr "***\n"
+msgid ""
+"Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:\n"
+"* Go to `Preferences` > `Security & Privacy` > `Privacy` tab\n"
+"* Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:95
 msgid "For anything else, please search or post on the [Discussion Forums](https://github.com/jamulussoftware/jamulus/discussions)"
 msgstr "如有其他问题请在 [讨论区](https://github.com/jamulussoftware/jamulus/discussions)搜索或发帖"
+
+#, no-wrap
+#~ msgid ""
+#~ "# Troubleshooting\n"
+#~ " {:.no_toc}\n"
+#~ msgstr ""
+#~ "# 故障排除\n"
+#~ " {:.no_toc}\n"
+
+#~ msgid "TOC"
+#~ msgstr "TOC"
+
+#~ msgid "Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:"
+#~ msgstr "也许您没有对“Jamulus 想要访问您的麦克风”挑战回答“是”。要解决这个问题:"
+
+#~ msgid "Go to `Preferences` > `Security & Privacy` > `Privacy` tab"
+#~ msgstr "转到“首选项”>“安全和隐私”>“隐私”选项卡"
+
+#~ msgid "Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list"
+#~ msgstr "在左侧找到“麦克风”，然后确保在右侧列表中启用了“Jamulus”"
+
+#, no-wrap
+#~ msgid "***\n"
+#~ msgstr "***\n"

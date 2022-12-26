@@ -35,8 +35,9 @@ msgstr "wiki"
 msgid "/wiki/Installation-for-Android"
 msgstr "/wiki/Installation-for-Android"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Installation-for-Android.md:1
+#: ../wiki/en/Installation-for-Android.md:11
 #, no-wrap
 msgid "Installation for Android"
 msgstr "安卓系统的安装"
@@ -45,11 +46,6 @@ msgstr "安卓系统的安装"
 #: ../wiki/en/Installation-for-Android.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr "{% include breadcrumb.html root=\"使用 Jamulus\" branch1=\"快速入门\" branch1-url=\"Getting-Started\" %}"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:12
-msgid "# Installation for Android"
-msgstr "# 安卓安装"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Android.md:14
@@ -61,9 +57,11 @@ msgstr "确保您已经阅读了 [入门](Getting-Started) 页面。"
 msgid "{% include infobox_each_os.html %}"
 msgstr "{% include infobox_each_os.html %}"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:18
-msgid "## Things to note about Android"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:17
+#, fuzzy, no-wrap
+#| msgid "## Things to note about Android"
+msgid "Things to note about Android"
 msgstr "## 关于安卓的注意事项"
 
 #. type: Plain text
@@ -71,9 +69,11 @@ msgstr "## 关于安卓的注意事项"
 msgid "Although you **can** install Jamulus on Android devices (and hear sound), we strongly recommend **not** doing so. Sound quality - especially over WiFi - is usually bad and latency is high. If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus. Android support is just a proof of concept."
 msgstr "虽然你***可以在安卓设备上安装Jamulus(并听到声音)，但我们强烈建议***不要这样做。声音质量--尤其是通过WiFi--通常很差，而且延迟很高。如果你没有电脑，我们建议你买一个[Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" }，这是一个便宜的小型设备，在 Jamulus 上表现非常好。安卓支持只是一个概念验证。"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:22
-msgid "## Install the Android PoC"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:21
+#, fuzzy, no-wrap
+#| msgid "## Install the Android PoC"
+msgid "Install the Android PoC"
 msgstr "## 安装安卓 PoC"
 
 #. type: Plain text
@@ -81,24 +81,26 @@ msgstr "## 安装安卓 PoC"
 msgid "If you do want to try Jamulus on Android:"
 msgstr "如果你确实想在安卓上尝试 Jamulus:"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:26
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Android.md:28
 msgid "Allow the installation of apps from unknown sources (look in Settings>Security. Note: The exact way to do this depends on your device and OS-version)"
 msgstr "允许安装未知来源的应用程序(在设置>安全中查看。注意:具体方法取决于你的设备和操作系统版本)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:27
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Android.md:28
 msgid "[Download and install Jamulus]({{ site.download_root_link }}{{ site.download_file_names.android }}){: .button}"
 msgstr "[下载并安装 Jamulus]({{ site.download_root_link }}{{ site.download_file_names.android }}){: .button}"
 
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Android.md:28
 msgid "You should now be able to run Jamulus on your Android device"
 msgstr "您现在应该可以在您的安卓设备上运行 Jamulus"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:30
-msgid "## Feedback and development"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:29
+#, fuzzy, no-wrap
+#| msgid "## Feedback and development"
+msgid "Feedback and development"
 msgstr "## 反馈和开发"
 
 #. type: Plain text
@@ -106,15 +108,11 @@ msgstr "## 反馈和开发"
 msgid "We are very happy to get feedback from Android users and developers. Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)."
 msgstr "我们很高兴收到来自 Android 用户和开发者的反馈。只需前往 [Jamulus GitHub 存储库](https://github.com/jamulussoftware/jamulus/)。"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:34
-#, no-wrap
-msgid "***\n"
-msgstr "***\n"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Android.md:36
-msgid "## All installed?"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Android.md:35
+#, fuzzy, no-wrap
+#| msgid "## All installed?"
+msgid "All installed?"
 msgstr "##全部安装完毕？"
 
 #. type: Plain text
@@ -126,3 +124,10 @@ msgstr "Jamulus 已经安装，现在可以使用了。您现在可以查看"
 #: ../wiki/en/Installation-for-Android.md:39
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[入门页面](Getting-Started){: .button}"
+
+#~ msgid "# Installation for Android"
+#~ msgstr "# 安卓安装"
+
+#, no-wrap
+#~ msgid "***\n"
+#~ msgstr "***\n"

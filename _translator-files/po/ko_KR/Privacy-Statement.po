@@ -40,9 +40,11 @@ msgstr "/wiki/Privacy-Statement"
 msgid "Jamulus – Privacy Statement"
 msgstr "Jamulus – 개인정보 보호정책"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:9
-msgid "# Privacy Statement"
+#. type: Title #
+#: ../wiki/en/Privacy-Statement.md:8
+#, fuzzy, no-wrap
+#| msgid "# Privacy Statement"
+msgid "Privacy Statement"
 msgstr "# 개인정보 보호정책"
 
 #. type: Plain text
@@ -50,29 +52,33 @@ msgstr "# 개인정보 보호정책"
 msgid "Please note that the English version of this privacy statement is the original and, as such, the binding version. To access the English version, go to the top/top right of this page and click on the \"en\" link.  The following only applies to the version you can download from this website, [jamulus.io](https://jamulus.io)."
 msgstr "이 개인 정보 보호 정책의 영어 버전은 원본이며 구속력이 있는 버전입니다. 영어 버전에 액세스하려면 이 페이지의 상단/오른쪽 상단으로 이동하여 \"en\" 링크를 클릭하십시오. 다음은 이 웹사이트 [jamulus.io](https://jamulus.io)에서 다운로드할 수 있는 버전에만 적용됩니다."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:14
-msgid "## Definition of Terms"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:13
+#, fuzzy, no-wrap
+#| msgid "## Definition of Terms"
+msgid "Definition of Terms"
 msgstr "## 용어의 정의"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:16
+#. type: Bullet: '- '
+#: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Server**\" The Jamulus Server software, as opposed to the host machine/OS it is running on."
 msgstr "\"**서버**\" 실행 중인 호스트 시스템/OS와 반대되는 Jamulus 서버 소프트웨어입니다."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:17
+#. type: Bullet: '- '
+#: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Client**\" The Jamulus software used to connect to a Server"
 msgstr "\"**클라이언트**\" 서버에 연결하는 데 사용되는 Jamulus 소프트웨어"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Directory**\" A Jamulus Server configured to supply a list of Servers to Clients"
 msgstr "\"**디렉터리**\" 클라이언트에 서버 목록을 제공하도록 구성된 Jamulus 서버"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:20
-msgid "## Web site"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:19
+#, fuzzy, no-wrap
+#| msgid "## Web site"
+msgid "Web site"
 msgstr "## 웹 사이트"
 
 #. type: Plain text
@@ -80,14 +86,18 @@ msgstr "## 웹 사이트"
 msgid "The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. We do not collect your personal data or set tracking cookies. When you connect to the jamulus.io site, your IP is sent to [GitHub Pages](https://pages.github.com/)."
 msgstr "[jamulus.io](https://jamulus.io)의 웹사이트는 GitHub 페이지를 사용하여 제공됩니다. 당사는 귀하의 개인 데이터를 수집하거나 추적 쿠키를 설정하지 않습니다. Jamulus.io 사이트에 접속하면 [GitHub 페이지](https://pages.github.com/)로 IP가 전송됩니다."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:24
-msgid "## Jamulus Software"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:23
+#, fuzzy, no-wrap
+#| msgid "## Jamulus Software"
+msgid "Jamulus Software"
 msgstr "## Jamulus 소프트웨어"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:26
-msgid "### Use of Profile Information"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:25
+#, fuzzy, no-wrap
+#| msgid "### Use of Profile Information"
+msgid "Use of Profile Information"
 msgstr "### 프로필 정보의 사용"
 
 #. type: Plain text
@@ -100,9 +110,11 @@ msgstr "서버에 연결하면 내 프로필(설정)에 입력한 내용이 연�
 msgid "When you connect to a Server, your profile may also be available to third parties from the Directory to which that Server is registered. This can be for informational purposes about the status of the public Jamulus network (for example, [here](https://explorer.jamulus.io/)), but may not be limited to that. Profile information is not otherwise logged or stored by the Jamulus Server you are connected to, or by the Jamulus Directory, but may be stored or processed by third parties."
 msgstr "서버에 연결하면 해당 서버가 등록된 디렉터리의 제3자가 귀하의 프로필을 사용할 수도 있습니다. 이는 공개 Jamulus 네트워크의 상태에 대한 정보 제공의 목적일 수 있지만(예: [여기](https://explorer.jamulus.io/)), 이에 국한되지 않을 수 있습니다. 프로필 정보는 귀하가 연결된 Jamulus 서버 또는 Jamulus 디렉터리에 의해 달리 기록되거나 저장되지 않지만 제3자가 저장하거나 처리할 수 있습니다."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:32
-msgid "### Use of IP Addresses"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:31
+#, fuzzy, no-wrap
+#| msgid "### Use of IP Addresses"
+msgid "Use of IP Addresses"
 msgstr "### IP 주소의 사용"
 
 #. type: Plain text
@@ -115,9 +127,11 @@ msgstr "서버에 연결하면 연결되어 있는 동안 서버 운영자가 �
 msgid "The IP addresses of all Servers registered with the Directory can also be seen by third parties for informational or other purposes (for example [here](https://explorer.jamulus.io/)). Your public IP address is otherwise not logged or stored by Jamulus, but may be stored or processed by third parties."
 msgstr "디렉터리에 등록된 모든 서버의 IP 주소는 정보 제공 또는 기타 목적으로 제3자가 볼 수도 있습니다(예: [여기](https://explorer.jamulus.io/)). 귀하의 공개 IP 주소는 그렇지 않으면 Jamulus에 의해 기록되거나 저장되지 않지만 제3자가 저장하거나 처리할 수 있습니다."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:38
-msgid "### Audio Recordings"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:37
+#, fuzzy, no-wrap
+#| msgid "### Audio Recordings"
+msgid "Audio Recordings"
 msgstr "### 오디오 녹음"
 
 #. type: Plain text
@@ -125,9 +139,11 @@ msgstr "### 오디오 녹음"
 msgid "You will see a notice if you are connected to a Jamulus Server when Server recording is turned on. Recordings of each player are stored by the Server separately as .WAV files and only the Server operator has access to them unless they choose to make them available to third parties."
 msgstr "서버 녹화가 켜져 있을 때 Jamulus 서버에 연결되어 있으면 알림이 표시됩니다. 각 플레이어의 녹음은 서버에 의해 .WAV 파일로 별도로 저장되며 제3자에게 제공하도록 선택하지 않는 한 서버 운영자만 액세스할 수 있습니다."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:42
-msgid "### Text Chat"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:41
+#, fuzzy, no-wrap
+#| msgid "### Text Chat"
+msgid "Text Chat"
 msgstr "### 문자 채팅"
 
 #. type: Plain text
@@ -135,9 +151,11 @@ msgstr "### 문자 채팅"
 msgid "When you type a message in the Chat Window, other connected players can see that, but chats are not stored by the Server and neither the Server operator nor any third parties have access to them."
 msgstr "채팅 창에 메시지를 입력하면 연결된 다른 플레이어가 볼 수 있지만 채팅은 서버에 저장되지 않으며 서버 운영자나 제3자도 채팅에 액세스할 수 없습니다."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:46
-msgid "### Data Transmission"
+#. type: Title ###
+#: ../wiki/en/Privacy-Statement.md:45
+#, fuzzy, no-wrap
+#| msgid "### Data Transmission"
+msgid "Data Transmission"
 msgstr "### 데이터 전송"
 
 #. type: Plain text

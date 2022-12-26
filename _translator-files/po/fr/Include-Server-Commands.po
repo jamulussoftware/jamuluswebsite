@@ -15,97 +15,97 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.15-dev\n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:2
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-d` or `--discononquit` Disconnect all Clients on quit. Normally, when a Server is stopped or restarted, any Clients that have not used their \"Disconnect\" buttons will re-establish connection when the Server comes back up again. Using this option forces Clients to manually re-establish their connections to the Server."
 msgstr "`-d` ou `--discononquit` Déconnecte tous les clients lorsque le serveur est arrêté. Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton \"Déconnecter\" rétabliront la connexion lorsque le serveur sera de nouveau opérationnel. L'utilisation de cette option oblige les clients à rétablir manuellement leur connexion au serveur."
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:3
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-e` or `--directoryserver` Register the Server on a Directory (e.g. to set its genre (see also `-o`)). See [Server Types](Running-a-Server#server-types) for further information."
 msgstr "`-e` ou `--directoryserver` Enregistrer le serveur sur un annuaire (par exemple pour définir son genre (voir aussi `-o`)). Voir [types de serveurs](Running-a-Server#types-de-serveur) pour plus d'informations."
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:4
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`--directoryfile` Remember registered Servers even if the Directory is restarted. Directory Servers only. See [this guide](Directories) for further information."
 msgstr "`--directoryfile` Se souvenir des serveurs enregistrés même si l'annuaire est redémarré. Annuaires seulement. Voir [ce guide](Directories) pour plus d'informations."
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:5
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-f` or `--listfilter` Whitelist Servers registering on the Server list, format `ip address 1[;ip address 2]` Directories only."
 msgstr "`-f` ou `--listfilter` Liste blanche des serveurs s'enregistrant sur la liste des serveurs, format `ip address 1[;ip address 2]` Annuaires uniquement."
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:6
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-F` or `--fastupdate` Reduces latency if Clients connect with \"Enable Small Network Buffers\" option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
 msgstr "`-F` ou `--fastupdate` Réduit la latence si les clients se connectent avec l'option \"Activer les petits tampons de réseau\". Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés."
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:7
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-l` or `--log` Enable logging, set path and file name"
 msgstr "`-l` ou `--log` Activer l'enregistrement, définir le chemin et le nom du fichier"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:8
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-L` or `--licence` Show an agreement window before users can connect"
 msgstr "`-L` ou `--licence` Afficher une fenêtre d'accord avant que les utilisateurs puissent se connecter"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:9
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-m` or `--htmlstatus` Enable HTML status file, set path and file name"
 msgstr "`-m` ou `--htmlstatus` Active le fichier d'état HTML, définit le chemin et le nom du fichier"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:10
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-o` or `--serverinfo` Location details in the format: `[name];[city];[country as two-letter ISO country code or Qt5 Locale]` (see [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) or [Qt5 Locale values](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) Registered Servers only"
 msgstr "`-o` ou `--serverinfo` Détails de l'emplacement dans le format : `[nom] ;[ville] ;[pays sous forme de code de pays ISO à deux lettres ou de Qt5 Locale]` (voir [codes de pays ISO à deux lettres](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) (en anglais) ou [valeurs Qt5 Locale](https://doc.qt.io/qt-5/qlocale.html#Country-enum)) (en anglais) Serveurs enregistrés uniquement"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:11
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-P` or `--delaypan` Start with delay panning enabled See [notes](Running-a-Server#delay-panning)"
 msgstr "`-P` ou `--delaypan` Démarrer avec le panoramique du délai activé Voir [notes](Running-a-Server#retardement-du-panoramique))"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:12
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-R` or `--recording` Set server recording directory; Server will record when a session is active by default. See [Options](Running-a-Server#options)."
 msgstr "`-R` ou `--recording` Définir le répertoire d'enregistrement du serveur ; par défaut, le serveur enregistre lorsqu'une session est active. Voir [Options](Running-a-Server#options)."
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:13
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`--norecord` Set server not to record by default (when recording is configured e.g via `-R`)"
 msgstr "`--norecord` Configurer le serveur pour qu'il n'enregistre pas par défaut (lorsque l'enregistrement est configuré par exemple via `-R`)"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:14
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-s` or `--server` Start in Server mode"
 msgstr "`-s` ou `--server` Démarrer en mode serveur"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:15
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`--serverbindip` Specify the IP address to bind to"
 msgstr "`--serverbindip` Spécifiez l'adresse IP à laquelle se lier"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:16
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-T` or `--multithreading` Use multithreading to make better use of multi-core CPUs to support more Clients"
 msgstr "`-T` ou `--multithreading` Utilisez le multithreading pour mieux utiliser les processeurs multi-cœurs afin de prendre en charge plus de clients"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:17
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-u` or `--numchannels` Maximum number of channels (Clients)"
 msgstr "`-u` ou `--numchannels` Nombre maximum de canaux (clients)"
 
-#. type: Plain text
-#: ../wiki/en/Include-Server-Commands.md:18
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-w` or `--welcomemessage` Welcome message on connect. Can be given as a string or filename, and can contain HTML."
 msgstr "`-w` ou `--welcomemessage` Message de bienvenue à la connexion. Peut être donné comme une chaîne de caractères ou un nom de fichier, et peut contenir du HTML."
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Include-Server-Commands.md:19
 msgid "`-z` or `--startminimized` Start minimized"
 msgstr "`-z` ou `--startminimized` Démarrage minimisé"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Include-Server-Commands.md:19
 msgid "`--serverpublicip` The public IP address of the Server if connecting to a Directory behind the same NAT. See [Notes on Directories](Directories#points-to-note-about-directories)"
 msgstr "`--serverpublicip` L'adresse IP publique du serveur s'il est connecté à un annuaire derrière le même NAT. Voir [Notes sur les Annuaire](Directories#points-a-noter-concernant-des-annuaires)"

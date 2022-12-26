@@ -45,9 +45,11 @@ msgstr "Directorios"
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 msgstr "{% include breadcrumb.html root=\"Más\" branch1=\"Administrar un Servidor\" branch1-url=\"Running-a-Server\" %}"
 
-#. type: Plain text
-#: ../wiki/en/Directories.md:12
-msgid "# Running a Directory"
+#. type: Title #
+#: ../wiki/en/Directories.md:11
+#, fuzzy, no-wrap
+#| msgid "# Running a Directory"
+msgid "Running a Directory"
 msgstr "# Ejecutar un Directorio"
 
 #. type: Plain text
@@ -57,7 +59,9 @@ msgstr "Esta es una configuración especializada del Servidor de Jamulus, descri
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:16
-msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them."
+#, fuzzy, no-wrap
+#| msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them."
+msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them.\n"
 msgstr "Para ver Servidores listados en un Directorio Personalizado, los usuarios deben introducir en su Cliente la dirección de ese Directorio en Configuración > Configuración Avanzada > campo de Directorios Personalizados. Se pueden añadir múltiples direcciones si se requiere. Los Directorios Personalizados aparecerán en el desplegable del Directorio en su ventana de Conectar. Por lo demás, los Directorios Personalizados funcionan para los Clientes del mismo modo que los Directorios Públicos, mostrando una lista de Servidores registrados en ellos."
 
 #. type: Plain text
@@ -70,32 +74,34 @@ msgstr "Para ejecutar un Servidor como Directorio, se debe iniciar con la opció
 msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
 msgstr "Al ejecutar un Servidor con interfaz gráfica, establece la dirección del Directorio Personalizado en la pestaña de Opciones como \"localhost\", y luego selecciona \"Personalizado\" en el menú desplegable del Directorio."
 
-#. type: Plain text
-#: ../wiki/en/Directories.md:23
-msgid "### Points to note about Directories"
+#. type: Title ###
+#: ../wiki/en/Directories.md:22
+#, fuzzy, no-wrap
+#| msgid "### Points to note about Directories"
+msgid "Points to note about Directories"
 msgstr "### Notas sobre Directorios"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:25
 msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
 msgstr "Si quieres controlar qué Servidores pueden registrarse en tu Directorio, puedes habilitar una lista blanca con la opción de la línea de comandos `--listfilter` con el formato `dirección ip 1[;dirección ip 2]`."
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:27
 msgid "When running a Server behind a NAT firewall on a private network and registering with a Directory on the same network, run the Server using the `--serverpublicip` option to specify the public IP address.  This is necessary to allow Clients on the public Internet to connect to the correct address.  Note that for the Server(s) using this option, you will still need proper port forwarding in your router/firewall."
 msgstr "Al ejecutar un Servidor tras un cortafuegos NAT o en una red privada y al registrarlo con un Directorio en la misma red, ejecuta el Servidor utilizando la opción `--serverpublicip` para especificar la dirección IP pública. Esto es necesario para permitir a los Clientes en la internet pública conectarse a la dirección correcta. Nótese que para el/los Servidor/es utilizando esta opción, seguirás necesitando abrir puertos en tu router/cortafuegos."
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:29
 msgid "When running a Client behind a NAT firewall on a private network with a Directory on the same network, the Directory itself needs to be run using the `--serverpublicip` option to specify the public IP address, so that any Servers on the public Internet registering with the Directory that require the \"hole punch\" can be accessed by the Client(s). (This is because otherwise the Directory would provide the local network address of the Client to the Server and the \"hole punch\" would fail.)"
 msgstr "Al ejecutar un Cliente tras un cortafuegos NAT en una red privada con un Directorio en la misma red, el mismo Directorio debe ejecutarse con la opción `--serverpublicip` para especificar la dirección IP pública, para que cualquier Servidor en la internet pública registrándose en el Directorio que requiera \"perforación\" pueda ser accesible para el/los Cliente/s. (Esto es porque de otro modo el Directorio proporcionaría la dirección de red local del Cliente al Servidor y la \"perforación\" fracasaría.)"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:31
 msgid "If you need to restart your Directory for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
 msgstr "Si necesitas reiniciar tu Directorio por cualquier razón (por ejemplo al reiniciar el host), los Servidores conectados a él se desconectarán hasta que se vuelvan a registrar. Esto no significa que los Clientes conectados a esos Servidores serán desconectados, pero sí significa que los Clientes nuevos no podrán ver los Servidores listados por tu Directorio hasta que esos Servidores se vuelvan a conectar. Para que la lista de Servidores registrados persista entre reinicios, utiliza la opción `--directoryfile` para especificar la ubicación y el nombre de un archivo que el Directorio puede leer y al que puede escribir."
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:32
 msgid "Up to 150 Servers can then register with a Directory."
 msgstr "Se pueden registrar hasta 150 Servidores en un Directorio."
