@@ -37,7 +37,7 @@ After you downloaded the correct file:
 
 ### Other distributions
 
-For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts).
+For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts).
 
 ## Set up your hardware
 

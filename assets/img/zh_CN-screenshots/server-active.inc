@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/jamulussoftware/jamulus/master/src/res/servertrayiconactive.png
+https://raw.githubusercontent.com/jamulussoftware/jamulus/main/src/res/servertrayiconactive.png

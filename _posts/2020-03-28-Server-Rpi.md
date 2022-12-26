@@ -21,7 +21,7 @@ _Jamulus has been tested on a Raspberry Pi 4 2Gb by Jamulus user [SIVA Frédéri
 
 1. Edit [config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt/) to enable boot without HDMI by adding `hdmi_force_hotplug=0`
 
-1. [Compile Jamulus for Linux](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md)
+1. [Compile Jamulus for Linux](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md)
 
 This will build Jamulus and put it in `/usr/local/bin/Jamulus` (note the capital `J`).
 

@@ -97,7 +97,7 @@ When a new Issue or Pull Request comes in, do the following:
 1. Add it to the Tracking Project board.
 1. Check for duplicates.
 1. Decide whether to accept this Issue/PR:
-   1. Reject if it is a feature which goes against Jamulus' core principles. See [CONTRIBUTING.md on the main Jamulus repo](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md#jamulus-projectsource-code-general-principles).
+   1. Reject if it is a feature which goes against Jamulus' core principles. See [CONTRIBUTING.md on the main Jamulus repo](https://github.com/jamulussoftware/jamulus/blob/main/CONTRIBUTING.md#jamulus-projectsource-code-general-principles).
    3. Accept if it is about a plausible or reproducible bug.
    4. Accept if it is a well-specified feature request or implementation.
    5. Accept PRs if there is a related, accepted Issue.
