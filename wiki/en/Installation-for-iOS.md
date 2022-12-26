@@ -33,7 +33,7 @@ If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.r
 4. Open Jamulus from your home-screen
 5. After 7 days you will need to re-sign Jamulus if you are using a free developer account. Re-do everything from Step 4.
 
-If you own a Mac and have Xcode installed, compiling Jamulus from source might be another, more native option. Please have a look at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md#ios).
+If you own a Mac and have Xcode installed, compiling Jamulus from source might be another, more native option. Please have a look at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md#ios).
 
 
 ## Feedback and development
@@ -41,7 +41,7 @@ If you own a Mac and have Xcode installed, compiling Jamulus from source might b
 iOS support isn't mature yet and far from ready to be published on the AppStore. Feel free to help out:
 Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/).
 
-Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/master/APPLEAPPSTORE.LICENCE.WAIVER) concerning Jamulus being published via the Apple AppStore.
+Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/main/APPLEAPPSTORE.LICENCE.WAIVER) concerning Jamulus being published via the Apple AppStore.
 
 ***
 
