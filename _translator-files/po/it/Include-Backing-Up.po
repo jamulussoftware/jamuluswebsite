@@ -17,8 +17,10 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:2
-msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->"
-msgstr "<!-- NOTA: Questo deve essere applicato sia al Client che al Server, e per tutti i sistemi operativi -->"
+
+#, no-wrap
+msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:4
@@ -45,17 +47,17 @@ msgstr "`find ~ -name Jamulus.ini -ls`"
 msgid "If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.  **Points to note**"
 msgstr "Se hai utilizzato il parametro '--inifile' per salvare un file ini in una posizione diversa, non dimenticare di eseguire anche il backup di questi file.  **Punti da notare**"
 
-#. type: Plain text
-#: ../wiki/en/Include-Backing-Up.md:15
+#. type: Bullet: '* '
+#: ../wiki/en/Include-Backing-Up.md:16
 msgid "Do not back up or restore settings files when Jamulus is running."
 msgstr "Non eseguire il backup o il ripristino dei file delle impostazioni quando Jamulus è in esecuzione."
 
-#. type: Plain text
+#. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
 msgid "It is not recommended to manually edit settings files (they're not designed for that)."
 msgstr "Non è consigliato modificare manualmente i file delle impostazioni (non sono progettati per questo)."
 
-#. type: Plain text
+#. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
 msgid "You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus)."
 msgstr "Puoi ripristinare tutte le impostazioni ai valori predefiniti semplicemente eliminando il file delle impostazioni (dopo aver chiuso Jamulus)."

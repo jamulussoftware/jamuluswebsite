@@ -39,37 +39,42 @@ msgstr ""
 msgid "FAQ"
 msgstr "O-S-S"
 
+#. type: Title #
+#: ../wiki/en/FAQ.md:8
+#, no-wrap
+msgid "Jamulus FAQ"
+msgstr ""
+
 #. type: Plain text
 #: ../wiki/en/FAQ.md:10
 #, no-wrap
-msgid ""
-"# Jamulus FAQ\n"
-" {:.no_toc}\n"
+msgid " {:.no_toc}\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:12
-msgid "<details markdown=\"1\">"
+#, no-wrap
+msgid "<details markdown=\"1\">\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:14
-msgid "<summary>Table of contents</summary>"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/FAQ.md:16
-msgid "TOC"
+#, no-wrap
+msgid "<summary>Table of contents</summary>\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:17
-msgid "{:toc}"
+#, no-wrap
+msgid ""
+"* TOC\n"
+" {:toc}\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:19
-msgid "</details>"
+#, no-wrap
+msgid "</details>\n"
 msgstr ""
 
 #. type: Plain text
@@ -78,9 +83,10 @@ msgstr ""
 msgid "**For common problems and their solutions when using Jamulus, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.**\n"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:24
-msgid "### Is there a metronome, synchronization, or some other way of keeping in time?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:23
+#, no-wrap
+msgid "Is there a metronome, synchronization, or some other way of keeping in time?"
 msgstr ""
 
 #. type: Plain text
@@ -93,9 +99,10 @@ msgstr ""
 msgid "Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:30
-msgid "### How do I know if I can join a Server? Are there rules?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:29
+#, no-wrap
+msgid "How do I know if I can join a Server? Are there rules?"
 msgstr ""
 
 #. type: Plain text
@@ -108,9 +115,10 @@ msgstr ""
 msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:36
-msgid "### Why shouldn’t I use wireless equipment?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:35
+#, no-wrap
+msgid "Why shouldn’t I use wireless equipment?"
 msgstr ""
 
 #. type: Plain text
@@ -123,9 +131,10 @@ msgstr ""
 msgid "So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50 ms or more."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:42
-msgid "### Why should I not listen to my own signal?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:41
+#, no-wrap
+msgid "Why should I not listen to my own signal?"
 msgstr ""
 
 #. type: Plain text
@@ -138,9 +147,10 @@ msgstr ""
 msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:48
-msgid "### Do I need a fast Internet connection?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:47
+#, no-wrap
+msgid "Do I need a fast Internet connection?"
 msgstr ""
 
 #. type: Plain text
@@ -148,9 +158,10 @@ msgstr ""
 msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:52
-msgid "### Do I need to run a Server?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:51
+#, no-wrap
+msgid "Do I need to run a Server?"
 msgstr ""
 
 #. type: Plain text
@@ -158,14 +169,16 @@ msgstr ""
 msgid "No. If you just intend to connect to other people’s Servers, then all you need is a Client. [Read this if you think you need to run your own Server](/wiki/Running-a-Server)."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:56
-msgid "### How does Jamulus work (in general)?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:55
+#, no-wrap
+msgid "How does Jamulus work (in general)?"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:58
-msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">"
+#, no-wrap
+msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">\n"
 msgstr ""
 
 #. type: Plain text
@@ -173,9 +186,10 @@ msgstr ""
 msgid "Jamulus works on the Client-server principle. Everybody’s audio is sent to a Server, mixed and processed there. Afterwards, the audio is sent back to each Client. If a Server is registered in a Jamulus Directory, the Server's information will be provided to all Clients using that Directory."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:63
-msgid "### Why doesn't Jamulus provide video support?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:62
+#, no-wrap
+msgid "Why doesn't Jamulus provide video support?"
 msgstr ""
 
 #. type: Plain text
@@ -183,14 +197,16 @@ msgstr ""
 msgid "Adding video support adds a lot of complexity. You can use other software like Jitsi or Zoom if you want to see others when playing (or have an \"audience\"), but the video will be significantly behind the Jamulus audio."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:68
-msgid "## Server FAQ"
+#. type: Title ##
+#: ../wiki/en/FAQ.md:67
+#, no-wrap
+msgid "Server FAQ"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/FAQ.md:70
-msgid "### Why do Registered Servers not need port forwarding?"
+#. type: Title ###
+#: ../wiki/en/FAQ.md:69
+#, no-wrap
+msgid "Why do Registered Servers not need port forwarding?"
 msgstr ""
 
 #. type: Plain text

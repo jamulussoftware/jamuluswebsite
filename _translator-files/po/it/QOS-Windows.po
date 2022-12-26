@@ -46,10 +46,11 @@ msgstr "Qualità del servizio (QoS)"
 msgid "{% include breadcrumb.html root=\"More\" %}"
 msgstr "{% include breadcrumb.html root=\"Di più\" %}"
 
-#. type: Plain text
-#: ../wiki/en/QOS-Windows.md:11
-msgid "## Use of QoS on Windows"
-msgstr "## Uso del QoS su Windows"
+#. type: Title ##
+#: ../wiki/en/QOS-Windows.md:10
+#, no-wrap
+msgid "Use of QoS on Windows"
+msgstr "Uso del QoS su Windows"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:13
@@ -66,10 +67,33 @@ msgstr "Se si desidera esplorare l'effetto delle impostazioni non predefinite, v
 msgid "Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated."
 msgstr "Le impostazioni QoS di Jamulus (comprese quelle predefinite) sono impostate su 0 su sistemi Windows e macOS recenti a causa del sistema operativo. Per utilizzare il QoS su Windows, seguire queste istruzioni. Potrebbe essere necessario ripetere questa procedura a ogni aggiornamento di Jamulus."
 
+#~msgid "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br> In new window, (click) on the menu icon to display the Actions third panel<br> Looking at the first panel of the Local Group Policy Editor<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br> Looking at the third panel (Actions) of the Local Group Policy Editor<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;More Actions<br> &nbsp;&nbsp;&nbsp;Create new Policy (click)<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>"
+#~msgstr "Nella casella di ricerca accanto al menu Start, digita: Editor criteri di gruppo locali (enter)<br> Nella nuova finestra, fai clic sull'icona del menu per visualizzare il terzo pannello Azioni<br> Osservando il primo pannello dell'Editor criteri di gruppo locali<br> &nbsp;Criteri computer locali<br> &nbsp;&nbsp;&nbsp;Configurazione computer<br> &nbsp;&nbsp;&nbsp;Impostazioni Windows<br> QoS basato su criteri (fai clic)<br> Guardando il terzo pannello (Azioni) dell'Editor criteri di gruppo locali<br> &nbsp;QoS basato su criteri<br> &nbsp;QoS basato su criteri<br> &nbsp;&nbsp;Altre azioni<br> &nbsp;&nbsp;&nbsp;Crea nuovo criterio (fai clic)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome criterio: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specificare il valore DSCP: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Questa politica QoS si applica solo alle applicazioni con nome Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Fine<br>"
+
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:37
-msgid "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br> In new window, (click) on the menu icon to display the Actions third panel<br> Looking at the first panel of the Local Group Policy Editor<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br> Looking at the third panel (Actions) of the Local Group Policy Editor<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;More Actions<br> &nbsp;&nbsp;&nbsp;Create new Policy (click)<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>"
-msgstr "Nella casella di ricerca accanto al menu Start, digita: Editor criteri di gruppo locali (enter)<br> Nella nuova finestra, fai clic sull'icona del menu per visualizzare il terzo pannello Azioni<br> Osservando il primo pannello dell'Editor criteri di gruppo locali<br> &nbsp;Criteri computer locali<br> &nbsp;&nbsp;&nbsp;Configurazione computer<br> &nbsp;&nbsp;&nbsp;Impostazioni Windows<br> QoS basato su criteri (fai clic)<br> Guardando il terzo pannello (Azioni) dell'Editor criteri di gruppo locali<br> &nbsp;QoS basato su criteri<br> &nbsp;QoS basato su criteri<br> &nbsp;&nbsp;Altre azioni<br> &nbsp;&nbsp;&nbsp;Crea nuovo criterio (fai clic)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome criterio: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specificare il valore DSCP: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Questa politica QoS si applica solo alle applicazioni con nome Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Fine<br>"
+#, no-wrap
+msgid ""
+"In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br>\n"
+"In new window, (click) on the menu icon to display the Actions third panel<br>\n"
+"Looking at the first panel of the Local Group Policy Editor<br>\n"
+"&nbsp;Local Computer Policy<br>\n"
+"&nbsp;&nbsp;Computer Configuration<br>\n"
+"&nbsp;&nbsp;&nbsp;Windows Settings<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br>\n"
+"Looking at the third panel (Actions) of the Local Group Policy Editor<br>\n"
+"&nbsp;Policy-based QoS<br>\n"
+"&nbsp;&nbsp;More Actions<br>\n"
+"&nbsp;&nbsp;&nbsp;Create new Policy (click)<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Finish<br>\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:39

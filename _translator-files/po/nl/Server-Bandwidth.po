@@ -45,50 +45,26 @@ msgstr "Bandbreedtegebruik"
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 msgstr "{% include breadcrumb.html root=\"Meer\" branch1=\"Serverbeheer\" branch1-url=\"Running-a-Server\" %}"
 
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:11
-msgid "## Audio bandwidth"
+#. type: Title ##
+#: ../wiki/en/Server-Bandwidth.md:10
+#, fuzzy, no-wrap
+#| msgid "## Audio bandwidth"
+msgid "Audio bandwidth"
 msgstr "## Audio bandbreedte"
 
 #. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:13
-msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
+#: ../wiki/en/Server-Bandwidth.md:16
+#, fuzzy
+#| msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
+msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
 msgstr "De audio-instellingen hebben invloed op de benodigde netwerkbandbreedte. De onderstaande tabel geeft een overzicht van de netwerkvereisten met betrekking tot de configuratie van:"
 
 #. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:14
-msgid "Channels : stereo/mono"
-msgstr "Audiokanalen : stereo/mono"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:15
-msgid "Quality : high/medium/low"
-msgstr "Audiokwaliteit : hoog/normaal/laag"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:16
-msgid "Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr "Audiobuffervertraging : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:18
-msgid "With the following units"
-msgstr "Met de volgende eenheden"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:19
-msgid "ms : milliseconds"
-msgstr "ms : milliseconde"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:20
-msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
-msgstr "Kbit/s : Kilo-bits per seconde (Ter herinnering : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
-
-#. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
-msgid "Mbit/s : Mega-bits per second"
-msgstr "Mbit/s : Mega-bits per seconde"
+#, fuzzy
+#| msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
+msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
+msgstr "Kbit/s : Kilo-bits per seconde (Ter herinnering : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
@@ -112,9 +88,11 @@ msgstr ""
 "| Mono      | Normaal  | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
 "| Mono      | Laag     | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:32
-msgid "## Network bandwidth"
+#. type: Title ##
+#: ../wiki/en/Server-Bandwidth.md:31
+#, fuzzy, no-wrap
+#| msgid "## Network bandwidth"
+msgid "Network bandwidth"
 msgstr "## Netwerk bandbreedte"
 
 #. type: Plain text
@@ -137,3 +115,21 @@ msgstr ""
 #: ../wiki/en/Server-Bandwidth.md:40
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
 msgstr "Weet dat de gemiddelde ADSL2-overdrachtssnelheid 10 Mbit/s is voor downstream en 1 Mbit/s voor upstream. De werkelijke prestaties zijn afhankelijk van de afstand tot de provider, die [theoretisch kan variëren van 24 Mbit/s bij 0,3 km tot 1,5 Mbit/s bij 5,2 km](https://nl.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) voor de downloadsnelheid."
+
+#~ msgid "Channels : stereo/mono"
+#~ msgstr "Audiokanalen : stereo/mono"
+
+#~ msgid "Quality : high/medium/low"
+#~ msgstr "Audiokwaliteit : hoog/normaal/laag"
+
+#~ msgid "Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+#~ msgstr "Audiobuffervertraging : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+
+#~ msgid "With the following units"
+#~ msgstr "Met de volgende eenheden"
+
+#~ msgid "ms : milliseconds"
+#~ msgstr "ms : milliseconde"
+
+#~ msgid "Mbit/s : Mega-bits per second"
+#~ msgstr "Mbit/s : Mega-bits per seconde"

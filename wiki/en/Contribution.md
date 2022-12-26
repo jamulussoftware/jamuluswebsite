@@ -16,4 +16,4 @@ We use [Weblate](https://hosted.weblate.org/projects/jamulus/#languages) to tran
 
 ## Want to contribute code?
 
-See our [guidelines for getting involved in development](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md). 
+See our [guidelines for getting involved in development](https://github.com/jamulussoftware/jamulus/blob/main/CONTRIBUTING.md). 

@@ -44,9 +44,11 @@ msgstr "Qualité de service (QoS)"
 msgid "{% include breadcrumb.html root=\"More\" %}"
 msgstr "{% include breadcrumb.html root=\"More\" %}"
 
-#. type: Plain text
-#: ../wiki/en/QOS-Windows.md:11
-msgid "## Use of QoS on Windows"
+#. type: Title ##
+#: ../wiki/en/QOS-Windows.md:10
+#, fuzzy, no-wrap
+#| msgid "## Use of QoS on Windows"
+msgid "Use of QoS on Windows"
 msgstr "## Utiliser QoS sous Windows"
 
 #. type: Plain text
@@ -66,7 +68,28 @@ msgstr "Les paramètres de QoS de Jamulus (y compris la valeur par défaut) sont
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:37
-msgid "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br> In new window, (click) on the menu icon to display the Actions third panel<br> Looking at the first panel of the Local Group Policy Editor<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br> Looking at the third panel (Actions) of the Local Group Policy Editor<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;More Actions<br> &nbsp;&nbsp;&nbsp;Create new Policy (click)<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>"
+#, fuzzy, no-wrap
+#| msgid "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br> In new window, (click) on the menu icon to display the Actions third panel<br> Looking at the first panel of the Local Group Policy Editor<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br> Looking at the third panel (Actions) of the Local Group Policy Editor<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;More Actions<br> &nbsp;&nbsp;&nbsp;Create new Policy (click)<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>"
+msgid ""
+"In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br>\n"
+"In new window, (click) on the menu icon to display the Actions third panel<br>\n"
+"Looking at the first panel of the Local Group Policy Editor<br>\n"
+"&nbsp;Local Computer Policy<br>\n"
+"&nbsp;&nbsp;Computer Configuration<br>\n"
+"&nbsp;&nbsp;&nbsp;Windows Settings<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br>\n"
+"Looking at the third panel (Actions) of the Local Group Policy Editor<br>\n"
+"&nbsp;Policy-based QoS<br>\n"
+"&nbsp;&nbsp;More Actions<br>\n"
+"&nbsp;&nbsp;&nbsp;Create new Policy (click)<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Finish<br>\n"
 msgstr "Dans la zone de recherche à côté du menu Démarrer, tapez : Éditeur de stratégie de groupe local (entrée)<br> Dans une nouvelle fenêtre, (cliquez) sur l'icône de menu pour afficher le troisième panneau Actions<br> En regardant le premier panneau de l'éditeur de stratégie de groupe local <br> &nbsp;Stratégie de l'ordinateur local<br> &nbsp;&nbsp;Configuration de l'ordinateur<br> &nbsp;&nbsp;&nbsp;Paramètres Windows<br> &nbsp;&nbsp;&nbsp;&nbsp;QoS basée sur la stratégie (clic)<br> dans le troisième panneau (Actions) de l'éditeur de stratégie de groupe local<br> &nbsp;QoS basée sur la stratégie<br> &nbsp;&nbsp;Plus d'actions<br> &nbsp;&nbsp;&nbsp;Créer une nouvelle stratégie (cliquez)<br> &nbsp ;&nbsp;&nbsp;&nbsp;Nom de la politique : Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Spécifier la valeur DSCP : 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp; Cette politique QoS s'applique uniquement aux applications avec le nom Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;Suivant<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br > &nbsp;&nbsp;&nbsp;&nbsp;Terminer<br>"
 
 #. type: Plain text

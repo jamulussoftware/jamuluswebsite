@@ -35,8 +35,9 @@ msgstr "wiki"
 msgid "/wiki/Installation-for-Linux"
 msgstr "/wiki/Installation-for-Linux"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Installation-for-Linux.md:1
+#: ../wiki/en/Installation-for-Linux.md:10
 #, no-wrap
 msgid "Installation for Linux"
 msgstr "为 Linux 安装"
@@ -45,11 +46,6 @@ msgstr "为 Linux 安装"
 #: ../wiki/en/Installation-for-Linux.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr "{% include breadcrumb.html root=\"使用 Jamulus\" branch1=\"快速入门\" branch1-url=\"Getting-Started\" %}"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:11
-msgid "# Installation for Linux"
-msgstr "# 为 Linux 安装"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:13
@@ -74,9 +70,11 @@ msgstr "升级？您可能需要先 [备份您的配置](Software-Manual#备份-
 msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first. \n"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:21
-msgid "### Debian and Ubuntu"
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:20
+#, fuzzy, no-wrap
+#| msgid "### Debian and Ubuntu"
+msgid "Debian and Ubuntu"
 msgstr "### Debian 和 Ubuntu"
 
 #. type: Plain text
@@ -96,34 +94,36 @@ msgstr "[下载 Jamulus 32 位 (.deb, armhf)]({{ site.download_root_link }}{{ si
 msgid "After you downloaded the correct file:"
 msgstr "在你下载了正确的文件后:"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:30
-#, no-wrap
-msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).\n"
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:32
+#, fuzzy
+#| msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).\n"
+msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788))."
 msgstr "*仅限 Ubuntu* - 启用 Ubuntu“universe”存储库(您可以使用 [基于 GUI 的方法](https://askubuntu.com/a/148645) 或 [基于 CLI 的方法](https://askubuntu. com/a/227788))。\n"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:31
-#, no-wrap
-msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`\n"
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:32
+#, fuzzy
+#| msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`\n"
+msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
 msgstr "通过打开命令行窗口更新 apt(CTRL+ALT+T 应该可以)并输入:`sudo apt-get update`\n"
 
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:32
-#, no-wrap
-msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: \n"
+msgid "Go to where you downloaded the installer and either double-click on it, or use the command line:"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:34
+#: ../wiki/en/Installation-for-Linux.md:33
 #, no-wrap
-msgid "`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  \n"
+msgid "\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  \n"
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:35
-#, no-wrap
-msgid "Once installed, you can delete the file and close any console windows.\n"
+#, fuzzy
+#| msgid "Once installed, you can delete the file and close any console windows.\n"
+msgid "Once installed, you can delete the file and close any console windows."
 msgstr "安装后，您可以删除该文件并关闭命令行窗口。\n"
 
 #. type: Plain text
@@ -133,52 +133,48 @@ msgstr "安装后，您可以删除该文件并关闭命令行窗口。\n"
 msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.\n"
 msgstr "请注意，如果您需要将 Jamulus 升级到较新的版本，只需下载新的 .deb 文件并按上述方式重新安装即可。"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:39
-msgid "### Other distributions"
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:38
+#, fuzzy, no-wrap
+#| msgid "### Other distributions"
+msgid "Other distributions"
 msgstr "### 其他发行版"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:41
-msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
-msgstr "对于其他发行版上的安装程序，请参阅其包管理器和 [Repology](https://repology.org/project/jamulus/versions)。如果您的发行版中不包含最新版本的 Jamulus，您可以 [从源代码编译 Jamulus](https://github.com/jamulussoftware/jamulus/blob/master/COMPILING.md)。另请注意贡献的 [安装脚本](https://github.com/jamulussoftware/installscripts)。"
+msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
+msgstr "对于其他发行版上的安装程序，请参阅其包管理器和 [Repology](https://repology.org/project/jamulus/versions)。如果您的发行版中不包含最新版本的 Jamulus，您可以 [从源代码编译 Jamulus](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md)。另请注意贡献的 [安装脚本](https://github.com/jamulussoftware/installscripts)。"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:43
-msgid "## Set up your hardware"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Linux.md:42
+#, fuzzy, no-wrap
+#| msgid "## Set up your hardware"
+msgid "Set up your hardware"
 msgstr "## 设置你的硬件"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:45
-msgid "### Configure JACK with QjackCtl"
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:44
+#, fuzzy, no-wrap
+#| msgid "### Configure JACK with QjackCtl"
+msgid "Configure JACK with QjackCtl"
 msgstr "### 使用 QjackCtl 配置 JACK"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:47
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
-msgstr "Jamulus 客户端需要 [JACK](https://jackaudio.org/) 才能运行，但您需要先配置它。推荐的方法是使用`QjackCtl`。"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:48
-msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
-msgstr "启动 QjackCtl。您将看到 **Qt JACK Control 实用程序主页**"
-
-#. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:49
-msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr "如下配置您的音频硬件(JACK 的确切设置将取决于您的音频硬件的能力):"
+msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.  1. Launch QjackCtl. You will see the **Qt JACK Control utility main page** 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:51
+#. type: Bullet: '- '
+#: ../wiki/en/Installation-for-Linux.md:53
 msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
 msgstr "将音频 **接口** 设置为您想要的(列表中可能有几个)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:52
+#. type: Bullet: '- '
+#: ../wiki/en/Installation-for-Linux.md:53
 msgid "Set the **Sample Rate to 48000**"
 msgstr "将**采样率设置为 48000**"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:53
 msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
 msgstr "首先将“帧/周期”设置为 128**，将“周期/缓冲区”设置为 2"
@@ -188,9 +184,11 @@ msgstr "首先将“帧/周期”设置为 128**，将“周期/缓冲区”设�
 msgid "Restart JACK for the new settings to take effect"
 msgstr "重新启动 JACK 以使新设置生效"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:57
-msgid "### Start Jamulus"
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:56
+#, fuzzy, no-wrap
+#| msgid "### Start Jamulus"
+msgid "Start Jamulus"
 msgstr "### 启动 Jamulus"
 
 #. type: Plain text
@@ -203,9 +201,11 @@ msgstr "随着 JACK 的运行和配置，启动 Jamulus。"
 msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
 msgstr "如果您遇到声音中断问题(特别是 JACK/QjackCtl 报告的 XRUN 错误)，请尝试设置更大的值(例如 256 帧或 3 个周期)。较低的(例如 64 帧)可以带来更好的性能，但可能会带来更多的声音问题。否则请参阅[故障排除页面](客户端故障排除)。"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:63
-msgid "## All installed?"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Linux.md:62
+#, fuzzy, no-wrap
+#| msgid "## All installed?"
+msgid "All installed?"
 msgstr "##全部安装完毕？"
 
 #. type: Plain text
@@ -217,6 +217,18 @@ msgstr "看看"
 #: ../wiki/en/Installation-for-Linux.md:66
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[入门页面](Getting-Started){: .button}"
+
+#~ msgid "# Installation for Linux"
+#~ msgstr "# 为 Linux 安装"
+
+#~ msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+#~ msgstr "Jamulus 客户端需要 [JACK](https://jackaudio.org/) 才能运行，但您需要先配置它。推荐的方法是使用`QjackCtl`。"
+
+#~ msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+#~ msgstr "启动 QjackCtl。您将看到 **Qt JACK Control 实用程序主页**"
+
+#~ msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+#~ msgstr "如下配置您的音频硬件(JACK 的确切设置将取决于您的音频硬件的能力):"
 
 #~ msgid "We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
 #~ msgstr "我们为最常见的架构提供了三个等效的`.deb` 文件。请下载相应的:"

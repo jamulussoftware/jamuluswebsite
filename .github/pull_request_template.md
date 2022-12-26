@@ -21,6 +21,6 @@
 
 ## Checklist
 <!-- Please tick the check boxes when done by replacing the space by an x, e.g. [x]. -->
-- [ ] I've verified that this Pull Request follows the [general code principles](https://github.com/jamulussoftware/jamulus/blob/master/CONTRIBUTING.md#jamulus-projectsource-code-general-principles)
+- [ ] I've verified that this Pull Request follows the [general code principles](https://github.com/jamulussoftware/jamulus/blob/main/CONTRIBUTING.md#jamulus-projectsource-code-general-principles)
 - [ ] I waited some time after this Pull Request was opened and all GitHub checks completed without errors. <!-- GitHub doesn't run these checks for new contributors automatically. -->
 - [ ] I'm sure that this Pull Request goes to the correct branch

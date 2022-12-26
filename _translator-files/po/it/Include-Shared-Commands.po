@@ -63,26 +63,37 @@ msgstr "`--jsonrpcsecretfile`      Obbligatorio quando si utilizza `--jsonrpcpor
 msgid "`--jsonrpcbindip` \t\t The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)\n"
 msgstr "`--jsonrpcbindip`\t\tL'indirizzo IP a cui il server JSON-RPC deve collegarsi. (facoltativo, il valore predefinito è 127.0.0.1)\n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:12
+
 #, no-wrap
 msgid "`-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
 msgstr "`-Q` o `--qos`            Imposta il byte del campo DS della qualità del servizio. Il valore predefinito è 128 (DSCP/CS4). Il QoS è ignorato da Windows. Per abilitarlo, [vedere questa pagina](QOS-Windows)\n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:13
+#, no-wrap
+#~ msgid "`-h` or `--help`           Display help text         \n"
+#~ msgstr "`-h` or `--help`           Visualizza il testo della guida         \n"
+
 #, no-wrap
 msgid "`-t` or `--notranslation`  Disable UI language translations\n"
 msgstr "`-t` o `--notranslation`  Disabilita le traduzioni della lingua dell'interfaccia utente\n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:14
+#, no-wrap
+#~ msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
+#~ msgstr "`-i` o `--inifile` Imposta la posizione del file di inizializzazione (sostituisce l'impostazione predefinita)\n"
+
+
 #, no-wrap
 msgid "`-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
 msgstr "`-6` o `--enableipv6`     Abilita l'indirizzamento IPv6 (IPv4 è sempre abilitato)\n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:14
+#, no-wrap
+#~ msgid "`-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
+#~ msgstr "`-n` or `--nogui`          Disabilita la GUI (usato per essere lanciato senza interfaccia grafica)                      \n"
+
+
 #, no-wrap
 msgid "`-v` or `--version`        Output version information and exit\n"
 msgstr "`-v` o `--version`        Stampa informazioni sulla versione ed esci\n"
+
+#, no-wrap
+#~ msgid "`-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
+#~ msgstr "`-p` or `--port`           Imposta la porta UDP del server. Di default è 22124\n"

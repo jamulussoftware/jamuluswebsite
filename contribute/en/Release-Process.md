@@ -33,8 +33,8 @@ $ git remote -v
 origin  git@github.com:jamulussoftware/jamulus.git (fetch)
 origin  git@github.com:jamulussoftware/jamulus.git (push)
 $ git status
-On branch master
-Your branch is up to date with 'origin/master'.
+On branch main
+Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 ```
@@ -46,11 +46,11 @@ nothing to commit, working tree clean
 
 First make sure all Pull Requests that should be included in the release have been merged in Github.
 
-Next, change to the above directory `jamulus-upstream`, checkout `master` and ensure it is up to date:
+Next, change to the above directory `jamulus-upstream`, checkout `main` and ensure it is up to date:
 
 ```
 $ cd jamulus-upstream
-$ git checkout master
+$ git checkout main
 $ git pull
 $ git status
 ```
@@ -96,11 +96,11 @@ A developer should check and merge each PR as it arrives using this checklist:
 #### 4. When all translations have been submitted and merged.
 {:.no_toc}
 
-Change to the above directory `jamulus-upstream`, checkout `master` and ensure it is up to date:
+Change to the above directory `jamulus-upstream`, checkout `main` and ensure it is up to date:
 
 ```
 $ cd jamulus-upstream
-$ git checkout master
+$ git checkout main
 $ git pull
 $ git status
 ```
@@ -178,7 +178,7 @@ $ git push --force origin tag latest
 
 For a pre-release, the `latest` tag should not be updated, but continue to point to the last proper release.
 
-### Make the master branch ready for post-release development
+### Make the main branch ready for post-release development
 {:.no_toc}
 
 This can be done immediately after pushing the above tag, there is no need to wait.
@@ -267,7 +267,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
 - [ ] Agree to de-tag unfinished Issues/PRs.
 - [ ] Declare a freeze for code and website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
 - [ ] Check the `needs documentation` label for any outstanding PRs flagged for this release and remove that label if done.
-- [ ] Check ./Jamulus -h output against the [Include-Client](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Client-Commands.md)/[Server-Commands](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Server-Commands.md).md pages and [man page (distributions/Jamulus.1)[(https://github.com/jamulussoftware/jamulus/blob/master/distributions/Jamulus.1). Update if necessary.
+- [ ] Check ./Jamulus -h output against the [Include-Client](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Client-Commands.md)/[Server-Commands](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Server-Commands.md).md pages and [man page (distributions/Jamulus.1)[(https://github.com/jamulussoftware/jamulus/blob/main/distributions/Jamulus.1). Update if necessary.
 - [ ] Start Website translations
   - [ ] [Check for broken links](https://github.com/jamulussoftware/jamuluswebsite/blob/release/contribute/en/Release-Process.md#website-check-links)
   - [ ] Open a Pull Request from `next-release` to release, set it as "Draft", sanity check for conflicts and any obvious problems.
@@ -276,7 +276,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `web` argument (see notes in script).
   - [ ] If anyone finds critical issues now, all translators must be made aware of them and all languages should be updated.
 - [ ] Start App translations
-  - [ ] Generate `.ts` files in master via `lupdate`
+  - [ ] Generate `.ts` files in main via `lupdate`
   - [ ] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
   - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
 - [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
@@ -313,7 +313,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
     - [ ] On Github Discussions in the Announcements section. Lock the announcement thread. Pin the thread. Unpin and lock release candidate thread.
     - [ ] On Facebook in the group "Jamulus (official group)". Turn off replies.
 - [ ] Trigger the update notification by updating both Update Check Servers with the new version (@pljones for update02, email corrados for update01)
-- [ ] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the [next release](https://jamulus.io/contribute/Release-Process#make-the-master-branch-ready-for-post-release-development)
+- [ ] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the [next release](https://jamulus.io/contribute/Release-Process#make-the-main-branch-ready-for-post-release-development)
 - [ ] Check that all Issues and PRs tagged for this release are in Done/Closed state.
 - [ ] Close the release milestone in both jamulus and jamuluswebsite repos
 - [ ] Create a milestone for the next minor release in jamulus and jamuluswebsite repos
