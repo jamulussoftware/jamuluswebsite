@@ -20,11 +20,11 @@ msgstr ""
 msgid "`-M` or `--mutestream` Prevent others on a server from hearing what I play"
 msgstr "`-M` o `--mutestream` Impedisce agli altri su un server di ascoltare ciò che suono"
 
-
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Client-Commands.md:3
-#, no-wrap
-msgid "`--mutemyown` Prevent me from hearing what I play in the server mix (headless only)                                                      \n"
+#, fuzzy
+#| msgid "`--mutemyown` Prevent me from hearing what I play in the server mix (headless only)                                                      \n"
+msgid "`--mutemyown` Prevent me from hearing what I play in the server mix (headless only)"
 msgstr "`--mutemyown` Impedisce di sentire ciò che suono nel mix del server (solo headless)                                                      \n"
 
 #. type: Bullet: '-  '
@@ -37,7 +37,6 @@ msgstr "`-c` o `--connect`  Connetti a un determinato indirizzo del server all'a
 msgid "`-j` or `--nojackconnect` Disable auto JACK connections"
 msgstr "`-j` o `--nojackconnect`  Disattiva le connessioni JACK automatiche  \n"
 
-
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
 msgid "`--ctrlmidich` MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels) and Mute Myself CC number. Format: `channel[;f*][;p*][;s*][;m*][;o]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)"
@@ -47,4 +46,3 @@ msgstr "`--ctrlmidich` Canale del controller MIDI su cui ascoltare, offset del n
 #: ../wiki/en/Include-Client-Commands.md:6
 msgid "`--clientname` Window title and JACK client name"
 msgstr "`--clientname`  Titolo della finestra e nome del client JACK"
-

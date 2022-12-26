@@ -17,54 +17,46 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:2
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:4
-#, markdown-text
 msgid "Once installed and running, you may want to keep a copy of your settings. Having a backup is always a good idea, and settings files are not backwardly compatible between versions of Jamulus. So if you want to go back to the previous version, you will need to restore the settings you had."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:6
-#, markdown-text
 msgid "To find your settings file on Windows, type `%APPDATA%` into the search bar and look for a folder named `Jamulus`. There will be one or more `.ini` files in this folder. Now back up Jamulus' settings."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:8
-#, markdown-text
 msgid "For all other platforms, run the following from the command line to find where they live and copy the files to another location:"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:10
-#, markdown-text
 msgid "`find ~ -name Jamulus.ini -ls`"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:13
-#, markdown-text
 msgid "If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.  **Points to note**"
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
-#, markdown-text
 msgid "Do not back up or restore settings files when Jamulus is running."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
-#, markdown-text
 msgid "It is not recommended to manually edit settings files (they're not designed for that)."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
-#, markdown-text
 msgid "You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus)."
 msgstr ""
