@@ -45,7 +45,7 @@ jobs:
 
 # This step only runs if a PR is merged:
       - name: Push changes to repo if action triggered on:push and .po files need updating
-        if: ${{ github.event_name == 'push' && steps.filter.outputs.src_files_changed == 'true' }}
+        if: ${{ ( github.event_name == 'push' && steps.filter.outputs.src_files_changed == 'true' ) || ( github.event_name == 'workflow_dispatch' && steps.filter.outputs.src_files_changed == 'true' ) }}
         uses: EndBug/add-and-commit@v7
         with:
           default_author: github_actions
