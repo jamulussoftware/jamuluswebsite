@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-12 07:41+0000\n"
+"PO-Revision-Date: 2022-12-27 21:51+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/software-manual/fr/>\n"
 "Language: fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -45,21 +45,15 @@ msgstr "Manuel du logiciel"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:7
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# Jamulus User Manual\n"
-#| " {:.no_toc}\n"
+#, no-wrap
 msgid "Jamulus User Manual"
-msgstr ""
-"# Manuel du logiciel Jamulus\n"
-" {:.no_toc}\n"
+msgstr "Manuel du logiciel Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:9
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid " {:.no_toc}\n"
-msgstr "{:toc}"
+msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:11
@@ -68,40 +62,37 @@ msgstr "Ce manuel documente l'application client Jamulus destinée aux musiciens
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:13
-#, fuzzy, no-wrap
-#| msgid "<details markdown=\"1\">"
+#, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr "<details markdown=\"1\">"
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:15
-#, fuzzy, no-wrap
-#| msgid "<summary>Table of contents</summary>"
+#, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr "<summary>Table des matières</summary>"
+msgstr "<summary>Table des matières</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:18
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
-msgstr "{:toc}"
+msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-#, fuzzy, no-wrap
-#| msgid "</details>"
+#, no-wrap
 msgid "</details> \n"
-msgstr "</details>"
+msgstr "</details> \n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:21
-#, fuzzy, no-wrap
-#| msgid "# Main Window"
+#, no-wrap
 msgid "Main Window"
-msgstr "# Fenêtre principale"
+msgstr "Fenêtre principale"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:28
@@ -119,10 +110,9 @@ msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:29
-#, fuzzy, no-wrap
-#| msgid "## Ping, Delay and Jitter"
+#, no-wrap
 msgid "Ping, Delay and Jitter"
-msgstr "## Ping, Délai et Gigue"
+msgstr "Ping, Délai et Gigue"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
@@ -138,10 +128,9 @@ msgstr "**Délai** affiche la latence globale calculée à partir du temps de pi
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image d'un symbole diode verte\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image d'un symbole diode verte\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:38
@@ -151,10 +140,9 @@ msgstr "**Vert** - Le délai est parfait pour une session de bœuf\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image d'un symbole diode jaune\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image d'un symbole diode jaune\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:42
@@ -164,10 +152,9 @@ msgstr "**Jaune** - Une session est toujours possible mais elle peut être plus 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image d'un symbole diode rouge\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image d'un symbole diode rouge\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:46
@@ -203,10 +190,9 @@ msgstr "Le CPU du client ou du serveur est à 100%."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:54
-#, fuzzy, no-wrap
-#| msgid "## Input"
+#, no-wrap
 msgid "Input"
-msgstr "## Niveau d'entrée"
+msgstr "Entrée"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:58
@@ -215,10 +201,9 @@ msgstr "Ceci indique le niveau des deux canaux stéréo de votre entrée audio. 
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:59
-#, fuzzy, no-wrap
-#| msgid "## Mute Myself button"
+#, no-wrap
 msgid "Mute Myself button"
-msgstr "## Bouton me silencer"
+msgstr "Bouton me silencer"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:62
@@ -227,10 +212,9 @@ msgstr "Coupe votre flux audio vers le serveur afin que vous puissiez vous enten
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:63
-#, fuzzy, no-wrap
-#| msgid "## Reverb effect"
+#, no-wrap
 msgid "Reverb effect"
-msgstr "## Effet réverbération"
+msgstr "Effet réverbération"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:69
@@ -239,10 +223,9 @@ msgstr "La réverbération peut être appliquée à un canal audio mono local ou
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:70
-#, fuzzy, no-wrap
-#| msgid "## Chat"
+#, no-wrap
 msgid "Chat"
-msgstr "## Tchate"
+msgstr "Tchate"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
@@ -251,10 +234,9 @@ msgstr "Ouvre la fenêtre de tchate. Le texte saisi est envoyé à tous les clie
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
-#, fuzzy, no-wrap
-#| msgid "## Connect/disconnect button"
+#, no-wrap
 msgid "Connect/disconnect button"
-msgstr "## Bouton se connecter/déconnecter"
+msgstr "Bouton se connecter/déconnecter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:80
@@ -263,10 +245,9 @@ msgstr "Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:82
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une fenêtre de connexion au serveurs\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une fenêtre de connexion au serveurs\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:84
@@ -285,17 +266,15 @@ msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur privé, vous pouve
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:91
-#, fuzzy, no-wrap
-#| msgid "## Server audio mixer"
+#, no-wrap
 msgid "Server audio mixer"
-msgstr "## Mélangeur audio du serveur"
+msgstr "Mélangeur audio du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:94
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une paire de commandes de mélangeur de serveur\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une paire de commandes de mélangeur de serveur\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:97
@@ -329,10 +308,9 @@ msgstr "Si l'opérateur du serveur a activé l'enregistrement, vous verrez un me
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:108
-#, fuzzy, no-wrap
-#| msgid "### Grp button"
+#, no-wrap
 msgid "Grp button"
-msgstr "### Bouton grp"
+msgstr "Bouton grp"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:111
@@ -341,10 +319,9 @@ msgstr "Vous pouvez regrouper des utilisateurs à l'aide du bouton \"groupe\". S
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:112
-#, fuzzy, no-wrap
-#| msgid "### Mute button"
+#, no-wrap
 msgid "Mute button"
-msgstr "### Bouton muet"
+msgstr "Bouton muet"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:115
@@ -358,10 +335,9 @@ msgstr "Notez que le fait de mettre votre **propre** canal en sourdine signifie 
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:118
-#, fuzzy, no-wrap
-#| msgid "### Solo button"
+#, no-wrap
 msgid "Solo button"
-msgstr "### Bouton solo"
+msgstr "Bouton solo"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:121
@@ -370,17 +346,15 @@ msgstr "Vous permet d'entendre un ou plusieurs utilisateurs seuls. Ceux qui ne s
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:122
-#, fuzzy, no-wrap
-#| msgid "# Settings"
+#, no-wrap
 msgid "Settings"
-msgstr "# Paramètres"
+msgstr "Paramètres"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:124
-#, fuzzy, no-wrap
-#| msgid "## My Profile"
+#, no-wrap
 msgid "My Profile"
-msgstr "## Mon profil"
+msgstr "Mon profil"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:128
@@ -389,10 +363,9 @@ msgstr "Dans le menu Paramètres, sélectionnez \"Mon profil...\" pour définir 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:130
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de profil\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de profil\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:132
@@ -401,17 +374,15 @@ msgstr "Si un instrument et/ou un pays est défini, les icônes de ces sélectio
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:134
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image d'une infobulle montrant les informations du profil\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image d'une infobulle montrant les informations du profil\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:135
-#, fuzzy, no-wrap
-#| msgid "### Skin"
+#, no-wrap
 msgid "Skin"
-msgstr "### Habillage"
+msgstr "Thème graphique"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:138
@@ -420,10 +391,9 @@ msgstr "Ceci applique un habillage à la fenêtre principale, dont certains sont
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:139
-#, fuzzy, no-wrap
-#| msgid "### Meter style"
+#, no-wrap
 msgid "Meter style"
-msgstr "### Style de vu-mètre"
+msgstr "Style de vu-mètre"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:142
@@ -432,10 +402,9 @@ msgstr "Cela change le style visuel des vu-mètres audio, indépendamment de l'h
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:143
-#, fuzzy, no-wrap
-#| msgid "### Mixer rows"
+#, no-wrap
 msgid "Mixer rows"
-msgstr "### Rangées du mixeur"
+msgstr "Rangées du mixeur"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:146
@@ -444,10 +413,9 @@ msgstr "Ce paramètre définit le nombre de rangées affichées dans le mixeur a
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:147
-#, fuzzy, no-wrap
-#| msgid "### Audio Alerts"
+#, no-wrap
 msgid "Audio Alerts"
-msgstr "### Alertes audio"
+msgstr "Alertes audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:150
@@ -456,24 +424,21 @@ msgstr "Cette option permet d'activer une alerte sonore lorsqu'une personne rejo
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:151
-#, fuzzy, no-wrap
-#| msgid "## Audio/Network Setup"
+#, no-wrap
 msgid "Audio/Network Setup"
-msgstr "## Configuration audio/réseau"
+msgstr "Configuration audio/réseau"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:154
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre des paramètres audio/réseau\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre des paramètres audio/réseau\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:155
-#, fuzzy, no-wrap
-#| msgid "### Device"
+#, no-wrap
 msgid "Device"
-msgstr "### Périphérique"
+msgstr "Périphérique"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:159
@@ -482,17 +447,15 @@ msgstr "Sous le système d'exploitation Windows, le pilote ASIO (carte son) peut
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:160
-#, fuzzy, no-wrap
-#| msgid "### Input/output channel mapping"
+#, no-wrap
 msgid "Input/output channel mapping"
-msgstr "### Mappage des canaux d'entrée/sortie"
+msgstr "Mappage des canaux d'entrée/sortie"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:163
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image du mappage des canaux d'entrée et de sortie\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image du mappage des canaux d'entrée et de sortie\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:167
@@ -501,10 +464,9 @@ msgstr "Si le périphérique de la carte son sélectionné offre plus d'un canal
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:168
-#, fuzzy, no-wrap
-#| msgid "### Audio channels"
+#, no-wrap
 msgid "Audio channels"
-msgstr "### Canaux audio"
+msgstr "Canaux audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:171
@@ -550,10 +512,9 @@ msgstr "En mode de streaming stéréo, aucune sélection de canal audio pour l'e
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:187
-#, fuzzy, no-wrap
-#| msgid "### Audio quality"
+#, no-wrap
 msgid "Audio quality"
-msgstr "### Qualité audio"
+msgstr "Qualité audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:190
@@ -562,10 +523,9 @@ msgstr "Plus la qualité audio est élevée, plus le débit de données de votre
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:191
-#, fuzzy, no-wrap
-#| msgid "### Buffer Delay"
+#, no-wrap
 msgid "Buffer Delay"
-msgstr "### Délai de mise en mémoire tampon"
+msgstr "Délai de mise en mémoire tampon"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:195
@@ -574,24 +534,18 @@ msgstr "Le paramètre de délai de mise en mémoire tampon est un paramètre fon
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:199
-#, fuzzy
-#| msgid "**64 samples** Provides the lowest latency but does not work with all sound cards.\n"
 msgid "**64 samples** Provides the lowest latency but does not work with all sound cards."
-msgstr "**64 échantillons** Fournit la latence la plus faible mais ne fonctionne pas avec toutes les cartes son.\n"
+msgstr "**64 échantillons** Fournit la latence la plus faible mais ne fonctionne pas avec toutes les cartes son."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:199
-#, fuzzy
-#| msgid "**128 samples** The preferred setting. Should work for most available sound cards.\n"
 msgid "**128 samples** The preferred setting. Should work for most available sound cards."
-msgstr "**128 échantillons** Le paramètrage préféré. Devrait fonctionner avec la plupart des cartes son disponibles.\n"
+msgstr "**128 échantillons** Le paramétrage préféré. Devrait fonctionner avec la plupart des cartes son disponibles."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:199
-#, fuzzy
-#| msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection.\n"
 msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection."
-msgstr "**256 échantillons** Ne doit être utilisé que sur des ordinateurs très lents, ou avec une connexion internet lente.\n"
+msgstr "**256 échantillons** Ne doit être utilisé que sur des ordinateurs très lents, ou avec une connexion internet lente."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:202
@@ -615,10 +569,9 @@ msgstr "Le réglage de la mémoire tampon est donc un compromis entre la qualit�
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:211
-#, fuzzy, no-wrap
-#| msgid "### Jitter Buffer"
+#, no-wrap
 msgid "Jitter Buffer"
-msgstr "### Tampon de gigue"
+msgstr "Tampon de gigue"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:216
@@ -642,10 +595,9 @@ msgstr "Si le paramètre Auto est activé, les mémoires tampon de gigue de votr
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:227
-#, fuzzy, no-wrap
-#| msgid "### Enable small network buffers"
+#, no-wrap
 msgid "Enable small network buffers"
-msgstr "### Activer les petits tampons réseau"
+msgstr "Activer les petits tampons réseau"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:231
@@ -654,10 +606,9 @@ msgstr "Permet la prise en charge de très petits paquets audio réseau. Ceux-ci
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:232
-#, fuzzy, no-wrap
-#| msgid "### Audio Stream Rate"
+#, no-wrap
 msgid "Audio Stream Rate"
-msgstr "### Débit du flux audio"
+msgstr "Débit du flux audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:236
@@ -666,24 +617,21 @@ msgstr "Dépend de la taille actuelle des paquets audio et du paramètre de comp
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:237
-#, fuzzy, no-wrap
-#| msgid "## Advanced Setup"
+#, no-wrap
 msgid "Advanced Setup"
-msgstr "## Configuration avancée"
+msgstr "Configuration avancée"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:240
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre paramètres avancés\"></figure>"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre paramètres avancés\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:241
-#, fuzzy, no-wrap
-#| msgid "### Custom Directories"
+#, no-wrap
 msgid "Custom Directories"
-msgstr "### Annuaires personnalisés"
+msgstr "Annuaires personnalisés"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:244
@@ -692,27 +640,27 @@ msgstr "Si vous devez ajouter des adresses d'annuaires autres que celles qui son
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:245
-#, fuzzy, no-wrap
-#| msgid "### New Client Level"
+#, no-wrap
 msgid "New Client Level"
-msgstr "### Niveau des nouveaux clients"
+msgstr "Niveau des nouveaux clients"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:250
-#, fuzzy, no-wrap
-#| msgid "This setting defines the fader level of a newly connected Client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
+#, no-wrap
 msgid ""
 "This setting defines the fader level of a newly connected Client in percent. If a new user connects\n"
 "to the current server, they will get the specified initial fader level if no other fader level from a previous connection of\n"
 "that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\".\n"
-msgstr "Ce paramètre définit le niveau du chariot d'un client nouvellement connecté en pourcentage. Si un nouvel utilisateur se connecte au serveur actuel, il obtiendra le niveau de chariot initial spécifié si aucun autre niveau de chariot d'une précédente connexion de cet utilisateur n'était déjà enregistré. Vous pouvez définir tous les utilisateurs d'un serveur occupé à ce niveau en utilisant Editer > \"Régler tous les chariots sur le niveau d'un nouveau client\"."
+msgstr ""
+"Ce paramètre définit le niveau du chariot d'un client nouvellement connecté en pourcentage. Si un nouvel utilisateur se connecte\n"
+"au serveur actuel, il obtiendra le niveau de chariot initial spécifié si aucun autre niveau de chariot d'une précédente connexion de\n"
+"cet utilisateur n'était déjà enregistré. Vous pouvez définir tous les utilisateurs d'un serveur occupé à ce niveau en utilisant Éditer > \"Régler tous les chariots sur le niveau d'un nouveau client\".\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:251
-#, fuzzy, no-wrap
-#| msgid "### Input Boost"
+#, no-wrap
 msgid "Input Boost"
-msgstr "### Amplification de l'entrée"
+msgstr "Amplification de l'entrée"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:254
@@ -721,10 +669,9 @@ msgstr "Augmente le gain de votre appareil. Utilisez cette fonction si votre app
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:255
-#, fuzzy, no-wrap
-#| msgid "### Feedback Protection"
+#, no-wrap
 msgid "Feedback Protection"
-msgstr "### Protection contre le larsen"
+msgstr "Protection contre le larsen"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:258
@@ -733,10 +680,9 @@ msgstr "Tente de détecter les boucles de retour audio ou les bruits forts dans 
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:259
-#, fuzzy, no-wrap
-#| msgid "### Input Balance"
+#, no-wrap
 msgid "Input Balance"
-msgstr "### Balance d'entrée"
+msgstr "Balance d'entrée"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:264
@@ -745,17 +691,15 @@ msgstr "Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. 
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:265
-#, fuzzy, no-wrap
-#| msgid "# Menu commands"
+#, no-wrap
 msgid "Menu commands"
-msgstr "# Menu commandes"
+msgstr "Menu commandes"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:267
-#, fuzzy, no-wrap
-#| msgid "### File > Load/Save Mixer Channels Setup"
+#, no-wrap
 msgid "File > Load/Save Mixer Channels Setup"
-msgstr "### Fichier > Charger/sauvegarder la configuration des canaux du mixeur"
+msgstr "Fichier > Charger/sauvegarder la configuration des canaux du mixeur"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:270
@@ -764,10 +708,9 @@ msgstr "Vous pouvez sauvegarder et restaurer le mixage que vous avez pour les r�
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:271
-#, fuzzy, no-wrap
-#| msgid "### Edit > Auto-Adjust All Faders"
+#, no-wrap
 msgid "Edit > Auto-Adjust All Faders "
-msgstr "### Editer > Auto-ajustement de tous les chariots"
+msgstr "Éditer > Auto-ajustement de tous les chariots "
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:274
@@ -776,45 +719,32 @@ msgstr "Applique un réglage de chariot unique à chaque canal en fonction de so
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:275
-#, fuzzy, no-wrap
-#| msgid "# Backing up Jamulus"
+#, no-wrap
 msgid "Backing up Jamulus"
-msgstr "# Sauvegarde de Jamulus"
+msgstr "Sauvegarde de Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:279
-#, fuzzy
-#| msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
-msgstr "Vous pouvez sauvegarder et charger différents réglages du mélangeur en utilisant [charger/sauvegarder la configuration des canaux du mixeur](Software-Manual#fichier--chargersauvegarder-la-configuration-des-canaux-du-mixeur) et stocker ces fichiers où vous voulez."
+msgstr "{% include_relative Include-Backing-Up.md %} * Vous pouvez sauvegarder et charger différents réglages du mélangeur en utilisant [charger/sauvegarder la configuration des canaux du mixeur](Software-Manual#fichier--chargersauvegarder-la-configuration-des-canaux-du-mixeur) et stocker ces fichiers où vous voulez."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:281
-#, fuzzy, no-wrap
-#| msgid ""
-#| "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
-#| "```shell\n"
-#| "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
-#| "```\n"
+#, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
-msgstr ""
-"**Note pour les utilisateurs de macOS:** A partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans \n"
-"```shell\n"
-"$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
-"```\n"
+msgstr "**Note pour les utilisateurs de macOS :** à partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans \n"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:281
 #, no-wrap
 msgid "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
-msgstr ""
+msgstr "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:285
-#, fuzzy, no-wrap
-#| msgid "# Command Line Options"
+#, no-wrap
 msgid "Command Line Options"
-msgstr "# Options de la ligne de commande"
+msgstr "Options de la ligne de commande"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:288
@@ -823,23 +753,15 @@ msgstr "La plupart des fonctions courantes de Jamulus peuvent être définies à
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:290
-#, fuzzy, no-wrap
-#| msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
+#, no-wrap
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
-msgstr "Par exemple, sous Windows, pour utiliser un fichier de paramètres spécifique, faites un clic droit sur le raccourci de Jamulus et choisissez \"Propriétés\" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :"
+msgstr "Par exemple, sous Windows, pour utiliser un fichier de paramètres spécifique, faites un clic droit sur le raccourci de Jamulus et choisissez \"Propriétés\" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :\n"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:291
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```shell\n"
-#| " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
-#| "```\n"
+#, no-wrap
 msgid " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
-msgstr ""
-"```shell\n"
-" \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
-"```\n"
+msgstr " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\chemin\\vers\\monfichierini.ini\"\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:296
@@ -848,16 +770,9 @@ msgstr "Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec le
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:297
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```shell\n"
-#| " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
-#| "```\n"
+#, no-wrap
 msgid " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
-msgstr ""
-"```shell\n"
-" /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
-"```\n"
+msgstr " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/chemin/vers/monfichierini.ini\"\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:302
