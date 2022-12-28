@@ -20,74 +20,105 @@ msgstr ""
 msgid "[comment]: # (This is an include file for use in multiple documents)"
 msgstr "[comment]: # (Il s'agit d'un fichier d'inclusion à utiliser dans plusieurs documents)"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, no-wrap
-msgid ""
-"- `-h` or `--help`           Display help text         \n"
-"- `-i` or `--inifile`        Set location of initialization file (overrides default)\n"
-"- `-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
-"- `-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
-"- `--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
-"- `--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
-"- `--jsonrpcbindip` \t\t The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)\n"
-"- `-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
-"- `-t` or `--notranslation`  Disable UI language translations\n"
-"- `-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
-"- `-v` or `--version`        Output version information and exit\n"
-msgstr ""
-"- `-h` ou `--help`           Afficher le texte d'aide         \n"
-"- `-i` ou `--inifile`        Définir l'emplacement du fichier d'initialisation (remplace la valeur par défaut)\n"
-"- `-n` ou `--nogui`          Désactiver l'interface graphique (pour une utilisation en mode sans affichage)                      \n"
-"- `-p` ou `--port`           Définit le numéro du port UDP local. La valeur par défaut est 22124\n"
-"- `--jsonrpcport`            Permet au serveur API JSON-RPC de contrôler l'application, définit le numéro de port TCP (EXPÉRIMENTAL, l'API pourrait changer ; accessible uniquement depuis localhost). Veuillez consulter [le fichier de documentation de l'API JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
-"- `--jsonrpcsecretfile`      Requis lorsque vous utilisez `--jsonrpcport`. Définit un chemin vers un fichier texte contenant une chaîne d'authentification pour obtenir l'accès à l'API JSON-RPC.\n"
-"- `--jsonrpcbindip` \t\t L'adresse IP à laquelle le serveur JSON-RPC devrait se lier. (optionnel, la valeur par défaut est 127.0.0.1)\n"
-"- `-Q` ou `--qos`            Définit l'octet de champ DS de qualité de service. La valeur par défaut est 128 (DSCP/CS4). Le QoS est ignoré par Windows. Pour l'activer, [voir cette page](QOS-Windows)\n"
-"- `-t` ou `--notranslation`  Désactiver les traductions des langues de l'interface utilisateur\n"
-"- `-6` ou `--enableipv6`     Activer l'adressage IPv6 (IPv4 est toujours activé)\n"
-"- `-v` ou `--version`        Afficher les informations sur la version et quitter\n"
+#, fuzzy
+#| msgid "`-h` or `--help`           Display help text         \n"
+msgid "`-h` or `--help` Display help text"
+msgstr "`-h` ou `--help`           Afficher le texte d'aide         \n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
+msgid "`-i` or `--inifile` Set location of initialization file (overrides default)"
+msgstr "`-i` ou `--inifile`        Définit l'emplacement du fichier d'initialisation (remplace la valeur par défaut)\n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
+msgid "`-n` or `--nogui` Disable GUI (for use in headless mode)"
+msgstr "`-n` ou `--nogui`          Désactiver l'interface graphique (pour une utilisation en mode sans interface graphique)                      \n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
+msgid "`-p` or `--port` Sets the local UDP port number. Default is 22124"
+msgstr "`-p` ou `--port`           Définit le numéro du port UDP local. La valeur par défaut est 22124\n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
+msgid "`--jsonrpcport` Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
+msgstr "`--jsonrpcport`            Permet au serveur API JSON-RPC de contrôler l'application, définit le numéro de port TCP (EXPÉRIMENTAL, les API peuvent changer ; accessible uniquement depuis localhost). Veuillez consulter [le fichier de documentation de l'API JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
+msgid "`--jsonrpcsecretfile` Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API."
+msgstr "`--jsonrpcsecretfile`      Requis lorsque vous utilisez `--jsonrpcport`. Définit un chemin vers un fichier texte contenant une chaîne d'authentification pour obtenir l'accès à l'API JSON-RPC.\n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`--jsonrpcbindip` \t\t The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)\n"
+msgid "`--jsonrpcbindip` The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)"
+msgstr "`--jsonrpcbindip` \t\t L'adresse IP à laquelle le serveur JSON-RPC devrait se lier. (optionnel, la valeur par défaut est 127.0.0.1)\n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
+msgid "`-Q` or `--qos` Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)"
+msgstr "-Q` ou `--qos`            Définit la valeur DS Field byte de la qualité de service. La valeur par défaut est 128 (DSP/CS4). QoS est ignoré par Windows. Pour l'activer, voir [cette page](QOS-Windows)\n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`-t` or `--notranslation`  Disable UI language translations\n"
+msgid "`-t` or `--notranslation` Disable UI language translations"
+msgstr "`-t` ou `--notranslation`  Désactiver les traductions de langue de l'interface utilisateur\n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
+msgid "`-6` or `--enableipv6` Enable IPv6 addressing (IPv4 is always enabled)"
+msgstr "`-6` ou `--enableipv6`     Active l'adressage IPv6 (IPv4 est toujours activé)\n"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+#, fuzzy
+#| msgid "`-v` or `--version`        Output version information and exit\n"
+msgid "`-v` or `--version` Output version information and exit"
+msgstr "`-v` ou `--version`        Affiche les informations sur la version\n"
 
 #, no-wrap
-#~ msgid "`-h` or `--help`           Display help text         \n"
-#~ msgstr "`-h` ou `--help`           Afficher le texte d'aide         \n"
-
-#, no-wrap
-#~ msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
-#~ msgstr "`-i` ou `--inifile`        Définit l'emplacement du fichier d'initialisation (remplace la valeur par défaut)\n"
-
-#, no-wrap
-#~ msgid "`-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
-#~ msgstr "`-n` ou `--nogui`          Désactiver l'interface graphique (pour une utilisation en mode sans interface graphique)                      \n"
-
-#, no-wrap
-#~ msgid "`-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
-#~ msgstr "`-p` ou `--port`           Définit le numéro du port UDP local. La valeur par défaut est 22124\n"
-
-#, no-wrap
-#~ msgid "`--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
-#~ msgstr "`--jsonrpcport`            Permet au serveur API JSON-RPC de contrôler l'application, définit le numéro de port TCP (EXPÉRIMENTAL, les API peuvent changer ; accessible uniquement depuis localhost). Veuillez consulter [le fichier de documentation de l'API JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
-
-#, no-wrap
-#~ msgid "`--jsonrpcbindip` \t\t The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)\n"
-#~ msgstr "`--jsonrpcbindip` \t\t L'adresse IP à laquelle le serveur JSON-RPC devrait se lier. (optionnel, la valeur par défaut est 127.0.0.1)\n"
-
-#, no-wrap
-#~ msgid "`--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
-#~ msgstr "`--jsonrpcsecretfile`      Requis lorsque vous utilisez `--jsonrpcport`. Définit un chemin vers un fichier texte contenant une chaîne d'authentification pour obtenir l'accès à l'API JSON-RPC.\n"
-
-#, no-wrap
-#~ msgid "`-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
-#~ msgstr "-Q` ou `--qos`            Définit la valeur DS Field byte de la qualité de service. La valeur par défaut est 128 (DSP/CS4). QoS est ignoré par Windows. Pour l'activer, voir [cette page](QOS-Windows)\n"
-
-#, no-wrap
-#~ msgid "`-t` or `--notranslation`  Disable UI language translations\n"
-#~ msgstr "`-t` ou `--notranslation`  Désactiver les traductions de langue de l'interface utilisateur\n"
-
-#, no-wrap
-#~ msgid "`-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
-#~ msgstr "`-6` ou `--enableipv6`     Active l'adressage IPv6 (IPv4 est toujours activé)\n"
-
-#, no-wrap
-#~ msgid "`-v` or `--version`        Output version information and exit\n"
-#~ msgstr "`-v` ou `--version`        Affiche les informations sur la version\n"
+#~ msgid ""
+#~ "- `-h` or `--help`           Display help text         \n"
+#~ "- `-i` or `--inifile`        Set location of initialization file (overrides default)\n"
+#~ "- `-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
+#~ "- `-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
+#~ "- `--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
+#~ "- `--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
+#~ "- `--jsonrpcbindip` \t\t The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)\n"
+#~ "- `-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
+#~ "- `-t` or `--notranslation`  Disable UI language translations\n"
+#~ "- `-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
+#~ "- `-v` or `--version`        Output version information and exit\n"
+#~ msgstr ""
+#~ "- `-h` ou `--help`           Afficher le texte d'aide         \n"
+#~ "- `-i` ou `--inifile`        Définir l'emplacement du fichier d'initialisation (remplace la valeur par défaut)\n"
+#~ "- `-n` ou `--nogui`          Désactiver l'interface graphique (pour une utilisation en mode sans affichage)                      \n"
+#~ "- `-p` ou `--port`           Définit le numéro du port UDP local. La valeur par défaut est 22124\n"
+#~ "- `--jsonrpcport`            Permet au serveur API JSON-RPC de contrôler l'application, définit le numéro de port TCP (EXPÉRIMENTAL, l'API pourrait changer ; accessible uniquement depuis localhost). Veuillez consulter [le fichier de documentation de l'API JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
+#~ "- `--jsonrpcsecretfile`      Requis lorsque vous utilisez `--jsonrpcport`. Définit un chemin vers un fichier texte contenant une chaîne d'authentification pour obtenir l'accès à l'API JSON-RPC.\n"
+#~ "- `--jsonrpcbindip` \t\t L'adresse IP à laquelle le serveur JSON-RPC devrait se lier. (optionnel, la valeur par défaut est 127.0.0.1)\n"
+#~ "- `-Q` ou `--qos`            Définit l'octet de champ DS de qualité de service. La valeur par défaut est 128 (DSCP/CS4). Le QoS est ignoré par Windows. Pour l'activer, [voir cette page](QOS-Windows)\n"
+#~ "- `-t` ou `--notranslation`  Désactiver les traductions des langues de l'interface utilisateur\n"
+#~ "- `-6` ou `--enableipv6`     Activer l'adressage IPv6 (IPv4 est toujours activé)\n"
+#~ "- `-v` ou `--version`        Afficher les informations sur la version et quitter\n"
