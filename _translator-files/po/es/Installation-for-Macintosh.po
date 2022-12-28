@@ -2,18 +2,19 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # ignotus <please@seeGitHubOrWeblate.local>, 2022.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-14 13:50+0000\n"
-"Last-Translator: ignotus <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2022-12-27 08:51+0000\n"
+"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Macintosh.md:1
@@ -70,6 +71,11 @@ msgid ""
 "1. **Install Jamulus**: Open the downloaded `.dmg` file, agree to the licence, *drag and drop* each icon you see in the window (Jamulus Client and Server) into your *Applications folder*. After that, you can close this window.\n"
 "1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
 msgstr ""
+"1. [Descargar Jamulus (Universal build)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\\\\n"
+" **macOS Mojave (10.14) o anterior:** [Descargar versión heredada]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\\\\n"
+" **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+"1. **Instalar Jamulus**: Abre el archivo `.dmg` descargado, acepta la licencia, *arrastra y pega* cada icono que veas en la ventana (Cliente y Servidor Jamulus) a tu *Carpeta de aplicaciones*. Después, puedes cerrar esta ventana.\n"
+"1. **Ejecuta Jamulus**. Ahora deberías de poder utilizar Jamulus como cualquier otra aplicación.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:25
@@ -78,10 +84,9 @@ msgstr "_Puedes eliminar la carpeta en el directorio de Descargas que contiene e
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Macintosh.md:28
-#, fuzzy, no-wrap
-#| msgid "## \"Jamulus\" can't be opened because the developer cannot be verified"
+#, no-wrap
 msgid "\"Jamulus\" can't be opened because the developer cannot be verified"
-msgstr "## \"Jamulus\" no puede abrirse porque no se puede verificar el desarrollador"
+msgstr "\"Jamulus\" no puede abrirse porque no se puede verificar el desarrollador"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:31
@@ -91,7 +96,7 @@ msgstr "Si estás utilizando la versión \"legacy\" de Jamulus (porque tienes un
 #. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:37
 msgid "To open Jamulus 1. Go to the Applications folder via Finder 1. Double-click on Jamulus and wait for the above-mentioned message 1. Close this message by clicking on \"Cancel\" 1. Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
-msgstr ""
+msgstr "Para abrir Jamulus 1. Ve a la carpeta Aplicaciones a través de Finder 1. Haz doble clic en Jamulus y espera a que aparezca el mensaje antes mencionado 1. Cierra este mensaje haciendo clic en \"Cancelar\" 1. Ahora haz control-clic (o clic con el botón derecho) en Jamulus y selecciona \"Abrir\" en la parte superior del menú."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:39
@@ -100,10 +105,9 @@ msgstr "Ahora verás una versión ligeramente diferente del mismo mensaje, que t
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Macintosh.md:40
-#, fuzzy, no-wrap
-#| msgid "## All installed?"
+#, no-wrap
 msgid "All installed?"
-msgstr "## ¿Todo instalado?"
+msgstr "¿Todo instalado?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Macintosh.md:43

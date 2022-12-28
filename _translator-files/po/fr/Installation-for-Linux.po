@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-12 07:41+0000\n"
+"PO-Revision-Date: 2022-12-27 17:51+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/installation-for-linux/fr/>\n"
 "Language: fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -73,10 +73,9 @@ msgstr "**Installation d'un serveur?** Lisez d'abord le [guide pour les administ
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:20
-#, fuzzy, no-wrap
-#| msgid "### Debian and Ubuntu"
+#, no-wrap
 msgid "Debian and Ubuntu"
-msgstr "### Debian et Ubuntu"
+msgstr "Debian et Ubuntu"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:23
@@ -96,24 +95,18 @@ msgstr "Après avoir téléchargé le bon fichier :"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:32
-#, fuzzy
-#| msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).\n"
 msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788))."
-msgstr "*Ubuntu seulement* - Activer le dépôt Ubuntu \"universe\" (vous pouvez utiliser l'[interface utilisateur](https://askubuntu.com/a/148645) ou le [terminal](https://askubuntu.com/a/227788)).\n"
+msgstr "*Ubuntu seulement* - Activer le dépôt Ubuntu \"universe\" (vous pouvez utiliser l'[interface utilisateur](https://askubuntu.com/a/148645) ou le [terminal](https://askubuntu.com/a/227788))."
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:32
-#, fuzzy
-#| msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`\n"
 msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
-msgstr "Mettez à jour apt en ouvrant une fenêtre de console (CTRL+ALT+T devrait fonctionner) et tapez : `sudo apt-get update`\n"
+msgstr "Mettez à jour apt en ouvrant une fenêtre de console (CTRL+ALT+T devrait fonctionner) et tapez : `sudo apt-get update`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:32
-#, fuzzy
-#| msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: \n"
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line:"
-msgstr "Allez à l'endroit où vous avez téléchargé le programme d'installation et double-cliquez dessus, ou utilisez la ligne de commande : \n"
+msgstr "Allez à l'endroit où vous avez téléchargé le programme d'installation et double-cliquez dessus, ou utilisez la ligne de commande :"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:33
@@ -123,10 +116,8 @@ msgstr "\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (ou pour R
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:35
-#, fuzzy
-#| msgid "Once installed, you can delete the file and close any console windows.\n"
 msgid "Once installed, you can delete the file and close any console windows."
-msgstr "Une fois installé, vous pouvez supprimer le fichier et fermer toutes les fenêtres de la console.\n"
+msgstr "Une fois installé, vous pouvez supprimer le fichier et fermer toutes les fenêtres de la console."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:37
@@ -136,10 +127,9 @@ msgstr "**Mises à jour :** si vous devez mettre à jour Jamulus vers une versio
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:38
-#, fuzzy, no-wrap
-#| msgid "### Other distributions"
+#, no-wrap
 msgid "Other distributions"
-msgstr "### Autres distributions"
+msgstr "Autres distributions"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:41
@@ -148,22 +138,20 @@ msgstr "Pour les installateurs sur d'autres distributions, consultez leurs gesti
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:42
-#, fuzzy, no-wrap
-#| msgid "## Set up your hardware"
+#, no-wrap
 msgid "Set up your hardware"
-msgstr "## Configurer votre matériel"
+msgstr "Configurer votre matériel"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:44
-#, fuzzy, no-wrap
-#| msgid "### Configure JACK with QjackCtl"
+#, no-wrap
 msgid "Configure JACK with QjackCtl"
-msgstr "### Configurer JACK avec QjackCtl"
+msgstr "Configurer JACK avec QjackCtl"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:49
 msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.  1. Launch QjackCtl. You will see the **Qt JACK Control utility main page** 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr ""
+msgstr "Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.  1. Lancez QjackCtl. Vous verrez la **page principale de l'utilitaire Qt JACK Control** 2. Configurez votre matériel audio comme suit (les paramètres exacts de JACK dépendront de ce dont votre matériel audio est capable) :"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:53
@@ -187,10 +175,9 @@ msgstr "Redémarrez JACK pour que les nouveaux paramètres prennent effet"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:56
-#, fuzzy, no-wrap
-#| msgid "### Start Jamulus"
+#, no-wrap
 msgid "Start Jamulus"
-msgstr "### Démarrez Jamulus"
+msgstr "Démarrez Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:59
@@ -204,10 +191,9 @@ msgstr "Si vous rencontrez des problèmes d'interruption du son (en particulier 
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:62
-#, fuzzy, no-wrap
-#| msgid "## All installed?"
+#, no-wrap
 msgid "All installed?"
-msgstr "## Tout est installé ?"
+msgstr "Tout est installé ?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:65
