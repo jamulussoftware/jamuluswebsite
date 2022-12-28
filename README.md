@@ -14,7 +14,7 @@ Introduce yourself on the [GitHub Discussions](https://github.com/jamulussoftwar
 
 If you prefer to submit translations via pull requests rather than using Weblate, feel free to do so. However, make sure you coordinate with other possible translators to your language in order to avoid duplicating work and the risk of conflicts on GitHub.
 
-***PLEASE NOTE:*** Discussions should be in English so as to be open to all.
+***PLEASE NOTE:*** We ask that discussions occur in English.
 
 ## Making changes to the documentation
 
