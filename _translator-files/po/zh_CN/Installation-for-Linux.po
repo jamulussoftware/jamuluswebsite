@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"PO-Revision-Date: 2022-12-30 02:51+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -59,10 +59,9 @@ msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
-#, fuzzy, no-wrap
-#| msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
+#, no-wrap
 msgid "**Upgrading?** You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.\n"
-msgstr "升级？您可能需要先 [备份您的配置](Software-Manual#备份-jamulus)。"
+msgstr "**升级?**您可能需要先 [备份您的配置](Software-Manual#备份-jamulus)。\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
@@ -96,17 +95,13 @@ msgstr "在你下载了正确的文件后:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:32
-#, fuzzy
-#| msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).\n"
 msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788))."
-msgstr "*仅限 Ubuntu* - 启用 Ubuntu“universe”存储库(您可以使用 [基于 GUI 的方法](https://askubuntu.com/a/148645) 或 [基于 CLI 的方法](https://askubuntu. com/a/227788))。\n"
+msgstr "*仅限 Ubuntu* - 启用 Ubuntu“universe”存储库(您可以使用 [基于 GUI 的方法](https://askubuntu.com/a/148645) 或 [基于 CLI 的方法](https://askubuntu. com/a/227788))。"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:32
-#, fuzzy
-#| msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`\n"
 msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
-msgstr "通过打开命令行窗口更新 apt(CTRL+ALT+T 应该可以)并输入:`sudo apt-get update`\n"
+msgstr "通过打开命令行窗口更新 apt(CTRL+ALT+T 应该可以)并输入:`sudo apt-get update`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:32
@@ -121,24 +116,20 @@ msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:35
-#, fuzzy
-#| msgid "Once installed, you can delete the file and close any console windows.\n"
 msgid "Once installed, you can delete the file and close any console windows."
-msgstr "安装后，您可以删除该文件并关闭命令行窗口。\n"
+msgstr "安装后，您可以删除该文件并关闭命令行窗口。"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:37
-#, fuzzy, no-wrap
-#| msgid "Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above."
+#, no-wrap
 msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.\n"
-msgstr "请注意，如果您需要将 Jamulus 升级到较新的版本，只需下载新的 .deb 文件并按上述方式重新安装即可。"
+msgstr "**升级:**如果您需要将 Jamulus 升级到较新的版本，只需下载新的 .deb 文件并按上述方式重新安装即可。\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:38
-#, fuzzy, no-wrap
-#| msgid "### Other distributions"
+#, no-wrap
 msgid "Other distributions"
-msgstr "### 其他发行版"
+msgstr "其他发行版"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:41
@@ -147,17 +138,15 @@ msgstr "对于其他发行版上的安装程序，请参阅其包管理器和 [R
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:42
-#, fuzzy, no-wrap
-#| msgid "## Set up your hardware"
+#, no-wrap
 msgid "Set up your hardware"
-msgstr "## 设置你的硬件"
+msgstr "设置你的硬件"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:44
-#, fuzzy, no-wrap
-#| msgid "### Configure JACK with QjackCtl"
+#, no-wrap
 msgid "Configure JACK with QjackCtl"
-msgstr "### 使用 QjackCtl 配置 JACK"
+msgstr "使用 QjackCtl 配置 JACK"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:49
@@ -186,10 +175,9 @@ msgstr "重新启动 JACK 以使新设置生效"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:56
-#, fuzzy, no-wrap
-#| msgid "### Start Jamulus"
+#, no-wrap
 msgid "Start Jamulus"
-msgstr "### 启动 Jamulus"
+msgstr "启动 Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:59
@@ -203,10 +191,9 @@ msgstr "如果您遇到声音中断问题(特别是 JACK/QjackCtl 报告的 XRUN
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:62
-#, fuzzy, no-wrap
-#| msgid "## All installed?"
+#, no-wrap
 msgid "All installed?"
-msgstr "##全部安装完毕？"
+msgstr "全部安装完毕？"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:65
