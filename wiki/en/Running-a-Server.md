@@ -19,9 +19,9 @@ permalink: "/wiki/Running-a-Server"
 
 ## Do I need to run a Server?
 
-**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server yourself. Or you can use a third party hosting service such as [melomax](https://melomax.live/jamulus-hosting/) or [KOORD](https://koord.live/). 
+**No**. You don't need to run a Server. You can use the Servers listed by the built-in Directories and use Jamulus without running a Server yourself. You can also use an unlisted server if you know its internet address. Or you can use a third party hosting service such as [melomax](https://melomax.live/jamulus-hosting/) or [KOORD](https://koord.live/). There's probably a Server nearby that you and your friends can use at low enough latency for most needs.
 
-If you just want an undisturbed session, use the soloing technique described on the [Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). 
+Using a public server might introduce you to strangers. If you want an undisturbed session, you can use the soloing technique described on the [Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). You won't hear strangers who connect to the Server, but they can hear you if they wish.
 
 ---
 
@@ -114,15 +114,15 @@ For information, [see the Directories guide](Directories).
 
 ## Configuration options
 
-Depending on your operating system and how you are running the server, you can set Server options and make them persistent between reloads as follows:
+Depending on your operating system and how you are running the server, you can set Server options and make them persistent between reloads by following these steps:
 
 **For Linux headless** (Debian/Ubuntu using systemd) 
 
-Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (You will need to reload the restart for the changes to take effect. See [Installation](#installation))
+Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (You will need to reload or restart for the changes to take effect. See [Installation](#installation))
 
 **For the GUI** (all platforms)
 
-Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file (do not attempt to edit this file by hand). However, some options are not available via the GUI and need to be set via the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)
+Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)
 
 ---
 
