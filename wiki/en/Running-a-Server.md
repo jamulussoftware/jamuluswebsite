@@ -226,7 +226,7 @@ Start the Jamulus Server graphical user interface in the minimized window state.
 ##### `-R or --recording` 
 Set server recording directory. By default, the Server will record when a session is active. 
 
-**Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (but be aware that doing could be a security risk).
+**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file, but be aware that doing could be a security risk.
 
 Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
 
