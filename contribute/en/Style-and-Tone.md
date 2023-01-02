@@ -83,21 +83,21 @@ Refer to UI labels in inverted commas (eg 'click on the “mute” button')
 
 Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open source”)
 
-“Channel” The audio signal as part of a mix. “Mute a channel”, “Maximum number of channels”, “Group channels together” (not “Mute a person” becuause one person might be using multiple channels).
+“Channel” The audio signal as part of a mix. “Mute a channel”, “Maximum number of channels”, “Group channels together” (not “Mute a person” because one person might be using multiple channels).
 
 “Fader” The UI that controls a channel. “Each fader has a mute button”, “The person’s fader” ,“Group faders together” (not “The person’s channel” or “Mute a Fader”, not “Slider” or “Volume control”)
 
-“Person” A human connected to a server (may be on multiple channels). We might say _people on the server_, or _people who have muted themselves_, rather than _Musicians_ or _Channels_.
+“Person” A human connected to a server (may be on multiple channels). We might say "People on the server", or "People who have muted themselves", rather than _Musicians_ or _Channels_.
 
 "Client" When capitalised, this means an instance of Jamulus running in client mode, used to connect to Jamulus Servers.
 
-“Server” When capitalized, refers to an instance of Jamulus running in server mode. When lowercase as _server_, this refers to the computer that runs the Server (e.g. _A Server running on an AWS server_). Not to be confused with Directory.
+“Server” When capitalized, refers to an instance of Jamulus running in server mode. When lowercase as _server_, this refers to the computer that runs the Server (e.g. "A Server running on an AWS server"). Not to be confused with Directory.
 
 “Directory” The term for a type of Server that a Client uses to get a list of Servers from. Avoid the use of the term _Directory Server_ because it may be confusing in the presence of _Server_ on its own.
 
 “Country/Region” Keep in mind that some areas of the world have a controversial (political) status. If possible, be generic and remain neutral. Instead of just saying country, use _Country/Region_ or _Location_.
 
-Registration: When a Server is configured in Registered mode, it will be _listed_ when successfully registered by a Directory. Note that if a Directory is full, a Registered Server will not be _listed_ because it has not been successfully _registered_.
+Registration: When a Server is configured in Registered mode, it will be _listed_ when successfully registered by a Directory. Note that if a Directory is full, a Registered Server will not be _listed_ because it has not been successfully _registered_. Note in this case we prefer to say, "Register with a Directory".
 
 ## Units
 
