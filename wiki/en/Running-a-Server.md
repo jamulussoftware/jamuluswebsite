@@ -329,7 +329,7 @@ See the documentation of your DNS provider for instructions on creating an SRV r
 
 This example assumes the DNS contains an A or CNAME record that resolves to ```server1.example.com```, where three Jamulus Server instances are running, each listening on one of the three ports listed below.
 
-Alternatively, server1.example.com can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers).
+Alternatively, `server1.example.com` can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers).
 
 
 | JAMULUS CLIENT     |  DNS SRV RECORD                                                             | JAMULUS SERVER             |
