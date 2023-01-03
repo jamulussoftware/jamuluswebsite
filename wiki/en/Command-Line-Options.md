@@ -17,5 +17,5 @@ permalink: "/wiki/Command-Line-Options"
 
 ## Server only commands
 
-See [Running a Server](Running-a-Server#server-mode-options)
+{% include_relative Include-Server-Commands.md %}
 
