@@ -88,55 +88,55 @@ msgid "</details>\n"
 msgstr "</details>"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:20
+#: ../wiki/en/Running-a-Server.md:21
 #, fuzzy, no-wrap
 #| msgid "## Do I need to run a Server?"
 msgid "Do I need to run a Server?"
 msgstr "## Moet ik een eigen server hebben?"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:23
+#: ../wiki/en/Running-a-Server.md:24
 #, no-wrap
-msgid "**No**. You don't need to run a Server. You can use the Servers listed by the built-in Directories and use Jamulus without running a Server yourself. You can also use an unlisted server if you know its internet address. Or you can use a third party hosting service such as [melomax](https://melomax.live/jamulus-hosting/) or [KOORD](https://koord.live/). There's probably a Server nearby that you and your friends can use at low enough latency for most needs.\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:25
-msgid "Using a public server might introduce you to strangers. If you want an undisturbed session, you can use the soloing technique described on the [Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). You won't hear strangers who connect to the Server, but they can hear you if they wish."
-msgstr ""
+msgid "**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.\n"
+msgstr "**Nee**. Je kunt de servers gebruiken die worden vermeld door de ingebouwde adresboeken en Jamulus gebruiken zonder een server te gebruiken of een hostingservice van derden te kiezen. Als je gewoon een ongestoorde sessie wilt, gebruik dan de [solotechniek beschreven op de pagina Tips en trucs](Tips-Tricks-More#zorg-voor-een-ongestoorde-sessie-op-elke-server). Als je besluit dat je geen van de servers kunt gebruiken die worden vermeld in de ingebouwde adresboeken dan kun je mogelijk een server gebruiken (geregistreerd in een eigen adresboek of niet geregistreerd - zie [servertypen](#servertypen)) die wordt gehost door een derde partij. Als je dit doet, bespaar je je de moeite om er zelf een op te zetten.\n"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:28
+#: ../wiki/en/Running-a-Server.md:25
 #, fuzzy, no-wrap
 #| msgid "## Basic requirements"
-msgid "Requirements"
+msgid "Basic requirements"
 msgstr "## Basis vereisten"
 
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:28
+msgid "While setting up a Server isn't difficult, it's a good idea to read the following background information to avoid some problems:"
+msgstr "Hoewel het opzetten van een server niet moeilijk is, is het een goed idee om de volgende achtergrondinformatie te lezen om problemen te voorkomen:"
+
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:30
+#: ../wiki/en/Running-a-Server.md:29
 #, fuzzy, no-wrap
 #| msgid "### Speed and latency"
 msgid "Speed and latency"
 msgstr "### Snelheid en latency"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:33
+#: ../wiki/en/Running-a-Server.md:32
 #, no-wrap
 msgid "**_The capability of the Server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**\n"
 msgstr "**_De capaciteit van de server zelf (en het netwerk waarop deze zich bevindt) is NIET de belangrijkste bepalende factor voor de kwaliteit van een Jamulus-sessie!_**\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:35
+#: ../wiki/en/Running-a-Server.md:34
 msgid "Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed."
 msgstr "Meestal bevinden problemen zich aan de _client_ kant en moeten daar worden opgelost. Bekijk indien nodig de [pagina voor problemen oplossen](/wiki/Client-Troubleshooting)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:37
+#: ../wiki/en/Running-a-Server.md:36
 msgid "However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth)."
 msgstr "Er kunnen echter ook verschillende problemen optreden bij het instellen van servers, vooral wanneer deze op een thuisverbinding met lage bandbreedte worden uitgevoerd. Het is meestal prima om minder dan 5 spelers op een tragere thuisverbinding te hebben (bijvoorbeeld 10 Mbit/s down en 1 Mbit/s up). Je kunt meer lezen over netwerkvereisten bij [verschillende kwaliteitsinstellingen hier](Server-Bandwidth)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:39
+#: ../wiki/en/Running-a-Server.md:38
 msgid "Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems."
 msgstr "Overweeg om een cloudhost te gebruiken om betere ping-tijden te krijgen als je problemen hebt."
 
@@ -159,198 +159,45 @@ msgstr "Als je een server gebruikt, moet je mogelijk eventuele firewalls aanpass
 
 #. type: Bullet: '* '
 #: ../wiki/en/Running-a-Server.md:46
-msgid "You must set up port forwarding on your router to run an [Unregistered Server](Unregistered-Servers) at home. This should not be necessary when running a Registered Server in most cases. However, some home networks can require port forwarding for a Registered Server."
-msgstr ""
+msgid "Running an Unregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
+msgstr "Als je thuis een niet geregistreerde server uitvoert, moet je [poort forwarding](#poort-forwarding) op je router gebruiken. Als je een geregistreerde server gebruikt, zou poort forwarding in de meeste gevallen niet nodig moeten zijn, maar het is aan te raden dit te doen omdat sommige netwerken mogelijk niet goed werken met Jamulus in de standaardmodus."
 
 #. type: Bullet: '* '
 #: ../wiki/en/Running-a-Server.md:46
-msgid "Jamulus offers limited IPv6 support that you can turn on for a Client or Server from the command line."
-msgstr ""
+msgid "Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. (There are plans to expand IPv6 support.)"
+msgstr "Jamulus heeft slechts beperkte IPv6-ondersteuning die moet worden ingeschakeld met een opdrachtregeloptie op de client en server. (Er zijn plannen om de IPv6-ondersteuning uit te breiden.)"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:49
-#, fuzzy, no-wrap
-#| msgid "### Installation"
-msgid "Installation"
-msgstr "### Installatie"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:52
-msgid "Most people run Jamulus on a 3rd party/cloud host as a \"headless\" Server (no video display or keyboard) on **hardware without audio** running Linux. You can also run a Server in a [**desktop environment**](#servers-on-the-desktop)."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:54
-msgid "To run a headless server on Linux, the following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution that uses systemd."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:56
-#, fuzzy
-#| msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or the [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }})"
-msgid "If you want to run a Server on a **Raspberry Pi** (or a different armhf/arm64 debian-based device), you will need to download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }}) depending on your CPU - not the default `amd64` ones for use on Intel/AMD machines."
-msgstr "Download het [nieuwste headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) of indien je een Raspberry Pi etc. gebruikt, download het [nieuwste armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) of de [nieuwste arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }})"
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Running-a-Server.md:60
-msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) (or for Raspberry Pi etc. as above)"
-msgstr ""
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Running-a-Server.md:60
-#, fuzzy
-#| msgid "Update apt to make sure you have a current list of standard packages: `sudo apt update`"
-msgid "Make sure you have a current list of standard packages: `sudo apt update`"
-msgstr "Werk apt bij om er zeker van te zijn dat je een actuele lijst met standaard packages hebt: `sudo apt update`"
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Running-a-Server.md:60
-msgid "Install the Jamulus package for your architecture, for example:"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:62
-#, no-wrap
-msgid "\t`sudo apt install ./{{ site.download_file_names.deb-headless }}`\n"
-msgstr ""
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Running-a-Server.md:64
-msgid "Enable the headless Server process:"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:66
-#, fuzzy, no-wrap
-#| msgid "`sudo systemctl stop jamulus-headless`"
-msgid "\t`sudo systemctl enable jamulus-headless`\n"
-msgstr "`sudo systemctl stop jamulus-headless`"
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Running-a-Server.md:68
-#, fuzzy
-#| msgid "Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server)."
-msgid "Add your desired [command line options](Running-a-Server#configuration) to the `ExecStart` line in the systemd service file (by default you will be running an Unregistered Server):"
-msgstr "Voeg de gewenste [opdrachtregelopties](Running-a-Server#opdrachtregelopties) toe aan de `ExecStart` regel in het systemd-servicebestand door `sudo systemctl edit --full jamulus-headless` uit te voeren (standaard voer je een niet geregistreerde server uit)."
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:70
-#, fuzzy, no-wrap
-#| msgid "`sudo systemctl stop jamulus-headless`"
-msgid "\t`sudo systemctl edit --full jamulus-headless`\n"
-msgstr "`sudo systemctl stop jamulus-headless`"
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Running-a-Server.md:72
-#, fuzzy
-#| msgid "Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`"
-msgid "Reload the systemd files and restart the headless Server:"
-msgstr "Herlaad de systemd bestanden `sudo systemctl daemon-reload` en herstart de headless server: `sudo systemctl restart jamulus-headless`"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:74
-#, fuzzy, no-wrap
-#| msgid "`sudo systemctl stop jamulus-headless`"
-msgid "\t`sudo systemctl daemon-reload && systemctl restart jamulus-headless` \n"
-msgstr "`sudo systemctl stop jamulus-headless`"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:76
-msgid "_To upgrade your Server, just repeat the steps above._"
-msgstr "_Herhaal de bovenstaande stappen om jouw server te upgraden._"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:78
-#, fuzzy
-#| msgid "_To upgrade your Server, just repeat the steps above._"
-msgid "_To amend your Server configuration, just repeat the last two steps above._"
-msgstr "_Herhaal de bovenstaande stappen om jouw server te upgraden._"
-
-#. type: Title ##
-#: ../wiki/en/Running-a-Server.md:81
+#: ../wiki/en/Running-a-Server.md:47
 #, fuzzy, no-wrap
 #| msgid "## Server Types"
-msgid "Server Modes"
+msgid "Server Types"
 msgstr "## Servertypen"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:84
-#, fuzzy
-#| msgid "You can run your Server in different ways (either at home or on a 3rd party host):"
-msgid "Servers can be run in one of three modes (either at home or on a 3rd party host), depending on your needs."
+#: ../wiki/en/Running-a-Server.md:50
+msgid "You can run your Server in different ways (either at home or on a 3rd party host):"
 msgstr "Je kunt jouw server op verschillende manieren uitvoeren (thuis of op een host van een derde partij):"
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:85
+#: ../wiki/en/Running-a-Server.md:51
 #, fuzzy, no-wrap
-#| msgid "### 2. Unregistered"
-msgid "Unregistered mode"
-msgstr "### 2. Niet geregistreerd"
+#| msgid "### 1. Registered"
+msgid "1. Registered"
+msgstr "### 1. Geregistreerd"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:88
-#, fuzzy
-#| msgid "This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server."
-msgid "This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address can connect to it."
-msgstr "Dit is de standaardinstelling wanneer je voor de eerste keer een server start. Niet geregistreerde servers worden niet weergegeven in de adresboeken, dus alleen muzikanten die het adres van de server kennen, kunnen er verbinding mee maken. Dit is handig omdat Jamulus je niet laat bepalen wie er verbinding kan maken met een server."
+#: ../wiki/en/Running-a-Server.md:54
+msgid "Your Server will be listed in a Directory. By default, Jamulus has a list of built-in Directories that Clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs."
+msgstr "Jouw server wordt vermeld in een adresboek. Jamulus heeft standaard een lijst met ingebouwde adresboeken waarmee clients verbinding kunnen maken. Als je bij een van deze registreert, kan iedereen jouw server ontdekken en er verbinding mee maken. Je kunt jouw server ook in een eigen adresboek laten opnemen, als dat beter aan jouw behoeften voldoet."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:90
+#: ../wiki/en/Running-a-Server.md:59
 #, no-wrap
-msgid "**For information about running an Unregistered Server [see this guide](Unregistered-Servers).**\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:94
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<figure>\n"
-#| "\t<img src=\"{% include img/en-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Unregistered Server\">\n"
-#| "\t<figcaption>How Unregistered Servers work</figcaption>\n"
-#| "</figure>\n"
-msgid ""
-"<figure>\n"
-"\t<img src=\"{% include img/en-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Unregistered Server\">\n"
-"</figure>\n"
-msgstr ""
-"<figure>\n"
-"\t<img src=\"{% include img/nl-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"diagram met verbindingen tussen clients en een niet geregistreerde Jamulus server\">\n"
-"\t<figcaption>Hoe niet geregistreerde servers werken</figcaption>\n"
-"</figure>\n"
-
-#. type: Title ###
-#: ../wiki/en/Running-a-Server.md:95
-#, fuzzy, no-wrap
-#| msgid "#### Running in Registered mode"
-msgid "Registered mode"
-msgstr "#### Uitvoeren in geregistreerde modus"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:98
-msgid "In this mode your Server will appear in the server list supplied by a Directory. Jamulus Clients come with a list of Directories built-in. If you register your Server with one of these, anyone can discover and connect to it."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:100
-msgid "Alternatively, you can list your Server on a Custom Directory (see below).  Clients will only find your Server if they enter the Custom Directory's internet address."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:102
-msgid "Note that Directories can only register up to 150 Servers. If you see a message that says you cannot register your Server because the Directory is full, you can try registering with a different Directory."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:106
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<figure>\n"
-#| "\t<img src=\"{% include img/en-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Registered Server\">\n"
-#| "<figcaption>How Registered Servers work</figcaption>\n"
-#| "</figure>\n"
 msgid ""
 "<figure>\n"
 "\t<img src=\"{% include img/en-screenshots/diagram-reg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Registered Server\">\n"
+"<figcaption>How Registered Servers work</figcaption>\n"
 "</figure>\n"
 msgstr ""
 "<figure>\n"
@@ -359,109 +206,184 @@ msgstr ""
 "</figure>\n"
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:107
+#: ../wiki/en/Running-a-Server.md:60
+#, fuzzy, no-wrap
+#| msgid "### 2. Unregistered"
+msgid "2. Unregistered"
+msgstr "### 2. Niet geregistreerd"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:63
+msgid "This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server."
+msgstr "Dit is de standaardinstelling wanneer je voor de eerste keer een server start. Niet geregistreerde servers worden niet weergegeven in de adresboeken, dus alleen muzikanten die het adres van de server kennen, kunnen er verbinding mee maken. Dit is handig omdat Jamulus je niet laat bepalen wie er verbinding kan maken met een server."
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:68
+#, no-wrap
+msgid ""
+"<figure>\n"
+"\t<img src=\"{% include img/en-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"Diagram of connections between Clients within a Jamulus Unregistered Server\">\n"
+"\t<figcaption>How Unregistered Servers work</figcaption>\n"
+"</figure>\n"
+msgstr ""
+"<figure>\n"
+"\t<img src=\"{% include img/nl-screenshots/diagram-unreg-server.inc %}\" loading=\"lazy\" alt=\"diagram met verbindingen tussen clients en een niet geregistreerde Jamulus server\">\n"
+"\t<figcaption>Hoe niet geregistreerde servers werken</figcaption>\n"
+"</figure>\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:70
+msgid "If you are running an unregistered server behind a home internet connection, you might need to enable [port forwarding](#port-forwarding) as described below."
+msgstr "Als je een niet geregistreerde server achter een internetverbinding thuis gebruikt, moet je mogelijk [poort forwarding](#poort-forwarding) inschakelen zoals hieronder beschreven."
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:71
 #, fuzzy, no-wrap
 #| msgid "### 3. Directory"
-msgid "Directory mode"
+msgid "3. Directory"
 msgstr "### 3. Adresboek"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:110
+#: ../wiki/en/Running-a-Server.md:74
 msgid "If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools."
 msgstr "Als je meerdere Servers wilt draaien, eventueel ook achter een firewall of op een LAN, dan kun je jouw server wellicht als adresboek draaien. Denk aan online evenementen, muziekverenigingen, sectierepetities of muzieklessen voor scholen."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:112
-#, fuzzy
-#| msgid "To run a Directory [read this guide](Directories)"
-msgid "For information, [see the Directories guide](Directories)."
+#: ../wiki/en/Running-a-Server.md:76
+msgid "To run a Directory [read this guide](Directories)"
 msgstr "Voor het uitvoeren van een adresboek [lees je deze handleiding](Directories)"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:115
+#: ../wiki/en/Running-a-Server.md:78
 #, fuzzy, no-wrap
-#| msgid "### Configuration"
-msgid "Configuration options"
-msgstr "### Configuratie"
+#| msgid "## Installation and Configuration"
+msgid "Installation and Configuration"
+msgstr "## Installatie en configuratie"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:118
-msgid "Depending on your operating system and how you are running the server, you can set Server options and make them persistent between reloads by following these steps:"
-msgstr ""
+#: ../wiki/en/Running-a-Server.md:80
+#, fuzzy, no-wrap
+#| msgid "Most people run Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop)."
+msgid "Most people run Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop).  \n"
+msgstr "De meeste mensen draaien Jamulus als een \"pure\" server op **hardware zonder audio** (bijvoorbeeld op een derde partij/cloudhost) met Linux. Bij de volgende stappen wordt ervan uitgegaan dat je bekend bent met de opdrachtregel en Debian/Ubuntu of vergelijkbare distributie die systemd gebruikt. Om een server te draaien op Windows of op het bureaublad met een grafische gebruikersinterface, [zie deze sectie](#servers-vanaf-een-werkstation)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:120
-#, no-wrap
-msgid "**For Linux headless** (Debian/Ubuntu using systemd) \n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:122
-#, fuzzy
-#| msgid "Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server)."
-msgid "Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (You will need to reload or restart for the changes to take effect. See [Installation](#installation))"
-msgstr "Voeg de gewenste [opdrachtregelopties](Running-a-Server#opdrachtregelopties) toe aan de `ExecStart` regel in het systemd-servicebestand door `sudo systemctl edit --full jamulus-headless` uit te voeren (standaard voer je een niet geregistreerde server uit)."
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:124
-#, no-wrap
-msgid "**For the GUI** (all platforms)\n"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:126
-msgid "Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)"
-msgstr ""
+#: ../wiki/en/Running-a-Server.md:83
+msgid "If you want to run a Server on a Raspberry Pi (or a different armhf/arm64 debian-based device), you will need to download the `.deb` files for 32 bit `armhf` or 64 bit `arm64`, not the default `amd64` ones you'd use on an Intel/AMD based machine."
+msgstr "Als je een server op een Raspberry Pi (of een ander op armhf/arm64 debian-gebaseerd apparaat) wilt draaien, moet je de `.deb`-bestanden voor 32 bit `armhf` of 64 bit `arm64` downloaden, niet de standaard `amd64` die je zou gebruiken op een Intel /AMD-gebaseerde machine."
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:129
+#: ../wiki/en/Running-a-Server.md:85
+#, fuzzy, no-wrap
+#| msgid "### Installation"
+msgid "Installation"
+msgstr "### Installatie"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Running-a-Server.md:94
+msgid "Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or the [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }})"
+msgstr "Download het [nieuwste headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) of indien je een Raspberry Pi etc. gebruikt, download het [nieuwste armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) of de [nieuwste arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }})"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Running-a-Server.md:94
+msgid "Update apt to make sure you have a current list of standard packages: `sudo apt update`"
+msgstr "Werk apt bij om er zeker van te zijn dat je een actuele lijst met standaard packages hebt: `sudo apt update`"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Running-a-Server.md:94
+msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc. armhf: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`"
+msgstr "Installeer het Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` of voor RasPi etc, armhf: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Running-a-Server.md:94
+msgid "Enable the headless Server process via systemd: `sudo systemctl enable jamulus-headless`"
+msgstr "Schakel het headless serverproces in via systemd: `sudo systemctl enable jamulus-headless`"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Running-a-Server.md:94
+msgid "Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server)."
+msgstr "Voeg de gewenste [opdrachtregelopties](Running-a-Server#opdrachtregelopties) toe aan de `ExecStart` regel in het systemd-servicebestand door `sudo systemctl edit --full jamulus-headless` uit te voeren (standaard voer je een niet geregistreerde server uit)."
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Running-a-Server.md:94
+msgid "Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`"
+msgstr "Herlaad de systemd bestanden `sudo systemctl daemon-reload` en herstart de headless server: `sudo systemctl restart jamulus-headless`"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Running-a-Server.md:94
+msgid "Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt)."
+msgstr "Controleer of alles in order is met `systemctl status jamulus-headless` (druk op `q` om terug te gaan naar de opdrachtregel)."
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:96
+msgid "You can control Jamulus with the `systemctl` command. For example, to stop the Server cleanly:"
+msgstr "Je kunt Jamulus bedienen met het commando `systemctl`. Om de server bijvoorbeeld netjes te stoppen:"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:98
+msgid "`sudo systemctl stop jamulus-headless`"
+msgstr "`sudo systemctl stop jamulus-headless`"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:100
+msgid "_To upgrade your Server, just repeat the steps above._"
+msgstr "_Herhaal de bovenstaande stappen om jouw server te upgraden._"
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:101
+#, fuzzy, no-wrap
+#| msgid "### Configuration"
+msgid "Configuration"
+msgstr "### Configuratie"
+
+#. type: Title ####
+#: ../wiki/en/Running-a-Server.md:103
+#, fuzzy, no-wrap
+#| msgid "#### Running in Registered mode"
+msgid "Running in Registered mode"
+msgstr "#### Uitvoeren in geregistreerde modus"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:106
+msgid "The following minimum setup is required to [run a Registered Server](Running-a-Server#server-types):"
+msgstr "De volgende minimale instellingen zijn vereist om [een geregistreerde server uit te voeren](Running-a-Server#servertypen):"
+
+#. type: Fenced code block
+#: ../wiki/en/Running-a-Server.md:107
+#, fuzzy, no-wrap
+#| msgid ""
+#| "~~~\n"
+#| "jamulus --nogui --server \\\n"
+#| "        --directoryserver genreServer:port \\\n"
+#| "        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
+#| "~~~\n"
+msgid ""
+"jamulus --nogui --server \\\n"
+"        --directoryserver genreServer:port \\\n"
+"        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
+msgstr ""
+"~~~\n"
+"jamulus --nogui --server \\\n"
+"        --directoryserver genreServer:poort \\\n"
+"        --serverinfo \"jouwServernaam;jouwStad;[land ID]\"\n"
+"~~~\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:114
 #, no-wrap
-msgid "Server mode-related options"
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:131
-#, no-wrap
-msgid "`-e or --directoryserver` "
-msgstr ""
+msgid "**Note**: Semicolon and newline characters are not allowed in `yourServerName` and `yourCity` within the `--serverinfo` argument\n"
+msgstr "**Opmerking**: Puntkomma's en nieuwe regeltekens zijn niet toegestaan in `jouwServerNaam` en `jouwStad` voor de `--serverinfo` optie\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:134
-msgid "Required for a [Registered Server](Running-a-Server#2-registered). Also required to run Jamulus as a [Directory](Directories)."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:136 ../wiki/en/Running-a-Server.md:157
-msgid "This option takes the format:"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:138
-msgid "`--directoryserver hostname:port` where `hostname` is the Genre Directory host name and `port` is its port number."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:140
-#, fuzzy
-#| msgid "To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` in the example above with one of the following options:"
-msgid "To register with one of the Directories built into the Jamulus Client, replace `hostname:port` with one of the following options:"
+#: ../wiki/en/Running-a-Server.md:116
+msgid "To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` in the example above with one of the following options:"
 msgstr "Om te registreren bij een van de adresboeken die in de Jamulus-client zijn ingebouwd, vervang je `genreServer:poort' in het bovenstaande voorbeeld door een van de volgende opties:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:150
-#, fuzzy, no-wrap
-#| msgid ""
-#| "| Genre |   Server Address           |\n"
-#| "|-----------|------------------|\n"
-#| "|**Any Genre 1** |`anygenre1.jamulus.io:22124`|\n"
-#| "|**Any Genre 2** |`anygenre2.jamulus.io:22224`|\n"
-#| "|**Any Genre 3** |`anygenre3.jamulus.io:22624`|\n"
-#| "|**Genre Rock** |`rock.jamulus.io:22424`|\n"
-#| "|**Genre Jazz** |`jazz.jamulus.io:22324`|\n"
-#| "|**Genre Classical/Folk** |`classical.jamulus.io:22524`|\n"
-#| "|**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|\n"
+#: ../wiki/en/Running-a-Server.md:127
+#, no-wrap
 msgid ""
-"| Genre |   `hostname:port`  |\n"
+"| Genre |   Server Address           |\n"
 "|-----------|------------------|\n"
 "|**Any Genre 1** |`anygenre1.jamulus.io:22124`|\n"
 "|**Any Genre 2** |`anygenre2.jamulus.io:22224`|\n"
@@ -481,317 +403,82 @@ msgstr ""
 "|**Genre Klassiek/Folk** |`classical.jamulus.io:22524`|\n"
 "|**Genre Koor/Barbershop** |`choral.jamulus.io:22724`|\n"
 
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:152
-#, no-wrap
-msgid "`-o or --serverinfo` "
-msgstr ""
-
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:155
-msgid "When registering your Server with a Directory, this lets you supply a server name and location details so that users can then search for these values from their Client."
-msgstr ""
+#: ../wiki/en/Running-a-Server.md:129
+msgid "You can also specify a [Directory](#3-directory) in the same way from the command line, providing the Server Address in the same format."
+msgstr "Je kunt ook een [adresboek](#3-adresboek) op dezelfde manier vanaf de opdrachtregel specificeren, waarbij je het serveradres in hetzelfde formaat opgeeft."
 
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:159
-msgid "`[name];[city];[country as two-letter ISO country code]`"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:161
-msgid "See [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:163
+#. type: Title ####
+#: ../wiki/en/Running-a-Server.md:130
 #, fuzzy, no-wrap
-#| msgid "**Note**: Semicolon and newline characters are not allowed in `yourServerName` and `yourCity` within the `--serverinfo` argument\n"
-msgid "**Note:** Semicolon and newline characters are not allowed in `name` and `city` values.\n"
-msgstr "**Opmerking**: Puntkomma's en nieuwe regeltekens zijn niet toegestaan in `jouwServerNaam` en `jouwStad` voor de `--serverinfo` optie\n"
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:164
-#, no-wrap
-msgid "`-L or --licence` "
-msgstr ""
+#| msgid "#### Running as a Directory"
+msgid "Running as a Directory"
+msgstr "#### Uitvoeren als adresboek"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:166
-msgid "Show an agreement window before users can connect.  The text of the agreement to be shown should be supplied as the `--welcomemessage` (see below)."
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:167
-#, no-wrap
-msgid "`-w or --welcomemessage` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:169
-msgid "A \"welcome message\" to display in the Client chat window on connect. Can be given as a string or filename, and can contain HTML."
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:170
-#, no-wrap
-msgid "`--serverpublicip` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:172
-msgid "The public IP address of the Server if connecting to a Directory behind the same NAT. See [the Directories guide](Directories) for further information."
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:173
-#, no-wrap
-msgid "`--directoryfile` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:175
-msgid "_Directories only:_ Remember registered Servers even if the Directory is restarted. See [the Directories guide](Directories) for further information."
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:176
-#, no-wrap
-msgid "`-f or --listfilter` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:178
-msgid "_Directories only:_ Allowlist Servers registering on the Server. See [the Directories guide](Directories) for further information."
-msgstr ""
+#: ../wiki/en/Running-a-Server.md:133
+msgid "If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Directories)."
+msgstr "Als je een [adresboek](Running-a-Server#3-adresboek) wilt uitvoeren, raadpleeg dan [deze handleiding](Directories)."
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:181
+#: ../wiki/en/Running-a-Server.md:134
 #, fuzzy, no-wrap
-#| msgid "### General notes"
-msgid "General Server options"
-msgstr "### Algemene opmerkingen"
+#| msgid "### Maintenance"
+msgid "Maintenance"
+msgstr "### Onderhoud"
 
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:183
-msgid "These options can be used regardless of which mode your server is running in (although some may not be relevant for Directories)."
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:184
-#, no-wrap
-msgid "`-d or --discononquit` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:186
-msgid "Normally, when a Server is stopped or restarted, any Clients that have not pressed their **Disconnect** buttons will automatically re-establish the connection when the Server returns. This option forces Clients to manually re-establish their connections to the Server in this scenario."
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:187
-#, no-wrap
-msgid "`-F or --fastupdate` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:189
-msgid "Reduces latency if Clients connect with **Enable Small Network Buffers** option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:190
-#, no-wrap
-msgid "`-l or --log` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:192
-msgid "Enable logging, set path and file name"
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:193
-#, no-wrap
-msgid "`-m or --htmlstatus` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:195
-msgid "Enable HTML status file, set path and file name"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:197
-#, no-wrap
-msgid "**Note:** This feature is deprecated, and may disappear in a future release.\n"
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:198
-#, no-wrap
-msgid "`-P or --delaypan` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:200
-#, fuzzy
-#| msgid "This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal \"volume\" panning."
-msgid "Start with delay panning enabled. This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal “volume” panning."
-msgstr "Deze optie maakt gebruik van kleine verschillen in de aankomsttijd van het geluid tussen de twee oren. Het produceert een stereo-effect dat vergelijkbaar is met het natuurlijke menselijk gehoor in vergelijking met normale \"volume\" panning."
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:201
-#, no-wrap
-msgid "`-s` or `--server`"
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:203
-msgid "Start Jamulus in Server mode"
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:204
-#, no-wrap
-msgid "`--serverbindip` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:206
-msgid "Specify the IP address the Jamulus process will bind to."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:208
-msgid "Normally, Jamulus will listen on all IP addresses on the host machine.  Where the host has multiple network addresses, this option allows one of the addresses to be chosen."
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:209
-#, no-wrap
-msgid "`-T or --multithreading` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:211
-msgid "Use multithreading to make better use of multi-core CPUs. This setting may help the Server support more Clients. See also `--numchannels`"
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:212
-#, no-wrap
-msgid "`-u or --numchannels` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:214
-msgid "Maximum number of channels (Clients)"
-msgstr ""
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:215
-#, no-wrap
-msgid "`-z or --startminimized` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:217
-msgid "Start the Jamulus Server graphical user interface in the minimized window state."
-msgstr ""
-
-#. type: Title ###
-#: ../wiki/en/Running-a-Server.md:218
+#. type: Title ####
+#: ../wiki/en/Running-a-Server.md:136
 #, fuzzy, no-wrap
-#| msgid "## Options"
-msgid "Other options"
-msgstr "## Opties"
+#| msgid "#### Viewing The Logs"
+msgid "Viewing The Logs"
+msgstr "#### Logboeken bekijken"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:221
-msgid "{% include_relative Include-Shared-Commands.md %}"
-msgstr "{% include_relative Include-Shared-Commands.md %}"
-
-#. type: Title ##
-#: ../wiki/en/Running-a-Server.md:224
-#, fuzzy, no-wrap
-#| msgid "### Recording Directory"
-msgid "Recording"
-msgstr "### Geluidsopnamedirectory"
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:226
-#, no-wrap
-msgid "`-R or --recording` "
-msgstr ""
+#: ../wiki/en/Running-a-Server.md:139
+msgid "Jamulus will log to the system log file if you left the `StandardOutput=journal` setting in the unit file."
+msgstr "Jamulus logt in het systeemlogbestand als je de instelling `StandardOutput=journal` in het instellingenbestand hebt gelaten."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:228
-msgid "Set server recording directory. By default, the Server will record when a session is active."
-msgstr ""
+#: ../wiki/en/Running-a-Server.md:141
+msgid "To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:"
+msgstr "Gebruik `journalctl` om het logboek te bekijken (om af te sluiten druk je op Ctrl-C). Om het systeemlogbestand te lezen, gefilterd voor de Jamulus-service, gebruik je het volgende commando:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:230
-#, fuzzy, no-wrap
-#| msgid "**Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).\n"
-msgid "**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file, but be aware that doing could be a security risk.\n"
-msgstr "**Opmerking:** Je moet opnamen opslaan in een pad _buiten_ de jamulus home map of `ProtectHome=true` uit het systemd bestand verwijderen (houd er rekening mee dat dit echter een potentieel veiligheidsrisico is).\n"
+#: ../wiki/en/Running-a-Server.md:143
+msgid "`journalctl -f -u jamulus-headless`"
+msgstr "`journalctl -f -u jamulus-headless`"
 
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:232
-msgid "Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:234
-#, fuzzy, no-wrap
-#| msgid "**Note**: When your Server is recording, Clients will display a message that recording is on.\n"
-msgid "**Note:** When your Server is recording, Clients display a red banner message that the session is being recorded.\n"
-msgstr "**Opmerking**: Wanneer jouw server aan het opnemen is, zullen clients een bericht weergeven dat de opname is ingeschakeld.\n"
-
-#. type: Title #####
-#: ../wiki/en/Running-a-Server.md:235
-#, no-wrap
-msgid "`--norecord` "
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:237
-msgid "Set server not to record by default when recording is configured."
-msgstr ""
-
-#. type: Title ###
-#: ../wiki/en/Running-a-Server.md:239
+#. type: Title ####
+#: ../wiki/en/Running-a-Server.md:144
 #, fuzzy, no-wrap
 #| msgid "#### Controlling Recording"
 msgid "Controlling Recording"
 msgstr "#### Opname regelen"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:242
-msgid "Recording starts once the first person connects to the Server, and stops when the last person leaves."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:244
-#, fuzzy
-#| msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will recording enabled on/off."
-msgid "If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording on/off."
+#: ../wiki/en/Running-a-Server.md:147
+msgid "When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will recording enabled on/off."
 msgstr "Als de opnamefunctie wordt gebruikt met de opdrachtregeloptie `-R' en de server een SIGUSR1-signaal ontvangt tijdens een opname, zal deze een nieuwe opname starten in een nieuwe map. SIGUSR2 schakelt opname in/uit."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:246
+#: ../wiki/en/Running-a-Server.md:149
 msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`)."
 msgstr "Om deze signalen met systemd te verzenden, maak je de volgende twee `.service`-bestanden in `/etc/systemd/system` en geef je ze een passendse naam (bijv. `jamulusTogglerec.service`)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:248
-#, fuzzy
-#| msgid "For turning recording on or off (depending on the current state):"
-msgid "To turn recording on or off (depending on the current state):"
+#: ../wiki/en/Running-a-Server.md:151
+#, no-wrap
+msgid "**Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).\n"
+msgstr "**Opmerking:** Je moet opnamen opslaan in een pad _buiten_ de jamulus home map of `ProtectHome=true` uit het systemd bestand verwijderen (houd er rekening mee dat dit echter een potentieel veiligheidsrisico is).\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:153
+msgid "For turning recording on or off (depending on the current state):"
 msgstr "Voor het in- of uitschakelen van de opname (afhankelijk van de huidige status):"
 
 #. type: Fenced code block
-#: ../wiki/en/Running-a-Server.md:249
+#: ../wiki/en/Running-a-Server.md:154
 #, fuzzy, no-wrap
 #| msgid ""
 #| "~~~\n"
@@ -813,14 +500,12 @@ msgstr ""
 " Requisite=Jamulus-Server\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:260
-#, fuzzy
-#| msgid "For starting a new recording:"
-msgid "To start a new recording:"
+#: ../wiki/en/Running-a-Server.md:165
+msgid "For starting a new recording:"
 msgstr "Voor het starten van een nieuwe opname:"
 
 #. type: Fenced code block
-#: ../wiki/en/Running-a-Server.md:261
+#: ../wiki/en/Running-a-Server.md:166
 #, fuzzy, no-wrap
 #| msgid ""
 #| "~~~\n"
@@ -842,422 +527,406 @@ msgstr ""
 " Requisite=Jamulus-Server\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:272
+#: ../wiki/en/Running-a-Server.md:177
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
 msgstr "_Opmerking: de Jamulus-servicenaam in de regel `ExecStart` moet dezelfde zijn als het bestandsnaam `.service` die je hebt gemaakt toen je systemd instelde om jouw Jamulus-server te bedienen. Dus in dit voorbeeld zou dat `Jamulus-Server.service` . zijn_"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:274
+#: ../wiki/en/Running-a-Server.md:179
 msgid "Run `sudo systemctl daemon-reload` to register them for first use."
 msgstr "Voer `sudo systemctl daemon-reload` uit om ze te registreren voor het eerste gebruik."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:276
+#: ../wiki/en/Running-a-Server.md:181
 msgid "Now you can run these with the `systemctl` command, for example:"
 msgstr "Nu kun je deze uitvoeren met het commando `service start`, bijvoorbeeld:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:278
-#, fuzzy
-#| msgid "`sudo systemctl stop jamulus-headless`"
-msgid "`sudo systemctl start jamulusTogglerec`"
-msgstr "`sudo systemctl stop jamulus-headless`"
+#: ../wiki/en/Running-a-Server.md:183
+msgid "`sudo systemctl start jamulusTogglerec` (assuming you named your unit file `jamulusTogglerec.service`)"
+msgstr "`sudo systemctl start jamulusTogglerec` (ervan uitgaande dat je je het bestand de naam `jamulusTogglerec.service` hebt gegeven)"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:280
+#: ../wiki/en/Running-a-Server.md:185
 msgid "You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs."
 msgstr "Je kunt het resultaat van deze commando's zien als je `systemctl status jamulus` uitvoert of door de logs te bekijken."
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:283
+#: ../wiki/en/Running-a-Server.md:187
 #, fuzzy, no-wrap
 #| msgid "## Servers on the desktop"
 msgid "Servers on the desktop"
 msgstr "## Servers vanaf een werkstation"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:286
-#, fuzzy
-#| msgid "Jamulus can be run in Server mode from the desktop. This gives you a graphical user interface to control most of the settings."
-msgid "Jamulus can run in Server mode in the graphical environment of a computer. This gives you a graphical user interface to control most of the settings. To do this, first [install Jamulus](Getting-Started) for your platform, the do one of the following:"
+#: ../wiki/en/Running-a-Server.md:190
+msgid "Jamulus can be run in Server mode from the desktop. This gives you a graphical user interface to control most of the settings."
 msgstr "Jamulus kan vanaf een werkstation in de servermodus worden uitgevoerd. Dit geeft je een grafische gebruikersinterface om de meeste instellingen te beheren."
 
 #. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:288
-#, fuzzy
-#| msgid "**Windows users** - If you want the Server to start automatically on system start, enable the corresponding check box.\n"
-msgid "**Windows users** - Use the \"Jamulus Server\" icon in the Windows Start menu. If you want the Server to start automatically when you start Windows, check the box for this option."
-msgstr "**Windows gebruikers** - Als je wilt dat de server automatisch start bij het opstarten van het systeem, schakel dan het bijbehorende selectievakje in.\n"
-
-#. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:290
+#: ../wiki/en/Running-a-Server.md:194
 #, fuzzy
 #| msgid "**Windows users** - Use the \"Jamulus Server\" icon in the Windows Start menu.\n"
-msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications."
+msgid "**Windows users** - Use the \"Jamulus Server\" icon in the Windows Start menu."
 msgstr "**Windows gebruikers** - Gebruik het \"Jamulus Server\" icoon in het windows start menu.\n"
 
 #. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:292
+#: ../wiki/en/Running-a-Server.md:194
+#, fuzzy
+#| msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).\n"
+msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh))."
+msgstr "**macOS gebruikers** - Dubbelklik het \"Jamulus Server\" icoon in programma's (ervan uitgaande dat je de bestanden van de installatie daar hebt geplaatst zoals per [deze instructies](Installation-for-Macintosh)).\n"
+
+#. type: Bullet: '* '
+#: ../wiki/en/Running-a-Server.md:194
 #, fuzzy
 #| msgid "**Linux users** - Launch the \"Jamulus Server\" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return.\n"
 msgid "**Linux users** - Launch the \"Jamulus Server\" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return."
 msgstr "**Linux gebruikers** - Start de \"Jamulus Server\" snelkoppeling of open een terminalvenster (`CTRL+ALT+t` op Debian en gerelateerde distributies) en typ `jamulus -s` en druk op enter.\n"
 
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:294
-#, fuzzy
-#| msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
-msgid "While most common functions in Jamulus can be set using the GUI, others can only be set using options given in a terminal window when the server is launched. Exactly how you do this will depend on your operating system."
-msgstr "De meest voorkomende functies in Jamulus kunnen worden ingesteld met behulp van de GUI, maar deze en andere kunnen ook worden ingesteld met behulp van opties die in een terminalvenster/opdrachtprompt worden ingegeven. Hoe je dit precies doet, hangt af van je besturingssysteem."
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:296
+#. type: Title ##
+#: ../wiki/en/Running-a-Server.md:196
 #, fuzzy, no-wrap
-#| msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
-msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose **Properties** > **Target**. Add the necessary arguments to Jamulus.exe:\n"
-msgstr "Als je bijvoorbeeld in Windows een specifiek instellingenbestand wilt gebruiken, klik je met de rechtermuisknop op de Jamulus-snelkoppeling en kies je \"Eigenschappen\" > Doel. Voeg de benodigde argumenten toe aan Jamulus.exe:"
+#| msgid "## Server Setup"
+msgid "Server Setup"
+msgstr "## Serverconfiguratie"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:298
+#: ../wiki/en/Running-a-Server.md:199
 #, fuzzy, no-wrap
-#| msgid ""
-#| "```shell\n"
-#| " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100\n"
-#| "```\n"
-msgid " `\"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100`\n"
-msgstr ""
-"```shell\n"
-" \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100\n"
-"```\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:300
-msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
-msgstr "Voor macOS, start een terminal venster en voer Jamulus uit met gewenste opties op deze manier:"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:302
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```shell\n"
-#| " /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100\n"
-#| "```\n"
-msgid " `/Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100`\n"
-msgstr ""
-"```shell\n"
-" /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100\n"
-"```\n"
-
-#. type: Plain text
-#: ../wiki/en/Running-a-Server.md:304
-#, fuzzy, no-wrap
-#| msgid "**Note**: Command line options will set the Server's defaults at startup. You can override them with their corresponding GUI controls while the Server is running.\n"
-msgid "**Note** Command line options will set the Server’s defaults at startup. You can override them while the Server is running using their corresponding GUI controls.\n"
-msgstr "**Opmerking**: Opdrachtregelopties stellen de standaardwaarden van de server in bij het opstarten. Je kunt ze overschrijven met de bijbehorende GUI-instellingen terwijl de server actief is.\n"
+#| msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus Server setup window\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus Server setup window\"></figure>\n"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus server configuratie venster\"></figure>"
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:305
+#: ../wiki/en/Running-a-Server.md:200
+#, fuzzy, no-wrap
+#| msgid "### The Directory list"
+msgid "The Directory list"
+msgstr "### Adresboek lijst"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:203
+#, no-wrap
+msgid "**None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.\n"
+msgstr "**Geen**: Standaard gebruik je een server die niet gekoppeld is aan een adresboek en wordt de server in niet geregistreerde modus uitgevoerd. [Lees deze instructies lezen](#een-niet-geregistreerde-server-uitvoeren) om anderen in deze modus verbinding met je te laten maken met jouw server.\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:205
+#, no-wrap
+msgid "**Genre**: To allow other people to see your Server on one of the Directories built into the Client, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.\n"
+msgstr "**Genre**: Om andere mensen jouw server te laten zien in een van de ingebouwde adresboeken in de client, selecteer je het gewenste genre adresboek. Je zou een bevestigingsbericht moeten zien dat aangeeft of jouw server succesvol is geregistreerd. Als dit niet het geval is en je laat je server draaien, dan zal hij blijven proberen zich te registreren totdat er een vrij slot vrijkomt.\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:207
+#, no-wrap
+msgid "**Custom**: This allows you to specify a custom directory on which to be listed. See the \"Options\" tab for the Custom Directory address you want to use.\n"
+msgstr "**Aangepast**: Hiermee kun je een eigen adresboek opgeven waarin moet worden vermeld. Zie het tabblad \"Opties\" voor het aangepaste adresboek dat je wilt gebruiken.\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:209
+msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Directories) for further details."
+msgstr "Om jouw server _als_ een adresboek te laten draaien, moet je het eigen adresboek adres instellen als `localhost` of `127.0.0.1` en het \"Genre\" instellen op \"Aangepast\". [Lees deze handleiding](Directories) voor meer details."
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:210
+#, fuzzy, no-wrap
+#| msgid "### My Server Info"
+msgid "My Server Info"
+msgstr "### Mijn serverinfo"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:213
+msgid "When running as a Registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing."
+msgstr "Wanneer de server als een geregistreerde server wordt uitgevoerd, worden de naam, de stad en het land van de server weergegeven, zodat andere gebruikers deze gemakkelijk kunnen identificeren in de adresboek lijst."
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:214
+#, fuzzy, no-wrap
+#| msgid "### Chat Welcome Message"
+msgid "Chat Welcome Message"
+msgstr "### Welkomstbericht chatvenster"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:217
+msgid "The text entered here appears to all users when they join the Server (the chat window will open automatically for them). HTML is also supported."
+msgstr "De tekst die hier wordt ingevoerd, verschijnt voor alle gebruikers wanneer ze verbinding maken met de server (het chatvenster wordt automatisch voor hen geopend). HTML wordt ook ondersteund."
+
+#. type: Title ##
+#: ../wiki/en/Running-a-Server.md:218
+#, fuzzy, no-wrap
+#| msgid "## Options"
+msgid "Options"
+msgstr "## Opties"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:221
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus Server window options\"></figure>"
+msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus Server window options\"></figure>\n"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus server opties venster\"></figure>"
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:222
+#, fuzzy, no-wrap
+#| msgid "### Recording Directory"
+msgid "Recording Directory"
+msgstr "### Geluidsopnamedirectory"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:225
+msgid "This sets the path to where the Server's recordings will be stored. With this path set, the \"Enable Jam Recorder\" function in the Server Setup tab will make recording start once the first person connects to the Server, and stops when the last person leaves. Use the \"New Recording\" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
+msgstr "Dit stelt het pad in naar waar de opname van de server wordt opgeslagen. Als dit pad is ingesteld, zorgt de functie \"Activeer geluidsopname\" op het tabblad Server instellingen ervoor dat de opname begint zodra de eerste persoon verbinding maakt met de server en stopt wanneer de laatste persoon de verbinding verbreekt. Gebruik de knop \"Nieuwe geluidsopname\" om een nieuwe submap aan te maken waarin de opnames vanaf dat moment worden opgeslagen. Merk op dat de opnames per track in [Audacity](https://www.audacityteam.org/) `.lof` en [REAPER](https://nl.wikipedia.org/wiki/REAPER) `.rpp` formaat worden opgeslagen. Open de respectievelijke bestanden om ernaar te luisteren in die toepassingen."
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:227
+#, no-wrap
+msgid "**Note**: When your Server is recording, Clients will display a message that recording is on.\n"
+msgstr "**Opmerking**: Wanneer jouw server aan het opnemen is, zullen clients een bericht weergeven dat de opname is ingeschakeld.\n"
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:228
+#, fuzzy, no-wrap
+#| msgid "### Custom Directory Address"
+msgid "Custom Directory Address"
+msgstr "### Eigen adresboek adres"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:231
+msgid "Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory."
+msgstr "Laat dit veld leeg, tenzij je de server bij een [aangepast adresboek](#3-adresboek) wilt vermelden of een adresboek wilt uitvoeren."
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:232
+#, fuzzy, no-wrap
+#| msgid "### Server List Filename"
+msgid "Server List Filename"
+msgstr "### Serverlijst bestandsnaam"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:235
+msgid "Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing \"empty\" until the Servers re-register."
+msgstr "Laat dit veld leeg, tenzij je jouw server als een [adresboek](#3-adresboek) wilt uitvoeren. Wanneer in gebruik, dan bevat dit de lijst met geregistreerde servers terwijl het adresboek opnieuw wordt gestart. Dit voorkomt dat de serverlijst \"leeg\" lijkt totdat de servers zich opnieuw registreren."
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:236
+#, fuzzy, no-wrap
+#| msgid "### Delay panning"
+msgid "Delay panning"
+msgstr "### Delay panning"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:239
+msgid "This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal \"volume\" panning."
+msgstr "Deze optie maakt gebruik van kleine verschillen in de aankomsttijd van het geluid tussen de twee oren. Het produceert een stereo-effect dat vergelijkbaar is met het natuurlijke menselijk gehoor in vergelijking met normale \"volume\" panning."
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:240
+#, fuzzy, no-wrap
+#| msgid "### Start Minimised"
+msgid "Start Minimised"
+msgstr "### Start geminimaliseerd bij systeemstart"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:243
+#, no-wrap
+msgid "**Windows users** - If you want the Server to start automatically on system start, enable the corresponding check box.\n"
+msgstr "**Windows gebruikers** - Als je wilt dat de server automatisch start bij het opstarten van het systeem, schakel dan het bijbehorende selectievakje in.\n"
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:244
 #, fuzzy, no-wrap
 #| msgid "### Server status icon"
-msgid "The Server status icon"
+msgid "Server status icon"
 msgstr "### Server status icoon"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:307
+#: ../wiki/en/Running-a-Server.md:246
 #, fuzzy, no-wrap
 #| msgid "When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:"
-msgid "When a Server is running in GUI mode, the operating system will show an icon in the system tray or status area that indicates whether the Server has connections:  \n"
+msgid "When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:  \n"
 msgstr "Wanneer de server actief is, toont het besturingssysteem een icoon in het systeemvak of het statusgebied om aan te geven of de server actief is:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:310
+#: ../wiki/en/Running-a-Server.md:249
 #, fuzzy, no-wrap
 #| msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty"
 msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty\n"
 msgstr "<figure><img src=\"{% include img/nl-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus Server icoon\"></figure> De server is niet ingebruik"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:312
+#: ../wiki/en/Running-a-Server.md:251
 #, fuzzy, no-wrap
 #| msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied"
 msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied\n"
 msgstr "<figure><img src=\"{% include img/nl-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus Server icoon\"></figure> De server is in gebruik"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:315
+#: ../wiki/en/Running-a-Server.md:252
+#, fuzzy, no-wrap
+#| msgid "## Command line options"
+msgid "Command line options"
+msgstr "## Opdrachtregelopties"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:255
+msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
+msgstr "De meest voorkomende functies in Jamulus kunnen worden ingesteld met behulp van de GUI, maar deze en andere kunnen ook worden ingesteld met behulp van opties die in een terminalvenster/opdrachtprompt worden ingegeven. Hoe je dit precies doet, hangt af van je besturingssysteem."
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:257
+#, fuzzy, no-wrap
+#| msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
+msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
+msgstr "Als je bijvoorbeeld in Windows een specifiek instellingenbestand wilt gebruiken, klik je met de rechtermuisknop op de Jamulus-snelkoppeling en kies je \"Eigenschappen\" > Doel. Voeg de benodigde argumenten toe aan Jamulus.exe:"
+
+#. type: Fenced code block (shell)
+#: ../wiki/en/Running-a-Server.md:258
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```shell\n"
+#| " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100\n"
+#| "```\n"
+msgid " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100\n"
+msgstr ""
+"```shell\n"
+" \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100\n"
+"```\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:263
+msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
+msgstr "Voor macOS, start een terminal venster en voer Jamulus uit met gewenste opties op deze manier:"
+
+#. type: Fenced code block (shell)
+#: ../wiki/en/Running-a-Server.md:264
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```shell\n"
+#| " /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100\n"
+#| "```\n"
+msgid " /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100\n"
+msgstr ""
+"```shell\n"
+" /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100\n"
+"```\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:269
+#, no-wrap
+msgid "**Note**: Command line options will set the Server's defaults at startup. You can override them with their corresponding GUI controls while the Server is running.\n"
+msgstr "**Opmerking**: Opdrachtregelopties stellen de standaardwaarden van de server in bij het opstarten. Je kunt ze overschrijven met de bijbehorende GUI-instellingen terwijl de server actief is.\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:271
+msgid "{% include_relative Include-Server-Commands.md %}"
+msgstr "{% include_relative Include-Server-Commands.md %}"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:273
+msgid "{% include_relative Include-Shared-Commands.md %}"
+msgstr "{% include_relative Include-Shared-Commands.md %}"
+
+#. type: Title ##
+#: ../wiki/en/Running-a-Server.md:275
+#, fuzzy, no-wrap
+#| msgid "## Running an Unregistered Server"
+msgid "Running an Unregistered Server"
+msgstr "## Een niet geregistreerde server uitvoeren"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:278
+msgid "It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode."
+msgstr "Het wordt ten zeerste aanbevolen om jouw server **eerst** te testen met een ingebouwd adresboek om eventuele latere problemen in de niet-geregistreerde modus te beperken."
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:279
+#, fuzzy, no-wrap
+#| msgid "### Setting up a Server behind a home router"
+msgid "Setting up a Server behind a home router"
+msgstr "### Een server opzetten achter een thuisrouter"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:282
+msgid "If you set up your server at home, you will probably need to change some settings in your router/firewall:"
+msgstr "Als je jouw server thuis opzet, moet je waarschijnlijk enkele instellingen in jouw router/firewall wijzigen:"
+
+#. type: Title ####
+#: ../wiki/en/Running-a-Server.md:283
+#, fuzzy, no-wrap
+#| msgid "#### Port forwarding"
+msgid "Port forwarding"
+msgstr "#### Poort forwarding"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:286
+msgid "People from outside your home network will not be able to see things inside it. To let external Jamulus clients connect to your server, you need to set up port forwarding in your Router's settings. The exact setup differs for every router. For help see your Router's documentation or [portforward.com](https://portforward.com)."
+msgstr "Mensen van buiten jouw thuisnetwerk kunnen de dingen daarbinnen niet zien. Om externe Jamulus-clients verbinding te laten maken met jouw server, moet je poort forwarding instellen in de instellingen van jouw router. De exacte setup verschilt per router. Raadpleeg de documentatie van jouw router of [portforward.com](https://portforward.com) voor hulp."
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:288
+#, no-wrap
+msgid "**Note:** The default port for the current version of Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the machine running the Server.\n"
+msgstr "**Opmerking:** De standaardpoort voor de huidige versie van Jamulus is **UDP** (niet TCP)-poort **22124**. Meestal stuurt je de poort **22124** van buiten jouw netwerk door naar de poort **22124** van de machine waarop de server wordt uitgevoerd.\n"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:290
+#, no-wrap
+msgid "**Note:** Your home router may change the IP address of the machine you're running your Server on. Depending on your router, you might need to give this machine a static IP address (often under DHCP settings of your router).\n"
+msgstr "**Opmerking:** Houd er ook rekening mee dat je thuisrouter ook het IP-adres kan wijzigen van de machine waarop je de server gebruikt. In dat geval moet je die machine misschien een statisch/vast IP-adres geven in de DHCP-configuratie van de router.\n"
+
+#. type: Title ####
+#: ../wiki/en/Running-a-Server.md:291
+#, fuzzy, no-wrap
+#| msgid "#### Getting the external IP"
+msgid "Getting the external IP"
+msgstr "#### Het externe IP verkrijgen"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:295
+msgid "To allow others to connect to your Server from the internet, get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip) and give it to them.  You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `localhost` or `127.0.0.1`."
+msgstr "Om anderen in staat te stellen verbinding te maken met jouw server vanaf internet, moet je jouw externe (WAN) IP-adres verkrijgen, b.v. door [met behulp van Google](https://www.google.com/search?q=what+is+my+ip) en het aan hen te geven. Je moet zelf verbinding maken via het lokale netwerkadres (LAN) van de machine waarop de server draait. Als je een client draait op dezelfde machine als jouw server, is dat `localhost` of `127.0.0.1`."
+
+#. type: Title ####
+#: ../wiki/en/Running-a-Server.md:297
+#, fuzzy, no-wrap
+#| msgid "#### Dynamic DNS and why you will probably need it"
+msgid "Dynamic DNS and why you will probably need it"
+msgstr "#### Dynamische DNS en waarom je het waarschijnlijk nodig hebt"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:300
+msgid "Most domestic internet connections change their external IP address after a short period. To avoid problems with this, you might want to set up \"dynamic DNS\" to get a static (sub-)domain you can share with others. Please research how to do that for your specic set up. Your router might support some \"dynamic DNS\" providers out of the box. If this is not the case, set up a dynamic DNS client as described by the dynamic DNS provider you chose."
+msgstr "De meeste thuisinternetverbindingen veranderen na korte tijd van extern IP-adres. Om problemen hiermee te voorkomen wil je misschien \"dynamische DNS\" instellen om zo een statisch (sub-)domein te krijgen dat je met anderen kunt delen. Onderzoek hoe je dat kunt doen voor jouw specifieke installatie. Jouw router ondersteunt mogelijk standaard sommige \"dynamische DNS\"-providers. Als dit niet het geval is, stel je een dynamische DNS-client in zoals beschreven door de dynamische DNS-provider die je hebt gekozen."
+
+#. type: Title ##
+#: ../wiki/en/Running-a-Server.md:301
 #, fuzzy, no-wrap
 #| msgid "## Backing up the Server"
 msgid "Backing up the Server"
 msgstr "## Een back-up maken van de server"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:318
+#: ../wiki/en/Running-a-Server.md:304
+msgid "_Note that headless Servers do not use `.ini` files. All configuration is given as command line options._"
+msgstr "_Merk op dat een headless server geen `.ini` bestand gebruikt. Alle configuratie wordt ingesteld met opdrachtregelopties._"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:306
 msgid "{% include_relative Include-Backing-Up.md %}"
 msgstr "{% include_relative Include-Backing-Up.md %}"
 
-#. type: Bullet: '- '
-#: ../wiki/en/Running-a-Server.md:320
-msgid "Headless Servers do not use `.ini` files. All configuration is given as command line options. If you are running a server in GUI mode, after reading any command line options on start, it will store its configuration in the `Jamululsserver.ini` file."
-msgstr ""
-
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:321
+#: ../wiki/en/Running-a-Server.md:307
 #, fuzzy, no-wrap
 #| msgid "## Troubleshooting"
 msgid "Troubleshooting"
 msgstr "## Problemen oplossen"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:323
+#: ../wiki/en/Running-a-Server.md:309
 msgid "If you are having other problems, [see this guide](Server-Troubleshooting)."
 msgstr "Als je problemen hebt, [zie deze handleiding](Server-Troubleshooting)."
-
-#, no-wrap
-#~ msgid "**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.\n"
-#~ msgstr "**Nee**. Je kunt de servers gebruiken die worden vermeld door de ingebouwde adresboeken en Jamulus gebruiken zonder een server te gebruiken of een hostingservice van derden te kiezen. Als je gewoon een ongestoorde sessie wilt, gebruik dan de [solotechniek beschreven op de pagina Tips en trucs](Tips-Tricks-More#zorg-voor-een-ongestoorde-sessie-op-elke-server). Als je besluit dat je geen van de servers kunt gebruiken die worden vermeld in de ingebouwde adresboeken dan kun je mogelijk een server gebruiken (geregistreerd in een eigen adresboek of niet geregistreerd - zie [servertypen](#servertypen)) die wordt gehost door een derde partij. Als je dit doet, bespaar je je de moeite om er zelf een op te zetten.\n"
-
-#~ msgid "While setting up a Server isn't difficult, it's a good idea to read the following background information to avoid some problems:"
-#~ msgstr "Hoewel het opzetten van een server niet moeilijk is, is het een goed idee om de volgende achtergrondinformatie te lezen om problemen te voorkomen:"
-
-#~ msgid "Running an Unregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode."
-#~ msgstr "Als je thuis een niet geregistreerde server uitvoert, moet je [poort forwarding](#poort-forwarding) op je router gebruiken. Als je een geregistreerde server gebruikt, zou poort forwarding in de meeste gevallen niet nodig moeten zijn, maar het is aan te raden dit te doen omdat sommige netwerken mogelijk niet goed werken met Jamulus in de standaardmodus."
-
-#~ msgid "Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. (There are plans to expand IPv6 support.)"
-#~ msgstr "Jamulus heeft slechts beperkte IPv6-ondersteuning die moet worden ingeschakeld met een opdrachtregeloptie op de client en server. (Er zijn plannen om de IPv6-ondersteuning uit te breiden.)"
-
-#, fuzzy, no-wrap
-#~| msgid "### 1. Registered"
-#~ msgid "1. Registered"
-#~ msgstr "### 1. Geregistreerd"
-
-#~ msgid "Your Server will be listed in a Directory. By default, Jamulus has a list of built-in Directories that Clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs."
-#~ msgstr "Jouw server wordt vermeld in een adresboek. Jamulus heeft standaard een lijst met ingebouwde adresboeken waarmee clients verbinding kunnen maken. Als je bij een van deze registreert, kan iedereen jouw server ontdekken en er verbinding mee maken. Je kunt jouw server ook in een eigen adresboek laten opnemen, als dat beter aan jouw behoeften voldoet."
-
-#~ msgid "If you are running an unregistered server behind a home internet connection, you might need to enable [port forwarding](#port-forwarding) as described below."
-#~ msgstr "Als je een niet geregistreerde server achter een internetverbinding thuis gebruikt, moet je mogelijk [poort forwarding](#poort-forwarding) inschakelen zoals hieronder beschreven."
-
-#, fuzzy, no-wrap
-#~| msgid "## Installation and Configuration"
-#~ msgid "Installation and Configuration"
-#~ msgstr "## Installatie en configuratie"
-
-#, fuzzy, no-wrap
-#~| msgid "Most people run Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop)."
-#~ msgid "Most people run Jamulus as a \"pure\" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop).  \n"
-#~ msgstr "De meeste mensen draaien Jamulus als een \"pure\" server op **hardware zonder audio** (bijvoorbeeld op een derde partij/cloudhost) met Linux. Bij de volgende stappen wordt ervan uitgegaan dat je bekend bent met de opdrachtregel en Debian/Ubuntu of vergelijkbare distributie die systemd gebruikt. Om een server te draaien op Windows of op het bureaublad met een grafische gebruikersinterface, [zie deze sectie](#servers-vanaf-een-werkstation)."
-
-#~ msgid "If you want to run a Server on a Raspberry Pi (or a different armhf/arm64 debian-based device), you will need to download the `.deb` files for 32 bit `armhf` or 64 bit `arm64`, not the default `amd64` ones you'd use on an Intel/AMD based machine."
-#~ msgstr "Als je een server op een Raspberry Pi (of een ander op armhf/arm64 debian-gebaseerd apparaat) wilt draaien, moet je de `.deb`-bestanden voor 32 bit `armhf` of 64 bit `arm64` downloaden, niet de standaard `amd64` die je zou gebruiken op een Intel /AMD-gebaseerde machine."
-
-#~ msgid "Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc. armhf: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`"
-#~ msgstr "Installeer het Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` of voor RasPi etc, armhf: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`"
-
-#~ msgid "Enable the headless Server process via systemd: `sudo systemctl enable jamulus-headless`"
-#~ msgstr "Schakel het headless serverproces in via systemd: `sudo systemctl enable jamulus-headless`"
-
-#~ msgid "Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt)."
-#~ msgstr "Controleer of alles in order is met `systemctl status jamulus-headless` (druk op `q` om terug te gaan naar de opdrachtregel)."
-
-#~ msgid "You can control Jamulus with the `systemctl` command. For example, to stop the Server cleanly:"
-#~ msgstr "Je kunt Jamulus bedienen met het commando `systemctl`. Om de server bijvoorbeeld netjes te stoppen:"
-
-#~ msgid "The following minimum setup is required to [run a Registered Server](Running-a-Server#server-types):"
-#~ msgstr "De volgende minimale instellingen zijn vereist om [een geregistreerde server uit te voeren](Running-a-Server#servertypen):"
-
-#, fuzzy, no-wrap
-#~| msgid ""
-#~| "~~~\n"
-#~| "jamulus --nogui --server \\\n"
-#~| "        --directoryserver genreServer:port \\\n"
-#~| "        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
-#~| "~~~\n"
-#~ msgid ""
-#~ "jamulus --nogui --server \\\n"
-#~ "        --directoryserver genreServer:port \\\n"
-#~ "        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
-#~ msgstr ""
-#~ "~~~\n"
-#~ "jamulus --nogui --server \\\n"
-#~ "        --directoryserver genreServer:poort \\\n"
-#~ "        --serverinfo \"jouwServernaam;jouwStad;[land ID]\"\n"
-#~ "~~~\n"
-
-#~ msgid "You can also specify a [Directory](#3-directory) in the same way from the command line, providing the Server Address in the same format."
-#~ msgstr "Je kunt ook een [adresboek](#3-adresboek) op dezelfde manier vanaf de opdrachtregel specificeren, waarbij je het serveradres in hetzelfde formaat opgeeft."
-
-#, fuzzy, no-wrap
-#~| msgid "#### Running as a Directory"
-#~ msgid "Running as a Directory"
-#~ msgstr "#### Uitvoeren als adresboek"
-
-#~ msgid "If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Directories)."
-#~ msgstr "Als je een [adresboek](Running-a-Server#3-adresboek) wilt uitvoeren, raadpleeg dan [deze handleiding](Directories)."
-
-#, fuzzy, no-wrap
-#~| msgid "### Maintenance"
-#~ msgid "Maintenance"
-#~ msgstr "### Onderhoud"
-
-#, fuzzy, no-wrap
-#~| msgid "#### Viewing The Logs"
-#~ msgid "Viewing The Logs"
-#~ msgstr "#### Logboeken bekijken"
-
-#~ msgid "Jamulus will log to the system log file if you left the `StandardOutput=journal` setting in the unit file."
-#~ msgstr "Jamulus logt in het systeemlogbestand als je de instelling `StandardOutput=journal` in het instellingenbestand hebt gelaten."
-
-#~ msgid "To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:"
-#~ msgstr "Gebruik `journalctl` om het logboek te bekijken (om af te sluiten druk je op Ctrl-C). Om het systeemlogbestand te lezen, gefilterd voor de Jamulus-service, gebruik je het volgende commando:"
-
-#~ msgid "`journalctl -f -u jamulus-headless`"
-#~ msgstr "`journalctl -f -u jamulus-headless`"
-
-#~ msgid "`sudo systemctl start jamulusTogglerec` (assuming you named your unit file `jamulusTogglerec.service`)"
-#~ msgstr "`sudo systemctl start jamulusTogglerec` (ervan uitgaande dat je je het bestand de naam `jamulusTogglerec.service` hebt gegeven)"
-
-#, fuzzy
-#~| msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).\n"
-#~ msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh))."
-#~ msgstr "**macOS gebruikers** - Dubbelklik het \"Jamulus Server\" icoon in programma's (ervan uitgaande dat je de bestanden van de installatie daar hebt geplaatst zoals per [deze instructies](Installation-for-Macintosh)).\n"
-
-#, fuzzy, no-wrap
-#~| msgid "## Server Setup"
-#~ msgid "Server Setup"
-#~ msgstr "## Serverconfiguratie"
-
-#, fuzzy, no-wrap
-#~| msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus Server setup window\"></figure>"
-#~ msgid "<figure><img src=\"{% include img/en-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus Server setup window\"></figure>\n"
-#~ msgstr "<figure><img src=\"{% include img/nl-screenshots/server-window-setup.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus server configuratie venster\"></figure>"
-
-#, fuzzy, no-wrap
-#~| msgid "### The Directory list"
-#~ msgid "The Directory list"
-#~ msgstr "### Adresboek lijst"
-
-#, no-wrap
-#~ msgid "**None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.\n"
-#~ msgstr "**Geen**: Standaard gebruik je een server die niet gekoppeld is aan een adresboek en wordt de server in niet geregistreerde modus uitgevoerd. [Lees deze instructies lezen](#een-niet-geregistreerde-server-uitvoeren) om anderen in deze modus verbinding met je te laten maken met jouw server.\n"
-
-#, no-wrap
-#~ msgid "**Genre**: To allow other people to see your Server on one of the Directories built into the Client, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.\n"
-#~ msgstr "**Genre**: Om andere mensen jouw server te laten zien in een van de ingebouwde adresboeken in de client, selecteer je het gewenste genre adresboek. Je zou een bevestigingsbericht moeten zien dat aangeeft of jouw server succesvol is geregistreerd. Als dit niet het geval is en je laat je server draaien, dan zal hij blijven proberen zich te registreren totdat er een vrij slot vrijkomt.\n"
-
-#, no-wrap
-#~ msgid "**Custom**: This allows you to specify a custom directory on which to be listed. See the \"Options\" tab for the Custom Directory address you want to use.\n"
-#~ msgstr "**Aangepast**: Hiermee kun je een eigen adresboek opgeven waarin moet worden vermeld. Zie het tabblad \"Opties\" voor het aangepaste adresboek dat je wilt gebruiken.\n"
-
-#~ msgid "To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the \"Genre\" to \"Custom\". [Read this guide](Directories) for further details."
-#~ msgstr "Om jouw server _als_ een adresboek te laten draaien, moet je het eigen adresboek adres instellen als `localhost` of `127.0.0.1` en het \"Genre\" instellen op \"Aangepast\". [Lees deze handleiding](Directories) voor meer details."
-
-#, fuzzy, no-wrap
-#~| msgid "### My Server Info"
-#~ msgid "My Server Info"
-#~ msgstr "### Mijn serverinfo"
-
-#~ msgid "When running as a Registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing."
-#~ msgstr "Wanneer de server als een geregistreerde server wordt uitgevoerd, worden de naam, de stad en het land van de server weergegeven, zodat andere gebruikers deze gemakkelijk kunnen identificeren in de adresboek lijst."
-
-#, fuzzy, no-wrap
-#~| msgid "### Chat Welcome Message"
-#~ msgid "Chat Welcome Message"
-#~ msgstr "### Welkomstbericht chatvenster"
-
-#~ msgid "The text entered here appears to all users when they join the Server (the chat window will open automatically for them). HTML is also supported."
-#~ msgstr "De tekst die hier wordt ingevoerd, verschijnt voor alle gebruikers wanneer ze verbinding maken met de server (het chatvenster wordt automatisch voor hen geopend). HTML wordt ook ondersteund."
-
-#, fuzzy, no-wrap
-#~| msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus Server window options\"></figure>"
-#~ msgid "<figure><img src=\"{% include img/en-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"Image of Jamulus Server window options\"></figure>\n"
-#~ msgstr "<figure><img src=\"{% include img/nl-screenshots/server-window-options.inc %}\" style=\"width:80%; border:5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van het Jamulus server opties venster\"></figure>"
-
-#~ msgid "This sets the path to where the Server's recordings will be stored. With this path set, the \"Enable Jam Recorder\" function in the Server Setup tab will make recording start once the first person connects to the Server, and stops when the last person leaves. Use the \"New Recording\" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
-#~ msgstr "Dit stelt het pad in naar waar de opname van de server wordt opgeslagen. Als dit pad is ingesteld, zorgt de functie \"Activeer geluidsopname\" op het tabblad Server instellingen ervoor dat de opname begint zodra de eerste persoon verbinding maakt met de server en stopt wanneer de laatste persoon de verbinding verbreekt. Gebruik de knop \"Nieuwe geluidsopname\" om een nieuwe submap aan te maken waarin de opnames vanaf dat moment worden opgeslagen. Merk op dat de opnames per track in [Audacity](https://www.audacityteam.org/) `.lof` en [REAPER](https://nl.wikipedia.org/wiki/REAPER) `.rpp` formaat worden opgeslagen. Open de respectievelijke bestanden om ernaar te luisteren in die toepassingen."
-
-#, fuzzy, no-wrap
-#~| msgid "### Custom Directory Address"
-#~ msgid "Custom Directory Address"
-#~ msgstr "### Eigen adresboek adres"
-
-#~ msgid "Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory."
-#~ msgstr "Laat dit veld leeg, tenzij je de server bij een [aangepast adresboek](#3-adresboek) wilt vermelden of een adresboek wilt uitvoeren."
-
-#, fuzzy, no-wrap
-#~| msgid "### Server List Filename"
-#~ msgid "Server List Filename"
-#~ msgstr "### Serverlijst bestandsnaam"
-
-#~ msgid "Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing \"empty\" until the Servers re-register."
-#~ msgstr "Laat dit veld leeg, tenzij je jouw server als een [adresboek](#3-adresboek) wilt uitvoeren. Wanneer in gebruik, dan bevat dit de lijst met geregistreerde servers terwijl het adresboek opnieuw wordt gestart. Dit voorkomt dat de serverlijst \"leeg\" lijkt totdat de servers zich opnieuw registreren."
-
-#, fuzzy, no-wrap
-#~| msgid "### Delay panning"
-#~ msgid "Delay panning"
-#~ msgstr "### Delay panning"
-
-#, fuzzy, no-wrap
-#~| msgid "### Start Minimised"
-#~ msgid "Start Minimised"
-#~ msgstr "### Start geminimaliseerd bij systeemstart"
-
-#, fuzzy, no-wrap
-#~| msgid "## Command line options"
-#~ msgid "Command line options"
-#~ msgstr "## Opdrachtregelopties"
-
-#~ msgid "{% include_relative Include-Server-Commands.md %}"
-#~ msgstr "{% include_relative Include-Server-Commands.md %}"
-
-#, fuzzy, no-wrap
-#~| msgid "## Running an Unregistered Server"
-#~ msgid "Running an Unregistered Server"
-#~ msgstr "## Een niet geregistreerde server uitvoeren"
-
-#~ msgid "It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode."
-#~ msgstr "Het wordt ten zeerste aanbevolen om jouw server **eerst** te testen met een ingebouwd adresboek om eventuele latere problemen in de niet-geregistreerde modus te beperken."
-
-#, fuzzy, no-wrap
-#~| msgid "### Setting up a Server behind a home router"
-#~ msgid "Setting up a Server behind a home router"
-#~ msgstr "### Een server opzetten achter een thuisrouter"
-
-#~ msgid "If you set up your server at home, you will probably need to change some settings in your router/firewall:"
-#~ msgstr "Als je jouw server thuis opzet, moet je waarschijnlijk enkele instellingen in jouw router/firewall wijzigen:"
-
-#, fuzzy, no-wrap
-#~| msgid "#### Port forwarding"
-#~ msgid "Port forwarding"
-#~ msgstr "#### Poort forwarding"
-
-#~ msgid "People from outside your home network will not be able to see things inside it. To let external Jamulus clients connect to your server, you need to set up port forwarding in your Router's settings. The exact setup differs for every router. For help see your Router's documentation or [portforward.com](https://portforward.com)."
-#~ msgstr "Mensen van buiten jouw thuisnetwerk kunnen de dingen daarbinnen niet zien. Om externe Jamulus-clients verbinding te laten maken met jouw server, moet je poort forwarding instellen in de instellingen van jouw router. De exacte setup verschilt per router. Raadpleeg de documentatie van jouw router of [portforward.com](https://portforward.com) voor hulp."
-
-#, no-wrap
-#~ msgid "**Note:** The default port for the current version of Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the machine running the Server.\n"
-#~ msgstr "**Opmerking:** De standaardpoort voor de huidige versie van Jamulus is **UDP** (niet TCP)-poort **22124**. Meestal stuurt je de poort **22124** van buiten jouw netwerk door naar de poort **22124** van de machine waarop de server wordt uitgevoerd.\n"
-
-#, no-wrap
-#~ msgid "**Note:** Your home router may change the IP address of the machine you're running your Server on. Depending on your router, you might need to give this machine a static IP address (often under DHCP settings of your router).\n"
-#~ msgstr "**Opmerking:** Houd er ook rekening mee dat je thuisrouter ook het IP-adres kan wijzigen van de machine waarop je de server gebruikt. In dat geval moet je die machine misschien een statisch/vast IP-adres geven in de DHCP-configuratie van de router.\n"
-
-#, fuzzy, no-wrap
-#~| msgid "#### Getting the external IP"
-#~ msgid "Getting the external IP"
-#~ msgstr "#### Het externe IP verkrijgen"
-
-#~ msgid "To allow others to connect to your Server from the internet, get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip) and give it to them.  You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `localhost` or `127.0.0.1`."
-#~ msgstr "Om anderen in staat te stellen verbinding te maken met jouw server vanaf internet, moet je jouw externe (WAN) IP-adres verkrijgen, b.v. door [met behulp van Google](https://www.google.com/search?q=what+is+my+ip) en het aan hen te geven. Je moet zelf verbinding maken via het lokale netwerkadres (LAN) van de machine waarop de server draait. Als je een client draait op dezelfde machine als jouw server, is dat `localhost` of `127.0.0.1`."
-
-#, fuzzy, no-wrap
-#~| msgid "#### Dynamic DNS and why you will probably need it"
-#~ msgid "Dynamic DNS and why you will probably need it"
-#~ msgstr "#### Dynamische DNS en waarom je het waarschijnlijk nodig hebt"
-
-#~ msgid "Most domestic internet connections change their external IP address after a short period. To avoid problems with this, you might want to set up \"dynamic DNS\" to get a static (sub-)domain you can share with others. Please research how to do that for your specic set up. Your router might support some \"dynamic DNS\" providers out of the box. If this is not the case, set up a dynamic DNS client as described by the dynamic DNS provider you chose."
-#~ msgstr "De meeste thuisinternetverbindingen veranderen na korte tijd van extern IP-adres. Om problemen hiermee te voorkomen wil je misschien \"dynamische DNS\" instellen om zo een statisch (sub-)domein te krijgen dat je met anderen kunt delen. Onderzoek hoe je dat kunt doen voor jouw specifieke installatie. Jouw router ondersteunt mogelijk standaard sommige \"dynamische DNS\"-providers. Als dit niet het geval is, stel je een dynamische DNS-client in zoals beschreven door de dynamische DNS-provider die je hebt gekozen."
-
-#~ msgid "_Note that headless Servers do not use `.ini` files. All configuration is given as command line options._"
-#~ msgstr "_Merk op dat een headless server geen `.ini` bestand gebruikt. Alle configuratie wordt ingesteld met opdrachtregelopties._"
 
 #~ msgid "TOC"
 #~ msgstr "TOC"
