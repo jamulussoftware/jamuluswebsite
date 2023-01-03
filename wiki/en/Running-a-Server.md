@@ -17,14 +17,15 @@ permalink: "/wiki/Running-a-Server"
 
 </details>
 
-
 ## Do I need to run a Server?
 
-**No**. You can use the Servers listed by the built in Directories and use Jamulus without running a Server or choose a third party hosting service. If you just want an undisturbed session, use the [soloing technique described on the Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). If you decide you cannot use any of the Servers listed by the built in Directories, you may be able to use a Server (either Registered in a Custom Directory, or Unregistered - see [Server Types](#server-types)) hosted by a third party. Doing so will save you the trouble of setting one up yourself.
+**No**. You don't need to run a Server. You can use the Servers listed by the built-in Directories and use Jamulus without running a Server yourself. You can also use an unlisted server if you know its internet address. Or you can use a third party hosting service such as [melomax](https://melomax.live/jamulus-hosting/) or [KOORD](https://koord.live/). There's probably a Server nearby that you and your friends can use at low enough latency for most needs.
 
-## Basic requirements
+Using a public server might introduce you to strangers. If you want an undisturbed session, you can use the soloing technique described on the [Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). You won't hear strangers who connect to the Server, but they can hear you if they wish.
 
-While setting up a Server isn't difficult, it's a good idea to read the following background information to avoid some problems:
+---
+
+## Requirements
 
 ### Speed and latency
 
@@ -36,86 +37,108 @@ However, various problems can also arise when setting up Servers - especially wh
 
 Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems.
 
-
 ### General notes
 
 * Any Server should have at least 1.6GHz CPU frequency and 1GB RAM
 * Running a Server may require you to adjust any firewalls running on or outside of your machine or cloud host.
-* Running an Unregistered Server at home will require you to [port forward](#port-forwarding) on your router. When running a Registered Server, port forwarding should not be necessary in most cases, but it's advisable to do so because some networks may not work properly with Jamulus in its default mode.
-* Jamulus only has limited IPv6 support which needs to be enabled with a command line argument on the Client and Server. (There are plans to expand IPv6 support.)
+* You must set up port forwarding on your router to run an [Unregistered Server](Unregistered-Servers) at home. This should not be necessary when running a Registered Server in most cases. However, some home networks can require port forwarding for a Registered Server.
+* Jamulus offers limited IPv6 support that you can turn on for a Client or Server from the command line.
 
-## Server Types
+---
 
-You can run your Server in different ways (either at home or on a 3rd party host):
+## Installation
 
-### 1. Registered
+Most people run Jamulus on a 3rd party/cloud host as a "headless" Server (no video display or keyboard) on **hardware without audio** running Linux. You can also run a Server in a [**desktop environment**](#servers-on-the-desktop).
 
-Your Server will be listed in a Directory. By default, Jamulus has a list of built-in Directories that Clients can connect to. If you register with one of these, anyone can then discover and connect to your Server. You can also have your Server listed on a Custom Directory, if that better meets your needs.
+To run a headless server on Linux, the following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution that uses systemd. 
 
-<figure>
-	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Registered Server">
-<figcaption>How Registered Servers work</figcaption>
-</figure>
+If you want to run a Server on a **Raspberry Pi** (or a different armhf/arm64 debian-based device), you will need to download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }}) depending on your CPU - not the default `amd64` ones for use on Intel/AMD machines.
 
-### 2. Unregistered
+1. Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) (or for Raspberry Pi etc. as above)
+1. Make sure you have a current list of standard packages: `sudo apt update`
+1. Install the Jamulus package for your architecture, for example: 
 
-This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address to will be able to connect to it. This is useful because Jamulus does not let you control who can connect to a Server.
+	`sudo apt install ./{{ site.download_file_names.deb-headless }}`
 
-<figure>
-	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Unregistered Server">
-	<figcaption>How Unregistered Servers work</figcaption>
-</figure>
+1. Enable the headless Server process: 
 
-If you are running an unregistered server behind a home internet connection, you might need to enable [port forwarding](#port-forwarding) as described below.
+	`sudo systemctl enable jamulus-headless`
 
-### 3. Directory
+1. Add your desired [command line options](Running-a-Server#configuration) to the `ExecStart` line in the systemd service file (by default you will be running an Unregistered Server):
 
-If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
+	`sudo systemctl edit --full jamulus-headless`
 
-To run a Directory [read this guide](Directories)
+1. Reload the systemd files and restart the headless Server:
 
-
-## Installation and Configuration
-
-Most people run Jamulus as a "pure" Server on **hardware without audio** (e.g. on a 3rd party/cloud host) running Linux. The following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution using systemd. To run a server on Windows or on the desktop with a graphical user interface, [see this section](#servers-on-the-desktop).  
-
-If you want to run a Server on a Raspberry Pi (or a different armhf/arm64 debian-based device), you will need to download the `.deb` files for 32 bit `armhf` or 64 bit `arm64`, not the default `amd64` ones you'd use on an Intel/AMD based machine.
-
-
-### Installation
-
-1. Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) or, if you use a Raspberry Pi etc. download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or the [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }})
-1. Update apt to make sure you have a current list of standard packages: `sudo apt update`
-1. Install the Jamulus package: `sudo apt install ./{{ site.download_file_names.deb-headless }}` or for RasPi etc. armhf: `sudo apt install ./{{ site.download_file_names.deb-headless-armhf }}`; arm64: `sudo apt install ./{{ site.download_file_names.deb-headless-arm64 }}`
-1. Enable the headless Server process via systemd: `sudo systemctl enable jamulus-headless`
-1. Add your desired [command line options](Running-a-Server#command-line-options) to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (By default you will be running an Unregistered Server).
-1. Reload the systemd files `sudo systemctl daemon-reload` and restart the headless Server: `sudo systemctl restart jamulus-headless`
-1. Check all is well with `systemctl status jamulus-headless` (hit `q` to get back to the command prompt).
-
-You can control Jamulus with the `systemctl` command. For example, to stop the Server cleanly:
-
-`sudo systemctl stop jamulus-headless`
+	`sudo systemctl daemon-reload && systemctl restart jamulus-headless` 
 
 _To upgrade your Server, just repeat the steps above._
 
-### Configuration
+_To amend your Server configuration, just repeat the last two steps above._
 
-#### Running in Registered mode
+---
 
-The following minimum setup is required to [run a Registered Server](Running-a-Server#server-types):
+## Server Modes
 
-~~~
-jamulus --nogui --server \
-        --directoryserver genreServer:port \
-        --serverinfo "yourServerName;yourCity;[country ID]"
-~~~
+Servers can be run in one of three modes (either at home or on a 3rd party host), depending on your needs.
 
-**Note**: Semicolon and newline characters are not allowed in `yourServerName` and `yourCity` within the `--serverinfo` argument
+### Unregistered mode
 
-To register with one of the Directories built into the Jamulus Client, replace `genreServer:port` in the example above with one of the following options:
+This is the default when starting a Server for the first time. Unregistered Servers are not listed by Directories, so only musicians who know your Server's address can connect to it. 
 
+**For information about running an Unregistered Server [see this guide](Unregistered-Servers).**
 
-| Genre |   Server Address           |
+<figure>
+	<img src="{% include img/en-screenshots/diagram-unreg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Unregistered Server">
+</figure>
+
+### Registered mode
+
+In this mode your Server will appear in the server list supplied by a Directory. Jamulus Clients come with a list of Directories built-in. If you register your Server with one of these, anyone can discover and connect to it.
+
+Alternatively, you can list your Server on a Custom Directory (see below).  Clients will only find your Server if they enter the Custom Directory's internet address.
+
+Note that Directories can only register up to 150 Servers. If you see a message that says you cannot register your Server because the Directory is full, you can try registering with a different Directory. 
+
+<figure>
+	<img src="{% include img/en-screenshots/diagram-reg-server.inc %}" loading="lazy" alt="Diagram of connections between Clients within a Jamulus Registered Server">
+</figure>
+
+### Directory mode
+
+If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools.
+
+For information, [see the Directories guide](Directories).
+
+---
+
+## Configuration options
+
+Depending on your operating system and how you are running the server, you can set Server options and make them persistent between reloads by following these steps:
+
+**For Linux headless** (Debian/Ubuntu using systemd) 
+
+Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (You will need to reload or restart for the changes to take effect. See [Installation](#installation))
+
+**For the GUI** (all platforms)
+
+Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)
+
+---
+
+### Server mode-related options
+
+##### `-e or --directoryserver` 
+
+Required for a [Registered Server](Running-a-Server#2-registered). Also required to run Jamulus as a [Directory](Directories). 
+
+This option takes the format:
+
+`--directoryserver hostname:port` where `hostname` is the Genre Directory host name and `port` is its port number.
+
+To register with one of the Directories built into the Jamulus Client, replace `hostname:port` with one of the following options:
+
+| Genre |   `hostname:port`  |
 |-----------|------------------|
 |**Any Genre 1** |`anygenre1.jamulus.io:22124`|
 |**Any Genre 2** |`anygenre2.jamulus.io:22224`|
@@ -125,31 +148,103 @@ To register with one of the Directories built into the Jamulus Client, replace `
 |**Genre Classical/Folk** |`classical.jamulus.io:22524`|
 |**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
 
-You can also specify a [Directory](#3-directory) in the same way from the command line, providing the Server Address in the same format.
 
-#### Running as a Directory
+##### `-o or --serverinfo` 
 
-If you wish to run a [Directory](Running-a-Server#3-directory) please see [this guide](Directories).
+When registering your Server with a Directory, this lets you supply a server name and location details so that users can then search for these values from their Client.
 
-### Maintenance
+This option takes the format: 
 
-#### Viewing The Logs
+`[name];[city];[country as two-letter ISO country code]`
 
-Jamulus will log to the system log file if you left the `StandardOutput=journal` setting in the unit file.
+See [two-letter ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
 
-To view the log, use `journalctl` (to exit press Ctrl-C). For example, to read the system log file, filtered for the Jamulus service:
+**Note:** Semicolon and newline characters are not allowed in `name` and `city` values.
 
-`journalctl -f -u jamulus-headless`
+##### `-L or --licence` 
+Show an agreement window before users can connect.  The text of the agreement to be shown should be supplied as the `--welcomemessage` (see below).
 
-#### Controlling Recording
+##### `-w or --welcomemessage` 
+A "welcome message" to display in the Client chat window on connect. Can be given as a string or filename, and can contain HTML.
 
-When using the recording function with the `-R` command line option, if the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new Directory. SIGUSR2 will recording enabled on/off.
+##### `--serverpublicip` 
+The public IP address of the Server if connecting to a Directory behind the same NAT. See [the Directories guide](Directories) for further information.
+
+##### `--directoryfile` 
+_Directories only:_ Remember registered Servers even if the Directory is restarted. See [the Directories guide](Directories) for further information.
+
+##### `-f or --listfilter` 
+_Directories only:_ Allowlist Servers registering on the Server. See [the Directories guide](Directories) for further information.
+
+---
+
+### General Server options
+These options can be used regardless of which mode your server is running in (although some may not be relevant for Directories).
+
+##### `-d or --discononquit` 
+Normally, when a Server is stopped or restarted, any Clients that have not pressed their **Disconnect** buttons will automatically re-establish the connection when the Server returns. This option forces Clients to manually re-establish their connections to the Server in this scenario.
+
+##### `-F or --fastupdate` 
+Reduces latency if Clients connect with **Enable Small Network Buffers** option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.
+
+##### `-l or --log` 
+Enable logging, set path and file name
+
+##### `-m or --htmlstatus` 
+Enable HTML status file, set path and file name
+
+**Note:** This feature is deprecated, and may disappear in a future release.
+
+##### `-P or --delaypan` 
+Start with delay panning enabled. This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal “volume” panning.
+
+##### `-s` or `--server`
+Start Jamulus in Server mode
+
+##### `--serverbindip` 
+Specify the IP address the Jamulus process will bind to. 
+
+Normally, Jamulus will listen on all IP addresses on the host machine.  Where the host has multiple network addresses, this option allows one of the addresses to be chosen.
+
+##### `-T or --multithreading` 
+Use multithreading to make better use of multi-core CPUs. This setting may help the Server support more Clients. See also `--numchannels`
+
+##### `-u or --numchannels` 
+Maximum number of channels (Clients)
+
+##### `-z or --startminimized` 
+Start the Jamulus Server graphical user interface in the minimized window state.
+
+### Other options
+
+{% include_relative Include-Shared-Commands.md %}
+
+---
+
+## Recording
+
+##### `-R or --recording` 
+Set server recording directory. By default, the Server will record when a session is active. 
+
+**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file, but be aware that doing could be a security risk.
+
+Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
+
+**Note:** When your Server is recording, Clients display a red banner message that the session is being recorded.
+
+##### `--norecord` 
+Set server not to record by default when recording is configured.
+
+
+### Controlling Recording
+
+Recording starts once the first person connects to the Server, and stops when the last person leaves. 
+
+If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording on/off.
 
 To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`).
 
-**Note:** You will need to save recordings to a path _outside_ of the jamulus home Directory, or remove `ProtectHome=true` from your systemd unit file (be aware that doing so is however a potential security risk).
-
-For turning recording on or off (depending on the current state):
+To turn recording on or off (depending on the current state):
 
 ~~~
  [Unit]
@@ -161,7 +256,7 @@ For turning recording on or off (depending on the current state):
  ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
 ~~~
 
-For starting a new recording:
+To start a new recording:
 
 ~~~
  [Unit]
@@ -179,130 +274,49 @@ Run `sudo systemctl daemon-reload` to register them for first use.
 
 Now you can run these with the `systemctl` command, for example:
 
-`sudo systemctl start jamulusTogglerec` (assuming you named your unit file `jamulusTogglerec.service`)
+`sudo systemctl start jamulusTogglerec` 
 
 You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs.
 
+---
 
 ## Servers on the desktop
 
-Jamulus can be run in Server mode from the desktop. This gives you a graphical user interface to control most of the settings.
+Jamulus can run in Server mode in the graphical environment of a computer. This gives you a graphical user interface to control most of the settings. To do this, first [install Jamulus](Getting-Started) for your platform, the do one of the following:
 
-* **Windows users** - Use the "Jamulus Server" icon in the Windows Start menu.
-* **macOS users** - Double-click the "Jamulus Server" icon in Applications (assuming you put the files from the install there as per [these instructions](Installation-for-Macintosh)).
+* **Windows users** - Use the "Jamulus Server" icon in the Windows Start menu. If you want the Server to start automatically when you start Windows, check the box for this option.
+
+* **macOS users** - Double-click the "Jamulus Server" icon in Applications.
+
 * **Linux users** - Launch the "Jamulus Server" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return.
 
+While most common functions in Jamulus can be set using the GUI, others can only be set using options given in a terminal window when the server is launched. Exactly how you do this will depend on your operating system.
 
-## Server Setup
+For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose **Properties** > **Target**. Add the necessary arguments to Jamulus.exe:
 
-<figure><img src="{% include img/en-screenshots/server-window-setup.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of the Jamulus Server setup window"></figure>
+ `"C:\Program Files\Jamulus\Jamulus.exe" --serverbindip 192.168.0.100`
 
-### The Directory list
+For macOS, start a Terminal window and run Jamulus with the desired options like this:
 
-**None**: By default, you will not be connected to a Directory and will be running in unregistered mode. [Read these instructions](#running-an-unregistered-server) to have other people connect to your Server in this mode.
+ `/Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100`
 
-**Genre**: To allow other people to see your Server on one of the Directories built into the Client, select your desired genre Directory. You should see a confirmation message saying whether your Server has registered successfully. If not, and you leave your Server running, it will keep trying to register until a free slot becomes available.
+**Note** Command line options will set the Server’s defaults at startup. You can override them while the Server is running using their corresponding GUI controls.
 
-**Custom**: This allows you to specify a custom directory on which to be listed. See the "Options" tab for the Custom Directory address you want to use.
+### The Server status icon
 
-To run your Server _as_ a Directory, you need to set the Custom Directory address as `localhost` or `127.0.0.1` and set the "Genre" to "Custom". [Read this guide](Directories) for further details.
-
-### My Server Info
-
-When running as a Registered Server this displays the Server's name, city and country so that other users can easily identify it in the Directory listing.
-
-### Chat Welcome Message
-
-The text entered here appears to all users when they join the Server (the chat window will open automatically for them). HTML is also supported.
-
-## Options
-
-<figure><img src="{% include img/en-screenshots/server-window-options.inc %}" style="width:80%; border:5px solid grey;" loading="lazy" alt="Image of Jamulus Server window options"></figure>
-
-### Recording Directory
-
-This sets the path to where the Server's recordings will be stored. With this path set, the "Enable Jam Recorder" function in the Server Setup tab will make recording start once the first person connects to the Server, and stops when the last person leaves. Use the "New Recording" button to create a new sub-directory in which the recordings will be stored from then on. Note that Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications.
-
-**Note**: When your Server is recording, Clients will display a message that recording is on.
-
-### Custom Directory Address
-
-Leave this field empty unless you need to list your Server on a [Custom Directory](#3-directory) or run a Directory.
-
-### Server List Filename
-
-Leave this field empty unless you need to run your Server as a [Directory](#3-directory). When in use, this holds the list of registered Servers whilst restarting the Directory. This prevents the server list appearing "empty" until the Servers re-register.
-
-### Delay panning
-
-This option uses small differences in sound arrival time between the two ears. It produces a stereo effect similar to natural human hearing when compared to normal "volume" panning.
-
-### Start Minimised
-
-**Windows users** - If you want the Server to start automatically on system start, enable the corresponding check box.
-
-### Server status icon
-
-When the Server is running, the operating system will show an icon in the system tray or status area to represent whether the Server is active:  
+When a Server is running in GUI mode, the operating system will show an icon in the system tray or status area that indicates whether the Server has connections:  
 
 <figure><img src="{% include img/en-screenshots/server-inactive.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of the Jamulus Server icon"></figure> The Server is empty
 
 <figure><img src="{% include img/en-screenshots/server-active.inc %}" style="float:left; margin-right:10px;" loading="lazy" alt="Image of the Jamulus Server icon"></figure> The Server is occupied
 
-## Command line options
-
-Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system.
-
-For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose "Properties" > Target. Add the necessary arguments to Jamulus.exe:
-
-```shell
- "C:\Program Files\Jamulus\Jamulus.exe" --serverbindip 192.168.0.100
-```
-
-For macOS, start a Terminal window and run Jamulus with the desired options like this:
-
-```shell
- /Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100
-```
-
-**Note**: Command line options will set the Server's defaults at startup. You can override them with their corresponding GUI controls while the Server is running.
-
-{% include_relative Include-Server-Commands.md %}
-
-{% include_relative Include-Shared-Commands.md %}
-
-
-## Running an Unregistered Server
-
-It is highly recommended to test your Server by registering it on one of the built-in Directories **first** so as to narrow down any subsequent problems in unregistered mode.
-
-### Setting up a Server behind a home router
-
-If you set up your server at home, you will probably need to change some settings in your router/firewall:
-
-#### Port forwarding
-
-People from outside your home network will not be able to see things inside it. To let external Jamulus clients connect to your server, you need to set up port forwarding in your Router's settings. The exact setup differs for every router. For help see your Router's documentation or [portforward.com](https://portforward.com).
-
-**Note:** The default port for the current version of Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the machine running the Server.
-
-**Note:** Your home router may change the IP address of the machine you're running your Server on. Depending on your router, you might need to give this machine a static IP address (often under DHCP settings of your router).
-
-#### Getting the external IP
-
-To allow others to connect to your Server from the internet, get your external (WAN) IP address e.g. by [using Google](https://www.google.com/search?q=what+is+my+ip) and give it to them.
-You yourself should connect using the local network (LAN) address of the machine the Server is running on. If you are running a Client on the same machine as your Server, that would be `localhost` or `127.0.0.1`.
-
-
-#### Dynamic DNS and why you will probably need it
-
-Most domestic internet connections change their external IP address after a short period. To avoid problems with this, you might want to set up "dynamic DNS" to get a static (sub-)domain you can share with others. Please research how to do that for your specic set up. Your router might support some "dynamic DNS" providers out of the box. If this is not the case, set up a dynamic DNS client as described by the dynamic DNS provider you chose.
+---
 
 ## Backing up the Server
 
-_Note that headless Servers do not use `.ini` files. All configuration is given as command line options._
-
 {% include_relative Include-Backing-Up.md %}
+
+- Headless Servers do not use `.ini` files. All configuration is given as command line options. If you are running a server in GUI mode, after reading any command line options on start, it will store its configuration in the `Jamululsserver.ini` file.
 
 ## Troubleshooting
 
