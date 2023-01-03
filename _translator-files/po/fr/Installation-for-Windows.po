@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-27 17:51+0000\n"
+"PO-Revision-Date: 2022-12-28 14:24+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/installation-for-windows/fr/>\n"
 "Language: fr\n"
@@ -66,22 +66,24 @@ msgstr "Mise à jour ? Vous pouvez d'abord [sauvegarder votre configuration](Sof
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:24
-#, fuzzy
-#| msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.\n"
 msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section."
-msgstr "**Téléchargez et installez un pilote ASIO**. Essayez d'utiliser le pilote fourni par le fabricant de votre matériel. Si vous ne le trouvez pas, ou si vous n'avez pas de carte son externe, vous devrez probablement installer ASIO4ALL. Pour plus d'informations, consultez la section [ASIO](#asio).\n"
+msgstr "**Téléchargez et installez un pilote ASIO**. Essayez d'utiliser le pilote fourni par le fabricant de votre matériel. Si vous ne le trouvez pas, ou si vous n'avez pas de carte son externe, vous devrez probablement installer ASIO4ALL. Pour plus d'informations, consultez la section [ASIO](#asio)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:24
-#, fuzzy, no-wrap
-#| msgid "**Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
+#, no-wrap
 msgid ""
 "1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
 " **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
 "1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
 "1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
 "1. **Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
-msgstr "**Installez Jamulus** : Double-cliquez sur le programme d'installation pour le lancer. Si vous recevez un avertissement de SmartScreen, cliquez sur \"Plus d'infos\" et \"Exécuter quand même\" pour installer Jamulus. (Si vous avez récupéré une nouvelle version de Jamulus et que vous êtes l'une des premières personnes à l'avoir téléchargée, Jamulus ne sera pas encore sur la liste blanche de SmartScreen. Nous ne payons pas pour la signature du code).\n"
+msgstr ""
+"1. [Téléchargez Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
+" **Miroir 2 :** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+"1. **Installez Jamulus** : Double-cliquez sur le programme d'installation pour le lancer. Si vous recevez un avertissement de SmartScreen, cliquez sur \"Plus d'infos\" et \"Exécuter quand même\" pour installer Jamulus. (Si vous avez récupéré une nouvelle version de Jamulus et que vous êtes l'une des premières personnes à l'avoir téléchargée, Jamulus ne sera pas encore sur la liste blanche de SmartScreen. Nous ne payons pas pour la signature du code).\n"
+"1. **Lancez Jamulus**. Vous devriez maintenant pouvoir utiliser Jamulus comme n'importe quelle autre application.\n"
+"1. **Configurez votre carte son**. Une fois que vous avez terminé, vous devez configurer votre matériel audio. Et si vous utilisez ASIO4ALL, regardez comment le configurer ci-dessous.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:26
@@ -95,10 +97,9 @@ msgstr "Si vous ne voulez pas utiliser ASIO ou que vous préférez [JACK pour Wi
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:31
-#, fuzzy, no-wrap
-#| msgid "## ASIO"
+#, no-wrap
 msgid "ASIO"
-msgstr "## ASIO"
+msgstr "ASIO"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:34
@@ -137,10 +138,9 @@ msgstr "[Site ouèbe ASIO4ALL](https://www.asio4all.org/){: target=\"_blank\" re
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:47
-#, fuzzy, no-wrap
-#| msgid "### Setting up ASIO4ALL"
+#, no-wrap
 msgid "Setting up ASIO4ALL"
-msgstr "### Configuration de ASIO4All"
+msgstr "Configuration de ASIO4ALL"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:50
@@ -155,17 +155,14 @@ msgstr "**Astuce : ** Configurez votre carte son pendant que vous êtes [connect
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:57
-#, fuzzy
-#| msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:\n"
 msgid "Before you start with Jamulus: 1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.  1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
-msgstr "Si l'audio ne fonctionne pas directement, assurez-vous que seules les **entrées/sorties correctes** dans ASIO4All **sont activées**. Tout le reste devrait être désactivé. Recherchez votre configuration dans la [liste communautaire des configurations ASIO4ALL qui fonctionnent](/kb/2021/03/20/ASIO4ALL-Examples.html) ou faites-le manuellement si vous ne trouvez pas la vôtre :\n"
+msgstr "Si l'audio ne fonctionne pas directement, assurez-vous que seules les **entrées/sorties correctes** dans ASIO4All **sont activées**. Tout le reste devrait être désactivé. Recherchez votre configuration dans la [liste communautaire des configurations ASIO4ALL qui fonctionnent](/kb/2021/03/20/ASIO4ALL-Examples.html) ou faites-le manuellement si vous ne trouvez pas la vôtre :"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:58
-#, fuzzy, no-wrap
-#| msgid "### How to set up ASIO4ALL inputs (Guide)"
+#, no-wrap
 msgid "How to set up ASIO4ALL inputs (Guide)"
-msgstr "### Comment configurer les entrées ASIO4All (guide)"
+msgstr "Comment configurer les entrées ASIO4ALL (guide)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:66
@@ -206,13 +203,16 @@ msgid ""
 "1. Headphones and speakers are often labelled as \"output\" and microphones as \"input\" or \"capture\".\n"
 "1. Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
 msgstr ""
+"**Conseils:**\n"
+"1. Le nom du périphérique sonore correct pourrait ne pas être évident. De nombreuses cartes son internes sont nommées \"Realtek High Definition Audio\", \"Conexant\" ou similaire.\n"
+"1. Les casques et les haut-parleurs sont souvent étiquetés comme \"sortie\" et les microphones comme \"entrée\" ou \"capture\".\n"
+"1. Stereo Mix/Stereo Input n'est généralement pas l'entrée/sortie que vous recherchez. Par conséquent, désactivez-la si vous la voyez.\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:72
-#, fuzzy, no-wrap
-#| msgid "### Troubleshooting"
+#, no-wrap
 msgid "Troubleshooting"
-msgstr "### Dépannage"
+msgstr "Dépannage"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:75

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-27 17:51+0000\n"
+"PO-Revision-Date: 2022-12-28 14:24+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/installation-for-linux/fr/>\n"
 "Language: fr\n"
@@ -156,22 +156,22 @@ msgstr "Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fo
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:53
 msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
-msgstr "Réglez l'interface audio **Interface** sur celle que vous voulez (il peut y en avoir plusieurs dans la liste)"
+msgstr "Réglez l'**interface** audio sur celle que vous voulez (il pourrait y en avoir plusieurs dans la liste)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:53
 msgid "Set the **Sample Rate to 48000**"
-msgstr "Réglez la **Fréquence d'échantillonnage sur 48000**"
+msgstr "Réglez la **fréquence d'échantillonnage sur 48000**"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:53
 msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
-msgstr "Définissez la **Frames/Period à 128** et Periods/Buffer à 2 dans un premier temps"
+msgstr "Paramétrez la **trames/période à 128** et périodes/tampon à 2 dans un premier temps"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:55
 msgid "Restart JACK for the new settings to take effect"
-msgstr "Redémarrez JACK pour que les nouveaux paramètres prennent effet"
+msgstr "Redémarrez JACK pour que les nouveaux paramètres soient pris en compte"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:56
@@ -187,7 +187,7 @@ msgstr "Une fois JACK lancé et configuré, démarrez Jamulus."
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:61
 msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
-msgstr "Si vous rencontrez des problèmes d'interruption du son (en particulier des décrochages signalés par JACK/QjackCtl), essayez de définir des valeurs plus élevées (par exemple, 256 frames ou 3 périods). Des valeurs plus faibles (par exemple 64 frames) peuvent apporter de meilleures performances mais peut-être plus de problèmes de son. Voir la page [dépannage](Client-Troubleshooting) sinon."
+msgstr "Si vous rencontrez des problèmes d'interruption du son (en particulier des décrochages signalés par JACK/QjackCtl), essayez de définir des valeurs plus élevées (par exemple, 256 trames ou 3 périodes). Des valeurs plus faibles (par exemple 64 trames) peuvent apporter de meilleures performances mais peut-être plus de problèmes de son. Voir la [page dépannage](Client-Troubleshooting) sinon."
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:62
