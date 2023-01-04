@@ -52,7 +52,7 @@ Most people run Jamulus on a 3rd party/cloud host as a "headless" Server (no vid
 
 ---
 
-**Note** The following steps will result in you running an "Unregistered" server. For more information on server types, [see below](#server-modes).
+**Note** The following steps will result in you running an "Unregistered" Server. For more information on server types, [see below](#server-modes).
 
 ---
 
@@ -70,7 +70,7 @@ If you want to run a Server on a **Raspberry Pi** (or a different armhf/arm64 de
 
 	`sudo systemctl enable jamulus-headless`
 
-1. Add your desired [command line options](Running-a-Server#configuration) to the `ExecStart` line in the systemd service file (by default you will be running an Unregistered Server):
+1. Add your desired [command line options](Running-a-Server#configuration) to the `ExecStart` line in the systemd service file:
 
 	`sudo systemctl edit --full jamulus-headless`
 
