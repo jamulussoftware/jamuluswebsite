@@ -31,16 +31,16 @@ DATA_DIR="../_data"
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo Error: Please install po4a. v0.63 or higher is required >&2
+    echo Error: Please install po4a. v0.68 or higher is required >&2
     exit 1
 fi
 
 # Check if the right version is installed
 PO4A_VER=$(po4a --version | grep po4a | awk '{print $3}')
 
-if [[ $PO4A_VER < 0.63 ]] ; then
+if [[ $PO4A_VER < 0.68 ]] ; then
     echo Error: po4a v"$PO4A_VER" is installed >&2
-    echo po4a v0.63 or higher is required. >&2
+    echo po4a v0.68 or higher is required. >&2
     exit 1
 fi
 
@@ -87,7 +87,7 @@ process_with_po4a () {
 
         targ_doc="$TARG_DIR/$lang/$filename.$ext"
 
-        # Files excluded from the threshold requirement
+        # Files excluded from the threshold requirement (otherwise website will not build properly)
         if [[
             "$filename" == 'Include-'* || \
             "$filename" == *'-index' || \
