@@ -19,6 +19,10 @@
 <!-- Does your pull request need translation? If you type "YES", please open a pull request to the next-release branch, otherwise to release. Usually, Pull Requests to release are only for typos in a specific language or if you changed something for every language -->
 
 
+**Note for maintainers:**
+If the PR affects translations, it is very important that any pending pull requests from Weblate are merged first. Check the "Repository maintenance" section in Weblate and make sure all changes have been committed and pushed.
+
+
 ## Checklist
 <!-- Please tick the check boxes when done by replacing the space by an x, e.g. [x]. -->
 - [ ] I've verified that this Pull Request follows the [general code principles](https://github.com/jamulussoftware/jamulus/blob/main/CONTRIBUTING.md#jamulus-projectsource-code-general-principles)
