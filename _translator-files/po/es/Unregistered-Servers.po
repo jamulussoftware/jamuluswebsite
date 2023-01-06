@@ -43,17 +43,12 @@ msgstr "Ejecutar un Servidor No Registrado"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
-"{% include breadcrumb.html root=\"Más\" branch1=\"Administrar un Servidor\" "
-"branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"Más\" branch1=\"Administrar un Servidor\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:13
 msgid "It is highly recommended to test your Server by registering it on one of the built-in Directories **first**. This will help you tackle general problems before you try unregistered mode."
-msgstr ""
-"Se recomienda encarecidamente probar tu Servidor registrándolo en uno de los "
-"Directorios incorporados **primero**. Esto te ayudará a solucionar problemas "
-"generales antes de probar el modo no registrado."
+msgstr "Se recomienda encarecidamente probar tu Servidor registrándolo en uno de los Directorios incorporados **primero**. Esto te ayudará a solucionar problemas generales antes de probar el modo no registrado."
 
 #. type: Title ##
 #: ../wiki/en/Unregistered-Servers.md:14
@@ -64,9 +59,7 @@ msgstr "Configuración de un Servidor tras un router doméstico"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:17
 msgid "If you set up your server at home, you will probably need to change some settings in your router/firewall:"
-msgstr ""
-"Si ejecutas tu Servidor en casa, probablemente tendrás que cambiar algunos "
-"ajustes en tu router/cortafuegos:"
+msgstr "Si ejecutas tu Servidor en casa, probablemente tendrás que cambiar algunos ajustes en tu router/cortafuegos:"
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:18
@@ -77,22 +70,13 @@ msgstr "Redireccionamiento de puertos"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:21
 msgid "Normally, people from outside your home network cannot see things inside it. To let external Jamulus clients connect to your server, you need to set up port forwarding in your router's settings. The exact setup differs for every router. For help, see your router's documentation or [portforward.com](https://portforward.com)."
-msgstr ""
-"Normalmente, las personas fuera de tu red doméstica no pueden ver lo que hay "
-"dentro de ella. Para que los Clientes externos de Jamulus puedan conectarse "
-"a tu Servidor, tienes que configurar el redireccionamiento de puertos en tu "
-"router. La configuración exacta varía según el router. Si necesitas ayuda, "
-"consulta la documentación de tu router o [portforward."
-"com](https://portforward.com)."
+msgstr "Normalmente, las personas fuera de tu red doméstica no pueden ver lo que hay dentro de ella. Para que los Clientes externos de Jamulus puedan conectarse a tu Servidor, tienes que configurar el redireccionamiento de puertos en tu router. La configuración exacta varía según el router. Si necesitas ayuda, consulta la documentación de tu router o [portforward.com](https://portforward.com)."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:23
 #, no-wrap
 msgid "**Note:** The default port for Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the computer running the Server.\n"
-msgstr ""
-"**Nota:** El puerto por defecto para Jamulus es el puerto **UDP** (no TCP) "
-"**22124**. Normalmente, el puerto **22124** desde fuera de tu red se "
-"redireccionará al puerto **22124** del ordenador que ejecuta el Servidor.\n"
+msgstr "**Nota:** El puerto por defecto para Jamulus es el puerto **UDP** (no TCP) **22124**. Normalmente, el puerto **22124** desde fuera de tu red se redireccionará al puerto **22124** del ordenador que ejecuta el Servidor.\n"
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:24
@@ -103,13 +87,7 @@ msgstr "Obtener la IP pública"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:28
 msgid "To allow others to connect to your Server from the internet, give them your public internet IP address. You can [learn your current address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
-msgstr ""
-"Para permitir que otros se conecten a tu Servidor desde internet, dales tu "
-"dirección IP pública de internet. Puedes [conocer tu dirección actual usando "
-"Google](https://www.google.com/search?q=what+is+my+ip).  Deberías conectarte "
-"tú mismo utilizando la dirección de red local del ordenador en el que se "
-"ejecuta el Servidor. Si estás ejecutando un Cliente en el mismo ordenador "
-"que tu Servidor, la dirección es `localhost` ó `127.0.0.1`."
+msgstr "Para permitir que otros se conecten a tu Servidor desde internet, dales tu dirección IP pública de internet. Puedes [conocer tu dirección actual usando Google](https://www.google.com/search?q=what+is+my+ip).  Deberías conectarte tú mismo utilizando la dirección de red local del ordenador en el que se ejecuta el Servidor. Si estás ejecutando un Cliente en el mismo ordenador que tu Servidor, la dirección es `localhost` ó `127.0.0.1`."
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:30
@@ -120,12 +98,4 @@ msgstr "DNS dinámica y por qué es probable que lo necesites"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:32
 msgid "Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. You might want to set up \"dynamic DNS\" to get a static address you can share with others. A \"dynamic DNS\" provider can supply you with a static IP address that you can share, but you need to keep refreshing your dynamic IP with the provider. Your router might support certain providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client."
-msgstr ""
-"A menos que tu ISP te proporcione una dirección IP fija, es posible que tu "
-"dirección cambie con el tiempo. Quizá te interese configurar un \"DNS "
-"dinámico\" para obtener una dirección estática que puedas compartir con "
-"otras personas. Un proveedor de \"DNS dinámico\" puede proporcionarte una "
-"dirección IP estática que puedes compartir, pero tienes que ir actualizando "
-"tu IP dinámica con el proveedor. Es posible que tu router admita que "
-"determinados proveedores hagan esto. Si no es el caso, el proveedor tendrá "
-"instrucciones sobre cómo configurar un cliente DNS dinámico."
+msgstr "A menos que tu ISP te proporcione una dirección IP fija, es posible que tu dirección cambie con el tiempo. Quizá te interese configurar un \"DNS dinámico\" para obtener una dirección estática que puedas compartir con otras personas. Un proveedor de \"DNS dinámico\" puede proporcionarte una dirección IP estática que puedes compartir, pero tienes que ir actualizando tu IP dinámica con el proveedor. Es posible que tu router admita que determinados proveedores hagan esto. Si no es el caso, el proveedor tendrá instrucciones sobre cómo configurar un cliente DNS dinámico."
