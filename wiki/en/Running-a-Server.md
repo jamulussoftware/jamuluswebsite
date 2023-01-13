@@ -219,7 +219,7 @@ Use multithreading to make better use of multi-core CPUs. This setting may help 
 Maximum number of channels (Clients)
 
 ##### `-z or --startminimized`
-Start the Jamulus Server graphical user interface in the minimised window state.
+Start the Jamulus Server graphical user interface in the minimized window state.
 
 ### Other options
 
