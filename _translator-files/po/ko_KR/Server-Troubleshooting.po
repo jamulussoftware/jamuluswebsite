@@ -87,7 +87,7 @@ msgstr "</details>"
 #: ../wiki/en/Server-Troubleshooting.md:22
 #, fuzzy, no-wrap
 #| msgid "## Servers - Registered"
-msgid "Servers - Registered"
+msgid "Servers - Registered "
 msgstr "## 서버 - 등록"
 
 #. type: Title ###
@@ -99,9 +99,7 @@ msgstr "### 내 서버가 목록에 표시되지 않는 이유는 무엇입니�
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
-#, fuzzy
-#| msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
-msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to configure your router to [forward the port number](Unregistered-Servers#port-forwarding) used by Jamulus Server."
+msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
 msgstr "사용자가 정상적([여기서 볼 수 있음](https://explorer.jamulus.io/))으로 등록되어 있고, 사용자 또는 사용자의 친구가 서버를 볼 수 없는 경우, 기다리거나 `--showallservers` 옵션으로 클라이언트를 시작하고 거기서 클라이언트를 시작하는 방법([명령줄 옵션](Software-Manual#command-line-options) 참조)을 시도해야 합니다. 일부 네트워크 구성에서는 사용자의 라우터를 [포트 포워딩](Running-a-Server#port-forwarding)해야 할 수도 있습니다."
 
 #. type: Plain text
@@ -118,7 +116,7 @@ msgstr "사용자의 서버가 관련 장르에 나열되는지 [여기에서 �
 #: ../wiki/en/Server-Troubleshooting.md:32
 #, fuzzy, no-wrap
 #| msgid "## Servers - Unregistered"
-msgid "Servers - Unregistered"
+msgid "Servers - Unregistered "
 msgstr "## 서버 - 등록 해제"
 
 #. type: Title ###
@@ -142,9 +140,7 @@ msgstr "### 사람들이 내 서버에 연결할 수 있도록 어떤 주소를 
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
-#, fuzzy
-#| msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
-msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it)."
+msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
 msgstr "이것은 사용자의 **공용** IP 주소여야 합니다([Google](https://www.google.com/search?q=whatsmyip)에서 찾을 수 있음). 사용자 **자신의** Jamulus 클라이언트를 서버의 **로컬** IP 주소(`localhost` 또는 클라이언트와 동일한 시스템에 있는 경우, `127.0.0.1`)에 연결합니다. 사용자의 공용 IP 주소는 변경될 수 있습니다. [이 가이드](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)의 \"동적 DNS\"에 대한 참고 사항을 참조하십시오."
 
 #. type: Title ###
@@ -168,16 +164,12 @@ msgstr "### 아무도 내 서버에 연결할 수 없지만, 로컬로 연결할
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:50
-#, fuzzy
-#| msgid "First of all, make sure you've enabled [port forwarding](Running-a-Server#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
-msgid "First of all, make sure you've enabled [port forwarding](Unregistered-Servers#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
+msgid "First of all, make sure you've enabled [port forwarding](Running-a-Server#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
 msgstr "우선, [포트포워딩](Running-a-Server#port-forwarding)을 활성화했는지 확인합니다. 여전히 사용자의 로컬 네트워크 외부에서 서버가 표시되지 않으면 ISP(인터넷 서비스 공급자)에 문제가 있을 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
-#, fuzzy
-#| msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
-msgid "Some ISPs use techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
+msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
 msgstr "일부 ISP는 [Address plus Port(A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) 또는 [Carrier-grade NAT(CGN)](https://en.wikipedia. org/wiki/Carrier-grade_NAT) 주소 공간을 절약합니다(일반적으로 IPv4의 경우). 따라서 로컬 네트워크 외부에서 볼 수 없기 때문에 집에서 Jamulus와 같은 서비스를 호스팅하는 것이 불가능합니다."
 
 #. type: Plain text
@@ -186,7 +178,7 @@ msgid "To detect if CGN is the issue, go to your router's configuration screen (
 msgstr "CGN이 문제인지 감지하려면 라우터의 구성 화면(일반적으로 192.168.X.X)으로 이동하여 WAN 상태 페이지를 확인하십시오. 나열된 IPv4 주소가 공용 IPv4 주소와 일치하지 않는 경우([여기](https://ifconfig.me) 확인) CGN이 활성화되었을 수 있음을 나타냅니다. 서버와 모든 클라이언트에서 IPv6을 사용할 수 있는 경우 '-6' 플래그로 클라이언트와 서버를 시작하여 IPv6 연결을 사용해 볼 수 있습니다."
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:55
+#: ../wiki/en/Server-Troubleshooting.md:56
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
 msgstr "IPv4 문제를 해결하려면 ISP 기술 지원 팀에 연락하여 집에서 공용 서버를 호스팅하고 싶다고 말하여 실제 WAN IP 주소가 필요합니다. 또한 CGN이 문제일 수 있다는 정보로 그들을 도울 수 있습니다. 또한 DDNS 사용을 피하기 위해 고정 IP 주소를 요청할 수 있습니다."
 

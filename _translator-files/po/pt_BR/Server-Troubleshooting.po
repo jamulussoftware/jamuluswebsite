@@ -85,7 +85,7 @@ msgstr "</details>"
 #. type: Title ##
 #: ../wiki/en/Server-Troubleshooting.md:22
 #, no-wrap
-msgid "Servers - Registered"
+msgid "Servers - Registered "
 msgstr ""
 
 #. type: Title ###
@@ -96,7 +96,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
-msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to configure your router to [forward the port number](Unregistered-Servers#port-forwarding) used by Jamulus Server."
+msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
 msgstr ""
 
 #. type: Plain text
@@ -112,7 +112,7 @@ msgstr ""
 #. type: Title ##
 #: ../wiki/en/Server-Troubleshooting.md:32
 #, no-wrap
-msgid "Servers - Unregistered"
+msgid "Servers - Unregistered "
 msgstr ""
 
 #. type: Title ###
@@ -134,7 +134,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
-msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it)."
+msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
 msgstr ""
 
 #. type: Title ###
@@ -156,12 +156,12 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:50
-msgid "First of all, make sure you've enabled [port forwarding](Unregistered-Servers#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
+msgid "First of all, make sure you've enabled [port forwarding](Running-a-Server#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
-msgid "Some ISPs use techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
+msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
 msgstr ""
 
 #. type: Plain text
@@ -170,7 +170,7 @@ msgid "To detect if CGN is the issue, go to your router's configuration screen (
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:55
+#: ../wiki/en/Server-Troubleshooting.md:56
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
 msgstr ""
 

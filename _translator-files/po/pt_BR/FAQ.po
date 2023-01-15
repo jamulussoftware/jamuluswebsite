@@ -96,7 +96,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
-msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
+msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 msgstr ""
 
 #. type: Plain text
@@ -117,7 +117,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
-msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-modes)."
+msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
 msgstr ""
 
 #. type: Title ###
@@ -160,7 +160,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
-msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. Most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
+msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
 msgstr ""
 
 #. type: Title ###
@@ -220,8 +220,8 @@ msgid "Normally, network address translation (NAT) firewalls prevent incoming re
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/FAQ.md:73
-msgid "However, to reach an Unregistered Server, each Client has to **initiate** a connection into the Server’s network. A NAT firewall prevents this, so you need to configure the firewall to allow incoming connection requests on the Jamulus port using port forwarding."
+#: ../wiki/en/FAQ.md:74
+msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
 msgstr ""
 
 #~ msgid "TOC"

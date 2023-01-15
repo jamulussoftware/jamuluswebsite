@@ -97,7 +97,7 @@ msgstr "### Hat Jamulus ein Metronom, eine Synchronisation oder eine andere Mög
 #: ../wiki/en/FAQ.md:26
 #, fuzzy
 #| msgid "No. Musicians on a Jamulus Server simply play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
-msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
+msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 msgstr "Nein. Die Musiker auf einem Jamulus-Server spielen einfach in Echtzeit zusammen, so wie sie es auch persönlich tun würden. Wenn du ein Zeitsignal wünscht, kannst du im Internet Lösungen für gemeinsame Metronome ausprobieren. Aber es ist wahrscheinlich am besten, die Latenz zu minimieren, so dass niemand eine Gesamtverzögerung von mehr als 30-50 ms hat."
 
 #. type: Plain text
@@ -123,7 +123,7 @@ msgstr "Wenn jemand einen Server in eines der öffentlichen Verzeichnisse eintr�
 #: ../wiki/en/FAQ.md:34
 #, fuzzy
 #| msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can simply give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
-msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-modes)."
+msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
 msgstr "Beachte auch, dass die Server nicht in einem Verzeichnis registriert sein müssen, damit sich Jamulus-Clients mit dem Server verbinden können. Serverbetreiber können einfach die Adresse deines Servers an diejenigen weitergeben, mit denen sie spielen wollen, und diese können sich dann direkt verbinden. Schaue dir [diese Übersicht für weitere Informationen](/wiki/Running-a-Server#server-typen) an."
 
 #. type: Title ###
@@ -169,9 +169,7 @@ msgstr "### Brauche ich eine schnelle Internetverbindung?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
-#, fuzzy
-#| msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
-msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. Most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
+msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
 msgstr "Nein, vor allem wenn du keinen Server betreibst, um andere Musiker zu hosten. Ein niedriger Ping ist viel wichtiger. Die meisten Leute mit einem Standard-Breitbandanschluss (z. B. 10 Mbit/s Download und 1 Mbit/s Upload) werden keine Probleme haben. Für diejenigen, die einen Server zu Hause betreiben, kann es je nach Anzahl der Teilnehmer zu Problemen kommen, wenn die Bandbreite im Upload weniger als 5 Mbit/s beträgt."
 
 #. type: Title ###
@@ -236,10 +234,8 @@ msgid "Normally, network address translation (NAT) firewalls prevent incoming re
 msgstr "Normalerweise verhindern NAT-Firewalls (Network Address Translation) eingehende Anfragen, die von außerhalb des lokalen Netzes kommen. Eingehender Verkehr ist nur für Pakete möglich, die sich auf eine ausgehende Anfrage beziehen (streng genommen „verwandte“ und „aufgebaute“ Pakete zu einer ursprünglichen ausgehenden Verbindung). Wenn dein Jamulus Server im Modus „Registrierter Server“ eine Verbindung zu einem Verzeichnis herstellt, initiiert er natürlich eine ausgehende Verbindung. Von da an sendet das Verzeichnis in regelmäßigen Abständen \"Pings\" (keine ICMP-Pings) an deinen Server, um den/die entsprechenden NAT-Port(s) auf deinem Router/Firewall offen zu halten."
 
 #. type: Plain text
-#: ../wiki/en/FAQ.md:73
-#, fuzzy
-#| msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
-msgid "However, to reach an Unregistered Server, each Client has to **initiate** a connection into the Server’s network. A NAT firewall prevents this, so you need to configure the firewall to allow incoming connection requests on the Jamulus port using port forwarding."
+#: ../wiki/en/FAQ.md:74
+msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
 msgstr "Im nicht registrierten Modus müssen die Clients Verbindungen zum Servernetz **initiieren**. NAT-Firewalls verhindern das. Stelle die Firewall im Router so ein, dass sie eingehende Verbindungsanfragen über den Jamulus-Port mittels Portweiterleitung zulässt."
 
 #, no-wrap
