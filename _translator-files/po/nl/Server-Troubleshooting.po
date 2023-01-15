@@ -87,7 +87,7 @@ msgstr "</details>"
 #: ../wiki/en/Server-Troubleshooting.md:22
 #, fuzzy, no-wrap
 #| msgid "## Servers - Registered"
-msgid "Servers - Registered "
+msgid "Servers - Registered"
 msgstr "## Servers - geregistreerd"
 
 #. type: Title ###
@@ -99,7 +99,9 @@ msgstr "### Waarom wordt mijn server niet weergegeven in de lijst? Waarom regist
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
-msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
+#, fuzzy
+#| msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to [port forward](Running-a-Server#port-forwarding) your router."
+msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to configure your router to [forward the port number](Unregistered-Servers#port-forwarding) used by Jamulus Server."
 msgstr "Als je correct geregistreerd bent (dit kun [je hier zien](https://explorer.jamulus.io/)) en jij of je vrienden kunnen je server niet zien, dan kan het zijn dat je moet wachten of je client moet starten met de `--showallservers` optie en vanaf daar verbinding proberen te maken ([zie opdrachtregelopties](Software-Manual#opdrachtregelopties) hoe je een client start met een configuratie optie). In sommige netwerkconfiguraties moet je mogelijk ook [poort forwarding](Running-a-Server#poort-forwarding) op je router gebruiken."
 
 #. type: Plain text
@@ -116,7 +118,7 @@ msgstr "Je kunt controleren of de server in het relevante genre wordt vermeld do
 #: ../wiki/en/Server-Troubleshooting.md:32
 #, fuzzy, no-wrap
 #| msgid "## Servers - Unregistered"
-msgid "Servers - Unregistered "
+msgid "Servers - Unregistered"
 msgstr "## Servers - niet geregistreerd"
 
 #. type: Title ###
@@ -140,7 +142,9 @@ msgstr "### Welk adres geef ik aan mensen zodat ze verbinding kunnen maken met m
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
-msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
+#, fuzzy
+#| msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Running-a-Server#dynamic-dns-and-why-you-will-probably-need-it)."
+msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it)."
 msgstr "Dit moet je **openbare** IP-adres zijn (zoek dat op bij [Google](https://www.google.com/search?q=whatsmyip)). Verbind je **eigen** Jamulus-client met het **lokale** IP-adres van de server (`localhost` of `127.0.0.1` als deze zich op dezelfde machine als je client bevindt). Houd er rekening mee dat je openbare IP-adres kan veranderen - zie de opmerking over \"dynamische DNS\" in [deze handleiding](Running-a-Server#dynamische-dns-en-waarom-je-het-waarschijnlijk-nodig-hebt)."
 
 #. type: Title ###
@@ -164,12 +168,16 @@ msgstr "### Niemand kan verbinding maken met mijn server - maar ik kan lokaal we
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:50
-msgid "First of all, make sure you've enabled [port forwarding](Running-a-Server#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
+#, fuzzy
+#| msgid "First of all, make sure you've enabled [port forwarding](Running-a-Server#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
+msgid "First of all, make sure you've enabled [port forwarding](Unregistered-Servers#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
 msgstr "Zorg er allereerst voor dat je [poort forwarding](Running-a-Server#poort-forwarding) hebt ingeschakeld. Als je de server nog steeds niet ziet van buiten je lokale netwerk dan heb je mogelijk problemen met je internetprovider (ISP)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
-msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
+#, fuzzy
+#| msgid "Some ISPs are using techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
+msgid "Some ISPs use techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
 msgstr "Sommige ISP's gebruiken technieken zoals [Adres plus Poort (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) of [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) om adresruimte te besparen. Dat maakt het onmogelijk om services zoals Jamulus thuis te hosten omdat ze niet zichtbaar zijn buiten je lokale netwerk."
 
 #. type: Plain text
@@ -178,7 +186,7 @@ msgid "To detect if CGN is the issue, go to your router's configuration screen (
 msgstr "Om te detecteren of CGN het probleem is, ga je naar het configuratiescherm van jouw router (meestal 192.168.X.X) en kijk je naar de WAN-statuspagina. Als je vermelde IPv4-adres niet overeenkomt met het adres dat je [hier](https://ifconfig.me) ziet, betekent dit dat CGN mogelijk is ingeschakeld. Je kunt proberen een IPv6-verbinding te gebruiken door clients en server te starten met de `-6`-optie als IPv6 beschikbaar is voor de server en alle clients."
 
 #. type: Plain text
-#: ../wiki/en/Server-Troubleshooting.md:56
+#: ../wiki/en/Server-Troubleshooting.md:55
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
 msgstr "Om het probleem met IPv4 op te lossen, neem je contact op met het technische ondersteuningsteam van jouw ISP en vertel je hen dat je thuis een openbare server wilt hosten en dat je een echt WAN IP-adres nodig hebt. Bovendien kun je ze helpen met informatie dat CGN het probleem zou kunnen zijn. Je kunt ook om een statisch IP-adres vragen om het gebruik van DDNS te vermijden."
 
