@@ -19,19 +19,19 @@ msgstr ""
 #: ../wiki/en/Unregistered-Servers.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "pt_BR"
 
 #. type: YAML Front Matter: layout
 #: ../wiki/en/Unregistered-Servers.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: YAML Front Matter: permalink
 #: ../wiki/en/Unregistered-Servers.md:1
 #, no-wrap
 msgid "/wiki/Unregistered-Servers"
-msgstr ""
+msgstr "/wiki/Unregistered-Servers"
 
 #. type: Title #
 #: ../wiki/en/Unregistered-Servers.md:1 ../wiki/en/Unregistered-Servers.md:10
@@ -41,12 +41,17 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:9
-msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
+msgid ""
+"{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" "
+"branch1-url=\"Running-a-Server\" %}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:13
-msgid "It is highly recommended to test your Server by registering it on one of the built-in Directories **first**. This will help you tackle general problems before you try unregistered mode."
+msgid ""
+"It is highly recommended to test your Server by registering it on one of the "
+"built-in Directories **first**. This will help you tackle general problems "
+"before you try unregistered mode."
 msgstr ""
 
 #. type: Title ##
@@ -57,7 +62,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:17
-msgid "If you set up your server at home, you will probably need to change some settings in your router/firewall:"
+msgid ""
+"If you set up your server at home, you will probably need to change some "
+"settings in your router/firewall:"
 msgstr ""
 
 #. type: Title ###
@@ -68,7 +75,12 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:21
-msgid "Normally, people from outside your home network cannot see things inside it. To let external Jamulus clients connect to your server, you need to set up port forwarding in your router's settings. The exact setup differs for every router. For help, see your router's documentation or [portforward.com](https://portforward.com)."
+msgid ""
+"Normally, people from outside your home network cannot see things inside it. "
+"To let external Jamulus clients connect to your server, you need to set up "
+"port forwarding in your router's settings. The exact setup differs for every "
+"router. For help, see your router's documentation or [portforward.com]"
+"(https://portforward.com)."
 msgstr ""
 
 #. type: Plain text
@@ -85,7 +97,13 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:28
-msgid "To allow others to connect to your Server from the internet, give them your public internet IP address. You can [learn your current address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
+msgid ""
+"To allow others to connect to your Server from the internet, give them your "
+"public internet IP address. You can [learn your current address using Google]"
+"(https://www.google.com/search?q=what+is+my+ip).  You should connect "
+"yourself using the local network address of the computer the Server is "
+"running on. If you are running a Client on the same computer as your Server, "
+"the address is `localhost` or `127.0.0.1`."
 msgstr ""
 
 #. type: Title ###
@@ -96,5 +114,29 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:32
-msgid "Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. You might want to set up \"dynamic DNS\" to get a static address you can share with others. A \"dynamic DNS\" provider can supply you with a static IP address that you can share, but you need to keep refreshing your dynamic IP with the provider. Your router might support certain providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client."
+msgid ""
+"Unless your ISP provides you with a fixed IP address, you may find that your "
+"address changes over time. You might want to set up \"dynamic DNS\" to get a "
+"static address you can share with others. A \"dynamic DNS\" provider can "
+"supply you with a static IP address that you can share, but you need to keep "
+"refreshing your dynamic IP with the provider. Your router might support "
+"certain providers to do this. If this is not the case, the provider will "
+"have instructions on how to set up a dynamic DNS client."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Unregistered-Servers.md:17
+msgid ""
+"If you set up your Server at home, you will probably need to change some "
+"settings in your router/firewall:"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Unregistered-Servers.md:21
+msgid ""
+"Normally, people from outside your home network cannot see things inside it. "
+"To let external Jamulus Clients connect to your Server, you need to set up "
+"port forwarding in your router's settings. The exact setup differs for every "
+"router. For help, see your router's documentation or [portforward.com]"
+"(https://portforward.com)."
 msgstr ""
