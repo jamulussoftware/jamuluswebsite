@@ -26,14 +26,18 @@ jobs:
       
 # List Pull Requests:
       - name: listPullRequests
-        if: ${{ ( github.event_name == 'push' && steps.filter.outputs.src_files_changed == 'true' ) }}
+        if: ${{ ( github.event_name == 'pull_request' && steps.filter.outputs.src_files_changed == 'true' ) }}
         uses: buildsville/list-pull-requests@v1
         id: list
         with:
           token: ${{secrets.GITHUB_TOKEN}}
-          labels: '["Weblate"]'
+          labels: '["Translations update from Hosted Weblate"]'
       - name: output
         run: echo '${{ steps.list.outputs.pulls }}'
+        if: ${{ ( steps.list.outputs.pulls == 'Translations update from Hosted Weblate' ) }}
+        run: |
+          echo "Merge Weblate Pull Request first"
+          exit 1
 
 # Retrieve po4a installation cache or create it if not found:
       - name: Check for po4a cache
