@@ -23,6 +23,17 @@ jobs:
           filters: |
             src_files_changed:
               - 'wiki/en/**'
+      
+# List Pull Requests:
+      - name: listPullRequests
+        if: ${{ ( github.event_name == 'push' && steps.filter.outputs.src_files_changed == 'true' )
+        uses: buildsville/list-pull-requests@v1
+        id: list
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          labels: '["Weblate"]'
+      - name: output
+        run: echo '${{ steps.list.outputs.pulls }}'
 
 # Retrieve po4a installation cache or create it if not found:
       - name: Check for po4a cache
