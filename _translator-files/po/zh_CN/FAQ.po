@@ -99,7 +99,9 @@ msgstr "### 是否有节拍器、同步或其他保持时间的方式？"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
-msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
+#, fuzzy
+#| msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
+msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 msgstr "不会。Jamulus 服务器上的音乐家可以实时一起演奏，就像他们亲自演奏一样。如果你想有时间信号，那么网上有共享节拍器的解决方案你可以试试。但最好只是尽量减少延迟，这样就没有人有超过 30-50 毫秒的整体延迟。"
 
 #. type: Plain text
@@ -121,7 +123,9 @@ msgstr "如果有人在 Jamulus 内置的目录之一上列出了服务器，他
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
-msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
+#, fuzzy
+#| msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
+msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-modes)."
 msgstr "另请注意，服务器不必在目录上注册以便 Jamulus 客户端连接到它们。服务器运营商只需将他们的服务器地址提供给他们想使用的人，然后他们就可以直接连接。查看 [此概述了解更多信息](/wiki/Running-a-Server#服务器类型)。"
 
 #. type: Title ###
@@ -167,7 +171,9 @@ msgstr "### 我需要一个快速的网络吗？"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
-msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
+#, fuzzy
+#| msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
+msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. Most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
 msgstr "不，特别是如果您不运行服务器来托管其他音乐家。低 ping 更重要。对于大多数使用标准宽带(例如 10 Mbit/s 下行和 1 Mbit/s 上行)的人来说，您不会有任何问题。对于那些在家里运行服务器的人，根据加入的人数，如果您的 _upstream_ 带宽低于约 5 Mbit/s，您可能会遇到问题。"
 
 #. type: Title ###
@@ -233,8 +239,10 @@ msgid "Normally, network address translation (NAT) firewalls prevent incoming re
 msgstr "通常，网络地址转换 (NAT) 防火墙会阻止从本地网络外部发起的传入请求。入站流量仅适用于与出站请求相关的数据包(严格来说，“相关”和“已建立”数据包与初始出站连接)。在注册服务器模式下，当您的 Jamulus 服务器连接到目录时，它当然会启动出站连接。从那时起，目录会定期向您的服务器发送(已建立/相关的)连接“ping”(不是 ICMP ping)，以保持路由器/防火墙上的相关 NAT 端口打开。"
 
 #. type: Plain text
-#: ../wiki/en/FAQ.md:74
-msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
+#: ../wiki/en/FAQ.md:73
+#, fuzzy
+#| msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
+msgid "However, to reach an Unregistered Server, each Client has to **initiate** a connection into the Server’s network. A NAT firewall prevents this, so you need to configure the firewall to allow incoming connection requests on the Jamulus port using port forwarding."
 msgstr "但是，在未注册模式下，客户端必须 **发起** 连接到服务器的网络。 NAT 防火墙阻止了这种情况，因此您需要告诉他们使用端口转发允许 Jamulus 端口上的传入连接请求。"
 
 #, no-wrap
