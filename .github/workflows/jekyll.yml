@@ -34,6 +34,7 @@ jobs:
           labels: '["Translations update from Hosted Weblate"]'
       - name: output
         run: echo '${{ steps.list.outputs.pulls }}'
+      - name: Error message
         if: ${{ ( steps.list.outputs.pulls == 'Translations update from Hosted Weblate' ) }}
         run: |
           echo "Merge Weblate Pull Request first"
