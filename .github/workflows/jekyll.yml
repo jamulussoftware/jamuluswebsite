@@ -26,7 +26,7 @@ jobs:
       
 # List Pull Requests:
       - name: listPullRequests
-        if: ${{ ( github.event_name == 'push' && steps.filter.outputs.src_files_changed == 'true' )
+        if: ${{ ( github.event_name == 'push' && steps.filter.outputs.src_files_changed == 'true' ) }}
         uses: buildsville/list-pull-requests@v1
         id: list
         with:
