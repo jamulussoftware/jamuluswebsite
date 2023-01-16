@@ -7,7 +7,7 @@ permalink: "/wiki/Command-Line-Options"
 
 # Command Line Options
 
-## Shared commands 
+## Shared commands
 
 {% include_relative Include-Shared-Commands.md %}
 
@@ -17,5 +17,4 @@ permalink: "/wiki/Command-Line-Options"
 
 ## Server only commands
 
-See [Running a Server](Running-a-Server#server-mode-options)
-
+See [Running a Server](Running-a-Server#server-mode-related-options)
