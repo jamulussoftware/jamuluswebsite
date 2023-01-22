@@ -372,8 +372,10 @@ msgstr "**Pour l'interface graphique** (toutes plateformes)\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:132
-msgid "Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!.) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)."
-msgstr ""
+#, fuzzy
+#| msgid "Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)"
+msgid "Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)."
+msgstr "Tous les réglages effectués en utilisant l'interface graphique seront stockés dans le fichier `Jamulusserver.ini`. (Ne **pas** éditer ce fichier à la main !) Cependant, certaines options ne sont pas disponibles dans l'interface graphique et doivent être définies en utilisant la ligne de commande. Pour plus d'informations, voir [Serveurs sur le bureau](#serveurs-sur-le-bureau)"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:135
@@ -950,9 +952,6 @@ msgstr "Si vous avez un autre problème, [regardez ce guide](Server-Troubleshoot
 
 #~ msgid "Add your desired command line options to the `ExecStart` line in the systemd service file by running `sudo systemctl edit --full jamulus-headless` (You will need to reload or restart for the changes to take effect. See [Installation](#installation))"
 #~ msgstr "Ajoutez les options en ligne de commande voulues à la ligne `ExecStart` dans le fichier service systemd en exécutant `sudo systemctl edit --full jamulus-headless` (Vous devrez recharger ou redémarrer pour que les changements prennent effet. Voir [Installation]"
-
-#~ msgid "Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)"
-#~ msgstr "Tous les réglages effectués en utilisant l'interface graphique seront stockés dans le fichier `Jamulusserver.ini`. (Ne **pas** éditer ce fichier à la main !) Cependant, certaines options ne sont pas disponibles dans l'interface graphique et doivent être définies en utilisant la ligne de commande. Pour plus d'informations, voir [Serveurs sur le bureau](#serveurs-sur-le-bureau)"
 
 #, no-wrap
 #~ msgid "`-e or --directoryserver` "
