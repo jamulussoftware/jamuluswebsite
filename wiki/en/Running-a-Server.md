@@ -128,7 +128,7 @@ Add your desired command line options to the `ExecStart` line in the systemd ser
 
 **For the GUI** (all platforms)
 
-Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!.) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop).
+Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop).
 
 ---
 
