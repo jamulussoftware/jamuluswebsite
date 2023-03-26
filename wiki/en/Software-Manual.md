@@ -302,5 +302,6 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 {% include_relative Include-Shared-Commands.md %}
 
+# Controlling the Client via API
 
-
+In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced usecases - especially if there is no GUI or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).
