@@ -89,15 +89,17 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 “Person” A human connected to a server (may be on multiple channels). We might say "People on the server", or "People who have muted themselves", rather than _Musicians_ or _Channels_.
 
+“Country/Region” Keep in mind that some areas of the world have a controversial (political) status. If possible, be generic and remain neutral. Instead of just saying country, use _Country/Region_ or _Location_.
+
 "Client" When capitalised, this means an instance of Jamulus running in client mode, used to connect to Jamulus Servers.
 
 “Server” When capitalized, refers to an instance of Jamulus running in server mode. When lowercase as _server_, this refers to the computer that runs the Server (e.g. "A Server running on an AWS server"). Not to be confused with Directory.
 
 “Directory” The term for a type of Server that a Client uses to get a list of Servers from. Avoid the use of the term _Directory Server_ because it may be confusing in the presence of _Server_ on its own.
 
-“Country/Region” Keep in mind that some areas of the world have a controversial (political) status. If possible, be generic and remain neutral. Instead of just saying country, use _Country/Region_ or _Location_.
-
 Registration: When a Server is configured in Registered mode, it will be _listed_ when successfully registered by a Directory. Note that if a Directory is full, a Registered Server will not be _listed_ because it has not been successfully _registered_. Note in this case we prefer to say, "Register with a Directory".
+
+“Server List” This is the list of Servers maintained by a Directory.  A Server registers with a Directory to be _listed_ in that Directory’s server list.
 
 ## Units
 
