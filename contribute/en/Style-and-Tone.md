@@ -99,7 +99,7 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 Registration: When a Server is configured in Registered mode, it will be _listed_ when successfully registered by a Directory. Note that if a Directory is full, a Registered Server will not be _listed_ because it has not been successfully _registered_. Note in this case we prefer to say, "Register with a Directory".
 
-“Server List” This is the list of Servers maintained by a Directory.  A Server registers with a Directory to be _listed_ in that Directory’s server list.
+“Server List” This is the list of Servers maintained by a Directory.  A Server registers with a Directory to be _listed_ in that Directory’s _server list_.
 
 ## Units
 
