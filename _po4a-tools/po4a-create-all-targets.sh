@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script creates the target translations from the .po files
-# po4a >= 0.63 is required, see https://github.com/mquinson/po4a/releases
+# po4a >= 0.68 is required, see https://github.com/mquinson/po4a/releases
 # You can set the following variables:
 # SRC_DIR: directory for the original documents in English. Files in sub-directories within SRC_DIR are also detected.
 # PO_DIR: directory where the .po files are stored
@@ -78,7 +78,7 @@ process_with_po4a () {
         # Get source doc names and set target file names and dirs
         filename=$(basename "$doc" .$ext)
 
-        if [[ $filename == 'general' || $filename == 'navigation' ]] ; then
+        if [[ $filename == 'general' || $filename == 'navigation' || $filename == 'copyright' ]] ; then
             TARG_DIR="$DATA_DIR"
 
         else
