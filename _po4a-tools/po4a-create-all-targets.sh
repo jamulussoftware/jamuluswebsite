@@ -128,6 +128,14 @@ process_with_po4a () {
             echo "$filename.$ext" translated into "$lang"
         fi
 
+        # Check if language is set correctly in '1-$lang-index.html'
+        if [ $filename == '1-index' ] ; then
+            if ! grep -Fxq 'lang: "'$lang'"' "$WIKI_DIR/$lang/1-index.html" ; then
+                echo replacing incorrect language tag in 1-"$lang"-index.html;
+                sed -i 's/lang: "[^"]*"/lang: "'$lang'"/' "$WIKI_DIR/$lang/1-index.html"
+            fi
+        fi
+
     done <   <(find -L "$SRC_DIR" -name "*.*"  -print0)
 }
 
