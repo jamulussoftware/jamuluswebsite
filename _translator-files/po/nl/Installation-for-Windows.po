@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Henk De Groot <weblate@hdegroot.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-13 11:24+0000\n"
-"Last-Translator: Henk De Groot <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-03-27 11:43+0000\n"
+"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Windows.md:1
@@ -63,22 +62,24 @@ msgstr "Upgraden? Misschien wil je eerst een [back-up van je configuratie](Softw
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:24
-#, fuzzy
-#| msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.\n"
 msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section."
-msgstr "**Download en installeer een ASIO Driver**. Probeer eerst het stuurprogramma te gebruiken dat met de hardware wordt geleverd te gebruiken. Als je die niet kunt vinden of als je geen externe geluidskaart/audio-interface hebt, dan moet je waarschijnlijk ASIO4ALL installeren. Voor meer informatie scroll naar beneden naar de [ASIO](#asio) sectie.\n"
+msgstr "**Download en installeer een ASIO Driver**. Probeer eerst het stuurprogramma te gebruiken dat met de hardware wordt geleverd te gebruiken. Als je die niet kunt vinden of als je geen externe geluidskaart/audio-interface hebt, dan moet je waarschijnlijk ASIO4ALL installeren. Voor meer informatie scroll naar beneden naar de [ASIO](#asio) sectie."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:24
-#, fuzzy, no-wrap
-#| msgid "**Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
+#, no-wrap
 msgid ""
 "1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
 " **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
 "1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
 "1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
 "1. **Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
-msgstr "**Installeer Jamulus**: Dubbelklik op het installatieprogramma om het te starten. Als je een waarschuwing krijgt van SmartScreen, klik dan op \"Meer info\" en \"Toch uitvoeren\" om Jamulus te installeren. (Als je als een van de eersten een nieuwe versie van Jamulus hebt gedownload, dan staat Jamulus nog niet op de witte lijst van SmartScreen. We betalen niet voor het ondertekenen van codes.)\n"
+msgstr ""
+"1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
+" **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+"1. **Installeer Jamulus**: Dubbelklik op het installatieprogramma om het te starten. Als je een waarschuwing krijgt van SmartScreen, klik dan op \"Meer info\" en \"Toch uitvoeren\" om Jamulus te installeren. (Als je een nieuwe versie van Jamulus hebt gedownload en een van de eerste mensen bent die deze heeft gedownload, wordt Jamulus nog niet op de witte lijst gezet door SmartScreen. We betalen niet voor het ondertekenen van codes.)\n"
+"1. **Jamulus uitvoeren**. Nu zou je Jamulus net als elke andere applicatie moeten kunnen gebruiken.\n"
+"1. **Stel je geluidskaart in**. Als je klaar bent, moet je je audiohardware instellen. Als je ASIO4ALL gebruikt, kijk dan hieronder hoe je dat instelt.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:26
@@ -92,10 +93,9 @@ msgstr "Als je ASIO niet wilt gebruiken of liever [JACK voor Windows](https://ja
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:31
-#, fuzzy, no-wrap
-#| msgid "## ASIO"
+#, no-wrap
 msgid "ASIO"
-msgstr "## ASIO"
+msgstr "ASIO"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:34
@@ -134,10 +134,9 @@ msgstr "[ASIO4ALL website](https://www.asio4all.org/){: target=\"_blank\" rel=\"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:47
-#, fuzzy, no-wrap
-#| msgid "### Setting up ASIO4ALL"
+#, no-wrap
 msgid "Setting up ASIO4ALL"
-msgstr "### ASIO4ALL instellen"
+msgstr "ASIO4ALL instellen"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:50
@@ -152,17 +151,14 @@ msgstr "**Tip:** Stel je geluidskaart in terwijl je [verbonden bent met een serv
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:57
-#, fuzzy
-#| msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:\n"
 msgid "Before you start with Jamulus: 1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.  1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
-msgstr "Als het geluid in Jamulus niet meteen werkt, zorg er dan voor dat alleen de **juiste in-/uitgangen** in ASIO4ALL **aanstaan**. Alle andere moet worden uitgeschakeld. Zoek in de [community lijst met werkende ASIO4ALL-configuraties (engelstalig)](/kb/2021/03/20/ASIO4ALL-Examples.html) naar jouw configuratie of doe het handmatig als je de jouwe niet kunt vinden.\n"
+msgstr "Voordat je begint met Jamulus: 1. **Sluit alle applicaties** (vooral degene die toegang kunnen krijgen tot je geluidskaart zoals je browser/mediaspeler). ASIO4ALL heeft exclusieve toegang tot je geluidskaart nodig, wat betekent dat andere programma's geen audio kunnen gebruiken als ASIO4ALL en Jamulus actief zijn. 1. Als het geluid in Jamulus niet meteen werkt, zorg er dan voor dat alleen de **juiste in-/uitgangen** in ASIO4ALL **aanstaan**. Alle andere moet worden uitgeschakeld. Zoek in de [community lijst met werkende ASIO4ALL-configuraties (engelstalig)](/kb/2021/03/20/ASIO4ALL-Examples.html) naar jouw configuratie of doe het handmatig als je de jouwe niet kunt vinden."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:58
-#, fuzzy, no-wrap
-#| msgid "### How to set up ASIO4ALL inputs (Guide)"
+#, no-wrap
 msgid "How to set up ASIO4ALL inputs (Guide)"
-msgstr "### ASIO4ALL-ingangen instellen (gids)"
+msgstr "ASIO4ALL-ingangen instellen (gids)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:66
@@ -203,13 +199,16 @@ msgid ""
 "1. Headphones and speakers are often labelled as \"output\" and microphones as \"input\" or \"capture\".\n"
 "1. Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
 msgstr ""
+"**Tips:**\n"
+"1. Het is misschien niet duidelijk hoe het juiste geluidsapparaat heet. Veel interne geluidskaarten heten \"Realtek High Definition Audio\", \"Conexant\" of iets dergelijks.\n"
+"1. Hoofdtelefoons en luidsprekers worden vaak aangeduid als \"output\" en microfoons als \"input\" of \"capture\".\n"
+"1. Stereo Mix/Stereo Input is meestal niet de input/output die je zoekt. Schakel het daarom uit als je het ziet.\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:72
-#, fuzzy, no-wrap
-#| msgid "### Troubleshooting"
+#, no-wrap
 msgid "Troubleshooting"
-msgstr "### Problemen oplossen"
+msgstr "Problemen oplossen"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:75
@@ -233,10 +232,9 @@ msgstr "Officiële en verdere informatie over het configureren van ASIO4ALL is g
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:82
-#, fuzzy, no-wrap
-#| msgid "## All installed?"
+#, no-wrap
 msgid "All installed?"
-msgstr "## Alles geïnstalleerd?"
+msgstr "Alles geïnstalleerd?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:85

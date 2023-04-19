@@ -1,20 +1,19 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Henk De Groot <weblate@hdegroot.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-13 11:24+0000\n"
-"Last-Translator: Henk De Groot <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-03-26 20:40+0000\n"
+"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/FAQ.md:1
@@ -44,44 +43,41 @@ msgstr "Vragenlijst"
 #: ../wiki/en/FAQ.md:8
 #, no-wrap
 msgid "Jamulus FAQ"
-msgstr ""
+msgstr "Jamulus vragenlijst"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:10
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid " {:.no_toc}\n"
-msgstr "{:toc}"
+msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:12
-#, fuzzy, no-wrap
-#| msgid "<details markdown=\"1\">"
+#, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr "<details markdown=\"1\">"
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:14
-#, fuzzy, no-wrap
-#| msgid "<summary>Table of contents</summary>"
+#, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr "<summary>Inhoudsopgave</summary>"
+msgstr "<summary>Inhoudsopgave</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:17
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
-msgstr "{:toc}"
+msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:19
-#, fuzzy, no-wrap
-#| msgid "</details>"
+#, no-wrap
 msgid "</details>\n"
-msgstr "</details>"
+msgstr "</details>\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:21
@@ -91,15 +87,12 @@ msgstr "**Voor veelvoorkomende problemen en hun oplossingen bij het gebruik van 
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:23
-#, fuzzy, no-wrap
-#| msgid "### Is there a metronome, synchronization, or some other way of keeping in time?"
+#, no-wrap
 msgid "Is there a metronome, synchronization, or some other way of keeping in time?"
-msgstr "### Is er een metronoom, synchronisatie of een andere manier om synchroon te blijven?"
+msgstr "Is er een metronoom, synchronisatie of een andere manier om synchroon te blijven?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
-#, fuzzy
-#| msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 msgstr "Nee. Muzikanten op een Jamulus-server spelen in realtime samen zoals ze dat in het echt zouden doen. Als je een metronoom signaal wilt hebben, dan zijn er gedeelde metronoomoplossingen op internet die je kunt proberen, maar het is waarschijnlijk het beste om de latency te minimaliseren zodat niemand een algehele vertraging heeft van meer dan ongeveer 30-50 ms."
 
@@ -110,10 +103,9 @@ msgstr "Houd er ook rekening mee dat alle deelnemers [de gouden regel](/wiki/Cli
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:29
-#, fuzzy, no-wrap
-#| msgid "### How do I know if I can join a Server? Are there rules?"
+#, no-wrap
 msgid "How do I know if I can join a Server? Are there rules?"
-msgstr "### Hoe weet ik of ik kan deelnemen aan een server? Zijn er regels?"
+msgstr "Hoe weet ik of ik kan deelnemen aan een server? Zijn er regels?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:32
@@ -122,17 +114,14 @@ msgstr "Als iemand een server vermeldt in een van de adresboeken die in Jamulus 
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
-#, fuzzy
-#| msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-types)."
 msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-modes)."
-msgstr "Houd er ook rekening mee dat servers niet in een adresboek hoeven te zijn geregistreerd om Jamulus-clients er verbinding mee te laten maken. Serverbeheerders kunnen gewoon het adres van hun servers doorgeven aan degenen met wie ze willen spelen en ze kunnen dan rechtstreeks verbinding maken. Bekijk [dit overzicht voor meer informatie](/wiki/Running-a-Server#servertypen)."
+msgstr "Houd er ook rekening mee dat servers niet in een adresboek hoeven te zijn geregistreerd om Jamulus-clients er verbinding mee te laten maken. Serverbeheerders kunnen gewoon het adres van hun servers doorgeven aan degenen met wie ze willen spelen en ze kunnen dan rechtstreeks verbinding maken. Bekijk [dit overzicht voor meer informatie](/wiki/Running-a-Server#servermodi)."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:35
-#, fuzzy, no-wrap
-#| msgid "### Why shouldn’t I use wireless equipment?"
+#, no-wrap
 msgid "Why shouldn’t I use wireless equipment?"
-msgstr "### Waarom zou ik geen draadloze apparatuur gebruiken?"
+msgstr "Waarom zou ik geen draadloze apparatuur gebruiken?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:38
@@ -146,10 +135,9 @@ msgstr "Het is dus logisch om eventuele bronnen van vertraging of andere problem
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:41
-#, fuzzy, no-wrap
-#| msgid "### Why should I not listen to my own signal?"
+#, no-wrap
 msgid "Why should I not listen to my own signal?"
-msgstr "### Waarom zou ik niet naar mijn signaal luisteren?"
+msgstr "Waarom zou ik niet naar mijn signaal luisteren?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:44
@@ -163,24 +151,20 @@ msgstr "Natuurlijk zal, als je een akoestisch instrument bespeelt of een zanger 
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:47
-#, fuzzy, no-wrap
-#| msgid "### Do I need a fast Internet connection?"
+#, no-wrap
 msgid "Do I need a fast Internet connection?"
-msgstr "### Heb ik een snelle internetverbinding nodig?"
+msgstr "Heb ik een snelle internetverbinding nodig?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
-#, fuzzy
-#| msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. For most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) you will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
 msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. Most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
-msgstr "Nee, vooral als je geen server hebt waarmee andere muzikanten verbinding maken. Een lage ping hebben is belangrijker. Voor de meeste mensen op standaard breedband (bijvoorbeeld 10 Mbit/s down en 1 Mbit/s up) heb je geen problemen. Voor degenen die thuis servers hebben kunnen, afhankelijk van het aantal mensen dat deelneemt, problemen worden veroorzaakt als de _upstream-bandbreedte_ lager is dan ongeveer 5 Mbit/s."
+msgstr "Nee, vooral als je geen server hebt waarmee andere muzikanten verbinding maken. Een lage ping hebben is belangrijker. De meeste mensen met standaard breedband (bijvoorbeeld 10 Mbit/s down en 1 Mbit/s up) hebben geen problemen. Voor degenen die thuis servers hebben kunnen, afhankelijk van het aantal mensen dat deelneemt, problemen worden veroorzaakt als de _upstream-bandbreedte_ lager is dan ongeveer 5 Mbit/s."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:51
-#, fuzzy, no-wrap
-#| msgid "### Do I need to run a Server?"
+#, no-wrap
 msgid "Do I need to run a Server?"
-msgstr "### Moet ik een eigen server hebben?"
+msgstr "Moet ik een eigen server hebben?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:54
@@ -189,17 +173,15 @@ msgstr "Nee. Als je alleen verbinding wilt maken met de servers van andere mense
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:55
-#, fuzzy, no-wrap
-#| msgid "### How does Jamulus work (in general)?"
+#, no-wrap
 msgid "How does Jamulus work (in general)?"
-msgstr "### Hoe werkt Jamulus (in het algemeen)?"
+msgstr "Hoe werkt Jamulus (in het algemeen)?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:58
-#, fuzzy, no-wrap
-#| msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">"
+#, no-wrap
 msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">\n"
-msgstr "<img src=\"{% include img/nl-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"diagram dat laat zien hoe Jamulus werkt\">"
+msgstr "<img src=\"{% include img/nl-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"diagram dat laat zien hoe Jamulus werkt\">\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61
@@ -208,10 +190,9 @@ msgstr "Jamulus werkt volgens het client-server principe. De audio van iedereen 
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:62
-#, fuzzy, no-wrap
-#| msgid "### Why doesn't Jamulus provide video support?"
+#, no-wrap
 msgid "Why doesn't Jamulus provide video support?"
-msgstr "### Waarom biedt Jamulus geen video-ondersteuning?"
+msgstr "Waarom biedt Jamulus geen video-ondersteuning?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:65
@@ -220,17 +201,15 @@ msgstr "Het toevoegen van video-ondersteuning voegt veel complexiteit toe. Je ku
 
 #. type: Title ##
 #: ../wiki/en/FAQ.md:67
-#, fuzzy, no-wrap
-#| msgid "## Server FAQ"
+#, no-wrap
 msgid "Server FAQ"
-msgstr "## Server vragenlijst"
+msgstr "Server vragenlijst"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:69
-#, fuzzy, no-wrap
-#| msgid "### Why do Registered Servers not need port forwarding?"
+#, no-wrap
 msgid "Why do Registered Servers not need port forwarding?"
-msgstr "### Waarom hebben geregistreerde servers geen poort forwarding nodig?"
+msgstr "Waarom hebben geregistreerde servers geen poort forwarding nodig?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
@@ -239,10 +218,8 @@ msgstr "Normaal gesproken voorkomen NAT-firewalls (Network Address Translation) 
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:73
-#, fuzzy
-#| msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
 msgid "However, to reach an Unregistered Server, each Client has to **initiate** a connection into the Server’s network. A NAT firewall prevents this, so you need to configure the firewall to allow incoming connection requests on the Jamulus port using port forwarding."
-msgstr "In de niet-geregistreerde modus moeten clients echter verbindingen **initiëren** met het netwerk van de server. NAT-firewalls voorkomen dit, dus je moet ze vertellen om inkomende verbindingsverzoeken op de Jamulus-poort toe te staan met behulp van poort forwarding."
+msgstr "Om echter een niet-geregistreerde server te bereiken, moet elke client een verbinding met het netwerk van de server **initiëren**. Een NAT-firewall voorkomt dit, dus je moet de firewall configureren om inkomende verbindingsverzoeken op de Jamulus-poort toe te staan met behulp van port forwarding."
 
 #, no-wrap
 #~ msgid ""

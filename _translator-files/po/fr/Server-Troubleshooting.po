@@ -3,11 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <redacted@invalid.local>, 2022.
-# Olivier Humbert <trebmuh@tuxfamily.org>, 2022.
+# Olivier Humbert <trebmuh@tuxfamily.org>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-28 13:51+0000\n"
+"PO-Revision-Date: 2023-01-17 18:52+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -85,9 +85,9 @@ msgstr "</details>\n"
 
 #. type: Title ##
 #: ../wiki/en/Server-Troubleshooting.md:22
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Servers - Registered"
-msgstr "Serveurs - enregistrés "
+msgstr "Serveurs - enregistrés"
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:24
@@ -97,9 +97,8 @@ msgstr "Pourquoi mon serveur n'apparaît-il pas dans la liste ? Pourquoi ne s'en
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
-#, fuzzy
 msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to configure your router to [forward the port number](Unregistered-Servers#port-forwarding) used by Jamulus Server."
-msgstr "Si vous êtes enregistré correctement (vous pouvez [le voir ici](https://explorer.jamulus.io/)) et que vous ou vos amis ne voyez pas votre serveur, vous pourriez devoir attendre, ou démarrer votre client avec l'option `--showallservers` et essayer de vous connecter à partir de là ([voir options de ligne de commande](Software-Manual#options-de-la-ligne-de-commande) sur la façon de démarrer votre client avec une option de configuration). Dans certaines configurations réseau, vous devrez peut-être également [rediriger votre port](Running-a-Server#redirection-de-port) dans votre routeur."
+msgstr "Si vous êtes enregistré correctement (vous pouvez [le voir ici](https://explorer.jamulus.io/)) et que vous ou vos amis ne voyez pas votre serveur, vous pourriez devoir attendre, ou démarrer votre client avec l'option `--showallservers` et essayer de vous connecter à partir de là ([voir options de ligne de commande](Software-Manual#options-de-la-ligne-de-commande) sur la façon de démarrer votre client avec une option de configuration). Dans certaines configurations réseau, vous devrez peut-être également configurer votre router pour [rediriger le numéro de port](Running-a-Server#redirection-de-port) utilisé par le serveur Jamulus."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:29
@@ -113,9 +112,9 @@ msgstr "Vous pouvez vérifier que votre serveur est répertorié dans le genre a
 
 #. type: Title ##
 #: ../wiki/en/Server-Troubleshooting.md:32
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Servers - Unregistered"
-msgstr "Serveurs - Non enregistrés "
+msgstr "Serveurs - non enregistrés"
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:34
@@ -136,9 +135,8 @@ msgstr "Quelle adresse dois-je donner aux gens pour qu'ils puissent se connecter
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
-#, fuzzy
 msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it)."
-msgstr "Ça devrait être votre adresse IP **publique** (vous pouvez la trouver avec [Google](https://www.google.com/search?q=whatsmyip)). Connectez votre **propre** client Jamulus à l'adresse IP **locale** de votre serveur (`localhost` ou `127.0.0.1` s'il se trouve sur la même machine que votre client). Notez que votre adresse IP publique peut changer - voir la note sur le \"DNS dynamique\" dans [ce guide](Running-a-Server#dns-dynamique-et-pourquoi-vous-en-aurez-probablement-besoin)."
+msgstr "Ça devrait être votre adresse IP **publique** (vous pouvez la trouver avec [Google](https://www.google.com/search?q=whatsmyip)). Connectez votre **propre** client Jamulus à l'adresse IP **locale** de votre serveur (`localhost` ou `127.0.0.1` s'il se trouve sur la même machine que votre client). Notez que votre adresse IP publique peut changer - voir la note sur le \"DNS dynamique\" dans [ce guide](Unregistered-Servers#dns-dynamique-et-pourquoi-vous-en-aurez-probablement-besoin)."
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:43
@@ -159,15 +157,13 @@ msgstr "Personne ne peut se connecter à mon serveur - mais je peux me connecter
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:50
-#, fuzzy
 msgid "First of all, make sure you've enabled [port forwarding](Unregistered-Servers#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
-msgstr "Tout d'abord, assurez-vous d'avoir activé [la redirection de port](Running-a-Server#redirection-de-port). Si vous ne voyez toujours pas votre serveur depuis l'extérieur de votre réseau local, vous avez peut-être des problèmes avec votre fournisseur d'accès Internet (FAI)."
+msgstr "Tout d'abord, assurez-vous d'avoir activé [la redirection de port](Unregistered-Servers#redirection-de-port). Si vous ne voyez toujours pas votre serveur depuis l'extérieur de votre réseau local, vous avez peut-être des problèmes avec votre fournisseur d'accès Internet (FAI)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
-#, fuzzy
 msgid "Some ISPs use techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
-msgstr "Certains fournisseurs d'accès utilisent des techniques comme [addresse plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) ou [NAT de qualité opérateur (CGN)](https://fr.wikipedia.org/wiki/Carrier-grade_NAT) pour conserver l'espace d'adressage (habituellement pour IPv4). Ceci rend impossible d'héberger des services tels que Jamulus chez soi car ils ne sont pas visibles à l'extérieur de votre réseau local."
+msgstr "Certains fournisseurs d'accès utilisent des techniques comme [adresse plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) (en anglais) ou [NAT de qualité opérateur (CGN)](https://fr.wikipedia.org/wiki/Carrier-grade_NAT) (en anglais) pour conserver l'espace d'adressage (habituellement pour IPv4). Ceci rend impossible d'héberger des services tels que Jamulus chez soi car ils ne sont pas visibles à l'extérieur de votre réseau local."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:54
