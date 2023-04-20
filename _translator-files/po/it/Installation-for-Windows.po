@@ -18,19 +18,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.16-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Windows.md:1
 #, no-wrap
 msgid "en"
 msgstr "it"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Installation-for-Windows.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Installation-for-Windows.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Windows"
@@ -148,48 +148,58 @@ msgid "**Tip:** Set up your sound card while you're [connected to a Server](Gett
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:57
-msgid "Before you start with Jamulus: 1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.  1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
+#: ../wiki/en/Installation-for-Windows.md:55
+msgid "Before you start with Jamulus:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:58
+msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running."
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:58
+msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Windows.md:58
+#: ../wiki/en/Installation-for-Windows.md:59
 #, no-wrap
 msgid "How to set up ASIO4ALL inputs (Guide)"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Open Jamulus's settings"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Go to _\"ASIO Device Settings\"_ (column on the left; directly under the selection of the driver)"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Enable _advanced view_ in ASIO4ALL (click the tool icon on the bottom right)"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Enable only the sound card you want to use by clicking on the button next to its name"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Open your sound card inputs/outputs by clicking the _plus icon_ next to this sound card"
 msgstr ""
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Now enable the correct inputs/outputs in the list under your sound card and disable everything else. You can hover over the inputs/outputs to see which of both they are and if they support the required sample rate for Jamulus of 48kHz (DVD quality)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:71
+#: ../wiki/en/Installation-for-Windows.md:72
 #, no-wrap
 msgid ""
 "**Hints:**\n"
@@ -199,43 +209,43 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Windows.md:72
+#: ../wiki/en/Installation-for-Windows.md:73
 #, no-wrap
 msgid "Troubleshooting"
 msgstr "Risoluzione dei problemi"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:75
+#: ../wiki/en/Installation-for-Windows.md:76
 msgid "If nothing works, first restart Jamulus and/or your PC to close background processes that may be accessing your sound card."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:77
+#: ../wiki/en/Installation-for-Windows.md:78
 msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons in the ASIO4ALL settings. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. web browser, Zoom, etc)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:79
+#: ../wiki/en/Installation-for-Windows.md:80
 msgid "Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:81
+#: ../wiki/en/Installation-for-Windows.md:82
 msgid "Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}."
 msgstr ""
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Windows.md:82
+#: ../wiki/en/Installation-for-Windows.md:83
 #, no-wrap
 msgid "All installed?"
 msgstr "Tutto installato?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:85
+#: ../wiki/en/Installation-for-Windows.md:86
 msgid "Take a look at"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:86
+#: ../wiki/en/Installation-for-Windows.md:87
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[Pagina introduttiva](Getting-Started){: .button}"

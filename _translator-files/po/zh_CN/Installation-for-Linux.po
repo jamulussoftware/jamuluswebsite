@@ -17,19 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.15.1-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "en"
 msgstr "zh_CN"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Linux"
@@ -66,7 +66,7 @@ msgstr "**升级?**您可能需要先 [备份您的配置](Software-Manual#备�
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
 #, no-wrap
-msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first. \n"
+msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.\n"
 msgstr ""
 
 #. type: Title ###
@@ -109,15 +109,12 @@ msgid "Go to where you downloaded the installer and either double-click on it, o
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:33
-#, no-wrap
-msgid "\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  \n"
-msgstr ""
-
-#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:35
-msgid "Once installed, you can delete the file and close any console windows."
-msgstr "安装后，您可以删除该文件并关闭命令行窗口。"
+#, no-wrap
+msgid ""
+"\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)\n"
+"1. Once installed, you can delete the file and close any console windows.\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:37
@@ -149,73 +146,77 @@ msgid "Configure JACK with QjackCtl"
 msgstr "使用 QjackCtl 配置 JACK"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:49
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.  1. Launch QjackCtl. You will see the **Qt JACK Control utility main page** 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr ""
+#: ../wiki/en/Installation-for-Linux.md:47
+msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+msgstr "Jamulus 客户端需要 [JACK](https://jackaudio.org/) 才能运行，但您需要先配置它。推荐的方法是使用`QjackCtl`。"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:50
+msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+msgstr "启动 QjackCtl。您将看到 **Qt JACK Control 实用程序主页**"
+
+#. type: Bullet: '2. '
+#: ../wiki/en/Installation-for-Linux.md:50
+msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+msgstr "如下配置您的音频硬件(JACK 的确切设置将取决于您的音频硬件的能力):"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
 msgstr "将音频 **接口** 设置为您想要的(列表中可能有几个)"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the **Sample Rate to 48000**"
 msgstr "将**采样率设置为 48000**"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
 msgstr "首先将“帧/周期”设置为 128**，将“周期/缓冲区”设置为 2"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:55
+#: ../wiki/en/Installation-for-Linux.md:56
 msgid "Restart JACK for the new settings to take effect"
 msgstr "重新启动 JACK 以使新设置生效"
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:56
+#: ../wiki/en/Installation-for-Linux.md:57
 #, no-wrap
 msgid "Start Jamulus"
 msgstr "启动 Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:59
+#: ../wiki/en/Installation-for-Linux.md:60
 msgid "With JACK running and configured, launch Jamulus."
 msgstr "随着 JACK 的运行和配置，启动 Jamulus。"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:61
+#: ../wiki/en/Installation-for-Linux.md:62
 msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
 msgstr "如果您遇到声音中断问题(特别是 JACK/QjackCtl 报告的 XRUN 错误)，请尝试设置更大的值(例如 256 帧或 3 个周期)。较低的(例如 64 帧)可以带来更好的性能，但可能会带来更多的声音问题。否则请参阅[故障排除页面](客户端故障排除)。"
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Linux.md:62
+#: ../wiki/en/Installation-for-Linux.md:63
 #, no-wrap
 msgid "All installed?"
 msgstr "全部安装完毕？"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:65
+#: ../wiki/en/Installation-for-Linux.md:66
 msgid "Take a look at the"
 msgstr "看看"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:66
+#: ../wiki/en/Installation-for-Linux.md:67
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[入门页面](Getting-Started){: .button}"
 
+#~ msgid "Once installed, you can delete the file and close any console windows."
+#~ msgstr "安装后，您可以删除该文件并关闭命令行窗口。"
+
 #~ msgid "# Installation for Linux"
 #~ msgstr "# 为 Linux 安装"
-
-#~ msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
-#~ msgstr "Jamulus 客户端需要 [JACK](https://jackaudio.org/) 才能运行，但您需要先配置它。推荐的方法是使用`QjackCtl`。"
-
-#~ msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
-#~ msgstr "启动 QjackCtl。您将看到 **Qt JACK Control 实用程序主页**"
-
-#~ msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-#~ msgstr "如下配置您的音频硬件(JACK 的确切设置将取决于您的音频硬件的能力):"
 
 #~ msgid "We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
 #~ msgstr "我们为最常见的架构提供了三个等效的`.deb` 文件。请下载相应的:"

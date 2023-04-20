@@ -19,19 +19,19 @@ msgstr ""
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "en"
 msgstr "fr"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Linux"
@@ -67,8 +67,9 @@ msgstr "**Mise à jour ?** Vous pouvez d'abord [sauvegarder votre configuration]
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
-#, no-wrap
-msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first. \n"
+#, fuzzy, no-wrap
+#| msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first. \n"
+msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.\n"
 msgstr "**Installation d'un serveur?** Lisez d'abord le [guide pour les administrateurs de serveurs](Running-a-Server) \n"
 
 #. type: Title ###
@@ -109,15 +110,13 @@ msgid "Go to where you downloaded the installer and either double-click on it, o
 msgstr "Allez à l'endroit où vous avez téléchargé le programme d'installation et double-cliquez dessus, ou utilisez la ligne de commande :"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:33
-#, no-wrap
-msgid "\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  \n"
-msgstr "\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (ou pour Raspberry Pi etc. comme ci-dessus)  \n"
-
-#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:35
-msgid "Once installed, you can delete the file and close any console windows."
-msgstr "Une fois installé, vous pouvez supprimer le fichier et fermer toutes les fenêtres de la console."
+#, fuzzy, no-wrap
+#| msgid "\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  \n"
+msgid ""
+"\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)\n"
+"1. Once installed, you can delete the file and close any console windows.\n"
+msgstr "\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (ou pour Raspberry Pi etc. comme ci-dessus)  \n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:37
@@ -149,73 +148,80 @@ msgid "Configure JACK with QjackCtl"
 msgstr "Configurer JACK avec QjackCtl"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:49
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.  1. Launch QjackCtl. You will see the **Qt JACK Control utility main page** 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr "Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.  1. Lancez QjackCtl. Vous verrez la **page principale de l'utilitaire Qt JACK Control** 2. Configurez votre matériel audio comme suit (les paramètres exacts de JACK dépendront de ce dont votre matériel audio est capable) :"
+#: ../wiki/en/Installation-for-Linux.md:47
+msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+msgstr "Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`."
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:50
+msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+msgstr "Lancez QjackCtl. Vous verrez la **page principale de l'utilitaire de contrôle Qt JACK**"
+
+#. type: Bullet: '2. '
+#: ../wiki/en/Installation-for-Linux.md:50
+msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+msgstr "Configurez votre matériel audio comme suit (les paramètres exacts de JACK dépendront de ce que votre matériel audio est capable de faire) :"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
 msgstr "Réglez l'**interface** audio sur celle que vous voulez (il pourrait y en avoir plusieurs dans la liste)"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the **Sample Rate to 48000**"
 msgstr "Réglez la **fréquence d'échantillonnage sur 48000**"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
 msgstr "Paramétrez la **trames/période à 128** et périodes/tampon à 2 dans un premier temps"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:55
+#: ../wiki/en/Installation-for-Linux.md:56
 msgid "Restart JACK for the new settings to take effect"
 msgstr "Redémarrez JACK pour que les nouveaux paramètres soient pris en compte"
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:56
+#: ../wiki/en/Installation-for-Linux.md:57
 #, no-wrap
 msgid "Start Jamulus"
 msgstr "Démarrez Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:59
+#: ../wiki/en/Installation-for-Linux.md:60
 msgid "With JACK running and configured, launch Jamulus."
 msgstr "Une fois JACK lancé et configuré, démarrez Jamulus."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:61
+#: ../wiki/en/Installation-for-Linux.md:62
 msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
 msgstr "Si vous rencontrez des problèmes d'interruption du son (en particulier des décrochages signalés par JACK/QjackCtl), essayez de définir des valeurs plus élevées (par exemple, 256 trames ou 3 périodes). Des valeurs plus faibles (par exemple 64 trames) peuvent apporter de meilleures performances mais peut-être plus de problèmes de son. Voir la [page dépannage](Client-Troubleshooting) sinon."
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Linux.md:62
+#: ../wiki/en/Installation-for-Linux.md:63
 #, no-wrap
 msgid "All installed?"
 msgstr "Tout est installé ?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:65
+#: ../wiki/en/Installation-for-Linux.md:66
 msgid "Take a look at the"
 msgstr "Jetez un coup d'œil à la"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:66
+#: ../wiki/en/Installation-for-Linux.md:67
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[Page de démarrage](Getting-Started){: .button}"
 
+#~ msgid "Once installed, you can delete the file and close any console windows."
+#~ msgstr "Une fois installé, vous pouvez supprimer le fichier et fermer toutes les fenêtres de la console."
+
+#~ msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.  1. Launch QjackCtl. You will see the **Qt JACK Control utility main page** 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+#~ msgstr "Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`.  1. Lancez QjackCtl. Vous verrez la **page principale de l'utilitaire Qt JACK Control** 2. Configurez votre matériel audio comme suit (les paramètres exacts de JACK dépendront de ce dont votre matériel audio est capable) :"
+
 #~ msgid "# Installation for Linux"
 #~ msgstr "# Installation pour Linux"
-
-#~ msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
-#~ msgstr "Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fonctionner, mais vous devez d'abord le configurer. La méthode recommandée est d'utiliser `QjackCtl`."
-
-#~ msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
-#~ msgstr "Lancez QjackCtl. Vous verrez la **page principale de l'utilitaire de contrôle Qt JACK**"
-
-#~ msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-#~ msgstr "Configurez votre matériel audio comme suit (les paramètres exacts de JACK dépendront de ce que votre matériel audio est capable de faire) :"
 
 #~ msgid "We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
 #~ msgstr "Nous fournissons trois fichiers `.deb` équivalents pour les architectures les plus courantes. Veuillez télécharger le fichier approprié :"

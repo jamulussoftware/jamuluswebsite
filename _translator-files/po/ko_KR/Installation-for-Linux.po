@@ -18,19 +18,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.17-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "en"
 msgstr "ko_KR"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Linux"
@@ -68,7 +68,7 @@ msgstr "업그레이드중입니까? 먼저 [사용자의 구성 백업](Softwar
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
 #, no-wrap
-msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first. \n"
+msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.\n"
 msgstr ""
 
 #. type: Title ###
@@ -115,17 +115,12 @@ msgid "Go to where you downloaded the installer and either double-click on it, o
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:33
-#, no-wrap
-msgid "\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  \n"
-msgstr ""
-
-#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:35
-#, fuzzy
-#| msgid "Once installed, you can delete the file and close any console windows.\n"
-msgid "Once installed, you can delete the file and close any console windows."
-msgstr "설치가 완료되면 파일을 삭제하고 콘솔 창을 닫을 수 있습니다.\n"
+#, no-wrap
+msgid ""
+"\t`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)\n"
+"1. Once installed, you can delete the file and close any console windows.\n"
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:37
@@ -161,74 +156,80 @@ msgid "Configure JACK with QjackCtl"
 msgstr "### QjackCtl로 JACK 구성"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:49
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.  1. Launch QjackCtl. You will see the **Qt JACK Control utility main page** 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr ""
+#: ../wiki/en/Installation-for-Linux.md:47
+msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+msgstr "Jamulus 클라이언트를 실행하려면 [JACK](https://jackaudio.org/)가 필요하지만, 먼저 구성해야 합니다. 권장되는 방법은 `QjackCtl`을 사용하는 것입니다."
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:50
+msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+msgstr "QjackCtl을 실행합니다. **Qt JACK 컨트롤 유틸리티 기본 페이지**가 표시됩니다"
+
+#. type: Bullet: '2. '
+#: ../wiki/en/Installation-for-Linux.md:50
+msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+msgstr "오디오 하드웨어를 다음과 같이 구성합니다(JACK에 대한 정확한 설정은 오디오 하드웨어의 기능에 따라 다름):"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
 msgstr "오디오 **인터페이스**를 원하는 것으로 설정합니다(목록에 여러 개 있을 수 있음)"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the **Sample Rate to 48000**"
 msgstr "**샘플 속도를 48000**으로 설정합니다"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:53
+#: ../wiki/en/Installation-for-Linux.md:54
 msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
 msgstr "**프레임/주기 128**로 설정하고 주기/버퍼를 처음에는 2로 설정합니다"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:55
+#: ../wiki/en/Installation-for-Linux.md:56
 msgid "Restart JACK for the new settings to take effect"
 msgstr "새 설정을 적용하려면 JACK을 다시 시작합니다"
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:56
+#: ../wiki/en/Installation-for-Linux.md:57
 #, fuzzy, no-wrap
 #| msgid "### Start Jamulus"
 msgid "Start Jamulus"
 msgstr "### Jamulus 시작하기"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:59
+#: ../wiki/en/Installation-for-Linux.md:60
 msgid "With JACK running and configured, launch Jamulus."
 msgstr "JACK이 실행되고 구성된 상태에서 Jamulus를 시작합니다."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:61
+#: ../wiki/en/Installation-for-Linux.md:62
 msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
 msgstr "사운드 끊김 문제(특히 JACK/QjackCtl에 의해 보고된 XRUN 오류)가 발생하면 더 큰 값(예: 256프레임 또는 3주기)을 설정해 보십시오. 낮은 프레임(예: 64 프레임)은 더 나은 성능을 제공할 수 있지만, 더 많은 사운드 문제를 가져올 수 있습니다. 그렇지 않으면 [문제 해결 페이지](클라이언트 문제 해결)를 참조하십시오."
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Linux.md:62
+#: ../wiki/en/Installation-for-Linux.md:63
 #, no-wrap
 msgid "All installed?"
 msgstr "모두 설치되었습니까?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:65
+#: ../wiki/en/Installation-for-Linux.md:66
 msgid "Take a look at the"
 msgstr "살펴보기"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:66
+#: ../wiki/en/Installation-for-Linux.md:67
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[시작하기 페이지](시작하기){: .button}"
 
+#, fuzzy
+#~| msgid "Once installed, you can delete the file and close any console windows.\n"
+#~ msgid "Once installed, you can delete the file and close any console windows."
+#~ msgstr "설치가 완료되면 파일을 삭제하고 콘솔 창을 닫을 수 있습니다.\n"
+
 #~ msgid "# Installation for Linux"
 #~ msgstr "# Linux용 설치"
-
-#~ msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
-#~ msgstr "Jamulus 클라이언트를 실행하려면 [JACK](https://jackaudio.org/)가 필요하지만, 먼저 구성해야 합니다. 권장되는 방법은 `QjackCtl`을 사용하는 것입니다."
-
-#~ msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
-#~ msgstr "QjackCtl을 실행합니다. **Qt JACK 컨트롤 유틸리티 기본 페이지**가 표시됩니다"
-
-#~ msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-#~ msgstr "오디오 하드웨어를 다음과 같이 구성합니다(JACK에 대한 정확한 설정은 오디오 하드웨어의 기능에 따라 다름):"
 
 #~ msgid "We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
 #~ msgstr "가장 일반적인 아키텍처에 대해 3개의 동등한 `.deb` 파일을 제공합니다. 적절한 것을 다운로드하십시오:"

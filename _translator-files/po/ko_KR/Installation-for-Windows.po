@@ -18,19 +18,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.17-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Windows.md:1
 #, no-wrap
 msgid "en"
 msgstr "ko_KR"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Installation-for-Windows.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Installation-for-Windows.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Windows"
@@ -153,48 +153,62 @@ msgid "**Tip:** Set up your sound card while you're [connected to a Server](Gett
 msgstr "**팁:** [서버에 연결됨](Getting-Started#connecting-to-a-server-and-testing-your-sound)을 사용하는 동안 사운드 카드를 설정하여 악기나 음성을 듣고 모든 것이 올바르게 설정되었는지 확인합니다; 그러나 먼저 계속 읽으십시오.\n"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:57
-msgid "Before you start with Jamulus: 1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.  1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
+#: ../wiki/en/Installation-for-Windows.md:55
+msgid "Before you start with Jamulus:"
+msgstr "Jamulus로 시작하기 전에:"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:58
+#, fuzzy
+#| msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
+msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running."
+msgstr "**모든 응용 프로그램을 닫습니다** (특히 브라우저 / 미디어 플레이어와 같은 사운드 카드에 액세스할 수있는 응용 프로그램). ASIO4ALL은 사운드 카드에 독점적으로 액세스해야하므로 ASIO4ALL과 Jamulus가 실행되는 경우 다른 프로그램에서 오디오를 사용할 수 없습니다.\n"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Windows.md:58
+#, fuzzy
+#| msgid "Before you start with Jamulus: 1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.  1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
+msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
 msgstr "Jamulus를 시작하기 전에: 1. **모든 응용 프로그램을 닫습니다**(특히 브라우저/미디어 플레이어와 같이 사운드 카드에 액세스할 수 있는 응용 프로그램). ASIO4ALL은 사운드 카드에 대한 독점 액세스가 필요합니다. 즉, ASIO4ALL 및 Jamulus가 실행 중인 경우, 다른 프로그램에서 오디오를 사용할 수 없습니다.  1. Jamulus 오디오가 처음부터 작동하지 않으면 ASIO4ALL의 **올바른 입력/출력**만 **켜져 있는지** 확인하세요. 다른 모든 것은 꺼야 합니다. [작업 중인 ASIO4ALL 구성의 커뮤니티 목록](/kb/2021/03/20/ASIO4ALL-Examples.html)에서 구성을 검색하거나 사용자의 구성을 찾을 수 없는 경우 수동으로 수행하세요:"
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Windows.md:58
+#: ../wiki/en/Installation-for-Windows.md:59
 #, no-wrap
 msgid "How to set up ASIO4ALL inputs (Guide)"
 msgstr "ASIO4ALL 입력을 설정하는 방법 (가이드)"
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Open Jamulus's settings"
 msgstr "Jamulus의 설정 열기"
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Go to _\"ASIO Device Settings\"_ (column on the left; directly under the selection of the driver)"
 msgstr "_\"ASIO 장치 설정\"_으로 갑니다(왼쪽 열, 드라이버 선택 바로 아래)"
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Enable _advanced view_ in ASIO4ALL (click the tool icon on the bottom right)"
 msgstr "ASIO4ALL에서 _고급 보기_ 활성화(오른쪽 하단의 도구 아이콘 클릭)"
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Enable only the sound card you want to use by clicking on the button next to its name"
 msgstr "이름 옆에 있는 버튼을 클릭하여 사용하려는 사운드 카드만 활성화합니다"
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Open your sound card inputs/outputs by clicking the _plus icon_ next to this sound card"
 msgstr "이 사운드 카드 옆에 있는 _＋ 아이콘_을 클릭하여 사운드 카드 입력/출력을 엽니다"
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Windows.md:66
+#: ../wiki/en/Installation-for-Windows.md:67
 msgid "Now enable the correct inputs/outputs in the list under your sound card and disable everything else. You can hover over the inputs/outputs to see which of both they are and if they support the required sample rate for Jamulus of 48kHz (DVD quality)."
 msgstr "이제 사운드 카드 아래의 목록에서 올바른 입력 / 출력을 활성화하고 다른 모든 것을 비활성화하십시오. 입력/출력 위로 마우스를 가져가면 둘 다 어느 것인지 그리고 48kHz(DVD 품질)의 Jamulus에 필요한 샘플 속도를 지원하는지 확인할 수 있습니다."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:71
+#: ../wiki/en/Installation-for-Windows.md:72
 #, no-wrap
 msgid ""
 "**Hints:**\n"
@@ -208,44 +222,44 @@ msgstr ""
 "1. 스테레오 믹스/스테레오 입력은 일반적으로 원하는 입력/출력이 아닙니다. 따라서 이 표시가 보이면 끄세요.\n"
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Windows.md:72
+#: ../wiki/en/Installation-for-Windows.md:73
 #, no-wrap
 msgid "Troubleshooting"
 msgstr "문제 해결하기"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:75
+#: ../wiki/en/Installation-for-Windows.md:76
 msgid "If nothing works, first restart Jamulus and/or your PC to close background processes that may be accessing your sound card."
 msgstr "아무 것도 작동하지 않으면 먼저 Jamulus 및/또는 PC를 다시 시작하여 사운드 카드에 액세스할 수 있는 백그라운드 프로세스를 닫습니다."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:77
+#: ../wiki/en/Installation-for-Windows.md:78
 msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons in the ASIO4ALL settings. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. web browser, Zoom, etc)."
 msgstr "그런 다음 *입력/출력을 다시 설정*합니다. 활성화되고 액세스 가능한 입력/출력은 ASIO4ALL 설정에서 전원 버튼과 재생 버튼이 켜진 상태로 표시됩니다. 대신 빨간색 십자가 또는 노란색 기호가 표시되면 사운드 카드에 액세스할 수 있는 다른 응용 프로그램(예: 웹 브라우저, Zoom 등)을 닫습니다."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:79
+#: ../wiki/en/Installation-for-Windows.md:80
 msgid "Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL."
 msgstr "ASIO4ALL에 대한 자세한 설정 정보를 제공하는 [trombonepizza](https://github.com/trombonepizza)의 [이 영상](https://youtu.be/_GzOsitVgLI)을 살펴보십시오."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:81
+#: ../wiki/en/Installation-for-Windows.md:82
 msgid "Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}."
 msgstr "ASIO4ALL을 구성하는 방법에 대한 공식 및 추가 정보는 공식 [ASIO4ALL 웹 사이트의 모든 FAQ](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}에 설명되어 있습니다."
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Windows.md:82
+#: ../wiki/en/Installation-for-Windows.md:83
 #, no-wrap
 msgid "All installed?"
 msgstr "모두 설치되었습니까?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:85
+#: ../wiki/en/Installation-for-Windows.md:86
 msgid "Take a look at"
 msgstr "살펴보기"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Windows.md:86
+#: ../wiki/en/Installation-for-Windows.md:87
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[시작하기 페이지](시작하기){: .button}"
 
@@ -271,13 +285,6 @@ msgstr "[시작하기 페이지](시작하기){: .button}"
 #, no-wrap
 #~ msgid "***\n"
 #~ msgstr "***\n"
-
-#~ msgid "Before you start with Jamulus:"
-#~ msgstr "Jamulus로 시작하기 전에:"
-
-#, no-wrap
-#~ msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
-#~ msgstr "**모든 응용 프로그램을 닫습니다** (특히 브라우저 / 미디어 플레이어와 같은 사운드 카드에 액세스할 수있는 응용 프로그램). ASIO4ALL은 사운드 카드에 독점적으로 액세스해야하므로 ASIO4ALL과 Jamulus가 실행되는 경우 다른 프로그램에서 오디오를 사용할 수 없습니다.\n"
 
 #, no-wrap
 #~ msgid "**Hints:**\n"

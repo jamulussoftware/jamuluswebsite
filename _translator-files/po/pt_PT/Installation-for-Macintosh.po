@@ -15,19 +15,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.14.2-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Macintosh.md:1
 #, no-wrap
 msgid "en"
 msgstr "pt_PT"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Installation-for-Macintosh.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Installation-for-Macintosh.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Macintosh"
@@ -89,31 +89,53 @@ msgid "If you are using the \"legacy\" version of Jamulus (because you are runni
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:37
-msgid "To open Jamulus 1. Go to the Applications folder via Finder 1. Double-click on Jamulus and wait for the above-mentioned message 1. Close this message by clicking on \"Cancel\" 1. Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
-msgstr ""
+#: ../wiki/en/Installation-for-Macintosh.md:33
+msgid "To open Jamulus"
+msgstr "Para contornar esse problema:"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Macintosh.md:38
+#, fuzzy
+#| msgid "Navigate to the Applications folder via Finder"
+msgid "Go to the Applications folder via Finder"
+msgstr "Use o finder e vá até a pasta de programas"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Macintosh.md:38
+msgid "Double-click on Jamulus and wait for the above-mentioned message"
+msgstr "Dê um clique duplo no Jamulus e espere até a mensagem descrita acima aparecer"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Macintosh.md:38
+msgid "Close this message by clicking on \"Cancel\""
+msgstr "Feche essa mensagem clicando em \"Cancelar\""
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Macintosh.md:38
+msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
+msgstr "Segure a tecla Control e clique (ou clique com o botão direito) no Jamulus, então selecione \"Abrir\" no topo do menu."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:39
+#: ../wiki/en/Installation-for-Macintosh.md:40
 #, fuzzy
 #| msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\" and go ahead with running it. You will not be shown this warning again - just double-click it to run after that.  For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
 msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From the on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
 msgstr "Você verá uma versão ligeiramente diferente da mesma mensagem, agora aparecerá um botão \"Abrir\", que você pode clicar para continar e abrir o Jamulus. Essa mensagem de alerta não vai aparecer de novo - nas próximas vezes basta abrí-lo normalmente com um clique duplo.  Para mais informações sobre essa mensagem de alerta leia [essa página de suporte da Apple](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Macintosh.md:40
+#: ../wiki/en/Installation-for-Macintosh.md:41
 #, fuzzy, no-wrap
 #| msgid "## All installed?"
 msgid "All installed?"
 msgstr "## Tudo instalado?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:43
+#: ../wiki/en/Installation-for-Macintosh.md:44
 msgid "Take a look at the"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:44
+#: ../wiki/en/Installation-for-Macintosh.md:45
 #, fuzzy
 #| msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgid "[Getting Started page](Getting-Started){: .button}"
@@ -142,23 +164,6 @@ msgstr "[Configurando o Jamulus](Getting-Started){: .button}"
 #, no-wrap
 #~ msgid "***\n"
 #~ msgstr "***\n"
-
-#~ msgid "To open Jamulus"
-#~ msgstr "Para contornar esse problema:"
-
-#, fuzzy
-#~| msgid "Navigate to the Applications folder via Finder"
-#~ msgid "Go to the Applications folder via Finder"
-#~ msgstr "Use o finder e vá até a pasta de programas"
-
-#~ msgid "Double-click on Jamulus and wait for the above-mentioned message"
-#~ msgstr "Dê um clique duplo no Jamulus e espere até a mensagem descrita acima aparecer"
-
-#~ msgid "Close this message by clicking on \"Cancel\""
-#~ msgstr "Feche essa mensagem clicando em \"Cancelar\""
-
-#~ msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
-#~ msgstr "Segure a tecla Control e clique (ou clique com o botão direito) no Jamulus, então selecione \"Abrir\" no topo do menu."
 
 #, fuzzy
 #~| msgid "[Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\\\"
