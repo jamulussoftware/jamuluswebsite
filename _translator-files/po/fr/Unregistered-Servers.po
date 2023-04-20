@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Olivier Humbert <trebmuh@tuxfamily.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2023-01-20 07:39+0000\n"
+"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.15.1\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -103,44 +103,44 @@ msgstr "À moins que votre FAI ne vous fournisse une adresse IP fixe, il se peut
 #: ../wiki/en/Unregistered-Servers.md:34
 #, no-wrap
 msgid "DNS SRV record support"
-msgstr ""
+msgstr "Support des enregistrements DNS SRV"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:37
 msgid "Jamulus Clients support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record). If a Client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus Clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record."
-msgstr ""
+msgstr "Les clients Jamulus prennent en charge les [enregistrements DNS SRV (enregistrements \"service\")](https://en.wikipedia.org/wiki/SRV_record) (en anglais). Si un client trouve un enregistrement SRV associé au nom de domaine indiqué dans la fenêtre de connexion, il essaiera de se connecter à l'hôte et au port du point de terminaison indiqués dans l'enregistrement SRV. Ce processus est similaire à la redirection HTTP dans un navigateur Web, mais il se déroule entre les clients Jamulus et le serveur DNS. Le serveur Jamulus n'est pas impliqué dans cette interaction. Les serveurs Jamulus se contentent d'écouter les connexions sur le même port que celui indiqué dans l'enregistrement SRV."
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:38
 #, no-wrap
 msgid "Why is this helpful?"
-msgstr ""
+msgstr "Pourquoi cela est-il utile ?"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:41
 msgid "A Jamulus Client can connect to a Server on a non-default port by specifying the port as part of the server address. A server administrator may want to give users a simple address without the port details, while still serving Jamulus on a non-default port. For this case, the port information can be acquired from an SRV record."
-msgstr ""
+msgstr "Un client Jamulus peut se connecter à un serveur sur un port autre que celui par défaut en spécifiant le port dans l'adresse du serveur. Un administrateur de serveur peut vouloir donner aux utilisateurs une adresse simple sans les détails du port, tout en servant Jamulus sur un port autre que celui par défaut. Dans ce cas, les informations relatives au port peuvent être obtenues à partir d'un enregistrement SRV."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:43
 msgid "An address entered in the Connect window could look like ```jamulus.example.com```. If an SRV record is found for this DNS domain, Jamulus Client will try to connect to the Server on the host:port listed in the SRV record, such as ```jamulus.example.com:12345```."
-msgstr ""
+msgstr "Une adresse saisie dans la fenêtre de connexion peut ressembler à ```Jamulus.example.com```. Si un enregistrement SRV est trouvé pour ce domaine DNS, le client Jamulus essaiera de se connecter au serveur sur l'hôte et le port indiqués dans l'enregistrement SRV, par exemple ```Jamulus.example.com:12345```."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:45
 msgid "If no SRV records are found on the DNS server, a Client will attempt to connect to the Server as specified in the connection window."
-msgstr ""
+msgstr "Si aucun enregistrement SRV n'est trouvé sur le serveur DNS, un client tentera de se connecter au serveur comme indiqué dans la fenêtre de connexion."
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:46
 #, no-wrap
 msgid "Creating SRV records"
-msgstr ""
+msgstr "Création d'enregistrements SRV"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:49
 msgid "SRV records are created by the administrator of the domain being used to host the Jamulus server. The SRV records are added through the administration portal (or API if available) of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this."
-msgstr ""
+msgstr "Les enregistrements SRV sont créés par l'administrateur du domaine utilisé pour héberger le serveur Jamulus. Les enregistrements SRV sont ajoutés via le portail d'administration (ou l'API si elle est disponible) du service d'hébergement DNS du domaine. Le format de l'entrée de l'enregistrement SRV peut varier selon le service d'hébergement DNS, mais ressemble généralement à ceci."
 
 #. type: Fenced code block
 #: ../wiki/en/Unregistered-Servers.md:50
@@ -152,33 +152,38 @@ msgid ""
 "  \n"
 "  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 msgstr ""
+"  _service._proto.name. ttl IN SRV priority weight port target\n"
+"  \n"
+"  # ou, plus précisément\n"
+"  \n"
+"  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:59
 #, no-wrap
 msgid "**Note:** You can host many Jamulus Servers at different ports on one host by giving each its own SRV record.\n"
-msgstr ""
+msgstr "**Note :** vous pouvez héberger plusieurs serveurs Jamulus à différents ports sur un hôte en donnant à chacun son propre enregistrement SRV.\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:61
 msgid "See the documentation of your DNS provider for instructions on creating an SRV record."
-msgstr ""
+msgstr "Consultez la documentation de votre fournisseur DNS pour obtenir des instructions sur la création d'un enregistrement SRV."
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:62
 #, no-wrap
 msgid "Example use case with SRV records"
-msgstr ""
+msgstr "Exemple de cas d'utilisation avec les enregistrements SRV"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:65
 msgid "This example assumes the DNS contains an A or CNAME record that resolves to ```server1.example.com```, where three Jamulus Server instances are running, each listening on one of the three ports listed below."
-msgstr ""
+msgstr "Cet exemple suppose que le DNS contient un enregistrement A ou CNAME qui se résout en ``server1.example.com``, où trois instances de serveur Jamulus sont exécutées, chacune écoutant sur l'un des trois ports listés ci-dessous."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:67
 msgid "Alternatively, `server1.example.com` can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers)."
-msgstr ""
+msgstr "Alternativement, `server1.example.com` peut être un routeur, une passerelle NAT ou un équilibreur de charge qui transmet chacun des ports à un ou plusieurs serveurs Jamulus."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:74
@@ -190,12 +195,17 @@ msgid ""
 "| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
 "| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
 msgstr ""
+"| CLIENT JAMULUS     |  ENREGISTREMENT DNS SRV                                                     | SERVEUR JAMULUS            |\n"
+"| ------------------ | --------------------------------------------------------------------------- | -------------------------- |\n"
+"| rock.example.com  |  _jamulus._udp.rock.example.com 300 IN SRV 0 5 22124 server1.example.com  | server1.example.com:22124 |\n"
+"| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
+"| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:76
 #, no-wrap
 msgid "*It's important to remember that DNS is not forwarding connections. It's simply telling Jamulus Client what public host:port to connect to.*\n"
-msgstr ""
+msgstr "*Il est important de se rappeler que le DNS ne fait pas suivre les connexions. Il indique simplement au client Jamulus le port et l'hôte publics auxquels il doit se connecter.*\n"
 
 #~ msgid "If you set up your server at home, you will probably need to change some settings in your router/firewall:"
 #~ msgstr "Si vous installez votre serveur chez vous, vous devrez probablement modifier certains paramètres de votre routeur/pare-feu :"

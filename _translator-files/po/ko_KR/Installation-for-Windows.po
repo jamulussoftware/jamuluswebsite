@@ -4,18 +4,19 @@
 # ignotus <please@seeGitHubOrWeblate.local>, 2022.
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
 # 이정희 <redacted@invalid.local>, 2022.
+# 이정희 <daemul72@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-19 06:09+0000\n"
-"Last-Translator: 이정희 <redacted@invalid.local>\n"
+"PO-Revision-Date: 2023-03-30 17:41+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #. type: YAML Front Matter: lang
 #: ../wiki/en/Installation-for-Windows.md:1
@@ -45,7 +46,7 @@ msgstr "Windows용 설치"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
-msgstr "{% include breadcrumb.html root=\"Jamulus 사용\" branch1=\"시작하기\" branch1-url=\"시작하기\" %}"
+msgstr "{% include breadcrumb.html root=\"Jamulus 사용하기\" branch1=\"시작하기\" branch1-url=\"시작하기\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:13
@@ -64,22 +65,24 @@ msgstr "업그레이드중입니까? 먼저 [사용자의 구성 백업](Softwar
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:24
-#, fuzzy
-#| msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section.\n"
 msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section."
-msgstr "**ASIO 드라이버를 다운로드하여 설치합니다**. 하드웨어 제조업체에서 제공하는 드라이버를 사용해 보십시오. 찾을 수 없거나 외부 사운드 카드가 없으면 ASIO4ALL을 설치해야 합니다. 자세한 내용은 [ASIO](#asio) 섹션으로 스크롤하십시오.\n"
+msgstr "**ASIO 드라이버를 다운로드하여 설치합니다**. 하드웨어 제조업체에서 제공하는 드라이버를 사용하세요. 드라이버를 찾을 수 없거나 외장 사운드 카드가 없는 경우 ASIO4ALL을 설치해야 할 수도 있습니다. 자세한 내용은 [ASIO](#asio) 섹션까지 아래로 스크롤하세요."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:24
-#, fuzzy, no-wrap
-#| msgid "**Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
+#, no-wrap
 msgid ""
 "1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
 " **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
 "1. **Install Jamulus**: Double click the installer to launch it. If you get a warning notice from SmartScreen, click on \"More info\" and \"Run anyway\" to install Jamulus. (If you grabbed a new version of Jamulus and are one of the first people who downloaded it, Jamulus won't be whitelisted by SmartScreen yet. We don't pay for code signing.)\n"
 "1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
 "1. **Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
-msgstr "**Jamulus 설치**: 설치 프로그램을 두 번 클릭하여 실행합니다. SmartScreen에서 경고 알림을 받으면, \"더 많은 정보\"및 \"무조건 실행하기\"를 클릭하여 Jamulus를 설치하십시오. (Jamulus의 새 버전을 가져 와서 다운로드 한 처음 사람들 중 하나인 경우, Jamulus는 아직 SmartScreen에 의해 화이트리스트에 오르지 않습니다. 코드 서명에 대한 비용은 지불하지 않습니다.)\n"
+msgstr ""
+"1. [Jamulus 다운로드]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
+" **미러 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+"1. **Jamulus 설치**: 설치 프로그램을 두 번 클릭하여 실행합니다. 스마트스크린에서 경고 메시지가 표시되면, \"더 많은 정보\" 및 \"무조건 실행하기\"를 클릭하여 Jamulus를 설치하십시오. (새 버전의 Jamulus를 가장 먼저 다운로드한 사람 중 한 명인 경우, 아직 스마트스크린에서 Jamulus를 화이트리스트에 추가하지 않을 수 있습니다. 코드 서명 비용은 지불하지 않습니다.)\n"
+"1. **Jamulus를 실행합니다**. 이제 다른 응용 프로그램과 마찬가지로 Jamulus를 사용할 수 있습니다.\n"
+"1. **사용자의 사운드 카드를 설정합니다**. 완료되면 오디오 하드웨어를 설정해야 합니다. ASIO4ALL을 사용하는 경우 아래 설정 방법을 살펴보세요.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:26
@@ -93,10 +96,9 @@ msgstr "ASIO를 사용하지 않거나 [Windows의 JACK](https://jackaudio.org/f
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:31
-#, fuzzy, no-wrap
-#| msgid "## ASIO"
+#, no-wrap
 msgid "ASIO"
-msgstr "## ASIO"
+msgstr "ASIO"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:34
@@ -135,10 +137,9 @@ msgstr "[ASIO4ALL 웹사이트](https://www.asio4all.org/){: target=\"_blank\" r
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:47
-#, fuzzy, no-wrap
-#| msgid "### Setting up ASIO4ALL"
+#, no-wrap
 msgid "Setting up ASIO4ALL"
-msgstr "### ASIO4ALL 설정"
+msgstr "ASIO4ALL 설정하기"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:50
@@ -153,17 +154,14 @@ msgstr "**팁:** [서버에 연결됨](Getting-Started#connecting-to-a-server-an
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:57
-#, fuzzy
-#| msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:\n"
 msgid "Before you start with Jamulus: 1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.  1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
-msgstr "Jamulus 오디오가 기본적으로 작동하지 않으면 ASIO4ALL의 **올바른 입력/출력**만 **켜져 있는지** 확인하세요. 다른 모든 것은 꺼야 합니다. [ASIO4ALL 구성 작업 커뮤니티 목록](/kb/2021/03/20/ASIO4ALL-Examples.html)에서 구성을 검색하거나 구성을 찾을 수 없는 경우 수동으로 수행합니다.\n"
+msgstr "Jamulus를 시작하기 전에: 1. **모든 응용 프로그램을 닫습니다**(특히 브라우저/미디어 플레이어와 같이 사운드 카드에 액세스할 수 있는 응용 프로그램). ASIO4ALL은 사운드 카드에 대한 독점 액세스가 필요합니다. 즉, ASIO4ALL 및 Jamulus가 실행 중인 경우, 다른 프로그램에서 오디오를 사용할 수 없습니다.  1. Jamulus 오디오가 처음부터 작동하지 않으면 ASIO4ALL의 **올바른 입력/출력**만 **켜져 있는지** 확인하세요. 다른 모든 것은 꺼야 합니다. [작업 중인 ASIO4ALL 구성의 커뮤니티 목록](/kb/2021/03/20/ASIO4ALL-Examples.html)에서 구성을 검색하거나 사용자의 구성을 찾을 수 없는 경우 수동으로 수행하세요:"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:58
-#, fuzzy, no-wrap
-#| msgid "### How to set up ASIO4ALL inputs (Guide)"
+#, no-wrap
 msgid "How to set up ASIO4ALL inputs (Guide)"
-msgstr "### ASIO4ALL 입력 설정 방법 (가이드)"
+msgstr "ASIO4ALL 입력을 설정하는 방법 (가이드)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:66
@@ -204,13 +202,16 @@ msgid ""
 "1. Headphones and speakers are often labelled as \"output\" and microphones as \"input\" or \"capture\".\n"
 "1. Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
 msgstr ""
+"**힌트:**\n"
+"1. 올바른 사운드 장치가 무엇인지 명확하지 않을 수 있습니다. 많은 내부 사운드 카드의 이름은 \"Realtek High Definition Audio\", \"Conexant\" 또는 이와 유사합니다.\n"
+"1. 헤드폰과 스피커는 \"출력\"으로, 마이크는 \"입력\" 또는 \"캡처\"로 표시되는 경우가 많습니다.\n"
+"1. 스테레오 믹스/스테레오 입력은 일반적으로 원하는 입력/출력이 아닙니다. 따라서 이 표시가 보이면 끄세요.\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:72
-#, fuzzy, no-wrap
-#| msgid "### Troubleshooting"
+#, no-wrap
 msgid "Troubleshooting"
-msgstr "### 문제 해결"
+msgstr "문제 해결하기"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:75
@@ -234,10 +235,9 @@ msgstr "ASIO4ALL을 구성하는 방법에 대한 공식 및 추가 정보는 �
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:82
-#, fuzzy, no-wrap
-#| msgid "## All installed?"
+#, no-wrap
 msgid "All installed?"
-msgstr "## 모두 설치되었습니까?"
+msgstr "모두 설치되었습니까?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:85

@@ -2,11 +2,11 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
-# Olivier Humbert <trebmuh@tuxfamily.org>, 2022.
+# Olivier Humbert <trebmuh@tuxfamily.org>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-12-28 15:41+0000\n"
+"PO-Revision-Date: 2023-01-17 13:32+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/faq/fr/>\n"
 "Language: fr\n"
@@ -96,9 +96,8 @@ msgstr "Y a-t-il un métronome, une synchronisation ou un autre moyen de rester 
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
-#, fuzzy
 msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
-msgstr "Non. Les musiciens sur un serveur Jamulus jouent en temps réel ensemble comme ils le feraient en personne. Si vous souhaitez disposer d'un signal temporel, il existe des solutions de métronome partagé sur Internet que vous pouvez essayer, mais il est probablement préférable de minimiser la latence afin que personne n'ait un retard global supérieur à environ 30-50 ms."
+msgstr "Non. Les musiciens sur un serveur Jamulus jouent en temps réel ensemble comme ils le feraient en personne. Si vous souhaitez disposer d'un signal temporel, il existe des solutions de métronome partagé sur Internet que vous pouvez essayer. Mais il est probablement préférable de minimiser la latence afin que personne n'ait un retard global supérieur à environ 30-50 ms."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:28
@@ -118,9 +117,8 @@ msgstr "Si quelqu'un met en place un serveur sur un des annuaires embarqués dan
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
-#, fuzzy
 msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-modes)."
-msgstr "Notez également que les serveurs n'ont pas besoin d'être enregistrés dans un annuaire pour que les clients Jamulus puissent s'y connecter. Les opérateurs de serveurs peuvent donner l'adresse de leurs serveurs uniquement à ceux avec qui ils veulent jouer, et ceux-ci peuvent alors se connecter directement. Consultez [cet aperçu pour plus d'informations](/wiki/Running-a-Server#types-de-serveur)."
+msgstr "Notez également que les serveurs n'ont pas besoin d'être enregistrés dans un annuaire pour que les clients Jamulus puissent s'y connecter. Les opérateurs de serveurs peuvent donner l'adresse de leurs serveurs uniquement à ceux avec qui ils veulent jouer, et ceux-ci peuvent alors se connecter directement. Consultez [cet aperçu pour plus d'informations](/wiki/Running-a-Server#modes-de-serveur)."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:35
@@ -162,9 +160,8 @@ msgstr "Ai-je besoin d'une connexion Internet rapide ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
-#, fuzzy
 msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. Most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
-msgstr "Non, surtout si vous ne gérez pas de serveur pour héberger d'autres musiciens. Il est plus important d'avoir un ping faible. Pour la plupart des personnes disposant d'une bande passante standard (par exemple, 10 Mbit/s en aval et 1 Mbit/s en amont), vous n'aurez aucun problème. Pour ceux qui gèrent des serveurs à domicile, en fonction du nombre de participants, vous pouvez rencontrer des problèmes si votre bande passante _en amont_ est inférieure à environ 5 Mbit/s."
+msgstr "Non, surtout si vous ne gérez pas de serveur pour héberger d'autres musiciens. Il est plus important d'avoir un ping faible. La plupart des personnes disposant d'une bande passante standard (par exemple, 10 Mbit/s en aval et 1 Mbit/s en amont), n'auront aucun problème. Pour ceux qui gèrent des serveurs à domicile, en fonction du nombre de participants, vous pouvez rencontrer des problèmes si votre bande passante _en amont_ est inférieure à environ 5 Mbit/s."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:51
@@ -224,9 +221,8 @@ msgstr "Normalement, les pare-feu NAT (Network Address Translation) empêchent l
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:73
-#, fuzzy
 msgid "However, to reach an Unregistered Server, each Client has to **initiate** a connection into the Server’s network. A NAT firewall prevents this, so you need to configure the firewall to allow incoming connection requests on the Jamulus port using port forwarding."
-msgstr "Cependant, en mode non enregistré, les clients doivent **initier** les connexions au réseau du serveur. Les pare-feu NAT empêchent cela, vous devez donc leur dire d'autoriser les demandes de connexion entrantes sur le port Jamulus en utilisant la redirection de port."
+msgstr "Cependant, pour atteindre un serveur non enregistré, chaque client doit **initier** une connexion au réseau du serveur. Un pare-feu NAT empêche cela, vous devez donc configurer le pare-feu pour autoriser les demandes de connexion entrantes sur le port Jamulus en utilisant la redirection de port."
 
 #~ msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 #~ msgstr "Non. Les musiciens sur un serveur Jamulus jouent en temps réel ensemble comme ils le feraient en personne. Si vous souhaitez disposer d'un signal temporel, il existe des solutions de métronome partagé sur Internet que vous pouvez essayer, mais il est probablement préférable de minimiser la latence afin que personne n'ait un retard global supérieur à environ 30-50 ms."
