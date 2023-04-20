@@ -30,6 +30,7 @@ _You can remove the folder in the Downloads directory containing the `.dmg` and 
 If you are using the "legacy" version of Jamulus (because you are running an older version of macOS), the first time you run Jamulus, you will see a message saying it cannot be opened.
 
 To open Jamulus
+
 1. Go to the Applications folder via Finder
 1. Double-click on Jamulus and wait for the above-mentioned message
 1. Close this message by clicking on "Cancel"

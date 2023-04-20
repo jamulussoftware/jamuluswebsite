@@ -15,7 +15,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 **Upgrading?** You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.
 
-**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first. 
+**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.
 
 ### Debian and Ubuntu
 
@@ -28,9 +28,9 @@ After you downloaded the correct file:
 
 1. *Ubuntu only* - Enable the Ubuntu "universe" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).
 1. Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`
-1. Go to where you downloaded the installer and either double-click on it, or use the command line: 
+1. Go to where you downloaded the installer and either double-click on it, or use the command line:
 
-	`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)  
+	`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)
 1. Once installed, you can delete the file and close any console windows.
 
 **Upgrades:** If you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
@@ -44,6 +44,7 @@ For installers on other distributions, see their package managers and [Repology]
 ### Configure JACK with QjackCtl
 
 Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
+
 1. Launch QjackCtl. You will see the **Qt JACK Control utility main page**
 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):
 

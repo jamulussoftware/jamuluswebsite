@@ -136,7 +136,7 @@ Any settings made using the graphical interface will be stored in the `Jamulusse
 
 ##### `-e or --directoryserver`
 
-Required for a [Registered Server](Running-a-Server#2-registered). Also required to run Jamulus as a [Directory](Directories).
+Required for a [Registered Server](Running-a-Server#registered-mode). Also required to run Jamulus as a [Directory](Directories).
 
 This option takes the format:
 
