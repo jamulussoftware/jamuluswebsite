@@ -78,6 +78,19 @@ In the UK (and possibly other regions/routers) the Virgin Media Cable Internet M
 
 In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about "Nobody can connect to my Server"
 
+## Getting an error message saying "Jamulus" can't be opened because the developer cannot be verified
+
+If you are using a "legacy" version of Jamulus (because you are running an older version of macOS) or an intermediate build, the first time you run Jamulus, you will see a message saying it cannot be opened.
+
+To open Jamulus
+
+1. Go to the Applications folder via Finder
+1. Double-click on Jamulus and wait for the above-mentioned message
+1. Close this message by clicking on "Cancel"
+1. Now control-click (or right-click) on Jamulus, and select "Open" from the top of the menu.
+
+You will then get a slightly different version of the same message, which allows you to click "Open". From the on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
+
 ### Trouble using Garageband (or other DAW) with Jamulus?
 
 See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)
