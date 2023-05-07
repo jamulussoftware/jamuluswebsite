@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-26 07:27+0000\n"
+"PO-Revision-Date: 2023-04-28 16:52+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/running-a-server/fr/>\n"
 "Language: fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -174,7 +174,7 @@ msgstr "La plupart des gens exécutent Jamulus sur un hôte tiers/cloud en tant 
 #: ../wiki/en/Running-a-Server.md:56
 #, no-wrap
 msgid "**Note** The following steps will result in you running an \"Unregistered\" Server. For more information, see [the Server Modes section](#server-modes) below.\n"
-msgstr "**Remarque** les étapes suivantes vous permettront d'exécuter un serveur \"non enregistré\". Pour plus d'informations, voir [la section modes de serveur](#types-de-serveur) ci-dessous.\n"
+msgstr "**Remarque** les étapes suivantes vous permettront d'exécuter un serveur \"non enregistré\". Pour plus d'informations, voir [la section modes de serveur](#modes-de-serveur) ci-dessous.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:60
@@ -386,10 +386,8 @@ msgstr "`-e ou --directoryserver`"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:140
-#, fuzzy
-#| msgid "Required for a [Registered Server](Running-a-Server#2-registered). Also required to run Jamulus as a [Directory](Directories)."
 msgid "Required for a [Registered Server](Running-a-Server#registered-mode). Also required to run Jamulus as a [Directory](Directories)."
-msgstr "Nécessaire pour un [serveur enregistré](Running-a-Server#2-registered). Également requis pour exécuter Jamulus en tant qu'[annuaire](Directories)."
+msgstr "Nécessaire pour un [serveur enregistré](Running-a-Server#mode-enregistré). Également requis pour exécuter Jamulus en tant qu'[annuaire](Directories)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:142 ../wiki/en/Running-a-Server.md:163
@@ -659,12 +657,12 @@ msgstr "{% include_relative Include-Shared-Commands.md %}"
 #: ../wiki/en/Running-a-Server.md:228
 #, no-wrap
 msgid "Controlling the Server via API"
-msgstr ""
+msgstr "Contrôle du serveur via l'API"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:231
 msgid "Jamulus can be controlled via an experimental API which is subject to changes. You can find the [JSON-RPC API documented in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md). JSON-RPC allows you to control some features like changing the welcome message or starting recordings in headless mode from authenticated external applications. It works while the server is running."
-msgstr ""
+msgstr "Jamulus peut être contrôlé via une API expérimentale qui est sujette à des changements. Vous pouvez trouver l'API [JSON-RPC documentée dans le dépôt principal (en anglais)](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md). JSON-RPC vous permet de contrôler certaines fonctionnalités telles que la modification du message de bienvenue ou le lancement d'enregistrements en mode sans-affichage à partir d'applications externes authentifiées. Il fonctionne lorsque le serveur est en cours d'exécution."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:234
@@ -725,7 +723,7 @@ msgstr "L'enregistrement commence dès que la première personne se connecte au 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:254
 msgid "If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording on/off. If [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) is enabled, you will also be able to manage the server in a way comparable to the GUI. Please see the (experimental) [JSON-RPC documentation on the recorder](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
-msgstr ""
+msgstr "Si le serveur reçoit un signal SIGUSR1 pendant un enregistrement, il démarre un nouvel enregistrement dans un nouveau répertoire. SIGUSR2 permet d'activer ou de désactiver l'enregistrement. Si [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) est activé, vous pourrez également gérer le serveur d'une manière comparable à l'interface graphique. Veuillez consulter la documentation (expérimentale) [JSON-RPC sur l'enregistreur (en anglais)](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:257
