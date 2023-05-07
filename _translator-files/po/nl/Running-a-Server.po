@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-28 08:41+0000\n"
+"PO-Revision-Date: 2023-04-23 11:11+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -44,7 +44,7 @@ msgstr "Een server opzetten"
 #: ../wiki/en/Running-a-Server.md:8
 #, no-wrap
 msgid "Server Administration Manual"
-msgstr "Serverbeheerdershandleiding"
+msgstr "Serverhandleiding"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:10
@@ -383,8 +383,6 @@ msgstr "`-e of --directoryserver`"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:140
-#, fuzzy
-#| msgid "Required for a [Registered Server](Running-a-Server#2-registered). Also required to run Jamulus as a [Directory](Directories)."
 msgid "Required for a [Registered Server](Running-a-Server#registered-mode). Also required to run Jamulus as a [Directory](Directories)."
 msgstr "Vereist voor een [geregistreerde server](Running-a-Server#geregistreerde-modus). Ook vereist om Jamulus uit te voeren als een [adresboek](Directories)."
 
@@ -656,12 +654,12 @@ msgstr "{% include_relative Include-Shared-Commands.md %}"
 #: ../wiki/en/Running-a-Server.md:228
 #, no-wrap
 msgid "Controlling the Server via API"
-msgstr ""
+msgstr "Server aansturen via API"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:231
 msgid "Jamulus can be controlled via an experimental API which is subject to changes. You can find the [JSON-RPC API documented in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md). JSON-RPC allows you to control some features like changing the welcome message or starting recordings in headless mode from authenticated external applications. It works while the server is running."
-msgstr ""
+msgstr "Jamulus kan worden aangestuurd via een experimentele API die onderhevig is aan wijzigingen. Je kunt de [JSON-RPC API documentatie (engelstalig)](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) in de hoofdrepository vinden. Met JSON-RPC kun je bepaalde functies beheren, zoals het wijzigen van het welkomstbericht of het starten van opnames in headless-modus vanuit geverifieerde externe applicaties. Het werkt terwijl de server draait."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:234
@@ -722,7 +720,7 @@ msgstr "De opname begint zodra de eerste persoon verbinding maakt met de server 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:254
 msgid "If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording on/off. If [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) is enabled, you will also be able to manage the server in a way comparable to the GUI. Please see the (experimental) [JSON-RPC documentation on the recorder](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
-msgstr ""
+msgstr "Als de server tijdens een opname een SIGUSR1-signaal ontvangt, start hij een nieuwe opname in een nieuwe map. SIGUSR2 schakelt opname in/uit. Als [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) is ingeschakeld, kun je de server ook beheren op een manier die vergelijkbaar is met de GUI . Zie de (experimentele) [JSON-RPC-documentatie over de opname (engelstalig)](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:257

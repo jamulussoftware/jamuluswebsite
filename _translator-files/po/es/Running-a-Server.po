@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-23 07:44+0000\n"
+"PO-Revision-Date: 2023-04-21 07:49+0000\n"
 "Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1\n"
+"X-Generator: Weblate 4.18-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -384,10 +384,8 @@ msgstr "`-e ó --directoryserver`"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:140
-#, fuzzy
-#| msgid "Required for a [Registered Server](Running-a-Server#2-registered). Also required to run Jamulus as a [Directory](Directories)."
 msgid "Required for a [Registered Server](Running-a-Server#registered-mode). Also required to run Jamulus as a [Directory](Directories)."
-msgstr "Necesario para un [Servidor Registrado](Running-a-Server#2-registrado). También es necesario para ejecutar Jamulus como [Directorio](Directories)."
+msgstr "Necesario para un [Servidor Registrado](Running-a-Server#modo-registrado). También es necesario para ejecutar Jamulus como [Directorio](Directories)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:142 ../wiki/en/Running-a-Server.md:163
@@ -657,12 +655,12 @@ msgstr "{% include_relative Include-Shared-Commands.md %}"
 #: ../wiki/en/Running-a-Server.md:228
 #, no-wrap
 msgid "Controlling the Server via API"
-msgstr ""
+msgstr "Controlar el Servidor a través de API"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:231
 msgid "Jamulus can be controlled via an experimental API which is subject to changes. You can find the [JSON-RPC API documented in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md). JSON-RPC allows you to control some features like changing the welcome message or starting recordings in headless mode from authenticated external applications. It works while the server is running."
-msgstr ""
+msgstr "Se puede controlar Jamulus a través de un API experimental que estará sujeto a cambios. Puedes encontrar el [API JSON-RPC documentado en el repositorio principal](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md). JSON-RPC te permite controlar algunas funciones como cambiar el mensaje de bienvenida or iniciar grabaciones en modo 'headless' desde aplicaciones externas autenticadas. Funciona mientras se ejecuta el servidor."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:234
@@ -723,7 +721,7 @@ msgstr "La grabación comienza cuando la primera persona se conecta al Servidor 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:254
 msgid "If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording on/off. If [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) is enabled, you will also be able to manage the server in a way comparable to the GUI. Please see the (experimental) [JSON-RPC documentation on the recorder](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
-msgstr ""
+msgstr "Si el Servidor recibe una señal SIGUSR1 durante una grabación, iniciará una nueva grabación en un nuevo directorio. SIGUSR2 activará/desactivará la grabación. Si [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) está activado, también podrás gestionar el servidor de una forma comparable a la interfaz gráfica. Consulta la documentación (experimental) [de JSON-RPC para la grabación](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:257
