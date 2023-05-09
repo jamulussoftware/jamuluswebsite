@@ -265,32 +265,73 @@ msgstr "In Großbritannien (und möglicherweise in anderen Regionen/Routern) kan
 msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my Server\""
 msgstr "In einigen Fällen kann es sein, dass dein ISP die Nutzung von Jamulus blockiert. Siehe den Hinweis auf der [Server-Fehlerbehebungsseite](Server-Troubleshooting#niemand-kann-sich-mit-meinem-server-verbinden---aber-ich-kann-mich-lokal-verbinden) über „Niemand kann sich mit meinem Server verbinden - aber ich kann mich lokal verbinden“"
 
-#. type: Title ###
+#. type: Title ##
 #: ../wiki/en/Client-Troubleshooting.md:81
+#, no-wrap
+msgid "Getting an error message saying \"Jamulus\" can't be opened because the developer cannot be verified"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Client-Troubleshooting.md:84
+msgid "If you are using a \"legacy\" version of Jamulus (because you are running an older version of macOS) or an intermediate build, the first time you run Jamulus, you will see a message saying it cannot be opened."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Client-Troubleshooting.md:86
+msgid "To open Jamulus"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:91
+msgid "Go to the Applications folder via Finder"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:91
+msgid "Double-click on Jamulus and wait for the above-mentioned message"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:91
+msgid "Close this message by clicking on \"Cancel\""
+msgstr ""
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:91
+msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Client-Troubleshooting.md:93
+msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From then on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:94
 #, fuzzy, no-wrap
 #| msgid "### Trouble using Garageband (or other DAW) with Jamulus?"
 msgid "Trouble using Garageband (or other DAW) with Jamulus?"
 msgstr "### Probleme bei der Verwendung von Garageband (oder einer anderen DAW) mit Jamulus?"
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:84
+#: ../wiki/en/Client-Troubleshooting.md:97
 msgid "See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 msgstr "Siehe [diese Forumsdiskussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 
 #. type: Title ###
-#: ../wiki/en/Client-Troubleshooting.md:85
+#: ../wiki/en/Client-Troubleshooting.md:98
 #, fuzzy, no-wrap
 #| msgid "### Using a Mac and your input is not heard?"
 msgid "Using a Mac and your input is not heard?"
 msgstr "### Du verwendest einen Mac und dein Sound wird nicht gehört?"
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:88
+#: ../wiki/en/Client-Troubleshooting.md:101
 msgid "(With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 msgstr "(Mit Dank an [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:92
+#: ../wiki/en/Client-Troubleshooting.md:105
 #, no-wrap
 msgid ""
 "Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:\n"
@@ -299,7 +340,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:95
+#: ../wiki/en/Client-Troubleshooting.md:108
 msgid "For anything else, please search or post on the [Discussion Forums](https://github.com/jamulussoftware/jamulus/discussions)"
 msgstr "Für alles andere suche bitte im [Forum](https://github.com/jamulussoftware/jamulus/discussions) oder poste dort deine Frage"
 

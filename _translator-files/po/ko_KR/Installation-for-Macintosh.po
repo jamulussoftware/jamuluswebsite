@@ -64,78 +64,67 @@ msgid "Upgrading? You may want to [back up your configuration](Software-Manual#b
 msgstr "업그레이드중입니까? 먼저 [사용자의 구성 백업](Software-Manual#backing-up-jamulus)을 원할 수 있습니다."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:23
+#: ../wiki/en/Installation-for-Macintosh.md:22
 #, no-wrap
 msgid ""
 "1. [Download Jamulus (Universal build)]({{ site.download_root_link }}{{ site.download_file_names.mac }}){: .button}\\\\\n"
-" **macOS Mojave (10.14) or lower:** [Download legacy version]({{ site.download_root_link }}{{ site.download_file_names.mac-legacy }})\\\\\n"
 " **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
 "1. **Install Jamulus**: Open the downloaded `.dmg` file, agree to the licence, *drag and drop* each icon you see in the window (Jamulus Client and Server) into your *Applications folder*. After that, you can close this window.\n"
 "1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:25
+#: ../wiki/en/Installation-for-Macintosh.md:24
 msgid "_You can remove the folder in the Downloads directory containing the `.dmg` and eject the \"Jamulus\" drive on your desktop. They are no longer needed._"
 msgstr "_다운로드 디렉터리에서 `.dmg`가 포함된 폴더를 제거하고 사용자의 바탕화면에서 \"Jamulus\" 드라이브를 꺼낼 수 있습니다. 그것들은 더 이상 필요하지 않습니다._"
 
-#. type: Title ##
-#: ../wiki/en/Installation-for-Macintosh.md:28
-#, fuzzy, no-wrap
-#| msgid "## \"Jamulus\" can't be opened because the developer cannot be verified"
-msgid "\"Jamulus\" can't be opened because the developer cannot be verified"
-msgstr "## 개발자를 입증할 수 없으므로 \"Jamulus\" 를 열 수 없습니다"
-
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:31
-msgid "If you are using the \"legacy\" version of Jamulus (because you are running an older version of macOS), the first time you run Jamulus, you will see a message saying it cannot be opened."
-msgstr "Jamulus의 \"기존\" 버전을 사용하는 경우(이전 버전의 macOS를 실행하기 때문에), Jamulus를 처음 실행할 때 열 수 없다는 메시지가 표시됩니다."
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:33
-msgid "To open Jamulus"
-msgstr "Jamulus를 열려면"
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Macintosh.md:38
-msgid "Go to the Applications folder via Finder"
-msgstr "Finder를 통해 응용 프로그램 폴더로 가기"
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Macintosh.md:38
-msgid "Double-click on Jamulus and wait for the above-mentioned message"
-msgstr "Jamulus를 두 번 클릭하고 위에서 언급한 메시지를 기다립니다"
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Macintosh.md:38
-msgid "Close this message by clicking on \"Cancel\""
-msgstr "\"취소하기\"를 클릭하여 이 메시지를 닫습니다"
-
-#. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Macintosh.md:38
-msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
-msgstr "이제 Jamulus에서 제어-클릭(또는 오른쪽 클릭)하고, 메뉴 상단에서 \"열기\"를 선택합니다."
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:40
-msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From the on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
-msgstr "그런 다음 \"열기\"를 클릭 할 수있는 동일한 메시지의 약간 다른 버전을 받게됩니다. 처음부터 Jamulus를 정상적인 방식으로 실행할 수 있으며 메시지가 나타나지 않습니다. 이 경고에 대한 자세한 내용은 [이 Apple 지원 페이지](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)를 참조하십시오."
+#: ../wiki/en/Installation-for-Macintosh.md:26
+#, no-wrap
+msgid "**Note:** You can find old (legacy) versions supporting outdated operating systems on the [GitHub release page](https://github.com/jamulussoftware/jamulus/releases).\n"
+msgstr ""
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Macintosh.md:41
+#: ../wiki/en/Installation-for-Macintosh.md:27
 #, no-wrap
 msgid "All installed?"
 msgstr "모두 설치되었습니까?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:44
+#: ../wiki/en/Installation-for-Macintosh.md:30
 msgid "Take a look at the"
 msgstr "살펴보기"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Macintosh.md:45
+#: ../wiki/en/Installation-for-Macintosh.md:31
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[시작하기 페이지](시작하기){: .button}"
+
+#, fuzzy, no-wrap
+#~| msgid "## \"Jamulus\" can't be opened because the developer cannot be verified"
+#~ msgid "\"Jamulus\" can't be opened because the developer cannot be verified"
+#~ msgstr "## 개발자를 입증할 수 없으므로 \"Jamulus\" 를 열 수 없습니다"
+
+#~ msgid "If you are using the \"legacy\" version of Jamulus (because you are running an older version of macOS), the first time you run Jamulus, you will see a message saying it cannot be opened."
+#~ msgstr "Jamulus의 \"기존\" 버전을 사용하는 경우(이전 버전의 macOS를 실행하기 때문에), Jamulus를 처음 실행할 때 열 수 없다는 메시지가 표시됩니다."
+
+#~ msgid "To open Jamulus"
+#~ msgstr "Jamulus를 열려면"
+
+#~ msgid "Go to the Applications folder via Finder"
+#~ msgstr "Finder를 통해 응용 프로그램 폴더로 가기"
+
+#~ msgid "Double-click on Jamulus and wait for the above-mentioned message"
+#~ msgstr "Jamulus를 두 번 클릭하고 위에서 언급한 메시지를 기다립니다"
+
+#~ msgid "Close this message by clicking on \"Cancel\""
+#~ msgstr "\"취소하기\"를 클릭하여 이 메시지를 닫습니다"
+
+#~ msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
+#~ msgstr "이제 Jamulus에서 제어-클릭(또는 오른쪽 클릭)하고, 메뉴 상단에서 \"열기\"를 선택합니다."
+
+#~ msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From the on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
+#~ msgstr "그런 다음 \"열기\"를 클릭 할 수있는 동일한 메시지의 약간 다른 버전을 받게됩니다. 처음부터 Jamulus를 정상적인 방식으로 실행할 수 있으며 메시지가 나타나지 않습니다. 이 경고에 대한 자세한 내용은 [이 Apple 지원 페이지](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)를 참조하십시오."
 
 #~ msgid "# Installation for macOS"
 #~ msgstr "# macOS용 설치"
