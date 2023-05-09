@@ -89,7 +89,7 @@ To open Jamulus
 1. Close this message by clicking on "Cancel"
 1. Now control-click (or right-click) on Jamulus, and select "Open" from the top of the menu.
 
-You will then get a slightly different version of the same message, which allows you to click "Open". From the on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
+You will then get a slightly different version of the same message, which allows you to click "Open". From then on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac).
 
 ### Trouble using Garageband (or other DAW) with Jamulus?
 
