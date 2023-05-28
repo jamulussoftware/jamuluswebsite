@@ -172,6 +172,7 @@ Show an agreement window before users can connect.  The text of the agreement to
 
 ##### `-w or --welcomemessage`
 A "welcome message" to display in the Client chat window on connect. Can be given as a string or filename, and can contain HTML.
+When a path is used, the full path must be accessible by the `jamulus` Linux user. If not accessible, the literal path (rather than its contents) will appear.
 
 ##### `--serverpublicip`
 The public IP address of the Server if connecting to a Directory behind the same NAT. See [the Directories guide](Directories) for further information.
