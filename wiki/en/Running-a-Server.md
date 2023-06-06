@@ -134,13 +134,13 @@ Any settings made using the graphical interface will be stored in the `Jamulusse
 
 ### Server mode-related options
 
-##### `-e or --directoryserver`
+##### `-e or --directoryaddress`
 
 Required for a [Registered Server](Running-a-Server#registered-mode). Also required to run Jamulus as a [Directory](Directories).
 
 This option takes the format:
 
-`--directoryserver hostname:port` where `hostname` is the Genre Directory host name and `port` is its port number.
+`--directoryaddress hostname:port` where `hostname` is the Genre Directory host name and `port` is its port number.
 
 To register with one of the Directories built into the Jamulus Client, replace `hostname:port` with one of the following options:
 

@@ -14,7 +14,7 @@ This is a specialised Jamulus Server configuration, as described in [Server Mode
 
 To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them.
 
-To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers.
+To run a Server as a Directory, it should be started with the `--directoryaddress` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers.
 
 When running a Server with the GUI, set the Custom Directory server address in the Options tab to "localhost", then select "Custom" from the Directory drop-down list.
 
