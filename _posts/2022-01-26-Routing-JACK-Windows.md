@@ -4,6 +4,7 @@ title: "Get computer audio into Jamulus"
 lang: "en"
 author: "ann0see"
 heading: "How to play audio from your PC to Jamulus (using JACK)"
+discussionnumber: "3088"
 ---
 
 This guide explains how to play a mp3 file, YouTube video, MuseScore file or any system audio into Jamulus. We're using JACK for Windows however, it is also possible to use different software like VoiceMeeter Banana, ASIO LinkPro or similar. I assume you already know how to install software or know someone who helps you with that.
