@@ -4,6 +4,7 @@ title: "ASIO4ALL Configuration Example Screenshots"
 heading: "ASIO4ALL Configuration Example Screenshots"
 author: "npostavs"
 lang: "en"
+discussionnumber: "1253"
 ---
 
 This page is a collection showing working example ASIO4ALL configurations.
