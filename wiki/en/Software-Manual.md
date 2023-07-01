@@ -224,7 +224,7 @@ If the Auto setting is enabled, the jitter buffers
 of your local Client and the remote server are set automatically based on measurements of the network and sound card
 timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse).
 
-### Enable small network buffers
+### Small Network Buffers
 
 Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
 also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality.
