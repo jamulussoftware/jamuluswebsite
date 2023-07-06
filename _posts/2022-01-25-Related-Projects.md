@@ -64,3 +64,8 @@ and to zip them up and download them via a web browser. It is implemented in PHP
 * [jamulus-lounge](https://github.com/dtinth/jamulus-lounge) adds a web-based interface that lets people listen to a Jamulus server. It connects to a server using a bot named **lobby**.
 * [gojam](https://github.com/dtinth/gojam) is an implementation of a Jamulus client written in Go. This tool is intended for headless streaming use-cases. Used by **jamulus-lounge**.
 * [jamviz](https://github.com/dtinth/jamviz) shows active connections of a Jamulus server that is running **jamulus-lounge**. Used to show activity to a livestreaming audience.
+
+## Koord
+
+Koord pairs Jamulus with real-time video of participants in one application, available for desktop and mobile devices. The [Koord.live website](https://koord.live/) offers private servers and additional playback and recording features.
+
