@@ -67,5 +67,10 @@ and to zip them up and download them via a web browser. It is implemented in PHP
 
 ## Koord
 
-Koord pairs Jamulus with real-time video of participants in one application, available for desktop and mobile devices. The [Koord.live website](https://koord.live/) offers private servers and additional playback and recording features.
+Koord adds real-time video of participants to Jamulus technology in a new application, available for desktop and mobile devices. The [Koord.live website](https://koord.live/) offers private servers and additional playback and recording features.
+
+## Melomax
+
+The [Melomax website](https://melomax.live) offers private servers groups can use with Jamulus client software.
+
 
