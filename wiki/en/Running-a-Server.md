@@ -58,14 +58,9 @@ Most people run Jamulus on a 3rd party/cloud host as a "headless" Server (no vid
 
 To run a headless server on Linux, the following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution that uses systemd.
 
-If you want to run a Server on a **Raspberry Pi** (or a different armhf/arm64 Debian-based computer), you will need to download the [latest armhf .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-armhf }}) or [latest arm64 .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless-arm64 }}) depending on your CPU - not the default `amd64` ones for use on Intel/AMD machines.
-
-1. Download the [latest headless (amd64) .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-headless }}) (or for Raspberry Pi etc. as above)
-1. Make sure you have a current list of standard packages: `sudo apt update`
-1. Install the Jamulus package for your architecture, for example:
-
-	`sudo apt install ./{{ site.download_file_names.deb-headless }}`
-
+1. Download the setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`
+1. Make the script executable: `chmod +x setup_repo.sh`
+1. Run the script and install the headless server: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`
 1. Enable the headless Server process:
 
 	`sudo systemctl enable jamulus-headless`
@@ -77,8 +72,6 @@ If you want to run a Server on a **Raspberry Pi** (or a different armhf/arm64 De
 1. Reload the systemd files and restart the headless Server:
 
 	`sudo systemctl daemon-reload && systemctl restart jamulus-headless`
-
-_To upgrade your Server, just repeat the steps above._
 
 _To amend your Server configuration, just repeat the last two steps above._
 

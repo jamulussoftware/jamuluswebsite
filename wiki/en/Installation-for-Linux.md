@@ -19,21 +19,25 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 ### Debian and Ubuntu
 
-[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}
+#### Using the official Repository (recommended)
 
-**ARM-based machines** (e.g. Raspberry Pi): Download [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})
+We provide a repository for Debian and Ubuntu based distribution which allows automatic updates alongside your system updates. To use the repository
 
+1. Open your Terminal (CTRL+ALT+T should work)
+1. *Ubuntu only* - Enable the Ubuntu "universe" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).
+1. Download the repository setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`
+1. Make the script executable: `chmod +x setup_repo.sh`
+1. Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`
 
-After you downloaded the correct file:
+#### Installing the .deb files manually
 
+1. Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})
 1. *Ubuntu only* - Enable the Ubuntu "universe" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).
 1. Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`
-1. Go to where you downloaded the installer and either double-click on it, or use the command line:
-
-	`sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)
+1. Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)
 1. Once installed, you can delete the file and close any console windows.
 
-**Upgrades:** If you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.
+**Upgrades:** If you need to upgrade Jamulus to a newer version and install Jamulus manually, just download the new .deb file and re-install as above.
 
 ### Other distributions
 
