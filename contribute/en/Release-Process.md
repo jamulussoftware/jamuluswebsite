@@ -263,7 +263,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
 **Checklist**
 - [ ] Assign this issue to the release shepherd who is in charge of managing this checklist.
 - [ ] Pin this issue
-- [ ] Ensure that all issues/PR targeted for this release are done by checking the Project board with [the appropriate filter for this release](https://github.com/orgs/jamulussoftware/projects/2?card_filter_query=milestone%3A%22release+3.8.2%22). Remind main developers to review entries in *Waiting on team* state.
+- [ ] Ensure that all issues/PR targeted for this release are done by checking the Project board with [the appropriate filter for this release](https://github.com/orgs/jamulussoftware/projects/5/views/5). Remind main developers to review entries in *Waiting on team* state.
 - [ ] Agree to de-tag unfinished Issues/PRs.
 - [ ] Declare a freeze for code and website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
 - [ ] Check the `needs documentation` label for any outstanding PRs flagged for this release and remove that label if done.
