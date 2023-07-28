@@ -21,7 +21,7 @@ Make sure you read the [Getting Started](Getting-Started) page.
 
 #### Using the official Repository (recommended)
 
-We provide a repository for Debian and Ubuntu based distribution which allows automatic updates alongside your system updates. To use the repository
+We provide a repository for Debian and Ubuntu based distributions that allows automatic updates alongside your other system updates. To use the repository:
 
 1. Open your Terminal (CTRL+ALT+T should work)
 1. *Ubuntu only* - Enable the Ubuntu "universe" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).
