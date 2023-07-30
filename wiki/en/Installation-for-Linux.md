@@ -25,9 +25,18 @@ We provide a repository for Debian and Ubuntu based distributions that allows au
 
 1. Open your Terminal (CTRL+ALT+T should work)
 1. *Ubuntu only* - Enable the Ubuntu "universe" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).
-1. Download the repository setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`
-1. Make the script executable: `chmod +x setup_repo.sh`
-1. Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`
+1. Download the repository setup script:\\
+```bash
+curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh
+```
+1. Make the script executable:\\
+```bash
+chmod +x setup_repo.sh
+```
+1. Run the setup script and install Jamulus:\\
+```bash
+sudo ./setup_repo.sh && sudo apt install jamulus
+```
 
 #### Installing the .deb files manually
 
