@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-07 06:09+0000\n"
+"PO-Revision-Date: 2023-07-31 07:04+0000\n"
 "Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -182,17 +182,17 @@ msgstr "Para ejecutar un Servidor \"headless\" en Linux, los siguientes pasos su
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Download the setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
-msgstr ""
+msgstr "Descarga el script de la instalación: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Make the script executable: `chmod +x setup_repo.sh`"
-msgstr ""
+msgstr "Haz que el script sea ejecutable: `chmod +x setup_repo.sh`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Run the script and install the headless server: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`"
-msgstr ""
+msgstr "Ejecuta el script e instala el servidor: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
@@ -457,7 +457,7 @@ msgstr "`-w` ó `--welcomemessage`"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:170
 msgid "A \"welcome message\" to display in the Client chat window on connect. Can be given as a string or filename, and can contain HTML.  When a path is used, the file must be accessible by the user account running Jamulus. (On most Linux installations, user `jamulus` is used by default.)  If not accessible, the literal path (rather than its contents) will appear."
-msgstr ""
+msgstr "Un \"mensaje de bienvenida\" para mostrar en la ventana del chat del Cliente al conectarse. Se puede proporcionar como una cadena o un nombre de un archivo y puede contener HTML.  Cuando se utiliza una ruta, la cuenta del usuario que ejecuta Jamulus debe poder acceder al archivo. (En la mayoría de las instalaciones de Linux, el usuario `jamulus` se usa de forma predeterminada).  Si no está accesible, aparecerá la ruta literal (en lugar de su contenido)."
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:171
