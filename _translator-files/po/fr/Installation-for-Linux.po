@@ -5,11 +5,12 @@
 # Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <trebmuh@tuxfamily.org>, 2022, 2023.
 # Julien Taverna <jujudusud@gmail.com>, 2023.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-30 17:10+0000\n"
-"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
+"PO-Revision-Date: 2023-07-31 19:30+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/installation-for-linux/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -103,14 +104,13 @@ msgstr "*Ubuntu seulement* - Activer le dépôt Ubuntu \"universe\" (vous pouvez
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 msgid "Download the repository setup script:\\\\"
-msgstr ""
+msgstr "Télécharger le script de configuration du dépôt :\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:29
-#, fuzzy, no-wrap
-#| msgid "Download the repository setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
+#, no-wrap
 msgid "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
-msgstr "Télécharger le script de configuration du dépôt : `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
+msgstr "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:33
@@ -121,23 +121,23 @@ msgstr "Rendre le script exécutable : `chmod +x setup_repo.sh`"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:33
-#, no-wrap
+#, fuzzy, no-wrap
 msgid "chmod +x setup_repo.sh\n"
-msgstr ""
+msgstr "chmod +x setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:37
 #, fuzzy
 #| msgid "Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
 msgid "Run the setup script and install Jamulus:\\\\"
-msgstr "Exécuter le script de configuration et installer Jamulus : `sudo ./setup_repo.sh && sudo apt install jamulus`"
+msgstr "Exécuter le script de configuration et installer Jamulus :\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:37
 #, fuzzy, no-wrap
 #| msgid "Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
 msgid "sudo ./setup_repo.sh && sudo apt install jamulus\n"
-msgstr "Exécuter le script de configuration et installer Jamulus : `sudo ./setup_repo.sh && sudo apt install jamulus`"
+msgstr "sudo ./setup_repo.sh && sudo apt install jamulus\n"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:41

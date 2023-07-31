@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-31 07:04+0000\n"
+"PO-Revision-Date: 2023-07-31 20:05+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -98,41 +98,35 @@ msgstr "*Alleen Ubuntu* - Schakel de Ubuntu \"universe\"-repository in (je kunt 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 msgid "Download the repository setup script:\\\\"
-msgstr ""
+msgstr "Download het repository setup script:\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:29
-#, fuzzy, no-wrap
-#| msgid "Download the repository setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
+#, no-wrap
 msgid "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
-msgstr "Download het repository setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
+msgstr "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:33
-#, fuzzy
-#| msgid "Make the script executable: `chmod +x setup_repo.sh`"
 msgid "Make the script executable:\\\\"
-msgstr "Maak het script uitvoerbaar: `chmod +x setup_repo.sh`"
+msgstr "Maak het script uitvoerbaar: \\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:33
 #, no-wrap
 msgid "chmod +x setup_repo.sh\n"
-msgstr ""
+msgstr "chmod +x setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:37
-#, fuzzy
-#| msgid "Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
 msgid "Run the setup script and install Jamulus:\\\\"
-msgstr "Voer het installatiescript uit en installeer Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
+msgstr "Voer het setup script uit en installeer Jamulus:\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:37
-#, fuzzy, no-wrap
-#| msgid "Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
+#, no-wrap
 msgid "sudo ./setup_repo.sh && sudo apt install jamulus\n"
-msgstr "Voer het installatiescript uit en installeer Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
+msgstr "sudo ./setup_repo.sh && sudo apt install jamulus\n"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:41
