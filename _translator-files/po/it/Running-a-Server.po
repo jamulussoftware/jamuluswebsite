@@ -4,18 +4,19 @@
 # Giuseppe <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
 # Gico2006 <gradaellig@protonmail.com>, 2022.
+# Giuseppe <dzpex@libero.it>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-12-24 16:50+0000\n"
-"Last-Translator: Gico2006 <gradaellig@protonmail.com>\n"
+"PO-Revision-Date: 2023-07-30 08:04+0000\n"
+"Last-Translator: Giuseppe <dzpex@libero.it>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -39,31 +40,31 @@ msgstr "/wiki/Running-a-Server"
 #: ../wiki/en/Running-a-Server.md:1
 #, no-wrap
 msgid "Running a Server"
-msgstr ""
+msgstr "Far funzionare un Server"
 
 #. type: Title #
 #: ../wiki/en/Running-a-Server.md:8
 #, no-wrap
 msgid "Server Administration Manual"
-msgstr ""
+msgstr "Manuale di amministrazione del Server"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:10
 #, no-wrap
 msgid " {:.no_toc}\n"
-msgstr ""
+msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:12
 #, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr ""
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:14
 #, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr ""
+msgstr "<summary>Tabella dei contenuti</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:17
@@ -83,77 +84,77 @@ msgstr ""
 #: ../wiki/en/Running-a-Server.md:20
 #, no-wrap
 msgid "Do I need to run a Server?"
-msgstr ""
+msgstr "Devo necessariamnete eseguire un server?"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:23
 #, no-wrap
 msgid "**No**. You don't need to run a Server. You can use the Servers listed by the built-in Directories and use Jamulus without running a Server yourself. You can also use an unlisted Server if you know its internet address. Or you can use a third party hosting service such as [melomax](https://melomax.live/jamulus-hosting/) or [KOORD](https://koord.live/). There's probably a Server nearby that you and your friends can use at low enough latency for most needs.\n"
-msgstr ""
+msgstr "**NO**. Non è necessario eseguire un server. Puoi utilizzare i server elencati dalle liste integrate e utilizzare Jamulus senza eseguire tu stesso un server. Puoi anche utilizzare un server non elencato se conosci il suo indirizzo Internet. Oppure puoi utilizzare un servizio di hosting di terze parti come [melomax](https://melomax.live/jamulus-hosting/) o [KOORD](https://koord.live/). Probabilmente c'è un server nelle vicinanze che tu e i tuoi amici potete utilizzare con una latenza sufficientemente bassa per un buon ascolto.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:25
 msgid "Using a public Server might introduce you to strangers. If you want an undisturbed session, you can use the soloing technique described on the [Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). You won't hear strangers who connect to the Server, but they can hear you if they wish."
-msgstr ""
+msgstr "L'utilizzo di un server pubblico potrebbe farti conoscere nuove persone. Se desideri una sessione indisturbata, puoi utilizzare la tecnica di assolo descritta nella [pagina Suggerimenti e trucchi](Suggerimenti-Trucchi-Altro#have-an-un-undisturbed-session-on-any-server). Non sentirai gli altri che si connettono al Server, ma potranno sentirti se lo desiderano."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:28
 #, no-wrap
 msgid "Requirements"
-msgstr ""
+msgstr "Requisiti"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:30
 #, no-wrap
 msgid "Speed and latency"
-msgstr ""
+msgstr "Velocità e latenza"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:33
 #, no-wrap
 msgid "**_The capability of the Server itself (and the network it's on) is NOT the main determinant of the quality of a Jamulus session!_**\n"
-msgstr ""
+msgstr "**_La capacità del server stesso (e la rete su cui si trova) NON è il principale fattore di qualità di una sessione Jamulus!_**\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:35
 msgid "Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed."
-msgstr ""
+msgstr "Di solito, i problemi sono sul lato _Client_ e dovrebbero essere risolti lì. Dai un'occhiata alla [pagina di risoluzione dei problemi](/wiki/Client-Troubleshooting) se necessario."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:37
 msgid "However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth)."
-msgstr ""
+msgstr "Tuttavia, possono sorgere vari problemi anche nella realizzazione dei server, specialmente quando questi vengono eseguiti su connessioni domestiche a bassa velocità. Di solito è meglio non far connettere più di 5 utenti su una connessione a bassa velocità (ad es. 10 Mbit/s in download e 1 Mbit/s in upload). Puoi avere ulteriori informazioni sui requisiti di rete in [diverse impostazioni di qualità qui] (larghezza di banda del server)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:39
 msgid "Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems."
-msgstr ""
+msgstr "Prendi in considerazione l'utilizzo di un host cloud e non della tua connessione Internet, per ottenere tempi di ping migliori in caso di problemi."
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:40
 #, no-wrap
 msgid "General notes"
-msgstr ""
+msgstr "Note Generali"
 
 #. type: Bullet: '* '
 #: ../wiki/en/Running-a-Server.md:46
 msgid "Any Server should have at least 1.6GHz CPU frequency and 1GB RAM"
-msgstr ""
+msgstr "Qualsiasi server dovrebbe avere una frequenza della CPU di almeno 1,6 GHz e 1 GB di RAM"
 
 #. type: Bullet: '* '
 #: ../wiki/en/Running-a-Server.md:46
 msgid "Running a Server may require you to adjust any firewalls running on or outside of your machine or cloud host."
-msgstr ""
+msgstr "L'esecuzione di un server potrebbe richiedere la regolazione di eventuali firewall in esecuzione all'interno o all'esterno del computer o dell'host cloud."
 
 #. type: Bullet: '* '
 #: ../wiki/en/Running-a-Server.md:46
 msgid "You must set up port forwarding on your router to run an [Unregistered Server](Unregistered-Servers) at home. This should not be necessary when running a Registered Server in most cases. However, some home networks can require port forwarding for a Registered Server."
-msgstr ""
+msgstr "Bisogna configurare il port forwarding sul router per eseguire un [server non registrato] (server non registrati) a casa. Nella maggior parte dei casi questo non dovrebbe essere necessario se si esegue un server registrato. Tuttavia, su alcune reti potrebbe essere obbligatorio configurare il port forwarding anche per un server registrato."
 
 #. type: Bullet: '* '
 #: ../wiki/en/Running-a-Server.md:46
 msgid "Jamulus offers limited IPv6 support that you can turn on for a Client or Server from the command line."
-msgstr ""
+msgstr "Jamulus offre un supporto IPv6 limitato che puoi attivare per un client o un server dalla riga di comando."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:49
