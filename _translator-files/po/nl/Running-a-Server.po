@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-04-23 11:11+0000\n"
+"PO-Revision-Date: 2023-07-31 07:04+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -44,7 +44,7 @@ msgstr "Een server opzetten"
 #: ../wiki/en/Running-a-Server.md:8
 #, no-wrap
 msgid "Server Administration Manual"
-msgstr "Serverhandleiding"
+msgstr "Serverbeheerdershandleiding"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:10
@@ -181,17 +181,17 @@ msgstr "Om een headless server op Linux uit te voeren, gaan de volgende stappen 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Download the setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
-msgstr ""
+msgstr "Download het setup-script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Make the script executable: `chmod +x setup_repo.sh`"
-msgstr ""
+msgstr "Maak het script uitvoerbaar: `chmod +x setup_repo.sh`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Run the script and install the headless server: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`"
-msgstr ""
+msgstr "Voer het script uit en installeer de headless-server: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
@@ -361,10 +361,9 @@ msgstr "Servermodus-gerelateerde opties"
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:130
-#, fuzzy, no-wrap
-#| msgid "`-e or --directoryserver`"
+#, no-wrap
 msgid "`-e or --directoryaddress`"
-msgstr "`-e of --directoryserver`"
+msgstr "`-e of --directoryaddress`"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:133
@@ -378,10 +377,8 @@ msgstr "Deze optie heeft het formaat:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:137
-#, fuzzy
-#| msgid "`--directoryserver hostname:port` where `hostname` is the Genre Directory host name and `port` is its port number."
 msgid "`--directoryaddress hostname:port` where `hostname` is the Genre Directory host name and `port` is its port number."
-msgstr "`--directoryserver hostnaam:poort` waarbij `hostnaam` de genre adresboek-hostnaam is en `poort` het poortnummer is."
+msgstr "`--directoryaddress hostnaam:poort` waarbij `hostnaam` de genre adresboek-hostnaam is en `poort` het poortnummer is."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:139
@@ -459,7 +456,7 @@ msgstr "`-w of --welcomemessage`"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:170
 msgid "A \"welcome message\" to display in the Client chat window on connect. Can be given as a string or filename, and can contain HTML.  When a path is used, the file must be accessible by the user account running Jamulus. (On most Linux installations, user `jamulus` is used by default.)  If not accessible, the literal path (rather than its contents) will appear."
-msgstr ""
+msgstr "Een \"welkomstbericht\" om weer te geven in het client-chatvenster bij het verbinden. Kan worden opgegeven als een tekenreeks of bestandsnaam en kan HTML bevatten. Wanneer een pad wordt gebruikt, moet het bestand toegankelijk zijn voor het gebruikersaccount waaronder Jamulus draait. (Op de meeste Linux-installaties wordt standaard de gebruiker `jamulus` gebruikt.) Indien niet toegankelijk, zal het letterlijke pad (in plaats van de inhoud) verschijnen."
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:171
