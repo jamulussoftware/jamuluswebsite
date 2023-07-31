@@ -4,10 +4,11 @@
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <trebmuh@tuxfamily.org>, 2022, 2023.
+# Julien Taverna <jujudusud@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-03 06:33+0000\n"
+"PO-Revision-Date: 2023-07-30 20:06+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/software-manual/fr/>\n"
 "Language: fr\n"
@@ -124,7 +125,7 @@ msgstr "**Ping** indique la latence de votre réseau en millisecondes, le plus b
 #: ../wiki/en/Software-Manual.md:34
 #, no-wrap
 msgid "**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:\n"
-msgstr "**Délai** affiche la latence globale calculée à partir du temps de ping actuel et du retard introduit par les paramètres actuels du tampon audio. Les diodes lumineuses indiquent l'état de cette situation comme suit : \n"
+msgstr "**Délai** affiche la latence globale calculée à partir du temps de ping actuel et du retard introduit par les paramètres actuels du tampon audio. Les diodes lumineuses indiquent l'état de cette situation comme suit :\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
@@ -219,7 +220,7 @@ msgstr "Effet réverbération"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:69
 msgid "Adds reverb to your local mono audio channel, or to both channels in stereo mode.  The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector to the right and move the fader upwards until the desired reverb level is reached."
-msgstr "La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.  La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si un signal de microphone est envoyé sur le canal audio droit de la carte son et qu'un effet de réverbération doit être appliqué, réglez le sélecteur de canal sur la droite et déplacez le chariot vers la droite et déplacez le chariot vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint."
+msgstr "La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.  La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si un signal de microphone est envoyé sur le canal audio droit de la carte son et qu'un effet de réverbération doit être appliqué, réglez le sélecteur de canal sur la droite et déplacez le chariot vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:70
@@ -230,7 +231,7 @@ msgstr "Tchate"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
-msgstr "Ouvre la fenêtre de tchate. Le texte saisi est envoyé à tous les clients connectés. Si un nouveau message de tchate arrive et que le fenêtre de tchate n'est pas déjà ouverte, elle s'ouvrira automatiquement pour tous les clients. Voir Paramètres/Mon profil pour activer éventuellement une alerte sonore lorsqu'un nouveau message de conversation est reçu."
+msgstr "Ouvre la fenêtre de tchate. Le texte saisi est envoyé à tous les clients connectés. Si un nouveau message de tchate arrive et que la fenêtre de tchate n'est pas déjà ouverte, elle s'ouvrira automatiquement pour tous les clients. Voir dans les paramètres pour activer éventuellement une alerte sonore lorsqu'un nouveau message de tchate est reçu."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
@@ -488,7 +489,7 @@ msgstr "Trois modes sont disponibles :"
 #: ../wiki/en/Software-Manual.md:177
 #, no-wrap
 msgid "**Mono** and **Stereo** modes use one and two audio channels respectively.\n"
-msgstr "Les modes **Mono** et **Stereo** utilisent respectivement un et deux canaux audio.\n"
+msgstr "Les modes **Mono** et **Stéréo** utilisent respectivement un et deux canaux audio.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:180
@@ -687,7 +688,7 @@ msgstr "Balance d'entrée"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:264
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
-msgstr "Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. Pour un signal mono il agit comme un panoramique entre les deux canaux. Par exemple, si un microphone est connecté au canal d'entrée droit et qu'un instrument est connecté au canal d'entrée gauche, la balance d'entrée agit comme un panoramique entre les deux canaux. Un instrument est connecté au canal d'entrée gauche et est beaucoup plus fort que le microphone, déplacez le chariot audio pour augmenter le volume relatif du microphone."
+msgstr "Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. Pour un signal mono il agit comme un panoramique entre les deux canaux. Par exemple, si un microphone est connecté au canal d'entrée droit et qu'un instrument est connecté au canal d'entrée gauche qui est beaucoup plus fort que le microphone, déplacez le chariot audio pour augmenter le volume relatif du microphone."
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:265
@@ -766,7 +767,7 @@ msgstr " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\chemin\\ver
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:296
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
-msgstr "Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
+msgstr "Pour macOS, démarrez une fenêtre du Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:297
