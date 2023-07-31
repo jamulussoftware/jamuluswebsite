@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-04-23 11:11+0000\n"
+"PO-Revision-Date: 2023-07-31 07:04+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -77,17 +77,17 @@ msgstr "Debian en Ubuntu"
 #: ../wiki/en/Installation-for-Linux.md:22
 #, no-wrap
 msgid "Using the official Repository (recommended)"
-msgstr ""
+msgstr "Gebruik de officiële repository (aanbevolen)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:25
 msgid "We provide a repository for Debian and Ubuntu based distributions that allows automatic updates alongside your other system updates. To use the repository:"
-msgstr ""
+msgstr "We bieden een repository aan voor op Debian en Ubuntu gebaseerde distributies die automatische updates naast jouw andere systeemupdates mogelijk maakt. Om de repository te gebruiken:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:31
 msgid "Open your Terminal (CTRL+ALT+T should work)"
-msgstr ""
+msgstr "Open een consolevenster (CTRL+ALT+T zou moeten werken)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:31
@@ -98,30 +98,28 @@ msgstr "*Alleen Ubuntu* - Schakel de Ubuntu \"universe\"-repository in (je kunt 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:31
 msgid "Download the repository setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
-msgstr ""
+msgstr "Download het repository setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:31
 msgid "Make the script executable: `chmod +x setup_repo.sh`"
-msgstr ""
+msgstr "Maak het script uitvoerbaar: `chmod +x setup_repo.sh`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:31
 msgid "Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
-msgstr ""
+msgstr "Voer het installatiescript uit en installeer Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:32
 #, no-wrap
 msgid "Installing the .deb files manually"
-msgstr ""
+msgstr "De .deb-bestanden handmatig installeren"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:39
-#, fuzzy
-#| msgid "**ARM-based machines** (e.g. Raspberry Pi): Download [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})\n"
 msgid "Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
-msgstr "**ARM-gebaseerde systemen** (bv. Raspberry Pi): Download [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) of [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})\n"
+msgstr "Download Jamulus voor jouw architectuur: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) of [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:39
@@ -130,10 +128,8 @@ msgstr "Werk apt bij door een consolevenster te openen (CTRL+ALT+T zou moeten we
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:39
-#, fuzzy
-#| msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` for arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)"
-msgstr "Ga naar de locatie waar je het installatieprogramma hebt gedownload en dubbelklik erop of gebruik de opdrachtregel: `sudo apt install ./{{ site.download_file_names.deb-gui }}` voor armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` voor arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
+msgstr "Ga naar de locatie waar je het installatieprogramma hebt gedownload en dubbelklik erop of gebruik de opdrachtregel: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (of voor Raspberry Pi etc. zoals hierboven)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:39
@@ -142,10 +138,9 @@ msgstr "Eenmaal geïnstalleerd, dan kun je het bestand verwijderen en alle conso
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:41
-#, fuzzy, no-wrap
-#| msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above.\n"
+#, no-wrap
 msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version and install Jamulus manually, just download the new .deb file and re-install as above.\n"
-msgstr "**Upgraden:** Als je Jamulus moet upgraden naar een nieuwere versie dan kun je gewoon het nieuwe .deb-bestand downloaden en opnieuw installeren zoals hierboven beschreven.\n"
+msgstr "**Upgraden:** Als je Jamulus moet upgraden naar een nieuwere versie en Jamulus handmatig moet installeren, download dan gewoon het nieuwe .deb-bestand en installeer het opnieuw zoals hierboven.\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:42
