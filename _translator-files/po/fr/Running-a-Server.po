@@ -4,10 +4,11 @@
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <trebmuh@tuxfamily.org>, 2022, 2023.
+# Julien Taverna <jujudusud@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-07 06:10+0000\n"
+"PO-Revision-Date: 2023-07-30 20:06+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/running-a-server/fr/>\n"
 "Language: fr\n"
@@ -15,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -131,7 +132,7 @@ msgstr "Cependant, divers problèmes peuvent également survenir lors de la conf
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:39
 msgid "Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems."
-msgstr "Envisagez d'utiliser un hôte sur le cloud, pas votre connection internet domestique, pour obtenir de meilleurs temps de ping si vous avez des problèmes."
+msgstr "Envisagez d'utiliser un hôte dans le nuage, pas votre connexion internet domestique, pour obtenir de meilleurs temps de ping si vous avez des problèmes."
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:40
@@ -184,17 +185,17 @@ msgstr "Pour exécuter un serveur sans affichage sous Linux, les étapes suivant
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Download the setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
-msgstr ""
+msgstr "Télécharger le script d'installation : `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Make the script executable: `chmod +x setup_repo.sh`"
-msgstr ""
+msgstr "Rendre le script exécutable : `chmod +x setup_repo.sh`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
 msgid "Run the script and install the headless server: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`"
-msgstr ""
+msgstr "Exécutez le script et installez le serveur sans interface graphique : `sudo ./setup_repo.sh && sudo apt install jamulus-headless`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:65
@@ -316,7 +317,7 @@ msgstr "Mode annuaire"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:109
 msgid "If you want to run a number of Servers, possibly also behind a firewall or on a LAN, you may want to run your Server as a Directory. Examples include online events, music associations, sectional rehearsals or music lessons for schools."
-msgstr "Lorsque vous souhaitez faire fonctionner plusieurs serveurs, éventuellement derrière un pare-feu ou sur un réseau local, vous voudrez peut-être exécuter votre serveur en tant qu'annuaire. Il s'agit par exemple d'événements en ligne, d'associations musicales, de répétitions de sections ou de cours de musique pour les écoles."
+msgstr "Lorsque vous souhaitez faire fonctionner plusieurs serveurs, éventuellement derrière un pare-feu ou sur un réseau local, vous voudrez peut-être exécuter votre serveur en tant qu'annuaire. Il s'agit par exemple d'événements en ligne, d'associations de musique, de répétitions de sections ou de cours de musique pour les écoles."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:111
@@ -459,7 +460,7 @@ msgstr "`-w ou --welcomemessage`"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:170
 msgid "A \"welcome message\" to display in the Client chat window on connect. Can be given as a string or filename, and can contain HTML.  When a path is used, the file must be accessible by the user account running Jamulus. (On most Linux installations, user `jamulus` is used by default.)  If not accessible, the literal path (rather than its contents) will appear."
-msgstr ""
+msgstr "Un \"message de bienvenue\" à afficher dans la fenêtre de tchate du client lors de la connexion. Il peut prendre la forme d'une chaîne ou d'un nom de fichier et peut contenir du HTML.  Lorsqu'un chemin est utilisé, le fichier doit être accessible par le compte utilisateur qui exécute Jamulus. (Sur la plupart des installations Linux, l'utilisateur `jamulus` est utilisé par défaut). S'il n'est pas accessible, le chemin littéral (plutôt que son contenu) apparaîtra."
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:171
@@ -835,7 +836,7 @@ msgstr " `\"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.1
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:306
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
-msgstr "Pour macOS, démarrez une fenêtre Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
+msgstr "Pour macOS, démarrez une fenêtre du Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:308
