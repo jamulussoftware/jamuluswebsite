@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-31 19:30+0000\n"
+"PO-Revision-Date: 2023-08-01 19:05+0000\n"
 "Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/installation-for-linux/fr/>\n"
 "Language: fr\n"
@@ -114,28 +114,23 @@ msgstr "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linu
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:33
-#, fuzzy
-#| msgid "Make the script executable: `chmod +x setup_repo.sh`"
 msgid "Make the script executable:\\\\"
-msgstr "Rendre le script exécutable : `chmod +x setup_repo.sh`"
+msgstr "Rendre le script exécutable :\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:33
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "chmod +x setup_repo.sh\n"
 msgstr "chmod +x setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:37
-#, fuzzy
-#| msgid "Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
 msgid "Run the setup script and install Jamulus:\\\\"
 msgstr "Exécuter le script de configuration et installer Jamulus :\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:37
-#, fuzzy, no-wrap
-#| msgid "Run the setup script and install Jamulus: `sudo ./setup_repo.sh && sudo apt install jamulus`"
+#, no-wrap
 msgid "sudo ./setup_repo.sh && sudo apt install jamulus\n"
 msgstr "sudo ./setup_repo.sh && sudo apt install jamulus\n"
 
@@ -148,7 +143,7 @@ msgstr "Installation manuelle des fichiers .deb"
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
 msgid "Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
-msgstr "Télécharger Jamulus pour votre architecture : [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
+msgstr "Télécharger Jamulus pour votre architecture : [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) ou [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
@@ -158,7 +153,7 @@ msgstr "Mettez à jour apt en ouvrant une fenêtre de console (CTRL+ALT+T devrai
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)"
-msgstr "Naviguez jusqu'à l'endroit où vous avez téléchargé le programme d'installation et double-cliquez dessus, ou utilisez la ligne de commande : `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)"
+msgstr "Naviguez jusqu'à l'endroit où vous avez téléchargé le programme d'installation et double-cliquez dessus, ou utilisez la ligne de commande : `sudo apt install ./{{ site.download_file_names.deb-gui }}` (ou pour Raspberry Pi etc. comme ci-dessus)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
@@ -202,12 +197,12 @@ msgstr "Les clients Jamulus ont besoin de [JACK](https://jackaudio.org/) pour fo
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:63
 msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
-msgstr "Lancez QjackCtl. Vous verrez la **page principale de l'utilitaire de contrôle Qt JACK**"
+msgstr "Lancez QjackCtl. Vous verrez la **page principale de l'utilitaire de contrôle JACK Qt**"
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-Linux.md:63
 msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr "Configurez votre matériel audio comme suit (les paramètres exacts de JACK dépendront de ce que votre matériel audio est capable de faire) :"
+msgstr "Configurez votre matériel audio comme suit (les paramètres exacts pour JACK dépendront des capacités de votre matériel audio) :"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:67

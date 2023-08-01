@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-31 19:30+0000\n"
+"PO-Revision-Date: 2023-08-01 20:04+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/software-manual/fr/>\n"
 "Language: fr\n"
@@ -59,7 +59,7 @@ msgstr " {:.no_toc}\n"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:11
 msgid "This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server."
-msgstr "Ce manuel documente l'application client Jamulus destinée aux musiciens et chanteurs qui utilisent le logiciel pour se connecter à un serveur."
+msgstr "Ce manuel documente l'application cliente Jamulus destinée aux musiciens et chanteurs qui utilisent le logiciel pour se connecter à un serveur."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:13
@@ -167,7 +167,7 @@ msgstr "**Rouge** - Le délai est trop important pour bœuffer\n"
 #: ../wiki/en/Software-Manual.md:48
 #, no-wrap
 msgid "**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
-msgstr "**Gigue** indique l'état actuel du flux audio/de la diffusion en continu. Si le voyant est **rouge**, le flux audio est interrompu. Cela est dû à l'un des problèmes suivants :\n"
+msgstr "**Gigue** indique l'état actuel du flux/diffusion audio en continu. Si le voyant est **rouge**, le flux audio est interrompu. Cela est dû à l'un des problèmes suivants :\n"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
@@ -182,12 +182,12 @@ msgstr "Le délai de la mémoire tampon de la carte son (taille de la mémoire t
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 msgid "The upload or download stream rate is too high for your internet bandwidth."
-msgstr "Le débit du flux en amont ou en aval est trop élevé pour votre bande passante Internet."
+msgstr "Le débit du flux montant ou descendant est trop élevé pour votre bande passante Internet."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 msgid "The CPU of the Client or server is at 100%."
-msgstr "Le CPU du client ou du serveur est à 100%."
+msgstr "Le processeur du client ou du serveur est à 100%."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:54
@@ -198,7 +198,7 @@ msgstr "Entrée"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:58
 msgid "Shows the level of the two stereo channels for your audio input.  Make sure not to clip the input signal to avoid distortions of your sound (the LEDs will indicate clipping when it occurs)."
-msgstr "Ceci indique le niveau des deux canaux stéréo de votre entrée audio.  Veillez à ne pas écrêter le signal d'entrée afin d'éviter toute distorsion du signal audio (les diodes indiquent l'écrêtage lorsqu'il se produit)."
+msgstr "Ceci indique le niveau des deux canaux stéréo de votre entrée audio.  Veillez à ne pas écrêter le signal d'entrée afin d'éviter toute distorsion de votre son (les diodes lumineuses indiquent l'écrêtage lorsqu'il se produit)."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:59
@@ -220,7 +220,7 @@ msgstr "Effet réverbération"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:69
 msgid "Adds reverb to your local mono audio channel, or to both channels in stereo mode.  The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector to the right and move the fader upwards until the desired reverb level is reached."
-msgstr "La réverbération peut être appliquée à un canal audio mono local ou aux deux canaux en mode stéréo.  La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si un signal de microphone est envoyé sur le canal audio droit de la carte son et qu'un effet de réverbération doit être appliqué, réglez le sélecteur de canal sur la droite et déplacez le chariot vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint."
+msgstr "Ajoute de la réverbération à votre canal audio mono local ou aux deux canaux en mode stéréo.  La sélection du canal mono et le niveau de réverbération peuvent être modifiés. Par exemple, si un signal de microphone est envoyé sur le canal audio droit de la carte son et qu'un effet de réverbération doit être appliqué, réglez le sélecteur de canal sur la droite et déplacez le chariot vers le haut jusqu'à ce que le niveau de réverbération souhaité soit atteint."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:70
@@ -231,7 +231,7 @@ msgstr "Tchate"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
-msgstr "Ouvre la fenêtre de tchate. Le texte saisi est envoyé à tous les clients connectés. Si un nouveau message de tchate arrive et que la fenêtre de tchate n'est pas déjà ouverte, elle s'ouvrira automatiquement pour tous les clients. Voir dans les paramètres pour activer éventuellement une alerte sonore lorsqu'un nouveau message de tchate est reçu."
+msgstr "Ouvre la fenêtre de tchate. Le texte saisi est envoyé à tous les clients connectés. Si un nouveau message de tchate arrive et que la fenêtre de tchate n'est pas déjà ouverte, elle s'ouvrira automatiquement pour tous les clients. Voir dans les paramètres pour activer optionnellement une alerte sonore lorsqu'un nouveau message de tchate est reçu."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
@@ -263,7 +263,7 @@ msgstr "Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:90
 msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
-msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur privé, vous pouvez vous y connecter en remplissant le champ Nom/adresse du serveur. Un numéro de port facultatif peut être ajouté après l'adresse IP ou l'URL en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`. Le champ affichera également une liste des adresses de serveur les plus récemment utilisées."
+msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur privé, vous pouvez vous y connecter en remplissant le champ nom/adresse du serveur. Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`. (Notez que les adresses IPv6 doivent être entièrement placées entre crochets). Le champ affichera également une liste des adresses de serveur les plus récemment utilisées."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:91
@@ -290,12 +290,12 @@ msgstr "Le VU-mètre indique le niveau d'entrée sur le serveur, c'est-à-dire l
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:101
 msgid "If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset)."
-msgstr "Si vous avez réglé votre canal audio sur Stéréo ou Sortie stéréo dans vos paramètres, vous verrez également un contrôle de panoramique (shift-cliquer pour le réinitialiser)."
+msgstr "Si vous avez réglé votre canal audio sur Stéréo ou Sortie stéréo dans vos paramètres, vous verrez également un contrôle de panoramique (MAJ-cliquer pour le réinitialiser)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:103
 msgid "If you see a \"mute\" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero."
-msgstr "Si vous voyez une icône \"silencé\" au-dessus d'un utilisateur, cela signifie que cette personne ne peut pas vous entendre. Soit il a coupé votre son, soit il a mis en solo un ou plusieurs utilisateurs dont vous ne faites pas parti, soit il a mis votre chariot à zéro dans son mixage."
+msgstr "Si vous voyez une icône \"silencé\" au-dessus d'un utilisateur, cela signifie que cette personne ne peut pas vous entendre. Soit il a coupé votre son, soit il a mis en solo un ou plusieurs utilisateurs dont vous ne faites pas partie, soit il a mis votre chariot à zéro dans son mixage."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:105
