@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-07-31 20:05+0000\n"
+"PO-Revision-Date: 2023-08-01 21:43+0000\n"
 "Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: de\n"
@@ -33,7 +33,7 @@ msgstr "wiki"
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "/wiki/Directories"
-msgstr ""
+msgstr "/wiki/Directories"
 
 #. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Directories.md:1
@@ -44,45 +44,45 @@ msgstr "Verzeichnisse"
 #. type: Plain text
 #: ../wiki/en/Directories.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Mehr\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title #
 #: ../wiki/en/Directories.md:11
 #, no-wrap
 msgid "Running a Directory"
-msgstr ""
+msgstr "Ein Verzeichnis betreiben"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:14
 msgid "This is a specialised Jamulus Server configuration, as described in [Server Modes](Running-a-Server#server-modes)."
-msgstr ""
+msgstr "Das ist eine spezielle Jamulus-Server-Konfiguration, wie in [Server-Modi](Running-a-Server#server-modes) beschrieben."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:16
 #, no-wrap
 msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them.\n"
-msgstr ""
+msgstr "Um die von einem benutzerdefinierten Verzeichnis aufgelisteten Server zu sehen, müssen Benutzer die Adresse dieses Verzeichnisses in das Feld Einstellungen > Erweiterte Einstellungen > Benutzerdefinierte Verzeichnisse ihres Clients eingeben. Bei Bedarf können mehrere Adressen auf diese Weise hinzugefügt werden. Benutzerdefinierte Verzeichnisse erscheinen dann in der Dropdownliste Verzeichnis im Verbinden Fenster. Benutzerdefinierte Verzeichnisse funktionieren für Clients auf dieselbe Weise wie öffentliche Verzeichnisse und zeigen eine Liste der bei ihnen registrierten Server an.\n"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:18
 msgid "To run a Server as a Directory, it should be started with the `--directoryaddress` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
-msgstr ""
+msgstr "Um einen Server als Verzeichnis zu betreiben, sollte er mit der Option `--directoryaddress` gestartet werden, um sich selbst (d.h. `localhost` oder `127.0.0.1`) zum Verzeichnis für die Abfrage nach Servern zu machen."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:20
 msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
-msgstr ""
+msgstr "Wenn du einen GUI Server betreibst, setze die Adresse des benutzerdefinierten Verzeichnisses in der Registerkarte Optionen auf \"localhost\" und wählen dann \"Benutzerdefiniert\" in der Dropdown-Liste Verzeichnis."
 
 #. type: Title ###
 #: ../wiki/en/Directories.md:22
 #, no-wrap
 msgid "Points to note about Directories"
-msgstr ""
+msgstr "Zu beachtende Punkte über Verzeichnisse"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:25
 msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
-msgstr ""
+msgstr "Wenn du kontrollieren möchtest, welche Server sich an deinem Verzeichnis registrieren können, kannst du mit der Befehlszeilenoption `--listfilter` eine Whitelist im Format `IP Adresse 1[;IP Adresse 2]` aktivieren."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:27

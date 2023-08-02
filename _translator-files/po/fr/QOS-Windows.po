@@ -4,11 +4,12 @@
 # Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <trebmuh@tuxfamily.org>, 2022, 2023.
 # Julien Taverna <jujudusud@gmail.com>, 2023.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-30 17:10+0000\n"
-"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
+"PO-Revision-Date: 2023-08-01 19:05+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -60,12 +61,12 @@ msgstr "Jamulus utilise la qualité de service (QoS) pour atténuer les délais 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:15
 msgid "If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18.  Jamulus sets the DS Field byte to 128 (or 0x80) to select DSCP/CS4 in an IPv4 or IPv6 packet header. Other byte values can be set using the -Q option, e.g. -Q [0..255].  However, most people will have no need to do this."
-msgstr "Si vous souhaitez explorer l'effet des paramètres par défaut, consultez [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18. Jamulus définit l'octet DS Field à 128 (ou 0x80) pour sélectionner DSCP/CS4 dans un en-tête de paquet IPv4 ou IPv6. D'autres valeurs d'octets peuvent être définies en utilisant l'option -Q, par exemple -Q [0..255]. Cependant, la plupart des gens n'auront pas besoin de le faire."
+msgstr "Si vous souhaitez explorer l'effet de paramètres qui ne sont pas ceux par défaut, consultez [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18. Jamulus définit l'octet DS Field à 128 (ou 0x80) pour sélectionner DSCP/CS4 dans une en-tête de paquet IPv4 ou IPv6. D'autres valeurs d'octets peuvent être définies en utilisant l'option -Q, par exemple -Q [0..255].  Cependant, la plupart des gens n'auront pas besoin de le faire."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:17
 msgid "Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated."
-msgstr "Les paramètres de QoS de Jamulus (y compris la valeur par défaut) sont réglés sur 0 sur les systèmes Windows et macOS récents en raison du système d'exploitation. Pour utiliser la QoS sous Windows, suivez ces instructions. Notez que vous devrez peut-être répéter cette procédure à chaque mise à jour de Jamulus."
+msgstr "Les paramètres de QoS de Jamulus (y compris la valeur par défaut) sont réglés sur 0 sur les systèmes Windows et macOS récents en raison du système d'exploitation. Pour utiliser la QoS sous Windows, suivez ces instructions. Notez que vous pourriez devoir répéter cette procédure à chaque mise à jour de Jamulus."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:37
