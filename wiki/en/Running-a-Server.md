@@ -125,6 +125,21 @@ Any settings made using the graphical interface will be stored in the `Jamulusse
 
 ---
 
+### Minimum setup to run in Registered mode
+
+You can run headless Jamulus Server on Linux using `systemctl`, which is covered in upcoming sections.
+You can also run Jamulus Server from the command line. Enter the following command to [run a Registered Server](Running-a-Server#server-types):
+
+~~~
+jamulus-headless --nogui --server \
+        --directoryaddress hostname:port \
+        --serverinfo "yourServerName;yourCity;[country ID]"
+~~~
+
+See the table below for `hostname:port` values.
+
+**Note**: Semicolon and newline characters are not allowed in `yourServerName` and `yourCity` within the `--serverinfo` argument. 
+
 ### Server mode-related options
 
 ##### `-e or --directoryaddress`
