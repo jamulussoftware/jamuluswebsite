@@ -235,14 +235,16 @@ msgstr "### 为什么已注册服务器不需要端口转发?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
-msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
+#, fuzzy
+#| msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
+msgid "Normally, network address translation (NAT) blocks incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, your Jamulus Server initiates an outbound connection when it connects to a Directory. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant port(s) open on your router."
 msgstr "通常，网络地址转换 (NAT) 防火墙会阻止从本地网络外部发起的传入请求。入站流量仅适用于与出站请求相关的数据包(严格来说，“相关”和“已建立”数据包与初始出站连接)。在注册服务器模式下，当您的 Jamulus 服务器连接到目录时，它当然会启动出站连接。从那时起，目录会定期向您的服务器发送(已建立/相关的)连接“ping”(不是 ICMP ping)，以保持路由器/防火墙上的相关 NAT 端口打开。"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:73
 #, fuzzy
 #| msgid "However, in Unregistered mode, Clients have to **initiate** connections into the Server’s network. NAT firewalls prevent this, so you need to tell them to allow incoming connection requests on the Jamulus port using port forwarding."
-msgid "However, to reach an Unregistered Server, each Client has to **initiate** a connection into the Server’s network. A NAT firewall prevents this, so you need to configure the firewall to allow incoming connection requests on the Jamulus port using port forwarding."
+msgid "However, to reach an Unregistered Server, each Client has to initiate a connection into the Server’s network. A NAT prevents this, so you need to configure your router to allow incoming connection requests on the Jamulus port using port forwarding."
 msgstr "但是，在未注册模式下，客户端必须 **发起** 连接到服务器的网络。 NAT 防火墙阻止了这种情况，因此您需要告诉他们使用端口转发允许 Jamulus 端口上的传入连接请求。"
 
 #, no-wrap

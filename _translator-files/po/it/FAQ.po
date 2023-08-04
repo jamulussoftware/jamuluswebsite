@@ -214,10 +214,10 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
-msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
+msgid "Normally, network address translation (NAT) blocks incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, your Jamulus Server initiates an outbound connection when it connects to a Directory. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant port(s) open on your router."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:73
-msgid "However, to reach an Unregistered Server, each Client has to **initiate** a connection into the Server’s network. A NAT firewall prevents this, so you need to configure the firewall to allow incoming connection requests on the Jamulus port using port forwarding."
+msgid "However, to reach an Unregistered Server, each Client has to initiate a connection into the Server’s network. A NAT prevents this, so you need to configure your router to allow incoming connection requests on the Jamulus port using port forwarding."
 msgstr ""
