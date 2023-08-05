@@ -301,6 +301,12 @@ You can see the result of these commands if you run `systemctl status jamulus`, 
 
 ---
 
+## Adding metadata to the Server
+
+You can add metadata to the welcome message of a Server to add additional, hidden information like contact information or policy requests for bots (this is comparable to [robots.txt](https://en.wikipedia.org/wiki/Robots.txt)). See the [Community Knowledge Base entry about metadata](/kb/2023/07/30/Server-Metadata.html) for more information.
+
+---
+
 ## Servers on the desktop
 
 Jamulus can run in Server mode in the graphical environment of a computer. This gives you a graphical user interface to control most of the settings. To do this, first [install Jamulus for your platform](Getting-Started), then do one of the following:
