@@ -27,8 +27,8 @@ msgstr "`-h` of `--help` Laat de help tekst zien"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-msgid "`-i` or `--inifile` Set location of initialization file (overrides default)"
-msgstr "`-i` of `--inifile` Stel de locatie in van het ini-bestand (overschrijft de standaard)"
+msgid "`-i` or `--inifile` Set location of initialization file (overrides default. On macOS simply provide a filename only, since config files can only be read from `/Users/<username>/Library/Containers/io.jamulus.Jamulus/Data/`. For the server replace `io.jamulus.Jamulus` with `io.jamulus.JamulusServer`. Turn on \"Show Library folder\" in \"Show view options\" in Finder to see this folder.)"
+msgstr ""
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
@@ -74,3 +74,6 @@ msgstr "`-6` of `--enableipv6` Schakelt IPv6 adressen in (IPv4 is altijd ingesch
 #: ../wiki/en/Include-Shared-Commands.md:14
 msgid "`-v` or `--version` Output version information and exit"
 msgstr "`-v` of `--version` Laat de versie informatie zien"
+
+#~ msgid "`-i` or `--inifile` Set location of initialization file (overrides default)"
+#~ msgstr "`-i` of `--inifile` Stel de locatie in van het ini-bestand (overschrijft de standaard)"

@@ -30,10 +30,8 @@ msgstr "`-h` 者 `--help`           显示帮助文本         \n"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, fuzzy
-#| msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
-msgid "`-i` or `--inifile` Set location of initialization file (overrides default)"
-msgstr "`-i` 或 `--inifile` 设置初始化文件的位置(覆盖默认值)\n"
+msgid "`-i` or `--inifile` Set location of initialization file (overrides default. On macOS simply provide a filename only, since config files can only be read from `/Users/<username>/Library/Containers/io.jamulus.Jamulus/Data/`. For the server replace `io.jamulus.Jamulus` with `io.jamulus.JamulusServer`. Turn on \"Show Library folder\" in \"Show view options\" in Finder to see this folder.)"
+msgstr ""
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
@@ -95,3 +93,8 @@ msgstr "`-6` 或 `--enableipv6` 启用 IPv6 寻址(始终启用 IPv4)\n"
 #| msgid "`-v` or `--version`        Output version information and exit\n"
 msgid "`-v` or `--version` Output version information and exit"
 msgstr "`-v` 或 `--version` 输出版本信息并退出\n"
+
+#, fuzzy
+#~| msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
+#~ msgid "`-i` or `--inifile` Set location of initialization file (overrides default)"
+#~ msgstr "`-i` 或 `--inifile` 设置初始化文件的位置(覆盖默认值)\n"

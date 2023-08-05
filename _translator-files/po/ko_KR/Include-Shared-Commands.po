@@ -29,10 +29,8 @@ msgstr "`-h` 또는 `--help`         도움말 텍스트 표시         \n"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, fuzzy
-#| msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
-msgid "`-i` or `--inifile` Set location of initialization file (overrides default)"
-msgstr "`-i` 또는 `--inifile`      초기화 파일의 위치 설정하기 (기본값 재정의)\n"
+msgid "`-i` or `--inifile` Set location of initialization file (overrides default. On macOS simply provide a filename only, since config files can only be read from `/Users/<username>/Library/Containers/io.jamulus.Jamulus/Data/`. For the server replace `io.jamulus.Jamulus` with `io.jamulus.JamulusServer`. Turn on \"Show Library folder\" in \"Show view options\" in Finder to see this folder.)"
+msgstr ""
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
@@ -94,3 +92,8 @@ msgstr "`-6` 또는 `--enableipv6`    IPv6 주소 지정 활성화(IPv4는 항�
 #| msgid "`-v` or `--version`        Output version information and exit\n"
 msgid "`-v` or `--version` Output version information and exit"
 msgstr "`-v` 또는 `--version`       버전 정보 출력하고 종료\n"
+
+#, fuzzy
+#~| msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
+#~ msgid "`-i` or `--inifile` Set location of initialization file (overrides default)"
+#~ msgstr "`-i` 또는 `--inifile`      초기화 파일의 위치 설정하기 (기본값 재정의)\n"
