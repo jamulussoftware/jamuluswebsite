@@ -38,7 +38,7 @@ In order to keep the size of the respository under control when images change ov
 
 `<img src="{% include img/en-screenshots/main-screen-default.inc %}"  …`
 
-These files are located in `_assets/img/LANG-screenshots`.
+These files are located in `_includes/img/LANG-screenshots`.
 
 If you want to add a new image, use .png format if possible, and if it’s not a screenshot, ask about where you should store it. Localised images must go in a directory for that language (see the example for English, above).
 
