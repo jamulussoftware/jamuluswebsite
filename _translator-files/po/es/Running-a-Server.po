@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-31 20:53+0000\n"
+"PO-Revision-Date: 2023-08-08 08:21+0000\n"
 "Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -358,39 +358,35 @@ msgstr "Cualquier configuración realizada mediante la interfaz gráfica se alma
 #: ../wiki/en/Running-a-Server.md:128
 #, no-wrap
 msgid "Minimum setup to run in Registered mode"
-msgstr ""
+msgstr "Configuración mínima para ejecutar en modo Registrado"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:132
 msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](Running-a-Server#server-types):"
-msgstr ""
+msgstr "Puedes ejecutar un Servidor headless en Linux usando systemd (con `systemctl`), que se trata en otras secciones. También puedes ejecutar un Servidor directamente desde la línea de comandos. Introduce el siguiente comando para [ejecutar un Servidor Registrado](Running-a-Server#server-types):"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:133
-#, fuzzy, no-wrap
-#| msgid ""
-#| "jamulus --nogui --server \\\n"
-#| "        --directoryserver genreServer:port \\\n"
-#| "        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
+#, no-wrap
 msgid ""
 "jamulus-headless --nogui --server \\\n"
 "        --directoryaddress hostname:port \\\n"
 "        --serverinfo \"[name];[city];[country as two-letter ISO country code or Qt5 Locale]\"\n"
 msgstr ""
 "jamulus --nogui --server \\\n"
-"        --directoryserver genreServer:port \\\n"
-"        --serverinfo \"nombreDeTuServidor;tuCiudad;[ID país]\"\n"
+"        --directoryaddress nombreHost:puerto\\\n"
+"        --serverinfo \"[nombre];[ciudad];[país como código ISO de dos letras o Locale Qt5]\"\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:140
 msgid "See the table below for `hostname:port` values."
-msgstr ""
+msgstr "Véase la tabla de abajo para valores de `nombreHost:puerto`."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:142
 #, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Command line options](#command-line-options) for more information on the country code. \n"
-msgstr ""
+msgstr "**Nota**: Los caracteres de punto y coma y nueva línea no están permitidos en `[nombre]` y `[ciudad]` dentro del argumento `--serverinfo`. Consulta las [Opciones de la línea de comandos](#command-line-options) para más información sobre el código de país. \n"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:143
@@ -827,15 +823,14 @@ msgstr "Puedes ver el resultado de estos comandos si ejecutas `systemctl status 
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:304
-#, fuzzy, no-wrap
-#| msgid "Backing up the Server"
+#, no-wrap
 msgid "Adding metadata to the Server"
-msgstr "Copia de seguridad del Servidor"
+msgstr "Añadir metadatos al Servidor"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:307
 msgid "You can add metadata to the welcome message of a Server to add additional, hidden information like contact information or policy requests for bots (this is comparable to [robots.txt](https://en.wikipedia.org/wiki/Robots.txt)). See the [Community Knowledge Base entry about metadata](/kb/2023/07/30/Server-Metadata.html) for more information."
-msgstr ""
+msgstr "Puedes añadir metadatos al mensaje de bienvenida de un Servidor para incluir información adicional oculta, como información de contacto o solicitudes de políticas para bots (esto es comparable a [robots.txt](https://en.wikipedia.org/wiki/Robots.txt)). Consulta la [entrada de la Base de Conocimiento Comunitario sobre metadatos](/kb/2023/07/30/Server-Metadata.html) para más información."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:310
