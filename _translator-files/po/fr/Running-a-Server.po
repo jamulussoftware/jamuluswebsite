@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-01 20:04+0000\n"
+"PO-Revision-Date: 2023-08-05 19:50+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/running-a-server/fr/>\n"
 "Language: fr\n"
@@ -362,39 +362,35 @@ msgstr "Tout réglage effectué en utilisant l'interface graphique sera stocké 
 #: ../wiki/en/Running-a-Server.md:128
 #, no-wrap
 msgid "Minimum setup to run in Registered mode"
-msgstr ""
+msgstr "Configuration minimale pour fonctionner en mode enregistré"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:132
 msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](Running-a-Server#server-types):"
-msgstr ""
+msgstr "Vous pouvez faire tourner un serveur sans affichage sous Linux en utilisant systemd (avec `systemctl`), ce qui est couvert dans d'autres sections.  Vous pouvez également exécuter un serveur directement depuis la ligne de commande. Entrez la commande suivante pour [lancer un serveur enregistré](Running-a-Server#types-de-serveur) :"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:133
-#, fuzzy, no-wrap
-#| msgid ""
-#| "jamulus --nogui --server \\\n"
-#| "        --directoryserver genreServer:port \\\n"
-#| "        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
+#, no-wrap
 msgid ""
 "jamulus-headless --nogui --server \\\n"
 "        --directoryaddress hostname:port \\\n"
 "        --serverinfo \"[name];[city];[country as two-letter ISO country code or Qt5 Locale]\"\n"
 msgstr ""
-"jamulus --nogui --server \\\n"
-"        --directoryserver genreServer:port \\\n"
-"        --serverinfo \"nomduserveur;ville;[ID du pays]\"\n"
+"jamulus-headless --nogui --server \\\n"
+"        --directoryaddress hostname:port \\\n"
+"        --serverinfo \"nomduserveur;ville;[ville en tant que code de pays ISO à deux-lettres ou locale Qt5]\"\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:140
 msgid "See the table below for `hostname:port` values."
-msgstr ""
+msgstr "Voir le tableau ci-dessous pour les valeurs de `hostname:port`."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:142
 #, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Command line options](#command-line-options) for more information on the country code. \n"
-msgstr ""
+msgstr "**Note** : les caractères points-virgules et nouvelles lignes ne sont pas autorisés dans `[nomdeserveur]` et `[ville]` dans l'argument `--serverinfo`. Voir les [options de la ligne de commande](#options-de-ligne-de-commande) pour plus d'informations sur le code pays. \n"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:143
@@ -499,7 +495,7 @@ msgstr "`-w ou --welcomemessage`"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:185
 msgid "A \"welcome message\" to display in the Client chat window on connect. Can be given as a string or filename, and can contain HTML.  When a path is used, the file must be accessible by the user account running Jamulus. (On most Linux installations, user `jamulus` is used by default.)  If not accessible, the literal path (rather than its contents) will appear."
-msgstr "Un \"message de bienvenue\" à afficher dans la fenêtre de tchate du client lors de la connexion. Il peut prendre la forme d'une chaîne ou d'un nom de fichier et peut contenir du HTML.  Lorsqu'un chemin est utilisé, le fichier doit être accessible par le compte utilisateur qui exécute Jamulus. (Sur la plupart des installations Linux, l'utilisateur `jamulus` est utilisé par défaut). S'il n'est pas accessible, le chemin littéral (plutôt que son contenu) apparaîtra."
+msgstr "Un \"message de bienvenue\" à afficher dans la fenêtre de tchate du client lors de la connexion. Il peut prendre la forme d'une chaîne ou d'un nom de fichier et peut contenir du HTML.  Lorsqu'un chemin est utilisé, le fichier doit être accessible par le compte utilisateur qui exécute Jamulus. (Sur la plupart des installations Linux, l'utilisateur `jamulus` est utilisé par défaut).  S'il n'est pas accessible, le chemin littéral (plutôt que son contenu) apparaîtra."
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:186
@@ -807,7 +803,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:293
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
-msgstr "_Remarque : Le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de systemd pour contrôler votre serveur Jamulus. Donc, dans cet exemple, ce serait `Jamulus-Server.service`_"
+msgstr "_Remarque : le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de systemd pour contrôler votre serveur Jamulus. Donc, dans cet exemple, ce serait `Jamulus-Server.service`_"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:295
@@ -831,15 +827,14 @@ msgstr "Vous pouvez voir le résultat de ces commandes si vous exécutez `system
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:304
-#, fuzzy, no-wrap
-#| msgid "Backing up the Server"
+#, no-wrap
 msgid "Adding metadata to the Server"
-msgstr "Sauvegarder le serveur"
+msgstr "Ajouter des métadonnées au serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:307
 msgid "You can add metadata to the welcome message of a Server to add additional, hidden information like contact information or policy requests for bots (this is comparable to [robots.txt](https://en.wikipedia.org/wiki/Robots.txt)). See the [Community Knowledge Base entry about metadata](/kb/2023/07/30/Server-Metadata.html) for more information."
-msgstr ""
+msgstr "Vous pouvez ajouter des métadonnées au message de bienvenue d'un serveur afin d'ajouter des informations supplémentaires et cachées telles que des informations de contact ou des demandes de politique pour les robots (c'est comparable à [robots.txt](https://fr.wikipedia.org/wiki/Protocole_d%27exclusion_des_robots)). Voir l'[entrée de la base de connaissances de la communauté sur les métadonnées](/kb/2023/07/30/Server-Metadata.html) pour plus d'informations."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:310
