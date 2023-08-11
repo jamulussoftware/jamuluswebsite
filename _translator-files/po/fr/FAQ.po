@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-30 17:10+0000\n"
+"PO-Revision-Date: 2023-08-05 19:50+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/faq/fr/>\n"
 "Language: fr\n"
@@ -217,17 +217,13 @@ msgstr "Pourquoi les serveurs enregistrés n'ont-ils pas besoin de redirection d
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
-#, fuzzy
-#| msgid "Normally, network address translation (NAT) firewalls prevent incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, when your Jamulus Server connects to a Directory it of course initiates an outbound connection. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant NAT port(s) open on your router/firewall."
 msgid "Normally, network address translation (NAT) blocks incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, your Jamulus Server initiates an outbound connection when it connects to a Directory. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant port(s) open on your router."
-msgstr "Normalement, les pare-feu NAT (Network Address Translation) empêchent les requêtes entrantes provenant de l'extérieur du réseau local. Le trafic entrant n'est possible que pour les paquets relatifs à une demande sortante (à proprement parler, les paquets \"relatifs\" et \"établis\" à une connexion sortante initiale). En mode serveur enregistré, lorsque votre serveur Jamulus se connecte à un annuaire, il initie bien sûr une connexion sortante. À partir de ce moment-là, l'annuaire envoi des \"pings\" (non ICMP) de connexion (établie/liée) à votre serveur à intervalles réguliers pour maintenir le ou les ports NAT pertinents ouverts sur votre routeur/pare-feu."
+msgstr "Normalement, les NAT (Network Address Translation) bloquent les requêtes entrantes provenant de l'extérieur du réseau local. Le trafic entrant n'est possible que pour les paquets relatifs à une demande sortante (à proprement parler, les paquets \"relatifs\" et \"établis\" à une connexion sortante initiale). En mode serveur enregistré, votre serveur Jamulus initie bien sûr une connexion sortante lorsqu'il se connecte à un annuaire. À partir de ce moment-là, l'annuaire envoi des \"pings\" (non ICMP) de connexion (établie/liée) à votre serveur à intervalles réguliers pour maintenir le ou les ports pertinents ouverts sur votre routeur."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:73
-#, fuzzy
-#| msgid "However, to reach an Unregistered Server, each Client has to **initiate** a connection into the Server’s network. A NAT firewall prevents this, so you need to configure the firewall to allow incoming connection requests on the Jamulus port using port forwarding."
 msgid "However, to reach an Unregistered Server, each Client has to initiate a connection into the Server’s network. A NAT prevents this, so you need to configure your router to allow incoming connection requests on the Jamulus port using port forwarding."
-msgstr "Cependant, pour atteindre un serveur non enregistré, chaque client doit **initier** une connexion au réseau du serveur. Un pare-feu NAT empêche cela, vous devez donc configurer le pare-feu pour autoriser les demandes de connexion entrantes sur le port Jamulus en utilisant la redirection de port."
+msgstr "Cependant, pour atteindre un serveur non enregistré, chaque client doit initier une connexion au réseau du serveur. Un NAT empêche cela, vous devez donc configurer votre routeur pour autoriser les demandes de connexion entrantes sur le port Jamulus en utilisant la redirection de port."
 
 #~ msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 #~ msgstr "Non. Les musiciens sur un serveur Jamulus jouent en temps réel ensemble comme ils le feraient en personne. Si vous souhaitez disposer d'un signal temporel, il existe des solutions de métronome partagé sur Internet que vous pouvez essayer, mais il est probablement préférable de minimiser la latence afin que personne n'ait un retard global supérieur à environ 30-50 ms."

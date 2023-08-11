@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-07-30 17:10+0000\n"
+"PO-Revision-Date: 2023-08-05 19:50+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -86,10 +86,8 @@ msgstr "Obtenir l'IP publique"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:28
-#, fuzzy
-#| msgid "To allow others to connect to your Server from the internet, give them your public internet IP address. You can [learn your current address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
 msgid "To allow others to connect to your Server from the internet, give them your public IP address. You can [learn your current public IP address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
-msgstr "Pour permettre à d'autres personnes de se connecter à votre serveur depuis l'Internet, donnez-leur votre adresse IP Internet publique. Vous pouvez [connaître votre adresse actuelle en utilisant Google](https://www.google.com/search?q=what+is+my+ip).  Vous devriez vous connecter vous-même en utilisant l'adresse du réseau local de l'ordinateur sur lequel le serveur est exécuté. Si vous exécutez un client sur le même ordinateur que votre serveur, l'adresse est `localhost` ou `127.0.0.1`."
+msgstr "Pour permettre à d'autres personnes de se connecter à votre serveur depuis l'Internet, donnez-leur votre adresse IP publique. Vous pouvez [connaître votre adresse IP publique actuelle en utilisant Google](https://www.google.com/search?q=what+is+my+ip).  Vous devriez vous connecter vous-même en utilisant l'adresse du réseau local de l'ordinateur sur lequel le serveur est exécuté. Si vous exécutez un client sur le même ordinateur que votre serveur, l'adresse est `localhost` ou `127.0.0.1`."
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:30
@@ -99,10 +97,8 @@ msgstr "DNS dynamique et pourquoi vous en aurez probablement besoin"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:33
-#, fuzzy
-#| msgid "Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. You might want to set up \"dynamic DNS\" to get a static address you can share with others. A \"dynamic DNS\" provider can supply you with a static IP address that you can share, but you need to keep refreshing your dynamic IP with the provider. Your router might support certain providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client."
 msgid "Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. You might want to associate your IP address with a domain name you can share with others that uses \"dynamic DNS\" (DDNS). A \"dynamic DNS\" provider can supply you with the domain name and you keep refreshing your IP address with the provider. Your router might support certain DDNS providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client."
-msgstr "À moins que votre FAI ne vous fournisse une adresse IP fixe, il se peut que votre adresse change au fil du temps. Vous voudrez peut-être configurer un \"DNS dynamique\" pour obtenir une adresse statique que vous pourrez partager avec d'autres. Un fournisseur de \"DNS dynamique\" peut vous fournir une adresse IP statique que vous pouvez partager, mais vous devez constamment rafraîchir votre IP dynamique auprès du fournisseur. Votre routeur peut prendre en charge certains fournisseurs pour ce faire. Si ce n'est pas le cas, le fournisseur aura des instructions sur la façon de configurer un client DNS dynamique."
+msgstr "À moins que votre FAI ne vous fournisse une adresse IP fixe, il se peut que votre adresse change au fil du temps. Vous pourriez vouloir associer votre adresse IP à un nom de domaine que vous pouvez partager avec d'autres personnes et qui utilise le \"DNS dynamique\" (DDNS). Un fournisseur de \"DNS dynamique\" peut vous fournir le nom de domaine et vous devez actualiser votre adresse IP auprès du fournisseur. Votre routeur peut prendre en charge certains fournisseurs DDNS pour cela. Si ce n'est pas le cas, le fournisseur vous indiquera comment configurer un client DNS dynamique."
 
 #. type: Title ##
 #: ../wiki/en/Unregistered-Servers.md:34
