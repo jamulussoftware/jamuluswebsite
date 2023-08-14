@@ -366,7 +366,9 @@ msgstr "Configuration minimale pour fonctionner en mode enregistré"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:132
-msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](Running-a-Server#server-types):"
+#, fuzzy
+#| msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](Running-a-Server#server-types):"
+msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](#server-modes):"
 msgstr "Vous pouvez faire tourner un serveur sans affichage sous Linux en utilisant systemd (avec `systemctl`), ce qui est couvert dans d'autres sections.  Vous pouvez également exécuter un serveur directement depuis la ligne de commande. Entrez la commande suivante pour [lancer un serveur enregistré](Running-a-Server#types-de-serveur) :"
 
 #. type: Fenced code block
@@ -388,8 +390,9 @@ msgstr "Voir le tableau ci-dessous pour les valeurs de `hostname:port`."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:142
-#, no-wrap
-msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Command line options](#command-line-options) for more information on the country code. \n"
+#, fuzzy, no-wrap
+#| msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Command line options](#command-line-options) for more information on the country code. \n"
+msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Server mode-related options](#server-mode-related-options) for more information on the country code. \n"
 msgstr "**Note** : les caractères points-virgules et nouvelles lignes ne sont pas autorisés dans `[nomdeserveur]` et `[ville]` dans l'argument `--serverinfo`. Voir les [options de la ligne de commande](#options-de-ligne-de-commande) pour plus d'informations sur le code pays. \n"
 
 #. type: Title ###
