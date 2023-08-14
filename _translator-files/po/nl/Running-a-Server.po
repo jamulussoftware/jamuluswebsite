@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-31 20:05+0000\n"
+"PO-Revision-Date: 2023-08-06 20:48+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -357,43 +357,35 @@ msgstr "Alle instellingen die via de grafische interface zijn gemaakt, worden op
 #: ../wiki/en/Running-a-Server.md:128
 #, no-wrap
 msgid "Minimum setup to run in Registered mode"
-msgstr ""
+msgstr "Minimale setup om in geregistreerde modus uit te voeren"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:132
 msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](Running-a-Server#server-types):"
-msgstr ""
+msgstr "Je kunt een headless server op Linux draaien met behulp van systemd (met `systemctl`), wat in andere secties wordt behandeld. Je kunt een server ook rechtstreeks vanaf de opdrachtregel uitvoeren. Voer de volgende opdracht in om [een geregistreerde server uit te voeren](Running-a-Server#servertypen):"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:133
-#, fuzzy, no-wrap
-#| msgid ""
-#| "~~~\n"
-#| "jamulus --nogui --server \\\n"
-#| "        --directoryserver genreServer:port \\\n"
-#| "        --serverinfo \"yourServerName;yourCity;[country ID]\"\n"
-#| "~~~\n"
+#, no-wrap
 msgid ""
 "jamulus-headless --nogui --server \\\n"
 "        --directoryaddress hostname:port \\\n"
 "        --serverinfo \"[name];[city];[country as two-letter ISO country code or Qt5 Locale]\"\n"
 msgstr ""
-"~~~\n"
-"jamulus --nogui --server \\\n"
-"        --directoryserver genreServer:poort \\\n"
-"        --serverinfo \"jouwServernaam;jouwStad;[land ID]\"\n"
-"~~~\n"
+"jamulus-headless --nogui --server \\\n"
+"        --directoryaddress hostnaam:poort \\\n"
+"        --serverinfo \"[naam];[stad];[land als tweeletterige ISO-landcode of Qt5 Locale]\"\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:140
 msgid "See the table below for `hostname:port` values."
-msgstr ""
+msgstr "Zie de onderstaande tabel voor waarden voor 'hostnaam:poort'."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:142
 #, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Command line options](#command-line-options) for more information on the country code. \n"
-msgstr ""
+msgstr "**Opmerking**: Puntkomma's en nieuwe-regeltekens zijn niet toegestaan in `[naam]` en `[stad]` binnen het argument `--serverinfo`. Zie de [opdrachtregelopties](#opdrachtregelopties) voor meer informatie over de landcode. \n"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:143
@@ -564,7 +556,7 @@ msgstr "`-F of --fastupdate`"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:205
 msgid "Reduces latency if Clients connect with **Enable Small Network Buffers** option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
-msgstr "Vermindert latentie als clients verbinding maken met de optie **Kleine netwerkbuffers inschakelen**. Vereist een snellere CPU om uitval te voorkomen en meer bandbreedte voor ingeschakelde clients."
+msgstr "Vermindert latentie als clients verbinding maken met de optie **Kleine netwerkbuffers**. Vereist een snellere CPU om uitval te voorkomen en meer bandbreedte voor ingeschakelde clients."
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:206
@@ -830,15 +822,14 @@ msgstr "Je kunt het resultaat van deze commando's zien als je `systemctl status 
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:304
-#, fuzzy, no-wrap
-#| msgid "Backing up the Server"
+#, no-wrap
 msgid "Adding metadata to the Server"
-msgstr "Een back-up maken van de server"
+msgstr "Metadata toevoegen aan de server"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:307
 msgid "You can add metadata to the welcome message of a Server to add additional, hidden information like contact information or policy requests for bots (this is comparable to [robots.txt](https://en.wikipedia.org/wiki/Robots.txt)). See the [Community Knowledge Base entry about metadata](/kb/2023/07/30/Server-Metadata.html) for more information."
-msgstr ""
+msgstr "Je kunt metadata toevoegen aan het welkomstbericht van een server om aanvullende, verborgen informatie toe te voegen, zoals contactgegevens of beleidsverzoeken voor bots (dit is vergelijkbaar met [robots.txt](https://nl.wikipedia.org/wiki/Robots_Exclusion_Protocol)). Zie de [Community Knowledge Base-vermelding over metadata (engelstalig)](/kb/2023/07/30/Server-Metadata.html) voor meer informatie."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:310

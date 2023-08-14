@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-01 20:04+0000\n"
+"PO-Revision-Date: 2023-08-06 13:10+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/software-manual/fr/>\n"
 "Language: fr\n"
@@ -305,7 +305,7 @@ msgstr "Les utilisateurs apparaissent habituellement de gauche à droite dans l'
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:107
 msgid "If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded."
-msgstr "Si l'opérateur du serveur a activé l'enregistrement, vous verrez un message au-dessus de la table de mélange indiquant que vous êtes enregistré."
+msgstr "Si l'opérateur du serveur a activé l'enregistrement, vous verrez un message au-dessus du mixeur indiquant que vous êtes enregistré."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:108
@@ -360,7 +360,7 @@ msgstr "Mon profil"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:128
 msgid "From the Settings menu, select \"My Profile...\" to set your Alias/Name which is displayed below your fader in the server audio mixer board."
-msgstr "Dans le menu Paramètres, sélectionnez \"Mon profil...\" pour définir votre alias/nom qui s'affiche sous votre chariot dans la carte de mixage audio du serveur."
+msgstr "Dans le menu Paramètres, sélectionnez \"Mon profil...\" pour définir l'alias/nom qui s'affiche sous votre chariot dans le panneau de mixage audio du serveur."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:130
@@ -371,7 +371,7 @@ msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-profile.inc %}
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:132
 msgid "If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:"
-msgstr "Si un instrument et/ou un pays est défini, les icônes de ces sélections s'affichent également sous votre chariot. Le paramètre de compétence change la couleur de fond de l'étiquette du fader et le nom de la ville s'affiche dans l'info-bulle de l'étiquette du chariot :"
+msgstr "Si vous paramétrez un instrument et/ou un pays, les icônes de ces sélections s'afficheront également sous votre chariot. Le paramètre de compétence modifie la couleur de fond de l'étiquette du chariot et le nom de la ville s'affiche dans l'info-bulle de l'étiquette du chariot :"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:134
@@ -399,7 +399,7 @@ msgstr "Style de vu-mètre"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:142
 msgid "This changes the visual style of the audio meters, independently of the chosen skin."
-msgstr "Cela change le style visuel des vu-mètres audio, indépendamment de l'habillage choisi."
+msgstr "Cela modifier le style visuel des indicateurs audio, indépendamment de l'habillage choisi."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:143
@@ -444,7 +444,7 @@ msgstr "Périphérique"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:159
 msgid "Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected."
-msgstr "Sous le système d'exploitation Windows, le pilote ASIO (carte son) peut être sélectionné à l'aide de Jamulus. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédent est sélectionné. Sous macOS, le matériel d'entrée et de sortie peut être sélectionné."
+msgstr "Sous le système d'exploitation Windows, le pilote ASIO (carte son) peut être sélectionné à l'aide de Jamulus. Si le pilote ASIO sélectionné n'est pas valide, un message d'erreur s'affiche et le pilote valide précédemment est sélectionné. Sous macOS, le matériel d'entrée et de sortie peut être sélectionné."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:160
@@ -461,7 +461,7 @@ msgstr "<figure><img src=\"{% include img/fr-screenshots/channel-mapping.inc %}\
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:167
 msgid "If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)  a different actual sound card channel can be selected."
-msgstr "Si le périphérique de la carte son sélectionné offre plus d'un canal d'entrée ou de sortie, les paramètres _Input Channel Mapping et Output Channel Mapping_ sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droit) un canal réel différent de la carte son peut être sélectionné."
+msgstr "Si le périphérique de la carte son sélectionné offre plus d'un canal d'entrée ou de sortie, les paramètres _cartographie des canaux d'entrée (Input Channel Mapping) et cartographie des canaux de sortie (Output Channel Mapping)_ sont visibles. Pour chaque canal d'entrée/sortie Jamulus (canal gauche et droit)  un canal réel différent de la carte son peut être sélectionné."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:168
@@ -472,7 +472,7 @@ msgstr "Canaux audio"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:171
 msgid "Selects the number of audio channels to be used for communication between Client and server."
-msgstr "Permet de sélectionner le nombre de canaux audio à utiliser pour la communication entre le client et le serveur."
+msgstr "Sélectionne le nombre de canaux audio à utiliser pour la communication entre le client et le serveur."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:173
@@ -483,7 +483,7 @@ msgstr "**Note** : c'est mieux d'exécuter des instances de client séparées pa
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:175
 msgid "There are three modes available:"
-msgstr "Trois modes sont disponibles :"
+msgstr "Voici les trois modes disponibles :"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:177
@@ -509,7 +509,7 @@ msgstr "L'activation du mode stéréo augmente le débit de données de votre fl
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:186
 msgid "In stereo streaming mode, no audio channel selection for the reverb effect will be available on the main window since the effect is applied to both channels in this case."
-msgstr "En mode de streaming stéréo, aucune sélection de canal audio pour l'effet de réverbération n'est disponible dans la fenêtre principale car l'effet est appliqué en mode stéréo."
+msgstr "En mode de streaming stéréo, aucune sélection de canal audio pour l'effet de réverbération n'est disponible dans la fenêtre principale puisque l'effet est appliqué aux deux canaux dans ce cas."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:187
@@ -531,7 +531,7 @@ msgstr "Délai de mise en mémoire tampon"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:195
 msgid "The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many connection properties. Three buffer sizes are supported:"
-msgstr "Le paramètre de délai de mise en mémoire tampon est un paramètre fondamental du logiciel Jamulus. Ce paramètre a une influence sur de nombreuses propriétés de la connexion. Trois tailles de tampon sont prises en charge :"
+msgstr "Le paramètre de délai de mise en tampon est un paramètre fondamental du logiciel Jamulus. Ce paramètre a une influence sur de nombreuses propriétés de la connexion. Trois tailles de tampon sont prises en charge :"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:199
@@ -551,7 +551,7 @@ msgstr "**256 échantillons** Ne doit être utilisé que sur des ordinateurs tr�
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:202
 msgid "Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.  In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel."
-msgstr "Certains pilotes de carte son ne permettent pas de modifier le délai de mise en mémoire tampon à partir du logiciel Jamulus.  Dans ce cas, le réglage du délai de mise en mémoire tampon est désactivé et doit être modifié à l'aide du pilote de la carte son. Sous Windows, appuyez sur le bouton paramètres ASIO pour ouvrir le panneau de configuration du pilote."
+msgstr "Certains pilotes de carte son ne permettent pas de modifier le délai de mise en tampon à partir du logiciel Jamulus.  Dans ce cas, le réglage du délai de mise en tampon est désactivé et doit être modifié à l'aide du pilote de la carte son. Sous Windows, appuyez sur le bouton paramètres ASIO pour ouvrir le panneau de configuration du pilote."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:204
@@ -561,12 +561,12 @@ msgstr "Sous Linux, utilisez l'outil de configuration JACK pour modifier la tail
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:208
 msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
-msgstr "Le délai réel de la mémoire tampon a une influence sur l'état de la connexion, le taux de chargement actuel et le délai global.  Plus la taille de la mémoire tampon est faible, plus la probabilité d'un voyant rouge dans l'indicateur d'état (abandons) est élevée et plus le débit de chargement est élevé et plus le délai global est faible."
+msgstr "Le délai réel du tampon a une influence sur l'état de la connexion, le taux de chargement actuel et le délai global.  Plus la taille du tampon est faible, plus la probabilité d'un voyant rouge dans l'indicateur d'état (décrochages) est élevée et plus le débit montant est élevé et plus le délai global est faible."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:210
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
-msgstr "Le réglage de la mémoire tampon est donc un compromis entre la qualité audio et le délai global."
+msgstr "Le réglage du tampon est donc un compromis entre la qualité audio et le délai global."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:211
@@ -582,12 +582,12 @@ msgstr "Le tampon de gigue compense les glissements de temps du réseau et de la
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:220
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
-msgstr "Vous pouvez définir manuellement la taille du tampon de gigue pour votre client local et le serveur distant. Pour le tampon de gigue local, les interruptions du flux audio sont indiquées par le voyant situé sous les curseurs de taille de la mémoire tampon de gigue.  Si le voyant passe au rouge, cela signifie qu'il y a eu dépassement de la mémoire tampon et que le flux audio est interrompu."
+msgstr "Vous pouvez définir manuellement la taille du tampon de gigue pour votre client local et le serveur distant. Pour le tampon de gigue local, les interruptions du flux audio sont indiquées par le voyant situé sous les chariots de taille de tampon de gigue.  Si le voyant passe au rouge, cela signifie qu'il y a eu dépassement de la mémoire tampon et que le flux audio est interrompu."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:222
 msgid "The jitter buffer setting is therefore a trade-off between audio quality and overall delay."
-msgstr "Le réglage de la mémoire tampon de gigue est donc un compromis entre la qualité audio et le délai global."
+msgstr "Le réglage du tampon de gigue est donc un compromis entre la qualité audio et le délai global."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:226

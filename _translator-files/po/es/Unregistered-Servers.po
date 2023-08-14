@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-01-18 09:35+0000\n"
+"PO-Revision-Date: 2023-08-08 08:21+0000\n"
 "Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -85,10 +85,8 @@ msgstr "Obtener la IP pública"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:28
-#, fuzzy
-#| msgid "To allow others to connect to your Server from the internet, give them your public internet IP address. You can [learn your current address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
 msgid "To allow others to connect to your Server from the internet, give them your public IP address. You can [learn your current public IP address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
-msgstr "Para permitir que otros se conecten a tu Servidor desde internet, dales tu dirección IP pública de internet. Puedes [conocer tu dirección actual usando Google](https://www.google.com/search?q=what+is+my+ip).  Deberías conectarte tú mismo utilizando la dirección de red local del ordenador en el que se ejecuta el Servidor. Si estás ejecutando un Cliente en el mismo ordenador que tu Servidor, la dirección es `localhost` ó `127.0.0.1`."
+msgstr "Para permitir que otros se conecten a tu Servidor desde internet, dales tu dirección IP pública. Puedes [conocer tu dirección IP pública actual usando Google](https://www.google.com/search?q=what+is+my+ip).  Deberías conectarte tú mismo utilizando la dirección de red local del ordenador en el que se ejecuta el Servidor. Si estás ejecutando un Cliente en el mismo ordenador que tu Servidor, la dirección es `localhost` ó `127.0.0.1`."
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:30
@@ -98,10 +96,8 @@ msgstr "DNS dinámica y por qué es probable que lo necesites"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:33
-#, fuzzy
-#| msgid "Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. You might want to set up \"dynamic DNS\" to get a static address you can share with others. A \"dynamic DNS\" provider can supply you with a static IP address that you can share, but you need to keep refreshing your dynamic IP with the provider. Your router might support certain providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client."
 msgid "Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. You might want to associate your IP address with a domain name you can share with others that uses \"dynamic DNS\" (DDNS). A \"dynamic DNS\" provider can supply you with the domain name and you keep refreshing your IP address with the provider. Your router might support certain DDNS providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client."
-msgstr "A menos que tu ISP te proporcione una dirección IP fija, es posible que tu dirección cambie con el tiempo. Quizá te interese configurar un \"DNS dinámico\" para obtener una dirección estática que puedas compartir con otras personas. Un proveedor de \"DNS dinámico\" puede proporcionarte una dirección IP estática que puedes compartir, pero tienes que ir actualizando tu IP dinámica con el proveedor. Es posible que tu router admita que determinados proveedores hagan esto. Si no es el caso, el proveedor tendrá instrucciones sobre cómo configurar un cliente DNS dinámico."
+msgstr "A menos que tu ISP te proporcione una dirección IP fija, es posible que tu dirección cambie con el tiempo. Quizá te interese asociar tu dirección IP a un nombre de dominio que puedas compartir con otras personas, el cual utilice \"DNS dinámica\" (DDNS). Un proveedor de \"DNS dinámica\" te puede dar el nombre de dominio y tú vas actualizando tu dirección IP con el proveedor. Es posible que tu router permita que determinados proveedores de DDNS hagan esto. Si no es el caso, el proveedor tendrá instrucciones sobre cómo configurar un cliente DNS dinámico."
 
 #. type: Title ##
 #: ../wiki/en/Unregistered-Servers.md:34
