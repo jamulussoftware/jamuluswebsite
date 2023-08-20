@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-05 19:50+0000\n"
-"Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
+"PO-Revision-Date: 2023-08-20 11:08+0000\n"
+"Last-Translator: Julien Taverna <jujudusud@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/running-a-server/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -176,7 +176,7 @@ msgstr "La plupart des gens exécutent Jamulus sur un hôte tiers/cloud en tant 
 #: ../wiki/en/Running-a-Server.md:56
 #, no-wrap
 msgid "**Note** The following steps will result in you running an \"Unregistered\" Server. For more information, see [the Server Modes section](#server-modes) below.\n"
-msgstr "**Remarque** les étapes suivantes vous permettront d'exécuter un serveur \"non enregistré\". Pour plus d'informations, voir [la section modes de serveur](#modes-de-serveur) ci-dessous.\n"
+msgstr "**Remarque** les étapes suivantes vous permettront d'exécuter un serveur \"non enregistré\". Pour plus d'informations, voir [la section modes du serveur](#modes-du-serveur) ci-dessous.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:60
@@ -212,7 +212,7 @@ msgstr "\t`sudo systemctl enable jamulus-headless`\n"
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:69
 msgid "Add your desired [command line options](Running-a-Server#configuration-options) to the `ExecStart` line in the systemd service file:"
-msgstr "Ajoutez les [options de la ligne de commande](Running-a-Server#options-de-la-ligne-de-commande) voulues à la ligne `ExecStart` dans le fichier service systemd :"
+msgstr "Ajoutez les [options de la ligne de commande](Running-a-Server#options-de-configuration) voulues à la ligne `ExecStart` dans le fichier service systemd :"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:71
@@ -240,7 +240,7 @@ msgstr "_Pour modifier la configuration de votre serveur, il suffit de répéter
 #: ../wiki/en/Running-a-Server.md:80
 #, no-wrap
 msgid "Server Modes"
-msgstr "Types de serveur"
+msgstr "Modes du serveur"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:83
@@ -366,10 +366,8 @@ msgstr "Configuration minimale pour fonctionner en mode enregistré"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:132
-#, fuzzy
-#| msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](Running-a-Server#server-types):"
 msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](#server-modes):"
-msgstr "Vous pouvez faire tourner un serveur sans affichage sous Linux en utilisant systemd (avec `systemctl`), ce qui est couvert dans d'autres sections.  Vous pouvez également exécuter un serveur directement depuis la ligne de commande. Entrez la commande suivante pour [lancer un serveur enregistré](Running-a-Server#types-de-serveur) :"
+msgstr "Vous pouvez faire tourner un serveur sans affichage sous Linux en utilisant systemd (avec `systemctl`), ce qui est couvert dans d'autres sections.  Vous pouvez également exécuter un serveur directement depuis la ligne de commande. Entrez la commande suivante pour [lancer un serveur enregistré](#modes-du-serveur) :"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:133
@@ -390,10 +388,9 @@ msgstr "Voir le tableau ci-dessous pour les valeurs de `hostname:port`."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:142
-#, fuzzy, no-wrap
-#| msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Command line options](#command-line-options) for more information on the country code. \n"
+#, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Server mode-related options](#server-mode-related-options) for more information on the country code. \n"
-msgstr "**Note** : les caractères points-virgules et nouvelles lignes ne sont pas autorisés dans `[nomdeserveur]` et `[ville]` dans l'argument `--serverinfo`. Voir les [options de la ligne de commande](#options-de-ligne-de-commande) pour plus d'informations sur le code pays. \n"
+msgstr "**Note** : les caractères points-virgules et nouvelles lignes ne sont pas autorisés dans `[nomdeserveur]` et `[ville]` dans l'argument `--serverinfo`. Voir les [options liées au mode serveur](#options-liées-au-mode-serveur) pour plus d'informations sur le code pays. \n"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:143

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-06 20:48+0000\n"
+"PO-Revision-Date: 2023-08-16 09:42+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -361,10 +361,8 @@ msgstr "Minimale setup om in geregistreerde modus uit te voeren"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:132
-#, fuzzy
-#| msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](Running-a-Server#server-types):"
 msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](#server-modes):"
-msgstr "Je kunt een headless server op Linux draaien met behulp van systemd (met `systemctl`), wat in andere secties wordt behandeld. Je kunt een server ook rechtstreeks vanaf de opdrachtregel uitvoeren. Voer de volgende opdracht in om [een geregistreerde server uit te voeren](Running-a-Server#servertypen):"
+msgstr "Je kunt een headless server op Linux draaien met behulp van systemd (met `systemctl`), wat in andere secties wordt behandeld. Je kunt een server ook rechtstreeks vanaf de opdrachtregel uitvoeren. Voer de volgende opdracht in om [een geregistreerde server uit te voeren](#servermodi):"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:133
@@ -385,10 +383,9 @@ msgstr "Zie de onderstaande tabel voor waarden voor 'hostnaam:poort'."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:142
-#, fuzzy, no-wrap
-#| msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Command line options](#command-line-options) for more information on the country code. \n"
+#, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Server mode-related options](#server-mode-related-options) for more information on the country code. \n"
-msgstr "**Opmerking**: Puntkomma's en nieuwe-regeltekens zijn niet toegestaan in `[naam]` en `[stad]` binnen het argument `--serverinfo`. Zie de [opdrachtregelopties](#opdrachtregelopties) voor meer informatie over de landcode. \n"
+msgstr "**Opmerking**: Puntkomma's en nieuwe-regeltekens zijn niet toegestaan in `[naam]` en `[stad]` binnen het argument `--serverinfo`. Zie de [servermodus-gerelateerde opties](#servermodus-gerelateerde-opties) voor meer informatie over de landcode. \n"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:143
