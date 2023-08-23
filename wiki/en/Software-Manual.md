@@ -152,7 +152,7 @@ This turns on a sound alert for when someone joins a Server, or when receiving a
 
 <figure><img src="{% include img/en-screenshots/settings-network.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
 
-### Device
+### Audio Device
 
 Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO
 driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected.
