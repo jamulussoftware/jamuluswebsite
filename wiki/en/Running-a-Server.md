@@ -201,7 +201,7 @@ These options can be used regardless of which mode your Server is running in (al
 Normally, when a Server is stopped or restarted, any Clients that have not pressed their **Disconnect** buttons will automatically re-establish the connection when the Server returns. This option forces Clients to manually re-establish their connections to the Server in this scenario.
 
 ##### `-F or --fastupdate`
-Reduces latency if Clients connect with **Enable Small Network Buffers** option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.
+Reduces latency if Clients connect with **Small Network Buffers** option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients.
 
 ##### `-l or --log`
 Enable logging, set path and file name
