@@ -8,15 +8,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-08-07 22:46+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-08-28 13:55+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Client-Troubleshooting.md:1
@@ -40,7 +40,7 @@ msgstr "/wiki/Client-Troubleshooting"
 #: ../wiki/en/Client-Troubleshooting.md:1
 #, no-wrap
 msgid "Client Troubleshooting"
-msgstr ""
+msgstr "클라이언트 문제 해결"
 
 #. type: Title #
 #: ../wiki/en/Client-Troubleshooting.md:8
@@ -50,51 +50,48 @@ msgstr "문제 해결하기"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:10
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid " {:.no_toc}\n"
 msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:12
-#, fuzzy, no-wrap
-#| msgid "<details markdown=\"1\">"
+#, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr "<details markdown=\"1\">"
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:14
-#, fuzzy, no-wrap
-#| msgid "<summary>Table of contents</summary>"
+#, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr "<summary> 목차</summary>"
+msgstr "<summary>목차</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:17
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
-msgstr "{:toc}"
+msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:19
-#, fuzzy, no-wrap
-#| msgid "</details>"
+#, no-wrap
 msgid "</details>\n"
-msgstr "</details>"
+msgstr "</details>\n"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:20
 #, no-wrap
 msgid "Don’t hear any sound/Others don’t hear you?"
-msgstr ""
+msgstr "아무 소리도 들리지 않습니다/다른 사람이 당신의 말을 듣지 못합니까?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:23
 msgid "Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your sound card. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://github.com/jamulussoftware/jamulus/discussions) for guidance."
-msgstr ""
+msgstr "간단한 것부터 시작하십시오. 악기/마이크 및 헤드폰이 올바른 소켓에 연결되어 있는지 확인하십시오. 브라우저, 화상 회의 도구 등과 같은 다른 응용 프로그램도 사운드 카드를 사용하고 있지 않은지 확인하십시오. Jamulus를 사용할 때는 해당 기능을 종료해야 합니다. 모든 것이 정상으로 보이고 문제가 지속된다면 사운드 장치 설정에 문제가 있을 가능성이 높습니다. 이는 특정 설정(플랫폼, 하드웨어, 소프트웨어 및 드라이버)에 따라 다르므로 [포럼](https://github.com/jamulussoftware/jamulus/discussions)에 지침을 문의하는 것이 가장 좋습니다."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:25
@@ -106,220 +103,220 @@ msgstr "**Windows 사용자(ASIO4ALL)**: ASIO4ALL 드라이버를 사용하는 �
 #: ../wiki/en/Client-Troubleshooting.md:26
 #, no-wrap
 msgid "Not seeing the headphone or microphone you just connected to your PC?"
-msgstr ""
+msgstr "방금 사용자의 PC에 연결한 헤드폰이나 마이크가 보이지 않습니까?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:29
 msgid "Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded."
-msgstr ""
+msgstr "장치를 연결한 상태에서 Jamulus를 다시 시작하면 됩니다. Jamulus는 현재 사운드 시스템이 로드된 후 연결된 장치를 표시하지 않습니다."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:30
 #, no-wrap
 msgid "Your sound is stuttering"
-msgstr ""
+msgstr "당신의 소리가 끊깁니다"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:33
 msgid "Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency."
-msgstr ""
+msgstr "사용자의 오디오 장치는 사용자가 선택한 버퍼 크기로 작동하지 않을 수 있습니다. Jamulus 설정에서 더 큰 버퍼 크기를 선택하세요. 하지만 가능하다면 다른 장치를 사용하십시오. 버퍼 크기가 크면 대기 시간이 길어집니다."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:34
 #, no-wrap
 msgid "You all sound OK, but it's difficult to keep together"
-msgstr ""
+msgstr "당신들의 모든 소리는 좋습니다. 하지만, 함께 유지하기가 어렵습니다"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:37
 #, no-wrap
 msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the Server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
-msgstr ""
+msgstr "**가능하다면 직접적인 신호를 듣지 마세요.** _서버에서 돌아오는_ 자신의 악기/목소리를 최대한 많이 듣고 있는지 확인하세요. 이 신호는 당신과 당신의 연주 파트너가 동시에 혼합되도록 하며 밴드 동료들에게도 들리는 신호가 될 것입니다. 따라서 이를 듣는다는 것은 서로 동기화된다는 것을 의미합니다(모두의 대기 시간이 합리적으로 낮다고 가정). 한 명 이상의 뮤지션이 이 규칙을 따르지 않으면 연주하거나 노래할 때 속도가 느려집니다.\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:39
 msgid "You can test whether you are hearing your signal correctly by doing the following:"
-msgstr ""
+msgstr "다음을 수행하여 신호가 올바르게 들리는지 테스트할 수 있습니다:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Run Jamulus and connect to a Server with a long ping time (greater than 200ms)"
-msgstr ""
+msgstr "Jamulus를 실행하고 핑 시간이 긴(200ms 이상) 서버에 연결합니다"
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus Server come back, but significantly delayed."
-msgstr ""
+msgstr "손뼉을 한 번 치십시오(또는 악기에서 짧은 음표 하나를 연주하십시오). Jamulus 서버에서 소리가 다시 들리지만 상당히 지연되는 소리가 들립니다."
 
 #. type: Bullet: '3. '
 #: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Click the \"Mute\" button under your Jamulus name/slider in the main Jamulus mixer window (**NOT** the \"Mute Myself\" button on the left)."
-msgstr ""
+msgstr "기본 Jamulus 믹서 창의 Jamulus 이름/슬라이더 아래에 있는 \"음소거\" 버튼을 클릭하세요(왼쪽에 있는 \"직접 음소거\" 버튼 **아님**)."
 
 #. type: Bullet: '4. '
 #: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Clap your hands again."
-msgstr ""
+msgstr "다시 손뼉을 치세요."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:46
 msgid "If you hear two claps after step 2, or any claps after step 4, then you are **not** obeying Rule Number One - you have your local audio enabled and should disable it."
-msgstr ""
+msgstr "2단계 후에 두 번 박수소리가 들리거나 4단계 후에 박수소리가 한 번이라도 들리면 규칙 1번을 준수하지 **않는** 것입니다. 즉, 로컬 오디오가 활성화되어 있으므로 비활성화해야 합니다."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:48
 msgid "Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have \"monitor\" buttons (turn these off), or similar options. **If you are still having problems**, try asking on the [forum](https://github.com/jamulussoftware/jamulus/discussions)."
-msgstr ""
+msgstr "직접 신호를 듣지 않는 정확한 방법은 사운드 인터페이스, 믹싱 데스크, 헤드폰 연결 지점 등 개별 설정에 따라 다릅니다. 예를 들어 일부 오디오 인터페이스에는 \"모니터\" 버튼(해제) 또는 유사한 옵션이 있습니다. **계속 문제가 발생하는 경우** [포럼](https://github.com/jamulussoftware/jamulus/discussions)에 질문해 보세요."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:50
 msgid "Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
-msgstr ""
+msgstr "서버의 신호를 들으면서 다른 음악가와 동기화할 수 있지만 전체 대기 시간(Jamulus의 \"지연\" 표시등으로 표시됨)이 녹색이 아니거나 대부분 노란색인 경우에도 문제가 발생할 수 있습니다. 시간. 이를 돕기 위해 설정을 조정하는 방법을 알아보려면 [소프트웨어 설명서](/wiki/Software-Manual)를 참조하세요."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:51
 #, no-wrap
 msgid "Can't work out your mic settings?"
-msgstr ""
+msgstr "마이크 설정을 해결할 수 없나요?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:54
 msgid "When using a microphone while playing your other instrument, you can use a stereo audio input signal in your settings where one channel is connected to the instrument and the other channel is connected to a microphone signal. On the microphone channel an optional reverberation effect can be applied."
-msgstr ""
+msgstr "다른 악기를 연주하는 동안 마이크를 사용할 때 한 채널은 악기에 연결되고 다른 채널은 마이크 신호에 연결되는 설정에서 스테레오 오디오 입력 신호를 사용할 수 있습니다. 마이크 채널에서는 선택적 잔향 효과를 적용할 수 있습니다."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:55
 #, no-wrap
 msgid "Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
-msgstr ""
+msgstr "버퍼 LED가 갑자기 빨간색으로 변하고, 중단되고, [지터링](https://en.wikipedia.org/wiki/Jitter), 이상한 소리가 나나요?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:58
 msgid "Your computer may be under too much load. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
-msgstr ""
+msgstr "컴퓨터의 부하가 너무 높을 수 있습니다. 귀하의 컴퓨터에서 Jamulus와 경쟁하는 것(예: Zoom Meetings 또는 Facebook 라이브 스트림)을 갖지 않도록 하십시오. 아니면 적어도 플레이하는 동안 종료하세요. 스캔을 수행하는 바이러스 스캐너나 소프트웨어 업데이트 등을 방지합니다. 또한 Jamulus의 리버브 설정은 리버브가 많을수록 더 많은 CPU를 사용한다는 점에 유의하세요."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:59
 #, no-wrap
 msgid "Ping times and latency start well, then get worse, causing issues"
-msgstr ""
+msgstr "핑 시간과 대기 시간이 잘 시작된 후 악화되어 문제가 발생함"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:62
 msgid "This can indicate something else is competing with Jamulus on your network, so make sure nobody is watching HD Netflix movies or taking part in Zoom video conferences while you are playing. A more permanent solution for technically-minded users may be found by investigating [the issue of buffer bloat](https://www.bufferbloat.net/projects/bloat/wiki/) on their router and whether you can implement Smart Queue Management (SQM). [More details here](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
-msgstr ""
+msgstr "이는 네트워크에서 다른 것이 Jamulus와 경쟁하고 있음을 나타낼 수 있으므로 플레이하는 동안 아무도 HD Netflix 영화를 보거나 Zoom 화상 회의에 참여하지 않는지 확인하십시오. 기술적인 생각이 있는 사용자를 위한 보다 영구적인 솔루션은 라우터의 [버퍼 팽창 문제](https://www.bufferbloat.net/projects/bloat/wiki/)와 스마트 대기열 관리 구현 가능 여부를 조사하여 찾을 수 있습니다. (SQM). [자세한 내용은 여기](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:63
 #, no-wrap
 msgid "Getting frustrated with software channels, audio routing, sample rates and more?"
-msgstr ""
+msgstr "소프트웨어 채널, 오디오 라우팅, 샘플링 속도 등에 불만이 있으신가요?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:66
 msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus Server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
-msgstr ""
+msgstr "일반적으로 [믹싱 데스크](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg)를 사용하여 키트(악기, 마이크, 레코더 등)를 연결하는 것이 훨씬 더 쉽고 안정적입니다. 간단한 스테레오 신호를 사운드 인터페이스로 보냅니다(단, 컴퓨터를 통해 Jamulus 서버에서 나오는 사운드를 들어보세요!). 하드웨어, 소프트웨어 및 악기 조합이 매우 다양하다는 것은 특정 구성에 맞게 사운드 카드를 설정하는 것이 매우 빠르게 복잡해질 수 있음을 의미합니다."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:67
 #, no-wrap
 msgid "Somebody joining your jam and being too loud?"
-msgstr ""
+msgstr "누군가가 당신의 잼에 참여했는데 너무 시끄럽나요?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:70
 msgid "You can set your \"New Client Level\" to a low value (e.g. 10), or set the musicians you are playing with to \"Solo\" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all."
-msgstr ""
+msgstr "\"새 클라이언트 레벨\"을 낮은 값(예: 10)으로 설정하거나 함께 연주하는 뮤지션을 \"솔로\" 상태(오른쪽 믹서 패널)로 설정할 수 있습니다. 그렇게 하면 새로운 참가자가 매우 조용해지거나 전혀 들리지 않게 됩니다."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:71
 #, no-wrap
 msgid "Can't see the Server you want to join?"
-msgstr ""
+msgstr "참여하려는 서버가 보이지 않나요?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:74
 msgid "First check that you have the right genre Server selected in your Connect window. Sometimes network issues mean your Client won't list all the available Servers. If you know the name of the Server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter that address in the \"Server Address\" field in the Connect Setup window to connect to it."
-msgstr ""
+msgstr "먼저 연결 창에서 올바른 서버 장르를 선택했는지 확인하세요. 때때로 네트워크 문제로 인해 클라이언트가 사용 가능한 모든 서버를 나열하지 못하는 경우가 있습니다. 가입하려는 서버의 이름을 알고 있다면 [여기에서 IP 주소를 찾아보세요](https://explorer.jamulus.io/). 연결 설정 창의 \"서버 주소\" 필드에 해당 주소를 입력하여 연결합니다."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:75
 #, no-wrap
 msgid "Not seeing a list of Servers at all?"
-msgstr ""
+msgstr "서버 목록이 전혀 표시되지 않습니까?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:78
 msgid "In the UK (and possibly other regions/routers) the Virgin Media Cable Internet Modem setting can cause an issue. \"Block Fragmented IP Packets\" should not be checked. For other routers/ISP, also try turning off SPI (Stateful Packet Inspection) and if that fixes it, you can make a judgment about whether to leave that off or not."
-msgstr ""
+msgstr "영국(및 기타 지역/라우터)에서는 Virgin Media 케이블 인터넷 모뎀 설정으로 인해 문제가 발생할 수 있습니다. \"조각화된 IP 패킷 차단\"을 선택하면 안 됩니다. 다른 라우터/ISP의 경우에도 SPI(Stateful Packet Inspection)를 꺼서 문제가 해결되면 꺼둘지 여부를 판단할 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:80
 msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my Server\""
-msgstr ""
+msgstr "경우에 따라 ISP가 Jamulus 사용을 차단할 수도 있습니다. [서버 문제 해결 페이지](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally)에서 \"아무도 내 서버에 연결할 수 없습니다\"에 대한 참고 사항을 참조하세요"
 
 #. type: Title ##
 #: ../wiki/en/Client-Troubleshooting.md:81
 #, no-wrap
 msgid "Getting an error message saying \"Jamulus\" can't be opened because the developer cannot be verified"
-msgstr ""
+msgstr "개발자를 확인할 수 없기 때문에 \"Jamulus\"를 열 수 없다는 오류 메시지가 나타납니다"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:84
 msgid "If you are using a \"legacy\" version of Jamulus (because you are running an older version of macOS) or an intermediate build, the first time you run Jamulus, you will see a message saying it cannot be opened."
-msgstr ""
+msgstr "이전 버전의 macOS를 실행하고 있기 때문에 Jamulus의 \"기존\" 버전이나 중간 빌드를 사용하는 경우 Jamulus를 처음 실행하면 열 수 없다는 메시지가 표시됩니다."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:86
 msgid "To open Jamulus"
-msgstr ""
+msgstr "Jamulus를 열려면"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
 msgid "Go to the Applications folder via Finder"
-msgstr ""
+msgstr "Finder를 통해 응용 프로그램 폴더로 이동하세요"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
 msgid "Double-click on Jamulus and wait for the above-mentioned message"
-msgstr ""
+msgstr "Jamulus를 두 번 클릭하고 위에서 언급한 메시지를 기다립니다"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
 msgid "Close this message by clicking on \"Cancel\""
-msgstr ""
+msgstr "\"취소\"를 클릭하여 이 메시지를 닫습니다"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
 msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
-msgstr ""
+msgstr "이제 Jamulus를 컨트롤 클릭(또는 마우스 오른쪽 버튼으로 클릭)하고 메뉴 상단에서 \"열기\"를 선택하세요."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:93
 msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From then on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
-msgstr ""
+msgstr "그런 다음 \"열기\"를 클릭할 수 있는 동일한 메시지의 약간 다른 버전이 표시됩니다. 이후부터는 일반적인 방법으로 Jamulus를 실행할 수 있으며 메시지는 나타나지 않습니다. 이 경고에 대한 자세한 내용은 [이 Apple 지원 페이지](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)를 참조하세요."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:94
 #, no-wrap
 msgid "Trouble using Garageband (or other DAW) with Jamulus?"
-msgstr ""
+msgstr "Jamulus와 함께 Garageband(또는 다른 DAW)를 사용하는 데 문제가 있습니까?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:97
 msgid "See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
-msgstr ""
+msgstr "[이 포럼 토론](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994) 참조"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:98
 #, no-wrap
 msgid "Using a Mac and your input is not heard?"
-msgstr ""
+msgstr "Mac을 사용하는데 입력이 들리지 않습니까?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:101
 msgid "(With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
-msgstr ""
+msgstr "(감사한 분:[Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:105
@@ -329,11 +326,14 @@ msgid ""
 "* Go to `Preferences` > `Security & Privacy` > `Privacy` tab\n"
 "* Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list\n"
 msgstr ""
+"어쩌면 ``Jamulus가 마이크에 액세스하고 싶어합니다'' 질문에 '예'라고 대답하지 않았을 수도 있습니다. 이 문제를 해결하려면:\n"
+"* '기본 설정' > '보안 및 개인 정보 보호' > '개인 정보 보호' 탭으로 이동하세요\n"
+"* 왼쪽에서 '마이크'를 찾은 다음 오른쪽 목록에서 'Jamulus'가 활성화되어 있는지 확인하세요\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:108
 msgid "For anything else, please search or post on the [Discussion Forums](https://github.com/jamulussoftware/jamulus/discussions)"
-msgstr ""
+msgstr "그 밖의 사항은 [토론 포럼](https://github.com/jamulussoftware/jamulus/discussions)에서 검색하거나 게시해 주세요"
 
 #~ msgid "TOC"
 #~ msgstr "목차"

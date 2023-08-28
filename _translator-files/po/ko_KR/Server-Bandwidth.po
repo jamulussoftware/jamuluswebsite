@@ -3,18 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
 # 이정희 <redacted@invalid.local>, 2022.
+# 이정희 <daemul72@gmail.com>, 2023.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-21 04:04+0000\n"
-"Last-Translator: 이정희 <redacted@invalid.local>\n"
+"PO-Revision-Date: 2023-08-24 13:00+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Server-Bandwidth.md:1
@@ -43,28 +45,23 @@ msgstr "대역폭 사용"
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr "{% include breadcrumb.html root=\"더보기\" branch1=\"서버 관리\" branch1-url=\"서버 실행\" %}"
+msgstr "{% include breadcrumb.html root=\"더보기\" branch1=\"서버 관리\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:10
-#, fuzzy, no-wrap
-#| msgid "## Audio bandwidth"
+#, no-wrap
 msgid "Audio bandwidth"
-msgstr "## 오디오 대역폭"
+msgstr "오디오 대역폭"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
-#, fuzzy
-#| msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
 msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr "오디오 설정은 필요한 네트워크 대역폭에 영향을 미칩니다. 아래 표에는 다음과 같은 구성과 관련된 네트워크 요구 사항이 요약되어 있습니다:"
+msgstr "오디오 설정은 필요한 네트워크 대역폭에 영향을 미칩니다. 아래 표에는 구성과 관련된 네트워크 요구 사항이 요약되어 있습니다. * 채널: 스테레오/모노 * 음질: 높음/중간/낮음 * 오디오 버퍼 지속 시간: 2.67ms, 5.33ms, 10.67ms, 21.33ms"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
-#, fuzzy
-#| msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
 msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
-msgstr "Kbit/s : 초당 킬로비트 (알림 : 1Mbit/s = 1024Kbit/s, 1KByte/s = 8Kbit/s)"
+msgstr "단위는 다음과 같습니다. * ms : 밀리초 * Kbit/s : 초당 킬로비트 (리마인더: 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : 초당 메가비트"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
@@ -90,10 +87,9 @@ msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:31
-#, fuzzy, no-wrap
-#| msgid "## Network bandwidth"
+#, no-wrap
 msgid "Network bandwidth"
-msgstr "## 네트워크 대역폭"
+msgstr "네트워크 대역폭"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38

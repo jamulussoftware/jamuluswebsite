@@ -2,18 +2,19 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
+# 이정희 <daemul72@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-16 15:25+0000\n"
-"Last-Translator: 이정희 <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-08-21 11:51+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/QOS-Windows.md:1
@@ -46,10 +47,9 @@ msgstr "{% include breadcrumb.html root=\"더보기\" %}"
 
 #. type: Title ##
 #: ../wiki/en/QOS-Windows.md:10
-#, fuzzy, no-wrap
-#| msgid "## Use of QoS on Windows"
+#, no-wrap
 msgid "Use of QoS on Windows"
-msgstr "## Windows에서 QoS 사용"
+msgstr "Windows에서 QoS의 사용"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:13
@@ -68,8 +68,7 @@ msgstr "Jamulus의 QoS 설정(기본값 포함)은 운영 체제로 인해 최�
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:37
-#, fuzzy, no-wrap
-#| msgid "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br> In new window, (click) on the menu icon to display the Actions third panel<br> Looking at the first panel of the Local Group Policy Editor<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br> Looking at the third panel (Actions) of the Local Group Policy Editor<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;More Actions<br> &nbsp;&nbsp;&nbsp;Create new Policy (click)<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>"
+#, no-wrap
 msgid ""
 "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br>\n"
 "In new window, (click) on the menu icon to display the Actions third panel<br>\n"
@@ -90,7 +89,26 @@ msgid ""
 "&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
 "&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>\n"
 "&nbsp;&nbsp;&nbsp;&nbsp;Finish<br>\n"
-msgstr "시작 메뉴 옆의 검색 상자에, 입력하기: 로컬 그룹 정책 편집기 (enter)<br> 새 창에서, 메뉴 아이콘을 (클릭하여) 작업 세 번째 패널 표시하기<br> 로컬 그룹 정책 편집기의 첫 번째 패널 살펴보기 <br> &nbsp;로컬 컴퓨터 정책<br> &nbsp;&nbsp;컴퓨터 구성<br> &nbsp;&nbsp;&nbsp;Windows 설정<br> &nbsp;&nbsp;&nbsp;&nbsp;정책 기반 QoS (클릭)<br> 로컬 그룹 정책 편집기의 세 번째 패널(작업) 살펴보기<br> &nbsp;정책 기반 QoS<br> &nbsp;&nbsp;더 많은 작업<br> &nbsp;&nbsp;&nbsp;새 정책 만들기 (클릭)<br> &nbsp;&nbsp;&nbsp;&nbsp;정책 이름: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;DSCP 값 지정: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;다음<br> &nbsp;&nbsp;&nbsp; 이 QoS 정책은 이름이 Jamulus.exe인 응용 프로그램에만 적용됩니다<br> &nbsp;&nbsp;&nbsp;&nbsp;다음<br> &nbsp;&nbsp;&nbsp;&nbsp;다음<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br > &nbsp;&nbsp;&nbsp;&nbsp;마침<br>"
+msgstr ""
+"시작 메뉴 옆의 검색 상자에 다음을 입력합니다. 로컬 그룹 정책 편집기(입력)<br>\n"
+"새 창에서 메뉴 아이콘을 클릭하여 세 번째 작업 패널을 표시합니다.<br>\n"
+"로컬 그룹 정책 편집기의 첫 번째 패널 보기<br>\n"
+"&nbsp;지역 컴퓨터 정책<br>\n"
+"&nbsp;&nbsp;컴퓨터 구성<br>\n"
+"&nbsp;&nbsp;&nbsp;Windows 설정<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;정책 기반 QoS(클릭)<br>\n"
+"로컬 그룹 정책 편집기의 세 번째 패널(작업) 보기<br>\n"
+"&nbsp;정책 기반 QoS<br>\n"
+"&nbsp;&nbsp;추가 조치<br>\n"
+"&nbsp;&nbsp;&nbsp;새 정책 만들기(클릭)<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;정책 이름: Jamulus<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;DSCP 값 지정: 32<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;다음<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;이 QoS 정책은 이름이 Jamulus.exe인 응용 프로그램에만 적용됩니다<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;다음<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;다음<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;마침<br>\n"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:39

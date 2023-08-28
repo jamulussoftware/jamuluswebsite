@@ -4,18 +4,19 @@
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
 # 이정희 <redacted@invalid.local>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# 이정희 <daemul72@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-08-07 22:46+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-08-28 13:55+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -39,61 +40,58 @@ msgstr "/wiki/Software-Manual"
 #: ../wiki/en/Software-Manual.md:1
 #, no-wrap
 msgid "Software Manual"
-msgstr ""
+msgstr "소프트웨어 설명서"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:7
 #, no-wrap
 msgid "Jamulus User Manual"
-msgstr ""
+msgstr "Jamulus 사용자 설명서"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:9
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid " {:.no_toc}\n"
 msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:11
 msgid "This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server."
-msgstr ""
+msgstr "이 설명서에는 서버에 연결하기 위해 소프트웨어를 사용하는 뮤지션들과 가수들이 사용할 Jamulus 클라이언트 애플리케이션이 문서화되어 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:13
-#, fuzzy, no-wrap
-#| msgid "<details markdown=\"1\">"
+#, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr "<details markdown=\"1\">"
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:15
-#, fuzzy, no-wrap
-#| msgid "<summary>Table of contents</summary>"
+#, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr "<summary> 목차</summary>"
+msgstr "<summary>목차</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:18
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
-msgstr "{:toc}"
+msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-#, fuzzy, no-wrap
-#| msgid "</details>"
+#, no-wrap
 msgid "</details> \n"
-msgstr "</details>"
+msgstr "</details> \n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:21
 #, no-wrap
 msgid "Main Window"
-msgstr ""
+msgstr "기본 창"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:28
@@ -104,12 +102,16 @@ msgid ""
 "\t<figcaption>Your local mix when connected to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"\t<img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Jamulus 기본 창 이미지\">\n"
+"\t<figcaption>서버에 연결된 경우 사용자의 로컬 믹스</figcaption>\n"
+"</figure>\n"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:29
 #, no-wrap
 msgid "Ping, Delay and Jitter"
-msgstr ""
+msgstr "핑, 딜레이 및 지터"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
@@ -127,37 +129,37 @@ msgstr ""
 #: ../wiki/en/Software-Manual.md:36
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"녹색 LED 기호 이미지\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:38
 #, no-wrap
 msgid "**Green** - The delay is perfect for a jam session\n"
-msgstr ""
+msgstr "**녹색** - 잼 세션에 적합한 지연 시간입니다\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"노란색 LED 기호 이미지\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:42
 #, no-wrap
 msgid "**Yellow** - A session is still possible but it may be harder to play\n"
-msgstr ""
+msgstr "**노란색** - 세션은 여전히 가능하지만 플레이하기가 더 어려울 수 있습니다\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"녹색 빨간색 기호 이미지\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:46
 #, no-wrap
 msgid "**Red** - The delay is too large for jamming\n"
-msgstr ""
+msgstr "**빨간색** - 딜레이가 너무 커서 전파 방해가 발생합니다\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:48
@@ -200,7 +202,7 @@ msgstr ""
 #: ../wiki/en/Software-Manual.md:59
 #, no-wrap
 msgid "Mute Myself button"
-msgstr ""
+msgstr "직접 음소거 버튼"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:62
@@ -328,7 +330,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:117
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
-msgstr ""
+msgstr "사용자 **자신의** 채널을 음소거하면 서버에서 신호가 들리지 않는다는 의미일 뿐입니다(다른 플레이어와 시간을 맞추지 못할 수 있으므로 권장하지 않습니다). 따라서 이는 \"[직접 음소거](#mute-myself-button)\"를 사용하는 것과 동일하지 않습니다."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:118
@@ -626,7 +628,7 @@ msgstr ""
 #: ../wiki/en/Software-Manual.md:241
 #, no-wrap
 msgid "Custom Directories"
-msgstr ""
+msgstr "사용자 지정 디렉터리"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:244
@@ -668,7 +670,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:258
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
-msgstr ""
+msgstr "서버에 연결한 후 처음 3초 동안 오디오 피드백 루프 또는 큰 소음을 감지하려고 시도합니다. 일단 감지되면 이 기능은 메시지를 표시하고, \"직접 음소거\" 버튼을 활성화하여 사용자 자신의 믹스에서 자신을 음소거할 수 있습니다."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:259
@@ -734,10 +736,9 @@ msgstr ""
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:285
-#, fuzzy, no-wrap
-#| msgid "# Command Line Options"
+#, no-wrap
 msgid "Command Line Options"
-msgstr "# 명령 줄 옵션"
+msgstr "명령 줄 옵션"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:288
