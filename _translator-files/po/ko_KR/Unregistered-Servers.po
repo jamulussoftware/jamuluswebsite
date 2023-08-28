@@ -2,10 +2,11 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # 이정희 <daemul72@gmail.com>, 2023.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-03-30 17:41+0000\n"
+"PO-Revision-Date: 2023-08-28 13:55+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ko_KR\n"
@@ -13,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -31,116 +32,116 @@ msgstr "wiki"
 #: ../wiki/en/Unregistered-Servers.md:1
 #, no-wrap
 msgid "/wiki/Unregistered-Servers"
-msgstr ""
+msgstr "/wiki/Unregistered-Servers"
 
 #. type: Title #
 #: ../wiki/en/Unregistered-Servers.md:1 ../wiki/en/Unregistered-Servers.md:10
 #, no-wrap
 msgid "Running an Unregistered Server"
-msgstr ""
+msgstr "등록되지 않은 서버 실행"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"더보기\" branch1=\"서버 관리\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:13
 msgid "It is highly recommended to test your Server by registering it on one of the built-in Directories **first**. This will help you tackle general problems before you try unregistered mode."
-msgstr ""
+msgstr "**먼저** 기본 제공 디렉터리 중 하나에 서버를 등록하여 테스트하는 것이 좋습니다. 이렇게 하면 미등록 모드를 시도하기 전에 일반적인 문제를 해결하는 데 도움이 됩니다."
 
 #. type: Title ##
 #: ../wiki/en/Unregistered-Servers.md:14
 #, no-wrap
 msgid "Setting up a Server behind a home router"
-msgstr ""
+msgstr "가정용 라우터 뒤에서 서버 설정하기"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:17
 msgid "If you set up your Server at home, you will probably need to change some settings in your router/firewall:"
-msgstr ""
+msgstr "집에서 서버를 설정하는 경우, 사용자의 라우터/방화벽의 일부 설정을 변경해야 할 수도 있습니다:"
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:18
 #, no-wrap
 msgid "Port forwarding"
-msgstr ""
+msgstr "포트 포워딩"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:21
 msgid "Normally, people from outside your home network cannot see things inside it. To let external Jamulus Clients connect to your Server, you need to set up port forwarding in your router's settings. The exact setup differs for every router. For help, see your router's documentation or [portforward.com](https://portforward.com)."
-msgstr ""
+msgstr "일반적으로, 홈 네트워크 외부의 사람들은 홈 네트워크 내부의 내용을 볼 수 없습니다. 외부 Jamulus 클라이언트가 서버에 연결되도록 하려면 라우터 설정에서 포트 전달을 설정해야 합니다. 정확한 설정은 라우터마다 다릅니다. 도움이 필요하면 라우터 설명서나 [portforward.com](https://portforward.com)을 참조하세요."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:23
 #, no-wrap
 msgid "**Note:** The default port for Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the computer running the Server.\n"
-msgstr ""
+msgstr "**참고:** Jamulus의 기본 포트는 **UDP**(TCP 아님) 포트 **22124**입니다. 일반적으로 네트워크 외부의 포트 **22124**를 서버를 실행하는 컴퓨터의 포트 **22124**로 전달합니다.\n"
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:24
 #, no-wrap
 msgid "Getting the public IP"
-msgstr ""
+msgstr "공인 IP 가져오기"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:28
 msgid "To allow others to connect to your Server from the internet, give them your public IP address. You can [learn your current public IP address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
-msgstr ""
+msgstr "다른 사람들이 인터넷에서 사용자의 서버에 연결할 수 있도록 허용하려면 공인 IP 주소를 알려주세요. [Google을 사용하여 사용자의 현재 공인 IP 주소를 알아보세요](https://www.google.com/search?q=what+is+my+ip).  서버가 실행 중인 컴퓨터의 로컬 네트워크 주소를 사용하여 직접 연결해야 합니다. 서버와 동일한 컴퓨터에서 클라이언트를 실행하는 경우 주소는 'localhost' 또는 '127.0.0.1'입니다."
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:30
 #, no-wrap
 msgid "Dynamic DNS and why you will probably need it"
-msgstr ""
+msgstr "동적 DNS가 필요한 이유와 필요성"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:33
 msgid "Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. You might want to associate your IP address with a domain name you can share with others that uses \"dynamic DNS\" (DDNS). A \"dynamic DNS\" provider can supply you with the domain name and you keep refreshing your IP address with the provider. Your router might support certain DDNS providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client."
-msgstr ""
+msgstr "사용자의 ISP가 고정 IP 주소를 제공하지 않는 한 시간이 지남에 따라 주소가 변경될 수 있습니다. \"동적 DNS\"(DDNS)를 사용하는 다른 사람과 공유할 수 있는 도메인 이름과 IP 주소를 연결할 수 있습니다. \"동적 DNS\" 공급업체가 사용자에게 도메인 이름을 제공할 수 있으며, 사용자는 해당 공급업체를 통해 IP 주소를 계속 새로 고칩니다. 라우터는 이를 수행하기 위해 특정 DDNS 공급업체를 지원할 수 있습니다. 그렇지 않은 경우 공급업체는 동적 DNS 클라이언트를 설정하는 방법에 대한 지침을 제공합니다."
 
 #. type: Title ##
 #: ../wiki/en/Unregistered-Servers.md:34
 #, no-wrap
 msgid "DNS SRV record support"
-msgstr ""
+msgstr "DNS SRV 레코드 지원"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:37
 msgid "Jamulus Clients support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record). If a Client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus Clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record."
-msgstr ""
+msgstr "Jamulus 클라이언트는 [DNS SRV 레코드(\"서비스\" 레코드)](https://en.wikipedia.org/wiki/SRV_record)를 지원합니다. 클라이언트가 연결하기 창에 제공된 도메인 이름과 연결된 SRV 레코드를 찾으면 SRV 레코드에 나열된 엔드포인트 호스트 및 포트에 연결을 시도합니다. 이 프로세스는 웹 브라우저의 HTTP 리디렉션과 유사하지만 Jamulus 클라이언트와 DNS 서버 사이에서만 이루어집니다. Jamulus 서버는 이 상호 작용에 관여하지 않습니다. Jamulus 서버는 SRV 레코드에 나열된 동일한 포트에서 연결을 수신 대기합니다."
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:38
 #, no-wrap
 msgid "Why is this helpful?"
-msgstr ""
+msgstr "이것이 왜 도움이 되나요?"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:41
 msgid "A Jamulus Client can connect to a Server on a non-default port by specifying the port as part of the server address. A server administrator may want to give users a simple address without the port details, while still serving Jamulus on a non-default port. For this case, the port information can be acquired from an SRV record."
-msgstr ""
+msgstr "Jamulus 클라이언트는 서버 주소의 일부로 포트를 지정하여 기본이 아닌 포트에서 서버에 연결할 수 있습니다. 서버 관리자는 기본이 아닌 포트에서 Jamulus를 계속 서비스하면서 포트 세부 정보 없이 사용자에게 간단한 주소를 제공할 수 있습니다. 이 경우 SRV 레코드에서 포트 정보를 얻을 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:43
 msgid "An address entered in the Connect window could look like ```jamulus.example.com```. If an SRV record is found for this DNS domain, Jamulus Client will try to connect to the Server on the host:port listed in the SRV record, such as ```jamulus.example.com:12345```."
-msgstr ""
+msgstr "연결하기 창에 입력된 주소는 ``jamulus.example.com``'과 유사할 수 있습니다. 이 DNS 도메인에 대한 SRV 레코드가 발견되면 Jamulus 클라이언트는 ```jamulus.example.com:12345```와 같이 SRV 레코드에 나열된 호스트:포트의 서버에 연결을 시도합니다."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:45
 msgid "If no SRV records are found on the DNS server, a Client will attempt to connect to the Server as specified in the connection window."
-msgstr ""
+msgstr "DNS 서버에서 SRV 레코드가 발견되지 않으면 클라이언트는 연결 창에 지정된 대로 서버에 연결을 시도합니다."
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:46
 #, no-wrap
 msgid "Creating SRV records"
-msgstr ""
+msgstr "SRV 레코드 생성하기"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:49
 msgid "SRV records are created by the administrator of the domain being used to host the Jamulus server. The SRV records are added through the administration portal (or API if available) of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this."
-msgstr ""
+msgstr "SRV 레코드는 Jamulus 서버를 호스팅하는 데 사용되는 도메인 관리자가 생성합니다. SRV 레코드는 도메인의 DNS 호스팅 서비스의 관리 포털(또는 사용 가능한 경우 API)을 통해 추가됩니다. SRV 레코드 항목의 형식은 DNS 호스팅 서비스에 따라 다를 수 있지만 일반적으로 다음과 같습니다."
 
 #. type: Fenced code block
 #: ../wiki/en/Unregistered-Servers.md:50
@@ -152,33 +153,38 @@ msgid ""
 "  \n"
 "  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 msgstr ""
+"  _service._proto.name. ttl IN SRV 우선순위 가중치 포트 대상\n"
+"  \n"
+"   # 또는 더 구체적으로\n"
+"  \n"
+"   _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:59
 #, no-wrap
 msgid "**Note:** You can host many Jamulus Servers at different ports on one host by giving each its own SRV record.\n"
-msgstr ""
+msgstr "**참고:** 각각 고유한 SRV 레코드를 제공하여 한 호스트의 서로 다른 포트에서 여러 Jamulus 서버를 호스팅할 수 있습니다.\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:61
 msgid "See the documentation of your DNS provider for instructions on creating an SRV record."
-msgstr ""
+msgstr "SRV 레코드 생성에 대한 지침은 DNS 공급업체의 설명서를 참조하세요."
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:62
 #, no-wrap
 msgid "Example use case with SRV records"
-msgstr ""
+msgstr "SRV 레코드 사용 사례의 예시"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:65
 msgid "This example assumes the DNS contains an A or CNAME record that resolves to ```server1.example.com```, where three Jamulus Server instances are running, each listening on one of the three ports listed below."
-msgstr ""
+msgstr "이 예시에서는 DNS에 ``server1.example.com``'으로 확인되는 A 또는 CNAME 레코드가 포함되어 있다고 가정합니다. 여기서 Jamulus Server 인스턴스 3개가 실행되고 각각 아래 나열된 포트 3개 중 하나에서 수신 대기합니다."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:67
 msgid "Alternatively, `server1.example.com` can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers)."
-msgstr ""
+msgstr "대안으로, `server1.example.com`은 라우터, NAT-gateway 또는 각 포트를 백엔드 Jamulus 서버(또는 여러 서버)로 전달하는 load-balancer일 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:74
@@ -190,9 +196,14 @@ msgid ""
 "| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
 "| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
 msgstr ""
+"| JAMULUS 클라이언트     |  DNS SRV 레코드                                                             | JAMULUS 서버             |\n"
+"| ------------------ | --------------------------------------------------------------------------- | -------------------------- |\n"
+"| rock.example.com  |  _jamulus._udp.rock.example.com 300 IN SRV 0 5 22124 server1.example.com  | server1.example.com:22124 |\n"
+"| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
+"| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:76
 #, no-wrap
 msgid "*It's important to remember that DNS is not forwarding connections. It's simply telling Jamulus Client what public host:port to connect to.*\n"
-msgstr ""
+msgstr "*DNS는 연결을 전달하지 않는다는 점을 기억하는 것이 중요합니다. 이는 단순히 연결할 공용 호스트:포트를 Jamulus 클라이언트에 알려주는 것뿐입니다.*\n"
