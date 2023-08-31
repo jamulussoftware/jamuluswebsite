@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-03-30 17:41+0000\n"
+"PO-Revision-Date: 2023-08-22 09:52+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -60,128 +60,114 @@ msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
-#, fuzzy, no-wrap
-#| msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
+#, no-wrap
 msgid "**Upgrading?** You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.\n"
-msgstr "업그레이드중입니까? 먼저 [사용자의 구성 백업](Software-Manual#backing-up-jamulus)을 원할 수 있습니다."
+msgstr "**업그레이드하시겠습니까?** 먼저 [사용자의 구성을 백업](Software-Manual#backing-up-jamulus)하는 것이 좋습니다.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
 #, no-wrap
 msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.\n"
-msgstr ""
+msgstr "**서버를 설치하시겠습니까?** 먼저 [서버 관리자용 가이드](서버 실행)를 읽어 보십시오.\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:20
-#, fuzzy, no-wrap
-#| msgid "### Debian and Ubuntu"
+#, no-wrap
 msgid "Debian and Ubuntu"
-msgstr "### 데비안 및 우분투"
+msgstr "데비안 및 우분투"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:22
 #, no-wrap
 msgid "Using the official Repository (recommended)"
-msgstr ""
+msgstr "공식 저장소 사용하기 (권장됨)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:25
 msgid "We provide a repository for Debian and Ubuntu based distributions that allows automatic updates alongside your other system updates. To use the repository:"
-msgstr ""
+msgstr "우리는 사용자의 다른 시스템 업데이트와 함께 자동 업데이트를 허용하는 데비안 및 우분투 기반 배포를 위한 저장소를 제공합니다. 저장소를 사용하려면:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 msgid "Open your Terminal (CTRL+ALT+T should work)"
-msgstr ""
+msgstr "사용자의 터미널을 엽니다 (CTRL+ALT+T가 작동해야 함)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 #: ../wiki/en/Installation-for-Linux.md:48
-#, fuzzy
-#| msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).\n"
 msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788))."
-msgstr "* 우분투 전용 * - 우분투 \"universe\"저장소를 활성화합니다([GUI 기반 접근 방식](https://askubuntu.com/a/148645) 또는 [CLI 기반 접근 방식](https://askubuntu. com/a/227788)).\n"
+msgstr "* 우분투 전용 * - 우분투 \"universe\" 저장소를 사용하도록 설정합니다([GUI 기반 접근 방식])(https://askubuntu.com/a/148645) 또는 [CLI 기반 접근 방식](https://askubuntu.com/a/227788)) 을 사용할 수 있습니다)."
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 msgid "Download the repository setup script:\\\\"
-msgstr ""
+msgstr "저장소 설정 스크립트 다운로드:\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:29
 #, no-wrap
 msgid "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
-msgstr ""
+msgstr "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:33
 msgid "Make the script executable:\\\\"
-msgstr ""
+msgstr "스크립트를 실행 가능하게 만들기:\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:33
 #, no-wrap
 msgid "chmod +x setup_repo.sh\n"
-msgstr ""
+msgstr "chmod +x setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:37
 msgid "Run the setup script and install Jamulus:\\\\"
-msgstr ""
+msgstr "설정 스크립트를 실행하고 Jamulus 설치하기:\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:37
 #, no-wrap
 msgid "sudo ./setup_repo.sh && sudo apt install jamulus\n"
-msgstr ""
+msgstr "sudo ./setup_repo.sh && sudo apt install jamulus\n"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:41
 #, no-wrap
 msgid "Installing the .deb files manually"
-msgstr ""
+msgstr ".deb 파일 수동 설치하기"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, fuzzy
-#| msgid "[Download Jamulus 32 bit (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button} [Download Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
 msgid "Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
-msgstr "[Jamulus 32비트(.deb, armhf) 다운로드]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button} [Jamulus 64비트 (.deb, arm64) 다운로드]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
+msgstr "사용자의 아키텍처에 맞는 Jamulus 다운로드: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, fuzzy
-#| msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`\n"
 msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
-msgstr "콘솔 창을 열어 apt를 업데이트하고(CTRL+ALT+T가 작동해야 함) `sudo apt-get update`를 입력합니다\n"
+msgstr "콘솔 창을 열고(CTRL+ALT+T가 작동해야 함) `sudo apt-get update`를 입력하여 apt를 업데이트합니다"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, fuzzy
-#| msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` for arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)"
-msgstr "설치 프로그램을 다운로드 한 위치로 이동하여 두 번 클릭하거나, 명령 줄을 사용합니다: `sudo apt install ./{{ site.download_file_names.deb-gui }}` armhf의 경우: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` arm64의 경우: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
+msgstr "설치 프로그램을 다운로드한 위치로 이동하여 두 번 클릭하거나, 명령줄을 사용합니다. `sudo apt install ./{{ site.download_file_names.deb-gui }}`(또는 위와 같이 Raspberry Pi 등의 경우)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, fuzzy
-#| msgid "Once installed, you can delete the file and close any console windows.\n"
 msgid "Once installed, you can delete the file and close any console windows."
-msgstr "설치가 완료되면 파일을 삭제하고 콘솔 창을 닫을 수 있습니다.\n"
+msgstr "설치한 후에는 파일을 삭제하고 모든 콘솔 창을 닫을 수 있습니다."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:50
-#, fuzzy, no-wrap
-#| msgid "Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above."
+#, no-wrap
 msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version and install Jamulus manually, just download the new .deb file and re-install as above.\n"
-msgstr "Jamulus를 최신 버전으로 업그레이드해야 하는 경우, 새 .deb 파일을 다운로드하고 위와 같이 다시 설치하면 됩니다."
+msgstr "**업그레이드:** Jamulus를 최신 버전으로 업그레이드하고 Jamulus를 수동으로 설치해야 하는 경우, 새 .deb 파일을 다운로드하고 위와 같이 다시 설치하면 됩니다.\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:51
-#, fuzzy, no-wrap
-#| msgid "### Other distributions"
+#, no-wrap
 msgid "Other distributions"
-msgstr "### 다른 배포판"
+msgstr "다른 배포판"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:54
@@ -190,17 +176,15 @@ msgstr "다른 배포판의 설치 프로그램은 패키지 관리자 및 [Repo
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:55
-#, fuzzy, no-wrap
-#| msgid "## Set up your hardware"
+#, no-wrap
 msgid "Set up your hardware"
-msgstr "## 사용자의 하드웨어 설정"
+msgstr "사용자의 하드웨어 설정"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:57
-#, fuzzy, no-wrap
-#| msgid "### Configure JACK with QjackCtl"
+#, no-wrap
 msgid "Configure JACK with QjackCtl"
-msgstr "### QjackCtl로 JACK 구성"
+msgstr "QjackCtl로 JACK 구성하기"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:60
@@ -239,10 +223,9 @@ msgstr "새 설정을 적용하려면 JACK을 다시 시작합니다"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:70
-#, fuzzy, no-wrap
-#| msgid "### Start Jamulus"
+#, no-wrap
 msgid "Start Jamulus"
-msgstr "### Jamulus 시작하기"
+msgstr "Jamulus 시작하기"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:73
@@ -268,7 +251,7 @@ msgstr "살펴보기"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:80
 msgid "[Getting Started page](Getting-Started){: .button}"
-msgstr "[시작하기 페이지](시작하기){: .button}"
+msgstr "[시작하기 페이지](Getting-Started){: .button}"
 
 #~ msgid "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
 #~ msgstr "[Jamulus (.deb, amd64) 다운로드]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"

@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-08-07 22:46+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-08-21 11:51+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
@@ -92,10 +92,9 @@ msgstr "_[Steinberg의 라이선스 계약](https://www.steinberg.net/developers
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:28
-#, fuzzy, no-wrap
-#| msgid "If you don't want to use ASIO or prefer [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), you can also use the [JACK version of Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})."
+#, no-wrap
 msgid "**Note:** If you don't want to use ASIO or prefer [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), you can also use the [JACK version of Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }}). You can find old (legacy) versions supporting outdated operating systems on the [GitHub release page](https://github.com/jamulussoftware/jamulus/releases).\n"
-msgstr "ASIO를 사용하지 않거나 [Windows의 JACK](https://jackaudio.org/faq/jack_on_windows.html)를 선호하는 경우 [JACK 버전의 Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})를 사용할 수도 있습니다."
+msgstr "**참고:** ASIO를 사용하고 싶지 않거나 [Windows의 JACK](https://jackaudio.org/faq/jack_on_windows.html)를 선호하는 경우, [Jamulus의 JACK 버전]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }}). [GitHub 릴리스 페이지](https://github.com/jamulussoftware/jamulus/releases)에서 오래된 운영 체제를 지원하는 이전(기존) 버전을 찾을 수 있습니다.\n"
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:31
@@ -162,17 +161,13 @@ msgstr "Jamulus로 시작하기 전에:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:58
-#, fuzzy
-#| msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.\n"
 msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running."
-msgstr "**모든 응용 프로그램을 닫습니다** (특히 브라우저 / 미디어 플레이어와 같은 사운드 카드에 액세스할 수있는 응용 프로그램). ASIO4ALL은 사운드 카드에 독점적으로 액세스해야하므로 ASIO4ALL과 Jamulus가 실행되는 경우 다른 프로그램에서 오디오를 사용할 수 없습니다.\n"
+msgstr "**모든 응용 프로그램을 닫습니다**(특히 브라우저/미디어 플레이어와 같이 사운드 카드에 액세스할 수 있는 응용 프로그램). ASIO4ALL은 사운드 카드에 대한 독점 액세스가 필요합니다. 즉, ASIO4ALL 및 Jamulus가 실행 중인 경우 다른 프로그램에서 오디오를 사용할 수 없습니다."
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:58
-#, fuzzy
-#| msgid "Before you start with Jamulus: 1. **Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running.  1. If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
 msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
-msgstr "Jamulus를 시작하기 전에: 1. **모든 응용 프로그램을 닫습니다**(특히 브라우저/미디어 플레이어와 같이 사운드 카드에 액세스할 수 있는 응용 프로그램). ASIO4ALL은 사운드 카드에 대한 독점 액세스가 필요합니다. 즉, ASIO4ALL 및 Jamulus가 실행 중인 경우, 다른 프로그램에서 오디오를 사용할 수 없습니다. 1. Jamulus 오디오가 처음부터 작동하지 않으면 ASIO4ALL의 **올바른 입력/출력**만 **켜져 있는지** 확인하세요. 다른 모든 것은 꺼야 합니다. [작업 중인 ASIO4ALL 구성의 커뮤니티 목록](/kb/2021/03/20/ASIO4ALL-Examples.html)에서 구성을 검색하거나 사용자의 구성을 찾을 수 없는 경우 수동으로 수행하세요:"
+msgstr "Jamulus 오디오가 기본적으로 작동하지 않는 경우 ASIO4ALL의 **올바른 입력/출력**만 **켜져 있는지 확인하십시오**. 그 외의 모든 것은 꺼져 있어야 합니다. 사용자의 구성에 대한 [작업 중인 ASIO4ALL 구성의 커뮤니티 목록](/kb/2021/03/20/ASIO4ALL-Examples.html)을 검색하거나, 사용자의 구성을 찾을 수 없는 경우 수동으로 수행하십시오:"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:59

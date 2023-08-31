@@ -4,18 +4,19 @@
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
 # 이정희 <redacted@invalid.local>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# 이정희 <daemul72@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-08-07 22:46+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-08-26 13:24+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/FAQ.md:1
@@ -45,44 +46,41 @@ msgstr "자주 묻는 질문(FAQ)"
 #: ../wiki/en/FAQ.md:8
 #, no-wrap
 msgid "Jamulus FAQ"
-msgstr ""
+msgstr "Jamulus FAQ"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:10
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid " {:.no_toc}\n"
 msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:12
-#, fuzzy, no-wrap
-#| msgid "<details markdown=\"1\">"
+#, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr "<details markdown=\"1\">"
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:14
-#, fuzzy, no-wrap
-#| msgid "<summary>Table of contents</summary>"
+#, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr "<summary> 목차</summary>"
+msgstr "<summary>목차</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:17
-#, fuzzy, no-wrap
-#| msgid "{:toc}"
+#, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
-msgstr "{:toc}"
+msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:19
-#, fuzzy, no-wrap
-#| msgid "</details>"
+#, no-wrap
 msgid "</details>\n"
-msgstr "</details>"
+msgstr "</details>\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:21
@@ -92,142 +90,139 @@ msgstr "**Jamulus를 사용할 때 발생하는 일반적인 문제와 해결 �
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:23
-#, fuzzy, no-wrap
-#| msgid "### Is there a metronome, synchronization, or some other way of keeping in time?"
+#, no-wrap
 msgid "Is there a metronome, synchronization, or some other way of keeping in time?"
-msgstr "### 메트로놈, 동기화 또는 시간을 맞추는 다른 방법이 있습니까?"
+msgstr "메트로놈, 동기화 또는 시간을 유지하는 다른 방법이 있습니까?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
-#, fuzzy
-#| msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want to have a time signal, then there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
 msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
-msgstr "아니요. Jamulus 서버의 뮤지션들은 직접 연주하는 것처럼 실시간으로 함께 연주합니다. 시간 신호를 원한다면 시도 할 수있는 인터넷에 공유 메트로놈 솔루션이 있습니다. 그러나 대기 시간을 최소화하여 아무도 약 30-50ms 이상의 전체 지연을 갖지 않도록하는 것이 가장 좋습니다."
+msgstr "아니요. Jamulus 서버의 뮤지션들은 직접 연주하는 것처럼 실시간으로 함께 연주합니다. 시간 신호를 원할 경우 인터넷에서 공유 메트로놈 솔루션을 시도해 볼 수 있습니다. 그러나 대기 시간을 최소화하여 아무도 전체 지연 시간이 약 30-50ms를 넘지 않도록 하는 것이 가장 좋습니다."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:28
 msgid "Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly."
-msgstr ""
+msgstr "또한 모든 참가자는 [황금률](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)을 따라야 하며 시간에 맞춰 제대로 플레이할 수 있는지 여부도 결정됩니다."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:29
 #, no-wrap
 msgid "How do I know if I can join a Server? Are there rules?"
-msgstr ""
+msgstr "서버에 참여할 수 있는지 어떻게 알 수 있나요? 규칙이 있나요?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:32
 msgid "If somebody lists a Server on one of the Directories built into Jamulus, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. Whilst some Servers may state their policies in the welcome message you will see in the chat window, Jamulus itself does nothing to enforce these."
-msgstr ""
+msgstr "누군가 Jamulus에 내장된 디렉터리 중 하나에 서버를 나열하면 누구나 해당 서버에서 플레이할 수 있다는 것을 인정합니다. Jamulus에는 비밀번호 보호나 기타 인증 메커니즘이 없습니다. 일부 서버는 채팅 창에 표시되는 환영 메시지에 정책을 명시할 수 있지만 Jamulus 자체는 이를 시행하기 위해 아무것도 하지 않습니다."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
 msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-modes)."
-msgstr ""
+msgstr "또한 Jamulus 클라이언트가 서버에 연결하기 위해 서버를 디렉터리에 등록할 필요는 없습니다. 서버 운영자는 플레이하려는 서버의 주소를 제공하고 직접 연결할 수 있습니다. [자세한 내용은 이 개요](/wiki/Running-a-Server#server-modes)를 참조하세요."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:35
 #, no-wrap
 msgid "Why shouldn’t I use wireless equipment?"
-msgstr ""
+msgstr "무선 장비를 사용하면 안 되는 이유는 무엇인가요?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:38
 msgid "Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal and whether you are all following [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). An overall delay much bigger than 50 ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70 ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music or you just want to listen."
-msgstr ""
+msgstr "다른 뮤지션들과 함께 제 시간에 연주할 수 있는지 여부는 주로 사운드 신호의 레이턴시(딜레이) 얼마나 되는지, 그리고 모두가 [황금률](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)을 따르고 있는지 여부에 따라 달라집니다. 50ms보다 훨씬 큰 전체 딜레이는 일반적으로 훈련하지 않는 한 시간에 연주하는 것을 너무 어렵게 만듭니다. 일부 뮤지션들은 비트보다 앞서 연주함으로써 최대 70ms의 딜레이에 맞춰 연주할 수 있다고 보고합니다. 하지만 그 이상이면 타이밍이 음악에서 중요한 요소가 아니거나 단순히 듣기만 원하는 경우가 아니라면 너무 어려워집니다."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:40
 msgid "So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50 ms or more."
-msgstr ""
+msgstr "따라서 신호 지연이나 기타 문제의 원인을 최소화하는 것이 좋습니다. 빠른 Wi-Fi도 일반적으로 너무 가변적이어서 장시간 사용하기 어렵고, 블루투스 헤드폰과 마이크는 일반적으로 약 50ms 이상의 지연 시간을 유발합니다."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:41
 #, no-wrap
 msgid "Why should I not listen to my own signal?"
-msgstr ""
+msgstr "왜 내 신호를 듣지 않아야 하나요?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:44
 msgid "For the same reason as you need to minimise delay in your signal in order to play in time, you need to make sure you are playing to your own sound that other musicians are hearing. More information on this, and a way of testing your setup to make sure you are obeying this “Golden Rule” [can be found here](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
-msgstr ""
+msgstr "시간에 맞춰 연주하기 위해 사용자의 신호의 딜레이를 최소화해야 하는 것과 같은 이유로, 다른 뮤지션들이 듣는 사용자 자신의 사운드에 맞춰 연주하고 있는지 확인해야 합니다. 이에 대한 자세한 내용과 이 \"황금률\"을 준수하는지 확인하기 위해 설정을 테스트하는 방법은 [여기에서 확인할 수 있습니다](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:46
 msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server."
-msgstr ""
+msgstr "물론, 어쿠스틱 악기를 연주하거나 가수인 경우 사용자의 “로컬” 사운드를 배제하기 어려울 것입니다. 하지만 적어도 사용자 자신의 소리를 가릴 수 있을 만큼 크게 설정한 폐쇄형 헤드폰을 사용하는 등의 방법을 시도해 보세요. 이렇게 하면 서버에서 돌아오는 믹스에 집중할 수 있습니다."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:47
 #, no-wrap
 msgid "Do I need a fast Internet connection?"
-msgstr ""
+msgstr "빠른 인터넷 연결이 필요하신가요?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
 msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. Most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
-msgstr ""
+msgstr "아니요, 특히 다른 뮤지션들을 호스팅하기 위해 서버를 운영하지 않는 경우에는 더욱 그렇습니다. 낮은 핑을 갖는 것이 더 중요합니다. 표준 광대역(예: 10 Mbit/s 다운로드 및 1 Mbit/s 업로드)을 사용하는 대부분의 사람들은 문제가 없습니다. 집에서 서버를 실행하는 경우 참여하는 사람 수에 따라 _업스트림_ 대역폭이 약 5Mbit/s보다 낮으면 문제가 발생할 수 있습니다."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:51
 #, no-wrap
 msgid "Do I need to run a Server?"
-msgstr ""
+msgstr "서버를 실행해야 합니까?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:54
 msgid "No. If you just intend to connect to other people’s Servers, then all you need is a Client. [Read this if you think you need to run your own Server](/wiki/Running-a-Server)."
-msgstr ""
+msgstr "아니요. 다른 사람의 서버에 연결하려는 경우 클라이언트만 있으면 됩니다. [자체 서버를 실행해야 한다면 이 글을 읽어보세요](/wiki/Running-a-Server)."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:55
 #, no-wrap
 msgid "How does Jamulus work (in general)?"
-msgstr ""
+msgstr "Jamulus는 (일반적으로) 어떻게 작동하나요?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:58
 #, no-wrap
 msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">\n"
-msgstr ""
+msgstr "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Jamulus의 작동 방식을 보여주는 다이어그램\">\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61
 msgid "Jamulus works on the Client-server principle. Everybody’s audio is sent to a Server, mixed and processed there. Afterwards, the audio is sent back to each Client. If a Server is registered in a Jamulus Directory, the Server's information will be provided to all Clients using that Directory."
-msgstr ""
+msgstr "Jamulus는 클라이언트-서버 원칙을 따릅니다. 모든 사람의 오디오는 서버로 전송되어 그곳에서 믹싱 및 처리됩니다. 그런 다음 오디오가 각 클라이언트로 다시 전송됩니다. 서버가 Jamulus 디렉터리에 등록된 경우 해당 디렉터리를 사용하는 모든 클라이언트에 서버 정보가 제공됩니다."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:62
 #, no-wrap
 msgid "Why doesn't Jamulus provide video support?"
-msgstr ""
+msgstr "Jamulus에서 비디오 지원을 제공하지 않는 이유는 무엇인가요?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:65
 msgid "Adding video support adds a lot of complexity. You can use other software like Jitsi or Zoom if you want to see others when playing (or have an \"audience\"), but the video will be significantly behind the Jamulus audio."
-msgstr ""
+msgstr "비디오 지원을 추가하면 많은 복잡성이 추가됩니다. 플레이할 때 다른 사람을 보고 싶거나(또는 \"청중\"이 있는 경우), Jitsi 또는 Zoom과 같은 다른 소프트웨어를 사용할 수 있지만, 비디오는 Jamulus 오디오보다 상당히 뒤처지게 됩니다."
 
 #. type: Title ##
 #: ../wiki/en/FAQ.md:67
 #, no-wrap
 msgid "Server FAQ"
-msgstr ""
+msgstr "서버 FAQ"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:69
 #, no-wrap
 msgid "Why do Registered Servers not need port forwarding?"
-msgstr ""
+msgstr "등록된 서버에는 포트 포워딩이 필요하지 않은 이유는 무엇인가요?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
 msgid "Normally, network address translation (NAT) blocks incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, your Jamulus Server initiates an outbound connection when it connects to a Directory. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant port(s) open on your router."
-msgstr ""
+msgstr "일반적으로, NAT(네트워크 주소 변환)는 로컬 네트워크 외부에서 시작된 수신 요청을 차단합니다. 인바운드 트래픽은 아웃바운드 요청과 관련된 패킷(엄밀히 말하면 초기 아웃바운드 연결에 \"관련\" 및 \"설정된\" 패킷)에 대해서만 가능합니다. 등록된 서버 모드에서는 Jamulus 서버가 디렉터리에 연결할 때 아웃바운드 연결을 시작합니다. 그 이후부터 디렉터리는 라우터에서 관련 포트를 계속 열어두기 위해 정기적으로 서버에 (설정된/관련된) 연결 \"핑\"(ICMP 핑 아님)을 보냅니다."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:73
 msgid "However, to reach an Unregistered Server, each Client has to initiate a connection into the Server’s network. A NAT prevents this, so you need to configure your router to allow incoming connection requests on the Jamulus port using port forwarding."
-msgstr ""
+msgstr "그러나 등록되지 않은 서버에 접속하려면, 각 클라이언트가 서버의 네트워크에 연결을 시작해야 합니다. NAT는 이를 방지하므로 포트 포워딩을 사용하여 Jamulus 포트에서 들어오는 연결 요청을 허용하도록 라우터를 구성해야 합니다."
 
 #, no-wrap
 #~ msgid ""
