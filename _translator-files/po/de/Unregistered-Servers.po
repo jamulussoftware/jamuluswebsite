@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-08-24 18:48+0000\n"
+"PO-Revision-Date: 2023-09-01 19:13+0000\n"
 "Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -89,7 +89,7 @@ msgstr "Abrufen der öffentlichen IP"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:28
 msgid "To allow others to connect to your Server from the internet, give them your public IP address. You can [learn your current public IP address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
-msgstr "Damit andere sich mit deinem Server über das Internet verbinden können, gib ihnen deine öffentliche IP-Adresse. Du kannst [deine aktuelle IP-Adresse mit Google ermitteln] (https://www.google.de/search?q=what+is-my+ip).  Du selbst solltest dich über die lokale Netzwerkadresse des Computers verbinden, auf dem der Server läuft. Wenn du einen Client auf demselben Computer wie den Server betreibst, lautet die Adresse `localhost` oder `127.0.0.1`."
+msgstr "Damit andere sich mit deinem Server über das Internet verbinden können, gib ihnen deine öffentliche IP-Adresse. Du kannst [deine aktuelle IP-Adresse mit Google ermitteln](https://www.google.de/search?q=what+is-my+ip).  Du selbst solltest dich über die lokale Netzwerkadresse des Computers verbinden, auf dem der Server läuft. Wenn du einen Client auf demselben Computer wie den Server betreibst, lautet die Adresse `localhost` oder `127.0.0.1`."
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:30
@@ -127,7 +127,7 @@ msgstr "Ein Jamulus-Client kann sich mit einem Server zu einem nicht standardmä
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:43
 msgid "An address entered in the Connect window could look like ```jamulus.example.com```. If an SRV record is found for this DNS domain, Jamulus Client will try to connect to the Server on the host:port listed in the SRV record, such as ```jamulus.example.com:12345```."
-msgstr "Eine Adresse, die in das Verbindungsfenster eingegeben wird, könnte so aussehen: ``jamulus.example.com```. Wenn ein SRV-Eintrag für diese DNS-Domain gefunden wird, versucht der Jamulus-Client, sich mit dem Server über den im SRV-Eintrag angegebenen Host:Port zu verbinden, z. B. ``jamulus.example.com:12345```."
+msgstr "Eine Adresse, die in das Verbindungsfenster eingegeben wird, könnte so aussehen: ```jamulus.example.com```. Wenn ein SRV-Eintrag für diese DNS-Domain gefunden wird, versucht der Jamulus-Client, sich mit dem Server über den im SRV-Eintrag angegebenen Host:Port zu verbinden, z. B. ```jamulus.example.com:12345```."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:45
@@ -208,4 +208,4 @@ msgstr ""
 #: ../wiki/en/Unregistered-Servers.md:76
 #, no-wrap
 msgid "*It's important to remember that DNS is not forwarding connections. It's simply telling Jamulus Client what public host:port to connect to.*\n"
-msgstr "*Es ist wichtig zu wissen, dass DNS keine Verbindungen weiterleitet. Es teilt dem Jamulus-Client lediglich mit, mit welchem öffentlichen Host:Port er sich verbinden soll.*\n"
+msgstr "*Beachte, dass DNS keine Verbindungen weiterleitet. Es teilt dem Jamulus-Client lediglich mit, mit welchem öffentlichen Host:Port er sich verbinden soll.*\n"
