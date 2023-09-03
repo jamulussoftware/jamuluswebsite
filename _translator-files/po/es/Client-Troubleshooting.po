@@ -2,82 +2,90 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # ignotus <please@seeGitHubOrWeblate.local>, 2022.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2022, 2023.
+# gallegonovato <fran-carro@hotmail.es>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-14 13:50+0000\n"
-"Last-Translator: ignotus <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-05-16 09:52+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Client-Troubleshooting.md:1
 #, no-wrap
 msgid "en"
 msgstr "es"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Client-Troubleshooting.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Client-Troubleshooting.md:1
 #, no-wrap
 msgid "/wiki/Client-Troubleshooting"
 msgstr "/wiki/Client-Troubleshooting"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Client-Troubleshooting.md:1
 #, no-wrap
 msgid "Client Troubleshooting"
 msgstr "Resolución de Problemas del Cliente"
 
+#. type: Title #
+#: ../wiki/en/Client-Troubleshooting.md:8
+#, no-wrap
+msgid "Troubleshooting"
+msgstr "Resolución de Problemas"
+
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:10
 #, no-wrap
-msgid ""
-"# Troubleshooting\n"
-" {:.no_toc}\n"
-msgstr ""
-"# Resolución de Problemas\n"
-" {:.no_toc}\n"
+msgid " {:.no_toc}\n"
+msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:12
-msgid "<details markdown=\"1\">"
-msgstr "<details markdown=\"1\">"
+#, no-wrap
+msgid "<details markdown=\"1\">\n"
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:14
-msgid "<summary>Table of contents</summary>"
-msgstr "<summary>Tabla de contenidos</summary>"
-
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:16
-msgid "TOC"
-msgstr "TOC"
+#, no-wrap
+msgid "<summary>Table of contents</summary>\n"
+msgstr "<summary>Tabla de contenidos</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:17
-msgid "{:toc}"
-msgstr "{:toc}"
+#, no-wrap
+msgid ""
+"* TOC\n"
+" {:toc}\n"
+msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:19
-msgid "</details>"
-msgstr "</details>"
+#, no-wrap
+msgid "</details>\n"
+msgstr "</details>\n"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:21
-msgid "### Don’t hear any sound/Others don’t hear you?"
-msgstr "### ¿No escuchas nada/Otros no pueden escucharte?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:20
+#, no-wrap
+msgid "Don’t hear any sound/Others don’t hear you?"
+msgstr "¿No escuchas nada/Otros no pueden escucharte?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:23
@@ -90,30 +98,33 @@ msgstr "Empieza por lo sencillo: asegúrate de que tu instrumento/micrófono y a
 msgid "**Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4ALL setup section](Installation-for-Windows#setting-up-asio4all)\n"
 msgstr "**Usuarios de Windows (ASIO4ALL)**: Si estás utilizando el driver ASIO4ALL, mira [la sección de configuración para ASIO4ALL](Installation-for-Windows#configurar-asio4all)\n"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:27
-msgid "### Not seeing the headphone or microphone you just connected to your PC?"
-msgstr "### ¿No ves el auricular o el micrófono que acabas de conectar a tu PC?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:26
+#, no-wrap
+msgid "Not seeing the headphone or microphone you just connected to your PC?"
+msgstr "¿No ves el auricular o el micrófono que acabas de conectar a tu PC?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:29
 msgid "Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded."
 msgstr "Simplemente reinicia Jamulus con tu dispositivo conectado. Actualmente Jamulus no muestra dispositivos que han sido conectados tras cargarse el sistema de sonido."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:31
-msgid "### Your sound is stuttering"
-msgstr "### Tu sonido se entrecorta"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:30
+#, no-wrap
+msgid "Your sound is stuttering"
+msgstr "Tu sonido se entrecorta"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:33
 msgid "Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency."
 msgstr "Quizá tu dispositivo de audio no funciona con el tamaño de buffer que has seleccionado. Selecciona un buffer mayor en la configuración de Jamulus. Sin embargo, si es posible, utiliza otro dispositivo, ya que los buffers más altos significan mayor latencia."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:35
-msgid "### You all sound OK, but it's difficult to keep together"
-msgstr "### Todos suenan bien pero es difícil tocar todos juntos manteniendo el tiempo"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:34
+#, no-wrap
+msgid "You all sound OK, but it's difficult to keep together"
+msgstr "Todos suenan bien pero es difícil tocar todos juntos manteniendo el tiempo"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:37
@@ -126,22 +137,22 @@ msgstr "**Si es posible, NO escuches tu señal directa.** Intenta en lo posible 
 msgid "You can test whether you are hearing your signal correctly by doing the following:"
 msgstr "Puedes probar si estás escuchando correctamente tu señal haciendo lo siguiente:"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:41
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Run Jamulus and connect to a Server with a long ping time (greater than 200ms)"
 msgstr "Inicia Jamulus y conéctate a un Servidor con un ping muy alto (mayor de 200 ms)"
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:42
+#. type: Bullet: '2. '
+#: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus Server come back, but significantly delayed."
 msgstr "Choca las manos una vez (o toca una nota breve en un instrumento). Deberías de escuchar el sonido que vuelve del Servidor de Jamulus, pero con un retardo importante."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:43
+#. type: Bullet: '3. '
+#: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Click the \"Mute\" button under your Jamulus name/slider in the main Jamulus mixer window (**NOT** the \"Mute Myself\" button on the left)."
 msgstr "Activa el botón de \"Mute\" bajo tu nombre/fader en la ventana principal del mezclador de Jamulus (**NO** el botón de \"Silenciarme Yo\" a la izquierda)."
 
-#. type: Plain text
+#. type: Bullet: '4. '
 #: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Clap your hands again."
 msgstr "Choca las manos de nuevo."
@@ -161,70 +172,77 @@ msgstr "Exactamente cómo evitas escuchar tu señal directa dependerá de tu con
 msgid "Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
 msgstr "Ten en cuenta que aunque escuches la señal del Servidor y esto asegura que estás en sincronización con los demás músicos, puedes experimentar problemas si tu retardo total (indicado por la luz de \"Retardo\" en Jamulus) no está en verde o al menos en amarillo la mayor parte del tiempo. Consulta el [manual de software](/wiki/Software-Manual) para entender cómo ajustar tu configuración para mejorar este aspecto."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:52
-msgid "### Can't work out your mic settings?"
-msgstr "### ¿Dificultades a la hora de configurar el micrófono?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:51
+#, no-wrap
+msgid "Can't work out your mic settings?"
+msgstr "¿Dificultades a la hora de configurar el micrófono?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:54
 msgid "When using a microphone while playing your other instrument, you can use a stereo audio input signal in your settings where one channel is connected to the instrument and the other channel is connected to a microphone signal. On the microphone channel an optional reverberation effect can be applied."
 msgstr "Cuando utilizas un micrófono mientras también tocas un instrumento, puedes utilizar una señal de entrada estéreo en la configuración, donde un canal se conecta al instrumento y el otro canal a la señal del micrófono. En el canal del micrófono es posible aplicar un efecto de reverb opcional."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:56
-msgid "### Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
-msgstr "### ¿El LED del buffer se vuelve rojo, cortes, [jitter](https://en.wikipedia.org/wiki/Jitter), sonidos raros?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:55
+#, no-wrap
+msgid "Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
+msgstr "¿El LED del buffer se vuelve rojo, cortes, [jitter](https://en.wikipedia.org/wiki/Jitter), sonidos raros?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:58
 msgid "Your computer may be under too much load. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
 msgstr "Tu ordenador podría estar sobrecargado. Intenta que no haya nada compitiendo con Jamulus (como reuniones por Zoom o streaming en Facebook) en tu máquina. O al menos apágalos mientras tocas. Evita cosas como escaneos del antivirus o actualizaciones de software, etc. Ten en cuenta que la configuración de reverb en Jamulus también consume más CPU cuanto más reverb se aplique."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:60
-msgid "### Ping times and latency start well, then get worse, causing issues"
-msgstr "### Los tiempos del ping y la latencia empiezan bien pero luego empeoran, causando problemas"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:59
+#, no-wrap
+msgid "Ping times and latency start well, then get worse, causing issues"
+msgstr "Los tiempos del ping y la latencia empiezan bien pero luego empeoran, causando problemas"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:62
 msgid "This can indicate something else is competing with Jamulus on your network, so make sure nobody is watching HD Netflix movies or taking part in Zoom video conferences while you are playing. A more permanent solution for technically-minded users may be found by investigating [the issue of buffer bloat](https://www.bufferbloat.net/projects/bloat/wiki/) on their router and whether you can implement Smart Queue Management (SQM). [More details here](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
 msgstr "Esto puede indicar que algo está compitiendo con Jamulus en tu red, así que asegúrate de que nadie está viendo películas en HD en Netflix o realizando una videoconferencia por Zoom mientras tocas. Una solución más permanente para aquellas personas con más inclinación técnica podría ser investigando [el tema del \"buffer bloat\"](https://www.bufferbloat.net/projects/bloat/wiki/) en su router y si es posible implementar Smart Queue Management (SQM). [Más detalles aquí](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:64
-msgid "### Getting frustrated with software channels, audio routing, sample rates and more?"
-msgstr "### ¿Te frustras con los canales de software, ruteo de audio, tasas de muestreo y demás?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:63
+#, no-wrap
+msgid "Getting frustrated with software channels, audio routing, sample rates and more?"
+msgstr "¿Te frustras con los canales de software, ruteo de audio, tasas de muestreo y demás?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:66
 msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus Server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
 msgstr "Normalmente es mucho más fácil y fiable tener una [mesa de mezclas](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) para conectar tu equipo (instrumentos, micrófono, grabadora, etc.) y luego enviar una simple señal estéreo a tu interfaz de audio (¡pero asegúrate de escuchar el sonido resultante del Servidor Jamulus a través del ordenador!). La enorme variedad de combinaciones posibles de hardware, software e instrumentos significa que configurar tu tarjeta de audio para funcionar con tu equipo en particular se puede complicar rápidamente."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:68
-msgid "### Somebody joining your jam and being too loud?"
-msgstr "### ¿Alguien se une a tu jam con el volumen demasiado alto?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:67
+#, no-wrap
+msgid "Somebody joining your jam and being too loud?"
+msgstr "¿Alguien se une a tu jam con el volumen demasiado alto?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:70
 msgid "You can set your \"New Client Level\" to a low value (e.g. 10), or set the musicians you are playing with to \"Solo\" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all."
 msgstr "Puedes establecer el \"Nivel Cliente Nuevo\" a un valor bajo (por ej. 10), o configurar los músicos con quienes tocas a \"Solo\" (a la derecha en el panel del mezclador). De ese modo, los nuevos miembros que se unan estarán a un volumen bajo o silenciados."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:72
-msgid "### Can't see the Server you want to join?"
-msgstr "### ¿No ves el Servidor al que te quieres unir?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:71
+#, no-wrap
+msgid "Can't see the Server you want to join?"
+msgstr "¿No ves el Servidor al que te quieres unir?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:74
 msgid "First check that you have the right genre Server selected in your Connect window. Sometimes network issues mean your Client won't list all the available Servers. If you know the name of the Server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter that address in the \"Server Address\" field in the Connect Setup window to connect to it."
 msgstr "Primero comprueba que tienes el género de Servidor correcto seleccionado en la ventana de Conectar. En ocasiones los problemas de red hacen que tu Cliente no muestre todos los Servidores disponibles. Si conoces el nombre del Servidor al que te quieres unir, puedes [mirar su dirección IP aquí](https://explorer.jamulus.io/). Introduce esa dirección en el campo de \"Dirección Servidor\" en la ventana de Configuración de Conexión para conectarte."
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:76
-msgid "### Not seeing a list of Servers at all?"
-msgstr "### ¿No ves ninguna lista de Servidores?"
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:75
+#, no-wrap
+msgid "Not seeing a list of Servers at all?"
+msgstr "¿No ves ninguna lista de Servidores?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:78
@@ -236,51 +254,109 @@ msgstr "En el Reino Unido (y posiblemente en otras regiones/routers) la configur
 msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my Server\""
 msgstr "En algunos casos, puede ser que tu ISP esté bloqueando Jamulus. Ver la nota en la página [resolución de problemas del servidor](Server-Troubleshooting#nadie-se-puede-conectar-a-mi-servidor---pero-yo-me-puedo-conectar-localmente) sobre \"Nadie se puede conectar a mi Servidor\""
 
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:82
-msgid "### Trouble using Garageband (or other DAW) with Jamulus?"
-msgstr "### Problemas al utilizar Garageband (u otro DAW) con Jamulus?"
+#. type: Title ##
+#: ../wiki/en/Client-Troubleshooting.md:81
+#, no-wrap
+msgid "Getting an error message saying \"Jamulus\" can't be opened because the developer cannot be verified"
+msgstr "Aparece un mensaje de error que dice \"Jamulus\" no se puede abrir porque no se puede verificar al desarrollador"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:84
-msgid "See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
-msgstr "Ver [este hilo del foro](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
+msgid "If you are using a \"legacy\" version of Jamulus (because you are running an older version of macOS) or an intermediate build, the first time you run Jamulus, you will see a message saying it cannot be opened."
+msgstr "Si estás utilizando una versión \"heredada\" de Jamulus (porque estás ejecutando una versión anterior de macOS) o una compilación intermedia, la primera vez que ejecutes Jamulus, verás un mensaje que indica que no se puede abrir."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:86
-msgid "### Using a Mac and your input is not heard?"
-msgstr "### ¿Usas un Mac y tu entrada no se escucha?"
+msgid "To open Jamulus"
+msgstr "Para abrir Jamulus"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:91
+msgid "Go to the Applications folder via Finder"
+msgstr "Ve a la carpeta Aplicaciones a través del Finder"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:91
+msgid "Double-click on Jamulus and wait for the above-mentioned message"
+msgstr "Haz doble clic en Jamulus y espera el mensaje mencionado anteriormente"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:91
+msgid "Close this message by clicking on \"Cancel\""
+msgstr "Cierra este mensaje haciendo clic en \"Cancelar\""
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Client-Troubleshooting.md:91
+msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
+msgstr "Haz clic con la tecla Control presionada (o haz clic con el botón derecho) en Jamulus y selecciona \"Abrir\" en el menú superior."
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:88
+#: ../wiki/en/Client-Troubleshooting.md:93
+msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From then on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
+msgstr "Luego obtendrás una versión ligeramente diferente del mismo mensaje, que te permitirá hacer clic en \"Abrir\". A partir de ese momento, puedes ejecutar Jamulus de forma normal y el mensaje no aparecerá. Para obtener más información sobre esta advertencia, consulta [esta página de soporte de Apple] (https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
+
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:94
+#, no-wrap
+msgid "Trouble using Garageband (or other DAW) with Jamulus?"
+msgstr "Problemas al utilizar Garageband (u otro DAW) con Jamulus?"
+
+#. type: Plain text
+#: ../wiki/en/Client-Troubleshooting.md:97
+msgid "See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
+msgstr "Ver [este hilo del foro](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
+
+#. type: Title ###
+#: ../wiki/en/Client-Troubleshooting.md:98
+#, no-wrap
+msgid "Using a Mac and your input is not heard?"
+msgstr "¿Usas un Mac y tu entrada no se escucha?"
+
+#. type: Plain text
+#: ../wiki/en/Client-Troubleshooting.md:101
 msgid "(With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 msgstr "(Con agradecimientos a [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:90
-msgid "Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:"
-msgstr "Quizá no respondiste \"Sí\" al reto de `\"Jamulus quiere acceder a tu micrófono\"`.  Para arreglarlo:"
-
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:91
-msgid "Go to `Preferences` > `Security & Privacy` > `Privacy` tab"
-msgstr "Ve a `Preferencias` > `Seguridad & Privacidad` > pestaña de `Privacidad`"
-
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:92
-msgid "Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list"
-msgstr "Busca `Micrófono` a la izquierda y luego asegúrate de que `Jamulus` está activado en la lista de la derecha"
-
-#. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:94
+#: ../wiki/en/Client-Troubleshooting.md:105
 #, no-wrap
-msgid "***\n"
-msgstr "***\n"
+msgid ""
+"Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:\n"
+"* Go to `Preferences` > `Security & Privacy` > `Privacy` tab\n"
+"* Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list\n"
+msgstr ""
+"Puede que no hayas respondido \"Sí\" a la pregunta \"Jamulus quiere acceder a tu micrófono\".  Para solucionarlo:\n"
+"* Ve a \"Preferencias\" > \"Seguridad y Privacidad\" > \"Privacidad\".\n"
+"* Busca \"Micrófono\" a la izquierda y asegúrate de que \"Jamulus\" está activado en la lista de la derecha.\n"
 
 #. type: Plain text
-#: ../wiki/en/Client-Troubleshooting.md:95
+#: ../wiki/en/Client-Troubleshooting.md:108
 msgid "For anything else, please search or post on the [Discussion Forums](https://github.com/jamulussoftware/jamulus/discussions)"
 msgstr "Para cualquier otra cosa, por favor busca o publica un post en los [Foros de Discusión](https://github.com/jamulussoftware/jamulus/discussions)"
+
+#, no-wrap
+#~ msgid ""
+#~ "# Troubleshooting\n"
+#~ " {:.no_toc}\n"
+#~ msgstr ""
+#~ "# Resolución de Problemas\n"
+#~ " {:.no_toc}\n"
+
+#~ msgid "TOC"
+#~ msgstr "TOC"
+
+#~ msgid "Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:"
+#~ msgstr "Quizá no respondiste \"Sí\" al reto de `\"Jamulus quiere acceder a tu micrófono\"`.  Para arreglarlo:"
+
+#~ msgid "Go to `Preferences` > `Security & Privacy` > `Privacy` tab"
+#~ msgstr "Ve a `Preferencias` > `Seguridad & Privacidad` > pestaña de `Privacidad`"
+
+#~ msgid "Find `Microphone` on the left and then make sure `Jamulus` is enabled on the right-hand list"
+#~ msgstr "Busca `Micrófono` a la izquierda y luego asegúrate de que `Jamulus` está activado en la lista de la derecha"
+
+#, no-wrap
+#~ msgid "***\n"
+#~ msgstr "***\n"
 
 #~ msgid "### Getting a loud squeal if you connect to a server"
 #~ msgstr "### Escuchas un gran chirrido si te conectas a un servidor"

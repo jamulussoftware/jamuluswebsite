@@ -35,7 +35,7 @@
 <body class="mainsite">
   <header class="fx-row fx-row-center-xs">
     <div class="fx-col-100-xs">
-      <img alt="{{ page.mAltProgIcon }}" width="200" height="200" src="{{ '/assets/img/jamulus-icon-2020.svg' | relative_url }}" id="jamulusicon" />
+      <img alt="{{ page.mAltProgIcon }}" width="200" height="200" src="{{ '/assets/img/jamulus-icon-2020.svg' | relative_url }}" id="jamulusicon">
       <h1>Jamulus</h1>
       <span>{{ page.mTSlogan }}</span>
     </div>
@@ -45,7 +45,7 @@
           <a href="wiki/Getting-Started" id="get_started_btn_top">{{ page.mTGetStartedNow }}</a>
         </div>
         <div class="fx-col-100-xs" id="quick_dl_container">
-          {{ page.mTDownloadNow }} <a href="{{ site.download_root_link }}{{ site.download_file_names.windows }}" target="_blank" rel="noreferrer" class="os-win">Windows</a>, <a href="{{ site.download_root_link }}{{ site.download_file_names.mac }}" target="_blank" rel="noreferrer" class="os-mac">Mac</a>, <a href="{{ site.download_root_link }}{{ site.download_file_names.deb-gui }}" target="_blank" rel="noreferrer" class="os-deb">Debian/Ubuntu</a> &amp; <a href="{{ site.download_overview_link }}" target="_blank" rel="noreferrer" class="os-other">{{ page.mTOtherPlatforms }}</a>.
+          {{ page.mTDownloadNow }} <a href="{{ site.download_root_link }}{{ site.download_file_names.windows }}" target="_blank" rel="noreferrer" class="os-win">Windows</a>, <a href="{{ site.download_root_link }}{{ site.download_file_names.mac }}" target="_blank" rel="noreferrer" class="os-mac">macOS</a>, <a href="{{ site.download_root_link }}{{ site.download_file_names.deb-gui }}" target="_blank" rel="noreferrer" class="os-deb">Debian/Ubuntu</a> {{ page.mTPlatformsAnd }} <a href="{{ site.download_overview_link }}" target="_blank" rel="noreferrer" class="os-other">{{ page.mTOtherPlatforms }}</a>.
         </div>
       </div>
     </div>

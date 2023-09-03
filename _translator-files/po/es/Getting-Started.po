@@ -2,85 +2,86 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Allan Nordhøy <redacted@invalid.local>, 2022.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2022, 2023.
+# gallegonovato <fran-carro@hotmail.es>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-23 13:06+0000\n"
-"Last-Translator: Allan Nordhøy <redacted@invalid.local>\n"
+"PO-Revision-Date: 2023-05-16 08:46+0000\n"
+"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Getting-Started.md:1
 #, no-wrap
 msgid "en"
 msgstr "es"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Getting-Started.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Getting-Started.md:1
 #, no-wrap
 msgid "/wiki/Getting-Started"
 msgstr "/wiki/Getting-Started"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Getting-Started.md:1
 #, no-wrap
 msgid "Setup"
 msgstr "Configuración"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:9
-msgid "# Setup - getting started with Jamulus"
-msgstr "# Configuración - cómo empezar con Jamulus"
+#. type: Title #
+#: ../wiki/en/Getting-Started.md:8
+#, no-wrap
+msgid "Setup - getting started with Jamulus"
+msgstr "Configuración - cómo empezar con Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:11
 msgid "To get the best from Jamulus, at a minimum you will need:"
 msgstr "Para obtener el mejor resultado con Jamulus, como mínimo necesitarás:"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:13
-#, no-wrap
-msgid "**A wired internet connection** (and turn wi-fi off. See the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))\n"
-msgstr "**Una conexión a internet por cable** (y apaga el Wi-Fi. Ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos)).\n"
-
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:14
-#, no-wrap
-msgid "**Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))\n"
-msgstr "**Auriculares por cable** (no de Bluetooth o altavoces - ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos))\n"
-
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Getting-Started.md:15
-#, no-wrap
-msgid "**A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)\n"
-msgstr "**Un dispositivo de audio, tarjeta de sonido y/o micrófono decente** ([consulta esta lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) para ver ejemplos)\n"
+msgid "**A wired internet connection** (and turn wi-fi off. See the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))"
+msgstr "**Una conexión a internet por cable** (y apaga el Wi-Fi. Ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos))"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Getting-Started.md:15
+msgid "**Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))"
+msgstr "**Auriculares por cable** (no de Bluetooth o altavoces - ver las [FAQ](/wiki/FAQ#por-qué-no-debería-utilizar-dispositivos-inalámbricos))"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Getting-Started.md:15
+msgid "**A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)"
+msgstr "**Un dispositivo de audio, tarjeta de sonido y/o micrófono decente** ([consulta esta lista](/kb/2021/01/05/Jamulus-Sound-Devices.html) para ver ejemplos)"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:17
 msgid "If you have any questions, please see the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)"
 msgstr "Si tienes alguna duda, por favor consulta las [Discussions](https://github.com/jamulussoftware/jamulus/discussions)"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:19
-msgid "## Installation"
-msgstr "## Instalación"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:18
+#, no-wrap
+msgid "Installation"
+msgstr "Instalación"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:21
 msgid "To get Jamulus working with your operating system, please follow the installation guide for your platform:"
-msgstr "Para hacer que Jamulus funcione con tu hardware, por favor sigue la guía de instalación para tu plataforma:"
+msgstr "Para poner Jamulus en marcha con tu sistema operativo, por favor sigue la guía de instalación para tu plataforma:"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:28
@@ -91,34 +92,36 @@ msgid ""
 "    <a href=\"Installation-for-Macintosh\" class=\"button fx-col-100-xs\">macOS</a>\n"
 "    <a href= \"Installation-for-Linux\" class=\"button fx-col-100-xs\">Linux</a>\n"
 "</div>\n"
-"_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are still considered experimental._\n"
+"_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are considered experimental._\n"
 msgstr ""
 "<div class=\"fx-row fx-row-start-xs button-container\">\n"
 "    <a href=\"Installation-for-Windows\" class=\"button fx-col-100-xs\">Windows</a>\n"
 "    <a href=\"Installation-for-Macintosh\" class=\"button fx-col-100-xs\">macOS</a>\n"
 "    <a href= \"Installation-for-Linux\" class=\"button fx-col-100-xs\">Linux</a>\n"
 "</div>\n"
-"_[Android](Installation-for-Android) e [iOS](Installation-for-iOS) se pueden utilizar también, pero aún se consideran experimentales._\n"
+"_[Android](Installation-for-Android)) e [iOS](Installation-for-iOS) también se pueden usar, pero se consideran experimentales._\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:30
 msgid "And for now, close all other applications. It’s best to start simple at first."
 msgstr "Y por ahora, cierra todas las demás aplicaciones. Es mejor empezar con lo simple primero."
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:32
-msgid "## Hardware Setup"
-msgstr "## Configuración de Hardware"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:31
+#, no-wrap
+msgid "Hardware Setup"
+msgstr "Configuración de Hardware"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:34
 msgid "If you use external audio hardware, plug that in before you start Jamulus. If you haven't configured your hardware, please see the installation guides mentioned above."
 msgstr "Si utilizas hardware de audio externo, conéctalo antes de arrancar Jamulus. Si no has configurado tu hardware, por favor consulta las guías de instalación mencionadas arrba."
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:36
-msgid "## Jamulus main window"
-msgstr "## Ventana principal de Jamulus"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:35
+#, no-wrap
+msgid "Jamulus main window"
+msgstr "Ventana principal de Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:38
@@ -139,10 +142,11 @@ msgstr ""
 "  <figcaption>La ventana principal antes de conectarte a un Servidor</figcaption>\n"
 "</figure>\n"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:46
-msgid "## Setting up a profile"
-msgstr "## Configurar un perfil"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:45
+#, no-wrap
+msgid "Setting up a profile"
+msgstr "Configurar un perfil"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:48
@@ -168,10 +172,11 @@ msgstr ""
 msgid "Fill in at least “Alias/Name” and close the window."
 msgstr "Rellena al menos “Alias/Nombre” y cierra la ventana."
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:58
-msgid "## Connecting to a Server and testing your sound"
-msgstr "## Conectarse a un Servidor y comprobar tu sonido"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:57
+#, no-wrap
+msgid "Connecting to a Server and testing your sound"
+msgstr "Conectarse a un Servidor y comprobar tu sonido"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:60
@@ -213,10 +218,11 @@ msgstr "Lo más importante de los Servidores es su “tiempo ping”. Cuanto may
 msgid "Once connected to a Server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 msgstr "Una vez establecida la conexión con un Servidor, asegúrate de que te escuchas bien y arregla cualquier problema de volumen de entrada, etc. Puedes echar un vistazo a la [página de resolución de problemas](/wiki/Client-Troubleshooting) para los problemas más comunes. Y por supuesto, comprueba que también puedes cumplir [La Regla de Oro](/wiki/Client-Troubleshooting#todos-suenan-bien-pero-es-difícil-tocar-todos-juntos-manteniendo-el-tiempo)."
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:75
-msgid "## Playing for the first time"
-msgstr "## Tocar por primera vez"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:74
+#, no-wrap
+msgid "Playing for the first time"
+msgstr "Tocar por primera vez"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:77
@@ -252,10 +258,11 @@ msgstr "Ten en cuenta que puedes utilizar el Chat en cualquier momento para mens
 msgid "More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual)."
 msgstr "Se puede encontrar más información sobre el uso de Jamulus en el [Manual de Software](/wiki/Software-Manual)."
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:90
-msgid "## Troubleshooting"
-msgstr "## Resolución de Problemas"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:89
+#, no-wrap
+msgid "Troubleshooting"
+msgstr "Resolución de Problemas"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:91

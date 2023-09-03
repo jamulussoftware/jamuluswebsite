@@ -2,144 +2,171 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Allan Nordhøy <redacted@invalid.local>, 2022.
+# Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-31 16:58+0000\n"
-"Last-Translator: Allan Nordhøy <redacted@invalid.local>\n"
+"PO-Revision-Date: 2023-08-06 13:51+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Privacy-Statement.md:1
 #, no-wrap
 msgid "en"
 msgstr "nb_NO"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Privacy-Statement.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Privacy-Statement.md:1
 #, no-wrap
 msgid "/wiki/Privacy-Statement"
-msgstr ""
+msgstr "/wiki/Privacy-Statement"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Privacy-Statement.md:1
 #, no-wrap
 msgid "Jamulus – Privacy Statement"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:9
-msgid "# Privacy Statement"
+#. type: Title #
+#: ../wiki/en/Privacy-Statement.md:8
+#, no-wrap
+msgid "Privacy Statement"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:12
-msgid "Please note that the English version of this privacy statement is the original and, as such, the binding version. To access the English version, go to the top/top right of this page and click on the \"en\" link.  The following only applies to the version you can download from this website, [jamulus.io](https://jamulus.io)."
+#: ../wiki/en/Privacy-Statement.md:11
+#, no-wrap
+msgid "**The English version of this document represents the official privacy statement for the _current version_ of the software available on this website. Earlier versions of the software and non-English translations of this privacy policy may have different terms that are no longer applicable or supported.**\n"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:14
-msgid "## Definition of Terms"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:13
+#, fuzzy, no-wrap
+#| msgid "## Definition of Terms"
+msgid "Definition of Terms"
 msgstr "## Definisjon av begreper"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:16
-msgid "\"**Server**\" The Jamulus Server software, as opposed to the host machine/OS it is running on."
+#. type: Bullet: '- '
+#: ../wiki/en/Privacy-Statement.md:18
+msgid "\"**Server**\" The Jamulus software running as a Server and accepting connections from Clients"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:17
+#. type: Bullet: '- '
+#: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Client**\" The Jamulus software used to connect to a Server"
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Directory**\" A Jamulus Server configured to supply a list of Servers to Clients"
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:20
-msgid "## Web site"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:19
+#, no-wrap
+msgid "Jamulus.io Website"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:22
-msgid "The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. We do not collect your personal data or set tracking cookies. When you connect to the jamulus.io site, your IP is sent to [GitHub Pages](https://pages.github.com/)."
+msgid "The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. The Jamulus team has not constructed the website to set tracking cookies, but see Github's [privacy policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) for information relating to data collection and privacy overall. The community knowledge base uses [giscus](https://github.com/giscus/giscus) for discussions and comments. You can find the [Privacy Policy of giscus on their GitHub repository](https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md)."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:24
-msgid "## Jamulus Software"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:23
+#, no-wrap
+msgid "Jamulus Software"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:26
-msgid "### Use of Profile Information"
+msgid "Jamulus is open source software that can be modified by anyone. As such, the Jamulus project can make no representations related to privacy, data collection, or security with respect to your use of the software."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:28
-msgid "When you connect to a Server, whatever you put in My Profile (in Settings) will be shown to others on that Server while you are connected to it.  Note that, depending on the other client, you may not see them.  Also, the Server operator can see the name you set in My Profile and your IP address, using the Server either through the GUI or JSON-RPC."
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:27
+#, no-wrap
+msgid "General Information"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:30
-msgid "When you connect to a Server, your profile may also be available to third parties from the Directory to which that Server is registered. This can be for informational purposes about the status of the public Jamulus network (for example, [here](https://explorer.jamulus.io/)), but may not be limited to that. Profile information is not otherwise logged or stored by the Jamulus Server you are connected to, or by the Jamulus Directory, but may be stored or processed by third parties."
+msgid "Under normal use with software downloaded from this website that has not been modified, your user profile information is exchanged with Servers you connect to, peers connected to those same Servers, and to third parties (including Directories) that use the Jamulus protocol. This information is limited to your Jamulus name, city, country, instrument, and skill level as you have set them in your profile. The Servers you connect to will also have access to your internet address (IP Address) as it is required for the software to work; but this information is not shared with peers on the same Server or available to third parties."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:32
-msgid "### Use of IP Addresses"
-msgstr "### Bruk av IP-adresser"
+msgid "All communications between and among Clients, Servers, Directories, and third-party protocol users are sent without encryption."
+msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:34
-msgid "When you connect to Server, the Server operator can see your IP address while you are connected.  If the Server operator has enabled logging (which is off by default) your IP address will also be logged and stored in the Server's log file."
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:33
+#, no-wrap
+msgid "Jamulus Servers"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:36
-msgid "The IP addresses of all Servers registered with the Directory can also be seen by third parties for informational or other purposes (for example [here](https://explorer.jamulus.io/)). Your public IP address is otherwise not logged or stored by Jamulus, but may be stored or processed by third parties."
+msgid "When you connect to a Server, either directly or through a Directory, the operator of that Server is responsible for its operation policy, privacy policy, and data use policy. While unmodified Servers do not log or store your connection or profile information by default, some Servers may be configured to do so. Therefore, you should have no expectation of privacy with respect to your profile information or internet address."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:38
-msgid "### Audio Recordings"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:37
+#, no-wrap
+msgid "Chat Exchanges"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:40
-msgid "You will see a notice if you are connected to a Jamulus Server when Server recording is turned on. Recordings of each player are stored by the Server separately as .WAV files and only the Server operator has access to them unless they choose to make them available to third parties."
+msgid "Chats are textual messages that can be exchanged between Clients connected to the same Server. Everyone connected to a Server can see all chats and there should be no expectation of privacy with respect to information sent through the chat feature of Jamulus. While unmodified Servers do not log or store chats, some modified Servers may do this."
 msgstr ""
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:42
-msgid "### Text Chat"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:41
+#, no-wrap
+msgid "Audio Recordings"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:44
-msgid "When you type a message in the Chat Window, other connected players can see that, but chats are not stored by the Server and neither the Server operator nor any third parties have access to them."
+msgid "Unmodified Servers will display a notice if recording is turned on. Recordings of each channel are stored by the Server and are controlled by the Server operator."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:46
-msgid "### Data Transmission"
-msgstr "### Dataoverføring"
+msgid "It is possible for connected Clients to make recordings of sessions outside of Jamulus itself, for which there may be no notice or indication. Jamulus has no way to detect or control these situations and makes no representations as to the collection or use of such recording data."
+msgstr ""
+
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:47
+#, no-wrap
+msgid "Directories"
+msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:47
-msgid "Please note that all audio and text data is sent and received between the Jamulus Server and Client without encryption."
+#: ../wiki/en/Privacy-Statement.md:49
+msgid "Directories are central connection points for locating Servers. The Jamulus Client comes with a pre-defined list of Directories for the convenience of users. These Directories are independently operated but are represented as running unmodified versions of the Jamulus software. If you do not wish to send your information to the Directories, you will need to connect to Servers directly."
 msgstr ""
+
+#, fuzzy, no-wrap
+#~| msgid "### Use of IP Addresses"
+#~ msgid "Use of IP Addresses"
+#~ msgstr "### Bruk av IP-adresser"
+
+#, fuzzy, no-wrap
+#~| msgid "### Data Transmission"
+#~ msgid "Data Transmission"
+#~ msgstr "### Dataoverføring"

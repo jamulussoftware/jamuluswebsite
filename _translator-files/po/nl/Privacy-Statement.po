@@ -1,146 +1,210 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Henk De Groot <weblate@hdegroot.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-13 11:25+0000\n"
-"Last-Translator: Henk De Groot <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-08-05 19:50+0000\n"
+"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Privacy-Statement.md:1
 #, no-wrap
 msgid "en"
 msgstr "nl"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Privacy-Statement.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Privacy-Statement.md:1
 #, no-wrap
 msgid "/wiki/Privacy-Statement"
 msgstr "/wiki/Privacy-Statement"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Privacy-Statement.md:1
 #, no-wrap
 msgid "Jamulus – Privacy Statement"
 msgstr "Jamulus – Privacyverklaring"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:9
-msgid "# Privacy Statement"
-msgstr "# Privacyverklaring"
+#. type: Title #
+#: ../wiki/en/Privacy-Statement.md:8
+#, no-wrap
+msgid "Privacy Statement"
+msgstr "Privacyverklaring"
 
 #. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:12
-msgid "Please note that the English version of this privacy statement is the original and, as such, the binding version. To access the English version, go to the top/top right of this page and click on the \"en\" link.  The following only applies to the version you can download from this website, [jamulus.io](https://jamulus.io)."
-msgstr "Houd er rekening mee dat de Engelse versie van deze privacyverklaring de originele en daarmee bindende versie is. Om toegang te krijgen tot de Engelse versie, ga je naar de rechterbovenhoek van deze pagina en klik je op de link \"en\". Het volgende is alleen van toepassing op de versie die je kunt downloaden van deze website, [jamulus.io](https://jamulus.io)."
+#: ../wiki/en/Privacy-Statement.md:11
+#, no-wrap
+msgid "**The English version of this document represents the official privacy statement for the _current version_ of the software available on this website. Earlier versions of the software and non-English translations of this privacy policy may have different terms that are no longer applicable or supported.**\n"
+msgstr "**De Engelse versie van dit document vertegenwoordigt de officiële privacyverklaring voor de _huidige versie_ van de software die beschikbaar is op deze website. Eerdere versies van de software en niet-Engelse vertalingen van dit privacybeleid hebben mogelijk andere voorwaarden die niet langer van toepassing of ondersteund zijn.**\n"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:14
-msgid "## Definition of Terms"
-msgstr "## Verklarende woordenlijst"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:13
+#, no-wrap
+msgid "Definition of Terms"
+msgstr "Verklarende woordenlijst"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:16
-msgid "\"**Server**\" The Jamulus Server software, as opposed to the host machine/OS it is running on."
-msgstr "\"**Server**\" De Jamulus server-software, in tegenstelling tot de hostmachine/het besturingssysteem waarop deze draait."
+#. type: Bullet: '- '
+#: ../wiki/en/Privacy-Statement.md:18
+msgid "\"**Server**\" The Jamulus software running as a Server and accepting connections from Clients"
+msgstr "\"**Server**\" De Jamulus-software die wordt uitgevoerd als een server en accepteert verbindingen van clients"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:17
+#. type: Bullet: '- '
+#: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Client**\" The Jamulus software used to connect to a Server"
 msgstr "\"**Client**\" De Jamulus-software die wordt gebruikt om verbinding te maken met een server"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Privacy-Statement.md:18
 msgid "\"**Directory**\" A Jamulus Server configured to supply a list of Servers to Clients"
 msgstr "\"**Adresboek**\" Een Jamulus-server die is geconfigureerd om een lijst met servers aan clients te leveren"
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:20
-msgid "## Web site"
-msgstr "## Website"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:19
+#, no-wrap
+msgid "Jamulus.io Website"
+msgstr "Jamulus.io Website"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:22
-msgid "The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. We do not collect your personal data or set tracking cookies. When you connect to the jamulus.io site, your IP is sent to [GitHub Pages](https://pages.github.com/)."
-msgstr "De website op [jamulus.io](https://jamulus.io) maakt gebruik van GitHub pagina's. We verzamelen je persoonlijke gegevens niet en plaatsen geen tracking cookies. Wanneer je verbinding maakt met de jamulus.io-site, wordt je IP naar [GitHub-pagina's](https://pages.github.com/) verzonden."
+msgid "The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. The Jamulus team has not constructed the website to set tracking cookies, but see Github's [privacy policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) for information relating to data collection and privacy overall. The community knowledge base uses [giscus](https://github.com/giscus/giscus) for discussions and comments. You can find the [Privacy Policy of giscus on their GitHub repository](https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md)."
+msgstr "De website op [jamulus.io](https://jamulus.io) wordt gemaakt met behulp van GitHub Pages. Het Jamulus-team heeft de website niet gebouwd om tracking-cookies in te stellen, maar zie het [privacybeleid](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) van Github voor informatie over de gegevensverzameling en privacy in het algemeen. De community-kennisbank gebruikt [giscus](https://github.com/giscus/giscus) voor discussies en opmerkingen. Je kunt het [Privacybeleid van giscus vinden op hun GitHub-repository](https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md)."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:24
-msgid "## Jamulus Software"
-msgstr "## Jamulus software"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:23
+#, no-wrap
+msgid "Jamulus Software"
+msgstr "Jamulus software"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:26
-msgid "### Use of Profile Information"
-msgstr "### Gebruik van profiel informatie"
+msgid "Jamulus is open source software that can be modified by anyone. As such, the Jamulus project can make no representations related to privacy, data collection, or security with respect to your use of the software."
+msgstr "Jamulus is open source software die door iedereen kan worden aangepast. Als zodanig kan het Jamulus-project geen verklaringen afleggen met betrekking tot privacy, gegevensverzameling of beveiliging met betrekking tot het gebruik van de software."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:28
-msgid "When you connect to a Server, whatever you put in My Profile (in Settings) will be shown to others on that Server while you are connected to it.  Note that, depending on the other client, you may not see them.  Also, the Server operator can see the name you set in My Profile and your IP address, using the Server either through the GUI or JSON-RPC."
-msgstr "Wanneer je verbinding maakt met een server, wordt alles wat je in Mijn profiel (in Instellingen) plaatst, aan anderen op die server getoond wanneer je ermee verbonden bent. Houd er rekening mee dat je ze, afhankelijk van de andere client, mogelijk niet ziet. De serverbeheerder kan ook de naam zien die je in Mijn profiel hebt ingesteld en je IP-adres, met behulp van de server via de GUI of JSON-RPC."
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:27
+#, no-wrap
+msgid "General Information"
+msgstr "Algemene informatie"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:30
-msgid "When you connect to a Server, your profile may also be available to third parties from the Directory to which that Server is registered. This can be for informational purposes about the status of the public Jamulus network (for example, [here](https://explorer.jamulus.io/)), but may not be limited to that. Profile information is not otherwise logged or stored by the Jamulus Server you are connected to, or by the Jamulus Directory, but may be stored or processed by third parties."
-msgstr "Wanneer je verbinding maakt met een server, is je profiel mogelijk ook beschikbaar voor derden vanuit het adresboek waarin die server is geregistreerd. Dit kan zijn voor informatieve doeleinden over de status van het openbare Jamulus-netwerk (bijvoorbeeld [hier](https://explorer.jamulus.io/)), maar is daar niet toe beperkt. Profielinformatie wordt niet anderszins gelogd of opgeslagen door de Jamulus-server waarmee je bent verbonden of door het Jamulus adresboek, maar kan worden opgeslagen of verwerkt door derden."
+msgid "Under normal use with software downloaded from this website that has not been modified, your user profile information is exchanged with Servers you connect to, peers connected to those same Servers, and to third parties (including Directories) that use the Jamulus protocol. This information is limited to your Jamulus name, city, country, instrument, and skill level as you have set them in your profile. The Servers you connect to will also have access to your internet address (IP Address) as it is required for the software to work; but this information is not shared with peers on the same Server or available to third parties."
+msgstr "Bij normaal gebruik met software die van deze website is gedownload en die niet is gewijzigd, wordt je gebruikersprofielinformatie uitgewisseld met servers waarmee je verbinding maakt, peers die zijn verbonden met diezelfde servers en met derden (inclusief mappen) die het Jamulus-protocol gebruiken. Deze informatie is beperkt tot je Jamulus-naam, stad, land, instrument en vaardigheidsniveau zoals je deze in je profiel hebt ingesteld. De servers waarmee je verbinding maakt, hebben ook toegang tot je internetadres (IP-adres), aangezien dit nodig is om de software te laten werken maar deze informatie wordt niet gedeeld met peers op dezelfde server of beschikbaar gesteld aan derden."
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:32
-msgid "### Use of IP Addresses"
-msgstr "### Gebruik van IP-adressen"
+msgid "All communications between and among Clients, Servers, Directories, and third-party protocol users are sent without encryption."
+msgstr "Alle communicatie tussen en tussen clients, servers, adresboeken en protocol van derden wordt zonder codering verzonden."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:34
-msgid "When you connect to Server, the Server operator can see your IP address while you are connected.  If the Server operator has enabled logging (which is off by default) your IP address will also be logged and stored in the Server's log file."
-msgstr "Wanneer je verbinding maakt met een server dan kan de serveroperator je IP-adres zien terwijl je verbonden bent. Als de serveroperator logboekregistratie heeft ingeschakeld (wat standaard is uitgeschakeld), dan wordt je IP-adres ook geregistreerd en opgeslagen in het logbestand van de server."
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:33
+#, no-wrap
+msgid "Jamulus Servers"
+msgstr "Jamulus-servers"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:36
-msgid "The IP addresses of all Servers registered with the Directory can also be seen by third parties for informational or other purposes (for example [here](https://explorer.jamulus.io/)). Your public IP address is otherwise not logged or stored by Jamulus, but may be stored or processed by third parties."
-msgstr "De IP-adressen van alle bij het adresboek geregistreerde servers kunnen ook door derden worden bekeken voor informatieve of andere doeleinden (bijvoorbeeld [hier](https://explorer.jamulus.io/)). Je openbare IP-adres wordt verder niet gelogd of opgeslagen door Jamulus, maar kan wel worden opgeslagen of verwerkt door derden."
+msgid "When you connect to a Server, either directly or through a Directory, the operator of that Server is responsible for its operation policy, privacy policy, and data use policy. While unmodified Servers do not log or store your connection or profile information by default, some Servers may be configured to do so. Therefore, you should have no expectation of privacy with respect to your profile information or internet address."
+msgstr "Wanneer je rechtstreeks of via een adresboek verbinding maakt met een server, is de beheerder van die server verantwoordelijk voor het werkingsbeleid, het privacybeleid en het gegevensgebruikbeleid. Hoewel ongewijzigde servers je verbindings- of profielinformatie standaard niet loggen of opslaan, kunnen sommige servers hiervoor zijn geconfigureerd. Daarom mag je geen privacy verwachten met betrekking tot je profielinformatie of internetadres."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:38
-msgid "### Audio Recordings"
-msgstr "### Geluidsopname"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:37
+#, no-wrap
+msgid "Chat Exchanges"
+msgstr "Chat-uitwisselingen"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:40
-msgid "You will see a notice if you are connected to a Jamulus Server when Server recording is turned on. Recordings of each player are stored by the Server separately as .WAV files and only the Server operator has access to them unless they choose to make them available to third parties."
-msgstr "Je ziet een melding als je bent verbonden met een Jamulus-server wanneer serveropname is ingeschakeld. Opnamen van elke speler worden door de server afzonderlijk opgeslagen als .WAV-bestand en alleen de serverbeheerder heeft er toegang toe, tenzij hij ervoor kiest om ze beschikbaar te stellen aan derden."
+msgid "Chats are textual messages that can be exchanged between Clients connected to the same Server. Everyone connected to a Server can see all chats and there should be no expectation of privacy with respect to information sent through the chat feature of Jamulus. While unmodified Servers do not log or store chats, some modified Servers may do this."
+msgstr "Chats zijn tekstberichten die kunnen worden uitgewisseld tussen clients die op dezelfde server zijn aangesloten. Iedereen die met een server is verbonden, kan alle chats zien en er mag geen privacy worden verwacht met betrekking tot informatie die via de chatfunctie van Jamulus wordt verzonden. Hoewel ongewijzigde servers geen chats loggen of opslaan, kunnen sommige gewijzigde servers dit wel doen."
 
-#. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:42
-msgid "### Text Chat"
-msgstr "### Tekstchat"
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:41
+#, no-wrap
+msgid "Audio Recordings"
+msgstr "Geluidsopname"
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:44
-msgid "When you type a message in the Chat Window, other connected players can see that, but chats are not stored by the Server and neither the Server operator nor any third parties have access to them."
-msgstr "Wanneer je een bericht typt in het chatvenster, kunnen andere verbonden spelers dat zien, maar chats worden niet door de server opgeslagen en noch de serverbeheerder noch derden hebben er toegang toe."
+msgid "Unmodified Servers will display a notice if recording is turned on. Recordings of each channel are stored by the Server and are controlled by the Server operator."
+msgstr "Ongewijzigde servers geven een melding weer als opnemen is ingeschakeld. Opnames van elk kanaal worden opgeslagen door de server en worden beheerd door de serverbeheerder."
 
 #. type: Plain text
 #: ../wiki/en/Privacy-Statement.md:46
-msgid "### Data Transmission"
-msgstr "### Dataoverdracht"
+msgid "It is possible for connected Clients to make recordings of sessions outside of Jamulus itself, for which there may be no notice or indication. Jamulus has no way to detect or control these situations and makes no representations as to the collection or use of such recording data."
+msgstr "Het is mogelijk voor aangesloten clients om buiten Jamulus zelf opnames te maken van sessies, waarvoor mogelijk geen melding of indicatie is. Jamulus kan deze situaties op geen enkele manier detecteren of beheersen en doet geen uitspraken over het verzamelen of gebruiken van dergelijke opnamegegevens."
+
+#. type: Title ##
+#: ../wiki/en/Privacy-Statement.md:47
+#, no-wrap
+msgid "Directories"
+msgstr "Adresboeken"
 
 #. type: Plain text
-#: ../wiki/en/Privacy-Statement.md:47
-msgid "Please note that all audio and text data is sent and received between the Jamulus Server and Client without encryption."
-msgstr "Houd er rekening mee dat alle audio- en tekstgegevens zonder encryptie worden verzonden en ontvangen tussen de Jamulus-server en de client."
+#: ../wiki/en/Privacy-Statement.md:49
+msgid "Directories are central connection points for locating Servers. The Jamulus Client comes with a pre-defined list of Directories for the convenience of users. These Directories are independently operated but are represented as running unmodified versions of the Jamulus software. If you do not wish to send your information to the Directories, you will need to connect to Servers directly."
+msgstr "Adresboeken zijn centrale verbindingspunten voor het lokaliseren van servers. De Jamulus client wordt geleverd met een vooraf gedefinieerde lijst met adresboeken voor het gemak van gebruikers. Deze adresboeken worden onafhankelijk beheerd, maar worden weergegeven als werkende ongewijzigde versies van de Jamulus-software. Als je je informatie niet naar de adresboeken wilt sturen, moet je rechtstreeks verbinding maken met servers."
+
+#~ msgid "Please note that the English version of this privacy statement is the original and, as such, the binding version. To access the English version, go to the top/top right of this page and click on the \"en\" link.  The following only applies to the version you can download from this website, [jamulus.io](https://jamulus.io)."
+#~ msgstr "Houd er rekening mee dat de Engelse versie van deze privacyverklaring de originele en daarmee bindende versie is. Om toegang te krijgen tot de Engelse versie, ga je naar de rechterbovenhoek van deze pagina en klik je op de link \"en\". Het volgende is alleen van toepassing op de versie die je kunt downloaden van deze website, [jamulus.io](https://jamulus.io)."
+
+#~ msgid "\"**Server**\" The Jamulus Server software, as opposed to the host machine/OS it is running on."
+#~ msgstr "\"**Server**\" De Jamulus server-software, in tegenstelling tot de hostmachine/het besturingssysteem waarop deze draait."
+
+#, fuzzy, no-wrap
+#~| msgid "## Web site"
+#~ msgid "Web site"
+#~ msgstr "## Website"
+
+#~ msgid "The website at [jamulus.io](https://jamulus.io) is served using GitHub Pages. We do not collect your personal data or set tracking cookies. When you connect to the jamulus.io site, your IP is sent to [GitHub Pages](https://pages.github.com/)."
+#~ msgstr "De website op [jamulus.io](https://jamulus.io) maakt gebruik van GitHub pagina's. We verzamelen je persoonlijke gegevens niet en plaatsen geen tracking cookies. Wanneer je verbinding maakt met de jamulus.io-site, wordt je IP naar [GitHub-pagina's](https://pages.github.com/) verzonden."
+
+#~ msgid "When you connect to a Server, whatever you put in My Profile (in Settings) will be shown to others on that Server while you are connected to it.  Note that, depending on the other client, you may not see them.  Also, the Server operator can see the name you set in My Profile and your IP address, using the Server either through the GUI or JSON-RPC."
+#~ msgstr "Wanneer je verbinding maakt met een server, wordt alles wat je in Mijn profiel (in Instellingen) plaatst, aan anderen op die server getoond wanneer je ermee verbonden bent. Houd er rekening mee dat je ze, afhankelijk van de andere client, mogelijk niet ziet. De serverbeheerder kan ook de naam zien die je in Mijn profiel hebt ingesteld en je IP-adres, met behulp van de server via de GUI of JSON-RPC."
+
+#~ msgid "When you connect to a Server, your profile may also be available to third parties from the Directory to which that Server is registered. This can be for informational purposes about the status of the public Jamulus network (for example, [here](https://explorer.jamulus.io/)), but may not be limited to that. Profile information is not otherwise logged or stored by the Jamulus Server you are connected to, or by the Jamulus Directory, but may be stored or processed by third parties."
+#~ msgstr "Wanneer je verbinding maakt met een server, is je profiel mogelijk ook beschikbaar voor derden vanuit het adresboek waarin die server is geregistreerd. Dit kan zijn voor informatieve doeleinden over de status van het openbare Jamulus-netwerk (bijvoorbeeld [hier](https://explorer.jamulus.io/)), maar is daar niet toe beperkt. Profielinformatie wordt niet anderszins gelogd of opgeslagen door de Jamulus-server waarmee je bent verbonden of door het Jamulus adresboek, maar kan worden opgeslagen of verwerkt door derden."
+
+#, fuzzy, no-wrap
+#~| msgid "### Use of IP Addresses"
+#~ msgid "Use of IP Addresses"
+#~ msgstr "### Gebruik van IP-adressen"
+
+#~ msgid "When you connect to Server, the Server operator can see your IP address while you are connected.  If the Server operator has enabled logging (which is off by default) your IP address will also be logged and stored in the Server's log file."
+#~ msgstr "Wanneer je verbinding maakt met een server dan kan de serveroperator je IP-adres zien terwijl je verbonden bent. Als de serveroperator logboekregistratie heeft ingeschakeld (wat standaard is uitgeschakeld), dan wordt je IP-adres ook geregistreerd en opgeslagen in het logbestand van de server."
+
+#~ msgid "The IP addresses of all Servers registered with the Directory can also be seen by third parties for informational or other purposes (for example [here](https://explorer.jamulus.io/)). Your public IP address is otherwise not logged or stored by Jamulus, but may be stored or processed by third parties."
+#~ msgstr "De IP-adressen van alle bij het adresboek geregistreerde servers kunnen ook door derden worden bekeken voor informatieve of andere doeleinden (bijvoorbeeld [hier](https://explorer.jamulus.io/)). Je openbare IP-adres wordt verder niet gelogd of opgeslagen door Jamulus, maar kan wel worden opgeslagen of verwerkt door derden."
+
+#~ msgid "You will see a notice if you are connected to a Jamulus Server when Server recording is turned on. Recordings of each player are stored by the Server separately as .WAV files and only the Server operator has access to them unless they choose to make them available to third parties."
+#~ msgstr "Je ziet een melding als je bent verbonden met een Jamulus-server wanneer serveropname is ingeschakeld. Opnamen van elke speler worden door de server afzonderlijk opgeslagen als .WAV-bestand en alleen de serverbeheerder heeft er toegang toe, tenzij hij ervoor kiest om ze beschikbaar te stellen aan derden."
+
+#, fuzzy, no-wrap
+#~| msgid "### Text Chat"
+#~ msgid "Text Chat"
+#~ msgstr "### Tekstchat"
+
+#~ msgid "When you type a message in the Chat Window, other connected players can see that, but chats are not stored by the Server and neither the Server operator nor any third parties have access to them."
+#~ msgstr "Wanneer je een bericht typt in het chatvenster, kunnen andere verbonden spelers dat zien, maar chats worden niet door de server opgeslagen en noch de serverbeheerder noch derden hebben er toegang toe."
+
+#, fuzzy, no-wrap
+#~| msgid "### Data Transmission"
+#~ msgid "Data Transmission"
+#~ msgstr "### Dataoverdracht"
+
+#~ msgid "Please note that all audio and text data is sent and received between the Jamulus Server and Client without encryption."
+#~ msgstr "Houd er rekening mee dat alle audio- en tekstgegevens zonder encryptie worden verzonden en ontvangen tussen de Jamulus-server en de client."

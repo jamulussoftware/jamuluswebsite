@@ -1,85 +1,80 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Ettore Atalan <atalanttore@googlemail.com>, 2022.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-07-28 08:55+0200\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2023-08-20 15:41+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:3
 msgid "[comment]: # (This is an include file for use in multiple documents)"
 msgstr "[Kommentar]: # (Dies ist eine Include-Datei zur Verwendung in mehreren Dokumenten)"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:5
-#, no-wrap
-msgid "`-h` or `--help`           Display help text         \n"
-msgstr ""
-"`-h` oder `--help`           Hilfetext anzeigen         \n"
-"\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`-h` or `--help` Display help text"
+msgstr "`-h` oder `--help` Hilfetext anzeigen"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:6
-#, no-wrap
-msgid "`-i` or `--inifile`        Set location of initialization file (overrides default)\n"
-msgstr "`-i` oder `--inifile`        Speicherort der Initialisierungsdatei festlegen (überschreibt die Vorgabe)\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`-i` or `--inifile` Set location of initialization file (overrides default. On macOS simply provide a filename only, since config files can only be read from `/Users/<username>/Library/Containers/io.jamulus.Jamulus/Data/`. For the server replace `io.jamulus.Jamulus` with `io.jamulus.JamulusServer`. Turn on \"Show Library folder\" in \"Show view options\" in Finder to see this folder.)"
+msgstr "`-i` oder `--inifile` Setzt Speicherort der ini-Datei (überschreibt Standardeinstellung. Gebe unter macOS nur einen Dateinamen an. Konfigurationsdateien können nur aus `/Users/<Benutzername>/Library/Containers/io.jamulus.Jamulus/Data/` gelesen werden. Für den Server ersetze `io.jamulus.Jamulus` durch `io.jamulus.JamulusServer`. Aktiviere ‚Ordner „Library“ anzeigen’ unter „Darstellung“ im Finder um den Ordner anzuzeigen.)"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:7
-#, no-wrap
-msgid "`-n` or `--nogui`          Disable GUI (for use in headless mode)                      \n"
-msgstr ""
-"`-n` oder `--nogui`          GUI abschalten (zur Verwendung im Headless-Modus)                      \n"
-"\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`-n` or `--nogui` Disable GUI (for use in headless mode)"
+msgstr "`-n` oder `--nogui` GUI deaktivieren (zur Verwendung im Headless-Modus)"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:8
-#, no-wrap
-msgid "`-p` or `--port`           Sets the local UDP port number. Default is 22124\n"
-msgstr "`-p` oder `--port`           Legt die lokale UDP-Portnummer fest. Standard ist 22124\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`-p` or `--port` Sets the local UDP port number. Default is 22124"
+msgstr "`-p` oder `--port` Legt die lokale UDP-Portnummer fest. Standard ist 22124"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:9
-#, no-wrap
-msgid "`--jsonrpcport`            Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
-msgstr "`--jsonrpcport`           Ermöglicht die Steuerung der App durch den JSON-RPC-API-Server, setzt die TCP-Portnummer (EXPERIMENTAL, APIs können sich ändern; nur von localhost aus zugänglich). Siehe [die JSON-RPC-API-Dokumentationsdatei](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`--jsonrpcport` Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
+msgstr "`--jsonrpcport` Ermöglicht die Steuerung der App durch den JSON-RPC-API-Server, setzt die TCP-Portnummer (EXPERIMENTELL, APIs können sich ändern; nur von localhost aus zugänglich). Siehe [die JSON-RPC-API-Dokumentationsdatei](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:10
-#, no-wrap
-msgid "`--jsonrpcsecretfile`      Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API.\n"
-msgstr "`--jsonrpcsecretfile`     Erforderlich bei Verwendung von `--jsonrpcport`. Legt einen Pfad zu einer Textdatei fest, die eine Authentifizierungszeichenfolge für den Zugriff auf die JSON-RPC-API enthält.\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`--jsonrpcsecretfile` Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API."
+msgstr "`--jsonrpcsecretfile` Erforderlich bei Verwendung von `--jsonrpcport`. Legt einen Pfad zu einer Textdatei fest, die eine Authentifizierungszeichenfolge für den Zugriff auf die JSON-RPC-API enthält."
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:11
-#, no-wrap
-msgid "`-Q` or `--qos`            Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)\n"
-msgstr "`-Q` oder `--qos`            Legt den Wert des DS Byte für den Quality of Service fest. Standard ist 128 (DSCP/CS4). QoS wird von Windows ignoriert. Um es zu aktivieren, [siehe diese Seite](QOS-Windows)\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`--jsonrpcbindip` The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)"
+msgstr "'--jsonrpcbindip' Die IP-Adresse, auf die der JSON-RPC-Server hören soll. (optional, Standardwert ist 127.0.0.1)"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:12
-#, no-wrap
-msgid "`-t` or `--notranslation`  Disable UI language translations\n"
-msgstr "`-t` oder `--notranslation`  UI-Sprachübersetzungen deaktivieren\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`-Q` or `--qos` Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)"
+msgstr "`-Q` oder `--qos` Legt den Wert des DS Byte für den Quality of Service fest. Standard ist 128 (DSCP/CS4). QoS wird von Windows ignoriert. Um es zu aktivieren, [siehe diese Seite](QOS-Windows)"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:13
-#, no-wrap
-msgid "`-6` or `--enableipv6`     Enable IPv6 addressing (IPv4 is always enabled)\n"
-msgstr "`-6` oder `--enableipv6`     Aktivieren der IPv6-Adressierung (IPv4 ist immer aktiviert)\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`-t` or `--notranslation` Disable UI language translations"
+msgstr "`-t` oder `--notranslation` UI-Sprachübersetzungen deaktivieren"
 
-#. type: Plain text
-#: ../wiki/en/Include-Shared-Commands.md:13
-#, no-wrap
-msgid "`-v` or `--version`        Output version information and exit\n"
-msgstr "`-v` oder `--version`        Versionsinformationen ausgeben und beenden\n"
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`-6` or `--enableipv6` Enable IPv6 addressing (IPv4 is always enabled)"
+msgstr "`-6` oder `--enableipv6` IPv6-Adressierung aktivieren (IPv4 ist immer aktiviert)"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Shared-Commands.md:14
+msgid "`-v` or `--version` Output version information and exit"
+msgstr "`-v` oder `--version` Versionsinformationen ausgeben und beenden"
+
+#~ msgid "`-i` or `--inifile` Set location of initialization file (overrides default)"
+#~ msgstr "`-i` oder `--inifile` Speicherort der Initialisierungsdatei festlegen (überschreibt die Vorgabe)"

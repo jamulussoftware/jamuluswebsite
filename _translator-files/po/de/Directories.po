@@ -1,101 +1,105 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Ettore Atalan <atalanttore@googlemail.com>, 2023.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2023.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-01 20:17+0000\n"
-"Last-Translator: ann0see (Alt) <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-08-01 21:43+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.0-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "en"
 msgstr "de"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "/wiki/Directories"
-msgstr ""
+msgstr "/wiki/Directories"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "Directories"
-msgstr ""
+msgstr "Verzeichnisse"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Mehr\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 
-#. type: Plain text
-#: ../wiki/en/Directories.md:12
-msgid "# Running a Directory"
-msgstr ""
+#. type: Title #
+#: ../wiki/en/Directories.md:11
+#, no-wrap
+msgid "Running a Directory"
+msgstr "Ein Verzeichnis betreiben"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:14
-msgid "This is a specialised Jamulus Server configuration, as described in [Server Types](Running-a-Server#server-types)."
-msgstr ""
+msgid "This is a specialised Jamulus Server configuration, as described in [Server Modes](Running-a-Server#server-modes)."
+msgstr "Das ist eine spezielle Jamulus-Server-Konfiguration, wie in [Server-Modi](Running-a-Server#server-modes) beschrieben."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:16
-msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them."
-msgstr ""
+#, no-wrap
+msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them.\n"
+msgstr "Um die von einem benutzerdefinierten Verzeichnis aufgelisteten Server zu sehen, müssen Benutzer die Adresse dieses Verzeichnisses in das Feld Einstellungen > Erweiterte Einstellungen > Benutzerdefinierte Verzeichnisse ihres Clients eingeben. Bei Bedarf können mehrere Adressen auf diese Weise hinzugefügt werden. Benutzerdefinierte Verzeichnisse erscheinen dann in der Dropdownliste Verzeichnis im Verbinden Fenster. Benutzerdefinierte Verzeichnisse funktionieren für Clients auf dieselbe Weise wie öffentliche Verzeichnisse und zeigen eine Liste der bei ihnen registrierten Server an.\n"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:18
-msgid "To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
-msgstr ""
+msgid "To run a Server as a Directory, it should be started with the `--directoryaddress` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
+msgstr "Um einen Server als Verzeichnis zu betreiben, sollte er mit der Option `--directoryaddress` gestartet werden, um sich selbst (d.h. `localhost` oder `127.0.0.1`) zum Verzeichnis für die Abfrage nach Servern zu machen."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:20
 msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
-msgstr ""
+msgstr "Wenn du einen GUI Server betreibst, setze die Adresse des benutzerdefinierten Verzeichnisses in der Registerkarte Optionen auf \"localhost\" und wählen dann \"Benutzerdefiniert\" in der Dropdown-Liste Verzeichnis."
 
-#. type: Plain text
-#: ../wiki/en/Directories.md:23
-msgid "### Points to note about Directories"
-msgstr ""
+#. type: Title ###
+#: ../wiki/en/Directories.md:22
+#, no-wrap
+msgid "Points to note about Directories"
+msgstr "Zu beachtende Punkte über Verzeichnisse"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:25
 msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
-msgstr ""
+msgstr "Wenn du kontrollieren möchtest, welche Server sich an deinem Verzeichnis registrieren können, kannst du mit der Befehlszeilenoption `--listfilter` eine Whitelist im Format `IP Adresse 1[;IP Adresse 2]` aktivieren."
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:27
 msgid "When running a Server behind a NAT firewall on a private network and registering with a Directory on the same network, run the Server using the `--serverpublicip` option to specify the public IP address.  This is necessary to allow Clients on the public Internet to connect to the correct address.  Note that for the Server(s) using this option, you will still need proper port forwarding in your router/firewall."
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:29
 msgid "When running a Client behind a NAT firewall on a private network with a Directory on the same network, the Directory itself needs to be run using the `--serverpublicip` option to specify the public IP address, so that any Servers on the public Internet registering with the Directory that require the \"hole punch\" can be accessed by the Client(s). (This is because otherwise the Directory would provide the local network address of the Client to the Server and the \"hole punch\" would fail.)"
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:31
 msgid "If you need to restart your Directory for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
 msgstr ""
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:32
 msgid "Up to 150 Servers can then register with a Directory."
 msgstr ""

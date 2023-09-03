@@ -2,38 +2,40 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
+# 이정희 <daemul72@gmail.com>, 2023.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-16 15:25+0000\n"
-"Last-Translator: 이정희 <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-08-28 09:54+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "en"
 msgstr "ko_KR"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "/wiki/Directories"
 msgstr "/wiki/Directories"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "Directories"
@@ -42,59 +44,62 @@ msgstr "디렉터리"
 #. type: Plain text
 #: ../wiki/en/Directories.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr "{% include breadcrumb.html root=\"더보기\" branch1=\"서버 관리\" branch1-url=\"서버 실행\" %}"
+msgstr "{% include breadcrumb.html root=\"더보기\" branch1=\"서버 관리\" branch1-url=\"Running-a-Server\" %}"
 
-#. type: Plain text
-#: ../wiki/en/Directories.md:12
-msgid "# Running a Directory"
-msgstr "# 디렉터리 실행"
+#. type: Title #
+#: ../wiki/en/Directories.md:11
+#, no-wrap
+msgid "Running a Directory"
+msgstr "디렉터리 실행하기"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:14
-msgid "This is a specialised Jamulus Server configuration, as described in [Server Types](Running-a-Server#server-types)."
-msgstr "[서버 유형](Running-a-Server#server-types)에 설명된 대로 전문화된 Jamulus 서버 구성입니다."
+msgid "This is a specialised Jamulus Server configuration, as described in [Server Modes](Running-a-Server#server-modes)."
+msgstr "이것은 [서버 모드](Running-a-Server#server-modes)에 설명된 대로 전문화된 Jamulus 서버 구성입니다."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:16
-msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them."
-msgstr "사용자 지정 디렉터리로 나열된 서버를 보려면, 사용자가 클라이언트의 설정 > 고급 설정 > 사용자 지정 디렉터리 필드에 해당 디렉터리의 주소를 입력해야 합니다. 필요한 경우 이러한 방식으로 여러 주소를 추가할 수 있습니다. 그러면 사용자 지정 디렉터리가 연결 창의 디렉터리 드롭다운 목록에 나타납니다. 그렇지 않으면 사용자 지정 디렉터리는 공용 디렉터리와 동일한 방식으로 클라이언트에 대해 작동하여 등록된 서버 목록을 표시합니다."
+#, no-wrap
+msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them.\n"
+msgstr "사용자 정의 디렉터리에 나열된 서버를 보려면, 사용자는 클라이언트의 설정 > 고급 설정 > 사용자 정의 디렉터리 필드에 해당 디렉터리의 주소를 입력해야 합니다. 필요한 경우 이러한 방식으로 여러 주소를 추가할 수 있습니다. 그러면 사용자 정의 디렉터리가 연결 창의 디렉터리 드롭다운 목록에 나타납니다. 그렇지 않으면 사용자 정의 디렉터리는 공용 디렉터리와 동일한 방식으로 클라이언트에 대해 작동하며 등록된 서버 목록을 표시합니다.\n"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:18
-msgid "To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
-msgstr "서버를 디렉터리로 실행하려면, `--directoryserver` 옵션으로 시작하여 서버를 쿼리할 디렉터리(즉, 'localhost' 또는 '127.0.0.1')를 만들어야 합니다."
+msgid "To run a Server as a Directory, it should be started with the `--directoryaddress` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
+msgstr "서버를 디렉터리로 실행하려면, `--directoryaddress` 옵션으로 시작하여 서버를 쿼리할 디렉터리(즉, 'localhost' 또는 '127.0.0.1')를 만들어야 합니다."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:20
 msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
 msgstr "GUI를 사용하여 서버를 실행할 때, 옵션 탭의 사용자 지정 디렉터리 서버 주소를 \"localhost\"로 설정한 다음 디렉터리 드롭다운 목록에서 \"사용자 지정\"을 선택합니다."
 
-#. type: Plain text
-#: ../wiki/en/Directories.md:23
-msgid "### Points to note about Directories"
-msgstr "### 디렉터리에 대해 주의할 점들"
+#. type: Title ###
+#: ../wiki/en/Directories.md:22
+#, no-wrap
+msgid "Points to note about Directories"
+msgstr "디렉터리에 대한 유의 사항"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:25
 msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
 msgstr "디렉터리에 등록할 수 있는 서버를 제어하려면 `IP 주소 1[;ip 주소 2]` 형식의 `--listfilter` 명령줄 옵션을 사용하여 허용 목록을 사용하도록 설정할 수 있습니다."
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:27
 msgid "When running a Server behind a NAT firewall on a private network and registering with a Directory on the same network, run the Server using the `--serverpublicip` option to specify the public IP address.  This is necessary to allow Clients on the public Internet to connect to the correct address.  Note that for the Server(s) using this option, you will still need proper port forwarding in your router/firewall."
-msgstr "사설 네트워크에서 NAT 방화벽 뒤에 서버를 실행하고 동일한 네트워크의 디렉토리에 등록하는 경우 `--serverpublicip` 옵션을 사용하여 서버를 실행하여 공용 IP 주소를 지정하십시오.  이는 공용 인터넷의 클라이언트가 올바른 주소에 연결할 수 있도록 하는 데 필요합니다.  이 옵션을 사용하는 서버의 경우 라우터/방화벽에서 적절한 포트 포워딩이 필요합니다."
+msgstr "사설 네트워크에서 NAT 방화벽 뒤에 서버를 실행하고 동일한 네트워크의 디렉토리에 등록하는 경우 `--serverpublicip` 옵션을 사용하여 서버를 실행하여 공인 IP 주소를 지정하십시오.  이는 공용 인터넷의 클라이언트가 올바른 주소에 연결할 수 있도록 하는 데 필요합니다.  이 옵션을 사용하는 서버의 경우 라우터/방화벽에서 적절한 포트 포워딩이 필요합니다."
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:29
 msgid "When running a Client behind a NAT firewall on a private network with a Directory on the same network, the Directory itself needs to be run using the `--serverpublicip` option to specify the public IP address, so that any Servers on the public Internet registering with the Directory that require the \"hole punch\" can be accessed by the Client(s). (This is because otherwise the Directory would provide the local network address of the Client to the Server and the \"hole punch\" would fail.)"
-msgstr "동일한 네트워크의 디렉터리가 있는 사설 네트워크의 NAT 방화벽 뒤에서 클라이언트를 실행할 때 디렉터리 자체는 공용 IP 주소를 지정하기 위해 `--serverpublicip` 옵션을 사용하여 실행되어야 합니다. \"홀 펀치\"가 필요한 디렉터리에 등록하면 클라이언트가 액세스할 수 있습니다. (그렇지 않으면 디렉홀리가 클라이언트의 로컬 네트워크 주소를 서버에 제공하고 \"홀 펀치\"가 실패하기 때문입니다.)"
+msgstr "동일한 네트워크의 디렉터리가 있는 사설 네트워크의 NAT 방화벽 뒤에서 클라이언트를 실행할 때 디렉터리 자체는 공인 IP 주소를 지정하기 위해 `--serverpublicip` 옵션을 사용하여 실행되어야 합니다. \"홀 펀치\"가 필요한 디렉터리에 등록하면 클라이언트가 액세스할 수 있습니다. (그렇지 않으면 디렉홀리가 클라이언트의 로컬 네트워크 주소를 서버에 제공하고 \"홀 펀치\"가 실패하기 때문입니다.)"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:31
 msgid "If you need to restart your Directory for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
 msgstr "어떤 이유로든 디렉터리를 다시 시작해야 하는 경우(예: 호스트를 재부팅할 때), 디렉터리에 연결된 서버는 다시 등록할 때까지 연결이 끊어집니다. 이것은 해당 서버에 연결된 클라이언트의 연결이 끊어진다는 것을 의미하지 않지만, 새 클라이언트는 해당 서버가 다시 연결될 때까지 디렉터리에 나열된 서버를 볼 수 없음을 의미합니다. 등록된 서버 목록이 재시작 사이에 유지되도록 하려면 `--directoryfile` 옵션을 사용하여 디렉터리가 읽고 쓸 수 있는 파일의 위치와 이름을 지정하십시오."
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Directories.md:32
 msgid "Up to 150 Servers can then register with a Directory."
 msgstr "150개 이상의 서버를 디렉토리에 등록할 수 있습니다."

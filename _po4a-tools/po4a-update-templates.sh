@@ -22,16 +22,16 @@ PO_DIR="../_translator-files/po"
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo Error: Please install po4a. v0.63 or higher is required >&2
+    echo Error: Please install po4a. v0.68 or higher is required >&2
     exit 1
 fi
 
 # Check if the right version is installed
 PO4A_VER=$(po4a --version | grep po4a | awk '{print $3}')
 
-if [[ $PO4A_VER < 0.63 ]] ; then
+if [[ $PO4A_VER < 0.68 ]] ; then
     echo Error: po4a v"$PO4A_VER" is installed >&2
-    echo po4a v0.63 or higher is required. >&2
+    echo po4a v0.68 or higher is required. >&2
     exit 1
 fi
 
@@ -63,10 +63,13 @@ while IFS= read -r -d '' doc ; do
         # Determine file format to be used
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
+            OPTION="skip_array"
         elif [ $ext == html ] ; then
             FILE_FORMAT=xml
+            OPTION="ontagerror=warn"
         elif [ $ext == md ] ; then
-            FILE_FORMAT=asciidoc
+            FILE_FORMAT=text
+            OPTION="markdown"
         fi
 
         # Update/create .po files
@@ -76,6 +79,8 @@ while IFS= read -r -d '' doc ; do
             --master-charset "UTF-8" \
             --msgmerge-opt  --no-wrap \
             --wrap-po newlines \
+            --no-deprecation \
+            --option "$OPTION" \
             --po "$po_file" ; then
         echo ''
         echo Error updating "$lang" PO file for: "$filename".$ext

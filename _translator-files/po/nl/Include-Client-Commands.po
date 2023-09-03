@@ -1,53 +1,46 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Henk De Groot <weblate@hdegroot.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-13 11:24+0000\n"
-"Last-Translator: Henk De Groot <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-03-26 08:40+0000\n"
+"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
-#. type: Plain text
-#: ../wiki/en/Include-Client-Commands.md:2
-#, no-wrap
-msgid "`-M` or `--mutestream`  Prevent others on a server from hearing what I play                                                      \n"
-msgstr "`-M` of `--mutestream`  Voorkom dat anderen op een server horen wat ik speel                                                      \n"
-
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Include-Client-Commands.md:3
-#, no-wrap
-msgid "`--mutemyown` Prevent me from hearing what I play in the server mix (headless only)                                                      \n"
-msgstr "`--mutemyown`  Voorkom dat ik hoor wat ik speel in de servermix (alleen in \"headless\" mode)                                                      \n"
+msgid "`-M` or `--mutestream` Prevent others on a server from hearing what I play"
+msgstr "`-M` of `--mutestream` Voorkom dat anderen op een server horen wat ik speel"
 
-#. type: Plain text
+#. type: Bullet: '- '
+#: ../wiki/en/Include-Client-Commands.md:3
+msgid "`--mutemyown` Prevent me from hearing what I play in the server mix (headless only)"
+msgstr "`--mutemyown` Voorkom dat ik hoor wat ik speel in de servermix (alleen in \"headless\" mode)"
+
+#. type: Bullet: '-  '
+#: ../wiki/en/Include-Client-Commands.md:3
+msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
+msgstr "`-c` of `--connect` Verbind met het opgegeven serveradres bij het opstarten, formaat `adres[:poort]`"
+
+#. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:4
-#, no-wrap
-msgid "`-c` or `--connect`  Connect to given server address on startup, format `address[:port]`  \n"
-msgstr "`-c` of `--connect`  Verbind met het opgegeven serveradres bij het opstarten, formaat `adres[:poort]`  \n"
+msgid "`-j` or `--nojackconnect` Disable auto JACK connections"
+msgstr "`-j` of `--nojackconnect` Schakel automatisch JACK verbindingen uit"
 
-#. type: Plain text
-#: ../wiki/en/Include-Client-Commands.md:5
-#, no-wrap
-msgid "`-j` or `--nojackconnect`  Disable auto JACK connections  \n"
-msgstr "`-j` of `--nojackconnect`  Schakel automatisch JACK verbindingen uit  \n"
-
-#. type: Plain text
+#. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
-#, no-wrap
-msgid "`--ctrlmidich`  MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels) and Mute Myself CC number. Format: `channel[;f*][;p*][;s*][;m*][;o]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)\n"
-msgstr "`--ctrlmidich`  MIDI controller kanaal om naar te luisteren, control nummer offset en opeenvolgend CC nummers (kanalen) en demp mijzelf CC nummer. Formaat: `kanaal[;f*][;p*][;s*][;m*][;o]` Zie [Tips & trucs](Tips-Tricks-More#ctrlmidich-gebruiken-voor-midi-controllers) \n"
+msgid "`--ctrlmidich` MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels) and Mute Myself CC number. Format: `channel[;f*][;p*][;s*][;m*][;o]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)"
+msgstr "`--ctrlmidich` MIDI controller kanaal om naar te luisteren, control nummer offset en opeenvolgend CC nummers (kanalen) en demp mijzelf CC nummer. Formaat: `kanaal[;f*][;p*][;s*][;m*][;o]` Zie [Tips & trucs](Tips-Tricks-More#ctrlmidich-gebruiken-voor-midi-controllers)"
 
-#. type: Plain text
+#. type: Bullet: '- '
 #: ../wiki/en/Include-Client-Commands.md:6
-#, no-wrap
-msgid "`--clientname`  Window title and JACK client name\n"
-msgstr "`--clientname`  Venster titel en JACK client naam \n"
+msgid "`--clientname` Window title and JACK client name"
+msgstr "`--clientname` Venster titel en JACK client naam"

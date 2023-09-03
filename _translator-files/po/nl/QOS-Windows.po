@@ -1,40 +1,39 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Henk De Groot <weblate@hdegroot.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-13 11:24+0000\n"
-"Last-Translator: Henk De Groot <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-03-27 17:01+0000\n"
+"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/QOS-Windows.md:1
 #, no-wrap
 msgid "en"
 msgstr "nl"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/QOS-Windows.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/QOS-Windows.md:1
 #, no-wrap
 msgid "/wiki/QOS-Windows"
 msgstr "/wiki/QOS-Windows"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/QOS-Windows.md:1
 #, no-wrap
 msgid "Quality of Service (QoS)"
@@ -45,10 +44,11 @@ msgstr "Quality of Service (QoS)"
 msgid "{% include breadcrumb.html root=\"More\" %}"
 msgstr "{% include breadcrumb.html root=\"Meer\" %}"
 
-#. type: Plain text
-#: ../wiki/en/QOS-Windows.md:11
-msgid "## Use of QoS on Windows"
-msgstr "## Gebruik van QoS in Windows"
+#. type: Title ##
+#: ../wiki/en/QOS-Windows.md:10
+#, no-wrap
+msgid "Use of QoS on Windows"
+msgstr "Gebruik van QoS in Windows"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:13
@@ -67,8 +67,47 @@ msgstr "De QoS-instellingen van Jamulus (inclusief de standaard) zijn ingesteld 
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:37
-msgid "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br> In new window, (click) on the menu icon to display the Actions third panel<br> Looking at the first panel of the Local Group Policy Editor<br> &nbsp;Local Computer Policy<br> &nbsp;&nbsp;Computer Configuration<br> &nbsp;&nbsp;&nbsp;Windows Settings<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br> Looking at the third panel (Actions) of the Local Group Policy Editor<br> &nbsp;Policy-based QoS<br> &nbsp;&nbsp;More Actions<br> &nbsp;&nbsp;&nbsp;Create new Policy (click)<br> &nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br> &nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;Next<br> &nbsp;&nbsp;&nbsp;&nbsp;UDP<br> &nbsp;&nbsp;&nbsp;&nbsp;Finish<br>"
-msgstr "Typ in het zoekvak naast het menu Start: gpedit.msc (enter)<br> In het nieuwe venster, (klik) op het menu icoon om het Actievenster weer te geven<br>Gebruik nu het linker paneel in de editor voor lokaal groepsbeleid<br> &nbsp;Beleid voor Lokale computer<br> &nbsp;&nbsp;Computerconfiguratie<br> &nbsp;&nbsp;&nbsp;Windows-instellingen<br> &nbsp;&nbsp;&nbsp;Op beleid gebaseerde QoS (klik)<br>Gebruik het derde (Acties) paneel in de editor voor lokaal groepsbeleid<br> &nbsp;Op beleidgebasseerde QoS<br> &nbsp; &nbsp;Meer acties<br> &nbsp; &nbsp; &nbsp;Nieuwe beleidsinstelling maken (klik)<br> &nbsp; &nbsp; &nbsp; &nbsp;Beleidsnaam: Jamulus<br> &nbsp; &nbsp; &nbsp; &nbsp;DSCP-waarde opgeven: 32<br> &nbsp; &nbsp; &nbsp; &nbsp;Volgende<br> &nbsp; &nbsp; &nbsp; &nbsp;Alleen toepassingen met deze naam (uitvoerbaar): Jamulus.exe<br> &nbsp; &nbsp; &nbsp; &nbsp;Volgende<br> &nbsp; &nbsp; &nbsp; &nbsp;Volgende<br> &nbsp; &nbsp; &nbsp; &nbsp;UDP<br> &nbsp; &nbsp; &nbsp; &nbsp;Voltooien<br>"
+#, no-wrap
+msgid ""
+"In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br>\n"
+"In new window, (click) on the menu icon to display the Actions third panel<br>\n"
+"Looking at the first panel of the Local Group Policy Editor<br>\n"
+"&nbsp;Local Computer Policy<br>\n"
+"&nbsp;&nbsp;Computer Configuration<br>\n"
+"&nbsp;&nbsp;&nbsp;Windows Settings<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Policy-based QoS (click)<br>\n"
+"Looking at the third panel (Actions) of the Local Group Policy Editor<br>\n"
+"&nbsp;Policy-based QoS<br>\n"
+"&nbsp;&nbsp;More Actions<br>\n"
+"&nbsp;&nbsp;&nbsp;Create new Policy (click)<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Policy Name: Jamulus<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Specify DSCP value: 32<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;This QoS policy applies Only to applications with name Jamulus.exe<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Next<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Finish<br>\n"
+msgstr ""
+"Typ in het zoekvak naast het menu Start: gpedit.msc (enter)<br>\n"
+"In het nieuwe venster, (klik) op het menu icoon om het Actievenster weer te geven<br>\n"
+"Gebruik nu het linker paneel in de editor voor lokaal groepsbeleid<br>\n"
+"&nbsp;Beleid voor Lokale computer<br>\n"
+"&nbsp;&nbsp;Computerconfiguratie<br>\n"
+"&nbsp;&nbsp;&nbsp;Windows-instellingen<br>\n"
+"&nbsp;&nbsp;&nbsp;Op beleid gebaseerde QoS (klik)<br>\n"
+"Gebruik het derde (Acties) paneel in de editor voor lokaal groepsbeleid<br>\n"
+"&nbsp;Op beleidgebasseerde QoS<br>\n"
+"&nbsp; &nbsp;Meer acties<br>\n"
+"&nbsp; &nbsp; &nbsp;Nieuwe beleidsinstelling maken (klik)<br>\n"
+"&nbsp; &nbsp; &nbsp; &nbsp;Beleidsnaam: Jamulus<br>\n"
+"&nbsp; &nbsp; &nbsp; &nbsp;DSCP-waarde opgeven: 32<br>\n"
+"&nbsp; &nbsp; &nbsp; &nbsp;Volgende<br>\n"
+"&nbsp; &nbsp; &nbsp; &nbsp;Alleen toepassingen met deze naam (uitvoerbaar): Jamulus.exe<br>\n"
+"&nbsp; &nbsp; &nbsp; &nbsp;Volgende<br>\n"
+"&nbsp; &nbsp; &nbsp; &nbsp;Volgende<br>\n"
+"&nbsp; &nbsp; &nbsp; &nbsp;UDP<br>\n"
+"&nbsp; &nbsp; &nbsp; &nbsp;Voltooien<br>\n"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:39

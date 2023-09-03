@@ -101,9 +101,13 @@ If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you
 
 If you see a "mute" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero.
 
+Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu.
+
+If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
+
 ### Grp button
 
-Defines a group of audio channels. Moving the fader of one member of the group moves the faders of all the others. Up to 8 groups can be defined.
+You can group users together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag. Up to 8 groups can be defined.
 
 ### Mute button
 
@@ -114,12 +118,6 @@ Note that muting your **own** channel only means you will not hear your signal f
 ### Solo button
 
 Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a "muted" icon above your fader.
-
-Users are listed left to right in the order that they connect. You can change the sort order using the Edit option in the application menu.
-
-You can group users together using the "group" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag.
-
-If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
 
 # Settings
 
@@ -154,7 +152,7 @@ This turns on a sound alert for when someone joins a Server, or when receiving a
 
 <figure><img src="{% include img/en-screenshots/settings-network.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of audio/network settings window"></figure>
 
-### Device
+### Audio Device
 
 Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO
 driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected.
@@ -226,7 +224,7 @@ If the Auto setting is enabled, the jitter buffers
 of your local Client and the remote server are set automatically based on measurements of the network and sound card
 timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse).
 
-### Enable small network buffers
+### Small Network Buffers
 
 Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts
 also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality.
@@ -304,5 +302,6 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 {% include_relative Include-Shared-Commands.md %}
 
+# Controlling the Client via API
 
-
+In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).

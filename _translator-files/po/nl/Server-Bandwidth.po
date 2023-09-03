@@ -1,40 +1,39 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Henk De Groot <weblate@hdegroot.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-10-13 11:24+0000\n"
-"Last-Translator: Henk De Groot <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-04-23 11:11+0000\n"
+"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "en"
 msgstr "nl"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "/wiki/Server-Bandwidth"
 msgstr "/wiki/Server-Bandwidth"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "Bandwidth Use"
@@ -43,52 +42,23 @@ msgstr "Bandbreedtegebruik"
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr "{% include breadcrumb.html root=\"Meer\" branch1=\"Serverbeheer\" branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"Meer\" branch1=\"Serverhandleiding\" branch1-url=\"Running-a-Server\" %}"
 
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:11
-msgid "## Audio bandwidth"
-msgstr "## Audio bandbreedte"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:13
-msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
-msgstr "De audio-instellingen hebben invloed op de benodigde netwerkbandbreedte. De onderstaande tabel geeft een overzicht van de netwerkvereisten met betrekking tot de configuratie van:"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:14
-msgid "Channels : stereo/mono"
-msgstr "Audiokanalen : stereo/mono"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:15
-msgid "Quality : high/medium/low"
-msgstr "Audiokwaliteit : hoog/normaal/laag"
+#. type: Title ##
+#: ../wiki/en/Server-Bandwidth.md:10
+#, no-wrap
+msgid "Audio bandwidth"
+msgstr "Audio bandbreedte"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
-msgid "Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr "Audiobuffervertraging : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:18
-msgid "With the following units"
-msgstr "Met de volgende eenheden"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:19
-msgid "ms : milliseconds"
-msgstr "ms : milliseconde"
-
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:20
-msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
-msgstr "Kbit/s : Kilo-bits per seconde (Ter herinnering : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
+msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+msgstr "De audio-instellingen hebben invloed op de benodigde netwerkbandbreedte. De onderstaande tabel geeft een overzicht van de netwerkvereisten met betrekking tot de configuratie van: * Kanalen : stereo/mono * Kwaliteit : hoog/normaal/laag * Audio buffer duur : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
-msgid "Mbit/s : Mega-bits per second"
-msgstr "Mbit/s : Mega-bits per seconde"
+msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
+msgstr "Met de volgende eenheden * ms : milliseconden * Kbit/s : Kilobits per seconde (Herinnering : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Megabits per seconde"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
@@ -112,10 +82,11 @@ msgstr ""
 "| Mono      | Normaal  | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
 "| Mono      | Laag     | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 
-#. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:32
-msgid "## Network bandwidth"
-msgstr "## Netwerk bandbreedte"
+#. type: Title ##
+#: ../wiki/en/Server-Bandwidth.md:31
+#, no-wrap
+msgid "Network bandwidth"
+msgstr "Netwerk bandbreedte"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38
@@ -137,3 +108,21 @@ msgstr ""
 #: ../wiki/en/Server-Bandwidth.md:40
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
 msgstr "Weet dat de gemiddelde ADSL2-overdrachtssnelheid 10 Mbit/s is voor downstream en 1 Mbit/s voor upstream. De werkelijke prestaties zijn afhankelijk van de afstand tot de provider, die [theoretisch kan variëren van 24 Mbit/s bij 0,3 km tot 1,5 Mbit/s bij 5,2 km](https://nl.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) voor de downloadsnelheid."
+
+#~ msgid "Channels : stereo/mono"
+#~ msgstr "Audiokanalen : stereo/mono"
+
+#~ msgid "Quality : high/medium/low"
+#~ msgstr "Audiokwaliteit : hoog/normaal/laag"
+
+#~ msgid "Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+#~ msgstr "Audiobuffervertraging : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+
+#~ msgid "With the following units"
+#~ msgstr "Met de volgende eenheden"
+
+#~ msgid "ms : milliseconds"
+#~ msgstr "ms : milliseconde"
+
+#~ msgid "Mbit/s : Mega-bits per second"
+#~ msgstr "Mbit/s : Mega-bits per seconde"

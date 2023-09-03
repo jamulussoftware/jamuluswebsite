@@ -3,80 +3,80 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-10-31 14:02+0000\n"
-"Last-Translator: yangyangdaji <redacted@invalid.local>\n"
+"PO-Revision-Date: 2022-12-30 02:51+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Getting-Started.md:1
 #, no-wrap
 msgid "en"
 msgstr "zh_CN"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Getting-Started.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Getting-Started.md:1
 #, no-wrap
 msgid "/wiki/Getting-Started"
 msgstr "/wiki/Getting-Started"
 
-#. type: YAML Front Matter: title
+#. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Getting-Started.md:1
 #, no-wrap
 msgid "Setup"
 msgstr "设置"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:9
-msgid "# Setup - getting started with Jamulus"
-msgstr "# 设置 - Jamulus  入门"
+#. type: Title #
+#: ../wiki/en/Getting-Started.md:8
+#, no-wrap
+msgid "Setup - getting started with Jamulus"
+msgstr "设置 - Jamulus 入门"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:11
 msgid "To get the best from Jamulus, at a minimum you will need:"
 msgstr "要从 Jamulus 获得最佳效果，您至少需要:"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:13
-#, no-wrap
-msgid "**A wired internet connection** (and turn wi-fi off. See the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))\n"
-msgstr "**有线网络连接**（并关闭wi-fi。见[FAQ](/wiki/FAQ#为什么我不应该使用无线设备))\n"
-
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:14
-#, no-wrap
-msgid "**Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))\n"
-msgstr "**有线耳机**（不是蓝牙或扬声器--见[FAQ](/wiki/FAQ#为什么我不应该使用无线设备))\n"
-
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Getting-Started.md:15
-#, no-wrap
-msgid "**A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)\n"
-msgstr "**一个合理的音频设备、声卡和/或麦克风**（[见此列表](/kb/2021/01/05/Jamulus-Sound-Devices.html) 中的例子)\n"
+msgid "**A wired internet connection** (and turn wi-fi off. See the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))"
+msgstr "**有线网络连接**(并关闭wi-fi。见[FAQ](/wiki/FAQ#为什么我不应该使用无线设备))"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Getting-Started.md:15
+msgid "**Wired headphones** (not Bluetooth or speakers - see the [FAQ](/wiki/FAQ#why-shouldnt-i-use-wireless-equipment))"
+msgstr "**有线耳机**(不是蓝牙或扬声器--见[FAQ](/wiki/FAQ#为什么我不应该使用无线设备))"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Getting-Started.md:15
+msgid "**A reasonable audio device, sound card and/or mic** ([see this list](/kb/2021/01/05/Jamulus-Sound-Devices.html) for examples)"
+msgstr "**一个合理的音频设备、声卡和/或麦克风**([见此列表](/kb/2021/01/05/Jamulus-Sound-Devices.html) 中的例子)"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:17
 msgid "If you have any questions, please see the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)"
 msgstr "如果你有任何问题，请参见[讨论](https://github.com/jamulussoftware/jamulus/discussions)"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:19
-msgid "## Installation"
-msgstr "## 安装"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:18
+#, no-wrap
+msgid "Installation"
+msgstr "安装"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:21
@@ -85,14 +85,21 @@ msgstr "要让 Jamulus 与您的操作系统一起工作，请遵循您平台的
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:28
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<div class=\"fx-row fx-row-start-xs button-container\">\n"
+#| "    <a href=\"Installation-for-Windows\" class=\"button fx-col-100-xs\">Windows</a>\n"
+#| "    <a href=\"Installation-for-Macintosh\" class=\"button fx-col-100-xs\">macOS</a>\n"
+#| "    <a href= \"Installation-for-Linux\" class=\"button fx-col-100-xs\">Linux</a>\n"
+#| "</div>\n"
+#| "_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are still considered experimental._\n"
 msgid ""
 "<div class=\"fx-row fx-row-start-xs button-container\">\n"
 "    <a href=\"Installation-for-Windows\" class=\"button fx-col-100-xs\">Windows</a>\n"
 "    <a href=\"Installation-for-Macintosh\" class=\"button fx-col-100-xs\">macOS</a>\n"
 "    <a href= \"Installation-for-Linux\" class=\"button fx-col-100-xs\">Linux</a>\n"
 "</div>\n"
-"_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are still considered experimental._\n"
+"_[Android](Installation-for-Android) and [iOS](Installation-for-iOS) can be used too, but are considered experimental._\n"
 msgstr ""
 "<div class=\"fx-row fx-row-start-xs button-container\">\n"
 "    <a href=\"Installation-for-Windows\" class=\"button fx-col-100-xs\">Windows</a>\n"
@@ -106,20 +113,22 @@ msgstr ""
 msgid "And for now, close all other applications. It’s best to start simple at first."
 msgstr "现在，关闭所有其他应用程序。最好从简单开始。"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:32
-msgid "## Hardware Setup"
-msgstr "## 硬件设置"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:31
+#, no-wrap
+msgid "Hardware Setup"
+msgstr "硬件设置"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:34
 msgid "If you use external audio hardware, plug that in before you start Jamulus. If you haven't configured your hardware, please see the installation guides mentioned above."
 msgstr "如果您使用外部音频硬件，请在启动 Jamulus 之前将其插入。如果您尚未配置硬件，请参阅上面提到的安装指南。"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:36
-msgid "## Jamulus main window"
-msgstr "## Jamulus 主窗口"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:35
+#, no-wrap
+msgid "Jamulus main window"
+msgstr "Jamulus 主窗口"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:38
@@ -140,10 +149,11 @@ msgstr ""
 "  <figcaption>连接服务器前的主窗口</figcaption>\n"
 "</figure>\n"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:46
-msgid "## Setting up a profile"
-msgstr "## 设置个人资料"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:45
+#, no-wrap
+msgid "Setting up a profile"
+msgstr "设置个人资料"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:48
@@ -169,21 +179,22 @@ msgstr ""
 msgid "Fill in at least “Alias/Name” and close the window."
 msgstr "至少填写“别名/名称”并关闭窗口。"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:58
-msgid "## Connecting to a Server and testing your sound"
-msgstr "## 连接到服务器并测试你的声音"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:57
+#, no-wrap
+msgid "Connecting to a Server and testing your sound"
+msgstr "连接到服务器并测试你的声音"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:60
 msgid "Before you connect to a Server, you should **not** be able to hear yourself.  Listening to your sound from Jamulus (and not from yourself) is called “The Golden Rule” and enables you to play in time with others ([see the FAQ](/wiki/FAQ#why-should-i-not-listen-to-my-own-signal))."
-msgstr "在你连接到服务器之前，你不应该***能听到自己的声音。 听取来自 Jamulus 的声音（而不是自己的声音）被称为 \"黄金法则\"，它使你能够与他人同步演奏（[见FAQ](/wiki/FAQ#为什么我不应该听自己的信号）。"
+msgstr "在你连接到服务器之前，你不应该***能听到自己的声音。 听取来自 Jamulus 的声音(而不是自己的声音)被称为 \"黄金法则\"，它使你能够与他人同步演奏([见FAQ](/wiki/FAQ#为什么我不应该听自己的信号)。"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:62
 #, no-wrap
 msgid "**Before playing with others, we recommend that you connect to an empty Server to test your setup**, and make sure you are listening to the signal coming back from the Server (if possible) and not yourself.\n"
-msgstr "**在与其他人使用之前，我们建议你连接到一个空的服务器来测试你的设置**，并确保你在听从服务器回来的信号（如果可能的话）而不是你自己。\n"
+msgstr "**在与其他人使用之前，我们建议你连接到一个空的服务器来测试你的设置**，并确保你在听从服务器回来的信号(如果可能的话)而不是你自己。\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:64
@@ -214,15 +225,16 @@ msgstr "服务器最重要的是它们的“ping 时间”。数字越大，就�
 msgid "Once connected to a Server, make sure you can hear yourself OK and fix any input volume or other problems. You can have a look at the [troubleshooting page](/wiki/Client-Troubleshooting) for common problems. And of course, check that you are also able to obey [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 msgstr "一旦连接到服务器，确保你能听到自己的声音，并解决任何输入音量或其他问题。你可以看看[故障排除页面](/wiki/Client-Troubleshooting)，了解常见的问题。当然，还要检查你是否也能遵守[黄金法则](/wiki/Client-Troubleshooting#你们听起来都不错但很难保持在一起)。"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:75
-msgid "## Playing for the first time"
-msgstr "##第一次使用"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:74
+#, no-wrap
+msgid "Playing for the first time"
+msgstr "第一次使用"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:77
 msgid "With your sound all set up, you are ready to go. When you connect to a Server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you."
-msgstr "声音设置好后，您就可以开始了。当您连接到服务器时（您可能希望从列表中选择一种流派），您在右侧看到的推子是您自己的个人混音。你在这里改变的一切都会改变你听到的，但不会影响其他人。如果你向下移动推子，该通道会更安静，如果你向上移动它，该通道会更响亮。"
+msgstr "声音设置好后，您就可以开始了。当您连接到服务器时(您可能希望从列表中选择一种流派)，您在右侧看到的推子是您自己的个人混音。你在这里改变的一切都会改变你听到的，但不会影响其他人。如果你向下移动推子，该通道会更安静，如果你向上移动它，该通道会更响亮。"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:82
@@ -253,10 +265,11 @@ msgstr "请注意，您可以在连接时随时使用聊天工具向其他人发
 msgid "More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual)."
 msgstr "关于使用 Jamulus 的更多信息可以在[软件手册](/wiki/Software-Manual)中找到。"
 
-#. type: Plain text
-#: ../wiki/en/Getting-Started.md:90
-msgid "## Troubleshooting"
-msgstr "## 故障排除"
+#. type: Title ##
+#: ../wiki/en/Getting-Started.md:89
+#, no-wrap
+msgid "Troubleshooting"
+msgstr "故障排除"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:91

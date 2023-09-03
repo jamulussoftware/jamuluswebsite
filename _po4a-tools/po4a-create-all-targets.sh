@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script creates the target translations from the .po files
-# po4a >= 0.63 is required, see https://github.com/mquinson/po4a/releases
+# po4a >= 0.68 is required, see https://github.com/mquinson/po4a/releases
 # You can set the following variables:
 # SRC_DIR: directory for the original documents in English. Files in sub-directories within SRC_DIR are also detected.
 # PO_DIR: directory where the .po files are stored
@@ -31,16 +31,16 @@ DATA_DIR="../_data"
 
 # Check if po4a is installed
 if ! [ -x "$(command -v po4a)" ] ; then
-    echo Error: Please install po4a. v0.63 or higher is required >&2
+    echo Error: Please install po4a. v0.68 or higher is required >&2
     exit 1
 fi
 
 # Check if the right version is installed
 PO4A_VER=$(po4a --version | grep po4a | awk '{print $3}')
 
-if [[ $PO4A_VER < 0.63 ]] ; then
+if [[ $PO4A_VER < 0.68 ]] ; then
     echo Error: po4a v"$PO4A_VER" is installed >&2
-    echo po4a v0.63 or higher is required. >&2
+    echo po4a v0.68 or higher is required. >&2
     exit 1
 fi
 
@@ -78,7 +78,7 @@ process_with_po4a () {
         # Get source doc names and set target file names and dirs
         filename=$(basename "$doc" .$ext)
 
-        if [[ $filename == 'general' || $filename == 'navigation' ]] ; then
+        if [[ $filename == 'general' || $filename == 'navigation' || $filename == 'copyright' ]] ; then
             TARG_DIR="$DATA_DIR"
 
         else
@@ -87,7 +87,7 @@ process_with_po4a () {
 
         targ_doc="$TARG_DIR/$lang/$filename.$ext"
 
-        # Files excluded from the threshold requirement
+        # Files excluded from the threshold requirement (otherwise website will not build properly)
         if [[
             "$filename" == 'Include-'* || \
             "$filename" == *'-index' || \
@@ -102,10 +102,13 @@ process_with_po4a () {
         # Determine file format to be used
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
+            OPTION="skip_array"
         elif [ $ext == html ] ; then
             FILE_FORMAT=xml
+            OPTION="ontagerror=warn"
         elif [ $ext == md ] ; then
-            FILE_FORMAT=asciidoc
+            FILE_FORMAT=text
+            OPTION="markdown"
         fi
 
         # Run po4a-translate and create target files
@@ -116,11 +119,21 @@ process_with_po4a () {
             --po "$PO_DIR/$lang/${filename}.po" \
             --localized "$targ_doc" \
             --localized-charset "UTF-8" \
+            --no-deprecation \
+            --option "$OPTION" \
             --keep "$THRESHOLD"
 
         # Display message if translated file is created
         if [ -f $targ_doc ] ; then
             echo "$filename.$ext" translated into "$lang"
+        fi
+
+        # Check if language is set correctly in '1-$lang-index.html'
+        if [ $filename == '1-index' ] ; then
+            if ! grep -Fxq 'lang: "'$lang'"' "$WIKI_DIR/$lang/1-index.html" ; then
+                echo replacing incorrect language tag in 1-"$lang"-index.html;
+                sed -i '0,/lang: "[^"]*"/s/lang: "[^"]*"/lang: "'$lang'"/' "$WIKI_DIR/$lang/1-index.html"
+            fi
         fi
 
     done <   <(find -L "$SRC_DIR" -name "*.*"  -print0)
@@ -134,6 +147,3 @@ while IFS= read -r -d '' dir ; do
     echo "$lang":
     process_with_po4a "$lang"
 done <   <(find "$PO_DIR" -mindepth 1 -maxdepth 1 -type d -print0)
-
-# Produce a file with translation status of all .po files
-source ./po4a-stats.sh

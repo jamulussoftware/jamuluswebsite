@@ -1,41 +1,43 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2022, 2023.
+# Ettore Atalan <atalanttore@googlemail.com>, 2023.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-08-16 16:56+0000\n"
-"Last-Translator: ann0see <please@seeGitHubOrWeblate.local>\n"
+"PO-Revision-Date: 2023-07-31 20:22+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/jamulus/installation-for-linux/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
-#. type: YAML Front Matter: lang
+#. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "en"
 msgstr "de"
 
-#. type: YAML Front Matter: layout
+#. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "wiki"
 msgstr "wiki"
 
-#. type: YAML Front Matter: permalink
+#. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Linux"
 msgstr "/wiki/Installation-for-Linux"
 
-#. type: YAML Front Matter: title
+#. type: Title #
 #: ../wiki/en/Installation-for-Linux.md:1
+#: ../wiki/en/Installation-for-Linux.md:10
 #, no-wrap
 msgid "Installation for Linux"
 msgstr "Installation auf Linux"
@@ -43,12 +45,7 @@ msgstr "Installation auf Linux"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:9
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
-msgstr "{% include breadcrumb.html root=\"Jamulus verwenden \" branch1=\"Erste Schritte\" branch1-url=\"Getting-Started\" %}"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:11
-msgid "# Installation for Linux"
-msgstr "# Installation auf Linux"
+msgstr "{% include breadcrumb.html root=\"Jamulus verwenden\" branch1=\"Erste Schritte\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:13
@@ -58,170 +55,221 @@ msgstr "Stelle sicher, dass du die [Erste Schritte](Getting-Started) Seite berei
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:15
 msgid "{% include infobox_each_os.html %}"
-msgstr ""
+msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
-msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
-msgstr "Updatest du? Es macht Sinn die [Konfiguration](Software-Manual#sicherung-von-jamulus) zu sichern."
+#, no-wrap
+msgid "**Upgrading?** You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.\n"
+msgstr "**Updatest du?** Es macht Sinn die [Konfiguration](Software-Manual#sicherung-von-jamulus) zu sichern.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
-msgid "### Debian and Ubuntu"
-msgstr "### Debian and Ubuntu"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:21
-#, fuzzy
-#| msgid "We provide two equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
-msgid "We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
-msgstr "Wir stellen zwei äquivalente `.deb`-Dateien für die gängigsten Architekturen zur Verfügung. Bitte lade die entsprechende Datei herunter:"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:23
 #, no-wrap
-msgid "**For Intel/AMD based machines (amd64):**\n"
-msgstr "**Für Intel/AMD-basierte Maschinen (amd64):**\n"
+msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.\n"
+msgstr "**Installierst du einen Server?** Lies zuerst die [Anleitung für Serveradministratoren](Running-a-Server)\n"
+
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:20
+#, no-wrap
+msgid "Debian and Ubuntu"
+msgstr "Debian und Ubuntu"
+
+#. type: Title ####
+#: ../wiki/en/Installation-for-Linux.md:22
+#, no-wrap
+msgid "Using the official Repository (recommended)"
+msgstr "Nutze die offizielle Paketquelle (empfohlen)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:25
-msgid "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
-msgstr "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
+msgid "We provide a repository for Debian and Ubuntu based distributions that allows automatic updates alongside your other system updates. To use the repository:"
+msgstr "Wir stellen Paketquellen für Debian und Ubuntu-basierte Distributionen zur Verfügung. Dadurch werden automatische Upgrades neben den Systemupdates möglich. Um diese zu nutzen, folgen diesen Anweisungen:"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:27
-#, fuzzy, no-wrap
-#| msgid "**For ARM based machines (e.g. Raspberry Pi, armhf):**\n"
-msgid "**For ARM based machines (e.g. Raspberry Pi, armhf, arm64):**\n"
-msgstr "**Für ARM-basierte Rechner (z. B. Raspberry Pi, armhf):**\n"
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:29
+msgid "Open your Terminal (CTRL+ALT+T should work)"
+msgstr "Öffne dein Terminal (z.B. mit STRG+ALT+T)"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:30
-#, fuzzy
-#| msgid "[Download Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}"
-msgid "[Download Jamulus 32 bit (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button} [Download Jamulus 64 bit (.deb, arm64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }}){:.button}"
-msgstr "[Download Jamulus (.deb, armhf)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}){:.button}"
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:29
+#: ../wiki/en/Installation-for-Linux.md:48
+msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788))."
+msgstr "**Nur Ubuntu** - Aktiviere das Ubuntu \"universe\" repository (Du kannst dazu die [GUI Methode](https://askubuntu.com/a/148645) oder die [CLI Methode](https://askubuntu.com/a/227788) nutzen)."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:32
-msgid "After you downloaded the correct file:"
-msgstr "Nachdem du die richtige Datei heruntergeladen hast:"
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:29
+msgid "Download the repository setup script:\\\\"
+msgstr "Lade das Skript für die Paketquellen herunter:\\\\"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:34
+#. type: Fenced code block (bash)
+#: ../wiki/en/Installation-for-Linux.md:29
 #, no-wrap
-msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788)).\n"
-msgstr "**Nur Ubuntu** - Aktiviere das Ubuntu \"universe\" repository (Du kannst dazu den [GUI Ansatz](https://askubuntu.com/a/148645) oder den [CLI Ansatz](https://askubuntu.com/a/227788) nutzen).\n"
+msgid "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
+msgstr "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:35
-#, fuzzy, no-wrap
-#| msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
-msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`\n"
-msgstr "Aktualisiere apt, indem du ein Konsolen Fenster öffnest (STRG+ALT+T sollte funktionieren) und folgendes eingibst: `sudo apt-get update`"
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:33
+msgid "Make the script executable:\\\\"
+msgstr "Mache das Skript ausführbar:\\\\"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:36
-#, fuzzy, no-wrap
-#| msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` or for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`"
-msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` for armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}` for arm64: `sudo apt install ./{{ site.download_file_names.deb-gui-arm64 }}`\n"
-msgstr "Wechsle in das Verzeichnis in das du das Installationsprogramm gespeichert hast und doppelklicke darauf, oder verwende die Befehlszeile: `sudo apt install ./{{ site.download_file_names.deb-gui }}` oder für armhf: `sudo apt install ./{{ site.download_file_names.deb-gui-armhf }}`"
+#. type: Fenced code block (bash)
+#: ../wiki/en/Installation-for-Linux.md:33
+#, no-wrap
+msgid "chmod +x setup_repo.sh\n"
+msgstr "chmod +x setup_repo.sh\n"
 
-#. type: Plain text
+#. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:37
-#, fuzzy, no-wrap
-#| msgid "Once installed, you can delete the file and close any console windows."
-msgid "Once installed, you can delete the file and close any console windows.\n"
+msgid "Run the setup script and install Jamulus:\\\\"
+msgstr "Führe das Setup-Skript aus und installiere Jamulus:\\\\"
+
+#. type: Fenced code block (bash)
+#: ../wiki/en/Installation-for-Linux.md:37
+#, no-wrap
+msgid "sudo ./setup_repo.sh && sudo apt install jamulus\n"
+msgstr "sudo ./setup_repo.sh && sudo apt install jamulus\n"
+
+#. type: Title ####
+#: ../wiki/en/Installation-for-Linux.md:41
+#, no-wrap
+msgid "Installing the .deb files manually"
+msgstr ".deb Dateien manuell installieren"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:48
+msgid "Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
+msgstr "Downloade Jamulus für deine Architektur: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) oder [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:48
+msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
+msgstr "Aktualisiere apt, indem du dein Terminal öffnest (STRG+ALT+T sollte funktionieren) und folgendes eingibst: `sudo apt-get update`"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:48
+msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)"
+msgstr "Wechsle in das Verzeichnis in das du das Installationsprogramm gespeichert hast und doppelklicke darauf, oder verwende die Befehlszeile: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (oder für Raspberry Pi etc. wie oben)"
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:48
+msgid "Once installed, you can delete the file and close any console windows."
 msgstr "Sobald die Installation fertig ist, kannst du die Datei löschen und alle Terminalfenster schließen."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:39
-msgid "Note that if you need to upgrade Jamulus to a newer version, just download the new .deb file and re-install as above."
-msgstr "Wenn du Jamulus auf eine neue Version aktualisierst, kannst du die neue .deb Datei einfach herunterladen und wie oben beschrieben neu installieren."
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:41
-msgid "### Other distributions"
-msgstr "### Andere Distributionen"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:43
-msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
-msgstr "Für Installer auf anderen Distributionen, durchsuche die Paketverwaltung und [Repology](https://repology.org/project/jamulus/versions). Wenn keine aktuelle Jamulus version in deiner Distribution enthalten ist, kannst du [Jamulus kompilieren](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Du kannst auch die inoffiziellen [Installationsskripte](https://github.com/jamulussoftware/installscripts) nutzen."
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:45
-msgid "## Set up your hardware"
-msgstr "## Richte deine Hardware ein"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:47
-msgid "### Configure JACK with QjackCtl"
-msgstr "### Konfiguriere Jack mit QjackCtl"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:49
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
-msgstr "Jamulus-Clients benötigen [JACK](https://jackaudio.org/) für den Betrieb, aber das musst du zuerst konfigurieren. Die empfohlene Methode ist die Verwendung von `QjackCtl`."
-
-#. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:50
-msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
-msgstr "Öffne QjackCtl und warte, bis sich das **Jack Audio Connection Kit** öffnet"
+#, no-wrap
+msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version and install Jamulus manually, just download the new .deb file and re-install as above.\n"
+msgstr "**Upgrades:** Wenn du Jamulus auf eine neue Version aktualisierst und Jamulus manuell installiert hast, kannst du die neue .deb Datei einfach herunterladen und wie oben beschrieben neu installieren.\n"
 
-#. type: Plain text
+#. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:51
-msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr "Konfiguriere dein Audiointerface wie folgt (die genauen Einstellungen für JACK hängen von den Funktionen deiner Soundkarte ab):"
-
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:53
-msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
-msgstr "Wähle dein Audio **Interface** aus (es können mehrere in der Liste sichtbar sein)"
+#, no-wrap
+msgid "Other distributions"
+msgstr "Andere Distributionen"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:54
+msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
+msgstr "Für Installer auf anderen Distributionen, durchsuche die Paketverwaltung und [Repology](https://repology.org/project/jamulus/versions). Wenn keine aktuelle Jamulus Version in deiner Distribution enthalten ist, kannst du [Jamulus kompilieren](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Du kannst auch die inoffiziellen [Installationsskripte](https://github.com/jamulussoftware/installscripts) nutzen."
+
+#. type: Title ##
+#: ../wiki/en/Installation-for-Linux.md:55
+#, no-wrap
+msgid "Set up your hardware"
+msgstr "Richte deine Hardware ein"
+
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:57
+#, no-wrap
+msgid "Configure JACK with QjackCtl"
+msgstr "Konfiguriere Jack mit QjackCtl"
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:60
+msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+msgstr "Jamulus-Clients benötigen [JACK](https://jackaudio.org/) für den Betrieb, aber das musst du zuerst konfigurieren. Die empfohlene Methode ist die Verwendung von `QjackCtl`."
+
+#. type: Bullet: '1. '
+#: ../wiki/en/Installation-for-Linux.md:63
+msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+msgstr "Öffne QjackCtl und warte, bis sich das **Jack Audio Connection Kit** öffnet"
+
+#. type: Bullet: '2. '
+#: ../wiki/en/Installation-for-Linux.md:63
+msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+msgstr "Konfiguriere dein Audiointerface wie folgt (die genauen Einstellungen für JACK hängen von den Funktionen deiner Soundkarte ab):"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Installation-for-Linux.md:67
+msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
+msgstr "Wähle dein Audio **Interface** aus (es können mehrere in der Liste sichtbar sein)"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Installation-for-Linux.md:67
 msgid "Set the **Sample Rate to 48000**"
 msgstr "Setzte die **Sample Rate auf 48000**"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:55
+#. type: Bullet: '- '
+#: ../wiki/en/Installation-for-Linux.md:67
 msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
 msgstr "Setze die **Frames/Period auf 128** und Periods/Buffer zunächst auf 2"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:57
+#: ../wiki/en/Installation-for-Linux.md:69
 msgid "Restart JACK for the new settings to take effect"
 msgstr "Starte JACK neu, um die neuen Einstellungen zu übernehmen"
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:59
-msgid "### Start Jamulus"
-msgstr "### Jamulus starten"
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:70
+#, no-wrap
+msgid "Start Jamulus"
+msgstr "Jamulus starten"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:61
+#: ../wiki/en/Installation-for-Linux.md:73
 msgid "With JACK running and configured, launch Jamulus."
 msgstr "Sobald JACK läuft und konfiguriert ist, starte Jamulus."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:63
+#: ../wiki/en/Installation-for-Linux.md:75
 msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
 msgstr "Wenn du Soundprobleme (kurze Unterbrechungen, Knistern o.Ä.) beobachtest (insbesondere XRUNs, die von Jack/QjackCtl gemeldet werden), versuche größere Werte (z.B. 256 Frames oder 3 Perioden) zu setzen. Niedrigere Einstellungen (z.B. 64 Frames) bieten zwar eine bessere Leistung, verursachen aber möglicherweise mehr Soundprobleme. Siehe auch die [Fehlerbehebungsseite](Client-Troubleshooting)."
 
-#. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:65
-msgid "## All installed?"
-msgstr "## Alles installiert?"
+#. type: Title ##
+#: ../wiki/en/Installation-for-Linux.md:76
+#, no-wrap
+msgid "All installed?"
+msgstr "Alles installiert?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:67
+#: ../wiki/en/Installation-for-Linux.md:79
 msgid "Take a look at the"
 msgstr "Jetzt kannst du auf die folgende Seite gehen"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:68
-#, fuzzy
-#| msgid "[Jamulus setup page](Getting-Started){: .button}"
+#: ../wiki/en/Installation-for-Linux.md:80
 msgid "[Getting Started page](Getting-Started){: .button}"
-msgstr "[Nach der Installation](Getting-Started){: .button}"
+msgstr "[Jamulus Setup Seite](Getting-Started){: .button}"
+
+#~ msgid "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
+#~ msgstr "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
+
+#~ msgid "After you downloaded the correct file:"
+#~ msgstr "Nachdem du die richtige Datei heruntergeladen hast:"
+
+#~ msgid "# Installation for Linux"
+#~ msgstr "# Installation auf Linux"
+
+#, fuzzy
+#~| msgid "We provide two equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
+#~ msgid "We provide three equivalent `.deb` files for the most common architectures. Please download the appropriate one:"
+#~ msgstr "Wir stellen zwei äquivalente `.deb`-Dateien für die gängigsten Architekturen zur Verfügung. Bitte lade die entsprechende Datei herunter:"
+
+#~ msgid "**For Intel/AMD based machines (amd64):**\n"
+#~ msgstr "**Für Intel/AMD-basierte Maschinen (amd64):**\n"
+
+#, fuzzy
+#~| msgid "**For ARM based machines (e.g. Raspberry Pi, armhf):**\n"
+#~ msgid "**For ARM based machines (e.g. Raspberry Pi, armhf, arm64):**\n"
+#~ msgstr "**Für ARM-basierte Rechner (z. B. Raspberry Pi, armhf):**\n"
