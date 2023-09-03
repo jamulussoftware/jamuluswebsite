@@ -1,15 +1,29 @@
-<!-- NOTE: This must apply to both Client and Server, and all operating systems -->
+<!-- NOTA: questo deve essere applicato sia al client che al server ea tutti i sistemi operativi -->
 
-Once installed and running, you may want to keep a copy of your settings. Having a backup is always a good idea, and settings files are not backwardly compatible between versions of Jamulus. So if you want to go back to the previous version, you will need to restore the settings you had.
+Una volta installato e funzionante, potresti voler conservare una copia
+delle tue impostazioni. Avere un backup è sempre una buona idea, e i file
+delle impostazioni non sono retrocompatibili tra le versioni di
+Jamulus. Quindi, se vuoi tornare alla versione precedente, dovrai
+ripristinare le impostazioni che avevi.
 
-To find your settings file on Windows, type `%APPDATA%` into the search bar and look for a folder named `Jamulus`. There will be one or more `.ini` files in this folder. Now back up Jamulus' settings.
+Per trovare il file delle impostazioni su Windows, digita `%APPDATA%` nella
+barra di ricerca e cerca una cartella denominata `Jamulus`. Ci saranno uno o
+più file `.ini` in questa cartella. Ora esegui il backup delle impostazioni
+di Jamulus.
 
-For all other platforms, run the following from the command line to find where they live and copy the files to another location:
+Per tutte le altre piattaforme, bisogna eseguire quanto segue nella riga di
+comando per trovare dove si trovano, e copiare i file in un'altra posizione:
 
 `find ~ -name Jamulus.ini -ls`
 
-If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files. **Points to note**
+Se hai utilizzato il parametro '--inifile' per salvare un file ini in una
+posizione diversa, non dimenticare di eseguire anche il backup di questi
+file.  **Punti da notare**
 
-* Do not back up or restore settings files when Jamulus is running.
-* It is not recommended to manually edit settings files (they're not designed for that).
-* You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus).
+* Non eseguire il backup o il ripristino dei file delle impostazioni quando
+  Jamulus è in esecuzione.
+* Non è consigliato modificare manualmente i file delle impostazioni (non
+  sono progettati per questo).
+* Puoi ripristinare tutte le impostazioni ai valori predefiniti
+  semplicemente eliminando il file delle impostazioni (dopo aver chiuso
+  Jamulus).
