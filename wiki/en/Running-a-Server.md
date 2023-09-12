@@ -71,9 +71,9 @@ To run a headless server on Linux, the following steps assume you are familiar w
 
 1. Reload the systemd files and restart the headless Server:
 
-	`sudo systemctl daemon-reload && systemctl restart jamulus-headless`
+	`sudo systemctl daemon-reload && sudo systemctl restart jamulus-headless`
 
-_To amend your Server configuration, just repeat the last two steps above._
+_To edit your Server configuration, just repeat the last two steps above._
 
 ---
 
