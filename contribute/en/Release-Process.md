@@ -220,6 +220,8 @@ $ cd ../jamulus
 
 ## Upload binaries to SourceForge
 
+**NOTE**: As of Sept 2023 we have a webhook set to transfer the downloads automatically to SourceForge on GitHub release. Check to see whether that's worked before following the steps below! 
+
 You will need an authorised SourceForge account.
 
 `sftp [your_accountname]@frs.sourceforge.net`
