@@ -60,15 +60,15 @@ To run a headless server on Linux, the following steps assume you are familiar w
 
 1. Download the setup script:
 
-    `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`
+	`curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`
 
 1. Make the script executable:
 
-    `chmod +x setup_repo.sh`
+	`chmod +x setup_repo.sh`
 
 1. Run the script and install the headless server:
 
-    `sudo ./setup_repo.sh && sudo apt install jamulus-headless`
+	`sudo ./setup_repo.sh && sudo apt install jamulus-headless`
 
 1. Enable the headless Server process:
 
