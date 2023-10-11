@@ -58,9 +58,18 @@ Most people run Jamulus on a 3rd party/cloud host as a "headless" Server (no vid
 
 To run a headless server on Linux, the following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution that uses systemd.
 
-1. Download the setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`
-1. Make the script executable: `chmod +x setup_repo.sh`
-1. Run the script and install the headless server: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`
+1. Download the setup script:
+
+    `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`
+
+1. Make the script executable:
+
+    `chmod +x setup_repo.sh`
+
+1. Run the script and install the headless server:
+
+    `sudo ./setup_repo.sh && sudo apt install jamulus-headless`
+
 1. Enable the headless Server process:
 
 	`sudo systemctl enable jamulus-headless`
