@@ -289,7 +289,7 @@ To start a new recording:
  ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless
 ~~~
 
-_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name which is used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example.
+_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example.
 
 Run `sudo systemctl daemon-reload` to register them for first use.
 
