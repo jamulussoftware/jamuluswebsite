@@ -128,7 +128,7 @@ process_with_po4a () {
             echo "$filename.$ext" translated into "$lang"
         fi
 
-        # Check if language is set correctly in '1-$lang-index.html'
+        # Check if language is set correctly in '1-$lang-index.md'
         if [ $filename == '1-index' ] ; then
             if ! grep -Fxq 'lang: "'$lang'"' "$WIKI_DIR/$lang/1-index.md" ; then
                 echo replacing incorrect language tag in 1-"$lang"-index.md;

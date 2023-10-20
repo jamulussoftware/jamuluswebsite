@@ -17,7 +17,7 @@ echo Creating .po files for "$new_lang"
 # Go to root directory
 cd ../
 
-# Create symlinks for 1-index.html file
+# Create symlinks for 1-index.md file
 ln -s -r ./wiki/$new_lang/1-index.md ./1-$new_lang-index.md
 if [ $(echo $?) == 0 ] ; then
     echo ''
