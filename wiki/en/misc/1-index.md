@@ -37,7 +37,7 @@ mTOtherPlatforms: 'other platforms'
     <h2>Help needed?</h2>
     <p>
       <div markdown="1">
-      Check out the [documentation](wiki/Getting-Started) and consider the [troubleshooting section[(wiki/Client-Troubleshooting)!
+      Check out the [documentation](wiki/Getting-Started) and consider the [troubleshooting section](wiki/Client-Troubleshooting)!
       You can also ask on the [forums](https://github.com/jamulussoftware/jamulus/discussions).
       </div>
     </p>
