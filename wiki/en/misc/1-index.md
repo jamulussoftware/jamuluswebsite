@@ -36,9 +36,10 @@ mTOtherPlatforms: 'other platforms'
     in schools and universities, in private and in public — all in real time on the Internet, as if you were there in person.
     <h2>Help needed?</h2>
     <p>
-      Check out the <a href="wiki/Getting-Started" target="_blank" rel="noreferrer">documentation</a> and consider the <a href="wiki/Client-Troubleshooting"
-        target="_blank" rel="noreferrer">troubleshooting section</a>!
-      You can also ask on the <a href="https://github.com/jamulussoftware/jamulus/discussions" target="_blank" rel="noreferrer">forums</a>.
+      <div markdown="1">
+      Check out the [documentation](wiki/Getting-Started) and consider the [troubleshooting section[(wiki/Client-Troubleshooting)!
+      You can also ask on the [forums](https://github.com/jamulussoftware/jamulus/discussions).
+      </div>
     </p>
   </div>
   <div class="fx-col-100-xs fx-col-50-l">
