@@ -1,1 +1,1 @@
-wiki/ko_KR/1-index.md
+wiki/it/1-index.md

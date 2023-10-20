@@ -103,10 +103,10 @@ process_with_po4a () {
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
             OPTION="skip_array"
-        elif [ $ext == html ] ; then
+        elif [[ $ext == html || "$filename" == *'-index' ]] ; then
             FILE_FORMAT=xml
             OPTION="ontagerror=warn"
-        elif [ $ext == md ] ; then
+        elif [[ $ext == md && "$filename" != *'-index' ]] ; then
             FILE_FORMAT=text
             OPTION="markdown"
         fi
@@ -130,9 +130,9 @@ process_with_po4a () {
 
         # Check if language is set correctly in '1-$lang-index.html'
         if [ $filename == '1-index' ] ; then
-            if ! grep -Fxq 'lang: "'$lang'"' "$WIKI_DIR/$lang/1-index.html" ; then
-                echo replacing incorrect language tag in 1-"$lang"-index.html;
-                sed -i '0,/lang: "[^"]*"/s/lang: "[^"]*"/lang: "'$lang'"/' "$WIKI_DIR/$lang/1-index.html"
+            if ! grep -Fxq 'lang: "'$lang'"' "$WIKI_DIR/$lang/1-index.md" ; then
+                echo replacing incorrect language tag in 1-"$lang"-index.md;
+                sed -i '0,/lang: "[^"]*"/s/lang: "[^"]*"/lang: "'$lang'"/' "$WIKI_DIR/$lang/1-index.md"
             fi
         fi
 

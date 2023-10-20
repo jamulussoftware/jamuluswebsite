@@ -64,10 +64,10 @@ while IFS= read -r -d '' doc ; do
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
             OPTION="skip_array"
-        elif [ $ext == html ] ; then
+        elif [[ $ext == html || "$filename" == *'-index' ]] ; then
             FILE_FORMAT=xml
             OPTION="ontagerror=warn"
-        elif [ $ext == md ] ; then
+        elif [[ $ext == md && "$filename" != *'-index' ]] ; then
             FILE_FORMAT=text
             OPTION="markdown"
         fi

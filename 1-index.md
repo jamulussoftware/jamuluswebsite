@@ -1,1 +1,1 @@
-./wiki/en/misc/1-index.md
+wiki/en/misc/1-index.md
