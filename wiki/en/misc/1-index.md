@@ -14,7 +14,7 @@ mTDownloadNow: 'Download now for'
 mTPlatformsAnd: 'and'
 mTOtherPlatforms: 'other platforms'
 ---
-[//]: # Markdown sections should not be indented
+[//]: # Markdown sections should not be indented, otherwise they are treated as code blocks.
 <div class="fx-row fx-row-center-xs" id="firstrow">
   <div class="fx-col-100-xs">
     <div itemprop="abstract">
