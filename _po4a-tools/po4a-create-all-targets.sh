@@ -103,7 +103,7 @@ process_with_po4a () {
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
             OPTION="skip_array"
-        elif [[ $ext == html || "$filename" == *'-index' ]] ; then # '-index.md has a markdown extension but is actually html and should be processed as such by po4a
+        elif [[ $ext == html || "$filename" == *'-index' ]] ; then # '-index.md' has a markdown extension but is actually html and should be processed as such by po4a
             FILE_FORMAT=xml
             OPTION="ontagerror=warn"
         elif [[ $ext == md && "$filename" != *'-index' ]] ; then
