@@ -295,7 +295,7 @@ To turn recording on or off (depending on the current state):
 
  [Service]
  Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+ ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless
 ~~~
 
 To start a new recording:
@@ -307,10 +307,10 @@ To start a new recording:
 
  [Service]
  Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
+ ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless
 ~~~
 
-_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_
+_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example.
 
 Run `sudo systemctl daemon-reload` to register them for first use.
 
@@ -318,7 +318,7 @@ Now you can run these with the `systemctl` command, for example:
 
 `sudo systemctl start jamulusTogglerec`
 
-You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs.
+You can see the result of these commands if you run `systemctl status jamulus-headless` (or the respective service name you specified manually). You can also view your (sys)log.
 
 ---
 
