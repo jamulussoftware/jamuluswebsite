@@ -800,7 +800,15 @@ msgstr "Para activar o desactivar la grabación (dependiendo del estado actual):
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:291
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| " [Unit]\n"
+#| " Description=Toggle recording state of Jamulus Server\n"
+#| " Requisite=Jamulus-Server\n"
+#| "\n"
+#| " [Service]\n"
+#| " Type=oneshot\n"
+#| " ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
 msgid ""
 " [Unit]\n"
 " Description=Toggle recording state of Jamulus Server\n"
@@ -808,7 +816,7 @@ msgid ""
 "\n"
 " [Service]\n"
 " Type=oneshot\n"
-" ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless\n"
 msgstr ""
 " [Unit]\n"
 " Description=Toggle recording state of Jamulus Server\n"
@@ -825,7 +833,15 @@ msgstr "Para iniciar una nueva grabación:"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:303
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| " [Unit]\n"
+#| " Description=Start a new recording on Jamulus Server\n"
+#| " Requisite=Jamulus-Server\n"
+#| "\n"
+#| " [Service]\n"
+#| " Type=oneshot\n"
+#| " ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
 msgid ""
 " [Unit]\n"
 " Description=Start a new recording on Jamulus Server\n"
@@ -833,7 +849,7 @@ msgid ""
 "\n"
 " [Service]\n"
 " Type=oneshot\n"
-" ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless\n"
 msgstr ""
 " [Unit]\n"
 " Description=Start a new recording on Jamulus Server\n"
@@ -845,7 +861,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:314
-msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
+#, fuzzy
+#| msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
+msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example."
 msgstr "_Nota: El nombre del servicio Jamulus en la línea de `ExecStart` tiene que ser el mismo que el nombre del archivo `.service` que creaste cuando configuraste systemd para controlar tu Servidor Jamulus. Así que en este ejemplo sería `Jamulus-Server.service`_"
 
 #. type: Plain text
@@ -865,7 +883,9 @@ msgstr "`sudo systemctl start jamulusTogglerec`"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:322
-msgid "You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs."
+#, fuzzy
+#| msgid "You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs."
+msgid "You can see the result of these commands if you run `systemctl status jamulus-headless` (or the respective service name you specified manually). You can also view your (sys)log."
 msgstr "Puedes ver el resultado de estos comandos si ejecutas `systemctl status jamulus`, o viendo los registros."
 
 #. type: Title ##

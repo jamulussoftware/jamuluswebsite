@@ -777,7 +777,7 @@ msgid ""
 "\n"
 " [Service]\n"
 " Type=oneshot\n"
-" ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless\n"
 msgstr ""
 
 #. type: Plain text
@@ -795,12 +795,12 @@ msgid ""
 "\n"
 " [Service]\n"
 " Type=oneshot\n"
-" ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:314
-msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
+msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example."
 msgstr ""
 
 #. type: Plain text
@@ -820,7 +820,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:322
-msgid "You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs."
+msgid "You can see the result of these commands if you run `systemctl status jamulus-headless` (or the respective service name you specified manually). You can also view your (sys)log."
 msgstr ""
 
 #. type: Title ##
