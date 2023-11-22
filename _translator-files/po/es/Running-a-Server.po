@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-24 18:48+0000\n"
+"PO-Revision-Date: 2023-11-22 21:07+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0\n"
+"X-Generator: Weblate 5.2.1-rc\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -182,24 +182,24 @@ msgstr "Para ejecutar un Servidor \"headless\" en Linux, los siguientes pasos su
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:62
 msgid "Download the setup script:"
-msgstr ""
+msgstr "Descargue el script de instalación:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:66
-#, fuzzy, no-wrap
-#| msgid "Download the setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
+#, no-wrap
 msgid ""
 "    ```\n"
 "    curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
 "    ```\n"
-msgstr "Descarga el script de la instalación: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`"
+msgstr ""
+"    ```\n"
+"    curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
+"    ```\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:68
-#, fuzzy
-#| msgid "Make the script executable: `chmod +x setup_repo.sh`"
 msgid "Make the script executable:"
-msgstr "Haz que el script sea ejecutable: `chmod +x setup_repo.sh`"
+msgstr "Haga que el script sea ejecutable:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:72
@@ -209,23 +209,26 @@ msgid ""
 "    chmod +x setup_repo.sh\n"
 "    ```\n"
 msgstr ""
+"    ```\n"
+"    chmod +x setup_repo.sh\n"
+"    ```\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:74
-#, fuzzy
-#| msgid "Reload the systemd files and restart the headless Server:"
 msgid "Run the script and install the headless server:"
-msgstr "Vuelve a cargar los archivos de systemd y reinicia el Servidor \"headless\":"
+msgstr "Ejecute el script e instale el servidor headless:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:78
-#, fuzzy, no-wrap
-#| msgid "Run the script and install the headless server: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`"
+#, no-wrap
 msgid ""
 "    ```\n"
 "    sudo ./setup_repo.sh && sudo apt install jamulus-headless\n"
 "    ```\n"
-msgstr "Ejecuta el script e instala el servidor: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`"
+msgstr ""
+"    ```\n"
+"    sudo ./setup_repo.sh && sudo apt install jamulus-headless\n"
+"    ```\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:80
@@ -234,13 +237,15 @@ msgstr "Habilita el proceso del Servidor headless:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:84
-#, fuzzy, no-wrap
-#| msgid "\t`sudo systemctl enable jamulus-headless`\n"
+#, no-wrap
 msgid ""
 "    ```\n"
 "    sudo systemctl enable jamulus-headless\n"
 "    ```\n"
-msgstr "\t`sudo systemctl enable jamulus-headless`\n"
+msgstr ""
+"    ```\n"
+"    sudo systemctl enable jamulus-headless\n"
+"    ```\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:86
@@ -249,13 +254,15 @@ msgstr "Añade las [opciones de línea de comandos](Running-a-Server#opciones-de
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:90
-#, fuzzy, no-wrap
-#| msgid "\t`sudo systemctl edit --full jamulus-headless`\n"
+#, no-wrap
 msgid ""
 "    ```\n"
 "    sudo systemctl edit --full jamulus-headless\n"
 "    ```\n"
-msgstr "\t`sudo systemctl edit --full jamulus-headless`\n"
+msgstr ""
+"    ```\n"
+"    sudo systemctl edit --full jamulus-headless\n"
+"    ```\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:92
@@ -264,20 +271,20 @@ msgstr "Vuelve a cargar los archivos de systemd y reinicia el Servidor \"headles
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:96
-#, fuzzy, no-wrap
-#| msgid "\t`sudo systemctl daemon-reload && systemctl restart jamulus-headless`\n"
+#, no-wrap
 msgid ""
 "    ```\n"
 "    sudo systemctl daemon-reload && sudo systemctl restart jamulus-headless\n"
 "    ```\n"
-msgstr "\t`sudo systemctl daemon-reload && systemctl restart jamulus-headless`\n"
+msgstr ""
+"    ```\n"
+"    sudo systemctl daemon-reload && sudo systemctl restart jamulus-headless\n"
+"    ```\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:98
-#, fuzzy
-#| msgid "_To amend your Server configuration, just repeat the last two steps above._"
 msgid "_To edit your Server configuration, just repeat the last two steps above._"
-msgstr "_Para modificar la configuración de tu Servidor, simplemente repite los dos últimos pasos anteriores._"
+msgstr "_Para editar la configuración de tu Servidor, simplemente repite los dos últimos pasos anteriores._"
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:101
@@ -800,15 +807,7 @@ msgstr "Para activar o desactivar la grabación (dependiendo del estado actual):
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:291
-#, fuzzy, no-wrap
-#| msgid ""
-#| " [Unit]\n"
-#| " Description=Toggle recording state of Jamulus Server\n"
-#| " Requisite=Jamulus-Server\n"
-#| "\n"
-#| " [Service]\n"
-#| " Type=oneshot\n"
-#| " ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
+#, no-wrap
 msgid ""
 " [Unit]\n"
 " Description=Toggle recording state of Jamulus Server\n"
@@ -818,13 +817,13 @@ msgid ""
 " Type=oneshot\n"
 " ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless\n"
 msgstr ""
-" [Unit]\n"
-" Description=Toggle recording state of Jamulus Server\n"
-" Requisite=Jamulus-Server\n"
+" [Unidad]\n"
+" Descripción=Conmutar el estado de grabación del servidor Jamulus\n"
+" Requisito=Servidor Jamulus\n"
 "\n"
-" [Service]\n"
-" Type=oneshot\n"
-" ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
+" [Servicio]\n"
+" Tipo=individual\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:302
@@ -833,15 +832,7 @@ msgstr "Para iniciar una nueva grabación:"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:303
-#, fuzzy, no-wrap
-#| msgid ""
-#| " [Unit]\n"
-#| " Description=Start a new recording on Jamulus Server\n"
-#| " Requisite=Jamulus-Server\n"
-#| "\n"
-#| " [Service]\n"
-#| " Type=oneshot\n"
-#| " ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
+#, no-wrap
 msgid ""
 " [Unit]\n"
 " Description=Start a new recording on Jamulus Server\n"
@@ -851,20 +842,18 @@ msgid ""
 " Type=oneshot\n"
 " ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless\n"
 msgstr ""
-" [Unit]\n"
-" Description=Start a new recording on Jamulus Server\n"
-" Requisite=Jamulus-Server\n"
+" [Unidad]\n"
+" Descripción=Iniciar una nueva grabación en Jamulus Server\n"
+" Requisito=Jamulus-Server\n"
 "\n"
-" [Service]\n"
-" Type=oneshot\n"
-" ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
+" [Servicio]\n"
+" Tipo=oneshot\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:314
-#, fuzzy
-#| msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_"
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example."
-msgstr "_Nota: El nombre del servicio Jamulus en la línea de `ExecStart` tiene que ser el mismo que el nombre del archivo `.service` que creaste cuando configuraste systemd para controlar tu Servidor Jamulus. Así que en este ejemplo sería `Jamulus-Server.service`_"
+msgstr "_Nota: El nombre del servicio Jamulus en la línea `ExecStart` tiene que ser el mismo que el nombre del fichero `.service` usado por systemd para controlar tu servidor Jamulus. Por defecto, si utiliza los archivos `.deb` del repositorio, es `jamulus-headless`, como en este ejemplo."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:316
@@ -883,10 +872,8 @@ msgstr "`sudo systemctl start jamulusTogglerec`"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:322
-#, fuzzy
-#| msgid "You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs."
 msgid "You can see the result of these commands if you run `systemctl status jamulus-headless` (or the respective service name you specified manually). You can also view your (sys)log."
-msgstr "Puedes ver el resultado de estos comandos si ejecutas `systemctl status jamulus`, o viendo los registros."
+msgstr "Puede ver el resultado de estos comandos si ejecuta `systemctl status jamulus-headless` (o el nombre del servicio correspondiente que haya especificado manualmente). También puede ver su registro (sys)."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:325
