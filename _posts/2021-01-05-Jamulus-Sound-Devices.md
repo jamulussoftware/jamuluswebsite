@@ -495,4 +495,4 @@ See above. Not fully verified.
 
 * **Line6 Bass POD**, ❌ USB amplifier modeling pedal for bass. **Does not support 48 kHz**.
 
-* **Yamaha THR5 THR10 Series**, ❌ USB modeling amplifier. **Do not support 48 kHz** (THR30II only is both 44kHz and has a line-out connector).
+* **Yamaha THR5 THR10 Series**, ❌ USB modeling amplifier. **Does not support 48 kHz**.
