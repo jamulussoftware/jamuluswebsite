@@ -17,13 +17,13 @@ echo Creating .po files for "$new_lang"
 # Go to root directory
 cd ../
 
-# Create symlinks for 1-index.md file
-ln -s -r ./wiki/$new_lang/1-index.md ./1-$new_lang-index.md
+# Create symlinks for 1-index.html file
+ln -s -r ./wiki/$new_lang/1-index.html ./1-$new_lang-index.html
 if [ $(echo $?) == 0 ] ; then
     echo ''
-    echo 1-"$new_lang"-index.md symlink created for "$new_lang" in /
+    echo 1-"$new_lang"-index.html symlink created for "$new_lang" in /
 else
-    echo Error creating 1-"$new_lang"-index.md symlink in /
+    echo Error creating 1-"$new_lang"-index.html symlink in /
     exit 1
 fi
 
