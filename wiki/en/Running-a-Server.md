@@ -58,20 +58,41 @@ Most people run Jamulus on a 3rd party/cloud host as a "headless" Server (no vid
 
 To run a headless server on Linux, the following steps assume you are familiar with the command line and Debian/Ubuntu or similar distribution that uses systemd.
 
-1. Download the setup script: `curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh`
-1. Make the script executable: `chmod +x setup_repo.sh`
-1. Run the script and install the headless server: `sudo ./setup_repo.sh && sudo apt install jamulus-headless`
+1. Download the setup script:
+
+    ```
+    curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh
+    ```
+
+1. Make the script executable:
+
+    ```
+    chmod +x setup_repo.sh
+    ```
+
+1. Run the script and install the headless server:
+
+    ```
+    sudo ./setup_repo.sh && sudo apt install jamulus-headless
+    ```
+
 1. Enable the headless Server process:
 
-	`sudo systemctl enable jamulus-headless`
+    ```
+    sudo systemctl enable jamulus-headless
+    ```
 
 1. Add your desired [command line options](Running-a-Server#configuration-options) to the `ExecStart` line in the systemd service file:
 
-	`sudo systemctl edit --full jamulus-headless`
+    ```
+    sudo systemctl edit --full jamulus-headless
+    ```
 
 1. Reload the systemd files and restart the headless Server:
 
-	`sudo systemctl daemon-reload && sudo systemctl restart jamulus-headless`
+    ```
+    sudo systemctl daemon-reload && sudo systemctl restart jamulus-headless
+    ```
 
 _To edit your Server configuration, just repeat the last two steps above._
 
@@ -274,7 +295,7 @@ To turn recording on or off (depending on the current state):
 
  [Service]
  Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server
+ ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless
 ~~~
 
 To start a new recording:
@@ -286,10 +307,10 @@ To start a new recording:
 
  [Service]
  Type=oneshot
- ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server
+ ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless
 ~~~
 
-_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name you created when setting systemd to control your Jamulus Server. So in this example it would be `Jamulus-Server.service`_
+_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example.
 
 Run `sudo systemctl daemon-reload` to register them for first use.
 
@@ -297,7 +318,7 @@ Now you can run these with the `systemctl` command, for example:
 
 `sudo systemctl start jamulusTogglerec`
 
-You can see the result of these commands if you run `systemctl status jamulus`, or by viewing the logs.
+You can see the result of these commands if you run `systemctl status jamulus-headless` (or the respective service name you specified manually). You can also view your (sys)log.
 
 ---
 
