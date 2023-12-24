@@ -54,6 +54,10 @@ For installers on other distributions, see their package managers and [Repology]
 
 ## Set up your hardware
 
+If no instance of a JACK server is running, one is normally started automatically.
+
+Jamulus will attach to a running JACK instance by name, using the `JACK_DEFAULT_SERVER` environment variable or `default` if the variable is not set.
+
 If your distribution uses JACK as the sound server, check out [how to configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).
 
 If your distribution uses PipeWire by default, check out the section on [configuring PipeWire](Installation-for-Linux#configure-pipewire).
