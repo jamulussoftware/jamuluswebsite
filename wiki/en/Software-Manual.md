@@ -200,7 +200,7 @@ connection properties. Three buffer sizes are supported:
 Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.
 In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel.
 
-On Linux, use the JACK configuration tool to change the buffer size.
+On Linux, use the JACK configuration tool to change the buffer size or, if using PipeWire's JACK server, change the PipeWire's Quantum with its own configuration tools.
 
 The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.
 The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the
