@@ -71,7 +71,7 @@ Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to conf
 
 - Set the audio **Interface** to the one you want (there may be several in the list).
 - Set the **Sample Rate to 48000**.
-- Set the **Frames/Period to 128** and Periods/Buffer at 2 at first.
+- Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first.
 
 Restart JACK for the new settings to take effect.
 
