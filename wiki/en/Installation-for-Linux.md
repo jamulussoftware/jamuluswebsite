@@ -92,7 +92,7 @@ pw-metadata -n settings 0 clock.force-quantum 128
 
 With JACK or PipeWire configured, launch Jamulus.
 
-If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise.
+If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but might also bring more sound problems. See [the troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
 
