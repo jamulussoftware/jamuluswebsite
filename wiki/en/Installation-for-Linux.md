@@ -78,7 +78,7 @@ Restart JACK for the new settings to take effect.
 ### Configure PipeWire
 
 The Jamulus Client requires a JACK sound server (native PipeWire support has not yet been implemented).
-PipeWire provides a compatibility layer that emulates the JACK server, so when you launch the Jamulus Client, PîpeWire automatically exposes itself to it as a JACK server.
+PipeWire provides a compatibility layer that emulates the JACK server. When you launch the Jamulus Client, PîpeWire presents itself to Jamulus as a JACK server.
 You need to set your audio interface to the "pro-audio" profile and define PipeWire's "rate" and "quantum" parameters beforehand.
 To do so, follow these steps:
 1. Open `pavucontrol` (the audio mixer) and choose the "pro-audio" profile in the configuration tab.
