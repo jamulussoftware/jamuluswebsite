@@ -54,17 +54,12 @@ For installers on other distributions, see their package managers and [Repology]
 
 ## Set up your hardware
 
-If no instance of a JACK server is running, one is normally started automatically.
-
-Jamulus will attach to a running JACK instance by name, using the `JACK_DEFAULT_SERVER` environment variable or `default` if the variable is not set.
-
-If your distribution uses JACK as the sound server, check out [how to configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).
-
-If your distribution uses PipeWire by default, check out the section on [configuring PipeWire](Installation-for-Linux#configure-pipewire).
+The Jamulus client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server of your distribution.
+If your distribution uses JACK, check out how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl), on the other hand, if it is PipeWire, check out the section called [configure PipeWire](Installation-for-Linux#configure-pipewire) instead.
 
 ### Configure JACK with QjackCtl
 
-Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`.
+To run a [JACK](https://jackaudio.org/) server, the Jamulus team's recommended method is to use `QjackCtl`.
 
 1. Launch QjackCtl. You will see the **Qt JACK Control utility main page**.
 2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):
@@ -73,20 +68,20 @@ Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to conf
 - Set the **Sample Rate to 48000**.
 - Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first.
 
-Restart JACK for the new settings to take effect.
+Restart JACK for the new settings to take effect and rendez-vous at [start Jamulus](Installation-for-Linux#start-jamulus) section.
 
 ### Configure PipeWire
 
-The Jamulus Client requires a JACK sound server (native PipeWire support has not yet been implemented).
-PipeWire provides a compatibility layer that emulates the JACK server. When you launch the Jamulus Client, PîpeWire presents itself to Jamulus as a JACK server.
+PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.
 You need to set your audio interface to the "pro-audio" profile and define PipeWire's "rate" and "quantum" parameters beforehand.
 To do so, follow these steps:
-1. Open `pavucontrol` (the audio mixer) and choose the "pro-audio" profile in the configuration tab.
-2. In a terminal use the two following commands:
+1. Open `pavucontrol` (the audio mixer) and choose the "pro-audio" profile for your audio interface in the configuration tab.
+2. In a terminal use the two following commands to force PipeWire's rate and quantum:
 ```bash
 pw-metadata -n settings 0 clock.force-rate 48000
 pw-metadata -n settings 0 clock.force-quantum 128
 ```
+After these two steps, you can continue reading the rest of this documentation. Your system is ready.
 
 ### Start Jamulus
 
