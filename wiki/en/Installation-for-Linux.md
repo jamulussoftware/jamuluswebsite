@@ -68,7 +68,7 @@ To run a [JACK](https://jackaudio.org/) server, the Jamulus team's recommended m
 - Set the **Sample Rate to 48000**.
 - Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first.
 
-Restart JACK for the new settings to take effect and rendez-vous at [start Jamulus](Installation-for-Linux#start-jamulus) section.
+Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below.
 
 ### Configure PipeWire
 
