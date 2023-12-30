@@ -83,7 +83,7 @@ Follow these steps to set up your system:
 pw-metadata -n settings 0 clock.force-rate 48000
 pw-metadata -n settings 0 clock.force-quantum 128
 ```
-After that, you can continue reading the rest of this documentation. Your system is ready.
+After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below.
 
 ### Start Jamulus
 
