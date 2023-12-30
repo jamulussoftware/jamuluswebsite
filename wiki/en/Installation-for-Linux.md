@@ -62,7 +62,7 @@ If your distribution uses JACK, check out how to [configure JACK with QjackCtl](
 To run a [JACK](https://jackaudio.org/) server, the Jamulus team's recommended method is to use `QjackCtl`.
 
 1. Launch QjackCtl. You will see the **Qt JACK Control utility main page**.
-2. Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):
+2. Configure your audio hardware as follows (except where noted):
 
 - Set the audio **Interface** to the one you want (there may be several in the list).
 - Set the **Sample Rate to 48000**.
