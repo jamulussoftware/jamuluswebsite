@@ -64,7 +64,7 @@ To run a [JACK](https://jackaudio.org/) server, the Jamulus team's recommended m
 1. Launch QjackCtl. You will see the **Qt JACK Control utility main page**.
 2. Configure your audio hardware as follows (except where noted):
 
-- Set the audio **Interface** to the one you want (there may be several in the list).
+- Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK).
 - Set the **Sample Rate to 48000**.
 - Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first.
 
