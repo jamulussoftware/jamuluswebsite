@@ -89,9 +89,6 @@ After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamul
 
 With JACK or PipeWire configured, launch Jamulus.
 
-If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods).
-Lower ones (e.g. 64 frames) could bring better performance but might also bring more sound problems.
-
 See [the troubleshooting page](Client-Troubleshooting) otherwise.
 
 ## All installed?
