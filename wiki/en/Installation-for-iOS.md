@@ -20,7 +20,9 @@ If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.r
 
 * To install Jamulus on your iOS device, you need a (free or paid) Apple Developer account and preferably a computer.
 * If you don't pay for an Apple developer account, Jamulus will only run for at most 7 days before you need to re-install it.
-* Jamulus on iOS works quite well on new devices if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. To connect these to your iOS device, you should use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub.
+* Jamulus on iOS works quite well if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. If you own an older device which has a Lightning port and not USB-C, you can use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub.
+* If use Jamulus on a wireless network, you should prefer a cellular (5G) connection over WiFi.
+* Unofficial Jamulus compatible apps like [KOORD](https://apps.apple.com/us/app/koord/id1621509341) are available on the AppStore but may not have the same features as the official Jamulus release.
 
 
 ## Install for iOS (for experienced users only)
@@ -38,7 +40,7 @@ If you own a Mac and have Xcode installed, compiling Jamulus from source might b
 
 ## Feedback and development
 
-iOS support isn't mature yet and far from ready to be published on the AppStore. Feel free to help out:
+iOS support isn't mature and not ready to be published on the AppStore. Feel free to help out:
 Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/).
 
 Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/main/APPLEAPPSTORE.LICENCE.WAIVER) concerning Jamulus being published via the Apple AppStore.
