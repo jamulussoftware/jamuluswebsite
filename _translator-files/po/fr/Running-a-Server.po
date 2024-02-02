@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-25 10:53+0000\n"
+"PO-Revision-Date: 2023-12-02 12:06+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/running-a-server/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.3-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -811,7 +811,7 @@ msgstr "Pour activer ou désactiver l'enregistrement (selon l'état actuel) :"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:291
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " [Unit]\n"
 " Description=Toggle recording state of Jamulus Server\n"
@@ -822,12 +822,12 @@ msgid ""
 " ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless\n"
 msgstr ""
 " [Unit]\n"
-" Description=Toggle recording state of Jamulus Server\n"
+" Description=Basculer l'état d'enregistrement du serveur Jamulus\n"
 " Requisite=Jamulus-Server\n"
 "\n"
 " [Service]\n"
 " Type=oneshot\n"
-" ExecStart=/bin/systemctl kill -s SIGUSR2 Jamulus-Server\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:302
@@ -836,7 +836,7 @@ msgstr "Pour démarrer un nouvel enregistrement :"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:303
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 " [Unit]\n"
 " Description=Start a new recording on Jamulus Server\n"
@@ -847,18 +847,17 @@ msgid ""
 " ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless\n"
 msgstr ""
 " [Unit]\n"
-" Description=Start a new recording on Jamulus Server\n"
+" Description=Démarrer un nouvel enregistrement sur le serveur Jamulus\n"
 " Requisite=Jamulus-Server\n"
 "\n"
 " [Service]\n"
 " Type=oneshot\n"
-" ExecStart=/bin/systemctl kill -s SIGUSR1 Jamulus-Server\n"
+" ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:314
-#, fuzzy
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example."
-msgstr "_Remarque : le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` que vous avez créé lors de la configuration de systemd pour contrôler votre serveur Jamulus. Donc, dans cet exemple, ce serait `Jamulus-Server.service`_"
+msgstr "_Remarque : le nom du service Jamulus dans la ligne `ExecStart` doit être le même que le nom du fichier `.service` utilisé par systemd pour contrôler votre serveur Jamulus. Par défaut, si vous utilisez les fichiers `.deb` du dépôt, il s'agit de `jamulus-headless`, comme dans cet exemple."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:316
@@ -877,9 +876,8 @@ msgstr "`sudo systemctl start jamulusTogglerec`"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:322
-#, fuzzy
 msgid "You can see the result of these commands if you run `systemctl status jamulus-headless` (or the respective service name you specified manually). You can also view your (sys)log."
-msgstr "Vous pouvez voir le résultat de ces commandes si vous exécutez `systemctl status jamulus` ou en consultant les journaux."
+msgstr "Vous pouvez voir le résultat de ces commandes si vous exécutez `systemctl status jamulus-headless` (ou le nom du service que vous avez spécifié manuellement). Vous pouvez également consulter votre journal (système)."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:325
