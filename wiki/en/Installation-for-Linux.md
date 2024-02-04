@@ -55,7 +55,6 @@ For installers on other distributions, see their package managers and [Repology]
 ## Set up your hardware
 
 The Jamulus client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server of your distribution.
-You need to find out which is the low-latency sound server of your distribution:
 - If your distribution uses [JACK](https://jackaudio.org/), check out how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).
 - If your distribution uses PipeWire, check out how to [configure PipeWire](Installation-for-Linux#configure-pipewire).
 
