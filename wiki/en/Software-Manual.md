@@ -201,7 +201,7 @@ Some sound card drivers do not allow the buffer delay to be changed from within 
 In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel.
 
 On Linux:
-- when using JACK, use the `QJackCtl` to change the buffer size and restart JACK;
+- when using JACK, use `QJackCtl` to change the buffer size and restart JACK;
 - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools.
 
 The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.
