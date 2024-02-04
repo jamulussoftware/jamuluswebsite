@@ -75,7 +75,7 @@ Restart JACK for the new settings to take effect and continue from the [Start Ja
 
 PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.
 You need to set your audio interface to the "pro-audio" profile and define PipeWire's "rate" and "quantum" parameters beforehand.
-More informations about the configuration in the [PipeWire's wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server).
+You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server).
 
 Follow these steps to set up your system:
 1. Open `pavucontrol` (the audio mixer) and choose the "pro-audio" profile for your audio interface in the configuration tab.
