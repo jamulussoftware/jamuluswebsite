@@ -63,7 +63,7 @@ The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) 
 To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`.
 
 1. Launch QjackCtl. You will see the **Qt JACK Control utility main page**.
-2. Configure your audio hardware as follows (except where noted):
+2. Configure your sound hardware as follows (except where noted):
 
 - Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK).
 - Set the **Sample Rate to 48000**.
