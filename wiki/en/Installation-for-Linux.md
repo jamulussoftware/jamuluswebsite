@@ -90,7 +90,7 @@ After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamul
 
 With JACK or PipeWire configured, launch Jamulus.
 
-If you have any problems setting up, first check [the troubleshooting page](Client-Troubleshooting).
+If you have any problems, first check [the troubleshooting page](Client-Troubleshooting).
 
 ## All installed?
 
