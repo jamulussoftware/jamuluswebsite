@@ -78,7 +78,7 @@ You need to set your audio interface to the "pro-audio" profile and define PipeW
 You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server).
 
 To set up your system:
-1. Open `pavucontrol` (the audio mixer) and choose the "pro-audio" profile for your audio interface in the configuration tab.
+1. Open `pavucontrol` (the audio mixer) and choose the "pro-audio" profile for your sound hardware in the configuration tab.
 2. In a terminal use the two following commands to force PipeWire's rate and quantum:
 ```bash
 pw-metadata -n settings 0 clock.force-rate 48000
