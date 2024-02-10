@@ -587,106 +587,106 @@ msgid "Some sound card drivers do not allow the buffer delay to be changed from 
 msgstr "一些声卡驱动程序不允许在 Jamulus 软件中更改缓冲延迟。在这种情况下，缓冲延迟设置被禁用，必须使用声卡驱动程序进行更改。在 Windows 上，按 ASIO 设置按钮打开驱动程序设置面板。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:204
-msgid "On Linux, use the JACK configuration tool to change the buffer size."
-msgstr "在 Linux 上，使用 JACK 配置工具更改缓冲区大小。"
+#: ../wiki/en/Software-Manual.md:206
+msgid "On Linux: - when using JACK, use `QJackCtl` to change the buffer size and restart JACK; - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools."
+msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:208
+#: ../wiki/en/Software-Manual.md:210
 msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
 msgstr "实际缓冲区延迟对连接状态、当前上传速率和整体延迟都有影响。缓冲区大小越小，状态指示器(丢失)中出现红灯的可能性就越高，上传速率越高，整体延迟越低。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:210
+#: ../wiki/en/Software-Manual.md:212
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "因此，缓冲区设置是音频质量和整体延迟之间的权衡。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:211
+#: ../wiki/en/Software-Manual.md:213
 #, fuzzy, no-wrap
 #| msgid "### Jitter Buffer"
 msgid "Jitter Buffer"
 msgstr "### 抖动缓冲区"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:216
+#: ../wiki/en/Software-Manual.md:218
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgstr "抖动缓冲器补偿网络和声卡定时抖动。缓冲区的大小会影响音频流的质量(发生多少丢失)和整体延迟(缓冲区越长，延迟越高)。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:220
+#: ../wiki/en/Software-Manual.md:222
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgstr "您可以为本地客户端和远程服务器手动设置抖动缓冲区大小。对于本地抖动缓冲区，音频流中的丢失由抖动缓冲区大小推子下方的灯指示。如果指示灯变为红色，则表示缓冲区溢出/欠载，并且音频流被中断。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:222
+#: ../wiki/en/Software-Manual.md:224
 msgid "The jitter buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "因此，抖动缓冲区设置是音频质量和整体延迟之间的权衡。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:226
+#: ../wiki/en/Software-Manual.md:228
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr "如果启用自动设置，本地客户端和远程服务器的抖动缓冲区将根据网络和声卡定时抖动的测量值自动设置。如果启用了自动检查，则抖动缓冲区大小推子将被禁用(它们不能用鼠标移动)。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:227
+#: ../wiki/en/Software-Manual.md:229
 #, fuzzy, no-wrap
 #| msgid "### Enable small network buffers"
 msgid "Small Network Buffers"
 msgstr "### 启用小型网络缓冲区"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:231
+#: ../wiki/en/Software-Manual.md:233
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
 msgstr "允许支持非常小的网络音频数据包。这些仅在声卡缓冲区延迟小于 128 个样本时使用。网络缓冲区越小，音频延迟越低。但与此同时，网络负载增加，音频丢失的可能性也增加(特别是如果您的网络连接有任何明显的抖动)。如果您遇到高延迟或较差的音频质量，请尝试启用此选项。但是，禁用它通常意味着更好的音频质量。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:232
+#: ../wiki/en/Software-Manual.md:234
 #, fuzzy, no-wrap
 #| msgid "### Audio Stream Rate"
 msgid "Audio Stream Rate"
 msgstr "### 音频流速率"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:236
+#: ../wiki/en/Software-Manual.md:238
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgstr "取决于当前的音频包大小和压缩设置。确保上行速率不高于您可用的互联网上传速度(通过 [librespeed.org](https://librespeed.org/) 等服务进行检查)。"
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:237
+#: ../wiki/en/Software-Manual.md:239
 #, fuzzy, no-wrap
 #| msgid "## Advanced Setup"
 msgid "Advanced Setup"
 msgstr "## 高级设置"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:240
+#: ../wiki/en/Software-Manual.md:242
 #, fuzzy, no-wrap
 #| msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh_CN-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"高级设置窗口图片\"></figure>"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:241
+#: ../wiki/en/Software-Manual.md:243
 #, fuzzy, no-wrap
 #| msgid "### Custom Directories"
 msgid "Custom Directories"
 msgstr "### 自定义目录"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:244
+#: ../wiki/en/Software-Manual.md:246
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
 msgstr "如果您需要添加内置地址以外的目录地址，您可以在此处进行。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:245
+#: ../wiki/en/Software-Manual.md:247
 #, fuzzy, no-wrap
 #| msgid "### New Client Level"
 msgid "New Client Level"
 msgstr "### 新客户端级别"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:250
+#: ../wiki/en/Software-Manual.md:252
 #, fuzzy, no-wrap
 #| msgid "This setting defines the fader level of a newly connected Client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
 msgid ""
@@ -696,88 +696,88 @@ msgid ""
 msgstr "此设置以百分比定义新连接客户端的推子电平。如果新用户连接到当前服务器，如果该用户先前连接的其他推子电平尚未存储，他们将获得指定的初始推子电平。您可以使用“编辑”>“将所有推子设置为新客户端级别”将占用服务器中的所有用户设置为该级别。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:251
+#: ../wiki/en/Software-Manual.md:253
 #, fuzzy, no-wrap
 #| msgid "### Input Boost"
 msgid "Input Boost"
 msgstr "### 输入提升"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:254
+#: ../wiki/en/Software-Manual.md:256
 msgid "Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus."
 msgstr "增加设备的增益。如果您的设备提供的增益对于 Jamulus 来说过于安静，请使用此选项。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:255
+#: ../wiki/en/Software-Manual.md:257
 #, fuzzy, no-wrap
 #| msgid "### Feedback Protection"
 msgid "Feedback Protection"
 msgstr "### 反馈保护"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:258
+#: ../wiki/en/Software-Manual.md:260
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
 msgstr "尝试在连接到服务器后的前三秒内检测音频反馈循环或噪音。一旦检测到，此功能将显示一条消息并激活“静音我自己”按钮以使您在自己的混音中静音。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:259
+#: ../wiki/en/Software-Manual.md:261
 #, fuzzy, no-wrap
 #| msgid "### Input Balance"
 msgid "Input Balance"
 msgstr "### 输入平衡"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:264
+#: ../wiki/en/Software-Manual.md:266
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
 msgstr "控制左右本地音频通道的相对电平。对于单声道信号，它充当两个通道之间的声像。例如，如果麦克风连接到右输入通道，而乐器连接到比麦克风大得多的左输入通道，则移动音频推子以增加麦克风的相对音量。"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:265
+#: ../wiki/en/Software-Manual.md:267
 #, fuzzy, no-wrap
 #| msgid "# Menu commands"
 msgid "Menu commands"
 msgstr "# 菜单命令"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:267
+#: ../wiki/en/Software-Manual.md:269
 #, fuzzy, no-wrap
 #| msgid "### File > Load/Save Mixer Channels Setup"
 msgid "File > Load/Save Mixer Channels Setup"
 msgstr "### 文件 > 加载/保存混音器通道设置"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:270
+#: ../wiki/en/Software-Manual.md:272
 msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgstr "您可以保存和恢复您为乐队排练所拥有的混音(推子、静音、声像、独奏等)并随时加载(即使在演奏时)。加载也可以通过拖放到混音器窗口来完成。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:271
+#: ../wiki/en/Software-Manual.md:273
 #, fuzzy, no-wrap
 #| msgid "### Edit > Auto-Adjust All Faders"
 msgid "Edit > Auto-Adjust All Faders "
 msgstr "### 编辑 > 自动调整所有推子"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:274
+#: ../wiki/en/Software-Manual.md:276
 msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
 msgstr "根据音量将一次性推子设置应用于每个通道。对于大型合奏获得合理的整体混音很有用，尽管可能仍然需要进行个别调整。最好在热身或乐曲的统一部分使用。"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:275
+#: ../wiki/en/Software-Manual.md:277
 #, fuzzy, no-wrap
 #| msgid "# Backing up Jamulus"
 msgid "Backing up Jamulus"
 msgstr "# 备份 Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:279
+#: ../wiki/en/Software-Manual.md:281
 #, fuzzy
 #| msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgstr "您可以使用 [加载/保存混音器频道设置](Software-Manual#文件--加载保存混音器通道设置) 保存和加载不同的混音器设置，并将这些文件存储在您想要的任何位置。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:281
+#: ../wiki/en/Software-Manual.md:283
 #, fuzzy, no-wrap
 #| msgid ""
 #| "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
@@ -792,32 +792,32 @@ msgstr ""
 "```\n"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:281
+#: ../wiki/en/Software-Manual.md:283
 #, no-wrap
 msgid "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 msgstr ""
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:285
+#: ../wiki/en/Software-Manual.md:287
 #, fuzzy, no-wrap
 #| msgid "# Command Line Options"
 msgid "Command Line Options"
 msgstr "# 命令行选项"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:288
+#: ../wiki/en/Software-Manual.md:290
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "Jamulus 中最常见的功能可以使用 GUI 设置，但这些和其他功能也可以使用终端窗口中给出的选项进行设置。具体如何执行此操作将取决于您的操作系统。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:290
+#: ../wiki/en/Software-Manual.md:292
 #, fuzzy, no-wrap
 #| msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
 msgstr "例如在 Windows 上，要使用特定的设置文件，请右键单击 Jamulus 快捷方式并选择“属性”>“目标”。将必要的参数添加到 Jamulus.exe:"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:291
+#: ../wiki/en/Software-Manual.md:293
 #, fuzzy, no-wrap
 #| msgid ""
 #| "```shell\n"
@@ -830,12 +830,12 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:296
+#: ../wiki/en/Software-Manual.md:298
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "对于 macOS，启动终端窗口并使用所需的选项运行 Jamulus，如下所示:"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:297
+#: ../wiki/en/Software-Manual.md:299
 #, fuzzy, no-wrap
 #| msgid ""
 #| "```shell\n"
@@ -848,25 +848,28 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:302
+#: ../wiki/en/Software-Manual.md:304
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:304
+#: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:305
+#: ../wiki/en/Software-Manual.md:307
 #, no-wrap
 msgid "Controlling the Client via API"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:307
+#: ../wiki/en/Software-Manual.md:309
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr ""
+
+#~ msgid "On Linux, use the JACK configuration tool to change the buffer size."
+#~ msgstr "在 Linux 上，使用 JACK 配置工具更改缓冲区大小。"
 
 #~ msgid "TOC"
 #~ msgstr "TOC"

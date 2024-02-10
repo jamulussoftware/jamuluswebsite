@@ -190,85 +190,138 @@ msgstr "Para pacotes de instalação em outras distribuições, dê uma olhada e
 msgid "Set up your hardware"
 msgstr "## Configurando o hardware"
 
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:60
+msgid "The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server for your distribution.  - If your distribution uses [JACK](https://jackaudio.org/), see how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - If your distribution uses PipeWire, see how to [configure PipeWire](Installation-for-Linux#configure-pipewire)."
+msgstr ""
+
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:57
+#: ../wiki/en/Installation-for-Linux.md:61
 #, fuzzy, no-wrap
 #| msgid "### Configure JACK with QjackCtl"
 msgid "Configure JACK with QjackCtl"
 msgstr "### Configure JACK com QjackCtl"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:60
+#: ../wiki/en/Installation-for-Linux.md:64
 #, fuzzy
 #| msgid "Jamulus clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+msgid "To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`."
 msgstr "Clientes Jamulus precisam de [JACK](https://jackaudio.org/) para rodar, mas você tem que configurá-lo primeiro. O método recomendado é usando `QjackCtl`."
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Linux.md:63
-msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+#: ../wiki/en/Installation-for-Linux.md:67
+#, fuzzy
+#| msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**."
 msgstr "Execute o comando `qjackctl`. Você vai ver a **Página principal do utilitário Qt JACK**"
 
 #. type: Bullet: '2. '
-#: ../wiki/en/Installation-for-Linux.md:63
-msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr "Configure seu equipamento de áudio da seguinte maneira (as exatas configurações do JACK vão depender seu equipamento):"
+#: ../wiki/en/Installation-for-Linux.md:67
+msgid "Configure your sound hardware as follows:"
+msgstr ""
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
+msgid "Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK)."
 msgstr "Configure a **Interface** de áudio usando a que você quiser (pode haver várias na lista)"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the **Sample Rate to 48000**"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the **Sample Rate to 48000**"
+msgid "Set the **Sample Rate to 48000**."
 msgstr "Configure o **Taxa de Samples em 48000**"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
+msgid "Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first."
 msgstr "Configure os **Frames/Período em 128** e Períodos/Buffer em 2 para começar"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:69
-msgid "Restart JACK for the new settings to take effect"
-msgstr "Restarte o JACK para os novos valores entrarem em efeito."
+#: ../wiki/en/Installation-for-Linux.md:73
+msgid "Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
+msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:70
+#: ../wiki/en/Installation-for-Linux.md:74
+#, no-wrap
+msgid "Configure PipeWire"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:79
+msgid "PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.  You need to set your audio interface to the \"pro-audio\" profile and define PipeWire's \"rate\" and \"quantum\" parameters beforehand.  You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:83
+msgid "To set up your system: 1. Open `pavucontrol` (the audio mixer) and choose the \"pro-audio\" profile for your sound hardware in the configuration tab.  2. In a terminal use the following two commands to force PipeWire's rate and quantum:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: ../wiki/en/Installation-for-Linux.md:83
+#, no-wrap
+msgid ""
+"pw-metadata -n settings 0 clock.force-rate 48000\n"
+"pw-metadata -n settings 0 clock.force-quantum 128\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:88
+msgid "After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:89
 #, fuzzy, no-wrap
 #| msgid "### Start Jamulus"
 msgid "Start Jamulus"
 msgstr "### Abra o Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:73
-msgid "With JACK running and configured, launch Jamulus."
+#: ../wiki/en/Installation-for-Linux.md:92
+#, fuzzy
+#| msgid "With JACK running and configured, launch Jamulus."
+msgid "With JACK or PipeWire configured, launch Jamulus."
 msgstr "Com o JACK configurado e rodando, abra o Jamulus no seu desktop launcher (ou usando o terminal execute o comando `jamulus`)"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:75
-msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
-msgstr "Se você tiver problemas com o som interrompendo (em particular erros XRUN que o JACK/QjackCtl reportar) tente usar valores maiores (por exemplo 256 quadros ou 3 períodos). Valores menores (p.e. 64 frames) podem melhorar a performance, mas talvez causar mais problemas de som. Veja a seção [Problemas e solucões](Client-Troubleshooting)."
+#: ../wiki/en/Installation-for-Linux.md:94
+msgid "If you have any problems, first check [the troubleshooting page](Client-Troubleshooting)."
+msgstr ""
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Linux.md:76
+#: ../wiki/en/Installation-for-Linux.md:95
 #, fuzzy, no-wrap
 #| msgid "## All installed?"
 msgid "All installed?"
 msgstr "## Tudo instalado?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:79
+#: ../wiki/en/Installation-for-Linux.md:98
 msgid "Take a look at the"
 msgstr "Dê uma olhada na página"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:80
+#: ../wiki/en/Installation-for-Linux.md:99
 #, fuzzy
 #| msgid "[Jamulus setup page](Getting-Started){: .button}"
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[Configurando o Jamulus](Getting-Started){: .button}"
+
+#~ msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+#~ msgstr "Configure seu equipamento de áudio da seguinte maneira (as exatas configurações do JACK vão depender seu equipamento):"
+
+#~ msgid "Restart JACK for the new settings to take effect"
+#~ msgstr "Restarte o JACK para os novos valores entrarem em efeito."
+
+#~ msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
+#~ msgstr "Se você tiver problemas com o som interrompendo (em particular erros XRUN que o JACK/QjackCtl reportar) tente usar valores maiores (por exemplo 256 quadros ou 3 períodos). Valores menores (p.e. 64 frames) podem melhorar a performance, mas talvez causar mais problemas de som. Veja a seção [Problemas e solucões](Client-Troubleshooting)."
 
 #, fuzzy
 #~| msgid "Download the [latest .deb file]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }})"

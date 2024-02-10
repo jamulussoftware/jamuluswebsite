@@ -554,99 +554,99 @@ msgid "Some sound card drivers do not allow the buffer delay to be changed from 
 msgstr "Certains pilotes de carte son ne permettent pas de modifier le délai de mise en tampon à partir du logiciel Jamulus.  Dans ce cas, le réglage du délai de mise en tampon est désactivé et doit être modifié à l'aide du pilote de la carte son. Sous Windows, appuyez sur le bouton paramètres ASIO pour ouvrir le panneau de configuration du pilote."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:204
-msgid "On Linux, use the JACK configuration tool to change the buffer size."
-msgstr "Sous Linux, utilisez l'outil de configuration JACK pour modifier la taille du tampon."
+#: ../wiki/en/Software-Manual.md:206
+msgid "On Linux: - when using JACK, use `QJackCtl` to change the buffer size and restart JACK; - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools."
+msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:208
+#: ../wiki/en/Software-Manual.md:210
 msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
 msgstr "Le délai réel du tampon a une influence sur l'état de la connexion, le taux de chargement actuel et le délai global.  Plus la taille du tampon est faible, plus la probabilité d'un voyant rouge dans l'indicateur d'état (décrochages) est élevée et plus le débit montant est élevé et plus le délai global est faible."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:210
+#: ../wiki/en/Software-Manual.md:212
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "Le réglage du tampon est donc un compromis entre la qualité audio et le délai global."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:211
+#: ../wiki/en/Software-Manual.md:213
 #, no-wrap
 msgid "Jitter Buffer"
 msgstr "Tampon de gigue"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:216
+#: ../wiki/en/Software-Manual.md:218
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgstr "Le tampon de gigue compense les glissements de temps du réseau et de la carte son. La taille de la mémoire tampon influe sur la qualité du flux audio (nombre d'interruptions) et sur le délai global (plus la mémoire tampon est longue, plus le délai est élevé)."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:220
+#: ../wiki/en/Software-Manual.md:222
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgstr "Vous pouvez définir manuellement la taille du tampon de gigue pour votre client local et le serveur distant. Pour le tampon de gigue local, les interruptions du flux audio sont indiquées par le voyant situé sous les chariots de taille de tampon de gigue.  Si le voyant passe au rouge, cela signifie qu'il y a eu dépassement de la mémoire tampon et que le flux audio est interrompu."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:222
+#: ../wiki/en/Software-Manual.md:224
 msgid "The jitter buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "Le réglage du tampon de gigue est donc un compromis entre la qualité audio et le délai global."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:226
+#: ../wiki/en/Software-Manual.md:228
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr "Si le paramètre Auto est activé, les mémoires tampon de gigue de votre client local et du serveur distant sont définis automatiquement en fonction des mesures de la gigue temporelle du réseau et de la carte son. Si le contrôle Auto est activé, les chariots de taille de la mémoire tampon de gigue sont désactivés (ils ne peuvent pas être déplacés avec la souris)."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:227
+#: ../wiki/en/Software-Manual.md:229
 #, no-wrap
 msgid "Small Network Buffers"
 msgstr "Petits tampons réseau"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:231
+#: ../wiki/en/Software-Manual.md:233
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
 msgstr "Permet la prise en charge de très petits paquets audio réseau. Ceux-ci ne sont utilisés que si le délai de la mémoire tampon de la carte son est inférieur à 128 échantillons. Plus les tampons réseau sont petits, plus la latence audio est faible. Mais dans le même temps, la charge du réseau augmente et la probabilité de pertes audio augmente également (en particulier si votre connexion réseau présente une gigue importante). Essayez d'activer cette option si vous souffrez d'une latence élevée ou d'une mauvaise qualité audio. Toutefois, si vous la maintenez désactivée, la qualité audio sera normalement meilleure."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:232
+#: ../wiki/en/Software-Manual.md:234
 #, no-wrap
 msgid "Audio Stream Rate"
 msgstr "Débit du flux audio"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:236
+#: ../wiki/en/Software-Manual.md:238
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgstr "Dépend de la taille actuelle des paquets audio et du paramètre de compression. Assurez-vous que le débit amont n'est pas supérieur à votre vitesse de téléchargement internet disponible (vérifiez-le avec un service tel que [librespeed.org](https://librespeed.org/))."
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:237
+#: ../wiki/en/Software-Manual.md:239
 #, no-wrap
 msgid "Advanced Setup"
 msgstr "Configuration avancée"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:240
+#: ../wiki/en/Software-Manual.md:242
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre paramètres avancés\"></figure>\n"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:241
+#: ../wiki/en/Software-Manual.md:243
 #, no-wrap
 msgid "Custom Directories"
 msgstr "Annuaires personnalisés"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:244
+#: ../wiki/en/Software-Manual.md:246
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
 msgstr "Si vous devez ajouter des adresses d'annuaires autres que celles qui sont embarquées, vous pouvez le faire ici."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:245
+#: ../wiki/en/Software-Manual.md:247
 #, no-wrap
 msgid "New Client Level"
 msgstr "Niveau des nouveaux clients"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:250
+#: ../wiki/en/Software-Manual.md:252
 #, no-wrap
 msgid ""
 "This setting defines the fader level of a newly connected Client in percent. If a new user connects\n"
@@ -658,143 +658,146 @@ msgstr ""
 "cet utilisateur n'était déjà enregistré. Vous pouvez définir tous les utilisateurs d'un serveur occupé à ce niveau en utilisant Éditer > \"Régler tous les chariots sur le niveau d'un nouveau client\".\n"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:251
+#: ../wiki/en/Software-Manual.md:253
 #, no-wrap
 msgid "Input Boost"
 msgstr "Amplification de l'entrée"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:254
+#: ../wiki/en/Software-Manual.md:256
 msgid "Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus."
 msgstr "Augmente le gain de votre périphérique. Utilisez cette fonction si votre périphérique délivre un gain trop faible pour Jamulus."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:255
+#: ../wiki/en/Software-Manual.md:257
 #, no-wrap
 msgid "Feedback Protection"
 msgstr "Protection contre le larsen"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:258
+#: ../wiki/en/Software-Manual.md:260
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
 msgstr "Tente de détecter les boucles de retour audio ou les bruits forts dans les trois premières secondes suivant votre connexion à un serveur. Une fois détectée, cette fonction affiche un message et active le bouton \"Me silencer\" pour vous mettre en sourdine dans votre propre mixage."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:259
+#: ../wiki/en/Software-Manual.md:261
 #, no-wrap
 msgid "Input Balance"
 msgstr "Balance d'entrée"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:264
+#: ../wiki/en/Software-Manual.md:266
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
 msgstr "Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un microphone est connecté au canal d'entrée droit et qu'un instrument est connecté au canal d'entrée gauche qui est beaucoup plus fort que le microphone, déplacez le chariot audio pour augmenter le volume relatif du microphone."
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:265
+#: ../wiki/en/Software-Manual.md:267
 #, no-wrap
 msgid "Menu commands"
 msgstr "Menu commandes"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:267
+#: ../wiki/en/Software-Manual.md:269
 #, no-wrap
 msgid "File > Load/Save Mixer Channels Setup"
 msgstr "Fichier > Charger/sauvegarder la configuration des canaux du mixeur"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:270
+#: ../wiki/en/Software-Manual.md:272
 msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgstr "Vous pouvez sauvegarder et restaurer le mixage que vous avez pour les répétitions de votre groupe (chariot, sourdine, pan, solo etc.) et le charger à tout moment (même pendant que vous jouez). Le chargement peut également se faire par glisser/déposer dans la fenêtre du mixeur."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:271
+#: ../wiki/en/Software-Manual.md:273
 #, no-wrap
 msgid "Edit > Auto-Adjust All Faders "
 msgstr "Éditer > Auto-ajustement de tous les chariots "
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:274
+#: ../wiki/en/Software-Manual.md:276
 msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
 msgstr "Applique un réglage de chariot unique à chaque canal en fonction de son volume. Utile pour les grands ensembles afin d'obtenir un mixage global raisonnable, bien que des ajustements individuels puissent encore être nécessaires. À appliquer de préférence pendant un échauffement ou une partie uniforme du morceau de musique."
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:275
+#: ../wiki/en/Software-Manual.md:277
 #, no-wrap
 msgid "Backing up Jamulus"
 msgstr "Sauvegarde de Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:279
+#: ../wiki/en/Software-Manual.md:281
 msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgstr "{% include_relative Include-Backing-Up.md %} * Vous pouvez sauvegarder et charger différents réglages du mélangeur en utilisant [charger/sauvegarder la configuration des canaux du mixeur](Software-Manual#fichier--chargersauvegarder-la-configuration-des-canaux-du-mixeur) et stocker ces fichiers où vous voulez."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:281
+#: ../wiki/en/Software-Manual.md:283
 #, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
 msgstr "**Note pour les utilisateurs de macOS :** à partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans \n"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:281
+#: ../wiki/en/Software-Manual.md:283
 #, no-wrap
 msgid "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 msgstr "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:285
+#: ../wiki/en/Software-Manual.md:287
 #, no-wrap
 msgid "Command Line Options"
 msgstr "Options de la ligne de commande"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:288
+#: ../wiki/en/Software-Manual.md:290
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "La plupart des fonctions courantes de Jamulus peuvent être paramétrées à l'aide de l'interface graphique, mais ces fonctions et d'autres peuvent également être paramétrées à l'aide d'options données dans une fenêtre de terminal. La manière exacte de procéder dépend de votre système d'exploitation."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:290
+#: ../wiki/en/Software-Manual.md:292
 #, no-wrap
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
 msgstr "Par exemple, sous Windows, pour utiliser un fichier de paramètres spécifique, faites un clic droit sur le raccourci de Jamulus et choisissez \"Propriétés\" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :\n"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:291
+#: ../wiki/en/Software-Manual.md:293
 #, no-wrap
 msgid " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
 msgstr " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\chemin\\vers\\monfichierini.ini\"\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:296
+#: ../wiki/en/Software-Manual.md:298
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "Pour macOS, démarrez une fenêtre de Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:297
+#: ../wiki/en/Software-Manual.md:299
 #, no-wrap
 msgid " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
 msgstr " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/chemin/vers/monfichierini.ini\"\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:302
+#: ../wiki/en/Software-Manual.md:304
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:304
+#: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:305
+#: ../wiki/en/Software-Manual.md:307
 #, no-wrap
 msgid "Controlling the Client via API"
 msgstr "Contrôle du client via l'API"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:307
+#: ../wiki/en/Software-Manual.md:309
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr "En plus de la ligne de commande, Jamulus peut être contrôlé à l'aide d'une API. Ceci est utile pour les cas d'utilisation avancés - par exemple, lorsqu'il n'y a pas d'interface graphique, ou lorsqu'une autre application doit interagir avec Jamulus. Veuillez noter que l'API est encore expérimentale. Des informations sur l'[API JSON-RPC peuvent être trouvées dans le dépôt principal (en anglais)](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
+
+#~ msgid "On Linux, use the JACK configuration tool to change the buffer size."
+#~ msgstr "Sous Linux, utilisez l'outil de configuration JACK pour modifier la taille du tampon."
 
 #~ msgid "TOC"
 #~ msgstr "TOC"

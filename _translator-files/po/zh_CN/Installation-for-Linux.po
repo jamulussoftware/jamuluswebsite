@@ -185,78 +185,133 @@ msgstr "对于其他发行版上的安装程序，请参阅其包管理器和 [R
 msgid "Set up your hardware"
 msgstr "设置你的硬件"
 
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:60
+msgid "The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server for your distribution.  - If your distribution uses [JACK](https://jackaudio.org/), see how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - If your distribution uses PipeWire, see how to [configure PipeWire](Installation-for-Linux#configure-pipewire)."
+msgstr ""
+
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:57
+#: ../wiki/en/Installation-for-Linux.md:61
 #, no-wrap
 msgid "Configure JACK with QjackCtl"
 msgstr "使用 QjackCtl 配置 JACK"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:60
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+#: ../wiki/en/Installation-for-Linux.md:64
+#, fuzzy
+#| msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+msgid "To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`."
 msgstr "Jamulus 客户端需要 [JACK](https://jackaudio.org/) 才能运行，但您需要先配置它。推荐的方法是使用`QjackCtl`。"
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Linux.md:63
-msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+#: ../wiki/en/Installation-for-Linux.md:67
+#, fuzzy
+#| msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**."
 msgstr "启动 QjackCtl。您将看到 **Qt JACK Control 实用程序主页**"
 
 #. type: Bullet: '2. '
-#: ../wiki/en/Installation-for-Linux.md:63
-msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr "如下配置您的音频硬件(JACK 的确切设置将取决于您的音频硬件的能力):"
+#: ../wiki/en/Installation-for-Linux.md:67
+msgid "Configure your sound hardware as follows:"
+msgstr ""
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
+msgid "Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK)."
 msgstr "将音频 **接口** 设置为您想要的(列表中可能有几个)"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the **Sample Rate to 48000**"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the **Sample Rate to 48000**"
+msgid "Set the **Sample Rate to 48000**."
 msgstr "将**采样率设置为 48000**"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
+msgid "Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first."
 msgstr "首先将“帧/周期”设置为 128**，将“周期/缓冲区”设置为 2"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:69
-msgid "Restart JACK for the new settings to take effect"
-msgstr "重新启动 JACK 以使新设置生效"
+#: ../wiki/en/Installation-for-Linux.md:73
+msgid "Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
+msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:70
+#: ../wiki/en/Installation-for-Linux.md:74
+#, no-wrap
+msgid "Configure PipeWire"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:79
+msgid "PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.  You need to set your audio interface to the \"pro-audio\" profile and define PipeWire's \"rate\" and \"quantum\" parameters beforehand.  You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:83
+msgid "To set up your system: 1. Open `pavucontrol` (the audio mixer) and choose the \"pro-audio\" profile for your sound hardware in the configuration tab.  2. In a terminal use the following two commands to force PipeWire's rate and quantum:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: ../wiki/en/Installation-for-Linux.md:83
+#, no-wrap
+msgid ""
+"pw-metadata -n settings 0 clock.force-rate 48000\n"
+"pw-metadata -n settings 0 clock.force-quantum 128\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:88
+msgid "After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:89
 #, no-wrap
 msgid "Start Jamulus"
 msgstr "启动 Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:73
-msgid "With JACK running and configured, launch Jamulus."
+#: ../wiki/en/Installation-for-Linux.md:92
+#, fuzzy
+#| msgid "With JACK running and configured, launch Jamulus."
+msgid "With JACK or PipeWire configured, launch Jamulus."
 msgstr "随着 JACK 的运行和配置，启动 Jamulus。"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:75
-msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
-msgstr "如果您遇到声音中断问题(特别是 JACK/QjackCtl 报告的 XRUN 错误)，请尝试设置更大的值(例如 256 帧或 3 个周期)。较低的(例如 64 帧)可以带来更好的性能，但可能会带来更多的声音问题。否则请参阅[故障排除页面](客户端故障排除)。"
+#: ../wiki/en/Installation-for-Linux.md:94
+msgid "If you have any problems, first check [the troubleshooting page](Client-Troubleshooting)."
+msgstr ""
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Linux.md:76
+#: ../wiki/en/Installation-for-Linux.md:95
 #, no-wrap
 msgid "All installed?"
 msgstr "全部安装完毕？"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:79
+#: ../wiki/en/Installation-for-Linux.md:98
 msgid "Take a look at the"
 msgstr "看看"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:80
+#: ../wiki/en/Installation-for-Linux.md:99
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[入门页面](Getting-Started){: .button}"
+
+#~ msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+#~ msgstr "如下配置您的音频硬件(JACK 的确切设置将取决于您的音频硬件的能力):"
+
+#~ msgid "Restart JACK for the new settings to take effect"
+#~ msgstr "重新启动 JACK 以使新设置生效"
+
+#~ msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
+#~ msgstr "如果您遇到声音中断问题(特别是 JACK/QjackCtl 报告的 XRUN 错误)，请尝试设置更大的值(例如 256 帧或 3 个周期)。较低的(例如 64 帧)可以带来更好的性能，但可能会带来更多的声音问题。否则请参阅[故障排除页面](客户端故障排除)。"
 
 #~ msgid "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
 #~ msgstr "[下载 Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"

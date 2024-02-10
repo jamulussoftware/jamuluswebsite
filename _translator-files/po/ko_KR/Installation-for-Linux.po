@@ -180,78 +180,133 @@ msgstr "다른 배포판의 설치 프로그램은 패키지 관리자 및 [Repo
 msgid "Set up your hardware"
 msgstr "사용자의 하드웨어 설정"
 
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:60
+msgid "The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server for your distribution.  - If your distribution uses [JACK](https://jackaudio.org/), see how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - If your distribution uses PipeWire, see how to [configure PipeWire](Installation-for-Linux#configure-pipewire)."
+msgstr ""
+
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:57
+#: ../wiki/en/Installation-for-Linux.md:61
 #, no-wrap
 msgid "Configure JACK with QjackCtl"
 msgstr "QjackCtl로 JACK 구성하기"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:60
-msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+#: ../wiki/en/Installation-for-Linux.md:64
+#, fuzzy
+#| msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
+msgid "To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`."
 msgstr "Jamulus 클라이언트를 실행하려면 [JACK](https://jackaudio.org/)가 필요하지만, 먼저 구성해야 합니다. 권장되는 방법은 `QjackCtl`을 사용하는 것입니다."
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Installation-for-Linux.md:63
-msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+#: ../wiki/en/Installation-for-Linux.md:67
+#, fuzzy
+#| msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
+msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**."
 msgstr "QjackCtl을 실행합니다. **Qt JACK 컨트롤 유틸리티 기본 페이지**가 표시됩니다"
 
 #. type: Bullet: '2. '
-#: ../wiki/en/Installation-for-Linux.md:63
-msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
-msgstr "오디오 하드웨어를 다음과 같이 구성합니다(JACK에 대한 정확한 설정은 오디오 하드웨어의 기능에 따라 다름):"
+#: ../wiki/en/Installation-for-Linux.md:67
+msgid "Configure your sound hardware as follows:"
+msgstr ""
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
+msgid "Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK)."
 msgstr "오디오 **인터페이스**를 원하는 것으로 설정합니다(목록에 여러 개 있을 수 있음)"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the **Sample Rate to 48000**"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the **Sample Rate to 48000**"
+msgid "Set the **Sample Rate to 48000**."
 msgstr "**샘플 속도를 48000**으로 설정합니다"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Installation-for-Linux.md:67
-msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
+#: ../wiki/en/Installation-for-Linux.md:71
+#, fuzzy
+#| msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
+msgid "Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first."
 msgstr "**프레임/주기 128**로 설정하고 주기/버퍼를 처음에는 2로 설정합니다"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:69
-msgid "Restart JACK for the new settings to take effect"
-msgstr "새 설정을 적용하려면 JACK을 다시 시작합니다"
+#: ../wiki/en/Installation-for-Linux.md:73
+msgid "Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
+msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Installation-for-Linux.md:70
+#: ../wiki/en/Installation-for-Linux.md:74
+#, no-wrap
+msgid "Configure PipeWire"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:79
+msgid "PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.  You need to set your audio interface to the \"pro-audio\" profile and define PipeWire's \"rate\" and \"quantum\" parameters beforehand.  You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:83
+msgid "To set up your system: 1. Open `pavucontrol` (the audio mixer) and choose the \"pro-audio\" profile for your sound hardware in the configuration tab.  2. In a terminal use the following two commands to force PipeWire's rate and quantum:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: ../wiki/en/Installation-for-Linux.md:83
+#, no-wrap
+msgid ""
+"pw-metadata -n settings 0 clock.force-rate 48000\n"
+"pw-metadata -n settings 0 clock.force-quantum 128\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Installation-for-Linux.md:88
+msgid "After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Installation-for-Linux.md:89
 #, no-wrap
 msgid "Start Jamulus"
 msgstr "Jamulus 시작하기"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:73
-msgid "With JACK running and configured, launch Jamulus."
+#: ../wiki/en/Installation-for-Linux.md:92
+#, fuzzy
+#| msgid "With JACK running and configured, launch Jamulus."
+msgid "With JACK or PipeWire configured, launch Jamulus."
 msgstr "JACK이 실행되고 구성된 상태에서 Jamulus를 시작합니다."
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:75
-msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
-msgstr "사운드 끊김 문제(특히 JACK/QjackCtl에 의해 보고된 XRUN 오류)가 발생하면 더 큰 값(예: 256프레임 또는 3주기)을 설정해 보십시오. 낮은 프레임(예: 64 프레임)은 더 나은 성능을 제공할 수 있지만, 더 많은 사운드 문제를 가져올 수 있습니다. 그렇지 않으면 [문제 해결 페이지](Client-Troubleshooting)를 참조하십시오."
+#: ../wiki/en/Installation-for-Linux.md:94
+msgid "If you have any problems, first check [the troubleshooting page](Client-Troubleshooting)."
+msgstr ""
 
 #. type: Title ##
-#: ../wiki/en/Installation-for-Linux.md:76
+#: ../wiki/en/Installation-for-Linux.md:95
 #, no-wrap
 msgid "All installed?"
 msgstr "모두 설치되었습니까?"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:79
+#: ../wiki/en/Installation-for-Linux.md:98
 msgid "Take a look at the"
 msgstr "살펴보기"
 
 #. type: Plain text
-#: ../wiki/en/Installation-for-Linux.md:80
+#: ../wiki/en/Installation-for-Linux.md:99
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[시작하기 페이지](Getting-Started){: .button}"
+
+#~ msgid "Configure your audio hardware as follows (the exact settings for JACK will depend on what your audio hardware is capable of):"
+#~ msgstr "오디오 하드웨어를 다음과 같이 구성합니다(JACK에 대한 정확한 설정은 오디오 하드웨어의 기능에 따라 다름):"
+
+#~ msgid "Restart JACK for the new settings to take effect"
+#~ msgstr "새 설정을 적용하려면 JACK을 다시 시작합니다"
+
+#~ msgid "If you get problems with sound breaking up (in particular XRUN errors reported by JACK/QjackCtl) try setting bigger values (e.g. 256 frames or 3 periods). Lower ones (e.g. 64 frames) could bring better performance but maybe more sound problems. See the [troubleshooting page](Client-Troubleshooting) otherwise."
+#~ msgstr "사운드 끊김 문제(특히 JACK/QjackCtl에 의해 보고된 XRUN 오류)가 발생하면 더 큰 값(예: 256프레임 또는 3주기)을 설정해 보십시오. 낮은 프레임(예: 64 프레임)은 더 나은 성능을 제공할 수 있지만, 더 많은 사운드 문제를 가져올 수 있습니다. 그렇지 않으면 [문제 해결 페이지](Client-Troubleshooting)를 참조하십시오."
 
 #~ msgid "[Download Jamulus (.deb, amd64)]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
 #~ msgstr "[Jamulus (.deb, amd64) 다운로드]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}){:.button}"
