@@ -27,7 +27,7 @@ jobs:
           fi
 
 # Check out repo:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: next-release
 
@@ -44,7 +44,7 @@ jobs:
 # Check po4a cache. If CACHE_HIT: true, retrieve the cache.
 # If not, install po4a and its dependencies and copy them all to a folder (~/po4a/) to be cached:
       - name: Check for po4a cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: cache-po4a
         with:
           path: "~/po4a"
@@ -60,7 +60,7 @@ jobs:
 
 # Push changes to 'next-release':
       - name: Push changes to repo
-        uses: EndBug/add-and-commit@v7
+        uses: EndBug/add-and-commit@v9
         with:
           branch: next-release
           default_author: github_actions
@@ -68,7 +68,7 @@ jobs:
 
 # Add comment to issue informing of the creation of the language files:
       - name: Add comment to issue
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ env.issue_num }}
           body: |
