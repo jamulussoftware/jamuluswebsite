@@ -11,6 +11,8 @@ category: hidden
         {% for lng in site.languages %}
             {% if lng != site.default_lang %}
               <xhtml:link rel="alternate" hreflang="{{ lng }}" href="{{ site.a_rootpage }}/{{ lng }}{{ page.url }}" />
+            {% else %}
+              <xhtml:link rel="canonical alternate" hreflang="{{ lng }}" href="{{ site.a_rootpage }}/{{ lng }}{{ page.url }}" />
             {% endif %}
         {% endfor %}
         {% if page.sitemap.lastmod %}
