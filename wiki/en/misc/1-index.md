@@ -27,9 +27,12 @@ Jamulus lets you play, rehearse, or jam with your friends, your band, or anyone 
 </div>
 <div class="fx-row fx-row-center-xs" id="bannercontainer">
   <div class="fx-col-100-xs">
-    <a href="wiki/Getting-Started">
-      <img alt="Jamulus Banner. Links to getting started page" src="{{ '/assets/img/jamulusbannersmall.png' | relative_url }}" id="jamulusbanner" loading="lazy" />
-    </a>
+    <figure>
+      <a href="wiki/Getting-Started" rel="canonical">
+      <img src="{% include img/en-screenshots/main-screen-medium.inc %}" style="border: 5px solid grey;" id="jamulusbanner" loading="lazy" alt="A screenshot of the main mixer window showing five people from different countries connected.">
+      </a>
+      <figcaption>Jamulus is international</figcaption>
+    </figure>
   </div>
 </div>
 <div class="fx-row fx-row-center-xs">
