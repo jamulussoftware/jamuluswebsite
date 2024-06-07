@@ -248,7 +248,7 @@ $ cd jamuluswebsite
 $ git checkout next-release
 $ _po4a-tools/po4a-create-all-targets.sh
 $ bundle exec jekyll serve
-$ linkcheck http://localhost:4000 > linkcheck.log
+$ linkcheck --no-warnings http://localhost:4000 > linkcheck.log
 ```
 
 ## Release checklist (for a full release)
