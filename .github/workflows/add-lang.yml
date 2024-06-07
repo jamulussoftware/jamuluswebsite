@@ -18,7 +18,7 @@ jobs:
           ISSUE_NUM: ${{ github.event.issue.number }}
         run: |
           NEW_LANG=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
-          if [[ $NEW_LANG =~ ^[a-z]{2}(_[A-Z]{2})?$ ]]; then
+          if [[ $NEW_LANG =~ ^[a-z]{2}(-[A-Z]{2})?$ ]]; then
             echo "new_lang=$NEW_LANG" >> $GITHUB_ENV
             echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
           else

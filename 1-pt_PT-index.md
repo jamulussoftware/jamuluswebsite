@@ -1,1 +1,0 @@
-wiki/pt_PT/1-index.md
