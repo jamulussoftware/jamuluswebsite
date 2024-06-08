@@ -10,7 +10,7 @@
           {% capture lang_rel %}canonical{% endcapture %}
         {% else %}
           {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
-           <li><a href="{{ langlink }}"  rel="alternate" hreflang="{{ lng }}" data-slang="{{ lng }}">{{ lng }}</a></li>
+          {% capture lang_rel %}alternate{% endcapture %}
         {% endif %}
       {% endif %}
     {% endfor %}
