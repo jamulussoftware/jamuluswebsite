@@ -1,12 +1,20 @@
 <aside id="gnav" class="fx-col-100-xs fx-col-25-m">
   {% if page.hidelang %}{% else %}{% include langselect.html %}{% endif %}
+
+<!--
+Default lang is: {{ site.default_lang }}
+Current lang is: {{ page.lang }}
+-->
+
+  {% if page.lng == site.default_lang %} {% comment %} Not sure why this isn't true for en. {% endcomment %} 
+  
   <nav id="mnv">
     <ul>
       {% if site.data.navigation.nav[0] %}
       {% for item in site.data.navigation.nav %}
       {% if item.url %}
       <li>
-        <h3><a href="{{ item.url | relative_url }}" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ item.title }}</a></h3>
+        <h3><a href="{{ item.url | relative_url }}" rel="canonical" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ item.title }}</a></h3>
       {% else %}
       <li>
         <h3>{{ item.title }}</h3>
@@ -14,11 +22,11 @@
       {% if item.subfolderitems[0] %}
         <ul>
           {% for entry in item.subfolderitems %}
-          <li><a href="{{ entry.url }}" class="{% if entry.url == page.url or entry.selectOnLayout == page.layout %}selected{% endif %}">{{ entry.page }}</a>
+          <li><a href="{{ entry.url }}"  rel="canonical" class="{% if entry.url == page.url or entry.selectOnLayout == page.layout %}selected{% endif %}">{{ entry.page }}</a>
             {% if entry.subsubfolderitems[0] %}
             <ul>
               {% for subentry in entry.subsubfolderitems %}
-              <li><a href="{{ subentry.url }}" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ subentry.page }}</a></li>
+              <li><a href="{{ subentry.url }}"  rel="canonical" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ subentry.page }}</a></li>
               {% endfor %}
             </ul>
             {% endif %}
@@ -31,5 +39,43 @@
       {% endif %}
     </ul>
 	<div id="cc">{{ site.data.copyright.nav.docs }}</div>
-  </nav>
+ </nav>
+
+ {% else %}
+
+   <nav id="mnv">
+    <ul>
+      {% if site.data.navigation.nav[0] %}
+      {% for item in site.data.navigation.nav %}
+      {% if item.url %}
+      <li>
+        <h3><a href="{{ item.url | relative_url }}" rel="alternate" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ item.title }}</a></h3>
+      {% else %}
+      <li>
+        <h3>{{ item.title }}</h3>
+      {% endif %}
+      {% if item.subfolderitems[0] %}
+        <ul>
+          {% for entry in item.subfolderitems %}
+          <li><a href="{{ entry.url }}" rel="alternate" class="{% if entry.url == page.url or entry.selectOnLayout == page.layout %}selected{% endif %}">{{ entry.page }}</a>
+            {% if entry.subsubfolderitems[0] %}
+            <ul>
+              {% for subentry in entry.subsubfolderitems %}
+              <li><a href="{{ subentry.url }}" rel="alternate" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ subentry.page }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    </ul>
+        <div id="cc">{{ site.data.copyright.nav.docs }}</div>
+ </nav>
+
+{% endif %}
+
 </aside>
