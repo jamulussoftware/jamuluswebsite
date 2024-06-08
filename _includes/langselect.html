@@ -7,7 +7,7 @@
       {% else %}
         {% if lng == site.default_lang %}
           {% capture langlink %} {{ page.url }}{% endcapture %}
-          <li><a href="{{ langlink }}" rel="canonical" hreflang="{{ lng }}" data-slang="{{ lng }}">{{ lng }}</a></li>
+          {% capture lang_rel %}canonical{% endcapture %}
         {% else %}
           {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
            <li><a href="{{ langlink }}"  rel="alternate" hreflang="{{ lng }}" data-slang="{{ lng }}">{{ lng }}</a></li>
