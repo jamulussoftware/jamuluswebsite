@@ -1,12 +1,7 @@
 <aside id="gnav" class="fx-col-100-xs fx-col-25-m">
   {% if page.hidelang %}{% else %}{% include langselect.html %}{% endif %}
 
-<!--
-Default lang is: {{ site.default_lang }}
-Current lang is: {{ page.lang }}
--->
-
-  {% if page.lang == site.default_lang %} {% comment %} Not sure why this isn't true for en. {% endcomment %} 
+  {% if page.lang == site.default_lang %}
   
   <nav id="mnv">
     <ul>
