@@ -8,9 +8,11 @@
         {% if lng == site.default_lang %}
           {% capture langlink %} {{ page.url }}{% endcapture %}
           {% capture lang_rel %}canonical{% endcapture %}
+          <li><a href="{{ langlink }}" rel="{{ lang_rel }}" data-slang="{{ lng }}">{{ lng }}</a></li>
         {% else %}
           {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
           {% capture lang_rel %}alternate{% endcapture %}
+          <li><a href="{{ langlink }}" rel="{{ lang_rel }}" data-slang="{{ lng }}">{{ lng }}</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
