@@ -1,15 +1,13 @@
 <aside id="gnav" class="fx-col-100-xs fx-col-25-m">
   {% if page.hidelang %}{% else %}{% include langselect.html %}{% endif %}
-
-  {% if page.lang == site.default_lang %}
-  
   <nav id="mnv">
     <ul>
       {% if site.data.navigation.nav[0] %}
       {% for item in site.data.navigation.nav %}
       {% if item.url %}
       <li>
-        <h3><a href="{{ item.url | relative_url }}" rel="canonical" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ item.title }}</a></h3>
+      {% if page.lang == site.default_lang %}{% capture lang_rel %}canonical{% endcapture %}{% else %}{% capture lang_rel %}alternate{% endcapture %}{% endif %}
+        <h3><a href="{{ item.url | relative_url }}" rel="{{ lang_rel }}" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ item.title }}</a></h3>
       {% else %}
       <li>
         <h3>{{ item.title }}</h3>
@@ -17,46 +15,13 @@
       {% if item.subfolderitems[0] %}
         <ul>
           {% for entry in item.subfolderitems %}
-          <li><a href="{{ entry.url }}"  rel="canonical" class="{% if entry.url == page.url or entry.selectOnLayout == page.layout %}selected{% endif %}">{{ entry.page }}</a>
+            {% if page.lang == site.default_lang %}{% capture lang_rel %}canonical{% endcapture %}{% else %}{% capture lang_rel %}alternate{% endcapture %}{% endif %}
+            <li><a href="{{ entry.url }}" lang="{{ lang_rel }}" class="{% if entry.url == page.url or entry.selectOnLayout == page.layout %}selected{% endif %}">{{ entry.page }}</a>
             {% if entry.subsubfolderitems[0] %}
             <ul>
-              {% for subentry in entry.subsubfolderitems %}
-              <li><a href="{{ subentry.url }}"  rel="canonical" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ subentry.page }}</a></li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </li>
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-    </ul>
-	<div id="cc">{{ site.data.copyright.nav.docs }}</div>
- </nav>
-
- {% else %}
-
-   <nav id="mnv">
-    <ul>
-      {% if site.data.navigation.nav[0] %}
-      {% for item in site.data.navigation.nav %}
-      {% if item.url %}
-      <li>
-        <h3><a href="{{ item.url | relative_url }}" rel="alternate" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ item.title }}</a></h3>
-      {% else %}
-      <li>
-        <h3>{{ item.title }}</h3>
-      {% endif %}
-      {% if item.subfolderitems[0] %}
-        <ul>
-          {% for entry in item.subfolderitems %}
-          <li><a href="{{ entry.url }}" rel="alternate" class="{% if entry.url == page.url or entry.selectOnLayout == page.layout %}selected{% endif %}">{{ entry.page }}</a>
-            {% if entry.subsubfolderitems[0] %}
-            <ul>
-              {% for subentry in entry.subsubfolderitems %}
-              <li><a href="{{ subentry.url }}" rel="alternate" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ subentry.page }}</a></li>
+          {% for subentry in entry.subsubfolderitems %}
+              {% if page.lang == site.default_lang %}{% capture lang_rel %}canonical{% endcapture %}{% else %}{% capture lang_rel %}alternate{% endcapture %}{% endif %}
+              <li><a href="{{ subentry.url }}"  lang="{{ lang_rel }}" class="{% if subentry.url == page.url or subentry.selectOnLayout == page.layout %}selected{% endif %}">{{ subentry.page }}</a></li>
               {% endfor %}
             </ul>
             {% endif %}
@@ -69,8 +34,5 @@
       {% endif %}
     </ul>
         <div id="cc">{{ site.data.copyright.nav.docs }}</div>
- </nav>
-
-{% endif %}
-
+  </nav>
 </aside>
