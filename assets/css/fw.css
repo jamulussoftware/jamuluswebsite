@@ -86,11 +86,6 @@ main li {
   display: none;
 }
 
-.chlang {
-  border: solid 2px #c94a55;
-  padding: 0.2em;
-}
-
 .proplang {
   font-style: italic;
 }
@@ -102,7 +97,7 @@ main li {
 #langselect ul {
   padding: 0;
   margin: 0;
-  text-align: right;
+  text-align: left;
 }
 
 #langselect ul li {
@@ -119,7 +114,7 @@ main li {
 }
 
 #langselect.chlang ul li a, #langselect.chlang .selected {
-  color: inherit;
+  color: #2b7288;
 }
 
 header #navbtn {
@@ -462,7 +457,7 @@ details>summary {
   .chlang {
     border-color: #ea6571;
   }
-  
+
   #cc {
     color: #52bada;
   }
