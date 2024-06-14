@@ -1,23 +1,24 @@
-<div id="langselect">
-
-  <!-- Language Dropdown -->
-  <div class="language-dropdown">
-    <button class="dropdown-button">Lang: {{ site.active_lang }} &#9660;</button>
-    <div class="dropdown-content">
-      <ul>
-        {% for lng in site.languages %}
-          {% if lng == site.active_lang %}
-            <li class="selected" data-slang="{{ lng }}">{{ lng }}</li>
-          {% else %}
-            {% if lng == site.default_lang %}
-              {% capture langlink %}{{ page.url }}{% endcapture %}
+<div id="langselect-container">
+  <div id="langselect">
+    <!-- Language Dropdown -->
+    <div class="language-dropdown">
+      <button class="dropdown-button">Lang: {{ site.active_lang }} &#9660;</button>
+      <div class="dropdown-content">
+        <ul>
+          {% for lng in site.languages %}
+            {% if lng == site.active_lang %}
+              <li class="selected" data-slang="{{ lng }}">{{ lng }}</li>
             {% else %}
-              {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
+              {% if lng == site.default_lang %}
+                {% capture langlink %}{{ page.url }}{% endcapture %}
+              {% else %}
+                {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
+              {% endif %}
+              <li><a href="{{ langlink }}" data-slang="{{ lng }}">{{ lng }}</a></li>
             {% endif %}
-            <li><a href="{{ langlink }}" data-slang="{{ lng }}">{{ lng }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -96,8 +97,11 @@
   });
 </script>
 
-
 <style>
+  #langselect-container {
+    text-align: right;
+  }
+
   .language-dropdown {
     position: relative;
     display: inline-block;

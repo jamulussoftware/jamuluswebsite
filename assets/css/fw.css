@@ -82,16 +82,8 @@ main li {
   margin-bottom: 0.5em;
 }
 
-#suglang {
-  display: none;
-}
-
-.proplang {
-  font-style: italic;
-}
-
 #langselect {
-  color: #1181a4;
+  color: #1181a4; /* Dark cyan */
 }
 
 #langselect ul {
@@ -110,7 +102,7 @@ main li {
 #langselect .selected, #gnav .selected, #paginator .selected {
   font-weight: bold;
   text-decoration: underline;
-  color: #2b7288;
+  color: #2b7288; /* Dark moderate cyan */
 }
 
 #langselect.chlang ul li a, #langselect.chlang .selected {
