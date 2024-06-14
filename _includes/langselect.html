@@ -57,21 +57,23 @@
     var activeLang = '{{ site.active_lang }}';
     var defaultLang = '{{ site.default_lang }}';
 
-    // Get the stored language from local storage
-    var storedLang = localStorage.getItem('preferredLang');
+    // Get the stored language from session storage
+    var storedLang = sessionStorage.getItem('activeLang');
 
     // Determine if redirection is needed
     var shouldRedirect = false;
     var newLang = '';
 
-    if (storedLang && siteLanguages.includes(storedLang) && storedLang !== activeLang) {
+    if (!storedLang) {
+      // If no stored language but browser language is different, use it
+      if (siteLanguages.includes(normalizedUserLang) && normalizedUserLang !== activeLang) {
+        shouldRedirect = true;
+        newLang = normalizedUserLang;
+      }
+    } else if (siteLanguages.includes(storedLang) && storedLang !== activeLang) {
       // If there's a stored language and it's different from the active one, use it
       shouldRedirect = true;
       newLang = storedLang;
-    } else if (!storedLang && siteLanguages.includes(normalizedUserLang) && normalizedUserLang !== activeLang) {
-      // If no stored language but browser language is different, use it
-      shouldRedirect = true;
-      newLang = normalizedUserLang;
     }
 
     if (shouldRedirect) {
@@ -84,15 +86,16 @@
       }
     }
 
-    // Store the language when a user selects it
+    // Store the language when a user selects it (without persistence across sessions)
     document.querySelectorAll('.dropdown-content a').forEach(function(link) {
       link.addEventListener('click', function(event) {
         var selectedLang = event.target.getAttribute('data-slang');
-        localStorage.setItem('preferredLang', selectedLang);
+        sessionStorage.setItem('activeLang', selectedLang);
       });
     });
   });
 </script>
+
 
 <style>
   .language-dropdown {
