@@ -99,67 +99,77 @@
 
 <style>
   #langselect-container {
-    text-align: right;
-  }
+  text-align: right;
+}
 
-  .language-dropdown {
-    position: relative;
-    display: inline-block;
-  }
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  .dropdown-button {
-    background-color: #3daed2;
-    color: white;
-    padding: 6px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    display: inline-block; /* Allow button to adapt to content */
-  }
+.dropdown-button {
+  background-color: #3daed2;
+  color: white;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eaf8fd;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  white-space: normal;
+  left: 0;
+  text-align: left;
+}
+
+.dropdown-content ul {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.dropdown-content li {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+/* Media query for small screens */
+@media (max-height: 500px) {
   .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #eaf8fd;
-    min-width: 100px; /* Adjust dropdown minimum width */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    white-space: normal; /* Allow wrapping within dropdown */
-    left: 0; /* Ensure dropdown starts from the left edge of button */
-    text-align: left; /* Align text within dropdown to the left */
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
   }
+}
 
-  .dropdown-content ul {
-    padding: 0;
-    margin: 0;
-    text-align: left; /* Align items to the left */
-  }
-
-  .dropdown-content li {
-    width: 100%; /* Each item takes full width of dropdown */
-    white-space: nowrap; /* Prevent item text from wrapping */
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-
-  .dropdown-content.show {
-    display: block;
-  }
-
-  .selected {
-    font-weight: bold;
-  }
 </style>
