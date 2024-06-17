@@ -82,31 +82,10 @@ main li {
   margin-bottom: 0.5em;
 }
 
-#langselect {
-  color: #1181a4; /* Dark cyan */
-}
-
-#langselect ul {
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-#langselect ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0 0.8em 0 0;
-  padding: 0;
-}
-
-#langselect .selected, #gnav .selected, #paginator .selected {
+#gnav .selected, #paginator .selected {
   font-weight: bold;
   text-decoration: underline;
   color: #2b7288; /* Dark moderate cyan */
-}
-
-#langselect.chlang ul li a, #langselect.chlang .selected {
-  color: #2b7288;
 }
 
 header #navbtn {
@@ -444,10 +423,6 @@ details>summary {
 
   .red-bg {
     background-color: #ea6571 !important;
-  }
-
-  .chlang {
-    border-color: #ea6571;
   }
 
   #cc {
