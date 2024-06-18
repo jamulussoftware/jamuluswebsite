@@ -37,10 +37,10 @@ jobs:
       - name: Check if language is already present
         run: |
           if [ -d "_translator-files/po/${{ env.lang_code }}" ] ; then
-            echo Error: The language [${{ env.full_lang }}] seems to already exist.
+            echo Error: The language [${{ env.lang_code }}] seems to already exist.
             exit 1
           else
-            echo Language: [${{ env.full_lang }}] not detected. Proceeding to add [${{ env.full_lang }}].
+            echo Language: [${{ env.lang_code }}] not detected. Proceeding to add [${{ env.lang_code }}].
           fi
 
 # Check po4a cache. If CACHE_HIT: true, retrieve the cache.
