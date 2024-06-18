@@ -36,43 +36,38 @@ msgstr ""
 #. type: Title #
 #: ../wiki/en/Installation-for-Windows.md:1
 #: ../wiki/en/Installation-for-Windows.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Installation for Windows"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:9
-#, markdown-text
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:13
-#, markdown-text
 msgid "Make sure you read the [Getting Started](Getting-Started) page."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:15
-#, markdown-text
 msgid "{% include infobox_each_os.html %}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:17
-#, markdown-text
 msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:24
-#, markdown-text
 msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:24
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "1. [Download Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
 " **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
@@ -83,145 +78,127 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:26
-#, markdown-text
 msgid "_Please note that you are not permitted to redistribute this binary without acquiring a [licence agreement from Steinberg](https://www.steinberg.net/developers/)._"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:28
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Note:** If you don't want to use ASIO or prefer [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), you can also use the [JACK version of Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }}). You can find old (legacy) versions supporting outdated operating systems on the [GitHub release page](https://github.com/jamulussoftware/jamulus/releases).\n"
 msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:31
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "ASIO"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:34
-#, markdown-text
 msgid "Jamulus can use [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output)."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-Windows.md:37
-#, markdown-text
 msgid "If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality)."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-Windows.md:37
-#, markdown-text
 msgid "If you don't have an external sound card, you will probably not have an ASIO driver so will need to install a generic one like ASIO4ALL:"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:39
-#, markdown-text
 msgid "You can try two versions of ASIO4ALL. ASIO4ALL v2.14 includes a workaround for a bug which might break other functionality."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:41
-#, markdown-text
 msgid "[ASIO4ALL v2.15 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:43
-#, markdown-text
 msgid "[ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:45
-#, markdown-text
 msgid "[ASIO4ALL website](https://www.asio4all.org/){: target=\"_blank\" rel=\"noopener noreferrer\"}"
 msgstr ""
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:47
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Setting up ASIO4ALL"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:50
-#, markdown-text
 msgid "You may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:52
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Tip:** Set up your sound card while you're [connected to a Server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:55
-#, markdown-text
 msgid "Before you start with Jamulus:"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:58
-#, markdown-text
 msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running."
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:58
-#, markdown-text
 msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
 msgstr ""
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:59
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "How to set up ASIO4ALL inputs (Guide)"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
-#, markdown-text
 msgid "Open Jamulus's settings"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
-#, markdown-text
 msgid "Go to _\"ASIO Device Settings\"_ (column on the left; directly under the selection of the driver)"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
-#, markdown-text
 msgid "Enable _advanced view_ in ASIO4ALL (click the tool icon on the bottom right)"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
-#, markdown-text
 msgid "Enable only the sound card you want to use by clicking on the button next to its name"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
-#, markdown-text
 msgid "Open your sound card inputs/outputs by clicking the _plus icon_ next to this sound card"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
-#, markdown-text
 msgid "Now enable the correct inputs/outputs in the list under your sound card and disable everything else. You can hover over the inputs/outputs to see which of both they are and if they support the required sample rate for Jamulus of 48kHz (DVD quality)."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:72
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "**Hints:**\n"
 "1. It may not be obvious what the correct sound device is called. Many internal sound cards are named \"Realtek High Definition Audio\", \"Conexant\" or similar.\n"
@@ -231,48 +208,42 @@ msgstr ""
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:73
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Troubleshooting"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:76
-#, markdown-text
 msgid "If nothing works, first restart Jamulus and/or your PC to close background processes that may be accessing your sound card."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:78
-#, markdown-text
 msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons in the ASIO4ALL settings. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. web browser, Zoom, etc)."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:80
-#, markdown-text
 msgid "Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:82
-#, markdown-text
 msgid "Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}."
 msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:83
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "All installed?"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:86
-#, markdown-text
 msgid "Take a look at"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:87
-#, markdown-text
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr ""

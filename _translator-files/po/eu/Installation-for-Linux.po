@@ -36,74 +36,67 @@ msgstr ""
 #. type: Title #
 #: ../wiki/en/Installation-for-Linux.md:1
 #: ../wiki/en/Installation-for-Linux.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Installation for Linux"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:9
-#, markdown-text
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:13
-#, markdown-text
 msgid "Make sure you read the [Getting Started](Getting-Started) page."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:15
-#, markdown-text
 msgid "{% include infobox_each_os.html %}"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Upgrading?** You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.\n"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.\n"
 msgstr ""
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:20
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Debian and Ubuntu"
 msgstr ""
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:22
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Using the official Repository (recommended)"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:25
-#, markdown-text
 msgid "We provide a repository for Debian and Ubuntu based distributions that allows automatic updates alongside your other system updates. To use the repository:"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
-#, markdown-text
 msgid "Open your Terminal (CTRL+ALT+T should work)"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788))."
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
-#, markdown-text
 msgid "Download the repository setup script:\\\\"
 msgstr ""
 
@@ -115,7 +108,6 @@ msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:33
-#, markdown-text
 msgid "Make the script executable:\\\\"
 msgstr ""
 
@@ -127,7 +119,6 @@ msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:37
-#, markdown-text
 msgid "Run the setup script and install Jamulus:\\\\"
 msgstr ""
 
@@ -139,127 +130,112 @@ msgstr ""
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:41
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Installing the .deb files manually"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "Once installed, you can delete the file and close any console windows."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:50
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version and install Jamulus manually, just download the new .deb file and re-install as above.\n"
 msgstr ""
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:51
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Other distributions"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:54
-#, markdown-text
 msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
 msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:55
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Set up your hardware"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:60
-#, markdown-text
 msgid "The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server for your distribution.  - If your distribution uses [JACK](https://jackaudio.org/), see how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - If your distribution uses PipeWire, see how to [configure PipeWire](Installation-for-Linux#configure-pipewire)."
 msgstr ""
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:61
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Configure JACK with QjackCtl"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:64
-#, markdown-text
 msgid "To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`."
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:67
-#, markdown-text
 msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**."
 msgstr ""
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-Linux.md:67
-#, markdown-text
 msgid "Configure your sound hardware as follows:"
 msgstr ""
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, markdown-text
 msgid "Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK)."
 msgstr ""
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, markdown-text
 msgid "Set the **Sample Rate to 48000**."
 msgstr ""
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, markdown-text
 msgid "Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:73
-#, markdown-text
 msgid "Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
 msgstr ""
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:74
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Configure PipeWire"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:79
-#, markdown-text
 msgid "PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.  You need to set your audio interface to the \"pro-audio\" profile and define PipeWire's \"rate\" and \"quantum\" parameters beforehand.  You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:83
-#, markdown-text
 msgid "To set up your system: 1. Open `pavucontrol` (the audio mixer) and choose the \"pro-audio\" profile for your sound hardware in the configuration tab.  2. In a terminal use the following two commands to force PipeWire's rate and quantum:"
 msgstr ""
 
@@ -273,42 +249,37 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:88
-#, markdown-text
 msgid "After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
 msgstr ""
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:89
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Start Jamulus"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:92
-#, markdown-text
 msgid "With JACK or PipeWire configured, launch Jamulus."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:94
-#, markdown-text
 msgid "If you have any problems, first check [the troubleshooting page](Client-Troubleshooting)."
 msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:95
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "All installed?"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:98
-#, markdown-text
 msgid "Take a look at the"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:99
-#, markdown-text
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr ""
