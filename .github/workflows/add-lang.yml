@@ -19,7 +19,7 @@ jobs:
         run: |
           LANG_CODE=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
           FULL_LANG=$(sed 's/.*<\([^>]*\)>.*/\1/' <<< "$ISSUE_TITLE")
-          if [[ $LANG_CODE =~ ^[a-z]{2}(-[A-Z]{2})?$ ]]; then
+          if [[ $NEW_LANG =~ ^[a-z]{2}(-[A-Z]{2})?$ ]]; then
             echo "lang_code=$LANG_CODE" >> $GITHUB_ENV
             echo "full_lang=$FULL_LANG" >> $GITHUB_ENV
             echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
