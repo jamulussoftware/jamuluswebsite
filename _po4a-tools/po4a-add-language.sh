@@ -8,38 +8,40 @@ SCRIPT_DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$SCRIPT_DIR"
 
 # Create and populate .po file folder
-mkdir ../_translator-files/po/$new_lang
+mkdir ../_translator-files/po/$lang_code
 echo ''
-echo .po file folder created for "$new_lang"
-echo Creating .po files for "$new_lang"
+echo .po file folder created for "$lang_code"
+echo Creating .po files for "$full_lang"
 ./po4a-update-templates.sh
 
 # Go to root directory
 cd ../
 
 # Create symlinks for 1-index.md file
-ln -s -r ./wiki/$new_lang/1-index.md ./1-$new_lang-index.md
+ln -s -r ./wiki/$lang_code/1-index.md ./1-$lang_code-index.md
 if [ $(echo $?) == 0 ] ; then
     echo ''
-    echo 1-"$new_lang"-index.md symlink created for "$new_lang" in /
+    echo 1-"$lang_code"-index.md symlink created for "$full_lang" in /
 else
-    echo Error creating 1-"$new_lang"-index.md symlink in /
+    echo Error creating 1-"$lang_code"-index.md symlink in /
     exit 1
 fi
 
-# Add new language to array in _config.yml
-sed -i "s/\(\[\"en\",\)/\1 \"$new_lang\",/" _config.yml
+# Add new language to _config.yml
+sed -i "s/\(\[\"en\",\)/\1 \"$lang_code\",/" _config.yml
+sed -i "/^language_names:/a\  $lang_code: $full_lang" _config.yml
+
 if [ $(echo $?) == 0 ] ; then
-    echo "$new_lang" added to language array in _config.yml
+    echo "$lang_code" added to _config.yml
 else
-    echo Error adding "$new_lang" to language array in _config.yml
+    echo Error adding "$lang_code" to _config.yml
     exit 1
 fi
 
 # Create images folder for new language
-if [ ! -d "./assets/img/$new_lang-screenshots" ] ; then
-    cp -frp ./assets/img/en-screenshots -T ./assets/img/$new_lang-screenshots
-    echo Screenshots created for "$new_lang" in ./assets/img/"$new_lang"-screenshots/
+if [ ! -d "./assets/img/$lang_code-screenshots" ] ; then
+    cp -frp ./assets/img/en-screenshots -T ./assets/img/$lang_code-screenshots
+    echo Screenshots created for "$full_lang" in ./assets/img/"$lang_code"-screenshots/
 else
-    echo Error: screenshots folder for "$new_lang" seems to already exist
+    echo Error: screenshots folder for "$full_lang" seems to already exist
 fi

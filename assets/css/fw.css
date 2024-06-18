@@ -82,44 +82,10 @@ main li {
   margin-bottom: 0.5em;
 }
 
-#suglang {
-  display: none;
-}
-
-.chlang {
-  border: solid 2px #c94a55;
-  padding: 0.2em;
-}
-
-.proplang {
-  font-style: italic;
-}
-
-#langselect {
-  color: #1181a4;
-}
-
-#langselect ul {
-  padding: 0;
-  margin: 0;
-  text-align: right;
-}
-
-#langselect ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0 0.8em 0 0;
-  padding: 0;
-}
-
-#langselect .selected, #gnav .selected, #paginator .selected {
+#gnav .selected, #paginator .selected {
   font-weight: bold;
   text-decoration: underline;
-  color: #2b7288;
-}
-
-#langselect.chlang ul li a, #langselect.chlang .selected {
-  color: inherit;
+  color: #2b7288; /* Dark moderate cyan */
 }
 
 header #navbtn {
@@ -321,10 +287,6 @@ details>summary {
 }
 
 @media (min-width:940px) {
-  #langselect ul li {
-    margin: 0 0.3em 0 0;
-  }
-
   #mnv {
     display: block !important;
   }
@@ -459,10 +421,6 @@ details>summary {
     background-color: #ea6571 !important;
   }
 
-  .chlang {
-    border-color: #ea6571;
-  }
-  
   #cc {
     color: #52bada;
   }
