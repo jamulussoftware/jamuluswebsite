@@ -24,7 +24,7 @@ jobs:
             echo "full_lang=$FULL_LANG" >> $GITHUB_ENV
             echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
           else
-            echo Error: language code in wrong format.
+            echo Error: language name/code in wrong format.
             exit 1
           fi
 
