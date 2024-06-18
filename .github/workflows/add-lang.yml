@@ -78,7 +78,7 @@ jobs:
             - Please consult [this README file](https://github.com/jamulussoftware/jamuluswebsite/tree/next-release/_translator-files#readme) for more information on the translation process.
 
 # Create target translated files. Never pushed to the repo.
-      - name: Create translated docs and stats
+      - name: Create translated docs
         run: ./_po4a-tools/po4a-create-all-targets.sh
 
 # Build site
