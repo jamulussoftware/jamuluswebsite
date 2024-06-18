@@ -5,7 +5,7 @@
       <button class="dropdown-button">
         <span class="dropdown-button-content">
           <img src="/assets/img/lang-icon.png" alt="Language Icon" class="lang-icon">
-          <span class="lang-text">{{ site.active_lang }} &#9660;</span>
+          <span class="lang-text">{{ site.language_names[site.active_lang] }} &#9660;</span>
         </span>
       </button>
       <div class="dropdown-content">
@@ -13,14 +13,14 @@
           {% assign sorted_languages = site.languages | sort %}
           {% for lng in sorted_languages %}
             {% if lng == site.active_lang %}
-              <li class="selected" data-slang="{{ lng }}">{{ lng }}</li>
+              <li class="selected" data-slang="{{ lng }}">{{ site.language_names[lng] }}</li>
             {% else %}
               {% if lng == site.default_lang %}
                 {% capture langlink %}{{ page.url }}{% endcapture %}
               {% else %}
                 {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
               {% endif %}
-              <li><a href="{{ langlink }}" data-slang="{{ lng }}">{{ lng }}</a></li>
+              <li><a href="{{ langlink }}" data-slang="{{ lng }}">{{ site.language_names[lng] }}</a></li>
             {% endif %}
           {% endfor %}
         </ul>
@@ -28,7 +28,6 @@
     </div>
   </div>
 </div>
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var dropdownButton = document.querySelector('.dropdown-button');
@@ -102,7 +101,6 @@
     });
   });
 </script>
-
 <style>
 #langselect-container {
   text-align: right;
