@@ -2,10 +2,11 @@
 {% for lng in site.languages %}
     {% if lng == site.default_lang %}
       {% capture langlink %}{{ site.a_rootpage }}{{ page.url }}{% endcapture %}
+          <link rel="canonical" hreflang="{{ lng }}" href="{{ langlink }}">
     {% else %}
       {% capture langlink %}{{ site.a_rootpage }}/{{ lng }}{{ page.url }}{% endcapture %}
+          <link rel="alternate" hreflang="{{ lng }}" href="{{ langlink }}">
     {% endif %}
-    <link rel="alternate" hreflang="{{ lng }}" href="{{ langlink }}">
 {% endfor %}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/assets/css/fox.min.css">
