@@ -17,12 +17,14 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_NUM: ${{ github.event.issue.number }}
         run: |
-          NEW_LANG=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
-          if [[ $NEW_LANG =~ ^[a-z]{2}(-[A-Z]{2})?$ ]]; then
-            echo "new_lang=$NEW_LANG" >> $GITHUB_ENV
+          LANG_CODE=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
+          FULL_LANG=$(sed 's/.*<\([^>]*\)>.*/\1/' <<< "$ISSUE_TITLE")
+          if [[ $LANG_CODE =~ ^[a-z]{2}(-[A-Z]{2})?$ || $FULL_LANG =~ <[^>]+> ]]; then
+            echo "lang_code=$LANG_CODE" >> $GITHUB_ENV
+            echo "full_lang=$FULL_LANG" >> $GITHUB_ENV
             echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
           else
-            echo Error: language code in wrong format.
+            echo Error: language name/code in wrong format.
             exit 1
           fi
 
@@ -34,11 +36,11 @@ jobs:
 # Check if language has been added previously.
       - name: Check if language is already present
         run: |
-          if [ -d "_translator-files/po/${{ env.new_lang }}" ] ; then
-            echo Error: The language [${{ env.new_lang }}] seems to already exist.
+          if [ -d "_translator-files/po/${{ env.lang_code }}" ] ; then
+            echo Error: The language [${{ env.lang_code }}] seems to already exist.
             exit 1
           else
-            echo Language: [${{ env.new_lang }}] not detected. Proceeding to add [${{ env.new_lang }}].
+            echo Language: [${{ env.lang_code }}] not detected. Proceeding to add [${{ env.lang_code }}].
           fi
 
 # Check po4a cache. If CACHE_HIT: true, retrieve the cache.
@@ -64,7 +66,7 @@ jobs:
         with:
           branch: next-release
           default_author: github_actions
-          message: 'AUTO: Add new language: (${{ env.new_lang }}) #${{ env.issue_num }}'
+          message: 'AUTO: Add new language: ${{ env.lang_code }}: ${{ env.full_lang }} #${{ env.issue_num }}'
 
 # Add comment to issue informing of the creation of the language files:
       - name: Add comment to issue
@@ -72,11 +74,11 @@ jobs:
         with:
           issue-number: ${{ env.issue_num }}
           body: |
-            - The .po files have been created for **${{ env.new_lang }}** and are now available on [Weblate](https://hosted.weblate.org/projects/jamulus/#languages). If you prefer not to use Weblate and intend to submit translations via a Pull Request, your language files can be found on the `next-release` branch in `_translator-files/po/${{ env.new_lang }}/`.
+            - The .po files have been created for **${{ env.full_lang }}** and are now available on [Weblate](https://hosted.weblate.org/projects/jamulus/#languages). If you prefer not to use Weblate and intend to submit translations via a Pull Request, your language files can be found on the `next-release` branch in `_translator-files/po/${{ env.lang_code }}/`.
             - Please consult [this README file](https://github.com/jamulussoftware/jamuluswebsite/tree/next-release/_translator-files#readme) for more information on the translation process.
 
 # Create target translated files. Never pushed to the repo.
-      - name: Create translated docs and stats
+      - name: Create translated docs
         run: ./_po4a-tools/po4a-create-all-targets.sh
 
 # Build site

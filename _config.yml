@@ -4,6 +4,18 @@ plugins:
   - jekyll-minifier
 languages:                   ["en", "zh-CN", "nb-NO", "ko-KR", "pt-BR", "pt-PT", "nl", "es", "de", "it", "fr"]
 default_lang:                "en"
+language_names:
+  en: English
+  zh-CN: 简体中文
+  nb-NO: Norsk (bokmål)
+  ko-KR: 한국어
+  pt-PT: Português (Portugal)
+  pt-BR: Português (Brasil)
+  nl: Nederlands
+  es: Español
+  de: Deutsch
+  it: Italiano
+  fr: Français
 exclude_from_localization:   ["assets", "images", "css", "README.md", "manifest.json", "humans.txt", "sitemap.xml", "robots.txt", "404.html", "CNAME", "LICENSE.md"]
 parallel_localization:       true
 a_rootpage:                  "https://jamulus.io"
