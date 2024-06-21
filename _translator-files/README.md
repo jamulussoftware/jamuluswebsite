@@ -6,7 +6,7 @@ All the Jamulus project files (application and website) are listed together on W
 
 **Some tips regarding translations:**
 
-- Change the `lang: en` parameter in the files containing it at the beginning of the file to your language code (it, fr, de, etc.). Remember that if you are translating a regional variation (e.g. `pt_BR`), that's what you must use. Also make sure the `permalink: [parameter]` (e.g. /wiki/Client-Troubleshooting) stays the same.
+- Change the `lang: en` parameter in the files containing it at the beginning of the file to your language code (it, fr, de, etc.). Remember that if you are translating a regional variation (e.g. `pt-BR`), that's what you must use. Also make sure the `permalink: [parameter]` (e.g. /wiki/Client-Troubleshooting) stays the same.
 - At times there are links to other docs: `[translate this](don't translate this)`, or specific paragraphs in other parts of the website: `[translate this](don't translate this#translate-this-but-dont-use-capitals-nor-apostrophes)`. Make sure the last part after the hashtag uses the exact same words as the relevant paragraph title you use in your translation.
 - Some documents contain links to screenshots. Make sure you change the language code in them to your own. You can create screenshots for your language in `/assets/img/[LANG]-screenshots` - note that we do not store these image locally but instead use include files calling an external URL to them. Please see README.md on the website repository for further information. Also note that screenshots that do not need to be localised are symlinked to the English version from each `[LANG]-screenshots` directory.
 - There are documents containing portions of text that do not require translation, e.g. scripts, links, etc. In these cases, please do not leave the translation field empty, but copy the source text into the translation field.
@@ -23,9 +23,9 @@ All the Jamulus project files (application and website) are listed together on W
 
 ## Adding a new language
 
-Open an issue ([here](https://github.com/jamulussoftware/jamuluswebsite/issues)) with the language code of the new language you want to add in square brackets. It is important that you use the following format for the language code:
+Open an issue ([here](https://github.com/jamulussoftware/jamuluswebsite/issues)) with the full language name (in your language) in between "less than/greater than" signs (<>) and the language code of the new language you want to add in square brackets. It is important that you use the following format for the language code:
 
-- Lower case if it is a two-character code (e.g. "Add Basque [eu]")
-- Lower case + underscore + upper case for regional variations (e.g. "Add Brazilian Portuguese [pt_BR]").
+- Lower case if it is a two-character code (e.g. "Add \<Basque\> [eu]")
+- Lower case + hyphen + upper case for regional variations (e.g. "Add \<Português (Brasil)\> [pt-BR]").
 
 You will be notified on the issue thread you opened when the language files have been created. You can then work on the translations.
