@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# yangyangdaji <redacted@invalid.local>, 2022.
+# ignotus <redacted@invalid.local>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
+
+#. type: Yaml Front Matter Hash Value: lang
+#: ../wiki/en/Server-Bandwidth.md:1
+#, no-wrap
+msgid "en"
+msgstr "zh_CN"
+
+#. type: Yaml Front Matter Hash Value: layout
+#: ../wiki/en/Server-Bandwidth.md:1
+#, no-wrap
+msgid "wiki"
+msgstr "wiki"
+
+#. type: Yaml Front Matter Hash Value: permalink
+#: ../wiki/en/Server-Bandwidth.md:1
+#, no-wrap
+msgid "/wiki/Server-Bandwidth"
+msgstr "/wiki/Server-Bandwidth"
+
+#. type: Yaml Front Matter Hash Value: title
+#: ../wiki/en/Server-Bandwidth.md:1
+#, no-wrap
+msgid "Bandwidth Use"
+msgstr "带宽使用"
+
+#. type: Plain text
+#: ../wiki/en/Server-Bandwidth.md:9
+msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"更多\" branch1=\"服务器管理\" branch1-url=\"Running-a-Server\" %}"
+
+#. type: Title ##
+#: ../wiki/en/Server-Bandwidth.md:10
+#, fuzzy, no-wrap
+#| msgid "## Audio bandwidth"
+msgid "Audio bandwidth"
+msgstr "## 音频带宽"
+
+#. type: Plain text
+#: ../wiki/en/Server-Bandwidth.md:16
+#, fuzzy
+#| msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
+msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+msgstr "音频设置对所需的网络带宽有影响。下表总结了与以下配置有关的网络要求。"
+
+#. type: Plain text
+#: ../wiki/en/Server-Bandwidth.md:21
+#, fuzzy
+#| msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
+msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
+msgstr "Kbit/s :每秒千比特(提醒:1 Mbit/s = 1024 Kbit/s，1 KByte/s = 8 Kbit/s)"
+
+#. type: Plain text
+#: ../wiki/en/Server-Bandwidth.md:30
+#, no-wrap
+msgid ""
+"| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
+"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
+"| Stereo    | High   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
+"| Stereo    | Medium | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
+"| Stereo    | Low    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
+"| Mono      | High   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
+"| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
+"| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
+msgstr ""
+"| 通道 | 质量 | 带宽(用于缓冲区:2.67 ms) | 带宽(用于缓冲区:5.33 ms) | 带宽(用于缓冲区:10.67 ms) | 带宽(用于缓冲区:21.33 ms) |\n"
+"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
+"| 立体声|高 | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
+"| 立体声 | 中度 | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s\n"
+"| 立体声 | 低 | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
+"| 单声道|高 | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
+"| 单声道 | 中 | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
+"| 单声道 | 低度 | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
+
+#. type: Title ##
+#: ../wiki/en/Server-Bandwidth.md:31
+#, fuzzy, no-wrap
+#| msgid "## Network bandwidth"
+msgid "Network bandwidth"
+msgstr "## 网络带宽"
+
+#. type: Plain text
+#: ../wiki/en/Server-Bandwidth.md:38
+#, no-wrap
+msgid ""
+"There is one upstream (musician sending to the Server) and one downstream (server sending back the mix to the musician)\n"
+"<figure>\n"
+"        <img src=\"{% include img/en-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"A diagram of Jamulus network bandwidths from different audio qualities ranging from low to high\">\n"
+"<figcaption>Calculate bandwidth use </figcaption>\n"
+"</figure>\n"
+msgstr ""
+"有一个上游(音乐家发送到服务器)和一个下游(服务器将混音发送回音乐家)\n"
+"<figure>\n"
+"        <img src=\"{% include img/zh_CN-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"从低到高不同音频质量的 Jamulus 网络带宽图\">\n"
+"<figcaption>计算带宽使用</figcaption>\n"
+"</figure>\n"
+
+#. type: Plain text
+#: ../wiki/en/Server-Bandwidth.md:40
+msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
+msgstr "另请注意，平均 ADSL2 传输速率为下行 10 Mbit/s 和上行 1 Mbit/s。实际性能取决于与提供商的距离，下载速率可能 [理论上范围从 0.3 公里的 24 Mbit/s 到 5.2 公里的 1.5 Mbit/s](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) 。"
+
+#~ msgid "Channels : stereo/mono"
+#~ msgstr "声道:立体声/单声道"
+
+#~ msgid "Quality : high/medium/low"
+#~ msgstr "质量:高/中/低"
+
+#~ msgid "Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+#~ msgstr "音频缓冲持续时间:2.67 ms、5.33 ms、10.67 ms、21.33 ms"
+
+#~ msgid "With the following units"
+#~ msgstr "有以下单位"
+
+#~ msgid "ms : milliseconds"
+#~ msgstr "ms : 毫秒"
+
+#~ msgid "Mbit/s : Mega-bits per second"
+#~ msgstr "Mbit/s:每秒兆位"
