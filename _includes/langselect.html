@@ -2,10 +2,11 @@
   <div id="langselect">
     <!-- Language Dropdown -->
     <div class="language-dropdown">
-      <button class="dropdown-button">
+      <button class="dropdown-button" aria-expanded="false">
         <span class="dropdown-button-content">
-          <img src="/assets/img/lang-icon.png" alt="Language Icon" class="lang-icon">
+          <img src="{{ site.baseurl }}/assets/img/lang-icon.png" alt="Language Icon" class="lang-icon">
           <span class="lang-text">{{ site.language_names[site.active_lang] }} &#9660;</span>
+          <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/langsel.css">
         </span>
       </button>
       <div class="dropdown-content">
@@ -16,10 +17,14 @@
               <li class="selected" data-slang="{{ lng }}">{{ site.language_names[lng] }}</li>
             {% else %}
               {% if lng == site.default_lang %}
-                {% capture langlink %}{{ page.url }}{% endcapture %}
+                {% capture langlink %}
+                  {{ site.baseurl }}{{ page.url | replace: '/*' }}
+                {% endcapture %}
                 {% capture lang_rel %}canonical{% endcapture %}
               {% else %}
-                {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
+                {% capture langlink %}
+                  {{ site.baseurl }}/{{ lng }}{{ page.url }}
+                {% endcapture %}
                 {% capture lang_rel %}alternate{% endcapture %}
               {% endif %}
               <li><a href="{{ langlink }}" rel="{{ lang_rel }}" data-slang="{{ lng }}">{{ site.language_names[lng] }}</a></li>
@@ -30,189 +35,3 @@
     </div>
   </div>
 </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var dropdownButton = document.querySelector('.dropdown-button');
-    var dropdownContent = document.querySelector('.dropdown-content');
-
-    dropdownButton.addEventListener('click', function() {
-      dropdownContent.classList.toggle('show');
-    });
-
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropdown-button') && !event.target.matches('.dropdown-button *')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    };
-
-    // Function to normalize language code
-    function normalizeLang(lang) {
-      return lang.toLowerCase().split('-')[0];
-    }
-
-    // Get user's language from browser
-    var userLang = navigator.language || navigator.userLanguage;
-    var normalizedUserLang = normalizeLang(userLang);
-
-    // Site configuration
-    var siteLanguages = {{ site.languages | jsonify }};
-    var activeLang = '{{ site.active_lang }}';
-    var defaultLang = '{{ site.default_lang }}';
-
-    // Get the stored language from session storage
-    var storedLang = sessionStorage.getItem('activeLang');
-
-    // Determine if redirection is needed
-    var shouldRedirect = false;
-    var newLang = '';
-
-    if (!storedLang) {
-      // If no stored language but browser language is different, use it
-      if (siteLanguages.includes(normalizedUserLang) && normalizedUserLang !== activeLang) {
-        shouldRedirect = true;
-        newLang = normalizedUserLang;
-      }
-    } else if (siteLanguages.includes(storedLang) && storedLang !== activeLang) {
-      // If there's a stored language and it's different from the active one, use it
-      shouldRedirect = true;
-      newLang = storedLang;
-    }
-
-    if (shouldRedirect) {
-      var currentUrl = window.location.pathname;
-      var newUrl = newLang === defaultLang ? currentUrl.replace(/^\/[^/]+/, '') : '/' + newLang + currentUrl.replace(/^\/[^/]+/, '');
-
-      // Prevent endless redirect loops by checking if the URL already contains the language
-      if (!window.location.pathname.startsWith('/' + newLang) && window.location.pathname !== newUrl) {
-        window.location.href = newUrl;
-      }
-    }
-
-    // Store the language when a user selects it (without persistence across sessions)
-    document.querySelectorAll('.dropdown-content a').forEach(function(link) {
-      link.addEventListener('click', function(event) {
-        var selectedLang = event.target.getAttribute('data-slang');
-        sessionStorage.setItem('activeLang', selectedLang);
-      });
-    });
-  });
-</script>
-<style>
-#langselect-container {
-  text-align: right;
-}
-
-#langselect ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0 0.8em 0 0;
-  padding: 0;
-}
-
-#langselect .selected {
-  font-weight: bold;
-  text-decoration: none;
-  color: #2b7288; /* Dark moderate cyan */
-  border: 2px solid #2b7288; /* Border with the same color */
-  border-radius: 5px; /* Rounded corners */
-  padding: 0;
-}
-
-.language-dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-button {
-  background-color: #3daed2; /* Aquarius */
-  color: white;
-  padding: 6px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: left;
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-button-content {
-  display: flex;
-  align-items: center;
-}
-
-.lang-icon {
-  height: 16px;
-  margin-right: 8px;
-}
-
-.lang-text {
-  display: inline-block;
-}
-
-.dropdown-button:hover {
-  text-decoration: none;
-  transition: 0.4s;
-  opacity: 0.8;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #eaf8fd; /* Light cyan */
-  min-width: 80px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  z-index: 1;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  white-space: normal;
-  left: 0;
-  text-align: left;
-}
-
-.dropdown-content ul {
-  padding: 10px;
-  margin: 0;
-  text-align: left;
-}
-
-.dropdown-content li {
-  width: 100%;
-  white-space: nowrap;
-}
-
-.dropdown-content a {
-  padding: 0px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1; /* Whitesmoke */
-}
-
-.dropdown-content.show {
-  display: block;
-}
-
-.selected {
-  font-weight: bold;
-}
-
-/* Media query for small screens */
-@media (max-height: 500px) {
-  .dropdown-content {
-    max-height: 200px; /* Adjust the height as needed */
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Disable horizontal scrolling */
-  }
-}
-</style>
