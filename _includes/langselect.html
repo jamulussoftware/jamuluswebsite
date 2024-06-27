@@ -2,19 +2,19 @@
   <div id="langselect">
     <!-- Language Dropdown -->
     <div class="language-dropdown">
-      <button class="dropdown-button" aria-expanded="false">
+      <button class="dropdown-button" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu">
         <span class="dropdown-button-content">
-          <img src="{{ site.baseurl }}/assets/img/lang-icon.png" alt="Language Icon" class="lang-icon">
+          <img src="{{ site.baseurl }}/assets/img/lang-icon.svg" alt="Language Icon" class="lang-icon">
           <span class="lang-text">{{ site.language_names[site.active_lang] }} &#9660;</span>
           <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/langsel.css">
         </span>
       </button>
-      <div class="dropdown-content">
+      <div class="dropdown-content" id="dropdown-menu" role="menu">
         <ul>
           {% assign sorted_languages = site.languages | sort %}
           {% for lng in sorted_languages %}
             {% if lng == site.active_lang %}
-              <li class="selected" data-slang="{{ lng }}">{{ site.language_names[lng] }}</li>
+              <li class="selected" role="menuitem" aria-current="page" tabindex="0" data-slang="{{ lng }}">{{ site.language_names[lng] }}</li>
             {% else %}
               {% if lng == site.default_lang %}
                 {% capture langlink %}
@@ -27,7 +27,7 @@
                 {% endcapture %}
                 {% capture lang_rel %}alternate{% endcapture %}
               {% endif %}
-              <li><a href="{{ langlink }}" rel="{{ lang_rel }}" data-slang="{{ lng }}">{{ site.language_names[lng] }}</a></li>
+              <li role="menuitem" tabindex="0"><a href="{{ langlink }}" rel="{{ lang_rel }}" data-slang="{{ lng }}">{{ site.language_names[lng] }}</a></li>
             {% endif %}
           {% endfor %}
         </ul>
