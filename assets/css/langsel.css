@@ -89,7 +89,7 @@
 }
 
 .dropdown-content a {
-  padding: 5px 10px;
+  padding: 1px 10px; /* Adjusted padding to reduce vertical space */
   text-decoration: none;
   display: block;
   color: #2b7288;
@@ -99,10 +99,6 @@
   background-color: #f1f1f1; /* Whitesmoke */
   outline: none;
   border-radius: 5px;
-}
-
-.selected {
-  font-weight: bold;
 }
 
 /* Media query for small screens */
@@ -117,6 +113,6 @@
 /* Additional styling for focus state to enhance accessibility */
 #langselect ul li:focus, #langselect ul li:focus-within {
   outline: 2px solid #2b7288;
-  outline-offset: 2px;
+  outline-offset: 0;
   border-radius: 5px;
 }
