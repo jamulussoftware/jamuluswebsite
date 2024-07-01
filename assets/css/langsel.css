@@ -1,0 +1,41 @@
+#langselect-container {
+  text-align: right;
+}
+
+.language-dropdown {
+  display: inline-block;
+}
+
+#language-select {
+  background-color: #3daed2; /* Aquarius */
+  color: white;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+}
+
+#language-select option {
+  color: #2b7288; /* Dark moderate cyan */
+  background-color: #eaf8fd; /* Light cyan */
+}
+
+#language-select option[selected] {
+  font-weight: bold;
+}
+
+/* Styling for hover and focus states */
+#language-select:hover, #language-select:focus {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+@media (max-height: 500px) {
+  #language-select {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+}

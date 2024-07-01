@@ -40,7 +40,7 @@ jobs:
             echo Error: The language [${{ env.lang_code }}] seems to already exist.
             exit 1
           else
-            echo Language: [${{ env.lang_code }}] not detected. Proceeding to add [${{ env.lang_code }}].
+            echo Language: [${{ env.lang_code }}] seems to be new as no Language: [${{ env.lang_code }}] was found. Proceeding to add [${{ env.lang_code }}].
           fi
 
 # Check po4a cache. If CACHE_HIT: true, retrieve the cache.
