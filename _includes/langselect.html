@@ -2,36 +2,21 @@
   <div id="langselect">
     <!-- Language Dropdown -->
     <div class="language-dropdown">
-      <button class="dropdown-button" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu">
-        <span class="dropdown-button-content">
-          <img src="{{ site.baseurl }}/assets/img/lang-icon.svg" alt="Language Icon" class="lang-icon">
-          <span class="lang-text">{{ site.language_names[site.active_lang] }} &#9660;</span>
-          <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/langsel.css">
-        </span>
-      </button>
-      <div class="dropdown-content" id="dropdown-menu" role="menu">
-        <ul>
-          {% assign sorted_languages = site.languages | sort %}
-          {% for lng in sorted_languages %}
-            {% if lng == site.active_lang %}
-              <li class="selected" role="menuitem" aria-current="page" tabindex="0" data-slang="{{ lng }}">{{ site.language_names[lng] }}</li>
-            {% else %}
-              {% if lng == site.default_lang %}
-                {% capture langlink %}
-                  {{ site.baseurl }}{{ page.url | replace: '/*' }}
-                {% endcapture %}
-                {% capture lang_rel %}canonical{% endcapture %}
-              {% else %}
-                {% capture langlink %}
-                  {{ site.baseurl }}/{{ lng }}{{ page.url }}
-                {% endcapture %}
-                {% capture lang_rel %}alternate{% endcapture %}
-              {% endif %}
-              <li role="menuitem" tabindex="0"><a href="{{ langlink }}" rel="{{ lang_rel }}" data-slang="{{ lng }}">{{ site.language_names[lng] }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
+      <select id="language-select" onchange="location = this.value;">
+        {% assign sorted_languages = site.languages | sort %}
+        {% for lng in sorted_languages %}
+          {% if lng == site.default_lang %}
+            {% capture langlink %} {{ page.url }}{% endcapture %}
+            {% capture lang_rel %}canonical{% endcapture %}
+          {% else %}
+            {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
+            {% capture lang_rel %}alternate{% endcapture %}
+          {% endif %}
+          <option value="{{ langlink }}" {% if lng == site.active_lang %}selected{% endif %}>
+            {{ site.language_names[lng] }}
+          </option>
+        {% endfor %}
+      </select>
     </div>
   </div>
 </div>

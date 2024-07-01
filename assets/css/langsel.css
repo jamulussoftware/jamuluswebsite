@@ -2,28 +2,11 @@
   text-align: right;
 }
 
-#langselect ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0 0.8em 0 0;
-  padding: 0;
-}
-
-#langselect .selected {
-  font-weight: bold;
-  text-decoration: none;
-  color: #2b7288; /* Dark moderate cyan */
-  border: 2px solid #2b7288; /* Border with the same color */
-  border-radius: 5px; /* Rounded corners */
-  padding: 0;
-}
-
 .language-dropdown {
-  position: relative;
   display: inline-block;
 }
 
-.dropdown-button {
+#language-select {
   background-color: #3daed2; /* Aquarius */
   color: white;
   padding: 6px;
@@ -32,87 +15,27 @@
   border-radius: 5px;
   cursor: pointer;
   text-align: left;
-  display: flex;
-  align-items: center;
 }
 
-.dropdown-button-content {
-  display: flex;
-  align-items: center;
-}
-
-.lang-icon {
-  height: 18px;
-  margin-right: 8px;
-}
-
-.lang-text {
-  display: inline-block;
-}
-
-.dropdown-button:hover, .dropdown-button:focus {
-  text-decoration: none;
-  transition: 0.4s;
-  opacity: 0.8;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
+#language-select option {
+  color: #2b7288; /* Dark moderate cyan */
   background-color: #eaf8fd; /* Light cyan */
-  min-width: 80px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  z-index: 1;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  white-space: normal;
-  left: 0;
-  text-align: left;
 }
 
-.language-dropdown:focus-within .dropdown-content {
-  display: block;
+#language-select option[selected] {
+  font-weight: bold;
 }
 
-.dropdown-content ul {
-  padding: 10px;
-  margin: 0;
-  text-align: left;
+/* Styling for hover and focus states */
+#language-select:hover, #language-select:focus {
+  opacity: 0.8;
+  transition: 0.4s;
 }
 
-.dropdown-content li {
-  width: 100%;
-  white-space: nowrap;
-  margin: 0; /* Vertical margin */
-}
-
-.dropdown-content a {
-  padding: 1px 10px; /* Adjusted padding to reduce vertical space */
-  text-decoration: none;
-  display: block;
-  color: #2b7288;
-}
-
-.dropdown-content a:hover, .dropdown-content a:focus {
-  background-color: #f1f1f1; /* Whitesmoke */
-  outline: none;
-  border-radius: 5px;
-}
-
-/* Media query for small screens */
 @media (max-height: 500px) {
-  .dropdown-content {
+  #language-select {
     max-height: 200px; /* Adjust the height as needed */
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Disable horizontal scrolling */
   }
-}
-
-/* Additional styling for focus state to enhance accessibility */
-#langselect ul li:focus, #langselect ul li:focus-within {
-  outline: 2px solid #2b7288;
-  outline-offset: 0;
-  border-radius: 5px;
 }
