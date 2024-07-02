@@ -40,3 +40,20 @@
 .language-list {
   display: none;
 }
+
+/* Horizontal list with JS disabled */
+.language-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.language-list li {
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.language-list li a {
+  text-decoration: none;
+  color: #3daed2;
+}

@@ -4,5 +4,10 @@
 
 /* Force display of the plain list of languages when JS is disabled */
 .language-list {
-  display: block !important;
+  display: flex !important;
+}
+
+/* Hide the language dropdown when JS is disabled */
+.language-dropdown {
+  display: none !important;
 }
