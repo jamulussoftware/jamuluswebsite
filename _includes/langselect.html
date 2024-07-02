@@ -1,9 +1,28 @@
 <div id="langselect-container">
   <div id="langselect">
     <!-- Language Dropdown -->
-    <div class="language-dropdown">
-      <select id="language-select" onchange="location = this.value;">
-        {% assign sorted_languages = site.languages | sort %}
+    <form action="" method="get" id="language-form">
+      <div class="language-dropdown">
+        <select id="language-select" name="language-select" onchange="location = this.value;">
+          {% assign sorted_languages = site.languages | sort %}
+          {% for lng in sorted_languages %}
+            {% if lng == site.default_lang %}
+              {% capture langlink %} {{ page.url }}{% endcapture %}
+              {% capture lang_rel %}canonical{% endcapture %}
+            {% else %}
+              {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
+              {% capture lang_rel %}alternate{% endcapture %}
+            {% endif %}
+            <option value="{{ langlink }}" {% if lng == site.active_lang %}selected{% endif %}>
+              {{ site.language_names[lng] }}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+    </form>
+    <!-- Plain list of language links for non-JS users -->
+    <noscript>
+      <ul class="language-list">
         {% for lng in sorted_languages %}
           {% if lng == site.default_lang %}
             {% capture langlink %} {{ page.url }}{% endcapture %}
@@ -12,11 +31,9 @@
             {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
             {% capture lang_rel %}alternate{% endcapture %}
           {% endif %}
-          <option value="{{ langlink }}" {% if lng == site.active_lang %}selected{% endif %}>
-            {{ site.language_names[lng] }}
-          </option>
+          <li><a href="{{ langlink }}">{{ site.language_names[lng] }}</a></li>
         {% endfor %}
-      </select>
-    </div>
+      </ul>
+    </noscript>
   </div>
 </div>
