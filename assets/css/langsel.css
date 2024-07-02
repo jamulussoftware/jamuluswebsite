@@ -41,7 +41,7 @@
   display: none;
 }
 
-/* Horizontal list with JS disabled */
+/* Horizontal list styling */
 .language-list {
   list-style: none;
   padding: 0;
@@ -55,5 +55,11 @@
 
 .language-list li a {
   text-decoration: none;
-  color: #3daed2;
+  color: #3daed2; /* Match the dropdown button color */
+}
+
+/* Highlight the active language code */
+.language-list li a.active {
+  font-weight: bold;
+  text-decoration: underline;
 }
