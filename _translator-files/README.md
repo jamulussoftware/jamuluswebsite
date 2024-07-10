@@ -23,9 +23,9 @@ All the Jamulus project files (application and website) are listed together on W
 
 ## Adding a new language
 
-Open an issue ([here](https://github.com/jamulussoftware/jamuluswebsite/issues)) with the full language name (in your language) in between "less than/greater than" signs (<>) and the language code of the new language you want to add in square brackets. It is important that you use the following format for the language code:
+Open an issue ([here](https://github.com/jamulussoftware/jamuluswebsite/issues)) with the full language name (in your language) enclosed in angle brackets (<>) and the language code of the new language you want to add in square brackets. It is important that you use the following format for the language code:
 
-- Lower case if it is a two-character code (e.g. "Add \<Basque\> [eu]")
+- Lower case if it is a two-character code (e.g. "Add \<Euskera\> [eu]")
 - Lower case + hyphen + upper case for regional variations (e.g. "Add \<Português (Brasil)\> [pt-BR]").
 
 You will be notified on the issue thread you opened when the language files have been created. You can then work on the translations.
