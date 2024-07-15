@@ -40,7 +40,7 @@ If you own a Mac and have Xcode installed, compiling Jamulus from source might b
 
 ## Feedback and development
 
-iOS support isn't mature and not ready to be published on the AppStore. Feel free to help out:
+Our view is that the iOS version is not sufficiently mature to be published on the AppStore. Feel free to help out:
 Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/).
 
 Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/main/APPLEAPPSTORE.LICENCE.WAIVER) concerning Jamulus being published via the Apple AppStore.
