@@ -7,11 +7,9 @@
           {% assign sorted_languages = site.languages | sort %}
           {% for lng in sorted_languages %}
             {% if lng == site.default_lang %}
-              {% capture langlink %} {{ page.url }}{% endcapture %}
-              {% capture lang_rel %}canonical{% endcapture %}
+              {% capture langlink %}{{ page.url }}{% endcapture %}
             {% else %}
               {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
-              {% capture lang_rel %}alternate{% endcapture %}
             {% endif %}
             <option value="{{ langlink }}" {% if lng == site.active_lang %}selected{% endif %}>
               {{ site.language_names[lng] }}
@@ -25,13 +23,15 @@
       <ul class="language-list">
         {% for lng in sorted_languages %}
           {% if lng == site.default_lang %}
-            {% capture langlink %} {{ page.url }}{% endcapture %}
-            {% capture lang_rel %}canonical{% endcapture %}
+            {% capture langlink %}{{ page.url }}{% endcapture %}
           {% else %}
             {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
-            {% capture lang_rel %}alternate{% endcapture %}
           {% endif %}
-          <li><a href="{{ langlink }}" rel="{{ lang_rel }}" class="{% if lng == site.active_lang %}active{% endif %}">{{ lng }}</a></li>
+          <li>
+            <a href="{{ langlink }}" rel="alternate" hreflang="{{ lng }}" class="{% if lng == site.active_lang %}active{% endif %}">
+              {{ lng }}
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </noscript>
