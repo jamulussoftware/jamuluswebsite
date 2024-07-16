@@ -1,7 +1,7 @@
 <div id="langselect-container">
   <div id="langselect">
     <!-- Language Dropdown inside a form -->
-    <form action="" method="get" id="language-form">
+    <form method="get" id="language-form">
       <div class="language-dropdown">
         <select id="language-select" name="language-select" onchange="location = this.value;">
           {% assign sorted_languages = site.languages | sort %}
@@ -28,7 +28,7 @@
             {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
           {% endif %}
           <li>
-            <a href="{{ langlink }}" rel="alternate" hreflang="{{ lng }}" class="{% if lng == site.active_lang %}active{% endif %}">
+            <a href="{{ langlink }}" class="{% if lng == site.active_lang %}active{% endif %}">
               {{ lng }}
             </a>
           </li>
