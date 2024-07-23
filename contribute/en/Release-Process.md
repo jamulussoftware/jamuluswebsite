@@ -80,7 +80,7 @@ Use `tools/create-translation-issues.sh` to create and assign issues (see usage 
 {:.no_toc}
 
 Each translator should submit a PR containing just their new version of the `.ts` file. There is no need to submit
-a new `.qm` file, as they are now compiled automatically.
+a new `.qm` file, as they are compiled automatically.
 
 A developer should check and merge each PR as it arrives using this checklist:
 
