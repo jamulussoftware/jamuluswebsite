@@ -28,9 +28,11 @@
             {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
           {% endif %}
           <li>
-            <a href="{{ langlink }}" class="{% if lng == site.active_lang %}active{% endif %}">
-              {{ lng }}
-            </a>
+            {% if lng == site.active_lang %}
+              <span class="active">{{ lng }}</span>
+            {% else %}
+              <a href="{{ langlink }}">{{ lng }}</a>
+            {% endif %}
           </li>
         {% endfor %}
       </ul>

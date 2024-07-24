@@ -53,13 +53,24 @@
   margin-right: 10px; /* Adjust spacing as needed */
 }
 
-.language-list li a {
+.language-list li a, .language-list li span {
   text-decoration: none;
   color: #3daed2; /* Match the dropdown button color */
 }
 
+.language-list li a:hover {
+  text-decoration: underline;
+}
+
 /* Highlight the active language code */
-.language-list li a.active {
+.language-list li .active {
   font-weight: bold;
   text-decoration: underline;
+  cursor: default; /* Make the cursor default (not clickable) */
+  color: #3daed2;
+}
+
+/* Disable pointer events on the active language span */
+.language-list li .active {
+  pointer-events: none;
 }
