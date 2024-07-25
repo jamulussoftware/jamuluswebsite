@@ -7,7 +7,7 @@
           {% assign sorted_languages = site.languages | sort %}
           {% for lng in sorted_languages %}
             {% if lng == site.default_lang %}
-              {% capture langlink %}{{ page.url }}{% endcapture %}
+              {% capture langlink %}{{ site.baseurl }}{{ page.url }}{% endcapture %}
             {% else %}
               {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
             {% endif %}
@@ -21,19 +21,18 @@
     <!-- Plain list of language codes for non-JS users -->
     <noscript>
       <ul class="language-list">
+        {% assign sorted_languages = site.languages | sort %}
         {% for lng in sorted_languages %}
-          {% if lng == site.default_lang %}
-            {% capture langlink %}{{ page.url }}{% endcapture %}
+          {% if lng == site.active_lang %}
+            <li class="selected" data-slang="{{ lng }}">{{ lng }}</li>
           {% else %}
-            {% capture langlink %}{{ site.baseurl }}/{{ lng }}{{ page.url }}{% endcapture %}
-          {% endif %}
-          <li>
-            {% if lng == site.active_lang %}
-              <span class="active">{{ lng }}</span>
+            {% if lng == site.default_lang %}
+              {% capture langlink %} {{ page.url }}{% endcapture %}
             {% else %}
-              <a href="{{ langlink }}">{{ lng }}</a>
+              {% capture langlink %}/{{ lng }}{{ page.url }}{% endcapture %}
             {% endif %}
-          </li>
+            <li><a href="{{ langlink }}" data-slang="{{ lng }}">{{ lng }}</a></li>
+          {% endif %}
         {% endfor %}
       </ul>
     </noscript>
