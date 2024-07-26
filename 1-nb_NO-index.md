@@ -1,1 +1,0 @@
-wiki/nb_NO/1-index.md

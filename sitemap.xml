@@ -31,7 +31,7 @@ category: hidden
   {% for post in site.posts %}
     {% unless post.published == false %}
       <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
+        <loc>{{ site.a_rootpage }}{{ post.url }}</loc>
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
