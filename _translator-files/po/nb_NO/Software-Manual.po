@@ -542,99 +542,99 @@ msgid "Some sound card drivers do not allow the buffer delay to be changed from 
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:204
-msgid "On Linux, use the JACK configuration tool to change the buffer size."
-msgstr ""
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:208
-msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
+#: ../wiki/en/Software-Manual.md:206
+msgid "On Linux: - when using JACK, use `QJackCtl` to change the buffer size and restart JACK; - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:210
+msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:212
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:211
+#: ../wiki/en/Software-Manual.md:213
 #, no-wrap
 msgid "Jitter Buffer"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:216
+#: ../wiki/en/Software-Manual.md:218
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:220
+#: ../wiki/en/Software-Manual.md:222
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:222
+#: ../wiki/en/Software-Manual.md:224
 msgid "The jitter buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:226
+#: ../wiki/en/Software-Manual.md:228
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:227
+#: ../wiki/en/Software-Manual.md:229
 #, no-wrap
 msgid "Small Network Buffers"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:231
+#: ../wiki/en/Software-Manual.md:233
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:232
+#: ../wiki/en/Software-Manual.md:234
 #, no-wrap
 msgid "Audio Stream Rate"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:236
+#: ../wiki/en/Software-Manual.md:238
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgstr ""
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:237
+#: ../wiki/en/Software-Manual.md:239
 #, no-wrap
 msgid "Advanced Setup"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:240
+#: ../wiki/en/Software-Manual.md:242
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:241
+#: ../wiki/en/Software-Manual.md:243
 #, no-wrap
 msgid "Custom Directories"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:244
+#: ../wiki/en/Software-Manual.md:246
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here."
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:245
+#: ../wiki/en/Software-Manual.md:247
 #, no-wrap
 msgid "New Client Level"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:250
+#: ../wiki/en/Software-Manual.md:252
 #, no-wrap
 msgid ""
 "This setting defines the fader level of a newly connected Client in percent. If a new user connects\n"
@@ -643,140 +643,140 @@ msgid ""
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:251
+#: ../wiki/en/Software-Manual.md:253
 #, no-wrap
 msgid "Input Boost"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:254
+#: ../wiki/en/Software-Manual.md:256
 msgid "Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus."
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:255
+#: ../wiki/en/Software-Manual.md:257
 #, no-wrap
 msgid "Feedback Protection"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:258
+#: ../wiki/en/Software-Manual.md:260
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:259
+#: ../wiki/en/Software-Manual.md:261
 #, no-wrap
 msgid "Input Balance"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:264
+#: ../wiki/en/Software-Manual.md:266
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
 msgstr ""
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:265
+#: ../wiki/en/Software-Manual.md:267
 #, no-wrap
 msgid "Menu commands"
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:267
+#: ../wiki/en/Software-Manual.md:269
 #, no-wrap
 msgid "File > Load/Save Mixer Channels Setup"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:270
+#: ../wiki/en/Software-Manual.md:272
 msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgstr ""
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:271
+#: ../wiki/en/Software-Manual.md:273
 #, no-wrap
 msgid "Edit > Auto-Adjust All Faders "
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:274
+#: ../wiki/en/Software-Manual.md:276
 msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
 msgstr ""
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:275
+#: ../wiki/en/Software-Manual.md:277
 #, no-wrap
 msgid "Backing up Jamulus"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:279
+#: ../wiki/en/Software-Manual.md:281
 msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:281
+#: ../wiki/en/Software-Manual.md:283
 #, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
 msgstr ""
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:281
+#: ../wiki/en/Software-Manual.md:283
 #, no-wrap
 msgid "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
 msgstr ""
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:285
+#: ../wiki/en/Software-Manual.md:287
 #, no-wrap
 msgid "Command Line Options"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:288
+#: ../wiki/en/Software-Manual.md:290
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:290
+#: ../wiki/en/Software-Manual.md:292
 #, no-wrap
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
 msgstr ""
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:291
+#: ../wiki/en/Software-Manual.md:293
 #, no-wrap
 msgid " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:296
+#: ../wiki/en/Software-Manual.md:298
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr ""
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:297
+#: ../wiki/en/Software-Manual.md:299
 #, no-wrap
 msgid " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:302
+#: ../wiki/en/Software-Manual.md:304
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:304
+#: ../wiki/en/Software-Manual.md:306
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr ""
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:305
+#: ../wiki/en/Software-Manual.md:307
 #, no-wrap
 msgid "Controlling the Client via API"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:307
+#: ../wiki/en/Software-Manual.md:309
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr ""

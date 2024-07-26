@@ -1,3 +1,13 @@
-#suglang, #mnv {
+#mnv {
   display: block !important;
+}
+
+/* Force display of the plain list of languages when JS is disabled */
+.language-list {
+  display: flex !important;
+}
+
+/* Hide the language dropdown when JS is disabled */
+.language-dropdown {
+  display: none !important;
 }
