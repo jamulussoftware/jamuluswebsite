@@ -2,20 +2,20 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Ettore Atalan <atalanttore@googlemail.com>, 2023.
-# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2023.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2023, 2024.
 # ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-01 21:09+0000\n"
-"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
+"PO-Revision-Date: 2024-06-13 18:09+0000\n"
+"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Tips-Tricks-More.md:1
@@ -67,7 +67,7 @@ msgstr "<summary>Inhaltsverzeichnis</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:17
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
@@ -181,7 +181,7 @@ msgstr "Hier ist das Skript:"
 
 #. type: Fenced code block
 #: ../wiki/en/Tips-Tricks-More.md:57
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 " amixer sset 'Mic' capture 30% cap\n"
 " amixer sset 'Mic' playback 0%\n"
@@ -207,7 +207,6 @@ msgid ""
 " jack_connect Jamulus:'output left' system:playback_1\n"
 " jack_connect Jamulus:'output right' system:playback_2\n"
 msgstr ""
-" ~~~\n"
 " amixer sset 'Mic' capture 30% cap\n"
 " amixer sset 'Mic' playback 0%\n"
 " amixer sset 'Line' playback 60% unmute\n"
@@ -231,7 +230,6 @@ msgstr ""
 " jack_connect gx_head_fx:out_1 Jamulus:'input right'\n"
 " jack_connect Jamulus:'output left' system:playback_1\n"
 " jack_connect Jamulus:'output right' system:playback_2\n"
-"~~~\n"
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:83
@@ -331,7 +329,7 @@ msgstr "Hier ist ein Beispiel für ein PHP-Skript, das die Server-Statusdatei ve
 
 #. type: Fenced code block
 #: ../wiki/en/Tips-Tricks-More.md:117
-#, no-wrap
+#, fuzzy, no-wrap
 msgid ""
 "<?php\n"
 "function loadserverstat ( $statfilename )\n"
@@ -347,7 +345,6 @@ msgid ""
 "?>\n"
 "<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
 msgstr ""
-"~~~\n"
 "<?php\n"
 "function loadserverstat ( $statfilename )\n"
 "{\n"
@@ -361,7 +358,6 @@ msgstr ""
 "}\n"
 "?>\n"
 "<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
-"~~~\n"
 
 #, no-wrap
 #~ msgid ""

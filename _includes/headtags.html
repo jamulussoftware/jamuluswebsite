@@ -1,15 +1,18 @@
 <meta charset="utf-8">
-{% for lng in site.languages %}
-    {% if lng == site.default_lang %}
-      {% capture langlink %}{{ site.a_rootpage }}{{ page.url }}{% endcapture %}
-    {% else %}
-      {% capture langlink %}{{ site.a_rootpage }}/{{ lng }}{{ page.url }}{% endcapture %}
-    {% endif %}
-    <link rel="alternate" hreflang="{{ lng }}" href="{{ langlink }}">
+<!-- Canonical and Alternate Links -->
+{% assign sorted_languages = site.languages | sort %}
+{% for lng in sorted_languages %}
+  {% if lng == site.default_lang %}
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  {% else %}
+    <link rel="alternate" hreflang="{{ lng }}" href="{{ site.url }}{{ site.baseurl }}/{{ lng }}{{ page.url }}">
+  {% endif %}
 {% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ page.url }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/assets/css/fox.min.css">
 <link rel="stylesheet" href="/assets/css/fw.css">
+<link rel="stylesheet" href="/assets/css/langsel.css">
 <noscript>
   <link rel="stylesheet" href="/assets/css/noscript.css">
 </noscript>
