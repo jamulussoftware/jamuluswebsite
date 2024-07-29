@@ -81,9 +81,13 @@ You can also open the dialogue using "File&gt;Connection Setup...". This will le
 
 <figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available Servers together with their "distance" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.
+Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name.
 
-You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
+Server operators register their servers with Directories. These are either genre-specific or for any genre, or additional [custom entries](#custom-directories). Use the Directory dropdown to select a genre.
+You can filter the list by server name or location. To list only occupied Servers, enter a "#" character.
+If you choose "Show All Musicians" the current occupants will be shown.
+Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold.
 
 If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address
 field. An optional port number can be added after the address using a colon as a separator, e.g,
