@@ -77,6 +77,7 @@ open automatically for all Clients. See Settings to optionally turn on a sound a
 
 Opens a dialogue where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
+You can also open the dialogue using "File&gt;Connection Setup...". This will leave you connected to any current session until you join another.
 
 <figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
