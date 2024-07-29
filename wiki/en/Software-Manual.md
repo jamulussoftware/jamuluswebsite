@@ -82,16 +82,19 @@ You can also open the dialogue using "File&gt;Connection Setup...". This will le
 <figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
 The Connection Setup window shows a list of available Servers together with their "distance" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.
+Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold.
+
 Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name.
 
 Server operators register their servers with Directories. These are either genre-specific or for any genre, or additional [custom entries](#custom-directories). Use the Directory dropdown to select a genre.
 You can filter the list by server name or location. To list only occupied Servers, enter a "#" character.
 If you choose "Show All Musicians" the current occupants will be shown.
-Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold.
 
-If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address
-field. An optional port number can be added after the address using a colon as a separator, e.g,
-`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses.
+If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.
+An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.
+(Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)
+The field will also show a list of the most recently used server addresses.
+The button that follows the field allows the current entry to be removed from the list.
 
 ## Server audio mixer
 
@@ -248,6 +251,10 @@ rate is not higher than your available internet upload speed (check this with a 
 ### Custom Directories
 
 If you need to add Directory addresses other than the built-in ones, you can do so here.
+If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.
+An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.
+(Note that IPv6 is not currently supported for Directories.)
+The button that follows the field allows the current entry to be removed from the list.
 
 ### New Client Level
 
