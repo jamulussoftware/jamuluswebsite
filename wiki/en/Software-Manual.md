@@ -138,7 +138,7 @@ which is displayed below your fader in the server audio mixer board.
 
 If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:
 
-<figure><img src="{% include img/en-screenshots/profile-tooltip.inc %}" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+<figure><img src="{% include img/en-screenshots/profile-tooltip.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
 
 ### Skin
 
