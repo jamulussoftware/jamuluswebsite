@@ -28,6 +28,7 @@ jobs:
               echo "Error: language name/code in wrong format."
               exit 1
             fi
+          fi
 
 # Check out repo:
       - uses: actions/checkout@v4
