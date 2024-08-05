@@ -19,14 +19,15 @@ jobs:
         run: |
           LANG_CODE=$(sed 's/.*\[\([^]]*\)].*/\1/' <<< "$ISSUE_TITLE")
           FULL_LANG=$(sed 's/.*<\([^>]*\)>.*/\1/' <<< "$ISSUE_TITLE")
-          if [[ "$LANG_CODE" =~ ^[a-z]{2}(-[A-Z]{2})?$ && "$ISSUE_TITLE" =~ <[^>]+> ]]; then
-            echo "lang_code=$LANG_CODE" >> $GITHUB_ENV
-            echo "full_lang=$FULL_LANG" >> $GITHUB_ENV
-            echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
-          else
-            echo Error: language name/code in wrong format.
-            exit 1
-          fi
+          if [[ "$LANG_CODE" =~ ^[a-z]{2}(-[A-Z]{2})?$ ]]; then
+            if echo "$ISSUE_TITLE" | grep -q '<[^>]\+>'; then
+              echo "lang_code=$LANG_CODE" >> $GITHUB_ENV
+              echo "full_lang=$FULL_LANG" >> $GITHUB_ENV
+              echo "issue_num=$ISSUE_NUM" >> $GITHUB_ENV
+            else
+              echo "Error: language name/code in wrong format."
+              exit 1
+            fi
 
 # Check out repo:
       - uses: actions/checkout@v4
