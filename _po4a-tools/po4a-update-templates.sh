@@ -60,16 +60,17 @@ while IFS= read -r -d '' doc ; do
             echo creating "$po_file"
         fi
 
-        # Determine file format to be used
+        # Determine file format to be used and set options (configured as an array to allow adding an arbitrary number of them)
+        OPTION=()
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
-            OPTION="skip_array"
+            OPTION=("skip_array")
         elif [[ $ext == html || "$filename" == *'-index' ]] ; then # '-index.md' has a markdown extension but is actually html and should be processed as such by po4a
             FILE_FORMAT=xml
-            OPTION="ontagerror=warn"
+            OPTION=("ontagerror=silent" "translated=<img>" "attributes=<img>src <img>alt")
         elif [ $ext == md ] ; then
             FILE_FORMAT=text
-            OPTION="markdown"
+            OPTION=("markdown")
         fi
 
         # Update/create .po files
@@ -80,7 +81,7 @@ while IFS= read -r -d '' doc ; do
             --msgmerge-opt  --no-wrap \
             --wrap-po newlines \
             --no-deprecation \
-            --option "$OPTION" \
+            "${OPTION[@]/#/--option=}" \
             --po "$po_file" ; then
         echo ''
         echo Error updating "$lang" PO file for: "$filename".$ext
@@ -103,3 +104,4 @@ for lang in $(ls "$PO_DIR") ; do
     # Delete line in file header that pollutes commits
     sed -i '/^"POT-Creation-Date:/d' $PO_DIR/$lang/*.po
 done
+
