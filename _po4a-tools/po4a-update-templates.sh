@@ -67,7 +67,7 @@ while IFS= read -r -d '' doc ; do
             OPTION=("skip_array")
         elif [[ $ext == html || "$filename" == *'-index' ]] ; then # '-index.md' has a markdown extension but is actually html and should be processed as such by po4a
             FILE_FORMAT=xml
-            OPTION=("ontagerror=silent" "translated=<img>" "attributes=<img>src <img>alt")
+            OPTION=("ontagerror=silent" "attributes=<img>src <img>alt")
         elif [ $ext == md ] ; then
             FILE_FORMAT=text
             OPTION=("markdown")
