@@ -1,8 +1,7 @@
 <meta charset="utf-8">
 <!-- Canonical and Alternate Links -->
 <link rel="canonical" hreflang="en" href="{{ site.url }}{{ page.url }}">
-{% assign sorted_languages = site.languages | sort %}
-{% for lng in sorted_languages %}
+{% for lng in site.languages | sort %}
   {% if lng != "en" %}
     <link rel="alternate" hreflang="{{ lng }}" href="{{ site.url }}{{ site.baseurl }}/{{ lng }}{{ page.url }}">
   {% endif %}
