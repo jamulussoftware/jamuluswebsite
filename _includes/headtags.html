@@ -1,14 +1,13 @@
 <meta charset="utf-8">
 <!-- Canonical and Alternate Links -->
+<link rel="canonical" hreflang="en" href="https://jamulus.io{{ page.url }}">
 {% assign sorted_languages = site.languages | sort %}
 {% for lng in sorted_languages %}
-  {% if lng == site.default_lang %}
-    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  {% if lng == site.active_lang %}
   {% else %}
     <link rel="alternate" hreflang="{{ lng }}" href="{{ site.url }}{{ site.baseurl }}/{{ lng }}{{ page.url }}">
   {% endif %}
 {% endfor %}
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ page.url }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/assets/css/fox.min.css">
 <link rel="stylesheet" href="/assets/css/fw.css">
@@ -37,3 +36,4 @@
 <meta name="color-scheme" content="dark light">
 <link rel="author" href="/humans.txt">
 <script src="/assets/js/nav.js"></script>
+gilgongo@desk:~$
