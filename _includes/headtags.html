@@ -1,6 +1,9 @@
 <meta charset="utf-8">
 <!-- Canonical and Alternate Links -->
-<link rel="canonical" hreflang="en" href="{{ site.url }}{{ page.url }}">
+{% comment %}
+English URLs don't have a lang subdirectory (exact reason unkown):
+{% endcomment %}
+   <link rel="canonical" hreflang="en" href="{{ site.url }}{{ page.url }}">
 {% for lng in site.languages | sort %}
   {% if lng != "en" %}
     <link rel="alternate" hreflang="{{ lng }}" href="{{ site.url }}{{ site.baseurl }}/{{ lng }}{{ page.url }}">
