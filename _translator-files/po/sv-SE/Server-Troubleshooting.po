@@ -1,68 +1,70 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Daniel <daniel@mailsystem.net>, 2024.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-08-24 13:59+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: sv-SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Server-Troubleshooting.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "sv-SE"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Server-Troubleshooting.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Server-Troubleshooting.md:1
 #, no-wrap
 msgid "/wiki/Server-Troubleshooting"
-msgstr ""
+msgstr "/wiki/Server-Troubleshooting"
 
 #. type: Title #
 #: ../wiki/en/Server-Troubleshooting.md:1
 #: ../wiki/en/Server-Troubleshooting.md:10
 #, markdown-text, no-wrap
 msgid "Server Troubleshooting"
-msgstr ""
+msgstr "Felsökning server"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:9
 #, markdown-text
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Mer\" branch1=\"Serveradministration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:12
 #, markdown-text, no-wrap
 msgid " {:.no_toc}\n"
-msgstr ""
+msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:14
 #, markdown-text, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr ""
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:16
 #, markdown-text, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr ""
+msgstr "<summary>Innehållsförteckning</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:19
@@ -71,111 +73,113 @@ msgid ""
 "* TOC\n"
 " {:toc}\n"
 msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:21
 #, markdown-text, no-wrap
 msgid "</details>\n"
-msgstr ""
+msgstr "</details>\n"
 
 #. type: Title ##
 #: ../wiki/en/Server-Troubleshooting.md:22
 #, markdown-text, no-wrap
 msgid "Servers - Registered"
-msgstr ""
+msgstr "Servrar - Registrerade"
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:24
 #, markdown-text, no-wrap
 msgid "Why doesn't my Server show up in the list? Why isn't it registering?"
-msgstr ""
+msgstr "Varför visas inte min server i listan? Varför registreras den inte?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
 #, markdown-text
 msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to configure your router to [forward the port number](Unregistered-Servers#port-forwarding) used by Jamulus Server."
-msgstr ""
+msgstr "Om du är korrekt registrerad (du kan [se det här](https://explorer.jamulus.io/)) och du eller dina vänner inte kan se din server, kan du behöva vänta eller starta din klient med alternativet `--showallservers` och försöka ansluta därifrån ([se kommandoradsalternativ](Software-Manual#command-line-options) för hur du startar din klient med en konfigurationsoption). I vissa nätverkskonfigurationer kan du också behöva konfigurera din router för att [vidarebefordra portnumret](Unregistered-Servers#port-forwarding) som används av Jamulus Server."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:29
 #, markdown-text
 msgid "If you are seeing a message that says the Server is full, you will need to wait until a slot becomes free."
-msgstr ""
+msgstr "Om du ser ett meddelande som säger att servern är full, måste du vänta tills en plats blir ledig."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:31
 #, markdown-text
 msgid "You can verify that your Server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/)."
-msgstr ""
+msgstr "Du kan verifiera att din server är listad i den relevanta genren genom att [kolla här](https://explorer.jamulus.io/)."
 
 #. type: Title ##
 #: ../wiki/en/Server-Troubleshooting.md:32
 #, markdown-text, no-wrap
 msgid "Servers - Unregistered"
-msgstr ""
+msgstr "Servrar - Oregistrerade"
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:34
 #, markdown-text, no-wrap
 msgid "I'm running my Client on the same machine/network as my Server but I can't connect to it"
-msgstr ""
+msgstr "Jag kör min klient på samma maskin/nätverk som min server men kan inte ansluta till den"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:37
 #, markdown-text
 msgid "Connect your Client to `localhost` or `127.0.0.1`. If you're running the Client on a different machine to the Server but on the same network, then connect to the _local network_ address of the Server. Do not connect via the Server's public (WAN) address."
-msgstr ""
+msgstr "Anslut din klient till `localhost` eller `127.0.0.1`. Om du kör klienten på en annan maskin än servern men på samma nätverk, anslut då till serverns _lokala nätverksadress_. Anslut inte via serverns offentliga (WAN) adress."
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:38
 #, markdown-text, no-wrap
 msgid "What address do I give to people so that they can connect to my Server?"
-msgstr ""
+msgstr "Vilken adress ska jag ge till andra så att de kan ansluta till min server?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
 #, markdown-text
 msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it)."
-msgstr ""
+msgstr "Detta bör vara din **offentliga** IP-adress (hitta den med [Google](https://www.google.com/search?q=whatsmyip)). Anslut din **egen** Jamulus-klient till den **lokala** IP-adressen för din server (`localhost` eller `127.0.0.1` om den är på samma maskin som din klient). Observera att din offentliga IP-adress kan ändras - se noteringen om \"dynamisk DNS\" i [denna guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it)."
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:43
 #, markdown-text, no-wrap
 msgid "What port numbers can I use?"
-msgstr ""
+msgstr "Vilka portnummer kan jag använda?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:46
 #, markdown-text
 msgid "You can set your Server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your Server in the format `[serverAddress]:[portNumber]`."
-msgstr ""
+msgstr "Du kan ställa in din server att lyssna på ett anpassat portnummer med alternativet `--port`. Om du gör detta, behöver du informera folk om vilket portnummer de ska ansluta till. De måste lägga till portnumret till adressen till din server i formatet `[serverAddress]:[portNumber]`."
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:47
 #, markdown-text, no-wrap
 msgid "Nobody can connect to my Server - but I can connect locally"
-msgstr ""
+msgstr "Ingen kan ansluta till min server - men jag kan ansluta lokalt"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:50
 #, markdown-text
 msgid "First of all, make sure you've enabled [port forwarding](Unregistered-Servers#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
-msgstr ""
+msgstr "Först och främst, se till att du har aktiverat [portvidarebefordran](Unregistered-Servers#port-forwarding). Om du fortfarande inte kan se din server utanför ditt lokala nätverk kan det finnas problem med din internetleverantör (ISP)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
 #, markdown-text
 msgid "Some ISPs use techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
-msgstr ""
+msgstr "Vissa ISP:er använder tekniker som [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) eller [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) för att spara adressutrymme (vanligtvis för IPv4). Det gör det omöjligt att vara värd för tjänster som Jamulus hemma eftersom de inte är synliga utanför ditt lokala nätverk."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:54
 #, markdown-text
 msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address doesn't match with your public IPv4 address (check it [here](https://ifconfig.me)), it suggests that CGN may be enabled. You can try using an IPv6 connection by starting clients and server with the `-6` flag if IPv6 is available for the server and all clients."
-msgstr ""
+msgstr "För att upptäcka om CGN är problemet, gå till din routers konfigurationsskärm (vanligtvis 192.168.X.X) och titta på WAN-statussidan. Om din listade IPv4-adress inte matchar med din offentliga IPv4-adress (kolla den [här](https://ifconfig.me)), tyder det på att CGN kan vara aktiverat. Du kan försöka använda en IPv6-anslutning genom att starta klienter och server med flaggan `-6` om IPv6 är tillgängligt för servern och alla klienter."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:55
 #, markdown-text
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
-msgstr ""
+msgstr "För att åtgärda problemet med IPv4, kontakta din ISP:s tekniska supportteam och informera dem om att du vill vara värd för en offentlig server hemma och därför behöver en riktig WAN-IP-adress. Du kan också nämna att CGN kan vara problemet. Dessutom kan du be om en statisk IP-adress för att undvika att använda DDNS."
