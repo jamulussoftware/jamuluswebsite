@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
-# yangyangdaji <1504305527@qq.com>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022, 2024.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"PO-Revision-Date: 2024-08-07 13:08+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_CN\n"
+"Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "en"
-msgstr "zh_CN"
+msgstr "zh-CN"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Server-Bandwidth.md:1
@@ -44,28 +45,23 @@ msgstr "带宽使用"
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr "{% include breadcrumb.html root=\"更多\" branch1=\"服务器管理\" branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"更多\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:10
-#, fuzzy, no-wrap
-#| msgid "## Audio bandwidth"
+#, no-wrap
 msgid "Audio bandwidth"
-msgstr "## 音频带宽"
+msgstr "音频带宽"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
-#, fuzzy
-#| msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:"
 msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr "音频设置对所需的网络带宽有影响。下表总结了与以下配置有关的网络要求。"
+msgstr "音频设置会影响所需的网络带宽。下表总结了以下配置的网络要求：* 声道：立体声/单声道* 质量：高/中/低* 音频缓冲时长：2.67 毫秒、5.33 毫秒、10.67 毫秒、21.33 毫秒"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
-#, fuzzy
-#| msgid "Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)"
 msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
-msgstr "Kbit/s :每秒千比特(提醒:1 Mbit/s = 1024 Kbit/s，1 KByte/s = 8 Kbit/s)"
+msgstr "使用以下单位 * ms：毫秒 * Kbit/s：千比特每秒（提醒：1 Mbit/s = 1024 Kbit/s，1 KByte/s = 8 Kbit/s） * Mbit/s：兆比特每秒"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
@@ -91,10 +87,9 @@ msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:31
-#, fuzzy, no-wrap
-#| msgid "## Network bandwidth"
+#, no-wrap
 msgid "Network bandwidth"
-msgstr "## 网络带宽"
+msgstr "网络带宽"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38
@@ -108,7 +103,7 @@ msgid ""
 msgstr ""
 "有一个上游(音乐家发送到服务器)和一个下游(服务器将混音发送回音乐家)\n"
 "<figure>\n"
-"        <img src=\"{% include img/zh_CN-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"从低到高不同音频质量的 Jamulus 网络带宽图\">\n"
+"        <img src=\"{% include img/zh-CN-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"从低到高不同音频质量的 Jamulus 网络带宽图\">\n"
 "<figcaption>计算带宽使用</figcaption>\n"
 "</figure>\n"
 

@@ -1,267 +1,268 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Daniel <daniel@mailsystem.net>, 2024.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-08-06 18:09+0000\n"
+"Last-Translator: Daniel <daniel@mailsystem.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: sv-SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "sv-SE"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Installation-for-Linux.md:1
 #, no-wrap
 msgid "/wiki/Installation-for-Linux"
-msgstr ""
+msgstr "/wiki/Installation-for-Linux"
 
 #. type: Title #
 #: ../wiki/en/Installation-for-Linux.md:1
 #: ../wiki/en/Installation-for-Linux.md:10
 #, markdown-text, no-wrap
 msgid "Installation for Linux"
-msgstr ""
+msgstr "Installation för Linux"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:9
 #, markdown-text
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Använda Jamulus\" branch1=\"Komma igång\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:13
 #, markdown-text
 msgid "Make sure you read the [Getting Started](Getting-Started) page."
-msgstr ""
+msgstr "Se till att läsa sidan [Kom igång](Getting-Started)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:15
 #, markdown-text
 msgid "{% include infobox_each_os.html %}"
-msgstr ""
+msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
 #, markdown-text, no-wrap
 msgid "**Upgrading?** You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.\n"
-msgstr ""
+msgstr "**Uppgraderar du?** Du kanske vill [säkerhetskopiera din konfiguration](Software-Manual#backing-up-jamulus) först.\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
 #, markdown-text, no-wrap
 msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.\n"
-msgstr ""
+msgstr "**Installerar du en server?** Läs först [guiden för serveradministratörer](Running-a-Server).\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:20
 #, markdown-text, no-wrap
 msgid "Debian and Ubuntu"
-msgstr ""
+msgstr "Debian och Ubuntu"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:22
 #, markdown-text, no-wrap
 msgid "Using the official Repository (recommended)"
-msgstr ""
+msgstr "Använda det officiella arkivet (rekommenderas)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:25
 #, markdown-text
 msgid "We provide a repository for Debian and Ubuntu based distributions that allows automatic updates alongside your other system updates. To use the repository:"
-msgstr ""
+msgstr "Vi tillhandahåller ett arkiv för Debian- och Ubuntu-baserade distributioner som möjliggör automatiska uppdateringar tillsammans med dina övriga systemuppdateringar. För att använda arkivet:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 #, markdown-text
 msgid "Open your Terminal (CTRL+ALT+T should work)"
-msgstr ""
+msgstr "Öppna din terminal (CTRL+ALT+T bör fungera)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 #: ../wiki/en/Installation-for-Linux.md:48
 #, markdown-text
 msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788))."
-msgstr ""
+msgstr "*Endast Ubuntu* - Aktivera Ubuntu \"universe\"-arkivet (du kan använda den [grafiska metoden](https://askubuntu.com/a/148645) eller [kommandoradsmetoden](https://askubuntu.com/a/227788))."
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 #, markdown-text
 msgid "Download the repository setup script:\\\\"
-msgstr ""
+msgstr "Ladda ner installationsskriptet för arkivet:\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:29
 #, no-wrap
 msgid "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
-msgstr ""
+msgstr "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linux/setup_repo.sh > setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:33
 #, markdown-text
 msgid "Make the script executable:\\\\"
-msgstr ""
+msgstr "Gör skriptet körbart:\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:33
 #, no-wrap
 msgid "chmod +x setup_repo.sh\n"
-msgstr ""
+msgstr "chmod +x setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:37
 #, markdown-text
 msgid "Run the setup script and install Jamulus:\\\\"
-msgstr ""
+msgstr "Kör installationsskriptet och installera Jamulus:\\\\"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:37
 #, no-wrap
 msgid "sudo ./setup_repo.sh && sudo apt install jamulus\n"
-msgstr ""
+msgstr "sudo ./setup_repo.sh && sudo apt install jamulus\n"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:41
 #, markdown-text, no-wrap
 msgid "Installing the .deb files manually"
-msgstr ""
+msgstr "Installera .deb-filerna manuellt"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
 #, markdown-text
 msgid "Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
-msgstr ""
+msgstr "Ladda ner Jamulus för din arkitektur: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armhf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) eller [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
 #, markdown-text
 msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
-msgstr ""
+msgstr "Uppdatera apt genom att öppna ett terminalfönster (CTRL+ALT+T bör fungera) och skriv: `sudo apt-get update`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
 #, markdown-text
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)"
-msgstr ""
+msgstr "Gå till den plats där du har laddat ner installationsprogrammet och dubbelklicka på det, eller använd kommandoraden: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (eller för Raspberry Pi osv. enligt ovan)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
 #, markdown-text
 msgid "Once installed, you can delete the file and close any console windows."
-msgstr ""
+msgstr "När installationen är klar kan du radera filen och stänga eventuella terminalfönster."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:50
 #, markdown-text, no-wrap
 msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version and install Jamulus manually, just download the new .deb file and re-install as above.\n"
-msgstr ""
+msgstr "**Uppgraderingar:** Om du behöver uppgradera Jamulus till en nyare version och installera Jamulus manuellt, ladda ner den nya .deb-filen och installera om enligt ovan.\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:51
 #, markdown-text, no-wrap
 msgid "Other distributions"
-msgstr ""
+msgstr "Andra distributioner"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:54
 #, markdown-text
 msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
-msgstr ""
+msgstr "För installationer på andra distributioner, se deras pakethanterare och [Repology](https://repology.org/project/jamulus/versions). Om en uppdaterad version av Jamulus inte ingår i din distribution kan du [kompilera Jamulus från källkoden](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Notera också de bidragna [installationsskripten](https://github.com/jamulussoftware/installscripts)."
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:55
 #, markdown-text, no-wrap
 msgid "Set up your hardware"
-msgstr ""
+msgstr "Ställ in din hårdvara"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:60
 #, markdown-text
 msgid "The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server for your distribution.  - If your distribution uses [JACK](https://jackaudio.org/), see how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - If your distribution uses PipeWire, see how to [configure PipeWire](Installation-for-Linux#configure-pipewire)."
-msgstr ""
+msgstr "Jamulus-klienten behöver ansluta till en körande [JACK](https://jackaudio.org/) server för att starta. Du behöver ta reda på vilken ljudserver med låg latens som används i din distribution..  - Om din distribution använder [JACK](https://jackaudio.org/), se hur du [konfigurerar JACK med QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl)..  - Om din distribution använder PipeWire, se hur du [konfigurerar PipeWire](Installation-for-Linux#configure-pipewire)."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:61
 #, markdown-text, no-wrap
 msgid "Configure JACK with QjackCtl"
-msgstr ""
+msgstr "Konfigurera JACK med QjackCtl"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:64
 #, markdown-text
 msgid "To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`."
-msgstr ""
+msgstr "För att köra en [JACK](https://jackaudio.org/) server är den rekommenderade metoden att använda `QjackCtl`."
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:67
 #, markdown-text
 msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**."
-msgstr ""
+msgstr "Starta QjackCtl. Du kommer att se **Qt JACK Control-verktygets huvudsida**."
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-Linux.md:67
 #, markdown-text
 msgid "Configure your sound hardware as follows:"
-msgstr ""
+msgstr "Konfigurera din ljudhårdvara enligt följande:"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
 #, markdown-text
 msgid "Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK)."
-msgstr ""
+msgstr "Ställ in ljud**gränssnittet** till det du vill använda (det kan finnas flera i listan - välj rätt, eftersom detta inte kan ändras utan att stoppa Jamulus och JACK)."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
 #, markdown-text
 msgid "Set the **Sample Rate to 48000**."
-msgstr ""
+msgstr "Ställ in **samplingsfrekvensen till 48000**."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
 #, markdown-text
 msgid "Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first."
-msgstr ""
+msgstr "Ställ in **Frames/Period till 128** och **Periods/Buffer till 2** till att börja med."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:73
 #, markdown-text
 msgid "Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
-msgstr ""
+msgstr "Starta om JACK för att de nya inställningarna ska träda i kraft och fortsätt från avsnittet [Starta Jamulus](Installation-for-Linux#start-jamulus) nedan."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:74
 #, markdown-text, no-wrap
 msgid "Configure PipeWire"
-msgstr ""
+msgstr "Konfigurera PipeWire"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:79
 #, markdown-text
 msgid "PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.  You need to set your audio interface to the \"pro-audio\" profile and define PipeWire's \"rate\" and \"quantum\" parameters beforehand.  You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
-msgstr ""
+msgstr "PipeWire tillhandahåller sin egen JACK-server. När du startar Jamulus-klienten kör PipeWire automatiskt en JACK-server. Det finns dock några parametrar som behöver justeras. Du behöver ställa in ditt ljudgränssnitt till \"pro-audio\"-profilen och definiera PipeWires \"rate\" och \"quantum\"-parametrar i förväg. Du kan hitta mer information om konfigurationen i [PipeWire-wikin](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:83
 #, markdown-text
 msgid "To set up your system: 1. Open `pavucontrol` (the audio mixer) and choose the \"pro-audio\" profile for your sound hardware in the configuration tab.  2. In a terminal use the following two commands to force PipeWire's rate and quantum:"
-msgstr ""
+msgstr "För att ställa in ditt system: 1. Öppna `pavucontrol` (ljudmixern) och välj \"pro-audio\"-profilen för din ljudhårdvara i konfigurationsfliken. 2. Använd följande två kommandon i en terminal för att tvinga PipeWires hastighet och kvantum:"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:83
@@ -270,45 +271,47 @@ msgid ""
 "pw-metadata -n settings 0 clock.force-rate 48000\n"
 "pw-metadata -n settings 0 clock.force-quantum 128\n"
 msgstr ""
+"pw-metadata -n settings 0 clock.force-rate 48000\n"
+"pw-metadata -n settings 0 clock.force-quantum 128\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:88
 #, markdown-text
 msgid "After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
-msgstr ""
+msgstr "Efter detta, fortsätt från avsnittet [Starta Jamulus](Installation-for-Linux#start-jamulus) nedan."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:89
 #, markdown-text, no-wrap
 msgid "Start Jamulus"
-msgstr ""
+msgstr "Starta Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:92
 #, markdown-text
 msgid "With JACK or PipeWire configured, launch Jamulus."
-msgstr ""
+msgstr "Med JACK eller PipeWire konfigurerat, starta Jamulus."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:94
 #, markdown-text
 msgid "If you have any problems, first check [the troubleshooting page](Client-Troubleshooting)."
-msgstr ""
+msgstr "Om du har några problem, kolla först [felsökningssidan](Client-Troubleshooting)."
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:95
 #, markdown-text, no-wrap
 msgid "All installed?"
-msgstr ""
+msgstr "Allt installerat?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:98
 #, markdown-text
 msgid "Take a look at the"
-msgstr ""
+msgstr "Titta på"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:99
 #, markdown-text
 msgid "[Getting Started page](Getting-Started){: .button}"
-msgstr ""
+msgstr "[Komma igång](Getting-Started){: .button}"
