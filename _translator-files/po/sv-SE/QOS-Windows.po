@@ -42,37 +42,33 @@ msgstr "Kvalitet/prioritet på tjänst (QoS)"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:9
-#, markdown-text
 msgid "{% include breadcrumb.html root=\"More\" %}"
 msgstr "{% include breadcrumb.html root=\"More\" %}"
 
 #. type: Title ##
 #: ../wiki/en/QOS-Windows.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Use of QoS on Windows"
 msgstr "Användning av QoS på Windows"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:13
-#, markdown-text
 msgid "Jamulus uses Quality of Service (QoS) to mitigate network jitter delays."
 msgstr "Jamulus använder Quality of Service (QoS) för att minska nätverksfördröjningar orsakade av jitter."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:15
-#, markdown-text
 msgid "If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18.  Jamulus sets the DS Field byte to 128 (or 0x80) to select DSCP/CS4 in an IPv4 or IPv6 packet header. Other byte values can be set using the -Q option, e.g. -Q [0..255].  However, most people will have no need to do this."
 msgstr "Om du vill utforska effekten av icke-standardinställningar, se [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) sidorna 16-18. Jamulus sätter DS Field-byte till 128 (eller 0x80) för att välja DSCP/CS4 i en IPv4- eller IPv6-paketheader. Andra byte-värden kan ställas in med hjälp av -Q alternativet, t.ex. -Q [0..255]. De flesta kommer dock inte att behöva göra detta."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:17
-#, markdown-text
 msgid "Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated."
 msgstr "Jamulus' QoS-inställningar (inklusive standardinställningen) är inställda på 0 på moderna Windows- och macOS-system på grund av operativsystemet. För att använda QoS på Windows, följ dessa instruktioner. Observera att du kan behöva upprepa denna procedur varje gång Jamulus uppdateras."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:37
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "In Search box beside Start menu, Type: Local Group Policy Editor (enter)<br>\n"
 "In new window, (click) on the menu icon to display the Actions third panel<br>\n"
@@ -116,6 +112,5 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:39
-#, markdown-text
 msgid "(Notice Jamulus policy in center panel may be edited)"
 msgstr "(Observera att Jamulus policy i centerpanelen kan redigeras)"

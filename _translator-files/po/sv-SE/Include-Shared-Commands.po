@@ -17,72 +17,60 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:3
-#, markdown-text
 msgid "[comment]: # (This is an include file for use in multiple documents)"
 msgstr "[comment]: # (Detta är en inkluderingsfil för användning i flera dokument)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`-h` or `--help` Display help text"
 msgstr "`-h` eller `--help` Visa hjälptext"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`-i` or `--inifile` Set location of initialization file (overrides default. On macOS simply provide a filename only, since config files can only be read from `/Users/<username>/Library/Containers/app.jamulussoftware.Jamulus/Data/`. For the server replace `app.jamulussoftware.Jamulus` with `app.jamulussoftware.JamulusServer`. Turn on \"Show Library folder\" in \"Show view options\" in Finder to see this folder.)"
 msgstr "`-i` eller `--inifile` Ange platsen för initieringsfilen (ersätter standard). På macOS anger du bara ett filnamn, eftersom konfigurationsfiler endast kan läsas från `/Users/<användarnamn>/Library/Containers/app.jamulussoftware.Jamulus/Data/`. För servern ersätter du `app.jamulussoftware.Jamulus` med `app.jamulussoftware.JamulusServer`. Aktivera \"Visa Library-mappen\" i \"Visa alternativ\" i Finder för att se denna mapp.)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`-n` or `--nogui` Disable GUI (for use in headless mode)"
 msgstr "`-n` eller `--nogui` Inaktivera GUI (för användning i headless-läge)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`-p` or `--port` Sets the local UDP port number. Default is 22124"
 msgstr "`-p` eller `--port` Sätter det lokala UDP-portnumret. Standard är 22124"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`--jsonrpcport` Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr "`--jsonrpcport` Aktiverar JSON-RPC API-server för att styra appen, ställ in TCP-portnummer (EXPERIMENTELLT, API:er kan ändras; endast tillgängligt från localhost). Se [JSON-RPC API-dokumentationsfilen](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`--jsonrpcsecretfile` Required when using `--jsonrpcport`. Sets a path to a text file containing an authentication string for getting access to the JSON-RPC API."
 msgstr "`--jsonrpcsecretfile` Krävs när `--jsonrpcport` används. Anger en sökväg till en textfil som innehåller en autentiseringstextsträng för att få åtkomst till JSON-RPC API:et."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`--jsonrpcbindip` The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)"
 msgstr "`--jsonrpcbindip` Den IP-adress som JSON-RPC-servern ska binda till. (valfritt, standard är 127.0.0.1)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`-Q` or `--qos` Sets the quality of service DS Field byte. Default is 128 (DSCP/CS4). QoS is ignored by Windows. To enable it, [see this page](QOS-Windows)"
 msgstr "`-Q` eller `--qos` Ställer in kvaliteten på tjänstens DS-fältbyte. Standard är 128 (DSCP/CS4). QoS ignoreras av Windows. För att aktivera det, se [denna sida](QOS-Windows)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`-t` or `--notranslation` Disable UI language translations"
 msgstr "`-t` eller `--notranslation` Inaktivera översättningar av användargränssnittets språk"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`-6` or `--enableipv6` Enable IPv6 addressing (IPv4 is always enabled)"
 msgstr "`-6` eller `--enableipv6` Aktivera IPv6-adressering (IPv4 är alltid aktiverat)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, markdown-text
 msgid "`-v` or `--version` Output version information and exit"
 msgstr "`-v` eller `--version` Skriv ut versionsinformation och avsluta"

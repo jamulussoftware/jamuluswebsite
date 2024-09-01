@@ -43,31 +43,28 @@ msgstr "Användning av bandbredd"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
-#, markdown-text
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 msgstr "{% include breadcrumb.html root=\"Mer\" branch1=\"Serveradministration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Audio bandwidth"
 msgstr "Ljudbandbredd"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
-#, markdown-text
 msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
 msgstr "Ljudinställningarna påverkar den nödvändiga nätverksbandbredden. Tabellen nedan sammanfattar nätverkskrav med avseende på konfigurationen av: * Kanaler: stereo/mono * Kvalitet: hög/medium/låg * Ljudbuffertlängd: 2,67 ms, 5,33 ms, 10,67 ms, 21,33 ms"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
-#, markdown-text
 msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
 msgstr "Med följande enheter * ms : milliseconds * Kbit/s : Kilo-bits per sekund (Kom ihåg : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per sekund"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
 "| --------- | ------ | -------- | -------- | -------- | -------- |\n"
@@ -89,13 +86,13 @@ msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:31
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Network bandwidth"
 msgstr "Nätverksbandbredd"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "There is one upstream (musician sending to the Server) and one downstream (server sending back the mix to the musician)\n"
 "<figure>\n"
@@ -111,6 +108,5 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:40
-#, markdown-text
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
 msgstr "Observera också att den genomsnittliga ADSL2-överföringshastigheten är 10 Mbit/s för nedströms och 1 Mbit/s för uppströms. Den faktiska prestandan beror på avståndet till leverantören, vilket [teoretiskt kan variera från 24 Mbit/s vid 0,3 km till 1,5 Mbit/s vid 5,2 km för nedladdningshastighet](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."

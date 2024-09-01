@@ -43,31 +43,31 @@ msgstr "Klientfelsökning"
 
 #. type: Title #
 #: ../wiki/en/Client-Troubleshooting.md:8
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Troubleshooting"
 msgstr "Felsökning"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid " {:.no_toc}\n"
 msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:12
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "<details markdown=\"1\">\n"
 msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:14
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "<summary>Table of contents</summary>\n"
 msgstr "<summary>Innehållsförteckning</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:17
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
@@ -77,277 +77,249 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:19
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "</details>\n"
 msgstr "</details>\n"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:20
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Don’t hear any sound/Others don’t hear you?"
 msgstr "Hör inget ljud/andra hör dig inte?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:23
-#, markdown-text
 msgid "Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your sound card. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://github.com/jamulussoftware/jamulus/discussions) for guidance."
 msgstr "Börja med de enkla sakerna: se till att ditt instrument/mikrofon och hörlurar är anslutna till rätt uttag. Se till att inga andra applikationer som din webbläsare, videokonferensverktyg etc. också använder ditt ljudkort. Du bör stänga av dem när du använder Jamulus. Om allt ser OK ut och problemet kvarstår, är det troligtvis ett problem med inställningarna för din ljudenhet. Detta beror på din specifika konfiguration (plattform, hårdvara, mjukvara och drivrutiner), så det är bäst att fråga på [forumen](https://github.com/jamulussoftware/jamulus/discussions) för vägledning."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:25
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4ALL setup section](Installation-for-Windows#setting-up-asio4all)\n"
 msgstr "**Windows-användare (ASIO4ALL)**: Om du använder ASIO4ALL-drivrutinen ta en titt på [ASIO4ALL-installationsavsnittet](Installation-for-Windows#setting-up-asio4all)\n"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:26
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Not seeing the headphone or microphone you just connected to your PC?"
 msgstr "Ser du inte hörlurarna eller mikrofonen du just anslutit till din dator?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:29
-#, markdown-text
 msgid "Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded."
 msgstr "Starta bara om Jamulus med din enhet inkopplad. Jamulus visar för närvarande inte enheter som anslutits efter att ljudsystemet laddades."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:30
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Your sound is stuttering"
 msgstr "Ditt ljud hackar"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:33
-#, markdown-text
 msgid "Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency."
 msgstr "Din ljudenhet kanske inte fungerar med den buffertstorlek du valde. Välj en större buffertstorlek i Jamulus inställningar. Om möjligt, använd dock en annan enhet, eftersom stora buffertstorlekar innebär högre latens."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:34
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "You all sound OK, but it's difficult to keep together"
 msgstr "Ni låter alla okej, men det är svårt att hålla ihop"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:37
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the Server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
 msgstr "**Om det alls är möjligt, lyssna INTE på din direkta signal.** Se till att du lyssnar så mycket du kan på ljudet av ditt eget instrument/röst _som kommer tillbaka från servern_. Den här signalen blandar dig och dina spelpartners synkroniserat och kommer att vara signalen som dina bandkamrater också hör. Så att lyssna på det betyder att ni kommer att vara synkroniserade med varandra (förutsatt att ni alla har ganska låg latens). Observera att om en eller flera musiker inte följer denna regel, kommer de att sakta ner medan de spelar eller sjunger.\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:39
-#, markdown-text
 msgid "You can test whether you are hearing your signal correctly by doing the following:"
 msgstr "Du kan testa om du hör din signal korrekt genom att göra följande:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:44
-#, markdown-text
 msgid "Run Jamulus and connect to a Server with a long ping time (greater than 200ms)"
 msgstr "Kör Jamulus och anslut till en server med lång pingtid (mer än 200ms)"
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Client-Troubleshooting.md:44
-#, markdown-text
 msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus Server come back, but significantly delayed."
 msgstr "Klappa händerna en gång (eller spela en kort ton på ett instrument). Du bör höra ljudet från Jamulus-servern komma tillbaka, men avsevärt försenat."
 
 #. type: Bullet: '3. '
 #: ../wiki/en/Client-Troubleshooting.md:44
-#, markdown-text
 msgid "Click the \"Mute\" button under your Jamulus name/slider in the main Jamulus mixer window (**NOT** the \"Mute Myself\" button on the left)."
 msgstr "Klicka på \"Mute\"-knappen under ditt Jamulus-namn/skjutreglage i Jamulus-mixerns huvudfönster (**INTE** \"Tysta mig själv\"-knappen till vänster)."
 
 #. type: Bullet: '4. '
 #: ../wiki/en/Client-Troubleshooting.md:44
-#, markdown-text
 msgid "Clap your hands again."
 msgstr "Klappa händerna igen."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:46
-#, markdown-text
 msgid "If you hear two claps after step 2, or any claps after step 4, then you are **not** obeying Rule Number One - you have your local audio enabled and should disable it."
 msgstr "Om du hör två klappar efter steg 2, eller några klappar efter steg 4, så följer du **inte** regel nummer ett - du har ditt lokala ljud aktiverat och bör inaktivera det."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:48
-#, markdown-text
 msgid "Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have \"monitor\" buttons (turn these off), or similar options. **If you are still having problems**, try asking on the [forum](https://github.com/jamulussoftware/jamulus/discussions)."
 msgstr "Exakt hur du undviker att lyssna på din direkta signal kommer att bero på din individuella inställning – ditt ljudgränssnitt, mixerbord, hörlursanslutningspunkt etc. Vissa ljudgränssnitt har till exempel \"monitor\"-knappar (stäng av dessa), eller liknande alternativ. **Om du fortfarande har problem**, försök att fråga på [forumet](https://github.com/jamulussoftware/jamulus/discussions)."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:50
-#, markdown-text
 msgid "Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
 msgstr "Var medveten om att medan du lyssnar på serverns signal säkerställer att du kommer att vara synkroniserad med andra musiker, kan du också uppleva problem om din totala latens (indikeras av \"Delay\"-lampan i Jamulus) inte är grön eller åtminstone gul större delen av tid. Se [mjukvarumanualen](/wiki/Software-Manual) för att förstå hur du justerar din inställning för att hjälpa till med detta."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:51
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Can't work out your mic settings?"
 msgstr "Kan du inte räkna ut dina mikrofoninställningar?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:54
-#, markdown-text
 msgid "When using a microphone while playing your other instrument, you can use a stereo audio input signal in your settings where one channel is connected to the instrument and the other channel is connected to a microphone signal. On the microphone channel an optional reverberation effect can be applied."
 msgstr "När du använder en mikrofon medan du spelar ditt andra instrument kan du använda en stereoljudingångssignal i dina inställningar där en kanal är ansluten till instrumentet och den andra kanalen är ansluten till en mikrofonsignal. På mikrofonkanalen kan en valfri efterklangseffekt läggas till."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:55
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
 msgstr "Buffertlysdioder blir plötsligt röda, avbrott, [skakande](https://en.wikipedia.org/wiki/Jitter), konstiga ljud?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:58
-#, markdown-text
 msgid "Your computer may be under too much load. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
 msgstr "Din dator kan vara för mycket belastad. Försök att inte ha något som konkurrerar med Jamulus (som Zoom Meetings eller Facebook livestreams) på din maskin. Eller åtminstone avsluta dem medan du spelar. Förhindra saker som virusskannrar som skannar, eller programuppdateringar som händer, etc. Var medveten om att reverb-inställningen i Jamulus också använder mer CPU ju mer reverb du har."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:59
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Ping times and latency start well, then get worse, causing issues"
 msgstr "Pingtider och latens börjar bra och blir sedan värre och orsakar problem"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:62
-#, markdown-text
 msgid "This can indicate something else is competing with Jamulus on your network, so make sure nobody is watching HD Netflix movies or taking part in Zoom video conferences while you are playing. A more permanent solution for technically-minded users may be found by investigating [the issue of buffer bloat](https://www.bufferbloat.net/projects/bloat/wiki/) on their router and whether you can implement Smart Queue Management (SQM). [More details here](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
 msgstr "Detta kan indikera att något annat konkurrerar med Jamulus i ditt nätverk, så se till att ingen tittar på HD Netflix-filmer eller deltar i Zoom-videokonferenser medan du spelar. En mer permanent lösning för tekniskt sinnade användare kan hittas genom att undersöka [frågan om buffertbloat](https://www.bufferbloat.net/projects/bloat/wiki/) på deras router och om du kan implementera Smart Queue Management (SQM). [Mer information här](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:63
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Getting frustrated with software channels, audio routing, sample rates and more?"
 msgstr "Blir du frustrerad över mjukvarukanaler, ljuddirigering, samplingsfrekvens och mer?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:66
-#, markdown-text
 msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus Server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
 msgstr "Det är vanligtvis mycket enklare och mer tillförlitligt att ha ett [mixerbord](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) för att ansluta ditt kit (instrument, mikrofon, inspelare etc.) och sedan skicka en enkel stereosignal till ditt ljudgränssnitt (se dock till att lyssna på det resulterande ljudet från Jamulus-servern via din dator!). Det enorma utbudet av möjliga kombinationer av hårdvara, mjukvara och instrument gör att det annars kan bli komplicerat väldigt snabbt att ställa in ditt ljudkort för att fungera med just din konfiguration."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:67
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Somebody joining your jam and being too loud?"
 msgstr "Någon som är med i din jam och är för högljudd?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:70
-#, markdown-text
 msgid "You can set your \"New Client Level\" to a low value (e.g. 10), or set the musicians you are playing with to \"Solo\" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all."
 msgstr "Du kan ställa in din \"New Client Level\" till ett lågt värde (t.ex. 10), eller ställa in musikerna du spelar med till \"Solo\"-läge (i mixerpanelen på höger sida). På så sätt blir antingen nya deltagare väldigt tysta, eller så hör du dem inte alls."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:71
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Can't see the Server you want to join?"
 msgstr "Kan du inte se servern du vill gå med i?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:74
-#, markdown-text
 msgid "First check that you have the right genre Server selected in your Connect window. Sometimes network issues mean your Client won't list all the available Servers. If you know the name of the Server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter that address in the \"Server Address\" field in the Connect Setup window to connect to it."
 msgstr "Kontrollera först att du har valt rätt genre Server i ditt Connect-fönster. Ibland innebär nätverksproblem att din klient inte kommer att lista alla tillgängliga servrar. Om du vet namnet på servern du vill gå med i kan du [söka upp dess IP-adress här](https://explorer.jamulus.io/). Ange den adressen i fältet \"Serveradress\" i fönstret Connect Setup för att ansluta till den."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:75
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Not seeing a list of Servers at all?"
 msgstr "Ser du inte en lista över servrar alls?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:78
-#, markdown-text
 msgid "In the UK (and possibly other regions/routers) the Virgin Media Cable Internet Modem setting can cause an issue. \"Block Fragmented IP Packets\" should not be checked. For other routers/ISP, also try turning off SPI (Stateful Packet Inspection) and if that fixes it, you can make a judgment about whether to leave that off or not."
 msgstr "I Storbritannien (och möjligen andra regioner/routrar) kan inställningen av Virgin Media Cable Internet Modem orsaka problem. \"Blockera fragmenterade IP-paket\" ska inte markeras. För andra routrar/ISP, prova också att stänga av SPI (Stateful Packet Inspection) och om det fixar det kan du göra en bedömning om du ska lämna det av eller inte."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:80
-#, markdown-text
 msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my Server\""
 msgstr "I vissa fall kan det vara din internetleverantör som blockerar din användning av Jamulus. Se anteckningen på [serverfelsökningssidan](Server-Troubleshooting#ingen-kan-ansluta-till-min-server---men-jag-kan-ansluta-lokalt) om \"Ingen kan ansluta till min server\""
 
 #. type: Title ##
 #: ../wiki/en/Client-Troubleshooting.md:81
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Getting an error message saying \"Jamulus\" can't be opened because the developer cannot be verified"
 msgstr "Får ett felmeddelande som säger \"Jamulus\" kan inte öppnas eftersom utvecklaren inte kan verifieras"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:84
-#, markdown-text
 msgid "If you are using a \"legacy\" version of Jamulus (because you are running an older version of macOS) or an intermediate build, the first time you run Jamulus, you will see a message saying it cannot be opened."
 msgstr "Om du använder en \"äldre\" version av Jamulus (eftersom du kör en äldre version av macOS) eller en mellanversion, första gången du kör Jamulus, kommer du att se ett meddelande som säger att det inte kan öppnas."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:86
-#, markdown-text
 msgid "To open Jamulus"
 msgstr "För att starta Jamulus"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
-#, markdown-text
 msgid "Go to the Applications folder via Finder"
 msgstr "Gå till mappen Applications via Finder"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
-#, markdown-text
 msgid "Double-click on Jamulus and wait for the above-mentioned message"
 msgstr "Dubbelklicka på Jamulus och vänta på ovan nämnda meddelande"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
-#, markdown-text
 msgid "Close this message by clicking on \"Cancel\""
 msgstr "Stäng detta meddelande genom att klicka på \"Avbryt\""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
-#, markdown-text
 msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
 msgstr "Ctrl-klicka (eller högerklicka) nu på Jamulus och välj \"Öppna\" från toppen av menyn."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:93
-#, markdown-text
 msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From then on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
 msgstr "Du kommer då att få en lite annan version av samma meddelande, som låter dig klicka på \"Öppna\". Från och med då kan du köra Jamulus på vanligt sätt och meddelandet kommer inte att visas. Mer information om denna varning finns på [denna Apple-supportsida](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:94
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Trouble using Garageband (or other DAW) with Jamulus?"
 msgstr "Har du problem med att använda Garageband (eller annan DAW) med Jamulus?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:97
-#, markdown-text
 msgid "See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 msgstr "Se [denna forumdiskussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:98
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Using a Mac and your input is not heard?"
 msgstr "Använder du en Mac och din input inte hörs?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:101
-#, markdown-text
 msgid "(With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 msgstr "(Med tack till [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:105
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:\n"
 "* Go to `Preferences` > `Security & Privacy` > `Privacy` tab\n"
@@ -359,6 +331,5 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:108
-#, markdown-text
 msgid "For anything else, please search or post on the [Discussion Forums](https://github.com/jamulussoftware/jamulus/discussions)"
 msgstr "För något annat, sök eller lägg upp på [diskussionsforumen](https://github.com/jamulussoftware/jamulus/discussions)"
