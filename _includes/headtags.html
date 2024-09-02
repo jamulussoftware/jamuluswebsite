@@ -1,7 +1,8 @@
 <meta charset="utf-8">
 <!-- Canonical and Alternate Links -->
 {% comment %}
-English URLs don't have a lang subdirectory since it's the default language:
+English URLs don't have a lang subdirectory since it's the default language.
+See https://github.com/untra/polyglot
 {% endcomment %}
     <link rel="canonical" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 {% for lng in site.languages | sort %}
