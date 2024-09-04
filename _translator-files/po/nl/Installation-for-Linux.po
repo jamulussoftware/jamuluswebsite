@@ -1,19 +1,20 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Henk De Groot <weblate@hdegroot.com>, 2023.
+# Henk De Groot <weblate@hdegroot.com>, 2023, 2024.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-31 20:05+0000\n"
-"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
+"PO-Revision-Date: 2024-09-01 20:09+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -180,7 +181,7 @@ msgstr "Hardware configuratie"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:60
 msgid "The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server for your distribution.  - If your distribution uses [JACK](https://jackaudio.org/), see how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - If your distribution uses PipeWire, see how to [configure PipeWire](Installation-for-Linux#configure-pipewire)."
-msgstr ""
+msgstr "De Jamulus-client moet verbinding maken met een actieve [JACK](https://jackaudio.org/) server om te kunnen starten. Je moet uitzoeken welke de low-latency sound server is voor jouw distributie.  - Als jouw distributie [JACK](https://jackaudio.org/) gebruikt, zie dan hoe je [JACK configureert met QjackCtl](Installation-for-Linux#configureer-jack-met-qjackctl). - Als jouw distributie PipeWire gebruikt, zie dan hoe je [PipeWire configureert](Installation-for-Linux#configureer-pipewire)."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:61
@@ -190,64 +191,54 @@ msgstr "Configureer JACK met QjackCtl"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:64
-#, fuzzy
-#| msgid "Jamulus Clients need [JACK](https://jackaudio.org/) to run, but you need to configure that first. The recommended method is to use `QjackCtl`."
 msgid "To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`."
-msgstr "Jamulus-clients gebruiken [JACK](https://jackaudio.org/) om te werken, maar die moet je eerst configureren. Het is aan te bevelen om hiervoor `QjackCtl` te gebruiken."
+msgstr "Om een [JACK](https://jackaudio.org/)-server te draaien, is de aanbevolen methode om `QjackCtl` te gebruiken."
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:67
-#, fuzzy
-#| msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**"
 msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**."
-msgstr "Start QjackCtl. Je ziet het **Qt JACK Control utility hoofdvenster**"
+msgstr "Start QjackCtl. Je ziet het **Qt JACK Control utility hoofdvenster**."
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-Linux.md:67
 msgid "Configure your sound hardware as follows:"
-msgstr ""
+msgstr "Configureer jouw geluidsapparatuur als volgt:"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, fuzzy
-#| msgid "Set the audio **Interface** to the one you want (there may be several in the list)"
 msgid "Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK)."
-msgstr "Stel de audio **Interface** in op degene die je wilt (er kunnen er meerdere in de lijst staan)"
+msgstr "Stel de audio **Interface** in op degene die je wilt (er kunnen er meerdere in de lijst staan - kies de juiste, want deze kan niet worden gewijzigd zonder Jamulus en JACK te stoppen)."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, fuzzy
-#| msgid "Set the **Sample Rate to 48000**"
 msgid "Set the **Sample Rate to 48000**."
-msgstr "Stel de **Sample Rate in op 48000**"
+msgstr "Stel de **Sample Rate in op 48000**."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, fuzzy
-#| msgid "Set the **Frames/Period to 128** and Periods/Buffer at 2 at first"
 msgid "Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first."
-msgstr "Stel de **Frames/Period in op 128** en Periods/Buffer op 2 om mee te beginnen"
+msgstr "Stel de **Frames/Period in op 128** en **Periods/Buffer op 2** om mee te beginnen."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:73
 msgid "Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
-msgstr ""
+msgstr "Start JACK opnieuw op om de nieuwe instellingen van kracht te laten worden en ga verder vanaf het gedeelte [Start Jamulus](Installation-for-Linux#start-jamulus) hieronder."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:74
 #, no-wrap
 msgid "Configure PipeWire"
-msgstr ""
+msgstr "Configureer PipeWire"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:79
 msgid "PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.  You need to set your audio interface to the \"pro-audio\" profile and define PipeWire's \"rate\" and \"quantum\" parameters beforehand.  You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
-msgstr ""
+msgstr "PipeWire gebruikt zijn eigen JACK-server. Wanneer je de Jamulus-client start, start PipeWire automatisch een JACK-server. Er zijn echter een paar parameters die je moet aanpassen. Je moet jouw audio-interface instellen op het \"pro-audio\"-profiel en de \"rate\"- en \"quantum\"-parameters van PipeWire van tevoren definiëren.  Je kunt meer informatie over de configuratie vinden in de [PipeWire-wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:83
 msgid "To set up your system: 1. Open `pavucontrol` (the audio mixer) and choose the \"pro-audio\" profile for your sound hardware in the configuration tab.  2. In a terminal use the following two commands to force PipeWire's rate and quantum:"
-msgstr ""
+msgstr "Om jouw systeem in te stellen: 1. Open `pavucontrol` (de audiomixer) en kies het profiel \"pro-audio\" voor jouw geluidshardware in het configuratietabblad. 2. Gebruik in een terminal-venster de volgende twee opdrachten om de rate en quantum van PipeWire te forceren:"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:83
@@ -256,11 +247,13 @@ msgid ""
 "pw-metadata -n settings 0 clock.force-rate 48000\n"
 "pw-metadata -n settings 0 clock.force-quantum 128\n"
 msgstr ""
+"pw-metadata -n settings 0 clock.force-rate 48000\n"
+"pw-metadata -n settings 0 clock.force-quantum 128\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:88
 msgid "After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
-msgstr ""
+msgstr "Ga hierna verder vanaf het gedeelte [Start Jamulus](Installation-for-Linux#start-jamulus) hieronder."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:89
@@ -270,15 +263,13 @@ msgstr "Start Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:92
-#, fuzzy
-#| msgid "With JACK running and configured, launch Jamulus."
 msgid "With JACK or PipeWire configured, launch Jamulus."
-msgstr "Terwijl JACK actief en geconfigureerd is, start je Jamulus."
+msgstr "Start Jamulus nadat JACK of PipeWire is geconfigureerd."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:94
 msgid "If you have any problems, first check [the troubleshooting page](Client-Troubleshooting)."
-msgstr ""
+msgstr "Als je problemen ondervindt, controleer dan eerst [de pagina voor probleemoplossing](Client-Troubleshooting)."
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:95

@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Henk De Groot <weblate@hdegroot.com>, 2023.
+# Henk De Groot <weblate@hdegroot.com>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-24 18:48+0000\n"
+"PO-Revision-Date: 2024-08-08 13:59+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -236,10 +236,8 @@ msgstr "Verbinden/afmelden knop"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:81
-#, fuzzy
-#| msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session."
 msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session.  You can also open the dialogue using \"File&gt;Connection Setup...\". This will leave you connected to any current session until you join another."
-msgstr "Opent een venster waarin je een server kunt selecteren om verbinding mee te maken. Als je verbonden bent, wordt de sessie beëindigd door op deze knop te drukken."
+msgstr "Opent een venster waarin je een server kunt selecteren om verbinding mee te maken. Als je verbonden bent, wordt de sessie beëindigd door op deze knop te drukken.  Je kunt het dialoogvenster ook openen met \"Bestand&gt;Verbindingsinstellingen...\". Hiermee blijf je verbonden met de huidige sessie totdat je deelneemt aan een andere."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:83
@@ -249,27 +247,23 @@ msgstr "<figure><img src=\"{% include img/nl-screenshots/connection-setup-window
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:86
-#, fuzzy
-#| msgid "The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold."
 msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
-msgstr "Het verbindingsvenster toont een lijst met beschikbare servers samen met het aantal gebruikers en het maximale aantal dat wordt ondersteund. Serverbeheerders registreren hun servers in het adresboek (meestal gedefinieerd per genre, hoewel sommige locatiespecifiek of voor alle genres kunnen zijn). Gebruik de keuzelijst adresboek om een genre te selecteren, klik op de server waaraan je wilt deelnemen en druk op de knop Verbinden om er verbinding mee te maken. Je kunt ook dubbelklikken op de servernaam. Permanente servers (die al langer dan 24 uur in de lijst staan) worden vet weergegeven."
+msgstr "Het verbindingsvenster toont een lijst met beschikbare servers, samen met hun \"afstand\" (in termen van pingtijd), het aantal gebruikers en het maximaal ondersteunde aantal, en de opgegeven locatie van de server.  Permanente servers (die langer dan 24 uur in de lijst staan) worden vetgedrukt weergegeven."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:88
 msgid "Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name."
-msgstr ""
+msgstr "Klik op de server waaraan je wilt deelnemen en druk op de knop Verbinden om er verbinding mee te maken. Je kunt ook dubbelklikken op de servernaam."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
 msgid "Server operators register their servers with Directories. These are either genre-specific or for any genre, or additional [custom entries](#custom-directories). Use the Directory dropdown to select a genre.  You can filter the list by server name or location. To list only occupied Servers, enter a \"#\" character.  If you choose \"Show All Musicians\" the current occupants will be shown."
-msgstr ""
+msgstr "Serverbeheerders registreren hun servers in een adresboek. Deze zijn genre-specifiek of voor elk genre of extra [eigen adresboeken](#eigen-adresboeken). Gebruik de adresboekkeuzelijst om een genre te selecteren.  Je kunt de lijst filteren op servernaam of locatie. Om alleen bezette servers weer te geven, voer je een \"#\"-teken in. Als je \"Toon alle muzikanten\" aanvinkt, worden de huidige deelnemers weergegeven."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
 msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Als je het IP-adres of de URL van een prive server weet, kun je er verbinding mee maken via het veld Serveradres. Een optioneel poortnummer kan worden toegevoegd na het adres met een dubbele punt als scheidingsteken, bijvoorbeeld `jamulus.voorbeeld.com:22124` (Merk op dat IPv6-adressen volledig in vierkante haken moet zijn ingesloten). Dit veld toont ook een lijst met de meest recent gebruikte serveradressen."
+msgstr "Als je het IP-adres of de URL van een prive Server weet, kun je er verbinding mee maken via het Serveradres veld.  Een optioneel poortnummer kan worden toegevoegd aan het adres met een dubbele punt als scheidingsteken, bijvoorbeeld `jamulus.voorbeeld.com:22124`.  (Merk op dat IPv6-adressen volledig in vierkante haken moet zijn ingesloten, bijvoorbeeld `[::1]:22124`.)  Dit veld toont ook een lijst met de meest recent gebruikte serveradressen.  Met de knop naast het veld kun je het huidige item uit de lijst verwijderen."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
@@ -381,10 +375,9 @@ msgstr "Als je een instrument en/of land instelt, worden de pictogrammen voor de
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:142
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/nl-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"afbeelding van een tooltip waarin de profiel informatie zichtbaar is\"></figure>\n"
+msgstr "<figure><img src=\"{% include img/nl-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"afbeelding van een tooltip waarin de profiel informatie zichtbaar is\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:143
@@ -561,7 +554,7 @@ msgstr "Bij sommige stuurprogramma's voor geluidskaarten kan de buffervertraging
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:214
 msgid "On Linux: - when using JACK, use `QJackCtl` to change the buffer size and restart JACK; - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools."
-msgstr ""
+msgstr "Voor Linux: - wanneer je JACK gebruikt, gebruik je `QJackCtl` om de buffergrootte te wijzigen en JACK opnieuw te starten; - wanneer je de JACK-server van PipeWire gebruikt, wijzig je de Quantum-parameter van PipeWire met de eigen configuratietools."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:218
@@ -641,10 +634,8 @@ msgstr "Eigen adresboeken"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:258
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Als je het IP-adres of de URL van een prive server weet, kun je er verbinding mee maken via het veld Serveradres. Een optioneel poortnummer kan worden toegevoegd na het adres met een dubbele punt als scheidingsteken, bijvoorbeeld `jamulus.voorbeeld.com:22124` (Merk op dat IPv6-adressen volledig in vierkante haken moet zijn ingesloten). Dit veld toont ook een lijst met de meest recent gebruikte serveradressen."
+msgstr "Als je andere adresboekadressen wilt toevoegen dan de ingebouwde adressen, dan kun je dat hier doen.  Als je het IP-adres of de hostnaam van een eigen adresboek weet, dan kun je er verbinding mee maken via het Serveradres veld.  Een optioneel poortnummer kan worden toegevoegd na het adres met een dubbele punt als scheidingsteken, bijvoorbeeld `jamulus.voorbeeld.com:22124`.  (Houd er rekening mee dat IPv6 momenteel niet wordt ondersteund voor adresboeken).  Met de knop naast het veld kun je het huidige item uit de lijst verwijderen."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:259
@@ -745,8 +736,8 @@ msgstr "**Opmerking voor macOS-gebruikers:** Vanaf Jamulus 3.8.1 hebben we een o
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:295
 #, no-wrap
-msgid "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
-msgstr "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
+msgid "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
+msgstr "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:299

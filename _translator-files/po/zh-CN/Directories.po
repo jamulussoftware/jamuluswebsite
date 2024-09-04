@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the PACKAGE package.
 # yangyangdaji <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
-# yangyangdaji <1504305527@qq.com>, 2022.
+# yangyangdaji <1504305527@qq.com>, 2022, 2024.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-11-01 23:34+0000\n"
+"PO-Revision-Date: 2024-08-07 13:08+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_CN\n"
+"Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "en"
-msgstr "zh_CN"
+msgstr "zh-CN"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Directories.md:1
@@ -44,35 +45,29 @@ msgstr "目录"
 #. type: Plain text
 #: ../wiki/en/Directories.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr "{% include breadcrumb.html root=\"更多\" branch1=\"服务器管理\" branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"更多\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title #
 #: ../wiki/en/Directories.md:11
-#, fuzzy, no-wrap
-#| msgid "# Running a Directory"
+#, no-wrap
 msgid "Running a Directory"
-msgstr "# 运行目录"
+msgstr "运行目录"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:14
-#, fuzzy
-#| msgid "This is a specialised Jamulus Server configuration, as described in [Server Types](Running-a-Server#server-types)."
 msgid "This is a specialised Jamulus Server configuration, as described in [Server Modes](Running-a-Server#server-modes)."
-msgstr "这是一个专门的 Jamulus 服务器配置，如 [服务器类型](Running-a-Server#服务器类型) 中所述。"
+msgstr "这是一个专门的 Jamulus 服务器配置，如 [服务器模式](Running-a-Server#服务器模式) 中所述。"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:16
-#, fuzzy, no-wrap
-#| msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them."
+#, no-wrap
 msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them.\n"
-msgstr "要查看自定义目录列出的服务器，用户必须在其客户端的设置 > 高级设置 > 自定义目录字段中输入该目录的地址。如果需要，可以通过这种方式添加多个地址。自定义目录随后将出现在其“连接”窗口的“目录”下拉列表中。自定义目录以与公共目录相同的方式为客户端工作，显示向它们注册的服务器列表。"
+msgstr "要查看自定义目录列出的服务器，用户必须在其客户端的设置 > 高级设置 > 自定义目录字段中输入该目录的地址。如果需要，可以通过这种方式添加多个地址。自定义目录随后将出现在其“连接”窗口的“目录”下拉列表中。自定义目录以与公共目录相同的方式为客户端工作，显示向它们注册的服务器列表。\n"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:18
-#, fuzzy
-#| msgid "To run a Server as a Directory, it should be started with the `--directoryserver` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
 msgid "To run a Server as a Directory, it should be started with the `--directoryaddress` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
-msgstr "要将服务器作为目录运行，它应该使用 `--directoryserver` 选项启动，以使其自身(即 `localhost` 或 `127.0.0.1`)成为查询服务器的目录。"
+msgstr "要将服务器作为目录运行，它应该使用 `--directoryaddress` 选项启动，以使其自身(即 `localhost` 或 `127.0.0.1`)成为查询服务器的目录。"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:20
@@ -81,10 +76,9 @@ msgstr "使用 GUI 运行服务器时，将“选项”选项卡中的“自定�
 
 #. type: Title ###
 #: ../wiki/en/Directories.md:22
-#, fuzzy, no-wrap
-#| msgid "### Points to note about Directories"
+#, no-wrap
 msgid "Points to note about Directories"
-msgstr "### 关于目录的注意事项"
+msgstr "关于目录的注意事项"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:25

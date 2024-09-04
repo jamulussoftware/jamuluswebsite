@@ -1,70 +1,62 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Daniel <daniel@mailsystem.net>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-08-05 13:09+0000\n"
+"Last-Translator: Daniel <daniel@mailsystem.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: sv-SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:2
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->\n"
-msgstr ""
+msgstr "<!-- OBS: Detta måste gälla både klient och server, samt alla operativsystem -->\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:4
-#, markdown-text
 msgid "Once installed and running, you may want to keep a copy of your settings. Having a backup is always a good idea, and settings files are not backwardly compatible between versions of Jamulus. So if you want to go back to the previous version, you will need to restore the settings you had."
-msgstr ""
+msgstr "När du har installerat och kört programmet kan du vilja behålla en kopia av dina inställningar. Att ha en säkerhetskopia är alltid en bra idé, och inställningsfiler är inte bakåtkompatibla mellan versioner av Jamulus. Så om du vill återgå till den tidigare versionen, kommer du att behöva återställa de inställningar du hade."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:6
-#, markdown-text
 msgid "To find your settings file on Windows, type `%APPDATA%` into the search bar and look for a folder named `Jamulus`. There will be one or more `.ini` files in this folder. Now back up Jamulus' settings."
-msgstr ""
+msgstr "För att hitta din inställningsfil på Windows, skriv `%APPDATA%` i sökfältet och leta efter en mapp som heter `Jamulus`. Det kommer att finnas en eller flera `.ini`-filer i denna mapp. Säkerhetskopiera nu Jamulus' inställningar."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:8
-#, markdown-text
 msgid "For all other platforms, run the following from the command line to find where they live and copy the files to another location:"
-msgstr ""
+msgstr "För alla andra plattformar, kör följande från kommandoraden för att hitta var filerna finns och kopiera dem till en annan plats:"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:10
-#, markdown-text
 msgid "`find ~ -name Jamulus.ini -ls`"
-msgstr ""
+msgstr "`find ~ -name Jamulus.ini -ls`"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:13
-#, markdown-text
 msgid "If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.  **Points to note**"
-msgstr ""
+msgstr "Om du använde parametern `--inifile` för att spara en ini-fil på en annan plats, glöm inte att också säkerhetskopiera dessa filer. **Viktiga punkter att notera**"
 
 #. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
-#, markdown-text
 msgid "Do not back up or restore settings files when Jamulus is running."
-msgstr ""
+msgstr "Säkerhetskopiera eller återställ inte inställningsfiler när Jamulus är igång."
 
 #. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
-#, markdown-text
 msgid "It is not recommended to manually edit settings files (they're not designed for that)."
-msgstr ""
+msgstr "Det rekommenderas inte att manuellt redigera inställningsfiler (de är inte avsedda för det)."
 
 #. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
-#, markdown-text
 msgid "You can revert all settings to their defaults by just deleting the settings file (after closing Jamulus)."
-msgstr ""
+msgstr "Du kan återställa alla inställningar till standardvärdena genom att bara ta bort inställningsfilen (efter att ha stängt Jamulus)."

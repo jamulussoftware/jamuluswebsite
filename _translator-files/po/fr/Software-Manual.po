@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-15 17:02+0000\n"
+"PO-Revision-Date: 2024-08-04 19:21+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/software-manual/fr/>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -241,10 +241,8 @@ msgstr "Bouton se connecter/déconnecter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:81
-#, fuzzy
-#| msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session."
 msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session.  You can also open the dialogue using \"File&gt;Connection Setup...\". This will leave you connected to any current session until you join another."
-msgstr "Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un serveur auquel vous connecter. Si vous êtes connecté, appuyez sur ce bouton pour mettre fin à la session."
+msgstr "Ouvre une boîte de dialogue dans laquelle vous pouvez sélectionner un serveur auquel vous connecter. Si vous êtes connecté, appuyez sur ce bouton pour mettre fin à la session.  Vous pouvez également ouvrir la boîte de dialogue en utilisant \"Fichier&gt;Configuration de la connexion...\". Vous resterez alors connecté à la session en cours jusqu'à ce que vous en rejoigniez une autre."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:83
@@ -254,27 +252,23 @@ msgstr "<figure><img src=\"{% include img/fr-screenshots/connection-setup-window
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:86
-#, fuzzy
-#| msgid "The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold."
 msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
-msgstr "La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles ainsi que le nombre d'occupants et le nombre maximum supporté. Les opérateurs de serveurs enregistrent leurs serveurs sur des listes (la plupart du temps définies par genre, bien que certaines puissent être spécifiques à un lieu ou pour tous les genres). Utilisez le menu déroulant Liste pour sélectionner un genre, cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Connecter pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur. Les serveurs permanents (ceux qui sont répertoriés depuis plus de 24 heures) sont affichés en gras."
+msgstr "La fenêtre de configuration de la connexion affiche une liste des serveurs disponibles avec leurs \"distances\" (en terme de temps de ping), le nombre d'occupants et le nombre maximum supporté, et l'emplacement donné du serveur. Les serveurs permanents (ceux qui sont répertoriés depuis plus de 24 heures) sont affichés en gras."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:88
 msgid "Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name."
-msgstr ""
+msgstr "Cliquez sur le serveur que vous souhaitez rejoindre et appuyez sur le bouton Connecter pour vous y connecter. Vous pouvez également double-cliquer sur le nom du serveur."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
 msgid "Server operators register their servers with Directories. These are either genre-specific or for any genre, or additional [custom entries](#custom-directories). Use the Directory dropdown to select a genre.  You can filter the list by server name or location. To list only occupied Servers, enter a \"#\" character.  If you choose \"Show All Musicians\" the current occupants will be shown."
-msgstr ""
+msgstr "Les opérateurs de serveurs enregistrent leurs serveurs dans des annuaires. Ceux-ci sont soit spécifiques à un genre, soit pour n'importe quel genre, soit des [entrées personnalisées](#custom-directories) supplémentaires. Utilisez le menu déroulant Annuaire pour sélectionner un genre.  Vous pouvez filtrer la liste par nom de serveur ou par emplacement. Pour lister uniquement les serveurs occupés, saisissez le caractère \"#\".  Si vous choisissez \"Afficher tous les musiciens\", les occupants actuels seront affichés."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
 msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur privé, vous pouvez vous y connecter en remplissant le champ nom/adresse du serveur. Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`. (Notez que les adresses IPv6 doivent être entièrement placées entre crochets). Le champ affichera également une liste des adresses de serveur les plus récemment utilisées."
+msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur privé, vous pouvez vous y connecter en remplissant le champ nom/adresse du serveur.  Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`.  (Notez que les adresses IPv6 doivent être entièrement placées entre crochets, par exemple `[::1]:22124`.)  Le champ affichera également une liste des adresses de serveur les plus récemment utilisées.  Le bouton qui suit le champ permet de supprimer l'entrée actuelle de la liste."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
@@ -386,10 +380,9 @@ msgstr "Si vous paramétrez un instrument et/ou un pays, les icônes de ces sél
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:142
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image d'une infobulle montrant les informations du profil\"></figure>\n"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image d'une infobulle montrant les informations du profil\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:143
@@ -568,7 +561,7 @@ msgstr "Certains pilotes de carte son ne permettent pas de modifier le délai de
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:214
 msgid "On Linux: - when using JACK, use `QJackCtl` to change the buffer size and restart JACK; - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools."
-msgstr "Sous Linux : - si vous utilisez JACK, utilisez `QJackCtl` pour modifier la taille du tampon et redémarrer JACK; - si vous utilisez le serveur JACK de PipeWire, modifiez le paramètre Quantum de PipeWire à l'aide de ses propres outils de configuration."
+msgstr "Sous Linux : - si vous utilisez JACK, utilisez `QJackCtl` pour modifier la taille du tampon et redémarrer JACK ; - si vous utilisez le serveur JACK de PipeWire, modifiez le paramètre Quantum de PipeWire à l'aide de ses propres outils de configuration."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:218
@@ -648,10 +641,8 @@ msgstr "Annuaires personnalisés"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:258
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur privé, vous pouvez vous y connecter en remplissant le champ nom/adresse du serveur. Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`. (Notez que les adresses IPv6 doivent être entièrement placées entre crochets). Le champ affichera également une liste des adresses de serveur les plus récemment utilisées."
+msgstr "Si vous avez besoin d'ajouter des adresses d'annuaires autres que celles qui sont embarquées, vous pouvez le faire ici.  Si vous connaissez l'adresse IP ou le nom d'hôte d'un annuaire personnalisé, vous pouvez vous y connecter en remplissant le champ nom/adresse du serveur.  Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`.  (Notez que l'IPv6 n'est pas actuellement pris en charge pour les annuaires.)  Le bouton qui suit le champ permet de supprimer l'entrée actuelle de la liste."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:259
@@ -752,8 +743,8 @@ msgstr "**Note pour les utilisateurs de macOS :** à partir de Jamulus 3.8.1, no
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:295
 #, no-wrap
-msgid "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
-msgstr "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
+msgid "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
+msgstr "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:299

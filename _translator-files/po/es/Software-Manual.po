@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-17 09:02+0000\n"
+"PO-Revision-Date: 2024-08-25 10:27+0000\n"
 "Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.7.1-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -238,10 +238,8 @@ msgstr "Botón Conexión/Desconexión"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:81
-#, fuzzy
-#| msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session."
 msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session.  You can also open the dialogue using \"File&gt;Connection Setup...\". This will leave you connected to any current session until you join another."
-msgstr "Abre una ventana donde puedes seleccionar un servidor al que conectarte. Si estás conectado, pulsar este botón finalizará la sesión."
+msgstr "Abre una ventana donde puedes seleccionar un servidor al que conectarte. Si estás conectado, pulsar este botón finalizará la sesión.  También puedes abrir la ventana con \"File&gt;Configuración de Conexión...\". Esto te dejará conectado a cualquier sesión en marcha hasta que te unas a otra."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:83
@@ -251,27 +249,23 @@ msgstr "<figure><img src=\"{% include img/es-screenshots/connection-setup-window
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:86
-#, fuzzy
-#| msgid "The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold."
 msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
-msgstr "La ventana de Configuración de Conexión muestra una lista de servidores disponibles junto con el número de usuarios conectados y el número máximo de los mismos soportado. Los operadores de servidores los registran en listas (mayormente definidas por género, aunque algunas pueden referirse a ubicación o a todos los géneros). Utiliza el menú desplegable de Lista para elegir un género, haz clic sobre el servidor al que te quieres unir y otra vez sobre el botón de Conectar para conectarte. También puedes hacer doble clic sobre el nombre del servidor. Los servidores permanentes (aquellos que llevan más de 24 horas en la lista) se muestran en negrita."
+msgstr "La ventana de Configuración de Conexión muestra una lista de Servidores disponibles con su \"distancia\" (en términos de tiempo ping), junto con el número de usuarios conectados y el número máximo de los mismos soportado, así como la ubicación del Servidor. Los Servidores permanentes (aquellos que llevan más de 24 horas en la lista) se muestran en negrita."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:88
 msgid "Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name."
-msgstr ""
+msgstr "Haz clic en el Servidor al que te quieras unir y dale al botón de Conectar para realizar la conexión. También puedes hacer doble-clic en el nombre del servidor."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
 msgid "Server operators register their servers with Directories. These are either genre-specific or for any genre, or additional [custom entries](#custom-directories). Use the Directory dropdown to select a genre.  You can filter the list by server name or location. To list only occupied Servers, enter a \"#\" character.  If you choose \"Show All Musicians\" the current occupants will be shown."
-msgstr ""
+msgstr "Los operadores de servidores registran sus servidores en Directorios. Éstos pueden ser para un género específico o para cualquiera, o ser [personalizados](#directorios-personalizados). Utiliza el menú desplegable de Directorios para seleccionar un género.  Puedes filtrar la lista por nombre de servidor o por ubicación. Para mostrar solo los Servidores ocupados, introduce el caracter \"#\".  Si eliges \"Mostrar Todos los Músicos\", se mostrarán los usuarios actuales conectados."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
 msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Si conoces la dirección IP o URL de un servidor privado, puedes conectarte a él utilizando el campo de Nombre/Dirección del Servidor. Se puede añadir un número de puerto opcional tras la dirección utilizando dos puntos como separador, por ej. `jamulus.ejemplo.org:22124`. (Ten en cuenta que las direcciones IPv6 deben escribirse entre corchetes). El campo también mostrará una lista de los servidores utilizados recientemente."
+msgstr "Si conoces la dirección IP o URL de un servidor privado, puedes conectarte a él utilizando el campo de Nombre/Dirección del Servidor.  Se puede añadir un número de puerto opcional tras la dirección utilizando dos puntos como separador, por ej. `jamulus.ejemplo.org:22124`.  (Ten en cuenta que las direcciones IPv6 deben escribirse entre corchetes, por ejemplo `[::1]:22124`.)  El campo también mostrará una lista de los servidores utilizados recientemente.  El botón a la derecha del campo permite borrar la entrada actual de la lista."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
@@ -383,10 +377,9 @@ msgstr "Si se establece un instrumento y/o un país, los iconos de estas selecci
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:142
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/es-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Imagen de un tooltip mostrando información del perfil\"></figure>\n"
+msgstr "<figure><img src=\"{% include img/es-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Imagen de un tooltip mostrando información del perfil\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:143
@@ -643,10 +636,8 @@ msgstr "Directorios Personalizados"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:258
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Si conoces la dirección IP o URL de un servidor privado, puedes conectarte a él utilizando el campo de Nombre/Dirección del Servidor. Se puede añadir un número de puerto opcional tras la dirección utilizando dos puntos como separador, por ej. `jamulus.ejemplo.org:22124`. (Ten en cuenta que las direcciones IPv6 deben escribirse entre corchetes). El campo también mostrará una lista de los servidores utilizados recientemente."
+msgstr "Si necesitas añadir direcciones de Directorio distintas a las que vienen por defecto, lo puedes hacer aquí.  Si conoces la dirección IP or el nombre de host de un Directorio personalizado, puedes conectarte a él utilizando el campo de Nombre/Dirección Servidor.  Se puede añadir un número de puerto opcional tras la dirección utilizando dos puntos como separador, por ej. `jamulus.ejemplo.org:22124`.  (Ten en cuenta que IPv6 aún no está soportado para Directorios.)  El botón a la derecha del campo permite borrar la entrada actual de la lista."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:259
@@ -744,8 +735,8 @@ msgstr "**Nota para usuarios de macOS:** Desde Jamulus 3.8.1, tenemos un instala
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:295
 #, no-wrap
-msgid "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
-msgstr "$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/\n"
+msgid "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
+msgstr "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:299

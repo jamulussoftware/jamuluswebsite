@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# ann0see <20726856+ann0see@users.noreply.github.com>, 2022, 2023.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2022, 2023, 2024.
 # Ettore Atalan <atalanttore@googlemail.com>, 2023.
 # ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-31 20:22+0000\n"
+"PO-Revision-Date: 2024-08-04 19:09+0000\n"
 "Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/jamulus/installation-for-linux/de/>\n"
 "Language: de\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -207,7 +207,7 @@ msgstr "Öffne QjackCtl und warte, bis sich das **Jack Audio Connection Kit** ö
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-Linux.md:67
 msgid "Configure your sound hardware as follows:"
-msgstr ""
+msgstr "Konfiguriere deine Audiohardware wie folgt:"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
@@ -239,7 +239,7 @@ msgstr ""
 #: ../wiki/en/Installation-for-Linux.md:74
 #, no-wrap
 msgid "Configure PipeWire"
-msgstr ""
+msgstr "PipeWire konfigurieren"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:79
@@ -258,6 +258,8 @@ msgid ""
 "pw-metadata -n settings 0 clock.force-rate 48000\n"
 "pw-metadata -n settings 0 clock.force-quantum 128\n"
 msgstr ""
+"pw-metadata -n settings 0 clock.force-rate 48000\n"
+"pw-metadata -n settings 0 clock.force-quantum 128\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:88

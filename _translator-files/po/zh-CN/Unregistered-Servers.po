@@ -1,146 +1,147 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
+# yangyangdaji <1504305527@qq.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-08-07 13:08+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "zh-CN"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Unregistered-Servers.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Unregistered-Servers.md:1
 #, no-wrap
 msgid "/wiki/Unregistered-Servers"
-msgstr ""
+msgstr "/wiki/Unregistered-Servers"
 
 #. type: Title #
 #: ../wiki/en/Unregistered-Servers.md:1 ../wiki/en/Unregistered-Servers.md:10
 #, no-wrap
 msgid "Running an Unregistered Server"
-msgstr ""
+msgstr "运行未注册的服务器"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"更多\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:13
 msgid "It is highly recommended to test your Server by registering it on one of the built-in Directories **first**. This will help you tackle general problems before you try unregistered mode."
-msgstr ""
+msgstr "强烈建议您先通过在其中一个内置目录中注册您的服务器来对其进行测试。这将帮助您在尝试未注册模式之前解决一般问题。"
 
 #. type: Title ##
 #: ../wiki/en/Unregistered-Servers.md:14
 #, no-wrap
 msgid "Setting up a Server behind a home router"
-msgstr ""
+msgstr "在家用路由器后面设置服务器"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:17
 msgid "If you set up your Server at home, you will probably need to change some settings in your router/firewall:"
-msgstr ""
+msgstr "如果您在家里设置服务器，您可能需要更改路由器/防火墙中的一些设置："
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:18
 #, no-wrap
 msgid "Port forwarding"
-msgstr ""
+msgstr "端口转发"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:21
 msgid "Normally, people from outside your home network cannot see things inside it. To let external Jamulus Clients connect to your Server, you need to set up port forwarding in your router's settings. The exact setup differs for every router. For help, see your router's documentation or [portforward.com](https://portforward.com)."
-msgstr ""
+msgstr "通常，您家庭网络之外的人无法看到网络内部的情况。要让外部的 Jamulus 客户端连接到您的服务器，您需要在路由器的设置中设置端口转发。每种路由器的确切设置都不同。如需帮助，请参阅您的路由器文档或 [portforward.com](https://portforward.com) 。"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:23
 #, no-wrap
 msgid "**Note:** The default port for Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the computer running the Server.\n"
-msgstr ""
+msgstr "**注意:** Jamulus 的默认端口是 **UDP**（不是 TCP）端口 **22124**。您通常会将端口 **22124** 从网络外部转发到运行服务器的计算机的端口 **22124**。\n"
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:24
 #, no-wrap
 msgid "Getting the public IP"
-msgstr ""
+msgstr "获取公网 IP"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:28
 msgid "To allow others to connect to your Server from the internet, give them your public IP address. You can [learn your current public IP address using Google](https://www.google.com/search?q=what+is+my+ip).  You should connect yourself using the local network address of the computer the Server is running on. If you are running a Client on the same computer as your Server, the address is `localhost` or `127.0.0.1`."
-msgstr ""
+msgstr "要允许其他人从互联网连接到您的服务器，请向他们提供您的公共 IP 地址。您可以[使用 Google 了解您当前的公共 IP 地址](https://www.google.com/search?q=what+is+my+ip)。您应该使用运行服务器的计算机的本地网络地址连接自己。如果您在与服务器相同的计算机上运行客户端，则地址为“localhost”或“127.0.0.1”。"
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:30
 #, no-wrap
 msgid "Dynamic DNS and why you will probably need it"
-msgstr ""
+msgstr "动态 DNS 以及您可能需要它的原因"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:33
 msgid "Unless your ISP provides you with a fixed IP address, you may find that your address changes over time. You might want to associate your IP address with a domain name you can share with others that uses \"dynamic DNS\" (DDNS). A \"dynamic DNS\" provider can supply you with the domain name and you keep refreshing your IP address with the provider. Your router might support certain DDNS providers to do this. If this is not the case, the provider will have instructions on how to set up a dynamic DNS client."
-msgstr ""
+msgstr "除非您的互联网服务提供商为您提供固定的 IP 地址，否则您可能会发现您的地址会随时间而变化。您可能希望将您的 IP 地址与一个您可以与他人共享的域名相关联，该域名使用“动态 DNS”（DDNS）。“动态 DNS”提供商可以为您提供域名，并且您不断向提供商刷新您的 IP 地址。您的路由器可能支持某些 DDNS 提供商来执行此操作。如果不是这种情况，提供商将为您提供有关如何设置动态 DNS 客户端的说明。"
 
 #. type: Title ##
 #: ../wiki/en/Unregistered-Servers.md:34
 #, no-wrap
 msgid "DNS SRV record support"
-msgstr ""
+msgstr "DNS SRV 记录支持"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:37
 msgid "Jamulus Clients support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record). If a Client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus Clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record."
-msgstr ""
+msgstr "Jamulus 客户端支持 [DNS SRV 记录（“服务”记录）](https://en.wikipedia.org/wiki/SRV_record)。如果客户端找到与“连接”窗口中给出的域名关联的 SRV 记录，它将尝试连接到 SRV 记录中列出的端点主机和端口。此过程类似于 Web 浏览器中的 HTTP 重定向，只是它发生在 Jamulus 客户端和 DNS 服务器之间。Jamulus 服务器不参与此交互。Jamulus 服务器只监听 SRV 记录中列出的同一端口上的连接。"
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:38
 #, no-wrap
 msgid "Why is this helpful?"
-msgstr ""
+msgstr "为什么这有帮助？"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:41
 msgid "A Jamulus Client can connect to a Server on a non-default port by specifying the port as part of the server address. A server administrator may want to give users a simple address without the port details, while still serving Jamulus on a non-default port. For this case, the port information can be acquired from an SRV record."
-msgstr ""
+msgstr "Jamulus 客户端可以通过将端口作为服务器地址的一部分进行指定，从而连接到非默认端口上的服务器。服务器管理员可能希望为用户提供一个不带端口详细信息的简单地址，同时仍在非默认端口上为 Jamulus 提供服务。对于这种情况，可以从 SRV 记录中获取端口信息。"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:43
 msgid "An address entered in the Connect window could look like ```jamulus.example.com```. If an SRV record is found for this DNS domain, Jamulus Client will try to connect to the Server on the host:port listed in the SRV record, such as ```jamulus.example.com:12345```."
-msgstr ""
+msgstr "在“连接”窗口中输入的地址可能类似于 ```jamulus.example.com```。如果找到此 DNS 域的 SRV 记录，Jamulus 客户端将尝试连接到 SRV 记录中列出的主机：端口上的服务器，例如```jamulus.example.com:12345```。"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:45
 msgid "If no SRV records are found on the DNS server, a Client will attempt to connect to the Server as specified in the connection window."
-msgstr ""
+msgstr "如果在 DNS 服务器上未找到 SRV 记录，客户端将尝试按照连接窗口中的指定连接到服务器。"
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:46
 #, no-wrap
 msgid "Creating SRV records"
-msgstr ""
+msgstr "创建 SRV 记录"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:49
 msgid "SRV records are created by the administrator of the domain being used to host the Jamulus server. The SRV records are added through the administration portal (or API if available) of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this."
-msgstr ""
+msgstr "SRV 记录由用于托管 Jamulus 服务器的域的管理员创建。SRV 记录通过域的 DNS 托管服务的管理门户（或 API，如果可用）添加。SRV 记录条目的格式可能因 DNS 托管服务而异，但通常看起来像这样。"
 
 #. type: Fenced code block
 #: ../wiki/en/Unregistered-Servers.md:50
@@ -152,33 +153,38 @@ msgid ""
 "  \n"
 "  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 msgstr ""
+"  _service._proto.name. ttl IN SRV 优先级权重端口目标\n"
+"\n"
+"# 或者，更具体地说\n"
+"\n"
+"_jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:59
 #, no-wrap
 msgid "**Note:** You can host many Jamulus Servers at different ports on one host by giving each its own SRV record.\n"
-msgstr ""
+msgstr "**注意:** 您可以在一个主机的不同端口上托管多个 Jamulus 服务器，并为每个服务器提供自己的 SRV 记录。\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:61
 msgid "See the documentation of your DNS provider for instructions on creating an SRV record."
-msgstr ""
+msgstr "有关创建 SRV 记录的说明，请参阅 DNS 提供商的文档。"
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:62
 #, no-wrap
 msgid "Example use case with SRV records"
-msgstr ""
+msgstr "使用 SRV 记录的示例用例"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:65
 msgid "This example assumes the DNS contains an A or CNAME record that resolves to ```server1.example.com```, where three Jamulus Server instances are running, each listening on one of the three ports listed below."
-msgstr ""
+msgstr "此示例假设 DNS 包含一个解析为 ```server1.example.com``` 的 A 或 CNAME 记录，其中三个 Jamulus Server 实例正在运行，每个实例都监听下面列出的三个端口之一。"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:67
 msgid "Alternatively, `server1.example.com` can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers)."
-msgstr ""
+msgstr "或者 ，`server1.example.com` 可以是路由器、NAT 网关或负载均衡器，将每个端口转发到后端 Jamulus 服务器（或服务器）。"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:74
@@ -190,9 +196,14 @@ msgid ""
 "| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
 "| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
 msgstr ""
+"| JAMULUS 客户端     |  DNS SRV 记录                                                             | JAMULUS 服务器             |\n"
+"| ------------------ | --------------------------------------------------------------------------- | -------------------------- |\n"
+"| rock.example.com  |  _jamulus._udp.rock.example.com 300 IN SRV 0 5 22124 server1.example.com  | server1.example.com:22124 |\n"
+"| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
+"| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:76
 #, no-wrap
 msgid "*It's important to remember that DNS is not forwarding connections. It's simply telling Jamulus Client what public host:port to connect to.*\n"
-msgstr ""
+msgstr "*请务必记住，DNS 不会转发连接。它只是告诉 Jamulus 客户端要连接到哪个公共主机：端口。*\n"

@@ -1,14 +1,15 @@
 <meta charset="utf-8">
 <!-- Canonical and Alternate Links -->
-{% assign sorted_languages = site.languages | sort %}
-{% for lng in sorted_languages %}
-  {% if lng == site.default_lang %}
-    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  {% else %}
+{% comment %}
+English URLs don't have a lang subdirectory since it's the default language.
+See https://github.com/untra/polyglot
+{% endcomment %}
+    <link rel="canonical" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+{% for lng in site.languages | sort %}
+  {% if lng != "en" %}
     <link rel="alternate" hreflang="{{ lng }}" href="{{ site.url }}{{ site.baseurl }}/{{ lng }}{{ page.url }}">
   {% endif %}
 {% endfor %}
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ page.url }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/assets/css/fox.min.css">
 <link rel="stylesheet" href="/assets/css/fw.css">

@@ -293,7 +293,7 @@ Applies a one-off fader setting to each channel depending on its volume. Useful 
 
 **Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in 
 ```shell
-$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/
+$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/
 ```
 
 # Command Line Options
