@@ -11,3 +11,5 @@ end
 gem "jekyll-minifier"
 gem "jekyll-paginate-v2"
 # gem "rails"
+
+gem "webrick", "~> 1.8"
