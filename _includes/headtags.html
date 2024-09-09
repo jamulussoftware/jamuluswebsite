@@ -4,7 +4,7 @@
 English URLs don't have a lang subdirectory since it's the default language.
 See https://github.com/untra/polyglot
 {% endcomment %}
-    <link rel="canonical" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/{{page.name}}">
+    <link rel="canonical" hreflang="en" href="{{ site.url }}/{{page.name}}">
 {% for lng in site.languages | sort %}
   {% if lng != "en" %}
     <link rel="alternate" hreflang="{{ lng }}" href="{{ site.url }}{{ site.baseurl }}/{{ lng }}{{ page.url }}">
