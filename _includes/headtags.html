@@ -4,15 +4,7 @@
 English URLs don't have a lang subdirectory since it's the default language.
 See https://github.com/untra/polyglot
 {% endcomment %}
-    <link rel="canonical" hreflang="en" href="{{ site.url }}{{page.url}}">
-<!--
-        version {{ jekyll.version }}
-        site.url {{ site.url }}
-        site.baseurl {{ site.baseurl }} - seems not to exist?
-        page.url {{ page.url }}
-        page.dir {{ page.dir }}
-        page.path {{ page.path }}
--->
+    <link rel="canonical" hreflang="en" {% static_href %}href="{{ page.url }}"{% endstatic_href %}>
 {% for lng in site.languages | sort %}
   {% if lng != "en" %}
     <link rel="alternate" hreflang="{{ lng }}" href="{{ site.url }}/{{ lng }}{{ page.url }}">
