@@ -29,7 +29,7 @@ Jamulus lets you play, rehearse, or jam with your friends, your band, or anyone 
   <div class="fx-col-100-xs">
     <figure class="mainbannerfig">
       <a href="wiki/Getting-Started">
-        <img src="{% include img/en-screenshots/main-screen-medium.inc %}" style="border: 5px solid grey;" id="jamulusbanner" loading="lazy" alt="A screenshot of the main mixer window showing five people from different countries connected.">
+      <img src="{% include img/en-screenshots/main-screen-medium.inc %}" style="border: 5px solid grey;" id="jamulusbanner" loading="lazy" alt="A screenshot of the main mixer window showing several people from different countries connected."/>
       </a>
       <figcaption>Jamulus is international</figcaption>
     </figure>
@@ -53,10 +53,10 @@ You can also ask on the [forums](https://github.com/jamulussoftware/jamulus/disc
     <h2>Want to get involved?</h2>
     <p>
 <div markdown="1">
-Ideas? Found a bug? Want to contribute some code or help [translating](https://github.com/jamulussoftware/jamulus/blob/main/docs/TRANSLATING.md) Jamulus into your language? Since Jamulus is [free and open source software](https://www.gnu.org/philosophy/free-sw.en.html) (FOSS) licensed under the [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) you can help us!<br>
-<br>
-Take a look at our [contribution guidelines](wiki/Contribution) to find out how. Everybody is welcome!<br>
-<br>
+Ideas? Found a bug? Want to contribute some code or help [translating](https://github.com/jamulussoftware/jamulus/blob/main/docs/TRANSLATING.md) Jamulus into your language? Since Jamulus is [free and open source software](https://www.gnu.org/philosophy/free-sw.en.html) (FOSS) licensed under the [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) you can help us!<br/>
+<br/>
+Take a look at our [contribution guidelines](wiki/Contribution) to find out how. Everybody is welcome!<br/>
+<br/>
 _For detailed information on how Jamulus works, see [this paper by Volker Fischer (PDF)](/PerformingBandRehearsalsontheInternetWithJamulus.pdf)._
 </div>
     </p>
