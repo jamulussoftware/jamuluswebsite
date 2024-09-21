@@ -77,16 +77,24 @@ open automatically for all Clients. See Settings to optionally turn on a sound a
 
 Opens a dialogue where you can select a server to connect to. If you are connected,
 pressing this button will end the session.
+You can also open the dialogue using "File&gt;Connection Setup...". This will leave you connected to any current session until you join another.
 
 <figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
-The Connection Setup window shows a list of available servers together with the number of occupants and the maximum number supported. Server operators register their servers on lists (mostly defined by genre, though some could be location-specific or for all genres). Use the List dropdown to select a genre, click on the server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name. Permanent servers (those that have been listed for longer than 24 hours) are shown in bold.
+The Connection Setup window shows a list of available Servers together with their "distance" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.
+Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold.
 
-You can filter the list by server name or location. To list only occupied servers, enter a "#" character.
+Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name.
 
-If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address
-field. An optional port number can be added after the address using a colon as a separator, e.g,
-`jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses.
+Server operators register their servers with Directories. These are either genre-specific or for any genre, or additional [custom entries](#custom-directories). Use the Directory dropdown to select a genre.
+You can filter the list by server name or location. To list only occupied Servers, enter a "#" character.
+If you choose "Show All Musicians" the current occupants will be shown.
+
+If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.
+An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.
+(Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)
+The field will also show a list of the most recently used server addresses.
+The button that follows the field allows the current entry to be removed from the list.
 
 ## Server audio mixer
 
@@ -130,7 +138,7 @@ which is displayed below your fader in the server audio mixer board.
 
 If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:
 
-<figure><img src="{% include img/en-screenshots/profile-tooltip.inc %}" style="width:30%;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
+<figure><img src="{% include img/en-screenshots/profile-tooltip.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of a tooltip showing profile information"></figure>
 
 ### Skin
 
@@ -200,7 +208,9 @@ connection properties. Three buffer sizes are supported:
 Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.
 In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel.
 
-On Linux, use the JACK configuration tool to change the buffer size.
+On Linux:
+- when using JACK, use `QJackCtl` to change the buffer size and restart JACK;
+- when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools.
 
 The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.
 The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the
@@ -241,6 +251,10 @@ rate is not higher than your available internet upload speed (check this with a 
 ### Custom Directories
 
 If you need to add Directory addresses other than the built-in ones, you can do so here.
+If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.
+An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.
+(Note that IPv6 is not currently supported for Directories.)
+The button that follows the field allows the current entry to be removed from the list.
 
 ### New Client Level
 
@@ -279,7 +293,7 @@ Applies a one-off fader setting to each channel depending on its volume. Useful 
 
 **Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in 
 ```shell
-$HOME/Library/Containers/io.jamulus.Jamulus/Data/.config/Jamulus/
+$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/
 ```
 
 # Command Line Options

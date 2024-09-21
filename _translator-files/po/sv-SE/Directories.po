@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Daniel <daniel@mailsystem.net>, 2024.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
+# ann0see <20726856+ann0see@users.noreply.github.com>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2024-08-24 13:59+0000\n"
+"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sv-SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.7.1-dev\n"
+
+#. type: Yaml Front Matter Hash Value: lang
+#: ../wiki/en/Directories.md:1
+#, no-wrap
+msgid "en"
+msgstr "sv-SE"
+
+#. type: Yaml Front Matter Hash Value: layout
+#: ../wiki/en/Directories.md:1
+#, no-wrap
+msgid "wiki"
+msgstr "wiki"
+
+#. type: Yaml Front Matter Hash Value: permalink
+#: ../wiki/en/Directories.md:1
+#, no-wrap
+msgid "/wiki/Directories"
+msgstr "/wiki/Directories"
+
+#. type: Yaml Front Matter Hash Value: title
+#: ../wiki/en/Directories.md:1
+#, no-wrap
+msgid "Directories"
+msgstr "Kataloger"
+
+#. type: Plain text
+#: ../wiki/en/Directories.md:9
+msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"Mer\" branch1=\"Serveradministration\" branch1-url=\"Running-a-Server\" %}"
+
+#. type: Title #
+#: ../wiki/en/Directories.md:11
+#, no-wrap
+msgid "Running a Directory"
+msgstr "Köra en katalog"
+
+#. type: Plain text
+#: ../wiki/en/Directories.md:14
+msgid "This is a specialised Jamulus Server configuration, as described in [Server Modes](Running-a-Server#server-modes)."
+msgstr "Detta är en specialiserad Jamulus Server-konfiguration, som beskrivs i [Serverlägen](Running-a-Server#server-modes)."
+
+#. type: Plain text
+#: ../wiki/en/Directories.md:16
+#, no-wrap
+msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them.\n"
+msgstr "För att visa servrar listade av en anpassad katalog måste användare ange adressen till den katalogen i inställningarna för deras klient under Inställningar > Avancerad inställning > Anpassade kataloger. Flera adresser kan läggas till på detta sätt om det behövs. Anpassade kataloger kommer sedan att visas i rullgardinslistan för kataloger i deras anslutningsfönster. Anpassade kataloger fungerar i övrigt för klienter på samma sätt som offentliga kataloger, genom att visa en lista över servrar registrerade hos dem.\n"
+
+#. type: Plain text
+#: ../wiki/en/Directories.md:18
+msgid "To run a Server as a Directory, it should be started with the `--directoryaddress` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
+msgstr "För att köra en server som en katalog bör den startas med alternativet `--directoryaddress` för att göra sig själv (det vill säga `localhost` eller `127.0.0.1`) till katalogen som ska frågas efter servrar."
+
+#. type: Plain text
+#: ../wiki/en/Directories.md:20
+msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
+msgstr "När du kör en server med GUI, ställ in adressen för den anpassade katalogservern i fliken Alternativ till \"localhost\" och välj sedan \"Anpassad\" från rullgardinslistan för kataloger."
+
+#. type: Title ###
+#: ../wiki/en/Directories.md:22
+#, no-wrap
+msgid "Points to note about Directories"
+msgstr "Punkter att notera om kataloger"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Directories.md:25
+msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
+msgstr "Om du vill kontrollera vilka servrar som kan registrera sig hos din katalog kan du aktivera en vitlista med kommandoradsalternativet `--listfilter` i formatet `ip address 1[;ip address 2]`."
+
+#. type: Bullet: '- '
+#: ../wiki/en/Directories.md:27
+msgid "When running a Server behind a NAT firewall on a private network and registering with a Directory on the same network, run the Server using the `--serverpublicip` option to specify the public IP address.  This is necessary to allow Clients on the public Internet to connect to the correct address.  Note that for the Server(s) using this option, you will still need proper port forwarding in your router/firewall."
+msgstr "När du kör en server bakom en NAT-brandvägg på ett privat nätverk och registrerar dig hos en katalog på samma nätverk, använd alternativet `--serverpublicip` för att specificera den offentliga IP-adressen. Detta är nödvändigt för att tillåta klienter på det offentliga Internet att ansluta till rätt adress. Observera att för server(n) som använder detta alternativ behöver du fortfarande korrekt portvidarebefordran i din router/brandvägg."
+
+#. type: Bullet: '- '
+#: ../wiki/en/Directories.md:29
+msgid "When running a Client behind a NAT firewall on a private network with a Directory on the same network, the Directory itself needs to be run using the `--serverpublicip` option to specify the public IP address, so that any Servers on the public Internet registering with the Directory that require the \"hole punch\" can be accessed by the Client(s). (This is because otherwise the Directory would provide the local network address of the Client to the Server and the \"hole punch\" would fail.)"
+msgstr "När du kör en klient bakom en NAT-brandvägg på ett privat nätverk med en katalog på samma nätverk, måste katalogen köras med alternativet `--serverpublicip` för att specificera den offentliga IP-adressen. Detta gör att servrar på det offentliga Internet som registrerar sig hos katalogen och som behöver \"hål-borrning\" kan nås av klienterna. (Annars skulle katalogen ge servern den lokala nätverksadressen för klienten, vilket skulle göra att \"hål-borrningen\" misslyckas.)"
+
+#. type: Bullet: '- '
+#: ../wiki/en/Directories.md:31
+msgid "If you need to restart your Directory for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
+msgstr "Om du behöver starta om din katalog av någon anledning (till exempel vid omstart av värddatorn) kommer servrar som är anslutna till den att kopplas bort tills de registrerar sig igen. Detta innebär inte att klienter som är anslutna till dessa servrar kommer att kopplas bort, men nya klienter kommer inte att kunna se servrar listade av din katalog tills dessa servrar återansluter. För att möjliggöra att listan över registrerade servrar bevaras mellan omstarter, använd alternativet `--directoryfile` för att specificera platsen och namnet på en fil som katalogen kan läsa och skriva till."
+
+#. type: Bullet: '- '
+#: ../wiki/en/Directories.md:32
+msgid "Up to 150 Servers can then register with a Directory."
+msgstr "Upp till 150 servrar kan sedan registrera sig hos en katalog."

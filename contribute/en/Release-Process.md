@@ -80,7 +80,7 @@ Use `tools/create-translation-issues.sh` to create and assign issues (see usage 
 {:.no_toc}
 
 Each translator should submit a PR containing just their new version of the `.ts` file. There is no need to submit
-a new `.qm` file, as they will all be regenerated below.
+a new `.qm` file, as they are compiled automatically.
 
 A developer should check and merge each PR as it arrives using this checklist:
 
@@ -89,7 +89,7 @@ A developer should check and merge each PR as it arrives using this checklist:
 - [ ] Punctuation and spacing consistent
 - [ ] Signal words consistent ("ASIO", "Buffer")
 - [ ] App translations: No untranslated strings (`grep unfinished -5 src/translation/translation_$TRANSLATION*.ts`)
-- [ ] App translations: Only a single `.ts` file checked in (`.qm` in addition is also OK)
+- [ ] App translations: Only a single `.ts` file checked in
 - [ ] Installer translations: Passes `tools/check-wininstaller-translations.sh`
 ~~~
 
@@ -106,20 +106,6 @@ $ git status
 ```
 
 Make sure there are no pending changes shown by `git status`.
-
-Now ensure the compiled translation files are up to date:
-
-```
-$ lrelease Jamulus.pro
-$ git status
-```
-
-If any of the `.qm` files have been updated by `lrelease`, they will be shown as changed files. If there are any, they should be committed and pushed:
-
-```
-$ git commit -am'Update compiled translations'
-$ git push
-```
 
 Next edit both `Jamulus.pro` and `ChangeLog` with the new version number, such as **3.7.0rc2** or **3.7.0**:
 
@@ -290,7 +276,6 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Review translation PRs according to [release process checklist](https://jamulus.io/contribute/Release-Process#3-update-the-ts-files-returned-by-translators)
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically).
   - [ ] Check for conflicting accelerator keys (see `tools/checkkeys.pl`)
-  - [ ] Generate `.qm` files via `lrelease Jamulus.pro`  
 - [ ] Finish Website translations
   - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically)
   - [ ] [Check for broken links](https://github.com/jamulussoftware/jamuluswebsite/blob/release/contribute/en/Release-Process.md#website-check-links)

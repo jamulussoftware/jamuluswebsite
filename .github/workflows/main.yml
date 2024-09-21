@@ -9,7 +9,7 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
 # Retrieve po4a installation cache or create it if not found:
       - name: Check for po4a cache
@@ -26,7 +26,7 @@ jobs:
         run: ./_po4a-tools/po4a-cache.sh
 
 # Paths changes filter. If there's been a change to any files defined in the filter, the step (update .po files) runs:
-      - uses: dorny/paths-filter@v2
+      - uses: dorny/paths-filter@v3
         id: filter
         with:
           base: ${{ github.ref }}
@@ -40,7 +40,7 @@ jobs:
 # This step only runs if a PR is merged:
       - name: Push changes to repo if action triggered on:push and .po files need updating
         if: ${{ steps.filter.outputs.src_files_changed == 'true' }}
-        uses: EndBug/add-and-commit@v7
+        uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
           message: 'AUTO: Update .po files'
@@ -95,7 +95,7 @@ jobs:
           ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
 
       - name: 🚀 deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
@@ -109,7 +109,7 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: ${{ github.sha }} update from release
         uses: devmasx/merge-branch@v1.3.1
         with:
