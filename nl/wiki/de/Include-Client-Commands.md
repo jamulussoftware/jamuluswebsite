@@ -8,5 +8,5 @@
 -  `--ctrlmidich` MIDI-Controller-Kanal, der genutzt werden soll, Offset der
    Kontrollnummer und fortlaufende CC-Nummern (Kanäle) und Stummschalten
    CC-Nummer. Format: `kanal[;f*][;p*][;s*][;m*][;o]` Siehe [Tipps &
-   Tricks](Tips-Tricks-More#verwendung-von-ctrlmidich-für-midi-controller)
+   Tricks](Tips-Tricks-More#ctrlmidich-für-midi-controller-verwenden)
 - `--clientname` Fenster-Titel und JACK Client Name

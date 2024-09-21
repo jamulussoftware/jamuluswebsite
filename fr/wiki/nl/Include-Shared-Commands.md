@@ -5,10 +5,10 @@
 - `-i` of `--inifile` Stel de locatie van het initialisatiebestand in (heeft
   voorrang op de standaardinstelling. Geef op macOS alleen een bestandsnaam
   op, aangezien configuratiebestanden alleen kunnen worden gelezen vanuit
-  `/Users/<gebruikersnaam>/Library/Containers/io.jamulus
-  .Jamulus/Data/`. Vervang voor de server `io.jamulus.Jamulus` door
-  `io.jamulus.JamulusServer`. Schakel "Toon bibliotheekmap" in "Toon
-  weergaveopties" in Finder in om deze map te zien.)
+  `/Users/<gebruikersnaam>/Library/Containers/app.jamulussoftware.Jamulus/Data/`.
+  Vervang voor de server `app.jamulussoftware.Jamulus` door
+  `app.jamulussoftware.JamulusServer`. Schakel "Toon bibliotheekmap" in
+  "Toon weergaveopties" in Finder in om deze map te zien.)
 - `-n` of `--nogui` Schakel de GUI uit (voor gebruik in headless mode)
 - `-p` of `--port` Stelt het lokale UDP poort nummer in. Standaard is dit:
   22124

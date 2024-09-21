@@ -2,7 +2,7 @@
 [comment]: # (This is an include file for use in multiple documents)
 
 - `-h` or `--help` Display help text
-- `-i` or `--inifile` Set location of initialization file (overrides default. On macOS simply provide a filename only, since config files can only be read from `/Users/<username>/Library/Containers/io.jamulus.Jamulus/Data/`. For the server replace `io.jamulus.Jamulus` with `io.jamulus.JamulusServer`. Turn on "Show Library folder" in "Show view options" in Finder to see this folder.)
+- `-i` or `--inifile` Set location of initialization file (overrides default. On macOS simply provide a filename only, since config files can only be read from `/Users/<username>/Library/Containers/app.jamulussoftware.Jamulus/Data/`. For the server replace `app.jamulussoftware.Jamulus` with `app.jamulussoftware.JamulusServer`. Turn on "Show Library folder" in "Show view options" in Finder to see this folder.)
 - `-n` or `--nogui` Disable GUI (for use in headless mode)
 - `-p` or `--port` Sets the local UDP port number. Default is 22124
 - `--jsonrpcport` Enables JSON-RPC API server to control the app, set TCP port number (EXPERIMENTAL, APIs might change; only accessible from localhost). Please see [the JSON-RPC API Documentation file](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).

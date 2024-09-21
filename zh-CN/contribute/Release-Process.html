@@ -1,0 +1,167 @@
+<!DOCTYPE html><!--[if IE 9]><html class="ie9"><![endif]--><html lang="zh-CN"><head><title>Release Process – Jamulus 网站</title><meta charset="utf-8"><link rel="canonical" hreflang="en" href="/contribute/Release-Process"><link rel="alternate" hreflang="sv-SE" href="/sv-SE/contribute/Release-Process"><link rel="alternate" hreflang="zh-CN" href="/zh-CN/contribute/Release-Process"><link rel="alternate" hreflang="nb-NO" href="/nb-NO/contribute/Release-Process"><link rel="alternate" hreflang="ko-KR" href="/ko-KR/contribute/Release-Process"><link rel="alternate" hreflang="pt-BR" href="/pt-BR/contribute/Release-Process"><link rel="alternate" hreflang="pt-PT" href="/pt-PT/contribute/Release-Process"><link rel="alternate" hreflang="nl" href="/nl/contribute/Release-Process"><link rel="alternate" hreflang="es" href="/es/contribute/Release-Process"><link rel="alternate" hreflang="de" href="/de/contribute/Release-Process"><link rel="alternate" hreflang="it" href="/it/contribute/Release-Process"><link rel="alternate" hreflang="fr" href="/fr/contribute/Release-Process"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/assets/css/fox.min.css"><link rel="stylesheet" href="/assets/css/fw.css"><link rel="stylesheet" href="/assets/css/langsel.css"><noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript><meta name="description" content=""><link rel="apple-touch-icon" sizes="57x57" href="/zh-CN/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/zh-CN/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/zh-CN/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/zh-CN/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/zh-CN/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/zh-CN/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/zh-CN/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/zh-CN/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/zh-CN/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/zh-CN/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/zh-CN/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/zh-CN/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/zh-CN/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="color-scheme" content="dark light"><link rel="author" href="/humans.txt"><script src="/assets/js/nav.js"></script><link rel="stylesheet" href="/assets/css/wiki.css"></head><body class="wikisite"><header class="fx-row fx-row-between-xs fx-text-center"><div class="fx-col fx-text-center"><a href="/zh-CN/"><img alt="杰穆鲁斯图标。链接到主页" width="40" height="40" src="/assets/img/jamulus-icon-2020.svg"></a></div><div class="fx-col-center-xs fx-txt-right hide-on-dt"><a href="#mnv" onclick="showNav();return false;"><svg role="img" width="20" height="20" aria-labelledby="ntitle" id="navbtn" class="hide-on-dt"><title id="ntitle">打开导航</title><g><rect fill="currentcolor" id="r1" width="100%" height="3" x="0" y="0"/><rect fill="currentcolor" id="r2" width="100%" height="3" x="0" y="8"/><rect fill="currentcolor" id="r3" width="100%" height="3" x="0" y="16"/></g></svg></a></div></header><div class="fx-row fx-row-center-xs"><aside id="gnav" class="fx-col-100-xs fx-col-25-m"><div id="langselect-container"><div id="langselect"><form method="get" id="language-form"><div class="language-dropdown"><select id="language-select" name="language-select" onchange="location = this.value;"><option value="/de/contribute/Release-Process"> Deutsch </option><option value="/contribute/Release-Process"> English </option><option value="/es/contribute/Release-Process"> Español </option><option value="/fr/contribute/Release-Process"> Français </option><option value="/it/contribute/Release-Process"> Italiano </option><option value="/ko-KR/contribute/Release-Process"> 한국어 </option><option value="/nb-NO/contribute/Release-Process"> Norsk (bokmål) </option><option value="/nl/contribute/Release-Process"> Nederlands </option><option value="/pt-BR/contribute/Release-Process"> Português (Brasil) </option><option value="/pt-PT/contribute/Release-Process"> Português (Portugal) </option><option value="/sv-SE/contribute/Release-Process"> Svenska </option><option value="/zh-CN/contribute/Release-Process" selected> 简体中文 </option></select></div></form><noscript><ul class="language-list"><li><a href="/de/contribute/Release-Process" data-slang="de">de</a></li><li><a href=" /contribute/Release-Process" data-slang="en">en</a></li><li><a href="/es/contribute/Release-Process" data-slang="es">es</a></li><li><a href="/fr/contribute/Release-Process" data-slang="fr">fr</a></li><li><a href="/it/contribute/Release-Process" data-slang="it">it</a></li><li><a href="/ko-KR/contribute/Release-Process" data-slang="ko-KR">ko-KR</a></li><li><a href="/nb-NO/contribute/Release-Process" data-slang="nb-NO">nb-NO</a></li><li><a href="/nl/contribute/Release-Process" data-slang="nl">nl</a></li><li><a href="/pt-BR/contribute/Release-Process" data-slang="pt-BR">pt-BR</a></li><li><a href="/pt-PT/contribute/Release-Process" data-slang="pt-PT">pt-PT</a></li><li><a href="/sv-SE/contribute/Release-Process" data-slang="sv-SE">sv-SE</a></li><li class="selected" data-slang="zh-CN">zh-CN</li></ul></noscript></div></div><nav id="mnv"><ul><li><h3>使用 Jamulus</h3><ul><li><a href="/zh-CN/wiki/Getting-Started" rel="canonical" class="">设置</a><ul><li><a href="/zh-CN/wiki/Installation-for-Windows" rel="canonical" class="">Windows</a></li><li><a href="/zh-CN/wiki/Installation-for-Macintosh" rel="canonical" class="">macOS</a></li><li><a href="/zh-CN/wiki/Installation-for-Linux" rel="canonical" class="">Linux</a></li></ul></li><li><a href="/zh-CN/wiki/Software-Manual" rel="canonical" class="">用户手册</a></li><li><a href="/zh-CN/wiki/FAQ" rel="canonical" class="">常见问题</a></li><li><a href="/zh-CN/wiki/Client-Troubleshooting" rel="canonical" class="">故障排除</a></li></ul></li><li><h3>更多</h3><ul><li><a href="/zh-CN/wiki/Running-a-Server" rel="canonical" class="">服务手册</a></li><li><a href="/zh-CN/wiki/Tips-Tricks-More" rel="canonical" class="">提示与技巧</a></li><li><a href="/zh-CN/kb/index.html" rel="canonical" class="">社区知识库</a></li><li><a href="/zh-CN/wiki/Privacy-Statement" rel="canonical" class="">隐私声明</a></li></ul></li></ul><div id="cc">本文档为 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA</a> 授权</div></nav></aside><div id="maincontainer" class="fx-col-100-xs fx-col-50-m"><noscript class="red"><strong>您的浏览器禁用了 JavaScript。这完全没问题。该站点旨在提供没有 JS 的基本功能。启用 JavaScript 可能会在本网站上为您提供额外的功能。</strong></noscript><main lang="en"><h1 class="no_toc" id="release-process-for-jamulus">Release Process for Jamulus</h1><p>This document lists the exact steps required for a developer with write access to generate either a pre-release (beta, rc) or full release of Jamulus. Note: Besides the actual build, a full release of Jamulus should also follow the release checklist which can be copied below. This is to ensure a good release quality.</p><details><summary>Table of contents</summary><ul id="markdown-toc"><li><a href="#release-building" id="markdown-toc-release-building">Release (Building)</a><ul><li><a href="#set-up" id="markdown-toc-set-up">Set up</a></li><li><a href="#steps-for-a-specific-release" id="markdown-toc-steps-for-a-specific-release">Steps for a specific release</a></li></ul></li><li><a href="#upload-binaries-to-sourceforge" id="markdown-toc-upload-binaries-to-sourceforge">Upload binaries to SourceForge</a></li><li><a href="#website-check-links" id="markdown-toc-website-check-links">Website: check links</a></li><li><a href="#release-checklist-for-a-full-release" id="markdown-toc-release-checklist-for-a-full-release">Release checklist (for a full release)</a></li><li><a href="#release-announcement" id="markdown-toc-release-announcement">Release announcement</a><ul><li><a href="#updating-the-changelog" id="markdown-toc-updating-the-changelog">Updating the Changelog</a></li></ul></li></ul></details><h2 id="release-building">Release (Building)</h2><h3 id="set-up">Set up</h3><p>A direct clone of the Jamulus repo is required, not a fork. This should be set up in a separate directory just for the release process:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone git@github.com:jamulussoftware/jamulus.git jamulus-upstream
+$ cd jamulus-upstream
+$ git remote -v
+origin  git@github.com:jamulussoftware/jamulus.git (fetch)
+origin  git@github.com:jamulussoftware/jamulus.git (push)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+</code></pre></div></div><h3 id="steps-for-a-specific-release">Steps for a specific release</h3><h4 class="no_toc" id="1-ensure-ts-files-are-up-to-date">1. Ensure .ts files are up to date</h4><p>First make sure all Pull Requests that should be included in the release have been merged in Github.</p><p>Next, change to the above directory <code class="language-plaintext highlighter-rouge">jamulus-upstream</code>, checkout <code class="language-plaintext highlighter-rouge">main</code> and ensure it is up to date:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd jamulus-upstream
+$ git checkout main
+$ git pull
+$ git status
+</code></pre></div></div><p>Make sure there are no pending changes shown by <code class="language-plaintext highlighter-rouge">git status</code>.</p><p>Now update the <code class="language-plaintext highlighter-rouge">.ts</code> files to reflect the latest version of source code:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ lupdate Jamulus.pro
+$ git status
+</code></pre></div></div><p>It should list all the <code class="language-plaintext highlighter-rouge">.ts</code> files that have been updated. If there are any, they should be committed directly:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git commit -am'Update .ts files for &lt;version&gt;'
+$ git push
+</code></pre></div></div><h4 class="no_toc" id="2-notify-all-the-translators-that-translation-is-required">2. Notify all the translators that translation is required</h4><p>Use <code class="language-plaintext highlighter-rouge">tools/create-translation-issues.sh</code> to create and assign issues (see usage notes in script). Also post on GH and Discord to notify.</p><h4 class="no_toc" id="3-update-the-ts-files-returned-by-translators">3. Update the .ts files returned by translators</h4><p>Each translator should submit a PR containing just their new version of the <code class="language-plaintext highlighter-rouge">.ts</code> file. There is no need to submit a new <code class="language-plaintext highlighter-rouge">.qm</code> file, as they are compiled automatically.</p><p>A developer should check and merge each PR as it arrives using this checklist:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ ] Translator listed in the `src/util.cpp` *optionally add link to PR or code*
+- [ ] Punctuation and spacing consistent
+- [ ] Signal words consistent ("ASIO", "Buffer")
+- [ ] App translations: No untranslated strings (`grep unfinished -5 src/translation/translation_$TRANSLATION*.ts`)
+- [ ] App translations: Only a single `.ts` file checked in
+- [ ] Installer translations: Passes `tools/check-wininstaller-translations.sh`
+</code></pre></div></div><h4 class="no_toc" id="4-when-all-translations-have-been-submitted-and-merged">4. When all translations have been submitted and merged.</h4><p>Change to the above directory <code class="language-plaintext highlighter-rouge">jamulus-upstream</code>, checkout <code class="language-plaintext highlighter-rouge">main</code> and ensure it is up to date:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd jamulus-upstream
+$ git checkout main
+$ git pull
+$ git status
+</code></pre></div></div><p>Make sure there are no pending changes shown by <code class="language-plaintext highlighter-rouge">git status</code>.</p><p>Next edit both <code class="language-plaintext highlighter-rouge">Jamulus.pro</code> and <code class="language-plaintext highlighter-rouge">ChangeLog</code> with the new version number, such as <strong>3.7.0rc2</strong> or <strong>3.7.0</strong>:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vim -o Jamulus.pro ChangeLog
+</code></pre></div></div><p>In <code class="language-plaintext highlighter-rouge">Jamulus.pro</code>, edit the <code class="language-plaintext highlighter-rouge">VERSION</code> line to give the release, e.g.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VERSION = 3.7.0rc2
+</code></pre></div></div><p>or</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VERSION = 3.7.0
+</code></pre></div></div><p>In <code class="language-plaintext highlighter-rouge">ChangeLog</code>, for a pre-release, change the first version heading as follows:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### 3.7.0rc2 &lt;- NOTE: the release version number will be 3.7.0 ###
+</code></pre></div></div><p>for a proper release, change it as follows, removing the NOTE and including the release date such that the headline looks exactly like this (including all <code class="language-plaintext highlighter-rouge">###</code>):</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### 3.7.0 (2021-03-17) ###
+</code></pre></div></div><p>Check only those two files have changed, then commit and push the changes with the following commit message:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git status
+$ git commit -am'Update version to &lt;version&gt; for release'
+$ git push
+</code></pre></div></div><p>Now add the required tag locally and then push the tag. This will start the automated release process on Github:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git tag r3_7_0
+$ git push origin tag r3_7_0
+</code></pre></div></div><h3 class="no_toc" id="if-this-is-a-proper-release-move-the-latest-tag">If this is a proper release, move the <code class="language-plaintext highlighter-rouge">latest</code> tag</h3><p>This needs the <code class="language-plaintext highlighter-rouge">--force</code> option to overwrite the existing <code class="language-plaintext highlighter-rouge">latest</code> tag and move it to the current commit:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git tag --force latest
+$ git push --force origin tag latest
+</code></pre></div></div><p>For a pre-release, the <code class="language-plaintext highlighter-rouge">latest</code> tag should not be updated, but continue to point to the last proper release.</p><h3 class="no_toc" id="make-the-main-branch-ready-for-post-release-development">Make the main branch ready for post-release development</h3><p>This can be done immediately after pushing the above tag, there is no need to wait.</p><p>Edit both <code class="language-plaintext highlighter-rouge">Jamulus.pro</code> and <code class="language-plaintext highlighter-rouge">ChangeLog</code> to add <code class="language-plaintext highlighter-rouge">dev</code> to the version number and create a new section in the change log:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vim -o Jamulus.pro ChangeLog
+</code></pre></div></div><p>In <code class="language-plaintext highlighter-rouge">Jamulus.pro</code>, edit the <code class="language-plaintext highlighter-rouge">VERSION</code> line to add <code class="language-plaintext highlighter-rouge">dev</code> to the current version number, e.g.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VERSION = 3.7.0dev
+</code></pre></div></div><p>In <code class="language-plaintext highlighter-rouge">ChangeLog</code>, add a new section with <code class="language-plaintext highlighter-rouge">dev</code> and restore the NOTE indicating the next version number:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### 3.7.0dev &lt;- NOTE: the release version number will be 3.7.1 ###
+
+
+### 3.7.0 (2021-03-17) ###
+</code></pre></div></div><p>Check only those two files have changed, then commit and push the changes:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git status
+$ git commit -am'Set version to 3.7.0dev'
+$ git push
+</code></pre></div></div><p>Close the shell or change out of the upstream directory to one’s usual working directory, e.g.:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ../jamulus
+</code></pre></div></div><h2 id="upload-binaries-to-sourceforge">Upload binaries to SourceForge</h2><p><strong>NOTE</strong>: As of Sept 2023 we have a webhook set to transfer the downloads automatically to SourceForge on GitHub release. Check to see whether that’s worked before following the steps below!</p><p>You will need an authorised SourceForge account.</p><p><code class="language-plaintext highlighter-rouge">sftp [your_accountname]@frs.sourceforge.net</code></p><p><code class="language-plaintext highlighter-rouge">cd /home/pfs/project/l/ll/llcon</code></p><p>then you’ll see “Jamulus” and “OldFiles” directories. “Jamulus” is the releases, one directory per release.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Jamulus
+mkdir 3.7.0
+cd 3.7.0
+</code></pre></div></div><p>Upload all the files. Then in the SourceForge web UI, for each of the files uploaded, click the ℹ️ icon next to the file (in Files in the admin tools) and set it as “Default for (appropriate) platform)” Note that unsetting the default to “none” automatically picks the newest, so don’t do that – explicitly set the default when the release announcement is posted. Also note that legacy Mac, Headless and WinJACK users will need to just find those links on their own.</p><h2 id="website-check-links">Website: check links</h2><p>We have used <a href="https://github.com/filiph/linkcheck">linkcheck</a> in the past.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone https://github.com/jamulussoftware/jamuluswebsite.git
+$ cd jamuluswebsite
+$ git checkout next-release
+$ _po4a-tools/po4a-create-all-targets.sh
+$ bundle exec jekyll serve
+$ linkcheck --no-warnings http://localhost:4000 &gt; linkcheck.log
+</code></pre></div></div><h2 id="release-checklist-for-a-full-release">Release checklist (for a full release)</h2><p>Before starting a full release process, an issue in the jamulussoftware/jamulus repository needs to be opened. The content of this issue should include the following checklist:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**Target timeline**
+Scheduled feature freeze / Start of translation process: &lt;!-- Add a date, usually about 6-8 weeks from the last release, e.g. 2021-04-20. Allow approx. 4-6 weeks to complete a release --&gt;
+Targeted translation completion date: &lt;!-- E.g. two weeks after feature freeze, e.g. 2021-05-04 --&gt;
+Approximate release date: &lt;!-- E.g. one week after targeted translation completion date to have time for late translations, reviews, RC, e.g. 2021-05-11 --&gt;
+Current state: &lt;!-- Planning|Translations (beta)|Code freeze (rc)|Released --&gt;
+
+**Checklist**
+- [ ] Assign this issue to the release shepherd who is in charge of managing this checklist.
+- [ ] Pin this issue
+- [ ] Ensure that all issues/PR targeted for this release are done by checking the Project board with [the appropriate filter for this release](https://github.com/orgs/jamulussoftware/projects/5/views/5). Remind main developers to review entries in *Waiting on team* state.
+- [ ] Agree to de-tag unfinished Issues/PRs.
+- [ ] Declare a freeze for code and website by updating this Issue and adding a comment. PRs can still be worked on and may get reviewed, but must not be merged unless agreed explicitly.
+- [ ] Check the `needs documentation` label for any outstanding PRs flagged for this release and remove that label if done.
+- [ ] Check ./Jamulus -h output against the [Include-Client](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Client-Commands.md)/[Server-Commands](https://github.com/jamulussoftware/jamuluswebsite/blob/next-release/wiki/en/Include-Server-Commands.md).md pages and [man page (distributions/Jamulus.1)[(https://github.com/jamulussoftware/jamulus/blob/main/distributions/Jamulus.1). Update if necessary.
+- [ ] Start Website translations
+  - [ ] [Check for broken links](https://github.com/jamulussoftware/jamuluswebsite/blob/release/contribute/en/Release-Process.md#website-check-links)
+  - [ ] Open a Pull Request from `next-release` to release, set it as "Draft", sanity check for conflicts and any obvious problems.
+  - [ ] Declare a full freeze of the `next-release` and `release` branch. No changes should be made from now on to ensure translators don't have to work twice.
+  - [ ] Check if the list of translators in `tools/create-translation-issues.sh`. Make sure issue text is up-to-date. Add any URLs that will need localisation into the "New/Changed screenshots" section.
+  - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `web` argument (see notes in script).
+  - [ ] If anyone finds critical issues now, all translators must be made aware of them and all languages should be updated.
+- [ ] Start App translations
+  - [ ] Generate `.ts` files in main via `lupdate`
+  - [ ] Check if the list of translators in `tools/create-translation-issues.sh` is up-to-date
+  - [ ] Create a translation issue for each language with `tools/create-translation-issues.sh` using `app` argument.
+- [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
+- [ ] [Tag a beta release](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release)
+  - [ ] Inform emlynmac for signing on macOS, and upload signed binary from [his repo](https://github.com/emlynmac/jamulus/releases/) to [ours](https://github.com/jamulussoftware/jamulus/releases/)
+  - [ ] Announce the beta release on Github Discussions. Pin the thread.
+  - [ ] Get feedback on the stability and resource usage (memleaks?, crashes?, installation issues?) of the beta release
+- [ ] Finish App translations
+  - [ ] Review translation PRs according to [release process checklist](https://jamulus.io/contribute/Release-Process#3-update-the-ts-files-returned-by-translators)
+  - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically).
+  - [ ] Check for conflicting accelerator keys (see `tools/checkkeys.pl`)
+- [ ] Finish Website translations
+  - [ ] Wait for all PRs to be merged (missing translations will revert to English automatically)
+  - [ ] [Check for broken links](https://github.com/jamulussoftware/jamuluswebsite/blob/release/contribute/en/Release-Process.md#website-check-links)
+- [ ] Check the milestone for mergable stuff again
+- [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
+- [ ] [Tag a release candidate](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) (inform emlynmac for signing on macOS and upload signed binary from his repo to ours).
+  - [ ] Announce the release candidate on Github Discussions. Pin the thread. Unpin and lock the beta thread.
+  - [ ] Draft an announcement, include all contributors via `tools/get_release_contributors.py`
+- [ ] [Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release)
+- [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
+- [ ] Tag this commit as `r3_y_z`
+  - [ ] Wait for the build to complete
+  - [ ] Contact emlynmac for signing on macOS and upload signed binary [from his](https://github.com/emlynmac/jamulus/releases/) repo [to ours](https://github.com/jamulussoftware/jamulus/releases).
+  - [ ] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
+  - [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
+  - [ ] [Upload the artifacts to SourceForge and set defaults](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
+  - [ ] Update download links on the website by editing `_config.yml` in `next-release`
+  - [ ] Disable branch protection rule of the `release` branch by clicking on "Edit" on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches) and adding a `_` behind `release`.  
+  - [ ] Publish Website release by **squashing** and merging `next-release` into `release`
+  - [ ] Enable branch protection rule of the `release` branch after the site and the `.po` files are published by removing the `_` from the branch protection rule you edited on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches).
+- [ ] Announce the new release with a summary of changes (+ link to the changelog for details) and a link to the download page
+    - [ ] On Github Discussions in the Announcements section. Lock the announcement thread. Pin the thread. Unpin and lock release candidate thread.
+    - [ ] On Facebook in the group "Jamulus (official group)". Turn off replies.
+- [ ] Trigger the update notification by updating both Update Check Servers with the new version (@pljones for update02, email corrados for update01)
+- [ ] [Prepare `Jamulus.pro` (`dev` suffix) and ChangeLog (add a header) for the [next release](https://jamulus.io/contribute/Release-Process#make-the-main-branch-ready-for-post-release-development)
+- [ ] Check that all Issues and PRs tagged for this release are in Done/Closed state.
+- [ ] Close the release milestone in both jamulus and jamuluswebsite repos
+- [ ] Create a milestone for the next minor release in jamulus and jamuluswebsite repos
+- [ ] Update this template in https://jamulus.io/contribute/Release-Process with any improvements if needed.
+- [ ] Unpin and close this issue
+- [ ] Determine if a release retrospective is needed, create on Discussions if required
+</code></pre></div></div><h2 id="release-announcement">Release announcement</h2><p>This is a draft for a release announcement on GitHub discussions:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>We're excited to announce the availability of Jamulus 3.x.y!
+
+Some highlights include:
+- &lt;!-- highlight 1 --&gt;
+- &lt;!-- highlight 2 --&gt;
+- &lt;!-- highlight 3 --&gt;
+
+Notes:
+- &lt;!-- note 1 --&gt;
+- &lt;!-- note 2 --&gt;
+- &lt;!-- note 3 --&gt;
+
+&lt;!-- if needed: Besides that, numerous usability improvements, enhancements, bugfixes and optimizations have been integrated. --&gt;
+Please find all the details in the [Changelog](https://github.com/jamulussoftware/jamulus/releases/&lt;!-- link to changelog--&gt;).
+
+## Downloads
+
+_Windows users: Please note that in the first days after release SmartScreen will probably display warnings about this release being unknown upon download and/or execution of the installer. Let us know when you do not see this warning anymore and we will update this announcement accordingly._
+
+**[↓ Windows](&lt;!-- direct link to Windows version --&gt;)** (ASIO version), alternative: [↓ JACK version](&lt;!-- direct link to JACK version --&gt;)
+**[↓ macOS (Universal)](&lt;!-- direct link to macOS SIGNED Universal version --&gt;)** for Catalina (10.15) and higher and [↓ macOS legacy build](&lt;!-- direct link to macOS legacy version --&gt;) (unsigned) for macOS Mojave (10.14) down to Yosemite (10.10).
+**[↓ Debian/Ubuntu (amd64)](&lt;!-- direct link to .deb [GUI] version --&gt;)**, alternative: [↓ headless version](&lt;!-- direct link to .deb [headless] version --&gt;)
+**[↓ Debian/Ubuntu (armhf)](&lt;!-- direct link to .deb [GUI] armhf version --&gt;)**, alternative: [↓ headless version](&lt;!-- direct link to .deb [headless] armhf version --&gt;)
+**[↓ Debian/Ubuntu (arm64)](&lt;!-- direct link to .deb [GUI] armhf version --&gt;)**, alternative: [↓ headless version](&lt;!-- direct link to .deb [headless] arm64 version --&gt;)
+**[↓ Android](&lt;!-- direct link to Android version --&gt;)** (experimental)
+**[↓ iOS](&lt;!-- direct link to iOS version --&gt;)** (experimental. Unsigned: Needs to be signed before installation on device. Please see the [iOS install page](https://jamulus.io/wiki/Installation-for-iOS))
+
+
+[Alternative Sourceforge mirror](https://sourceforge.net/projects/llcon/files/latest/download)
+[Source code](&lt;!-- direct link to source code --&gt;)
+
+
+Thanks to everyone who did their part to make this release happen:
+- Code contributors: &lt;!-- in alphabetical order; see shell script to get contributors in jamulussoftware/jamulus --&gt;
+- Application translators: &lt;!-- in alphabetical order; see shell script to get contributors in jamulussoftware/jamulus --&gt;
+- Website contributors/translators: &lt;!-- in alphabetical order; see shell script to get contributors in jamulussoftware/jamulus --&gt;
+- ... and lots of people who brought new ideas or suggestions, guided their local colleagues or helped in various other ways!
+
+
+This Discussion thread will be locked in order to keep things organized.
+Feedback, questions or suspected bug reports are appreciated nevertheless -- please start a new [Discussion on Github](https://github.com/jamulussoftware/jamulus/discussions/new) for them.
+
+</code></pre></div></div><h3 id="updating-the-changelog">Updating the Changelog</h3><ul><li>Run <code class="language-plaintext highlighter-rouge">./tools/changelog-helper.sh add-missing-entries</code> to scan Git history and Github milestone for PRs and to auto-add them to the changelog.</li><li>Run <code class="language-plaintext highlighter-rouge">./tools/changelog-helper.sh group-entries</code> to group all entries for the current release</li><li>Verify manually (<code class="language-plaintext highlighter-rouge">git diff</code>) &amp; edit as necessary</li><li>Commit &amp; push</li></ul></main></div></div><footer class="fx-row fx-row-around-xs" id="footer"><div class="fx-col-100-xs fx-col-33-s fx-col-center-xs"><a href="https://github.com/jamulussoftware/jamulus" target="_blank" rel="noreferrer"><img src="/assets/img/github.svg" alt="Jamulus GitHub 存储库" loading="lazy" class="fx-center"></a></div><div class="fx-col-100-xs fx-col-33-s fx-col-center-xs"><a href="https://www.facebook.com/groups/619274602254947/" target="_blank" rel="noreferrer"><img src="/assets/img/facebook.svg" alt="Jamulus Facebook 群组" id="fb_icon" loading="lazy" class="fx-center"></a></div><div class="fx-col-100-xs fx-col-33-s fx-col-center-xs"><a href="https://github.com/jamulussoftware/jamulus/discussions" target="_blank" rel="noreferrer"><img src="/assets/img/forum.svg" alt="帮助和支持" loading="lazy" class="fx-center"></a></div><div id="copyright" class="fx-col-100-xs fx-row-center-xs"><a href="https://github.com/corrados" target="_blank" rel="noreferrer">Volker Fischer</a> 和 <a href="https://github.com/jamulussoftware/jamulus/graphs/contributors" target="_blank" rel="noreferrer"> 贡献者</a> 的软件 - 想要 <a href="/zh-CN/wiki/Contribution"> 参与吗？</a><div id="asio-footer"> ASIO &reg; compatible - ASIO 是 Steinberg Media Technologies GmbH 的商标和软件 </div></div></footer><script>var ja=window.navigator.language||window.navigator.userLanguage,mu=document.documentElement.lang,lus=["en","sv-SE","zh-CN","nb-NO","ko-KR","pt-BR","pt-PT","nl","es","de","it","fr"],regex=RegExp("^"+mu);regex.test(ja)||lus.forEach(function(e){ja.match("^"+e)&&(document.getElementById("langselect").classList.add("chlang","red"),document.getElementById("suglang").style.display="block",document.querySelectorAll("[data-slang="+e+"]")[0].classList.add("proplang"))});</script></body></html>

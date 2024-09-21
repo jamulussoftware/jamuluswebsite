@@ -6,10 +6,10 @@ Dokumenten)
 - `-i` oder `--inifile` Setzt Speicherort der ini-Datei (überschreibt
   Standardeinstellung. Gebe unter macOS nur einen Dateinamen
   an. Konfigurationsdateien können nur aus
-  `/Users/<Benutzername>/Library/Containers/io.jamulus.Jamulus/Data/`
-  gelesen werden. Für den Server ersetze `io.jamulus.Jamulus` durch
-  `io.jamulus.JamulusServer`. Aktiviere ‚Ordner „Library“ anzeigen’ unter
-  „Darstellung“ im Finder um den Ordner anzuzeigen.)
+  `/Users/<Benutzername>/Library/Containers/app.jamulussoftware.Jamulus/Data/`
+  gelesen werden. Für den Server ersetze `app.jamulussoftware.Jamulus` durch
+  `app.jamulussoftware.JamulusServer`. Aktiviere ‚Ordner „Library“ anzeigen’
+  unter „Darstellung“ im Finder um den Ordner anzuzeigen.)
 - `-n` oder `--nogui` GUI deaktivieren (zur Verwendung im Headless-Modus)
 - `-p` oder `--port` Legt die lokale UDP-Portnummer fest. Standard ist 22124
 - `--jsonrpcport` Ermöglicht die Steuerung der App durch den

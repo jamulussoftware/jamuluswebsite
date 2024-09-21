@@ -7,11 +7,11 @@ documents)
   (remplace la valeur par défaut). Sur macOS, fournissez simplement un nom
   de fichier, puisque les fichiers de configuration ne peuvent être lus que
   depuis
-  `/Users/<nomdutilisateur>/Library/Containers/io.jamulus.Jamulus/Data/`.
-  Pour le serveur, remplacez `io.jamulus.Jamulus` par
-  `io.jamulus.JamulusServer`. Activez "Afficher le dossier Bibliothèque"
-  dans "Afficher les options d'affichage" dans le Finder pour voir ce
-  dossier.)
+  `/Users/<nomdutilisateur>/Library/Containers/app.jamulussoftware.Jamulus/Data/`.
+  Pour le serveur, remplacez `app.jamulussoftware.Jamulus` par
+  `app.jamulussoftware.JamulusServer`. Activez "Afficher le dossier
+  Bibliothèque" dans "Afficher les options d'affichage" dans le Finder pour
+  voir ce dossier.)
 - `-n` ou `--nogui` Désactiver l'interface graphique (pour une utilisation
   en mode sans interface graphique)
 - `-p` ou `--port` Définit le numéro du port UDP local. La valeur par défaut

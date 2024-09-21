@@ -5,9 +5,9 @@
 - `-i` o `--inifile` Establece la ubicación del archivo de inicialización
   (sustituye al predeterminado. En macOS simplemente proporciona un nombre
   de archivo, ya que los archivos de configuración sólo se pueden leer desde
-  `/Usuarios/<nombreUsuario>/Biblioteca/Contenedores/io.jamulus.Jamulus/Data/`.
-  Para el servidor sustituye `io.jamulus.Jamulus` por
-  `io.jamulus.JamulusServer`. Activa la opción "Mostrar carpeta de
+  `/Usuarios/<nombreUsuario>/Biblioteca/Contenedores/app.jamulussoftware.Jamulus/Data/`.
+  Para el servidor sustituye `app.jamulussoftware.Jamulus` por
+  `app.jamulussoftware.JamulusServer`. Activa la opción "Mostrar carpeta de
   biblioteca" en "Mostrar opciones de previsualización" en Finder para ver
   esta carpeta.)
 - `-n` o `--nogui` Desactivar interfaz gráfica (para usar en modo headless)

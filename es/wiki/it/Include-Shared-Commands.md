@@ -6,10 +6,10 @@ documenti)
 - `-i` or `--inifile` Set location of initialization file (overrides
   default. On macOS simply provide a filename only, since config files can
   only be read from
-  `/Users/<username>/Library/Containers/io.jamulus.Jamulus/Data/`. For the
-  server replace `io.jamulus.Jamulus` with `io.jamulus.JamulusServer`. Turn
-  on "Show Library folder" in "Show view options" in Finder to see this
-  folder.)
+  `/Users/<username>/Library/Containers/app.jamulussoftware.Jamulus/Data/`.
+  For the server replace `app.jamulussoftware.Jamulus` with
+  `app.jamulussoftware.JamulusServer`. Turn on "Show Library folder" in
+  "Show view options" in Finder to see this folder.)
 - `-n` or `--nogui` Disabilita la GUI (usato per essere lanciato senza
   interfaccia grafica)
 - `-p` or `--port` Imposta la porta UDP del server. Di default è 22124
