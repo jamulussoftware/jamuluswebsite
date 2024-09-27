@@ -1,10 +1,10 @@
 ---
 layout: wiki
-title: "Software Manual"
+title: "User Manual"
 lang: "en"
 permalink: "/wiki/Software-Manual"
 ---
-# Jamulus User Manual
+# User Manual
  {:.no_toc}
 
 This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server.
