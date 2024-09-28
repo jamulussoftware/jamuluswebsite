@@ -105,4 +105,4 @@ Maybe you did not answer "Yes" to the `"Jamulus wants to access your microphone"
 
 ***
 
-For anything else, please search or post on the [Discussion Forums](https://github.com/jamulus/jamulus/discussions)
+For anything else, please search or post on the [Discussion Forums](https://github.com/orgs/jamulussoftware/discussions)
