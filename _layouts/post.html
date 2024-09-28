@@ -29,22 +29,18 @@ pagination:
   {
     "@context":"https://schema.org",
     "@type":"BlogPosting",
-    "headline": "{{ page.heading }}",
-    {% if page.discussionurl %}
-    "discussionUrl": "{{ page.discussionurl }}",
-    {% endif %}
-    {% if page.author %}
+    "headline": "{{ page.heading }}"{% if page.discussionurl %},
+    "discussionUrl": "{{ page.discussionurl }}"{% endif %}{% if page.author %},
     "publisher": {
       "@type": "Person",
-      "name": "{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}{{ page.author }}{% endif %}",
-      {% if site.data.authors[page.author].url %}"url": "{{ site.data.authors[page.author].url }}"{% endif %}
+      "name": "{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}{{ page.author }}{% endif %}"{% if site.data.authors[page.author].url %},
+      "url": "{{ site.data.authors[page.author].url }}"{% endif %}
     },
     "author": {
       "@type": "Person",
-      "name": "{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}{{ page.author }}{% endif %}",
-      {% if site.data.authors[page.author].url %}"url": "{{ site.data.authors[page.author].url }}"{% endif %}
-    },
-    {% endif %}
+      "name": "{% if site.data.authors[page.author].name %}{{ site.data.authors[page.author].name }}{% else %}{{ page.author }}{% endif %}"{% if site.data.authors[page.author].url %},
+      "url": "{{ site.data.authors[page.author].url }}"{% endif %}
+    }{% endif %},
     "datePublished": "{{ page.date | date_to_xmlschema }}"
   }
   </script>
