@@ -84,7 +84,7 @@ If you don’t want others to hear your audio, click on the “Mute Myself” bu
 
 Note that you can use the Chat facility at any time to message other people while you are connected. The welcome message in the chat may also state some guidelines for use.
 
-More information about using Jamulus can be found in the [Software Manual](/wiki/Software-Manual).
+More information about using Jamulus can be found in the [User Manual](/wiki/Software-Manual).
 
 ## Troubleshooting
 

@@ -46,7 +46,7 @@ If you hear two claps after step 2, or any claps after step 4, then you are **no
 
 Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options. **If you are still having problems**, try asking on the [forum](https://github.com/jamulussoftware/jamulus/discussions).
 
-Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [software manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this.
+Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [User Manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this.
 
 ### Can't work out your mic settings?
 
@@ -105,4 +105,4 @@ Maybe you did not answer "Yes" to the `"Jamulus wants to access your microphone"
 
 ***
 
-For anything else, please search or post on the [Discussion Forums](https://github.com/jamulussoftware/jamulus/discussions)
+For anything else, please search or post on the [Discussion Forums](https://github.com/orgs/jamulussoftware/discussions)
