@@ -35,16 +35,11 @@ msgstr "wiki"
 msgid "/wiki/Software-Manual"
 msgstr "/wiki/Software-Manual"
 
-#. type: Yaml Front Matter Hash Value: title
-#: ../wiki/en/Software-Manual.md:1
-#, no-wrap
-msgid "Software Manual"
-msgstr "Manual del Software"
-
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:7
-#, no-wrap
-msgid "Jamulus User Manual"
+#: ../wiki/en/Software-Manual.md:1 ../wiki/en/Software-Manual.md:7
+#, fuzzy, no-wrap
+#| msgid "Jamulus User Manual"
+msgid "User Manual"
 msgstr "Manual de Usuario de Jamulus"
 
 #. type: Plain text
@@ -792,6 +787,10 @@ msgstr "Controlar el Cliente a través de API"
 #: ../wiki/en/Software-Manual.md:321
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr "Además de con la línea de comandos, Jamulus puede controlarse mediante una API. Esto es beneficioso para casos de uso avanzados - por ejemplo, cuando no hay interfaz gráfica, u otra aplicación necesita interactuar con Jamulus. Ten en cuenta que la API es aún experimental. Puedes encontrar información sobre la [API JSON-RPC en el repositorio principal](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
+
+#, no-wrap
+#~ msgid "Software Manual"
+#~ msgstr "Manual del Software"
 
 #~ msgid "You can filter the list by server name or location. To list only occupied servers, enter a \"#\" character."
 #~ msgstr "Puedes filtrar la lista por nombre de servidor o ubicación. Para solo mostrar los servidores ocupados, escribe el caracter \"#\"."

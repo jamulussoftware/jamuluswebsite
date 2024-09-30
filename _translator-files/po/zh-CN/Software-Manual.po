@@ -37,16 +37,11 @@ msgstr "wiki"
 msgid "/wiki/Software-Manual"
 msgstr "/wiki/Software-Manual"
 
-#. type: Yaml Front Matter Hash Value: title
-#: ../wiki/en/Software-Manual.md:1
-#, no-wrap
-msgid "Software Manual"
-msgstr "软件手册"
-
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:7
-#, no-wrap
-msgid "Jamulus User Manual"
+#: ../wiki/en/Software-Manual.md:1 ../wiki/en/Software-Manual.md:7
+#, fuzzy, no-wrap
+#| msgid "Jamulus User Manual"
+msgid "User Manual"
 msgstr "Jamulus 用户手册"
 
 #. type: Plain text
@@ -801,6 +796,10 @@ msgstr "通过 API 控制客户端"
 #: ../wiki/en/Software-Manual.md:321
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr "除了命令行界面（CLI）之外，Jamulus 还可以通过 API 进行控制。这对于高级用例非常有用，例如没有图形用户界面（GUI）的情况，或者其他应用程序需要与 Jamulus 进行交互的情况。请注意，该 API 仍处于实验阶段。有关 [JSON-RPC API 的信息可以在主存储库中找到](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)。"
+
+#, no-wrap
+#~ msgid "Software Manual"
+#~ msgstr "软件手册"
 
 #~ msgid "You can filter the list by server name or location. To list only occupied servers, enter a \"#\" character."
 #~ msgstr "您可以按服务器名称或位置过滤列表。要仅列出占用的服务器，请输入 “#” 字符。"
