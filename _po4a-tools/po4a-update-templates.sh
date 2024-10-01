@@ -67,7 +67,7 @@ while IFS= read -r -d '' doc ; do
             OPTION=("skip_array")
         elif [[ $ext == html || "$filename" == *'-index' ]] ; then # '-index.md' has a markdown extension but is actually html and should be processed as such by po4a
             FILE_FORMAT=xml
-            OPTION=("ontagerror=silent" "attributes=<img>src <img>alt")
+            OPTION=("ontagerror=warn" "attributes=<img>src <img>alt")
         elif [ $ext == md ] ; then
             FILE_FORMAT=text
             OPTION=("markdown")
@@ -104,4 +104,3 @@ for lang in $(ls "$PO_DIR") ; do
     # Delete line in file header that pollutes commits
     sed -i '/^"POT-Creation-Date:/d' $PO_DIR/$lang/*.po
 done
-
