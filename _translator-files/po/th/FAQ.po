@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-10-06 16:15+0000\n"
+"PO-Revision-Date: 2024-10-06 21:15+0000\n"
 "Last-Translator: Thai Pangsakulyanont <dtinth@spacet.me>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: th\n"
@@ -43,25 +43,25 @@ msgstr "คำถามที่พบบ่อย"
 #: ../wiki/en/FAQ.md:8
 #, markdown-text, no-wrap
 msgid "Jamulus FAQ"
-msgstr ""
+msgstr "คำถามที่พบบ่อยเกี่ยวกับ Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:10
 #, markdown-text, no-wrap
 msgid " {:.no_toc}\n"
-msgstr ""
+msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:12
 #, markdown-text, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr ""
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:14
 #, markdown-text, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr ""
+msgstr "<summary>สารบัญ</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:17
@@ -70,165 +70,167 @@ msgid ""
 "* TOC\n"
 " {:toc}\n"
 msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:19
 #, markdown-text, no-wrap
 msgid "</details>\n"
-msgstr ""
+msgstr "</details>\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:21
 #, markdown-text, no-wrap
 msgid "**For common problems and their solutions when using Jamulus, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.**\n"
-msgstr ""
+msgstr "**สำหรับปัญหาทั่วไปและวิธีแก้ไขปัญหาเมื่อใช้ Jamulus โปรดดูที่คู่มือ[การแก้ไขปัญหา](/wiki/Client-Troubleshooting)**\n"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:23
 #, markdown-text, no-wrap
 msgid "Is there a metronome, synchronization, or some other way of keeping in time?"
-msgstr ""
+msgstr "มี metronome การซิงโครไนซ์ หรือวิธีอื่นๆ ในการช่วยรักษาจังหวะหรือไม่?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
 #, markdown-text
 msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
-msgstr ""
+msgstr "ไม่มี นักดนตรีบนเซิร์ฟเวอร์ Jamulus เล่นด้วยกันแบบเรียลไทม์เหมือนกับที่พวกเขาเล่นด้วยกันจริงๆ หากคุณต้องการสัญญาณบอกจังหวะ คุณสามารถหาเครื่องมือ metronome ออนไลน์ที่คุณสามารถลองใช้ร่วมกันได้ แต่ทางที่ดี ควรหาวิธีลด latency ให้น้อยที่สุด เพื่อไม่ให้ใครมี delay มากกว่า 30-50 มิลลิวินาที"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:28
-#, markdown-text
+#, fuzzy, markdown-text
 msgid "Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly."
-msgstr ""
+msgstr "โปรดทราบว่าผู้เข้าร่วมทุกคนควรปฏิบัติตาม [Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) ซึ่งจะเป็นตัวกำหนดว่าคุณสามารถเล่นให้ตรงจังหวะได้อย่างถูกต้องหรือไม่"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:29
 #, markdown-text, no-wrap
 msgid "How do I know if I can join a Server? Are there rules?"
-msgstr ""
+msgstr "ฉันจะทราบได้อย่างไรว่าฉันสามารถเข้าร่วมเซิร์ฟเวอร์ได้หรือไม่? มีกฎไหม?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:32
 #, markdown-text
 msgid "If somebody lists a Server on one of the Directories built into Jamulus, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. Whilst some Servers may state their policies in the welcome message you will see in the chat window, Jamulus itself does nothing to enforce these."
-msgstr ""
+msgstr "หากเซิร์ฟเวอร์อยู่บนหน้ารายชื่อเซิร์ฟเวอร์ของ Jamulus แสดงว่าเซิร์ฟเวอร์นั้นยอมรับให้ทุกคนสามารถเข้าเล่นได้ Jamulus ไม่มีระบบการป้องกันด้วยรหัสผ่านหรือกลไกการตรวจสอบสิทธิ์อื่นๆ แม้ว่าเซิร์ฟเวอร์บางแห่งอาจระบุเงื่อนไขการใช้งานไว้ในข้อความต้อนรับที่คุณจะเห็นในหน้าต่างแชท แต่ตัวโปรแกรม Jamulus เองไม่ได้มีส่วนเกี่ยวข้องใดๆ"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
 #, markdown-text
 msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-modes)."
-msgstr ""
+msgstr "โปรดทราบว่าเซิร์ฟเวอร์ไม่จำเป็นต้องลงทะเบียนใน Directory เพื่อให้ไคลเอนต์ Jamulus เชื่อมต่อได้ ผู้ดูแลเซิร์ฟเวอร์สามารถให้ address ของเซิร์ฟเวอร์แก่ผู้ที่ต้องการเล่นด้วยกันได้ จากนั้นพวกเขาก็สามารถเชื่อมต่อโดยตรงได้ ดู[หน้านี้สำหรับข้อมูลเพิ่มเติม](/wiki/Running-a-Server#server-modes)"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:35
 #, markdown-text, no-wrap
 msgid "Why shouldn’t I use wireless equipment?"
-msgstr ""
+msgstr "ทำไมฉันไม่ควรใช้อุปกรณ์ไร้สาย?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:38
 #, markdown-text
 msgid "Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal and whether you are all following [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). An overall delay much bigger than 50 ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70 ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music or you just want to listen."
-msgstr ""
+msgstr "การที่คุณจะสามารถเล่นดนตรีพร้อมกับนักดนตรีคนอื่นๆ ได้อย่างถูกจังหวะหรือไม่นั้น ขึ้นอยู่กับปัจจัยหลัก 2 อย่าง คือ latency (ดีเลย์) ในสัญญาณเสียงของคุณ และการปฏิบัติตาม [Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) โดยทั่วไปแล้ว delay ที่มากกว่า 50 ms มักจะทำให้เล่นให้ตรงจังหวะได้ยาก เว้นแต่ว่าคุณจะฝึกฝนตัวเองเป็นพิเศษ นักดนตรีบางคนรายงานว่าพวกเขาสามารถเล่นให้ตรงจังหวะได้แม้จะมี delay ถึง 70 ms โดยการเล่นนำจังหวะไปก่อน แต่มันจะเป็นเรื่องยากมากขึ้น หาก delay มากกว่านั้น เว้นแต่ว่าจังหวะจะไม่ใช่ปัจจัยสำคัญในเพลงนั้น หรือคุณแค่อยากฟังเฉยๆ"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:40
 #, markdown-text
 msgid "So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50 ms or more."
-msgstr ""
+msgstr "ดังนั้น การลดต้นเหตุของดีเลย์หรือปัญหาอื่นๆ ที่อาจเกิดขึ้นกับสัญญาณเสียงจึงเป็นเรื่องที่ควรทำ แม้แต่ Wi-Fi ที่รวดเร็วก็มักจะไม่เสถียรพอที่จะใช้งานกับ Jamulus เป็นเวลานาน และหูฟัง Bluetooth กับไมโครโฟน Bluetooth มักจะมีดีเลย์ประมาณ 50 ms หรือมากกว่านั้น"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:41
 #, markdown-text, no-wrap
 msgid "Why should I not listen to my own signal?"
-msgstr ""
+msgstr "ทำไมฉันไม่ควรฟังสัญญาณเสียงของตัวเอง"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:44
 #, markdown-text
 msgid "For the same reason as you need to minimise delay in your signal in order to play in time, you need to make sure you are playing to your own sound that other musicians are hearing. More information on this, and a way of testing your setup to make sure you are obeying this “Golden Rule” [can be found here](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
-msgstr ""
+msgstr "ด้วยเหตุผลเดียวกับที่คุณต้องลดดีเลย์ในสัญญาณเสียงของคุณเพื่อให้เล่นได้ตรงจังหวะ คุณต้องแน่ใจว่าคุณกำลังเล่นกับเสียงของตัวเองที่นักดนตรีคนอื่นๆ ได้ยิน ดูข้อมูลเพิ่มเติมเกี่ยวกับเรื่องนี้ และวิธีทดสอบการตั้งค่าของคุณเพื่อให้แน่ใจว่าคุณได้ปฏิบัติตาม “Golden Rule” นี้ [ได้ที่นี่](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:46
 #, markdown-text
 msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server."
-msgstr ""
+msgstr "แน่นอน หากคุณกำลังเล่นเครื่องดนตรีอะคูสติก หรือคุณเป็นนักร้อง การทำให้ไม่ได้ยินเสียงของคุณเองอาจทำได้ยาก แต่คุณควรพยายามลองทำดู เช่น การใช้หูฟังแบบครอบหู (closed-back) ที่ปรับระดับเสียงดังพอที่จะกลบเสียงของคุณเอง ซึ่งจะช่วยให้คุณสามารถจดจ่อกับเสียงมิกซ์ที่ส่งกลับมาหาคุณจากเซิร์ฟเวอร์ได้"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:47
 #, markdown-text, no-wrap
 msgid "Do I need a fast Internet connection?"
-msgstr ""
+msgstr "ฉันจำเป็นต้องใช้อินเทอร์เน็ตความเร็วสูงหรือไม่?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
 #, markdown-text
 msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. Most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
-msgstr ""
+msgstr "ไม่จำเป็น โดยเฉพาะอย่างยิ่งถ้าคุณไม่ได้เปิดเซิร์ฟเวอร์เพื่อให้คนอื่นเข้ามาเล่น สิ่งที่สำคัญกว่า คือการมีค่า ping ที่ต่ำพอ คนส่วนใหญ่ที่ใช้อินเทอร์เน็ตบ้านความเร็วมาตรฐาน (เช่น ดาวน์โหลด 10 Mbps และอัปโหลด 1 Mbps) จะไม่มีปัญหา ส่วนผู้ที่เปิดเซิร์ฟเวอร์ Jamulus โดยใช้อินเทอร์เน็ตบ้าน คุณอาจประสบปัญหาได้ หากแบนด์วิดท์ _อัปโหลด_ ของคุณต่ำกว่าประมาณ 5 Mbps ทั้งนี้ขึ้นอยู่กับจำนวนคนที่เข้าร่วม"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:51
 #, markdown-text, no-wrap
 msgid "Do I need to run a Server?"
-msgstr ""
+msgstr "ฉันจำเป็นต้องเปิดเซิร์ฟเวอร์หรือไม่?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:54
 #, markdown-text
 msgid "No. If you just intend to connect to other people’s Servers, then all you need is a Client. [Read this if you think you need to run your own Server](/wiki/Running-a-Server)."
-msgstr ""
+msgstr "ไม่จำเป็น หากคุณแค่ต้องการเชื่อมต่อกับเซิร์ฟเวอร์ของคนอื่น สิ่งที่คุณต้องมีก็คือโปรแกรมไคลเอนต์ Jamulus [อ่านตรงนี้หากคุณคิดว่าคุณจำเป็นต้องเปิดเซิร์ฟเวอร์เป็นของตัวเอง](/wiki/Running-a-Server)"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:55
 #, markdown-text, no-wrap
 msgid "How does Jamulus work (in general)?"
-msgstr ""
+msgstr "Jamulus ทำงานอย่างไร (โดยทั่วไป)?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:58
 #, markdown-text, no-wrap
 msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">\n"
-msgstr ""
+msgstr "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61
 #, markdown-text
 msgid "Jamulus works on the Client-server principle. Everybody’s audio is sent to a Server, mixed and processed there. Afterwards, the audio is sent back to each Client. If a Server is registered in a Jamulus Directory, the Server's information will be provided to all Clients using that Directory."
-msgstr ""
+msgstr "Jamulus ทำงานบนหลักการของไคลเอนต์-เซิร์ฟเวอร์ เสียงของทุกคนจะถูกส่งไปยังเซิร์ฟเวอร์ เพื่อมิกซ์เสียงและประมวลผลที่นั่น หลังจากนั้น เสียงจะถูกส่งกลับไปยังไคลเอนต์แต่ละคน หากเซิร์ฟเวอร์ลงทะเบียนไว้ใน Directory ของ Jamulus ข้อมูลของเซิร์ฟเวอร์จะถูกส่งไปยังไคลเอนต์ทั้งหมดที่ใช้ Directory นั้น"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:62
 #, markdown-text, no-wrap
 msgid "Why doesn't Jamulus provide video support?"
-msgstr ""
+msgstr "ทำไม Jamulus ไม่รองรับวิดีโอ?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:65
 #, markdown-text
 msgid "Adding video support adds a lot of complexity. You can use other software like Jitsi or Zoom if you want to see others when playing (or have an \"audience\"), but the video will be significantly behind the Jamulus audio."
-msgstr ""
+msgstr "การเพิ่มการรองรับวิดีโอทำให้ระบบมีความซับซ้อนมากขึ้น คุณสามารถใช้ซอฟต์แวร์อื่นๆ เช่น Jitsi หรือ Zoom ได้ หากคุณต้องการเห็นหน้าคนอื่นๆ ขณะเล่น (หรือมี \"ผู้ชม\") แต่ภาพวิดีโอจะช้ากว่าเสียงจาก Jamulus อย่างมาก"
 
 #. type: Title ##
 #: ../wiki/en/FAQ.md:67
 #, markdown-text, no-wrap
 msgid "Server FAQ"
-msgstr ""
+msgstr "คำถามที่พบบ่อยเกี่ยวกับเซิร์ฟเวอร์"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:69
 #, markdown-text, no-wrap
 msgid "Why do Registered Servers not need port forwarding?"
-msgstr ""
+msgstr "ทำไมเซิร์ฟเวอร์ที่ลงทะเบียนแล้วไม่จำเป็นต้องทำ port forwarding?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
 #, markdown-text
 msgid "Normally, network address translation (NAT) blocks incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, your Jamulus Server initiates an outbound connection when it connects to a Directory. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant port(s) open on your router."
-msgstr ""
+msgstr "โดยปกติแล้ว network address translation (NAT) จะบล็อกสัญญาณขาเข้าที่มาจากภายนอกเครือข่ายท้องถิ่น สัญญาณจากข้างนอกจะเข้าถึงคอมพิวเตอร์ของเราได้เฉพาะเมื่อแพ็กเก็ตนั้นเกี่ยวข้องกับสัญญาณที่เราเคยส่งออกไปก่อนหน้านี้เท่านั้น (ในเชิงเทคนิค คือแพ็กเก็ตที่มีสถานะ “related” และ “established”) ในกรณีที่เซิร์ฟเวอร์ของคุณได้ลงทะเบียนใน Directory ไว้ ตัวเซิร์ฟเวอร์ Jamulus ของคุณจะเริ่มต้นการเชื่อมต่อขาออกเมื่อเชื่อมต่อกับ Directory จากนั้นเป็นต้นไป ตัว Directory จะส่งสัญญาณ “ping” (ที่มีสถานะ established/related) (ไม่ใช่ ICMP ping) กลับมายังเซิร์ฟเวอร์ของคุณเป็นระยะๆ เพื่อให้พอร์ตที่เกี่ยวข้องยังคงเปิดอยู่บนเราเตอร์ของคุณ"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:73
 #, markdown-text
 msgid "However, to reach an Unregistered Server, each Client has to initiate a connection into the Server’s network. A NAT prevents this, so you need to configure your router to allow incoming connection requests on the Jamulus port using port forwarding."
-msgstr ""
+msgstr "อย่างไรก็ตาม ในกรณีของเซิร์ฟเวอร์ที่ไม่ได้ลงทะเบียนใน Directory ไคลเอนต์แต่ละรายจะต้องเริ่มต้นการเชื่อมต่อกับเครือข่ายของเซิร์ฟเวอร์ของคุณ แต่ระบบ NAT ที่อยู่ภายในเราเตอร์อาจจะป้องกันสิ่งนี้ ดังนั้นคุณจึงต้องกำหนดค่าในเราเตอร์ของคุณเพื่ออนุญาตคำขอการเชื่อมต่อขาเข้าบนพอร์ต Jamulus โดยการตั้งค่า port forwarding"
