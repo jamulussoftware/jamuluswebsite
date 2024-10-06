@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-10-06 16:15+0000\n"
+"PO-Revision-Date: 2024-10-06 21:15+0000\n"
 "Last-Translator: Thai Pangsakulyanont <dtinth@spacet.me>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: th\n"
@@ -38,37 +38,37 @@ msgstr "/wiki/Installation-for-Windows"
 #: ../wiki/en/Installation-for-Windows.md:10
 #, markdown-text, no-wrap
 msgid "Installation for Windows"
-msgstr ""
+msgstr "การติดตั้งบน Windows"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:9
-#, markdown-text
+#, fuzzy, markdown-text
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:13
 #, markdown-text
 msgid "Make sure you read the [Getting Started](Getting-Started) page."
-msgstr ""
+msgstr "โปรดแน่ใจว่าคุณได้อ่านหน้า [เริ่มต้นใช้งาน](Getting-Started) แล้ว"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:15
 #, markdown-text
 msgid "{% include infobox_each_os.html %}"
-msgstr ""
+msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:17
 #, markdown-text
 msgid "Upgrading? You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first."
-msgstr ""
+msgstr "อัปเกรดเวอร์ชัน? คุณอาจต้องการ[สำรองข้อมูลการตั้งค่าของคุณ](Software-Manual#backing-up-jamulus) ก่อน"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:24
 #, markdown-text
 msgid "**Download and install an ASIO Driver**. Try to use the driver that your hardware manufacturer provides. If you can't find that, or you don't have an external sound card, you probably need to install ASIO4ALL. For more information scroll down to the [ASIO](#asio) section."
-msgstr ""
+msgstr "**ดาวน์โหลดและติดตั้ง ASIO Driver** หากผู้ผลิตฮาร์ดแวร์ของคุณได้จัดเตรียมไดรเวอร์ ASIO ไว้ให้ ขอแนะนำให้ลองใช้ไดรเวอร์นั้นดู แต่หากคุณหาไม่พบ หรือคุณไม่ได้ใช้ออดิโออินเตอร์เฟสแยก คุณอาจต้องติดตั้ง ASIO4ALL สำหรับข้อมูลเพิ่มเติม เลื่อนลงไปอ่านที่หัวข้อ [ASIO](#asio)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:24
@@ -80,144 +80,149 @@ msgid ""
 "1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.\n"
 "1. **Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.\n"
 msgstr ""
+"1. [ดาวน์โหลด Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows }}){: .button}\\\\\n"
+" **Mirror 2:** [SourceForge](https://sourceforge.net/projects/llcon/files/latest/download)\n"
+"1. **ติดตั้ง Jamulus**: ดับเบิลคลิกที่ไฟล์ติดตั้งเพื่อเปิดใช้งาน หากคุณได้รับข้อความเตือนจาก SmartScreen ให้คลิกที่ \"More info\" และ \"Run anyway\" เพื่อติดตั้ง Jamulus (หากคุณดาวน์โหลด Jamulus เวอร์ชันใหม่ล่าสุด และเป็นหนึ่งในคนกลุ่มแรกๆ ที่ดาวน์โหลด ตัวโปรแกรม Jamulus อาจจะยังไม่ได้รับการรับรองจาก SmartScreen เนื่องจากเราไม่ได้จ่ายเงินสำหรับ code signing)\n"
+"1. **เปิด Jamulus**: ตอนนี้คุณควรจะสามารถใช้ Jamulus ได้เหมือนกับแอปพลิเคชันอื่นๆ\n"
+"1. **ตั้งค่าการ์ดเสียงของคุณ**: เมื่อติดตั้งเสร็จแล้ว คุณต้องตั้งค่าอุปกรณ์เสียงของคุณ และหากคุณกำลังใช้ ASIO4ALL โปรดดูวิธีการตั้งค่าด้านล่าง\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:26
 #, markdown-text
 msgid "_Please note that you are not permitted to redistribute this binary without acquiring a [licence agreement from Steinberg](https://www.steinberg.net/developers/)._"
-msgstr ""
+msgstr "_โปรดทราบว่าคุณไม่ได้รับอนุญาตให้แจกจ่ายไฟล์โปรแกรมนี้หากยังไม่ได้รับ[ข้อตกลงสิทธิ์การใช้งานจาก Steinberg](https://www.steinberg.net/developers/)._"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:28
 #, markdown-text, no-wrap
 msgid "**Note:** If you don't want to use ASIO or prefer [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), you can also use the [JACK version of Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }}). You can find old (legacy) versions supporting outdated operating systems on the [GitHub release page](https://github.com/jamulussoftware/jamulus/releases).\n"
-msgstr ""
+msgstr "** หมายเหตุ:** หากคุณไม่ต้องการใช้ ASIO หรือต้องการใช้ [JACK บน Windows](https://jackaudio.org/faq/jack_on_windows.html) คุณสามารถใช้ [Jamulus เวอร์ชัน JACK]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }}) แทนได้ และคุณสามารถค้นหาเวอร์ชันเก่า (legacy) ที่รองรับระบบปฏิบัติการรุ่นเก่าๆ ได้ใน [หน้า release บน GitHub](https://github.com/jamulussoftware/jamulus/releases).\n"
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:31
 #, markdown-text, no-wrap
 msgid "ASIO"
-msgstr ""
+msgstr "ASIO"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:34
 #, markdown-text
 msgid "Jamulus can use [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output)."
-msgstr ""
+msgstr "Jamulus สามารถใช้ [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output) ได้"
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-Windows.md:37
 #, markdown-text
 msgid "If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality)."
-msgstr ""
+msgstr "หากคุณมีการ์ดเสียงหรือออดิโออินเตอร์เฟสแยก เราขอแนะนำให้ใช้งานไดรเวอร์ ASIO ของผู้ผลิตอุปกรณ์นั้นๆ หากเป็นไปได้ (เพราะไดรเวอร์เหล่านี้มักจะให้คุณภาพเสียงที่ดีที่สุด)"
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-Windows.md:37
 #, markdown-text
 msgid "If you don't have an external sound card, you will probably not have an ASIO driver so will need to install a generic one like ASIO4ALL:"
-msgstr ""
+msgstr "หากคุณไม่ได้ใช้การ์ดเสียงแยก คุณก็น่าจะไม่มีไดรเวอร์ ASIO ด้วย ดังนั้นคุณจะต้องติดตั้งไดรเวอร์ ASIO สำหรับอุปกรณ์ทั่วไป เช่น ASIO4ALL:"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:39
 #, markdown-text
 msgid "You can try two versions of ASIO4ALL. ASIO4ALL v2.14 includes a workaround for a bug which might break other functionality."
-msgstr ""
+msgstr "คุณสามารถลองใช้ ASIO4ALL ได้สองเวอร์ชัน ASIO4ALL v2.14 ได้แก้ไขบั๊กที่อาจทำให้ฟังก์ชันอื่นๆ ทำงานผิดพลาดไป"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:41
 #, markdown-text
 msgid "[ASIO4ALL v2.15 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
-msgstr ""
+msgstr "[ดาวน์โหลด ASIO4ALL v2.15](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.15/ASIO4ALL_2_15_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:43
 #, markdown-text
 msgid "[ASIO4ALL v2.14 Download](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
-msgstr ""
+msgstr "[ดาวน์โหลด ASIO4ALL v2.14](https://github.com/jamulussoftware/assets/raw/main/ASIO4ALL/v2.14/ASIO4ALL_2_14_English.exe){: .button target=\"_blank\" rel=\"noopener noreferrer\"}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:45
 #, markdown-text
 msgid "[ASIO4ALL website](https://www.asio4all.org/){: target=\"_blank\" rel=\"noopener noreferrer\"}"
-msgstr ""
+msgstr "[เว็บไซต์ ASIO4ALL](https://www.asio4all.org/){: target=\"_blank\" rel=\"noopener noreferrer\"}"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:47
 #, markdown-text, no-wrap
 msgid "Setting up ASIO4ALL"
-msgstr ""
+msgstr "การตั้งค่า ASIO4ALL"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:50
 #, markdown-text
 msgid "You may or may not need to experiment a bit depending on your sound hardware. If everything works out of the box, you don't need to do anything."
-msgstr ""
+msgstr "คุณอาจจะต้องลองผิดลองถูกเล็กน้อย ขึ้นอยู่กับอุปกรณ์เสียงของคุณ หากทุกอย่างทำงานได้ตามปกติตั้งแต่แรก คุณก็ไม่จำเป็นต้องทำอะไรเพิ่มเติม"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:52
 #, markdown-text, no-wrap
 msgid "**Tip:** Set up your sound card while you're [connected to a Server](Getting-Started#connecting-to-a-server-and-testing-your-sound) to hear your instrument or voice and check if everything is correctly set up; but first read on.\n"
-msgstr ""
+msgstr "**เคล็ดลับ:** ตั้งค่าการ์ดเสียงของคุณในขณะที่คุณ[เชื่อมต่อกับเซิร์ฟเวอร์](Getting-Started#connecting-to-a-server-and-testing-your-sound) เพื่อฟังเสียงเครื่องดนตรีหรือเสียงของคุณ และตรวจสอบว่าทุกอย่างถูกตั้งค่าอย่างถูกต้องหรือไม่ แต่อ่านเนื้อหาต่อไปนี้ให้จบก่อน\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:55
 #, markdown-text
 msgid "Before you start with Jamulus:"
-msgstr ""
+msgstr "ก่อนที่คุณจะเริ่มต้นใช้งาน Jamulus:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:58
 #, markdown-text
 msgid "**Close all applications** (especially those which could access your sound card like your browser/media player). ASIO4ALL needs exclusive access to your sound card which means that other programs will not be able to use audio if ASIO4ALL and Jamulus are running."
-msgstr ""
+msgstr "**ปิดแอปพลิเคชันทั้งหมด** (โดยเฉพาะแอปพลิเคชันที่สามารถเข้าถึงการ์ดเสียงของคุณได้ เช่น เบราว์เซอร์/โปรแกรมเล่นเพลง) ASIO4ALL จำเป็นต้องเข้าถึงการ์ดเสียงของคุณแบบเอกสิทธิ์เฉพาะ (exclusive) ซึ่งหมายความว่าโปรแกรมอื่นๆ จะไม่สามารถใช้เสียงได้ หาก ASIO4ALL และ Jamulus กำลังทำงานอยู่"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:58
 #, markdown-text
 msgid "If the Jamulus audio doesn’t work out of the box, make sure that only the **correct inputs/outputs** in ASIO4ALL **are switched on**. Everything else should be switched off. Search the [community list of working ASIO4ALL configurations](/kb/2021/03/20/ASIO4ALL-Examples.html) for your configuration or do it manually if you can't find yours:"
-msgstr ""
+msgstr "หากเสียงของ Jamulus ไม่ทำงาน ตรวจสอบให้แน่ใจใน ASIO4ALL ว่ามีเพียง**อินพุต/เอาต์พุตที่ถูกต้อง**เท่านั้นที่**เปิดใช้งานอยู่** ส่วนอื่นๆ ควรปิดทั้งหมด ค้นหา[รายการการการตั้งค่า ASIO4ALL ที่ใช้งานได้ของชุมชน](/kb/2021/03/20/ASIO4ALL-Examples.html) สำหรับการตั้งค่าของคุณ หรือลองตั้งค่าด้วยตัวเองหากคุณหาของคุณไม่พบ:"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:59
 #, markdown-text, no-wrap
 msgid "How to set up ASIO4ALL inputs (Guide)"
-msgstr ""
+msgstr "คู่มือวิธีการตั้งค่าอินพุตใน ASIO4ALL"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
 #, markdown-text
 msgid "Open Jamulus's settings"
-msgstr ""
+msgstr "เปิดหน้า Settings ของ Jamulus"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
 #, markdown-text
 msgid "Go to _\"ASIO Device Settings\"_ (column on the left; directly under the selection of the driver)"
-msgstr ""
+msgstr "ไปที่ _\"ASIO Device Settings\"_ (คอลัมน์ทางด้านซ้าย ใต้ตัวเลือกไดรเวอร์)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
 #, markdown-text
 msgid "Enable _advanced view_ in ASIO4ALL (click the tool icon on the bottom right)"
-msgstr ""
+msgstr "เปิด _advanced view_ ใน ASIO4ALL (คลิกที่ไอคอนรูปเครื่องมือที่ด้านล่างขวา)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
 #, markdown-text
 msgid "Enable only the sound card you want to use by clicking on the button next to its name"
-msgstr ""
+msgstr "เปิดใช้งานเฉพาะการ์ดเสียงที่คุณต้องการใช้โดยคลิกที่ปุ่มถัดจากชื่อ"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
 #, markdown-text
 msgid "Open your sound card inputs/outputs by clicking the _plus icon_ next to this sound card"
-msgstr ""
+msgstr "เปิดดูอินพุต/เอาต์พุตของการ์ดเสียงของคุณโดยคลิกที่ _ไอคอนเครื่องหมายบวก_ ถัดจากการ์ดเสียงนี้"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Windows.md:67
 #, markdown-text
 msgid "Now enable the correct inputs/outputs in the list under your sound card and disable everything else. You can hover over the inputs/outputs to see which of both they are and if they support the required sample rate for Jamulus of 48kHz (DVD quality)."
-msgstr ""
+msgstr "ต่อไป เปิดใช้งานอินพุต/เอาต์พุตที่ถูกต้องในรายการใต้การ์ดเสียงของคุณ และปิดส่วนอื่นๆ ทั้งหมด คุณสามารถเลื่อนเมาส์ไปวางเหนืออินพุต/เอาต์พุต เพื่อดูว่าเป็นอินพุตหรือเอาต์พุต และเช็คว่ามันรองรับ sample rate แบบ 48kHz (คุณภาพ DVD) ที่ Jamulus ต้องการหรือไม่"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:72
@@ -228,6 +233,10 @@ msgid ""
 "1. Headphones and speakers are often labelled as \"output\" and microphones as \"input\" or \"capture\".\n"
 "1. Stereo Mix/Stereo Input is usually not the input/output you're looking for. Therefore, switch it off if you see it.\n"
 msgstr ""
+"**คำแนะนำ:**\n"
+"1. ชื่อของอุปกรณ์เสียงที่ถูกต้องอาจจะไม่ชัดเจนเสมอไป การ์ดเสียงที่มากับเครื่องหลายตัวมักจะมีชื่อว่า \"Realtek High Definition Audio\", \"Conexant\" หรือชื่ออื่นๆ ที่คล้ายกัน\n"
+"1. หูฟังและลำโพงมักจะมีชื่อว่า \"output\" และไมโครโฟนจะมีชื่อว่า \"input\" หรือ \"capture\"\n"
+"1. Stereo Mix/Stereo Input มักจะไม่ใช่อินพุต/เอาต์พุตที่คุณต้องการ ดังนั้น ให้ปิดมันหากคุณเห็น\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Windows.md:73
@@ -239,40 +248,40 @@ msgstr "การแก้ไขปัญหา"
 #: ../wiki/en/Installation-for-Windows.md:76
 #, markdown-text
 msgid "If nothing works, first restart Jamulus and/or your PC to close background processes that may be accessing your sound card."
-msgstr ""
+msgstr "หากไม่มีอะไรได้ผล ให้ลองรีสตาร์ทโปรแกรม Jamulus และ/หรือ รีสตาร์ทเครื่องของคุณ เพื่อปิดโปรแกรมเบื้องหลังที่อาจกำลังเข้าถึงการ์ดเสียงของคุณ"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:78
 #, markdown-text
 msgid "Afterwards, *set up the inputs/outputs again*. Enabled and accessible input/outputs show as lit up power buttons and play buttons in the ASIO4ALL settings. If instead you see a red cross or yellow symbol, close other applications that may be accessing your sound card (e.g. web browser, Zoom, etc)."
-msgstr ""
+msgstr "หลังจากนั้น *ให้ตั้งค่าอินพุต/เอาต์พุตอีกครั้ง* โดย ASIO4ALL จะแสดงอินพุต/เอาต์พุตที่เปิดใช้งานได้ เป็นไอคอนปุ่มเปิดปิดและปุ่มเล่นที่มีไฟติด หากคุณเห็นเครื่องหมายกากบาทสีแดงหรือสัญลักษณ์สีเหลืองแทน ให้ปิดแอปพลิเคชันอื่นๆ ที่อาจกำลังเข้าถึงการ์ดเสียงของคุณ (เช่น เว็บเบราว์เซอร์, Zoom และอื่นๆ)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:80
 #, markdown-text
 msgid "Have a look at [this video](https://youtu.be/_GzOsitVgLI) by [trombonepizza](https://github.com/trombonepizza) which gives more detailed setup information on ASIO4ALL."
-msgstr ""
+msgstr "ลองดู[วิดีโอนี้](https://youtu.be/_GzOsitVgLI) โดย [trombonepizza](https://github.com/trombonepizza) ซึ่งจะให้ข้อมูลโดยละเอียดเพิ่มเติมเกี่ยวกับการตั้งค่า ASIO4ALL"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:82
 #, markdown-text
 msgid "Official and further information about how to configure ASIO4ALL is documented in the official [ASIO4ALL FAQs on the ASIO4ALL website](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}."
-msgstr ""
+msgstr "ข้อมูลเพิ่มเติมอย่างเป็นทางการเกี่ยวกับวิธีการกำหนดค่า ASIO4ALL สามารถดูได้ที่ [ASIO4ALL FAQs บนเว็บไซต์ของ ASIO4ALL](https://www.asio4all.org/index.php/help/faq/){: target=\"_blank\" rel=\"noopener noreferrer\"}."
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Windows.md:83
 #, markdown-text, no-wrap
 msgid "All installed?"
-msgstr ""
+msgstr "ติดตั้งเสร็จแล้วใช่ไหม?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:86
 #, markdown-text
 msgid "Take a look at"
-msgstr ""
+msgstr "ลองดูหน้า"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Windows.md:87
 #, markdown-text
 msgid "[Getting Started page](Getting-Started){: .button}"
-msgstr ""
+msgstr "[เริ่มต้นใช้งาน](Getting-Started){: .button}"
