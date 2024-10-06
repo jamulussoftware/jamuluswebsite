@@ -1,0 +1,1 @@
+wiki/th/1-index.md
