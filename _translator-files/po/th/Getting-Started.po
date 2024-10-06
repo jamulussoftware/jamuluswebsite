@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-10-06 16:15+0000\n"
+"PO-Revision-Date: 2024-10-06 21:15+0000\n"
 "Last-Translator: Thai Pangsakulyanont <dtinth@spacet.me>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: th\n"
@@ -241,7 +241,7 @@ msgstr "การเริ่มต้นเล่นเป็นครั้ง
 #: ../wiki/en/Getting-Started.md:77
 #, markdown-text
 msgid "With your sound all set up, you are ready to go. When you connect to a Server (you may want to select a genre from the list), the faders you see on the right are your own personal mix. Everything you change here will change what you hear, but won’t affect others. If you move a fader down, that channel will be quieter, if you move it up, the channel will be louder for you."
-msgstr ""
+msgstr "เมื่อตั้งค่าเสียงเรียบร้อยแล้ว คุณก็พร้อมที่จะเริ่มเล่น เมื่อคุณเชื่อมต่อกับเซิร์ฟเวอร์ (คุณอาจต้องการเลือก genre จากรายการ) เฟดเดอร์ต่างๆ ที่คุณเห็นทางด้านขวา คือมิกเซอร์ส่วนตัวของคุณ คุณสามารถปรับเปลี่ยนความดังเบาของแชนแนลต่างๆ ที่คุณได้ยิน แต่มันจะไม่มีผลต่อคนอื่น หากคุณเลื่อนเฟดเดอร์ลง เสียงของแชนแนลนั้นจะเบาลง หากคุณเลื่อนขึ้น เสียงของแชนแนลนั้นจะดังขึ้นสำหรับคุณ"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:82
@@ -252,24 +252,28 @@ msgid ""
 "  <figcaption>The main window when you are connected to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"  <img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" loading=\"lazy\" alt=\"Screenshot\" style=\"border: 5px solid grey;\">\n"
+"  <figcaption>หน้าต่างหลักหลังจากที่คุณเชื่อมต่อกับเซิร์ฟเวอร์แล้ว</figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:84
 #, markdown-text
 msgid "If you don’t want others to hear your audio, click on the “Mute Myself” button which will stop your audio from being sent to other people. They won’t be able to tell you have done this though. But if you see a “mute” icon above a fader, that means they can’t hear you because they've muted your channel in their mix."
-msgstr ""
+msgstr "หากคุณไม่ต้องการให้ผู้อื่นได้ยินเสียงของคุณ ให้คลิกที่ปุ่ม “Mute Myself” เพื่อหยุดส่งเสียงของคุณไปยังผู้อื่น คนอื่นๆ จะไม่รู้ว่าคุณปิดเสียงตัวเอง แต่ถ้าคุณเห็นไอคอน “mute” แสดงเหนือเฟดเดอร์ของคนอื่น นั่นหมายความว่าคนคนนั้นจะไม่ได้ยินเสียงคุณ เนื่องจากเข้าของเฟดเดอร์นั้นได้ปิดเสียงแชนแนลของคุณในมิกเซอร์ของเขา"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:86
 #, markdown-text
 msgid "Note that you can use the Chat facility at any time to message other people while you are connected. The welcome message in the chat may also state some guidelines for use."
-msgstr ""
+msgstr "โปรดทราบว่าคุณสามารถใช้ฟังก์ชัน Chat เพื่อส่งข้อความถึงผู้อื่นได้ตลอดเวลาในขณะที่คุณเชื่อมต่ออยู่ นอกจากนี้ ข้อความต้อนรับในแชทอาจระบุแนวทางหรือกฎเกณฑ์การใช้งานสำหรับเซิร์ฟเวอร์นั้น"
 
 #. type: Plain text
 #: ../wiki/en/Getting-Started.md:88
 #, markdown-text
 msgid "More information about using Jamulus can be found in the [User Manual](/wiki/Software-Manual)."
-msgstr ""
+msgstr "คุณสามารถดูข้อมูลเพิ่มเติมเกี่ยวกับการใช้งาน Jamulus ได้ใน[คู่มือสำหรับผู้ใช้](/wiki/Software-Manual)"
 
 #. type: Title ##
 #: ../wiki/en/Getting-Started.md:89
@@ -281,4 +285,4 @@ msgstr "การแก้ไขปัญหา"
 #: ../wiki/en/Getting-Started.md:91
 #, markdown-text
 msgid "Having audio trouble? Can't see Servers, or some other issue? Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting), or feel free to ask in the [Discussions](https://github.com/jamulussoftware/jamulus/discussions)."
-msgstr ""
+msgstr "มีปัญหาเกี่ยวกับเสียง? มองไม่เห็นเซิร์ฟเวอร์ หรือมีปัญหาอื่นๆ? ลองดู[คู่มือการแก้ไขปัญหา](/wiki/Client-Troubleshooting) หรืออย่าลังเลที่จะสอบถามใน[ฟอรัม](https://github.com/jamulussoftware/jamulus/discussions)"
