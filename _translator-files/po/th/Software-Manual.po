@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-10-06 21:15+0000\n"
+"PO-Revision-Date: 2024-10-08 07:15+0000\n"
 "Last-Translator: Thai Pangsakulyanont <dtinth@spacet.me>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: th\n"
@@ -49,7 +49,7 @@ msgstr " {:.no_toc}\n"
 #: ../wiki/en/Software-Manual.md:11
 #, markdown-text
 msgid "This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server."
-msgstr ""
+msgstr "คู่มือนี้จัดทำขึ้นเพื่ออธิบายการใช้งานตัวไคลเอนต์ Jamulus สำหรับนักดนตรีและนักร้องที่ใช้ซอฟต์แวร์นี้เพื่อเชื่อมต่อกับเซิร์ฟเวอร์"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:13
@@ -77,13 +77,13 @@ msgstr ""
 #: ../wiki/en/Software-Manual.md:20
 #, markdown-text, no-wrap
 msgid "</details> \n"
-msgstr ""
+msgstr "</details> \n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:21
 #, markdown-text, no-wrap
 msgid "Main Window"
-msgstr ""
+msgstr "หน้าต่างหลัก"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:28
@@ -94,426 +94,430 @@ msgid ""
 "\t<figcaption>Your local mix when connected to a Server</figcaption>\n"
 "</figure>\n"
 msgstr ""
+"<figure>\n"
+"\t<img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus main window\">\n"
+"\t<figcaption>หน้าจอมิกเซอร์ของคุณเมื่อเชื่อมต่อกับเซิร์ฟเวอร์</figcaption>\n"
+"</figure>\n"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:29
 #, markdown-text, no-wrap
 msgid "Ping, Delay and Jitter"
-msgstr ""
+msgstr "Ping, Delay และ Jitter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
 #, markdown-text, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
-msgstr ""
+msgstr "**Ping** แสดงค่าดีเลย์ (latency) ของเครือข่ายของคุณเป็นหน่วยมิลลิวินาที ยิ่งตัวเลขนี้น้อยก็ยิ่งดี ค่า ping time จะมีผลต่อค่า delay โดยรวม (ดูรายละเอียดด้านล่าง) สาเหตุที่เป็นไปได้มากที่สุดที่ทำค่า ping สูง คือระยะทางจากคุณไปยังเซิร์ฟเวอร์ไกลเกินไป   \n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
 #, markdown-text, no-wrap
 msgid "**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:\n"
-msgstr ""
+msgstr "**Delay** แสดงค่า latency โดยรวม ซึ่งคำนวณจากค่า ping time ล่าสุด รวมกับดีเลย์ที่เกิดจากการตั้งค่า audio buffer โดยสัญญาณไฟ LED จะแสดงสถานะดังนี้:\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:38
-#, markdown-text, no-wrap
+#, fuzzy, markdown-text, no-wrap
 msgid "**Green** - The delay is perfect for a jam session\n"
-msgstr ""
+msgstr "**สีเขียว** - ค่า delay เหมาะสมที่สุดสำหรับการเล่นดนตรีร่วมกัน\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:42
 #, markdown-text, no-wrap
 msgid "**Yellow** - A session is still possible but it may be harder to play\n"
-msgstr ""
+msgstr "**สีเหลือง** - ยังสามารถเล่นดนตรีร่วมกันได้ แต่การเล่นให้ตรงจังหวะอาจจะยากขึ้น\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:46
 #, markdown-text, no-wrap
 msgid "**Red** - The delay is too large for jamming\n"
-msgstr ""
+msgstr "**สีแดง** - ค่า delay สูงเกินไปสำหรับการเล่นดนตรีร่วมกัน\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:48
 #, markdown-text, no-wrap
 msgid "**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
-msgstr ""
+msgstr "**Jitter** แสดงสถานะปัจจุบันของการสตรีมเสียง หากสัญญาณไฟเป็น **สีแดง** แสดงว่าการสตรีมเสียงถูกขัดจังหวะ ซึ่งอาจเกิดจากปัญหาใดปัญหาหนึ่งต่อไปนี้:\n"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 #, markdown-text
 msgid "The network jitter buffer is not large enough for the current network/audio interface jitter."
-msgstr ""
+msgstr "network jitter buffer มีขนาดเล็กเกินไปสำหรับเครือข่ายหรือออดิโออินเตอร์เฟสที่คุณใช้อยู่"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 #, markdown-text
 msgid "The sound card's buffer delay (buffer size) is too small (see Settings window)."
-msgstr ""
+msgstr "buffer delay (buffer size) ของการ์ดเสียงมีขนาดเล็กเกินไป (ดูหน้าต่าง Settings)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 #, markdown-text
 msgid "The upload or download stream rate is too high for your internet bandwidth."
-msgstr ""
+msgstr "โปรแกรมกำลังพยายามถ่ายโอนข้อมูล (อัปโหลดหรือดาวน์โหลด) ในอัตราที่สูงเกินกว่าอินเทอร์เน็ตแบนด์วิดท์ของคุณ"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 #, markdown-text
 msgid "The CPU of the Client or server is at 100%."
-msgstr ""
+msgstr "CPU ของไคลเอนต์หรือเซิร์ฟเวอร์ทำงานอยู่ที่ 100%"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:54
 #, markdown-text, no-wrap
 msgid "Input"
-msgstr ""
+msgstr "อินพุต"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:58
 #, markdown-text
 msgid "Shows the level of the two stereo channels for your audio input.  Make sure not to clip the input signal to avoid distortions of your sound (the LEDs will indicate clipping when it occurs)."
-msgstr ""
+msgstr "แสดงระดับเสียงของช่องสเตอริโอทั้งสองช่องสำหรับอินพุตเสียงของคุณ ตรวจสอบให้แน่ใจว่าสัญญาณอินพุตไม่ดังเกินไปจนเกิดการ clipping เพื่อหลีกเลี่ยงอาการเสียงแตก (ไฟ LED อันบนสุดจะขึ้นสีแดงเมื่อเกิดการ clipping)"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:59
 #, markdown-text, no-wrap
 msgid "Mute Myself button"
-msgstr ""
+msgstr "ปุ่ม Mute Myself"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:62
 #, markdown-text
 msgid "Cuts your audio stream to the server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself."
-msgstr ""
+msgstr "ตัดการสตรีมเสียงของคุณไปยังเซิร์ฟเวอร์ เพื่อให้คุณสามารถได้ยินเสียงตัวเองและเห็นระดับเสียงอินพุตของคุณเองได้ แต่นักดนตรีคนอื่นๆ จะไม่ได้ยิน โปรดทราบว่านักดนตรีคนอื่นๆ จะไม่รู้ว่าคุณปิดเสียงตัวเองอยู่"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:63
 #, markdown-text, no-wrap
 msgid "Reverb effect"
-msgstr ""
+msgstr "เอฟเฟกต์ Reverb"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:69
 #, markdown-text
 msgid "Adds reverb to your local mono audio channel, or to both channels in stereo mode.  The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector to the right and move the fader upwards until the desired reverb level is reached."
-msgstr ""
+msgstr "เพิ่ม reverb ให้กับช่องสัญญาณเสียงโมโนของคุณ หรือทั้งสองช่องสัญญาณในโหมดสเตอริโอ คุณสามารถปรับแต่งการเลือกช่องสัญญาณโมโนและระดับ reverb ได้ ตัวอย่างเช่น หากสัญญาณไมโครโฟนถูกป้อนเข้าไปในช่องสัญญาณเสียงด้านขวา และต้องการใส่เอฟเฟกต์ reverb ให้ตั้งค่าตัวเลือกช่องสัญญาณเป็น Right และเลื่อนเฟดเดอร์ขึ้นจนกว่าจะถึงระดับ reverb ที่ต้องการ"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:70
 #, markdown-text, no-wrap
 msgid "Chat"
-msgstr ""
+msgstr "Chat"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
 #, markdown-text
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
-msgstr ""
+msgstr "เปิดหน้าต่างแชท ข้อความที่ป้อนจะถูกส่งไปยังไคลเอนต์ทั้งหมดที่เชื่อมต่ออยู่ในเซิร์ฟเวอร์เดียวกัน หากมีข้อความแชทใหม่เข้ามา และหน้าต่าง Chat ยังไม่ได้เปิดอยู่ มันจะเปิดขึ้นโดยอัตโนมัติสำหรับไคลเอนต์ทั้งหมด คุณสามารถตั้งค่าเพื่อเปิดใช้งานเสียงแจ้งเตือนเมื่อได้รับข้อความแชทใหม่ได้ในหน้า Settings"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
 #, markdown-text, no-wrap
 msgid "Connect/disconnect button"
-msgstr ""
+msgstr "ปุ่มเชื่อมต่อ/ยกเลิกการเชื่อมต่อ"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:81
 #, markdown-text
 msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session.  You can also open the dialogue using \"File&gt;Connection Setup...\". This will leave you connected to any current session until you join another."
-msgstr ""
+msgstr "เปิดหน้าต่างที่คุณสามารถเลือกเซิร์ฟเวอร์เพื่อเชื่อมต่อได้ หากคุณเชื่อมต่ออยู่ การกดปุ่มนี้จะเป็นการตัดการเชื่อมต่อ คุณยังสามารถเปิดหน้าต่างนี้ได้โดยเลือกเมนู \"File&gt;Connection Setup...\" ซึ่งจะช่วยให้คุณสามารถดูรายชื่อเซิร์ฟเวอร์ได้ โดยยังคงเชื่อมต่ออยู่กับเซิร์ฟเวอร์ปัจจุบัน จนกว่าคุณจะย้ายไปเซิร์ฟเวอร์อื่น"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:83
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:86
 #, markdown-text
 msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
-msgstr ""
+msgstr "หน้าต่าง Connection Setup จะแสดงรายชื่อเซิร์ฟเวอร์ที่ใช้งานได้ พร้อมกับ \"ระยะทาง\" (ในแง่ของ ping time) จำนวนผู้ใช้งานปัจจุบัน จำนวนผู้ใช้งานสูงสุดที่เซิร์ฟเวอร์รองรับ และตำแหน่งที่ตั้งของเซิร์ฟเวอร์ โดยเซิร์ฟเวอร์ที่อยู่ในรายชื่อนี้มาแล้วนานกว่า 24 ชั่วโมงติดต่อกัน จะแสดงเป็นตัวหนา"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:88
 #, markdown-text
 msgid "Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name."
-msgstr ""
+msgstr "คลิกที่เซิร์ฟเวอร์ที่คุณต้องการเข้าร่วม แล้วกดปุ่ม Connect เพื่อเชื่อมต่อ หรือดับเบิลคลิกที่ชื่อเซิร์ฟเวอร์"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
 #, markdown-text
 msgid "Server operators register their servers with Directories. These are either genre-specific or for any genre, or additional [custom entries](#custom-directories). Use the Directory dropdown to select a genre.  You can filter the list by server name or location. To list only occupied Servers, enter a \"#\" character.  If you choose \"Show All Musicians\" the current occupants will be shown."
-msgstr ""
+msgstr "ผู้ดูแลเซิร์ฟเวอร์จะลงทะเบียนเซิร์ฟเวอร์ของตนกับ Directory บางอันเปิดไว้สำหรับบางแนวเพลงโดยเฉพาะ บางอันจะเปิดสำหรับทุกแนวเพลง (any genre) และอาจมี [custom entries](#custom-directories) เพิ่มเติมหากได้ตั้งค่าไว้ คุณสามารถเปลี่ยน Directory โดยเลือก genre ที่กล่องด้านบน คุณสามารถกรองรายชื่อตามชื่อเซิร์ฟเวอร์หรือตำแหน่ง หากต้องการแสดงเฉพาะเซิร์ฟเวอร์ที่มีคนใช้งานอยู่ ให้ป้อนอักขระ \"#\" หากคุณเลือก \"Show All Musicians\" จะมีการแสดงรายชื่อผู้ใช้งานปัจจุบันด้วย"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
 #, markdown-text
 msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr ""
+msgstr "หากคุณทราบ IP address หรือ URL ของเซิร์ฟเวอร์ส่วนตัว คุณสามารถเชื่อมต่อกับเซิร์ฟเวอร์นั้นได้โดยใส่ในช่อง Server Name/Address คุณสามารถเพิ่มหมายเลขพอร์ตต่อท้าย address ได้ โดยใช้เครื่องหมายโคลอนเป็นตัวคั่น เช่น `jamulus.example.com:22124` (โปรดทราบว่า IP address แบบ IPv6 ต้องอยู่ในวงเล็บก้ามปู เช่น `[::1]:22124`) ช่องนี้จะแสดงรายชื่อ address ของเซิร์ฟเวอร์ที่เพิ่งใช้งานล่าสุด ปุ่มที่อยู่ถัดจากช่องนี้ช่วยให้คุณสามารถลบรายการปัจจุบันออกจากรายชื่อได้"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
 #, markdown-text, no-wrap
 msgid "Server audio mixer"
-msgstr ""
+msgstr "มิกเซอร์เสียงของเซิร์ฟเวอร์"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:102
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/mixer-channels.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px; border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a pair of server mixer controls\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:105
 #, markdown-text
 msgid "The audio mixer screen shows each user connected to the server (including yourself).  The faders allow you to adjust the level of what you hear without affecting what others hear."
-msgstr ""
+msgstr "หน้าจอมิกเซอร์ จะแสดงผู้ใช้แต่ละคนที่เชื่อมต่อกับเซิร์ฟเวอร์ (รวมถึงตัวคุณเอง) คุณสามารถใช้เฟดเดอร์เพื่อปรับระดับเสียงที่คุณจะได้ยิน โดยไม่ส่งผลกระทบต่อเสียงที่คนอื่นได้ยิน"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:107
 #, markdown-text
 msgid "The VU meter shows the input level at the server - that is, the sound being sent."
-msgstr ""
+msgstr "VU meter แสดงระดับเสียงอินพุตที่เซิร์ฟเวอร์ได้รับ นั่นคือเสียงที่กำลังถูกส่ง"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:109
 #, markdown-text
 msgid "If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset)."
-msgstr ""
+msgstr "หากคุณตั้งค่า Audio Channel เป็น Stereo หรือ Stereo Out ใน Settings คุณจะเห็นตัวควบคุม pan (กด shift ค้างไว้แล้วคลิกเพื่อรีเซ็ต)"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:111
 #, markdown-text
 msgid "If you see a \"mute\" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero."
-msgstr ""
+msgstr "หากคุณเห็นไอคอน \"mute\" แสดงเหนือผู้ใช้ แสดงว่าบุคคลนั้นไม่ได้ยินเสียงคุณ อาจเป็นเพราะพวกเขาปิดเสียงคุณ หรือตั้งค่า Solo ให้กับผู้ใช้คนอื่นๆ โดยที่ไม่ได้รวมคุณไว้ด้วย หรือตั้งค่าเฟดเดอร์ของคุณในมิกซ์ของพวกเขาไว้ที่ตำแหน่งล่างสุด"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:113
 #, markdown-text
 msgid "Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu."
-msgstr ""
+msgstr "โดยปกติ ผู้ใช้จะปรากฏจากซ้ายไปขวาตามลำดับที่พวกเขาเชื่อมต่อเข้ามา แต่คุณสามารถเรียงลำดับตามชื่อ เครื่องดนตรี กลุ่ม หรือเมืองได้โดยเลือกจากเมนู View"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:115
 #, markdown-text
 msgid "If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded."
-msgstr ""
+msgstr "หากผู้ดูแลเซิร์ฟเวอร์เปิดใช้งานระบบบันทึกเสียง คุณจะเห็นข้อความเหนือมิกเซอร์ที่ระบุว่ากำลังมีการบันทึกเสียงของคุณอยู่"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:116
 #, markdown-text, no-wrap
 msgid "Grp button"
-msgstr ""
+msgstr "ปุ่ม Grp"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:119
 #, markdown-text
 msgid "You can group users together using the \"group\" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag. Up to 8 groups can be defined."
-msgstr ""
+msgstr "คุณสามารถจัดกลุ่มผู้ใช้เข้าด้วยกันได้โดยใช้ปุ่ม \"group\" การเลื่อนเฟดเดอร์ของสมาชิกคนใดคนหนึ่งในกลุ่ม จะเป็นการเลื่อนเฟดเดอร์อื่นๆ ในกลุ่มนั้นด้วยในปริมาณที่เท่ากัน คุณสามารถแยกช่องสัญญาณออกจากกลุ่มได้ชั่วคราวโดยกด shift ค้างไว้แล้วคลิกลาก คุณสามารถกำหนดกลุ่มได้สูงสุด 8 กลุ่ม"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:120
 #, markdown-text, no-wrap
 msgid "Mute button"
-msgstr ""
+msgstr "ปุ่ม Mute"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:123
 #, markdown-text
 msgid "Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a \"muted\" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected."
-msgstr ""
+msgstr "ปิดเสียงช่องนั้นในมิกซ์ของคุณ โปรดทราบว่า เมื่อคุณปิดเสียงใครบางคน พวกเขาจะเห็นไอคอน \"muted\" แสดงเหนือเฟดเดอร์ของคุณ เพื่อระบุว่าคุณไม่ได้ยินเสียงพวกเขา และโปรดทราบว่า คุณจะยังคงเห็น VU meter ของพวกเขาขยับอยู่เมื่อเขาส่งเสียงไปยังเซิร์ฟเวอร์ ตำแหน่งเฟดเดอร์ของคุณสำหรับพวกเขาก็จะไม่ได้รับผลกระทบเช่นกัน"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:125
 #, markdown-text
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
-msgstr ""
+msgstr "โปรดทราบว่า การปิดเสียงช่องสัญญาณของคุณ**เอง** หมายความว่าคุณจะไม่ได้ยินเสียงของคุณที่ส่งกลับมาจากเซิร์ฟเวอร์ (ซึ่งไม่แนะนำให้ทำ เพราะอาจทำให้คุณเล่นไม่ตรงจังหวะกับผู้เล่นคนอื่นๆ) ดังนั้น การปิดเสียงช่องสัญญาณของคุณเอง จึงไม่เหมือนกับการใช้คำสั่ง \"[Mute Myself](#mute-myself-button)\""
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:126
 #, markdown-text, no-wrap
 msgid "Solo button"
-msgstr ""
+msgstr "ปุ่ม Solo"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:129
 #, markdown-text
 msgid "Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a \"muted\" icon above your fader."
-msgstr ""
+msgstr "ช่วยให้คุณสามารถฟังเฉพาะเสียงของผู้ใช้หนึ่งคนหรือหลายคนได้ ผู้ใช้ที่ไม่ได้ตั้งค่า Solo จะถูกปิดเสียง และโปรดทราบว่า ผู้ใช้ที่ไม่ได้ตั้งค่า Solo จะเห็นไอคอน \"muted\" แสดงเหนือเฟดเดอร์ของคุณ"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:130
 #, markdown-text, no-wrap
 msgid "Settings"
-msgstr ""
+msgstr "Settings"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:132
 #, markdown-text, no-wrap
 msgid "My Profile"
-msgstr ""
+msgstr "My Profile"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:136
 #, markdown-text
 msgid "From the Settings menu, select \"My Profile...\" to set your Alias/Name which is displayed below your fader in the server audio mixer board."
-msgstr ""
+msgstr "จากเมนู Settings เลือก \"My Profile...\" เพื่อตั้งค่า Alias/Name (ชื่อ/ฉายา) ของคุณ ซึ่งจะแสดงอยู่ใต้เฟดเดอร์ของคุณในมิกเซอร์เสียงของเซิร์ฟเวอร์"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:138
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:140
 #, markdown-text
 msgid "If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:"
-msgstr ""
+msgstr "หากคุณได้ตั้งค่า Instrument และ/หรือ Country/Region ไอคอนสำหรับสิ่งที่คุณเลือกเหล่านี้จะแสดงอยู่ใต้เฟดเดอร์ของคุณด้วย การตั้งค่า skill จะเปลี่ยนสีพื้นหลังของแท็กเฟดเดอร์ และรายการ City จะแสดงใน tooltip เมื่อเอาเมาส์จ่อไว้ที่ป้ายชื่อบนเฟดเดอร์:"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:142
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:143
 #, markdown-text, no-wrap
 msgid "Skin"
-msgstr ""
+msgstr "Skin"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:146
 #, markdown-text
 msgid "This applies a skin to the main window, some of which are designed to accommodate larger ensembles."
-msgstr ""
+msgstr "เลือกใช้ skin กับหน้าต่างหลัก ซึ่ง skin บางแบบได้รับการออกแบบมาเพื่อรองรับวงดนตรีขนาดใหญ่"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:147
 #, markdown-text, no-wrap
 msgid "Meter style"
-msgstr ""
+msgstr "รูปแบบ Meter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:150
 #, markdown-text
 msgid "This changes the visual style of the audio meters, independently of the chosen skin."
-msgstr ""
+msgstr "เปลี่ยนรูปแบบของ audio meter โดยไม่ขึ้นกับ skin ที่เลือก"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:151
 #, markdown-text, no-wrap
 msgid "Mixer rows"
-msgstr ""
+msgstr "Mixer rows"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:154
 #, markdown-text
 msgid "This sets the number of rows displayed in the server audio mixer, for use with larger ensembles."
-msgstr ""
+msgstr "ตั้งค่าจำนวนแถวที่แสดงในมิกเซอร์เสียงของเซิร์ฟเวอร์ สำหรับใช้กับวงดนตรีขนาดใหญ่"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:155
 #, markdown-text, no-wrap
 msgid "Audio Alerts"
-msgstr ""
+msgstr "Audio Alerts"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:158
 #, markdown-text
 msgid "This turns on a sound alert for when someone joins a Server, or when receiving a new chat message."
-msgstr ""
+msgstr "เปิดใช้งานเสียงแจ้งเตือนเมื่อมีคนเข้าร่วมเซิร์ฟเวอร์ หรือเมื่อได้รับข้อความแชทใหม่"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:159
 #, markdown-text, no-wrap
 msgid "Audio/Network Setup"
-msgstr ""
+msgstr "Audio/Network Setup"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:162
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:163
 #, markdown-text, no-wrap
 msgid "Audio Device"
-msgstr ""
+msgstr "Audio Device"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:167
 #, markdown-text
 msgid "Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected."
-msgstr ""
+msgstr "ในระบบปฏิบัติการ Windows คุณสามารถเลือกไดรเวอร์ ASIO (การ์ดเสียง) ที่จะใช้กับ Jamulus ได้ หากไดรเวอร์ ASIO ที่เลือกไม่ถูกต้อง จะมีข้อความแสดงข้อผิดพลาดปรากฏขึ้น และไดรเวอร์ที่ถูกต้องก่อนหน้านี้จะถูกเลือก ใน macOS คุณสามารถเลือกฮาร์ดแวร์อินพุตและเอาต์พุตได้"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:168
 #, markdown-text, no-wrap
 msgid "Input/output channel mapping"
-msgstr ""
+msgstr "Input/output channel mapping"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:171
 #, markdown-text, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:175
 #, markdown-text
 msgid "If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)  a different actual sound card channel can be selected."
-msgstr ""
+msgstr "หากอุปกรณ์การ์ดเสียงที่เลือกมีช่องสัญญาณอินพุตหรือเอาต์พุตมากกว่าหนึ่งช่อง การตั้งค่า _Input Channel Mapping และ Output Channel Mapping_ จะปรากฏขึ้น คุณสามารถเลือกช่องสัญญาณการ์ดเสียงที่แตกต่างกันสำหรับช่องสัญญาณอินพุต/เอาต์พุต Jamulus แต่ละช่อง (ช่องสัญญาณซ้ายและขวา) ได้"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:176
 #, markdown-text, no-wrap
 msgid "Audio channels"
-msgstr ""
+msgstr "Audio channels"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:179
 #, markdown-text
 msgid "Selects the number of audio channels to be used for communication between Client and server."
-msgstr ""
+msgstr "เลือกจำนวนช่องสัญญาณเสียงที่จะใช้สำหรับการสื่อสารระหว่างไคลเอนต์และเซิร์ฟเวอร์"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:181
 #, markdown-text, no-wrap
 msgid "**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
-msgstr ""
+msgstr "**หมายเหตุ**: การรันไคลเอนต์แยกกันสำหรับแต่ละเสียง/เครื่องดนตรี โดยที่ไคลเอนต์แต่ละรายมีไฟล์ ini ของตัวเอง จะดีกว่าการใช้ไคลเอนต์ตัวเดียวแล้วมิกซ์เสียงโมโนคู่เป็นสเตอริโอ\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:183
 #, markdown-text
 msgid "There are three modes available:"
-msgstr ""
+msgstr "มีสามโหมดให้เลือก:"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:185
 #, markdown-text, no-wrap
 msgid "**Mono** and **Stereo** modes use one and two audio channels respectively.\n"
-msgstr ""
+msgstr "โหมด **Mono** และ **Stereo** ใช้ช่องสัญญาณเสียงหนึ่งช่องและสองช่องตามลำดับ\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:188
@@ -521,13 +525,13 @@ msgstr ""
 msgid ""
 "**Mono-in/Stereo-out**: The audio signal sent to the server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case\n"
 "the two input signals can be mixed to one mono channel but the server mix is heard in stereo.\n"
-msgstr ""
+msgstr "**Mono-in/Stereo-out**: สัญญาณเสียงที่ส่งไปยังเซิร์ฟเวอร์เป็นแบบโมโน แต่สัญญาณที่ส่งกลับมาเป็นแบบสเตอริโอ ซึ่งมีประโยชน์หากการ์ดเสียงมีเครื่องดนตรีอยู่ที่ช่องสัญญาณอินพุตหนึ่งช่อง และไมโครโฟนอยู่ที่อีกช่องสัญญาณหนึ่ง ในกรณีนี้ สัญญาณอินพุตทั้งสองสามารถมิกซ์เป็นช่องสัญญาณโมโนช่องเดียวได้ แต่เสียงมิกซ์จากเซิร์ฟเวอร์จะได้ยินเป็นแบบสเตอริโอ\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:191
 #, markdown-text
 msgid "Enabling stereo mode will increase your stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
-msgstr ""
+msgstr "การเปิดใช้งานโหมดสเตอริโอจะเพิ่มอัตราการส่งข้อมูลของสตรีมของคุณ ตรวจสอบให้แน่ใจว่าอัตราการอัปโหลดของคุณไม่เกินความเร็วในการอัปโหลดของการเชื่อมต่ออินเทอร์เน็ตของคุณ"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:194
