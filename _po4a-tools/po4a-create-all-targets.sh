@@ -99,16 +99,17 @@ process_with_po4a () {
             THRESHOLD="$THRESH_VAL"
         fi
 
-        # Determine file format to be used
+        # Determine file format to be used and set options (configured as an array to allow adding an arbitrary number of them)
+        OPTION=()
         if [ $ext == yml ] ; then
             FILE_FORMAT=yaml
-            OPTION="skip_array"
+            OPTION=("skip_array")
         elif [[ $ext == html || "$filename" == *'-index' ]] ; then # '-index.md' has a markdown extension but is actually html and should be processed as such by po4a
             FILE_FORMAT=xml
-            OPTION="ontagerror=warn"
+            OPTION=("ontagerror=warn" "attributes=<img>src <img>alt")
         elif [ $ext == md ] ; then
             FILE_FORMAT=text
-            OPTION="markdown"
+            OPTION=("markdown")
         fi
 
         # Run po4a-translate and create target files
@@ -120,7 +121,7 @@ process_with_po4a () {
             --localized "$targ_doc" \
             --localized-charset "UTF-8" \
             --no-deprecation \
-            --option "$OPTION" \
+            "${OPTION[@]/#/--option=}" \
             --keep "$THRESHOLD"
 
         # Display message if translated file is created
