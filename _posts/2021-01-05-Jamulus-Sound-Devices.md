@@ -265,7 +265,13 @@ _More testing required._
 
 **[Roland TD-27](https://www.roland.com/uk/products/td-27/)** USB drum sound module 
 
-**Windows**: ❌ Works (with provided ASIO driver, tested Windows 10), but **not** reccomended for Jamulus as you can't mute your direct sound.
+**Windows**: ✅ Works. Because the local master signal is always routed to the HeadphoneJack it's neccessary to change the signal-routing to hear your jamulus signal on the headphones and not the local signal of the drum modul. (Explanation: Search for "The Golden Rule" in the jamulus documentation):
+Configuration Changes: On the TD27 open: SYSTEM -> USB-AUDIO: Driver Mode VENDOR
+                                         SYSTEM -> OUTPUT -> PAD MAS: remove any pad signal from MASTER(L+R);
+                                                             PAD DIR: add desired(all) pad signals to DIRECT(1/2)
+                                                             OTHER MAS: remove any signal and add just USB-IN to MASTER(L/R)
+                       In Jamulus set Audio-Device: TD27, Input Channel: Direct(1/2), output Channel: Main(1/2).
+Now the Jamulus signal will be send to the master output jack of the TD27. (You probably need a headphone amplifier to connect you headphones to the master output jack) 
 
 **macOS**: ❓ Not yet tested.
 
