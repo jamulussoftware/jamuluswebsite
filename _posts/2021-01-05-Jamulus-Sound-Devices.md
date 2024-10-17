@@ -35,11 +35,18 @@ On Windows, it’s recommended to choose a device with a *native ASIO driver* - 
 
 ❌  - Will not work correctly, or does **not** allow you to [turn monitoring off](https://jamulus.io/wiki/FAQ#why-should-i-not-listen-to-my-own-signal) so will cause problems.
 
-❓  - Not yet rated. If you own this device and test it, feel free to the results here.
+❓  - Not yet rated. If you own this device and test it, feel free add to the results here.
 
 ---
 
 ### USB/USB-C devices
+**[Darkglass Element] _(https://www.darkglass.com/creation/element/)_**, USB-C instrument pedal and DI box with 2 channel USB output
+
+**Windows**: ❓ Not yet tested.
+
+**macOS**: ✅ Works well.
+
+**Linux**: ❓ Not yet tested.
 
 #### Microphones / DI Boxes
 
