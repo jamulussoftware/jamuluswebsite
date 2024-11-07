@@ -7,15 +7,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-09-01 20:09+0000\n"
-"Last-Translator: ann0see <20726856+ann0see@users.noreply.github.com>\n"
+"PO-Revision-Date: 2024-11-07 08:50+0000\n"
+"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv-SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Running-a-Server.md:1
@@ -96,7 +96,7 @@ msgstr "**Nej**. Du behöver inte köra en egen server. Du kan använda servrar 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:25
 msgid "Using a public Server might introduce you to strangers. If you want an undisturbed session, you can use the soloing technique described on the [Tips and Tricks page](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). You won't hear strangers who connect to the Server, but they can hear you if they wish."
-msgstr "Att använda en offentlig server kan leda till att du kommer i kontakt med främlingar. Om du vill ha en ostörd session kan du använda solo-tekniken som beskrivs på [Tips och tricks-sidan](Tips-Tricks-More#have-an-undisturbed-session-on-any-server). Du kommer inte att höra främlingar som ansluter till servern, men de kan höra dig om de så önskar."
+msgstr "Att använda en offentlig server kan leda till att du kommer i kontakt med främlingar. Om du vill ha en ostörd session kan du använda solo-tekniken som beskrivs på [Tips och tricks-sidan](Tips-Tricks-More#ha-en-ostörd-session-på-vilken-server-som-helst). Du kommer inte att höra främlingar som ansluter till servern, men de kan höra dig om de så önskar."
 
 #. type: Title ##
 #: ../wiki/en/Running-a-Server.md:28
@@ -166,13 +166,13 @@ msgstr "Installation"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:52
 msgid "Most people run Jamulus on a 3rd party/cloud host as a \"headless\" Server (no video display or keyboard) on **hardware without audio** running Linux. You can also run a Server in a [**desktop environment**](#servers-on-the-desktop)."
-msgstr "De flesta människor kör Jamulus på en tredjeparts/molnvärd som en \"huvudlös\" server (ingen videoskärm eller tangentbord) på **hårdvara utan ljud** som kör Linux. Du kan också köra en server i en [**skrivbordsmiljö**](#servers-on-the-desktop)."
+msgstr "De flesta människor kör Jamulus på en tredjeparts/molnvärd som en \"huvudlös\" server (ingen videoskärm eller tangentbord) på **hårdvara utan ljud** som kör Linux. Du kan också köra en server i en [**skrivbordsmiljö**](#servrar-på-skrivbordet)."
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:56
 #, no-wrap
 msgid "**Note** The following steps will result in you running an \"Unregistered\" Server. For more information, see [the Server Modes section](#server-modes) below.\n"
-msgstr "**Obs** Följande steg kommer att resultera i att du kör en \"Oregistrerad\" server. För mer information, se [avsnittet Serverlägen](#server-modes) nedan.\n"
+msgstr "**Obs** Följande steg kommer att resultera i att du kör en \"Oregistrerad\" server. För mer information, se [avsnittet Serverlägen](#serverlägen) nedan.\n"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:60
@@ -250,7 +250,7 @@ msgstr ""
 #. type: Bullet: '1. '
 #: ../wiki/en/Running-a-Server.md:86
 msgid "Add your desired [command line options](Running-a-Server#configuration-options) to the `ExecStart` line in the systemd service file:"
-msgstr "Lägg till önskade [kommandoradsalternativ](Running-a-Server#configuration-options) till `ExecStart`-raden i systemd-tjänstfilen:"
+msgstr "Lägg till önskade [kommandoradsalternativ](Running-a-Server#konfigurationsalternativ) till `ExecStart`-raden i systemd-tjänstfilen:"
 
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:90
@@ -406,7 +406,7 @@ msgstr "**För GUI** (alla plattformar)\n"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:146
 msgid "Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)."
-msgstr "Alla inställningar som görs med det grafiska gränssnittet kommer att lagras i filen `Jamulusserver.ini`. (Redigera **inte** den här filen för hand!) Vissa alternativ är dock inte tillgängliga i GUI och måste ställas in med hjälp av kommandoraden. För mer information, se [Server på skrivbordet](#servers-on-the-desktop)."
+msgstr "Alla inställningar som görs med det grafiska gränssnittet kommer att lagras i filen `Jamulusserver.ini`. (Redigera **inte** den här filen för hand!) Vissa alternativ är dock inte tillgängliga i GUI och måste ställas in med hjälp av kommandoraden. För mer information, se [Server på skrivbordet](#servrar-på-skrivbordet)."
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:149
@@ -417,7 +417,7 @@ msgstr "Minsta inställning för att köras i registrerat läge"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:153
 msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](#server-modes):"
-msgstr "Du kan köra en huvudlös server på Linux med systemd (med `systemctl`), som behandlas i andra avsnitt. Du kan också köra en server direkt från kommandoraden. Ange följande kommando för att [köra en registrerad server](#server-modes):"
+msgstr "Du kan köra en huvudlös server på Linux med systemd (med `systemctl`), som behandlas i andra avsnitt. Du kan också köra en server direkt från kommandoraden. Ange följande kommando för att [köra en registrerad server](#serverlägen):"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:154
@@ -440,7 +440,7 @@ msgstr "Se tabellen nedan för värden för `hostname:port`."
 #: ../wiki/en/Running-a-Server.md:163
 #, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Server mode-related options](#server-mode-related-options) for more information on the country code. \n"
-msgstr "**Obs**: Semikolon och nyradstecken är inte tillåtna i `[namn]` och `[stad]` i argumentet `--serverinfo`. Se [Serverrelaterade alternativ](#server-mode-related-options) för mer information om landskoden. \n"
+msgstr "**Obs**: Semikolon och nyradstecken är inte tillåtna i `[namn]` och `[stad]` i argumentet `--serverinfo`. Se [Serverrelaterade alternativ](#serverrelaterade-alternativ) för mer information om landskoden. \n"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:164
