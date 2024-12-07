@@ -268,18 +268,23 @@ msgstr "*참고*: Jamulus 버튼의 켜기/끄기 상태에 대한 피드백을 
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:96
-msgid "Fader strips in the mixer window are controlled in ascending order from left to right. Continuing with the above example, in strip number 1 (farthest left), the volume fader would be controlled by CC number 0; pan by 16; solo by 32 and mute by 48. As we have specified 8 consecutive controllers for each parameter, this would give us MIDI control over 8 strips (volume, pan, solo and mute in each one) in the mixer window. The next strip would be controlled by 1, 17, 33 and 49, and so forth."
+#, fuzzy
+#| msgid "Fader strips in the mixer window are controlled in ascending order from left to right. Continuing with the above example, in strip number 1 (farthest left), the volume fader would be controlled by CC number 0; pan by 16; solo by 32 and mute by 48. As we have specified 8 consecutive controllers for each parameter, this would give us MIDI control over 8 strips (volume, pan, solo and mute in each one) in the mixer window. The next strip would be controlled by 1, 17, 33 and 49, and so forth."
+msgid "Fader strips in the mixer window are controlled in ascending numerical order. Continuing with the above example, in strip numbered 0, the volume fader would be controlled by CC number 0; pan by 16; solo by 32 and mute by 48. As we have specified 8 consecutive controllers for each parameter, this would give us MIDI control over 8 strips (volume, pan, solo and mute in each one) in the mixer window. The next strip would be controlled by 1, 17, 33 and 49, and so forth."
 msgstr "믹서 창의 페이더 스트립은 왼쪽에서 오른쪽으로 오름차순으로 제어됩니다. 위의 예를 계속하면 스트립 번호 1(가장 왼쪽)에서 볼륨 페이더는 CC 번호 0으로 제어됩니다. 16만큼 팬; 솔로는 32, 음소거는 48입니다. 각 매개변수에 대해 8개의 연속 컨트롤러를 지정했으므로 믹서 창에서 8개 스트립(각각의 볼륨, 팬, 솔로 및 음소거)에 대한 MIDI 제어를 제공합니다. 다음 스트립은 1, 17, 33, 49 등으로 제어됩니다."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:98
-msgid "Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl."
+#, fuzzy
+#| msgid "Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you will need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl."
+msgid "Make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), MIDI Studio (macOS) or whatever you use for managing connections). In Linux you may need to install and launch a2jmidid so your device shows up in the MIDI tab in Qjackctl."
 msgstr "MIDI 장치의 출력 포트를 Jamulus MIDI 입력 포트(QjackCtl(Linux/Windows), MIDI Studio(macOS) 또는 연결 관리에 사용하는 모든 항목)에 연결했는지 확인하세요. Linux에서는 a2jmidid를 설치하고 실행해야 장치가 Qjackctl의 MIDI 탭에 표시됩니다."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:100
-#, no-wrap
-msgid "*Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to \"View\" on the top menu bar and switch between \"No User Sorting\" and another option and then back again (e.g. type `Ctrl+N`, `Ctrl+O`).\n"
+#, fuzzy, no-wrap
+#| msgid "*Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the leftmost user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. In order to keep the fader strips following a numerical order, go to \"View\" on the top menu bar and switch between \"No User Sorting\" and another option and then back again (e.g. type `Ctrl+N`, `Ctrl+O`).\n"
+msgid "*Tip*: When you enable MIDI control in Jamulus, each user's name is prepended with a number, with the first user starting at 0, then 1, etc. With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. To keep the fader strips following a numerical order, go to \"View\" on the top menu bar and switch to \"Sort by Channel\" (or type `Ctrl+E`).  In Jamulus version 3.12.0 onwards, when connected to a server of at least version 3.5.5, your own fader will always be given channel 0, and so will appear first, whether or not \"Own Fader First\" is enabled.\n"
 msgstr "*팁*: Jamulus에서 MIDI 컨트롤을 활성화하면 각 사용자의 이름 앞에 숫자가 붙으며 가장 왼쪽의 사용자는 0부터 시작하고 그 다음에는 1, 등등이 됩니다. 기본 설정에서는 일부 사용자가 나가고 다른 사용자가 합류하면 왼쪽에서 오른쪽으로 GUI의 배열은 숫자 순서를 따르지 않아 MIDI 컨트롤러의 각 물리적 페이더/노브가 누구에 해당하는지 알기가 더 어려워질 수 있습니다. 숫자 순서에 따라 페이더 스트립을 유지하려면 상단 메뉴 표시줄의 \"보기\"로 이동하여 \"사용자 정렬 없음\"과 다른 옵션 사이를 전환한 다음 다시 돌아갑니다(예: `Ctrl+N`, `Ctrl+O 입력`).\n"
 
 #. type: Title ##

@@ -79,8 +79,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-#, no-wrap
-msgid "</details> \n"
+#, fuzzy, no-wrap
+#| msgid "</details> \n"
+msgid "</details>\n"
 msgstr "</details> \n"
 
 #. type: Title #
@@ -111,8 +112,9 @@ msgstr "Ping、延迟和抖动"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
-#, no-wrap
-msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
+#, fuzzy, no-wrap
+#| msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
+msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.\n"
 msgstr "**Ping** 以毫秒为单位显示您的网络延迟，越低越好。 Ping 时间会导致整体延迟(见下文)。 ping 高的最可能原因是您与服务器的距离过大。   \n"
 
 #. type: Plain text
@@ -224,7 +226,9 @@ msgstr "聊天"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
-msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
+#, fuzzy
+#| msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
+msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives."
 msgstr "打开聊天窗口。输入的文本将发送到所有连接的客户端。如果有新的聊天消息到达并且聊天对话尚未打开，它将自动为所有客户打开。请参阅设置以在收到新聊天消息时选择性地打开声音警报。"
 
 #. type: Title ##
@@ -297,201 +301,353 @@ msgid "If you see a \"mute\" icon above a user, it means that person cannot hear
 msgstr "如果您在用户上方看到“静音”图标，则表示该人听不到您的声音。他们要么让你静音，要么让一个或多个不包括你在内的用户独奏，要么在他们的混音中将你的推子设置为零。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:113
-msgid "Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu."
+#: ../wiki/en/Software-Manual.md:116
+msgid "Users usually appear left-to-right in the order that they connect. When joining a server that already has participants, the default order depends on the versions of Jamulus at the client and the server.  With a client version before 3.12.0 or a server version older than 3.5.5, the existing participants will be shown before your own fader channel.  With a client of 3.12.0 or later connected to a server of 3.5.5 or newer, your own fader will be shown first, with the other existing participants shown to the right.  In either case, participants joining subsequently will by default appear to the right of all the existing participants."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:118
+#, fuzzy
+#| msgid "Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu."
+msgid "You can override this order and sort instead by name, instrument, group, city or channel number using the View menu. See Menu Commands below."
 msgstr "用户通常按照他们连接的顺序从左到右出现。您可以使用“查看”菜单按名称、乐器、组或城市排序。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:115
+#: ../wiki/en/Software-Manual.md:120
 msgid "If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded."
 msgstr "如果服务器操作员已启用录音，您将在混音器上方看到一条消息，表明您正在被录音。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:116
+#: ../wiki/en/Software-Manual.md:121
 #, no-wrap
 msgid "Grp button"
 msgstr "Grp 按钮"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:119
+#: ../wiki/en/Software-Manual.md:124
 msgid "You can group users together using the \"group\" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag. Up to 8 groups can be defined."
 msgstr "您可以使用“组”开关将用户分组在一起。移动组中任何成员的推子将移动该组中的其他推子相同的量。您可以通过 shift-单击-拖动将频道与组暂时隔离。最多可以定义 8 个组。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:120
+#: ../wiki/en/Software-Manual.md:125
 #, no-wrap
 msgid "Mute button"
 msgstr "静音按钮"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:123
+#: ../wiki/en/Software-Manual.md:128
 msgid "Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a \"muted\" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected."
 msgstr "防止在您的本地混音中听到用户的声音。请注意，当您将某人静音时，他们会在您的推子上方看到一个“静音”图标，表示您无法听到他们的声音。另请注意，如果来自静音用户的声音到达服务器，您将继续看到他们的 VU 表移动。您对它们的推子位置也不受影响。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:125
+#: ../wiki/en/Software-Manual.md:130
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgstr "请注意，将您的**自己的**频道静音仅意味着您将听不到来自服务器的信号（不建议这样做，因为这会导致您与其他玩家失去时间）。因此，这与使用“[将自己静音](#静音自己按钮)”不同。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:126
+#: ../wiki/en/Software-Manual.md:131
 #, no-wrap
 msgid "Solo button"
 msgstr "独奏按钮"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:129
+#: ../wiki/en/Software-Manual.md:134
 msgid "Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a \"muted\" icon above your fader."
 msgstr "允许您单独听到一位或多位用户的声音。那些未独奏的将被静音。另请注意，那些未独奏的人会在推子上方看到一个“静音”图标。"
 
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:135
+#, no-wrap
+msgid "Menu commands"
+msgstr "菜单命令"
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:137
+#, no-wrap
+msgid "File > Connection Setup..."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:140
+msgid "Opens the [connection dialogue (see above)](#connectdisconnect-button)."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:141
+#, no-wrap
+msgid "File > Load/Save Mixer Channels Setup"
+msgstr "文件 > 加载/保存混音器通道设置"
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:144
+#, fuzzy
+#| msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
+msgid "You can save and restore the mix you have for your band. This stores your settings for each person's fader volume, pan setting, mute and solo state. You can load this mix any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
+msgstr "您可以保存和恢复您为乐队排练所拥有的混音(推子、静音、声像、独奏等)并随时加载(即使在演奏时)。加载也可以通过拖放到混音器窗口来完成。"
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:145
+#, no-wrap
+msgid "File > Exit"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:148
+msgid "Closes all the windows and exits the application."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:149
+#, no-wrap
+msgid "Edit > Clear All Stored Solo/Mute Settings"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:152
+msgid "Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins - or you join a server where they are playing - the settings will automatically be applied.  Use this command to clear _all_ these stored settings."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:153
+#, no-wrap
+msgid "Edit > Set All Faders to New Client Level"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:156
+msgid "Applies the [configured \"New Client Level\"](#new-client-level) to all currently connected channels."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:157
+#, fuzzy, no-wrap
+#| msgid "Edit > Auto-Adjust All Faders "
+msgid "Edit > Auto-Adjust All Faders"
+msgstr "编辑 > 自动调整所有推子 "
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:160
+#, fuzzy
+#| msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
+msgid "Applies a one-off fader adjustment to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
+msgstr "根据音量将一次性推子设置应用于每个通道。对于大型合奏获得合理的整体混音很有用，尽管可能仍然需要进行个别调整。最好在热身或乐曲的统一部分使用。"
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:161
+#, no-wrap
+msgid "View > (sort options)"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:166
+#, no-wrap
+msgid ""
+"Most items under the \"View\" menu allow you to adjust the order Jamulus chooses to display channels on the server:\n"
+"* Own Fader First<br/>\n"
+"This option can be used in addition to the others to move your own channel to always be the leftmost, irrespective of the sort order of the other channels.\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:178
+#, no-wrap
+msgid ""
+"* No user sorting<br/>\n"
+"This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.\n"
+"* Sort by Name<br/>\n"
+"Sorts by the name someone has chosen in their profile.\n"
+"* Sort by Instrument / City<br/>\n"
+"Sorts by the instrument or city someone has in their profile, along with their name.\n"
+"* Sort by Group<br/>\n"
+"Where the fader group feature is in use, this sorts in ascending group number from left to right (and within that, by name), with any ungrouped channels off to the right.\n"
+"* Sort by Channel<br/>\n"
+"Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
+"Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:179
+#, no-wrap
+msgid "View > Chat"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:182
+msgid "Opens the [Chat](#chat) window."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:183
+#, fuzzy, no-wrap
+#| msgid "Settings"
+msgid "Settings Menu"
+msgstr "设置"
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:186
+msgid "Allows direct access to each of the [Settings](#settings) tabs."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:187
+#, no-wrap
+msgid "Help"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:190
+msgid "Provides access to the [Getting Started](Getting-Started) and [User Manual](Software-Manual) (this page) on the website, along with copyright, licence and acknowledgement details.  There is also a \"What's This?\" option for getting more details on parts of the client display."
+msgstr ""
+
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:130
+#: ../wiki/en/Software-Manual.md:192
 #, no-wrap
 msgid "Settings"
 msgstr "设置"
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:132
+#: ../wiki/en/Software-Manual.md:194
 #, no-wrap
 msgid "My Profile"
 msgstr "我的个人资料"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:136
+#: ../wiki/en/Software-Manual.md:198
 msgid "From the Settings menu, select \"My Profile...\" to set your Alias/Name which is displayed below your fader in the server audio mixer board."
 msgstr "从“设置”菜单中，选择“我的个人资料...”以设置您的别名/名称，该别名/名称显示在服务器混音器板的推子下方。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:138
+#: ../wiki/en/Software-Manual.md:200
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh-CN-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"配置文件窗口的图像\"></figure>\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:140
+#: ../wiki/en/Software-Manual.md:202
 msgid "If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:"
 msgstr "如果您设置了乐器和/或国家，这些选择的图标也将显示在您的推子下方。技能设置改变了推子标签的背景颜色，城市条目显示在推子标签的工具提示中:"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:142
+#: ../wiki/en/Software-Manual.md:204
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh-CN-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"显示个人资料信息的工具提示图片\"></figure>\n"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:143
+#: ../wiki/en/Software-Manual.md:205
 #, no-wrap
 msgid "Skin"
 msgstr "皮肤"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:146
+#: ../wiki/en/Software-Manual.md:208
 msgid "This applies a skin to the main window, some of which are designed to accommodate larger ensembles."
 msgstr "这会将皮肤应用于主窗口，其中一些设计用于容纳更大的合奏。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:147
+#: ../wiki/en/Software-Manual.md:209
 #, no-wrap
 msgid "Meter style"
 msgstr "仪表样式"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:150
+#: ../wiki/en/Software-Manual.md:212
 msgid "This changes the visual style of the audio meters, independently of the chosen skin."
 msgstr "这会改变音频表的视觉风格，与所选皮肤无关。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:151
+#: ../wiki/en/Software-Manual.md:213
 #, no-wrap
 msgid "Mixer rows"
 msgstr "混合器的行"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:154
+#: ../wiki/en/Software-Manual.md:216
 msgid "This sets the number of rows displayed in the server audio mixer, for use with larger ensembles."
 msgstr "这将设置服务器音频混音器中显示的行数，以用于更大的合奏。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:155
+#: ../wiki/en/Software-Manual.md:217
 #, no-wrap
 msgid "Audio Alerts"
 msgstr "音频警报"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:158
+#: ../wiki/en/Software-Manual.md:220
 msgid "This turns on a sound alert for when someone joins a Server, or when receiving a new chat message."
 msgstr "当有人加入服务器或收到新的聊天消息时，这会打开声音警报。"
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:159
+#: ../wiki/en/Software-Manual.md:221
 #, no-wrap
 msgid "Audio/Network Setup"
 msgstr "音频/网络设置"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:162
+#: ../wiki/en/Software-Manual.md:224
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh-CN-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"音频/网络设置窗口图片\"></figure>\n"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:163
+#: ../wiki/en/Software-Manual.md:225
 #, no-wrap
 msgid "Audio Device"
 msgstr "设备"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:167
+#: ../wiki/en/Software-Manual.md:229
 msgid "Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected."
 msgstr "在 Windows 操作系统下，可以使用 Jamulus 选择 ASIO 驱动程序(声卡)。如果所选的 ASIO 驱动程序无效，则会显示错误消息并选择之前的有效驱动程序。在 macOS 下，可以选择输入和输出硬件。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:168
+#: ../wiki/en/Software-Manual.md:230
 #, no-wrap
 msgid "Input/output channel mapping"
 msgstr "输入/输出通道映射"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:171
+#: ../wiki/en/Software-Manual.md:233
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh-CN-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"输入输出通道映射图\"></figure>\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:175
+#: ../wiki/en/Software-Manual.md:237
 msgid "If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)  a different actual sound card channel can be selected."
 msgstr "如果所选声卡设备提供多个输入或输出通道，则“_Input通道映射”和“输出通道”Mapping_设置可见。对于每个Jamulus输入/输出通道(左声道和右声道)，可以选择不同的实际声卡声卡声道。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:176
+#: ../wiki/en/Software-Manual.md:238
 #, no-wrap
 msgid "Audio channels"
 msgstr "音频通道"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:179
-msgid "Selects the number of audio channels to be used for communication between Client and server."
+#: ../wiki/en/Software-Manual.md:241
+#, fuzzy
+#| msgid "Selects the number of audio channels to be used for communication between Client and server."
+msgid "Selects the number of audio channels to be used for communication between Client and Server."
 msgstr "选择要用于客户端和服务器之间通信的音频通道数。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:181
+#: ../wiki/en/Software-Manual.md:243
 #, no-wrap
 msgid "**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
 msgstr "**注意**:最好为每个语音/乐器运行单独的客户端实例，每个客户端都有自己的 ini 文件，而不是使用这个内置的单声道对立体声混音器。\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:183
+#: ../wiki/en/Software-Manual.md:245
 msgid "There are three modes available:"
 msgstr "提供三种模式:"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:185
+#: ../wiki/en/Software-Manual.md:247
 #, no-wrap
 msgid "**Mono** and **Stereo** modes use one and two audio channels respectively.\n"
 msgstr "**Mono** 和 **Stereo** 模式分别使用一个和两个音频通道。\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:188
+#: ../wiki/en/Software-Manual.md:250
 #, no-wrap
 msgid ""
 "**Mono-in/Stereo-out**: The audio signal sent to the server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case\n"
@@ -501,151 +657,151 @@ msgstr ""
 "两个输入信号可以混合到一个单声道，但服务器混音是立体声。\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:191
+#: ../wiki/en/Software-Manual.md:253
 msgid "Enabling stereo mode will increase your stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
 msgstr "启用立体声模式将提高流的数据速率。确保您的上传速度不超过互联网连接的可用上传速度。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:194
+#: ../wiki/en/Software-Manual.md:256
 msgid "In stereo streaming mode, no audio channel selection for the reverb effect will be available on the main window since the effect is applied to both channels in this case."
 msgstr "在立体声媒体流模式时，由于混响效果将被应用到所有的两个声道，故主窗口将不提供选择混响效果所应用到的声道的功能。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:195
+#: ../wiki/en/Software-Manual.md:257
 #, no-wrap
 msgid "Audio quality"
 msgstr "音频质量"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:198
+#: ../wiki/en/Software-Manual.md:260
 msgid "The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
 msgstr "音频质量越高，音频流的数据速率就越高。确保您的上传速度不超过互联网连接的可用上传速度。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:199
+#: ../wiki/en/Software-Manual.md:261
 #, no-wrap
 msgid "Buffer Delay"
 msgstr "缓冲延迟"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:203
+#: ../wiki/en/Software-Manual.md:265
 msgid "The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many connection properties. Three buffer sizes are supported:"
 msgstr "缓冲延迟设置是 Jamulus 软件的基本设置。此设置会影响许多连接属性。支持三种缓冲区大小:"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Software-Manual.md:207
+#: ../wiki/en/Software-Manual.md:269
 msgid "**64 samples** Provides the lowest latency but does not work with all sound cards."
 msgstr "**64 个样本** 提供最低延迟，但不适用于所有声卡。"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Software-Manual.md:207
+#: ../wiki/en/Software-Manual.md:269
 msgid "**128 samples** The preferred setting. Should work for most available sound cards."
 msgstr "**128 个样本** 首选设置。应该适用于大多数可用的声卡。"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Software-Manual.md:207
+#: ../wiki/en/Software-Manual.md:269
 msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection."
 msgstr "**256 个样本** 只能在速度非常慢的计算机或互联网连接速度较慢的情况下使用。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:210
+#: ../wiki/en/Software-Manual.md:272
 msgid "Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.  In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel."
 msgstr "一些声卡驱动程序不允许在 Jamulus 软件中更改缓冲延迟。在这种情况下，缓冲延迟设置被禁用，必须使用声卡驱动程序进行更改。在 Windows 上，按 ASIO 设置按钮打开驱动程序设置面板。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:214
+#: ../wiki/en/Software-Manual.md:276
 msgid "On Linux: - when using JACK, use `QJackCtl` to change the buffer size and restart JACK; - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools."
 msgstr "在 Linux 系统上： - 使用 JACK 时，使用 `QJackCtl` 更改缓冲区大小并重新启动 JACK; - 使用 PipeWire 的 JACK 服务器时，使用其自身的配置工具更改 PipeWire 的量子 (Quantum) 参数。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:218
+#: ../wiki/en/Software-Manual.md:280
 msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
 msgstr "实际缓冲区延迟对连接状态、当前上传速率和整体延迟都有影响。缓冲区大小越小，状态指示器(丢失)中出现红灯的可能性就越高，上传速率越高，整体延迟越低。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:220
+#: ../wiki/en/Software-Manual.md:282
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "因此，缓冲区设置是音频质量和整体延迟之间的权衡。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:221
+#: ../wiki/en/Software-Manual.md:283
 #, no-wrap
 msgid "Jitter Buffer"
 msgstr "抖动缓冲区"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:226
+#: ../wiki/en/Software-Manual.md:288
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgstr "抖动缓冲器补偿网络和声卡定时抖动。缓冲区的大小会影响音频流的质量(发生多少丢失)和整体延迟(缓冲区越长，延迟越高)。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:230
+#: ../wiki/en/Software-Manual.md:292
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgstr "您可以为本地客户端和远程服务器手动设置抖动缓冲区大小。对于本地抖动缓冲区，音频流中的丢失由抖动缓冲区大小推子下方的灯指示。如果指示灯变为红色，则表示缓冲区溢出/欠载，并且音频流被中断。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:232
+#: ../wiki/en/Software-Manual.md:294
 msgid "The jitter buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "因此，抖动缓冲区设置是音频质量和整体延迟之间的权衡。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:236
+#: ../wiki/en/Software-Manual.md:298
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr "如果启用自动设置，本地客户端和远程服务器的抖动缓冲区将根据网络和声卡定时抖动的测量值自动设置。如果启用了自动检查，则抖动缓冲区大小推子将被禁用(它们不能用鼠标移动)。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:237
+#: ../wiki/en/Software-Manual.md:299
 #, no-wrap
 msgid "Small Network Buffers"
 msgstr "小型网络缓冲区"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:241
+#: ../wiki/en/Software-Manual.md:303
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
 msgstr "允许支持非常小的网络音频数据包。这些仅在声卡缓冲区延迟小于 128 个样本时使用。网络缓冲区越小，音频延迟越低。但与此同时，网络负载增加，音频丢失的可能性也增加(特别是如果您的网络连接有任何明显的抖动)。如果您遇到高延迟或较差的音频质量，请尝试启用此选项。但是，禁用它通常意味着更好的音频质量。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:242
+#: ../wiki/en/Software-Manual.md:304
 #, no-wrap
 msgid "Audio Stream Rate"
 msgstr "音频流速率"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:246
+#: ../wiki/en/Software-Manual.md:308
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgstr "取决于当前的音频包大小和压缩设置。确保上行速率不高于您可用的互联网上传速度(通过 [librespeed.org](https://librespeed.org/) 等服务进行检查)。"
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:247
+#: ../wiki/en/Software-Manual.md:309
 #, no-wrap
 msgid "Advanced Setup"
 msgstr "高级设置"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:250
+#: ../wiki/en/Software-Manual.md:312
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/zh-CN-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"高级设置窗口图片\"></figure>\n"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:251
+#: ../wiki/en/Software-Manual.md:313
 #, no-wrap
 msgid "Custom Directories"
 msgstr "自定义目录"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:258
+#: ../wiki/en/Software-Manual.md:320
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
 msgstr "如果您需要添加除内置目录地址之外的其他目录地址，可以在此处进行操作。如果您知道自定义目录的 IP 地址或主机名，可以使用“服务器名称/地址”字段连接到它。可以在地址后添加一个可选的端口号，使用冒号作为分隔符，例如，`jamulus.example.com:22124`。（请注意，目前目录不支持 IPv6。）该字段后面的按钮允许从列表中删除当前条目。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:259
+#: ../wiki/en/Software-Manual.md:321
 #, no-wrap
 msgid "New Client Level"
 msgstr "新客户端级别"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:264
+#: ../wiki/en/Software-Manual.md:326
 #, no-wrap
 msgid ""
 "This setting defines the fader level of a newly connected Client in percent. If a new user connects\n"
@@ -659,141 +815,114 @@ msgstr ""
 "您可以使用“编辑”>“将所有推子设置为新客户端级别”将已占用服务器中的所有用户设置为此级别。\n"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:265
+#: ../wiki/en/Software-Manual.md:327
 #, no-wrap
 msgid "Input Boost"
 msgstr "输入提升"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:268
+#: ../wiki/en/Software-Manual.md:330
 msgid "Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus."
 msgstr "增加设备的增益。如果您的设备提供的增益对于 Jamulus 来说过于安静，请使用此选项。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:269
+#: ../wiki/en/Software-Manual.md:331
 #, no-wrap
 msgid "Feedback Protection"
 msgstr "反馈保护"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:272
+#: ../wiki/en/Software-Manual.md:334
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
 msgstr "尝试在连接到服务器后的前三秒内检测音频反馈循环或噪音。一旦检测到，此功能将显示一条消息并激活“静音我自己”按钮以使您在自己的混音中静音。"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:273
+#: ../wiki/en/Software-Manual.md:335
 #, no-wrap
 msgid "Input Balance"
 msgstr "输入平衡"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:278
+#: ../wiki/en/Software-Manual.md:340
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
 msgstr "控制左右本地音频通道的相对电平。对于单声道信号，它充当两个通道之间的声像。例如，如果麦克风连接到右输入通道，而乐器连接到比麦克风大得多的左输入通道，则移动音频推子以增加麦克风的相对音量。"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:279
-#, no-wrap
-msgid "Menu commands"
-msgstr "菜单命令"
-
-#. type: Title ###
-#: ../wiki/en/Software-Manual.md:281
-#, no-wrap
-msgid "File > Load/Save Mixer Channels Setup"
-msgstr "文件 > 加载/保存混音器通道设置"
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:284
-msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
-msgstr "您可以保存和恢复您为乐队排练所拥有的混音(推子、静音、声像、独奏等)并随时加载(即使在演奏时)。加载也可以通过拖放到混音器窗口来完成。"
-
-#. type: Title ###
-#: ../wiki/en/Software-Manual.md:285
-#, no-wrap
-msgid "Edit > Auto-Adjust All Faders "
-msgstr "编辑 > 自动调整所有推子 "
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:288
-msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
-msgstr "根据音量将一次性推子设置应用于每个通道。对于大型合奏获得合理的整体混音很有用，尽管可能仍然需要进行个别调整。最好在热身或乐曲的统一部分使用。"
-
-#. type: Title #
-#: ../wiki/en/Software-Manual.md:289
+#: ../wiki/en/Software-Manual.md:341
 #, no-wrap
 msgid "Backing up Jamulus"
 msgstr "备份 Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:293
+#: ../wiki/en/Software-Manual.md:345
 msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgstr "{% include_relative Include-Backing-Up.md %} * 您可以使用 [加载/保存混音器频道设置](Software-Manual#文件--加载保存混音器通道设置) 保存和加载不同的混音器设置，并将这些文件存储在您想要的任何位置。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:295
-#, no-wrap
-msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
+#: ../wiki/en/Software-Manual.md:347
+#, fuzzy, no-wrap
+#| msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
+msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in\n"
 msgstr "**macOS 用户注意事项:** 从 Jamulus 3.8.1 开始，我们有一个签名的安装程序。这会将设置存储在 \n"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:295
+#: ../wiki/en/Software-Manual.md:347
 #, no-wrap
 msgid "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 msgstr "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:299
+#: ../wiki/en/Software-Manual.md:351
 #, no-wrap
 msgid "Command Line Options"
 msgstr "命令行选项"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:302
+#: ../wiki/en/Software-Manual.md:354
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "Jamulus 中最常见的功能可以使用 GUI 设置，但这些和其他功能也可以使用终端窗口中给出的选项进行设置。具体如何执行此操作将取决于您的操作系统。"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:304
+#: ../wiki/en/Software-Manual.md:356
 #, no-wrap
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
 msgstr "例如在 Windows 上，要使用特定的设置文件，请右键单击 Jamulus 快捷方式并选择“属性”>“目标”。将必要的参数添加到 Jamulus.exe:\n"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:305
+#: ../wiki/en/Software-Manual.md:357
 #, no-wrap
 msgid " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
 msgstr " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:310
+#: ../wiki/en/Software-Manual.md:362
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "对于 macOS，启动终端窗口并使用所需的选项运行 Jamulus，如下所示:"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:311
+#: ../wiki/en/Software-Manual.md:363
 #, no-wrap
 msgid " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
 msgstr " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:316
+#: ../wiki/en/Software-Manual.md:368
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:318
+#: ../wiki/en/Software-Manual.md:370
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:319
+#: ../wiki/en/Software-Manual.md:371
 #, no-wrap
 msgid "Controlling the Client via API"
 msgstr "通过 API 控制客户端"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:321
+#: ../wiki/en/Software-Manual.md:373
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr "除了命令行界面（CLI）之外，Jamulus 还可以通过 API 进行控制。这对于高级用例非常有用，例如没有图形用户界面（GUI）的情况，或者其他应用程序需要与 Jamulus 进行交互的情况。请注意，该 API 仍处于实验阶段。有关 [JSON-RPC API 的信息可以在主存储库中找到](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)。"
 

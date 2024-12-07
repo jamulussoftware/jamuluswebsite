@@ -36,74 +36,67 @@ msgstr "/wiki/Installation-for-Linux"
 #. type: Title #
 #: ../wiki/en/Installation-for-Linux.md:1
 #: ../wiki/en/Installation-for-Linux.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Installation for Linux"
 msgstr "การติดตั้งบน Linux"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:9
-#, markdown-text
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr "{% include breadcrumb.html root=\"การใช้ Jamulus\" branch1=\"เริ่มต้นใช้งาน\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:13
-#, markdown-text
 msgid "Make sure you read the [Getting Started](Getting-Started) page."
 msgstr "โปรดแน่ใจว่าคุณได้อ่านหน้า [เริ่มต้นใช้งาน](Getting-Started) แล้ว"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:15
-#, markdown-text
 msgid "{% include infobox_each_os.html %}"
 msgstr "{% include infobox_each_os.html %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:17
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Upgrading?** You may want to [back up your configuration](Software-Manual#backing-up-jamulus) first.\n"
 msgstr "**อัปเกรดเวอร์ชัน?** คุณอาจต้องการ[สำรองข้อมูลการตั้งค่าของคุณ](Software-Manual#backing-up-jamulus) ก่อน\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:19
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Installing a server?** Read the [guide for server adminstrators](Running-a-Server) first.\n"
 msgstr "**ติดตั้งเซิร์ฟเวอร์?** อ่าน[คู่มือสำหรับผู้ดูแลเซิร์ฟเวอร์](Running-a-Server) ก่อน\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:20
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Debian and Ubuntu"
 msgstr "Debian และ Ubuntu"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:22
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Using the official Repository (recommended)"
 msgstr "ใช้ Repository อย่างเป็นทางการ (แนะนำ)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:25
-#, markdown-text
 msgid "We provide a repository for Debian and Ubuntu based distributions that allows automatic updates alongside your other system updates. To use the repository:"
 msgstr "เรามี repository สำหรับ Debian และ Ubuntu ที่ช่วยให้คุณสามารถอัปเดตโปรแกรม Jamulus ได้โดยอัตโนมัติพร้อมกับการอัปเดตระบบอื่นๆ วิธีการใช้ repository:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
-#, markdown-text
 msgid "Open your Terminal (CTRL+ALT+T should work)"
 msgstr "เปิด Terminal (คีย์ลัด CTRL+ALT+T)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "*Ubuntu only* - Enable the Ubuntu \"universe\" repository (you can use the [GUI-based approach](https://askubuntu.com/a/148645) or [CLI-based approach](https://askubuntu.com/a/227788))."
 msgstr "*เฉพาะ Ubuntu* - เปิดใช้งาน repository \"universe\" ของ Ubuntu (คุณสามารถใช้ [เปิดใช้งานผ่าน GUI](https://askubuntu.com/a/148645) หรือ [เปิดใช้งานด้วยคำสั่งใน Terminal](https://askubuntu.com/a/227788))"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:29
-#, fuzzy, markdown-text
 msgid "Download the repository setup script:\\\\"
 msgstr "ดาวน์โหลดสคริปต์ตั้งค่า repository:\\\\"
 
@@ -115,7 +108,6 @@ msgstr "curl https://raw.githubusercontent.com/jamulussoftware/jamulus/main/linu
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:33
-#, markdown-text
 msgid "Make the script executable:\\\\"
 msgstr "ตั้งค่าให้สคริปต์สามารถรันได้:\\\\"
 
@@ -127,7 +119,6 @@ msgstr "chmod +x setup_repo.sh\n"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:37
-#, markdown-text
 msgid "Run the setup script and install Jamulus:\\\\"
 msgstr "รันสคริปต์ตั้งค่าและติดตั้ง Jamulus:\\\\"
 
@@ -139,127 +130,112 @@ msgstr "sudo ./setup_repo.sh && sudo apt install jamulus\n"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:41
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Installing the .deb files manually"
 msgstr "ติดตั้งไฟล์ .deb ด้วยตนเอง"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
 msgstr "ดาวน์โหลด Jamulus สำหรับสถาปัตยกรรมของคุณ: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) หรือ [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "Update apt by opening a console window (CTRL+ALT+T should work) and type: `sudo apt-get update`"
 msgstr "อัปเดต apt โดยเปิดหน้าต่าง Terminal (คีย์ลัด CTRL+ALT+T) แล้วพิมพ์: `sudo apt-get update`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "Go to where you downloaded the installer and either double-click on it, or use the command line: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (or for Raspberry Pi etc. as above)"
 msgstr "ไปที่โฟลเดอร์ที่คุณดาวน์โหลดไฟล์ติดตั้งไว้ จากนั้นดับเบิลคลิกที่ไฟล์ หรือใช้คำสั่ง: `sudo apt install ./{{ site.download_file_names.deb-gui }}` (หรือสำหรับ Raspberry Pi ฯลฯ ตามข้างต้น)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
-#, markdown-text
 msgid "Once installed, you can delete the file and close any console windows."
 msgstr "เมื่อติดตั้งเสร็จแล้ว คุณสามารถลบไฟล์และปิดหน้าต่างคอนโซลได้"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:50
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Upgrades:** If you need to upgrade Jamulus to a newer version and install Jamulus manually, just download the new .deb file and re-install as above.\n"
 msgstr "**การอัปเกรด:** หากคุณต้องการอัปเกรด Jamulus เป็นเวอร์ชันที่ใหม่กว่าและติดตั้ง Jamulus ด้วยตนเอง เพียงดาวน์โหลดไฟล์ .deb ใหม่ แล้วติดตั้งใหม่อีกครั้งตามขั้นตอนข้างต้น\n"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:51
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Other distributions"
 msgstr "ดิสทริบิวชันอื่นๆ"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:54
-#, markdown-text
 msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
 msgstr "สำหรับตัวติดตั้งบนดิสทริบิวชันอื่นๆ ให้ดูที่ตัวจัดการแพ็กเกจของดิสทริบิวชันนั้นๆ และ [Repology](https://repology.org/project/jamulus/versions) หากดิสทริบิวชันของคุณไม่มี Jamulus เวอร์ชันล่าสุด คุณสามารถ[คอมไพล์ Jamulus จากซอร์สโค้ด](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md) ได้ และลองดู[สคริปต์การติดตั้ง](https://github.com/jamulussoftware/installscripts) ที่ผู้ใช้คนอื่นๆ สร้างขึ้น"
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:55
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Set up your hardware"
 msgstr "การตั้งค่าฮาร์ดแวร์"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:60
-#, markdown-text
 msgid "The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server for your distribution.  - If your distribution uses [JACK](https://jackaudio.org/), see how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - If your distribution uses PipeWire, see how to [configure PipeWire](Installation-for-Linux#configure-pipewire)."
 msgstr "ไคลเอนต์ Jamulus จำเป็นต้องเชื่อมต่อกับเซิร์ฟเวอร์ [JACK](https://jackaudio.org/) ที่กำลังทำงานอยู่จึงจะเริ่มทำงานได้ คุณต้องตรวจสอบว่าเซิร์ฟเวอร์เสียงแบบ low-latency สำหรับดิสทริบิวชันของคุณคือตัวไหน  - หากดิสทริบิวชันของคุณใช้ [JACK](https://jackaudio.org/) ให้ดูวิธี [กำหนดค่า JACK ด้วย QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl)  - หากดิสทริบิวชันของคุณใช้ PipeWire ให้ดูวิธี [กำหนดค่า PipeWire](Installation-for-Linux#configure-pipewire)"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:61
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Configure JACK with QjackCtl"
 msgstr "การกำหนดค่า JACK ด้วย QjackCtl"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:64
-#, markdown-text
 msgid "To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`."
 msgstr "วิธีที่แนะนำสำหรับการรันเซิร์ฟเวอร์ [JACK](https://jackaudio.org/) คือการใช้ `QjackCtl`"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:67
-#, markdown-text
 msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**."
 msgstr "เปิด QjackCtl ขึ้นมา คุณจะเห็น **Qt JACK Control utility main page**"
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-Linux.md:67
-#, markdown-text
 msgid "Configure your sound hardware as follows:"
 msgstr "กำหนดค่าอุปกรณ์เสียงของคุณดังนี้:"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, markdown-text
 msgid "Set the audio **Interface** to the one you want (there may be several in the list - choose the correct one as this cannot be changed without stopping Jamulus and JACK)."
 msgstr "ตั้งค่า **Interface** เสียง ให้ตรงกับอุปกรณ์ที่คุณต้องการใช้ (อาจมีหลายตัวเลือกในรายการ ให้เลือกอันที่ถูกต้อง เพราะระหว่างที่ Jamulus และ JACK ทำงานคุณจะไม่สามารถเปลี่ยนแปลงการตั้งค่านี้ได้)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, markdown-text
 msgid "Set the **Sample Rate to 48000**."
 msgstr "ตั้งค่า **Sample Rate เป็น 48000**"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
-#, markdown-text
 msgid "Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first."
 msgstr "ตั้งค่า **Frames/Period เป็น 128** และ **Periods/Buffer เป็น 2** ในตอนแรก"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:73
-#, markdown-text
 msgid "Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
 msgstr "รีสตาร์ท JACK เพื่อให้การตั้งค่าใหม่มีผล จากนั้นไปที่หัวข้อ [เริ่ม Jamulus](Installation-for-Linux#start-jamulus) ด้านล่าง"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:74
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Configure PipeWire"
 msgstr "การกำหนดค่า PipeWire"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:79
-#, markdown-text
 msgid "PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.  You need to set your audio interface to the \"pro-audio\" profile and define PipeWire's \"rate\" and \"quantum\" parameters beforehand.  You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
 msgstr "PipeWire มีเซิร์ฟเวอร์ JACK เป็นของตัวเอง เมื่อคุณเปิดไคลเอนต์ Jamulus ตัว PipeWire จะรันเซิร์ฟเวอร์ JACK โดยอัตโนมัติ อย่างไรก็ตาม มีพารามิเตอร์บางอย่างที่ต้องปรับแต่ง  คุณต้องตั้งค่าออดิโออินเตอร์เฟสของคุณเป็นโปรไฟล์ \"pro-audio\" และกำหนดค่าพารามิเตอร์ \"rate\" และ \"quantum\" ของ PipeWire ไว้ล่วงหน้า  คุณสามารถดูข้อมูลเพิ่มเติมเกี่ยวกับการกำหนดค่าได้ใน [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:83
-#, fuzzy, markdown-text
 msgid "To set up your system: 1. Open `pavucontrol` (the audio mixer) and choose the \"pro-audio\" profile for your sound hardware in the configuration tab.  2. In a terminal use the following two commands to force PipeWire's rate and quantum:"
 msgstr "วิธีตั้งค่าระบบของคุณ: 1. เปิด `pavucontrol` (โปรแกรมมิกซ์เสียง) แล้วเลือกโปรไฟล์ \"pro-audio\" สำหรับอุปกรณ์เสียงของคุณในแท็บการกำหนดค่า  2. ใน Terminal ให้ใช้คำสั่งสองคำสั่งต่อไปนี้เพื่อบังคับค่า rate และ quantum ของ PipeWire:"
 
@@ -275,42 +251,37 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:88
-#, markdown-text
 msgid "After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
 msgstr "หลังจากนั้น ไปที่หัวข้อ [เริ่ม Jamulus](Installation-for-Linux#start-jamulus) ด้านล่าง"
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:89
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Start Jamulus"
 msgstr "เริ่ม Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:92
-#, markdown-text
 msgid "With JACK or PipeWire configured, launch Jamulus."
 msgstr "หลังจากกำหนดค่า JACK หรือ PipeWire เสร็จแล้ว ให้เปิด Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:94
-#, markdown-text
 msgid "If you have any problems, first check [the troubleshooting page](Client-Troubleshooting)."
 msgstr "หากคุณมีปัญหาใดๆ ให้ตรวจสอบ [หน้าการแก้ไขปัญหา](Client-Troubleshooting) ก่อน"
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:95
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "All installed?"
 msgstr "ติดตั้งเสร็จแล้วใช่ไหม?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:98
-#, markdown-text
 msgid "Take a look at the"
 msgstr "ลองดูหน้า"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:99
-#, markdown-text
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[เริ่มต้นใช้งาน](Getting-Started){: .button}"

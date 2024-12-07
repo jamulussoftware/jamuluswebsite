@@ -16,7 +16,7 @@ This manual documents the Jamulus Client application for use by musicians and si
 * TOC
  {:toc}
 
-</details> 
+</details>
 
 # Main Window
 
@@ -28,7 +28,7 @@ This manual documents the Jamulus Client application for use by musicians and si
 
 ## Ping, Delay and Jitter
 
-**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   
+**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.
 
 **Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:
 
@@ -71,7 +71,7 @@ to the right and move the fader upwards until the desired reverb level is reache
 
 Opens the chat window. Text entered is sent to
 all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will
-open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received. 
+open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives.
 
 ## Connect/disconnect button
 
@@ -109,7 +109,12 @@ If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you
 
 If you see a "mute" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero.
 
-Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu.
+Users usually appear left-to-right in the order that they connect. When joining a server that already has participants, the default order depends on the versions of Jamulus at the client and the server.
+With a client version before 3.12.0 or a server version older than 3.5.5, the existing participants will be shown before your own fader channel.
+With a client of 3.12.0 or later connected to a server of 3.5.5 or newer, your own fader will be shown first, with the other existing participants shown to the right.
+In either case, participants joining subsequently will by default appear to the right of all the existing participants.
+
+You can override this order and sort instead by name, instrument, group, city or channel number using the View menu. See Menu Commands below.
 
 If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded.
 
@@ -119,13 +124,70 @@ You can group users together using the "group" toggle. Moving the fader of any m
 
 ### Mute button
 
-Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected. 
+Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a "muted" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected.
 
 Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using "[Mute Myself](#mute-myself-button)".
 
 ### Solo button
 
 Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a "muted" icon above your fader.
+
+## Menu commands
+
+### File > Connection Setup...
+
+Opens the [connection dialogue (see above)](#connectdisconnect-button).
+
+### File > Load/Save Mixer Channels Setup
+
+You can save and restore the mix you have for your band. This stores your settings for each person's fader volume, pan setting, mute and solo state. You can load this mix any time (even while you are playing). Loading can also be done by drag/drop to the mixer window.
+
+### File > Exit
+
+Closes all the windows and exits the application.
+
+### Edit > Clear All Stored Solo/Mute Settings
+
+Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins - or you join a server where they are playing - the settings will automatically be applied.  Use this command to clear _all_ these stored settings.
+
+### Edit > Set All Faders to New Client Level
+
+Applies the [configured "New Client Level"](#new-client-level) to all currently connected channels.
+
+### Edit > Auto-Adjust All Faders
+
+Applies a one-off fader adjustment to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece.
+
+### View > (sort options)
+
+Most items under the "View" menu allow you to adjust the order Jamulus chooses to display channels on the server:
+* Own Fader First<br/>
+This option can be used in addition to the others to move your own channel to always be the leftmost, irrespective of the sort order of the other channels.
+
+* No user sorting<br/>
+This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.
+* Sort by Name<br/>
+Sorts by the name someone has chosen in their profile.
+* Sort by Instrument / City<br/>
+Sorts by the instrument or city someone has in their profile, along with their name.
+* Sort by Group<br/>
+Where the fader group feature is in use, this sorts in ascending group number from left to right (and within that, by name), with any ungrouped channels off to the right.
+* Sort by Channel<br/>
+Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.
+Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).
+
+### View > Chat
+
+Opens the [Chat](#chat) window.
+
+### Settings Menu
+
+Allows direct access to each of the [Settings](#settings) tabs.
+
+### Help
+
+Provides access to the [Getting Started](Getting-Started) and [User Manual](Software-Manual) (this page) on the website, along with copyright, licence and acknowledgement details.  There is also a "What's This?" option for getting more details on parts of the client display.
+
 
 # Settings
 
@@ -146,7 +208,7 @@ This applies a skin to the main window, some of which are designed to accommodat
 
 ### Meter style
 
-This changes the visual style of the audio meters, independently of the chosen skin. 
+This changes the visual style of the audio meters, independently of the chosen skin.
 
 ### Mixer rows
 
@@ -175,7 +237,7 @@ a different actual sound card channel can be selected.
 
 ### Audio channels
 
-Selects the number of audio channels to be used for communication between Client and server. 
+Selects the number of audio channels to be used for communication between Client and Server.
 
 **Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.
 
@@ -268,7 +330,7 @@ Increases the gain from your device. Use this if your device delivers a gain tha
 
 ### Feedback Protection
 
-Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the "Mute Myself" button to mute you in your own mix. 
+Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the "Mute Myself" button to mute you in your own mix.
 
 ### Input Balance
 
@@ -276,22 +338,12 @@ Controls the relative levels of the left and right local audio channels. For a m
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
 an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
 
-# Menu commands
-
-### File > Load/Save Mixer Channels Setup
- 
-You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window.
-
-### Edit > Auto-Adjust All Faders 
-
-Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece.
-
 # Backing up Jamulus
 
 {% include_relative Include-Backing-Up.md %}
 * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want.
 
-**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in 
+**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in
 ```shell
 $HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/
 ```

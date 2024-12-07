@@ -41,31 +41,31 @@ msgstr "การแก้ไขปัญหาไคลเอนต์"
 
 #. type: Title #
 #: ../wiki/en/Client-Troubleshooting.md:8
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Troubleshooting"
 msgstr "การแก้ไขปัญหา"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid " {:.no_toc}\n"
 msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:12
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "<details markdown=\"1\">\n"
 msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:14
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "<summary>Table of contents</summary>\n"
 msgstr "<summary>สารบัญ</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:17
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
@@ -75,277 +75,249 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:19
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "</details>\n"
 msgstr "</details>\n"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:20
-#, fuzzy, markdown-text, no-wrap
+#, no-wrap
 msgid "Don’t hear any sound/Others don’t hear you?"
 msgstr "ไม่ได้ยินเสียง/คนอื่นไม่ได้ยินเสียงคุณ?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:23
-#, markdown-text
 msgid "Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your sound card. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://github.com/jamulussoftware/jamulus/discussions) for guidance."
 msgstr "เริ่มจากเบสิคก่อน: ตรวจสอบให้แน่ใจว่าเครื่องดนตรี/ไมโครโฟนและหูฟังของคุณเชื่อมต่อกับช่องเสียบที่ถูกต้อง ตรวจสอบให้แน่ใจว่าไม่มีแอปพลิเคชันอื่นๆ เช่น เบราว์เซอร์ วิดีโอคอล ฯลฯ ที่กำลังใช้งานการ์ดเสียงของคุณอยู่ คุณควรปิดแอปพลิเคชันเหล่านั้นขณะใช้งาน Jamulus หากมีปัญหาอยู่ แสดงว่าการตั้งค่าอุปกรณ์เสียงของคุณอาจมีปัญหา ซึ่งจะขึ้นอยู่กับการตั้งค่าเฉพาะของคุณ (แพลตฟอร์ม ฮาร์ดแวร์ ซอฟต์แวร์ และไดรเวอร์) ดังนั้น ทางที่ดีควรสอบถามดูใน[ฟอรัม](https://github.com/jamulussoftware/jamulus/discussions) เพื่อขอคำแนะนำ"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:25
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Windows users (ASIO4ALL)**: If you’re using the ASIO4ALL driver have a look at the [ASIO4ALL setup section](Installation-for-Windows#setting-up-asio4all)\n"
 msgstr "**ผู้ใช้ Windows (ASIO4ALL)**: หากคุณกำลังใช้ไดรเวอร์ ASIO4ALL ให้ดูที่[ส่วนการตั้งค่า ASIO4ALL](Installation-for-Windows#setting-up-asio4all)\n"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:26
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Not seeing the headphone or microphone you just connected to your PC?"
 msgstr "ไม่เห็นหูฟังหรือไมโครโฟนที่คุณเพิ่งเชื่อมต่อกับ PC ของคุณ?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:29
-#, markdown-text
 msgid "Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded."
 msgstr "ให้รีสตาร์ท Jamulus หนึ่งครั้งโดยที่ยังคงเสียบอุปกรณ์ของคุณอยู่ เนื่องจากในตอนนี้ Jamulus ยังไม่สามารถแสดงอุปกรณ์ที่ถูกเสียบหลังจากที่เปิดแอพพลิเคชันได้"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:30
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Your sound is stuttering"
 msgstr "เสียงของคุณกระตุก"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:33
-#, markdown-text
 msgid "Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency."
 msgstr "อุปกรณ์เสียงของคุณอาจทำงานไม่ได้กับ buffer size ที่คุณเลือก ให้ลองปรับ buffer size ให้ใหญ่ขึ้นในหน้า Settings ของ Jamulus แต่ถ้าเป็นไปได้ ควรใช้อุปกรณ์อื่น เนื่องจากยิ่งบัฟเฟอร์ใหญ่ดีเลย์ก็ยิ่งเยอะ"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:34
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "You all sound OK, but it's difficult to keep together"
 msgstr "ทุกคนได้ยินเสียงชัดเจนดี แต่เล่นให้ตรงจังหวะกันยาก"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:37
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the Server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
 msgstr "**ถ้าเป็นไปได้ อย่าฟังสัญญาณเสียงของคุณเอง** ตรวจสอบให้แน่ใจว่าคุณกำลังฟังเสียงเครื่องดนตรี/เสียงของคุณ _ที่ส่งกลับมาจากเซิร์ฟเวอร์_ สัญญาณนี้จะมีทั้งเสียงของคุณและเสียงของเพื่อนร่วมวงของคุณที่มิกซ์เข้าด้วยกันอย่างพร้อมเพรียง และจะเป็นสัญญาณเดียวกับที่เพื่อนร่วมวงของคุณได้ยิน ดังนั้น การฟังสัญญาณนี้หมายความว่าคุณจะเล่นพร้อมเพรียงกับคนอื่นๆ ได้ (หากทุกคนมีค่า latency ที่ต่ำพอ) โปรดทราบว่า หากมีนักดนตรีที่ไม่ปฏิบัติตามกฎนี้ พวกเขาจะทำให้ดนตรีช้าลงเรื่อยๆ\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:39
-#, markdown-text
 msgid "You can test whether you are hearing your signal correctly by doing the following:"
 msgstr "คุณสามารถทดสอบได้ว่าคุณได้ยินสัญญาณเสียงอย่างถูกต้องหรือไม่ โดยทำตามขั้นตอนต่อไปนี้:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:44
-#, markdown-text
 msgid "Run Jamulus and connect to a Server with a long ping time (greater than 200ms)"
 msgstr "เปิด Jamulus และเชื่อมต่อกับเซิร์ฟเวอร์ที่มี ping time นานๆ (มากกว่า 200 ms)"
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Client-Troubleshooting.md:44
-#, markdown-text
 msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus Server come back, but significantly delayed."
 msgstr "ตบมือหนึ่งครั้ง (หรือเล่นโน้ตสั้นๆ บนเครื่องดนตรี) คุณควรได้ยินเสียงที่ส่งกลับมาจากเซิร์ฟเวอร์ แต่เสียงนั้นควรจะดีเลย์อย่างเห็นได้ชัด"
 
 #. type: Bullet: '3. '
 #: ../wiki/en/Client-Troubleshooting.md:44
-#, markdown-text
 msgid "Click the \"Mute\" button under your Jamulus name/slider in the main Jamulus mixer window (**NOT** the \"Mute Myself\" button on the left)."
 msgstr "คลิกปุ่ม \"Mute\" ใต้ชื่อ/เฟดเดอร์ของคุณในหน้าต่างมิกเซอร์หลักของ Jamulus (**ไม่ใช่**ปุ่ม \"Mute Myself\" ที่ทางด้านซ้าย)"
 
 #. type: Bullet: '4. '
 #: ../wiki/en/Client-Troubleshooting.md:44
-#, markdown-text
 msgid "Clap your hands again."
 msgstr "ตบมืออีกครั้ง"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:46
-#, markdown-text
 msgid "If you hear two claps after step 2, or any claps after step 4, then you are **not** obeying Rule Number One - you have your local audio enabled and should disable it."
 msgstr "หากคุณได้ยินเสียงตบมือสองครั้งหลังจากขั้นตอนที่ 2 หรือได้ยินเสียงตบมือหลังจากขั้นตอนที่ 4 แสดงว่าคุณ**ไม่ได้**ปฏิบัติตาม Golden Rule — คุณกำลังฟังเสียงของคุณเองอยู่ และควรปิดมัน"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:48
-#, markdown-text
 msgid "Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have \"monitor\" buttons (turn these off), or similar options. **If you are still having problems**, try asking on the [forum](https://github.com/jamulussoftware/jamulus/discussions)."
 msgstr "วิธีที่คุณจะหลีกเลี่ยงการฟังสัญญาณเสียงของคุณเองนั้น ขึ้นอยู่กับการตั้งค่าเฉพาะของคุณ เช่น ออดิโออินเตอร์เฟส มิกเซอร์ จุดเชื่อมต่อหูฟัง ฯลฯ ตัวอย่างเช่น ออดิโออินเตอร์เฟสบางรุ่นมีปุ่ม \"monitor\" (ให้ปิดปุ่มนี้) หรือตัวเลือกที่คล้ายกัน **หากคุณยังคงประสบปัญหา** ลองสอบถามใน[ฟอรัม](https://github.com/jamulussoftware/jamulus/discussions)"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:50
-#, markdown-text
 msgid "Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the \"Delay\" light in Jamulus) is not green or at least yellow most of the time. Consult the [User Manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this."
 msgstr "โปรดทราบว่า แม้ว่าการฟังสัญญาณของเซิร์ฟเวอร์จะทำให้มั่นใจได้ว่าคุณจะเล่นพร้อมเพรียงกับนักดนตรีคนอื่นๆ แต่คุณอาจประสบปัญหาได้ หากค่า latency โดยรวมของคุณ (แสดงด้วยไฟ \"Delay\" ใน Jamulus) ไม่เป็นสีเขียวหรืออย่างน้อยก็เป็นสีเหลืองเกือบตลอดเวลา ศึกษา[คู่มือสำหรับผู้ใช้](/wiki/Software-Manual) เพื่อทำความเข้าใจวิธีปรับการตั้งค่าของคุณเพื่อช่วยแก้ไขปัญหานี้"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:51
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Can't work out your mic settings?"
 msgstr "ตั้งค่าไมโครโฟนไม่ได้?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:54
-#, markdown-text
 msgid "When using a microphone while playing your other instrument, you can use a stereo audio input signal in your settings where one channel is connected to the instrument and the other channel is connected to a microphone signal. On the microphone channel an optional reverberation effect can be applied."
 msgstr "เมื่อใช้ไมโครโฟนขณะเล่นเครื่องดนตรีของคุณ คุณสามารถใช้สัญญาณอินพุตเสียงแบบสเตอริโอในการตั้งค่าของคุณได้ โดยที่ช่องสัญญาณหนึ่งเชื่อมต่อกับเครื่องดนตรี และอีกช่องสัญญาณหนึ่งเชื่อมต่อกับสัญญาณไมโครโฟน และคุณสามารถเลือกใส่เอฟเฟกต์ reverb ในช่องสัญญาณไมโครโฟนได้"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:55
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Buffer LEDs suddenly going red, outages, [jittering](https://en.wikipedia.org/wiki/Jitter), weird sounds?"
 msgstr "ไฟ LED ของบัฟเฟอร์เปลี่ยนเป็นสีแดงกะทันหัน เสียงขาดๆ หายๆ มีอาการ [jittering](https://en.wikipedia.org/wiki/Jitter) หรือมีเสียงแปลกๆ?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:58
-#, markdown-text
 msgid "Your computer may be under too much load. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
 msgstr "คอมพิวเตอร์ของคุณอาจทำงานหนักเกินไป พยายามอย่าให้มีอะไรที่แย่งทรัพยากรกับ Jamulus (เช่น การประชุม Zoom หรือการไลฟ์สตรีม Facebook) บนเครื่องของคุณ หรืออย่างน้อยก็ให้ออกจากโปรแกรมเหล่านั้นในขณะที่คุณกำลังเล่น ป้องกันไม่ให้โปรแกรมอย่างเช่น โปรแกรมสแกนไวรัส หรือโปรแกรมที่กำลังอัปเดตซอฟต์แวร์ ทำงานในขณะที่คุณกำลังเล่น และโปรดทราบว่า ยิ่งตั้งค่า reverb ไว้ฉ่ำเท่าไหร่ Jamulus จะใช้ CPU มากขึ้นเท่านั้น"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:59
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Ping times and latency start well, then get worse, causing issues"
 msgstr "ค่า ping time และ latency เริ่มต้นดี แต่แย่ลงเรื่อยๆ จนทำให้เกิดปัญหา"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:62
-#, markdown-text
 msgid "This can indicate something else is competing with Jamulus on your network, so make sure nobody is watching HD Netflix movies or taking part in Zoom video conferences while you are playing. A more permanent solution for technically-minded users may be found by investigating [the issue of buffer bloat](https://www.bufferbloat.net/projects/bloat/wiki/) on their router and whether you can implement Smart Queue Management (SQM). [More details here](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)."
 msgstr "สิ่งนี้อาจบ่งชี้ว่ามีบางสิ่งกำลังแย่งแบนด์วิดท์กับ Jamulus บนเครือข่ายของคุณอยู่ ดังนั้น ตรวจสอบให้แน่ใจว่าไม่มีใครกำลังดูภาพยนตร์ Netflix ความละเอียดสูง หรือเข้าร่วมการประชุมทางวิดีโอ Zoom ในขณะที่คุณกำลังเล่น สำหรับผู้ใช้ที่มีความรู้ทางเทคนิค อาจหาวิธีแก้ปัญหาที่ยั่งยืนกว่านี้ได้โดยการตรวจสอบ[ปัญหา buffer bloat](https://www.bufferbloat.net/projects/bloat/wiki/) บนเราเตอร์ และดูว่าคุณสามารถตั้งค่า Smart Queue Management (SQM) ได้หรือไม่ [ดูรายละเอียดเพิ่มเติม](https://www.bufferbloat.net/projects/bloat/wiki/What_can_I_do_about_Bufferbloat/)"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:63
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Getting frustrated with software channels, audio routing, sample rates and more?"
 msgstr "รู้สึกหงุดหงิดกับช่องสัญญาณซอฟต์แวร์ การกำหนดเส้นทางเสียง sample rate และอื่นๆ?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:66
-#, markdown-text
 msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus Server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
 msgstr "โดยปกติแล้ว การมี[มิกเซอร์](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) เพื่อเชื่อมต่อชุดอุปกรณ์ของคุณ (เครื่องดนตรี ไมโครโฟน เครื่องบันทึกเสียง ฯลฯ) แล้วส่งสัญญาณเสียงแบบสเตอริโอไปยังออดิโออินเตอร์เฟสของคุณ จะง่ายกว่าและโอกาสตั้งค่าผิดพลาดน้อยกว่ามาก (แต่ต้องแน่ใจว่าคุณกำลังฟังเสียงที่ส่งกลับมาจากเซิร์ฟเวอร์ Jamulus ผ่านคอมพิวเตอร์ของคุณ) เนื่องจากชุดอุปกรณ์ ฮาร์ดแวร์ ซอฟต์แวร์ และเครื่องดนตรีที่เป็นไปได้นั้นมีหลากหลายมาก การตั้งค่าการ์ดเสียงของคุณให้ทำงานกับเซ็ตอัพเฉพาะของคุณอาจกลายเป็นเรื่องซับซ้อนได้อย่างรวดเร็ว"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:67
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Somebody joining your jam and being too loud?"
 msgstr "มีคนเข้าร่วมแจมของคุณและเสียงดังเกินไป?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:70
-#, markdown-text
 msgid "You can set your \"New Client Level\" to a low value (e.g. 10), or set the musicians you are playing with to \"Solo\" state (in the mixer panel on the right side). That way, either new entrants will be very quiet, or you won't hear them at all."
 msgstr "คุณสามารถตั้งค่า \"New Client Level\" เป็นค่าต่ำๆ ได้ (เช่น 10) หรือตั้งค่าให้นักดนตรีที่คุณกำลังเล่นด้วยอยู่ในสถานะ \"Solo\" (ในแผงมิกเซอร์ทางด้านขวา) วิธีนี้จะทำให้ผู้เข้าร่วมใหม่เสียงเบามาก หรือคุณจะไม่ได้ยินเสียงพวกเขาเลย"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:71
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Can't see the Server you want to join?"
 msgstr "ไม่เห็นเซิร์ฟเวอร์ที่คุณต้องการเข้าร่วม?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:74
-#, markdown-text
 msgid "First check that you have the right genre Server selected in your Connect window. Sometimes network issues mean your Client won't list all the available Servers. If you know the name of the Server you want to join, you can [look up its IP address here](https://explorer.jamulus.io/). Enter that address in the \"Server Address\" field in the Connect Setup window to connect to it."
 msgstr "ก่อนอื่น ตรวจสอบให้แน่ใจว่าคุณได้เลือก genre ของเซิร์ฟเวอร์ที่ถูกต้องในหน้าต่าง Connect แล้ว บางครั้งปัญหาเครือข่ายอาจทำให้ไคลเอนต์ Jamulus ของคุณไม่แสดงรายชื่อเซิร์ฟเวอร์ทั้งหมด หากคุณทราบชื่อของเซิร์ฟเวอร์ที่คุณต้องการเข้าร่วม คุณสามารถ[ค้นหาที่อยู่ IP ของเซิร์ฟเวอร์ได้ที่นี่](https://explorer.jamulus.io/) ป้อนที่อยู่นั้นในช่อง \"Server Address\" ในหน้าต่าง Connect Setup เพื่อเชื่อมต่อ"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:75
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Not seeing a list of Servers at all?"
 msgstr "ไม่เห็นรายชื่อเซิร์ฟเวอร์เลย?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:78
-#, markdown-text
 msgid "In the UK (and possibly other regions/routers) the Virgin Media Cable Internet Modem setting can cause an issue. \"Block Fragmented IP Packets\" should not be checked. For other routers/ISP, also try turning off SPI (Stateful Packet Inspection) and if that fixes it, you can make a judgment about whether to leave that off or not."
 msgstr "ในสหราชอาณาจักร (และอาจรวมถึงภูมิภาค/เราเตอร์อื่นๆ) การตั้งค่าของ Virgin Media Cable Internet Modem อาจทำให้เกิดปัญหาได้ ไม่ควรเลือกตัวเลือก \"Block Fragmented IP Packets\" สำหรับเราเตอร์/ISP อื่นๆ ให้ลองปิด SPI (Stateful Packet Inspection) และหากวิธีนี้แก้ไขปัญหาได้ คุณสามารถตัดสินใจได้ว่าจะปิดมันไว้หรือไม่"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:80
-#, fuzzy, markdown-text
 msgid "In some cases, it may be your ISP that is blocking your use of Jamulus. See the note on the [server troubleshooting page](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) about \"Nobody can connect to my Server\""
 msgstr "ในบางกรณี ISP ของคุณอาจบล็อกการใช้งาน Jamulus ของคุณอยู่ ดูหมายเหตุใน[หน้าการแก้ไขปัญหาเซิร์ฟเวอร์](Server-Troubleshooting#nobody-can-connect-to-my-server---but-i-can-connect-locally) เกี่ยวกับ \"ไม่มีใครสามารถเชื่อมต่อกับเซิร์ฟเวอร์ของฉันได้\""
 
 #. type: Title ##
 #: ../wiki/en/Client-Troubleshooting.md:81
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Getting an error message saying \"Jamulus\" can't be opened because the developer cannot be verified"
 msgstr "ได้รับข้อความแสดงข้อผิดพลาดว่าไม่สามารถเปิด \"Jamulus\" ได้เนื่องจากไม่สามารถยืนยันตัวตนผู้พัฒนาได้"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:84
-#, markdown-text
 msgid "If you are using a \"legacy\" version of Jamulus (because you are running an older version of macOS) or an intermediate build, the first time you run Jamulus, you will see a message saying it cannot be opened."
 msgstr "หากคุณกำลังใช้ Jamulus เวอร์ชัน \"legacy\" (เพราะคุณใช้ macOS เวอร์ชันเก่า) หรือ build รุ่นทดลอง ในครั้งแรกที่คุณเรียกใช้ Jamulus คุณจะเห็นข้อความแจ้งว่าไม่สามารถเปิดได้"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:86
-#, markdown-text
 msgid "To open Jamulus"
 msgstr "วิธีเปิด Jamulus"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
-#, markdown-text
 msgid "Go to the Applications folder via Finder"
 msgstr "ไปที่โฟลเดอร์ Applications ผ่าน Finder"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
-#, markdown-text
 msgid "Double-click on Jamulus and wait for the above-mentioned message"
 msgstr "ดับเบิลคลิกที่ Jamulus แล้วรอจนกว่าข้อความที่กล่าวถึงข้างต้นจะปรากฏขึ้น"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
-#, markdown-text
 msgid "Close this message by clicking on \"Cancel\""
 msgstr "ปิดข้อความนี้โดยคลิกที่ \"Cancel\""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:91
-#, markdown-text
 msgid "Now control-click (or right-click) on Jamulus, and select \"Open\" from the top of the menu."
 msgstr "จากนั้นกดปุ่ม control ค้างไว้แล้วคลิก (หรือคลิกขวา) ที่ Jamulus แล้วเลือกตัวเลือก \"Open\" ที่อยู่ด้านบนของเมนู"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:93
-#, markdown-text
 msgid "You will then get a slightly different version of the same message, which allows you to click \"Open\". From then on, you can run Jamulus in the normal way and the message won't appear. For further information about this warning see [this Apple Support Page](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)."
 msgstr "จากนั้นคุณจะได้รับข้อความแจ้งเตือนแบบเดียวกันแต่มีจุดต่างกันเล็กน้อย รอบนี้จะมีปุ่ม \"Open\" ให้คลิก หลังจากนั้นเป็นต้นไป คุณจะสามารถเรียกใช้ Jamulus ได้ตามปกติ และข้อความนี้จะไม่ปรากฏขึ้นอีก สำหรับข้อมูลเพิ่มเติมเกี่ยวกับคำเตือนนี้ โปรดดูที่[หน้าสนับสนุนของ Apple](https://support.apple.com/en-gb/guide/mac-help/mh40616/mac)"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:94
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Trouble using Garageband (or other DAW) with Jamulus?"
 msgstr "มีปัญหาในการใช้ Garageband (หรือ DAW อื่นๆ) กับ Jamulus?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:97
-#, markdown-text
 msgid "See [this forum discussion](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 msgstr "ดู[การสนทนานี้ในฟอรัม](https://sourceforge.net/p/llcon/discussion/533517/thread/d3dd58eedc/#b994)"
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:98
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Using a Mac and your input is not heard?"
 msgstr "ใช้ Mac อยู่และไม่ได้ยินเสียงอินพุตของคุณ?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:101
-#, markdown-text
 msgid "(With thanks to [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 msgstr "(ขอขอบคุณ [Mark Anthony De Souza](https://www.facebook.com/groups/619274602254947/permalink/765122847670121/?comment_id=765525034296569))"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:105
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "Maybe you did not answer \"Yes\" to the `\"Jamulus wants to access your microphone\"` challenge.  To fix this:\n"
 "* Go to `Preferences` > `Security & Privacy` > `Privacy` tab\n"
@@ -357,6 +329,5 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:108
-#, markdown-text
 msgid "For anything else, please search or post on the [Discussion Forums](https://github.com/orgs/jamulussoftware/discussions)"
 msgstr "สำหรับปัญหาอื่นๆ โปรดค้นหาหรือโพสต์ใน[ฟอรัม](https://github.com/orgs/jamulussoftware/discussions)"

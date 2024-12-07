@@ -77,8 +77,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-#, no-wrap
-msgid "</details> \n"
+#, fuzzy, no-wrap
+#| msgid "</details> \n"
+msgid "</details>\n"
 msgstr "</details> \n"
 
 #. type: Title #
@@ -109,8 +110,9 @@ msgstr "Ping, Verzögerung und Jitter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
-#, no-wrap
-msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
+#, fuzzy, no-wrap
+#| msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
+msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.\n"
 msgstr "**Ping** zeigt die Latenzzeit deines Netzwerks in Millisekunden an, je niedriger, desto besser. Die Ping-Zeit trägt zur Gesamtverzögerung bei (siehe unten). Die wahrscheinlichste Ursache für einen hohen Ping ist, dass die Entfernung zum Server zu groß ist.\n"
 
 #. type: Plain text
@@ -231,7 +233,7 @@ msgstr "## Chat"
 #: ../wiki/en/Software-Manual.md:75
 #, fuzzy
 #| msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients."
-msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
+msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives."
 msgstr "Öffnet das Chatfenster. Der eingegebene Text wird an alle verbundenen Clients gesendet. Wenn eine neue Chatnachricht eingeht und der Chatdialog nicht bereits geöffnet ist, wird er automatisch für alle Clients geöffnet."
 
 #. type: Title ##
@@ -314,223 +316,375 @@ msgid "If you see a \"mute\" icon above a user, it means that person cannot hear
 msgstr "Wenn du ein „Stumm“-Symbol über einem Benutzer siehst, bedeutet dies, dass diese Person dich nicht hören kann. Entweder hat er dich stummgeschaltet, einen oder mehrere Benutzer, die dich nicht einschließen, auf Solo gestellt oder deinen Fader in seinem Mix auf Null gesetzt."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:113
+#: ../wiki/en/Software-Manual.md:116
+msgid "Users usually appear left-to-right in the order that they connect. When joining a server that already has participants, the default order depends on the versions of Jamulus at the client and the server.  With a client version before 3.12.0 or a server version older than 3.5.5, the existing participants will be shown before your own fader channel.  With a client of 3.12.0 or later connected to a server of 3.5.5 or newer, your own fader will be shown first, with the other existing participants shown to the right.  In either case, participants joining subsequently will by default appear to the right of all the existing participants."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:118
 #, fuzzy
 #| msgid "Users are listed left to right in the order that they connect. You can change the sort order using the Edit option in the application menu."
-msgid "Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu."
+msgid "You can override this order and sort instead by name, instrument, group, city or channel number using the View menu. See Menu Commands below."
 msgstr "Die Benutzer werden von links nach rechts in der Reihenfolge aufgeführt, in der sie sich verbinden. Du kannst die Sortierreihenfolge über die Option Bearbeiten im Anwendungsmenü ändern."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:115
+#: ../wiki/en/Software-Manual.md:120
 msgid "If the server operator has enabled recording, you will see a message above the mixer showing that you are being recorded."
 msgstr "Wenn der Serverbetreiber die Aufzeichnung aktiviert hat, wird über dem Mischpult eine Meldung angezeigt, dass du aufgezeichnest wirst."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:116
+#: ../wiki/en/Software-Manual.md:121
 #, fuzzy, no-wrap
 #| msgid "### Grp button"
 msgid "Grp button"
 msgstr "### GRP-Taste"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:119
+#: ../wiki/en/Software-Manual.md:124
 #, fuzzy
 #| msgid "You can group users together using the \"group\" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag."
 msgid "You can group users together using the \"group\" toggle. Moving the fader of any member of the group will move the other faders in that group by the same amount. You can isolate a channel from the group temporarily with shift-click-drag. Up to 8 groups can be defined."
 msgstr "Mit dem Schalter „Gruppe“ kannst du die Benutzer in Gruppen zusammenfassen. Wenn du den Fader eines Gruppenmitglieds bewegst, werden die anderen Fader der Gruppe um den gleichen Betrag bewegt. Mit Umschalt-Klick-Ziehen kannst du einen Kanal vorübergehend von der Gruppe isolieren."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:120
+#: ../wiki/en/Software-Manual.md:125
 #, fuzzy, no-wrap
 #| msgid "### Mute button"
 msgid "Mute button"
 msgstr "### Stummschalttaste im Mixer"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:123
+#: ../wiki/en/Software-Manual.md:128
 msgid "Prevents users being heard in your local mix. Be aware that when you mute someone, they will see a \"muted\" icon above your fader to indicate that you cannot hear them. Note also that you will continue to see their VU meters moving if sound from the muted user is reaching the server. Your fader position for them is also unaffected."
 msgstr "Verhindert, dass Benutzer in deiner lokalen Mischung zu hören ist. Beachte, wenn du einen Benutzer stumm schaltest, ein „Stumm“-Symbol über seinem Fader erscheint, um anzuzeigen, dass du ihn nicht hören kannst. Beachte auch, dass sich die VU-Meter weiterhin bewegen, wenn der Ton des stummgeschalteten Benutzers den Server erreicht. Deine Faderposition für diese Personen ist ebenfalls nicht betroffen."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:125
+#: ../wiki/en/Software-Manual.md:130
 msgid "Note that muting your **own** channel only means you will not hear your signal from the server (and is not advised as it can lead to you becoming out of time with other players). This is therefore not the same as using \"[Mute Myself](#mute-myself-button)\"."
 msgstr "Beachte, dass das Stummschalten deines **eigenen** Kanals lediglich bedeutet, dass du dein eigenes Signal vom Server nicht mehr hören kannst (Das ist nicht ratsam ist, da es dazu führen kann, dass du mit anderen Spielern aus dem Takt kommst). Dies ist also nicht dasselbe wie die Verwendung von „[Stummschalten](#mich-stummschalten)“."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:126
+#: ../wiki/en/Software-Manual.md:131
 #, fuzzy, no-wrap
 #| msgid "### Solo button"
 msgid "Solo button"
 msgstr "### Solo-Taste"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:129
+#: ../wiki/en/Software-Manual.md:134
 msgid "Allows you to hear one or more users on their own. Those not soloed will be muted. Note also that those people who are not soloed will see a \"muted\" icon above your fader."
 msgstr "Ermöglicht es dir, einen oder mehrere Benutzer alleine zu hören. Diejenigen, die nicht solo sind, werden stummgeschaltet. Beachte auch, dass die Personen, die nicht auf Solo geschaltet sind, ein „Stumm“-Symbol über ihrem Fader sehen."
 
+#. type: Title ##
+#: ../wiki/en/Software-Manual.md:135
+#, fuzzy, no-wrap
+#| msgid "# Menu commands"
+msgid "Menu commands"
+msgstr "# Menübefehle"
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:137
+#, no-wrap
+msgid "File > Connection Setup..."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:140
+msgid "Opens the [connection dialogue (see above)](#connectdisconnect-button)."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:141
+#, fuzzy, no-wrap
+#| msgid "### File > Load/Save Mixer Channels Setup"
+msgid "File > Load/Save Mixer Channels Setup"
+msgstr "### Datei > Mixer-Kanäle laden/speichern"
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:144
+#, fuzzy
+#| msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
+msgid "You can save and restore the mix you have for your band. This stores your settings for each person's fader volume, pan setting, mute and solo state. You can load this mix any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
+msgstr "Du kannst die Mischung, die du für deine Bandproben eingestellt hast, speichern und wiederherstellen (Fader, Mute, Pan, Solo usw.) und diese jederzeit laden (auch während der Probe). Das Laden kann auch per Drag/Drop in das Mixerfenster erfolgen."
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:145
+#, no-wrap
+msgid "File > Exit"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:148
+msgid "Closes all the windows and exits the application."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:149
+#, no-wrap
+msgid "Edit > Clear All Stored Solo/Mute Settings"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:152
+msgid "Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins - or you join a server where they are playing - the settings will automatically be applied.  Use this command to clear _all_ these stored settings."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:153
+#, no-wrap
+msgid "Edit > Set All Faders to New Client Level"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:156
+msgid "Applies the [configured \"New Client Level\"](#new-client-level) to all currently connected channels."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:157
+#, fuzzy, no-wrap
+#| msgid "### Edit > Auto-Adjust All Faders"
+msgid "Edit > Auto-Adjust All Faders"
+msgstr "### Bearbeiten > Alle Fader automatisch anpassen"
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:160
+#, fuzzy
+#| msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
+msgid "Applies a one-off fader adjustment to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
+msgstr "Wendet eine einmalige Fader-Einstellung auf jeden Kanal an, abhängig von seiner Lautstärke. Nützlich für große Ensembles, um eine vernünftige Gesamtmischung zu erhalten, auch wenn individuelle Anpassungen weiterhin notwendig sein können. Am besten während einer Aufwärmphase oder eines gleichmäßigen Teils des Musikstücks anwenden."
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:161
+#, no-wrap
+msgid "View > (sort options)"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:166
+#, no-wrap
+msgid ""
+"Most items under the \"View\" menu allow you to adjust the order Jamulus chooses to display channels on the server:\n"
+"* Own Fader First<br/>\n"
+"This option can be used in addition to the others to move your own channel to always be the leftmost, irrespective of the sort order of the other channels.\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:178
+#, no-wrap
+msgid ""
+"* No user sorting<br/>\n"
+"This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.\n"
+"* Sort by Name<br/>\n"
+"Sorts by the name someone has chosen in their profile.\n"
+"* Sort by Instrument / City<br/>\n"
+"Sorts by the instrument or city someone has in their profile, along with their name.\n"
+"* Sort by Group<br/>\n"
+"Where the fader group feature is in use, this sorts in ascending group number from left to right (and within that, by name), with any ungrouped channels off to the right.\n"
+"* Sort by Channel<br/>\n"
+"Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
+"Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:179
+#, no-wrap
+msgid "View > Chat"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:182
+msgid "Opens the [Chat](#chat) window."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:183
+#, fuzzy, no-wrap
+#| msgid "# Settings"
+msgid "Settings Menu"
+msgstr "# Einstellungen"
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:186
+msgid "Allows direct access to each of the [Settings](#settings) tabs."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:187
+#, no-wrap
+msgid "Help"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:190
+msgid "Provides access to the [Getting Started](Getting-Started) and [User Manual](Software-Manual) (this page) on the website, along with copyright, licence and acknowledgement details.  There is also a \"What's This?\" option for getting more details on parts of the client display."
+msgstr ""
+
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:130
+#: ../wiki/en/Software-Manual.md:192
 #, fuzzy, no-wrap
 #| msgid "# Settings"
 msgid "Settings"
 msgstr "# Einstellungen"
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:132
+#: ../wiki/en/Software-Manual.md:194
 #, fuzzy, no-wrap
 #| msgid "## My Profile"
 msgid "My Profile"
 msgstr "## Mein Profil"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:136
+#: ../wiki/en/Software-Manual.md:198
 msgid "From the Settings menu, select \"My Profile...\" to set your Alias/Name which is displayed below your fader in the server audio mixer board."
 msgstr "Wähle im Menü „Einstellungen“ die Option „Mein Profil...“, um deinen Alias/Namen festzulegen, der unter deinem Fader im Server-Mixer angezeigt wird."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:138
+#: ../wiki/en/Software-Manual.md:200
 #, fuzzy, no-wrap
 #| msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/de-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Bild eines Profil Fensters\"></figure>"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:140
+#: ../wiki/en/Software-Manual.md:202
 msgid "If you set an instrument and/or country, icons for these selections will also be shown below your fader. The skill setting changes the background colour of the fader tag and the city entry shows up in the tool tip of the fader tag:"
 msgstr "Wenn du ein Instrument und/oder ein Land auswählst, werden die Symbole für diese Einstellungen auch unter deinem Fader im Mixer angezeigt. Die Können Einstellung ändert die Hintergrundfarbe des Fader-Tags und der Städteeintrag wird im Tooltip des Fader-Tags angezeigt:"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:142
+#: ../wiki/en/Software-Manual.md:204
 #, fuzzy, no-wrap
 #| msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/profile-tooltip.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a tooltip showing profile information\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/de-screenshots/profile-tooltip.inc %}\" style=\"width:30%;\" loading=\"lazy\" alt=\"Bild einer QuickInfo mit Profilinformationen\"></figure>"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:143
+#: ../wiki/en/Software-Manual.md:205
 #, fuzzy, no-wrap
 #| msgid "### Skin"
 msgid "Skin"
 msgstr "### Oberfläche"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:146
+#: ../wiki/en/Software-Manual.md:208
 msgid "This applies a skin to the main window, some of which are designed to accommodate larger ensembles."
 msgstr "Dabei wird eine Oberfläche auf das Hauptfenster angewendet, von denen einige für größere Ensembles ausgelegt sind."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:147
+#: ../wiki/en/Software-Manual.md:209
 #, fuzzy, no-wrap
 #| msgid "### Meter style"
 msgid "Meter style"
 msgstr "### Pegel-Messer-Stil"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:150
+#: ../wiki/en/Software-Manual.md:212
 msgid "This changes the visual style of the audio meters, independently of the chosen skin."
 msgstr "Dies ändert den visuellen Stil der Pegelmesser, unabhängig vom gewählten Skin."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:151
+#: ../wiki/en/Software-Manual.md:213
 #, fuzzy, no-wrap
 #| msgid "### Mixer rows"
 msgid "Mixer rows"
 msgstr "### Mischpult-Reihen"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:154
+#: ../wiki/en/Software-Manual.md:216
 msgid "This sets the number of rows displayed in the server audio mixer, for use with larger ensembles."
 msgstr "Hiermit wird die Anzahl der im Audiomixer des Servers angezeigten Reihen festgelegt, was bei größeren Ensembles von Vorteil ist."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:155
+#: ../wiki/en/Software-Manual.md:217
 #, fuzzy, no-wrap
 #| msgid "### Audio quality"
 msgid "Audio Alerts"
 msgstr "### Audioqualität"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:158
+#: ../wiki/en/Software-Manual.md:220
 msgid "This turns on a sound alert for when someone joins a Server, or when receiving a new chat message."
 msgstr ""
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:159
+#: ../wiki/en/Software-Manual.md:221
 #, fuzzy, no-wrap
 #| msgid "## Audio/Network Setup"
 msgid "Audio/Network Setup"
 msgstr "## Audio-/Netzwerk Einstellungen"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:162
+#: ../wiki/en/Software-Manual.md:224
 #, fuzzy, no-wrap
 #| msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of audio/network settings window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/de-screenshots/settings-network.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Bild des Fensters für die Audio-/Netzwerkeinstellungen\"></figure>"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:163
+#: ../wiki/en/Software-Manual.md:225
 #, fuzzy, no-wrap
 #| msgid "### Device"
 msgid "Audio Device"
 msgstr "### Audiogerät"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:167
+#: ../wiki/en/Software-Manual.md:229
 msgid "Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected."
 msgstr "Unter dem Windows-Betriebssystem kann der ASIO-Treiber (Soundkarte) mit Jamulus ausgewählt werden. Wenn der ausgewählte ASIO-Treiber nicht gültig ist, wird eine Fehlermeldung angezeigt und der vorherige gültige Treiber ausgewählt. Unter macOS kann die Eingangs- und Ausgangshardware ausgewählt werden."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:168
+#: ../wiki/en/Software-Manual.md:230
 #, fuzzy, no-wrap
 #| msgid "### Input/output channel mapping"
 msgid "Input/output channel mapping"
 msgstr "### Zuordnung von Eingangs- und Ausgangskanälen"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:171
+#: ../wiki/en/Software-Manual.md:233
 #, fuzzy, no-wrap
 #| msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Image of Input and output channel mapping\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/de-screenshots/channel-mapping.inc %}\" style=\"float:left; margin-right:10px; margin-bottom:20px;\" loading=\"lazy\" alt=\"Abbildung der Zuordnung von Eingangs- und Ausgangskanälen\"></figure>"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:175
+#: ../wiki/en/Software-Manual.md:237
 msgid "If the selected sound card device offers more than one input or output channel, the _Input Channel Mapping and Output Channel Mapping_ settings are visible. For each Jamulus input/output channel (left and right channel)  a different actual sound card channel can be selected."
 msgstr "Wenn das ausgewählte Soundkartengerät mehr als einen Eingangs- oder Ausgangskanal bietet, sind die Einstellungen _Input Channel Mapping und Output Channel Mapping_ sichtbar. Für jeden Jamulus-Eingangs-/Ausgangskanal (linker und rechter Kanal) kann ein anderer tatsächlicher Soundkartenkanal ausgewählt werden."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:176
+#: ../wiki/en/Software-Manual.md:238
 #, fuzzy, no-wrap
 #| msgid "### Audio channels"
 msgid "Audio channels"
 msgstr "### Audiokanäle"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:179
-msgid "Selects the number of audio channels to be used for communication between Client and server."
+#: ../wiki/en/Software-Manual.md:241
+#, fuzzy
+#| msgid "Selects the number of audio channels to be used for communication between Client and server."
+msgid "Selects the number of audio channels to be used for communication between Client and Server."
 msgstr "Wählt die Anzahl der Audiokanäle aus, die für die Kommunikation zwischen Client und Server verwendet werden sollen."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:181
+#: ../wiki/en/Software-Manual.md:243
 #, fuzzy, no-wrap
 #| msgid "**Note**: It is preferable to run separate Client instances per voice/instrument, with each Client given its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
 msgid "**Note**: It is better to run separate Client instances per voice/instrument, where each Client has its own ini file, rather than using this built-in mono pair to stereo mixer.\n"
 msgstr "**Hinweis**: Es ist besser, separate Client-Instanzen pro Stimme/Instrument laufen zu lassen, wobei jeder Client seine eigene ini-Datei erhält, als diesen eingebauten Mono-Paar-Stereo-Mixer zu verwenden.\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:183
+#: ../wiki/en/Software-Manual.md:245
 msgid "There are three modes available:"
 msgstr "Es sind drei Modi verfügbar:"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:185
+#: ../wiki/en/Software-Manual.md:247
 #, no-wrap
 msgid "**Mono** and **Stereo** modes use one and two audio channels respectively.\n"
 msgstr "die Modi **Mono** und **Stereo** verwenden einen bzw. zwei Audiokanäle.\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:188
+#: ../wiki/en/Software-Manual.md:250
 #, no-wrap
 msgid ""
 "**Mono-in/Stereo-out**: The audio signal sent to the server is mono but the return signal is stereo. This is useful if the sound card has the instrument on one input channel and the microphone on the other. In that case\n"
@@ -540,170 +694,170 @@ msgstr ""
 "können die beiden Eingangssignale zu einem Monokanal gemischt werden, während der Server-Mix in Stereo zu hören ist.\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:191
+#: ../wiki/en/Software-Manual.md:253
 msgid "Enabling stereo mode will increase your stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
 msgstr "Wenn du den Stereomodus aktivierst, erhöht sich die Datenrate deines Streams. Stelle sicher, dass deine Upload-Rate die verfügbare Upload-Geschwindigkeit deiner Internetverbindung nicht überschreitet."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:194
+#: ../wiki/en/Software-Manual.md:256
 msgid "In stereo streaming mode, no audio channel selection for the reverb effect will be available on the main window since the effect is applied to both channels in this case."
 msgstr "Im Stereo-Streaming-Modus ist im Hauptfenster keine Auswahl des Audiokanals für den Halleffekt möglich, da der Effekt in diesem Fall auf beide Kanäle angewendet wird."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:195
+#: ../wiki/en/Software-Manual.md:257
 #, fuzzy, no-wrap
 #| msgid "### Audio quality"
 msgid "Audio quality"
 msgstr "### Audioqualität"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:198
+#: ../wiki/en/Software-Manual.md:260
 msgid "The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
 msgstr "Je höher die Audioqualität, desto höher ist die Datenrate deines Audiostreams. Achte darauf, dass deine Upload-Rate die verfügbare Upload-Geschwindigkeit deiner Internetverbindung nicht überschreitet."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:199
+#: ../wiki/en/Software-Manual.md:261
 #, fuzzy, no-wrap
 #| msgid "### Buffer Delay"
 msgid "Buffer Delay"
 msgstr "### Puffergrösse"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:203
+#: ../wiki/en/Software-Manual.md:265
 msgid "The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many connection properties. Three buffer sizes are supported:"
 msgstr "Die Einstellung der Pufferverzögerung ist eine grundlegende Einstellung der Jamulus-Software. Diese Einstellung hat Einfluss auf viele Verbindungseigenschaften. Es werden drei Puffergrößen unterstützt:"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Software-Manual.md:207
+#: ../wiki/en/Software-Manual.md:269
 #, fuzzy
 #| msgid "**64 samples** Provides the lowest latency but does not work with all sound cards.\n"
 msgid "**64 samples** Provides the lowest latency but does not work with all sound cards."
 msgstr "**64 Samples** Bietet die geringste Latenz, funktioniert aber nicht mit allen Soundkarten.\n"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Software-Manual.md:207
+#: ../wiki/en/Software-Manual.md:269
 #, fuzzy
 #| msgid "**128 samples** The preferred setting. Should work for most available sound cards.\n"
 msgid "**128 samples** The preferred setting. Should work for most available sound cards."
 msgstr "**128 Samples** Die bevorzugte Einstellung. Sollte für die meisten verfügbaren Soundkarten funktionieren.\n"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Software-Manual.md:207
+#: ../wiki/en/Software-Manual.md:269
 #, fuzzy
 #| msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection.\n"
 msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection."
 msgstr "**256 Samples** Sollte nur auf sehr langsamen Computern oder mit einer langsamen Internetverbindung verwendet werden.\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:210
+#: ../wiki/en/Software-Manual.md:272
 msgid "Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.  In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel."
 msgstr "Bei einigen Soundkartentreibern ist es nicht möglich, die Pufferverzögerung in der Jamulus-Software zu ändern. In diesem Fall ist die Einstellung der Pufferverzögerung deaktiviert und muss über den Soundkartentreiber geändert werden. Drücken unter Windows auf die Schaltfläche ASIO-Setup, um das Einstellungsfenster des Treibers zu öffnen."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:214
+#: ../wiki/en/Software-Manual.md:276
 msgid "On Linux: - when using JACK, use `QJackCtl` to change the buffer size and restart JACK; - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools."
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:218
+#: ../wiki/en/Software-Manual.md:280
 msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
 msgstr "Die tatsächliche Pufferverzögerung hat einen Einfluss auf den Verbindungsstatus, die aktuelle Uploadrate und die Gesamtverzögerung. Je geringer die Puffergröße ist, desto höher ist die Wahrscheinlichkeit eines roten Lichts in der Statusanzeige (Verbindungsabbrüche) und desto höher ist die Upload-Rate und desto geringer ist die Gesamtverzögerung."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:220
+#: ../wiki/en/Software-Manual.md:282
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "Die Puffereinstellung ist daher ein Kompromiss zwischen Audioqualität und Gesamtverzögerung."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:221
+#: ../wiki/en/Software-Manual.md:283
 #, fuzzy, no-wrap
 #| msgid "### Jitter Buffer"
 msgid "Jitter Buffer"
 msgstr "### Netzwerkpuffer"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:226
+#: ../wiki/en/Software-Manual.md:288
 #, fuzzy
 #| msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer therefore influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
 msgstr "Der Jitter-Puffer kompensiert die Timing-Störungen des Netzwerks und der Soundkarte. Die Größe des Puffers beeinflusst daher die Qualität des Audiostroms (wie viele Aussetzer auftreten) und die Gesamtverzögerung (je länger der Puffer, desto höher die Verzögerung)."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:230
+#: ../wiki/en/Software-Manual.md:292
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
 msgstr "Du kannst die Größe des Jitter-Puffers manuell für deinen lokalen Client und den entfernten Server einstellen. Für den lokalen Jitterpuffer werden Aussetzer im Audiostrom durch die Leuchte unter den Schiebereglern für die Jitterpuffergröße angezeigt. Wenn die Leuchte rot leuchtet, ist der Puffer über- bzw. unterschritten worden und der Audiostrom wird unterbrochen."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:232
+#: ../wiki/en/Software-Manual.md:294
 msgid "The jitter buffer setting is therefore a trade-off between audio quality and overall delay."
 msgstr "Die Einstellung des Jitter-Puffers ist daher ein Kompromiss zwischen Audioqualität und Gesamtverzögerung."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:236
+#: ../wiki/en/Software-Manual.md:298
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
 msgstr "Wenn die Einstellung Auto aktiviert ist, werden die Jitterpuffer deines lokalen Clients und des entfernten Servers automatisch auf der Grundlage von Messungen des Netzwerk- und Soundkarten-Timing-Jitters eingestellt. Wenn das Kontrollkästchen Auto aktiviert ist, sind die Regler für die Jitterpuffergröße deaktiviert (Die Regler können nicht mit der Maus bewegt werden)."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:237
+#: ../wiki/en/Software-Manual.md:299
 #, fuzzy, no-wrap
 #| msgid "### Enable small network buffers"
 msgid "Small Network Buffers"
 msgstr "### Aktiviere kleine Netzwerkpuffer"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:241
+#: ../wiki/en/Software-Manual.md:303
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
 msgstr "Ermöglicht die Unterstützung von sehr kleinen Netzwerk-Audiopaketen. Diese werden nur verwendet, wenn die Pufferverzögerung der Soundkarte kleiner als 128 Samples ist. Je kleiner die Netzwerkpuffer sind, desto geringer ist die Audiolatenz. Gleichzeitig erhöht sich aber auch die Netzwerklast und die Wahrscheinlichkeit von Audioaussetzern (vor allem, wenn deine Netzwerkverbindung einen erheblichen Jitter aufweist). Versuche diese Option zu aktivieren, wenn du Probleme mit einer hohen Latenz oder einer schlechten Audioqualität hast. Wenn du die Option deaktivierst, wird die Audioqualität normalerweise besser."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:242
+#: ../wiki/en/Software-Manual.md:304
 #, fuzzy, no-wrap
 #| msgid "### Audio Stream Rate"
 msgid "Audio Stream Rate"
 msgstr "### Audio Stream Rate"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:246
+#: ../wiki/en/Software-Manual.md:308
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
 msgstr "Hängt von der aktuellen Größe des Audiopakets und der Komprimierungseinstellung ab. Stelle sicher, dass die Upload-Rate nicht höher ist als deine verfügbare Internet-Upload-Geschwindigkeit (überprüfen dies mit einem Dienst wie [librespeed.org](https://librespeed.org/))."
 
 #. type: Title ##
-#: ../wiki/en/Software-Manual.md:247
+#: ../wiki/en/Software-Manual.md:309
 #, fuzzy, no-wrap
 #| msgid "## Advanced Setup"
 msgid "Advanced Setup"
 msgstr "## Erweiterte Einstellungen"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:250
+#: ../wiki/en/Software-Manual.md:312
 #, fuzzy, no-wrap
 #| msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>"
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/de-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Bild des Fensters für erweiterte Einstellungen\"></figure>"
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:251
+#: ../wiki/en/Software-Manual.md:313
 #, fuzzy, no-wrap
 #| msgid "### Custom directory server address"
 msgid "Custom Directories"
 msgstr "### Benutzerdefinierte Verzeichnisse"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:258
+#: ../wiki/en/Software-Manual.md:320
 #, fuzzy
 #| msgid "If you know the IP address or URL of a private server, you can connect to it using the Server Name/Address field. An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124` (Note that IPv6 addresses must be entirely enclosed in square brackets). The field will also show a list of the most recently used server addresses."
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
 msgstr "Wenn du die IP-Adresse oder URL eines privaten Servers kennst, kannst du über das Feld „Servername/-adresse“ eine Verbindung zu diesem Server herstellen. Eine optionale Portnummer kann nach der Adresse mit einem Doppelpunkt als Trennzeichen hinzugefügt werden, z. B. „jamulus.example.com:22124\" (IPv6-Adressen müssen vollständig in eckige Klammern eingeschlossen werden). In dem Feld wird auch eine Liste der zuletzt verwendeten Serveradressen angezeigt."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:259
+#: ../wiki/en/Software-Manual.md:321
 #, fuzzy, no-wrap
 #| msgid "### New Client Level"
 msgid "New Client Level"
 msgstr "### Pegel für neue Teilnehmer"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:264
+#: ../wiki/en/Software-Manual.md:326
 #, fuzzy, no-wrap
 #| msgid "This setting defines the fader level of a newly connected Client in percent. If a new user connects to the current server, they will get the specified initial fader level if no other fader level from a previous connection of that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\"."
 msgid ""
@@ -713,95 +867,64 @@ msgid ""
 msgstr "Diese Einstellung definiert den Faderlevel eines neu verbundenen Clients in Prozent. Wenn sich ein neuer Benutzer mit dem aktuellen Server verbindet, erhält er die angegebene anfängliche Faderstufe, wenn keine andere Faderstufe von einer früheren Verbindung dieses Benutzers bereits gespeichert wurde. Du kannst alle Benutzer eines belegten Servers auf diesen Pegel setzen, indem du Bearbeiten > „Alle Fader auf neuen Client-Pegel setzen“ verwendest."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:265
+#: ../wiki/en/Software-Manual.md:327
 #, fuzzy, no-wrap
 #| msgid "### Input Boost"
 msgid "Input Boost"
 msgstr "### Eingangsverstärkung"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:268
+#: ../wiki/en/Software-Manual.md:330
 msgid "Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus."
 msgstr "Erhöht die Verstärkung deines Geräts. Verwende es, wenn dein Gerät eine Signal liefert, das für Jamulus zu leise ist."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:269
+#: ../wiki/en/Software-Manual.md:331
 #, fuzzy, no-wrap
 #| msgid "### Feedback Protection"
 msgid "Feedback Protection"
 msgstr "### Feedback-Schutz"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:272
+#: ../wiki/en/Software-Manual.md:334
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
 msgstr "Versucht, Audio-Rückkopplungsschleifen oder laute Geräusche in den ersten drei Sekunden nach der Verbindung mit einem Server zu erkennen. Sobald diese Funktion erkannt wurde, wird eine Meldung angezeigt und die Schaltfläche „Stummschalten“ aktiviert, um dich im eigenen Mix stummzuschalten."
 
 #. type: Title ###
-#: ../wiki/en/Software-Manual.md:273
+#: ../wiki/en/Software-Manual.md:335
 #, fuzzy, no-wrap
 #| msgid "### Input Balance"
 msgid "Input Balance"
 msgstr "### Eingangs-Balance"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:278
+#: ../wiki/en/Software-Manual.md:340
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
 msgstr "Steuert die relativen Pegel des linken und rechten lokalen Audiokanals. Bei einem Monosignal fungiert er als Pan zwischen den beiden Kanälen. Wenn z. B. ein Mikrofon an den rechten Eingangskanal angeschlossen ist und ein Instrument an den linken Eingangskanal angeschlossen ist, das viel lauter als das Mikrofon ist, bewegst du den Audio-Fader, um die relative Lautstärke des Mikrofons zu erhöhen."
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:279
-#, fuzzy, no-wrap
-#| msgid "# Menu commands"
-msgid "Menu commands"
-msgstr "# Menübefehle"
-
-#. type: Title ###
-#: ../wiki/en/Software-Manual.md:281
-#, fuzzy, no-wrap
-#| msgid "### File > Load/Save Mixer Channels Setup"
-msgid "File > Load/Save Mixer Channels Setup"
-msgstr "### Datei > Mixer-Kanäle laden/speichern"
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:284
-msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
-msgstr "Du kannst die Mischung, die du für deine Bandproben eingestellt hast, speichern und wiederherstellen (Fader, Mute, Pan, Solo usw.) und diese jederzeit laden (auch während der Probe). Das Laden kann auch per Drag/Drop in das Mixerfenster erfolgen."
-
-#. type: Title ###
-#: ../wiki/en/Software-Manual.md:285
-#, fuzzy, no-wrap
-#| msgid "### Edit > Auto-Adjust All Faders"
-msgid "Edit > Auto-Adjust All Faders "
-msgstr "### Bearbeiten > Alle Fader automatisch anpassen"
-
-#. type: Plain text
-#: ../wiki/en/Software-Manual.md:288
-msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
-msgstr "Wendet eine einmalige Fader-Einstellung auf jeden Kanal an, abhängig von seiner Lautstärke. Nützlich für große Ensembles, um eine vernünftige Gesamtmischung zu erhalten, auch wenn individuelle Anpassungen weiterhin notwendig sein können. Am besten während einer Aufwärmphase oder eines gleichmäßigen Teils des Musikstücks anwenden."
-
-#. type: Title #
-#: ../wiki/en/Software-Manual.md:289
+#: ../wiki/en/Software-Manual.md:341
 #, fuzzy, no-wrap
 #| msgid "# Backing up Jamulus"
 msgid "Backing up Jamulus"
 msgstr "# Sicherung von Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:293
+#: ../wiki/en/Software-Manual.md:345
 #, fuzzy
 #| msgid "You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgstr "Du kannst verschiedene Mixereinstellungen mit [Laden/Speichern Konfiguration der Mixer Kanäle](Software-Manual#datei--mixer-kanäle-ladenspeichern) speichern und laden und diese Dateien an einem beliebigen Ort speichern."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:295
+#: ../wiki/en/Software-Manual.md:347
 #, fuzzy, no-wrap
 #| msgid ""
 #| "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
 #| "```shell\n"
 #| "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 #| "```\n"
-msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
+msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in\n"
 msgstr ""
 "**Hinweis für macOS-Nutzer:** Ab Jamulus 3.8.1 gibt es ein signiertes Installationsprogramm. Dieser speichert die Einstellungen in\n"
 "```shell\n"
@@ -809,31 +932,31 @@ msgstr ""
 "```\n"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:295
+#: ../wiki/en/Software-Manual.md:347
 #, no-wrap
 msgid "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 msgstr ""
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:299
+#: ../wiki/en/Software-Manual.md:351
 #, no-wrap
 msgid "Command Line Options"
 msgstr "Befehlszeilenoptionen"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:302
+#: ../wiki/en/Software-Manual.md:354
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "Die meisten gängigen Funktionen in Jamulus können über die grafische Benutzeroberfläche eingestellt werden, aber diese und andere können auch über Befehlszeilen Optionen in einem Terminalfenster eingestellt werden. Wie genau das gemacht werden muss hängt von deinem Betriebssystem ab."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:304
+#: ../wiki/en/Software-Manual.md:356
 #, fuzzy, no-wrap
 #| msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:"
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
 msgstr "Um beispielsweise unter Windows eine bestimmte Einstellungsdatei zu verwenden, klickst du mit der rechten Maustaste auf die Jamulus-Verknüpfung und wählst „Eigenschaften“ > Ziel. Füge die erforderlichen Argumente zu Jamulus.exe hinzu:"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:305
+#: ../wiki/en/Software-Manual.md:357
 #, fuzzy, no-wrap
 #| msgid ""
 #| "```shell\n"
@@ -846,12 +969,12 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:310
+#: ../wiki/en/Software-Manual.md:362
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "Unter macOS startest du ein Terminalfenster und führst Jamulus mit den gewünschten Optionen wie folgt aus:"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:311
+#: ../wiki/en/Software-Manual.md:363
 #, fuzzy, no-wrap
 #| msgid ""
 #| "```shell\n"
@@ -864,23 +987,23 @@ msgstr ""
 "```\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:316
+#: ../wiki/en/Software-Manual.md:368
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:318
+#: ../wiki/en/Software-Manual.md:370
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:319
+#: ../wiki/en/Software-Manual.md:371
 #, no-wrap
 msgid "Controlling the Client via API"
 msgstr ""
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:321
+#: ../wiki/en/Software-Manual.md:373
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr ""
 

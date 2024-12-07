@@ -35,150 +35,131 @@ msgstr ""
 
 #. type: Title #
 #: ../wiki/en/Installation-for-iOS.md:1 ../wiki/en/Installation-for-iOS.md:11
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Installation for iOS"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:9
-#, markdown-text
 msgid "{% include breadcrumb.html root=\"Using Jamulus\" branch1=\"Getting Started\" branch1-url=\"Getting-Started\" %}"
 msgstr "{% include breadcrumb.html root=\"การใช้ Jamulus\" branch1=\"เริ่มต้นใช้งาน\" branch1-url=\"Getting-Started\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:14
-#, markdown-text
 msgid "Make sure you've already read the [Getting Started](Getting-Started) page."
 msgstr "โปรดแน่ใจว่าคุณได้อ่านหน้า [เริ่มต้นใช้งาน](Getting-Started) แล้ว"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:16
-#, markdown-text
 msgid "{% include infobox_each_os.html %}"
 msgstr "{% include infobox_each_os.html %}"
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-iOS.md:17
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Things to note about iOS"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:20
-#, markdown-text
 msgid "If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus. iOS support is just a proof of concept."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-iOS.md:26
-#, markdown-text
 msgid "To install Jamulus on your iOS device, you need a (free or paid) Apple Developer account and preferably a computer."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-iOS.md:26
-#, markdown-text
 msgid "If you don't pay for an Apple developer account, Jamulus will only run for at most 7 days before you need to re-install it."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-iOS.md:26
-#, markdown-text
 msgid "Jamulus on iOS works quite well if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. If you own an older device which has a Lightning port and not USB-C, you can use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-iOS.md:26
-#, markdown-text
 msgid "If you must use Jamulus on a wireless network, you should prefer a cellular (5G) connection over WiFi."
 msgstr ""
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-iOS.md:26
-#, markdown-text
 msgid "Unofficial Jamulus compatible apps like [KOORD](https://apps.apple.com/us/app/koord/id1621509341) are available on the AppStore but may not have the same features as the official Jamulus release."
 msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-iOS.md:28
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Install for iOS (for experienced users only)"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:31
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "**Note**: We provide an unsigned .ipa file which you need to sign and then install on your device. If you are not Jailbroken (and have AppSync installed), you might need additional software to install Jamulus. There are multiple ways to do that, but this guide only explains the most standard approach. Please note that we assume you already have a (free) Apple developer account. If you don't have one, create an Apple ID and [Sign up for a developer account](https://developer.apple.com/membercenter). We recommend to create one without two factor authentification and unrelated to your potential personal account. You will need to enter the password in non-Apple software.\n"
 msgstr ""
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-iOS.md:37
-#, markdown-text
 msgid "[Download Jamulus (.ipa) on a PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
 msgstr ""
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-iOS.md:37
-#, markdown-text
 msgid "Sign the .ipa file (e.g. via Xcode or some other **trusted** app. We won't give recommendations here, but there exist apps for every operating system)"
 msgstr ""
 
 #. type: Bullet: '3. '
 #: ../wiki/en/Installation-for-iOS.md:37
-#, markdown-text
 msgid "Once signed and installed; on your iOS device open Settings, navigate to General>Profiles (or VPN and Device Management). Tap on the developer account corresponding to your account and trust the account."
 msgstr ""
 
 #. type: Bullet: '4. '
 #: ../wiki/en/Installation-for-iOS.md:37
-#, markdown-text
 msgid "Open Jamulus from your home-screen"
 msgstr ""
 
 #. type: Bullet: '5. '
 #: ../wiki/en/Installation-for-iOS.md:37
-#, markdown-text
 msgid "After 7 days you will need to re-sign Jamulus if you are using a free developer account. Re-do everything from Step 4."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:39
-#, markdown-text
 msgid "If you own a Mac and have Xcode installed, compiling Jamulus from source might be another, more native option. Please have a look at the [compilation instructions for iOS](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md#ios)."
 msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-iOS.md:41
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Feedback and development"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:45
-#, markdown-text
 msgid "Our view is that the iOS version is not sufficiently mature to be published on the AppStore. Feel free to help out: Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)."
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:47
-#, markdown-text
 msgid "Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/main/APPLEAPPSTORE.LICENCE.WAIVER) concerning Jamulus being published via the Apple AppStore."
 msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-iOS.md:50
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "All installed?"
 msgstr "ติดตั้งเสร็จแล้วใช่ไหม?"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:53
-#, markdown-text
 msgid "Jamulus has been installed and can be used now. You can now take a look at the"
 msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:54
-#, markdown-text
 msgid "[Getting Started page](Getting-Started){: .button}"
 msgstr "[เริ่มต้นใช้งาน](Getting-Started){: .button}"
