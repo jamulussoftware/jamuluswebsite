@@ -284,10 +284,10 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
 - [ ] [Tag a release candidate](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release) (inform emlynmac for signing on macOS and upload signed binary from his repo to ours).
   - [ ] Announce the release candidate on Github Discussions. Pin the thread. Unpin and lock the beta thread.
   - [ ] Draft an announcement, include all contributors via `tools/get_release_contributors.py`
-- [ ] [Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release)
 - [ ] [Update the Changelog](https://jamulus.io/contribute/Release-Process#updating-the-changelog)
-- [ ] Tag this commit as `r3_y_z`
-  - [ ] Wait for the build to complete
+- [ ] [Tag the release version](https://jamulus.io/contribute/Release-Process#steps-for-a-specific-release):
+  - [ ] Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit.
+  - [ ] Wait for the release build to complete.
   - [ ] Contact emlynmac for signing on macOS and upload signed binary [from his](https://github.com/emlynmac/jamulus/releases/) repo [to ours](https://github.com/jamulussoftware/jamulus/releases).
   - [ ] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
   - [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
