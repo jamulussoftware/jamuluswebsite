@@ -314,6 +314,11 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Wait for the release build to complete.
   - [ ] Push the release to [ann0see/jamulussign](https://github.com/ann0see/jamulussign/) for macOS signing and upload signed binary [from the signing repo](https://github.com/ann0see/jamulussign/releases) repo [to the official one](https://github.com/jamulussoftware/jamulus/releases).
   - [ ] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
+  - [ ] Do a smoke test of the upgrade notification (do this _very quickly_)
+    - [ ] Install the release build on _one_ of the update notification Servers
+    - [ ] Run the _previous release_ (not an intermediate) build of GUI Client and Server
+    - [ ] Check the update notice is displayed correctly
+    - [ ] Revert the update notification Server to the previous release
   - [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
   - [ ] [Upload the artifacts to SourceForge and set defaults](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
   - [ ] Update download links on the website by editing `_config.yml` in `next-release`
