@@ -67,7 +67,7 @@ Try not to sound like a robot. Write conversationally, as if you were talking to
 
 Headings use sentence case “This is a heading” unless delineated (eg “Look - This is a heading”).
 
-Nouns use lower case unless they have a formal definition in this style guide (eg “Directory”, “Fader”). The only exception to this is the word “person” or “people” which can remain in lower case.
+Nouns use lower case unless they have a formal definition in this style guide (eg “Directory”, “Fader”) or refer to specific Jamulus features (eg "Audio Alerts", "Jitter Buffer"). The only exception to this is the word “person” or “people” which can remain in lower case.
 
 Refer to UI labels in inverted commas (eg 'click on the “mute” button')
 
