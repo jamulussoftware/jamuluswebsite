@@ -69,7 +69,7 @@ Headings use sentence case “This is a heading” unless delineated (eg “Look
 
 Nouns use lower case unless they have a formal definition in this style guide (eg “Directory”, “Fader”) or refer to specific Jamulus features (eg "Audio Alerts", "Jitter Buffer"). The only exception to this is the word “person” or “people” which can remain in lower case.
 
-Refer to UI labels in inverted commas (eg 'click on the “mute” button')
+Refer to UI labels in inverted commas (eg 'click on the “Mute” button')
 
 ## Standard terms
 
