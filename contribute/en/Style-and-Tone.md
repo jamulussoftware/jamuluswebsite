@@ -87,7 +87,7 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 “Fader” The UI that controls a channel. “Each fader has a mute button”, “The person’s fader” ,“Group faders together” (not “The person’s channel” or “Mute a Fader”, not “Slider” or “Volume control”)
 
-“Person” A human connected to a server (may be on multiple channels). We might say "People on the server", or "People who have muted themselves", rather than _Musicians_ or _Channels_.
+“Person” A human connected to a server (may be on multiple channels). We might say "a person on the server", or "the people who have muted themselves", rather than _musicians_ or _Channels_.
 
 “Country/Region” Keep in mind that some areas of the world have a controversial (political) status. If possible, be generic and remain neutral. Instead of just saying country, use _Country/Region_ or _Location_.
 
@@ -108,4 +108,6 @@ We use the following abbreviations:
 Kbit/s; Mbit/s; KByte/s; MByte/s.
 
 Values followed by units such as `ms`, `s`, `m`, `km`, `GHz` etc. should be separated by a space; e.g. "20 ms" and "1 GHz" not "20ms" and "1GHz".
+
+Note that we do not distinguish between 1024-based and 1000-based values for these.
 
