@@ -105,9 +105,9 @@ Jamulus is “Free and Open Source (FOSS)” (not “free software” or “open
 
 We use the following abbreviations:
 
-Kbit/s; Mbit/s; KByte/s; MByte/s.
+Kbit/s; Mbit/s; KByte/s; MByte/s. We do not distinguish between 1024-based and 1000-based values for these.
 
 Values followed by units such as `ms`, `s`, `m`, `km`, `GHz` etc. should be separated by a space; e.g. "20 ms" and "1 GHz" not "20ms" and "1GHz".
 
-Note that we do not distinguish between 1024-based and 1000-based values for these.
+
 
