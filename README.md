@@ -56,9 +56,9 @@ Please have a look at our [style and tone guide](https://jamulus.io/contribute/S
 
 We collect changes to the English version of the site on a "next-release" branch first. We then freeze changes prior to a Jamulus software release, and do a translation "sprint" over a couple of weeks when all translation takes place.
 
-1. Changes are first made to EN (= English) *.md files and committed to the “next-release” branch.
+1. Changes are first made to EN (= English) *.md files and committed to the "next-release" branch.
 1. Once we’ve agreed the changes can go live (usually just before a software release), we then create GitHub issues for each language, tagged for that release. You can ask questions about the work there.
-1. Translators for each language then update them on Weblate, or edit the .po files for their language in `_translator-files/po/LANGUAGE/` and open pull requests to merge them into the "next-release” branch.
+1. Translators for each language then update them on Weblate, or edit the .po files for their language in `_translator-files/po/LANGUAGE/` and open pull requests to merge them into the "next-release" branch.
 1. When all translations are merged (issues will then close automatically), we merge that new branch into the `release` branch, which is automatically made live on the production site.
 
 ### Points to note
