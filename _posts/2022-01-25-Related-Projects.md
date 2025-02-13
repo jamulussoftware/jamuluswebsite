@@ -80,7 +80,8 @@ The "MusizierenUeberDasInternet" project describes how to use a Raspberry Pi as 
 It also examines the influence of the Jamulus settings on the transmission quality and how this can be measured. This was first tested with a function generator and an oscilloscope. A device was then developed with which the transmission errors can be measured easily and automatically. Circuit diagrams, layout and software for this device are described and made available.
 The documentation is partly in German and partly in English.
 
-More information about the project can be found here:
+The project was developed by students of electrical engineering and computer science at the FH Aachen University of Applied Sciences.
+More information can be found here:
 [MusizierenUeberDasInternet](https://github.com/StephanBorucki/MusizierenUeberDasInternet)
 
 
