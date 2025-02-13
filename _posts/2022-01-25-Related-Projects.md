@@ -73,8 +73,7 @@ Koord adds real-time video of participants to Jamulus technology in a new applic
 
 The [Melomax website](https://melomax.live) offers private servers groups can use with Jamulus client software.
 
-## Running a Jamulus server on a Raspberry Pi 
-## Measuring transmission quality on Jamulus
+## Jamulus server on Raspberry Pi and Measuring transmission quality
 
 The "MusizierenUeberDasInternet" project describes how to use a Raspberry Pi as a Jamulus client.
 It also examines the influence of the Jamulus settings on the transmission quality and how this can be measured. This was first tested with a function generator and an oscilloscope. A device was then developed with which the transmission errors can be measured easily and automatically. Circuit diagrams, layout and software for this device are described and made available.
