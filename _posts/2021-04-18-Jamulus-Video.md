@@ -76,7 +76,9 @@ Before joining a meeting, you can select to not use "Computer Audio" by selectin
 
 ![Arrow at mute button at bottom left of Zoom](https://github.com/user-attachments/assets/4cdcecf8-5b06-406d-9956-ad0b8b647f87)
 
-Now select "Leave Computer Audio".
+Now select "Leave Computer Audio":
+
+![Popover of audio settings with Leave Computer Audio button](https://github.com/user-attachments/assets/c1ade830-3104-48ca-84c6-1e0a92f6ef9f)
 
 ## Advanced setup
 
