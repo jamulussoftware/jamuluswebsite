@@ -72,7 +72,11 @@ https://meet.jit.si/MyJamulusExampleMeeting#config.prejoinPageEnabled=false&disa
 
 #### Disable joining with audio
 
-Before joining a meeting, you will be asked if you also want to join "Computer Audio". Dismiss this message by closing the window. If you already joined Computer Audio, click on the arrow next to the Mute button and select "Leave Computer Audio".
+Before joining a meeting, you can select to not use "Computer Audio" by selecting "No Audio" as your input device. If you already joined Computer Audio, click on the arrow next to the Mute button:
+
+![Arrow at mute button at bottom left of Zoom](https://github.com/user-attachments/assets/4cdcecf8-5b06-406d-9956-ad0b8b647f87)
+
+Now select "Leave Computer Audio".
 
 ## Advanced setup
 
