@@ -1,0 +1,1 @@
+wiki/ru/1-index.md
