@@ -1,67 +1,68 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Maksim_220 Кабанов <law820314@gmail.com>, 2025.
+# vanapro1 <law820314@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-08-15 02:02+0000\n"
+"Last-Translator: vanapro1 <law820314@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Tips-Tricks-More.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "ru"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Tips-Tricks-More.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Tips-Tricks-More.md:1
 #, no-wrap
 msgid "/wiki/Tips-Tricks-More"
-msgstr ""
+msgstr "/wiki/Tips-Tricks-More"
 
 #. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Tips-Tricks-More.md:1
 #, no-wrap
 msgid "Tips, Tricks and More"
-msgstr ""
+msgstr "Советы, хитрости и многое другое"
 
 #. type: Title #
 #: ../wiki/en/Tips-Tricks-More.md:8
 #, markdown-text, no-wrap
 msgid "Tips & Tricks"
-msgstr ""
+msgstr "Советы & Рекомендации"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:10
 #, markdown-text, no-wrap
 msgid " {:.no_toc}\n"
-msgstr ""
+msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:12
 #, markdown-text, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr ""
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:14
 #, markdown-text, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr ""
+msgstr "<summary>Оглавление</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:17
@@ -70,30 +71,32 @@ msgid ""
 "* TOC\n"
 " {:toc}\n"
 msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:19
 #, markdown-text, no-wrap
 msgid "</details>\n"
-msgstr ""
+msgstr "</details>\n"
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:20
 #, markdown-text, no-wrap
 msgid "Learning about remote band rehearsing"
-msgstr ""
+msgstr "Узнайте о репетициях удаленной группы"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:23
 #, markdown-text
 msgid "Jamulus user [Chris Rimple](https://sourceforge.net/u/chrisrimple/profile/) has compiled a massive amount of information relating to [Remote Band Rehearsals](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc), which covers topics such as hardware and software configuration including examples and advice for newcomers to the field. He also includes a section on Jamulus in comparison to other solutions."
-msgstr ""
+msgstr "Пользователь Jamulus [Крис Римпл](https://sourceforge.net/u/chrisrimple/profile/) собрал огромное кол-во информации, касающейся [Удаленные репетиции оркестра](https://docs.google.com/document/d/1smcvsxdaaViPQvGMQHmah_6BQeqowhmGSFMHfnlY2FI/) (Google doc), которая охватывает такие темы, как настройка аппаратного и ПО, включая примеры и советы для новичков в этой области. Он также включает раздел о Jamulus в сравнении с другими решениями."
 
 #. type: Title ##
 #: ../wiki/en/Tips-Tricks-More.md:24
 #, markdown-text, no-wrap
 msgid "Using the Jamulus Client"
-msgstr ""
+msgstr "Использование клиента Jamulus"
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:26
@@ -123,13 +126,13 @@ msgstr ""
 #: ../wiki/en/Tips-Tricks-More.md:35
 #, markdown-text
 msgid "Several users have reported success allowing a \"virtual audience\" for a Jamulus session by using [JACK audio](https://jackaudio.org) to route the Jamulus signal through JackRouter to the target application (in this case, Zoom meetings)."
-msgstr ""
+msgstr "Некоторые пользователи сообщали об успешном создании \"виртуальной аудитории\" для сеанса Jamulus с помощью [JACK audio](https://jackaudio.org) для маршрутизации сигнала Jamulus через JackRouter в целевое приложение (в данном случае - собрания Zoom)."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:37
 #, markdown-text
 msgid "You can also use [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) for Windows or [BlackHole](https://github.com/ExistentialAudio/BlackHole) for macOS to route the Jamulus output to multiple destinations, for example to your headphones and the meeting application at the same time."
-msgstr ""
+msgstr "Вы также можете использовать [VoiceMeeter](https://www.vb-audio.com/Voicemeeter/banana.htm) (Banana) для Windows или [BlackHole](https://github.com/ExistentialAudio/BlackHole) для macOS, чтобы направить выход Jamulus в несколько мест назначения, например, в наушники и в приложение для совещаний одновременно."
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:38

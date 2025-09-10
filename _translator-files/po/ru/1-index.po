@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Maksim_220 Кабанов <law820314@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-08-11 15:01+0000\n"
+"Last-Translator: Maksim_220 Кабанов <law820314@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. type: Content of: outside any tag (error?)
 #: ../wiki/en/misc/1-index.md:1
@@ -37,52 +37,69 @@ msgid ""
 "---\n"
 "[//]: # Markdown sections should not be indented, otherwise they are treated as code blocks.\n"
 msgstr ""
+"---\n"
+"title: \"Jamulus - Слушайте музыку онлайн. С друзьями. Бесплатно.\"\n"
+"lang: \"en\"\n"
+"permalink: /\n"
+"макет: mainhomepage\n"
+"ldjAppCategory: \"Музыка\"\n"
+"ldjSlogan: \"Слушайте музыку онлайн. С друзьями. Бесплатно.\"\n"
+"ldjCreator: \"Фолькер Фишер и соавторы\".\n"
+"metadescription: \"Jamulus - это бесплатное программное обеспечение с открытым исходным кодом, позволяющее музыкантам исполнять музыку, репетировать или устраивать совместные джемы в режиме реального времени через Интернет.\"\n"
+"mAltProgIcon: \"Значок Jamulus\"\n"
+"mTSlogan: \"Играйте музыку онлайн. С друзьями. Бесплатно\".\n"
+"mTGetStartedNow: \"Начните прямо сейчас!\"\n"
+"mTDownloadNow: \"Загрузите сейчас для\".\n"
+"mTPlatformsAnd: \"и\n"
+"mTOtherPlatforms: 'другие платформы'\n"
+"---\n"
+"[//]: # Разделы Markdown не должны иметь отступов, иначе они будут рассматриваться как блоки кода.\n"
 
 #. type: Content of: <div><div><div><h2>
 #: ../wiki/en/misc/1-index.md:21
 #, no-wrap
 msgid "What is Jamulus?"
-msgstr ""
+msgstr "Что такое Jamulus?"
 
 #. type: Content of: <div><div><div><div>
 #: ../wiki/en/misc/1-index.md:23
 #, no-wrap
 msgid "Jamulus lets you play, rehearse, or jam with your friends, your band, or anyone you find online. Play together remotely in time with high quality, low-latency sound on a normal broadband connection. [Download it here!](wiki/Getting-Started)\n"
-msgstr ""
+msgstr "Jamulus позволяет играть, репетировать или устраивать джемы с друзьями, группой или любым человеком, которого вы найдете в сети. Играйте вместе удаленно в такт с высококачественным звуком с низкой задержкой при обычном широкополосном соединении. [Скачать здесь!](wiki/Getting-Started)\n"
 
 #. type: Attribute 'src' of: <div><div><figure><a><img>
 #: ../wiki/en/misc/1-index.md:32
 msgid "{% include img/en-screenshots/main-screen-medium.inc %}"
-msgstr ""
+msgstr "{% include img/en-screenshots/main-screen-medium.inc %}"
 
 #. type: Attribute 'alt' of: <div><div><figure><a><img>
 #: ../wiki/en/misc/1-index.md:32
 msgid "A screenshot of the main mixer window showing five people from different countries connected."
-msgstr ""
+msgstr "Снимок главного окна микшера с изображением пяти подключенных людей из разных стран."
 
 #. type: Content of: <div><div><figure><figcaption>
 #: ../wiki/en/misc/1-index.md:34
 #, no-wrap
 msgid "Jamulus is international"
-msgstr ""
+msgstr "Jamulus - международный"
 
 #. type: Content of: <div><div><h2>
 #: ../wiki/en/misc/1-index.md:40
 #, no-wrap
 msgid "Jamulus worldwide"
-msgstr ""
+msgstr "Jamulus по всему миру"
 
 #. type: Content of: <div><div><div>
 #: ../wiki/en/misc/1-index.md:42
 #, no-wrap
 msgid "All over the world Jamulus allows choirs to rehearse and rock bands to play. Jamulus brings folk and classical musicians together. It's being used for remote music lessons, in schools and universities, in private and in public — all in real time on the Internet, as if you were there in person.\n"
-msgstr ""
+msgstr "По всему миру Jamulus позволяет репетировать хорам и играть рок-группам. Jamulus объединяет народных и классических музыкантов. Его используют для дистанционных уроков музыки, в школах и университетах, в частном порядке и публично - все в режиме реального времени через Интернет, как если бы вы присутствовали лично.\n"
 
 #. type: Content of: <div><div><h2>
 #: ../wiki/en/misc/1-index.md:44
 #, no-wrap
 msgid "Help needed?"
-msgstr ""
+msgstr "Нужна помощь?"
 
 #. type: Content of: <div><div><p><div>
 #: ../wiki/en/misc/1-index.md:47
@@ -91,33 +108,35 @@ msgid ""
 "Check out the [documentation](wiki/Getting-Started) and consider the [troubleshooting section](wiki/Client-Troubleshooting)!\n"
 "You can also ask on the [forums](https://github.com/jamulussoftware/jamulus/discussions).\n"
 msgstr ""
+"Ознакомьтесь с [документацией](wiki/Getting-Started) и рассмотрите раздел [устранение неполадок](wiki/Client-Troubleshooting)!\n"
+"Вы также можете задать вопрос на [форумах](https://github.com/jamulussoftware/jamulus/discussions).\n"
 
 #. type: Content of: <div><div><h2>
 #: ../wiki/en/misc/1-index.md:53
 #, no-wrap
 msgid "Want to get involved?"
-msgstr ""
+msgstr "Хотите принять участие?"
 
 #. type: Content of: <div><div><p><div>
 #: ../wiki/en/misc/1-index.md:56
 #, no-wrap
 msgid "Ideas? Found a bug? Want to contribute some code or help [translating](https://github.com/jamulussoftware/jamulus/blob/main/docs/TRANSLATING.md) Jamulus into your language? Since Jamulus is [free and open source software](https://www.gnu.org/philosophy/free-sw.en.html) (FOSS) licensed under the [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) you can help us!"
-msgstr ""
+msgstr "Идеи? Нашли ошибку? Хотите внести свой код или помочь [перевести](https://github.com/jamulussoftware/jamulus/blob/main/docs/TRANSLATING.md) Jamulus на ваш язык? Поскольку Jamulus - это [свободное и открытое ПО](https://www.gnu.org/philosophy/free-sw.en.html) (FOSS), лицензированное по [GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), вы можете помочь нам!"
 
 #. type: Content of: <div><div><p><div>
 #: ../wiki/en/misc/1-index.md:58
 #, no-wrap
 msgid "Take a look at our [contribution guidelines](wiki/Contribution) to find out how. Everybody is welcome!"
-msgstr ""
+msgstr "Ознакомьтесь с нашими [правилами внесения вклада](wiki/Contribution), чтобы узнать, как это сделать. Приглашаем всех!"
 
 #. type: Content of: <div><div><p><div>
 #: ../wiki/en/misc/1-index.md:60
 #, no-wrap
 msgid "_For detailed information on how Jamulus works, see [this paper by Volker Fischer (PDF)](/PerformingBandRehearsalsontheInternetWithJamulus.pdf)._\n"
-msgstr ""
+msgstr "_Подробную информацию о том, как работает Jamulus, можно найти в [этой статье Фолькера Фишера (PDF)](/PerformingBandRehearsalsontheInternetWithJamulus.pdf)._\n"
 
 #. type: Content of: <div><div><a>
 #: ../wiki/en/misc/1-index.md:65
 #, no-wrap
 msgid "{{ page.mTGetStartedNow }}"
-msgstr ""
+msgstr "{{ page.mTGetStartedNow }}"

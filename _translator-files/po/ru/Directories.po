@@ -1,112 +1,113 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Maksim_220 Кабанов <law820314@gmail.com>, 2025.
+# vanapro1 <law820314@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-08-15 02:02+0000\n"
+"Last-Translator: vanapro1 <law820314@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "ru"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "/wiki/Directories"
-msgstr ""
+msgstr "/wiki/Directories"
 
 #. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Directories.md:1
 #, no-wrap
 msgid "Directories"
-msgstr ""
+msgstr "Справочники"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:9
 #, markdown-text
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Администрирование сервера\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title #
 #: ../wiki/en/Directories.md:11
 #, markdown-text, no-wrap
 msgid "Running a Directory"
-msgstr ""
+msgstr "Запуск каталога"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:14
 #, markdown-text
 msgid "This is a specialised Jamulus Server configuration, as described in [Server Modes](Running-a-Server#server-modes)."
-msgstr ""
+msgstr "Это специальная конфигурация сервера Jamulus, описанная в разделе [Режимы сервера](Running-a-Server#server-modes)."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:16
 #, markdown-text, no-wrap
 msgid "To view Servers listed by a Custom Directory, users must enter the address of that Directory in their Client's Settings > Advanced Setup > Custom Directories field. Multiple addresses can be added in this way if needed. Custom Directories will then appear in the Directory drop-down list on their Connect window. Custom Directories otherwise work for Clients in the same way as Public Directories, displaying a list of Servers registered with them.\n"
-msgstr ""
+msgstr "Чтобы просмотреть серверы, перечисленные в пользовательском каталоге, пользователи должны ввести адрес этого каталога в поле \"Настройки клиента\" > \"Расширенная настройка\" > \"Пользовательские каталоги\". При необходимости таким образом можно добавить несколько адресов. После этого пользовательские каталоги появятся в раскрывающемся списке Directory в окне Connect. В остальном пользовательские директории работают для клиентов так же, как и публичные директории, отображая список зарегистрированных в них серверов.\n"
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:18
 #, markdown-text
 msgid "To run a Server as a Directory, it should be started with the `--directoryaddress` option to make itself (that is, `localhost` or `127.0.0.1`) the Directory to query for Servers."
-msgstr ""
+msgstr "Чтобы запустить сервер как каталог, его следует запустить с опцией `--directoryaddress`, чтобы сделать себя (то есть `localhost` или `127.0.0.1`) каталогом для запроса серверов."
 
 #. type: Plain text
 #: ../wiki/en/Directories.md:20
 #, markdown-text
 msgid "When running a Server with the GUI, set the Custom Directory server address in the Options tab to \"localhost\", then select \"Custom\" from the Directory drop-down list."
-msgstr ""
+msgstr "При запуске сервера с графическим интерфейсом установите для адреса сервера Custom Directory на вкладке Options значение \"localhost\", а затем выберите \"Custom\" в раскрывающемся списке Directory."
 
 #. type: Title ###
 #: ../wiki/en/Directories.md:22
 #, markdown-text, no-wrap
 msgid "Points to note about Directories"
-msgstr ""
+msgstr "Что следует отметить о каталогах"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:25
 #, markdown-text
 msgid "If you want to control which Servers can register with your Directory, you can enable a whitelist with the `--listfilter` command line option in the format `ip address 1[;ip address 2]`."
-msgstr ""
+msgstr "Если вы хотите контролировать, какие серверы могут регистрироваться в вашем каталоге, вы можете включить белый список с помощью опции командной строки `--listfilter` в формате `ip address 1[;ip address 2]`."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:27
 #, markdown-text
 msgid "When running a Server behind a NAT firewall on a private network and registering with a Directory on the same network, run the Server using the `--serverpublicip` option to specify the public IP address.  This is necessary to allow Clients on the public Internet to connect to the correct address.  Note that for the Server(s) using this option, you will still need proper port forwarding in your router/firewall."
-msgstr ""
+msgstr "При запуске сервера за брандмауэром NAT в частной сети и регистрации в каталоге в той же сети запустите сервер с помощью опции `--serverpublicip`, чтобы указать публичный IP-адрес.  Это необходимо для того, чтобы клиенты в публичном Интернете могли подключаться к нужному адресу.  Обратите внимание, что для сервера(ов), использующего(их) эту опцию, вам все равно потребуется соответствующая проброска портов в вашем маршрутизаторе/брандмауэре."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:29
 #, markdown-text
 msgid "When running a Client behind a NAT firewall on a private network with a Directory on the same network, the Directory itself needs to be run using the `--serverpublicip` option to specify the public IP address, so that any Servers on the public Internet registering with the Directory that require the \"hole punch\" can be accessed by the Client(s). (This is because otherwise the Directory would provide the local network address of the Client to the Server and the \"hole punch\" would fail.)"
-msgstr ""
+msgstr "При запуске клиента за брандмауэром NAT в частной сети с каталогом в той же сети сам каталог должен быть запущен с использованием опции `--serverpublicip` для указания публичного IP-адреса, чтобы все серверы в публичном Интернете, регистрирующиеся в каталоге и требующие \"пробивки дыр\", могли быть доступны клиенту(ам). (Это необходимо потому, что в противном случае Каталог предоставит серверу адрес локальной сети клиента, и \"пробивка дыр\" не удастся.)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:31
 #, markdown-text
 msgid "If you need to restart your Directory for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
-msgstr ""
+msgstr "Если по какой-либо причине вам потребуется перезапустить каталог (например, при перезагрузке хоста), подключенные к нему серверы будут отключены до тех пор, пока они не перерегистрируются. Это не означает, что клиенты, подключенные к этим серверам, будут отключены, но означает, что новые клиенты не смогут видеть серверы, перечисленные в вашем каталоге, пока эти серверы не перерегистрируются. Чтобы список зарегистрированных серверов сохранялся между перезагрузками, используйте опцию `--directoryfile`, чтобы указать местоположение и имя файла, который Каталог может читать и записывать."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:32
 #, markdown-text
 msgid "Up to 150 Servers can then register with a Directory."
-msgstr ""
+msgstr "В каталоге может быть зарегистрировано до 150 серверов."

@@ -1,67 +1,68 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Maksim_220 Кабанов <law820314@gmail.com>, 2025.
+# vanapro1 <law820314@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-08-15 02:02+0000\n"
+"Last-Translator: vanapro1 <law820314@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "ru"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "/wiki/Server-Bandwidth"
-msgstr ""
+msgstr "/wiki/Server-Bandwidth"
 
 #. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "Bandwidth Use"
-msgstr ""
+msgstr "Использование полосы пропускания"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
 #, markdown-text
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Администрирование сервера\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:10
 #, markdown-text, no-wrap
 msgid "Audio bandwidth"
-msgstr ""
+msgstr "Пропускная способность аудиосистемы"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
 #, markdown-text
 msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr ""
+msgstr "Настройки звука влияют на требуемую пропускную способность сети. В таблице ниже приведены требования к сети в зависимости от конфигурации: * Каналы: стерео/моно * Качество: высокое/среднее/низкое * Продолжительность звукового буфера: 2,67 мс, 5,33 мс, 10,67 мс, 21,33 мс"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
 #, markdown-text
 msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
-msgstr ""
+msgstr "Со следующими единицами измерения * мс : миллисекунды * Кбит/с : Килобит в секунду (напоминание: 1 Мбит/с = 1024 Кбит/с, 1 Кбайт/с = 8 Кбит/с) * Мбит/с : Мегабит в секунду"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
@@ -76,12 +77,20 @@ msgid ""
 "| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
 "| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 msgstr ""
+"| Каналы | Качество | Пропускная способность (для буфера : 2,67 мс) | Пропускная способность (для буфера : 5,33 мс) | Пропускная способность (для буфера : 10,67 мс) | Пропускная способность (для буфера : 21,33 мс)|\n"
+"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
+"| Стерео | Высокий | 894 Кбит/с | 657 Кбит/с | 541 Кбит/с | 483 Кбит/с |\n"
+"| Стерео | Среднее | 672 Кбит/с | 444 Кбит/с | 328 Кбит/с | 270 Кбит/с |\n"
+"| Стерео | Низкий | 606 Кбит/с | 372 Кбит/с | 256 Кбит/с | 198 Кбит/с |\n"
+"| Моно | Высокий | 672 Кбит/с | 444 Кбит/с | 328 Кбит/с | 270 Кбит/с 8|\n"
+"| Моно | Средний | 594 Кбит/с | 366 Кбит/с | 250 Кбит/с | 192 Кбит/с |\n"
+"| Моно | Низкий | 534 Кбит/с | 306 Кбит/с | 190 Кбит/с | 132 Кбит/с |\n"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:31
 #, markdown-text, no-wrap
 msgid "Network bandwidth"
-msgstr ""
+msgstr "Пропускная способность сети"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38
@@ -93,9 +102,14 @@ msgid ""
 "<figcaption>Calculate bandwidth use </figcaption>\n"
 "</figure>\n"
 msgstr ""
+"Есть один восходящий поток (музыкант отправляет на сервер) и один нисходящий поток (сервер отправляет микс обратно музыканту).)\n"
+"<figure>\n"
+"        <img src=\"{% include img/en-screenshots/bandwidth-diagram.inc %}\" loading=\"lazy\" alt=\"Диаграмма пропускной способности сети Jamulus при различном качестве звука - от низкого до высокого\">\n"
+"<figcaption>Рассчитайте использование полосы пропускания </figcaption>\n"
+"</figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:40
 #, markdown-text
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
-msgstr ""
+msgstr "Отметим также, что средняя скорость передачи данных ADSL2 составляет 10 Мбит/с для нисходящего потока и 1 Мбит/с для восходящего. Фактическая производительность зависит от расстояния до провайдера, которое может [теоретически варьироваться от 24 Мбит/с на расстоянии 0,3 км до 1,5 Мбит/с на расстоянии 5,2 км](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) для скорости загрузки."

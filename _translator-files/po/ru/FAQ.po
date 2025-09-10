@@ -1,67 +1,68 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Maksim_220 Кабанов <law820314@gmail.com>, 2025.
+# vanapro1 <law820314@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2025-08-15 02:02+0000\n"
+"Last-Translator: vanapro1 <law820314@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/FAQ.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "ru"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/FAQ.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/FAQ.md:1
 #, no-wrap
 msgid "/wiki/FAQ"
-msgstr ""
+msgstr "/wiki/FAQ"
 
 #. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/FAQ.md:1
 #, no-wrap
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #. type: Title #
 #: ../wiki/en/FAQ.md:8
 #, markdown-text, no-wrap
 msgid "Jamulus FAQ"
-msgstr ""
+msgstr "ЧЗВ о Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:10
 #, markdown-text, no-wrap
 msgid " {:.no_toc}\n"
-msgstr ""
+msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:12
 #, markdown-text, no-wrap
 msgid "<details markdown=\"1\">\n"
-msgstr ""
+msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:14
 #, markdown-text, no-wrap
 msgid "<summary>Table of contents</summary>\n"
-msgstr ""
+msgstr "<summary>Оглавление</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:17
@@ -70,165 +71,167 @@ msgid ""
 "* TOC\n"
 " {:toc}\n"
 msgstr ""
+"* TOC\n"
+" {:toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:19
 #, markdown-text, no-wrap
 msgid "</details>\n"
-msgstr ""
+msgstr "</details>\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:21
 #, markdown-text, no-wrap
 msgid "**For common problems and their solutions when using Jamulus, see the [Troubleshooting](/wiki/Client-Troubleshooting) page.**\n"
-msgstr ""
+msgstr "**Об общих проблемах и их решениях при использовании Jamulus см. на странице [Устранение неполадок](/wiki/Client-Troubleshooting).**.\n"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:23
 #, markdown-text, no-wrap
 msgid "Is there a metronome, synchronization, or some other way of keeping in time?"
-msgstr ""
+msgstr "Есть ли метроном, синхронизация или другой способ следить за временем?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:26
 #, markdown-text
 msgid "No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms."
-msgstr ""
+msgstr "Нет. Музыканты на сервере Jamulus играют в реальном времени вместе, как и при личной встрече. Если вам нужен сигнал времени, в Интернете есть решения с общим метрономом, которые вы можете попробовать. Но, вероятно, лучше всего просто минимизировать задержку, чтобы ни у кого не было общей задержки более 30-50 мс."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:28
 #, markdown-text
 msgid "Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly."
-msgstr ""
+msgstr "Помните также, что все участники должны следовать [Золотому правилу](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together), которое также определит, сможете ли вы сыграть в такт правильно."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:29
 #, markdown-text, no-wrap
 msgid "How do I know if I can join a Server? Are there rules?"
-msgstr ""
+msgstr "Как узнать, могу ли я присоединиться к серверу? Есть ли правила?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:32
 #, markdown-text
 msgid "If somebody lists a Server on one of the Directories built into Jamulus, they accept that anyone can play on it. Jamulus has no password protection or other authentication mechanisms. Whilst some Servers may state their policies in the welcome message you will see in the chat window, Jamulus itself does nothing to enforce these."
-msgstr ""
+msgstr "Если кто-то указывает сервер в одном из каталогов, встроенных в Jamulus, он соглашается с тем, что любой может играть на нем. В Jamulus нет защиты паролем или других механизмов аутентификации. Хотя некоторые серверы могут указывать свои правила в приветственном сообщении, которое вы увидите в окне чата, Jamulus сам по себе ничего не делает для их соблюдения."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:34
 #, markdown-text
 msgid "Note also that Servers do not have to be registered on a Directory in order for Jamulus Clients to connect to them. Server operators can just give out the address of their Servers to those they want to play with, and they can then connect directly. Have a look at [this overview for more information](/wiki/Running-a-Server#server-modes)."
-msgstr ""
+msgstr "Обратите внимание, что серверы не обязательно должны быть зарегистрированы в каталоге, чтобы клиенты Jamulus могли к ним подключиться. Операторы серверов могут просто сообщать адреса своих серверов тем, с кем они хотят играть, и те смогут подключаться напрямую. Посмотрите [этот обзор для получения дополнительной информации](/wiki/Running-a-Server#server-modes)."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:35
 #, markdown-text, no-wrap
 msgid "Why shouldn’t I use wireless equipment?"
-msgstr ""
+msgstr "Почему не стоит использовать беспроводное оборудование?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:38
 #, markdown-text
 msgid "Whether or not you will be able to play in time with other musicians depends mainly on how much latency (delay) you have in your sound signal and whether you are all following [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). An overall delay much bigger than 50 ms usually makes it too hard to play in time unless you train yourself to do so. Some musicians report they can play in time with delays of up to 70 ms by playing ahead of the beat. But much beyond that and it becomes too difficult unless timing isn’t an important factor in the music or you just want to listen."
-msgstr ""
+msgstr "Сможете ли вы играть в такт с другими музыкантами, зависит в основном от того, насколько велика задержка (delay) в вашем звуковом сигнале и соблюдаете ли вы все [Золотое правило](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together). Общая задержка, превышающая 50 мс, обычно делает игру в такт слишком трудной, если только вы не приучите себя к этому. Некоторые музыканты сообщают, что могут играть в такт с задержкой до 70 мс, играя впереди такта. Но если время не является важным фактором в музыке или вы просто хотите послушать, это становится слишком сложно."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:40
 #, markdown-text
 msgid "So it makes sense to minimise any sources of delay or other problems with the signal. Even fast wi-fi is usually too variable to use for long periods with Jamulus, and Bluetooth headphones and mics usually introduce latencies of about 50 ms or more."
-msgstr ""
+msgstr "Поэтому имеет смысл свести к минимуму любые источники задержки или других проблем с сигналом. Даже быстрый wi-fi обычно слишком нестабилен для длительного использования Jamulus, а наушники и микрофоны Bluetooth обычно создают задержки около 50 мс и более."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:41
 #, markdown-text, no-wrap
 msgid "Why should I not listen to my own signal?"
-msgstr ""
+msgstr "Почему я не должен прислушиваться к собственному сигналу?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:44
 #, markdown-text
 msgid "For the same reason as you need to minimise delay in your signal in order to play in time, you need to make sure you are playing to your own sound that other musicians are hearing. More information on this, and a way of testing your setup to make sure you are obeying this “Golden Rule” [can be found here](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
-msgstr ""
+msgstr "По той же причине, по которой вам нужно минимизировать задержку сигнала, чтобы играть в такт, вам нужно убедиться, что вы играете в соответствии со своим собственным звуком, который слышат другие музыканты. Более подробную информацию об этом, а также о том, как проверить свою установку, чтобы убедиться, что вы соблюдаете это \"золотое правило\" [можно найти здесь](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together)."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:46
 #, markdown-text
 msgid "Of course, if you are playing an acoustic instrument, or are a singer, it will be hard to exclude your “local” sound. But you should at least try to do so by for example using closed-back headphones turned up as loud as you are able to mask your own sound. This will let you concentrate on the mix coming back to you from the Server."
-msgstr ""
+msgstr "Конечно, если вы играете на акустическом инструменте или поете, вам будет сложно исключить свой \"local\" звук. Но вы должны хотя бы попытаться сделать это, например, используя закрытые наушники, включенные настолько громко, насколько вы в состоянии замаскировать свой собственный звук. Это позволит вам сконцентрироваться на миксе, поступающем к вам с сервера."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:47
 #, markdown-text, no-wrap
 msgid "Do I need a fast Internet connection?"
-msgstr ""
+msgstr "Нужно ли мне быстрое подключение к Интернету?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:50
 #, markdown-text
 msgid "No, especially if you don't run a Server to host other musicians. Having a low ping is more important. Most people on standard broadband (e.g. 10 Mbit/s down and 1 Mbit/s up) will have no problems. For those running Servers at home, depending on how many people join, you may encounter issues if your _upstream_ bandwidth is lower than about 5 Mbit/s."
-msgstr ""
+msgstr "Нет, особенно если вы не используете сервер для размещения других музыкантов. Более важно иметь низкий пинг. У большинства людей со стандартным широкополосным доступом (например, 10 Мбит/с вниз и 1 Мбит/с вверх) проблем не будет. Для тех, кто запускает серверы дома, в зависимости от того, сколько человек к нему присоединяется, могут возникнуть проблемы, если пропускная способность вашего _upstream_ канала ниже примерно 5 Мбит/с."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:51
 #, markdown-text, no-wrap
 msgid "Do I need to run a Server?"
-msgstr ""
+msgstr "Нужно ли мне запускать сервер?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:54
 #, markdown-text
 msgid "No. If you just intend to connect to other people’s Servers, then all you need is a Client. [Read this if you think you need to run your own Server](/wiki/Running-a-Server)."
-msgstr ""
+msgstr "Нет. Если вы собираетесь просто подключаться к чужим серверам, то вам нужен только клиент. [Прочтите это, если вы считаете, что вам нужен собственный сервер](/wiki/Running-a-Server)."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:55
 #, markdown-text, no-wrap
 msgid "How does Jamulus work (in general)?"
-msgstr ""
+msgstr "Как работает Jamulus (в целом)?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:58
 #, markdown-text, no-wrap
 msgid "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Diagram showing how Jamulus works\">\n"
-msgstr ""
+msgstr "<img src=\"{% include img/en-screenshots/diagram-overview.inc %}\" loading=\"lazy\" alt=\"Диаграмма, показывающая, как работает Jamulus\">\n"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:61
 #, markdown-text
 msgid "Jamulus works on the Client-server principle. Everybody’s audio is sent to a Server, mixed and processed there. Afterwards, the audio is sent back to each Client. If a Server is registered in a Jamulus Directory, the Server's information will be provided to all Clients using that Directory."
-msgstr ""
+msgstr "Jamulus работает по принципу клиент-сервер. Все аудио отправляются на сервер, микшируются и обрабатываются там. После этого аудио отправляется обратно каждому клиенту. Если сервер зарегистрирован в каталоге Jamulus, информация о нем будет предоставлена всем клиентам, использующим этот каталог."
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:62
 #, markdown-text, no-wrap
 msgid "Why doesn't Jamulus provide video support?"
-msgstr ""
+msgstr "Почему Jamulus не обеспечивает поддержку видео?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:65
 #, markdown-text
 msgid "Adding video support adds a lot of complexity. You can use other software like Jitsi or Zoom if you want to see others when playing (or have an \"audience\"), but the video will be significantly behind the Jamulus audio."
-msgstr ""
+msgstr "Добавление поддержки видео значительно усложняет задачу. Вы можете использовать другие программы, такие как Jitsi или Zoom, если хотите видеть других во время игры (или иметь \"зрителей\"), но видео будет значительно отставать от звука Jamulus."
 
 #. type: Title ##
 #: ../wiki/en/FAQ.md:67
 #, markdown-text, no-wrap
 msgid "Server FAQ"
-msgstr ""
+msgstr "ЧЗВ о сервере"
 
 #. type: Title ###
 #: ../wiki/en/FAQ.md:69
 #, markdown-text, no-wrap
 msgid "Why do Registered Servers not need port forwarding?"
-msgstr ""
+msgstr "Почему зарегистрированным серверам не требуется проброс портов?"
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:72
 #, markdown-text
 msgid "Normally, network address translation (NAT) blocks incoming requests initiated from outside the local network. Inbound traffic is only possible for packets relating to an outbound request (strictly speaking, “related” and “established” packets to an initial outbound connection). In Registered Server mode, your Jamulus Server initiates an outbound connection when it connects to a Directory. From then on, the Directory sends (established/related) connection “pings” (not ICMP pings) to your Server at regular intervals to keep the relevant port(s) open on your router."
-msgstr ""
+msgstr "Обычно трансляция сетевых адресов (NAT) блокирует входящие запросы, инициированные извне локальной сети. Входящий трафик возможен только для пакетов, относящихся к исходящему запросу (строго говоря, \"связанные\" и \"установленные\" пакеты для первоначального исходящего соединения). В режиме Registered Server ваш Jamulus Server инициирует исходящее соединение при подключении к каталогу. С этого момента каталог посылает (установленное/связанное) соединение \"пингами\" (не ICMP-пингами) на ваш сервер через регулярные промежутки времени, чтобы держать соответствующий порт(ы) открытым на вашем маршрутизаторе."
 
 #. type: Plain text
 #: ../wiki/en/FAQ.md:73
 #, markdown-text
 msgid "However, to reach an Unregistered Server, each Client has to initiate a connection into the Server’s network. A NAT prevents this, so you need to configure your router to allow incoming connection requests on the Jamulus port using port forwarding."
-msgstr ""
+msgstr "Однако, чтобы связаться с незарегистрированным сервером, каждый клиент должен инициировать подключение к сети сервера. NAT препятствует этому, поэтому необходимо настроить маршрутизатор так, чтобы он разрешал входящие запросы на соединение через порт Jamulus с помощью переадресации портов."
