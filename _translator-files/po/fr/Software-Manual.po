@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
-# Olivier Humbert <trebmuh@tuxfamily.org>, 2022, 2023, 2024.
-# Julien Taverna <jujudusud@gmail.com>, 2023, 2024.
+# Olivier Humbert <trebmuh@tuxfamily.org>, 2022, 2023, 2024, 2025.
+# Julien Taverna <jujudusud@gmail.com>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-10-13 12:15+0000\n"
+"PO-Revision-Date: 2025-01-03 22:02+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@tuxfamily.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/software-manual/fr/>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -79,10 +79,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-#, fuzzy, no-wrap
-#| msgid "</details> \n"
+#, no-wrap
 msgid "</details>\n"
-msgstr "</details> \n"
+msgstr "</details>\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:21
@@ -112,10 +111,9 @@ msgstr "Ping, Délai et Gigue"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
-#, fuzzy, no-wrap
-#| msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
+#, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.\n"
-msgstr "**Ping** indique la latence de votre réseau en millisecondes, le plus bas étant le mieux. Le temps de ping contribue au délai global (voir ci-dessous). La cause la plus probable d'un ping élevé est que votre distance au serveur est trop grande.   \n"
+msgstr "**Ping** indique la latence de votre réseau en millisecondes, le plus bas étant le mieux. Le temps de ping contribue au délai global (voir ci-dessous). La cause la plus probable d'un ping élevé est que votre distance au serveur est trop grande.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
@@ -226,10 +224,8 @@ msgstr "Tchate"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
-#, fuzzy
-#| msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives."
-msgstr "Ouvre la fenêtre de tchate. Le texte saisi est envoyé à tous les clients connectés. Si un nouveau message de tchate arrive et que la fenêtre de tchate n'est pas déjà ouverte, elle s'ouvrira automatiquement pour tous les clients. Voir dans les paramètres pour activer optionnellement une alerte sonore lorsqu'un nouveau message de tchate est reçu."
+msgstr "Ouvre la fenêtre de tchate. Le texte saisi est envoyé à tous les clients connectés. Si un nouveau message de tchate arrive et que la fenêtre de tchate n'est pas déjà ouverte, elle s'ouvrira automatiquement pour tous les clients. Voir dans les paramètres pour activer optionnellement une alerte sonore lorsqu'un nouveau message de tchate arrive."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
@@ -265,10 +261,8 @@ msgstr "Les opérateurs de serveurs enregistrent leurs serveurs dans des annuair
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
 msgid "If you know the hostname or IP address of a private Server, you can connect to it using the \"Server Address\" field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Si vous connaissez l'adresse IP ou l'URL d'un serveur privé, vous pouvez vous y connecter en remplissant le champ nom/adresse du serveur.  Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`.  (Notez que les adresses IPv6 doivent être entièrement placées entre crochets, par exemple `[::1]:22124`.)  Le champ affichera également une liste des adresses de serveur les plus récemment utilisées.  Le bouton qui suit le champ permet de supprimer l'entrée actuelle de la liste."
+msgstr "Si vous connaissez le nom d'hôte ou l'adresse IP d'un serveur privé, vous pouvez vous y connecter en remplissant le champ \"adresse du serveur\".  Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`.  (Notez que les adresses IPv6 doivent être entièrement placées entre crochets, par exemple `[::1]:22124`.)  Le champ affichera également une liste des adresses de serveur les plus récemment utilisées.  Le bouton qui suit le champ permet de supprimer l'entrée actuelle de la liste."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
@@ -305,14 +299,12 @@ msgstr "Si vous voyez une icône \"silencé\" au-dessus d'un utilisateur, cela s
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:116
 msgid "Users usually appear left-to-right in the order that they connect. When joining a server that already has participants, the default order depends on the versions of Jamulus at the client and the server.  With a client version before 3.12.0 or a server version older than 3.5.5, the existing participants will be shown before your own fader channel.  With a client of 3.12.0 or later connected to a server of 3.5.5 or newer, your own fader will be shown first, with the other existing participants shown to the right.  In either case, participants joining subsequently will by default appear to the right of all the existing participants."
-msgstr ""
+msgstr "Les utilisateurs apparaissent généralement de gauche à droite dans l'ordre où ils se connectent. Lorsque vous rejoignez un serveur qui a déjà des participants, l'ordre par défaut dépend des versions de Jamulus du client et du serveur.  Avec une version du client antérieure à 3.12.0 ou une version du serveur antérieure à 3.5.5, les participants existants seront affichés avant votre propre canal.  Avec un client de la version 3.12.0 ou ultérieure connecté à un serveur de la version 3.5.5 ou plus récente, votre propre chariot sera affiché en premier, les autres participants existants étant affichés à droite.  Dans les deux cas, les participants qui se joindront ultérieurement à la réunion apparaîtront par défaut à droite de tous les participants existants."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:118
-#, fuzzy
-#| msgid "Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu."
 msgid "You can override this order and sort instead by name, instrument, group, city or channel number using the View menu. See Menu Commands below."
-msgstr "Les utilisateurs apparaissent habituellement de gauche à droite dans l'ordre de leur connexion. Vous pouvez également les trier par nom, instrument, groupe ou ville en utilisant le menu Affichage."
+msgstr "Vous pouvez sur-écrire cet ordre et trier par nom, instrument, groupe, ville ou numéro de canal à la place à l'aide du menu Affichage. Voir les commandes de menu ci-dessous."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:120
@@ -367,12 +359,12 @@ msgstr "Menu commandes"
 #: ../wiki/en/Software-Manual.md:137
 #, no-wrap
 msgid "File > Connection Setup..."
-msgstr ""
+msgstr "Fichier > Configuration de connexion..."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:140
 msgid "Opens the [connection dialogue (see above)](#connectdisconnect-button)."
-msgstr ""
+msgstr "Ouvre la [fenêtre de connexion (voir ci-dessus)](#connectdisconnect-button)."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:141
@@ -382,63 +374,58 @@ msgstr "Fichier > Charger/sauvegarder la configuration des canaux du mixeur"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:144
-#, fuzzy
-#| msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgid "You can save and restore the mix you have for your band. This stores your settings for each person's fader volume, pan setting, mute and solo state. You can load this mix any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
-msgstr "Vous pouvez sauvegarder et restaurer le mixage que vous avez pour les répétitions de votre groupe (chariot, sourdine, pan, solo etc.) et le charger à tout moment (même pendant que vous jouez). Le chargement peut également se faire par glisser/déposer dans la fenêtre du mixeur."
+msgstr "Vous pouvez enregistrer et restaurer le mixage de votre groupe. Ce mixage stocke vos réglages pour le volume du chariot de chaque personne, le réglage du panoramique, la sourdine et l'état du solo. Vous pouvez charger ce mixage à tout moment (même lorsque vous jouez). Le chargement peut également se faire par glisser/déposer dans la fenêtre de la table de mixage."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:145
 #, no-wrap
 msgid "File > Exit"
-msgstr ""
+msgstr "Fichier > Quitter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:148
 msgid "Closes all the windows and exits the application."
-msgstr ""
+msgstr "Ferme toutes les fenêtres et quitte l'application."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:149
 #, no-wrap
 msgid "Edit > Clear All Stored Solo/Mute Settings"
-msgstr ""
+msgstr "Éditer > Effacer tous les réglages solo/silence enregistrés"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:152
 msgid "Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins - or you join a server where they are playing - the settings will automatically be applied.  Use this command to clear _all_ these stored settings."
-msgstr ""
+msgstr "Chaque fois que vous mettez un canal en solo ou en sourdine, Jamulus se souvient de ces paramètres. Même si cette personne quitte et rejoint à nouveau le canal - ou si vous rejoignez un serveur où elle joue - les réglages seront automatiquement appliqués.  Utilisez cette commande pour effacer _tous_ ces réglages mémorisés."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:153
 #, no-wrap
 msgid "Edit > Set All Faders to New Client Level"
-msgstr ""
+msgstr "Éditer > Régler tous les chariots sur le nouveau niveau du client"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:156
 msgid "Applies the [configured \"New Client Level\"](#new-client-level) to all currently connected channels."
-msgstr ""
+msgstr "Applique la [configuration \"Niveau des nouveaux clients\"](#new-client-level) à tous les canaux actuellement connectés."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:157
-#, fuzzy, no-wrap
-#| msgid "Edit > Auto-Adjust All Faders "
+#, no-wrap
 msgid "Edit > Auto-Adjust All Faders"
-msgstr "Éditer > Auto-ajustement de tous les chariots "
+msgstr "Éditer > Auto-ajustement de tous les chariots"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:160
-#, fuzzy
-#| msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
 msgid "Applies a one-off fader adjustment to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
-msgstr "Applique un réglage de chariot unique à chaque canal en fonction de son volume. Utile pour les grands ensembles afin d'obtenir un mixage global raisonnable, bien que des ajustements individuels puissent encore être nécessaires. À appliquer de préférence pendant un échauffement ou une partie uniforme du morceau de musique."
+msgstr "Applique un ajustement de chariot unique à chaque canal en fonction de son volume. Utile pour les grands ensembles afin d'obtenir un mixage global raisonnable, bien que des ajustements individuels puissent encore être nécessaires. À appliquer de préférence pendant un échauffement ou une partie uniforme du morceau de musique."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:161
 #, no-wrap
 msgid "View > (sort options)"
-msgstr ""
+msgstr "Affichage > (options de tri)"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:166
@@ -448,6 +435,9 @@ msgid ""
 "* Own Fader First<br/>\n"
 "This option can be used in addition to the others to move your own channel to always be the leftmost, irrespective of the sort order of the other channels.\n"
 msgstr ""
+"La plupart des éléments du menu \"Affichage\" vous permettent d'ajuster l'ordre dans lequel Jamulus choisit d'afficher les canaux sur le serveur :\n"
+"* Canal personnel en premier<br/>\n"
+"Cette option peut être utilisée en plus des autres pour que votre propre canal soit toujours le plus à gauche, quel que soit l'ordre de tri des autres canaux.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:178
@@ -465,40 +455,50 @@ msgid ""
 "Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
 "Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
 msgstr ""
+"* Pas de tri par utilisateur<br/>\n"
+"Cette option ne prend pas en compte les détails de l'utilisateur lors du tri.  Le tri se fait selon l'ordre dans lequel les canaux rejoignent le serveur actuel, comme décrit plus haut, les nouveaux canaux étant ajoutés à l'extrémité droite.\n"
+"* Tri par nom<br/>\n"
+"Ce tri est effectué en fonction du nom que l'utilisateur a choisi dans son profil.\n"
+"* Trier par Instrument / Ville<br/>\n"
+"Permet d'effectuer un tri en fonction de l'instrument ou de la ville que l'utilisateur a choisi dans son profil, ainsi que de son nom.\n"
+"* Trier par groupe<br/>\n"
+"Lorsque la fonction de groupe de chariots est utilisée, le tri se fait par numéro de groupe croissante de gauche à droite (et à l'intérieur de celui-ci, par nom), avec tous les canaux non groupés à droite.\n"
+"* Trier par canal<br/>\n"
+"Lorsque les contrôles de canaux de Jamulus (fader, mute, solo, etc) sont contrôlés par MIDI (voir [Utiliser --ctrlmidich pour les contrôleurs MIDI](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)), ceci permet de trier par numéro de canal afin d'assurer un ordre de tri stable qui s'aligne sur les contrôles matériels MIDI.\n"
+"Notez que dans les clients Jamulus antérieurs à la version 3.12.0, les numéros de canaux sont attribués directement par le serveur. Les clients à partir de la version 3.12.0 gèrent leurs propres numéros de canaux et attribuent toujours le canal 0 à l'utilisateur local (à condition que la version du serveur soit au moins la 3.5.5).\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:179
 #, no-wrap
 msgid "View > Chat"
-msgstr ""
+msgstr "Affichage > Tchate"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:182
 msgid "Opens the [Chat](#chat) window."
-msgstr ""
+msgstr "Ouvre la fenêtre de [Tchate](#chat)."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:183
-#, fuzzy, no-wrap
-#| msgid "Settings"
+#, no-wrap
 msgid "Settings Menu"
-msgstr "Paramètres"
+msgstr "Menu de paramètres"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:186
 msgid "Allows direct access to each of the [Settings](#settings) tabs."
-msgstr ""
+msgstr "Permet d'accéder directement à chacun des onglets [Configurations](#settings)."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:187
 #, no-wrap
 msgid "Help"
-msgstr ""
+msgstr "Aide"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:190
 msgid "Provides access to the [Getting Started](Getting-Started) and [User Manual](Software-Manual) (this page) on the website, along with copyright, licence and acknowledgement details.  There is also a \"What's This?\" option for getting more details on parts of the client display."
-msgstr ""
+msgstr "Permet d'accéder au [Guide de démarrage](Getting-Started) et au [Manuel de l'utilisateur](Software-Manual) (cette page) sur le site web, ainsi qu'aux informations relatives aux droits d'auteur, à la licence et aux précisions de remerciements.  Il existe également une option \"Qu'est-ce que c'est ?\" qui permet d'obtenir plus de détails sur certaines parties de l'affichage du client."
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:192
@@ -626,8 +626,6 @@ msgstr "Canaux audio"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:241
-#, fuzzy
-#| msgid "Selects the number of audio channels to be used for communication between Client and server."
 msgid "Selects the number of audio channels to be used for communication between Client and Server."
 msgstr "Sélectionne le nombre de canaux audio à utiliser pour la communication entre le client et le serveur."
 
@@ -793,10 +791,8 @@ msgstr "Annuaires personnalisés"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:320
-#, fuzzy
-#| msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  Enter the hostname or IP address of the custom Directory.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Si vous avez besoin d'ajouter des adresses d'annuaires autres que celles qui sont embarquées, vous pouvez le faire ici.  Si vous connaissez l'adresse IP ou le nom d'hôte d'un annuaire personnalisé, vous pouvez vous y connecter en remplissant le champ nom/adresse du serveur.  Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`.  (Notez que l'IPv6 n'est pas actuellement pris en charge pour les annuaires.)  Le bouton qui suit le champ permet de supprimer l'entrée actuelle de la liste."
+msgstr "Si vous avez besoin d'ajouter des adresses d'annuaires autres que celles qui sont embarquées, vous pouvez le faire ici.  Saisissez le nom d'hôte ou l'adresse IP du répertoire personnalisé.  Un numéro de port facultatif peut être ajouté après l'adresse en utilisant deux points comme séparateur, par exemple `jamulus.example.com:22124`.  (Notez que l'IPv6 n'est pas actuellement pris en charge pour les annuaires.)  Le bouton qui suit le champ permet de supprimer l'entrée actuelle de la liste."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:321
@@ -862,10 +858,9 @@ msgstr "{% include_relative Include-Backing-Up.md %} * Vous pouvez sauvegarder e
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:347
-#, fuzzy, no-wrap
-#| msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
+#, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in\n"
-msgstr "**Note pour les utilisateurs de macOS :** à partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans \n"
+msgstr "**Note pour les utilisateurs de macOS :** à partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans\n"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:347
