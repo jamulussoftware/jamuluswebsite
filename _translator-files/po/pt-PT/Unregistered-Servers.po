@@ -2,18 +2,19 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
+# Manuela Silva <mmsrs@sky.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-08-05 11:10+0000\n"
-"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-06-03 15:04+0000\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt-PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -31,18 +32,18 @@ msgstr "wiki"
 #: ../wiki/en/Unregistered-Servers.md:1
 #, no-wrap
 msgid "/wiki/Unregistered-Servers"
-msgstr ""
+msgstr "/wiki/Unregistered-Servers"
 
 #. type: Title #
 #: ../wiki/en/Unregistered-Servers.md:1 ../wiki/en/Unregistered-Servers.md:10
 #, no-wrap
 msgid "Running an Unregistered Server"
-msgstr ""
+msgstr "Executar um Servidor Não Registado"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Mais\" branch1=\"Administração do Servidor\" branch1-url=\"Executar-um-Servidor\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:13
@@ -64,7 +65,7 @@ msgstr ""
 #: ../wiki/en/Unregistered-Servers.md:18
 #, no-wrap
 msgid "Port forwarding"
-msgstr ""
+msgstr "Reencaminhamento de porta"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:21
@@ -81,7 +82,7 @@ msgstr ""
 #: ../wiki/en/Unregistered-Servers.md:24
 #, no-wrap
 msgid "Getting the public IP"
-msgstr ""
+msgstr "Obter o IP público"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:28
@@ -92,7 +93,7 @@ msgstr ""
 #: ../wiki/en/Unregistered-Servers.md:30
 #, no-wrap
 msgid "Dynamic DNS and why you will probably need it"
-msgstr ""
+msgstr "DNS dinâmico e por que provavelmente irá precisar dele"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:33
@@ -103,7 +104,7 @@ msgstr ""
 #: ../wiki/en/Unregistered-Servers.md:34
 #, no-wrap
 msgid "DNS SRV record support"
-msgstr ""
+msgstr "Suporte para gravar SRV DNS"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:37
@@ -114,7 +115,7 @@ msgstr ""
 #: ../wiki/en/Unregistered-Servers.md:38
 #, no-wrap
 msgid "Why is this helpful?"
-msgstr ""
+msgstr "Porque é que isto é útil?"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:41
@@ -135,7 +136,7 @@ msgstr ""
 #: ../wiki/en/Unregistered-Servers.md:46
 #, no-wrap
 msgid "Creating SRV records"
-msgstr ""
+msgstr "Criação de registos SRV"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:49
@@ -152,6 +153,11 @@ msgid ""
 "  \n"
 "  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 msgstr ""
+"  _service._proto.name. ttl IN SRV priority weight port target\n"
+"  \n"
+"  # ou, mais especificamente\n"
+"  \n"
+"  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:59
@@ -162,7 +168,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:61
 msgid "See the documentation of your DNS provider for instructions on creating an SRV record."
-msgstr ""
+msgstr "Consulte a documentação do seu provedor DNS para instruções na criação de um registo SRV."
 
 #. type: Title ####
 #: ../wiki/en/Unregistered-Servers.md:62

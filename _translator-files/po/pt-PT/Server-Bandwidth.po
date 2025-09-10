@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # ignotus <darylo1@hotmail.com>, 2022.
 # ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
+# Manuela Silva <mmsrs@sky.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-08-05 11:09+0000\n"
-"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-05-19 17:47+0000\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: pt-PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Server-Bandwidth.md:1
@@ -32,34 +33,34 @@ msgstr "wiki"
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "/wiki/Server-Bandwidth"
-msgstr ""
+msgstr "/wiki/Server-Bandwidth"
 
 #. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/Server-Bandwidth.md:1
 #, no-wrap
 msgid "Bandwidth Use"
-msgstr ""
+msgstr "Utilização da Largura de Banda"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Mais\" branch1=\"Administração do Servidor\" branch1-url=\"Executar-um-Servidor\" %}"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:10
 #, no-wrap
 msgid "Audio bandwidth"
-msgstr ""
+msgstr "Largura de banda do áudio"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
 msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
-msgstr ""
+msgstr "As definições de áudio tem impacto na largura de banda necessária da rede. A tabela em baixo resume os requisitos da rede com respeito à configuração de: * Canais : estéreo/mono * Qualidade : alta/média/baixa * Duração do buffer do áudio: 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
 msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
-msgstr ""
+msgstr "Com as unidades seguintes * ms : milissegundos* Kbit/s : Kilo-bits por segundo (Lembre-se : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits por segundo"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
@@ -74,6 +75,14 @@ msgid ""
 "| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
 "| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 msgstr ""
+"| Canais  | Qualidade | Largura de Banda (para buffer : 2.67 ms) |  Largura de Banda (para buffer : 5.33 ms) | Largura de Banda (para buffer : 10.67 ms) | Largura de Banda (para buffer : 21.33 ms) |\n"
+"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
+"| Estéreo    | Alta   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
+"| Estéreo    | Médio | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
+"| Estéreo    | Baixa    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
+"| Mono      | Alta   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
+"| Mono      | Média | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
+"| Mono      | Baixa    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:31

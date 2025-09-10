@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # ignotus <darylo1@hotmail.com>, 2022.
 # ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
+# Manuela Silva <mmsrs@sky.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-08-05 11:09+0000\n"
-"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-05-04 06:05+0000\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: pt-PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/QOS-Windows.md:1
@@ -32,39 +33,39 @@ msgstr "wiki"
 #: ../wiki/en/QOS-Windows.md:1
 #, no-wrap
 msgid "/wiki/QOS-Windows"
-msgstr ""
+msgstr "/wiki/QOS-Windows"
 
 #. type: Yaml Front Matter Hash Value: title
 #: ../wiki/en/QOS-Windows.md:1
 #, no-wrap
 msgid "Quality of Service (QoS)"
-msgstr ""
+msgstr "Qualidade de Serviço (QoS)"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:9
 msgid "{% include breadcrumb.html root=\"More\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Mais\" %}"
 
 #. type: Title ##
 #: ../wiki/en/QOS-Windows.md:10
 #, no-wrap
 msgid "Use of QoS on Windows"
-msgstr ""
+msgstr "Utilização de QoS no Windows"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:13
 msgid "Jamulus uses Quality of Service (QoS) to mitigate network jitter delays."
-msgstr ""
+msgstr "Jamulus utiliza a Qualidade de Serviço (QoS) para mitigar atrasos no ''jitter'' da rede."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:15
 msgid "If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18.  Jamulus sets the DS Field byte to 128 (or 0x80) to select DSCP/CS4 in an IPv4 or IPv6 packet header. Other byte values can be set using the -Q option, e.g. -Q [0..255].  However, most people will have no need to do this."
-msgstr ""
+msgstr "Se pretender explorar o efeito das definições não predefinidas, consulte as páginas 16 - 18 de [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594).  Jamulus define o ''byte'' do Campo DS para 128 (ou 0x80) para selecionar DSCP/CS4 num cabeçalho de pacote IPv4 ou IPv6. Podem ser definidos outros valores, utilizando a opção -Q, exemplo, -Q [0..255].  Contudo, a maioria das pessoas não irão precisar disto."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:17
 msgid "Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated."
-msgstr ""
+msgstr "As definições de QoS do Jamulus (incluindo a predefinição) estão definidas como 0 no Windows e macOS recentes por causa do sistema operativo. Para utilizar QoS no Windows, siga estas instruções. Tenha em atenção que poderá ter de repetir este procedimento sempre que o Jamulus for atualizado."
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:37
@@ -90,8 +91,27 @@ msgid ""
 "&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>\n"
 "&nbsp;&nbsp;&nbsp;&nbsp;Finish<br>\n"
 msgstr ""
+"Na caixa de Pesquisa no menu Início, Digite: Local Group Policy Editor (Enter)<br>\n"
+"Na nova janela, (clique) no ícone do menu para exibir o painel de terceiros Ações<br>\n"
+"Ver o primeiro do painel do Editor de Política do Grupo Local<br>\n"
+"&nbsp;Política do Computador Local<br>\n"
+"&nbsp;&nbsp;Configuração do Computador<br>\n"
+"&nbsp;&nbsp;&nbsp;Definições do Windows<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Política baseada em QoS (clique)<br>\n"
+"Veja o painel de terceiros (Ações) do Editor de Política do Grupo Local<br>\n"
+"&nbsp;Política baseada em QoS<br>\n"
+"&nbsp;&nbsp;Mais Ações<br>\n"
+"&nbsp;&nbsp;&nbsp;Criar nova Política (clique)<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Nome da Política: Jamulus<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Especificar valor DSCP: 32<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Seguinte<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Esta política QoS aplica-se \"Apenas\" às aplicações com o nome Jamulus.exe<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Seguinte<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Seguinte<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;UDP<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;Terminar<br>\n"
 
 #. type: Plain text
 #: ../wiki/en/QOS-Windows.md:39
 msgid "(Notice Jamulus policy in center panel may be edited)"
-msgstr ""
+msgstr "(O aviso da política do Jamulus no painel central pode ser editado)"
