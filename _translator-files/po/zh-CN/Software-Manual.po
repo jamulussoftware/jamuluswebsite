@@ -6,18 +6,19 @@
 # yangyangdaji <1504305527@qq.com>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
+# "Alioc." <hit.177411245@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-08-07 09:09+0000\n"
-"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
+"PO-Revision-Date: 2025-07-11 16:02+0000\n"
+"Last-Translator: \"Alioc.\" <hit.177411245@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -39,10 +40,9 @@ msgstr "/wiki/Software-Manual"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:1 ../wiki/en/Software-Manual.md:7
-#, fuzzy, no-wrap
-#| msgid "Jamulus User Manual"
+#, no-wrap
 msgid "User Manual"
-msgstr "Jamulus 用户手册"
+msgstr "用户手册"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:9
@@ -79,10 +79,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-#, fuzzy, no-wrap
-#| msgid "</details> \n"
+#, no-wrap
 msgid "</details>\n"
-msgstr "</details> \n"
+msgstr "</details>\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:21
@@ -112,10 +111,9 @@ msgstr "Ping、延迟和抖动"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
-#, fuzzy, no-wrap
-#| msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
+#, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.\n"
-msgstr "**Ping** 以毫秒为单位显示您的网络延迟，越低越好。 Ping 时间会导致整体延迟(见下文)。 ping 高的最可能原因是您与服务器的距离过大。   \n"
+msgstr "**Ping** 以毫秒为单位显示您的网络延迟，越低越好。 Ping 时间会导致整体延迟(见下文)。 ping 高的最可能原因是您与服务器的距离过大。\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
@@ -226,8 +224,6 @@ msgstr "聊天"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
-#, fuzzy
-#| msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives."
 msgstr "打开聊天窗口。输入的文本将发送到所有连接的客户端。如果有新的聊天消息到达并且聊天对话尚未打开，它将自动为所有客户打开。请参阅设置以在收到新聊天消息时选择性地打开声音警报。"
 
@@ -265,10 +261,8 @@ msgstr "服务器运营商向目录注册他们的服务器。这些目录要么
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
 msgid "If you know the hostname or IP address of a private Server, you can connect to it using the \"Server Address\" field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr "如果您知道私有服务器的 IP 地址或 URL，可以使用“服务器名称/地址”字段连接到它。可以在地址后添加一个可选的端口号，使用冒号作为分隔符，例如，`jamulus.example.com:22124`。（请注意，IPv6 地址必须完全括在方括号中，例如 `[::1]:22124`。）该字段还将显示最近使用的服务器地址列表。该字段后面的按钮允许从列表中删除当前条目。"
+msgstr "如果您知道私有服务器的 主机名称 或 IP 地址，可以使用“服务器地址”字段连接到它。可以在地址后添加一个可选的端口号，使用冒号作为分隔符，例如，`jamulus.example.com:22124`。（请注意，IPv6 地址必须完全括在方括号中，例如 `[::1]:22124`。）该字段还将显示最近使用的服务器地址列表。该字段后面的按钮允许从列表中删除当前条目。"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
@@ -305,14 +299,12 @@ msgstr "如果您在用户上方看到“静音”图标，则表示该人听不
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:116
 msgid "Users usually appear left-to-right in the order that they connect. When joining a server that already has participants, the default order depends on the versions of Jamulus at the client and the server.  With a client version before 3.12.0 or a server version older than 3.5.5, the existing participants will be shown before your own fader channel.  With a client of 3.12.0 or later connected to a server of 3.5.5 or newer, your own fader will be shown first, with the other existing participants shown to the right.  In either case, participants joining subsequently will by default appear to the right of all the existing participants."
-msgstr ""
+msgstr "用户通常按照他们连接的顺序从左到右出现。当加入一个已经有参与者的服务器时，默认的顺序取决于客户机和服务器上 Jamulus 的版本。对于 3.12.0 之前的客户端版本或 3.5.5 之前的服务器版本，现有参与者将显示在您自己的推子通道之前。当 3.12.0 或更高版本的客户端连接到 3.5.5 或更高版本的服务器时，您自己的推子将首先显示，其他现有参与者显示在右侧。在这两种情况下，默认情况下，随后加入的参与者将出现在所有现有参与者的右侧。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:118
-#, fuzzy
-#| msgid "Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu."
 msgid "You can override this order and sort instead by name, instrument, group, city or channel number using the View menu. See Menu Commands below."
-msgstr "用户通常按照他们连接的顺序从左到右出现。您可以使用“查看”菜单按名称、乐器、组或城市排序。"
+msgstr "您可以覆盖此顺序，并使用“查看”菜单按名称、乐器、组合、城市或频道编号进行排序。请参阅下面的菜单命令。"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:120
@@ -367,12 +359,12 @@ msgstr "菜单命令"
 #: ../wiki/en/Software-Manual.md:137
 #, no-wrap
 msgid "File > Connection Setup..."
-msgstr ""
+msgstr "文件 > 连接设置..."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:140
 msgid "Opens the [connection dialogue (see above)](#connectdisconnect-button)."
-msgstr ""
+msgstr "打开[连接对话框 （见上文）](#connectdisconnect-button)."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:141
@@ -382,8 +374,6 @@ msgstr "文件 > 加载/保存混音器通道设置"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:144
-#, fuzzy
-#| msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgid "You can save and restore the mix you have for your band. This stores your settings for each person's fader volume, pan setting, mute and solo state. You can load this mix any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgstr "您可以保存和恢复您为乐队排练所拥有的混音(推子、静音、声像、独奏等)并随时加载(即使在演奏时)。加载也可以通过拖放到混音器窗口来完成。"
 
@@ -391,54 +381,51 @@ msgstr "您可以保存和恢复您为乐队排练所拥有的混音(推子、�
 #: ../wiki/en/Software-Manual.md:145
 #, no-wrap
 msgid "File > Exit"
-msgstr ""
+msgstr "文件 > 退出"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:148
 msgid "Closes all the windows and exits the application."
-msgstr ""
+msgstr "关闭所有窗口并退出应用程序。"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:149
 #, no-wrap
 msgid "Edit > Clear All Stored Solo/Mute Settings"
-msgstr ""
+msgstr "编辑 > 清除所有存储的独奏/静音设置"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:152
 msgid "Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins - or you join a server where they are playing - the settings will automatically be applied.  Use this command to clear _all_ these stored settings."
-msgstr ""
+msgstr "每当您独奏或静音某个频道时，Jamulus 都会记住这些设置。即使那个人离开并重新加入，或者你加入了他们正在玩的服务器，设置也会自动应用。使用此命令清除_所有_这些存储的设置。"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:153
 #, no-wrap
 msgid "Edit > Set All Faders to New Client Level"
-msgstr ""
+msgstr "编辑 > 将所有推子设定为新的客户端音量"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:156
 msgid "Applies the [configured \"New Client Level\"](#new-client-level) to all currently connected channels."
-msgstr ""
+msgstr "将[配置的“新客户端级别”](#new-client-level)应用于所有当前连接的频道。"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:157
-#, fuzzy, no-wrap
-#| msgid "Edit > Auto-Adjust All Faders "
+#, no-wrap
 msgid "Edit > Auto-Adjust All Faders"
-msgstr "编辑 > 自动调整所有推子 "
+msgstr "编辑 > 自动调整所有推子"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:160
-#, fuzzy
-#| msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
 msgid "Applies a one-off fader adjustment to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
-msgstr "根据音量将一次性推子设置应用于每个通道。对于大型合奏获得合理的整体混音很有用，尽管可能仍然需要进行个别调整。最好在热身或乐曲的统一部分使用。"
+msgstr "根据音量将一次性调整推子应用于每个通道。对于大型合奏获得合理的整体混音很有用，尽管可能仍然需要进行个别调整。最好在热身或乐曲的统一部分使用。"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:161
 #, no-wrap
 msgid "View > (sort options)"
-msgstr ""
+msgstr "视图 > (排序选项)"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:166
@@ -448,6 +435,9 @@ msgid ""
 "* Own Fader First<br/>\n"
 "This option can be used in addition to the others to move your own channel to always be the leftmost, irrespective of the sort order of the other channels.\n"
 msgstr ""
+"“查看”菜单下的大多数项目允许您调整 Jamulus 选择在服务器上显示频道的顺序：\n"
+"*拥有推子优先<br/>\n"
+"除了其他选项之外，还可以使用此选项将您自己的通道移动到始终最左侧，而不管其他通道的排序顺序如何。\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:178
@@ -465,40 +455,50 @@ msgid ""
 "Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
 "Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
 msgstr ""
+"*无用户排序<br/>\n"
+"排序时不考虑任何用户详细信息。它按照频道加入当前服务器的顺序进行排序，如上所述，新频道被添加到右边。\n"
+"*按姓名排序<br/>\n"
+"按某人在其配置文件中选择的名称排序。\n"
+"*按乐器/城市排序<br/>\n"
+"按某人个人资料中的乐器或城市及其姓名排序。\n"
+"*按组排序<br/>\n"
+"在使用推子组功能时，这将从左到右（其中按名称）按升序组编号排序，任何未分组的通道都在右侧。\n"
+"*按通道排序<br/>\n"
+"当 Jamulus 通道控件（推子、静音、独奏等）由 MIDI 控制时（参见 [将-ctrl MIDI用于MIDI控制器](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers）），这将按通道编号排序，以帮助确保与 MIDI 硬件控件一致的稳定排序顺序。\n"
+"请注意，在 3.12.0 版之前的 Jamulus 客户端中，频道号是由服务器直接分配的。从 3.12.0 开始，客户端管理自己的通道号分配，并始终将通道0分配给本地用户(前提是服务器版本至少为3.5.5)。\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:179
 #, no-wrap
 msgid "View > Chat"
-msgstr ""
+msgstr "查看 > 聊天"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:182
 msgid "Opens the [Chat](#chat) window."
-msgstr ""
+msgstr "打开[聊天](#chat)窗口。"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:183
-#, fuzzy, no-wrap
-#| msgid "Settings"
+#, no-wrap
 msgid "Settings Menu"
 msgstr "设置"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:186
 msgid "Allows direct access to each of the [Settings](#settings) tabs."
-msgstr ""
+msgstr "允许直接访问每个[设置](#settings)标签。"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:187
 #, no-wrap
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:190
 msgid "Provides access to the [Getting Started](Getting-Started) and [User Manual](Software-Manual) (this page) on the website, along with copyright, licence and acknowledgement details.  There is also a \"What's This?\" option for getting more details on parts of the client display."
-msgstr ""
+msgstr "提供对网站上的[入门](Getting-Started)和[用户手册](Software-Manual)(本页)以及版权、许可和确认详细信息的访问。还有一个“这是什么？”用于获取客户端显示部分更多详细信息的选项。"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:192
@@ -626,8 +626,6 @@ msgstr "音频通道"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:241
-#, fuzzy
-#| msgid "Selects the number of audio channels to be used for communication between Client and server."
 msgid "Selects the number of audio channels to be used for communication between Client and Server."
 msgstr "选择要用于客户端和服务器之间通信的音频通道数。"
 
@@ -793,10 +791,8 @@ msgstr "自定义目录"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:320
-#, fuzzy
-#| msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  Enter the hostname or IP address of the custom Directory.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
-msgstr "如果您需要添加除内置目录地址之外的其他目录地址，可以在此处进行操作。如果您知道自定义目录的 IP 地址或主机名，可以使用“服务器名称/地址”字段连接到它。可以在地址后添加一个可选的端口号，使用冒号作为分隔符，例如，`jamulus.example.com:22124`。（请注意，目前目录不支持 IPv6。）该字段后面的按钮允许从列表中删除当前条目。"
+msgstr "如果您需要添加除内置目录地址之外的其他目录地址，可以在此处进行操作。字段输入自定义目录的主机名或 IP地址。可以在地址后添加一个可选的端口号，使用冒号作为分隔符，例如，`jamulus.example.com:22124`。（请注意，目前目录不支持 IPv6。）该字段后面的按钮允许从列表中删除当前条目。"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:321
@@ -864,10 +860,9 @@ msgstr "{% include_relative Include-Backing-Up.md %} * 您可以使用 [加载/�
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:347
-#, fuzzy, no-wrap
-#| msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
+#, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in\n"
-msgstr "**macOS 用户注意事项:** 从 Jamulus 3.8.1 开始，我们有一个签名的安装程序。这会将设置存储在 \n"
+msgstr "**macOS 用户注意事项:** 从 Jamulus 3.8.1 开始，我们有一个签名的安装程序。这会将设置存储在\n"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:347
