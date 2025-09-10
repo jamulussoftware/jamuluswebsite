@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Thai Pangsakulyanont <dtinth@spacet.me>, 2024.
+# Thai Pangsakulyanont <dtinth@spacet.me>, 2024, 2025.
 # ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-11-07 06:22+0000\n"
-"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-01-02 19:13+0000\n"
+"Last-Translator: Thai Pangsakulyanont <dtinth@spacet.me>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -221,7 +221,7 @@ msgstr "Chat"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives."
-msgstr ""
+msgstr "เปิดหน้าต่างแชท ข้อความที่ป้อนจะถูกส่งไปยังไคลเอนต์ทั้งหมดที่เชื่อมต่ออยู่ หากมีข้อความแชทใหม่เข้ามาและหน้าต่างแชทยังไม่ได้เปิดอยู่ หน้าต่างแชทจะเปิดขึ้นโดยอัตโนมัติสำหรับไคลเอนต์ทั้งหมด หากต้องการเปิดใช้งานเสียงแจ้งเตือนเมื่อมีข้อความแชทใหม่เข้ามา สามารถตั้งค่าได้ในหน้าต่าง Settings"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
@@ -257,10 +257,8 @@ msgstr "ผู้ดูแลเซิร์ฟเวอร์จะลงทะ
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
 msgid "If you know the hostname or IP address of a private Server, you can connect to it using the \"Server Address\" field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr "หากคุณทราบ IP address หรือ URL ของเซิร์ฟเวอร์ส่วนตัว คุณสามารถเชื่อมต่อกับเซิร์ฟเวอร์นั้นได้โดยใส่ในช่อง Server Name/Address คุณสามารถเพิ่มหมายเลขพอร์ตต่อท้าย address ได้ โดยใช้เครื่องหมายโคลอนเป็นตัวคั่น เช่น `jamulus.example.com:22124` (โปรดทราบว่า IP address แบบ IPv6 ต้องอยู่ในวงเล็บก้ามปู เช่น `[::1]:22124`) ช่องนี้จะแสดงรายชื่อ address ของเซิร์ฟเวอร์ที่เพิ่งใช้งานล่าสุด ปุ่มที่อยู่ถัดจากช่องนี้ช่วยให้คุณสามารถลบรายการปัจจุบันออกจากรายชื่อได้"
+msgstr "หากคุณทราบ IP address หรือ hostname ของเซิร์ฟเวอร์ส่วนตัว คุณสามารถเชื่อมต่อกับเซิร์ฟเวอร์นั้นได้โดยใส่ในช่อง \"Server Address\" คุณสามารถเพิ่มหมายเลขพอร์ตต่อท้าย address ได้ โดยใช้เครื่องหมายโคลอนเป็นตัวคั่น เช่น `jamulus.example.com:22124` (โปรดทราบว่า IP address แบบ IPv6 ต้องอยู่ในวงเล็บก้ามปู เช่น `[::1]:22124`) ช่องนี้จะแสดงรายชื่อ address ของเซิร์ฟเวอร์ที่เพิ่งใช้งานล่าสุด ปุ่มที่อยู่ถัดจากช่องนี้ช่วยให้คุณสามารถลบรายการปัจจุบันออกจากรายชื่อได้"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
@@ -297,12 +295,12 @@ msgstr "หากคุณเห็นไอคอน \"mute\" แสดงเ�
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:116
 msgid "Users usually appear left-to-right in the order that they connect. When joining a server that already has participants, the default order depends on the versions of Jamulus at the client and the server.  With a client version before 3.12.0 or a server version older than 3.5.5, the existing participants will be shown before your own fader channel.  With a client of 3.12.0 or later connected to a server of 3.5.5 or newer, your own fader will be shown first, with the other existing participants shown to the right.  In either case, participants joining subsequently will by default appear to the right of all the existing participants."
-msgstr ""
+msgstr "โดยปกติแล้ว รายชื่อผู้ใช้จะเรียงจากซ้ายไปขวาตามลำดับที่พวกเขาเชื่อมต่อเข้ามา เมื่อเข้าร่วมเซิร์ฟเวอร์ที่มีผู้เข้าร่วมอยู่แล้ว ลำดับการแสดงผลเริ่มต้นจะขึ้นอยู่กับเวอร์ชันของ Jamulus ทั้งของไคลเอนต์และเซิร์ฟเวอร์ หากเวอร์ชันไคลเอนต์ก่อน 3.12.0 หรือเวอร์ชันเซิร์ฟเวอร์เก่ากว่า 3.5.5 ผู้เข้าร่วมเดิมจะแสดงก่อนช่องเฟดเดอร์ของคุณเอง แต่หากไคลเอนต์เวอร์ชัน 3.12.0 ขึ้นไปเชื่อมต่อกับเซิร์ฟเวอร์เวอร์ชัน 3.5.5 ขึ้นไป เฟดเดอร์ของคุณเองจะแสดงก่อน โดยผู้เข้าร่วมเดิมจะแสดงทางด้านขวา ในทั้งสองกรณี ผู้เข้าร่วมที่เข้าร่วมในภายหลังจะปรากฏทางด้านขวาของผู้เข้าร่วมเดิมทั้งหมดตามค่าเริ่มต้น"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:118
 msgid "You can override this order and sort instead by name, instrument, group, city or channel number using the View menu. See Menu Commands below."
-msgstr ""
+msgstr "คุณสามารถตั้งค่าให้โปรแกรมเรียงลำดับผู้ใช้ตามชื่อ เครื่องดนตรี กลุ่ม เมือง หรือหมายเลขช่องสัญญาณแทนได้ โดยเลือกเมนู View แล้วดูคำสั่งเมนูเพิ่มเติมด้านล่าง"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:120
@@ -351,79 +349,79 @@ msgstr "ช่วยให้คุณสามารถฟังเฉพาะ
 #: ../wiki/en/Software-Manual.md:135
 #, no-wrap
 msgid "Menu commands"
-msgstr ""
+msgstr "คำสั่งเมนู"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:137
 #, no-wrap
 msgid "File > Connection Setup..."
-msgstr ""
+msgstr "File > Connection Setup..."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:140
 msgid "Opens the [connection dialogue (see above)](#connectdisconnect-button)."
-msgstr ""
+msgstr "เปิด[หน้าต่างเชื่อมต่อ (ดูด้านบน)](#connectdisconnect-button)"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:141
 #, no-wrap
 msgid "File > Load/Save Mixer Channels Setup"
-msgstr ""
+msgstr "File > Load/Save Mixer Channels Setup"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:144
 msgid "You can save and restore the mix you have for your band. This stores your settings for each person's fader volume, pan setting, mute and solo state. You can load this mix any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
-msgstr ""
+msgstr "คุณสามารถบันทึกและโหลดการตั้งค่ามิกเซอร์ที่คุณตั้งค่าไว้สำหรับวงดนตรีของคุณได้ ซึ่งจะบันทึกการตั้งค่าระดับเสียงเฟดเดอร์ การตั้งค่า pan สถานะปิดเสียง และสถานะโซโลของแต่ละคน คุณสามารถโหลดการตั้งค่ามิกเซอร์นี้ได้ทุกเมื่อ (แม้ในขณะที่คุณกำลังเล่น) นอกจากนี้ คุณยังสามารถโหลดการตั้งค่ามิกเซอร์ได้โดยการลากไฟล์มาวางลงในหน้าต่างมิกเซอร์"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:145
 #, no-wrap
 msgid "File > Exit"
-msgstr ""
+msgstr "File > Exit"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:148
 msgid "Closes all the windows and exits the application."
-msgstr ""
+msgstr "ปิดหน้าต่างทั้งหมดและออกจากแอปพลิเคชัน"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:149
 #, no-wrap
 msgid "Edit > Clear All Stored Solo/Mute Settings"
-msgstr ""
+msgstr "Edit > Clear All Stored Solo/Mute Settings"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:152
 msgid "Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins - or you join a server where they are playing - the settings will automatically be applied.  Use this command to clear _all_ these stored settings."
-msgstr ""
+msgstr "เมื่อใดก็ตามที่คุณตั้งค่า Solo หรือ Mute ให้กับช่องสัญญาณ, Jamulus จะจดจำการตั้งค่าเหล่านี้ แม้ว่าบุคคลนั้นจะออกจากเซิร์ฟเวอร์แล้วกลับเข้าร่วมใหม่ หรือคุณเข้าร่วมเซิร์ฟเวอร์ที่พวกเขากำลังเล่นอยู่ การตั้งค่าเหล่านี้จะถูกนำไปใช้โดยอัตโนมัติ ใช้คำสั่งนี้เพื่อล้างการตั้งค่าที่บันทึกไว้ทั้งหมด"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:153
 #, no-wrap
 msgid "Edit > Set All Faders to New Client Level"
-msgstr ""
+msgstr "Edit > Set All Faders to New Client Level"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:156
 msgid "Applies the [configured \"New Client Level\"](#new-client-level) to all currently connected channels."
-msgstr ""
+msgstr "ปรับระดับเสียงของทุกๆ คนที่เชื่อมต่ออยู่ ให้มีความดังเท่ากับการตั้งค่า [\"New Client Level\" ที่กำหนดค่าไว้](#new-client-level)"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:157
 #, no-wrap
 msgid "Edit > Auto-Adjust All Faders"
-msgstr ""
+msgstr "Edit > Auto-Adjust All Faders"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:160
 msgid "Applies a one-off fader adjustment to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
-msgstr ""
+msgstr "ปรับเฟดเดอร์ของแต่ละช่องสัญญาณโดยอัตโนมัติตามระดับเสียง มีประโยชน์สำหรับวงดนตรีขนาดใหญ่ในการปรับมิกซ์โดยรวม แม้ว่าอาจยังคงต้องมีการปรับแต่งเพิ่มเติม ควรใช้ในช่วงวอร์มอัพ หรือช่วงที่ทุกคนกำลังเล่นดนตรีพร้อมๆ กัน"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:161
 #, no-wrap
 msgid "View > (sort options)"
-msgstr ""
+msgstr "View > (ตัวเลือกการเรียงลำดับ)"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:166
@@ -433,6 +431,9 @@ msgid ""
 "* Own Fader First<br/>\n"
 "This option can be used in addition to the others to move your own channel to always be the leftmost, irrespective of the sort order of the other channels.\n"
 msgstr ""
+"รายการส่วนใหญ่ในเมนู \"View\" ช่วยให้คุณสามารถปรับการเรียงลำดับช่องสัญญาณบนเซิร์ฟเวอร์ได้:\n"
+"* Own Fader First<br/>\n"
+"ตัวเลือกนี้สามารถใช้ร่วมกับตัวเลือกอื่นๆ เพื่อให้ช่องสัญญาณของคุณเองอยู่ทางซ้ายสุดเสมอ โดยไม่คำนึงถึงลำดับการเรียงลำดับของช่องสัญญาณอื่นๆ\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:178
@@ -450,39 +451,50 @@ msgid ""
 "Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
 "Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
 msgstr ""
+"* No user sorting<br/>\n"
+"การเรียงลำดับนี้จะไม่นำรายละเอียดผู้ใช้มาพิจารณา โปรแกรมจะเรียงลำดับตามลำดับที่ช่องสัญญาณเข้าร่วมเซิร์ฟเวอร์ตามที่อธิบายไว้ข้างต้น โดยช่องสัญญาณใหม่จะถูกเพิ่มไปทางขวาสุด\n"
+"* Sort by Name<br/>\n"
+"เรียงลำดับตามชื่อที่ผู้ใช้ระบุไว้ในโปรไฟล์\n"
+"* Sort by Instrument / City<br/>\n"
+"เรียงลำดับตามเครื่องดนตรีหรือเมืองที่ผู้ใช้ระบุไว้ในโปรไฟล์ กรณีที่ชื่อเมืองหรือเครื่องดนตรีตรงกัน จะเรียงลำดับชื่อของพวกเขา\n"
+"* Sort by Group<br/>\n"
+"หากมีการใช้คุณสมบัติการจัดกลุ่มเฟดเดอร์ การเรียงลำดับนี้จะเรียงตามหมายเลขกลุ่มจากน้อยไปมากจากซ้ายไปขวา (และภายในกลุ่มนั้นจะเรียงตามชื่อ) โดยช่องสัญญาณที่ไม่ได้จัดกลุ่มจะอยู่ทางขวาสุด\n"
+"* Sort by Channel<br/>\n"
+"หากมีการตั้งให้สามารถควบคุม Jamulus (fader, mute, solo และอื่นๆ) ด้วย MIDI (ดูที่ [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)) การเรียงลำดับนี้จะเรียงตามหมายเลขช่องสัญญาณ เพื่อให้แน่ใจว่าลำดับการเรียงลำดับมีความเสถียรและสอดคล้องกับการควบคุมฮาร์ดแวร์ MIDI\n"
+"โปรดทราบว่าในไคลเอนต์ Jamulus ก่อนเวอร์ชัน 3.12.0 หมายเลขช่องสัญญาณจะถูกกำหนดโดยเซิร์ฟเวอร์โดยตรง แต่ไคลเอนต์ตั้งแต่เวอร์ชัน 3.12.0 เป็นต้นไป จะจัดการการกำหนดหมายเลขช่องสัญญาณด้วยตัวเอง และจะกำหนดช่องสัญญาณ 0 ให้กับผู้ใช้ท้องถิ่นเสมอ (หากเซิร์ฟเวอร์เป็นเวอร์ชัน 3.5.5 ขึ้นไป)\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:179
 #, no-wrap
 msgid "View > Chat"
-msgstr ""
+msgstr "View > Chat"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:182
 msgid "Opens the [Chat](#chat) window."
-msgstr ""
+msgstr "เปิดหน้าต่าง [Chat](#chat)"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:183
 #, no-wrap
 msgid "Settings Menu"
-msgstr ""
+msgstr "เมนู Settings"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:186
 msgid "Allows direct access to each of the [Settings](#settings) tabs."
-msgstr ""
+msgstr "ช่วยให้คุณสามารถเข้าถึงแท็บ [Settings](#settings) แต่ละแท็บได้โดยตรง"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:187
 #, no-wrap
 msgid "Help"
-msgstr ""
+msgstr "Help"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:190
 msgid "Provides access to the [Getting Started](Getting-Started) and [User Manual](Software-Manual) (this page) on the website, along with copyright, licence and acknowledgement details.  There is also a \"What's This?\" option for getting more details on parts of the client display."
-msgstr ""
+msgstr "ให้คุณสามารถเข้าถึง [เริ่มต้นใช้งาน](Getting-Started) และ [คู่มือสำหรับผู้ใช้](Software-Manual) (หน้านี้) บนเว็บไซต์ พร้อมกับรายละเอียดลิขสิทธิ์ สิทธิ์การใช้งาน และการแสดงความขอบคุณ นอกจากนี้ยังมีตัวเลือก \"What's This?\" สำหรับดูรายละเอียดเพิ่มเติมเกี่ยวกับส่วนต่างๆ ของหน้าจอไคลเอนต์"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:192
@@ -646,143 +658,141 @@ msgstr "การเปิดใช้งานโหมดสเตอริโ
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:256
 msgid "In stereo streaming mode, no audio channel selection for the reverb effect will be available on the main window since the effect is applied to both channels in this case."
-msgstr ""
+msgstr "ในโหมดสตรีมมิ่งแบบสเตอริโอ จะไม่มีตัวเลือกช่องสัญญาณเสียงสำหรับเอฟเฟกต์ reverb ในหน้าต่างหลัก เนื่องจากเอฟเฟกต์จะถูกนำไปใช้กับทั้งสองช่องสัญญาณ"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:257
 #, no-wrap
 msgid "Audio quality"
-msgstr ""
+msgstr "คุณภาพเสียง"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:260
 msgid "The higher the audio quality, the higher your audio stream's data rate. Make sure your upload rate does not exceed the available upload speed of your internet connection."
-msgstr ""
+msgstr "ยิ่งคุณภาพเสียงสูงเท่าไหร่ อัตราการส่งข้อมูลของสตรีมเสียงของคุณก็จะยิ่งสูงขึ้นเท่านั้น ตรวจสอบให้แน่ใจว่าอัตราการอัปโหลดของคุณไม่เกินความเร็วในการอัปโหลดของการเชื่อมต่ออินเทอร์เน็ตของคุณ"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:261
 #, no-wrap
 msgid "Buffer Delay"
-msgstr ""
+msgstr "Buffer Delay"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:265
 msgid "The buffer delay setting is a fundamental setting of the Jamulus software. This setting has an influence on many connection properties. Three buffer sizes are supported:"
-msgstr ""
+msgstr "การตั้งค่า buffer delay เป็นการตั้งค่าพื้นฐานของซอฟต์แวร์ Jamulus การตั้งค่านี้มีผลต่อคุณสมบัติการเชื่อมต่อหลายอย่าง โดยมี buffer size ให้เลือกสามขนาด:"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:269
 msgid "**64 samples** Provides the lowest latency but does not work with all sound cards."
-msgstr ""
+msgstr "**64 samples** ให้ค่า latency ที่ต่ำที่สุด แต่อาจใช้งานไม่ได้กับการ์ดเสียงบางตัว"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:269
 msgid "**128 samples** The preferred setting. Should work for most available sound cards."
-msgstr ""
+msgstr "**128 samples** เป็นการตั้งค่าที่แนะนำที่ใช้งานได้กับการ์ดเสียงส่วนใหญ่"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:269
 msgid "**256 samples** Should only be used on very slow computers, or with a slow internet connection."
-msgstr ""
+msgstr "**256 samples** ควรใช้เฉพาะกับคอมพิวเตอร์ที่ช้ามาก หรือการเชื่อมต่ออินเทอร์เน็ตที่ช้า"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:272
 msgid "Some sound card drivers do not allow the buffer delay to be changed from within the Jamulus software.  In this case the buffer delay setting is disabled and has to be changed using the sound card driver. On Windows, press the ASIO Setup button to open the driver settings panel."
-msgstr ""
+msgstr "ไดรเวอร์การ์ดเสียงบางตัวไม่อนุญาตให้เปลี่ยน buffer delay จากภายในซอฟต์แวร์ Jamulus ในกรณีนี้ การตั้งค่า buffer delay จะถูกปิดใช้งาน และต้องเปลี่ยนโดยใช้ไดรเวอร์การ์ดเสียง ใน Windows ให้กดปุ่ม ASIO Setup เพื่อเปิดแผงการตั้งค่าไดรเวอร์"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:276
 msgid "On Linux: - when using JACK, use `QJackCtl` to change the buffer size and restart JACK; - when using PipeWire's JACK server, change PipeWire's Quantum parameter with its own configuration tools."
-msgstr ""
+msgstr "บน Linux: - หากใช้ JACK ให้ใช้ `QJackCtl` เพื่อเปลี่ยน buffer size แล้วรีสตาร์ท JACK; - หากใช้เซิร์ฟเวอร์ JACK ของ PipeWire ให้เปลี่ยนพารามิเตอร์ Quantum ของ PipeWire ด้วยเครื่องมือกำหนดค่าของมันเอง"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:280
 msgid "The actual buffer delay has an influence on the connection status, the current upload rate and the overall delay.  The lower the buffer size, the higher the probability of a red light in the status indicator (dropouts) and the higher the upload rate and the lower the overall delay."
-msgstr ""
+msgstr "buffer delay มีผลต่อสถานะการเชื่อมต่อ อัตราการอัปโหลดปัจจุบัน และ delay โดยรวม ยิ่ง buffer size น้อยเท่าไหร่ โอกาสที่ไฟแสดงสถานะจะเป็นสีแดง (เสียงขาดๆ หายๆ) ก็จะยิ่งสูงขึ้นเท่านั้น และอัตราการอัปโหลดก็จะยิ่งสูงขึ้น ในขณะที่ delay โดยรวมก็จะยิ่งต่ำลง"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:282
 msgid "The buffer setting is therefore a trade-off between audio quality and overall delay."
-msgstr ""
+msgstr "ดังนั้น การตั้งค่า buffer จึงเป็นการแลกเปลี่ยนกันระหว่างคุณภาพเสียงและ delay โดยรวม"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:283
 #, no-wrap
 msgid "Jitter Buffer"
-msgstr ""
+msgstr "Jitter Buffer"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:288
 msgid "The jitter buffer compensates for network and sound card timing jitters. The size of the buffer influences the quality of the audio stream (how many dropouts occur) and the overall delay (the longer the buffer, the higher the delay)."
-msgstr ""
+msgstr "Jitter buffer ช่วยป้องกันปัญหาเสียงที่เกิดจาก network jitter และ sound card jitter ขนาดของบัฟเฟอร์จะมีผลต่อคุณภาพของเสียง (ยิ่งตั้งค่านี้ไว้น้อย โอกาสจะเกิดเสียงขาดๆ หายๆ ยิ่งเยอะ) และ delay โดยรวม (ยิ่งตั้งค่านี้ไว้เยอะ delay ก็จะยิ่งเยอะ)"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:292
 msgid "You can set the jitter buffer size manually for your local Client and the remote server. For the local jitter buffer, dropouts in the audio stream are indicated by the light below the jitter buffer size faders.  If the light turns to red, a buffer overrun/underrun has taken place and the audio stream is interrupted."
-msgstr ""
+msgstr "คุณสามารถตั้งค่า jitter buffer size ด้วยตนเองสำหรับไคลเอนต์ของคุณและเซิร์ฟเวอร์ สำหรับ jitter buffer ของไคลเอนต์ ไฟแสดงสถานะที่อยู่ใต้เฟดเดอร์ jitter buffer size จะเปลี่ยนเป็นสีแดงเมื่อเกิดเสียงขาดๆ หายๆ ซึ่งหมายความว่าเกิด buffer overrun/underrun และสตรีมเสียงถูกขัดจังหวะ"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:294
 msgid "The jitter buffer setting is therefore a trade-off between audio quality and overall delay."
-msgstr ""
+msgstr "ดังนั้น การตั้งค่า jitter buffer จึงเป็นการแลกเปลี่ยนกันระหว่างคุณภาพเสียงและ delay โดยรวม"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:298
 msgid "If the Auto setting is enabled, the jitter buffers of your local Client and the remote server are set automatically based on measurements of the network and sound card timing jitter. If the Auto check is enabled, the jitter buffer size faders are disabled (they cannot be moved with the mouse)."
-msgstr ""
+msgstr "หากเลือกตัวเลือก Auto ตัวโปรแกรมจะตั้งค่า jitter buffer ทั้งสองให้คุณโดยอัตโนมัติตาม network jitter และ sound card jitter ที่โปรแกรมวัดได้ โดยเมื่อเลือกตัวเลือก Auto คุณจะไม่สามารถปรับการตั้งค่า jitter buffer size ได้ด้วยตัวเอง"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:299
 #, no-wrap
 msgid "Small Network Buffers"
-msgstr ""
+msgstr "Small Network Buffers"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:303
 msgid "Allows support for very small network audio packets. These are only used if the sound card buffer delay is smaller than 128 samples. The smaller the network buffers, the lower the audio latency. But at the same time the network load increases and the probability of audio dropouts also increases (particuarly if your network connection has any significant jitter). Try enabling this option if you are suffering from high latency or bad audio quality. However, keeping it disabled will normally mean better audio quality."
-msgstr ""
+msgstr "อนุญาตให้ใช้แพ็กเก็ตเสียงขนาดเล็กมากในการรับส่งข้อมูลผ่านเครือข่าย ซึ่งจะใช้เฉพาะเมื่อ buffer delay ของการ์ดเสียงน้อยกว่า 128 samples ยิ่ง network buffer เล็กเท่าไหร่ latency ของเสียงก็จะยิ่งต่ำลงเท่านั้น แต่ในขณะเดียวกัน ปริมาณการรับส่งข้อมูลบนเครือข่ายก็จะเพิ่มขึ้น และโอกาสที่เสียงจะขาดๆ หายๆ ก็จะเพิ่มขึ้นเช่นกัน (โดยเฉพาะอย่างยิ่งหากการเชื่อมต่อเครือข่ายของคุณมี jitter เยอะ) ลองเปิดใช้งานตัวเลือกนี้หากคุณมีปัญหา latency สูงหรือคุณภาพเสียงไม่ดี อย่างไรก็ตาม การปิดใช้งานตัวเลือกนี้ไว้จะทำให้คุณภาพเสียงดีขึ้น"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:304
 #, no-wrap
 msgid "Audio Stream Rate"
-msgstr ""
+msgstr "Audio Stream Rate"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:308
 msgid "Depends on the current audio packet size and compression setting. Make sure that the upstream rate is not higher than your available internet upload speed (check this with a service such as [librespeed.org](https://librespeed.org/))."
-msgstr ""
+msgstr "ขึ้นอยู่กับขนาดของแพ็กเก็ตเสียงและการตั้งค่าการบีบอัด ตรวจสอบให้แน่ใจว่าอัตราการอัปโหลดไม่สูงกว่าความเร็วในการอัปโหลดของการเชื่อมต่ออินเทอร์เน็ตของคุณ (ตรวจสอบได้ด้วยบริการอย่างเช่น [librespeed.org](https://librespeed.org/))"
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:309
 #, no-wrap
 msgid "Advanced Setup"
-msgstr ""
+msgstr "Advanced Setup"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:312
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/th-screenshots/settings-advanced.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of advanced settings window\"></figure>\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:313
 #, no-wrap
 msgid "Custom Directories"
-msgstr ""
+msgstr "Custom Directories"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:320
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  Enter the hostname or IP address of the custom Directory.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
-msgstr "หากคุณทราบ IP address หรือ URL ของเซิร์ฟเวอร์ส่วนตัว คุณสามารถเชื่อมต่อกับเซิร์ฟเวอร์นั้นได้โดยใส่ในช่อง Server Name/Address คุณสามารถเพิ่มหมายเลขพอร์ตต่อท้าย address ได้ โดยใช้เครื่องหมายโคลอนเป็นตัวคั่น เช่น `jamulus.example.com:22124` (โปรดทราบว่า IP address แบบ IPv6 ต้องอยู่ในวงเล็บก้ามปู เช่น `[::1]:22124`) ช่องนี้จะแสดงรายชื่อ address ของเซิร์ฟเวอร์ที่เพิ่งใช้งานล่าสุด ปุ่มที่อยู่ถัดจากช่องนี้ช่วยให้คุณสามารถลบรายการปัจจุบันออกจากรายชื่อได้"
+msgstr "หากคุณต้องการเพิ่ม address ของ Directory นอกเหนือจากที่มากับโปรแกรม คุณสามารถทำได้ที่นี่ ป้อน IP address หรือ hostname ของ Directory ที่คุณต้องการเพิ่ม คุณสามารถเพิ่มหมายเลขพอร์ตต่อท้าย address ได้ โดยใช้เครื่องหมายโคลอนเป็นตัวคั่น เช่น `jamulus.example.com:22124` (โปรดทราบว่า Directory ยังไม่รองรับ IPv6) ปุ่มที่อยู่ถัดจากช่องนี้ช่วยให้คุณสามารถลบรายการปัจจุบันออกจากรายชื่อได้"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:321
 #, no-wrap
 msgid "New Client Level"
-msgstr ""
+msgstr "New Client Level"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:326
@@ -791,115 +801,115 @@ msgid ""
 "This setting defines the fader level of a newly connected Client in percent. If a new user connects\n"
 "to the current server, they will get the specified initial fader level if no other fader level from a previous connection of\n"
 "that user was already stored. You can set all users in an occupied server to this level using Edit > \"Set All Faders to New Client Level\".\n"
-msgstr ""
+msgstr "กำหนดระดับเฟดเดอร์ของไคลเอนต์ที่เชื่อมต่อใหม่เป็นเปอร์เซ็นต์ หากมีผู้ใช้ใหม่เชื่อมต่อกับเซิร์ฟเวอร์ พวกเขาจะได้รับระดับเฟดเดอร์เริ่มต้นตามที่ระบุไว้หากไม่มีการบันทึกไว้ก่อนหน้านี้ คุณสามารถตั้งค่าระดับเสียงของผู้ใช้ทุกคนในเซิร์ฟเวอร์ให้เป็นระดับนี้ได้ โดยเลือก Edit > \"Set All Faders to New Client Level\"\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:327
 #, no-wrap
 msgid "Input Boost"
-msgstr ""
+msgstr "Input Boost"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:330
 msgid "Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus."
-msgstr ""
+msgstr "เพิ่ม gain ของสัญญาณเสียงจากอุปกรณ์ของคุณ ใช้ตัวเลือกนี้หากเสียงจากอุปกรณ์ของคุณเบาเกินไปสำหรับ Jamulus"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:331
 #, no-wrap
 msgid "Feedback Protection"
-msgstr ""
+msgstr "Feedback Protection"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:334
 msgid "Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the \"Mute Myself\" button to mute you in your own mix."
-msgstr ""
+msgstr "ตรวจจับ Feedback loop หรือเสียงรบกวนที่ดังมาก เช่นเสียงไมโครโฟนหอน ในช่วงสามวินาทีแรกหลังจากที่คุณเชื่อมต่อกับเซิร์ฟเวอร์ หากตรวจจับได้ คุณสมบัตินี้จะแสดงข้อความและเปิดใช้งานปุ่ม \"Mute Myself\" เพื่อปิดเสียงคุณในมิกซ์ของคุณเอง"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:335
 #, no-wrap
 msgid "Input Balance"
-msgstr ""
+msgstr "Input Balance"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:340
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
-msgstr ""
+msgstr "ควบคุมระดับเสียงสัมพัทธ์ของช่องสัญญาณเสียงซ้ายและขวา สำหรับสัญญาณโมโน มันจะทำหน้าที่เป็นการ pan ระหว่างสองช่องสัญญาณ ตัวอย่างเช่น หากไมโครโฟนเชื่อมต่อกับช่องสัญญาณอินพุตด้านขวา และเครื่องดนตรีเชื่อมต่อกับช่องสัญญาณอินพุตด้านซ้าย ซึ่งดังกว่าไมโครโฟนมาก ให้เลื่อนเฟดเดอร์เสียงเพื่อเพิ่มระดับเสียงสัมพัทธ์ของไมโครโฟน"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:341
 #, no-wrap
 msgid "Backing up Jamulus"
-msgstr ""
+msgstr "การสำรองข้อมูล Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:345
 msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
-msgstr ""
+msgstr "{% include_relative Include-Backing-Up.md %} * คุณสามารถบันทึกและโหลดการตั้งค่ามิกเซอร์ที่แตกต่างกันได้โดยใช้ [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) และจัดเก็บไฟล์เหล่านั้นไว้ที่ใดก็ได้ที่คุณต้องการ"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:347
 #, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in\n"
-msgstr ""
+msgstr "**หมายเหตุสำหรับผู้ใช้ macOS:** ตั้งแต่ Jamulus 3.8.1 เป็นต้นไป เรามีตัวติดตั้งที่ลงนามแล้ว ซึ่งจะจัดเก็บการตั้งค่าไว้ใน\n"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:347
 #, no-wrap
 msgid "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
-msgstr ""
+msgstr "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:351
 #, no-wrap
 msgid "Command Line Options"
-msgstr ""
+msgstr "ตัวเลือกคอมมานด์ไลน์"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:354
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
-msgstr ""
+msgstr "ฟังก์ชันส่วนใหญ่ใน Jamulus สามารถตั้งค่าได้โดยใช้ GUI แต่คุณสามารถตั้งค่าฟังก์ชันเหล่านี้และฟังก์ชันอื่นๆ ได้โดยใช้ตัวเลือกที่กำหนดในหน้าต่าง Terminal โดยวิธีการทำจะขึ้นอยู่กับระบบปฏิบัติการของคุณ"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:356
 #, no-wrap
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
-msgstr ""
+msgstr "ตัวอย่างเช่น บน Windows หากต้องการใช้ไฟล์การตั้งค่าเฉพาะ ให้คลิกขวาที่ทางลัด Jamulus แล้วเลือก \"Properties\" > Target เพิ่มอาร์กิวเมนต์ที่จำเป็นลงใน Jamulus.exe:\n"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:357
 #, no-wrap
 msgid " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
-msgstr ""
+msgstr " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:362
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
-msgstr ""
+msgstr "สำหรับ macOS ให้เปิดหน้าต่าง Terminal แล้วรัน Jamulus พร้อมกับตัวเลือกที่ต้องการดังนี้:"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:363
 #, no-wrap
 msgid " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
-msgstr ""
+msgstr " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:368
 msgid "{% include_relative Include-Client-Commands.md %}"
-msgstr ""
+msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:370
 msgid "{% include_relative Include-Shared-Commands.md %}"
-msgstr ""
+msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:371
 #, no-wrap
 msgid "Controlling the Client via API"
-msgstr ""
+msgstr "การควบคุมไคลเอนต์ผ่าน API"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:373
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
-msgstr ""
+msgstr "นอกจาก CLI แล้ว คุณยังสามารถควบคุม Jamulus ได้โดยใช้ API ซึ่งมีประโยชน์สำหรับกรณีการใช้งานขั้นสูง เช่น กรณีที่ไม่มี GUI หรือแอปพลิเคชันอื่นๆ จำเป็นต้องโต้ตอบกับ Jamulus โปรดทราบว่า API ยังอยู่ในขั้นทดลอง ข้อมูลเกี่ยวกับ [JSON-RPC API สามารถดูได้ใน repository หลัก](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)"
