@@ -2,11 +2,11 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Massimo Pissarello <mapi68@gmail.com>, 2023.
-# Marco Ciampa <ciampix@posteo.net>, 2023.
+# Marco Ciampa <ciampix@posteo.net>, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-10-17 18:07+0000\n"
+"PO-Revision-Date: 2025-09-04 10:02+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.13.1-rc\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -55,29 +55,29 @@ msgstr "Si raccomanda vivamente di testare il proprio server registrandolo **pri
 #: ../wiki/en/Unregistered-Servers.md:14
 #, no-wrap
 msgid "Setting up a Server behind a home router"
-msgstr ""
+msgstr "Configurazione di un server dietro un router domestico"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:17
 msgid "If you set up your Server at home, you will probably need to change some settings in your router/firewall:"
-msgstr ""
+msgstr "Se si installa il proprio server a casa, probabilmente si dovrà modificare alcune impostazioni del router/firewall:"
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:18
 #, no-wrap
 msgid "Port forwarding"
-msgstr ""
+msgstr "Port forwarding"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:21
 msgid "Normally, people from outside your home network cannot see things inside it. To let external Jamulus Clients connect to your Server, you need to set up port forwarding in your router's settings. The exact setup differs for every router. For help, see your router's documentation or [portforward.com](https://portforward.com)."
-msgstr ""
+msgstr "Normalmente, le persone esterne alla rete domestica non possono vedere ciò che avviene al suo interno. Per consentire ai client Jamulus esterni di connettersi al server, è necessario configurare il port forwarding nelle impostazioni del router. La configurazione esatta varia da router a router. Per assistenza, consultare la documentazione del router oppure [portforward.com](https://portforward.com)."
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:23
 #, no-wrap
 msgid "**Note:** The default port for Jamulus is **UDP** (not TCP) port **22124**. You will usually forward the port **22124** from outside your network to the port **22124** of the computer running the Server.\n"
-msgstr ""
+msgstr "**Nota:** la porta predefinita per Jamulus è la porta **UDP** (non TCP) **22124**. Solitamente si inoltra la porta **22124** dall'esterno della rete alla porta **22124** del computer che esegue il server.\n"
 
 #. type: Title ###
 #: ../wiki/en/Unregistered-Servers.md:24

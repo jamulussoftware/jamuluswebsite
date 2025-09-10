@@ -4,11 +4,11 @@
 # Giuseppe <redacted@invalid.local>, 2022.
 # ignotus <redacted@invalid.local>, 2022.
 # Gico2006 <gradaellig@protonmail.com>, 2022.
-# Marco Ciampa <ciampix@posteo.net>, 2023.
+# Marco Ciampa <ciampix@posteo.net>, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-10-17 18:07+0000\n"
+"PO-Revision-Date: 2025-09-04 10:02+0000\n"
 "Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.13.1-rc\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Server-Bandwidth.md:1
@@ -62,7 +62,7 @@ msgstr "Le impostazioni audio hanno un impatto sulla larghezza di banda di rete 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
 msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
-msgstr ""
+msgstr "Con le seguenti unità * ms : millisecondi * Kbit/s : Kilo-bit al secondo (Promemoria: 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s) * Mbit/s : Mega-bit al secondo"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
@@ -77,12 +77,20 @@ msgid ""
 "| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
 "| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 msgstr ""
+"| Canali | Qualità | Larghezza di banda (per buffer: 2,67 ms) | Larghezza di banda (per buffer: 5,33 ms) | Larghezza di banda (per buffer: 10,67 ms) | Larghezza di banda (per buffer: 21,33 ms) |\n"
+"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
+"| Stereo | Alta | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
+"| Stereo | Media | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
+"| Stereo | Bassa | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
+"| Mono | Alta | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
+"| Mono | Media | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
+"| Mono | Bassa | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:31
 #, no-wrap
 msgid "Network bandwidth"
-msgstr ""
+msgstr "Larghezza di banda della rete"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38

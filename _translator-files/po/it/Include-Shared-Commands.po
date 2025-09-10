@@ -4,18 +4,19 @@
 # Giuseppe <redacted@invalid.local>, 2022.
 # Gico2006 <gradaellig@protonmail.com>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# Marco Ciampa <ciampix@posteo.net>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-08-07 22:46+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2025-09-04 10:02+0000\n"
+"Last-Translator: Marco Ciampa <ciampix@posteo.net>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.13.1-rc\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Shared-Commands.md:3
@@ -30,7 +31,7 @@ msgstr "`-h` or `--help` Visualizza il testo della guida"
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
 msgid "`-i` or `--inifile` Set location of initialization file (overrides default. On macOS simply provide a filename only, since config files can only be read from `/Users/<username>/Library/Containers/app.jamulussoftware.Jamulus/Data/`. For the server replace `app.jamulussoftware.Jamulus` with `app.jamulussoftware.JamulusServer`. Turn on \"Show Library folder\" in \"Show view options\" in Finder to see this folder.)"
-msgstr ""
+msgstr "`-i` o `--inifile` Imposta la posizione del file di inizializzazione (sovrascrive l'impostazione predefinita. Su macOS basta fornire solo un nome file, poiché i file di configurazione possono essere letti solo da `/Users/<nomeutente>/Library/Containers/app.jamulussoftware.Jamulus/Data/`. Per il server, sostituire`app.jamulussoftware.Jamulus` con `app.jamulussoftware.JamulusServer`. Attivare \"Mostra cartella Libreria\" in \"Mostra opzioni di visualizzazione\" nel Finder per visualizzare questa cartella.)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
@@ -54,10 +55,8 @@ msgstr "`--jsonrpcsecretfile` Obbligatorio quando si utilizza `--jsonrpcport`. I
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
-#, fuzzy
-#| msgid "`--jsonrpcbindip` \t\t The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)\n"
 msgid "`--jsonrpcbindip` The IP address the JSON-RPC server should bind to. (optional, defaults to 127.0.0.1)"
-msgstr "`--jsonrpcbindip`\t\tL'indirizzo IP a cui il server JSON-RPC deve collegarsi. (facoltativo, il valore predefinito è 127.0.0.1)\n"
+msgstr "`--jsonrpcbindip`L'indirizzo IP a cui il server JSON-RPC deve collegarsi. (facoltativo, il valore predefinito è 127.0.0.1)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Shared-Commands.md:14
