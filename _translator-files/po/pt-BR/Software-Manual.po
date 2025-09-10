@@ -4,18 +4,19 @@
 # Melcon Moraes <please@seeGitHubOrWeblate.local>, 2022.
 # gbonaspetti <gbonaspetti@hotmail.com>, 2023.
 # ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2024.
+# Dhefferson Victor Dias Costa <vdhefferson10@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-08-05 21:35+0000\n"
-"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-09-08 14:02+0000\n"
+"Last-Translator: Dhefferson Victor Dias Costa <vdhefferson10@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/jamulus/software-manual/pt_BR/>\n"
 "Language: pt-BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -37,14 +38,9 @@ msgstr "/wiki/Software-Manual"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:1 ../wiki/en/Software-Manual.md:7
-#, fuzzy, no-wrap
-#| msgid ""
-#| "# Jamulus User Manual\n"
-#| " {:.no_toc}\n"
+#, no-wrap
 msgid "User Manual"
-msgstr ""
-"# Manual do Usuário do Jamulus \n"
-" {:.no_toc}\n"
+msgstr "Manual do Usuário"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:9
@@ -81,17 +77,15 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-#, fuzzy, no-wrap
-#| msgid "</details>"
+#, no-wrap
 msgid "</details>\n"
-msgstr "</details>"
+msgstr "</details>\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:21
-#, fuzzy, no-wrap
-#| msgid "# Main Window"
+#, no-wrap
 msgid "Main Window"
-msgstr "# Janela Principal"
+msgstr "Janela Principal"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:28
@@ -109,17 +103,15 @@ msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:29
-#, fuzzy, no-wrap
-#| msgid "## Ping, Delay and Jitter"
+#, no-wrap
 msgid "Ping, Delay and Jitter"
-msgstr "## Ping, Atraso and Jitter"
+msgstr "Ping, Atraso e Tremor"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
-#, fuzzy, no-wrap
-#| msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
+#, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.\n"
-msgstr "**Ping** mostra a latência da rede em milissegundos, quanto menor, melhor. O tempo de ping contribui para o atraso geral (veja abaixo). A causa mais provável de um ping alto é que sua distância para o servidor é muito grande.   \n"
+msgstr "**Ping** mostra a latência da rede em milissegundos, quanto menor, melhor. O tempo de ping contribui para o atraso geral (veja abaixo). A causa mais provável de um ping alto é que sua distância para o servidor é muito grande.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
@@ -129,8 +121,7 @@ msgstr "**Atraso** mostra a latência geral calculada a partir do tempo de ping 
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/pt-BR-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED verde\"></figure>\n"
 
@@ -142,10 +133,9 @@ msgstr "**Verde** - O delay é perfeito para uma jam session\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/pt-BR-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED amarelo\"></figure>\n"
+msgstr "<figure><img src=\"{% include img/pt-BR-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED amarelo\"></figure\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:42
@@ -155,8 +145,7 @@ msgstr "**Amarelo** - Uma sessão ainda é possível, mas pode ser mais difícil
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Image of a green red symbol\"></figure>\n"
 msgstr "<figure><img src=\"{% include img/pt-BR-screenshots/led-red.inc %}\" style=\"float:left; margin-right:10px; clear: both;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED vermelho\"></figure>\n"
 
@@ -194,100 +183,90 @@ msgstr "A CPU do cliente ou servidor está em 100%."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:54
-#, fuzzy, no-wrap
-#| msgid "## Input"
+#, no-wrap
 msgid "Input"
-msgstr "## Entrada"
+msgstr "Entrada"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:58
 msgid "Shows the level of the two stereo channels for your audio input.  Make sure not to clip the input signal to avoid distortions of your sound (the LEDs will indicate clipping when it occurs)."
-msgstr ""
+msgstr "Mostrar o nível de dois canais estéreis da sua entrada de áudio. Tenha certeza de não grampear o sinal de entrada para evitar distorções no som (os LEDs vão indicar o grampeamento quando ele ocorrer)."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:59
 #, no-wrap
 msgid "Mute Myself button"
-msgstr ""
+msgstr "Botão Me Silenciar"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:62
 msgid "Cuts your audio stream to the server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself."
-msgstr ""
+msgstr "Corta a transmissão de áudio para o servidor para que você possa se ouvir e ver seus próprios níveis de entrada, mas outros músicos não. Esteja ciente de que outros músicos não saberão se você se silenciou."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:63
 #, no-wrap
 msgid "Reverb effect"
-msgstr ""
+msgstr "Efeito reverb"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:69
 msgid "Adds reverb to your local mono audio channel, or to both channels in stereo mode.  The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector to the right and move the fader upwards until the desired reverb level is reached."
-msgstr ""
+msgstr "Adicionar reverb no seu canal de áudio local mono, ou nos dois canais com modo estéreo. A seleção do canal mono e o nível de reverbação podem ser modificados. Por exemplo, se um sinal de um microfone é colocado no canal de áudio direito da carta de som e o efeito reverb tem que ser aplicado, defina o seletor de canais para o direito e mova o fader para cima até que o nível de reverb desejado seja atingido."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:70
 #, no-wrap
 msgid "Chat"
-msgstr ""
+msgstr "Chat"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives."
-msgstr ""
+msgstr "Abre a janela de chat. O texto digitado é enviado para todos os Clientes conectados. Se uma nova mensagem do chat chega e o diálogo por chat não está aberto, ele vai abrir automaticamente pera todos os Clientes. Veja as configurações para selecionar se quer ligar um som de alerta quando uma nova mensagem de chat chegar."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
 #, no-wrap
 msgid "Connect/disconnect button"
-msgstr ""
+msgstr "Botão conectar/desconectar"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:81
 msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session.  You can also open the dialogue using \"File&gt;Connection Setup...\". This will leave you connected to any current session until you join another."
-msgstr ""
+msgstr "Abre um diálogo onde você pode selecionar um servidor para se conectar. Se você estiver conectado, pressionando esse botão a sessão vai ser encerrada. Você sempre pode abrir o diálogo usando \"File&gt;Connection Setup...\". Isso vai deixar você conectado em qualquer sessão atual até você entrar em outra."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:83
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<figure>\n"
-#| "\t<img src=\"{% include img/en-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of the Jamulus main window\">\n"
-#| "\t<figcaption>Your local mix when connected to a Server</figcaption>\n"
-#| "</figure>\n"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Screenshot of the server connection window\"></figure>\n"
-msgstr ""
-"<figure>\n"
-"\t<img src=\"{% include img/pt-BR-screenshots/main-screen-medium.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Imagem da janela principal do Jamulus\">\n"
-"\t<figcaption>Sua mixagem local quando conectado a um Servidor</figcaption>\n"
-"</figure>\n"
+msgstr "<figure><img src=\"{% include img/PT-br-screenshots/connection-setup-window.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Captura de tela da janela do servidor conectado\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:86
 msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
-msgstr ""
+msgstr "A janela de configuração de conexão mostra uma lista dos servidores disponíveis juntos com suas \"distâncias\" (em termos de tempo de ping), o número de ocupantes e o máximo número suportado, e a localização dada do servidor. Servidores permantentes (aqueles que estão na lista por mais que 24 horas) serão mostrados em negrito."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:88
 msgid "Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name."
-msgstr ""
+msgstr "Clique no servidor que você quiser entrar e pressione o botão Conectar para se conectar nele. Alternativamente, clicando duas vezes no nome do servidor."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
 msgid "Server operators register their servers with Directories. These are either genre-specific or for any genre, or additional [custom entries](#custom-directories). Use the Directory dropdown to select a genre.  You can filter the list by server name or location. To list only occupied Servers, enter a \"#\" character.  If you choose \"Show All Musicians\" the current occupants will be shown."
-msgstr ""
+msgstr "Operadores de servidores registram seus servidores com Diretórios. Esses são qualquer gênero específico ou para qualquer gênero, ou adicionais [entradas personalizadas] (#custom-directories). Use o Diretório descartado para selecionar um gênero. Você pode filtrar a lista por nome de servidor ou localização. Para listar apenas servidores ocupados, entre um \"#\" caractere. Se você escolher \"Mostre Todos os Músicos\", os ocupantes atuais vão ser mostrados."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
 msgid "If you know the hostname or IP address of a private Server, you can connect to it using the \"Server Address\" field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr ""
+msgstr "Se você saber que o hostname ou o endereço IP de um servidor provado, você pode se conectar nele usando o campo de \"Endereço do Servidor\". Um número de porta opcional pode ser adicionado depois do endereço usando dois pontos como separador, e.g, 'jamulus.exemplo.com:22124'. (Note que o endereço IPv6 deve ser inteiramente entre colchetes, por exemplo '[::1]:22124'.). O campo também mostra uma lista dos endereços de servidor mais usados recentemente. O botão que segue o campo permite que a entrada atual seja removida da lista."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
 #, no-wrap
 msgid "Server audio mixer"
-msgstr ""
+msgstr "Mixer de áudio do servidor"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:102
@@ -299,22 +278,22 @@ msgstr "<figure><img src=\"{% include img/pt-BR-screenshots/led-red.inc %}\" sty
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:105
 msgid "The audio mixer screen shows each user connected to the server (including yourself).  The faders allow you to adjust the level of what you hear without affecting what others hear."
-msgstr ""
+msgstr "A tela do mixer de áudio mostra cada usuário conectado no servidor (incluindo você mesmo). Os campos permitem que você ajuste o nível do que você ouve sem afetar o que os outros ouvem."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:107
 msgid "The VU meter shows the input level at the server - that is, the sound being sent."
-msgstr ""
+msgstr "O medidor de VU mostra o nível de entrada no servidor - isto é, o som que está sendo enviado."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:109
 msgid "If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset)."
-msgstr ""
+msgstr "Se você definiu seu Canal de Áudio para Estéreo ou Saída Estéreo nas suas configurações, você também verá um controle de pan (click-shift para resetar)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:111
 msgid "If you see a \"mute\" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero."
-msgstr ""
+msgstr "Se você vir um ícone de \"mudo\" acima de um usuário, significa que essa pessoa não consegue ouvir você. Ou ela silenciou você, colocou um ou mais usuários, sem incluir você, em solo, ou zerou o fader da mixagem."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:116
