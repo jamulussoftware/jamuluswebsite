@@ -42,31 +42,28 @@ msgstr "Использование полосы пропускания"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:9
-#, markdown-text
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Администрирование сервера\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Audio bandwidth"
 msgstr "Пропускная способность аудиосистемы"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
-#, markdown-text
 msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
 msgstr "Настройки звука влияют на требуемую пропускную способность сети. В таблице ниже приведены требования к сети в зависимости от конфигурации: * Каналы: стерео/моно * Качество: высокое/среднее/низкое * Продолжительность звукового буфера: 2,67 мс, 5,33 мс, 10,67 мс, 21,33 мс"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:21
-#, markdown-text
 msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : Mega-bits per second"
 msgstr "Со следующими единицами измерения * мс : миллисекунды * Кбит/с : Килобит в секунду (напоминание: 1 Мбит/с = 1024 Кбит/с, 1 Кбайт/с = 8 Кбит/с) * Мбит/с : Мегабит в секунду"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:30
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
 "| --------- | ------ | -------- | -------- | -------- | -------- |\n"
@@ -88,13 +85,13 @@ msgstr ""
 
 #. type: Title ##
 #: ../wiki/en/Server-Bandwidth.md:31
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Network bandwidth"
 msgstr "Пропускная способность сети"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:38
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "There is one upstream (musician sending to the Server) and one downstream (server sending back the mix to the musician)\n"
 "<figure>\n"
@@ -110,6 +107,5 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:40
-#, markdown-text
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
 msgstr "Отметим также, что средняя скорость передачи данных ADSL2 составляет 10 Мбит/с для нисходящего потока и 1 Мбит/с для восходящего. Фактическая производительность зависит от расстояния до провайдера, которое может [теоретически варьироваться от 24 Мбит/с на расстоянии 0,3 км до 1,5 Мбит/с на расстоянии 5,2 км](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) для скорости загрузки."

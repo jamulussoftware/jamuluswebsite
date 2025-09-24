@@ -37,37 +37,36 @@ msgstr "/wiki/Server-Troubleshooting"
 #. type: Title #
 #: ../wiki/en/Server-Troubleshooting.md:1
 #: ../wiki/en/Server-Troubleshooting.md:10
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Server Troubleshooting"
 msgstr "Устранение неполадок на сервере"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:9
-#, markdown-text
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
 msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Администрирование сервера\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:12
-#, markdown-text, no-wrap
+#, no-wrap
 msgid " {:.no_toc}\n"
 msgstr " {:.no_toc}\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:14
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "<details markdown=\"1\">\n"
 msgstr "<details markdown=\"1\">\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:16
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "<summary>Table of contents</summary>\n"
 msgstr "<summary>Оглавление</summary>\n"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:19
-#, markdown-text, no-wrap
+#, no-wrap
 msgid ""
 "* TOC\n"
 " {:toc}\n"
@@ -77,108 +76,98 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:21
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "</details>\n"
 msgstr "</details>\n"
 
 #. type: Title ##
 #: ../wiki/en/Server-Troubleshooting.md:22
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Servers - Registered"
 msgstr "Серверы - зарегистрированные"
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:24
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Why doesn't my Server show up in the list? Why isn't it registering?"
 msgstr "Почему мой сервер не отображается в списке? Почему он не регистрируется?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:27
-#, markdown-text
 msgid "If you are registered OK (you can [see it here](https://explorer.jamulus.io/)) and you or your friends can't see your Server, you may need to wait, or start your Client with the `--showallservers` option and try connecting from there ([see command line options](Software-Manual#command-line-options)) on how to start your Client with a config option). In some network configurations, you may also need to configure your router to [forward the port number](Unregistered-Servers#port-forwarding) used by Jamulus Server."
 msgstr "Если вы зарегистрированы нормально (вы можете [увидеть это здесь](https://explorer.jamulus.io/)), но вы или ваши друзья не видите свой сервер, вам может потребоваться подождать, или запустить ваш клиент с опцией `--showallservers` и попробовать подключиться оттуда ([см. опции командной строки](Software-Manual#command-line-options)) о том, как запустить ваш клиент с опцией конфигурации). В некоторых сетевых конфигурациях вам также может потребоваться настроить ваш маршрутизатор на [перенаправление номера порта](Unregistered-Servers#port-forwarding), используемого Jamulus Server."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:29
-#, markdown-text
 msgid "If you are seeing a message that says the Server is full, you will need to wait until a slot becomes free."
 msgstr "Если вы видите сообщение о том, что сервер переполнен, вам придется подождать, пока освободится слот."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:31
-#, markdown-text
 msgid "You can verify that your Server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/)."
 msgstr "Вы можете убедиться, что ваш сервер включен в список соответствующего жанра, [проверив его здесь](https://explorer.jamulus.io/)."
 
 #. type: Title ##
 #: ../wiki/en/Server-Troubleshooting.md:32
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Servers - Unregistered"
 msgstr "Серверы - незарегистрированные"
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:34
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "I'm running my Client on the same machine/network as my Server but I can't connect to it"
 msgstr "Я запускаю своего клиента на той же машине/сети, что и сервер, но не могу подключиться к нему"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:37
-#, markdown-text
 msgid "Connect your Client to `localhost` or `127.0.0.1`. If you're running the Client on a different machine to the Server but on the same network, then connect to the _local network_ address of the Server. Do not connect via the Server's public (WAN) address."
 msgstr "Подключите клиента к `localhost` или `127.0.0.1`. Если вы запускаете клиент на другой машине, чем сервер, но в той же сети, то подключитесь к _локальному сетевому_ адресу сервера. Не подключайтесь через публичный (WAN) адрес Сервера."
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:38
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "What address do I give to people so that they can connect to my Server?"
 msgstr "Какой адрес я должен указывать людям, чтобы они могли подключиться к моему серверу?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:41
-#, markdown-text
 msgid "This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on \"dynamic DNS\" in [this guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it)."
 msgstr "Это должен быть ваш **публичный** IP-адрес (найдите его с помощью [Google](https://www.google.com/search?q=whatsmyip) или (2ip.ru)). Подключите ваш **собственный** клиент Jamulus к **локальному** IP-адресу вашего сервера (`localhost` или `127.0.0.1`, если он находится на той же машине, что и ваш клиент). Обратите внимание, что ваш публичный IP-адрес может меняться - см. примечание о \"динамическом DNS\" в [этом руководстве](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it)."
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:43
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "What port numbers can I use?"
 msgstr "Какие номера портов я могу использовать?"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:46
-#, markdown-text
 msgid "You can set your Server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your Server in the format `[serverAddress]:[portNumber]`."
 msgstr "Вы можете настроить свой сервер на прослушивание пользовательского порта с помощью опции `--port`. Если вы это сделаете, вам нужно будет указать людям, через какой порт подключаться. Им нужно будет добавить номер порта к адресу вашего сервера в формате `[serverAddress]:[portNumber]`."
 
 #. type: Title ###
 #: ../wiki/en/Server-Troubleshooting.md:47
-#, markdown-text, no-wrap
+#, no-wrap
 msgid "Nobody can connect to my Server - but I can connect locally"
 msgstr "Никто не может подключиться к моему серверу - но я могу подключиться локально"
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:50
-#, markdown-text
 msgid "First of all, make sure you've enabled [port forwarding](Unregistered-Servers#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP)."
 msgstr "Прежде всего, убедитесь, что вы включили [проброс портов](Unregistered-Servers#port-forwarding). Если вы по-прежнему не видите свой сервер извне локальной сети, возможно, у вас проблемы с поставщиком услуг Интернета(возможно подключение за доп. плату в месяц от провайдера) (ISP)."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:52
-#, markdown-text
 msgid "Some ISPs use techniques like [Address plus Port (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) or [Carrier-grade NAT (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT) to conserve address space (usually for IPv4). That makes it impossible to host services like Jamulus at home as they are not visible outside your local network."
 msgstr "Некоторые интернет-провайдеры используют такие методы, как [Адрес плюс порт (A+P)](https://en.wikipedia.org/wiki/Address_plus_Port) или [NAT операторского класса (CGN)](https://en.wikipedia.org/wiki/Carrier-grade_NAT), для экономии адресного пространства (обычно для IPv4). Это делает невозможным размещение таких сервисов, как Jamulus, у себя дома, поскольку они не видны за пределами вашей локальной сети."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:54
-#, markdown-text
 msgid "To detect if CGN is the issue, go to your router's configuration screen (typically, 192.168.X.X) and look at the WAN Status page. If your listed IPv4 address doesn't match with your public IPv4 address (check it [here](https://ifconfig.me)), it suggests that CGN may be enabled. You can try using an IPv6 connection by starting clients and server with the `-6` flag if IPv6 is available for the server and all clients."
 msgstr "Чтобы определить, является ли проблема CGN проблемой, перейдите на экран конфигурации вашего маршрутизатора (обычно 192.168.X.X) и посмотрите на страницу WAN Status. Если указанный вами IPv4-адрес не совпадает с публичным IPv4-адресом (проверьте его [здесь](https://ifconfig.me)), это говорит о том, что CGN может быть включен. Вы можете попробовать использовать IPv6-соединение, запустив клиентов и сервер с флагом `-6`, если IPv6 доступен для сервера и всех клиентов."
 
 #. type: Plain text
 #: ../wiki/en/Server-Troubleshooting.md:55
-#, markdown-text
 msgid "To fix the issue with IPv4, contact your ISP technical support team, and tell them that you want to host a public server at home, so you need a real WAN IP address. Furthermore, you can help them with info that CGN might be the issue. Also, you can ask for a static IP address to avoid using DDNS."
 msgstr "Чтобы решить проблему с IPv4, свяжитесь со службой технической поддержки вашего провайдера и скажите, что вы хотите разместить публичный сервер у себя дома, поэтому вам нужен настоящий IP-адрес WAN. Кроме того, вы можете помочь им с информацией о том, что проблема может заключаться в CGN. Также вы можете попросить статический IP-адрес, чтобы избежать использования DDNS."
