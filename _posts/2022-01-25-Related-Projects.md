@@ -65,10 +65,6 @@ and to zip them up and download them via a web browser. It is implemented in PHP
 * [gojam](https://github.com/dtinth/gojam) is an implementation of a Jamulus client written in Go. This tool is intended for headless streaming use-cases. Used by **jamulus-lounge**.
 * [jamviz](https://github.com/dtinth/jamviz) shows active connections of a Jamulus server that is running **jamulus-lounge**. Used to show activity to a livestreaming audience.
 
-## Koord
-
-Koord adds real-time video of participants to Jamulus technology in a new application, available for desktop and mobile devices. The [Koord.live website](https://koord.live/) offers private servers and additional playback and recording features.
-
 ## Melomax
 
 The [Melomax website](https://melomax.live) offers private servers groups can use with Jamulus client software.
