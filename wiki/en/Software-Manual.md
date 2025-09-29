@@ -81,7 +81,7 @@ You can also open the dialogue using "File&gt;Connection Setup...". This will le
 
 <figure><img src="{% include img/en-screenshots/connection-setup-window.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Screenshot of the server connection window"></figure>
 
-The Connection Setup window shows a list of available Servers together with their "distance" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.
+The Connection Setup window shows a list of available Servers together with their "distance" (in terms of ping time), the number of occupants and the maximum number supported, the Server's given location and the Server's Version.
 Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold.
 
 Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name.
