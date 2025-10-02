@@ -2,12 +2,12 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # ignotus <darylo1@hotmail.com>, 2022.
-# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2022, 2023, 2024.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2022, 2023, 2024, 2025.
 # gallegonovato <fran-carro@hotmail.es>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-31 11:00+0000\n"
+"PO-Revision-Date: 2025-09-30 14:12+0000\n"
 "Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -243,10 +243,8 @@ msgstr "<figure><img src=\"{% include img/es-screenshots/connection-setup-window
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:86
-#, fuzzy
-#| msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
 msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, the Server's given location and the Server's Version.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
-msgstr "La ventana de Configuración de Conexión muestra una lista de Servidores disponibles con su \"distancia\" (en términos de tiempo ping), junto con el número de usuarios conectados y el número máximo de los mismos soportado, así como la ubicación del Servidor. Los Servidores permanentes (aquellos que llevan más de 24 horas en la lista) se muestran en negrita."
+msgstr "La ventana de Configuración de Conexión muestra una lista de Servidores disponibles con su \"distancia\" (en términos de tiempo ping), junto con el número de usuarios conectados y el número máximo de los mismos soportado, la ubicación y la versión del Servidor. Los Servidores permanentes (aquellos que llevan más de 24 horas en la lista) se muestran en negrita."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:88
@@ -440,19 +438,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:178
-#, fuzzy, no-wrap
-#| msgid ""
-#| "* No user sorting<br/>\n"
-#| "This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.\n"
-#| "* Sort by Name<br/>\n"
-#| "Sorts by the name someone has chosen in their profile.\n"
-#| "* Sort by Instrument / City<br/>\n"
-#| "Sorts by the instrument or city someone has in their profile, along with their name.\n"
-#| "* Sort by Group<br/>\n"
-#| "Where the fader group feature is in use, this sorts in ascending group number from left to right (and within that, by name), with any ungrouped channels off to the right.\n"
-#| "* Sort by Channel<br/>\n"
-#| "Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
-#| "Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
+#, no-wrap
 msgid ""
 "* No user sorting<br/>\n"
 "This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.\n"
@@ -475,7 +461,7 @@ msgstr ""
 "* Ordenar Usuarios de Canal por Grupo<br/>\n"
 "Cuando se utiliza la función de agrupar faders, esto ordena por número de grupo en orden ascendente (y dentro de éste, por nombre), con cualquier canal no agrupado a la derecha.\n"
 "* Ordenar Usuarios por Canal<br/>\n"
-"Cuando los controles de canal de Jamulus (fader, mute, solo, etc) se controlan mediante MIDI (véase [Utilizar --ctrlmidich para controladores MIDI](Tips-Tricks-More#utilizar-ctrlmidich-para-controladores-midi)), esto ordena por número de canal para ayudar a asegurar un orden estable que se alinee con los controles de hardware MIDI.\n"
+"Cuando los controles de canal de Jamulus (fader, mute, solo, etc) se controlan mediante MIDI (véase [Utilizar --ctrlmidich para controladores MIDI](Tips-Tricks-More#utilizar---ctrlmidich-para-controladores-midi)), esto ordena por número de canal para ayudar a asegurar un orden estable que se alinee con los controles de hardware MIDI.\n"
 "Nótese que en clientes de Jamulus anteriores a la versión 3.12.0, los números de canal son asignados directamente por el servidor. Los clientes desde 3.12.0 en adelante gestionan su propia asignación de números de canal y siempre asignan el canal 0 al usuario local (siempre y cuando la versión del servidor sea al menos 3.5.5).\n"
 
 #. type: Title ###
