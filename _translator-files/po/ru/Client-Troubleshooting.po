@@ -2,18 +2,20 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Maksim_220 Кабанов <law820314@gmail.com>, 2025.
+# Roman Akimov <zoompyc@gmail.com>, 2025.
+# Ахматов Тамерлан <novadapresna@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-08-11 16:02+0000\n"
-"Last-Translator: Maksim_220 Кабанов <law820314@gmail.com>\n"
+"PO-Revision-Date: 2025-10-02 07:01+0000\n"
+"Last-Translator: Ахматов Тамерлан <novadapresna@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Client-Troubleshooting.md:1
@@ -37,7 +39,7 @@ msgstr "/wiki/Client-Troubleshooting"
 #: ../wiki/en/Client-Troubleshooting.md:1
 #, no-wrap
 msgid "Client Troubleshooting"
-msgstr ""
+msgstr "Устранение неполадок с клиентом"
 
 #. type: Title #
 #: ../wiki/en/Client-Troubleshooting.md:8
@@ -83,12 +85,12 @@ msgstr "</details>\n"
 #: ../wiki/en/Client-Troubleshooting.md:20
 #, no-wrap
 msgid "Don’t hear any sound/Others don’t hear you?"
-msgstr ""
+msgstr "Не слышите ни звука /Другие вас не слышат?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:23
 msgid "Start with the simple stuff: make sure your instrument/microphone and headphones are connected to the correct sockets. Make sure no other applications like your browser, video conferencing tool etc. is also using your sound card. You should shut those down when using Jamulus. If that all looks OK and the problem persists, it's likely there's an issue with your sound device settings. This will depend on your particular setup (platform, hardware, software and drivers), so it's best to ask on [the forums](https://github.com/jamulussoftware/jamulus/discussions) for guidance."
-msgstr ""
+msgstr "Начните с самого простого: убедитесь, что ваш инструмент / микрофон и наушники подключены к правильным разъемам. Убедитесь, что ваша звуковая карта не используется другими приложениями, такими как браузер, видеоконференцсвязь и т.д. Вы должны отключить их при использовании Jamulus. Если все выглядит нормально и проблема не устраняется, скорее всего, проблема связана с настройками вашего звукового устройства. Это зависит от ваших конкретных настройк (платформы, аппаратного обеспечения, программ и драйверов), так что лучше всего спросить об этом [на форуме](https://github.com/jamulussoftware/jamulus/discussions)."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:25
@@ -100,12 +102,12 @@ msgstr ""
 #: ../wiki/en/Client-Troubleshooting.md:26
 #, no-wrap
 msgid "Not seeing the headphone or microphone you just connected to your PC?"
-msgstr ""
+msgstr "Не работают наушники или микрофон, которые вы только что подключили к компьютеру?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:29
 msgid "Just restart Jamulus with your device plugged in. Jamulus currently doesn't show devices which were plugged in after the sound system was loaded."
-msgstr ""
+msgstr "Просто перезапустите Jamulus с уже подключённым устройством. В настоящее время Jamulus не отображает устройства, которые были подключены после загрузки звуковой системы."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:30
@@ -116,7 +118,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:33
 msgid "Your audio device may not work with the buffer size you selected. Select a bigger buffer size in Jamulus's settings. If possible though, use another device, since large buffer sizes mean higher latency."
-msgstr ""
+msgstr "Ваше аудиоустройство может не работать с выбранным размером буфера. Увеличьте размер буфера в настройках Jamulus. Однако, по возможности, используйте другое устройство, так как большой размер буфера увеличивает задержку."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:34
@@ -128,22 +130,22 @@ msgstr ""
 #: ../wiki/en/Client-Troubleshooting.md:37
 #, no-wrap
 msgid "**If at all possible, DO NOT listen to your direct signal.** Make sure you are listening as much as you can to the sound of your own instrument/voice _coming back from the Server_. This signal has you and your playing partners mixed together in sync, and will be the signal that your bandmates are hearing too. So listening to that means you will be in sync with each other (assuming you all have reasonably low latency). Note that if one or more musicians are not following this rule, they will slow down as they play or sing.\n"
-msgstr ""
+msgstr "**По возможности, НЕ слушайте свой прямой сигнал.** Старайтесь как можно больше слушать звук своего инструмента/голоса, _возвращающийся с сервера_. В этом сигнале вы и ваши партнёры по игре сведены синхронно, и именно этот сигнал слышат и другие участники вашей группы. Таким образом, слушая его, вы будете играть синхронно друг с другом (при условии, что у всех вас достаточно низкая задержка). Обратите внимание: если один или несколько музыкантов не следуют этому правилу, они будут замедляться во время игры или пения.\n"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:39
 msgid "You can test whether you are hearing your signal correctly by doing the following:"
-msgstr ""
+msgstr "Вы можете проверить, правильно ли вы слышите свой сигнал, следующим образом:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Run Jamulus and connect to a Server with a long ping time (greater than 200ms)"
-msgstr ""
+msgstr "Запустите Jamulus и подключитесь к серверу с большим временем пинга (более 200 мс)"
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Client-Troubleshooting.md:44
 msgid "Clap your hands once (or play one short note on an instrument). You should hear the sound from the Jamulus Server come back, but significantly delayed."
-msgstr ""
+msgstr "Хлопните в ладоши один раз (или сыграйте одну короткую ноту на инструменте). Вы должны услышать, как звук вернётся с сервера Jamulus, но со значительной задержкой."
 
 #. type: Bullet: '3. '
 #: ../wiki/en/Client-Troubleshooting.md:44
@@ -158,7 +160,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:46
 msgid "If you hear two claps after step 2, or any claps after step 4, then you are **not** obeying Rule Number One - you have your local audio enabled and should disable it."
-msgstr ""
+msgstr "Если после шага 2 вы слышите два хлопка или какие-либо хлопки после шага 4, то вы **не** соблюдаете Правило номер один — у вас включён локальный звук, и его следует отключить."
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:48
@@ -174,12 +176,12 @@ msgstr ""
 #: ../wiki/en/Client-Troubleshooting.md:51
 #, no-wrap
 msgid "Can't work out your mic settings?"
-msgstr ""
+msgstr "Не можете разобраться с настройками микрофона?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:54
 msgid "When using a microphone while playing your other instrument, you can use a stereo audio input signal in your settings where one channel is connected to the instrument and the other channel is connected to a microphone signal. On the microphone channel an optional reverberation effect can be applied."
-msgstr ""
+msgstr "При использовании микрофона во время игры на другом инструменте в настройках можно задействовать стереофонический входной сигнал, где один канал подключён к инструменту, а другой — к микрофону. К микрофонному каналу можно по желанию применить реверберацию."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:55
@@ -190,7 +192,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:58
 msgid "Your computer may be under too much load. Try not to have anything competing with Jamulus (like Zoom Meetings or Facebook live streams) on your machine. Or at least quit them while you're playing. Prevent things like virus scanners doing scans, or software updates happening, etc. Be aware that the reverb setting in Jamulus also uses more CPU the more reverb you have."
-msgstr ""
+msgstr "Ваш компьютер может быть перегружен. Постарайтесь не запускать на нём ничего, что будет конкурировать с Jamulus (например, конференции в Zoom или прямые трансляции в Facebook). Или хотя бы закрывайте эти программы на время игры. Не допускайте фоновых процессов, таких как сканирование антивирусом или установка обновлений. Имейте в виду, что настройка реверберации в Jamulus также нагружает процессор, и чем она сильнее, тем выше нагрузка."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:59
@@ -207,12 +209,12 @@ msgstr ""
 #: ../wiki/en/Client-Troubleshooting.md:63
 #, no-wrap
 msgid "Getting frustrated with software channels, audio routing, sample rates and more?"
-msgstr ""
+msgstr "Устали от программных каналов, маршрутизации звука, частот дискретизации и прочего?"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:66
 msgid "It's usually far easier and more reliable to have a [mixing desk](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg) to connect your kit (instruments, mic, recorder etc.) and then send a simple stereo signal to your sound interface (be sure to listen to the resulting sound from the Jamulus Server via your computer though!). The huge variety of possible hardware, software and instrument combinations means that setting up your sound card to work with your particular configuration can otherwise get complicated very fast."
-msgstr ""
+msgstr "Обычно гораздо проще и надёжнее подключить всё ваше оборудование (инструменты, микрофон, рекордер и т. д.) к [микшерному пульту](https://www.thomann.de/pics/bdb/191244/7355025_800.jpg), а с него уже посылать простой стереосигнал на ваш звуковой интерфейс (но не забывайте, что итоговый звук с сервера Jamulus нужно слушать через компьютер!). В противном случае, из-за огромного разнообразия возможных комбинаций оборудования, программного обеспечения и инструментов, настройка звуковой карты под вашу конкретную конфигурацию может очень быстро усложниться."
 
 #. type: Title ###
 #: ../wiki/en/Client-Troubleshooting.md:67
