@@ -3,18 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Maksim_220 Кабанов <law820314@gmail.com>, 2025.
 # vanapro1 <law820314@gmail.com>, 2025.
+# Roman Akimov <zoompyc@gmail.com>, 2025.
+# Ахматов Тамерлан <novadapresna@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-08-15 02:02+0000\n"
-"Last-Translator: vanapro1 <law820314@gmail.com>\n"
+"PO-Revision-Date: 2025-10-02 07:02+0000\n"
+"Last-Translator: Ахматов Тамерлан <novadapresna@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Tips-Tricks-More.md:1
@@ -101,24 +103,24 @@ msgstr "Использование клиента Jamulus"
 #: ../wiki/en/Tips-Tricks-More.md:26
 #, no-wrap
 msgid "Have an undisturbed session on any Server"
-msgstr ""
+msgstr "Наслаждайтесь бесперебойной работой на любом сервере"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:29
 msgid "You can have an undisturbed session with other people on any Server by simply soloing each other. You will then not be able to hear anyone else if they enter your Server."
-msgstr ""
+msgstr "Вы можете провести сессию с другими людьми на любом сервере так, чтобы вам никто не мешал, просто включив сольный режим друг для друга. Тогда вы не будете слышать никого, кто зайдёт на ваш сервер."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:31
 #, no-wrap
 msgid "**NOTE:** This does not stop people from hearing you, using the chat function, or seeing your profile information.\n"
-msgstr ""
+msgstr "**ПРИМЕЧАНИЕ:** Это не помешает другим слышать вас, пользоваться чатом или видеть информацию вашего профиля.\n"
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:32
 #, no-wrap
 msgid "Using Jamulus audio in Zoom (or other) meeting apps"
-msgstr ""
+msgstr "Использование звука из Jamulus в Zoom (или других) приложениях для конференций"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:35
@@ -156,17 +158,17 @@ msgstr ""
 #: ../wiki/en/Tips-Tricks-More.md:46
 #, no-wrap
 msgid "Jamulus Client Linux start script"
-msgstr ""
+msgstr "Скрипт запуска клиента Jamulus для Linux"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:49
 msgid "Here's a Linux start script for Jamulus using an old Audigy4 sound card, the large number of available audio faders for which makes it hard to get the correct settings."
-msgstr ""
+msgstr "Вот скрипт запуска Jamulus для Linux, предназначенный для старой звуковой карты Audigy4, которую сложно правильно настроить из-за большого количества доступных аудиофейдеров."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:51
 msgid "This script therefore includes the most important audio fader settings. The second part of the script deals with the JACK connections. I use Guitarix as my guitar effect processor which I plug in in the JACK audio path."
-msgstr ""
+msgstr "Поэтому этот скрипт включает в себя самые важные настройки аудиофейдеров. Вторая часть скрипта отвечает за соединения JACK. Я использую Guitarix в качестве гитарного процессора эффектов, который я подключаю в звуковой тракт JACK."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:53
@@ -232,7 +234,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:92
 msgid "When using JACK or macOS, make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), Audio/MIDI Setup (macOS) or whatever you use for managing connections). In Linux you may need to install and launch `a2jmidid` so your device shows up in the MIDI tab in Qjackctl.  For non-JACK Windows, Jamulus will find the MIDI device(s) automatically, but see the `d` option below if more than one MIDI device is connected."
-msgstr ""
+msgstr "При использовании JACK или macOS убедитесь, что вы подключили выходной порт вашего MIDI-устройства к входному MIDI-порту Jamulus (с помощью QjackCtl (для Linux/Windows), Audio/MIDI Setup (для macOS) или любой другой программы, которую вы используете для управления соединениями). В Linux вам может потребоваться установить и запустить `a2jmidid`, чтобы ваше устройство появилось во вкладке MIDI в Qjackctl. В Windows без использования JACK Jamulus автоматически найдёт MIDI-устройства, но если подключено более одного MIDI-устройства, см. опцию `d` ниже."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:94
@@ -242,7 +244,7 @@ msgstr ""
 #. type: Bullet: '1. '
 #: ../wiki/en/Tips-Tricks-More.md:96
 msgid "The legacy definition has one or two numbers in the format:"
-msgstr ""
+msgstr "Устаревшее определение содержит одно или два числа в формате:"
 
 #. type: Fenced code block
 #: ../wiki/en/Tips-Tricks-More.md:97
