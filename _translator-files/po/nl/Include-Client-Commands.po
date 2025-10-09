@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Henk De Groot <weblate@hdegroot.com>, 2023.
+# Henk De Groot <weblate@hdegroot.com>, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-03-26 08:40+0000\n"
+"PO-Revision-Date: 2025-10-08 18:07+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Client-Commands.md:3
@@ -37,10 +37,8 @@ msgstr "`-j` of `--nojackconnect` Schakel automatisch JACK verbindingen uit"
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
-#, fuzzy
-#| msgid "`--ctrlmidich` MIDI controller channel to listen on, control number offset and consecutive CC numbers (channels) and Mute Myself CC number. Format: `channel[;f*][;p*][;s*][;m*][;o]` See [Tips & Tricks](Tips-Tricks-More#using-ctrlmidich-for-midi-controllers)"
 msgid "`--ctrlmidich` MIDI channel to listen on, Jamulus control + MIDI control number and count of consecutive CC numbers (or Jamulus channels), device selection option. Format: `channel[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;dDeviceName]` See [Tips & Tricks](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)."
-msgstr "`--ctrlmidich` MIDI controller kanaal om naar te luisteren, control nummer offset en opeenvolgend CC nummers (kanalen) en demp mijzelf CC nummer. Formaat: `kanaal[;f*][;p*][;s*][;m*][;o]` Zie [Tips & trucs](Tips-Tricks-More#ctrlmidich-gebruiken-voor-midi-controllers)"
+msgstr "`--ctrlmidich` MIDI kanaal om naar te luisteren, Jamulus control + MIDI control nummer en opeenvolgend aantal CC nummers (of Jamulus kanalen), optie voor apparaatselectie. Formaat: `kanaa[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;dApparaatnaam]` Zie [Tips & trucs](Tips-Tricks-More#ctrlmidich-gebruiken-voor-midi-controllers)."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Client-Commands.md:6

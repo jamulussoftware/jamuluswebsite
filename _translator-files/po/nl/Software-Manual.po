@@ -1,20 +1,20 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Henk De Groot <weblate@hdegroot.com>, 2023, 2024.
+# Henk De Groot <weblate@hdegroot.com>, 2023, 2024, 2025.
 # Dklfajsjfi49wefklsf32 <nlincus@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-10-13 12:15+0000\n"
-"Last-Translator: Dklfajsjfi49wefklsf32 <nlincus@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-10-09 19:07+0000\n"
+"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -75,10 +75,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:20
-#, fuzzy, no-wrap
-#| msgid "</details> \n"
+#, no-wrap
 msgid "</details>\n"
-msgstr "</details> \n"
+msgstr "</details>\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:21
@@ -108,10 +107,9 @@ msgstr "Ping, vertraging en jitter"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
-#, fuzzy, no-wrap
-#| msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.   \n"
+#, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.\n"
-msgstr "**Ping** toont de netwerklatency in milliseconden, hoe lager hoe beter. De ping tijd draagt bij aan de algehele vertraging (zie hieronder). De meest waarschijnlijke oorzaak van een hoge ping waarde is dat je afstand tot de server te groot is.  \n"
+msgstr "**Ping** toont de netwerklatency in milliseconden, hoe lager hoe beter. De ping tijd draagt bij aan de algehele vertraging (zie hieronder). De meest waarschijnlijke oorzaak van een hoge ping waarde is dat je afstand tot de server te groot is.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
@@ -222,10 +220,8 @@ msgstr "Chat"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
-#, fuzzy
-#| msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message is received."
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives."
-msgstr "Opent het chatvenster. De ingevoerde tekst wordt naar alle aangesloten clients verzonden. Als er een nieuw chatbericht binnenkomt en de chatdialoog nog niet is geopend, wordt deze automatisch geopend voor alle clients. Zie instellingen om optioneel een geluidswaarschuwing in te schakelen wanneer een nieuw chatbericht wordt ontvangen."
+msgstr "Opent het chatvenster. De ingevoerde tekst wordt naar alle aangesloten clients verzonden. Als er een nieuw chatbericht binnenkomt en de chatdialoog nog niet is geopend, wordt deze automatisch geopend voor alle clients. Zie instellingen om optioneel een geluidswaarschuwing in te schakelen wanneer er een nieuw chatbericht binnenkomt."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
@@ -246,10 +242,8 @@ msgstr "<figure><img src=\"{% include img/nl-screenshots/connection-setup-window
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:86
-#, fuzzy
-#| msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, and the Server's given location.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
 msgid "The Connection Setup window shows a list of available Servers together with their \"distance\" (in terms of ping time), the number of occupants and the maximum number supported, the Server's given location and the Server's Version.  Permanent Servers (those that have been listed for longer than 24 hours) are shown in bold."
-msgstr "Het verbindingsvenster toont een lijst met beschikbare servers, samen met hun \"afstand\" (in termen van pingtijd), het aantal gebruikers en het maximaal ondersteunde aantal, en de opgegeven locatie van de server.  Permanente servers (die langer dan 24 uur in de lijst staan) worden vetgedrukt weergegeven."
+msgstr "Het verbindingsvenster toont een lijst met beschikbare servers, samen met hun \"afstand\" (in termen van pingtijd), het aantal gebruikers en het maximaal ondersteunde aantal, de opgegeven locatie van de server en de versie van de server.  Permanente servers (die langer dan 24 uur in de lijst staan) worden vetgedrukt weergegeven."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:88
@@ -263,10 +257,8 @@ msgstr "Serverbeheerders registreren hun servers in een adresboek. Deze zijn gen
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:98
-#, fuzzy
-#| msgid "If you know the IP address or URL of a private Server, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
 msgid "If you know the hostname or IP address of a private Server, you can connect to it using the \"Server Address\" field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 addresses must be entirely enclosed in square brackets, for example `[::1]:22124`.)  The field will also show a list of the most recently used server addresses.  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Als je het IP-adres of de URL van een prive Server weet, kun je er verbinding mee maken via het Serveradres veld.  Een optioneel poortnummer kan worden toegevoegd aan het adres met een dubbele punt als scheidingsteken, bijvoorbeeld `jamulus.voorbeeld.com:22124`.  (Merk op dat IPv6-adressen volledig in vierkante haken moet zijn ingesloten, bijvoorbeeld `[::1]:22124`.)  Dit veld toont ook een lijst met de meest recent gebruikte serveradressen.  Met de knop naast het veld kun je het huidige item uit de lijst verwijderen."
+msgstr "Als je de hostnaam of het IP-adres van een prive Server weet, kun je er verbinding mee maken via het Serveradres veld.  Een optioneel poortnummer kan worden toegevoegd aan het adres met een dubbele punt als scheidingsteken, bijvoorbeeld `jamulus.voorbeeld.com:22124`.  (Merk op dat IPv6-adressen volledig in vierkante haken moet zijn ingesloten, bijvoorbeeld `[::1]:22124`.)  Dit veld toont ook een lijst met de meest recent gebruikte serveradressen.  Met de knop naast het veld kun je het huidige item uit de lijst verwijderen."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:99
@@ -303,14 +295,12 @@ msgstr "Als je een \"gedempt\"-pictogram boven een gebruiker ziet dan betekent d
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:116
 msgid "Users usually appear left-to-right in the order that they connect. When joining a server that already has participants, the default order depends on the versions of Jamulus at the client and the server.  With a client version before 3.12.0 or a server version older than 3.5.5, the existing participants will be shown before your own fader channel.  With a client of 3.12.0 or later connected to a server of 3.5.5 or newer, your own fader will be shown first, with the other existing participants shown to the right.  In either case, participants joining subsequently will by default appear to the right of all the existing participants."
-msgstr ""
+msgstr "Gebruikers verschijnen meestal van links naar rechts in de volgorde waarin ze verbinding maken. Bij deelname aan een server die al deelnemers heeft, is de standaardvolgorde afhankelijk van de versies van Jamulus op de client en de server. Bij een clientversie ouder dan 3.12.0 of een serverversie ouder dan 3.5.5 worden de bestaande deelnemers vóór je eigen faderkanaal weergegeven. Bij een client van 3.12.0 of later die verbonden is met een server van 3.5.5 of nieuwer, wordt je eigen faderkanaal eerst weergegeven, met de andere bestaande deelnemers rechts. In beide gevallen verschijnen deelnemers die later toetreden standaard rechts van alle bestaande deelnemers."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:118
-#, fuzzy
-#| msgid "Users usually appear left-to-right in the order that they connect. You can sort instead by name, instrument, group, or city using the View menu."
 msgid "You can override this order and sort instead by name, instrument, group, city or channel number using the View menu. See Menu Commands below."
-msgstr "Gebruikers verschijnen meestal van links naar rechts in de volgorde waarin ze verbinding maken. Je kunt in plaats daarvan sorteren op naam, instrument, groep of stad met behulp van het menu Weergave."
+msgstr "Je kunt deze volgorde overschrijven en in plaats daarvan sorteren op naam, instrument, groep, stad of kanaalnummer via het menu 'Weergave'. Zie 'Menu opties' hieronder."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:120
@@ -365,12 +355,12 @@ msgstr "Menu opties"
 #: ../wiki/en/Software-Manual.md:137
 #, no-wrap
 msgid "File > Connection Setup..."
-msgstr ""
+msgstr "Bestand > Verbindingsinstellingen..."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:140
 msgid "Opens the [connection dialogue (see above)](#connectdisconnect-button)."
-msgstr ""
+msgstr "Opent het [verbindingsdialoogvenster (zie hierboven)](#verbindenafmelden-knop)."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:141
@@ -380,63 +370,58 @@ msgstr "Bestand > Mixer kanaalinstellingen laden/opslaan"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:144
-#, fuzzy
-#| msgid "You can save and restore the mix you have for your band rehearsals (fader, mute, pan, solo etc.) and load these any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
 msgid "You can save and restore the mix you have for your band. This stores your settings for each person's fader volume, pan setting, mute and solo state. You can load this mix any time (even while you are playing). Loading can also be done by drag/drop to the mixer window."
-msgstr "Je kunt de mix die je hebt voor je bandrepetities opslaan en herstellen (fader, demp, balans, solo enz.) en deze op elk moment laden (zelfs terwijl je speelt). Laden kan ook door middel van het slepen van het bestand naar het mengpaneel."
+msgstr "Je kunt de mix die je hebt voor je band opslaan en herstellen. Hier worden je instellingen voor fadervolume, pan-instelling, demp en solostatus van elke persoon opgeslagen. Je kunt deze mix op elk moment laden (zelfs tijdens het spelen). Je kunt de mix ook laden door hem naar het mengpaneel te slepen."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:145
 #, no-wrap
 msgid "File > Exit"
-msgstr ""
+msgstr "Bestand > Afsluiten"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:148
 msgid "Closes all the windows and exits the application."
-msgstr ""
+msgstr "Sluit alle vensters en verlaat de toepassing."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:149
 #, no-wrap
 msgid "Edit > Clear All Stored Solo/Mute Settings"
-msgstr ""
+msgstr "Bewerken > Wis alle opgeslagen solo- en demp-instellingen"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:152
 msgid "Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins - or you join a server where they are playing - the settings will automatically be applied.  Use this command to clear _all_ these stored settings."
-msgstr ""
+msgstr "Wanneer je een kanaal solo of dempt, onthoudt Jamulus deze instellingen. Zelfs als die persoon vertrekt en weer terugkeert - of als je verbinding maakt met een server waar hij/zij speelt - worden de instellingen automatisch toegepast. Gebruik deze opdracht om _alle_ opgeslagen instellingen te wissen."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:153
 #, no-wrap
 msgid "Edit > Set All Faders to New Client Level"
-msgstr ""
+msgstr "Bewerken > Zet alle faders op nieuw client-niveau"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:156
 msgid "Applies the [configured \"New Client Level\"](#new-client-level) to all currently connected channels."
-msgstr ""
+msgstr "Past het [geconfigureerde \"Nieuw clientniveau\"](#nieuw-client-niveau) toe op alle momenteel verbonden kanalen."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:157
-#, fuzzy, no-wrap
-#| msgid "Edit > Auto-Adjust All Faders "
+#, no-wrap
 msgid "Edit > Auto-Adjust All Faders"
-msgstr "Bewerken > Stel alle faders automatisch in "
+msgstr "Bewerken > Stel alle faders automatisch in"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:160
-#, fuzzy
-#| msgid "Applies a one-off fader setting to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
 msgid "Applies a one-off fader adjustment to each channel depending on its volume. Useful for large ensembles to get a reasonable overall mix, although individual adjustments might still be necessary. Best applied during a warm-up or a uniform part of the music piece."
-msgstr "Past een eenmalige fader-instelling toe op elk kanaal, afhankelijk van het volume. Handig voor grote ensembles om een redelijke algehele mix te krijgen, hoewel individuele aanpassingen nog steeds nodig kunnen zijn. Het beste kan dit worden toegepast tijdens een warming-up of een uniform deel van het muziekstuk."
+msgstr "Past een eenmalige fader-aanpassing toe op elk kanaal, afhankelijk van het volume. Handig voor grote ensembles om een redelijke algehele mix te krijgen, hoewel individuele aanpassingen nog steeds nodig kunnen zijn. Het beste kan dit worden toegepast tijdens een warming-up of een uniform deel van het muziekstuk."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:161
 #, no-wrap
 msgid "View > (sort options)"
-msgstr ""
+msgstr "Weergave > (sorteer opties)"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:166
@@ -446,6 +431,9 @@ msgid ""
 "* Own Fader First<br/>\n"
 "This option can be used in addition to the others to move your own channel to always be the leftmost, irrespective of the sort order of the other channels.\n"
 msgstr ""
+"Met de meeste opties in het menu 'Weergave' kun je de volgorde aanpassen die Jamulus kiest om kanalen op de server weer te geven:\n"
+"* Eigen fader eerst<br/>\n"
+"Deze optie kan naast de andere opties worden gebruikt om je eigen kanaal altijd helemaal links te plaatsen, ongeacht de sorteervolgorde van de andere kanalen.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:178
@@ -463,40 +451,50 @@ msgid ""
 "Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
 "Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
 msgstr ""
+"* Kanalen niet sorteren<br/>\n"
+"Hierbij wordt geen rekening gehouden met gebruikersgegevens. Er wordt gesorteerd op de volgorde waarin kanalen zich bij de huidige server voegen, zoals verderop beschreven, waarbij nieuwe kanalen aan de rechterkant worden toegevoegd.\n"
+"* Sorteer muzikanten op Naam<br/>\n"
+"Sorteert op de naam die iemand in zijn of haar profiel heeft gekozen.\n"
+"* Sorteer muzikanten op Instrument / Stad<br/>\n"
+"Sorteert op het instrument of de stad die iemand in zijn of haar profiel heeft staan, samen met de naam.\n"
+"* Sorteer muzikanten op Groep<br/>\n"
+"Wanneer de fadergroepeerfunctie wordt gebruikt, wordt er gesorteerd op oplopend groepsnummer van links naar rechts (en daarbinnen op naam), met eventuele niet-gegroepeerde kanalen aan de rechterkant.\n"
+"* Sorteer muzikanten op Kanaal<br/>\n"
+"Waar Jamulus-kanalen (fader, demp, solo, enz.) worden aangestuurd via MIDI (zie [Gebruik van --ctrlmidich voor MIDI-controllers](Tips-Tricks-More#---ctrlmidich-gebruiken-voor-midi-controllers)), wordt hiermee gesorteerd op kanaalnummer om een stabiele sorteervolgorde te garanderen die overeenkomt met de MIDI-hardwarebedieningen.\n"
+"Houd er rekening mee dat in Jamulus-clients vóór versie 3.12.0 kanaalnummers rechtstreeks door de server worden toegewezen. Clients vanaf 3.12.0 beheren hun eigen kanaalnummertoewijzingen en wijzen altijd kanaal 0 toe aan de lokale gebruiker (mits de serverversie minimaal 3.5.5 is).\n"
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:179
 #, no-wrap
 msgid "View > Chat"
-msgstr ""
+msgstr "Weergave > Chat..."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:182
 msgid "Opens the [Chat](#chat) window."
-msgstr ""
+msgstr "Opent het [chat](#chat)-venster."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:183
-#, fuzzy, no-wrap
-#| msgid "Settings"
+#, no-wrap
 msgid "Settings Menu"
-msgstr "Instellingen"
+msgstr "Instellingen (menu)"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:186
 msgid "Allows direct access to each of the [Settings](#settings) tabs."
-msgstr ""
+msgstr "Geeft directe toegang tot elk van de tabbladen [instellingen](#instellingen)."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:187
 #, no-wrap
 msgid "Help"
-msgstr ""
+msgstr "Hulp"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:190
 msgid "Provides access to the [Getting Started](Getting-Started) and [User Manual](Software-Manual) (this page) on the website, along with copyright, licence and acknowledgement details.  There is also a \"What's This?\" option for getting more details on parts of the client display."
-msgstr ""
+msgstr "Geeft toegang tot [aan de slag](Getting-Started) en [gebruikershandleiding](Software-Manual) (deze pagina) op de website, inclusief informatie over copyright, licentie en erkenning. Er is ook een optie \"Wat Is Dit?\" voor meer informatie over onderdelen van het clientscherm."
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:192
@@ -624,8 +622,6 @@ msgstr "Audiokanalen"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:241
-#, fuzzy
-#| msgid "Selects the number of audio channels to be used for communication between Client and server."
 msgid "Selects the number of audio channels to be used for communication between Client and Server."
 msgstr "Selecteert het aantal audiokanalen dat moet worden gebruikt voor communicatie tussen client en server."
 
@@ -789,10 +785,8 @@ msgstr "Eigen adresboeken"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:320
-#, fuzzy
-#| msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  If you know the IP address or host name of a custom Directory, you can connect to it using the Server Name/Address field.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
 msgid "If you need to add Directory addresses other than the built-in ones, you can do so here.  Enter the hostname or IP address of the custom Directory.  An optional port number can be added after the address using a colon as a separator, e.g, `jamulus.example.com:22124`.  (Note that IPv6 is not currently supported for Directories.)  The button that follows the field allows the current entry to be removed from the list."
-msgstr "Als je andere adresboekadressen wilt toevoegen dan de ingebouwde adressen, dan kun je dat hier doen.  Als je het IP-adres of de hostnaam van een eigen adresboek weet, dan kun je er verbinding mee maken via het Serveradres veld.  Een optioneel poortnummer kan worden toegevoegd na het adres met een dubbele punt als scheidingsteken, bijvoorbeeld `jamulus.voorbeeld.com:22124`.  (Houd er rekening mee dat IPv6 momenteel niet wordt ondersteund voor adresboeken).  Met de knop naast het veld kun je het huidige item uit de lijst verwijderen."
+msgstr "Als je andere adresboekadressen wilt toevoegen dan de ingebouwde adressen, dan kun je dat hier doen.  Voer de hostnaam of het IP-adres van een eigen adresboekserver in.  Een optioneel poortnummer kan worden toegevoegd na het adres met een dubbele punt als scheidingsteken, bijvoorbeeld `jamulus.voorbeeld.com:22124`.  (Houd er rekening mee dat IPv6 momenteel niet wordt ondersteund voor adresboeken).  Met de knop naast het veld kun je het huidige item uit de lijst verwijderen."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:321
@@ -858,10 +852,9 @@ msgstr "{% include_relative Include-Backing-Up.md %} * Je kunt verschillende mix
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:347
-#, fuzzy, no-wrap
-#| msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in \n"
+#, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in\n"
-msgstr "**Opmerking voor macOS-gebruikers:** Vanaf Jamulus 3.8.1 hebben we een ondertekend installatieprogramma. Hierbij worden de instellingen opgeslagen in \n"
+msgstr "**Opmerking voor macOS-gebruikers:** Vanaf Jamulus 3.8.1 hebben we een ondertekend installatieprogramma. Hierbij worden de instellingen opgeslagen in\n"
 
 #. type: Fenced code block (shell)
 #: ../wiki/en/Software-Manual.md:347
