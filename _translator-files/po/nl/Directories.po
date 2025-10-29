@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Henk De Groot <weblate@hdegroot.com>, 2023, 2024.
+# Henk De Groot <weblate@hdegroot.com>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-08-18 20:28+0000\n"
+"PO-Revision-Date: 2025-10-13 20:07+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Directories.md:1
@@ -90,12 +90,12 @@ msgstr "Wanneer je een server achter een NAT-firewall op een particulier netwerk
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:29
 msgid "When running a Client behind a NAT firewall on a private network with a Directory on the same network, the Directory itself needs to be run using the `--serverpublicip` option to specify the public IP address, so that any Servers on the public Internet registering with the Directory that require the \"hole punch\" can be accessed by the Client(s). (This is because otherwise the Directory would provide the local network address of the Client to the Server and the \"hole punch\" would fail.)"
-msgstr "Wanneer een client achter een NAT-firewall wordt uitgevoerd op een particulier netwerk met een adresboek op hetzelfde netwerk, dan moet het adresboek zelf worden uitgevoerd met de optie `--serverpublicip' om het openbare IP-adres op te geven, zodat alle servers op het openbare internet die willen registreren bij het adresboek waarvoor de \"perforatie\" vereist is, toegankelijk is de client(s). (Dit komt omdat anders het adresboek het lokale netwerkadres van de client aan de server zou verstrekken en de \"perforatie\" zou mislukken.)"
+msgstr "Wanneer een client achter een NAT-firewall wordt uitgevoerd op een particulier netwerk met een adresboek op hetzelfde netwerk, dan moet het adresboek zelf worden uitgevoerd met de optie `--serverpublicip` om het openbare IP-adres op te geven, zodat alle servers op het openbare internet die willen registreren bij het adresboek waarvoor de \"perforatie\" vereist is, toegankelijk is de client(s). (Dit komt omdat anders het adresboek het lokale netwerkadres van de client aan de server zou verstrekken en de \"perforatie\" zou mislukken.)"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:31
 msgid "If you need to restart your Directory for any reason (for example when rebooting the host), Servers connected to it will be disconnected until they re-register. This does not mean that Clients connected to those Servers will be disconnected, but does mean that new Clients will be not able to see Servers listed by your Directory until those Servers reconnect. To enable the list of registered Servers to persist between restarts, use the `--directoryfile` option to specify the location and name of a file that the Directory can read and write to."
-msgstr "Als je het adresboek om welke reden dan ook opnieuw moet opstarten (bijvoorbeeld bij het opnieuw opstarten van de host), dan worden de servers die ermee verbonden zijn losgekoppeld totdat ze zich opnieuw registreren. Dit betekent niet dat de verbinding met clients die met die servers zijn verbonden wordt verbroken maar het betekent wel dat nieuwe clients geen servers in je adresboek kunnen zien totdat die servers opnieuw verbinding maken. Om ervoor te zorgen dat de lijst met geregistreerde servers blijft bestaan tussen herstarts, gebruik je de optie `--directoryfile' om de locatie en naam op te geven van een bestand waarnaar het adresboek kan lezen en schrijven."
+msgstr "Als je het adresboek om welke reden dan ook opnieuw moet opstarten (bijvoorbeeld bij het opnieuw opstarten van de host), dan worden de servers die ermee verbonden zijn losgekoppeld totdat ze zich opnieuw registreren. Dit betekent niet dat de verbinding met clients die met die servers zijn verbonden wordt verbroken maar het betekent wel dat nieuwe clients geen servers in je adresboek kunnen zien totdat die servers opnieuw verbinding maken. Om ervoor te zorgen dat de lijst met geregistreerde servers blijft bestaan tussen herstarts, gebruik je de optie `--directoryfile` om de locatie en naam op te geven van een bestand waarnaar het adresboek kan lezen en schrijven."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Directories.md:32
