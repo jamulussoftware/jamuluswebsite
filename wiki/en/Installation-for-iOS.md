@@ -16,16 +16,17 @@ Make sure you've already read the [Getting Started](Getting-Started) page.
 
 ## Things to note about iOS
 
-If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target="_blank" rel="noopener noreferrer" } which is an inexpensive and small device that performs very well with Jamulus. iOS support is just a proof of concept.
+If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target="_blank" rel="noopener noreferrer" } which is an inexpensive and small device that performs very well with Jamulus.
 
-* To install Jamulus on your iOS device, you need a (free or paid) Apple Developer account and preferably a computer.
-* If you don't pay for an Apple developer account, Jamulus will only run for at most 7 days before you need to re-install it.
-* Jamulus on iOS works quite well if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. If you own an older device which has a Lightning port and not USB-C, you can use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub.
+* Jamulus on iOS works quite well if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. If you own an older device which has a Lightning port and not USB-C, you can use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub. Bluetooth Headphones do not work well.
 * If you must use Jamulus on a wireless network, you should prefer a cellular (5G) connection over WiFi.
-* Unofficial Jamulus compatible apps like [KOORD](https://apps.apple.com/us/app/koord/id1621509341) are available on the AppStore but may not have the same features as the official Jamulus release.
 
+## Install for iOS (AppStore)
+1. Plug in your audio interface into your device
+2. Connect a wired internet connection to your device
+3. [Download Jamulus (AppStore)]({{ site.download_ios_app_store_link }}){:.button}
 
-## Install for iOS (for experienced users only)
+## Install for iOS manually (for experienced users only)
 
 **Note**: We provide an unsigned .ipa file which you need to sign and then install on your device. If you are not Jailbroken (and have AppSync installed), you might need additional software to install Jamulus. There are multiple ways to do that, but this guide only explains the most standard approach. Please note that we assume you already have a (free) Apple developer account. If you don't have one, create an Apple ID and [Sign up for a developer account](https://developer.apple.com/membercenter). We recommend to create one without two factor authentification and unrelated to your potential personal account. You will need to enter the password in non-Apple software.
 
@@ -40,7 +41,7 @@ If you own a Mac and have Xcode installed, compiling Jamulus from source might b
 
 ## Feedback and development
 
-Our view is that the iOS version is not sufficiently mature to be published on the AppStore. Feel free to help out:
+Jamulus does not have a mobile friendly user interface. Feel free to help out:
 Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/).
 
 Please also read the [APPLEAPPSTORE.LICENCE.WAIVER](https://github.com/jamulussoftware/jamulus/blob/main/APPLEAPPSTORE.LICENCE.WAIVER) concerning Jamulus being published via the Apple AppStore.
