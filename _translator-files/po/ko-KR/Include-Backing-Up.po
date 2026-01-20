@@ -2,25 +2,25 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # 이정희 <please@seeGitHubOrWeblate.local>, 2022.
-# 이정희 <daemul72@gmail.com>, 2023.
+# 이정희 <daemul72@gmail.com>, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-03-30 17:41+0000\n"
+"PO-Revision-Date: 2025-12-02 01:00+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
-"Language: ko_KR\n"
+"Language: ko-KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:2
 #, no-wrap
 msgid "<!-- NOTE: This must apply to both Client and Server, and all operating systems -->\n"
-msgstr "<!-- 참고: 이것은 클라이언트와 서버, 그리고 모든 운영 체제에 모두 적용되어야 합니다 -->\n"
+msgstr "<!-- 참고: 이것은 클라이언트와 서버, 그리고 모든 운영 체제에 적용되어야 합니다 -->\n"
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:4
@@ -30,7 +30,7 @@ msgstr "설치 및 실행이 완료되면 설정 복사본을 보관할 수 있�
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:6
 msgid "To find your settings file on Windows, type `%APPDATA%` into the search bar and look for a folder named `Jamulus`. There will be one or more `.ini` files in this folder. Now back up Jamulus' settings."
-msgstr "Windows에서 사용자의 설정 파일을 찾으려면 검색 창에 '%APPDATA%'를 입력하고 'Jamulus'라는 폴더를 찾습니다. 이 폴더에는 하나 이상의 '.ini'파일이 있습니다. 이제 Jamulus의 설정을 백업하십시오."
+msgstr "Windows에서 사용자의 설정 파일을 찾으려면 검색창에 `%APPDATA%`를 입력하고 `Jamulus`라는 폴더를 찾습니다. 이 폴더에는 하나 이상의 `.ini` 파일이 있습니다. 이제 Jamulus 설정을 백업하십시오."
 
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:8
@@ -45,7 +45,7 @@ msgstr "`find ~ -name Jamulus.ini -ls`"
 #. type: Plain text
 #: ../wiki/en/Include-Backing-Up.md:13
 msgid "If you used the `--inifile` parameter to save an inifile to a different location, don't forget to also backup these files.  **Points to note**"
-msgstr "'--inifile'매개 변수를 사용하여 inifile을 다른 위치에 저장했다면 이 파일도 백업하는 것을 잊지 마십시오.  **주의할 점들**"
+msgstr "`--inifile` 매개 변수를 사용하여 inifile을 다른 위치에 저장했다면 이 파일도 백업하는 것을 잊지 마십시오.  **주의할 점들**"
 
 #. type: Bullet: '* '
 #: ../wiki/en/Include-Backing-Up.md:16
