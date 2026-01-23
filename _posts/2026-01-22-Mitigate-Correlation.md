@@ -68,13 +68,15 @@ IP addresses of users collected from the listeners are being correlated with joi
 
 ### Clients
 
-When you open the Connect dialog window your client starts sending pings to every server in the list. **`24.199.107.192`** is the IP address of one of those servers. A server using **`24.199.107.192`** exists on each genre, their names are ***Duet***.  
+When you open the Connect dialog window your client starts sending pings to every server in the list. **`24.199.107.192`** is the IP address of one of those servers. A server using **`24.199.107.192`** exists on each genre, their names are ***Duet***.
+
 Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** will prevent the listeners from collecting your IP address and break the correlation attack. This will help prevent you from being tracked.
 
 ### Server Admins
 
 Server admins can contribute to helping prevent user tracking by blocking the explorer probe.  
-If you run a server on the jamulus public network, it is currently being indexed by the explorer instance on **`137.184.43.255`**  
+If you run a server on the jamulus public network, it is currently being indexed by the explorer instance on **`137.184.43.255`**
+
 Blocking incoming **UDP** traffic from **`137.184.43.255`** will prevent the explorer from indexing your server and breaks the correlation attack. This will protect users on your server from being tracked while they use it.
 
 ---
