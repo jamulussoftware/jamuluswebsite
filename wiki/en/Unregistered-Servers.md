@@ -33,4 +33,4 @@ Unless your ISP provides you with a fixed IP address, you may find that your add
 
 ## DNS SRV record support
 
-Recent versions of Jamulus support [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record) for finding the port number to use to connect to a Directory or Server. See [this page](DNS-SRV-Support) for details.
+Recent versions of Jamulus support [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record) for automatically finding the port number to use to connect to a Directory or Server. This allows just the hostname to be specified, without the port number. See [this page](DNS-SRV-Support) for details.
