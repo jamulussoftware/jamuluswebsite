@@ -48,13 +48,15 @@ SRV records are created by the administrator of the DNS domain being used to hos
   _service._proto.name. ttl IN SRV priority weight port target.
 ~~~
 
-In the case of Jamulus, the `service` must be `jamulus` and the `proto` must be `udp`, so the record will look like this:
+Note that the `name` and `target` hostnames may either be the same or different. `name` is the hostname the user will use without a port number for SRV lookup, and `target` is the hostname the Jamulus will use together with the discovered port number in order to connect to the Jamulus Server or Directory.
+
+In the case of Jamulus, the `service` must be `jamulus` and the `proto` must be `udp`, so the record will look like this (for a port number of `12345`):
 
 ~~~
-  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com.
+  _jamulus._udp.myserver.example.com. 60 IN SRV 0 5 12345 myhost.example.com.
 ~~~
 
-This allows to host many Jamulus Servers or Directories at different ports on a single host with different hostnames by giving each its own SRV record. This avoids having to give your users the port number, which may be less memorable than a name.
+This technique allows you to host many Jamulus Servers or Directories at different ports on a single host with different hostnames by giving each its own SRV record. This avoids having to give your users the port number, which may be less memorable than a name. In the above example, the user will specify `myserver.example.com` and Jamulus will then connect to `myhost.example.com:12345`.
 
 See the documentation of your DNS provider for instructions on creating an SRV record.
 
