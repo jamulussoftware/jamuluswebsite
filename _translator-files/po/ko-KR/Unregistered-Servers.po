@@ -108,103 +108,78 @@ msgid "DNS SRV record support"
 msgstr "DNS SRV 레코드 지원"
 
 #. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:37
-msgid "Jamulus Clients support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record). If a Client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus Clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record."
-msgstr "Jamulus 클라이언트는 [DNS SRV 레코드(\"서비스\" 레코드)](https://en.wikipedia.org/wiki/SRV_record)를 지원합니다. 클라이언트가 연결하기 창에 제공된 도메인 이름과 연결된 SRV 레코드를 찾으면 SRV 레코드에 나열된 엔드포인트 호스트 및 포트에 연결을 시도합니다. 이 프로세스는 웹 브라우저의 HTTP 리디렉션과 유사하지만 Jamulus 클라이언트와 DNS 서버 사이에서만 이루어집니다. Jamulus 서버는 이 상호 작용에 관여하지 않습니다. Jamulus 서버는 SRV 레코드에 나열된 동일한 포트에서 연결을 수신 대기합니다."
-
-#. type: Title ####
-#: ../wiki/en/Unregistered-Servers.md:38
-#, no-wrap
-msgid "Why is this helpful?"
-msgstr "이것이 왜 도움이 되나요?"
-
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:41
-msgid "A Jamulus Client can connect to a Server on a non-default port by specifying the port as part of the server address. A server administrator may want to give users a simple address without the port details, while still serving Jamulus on a non-default port. For this case, the port information can be acquired from an SRV record."
-msgstr "Jamulus 클라이언트는 서버 주소의 일부로 포트를 지정하여 기본이 아닌 포트에서 서버에 연결할 수 있습니다. 서버 관리자는 기본이 아닌 포트에서 Jamulus를 계속 서비스하면서 포트 세부 정보 없이 사용자에게 간단한 주소를 제공할 수 있습니다. 이 경우 SRV 레코드에서 포트 정보를 얻을 수 있습니다."
-
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:43
-msgid "An address entered in the Connect window could look like ```jamulus.example.com```. If an SRV record is found for this DNS domain, Jamulus Client will try to connect to the Server on the host:port listed in the SRV record, such as ```jamulus.example.com:12345```."
-msgstr "연결하기 창에 입력된 주소는 ``jamulus.example.com``'과 유사할 수 있습니다. 이 DNS 도메인에 대한 SRV 레코드가 발견되면 Jamulus 클라이언트는 ```jamulus.example.com:12345```와 같이 SRV 레코드에 나열된 호스트:포트의 서버에 연결을 시도합니다."
-
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:45
-msgid "If no SRV records are found on the DNS server, a Client will attempt to connect to the Server as specified in the connection window."
-msgstr "DNS 서버에서 SRV 레코드가 발견되지 않으면 클라이언트는 연결 창에 지정된 대로 서버에 연결을 시도합니다."
-
-#. type: Title ####
-#: ../wiki/en/Unregistered-Servers.md:46
-#, no-wrap
-msgid "Creating SRV records"
-msgstr "SRV 레코드 생성하기"
-
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:49
-msgid "SRV records are created by the administrator of the domain being used to host the Jamulus server. The SRV records are added through the administration portal (or API if available) of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this."
-msgstr "SRV 레코드는 Jamulus 서버를 호스팅하는 데 사용되는 도메인 관리자가 생성합니다. SRV 레코드는 도메인의 DNS 호스팅 서비스의 관리 포털(또는 사용 가능한 경우 API)을 통해 추가됩니다. SRV 레코드 항목의 형식은 DNS 호스팅 서비스에 따라 다를 수 있지만 일반적으로 다음과 같습니다."
-
-#. type: Fenced code block
-#: ../wiki/en/Unregistered-Servers.md:50
-#, no-wrap
-msgid ""
-"  _service._proto.name. ttl IN SRV priority weight port target\n"
-"  \n"
-"  # or, more specifically\n"
-"  \n"
-"  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
+#: ../wiki/en/Unregistered-Servers.md:36
+msgid "Recent versions of Jamulus support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record) for automatically finding the port number to use to connect to a Directory or Server. This allows just the hostname to be specified, without the port number. See [this page](DNS-SRV-Support) for details and applicable version numbers."
 msgstr ""
-"  _service._proto.name. ttl IN SRV 우선순위 가중치 포트 대상\n"
-"  \n"
-"   # 또는 더 구체적으로\n"
-"  \n"
-"   _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:59
+#~ msgid "Jamulus Clients support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record). If a Client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus Clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record."
+#~ msgstr "Jamulus 클라이언트는 [DNS SRV 레코드(\"서비스\" 레코드)](https://en.wikipedia.org/wiki/SRV_record)를 지원합니다. 클라이언트가 연결하기 창에 제공된 도메인 이름과 연결된 SRV 레코드를 찾으면 SRV 레코드에 나열된 엔드포인트 호스트 및 포트에 연결을 시도합니다. 이 프로세스는 웹 브라우저의 HTTP 리디렉션과 유사하지만 Jamulus 클라이언트와 DNS 서버 사이에서만 이루어집니다. Jamulus 서버는 이 상호 작용에 관여하지 않습니다. Jamulus 서버는 SRV 레코드에 나열된 동일한 포트에서 연결을 수신 대기합니다."
+
 #, no-wrap
-msgid "**Note:** You can host many Jamulus Servers at different ports on one host by giving each its own SRV record.\n"
-msgstr "**참고:** 각각 고유한 SRV 레코드를 제공하여 한 호스트의 서로 다른 포트에서 여러 Jamulus 서버를 호스팅할 수 있습니다.\n"
+#~ msgid "Why is this helpful?"
+#~ msgstr "이것이 왜 도움이 되나요?"
 
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:61
-msgid "See the documentation of your DNS provider for instructions on creating an SRV record."
-msgstr "SRV 레코드 생성에 대한 지침은 DNS 공급업체의 설명서를 참조하세요."
+#~ msgid "A Jamulus Client can connect to a Server on a non-default port by specifying the port as part of the server address. A server administrator may want to give users a simple address without the port details, while still serving Jamulus on a non-default port. For this case, the port information can be acquired from an SRV record."
+#~ msgstr "Jamulus 클라이언트는 서버 주소의 일부로 포트를 지정하여 기본이 아닌 포트에서 서버에 연결할 수 있습니다. 서버 관리자는 기본이 아닌 포트에서 Jamulus를 계속 서비스하면서 포트 세부 정보 없이 사용자에게 간단한 주소를 제공할 수 있습니다. 이 경우 SRV 레코드에서 포트 정보를 얻을 수 있습니다."
 
-#. type: Title ####
-#: ../wiki/en/Unregistered-Servers.md:62
+#~ msgid "An address entered in the Connect window could look like ```jamulus.example.com```. If an SRV record is found for this DNS domain, Jamulus Client will try to connect to the Server on the host:port listed in the SRV record, such as ```jamulus.example.com:12345```."
+#~ msgstr "연결하기 창에 입력된 주소는 ``jamulus.example.com``'과 유사할 수 있습니다. 이 DNS 도메인에 대한 SRV 레코드가 발견되면 Jamulus 클라이언트는 ```jamulus.example.com:12345```와 같이 SRV 레코드에 나열된 호스트:포트의 서버에 연결을 시도합니다."
+
+#~ msgid "If no SRV records are found on the DNS server, a Client will attempt to connect to the Server as specified in the connection window."
+#~ msgstr "DNS 서버에서 SRV 레코드가 발견되지 않으면 클라이언트는 연결 창에 지정된 대로 서버에 연결을 시도합니다."
+
 #, no-wrap
-msgid "Example use case with SRV records"
-msgstr "SRV 레코드 사용 사례의 예시"
+#~ msgid "Creating SRV records"
+#~ msgstr "SRV 레코드 생성하기"
 
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:65
-msgid "This example assumes the DNS contains an A or CNAME record that resolves to ```server1.example.com```, where three Jamulus Server instances are running, each listening on one of the three ports listed below."
-msgstr "이 예시에서는 DNS에 ``server1.example.com``'으로 확인되는 A 또는 CNAME 레코드가 포함되어 있다고 가정합니다. 여기서 Jamulus Server 인스턴스 3개가 실행되고 각각 아래 나열된 포트 3개 중 하나에서 수신 대기합니다."
+#~ msgid "SRV records are created by the administrator of the domain being used to host the Jamulus server. The SRV records are added through the administration portal (or API if available) of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this."
+#~ msgstr "SRV 레코드는 Jamulus 서버를 호스팅하는 데 사용되는 도메인 관리자가 생성합니다. SRV 레코드는 도메인의 DNS 호스팅 서비스의 관리 포털(또는 사용 가능한 경우 API)을 통해 추가됩니다. SRV 레코드 항목의 형식은 DNS 호스팅 서비스에 따라 다를 수 있지만 일반적으로 다음과 같습니다."
 
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:67
-msgid "Alternatively, `server1.example.com` can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers)."
-msgstr "대안으로, `server1.example.com`은 라우터, NAT-gateway 또는 각 포트를 백엔드 Jamulus 서버(또는 여러 서버)로 전달하는 load-balancer일 수 있습니다."
-
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:74
 #, no-wrap
-msgid ""
-"| JAMULUS CLIENT     |  DNS SRV RECORD                                                             | JAMULUS SERVER             |\n"
-"| ------------------ | --------------------------------------------------------------------------- | -------------------------- |\n"
-"| rock.example.com  |  _jamulus._udp.rock.example.com 300 IN SRV 0 5 22124 server1.example.com  | server1.example.com:22124 |\n"
-"| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
-"| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
-msgstr ""
-"| JAMULUS 클라이언트     |  DNS SRV 레코드                                                             | JAMULUS 서버             |\n"
-"| ------------------ | --------------------------------------------------------------------------- | -------------------------- |\n"
-"| rock.example.com  |  _jamulus._udp.rock.example.com 300 IN SRV 0 5 22124 server1.example.com  | server1.example.com:22124 |\n"
-"| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
-"| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
+#~ msgid ""
+#~ "  _service._proto.name. ttl IN SRV priority weight port target\n"
+#~ "  \n"
+#~ "  # or, more specifically\n"
+#~ "  \n"
+#~ "  _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
+#~ msgstr ""
+#~ "  _service._proto.name. ttl IN SRV 우선순위 가중치 포트 대상\n"
+#~ "  \n"
+#~ "   # 또는 더 구체적으로\n"
+#~ "  \n"
+#~ "   _jamulus._udp.example.com. 60 IN SRV 0 5 12345 jamulus.example.com\n"
 
-#. type: Plain text
-#: ../wiki/en/Unregistered-Servers.md:76
 #, no-wrap
-msgid "*It's important to remember that DNS is not forwarding connections. It's simply telling Jamulus Client what public host:port to connect to.*\n"
-msgstr "*DNS는 연결을 전달하지 않는다는 점을 기억하는 것이 중요합니다. 이는 단순히 연결할 공용 호스트:포트를 Jamulus 클라이언트에 알려주는 것뿐입니다.*\n"
+#~ msgid "**Note:** You can host many Jamulus Servers at different ports on one host by giving each its own SRV record.\n"
+#~ msgstr "**참고:** 각각 고유한 SRV 레코드를 제공하여 한 호스트의 서로 다른 포트에서 여러 Jamulus 서버를 호스팅할 수 있습니다.\n"
+
+#~ msgid "See the documentation of your DNS provider for instructions on creating an SRV record."
+#~ msgstr "SRV 레코드 생성에 대한 지침은 DNS 공급업체의 설명서를 참조하세요."
+
+#, no-wrap
+#~ msgid "Example use case with SRV records"
+#~ msgstr "SRV 레코드 사용 사례의 예시"
+
+#~ msgid "This example assumes the DNS contains an A or CNAME record that resolves to ```server1.example.com```, where three Jamulus Server instances are running, each listening on one of the three ports listed below."
+#~ msgstr "이 예시에서는 DNS에 ``server1.example.com``'으로 확인되는 A 또는 CNAME 레코드가 포함되어 있다고 가정합니다. 여기서 Jamulus Server 인스턴스 3개가 실행되고 각각 아래 나열된 포트 3개 중 하나에서 수신 대기합니다."
+
+#~ msgid "Alternatively, `server1.example.com` can be a router, NAT-gateway, or load-balancer that forwards each of the ports to a backend Jamulus server (or servers)."
+#~ msgstr "대안으로, `server1.example.com`은 라우터, NAT-gateway 또는 각 포트를 백엔드 Jamulus 서버(또는 여러 서버)로 전달하는 load-balancer일 수 있습니다."
+
+#, no-wrap
+#~ msgid ""
+#~ "| JAMULUS CLIENT     |  DNS SRV RECORD                                                             | JAMULUS SERVER             |\n"
+#~ "| ------------------ | --------------------------------------------------------------------------- | -------------------------- |\n"
+#~ "| rock.example.com  |  _jamulus._udp.rock.example.com 300 IN SRV 0 5 22124 server1.example.com  | server1.example.com:22124 |\n"
+#~ "| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
+#~ "| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
+#~ msgstr ""
+#~ "| JAMULUS 클라이언트     |  DNS SRV 레코드                                                             | JAMULUS 서버             |\n"
+#~ "| ------------------ | --------------------------------------------------------------------------- | -------------------------- |\n"
+#~ "| rock.example.com  |  _jamulus._udp.rock.example.com 300 IN SRV 0 5 22124 server1.example.com  | server1.example.com:22124 |\n"
+#~ "| jazz.example.com  |  _jamulus._udp.jazz.example.com 300 IN SRV 0 5 22125 server1.example.com  | server1.example.com:22125 |\n"
+#~ "| blues.example.com |  _jamulus._udp.blues.example.com 300 IN SRV 0 5 22126 server1.example.com | server1.example.com:22126 |\n"
+
+#, no-wrap
+#~ msgid "*It's important to remember that DNS is not forwarding connections. It's simply telling Jamulus Client what public host:port to connect to.*\n"
+#~ msgstr "*DNS는 연결을 전달하지 않는다는 점을 기억하는 것이 중요합니다. 이는 단순히 연결할 공용 호스트:포트를 Jamulus 클라이언트에 알려주는 것뿐입니다.*\n"
