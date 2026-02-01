@@ -183,6 +183,7 @@ To register with one of the Directories built into the Jamulus Client, replace `
 |**Genre Classical/Folk** |`classical.jamulus.io:22524`|
 |**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
 
+Recent versions of Jamulus support [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record) for automatically finding the port number to use to connect to a Directory or Server. This allows just the hostname to be specified, without the port number. See [this page](DNS-SRV-Support) for details and applicable version numbers.
 
 ##### `-o or --serverinfo`
 
