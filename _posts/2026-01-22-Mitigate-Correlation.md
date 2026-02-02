@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Mitigating User Tracking Caused By Correlation Attack"
+title: "Privacy: Mitigating User Tracking By Third Parties"
 lang: "en"
 author: "rdica"
-heading: "Mitigating User Tracking Caused By Correlation Attack"
+heading: "Privacy: Mitigating User Tracking By Third Parties"
 ---
 
 By default the Jamulus protocol does not map usernames to IP addresses in any publicly available data.  
-However it is possible to execute a correlation attack to achieve user&lt;&dash;&gt;IP mapping.  
+However it is possible to correlate connections to servers to achieve user&lt;&dash;&gt;IP mapping.  
 This was first reported to Jamulus developers here: [https://github.com/orgs/jamulussoftware/discussions/3545](https://github.com/orgs/jamulussoftware/discussions/3545)
 
 <!--more-->
@@ -33,12 +33,12 @@ Each genre has a directory server. The purpose of the directory server is to pro
 
 Anyone can run an explorer instance. An explorer queries each genres directory server to get a list of servers, then queries each server directly to get a list of connected users. This is public data. **There is no IP address information on users, just the user profile data**. Again this is by design to prevent IP&lt;&dash;&gt;username mapping.  This data can also be saved for later processing.
 
-### Correlation Attack
+### Correlation
 
 Anyone can run servers **and** explorer instances.  
 Using IPs captured by a server, one can correlate **when an IP address stops pinging** &lpar;ie; just connected to a server&rpar; and **when a new client joined a server** &lpar;username data from explorer query directly to a jamulus server&rpar; to produce an IP&lt;&dash;&gt;username mapping. The IP address can then be processed to provide geolocation data. From this one can determine the location of a specific user.
 
-## The Current Correlation Attack (as of 20260122)
+## Current Correlation (as of 20260202)
 
 ### Listeners
 
@@ -70,14 +70,14 @@ IP addresses of users collected from the listeners are being correlated with joi
 
 When you open the Connect dialog window your client starts sending pings to every server in the list. **`24.199.107.192`** is the IP address of one of those servers. A server using **`24.199.107.192`** exists on each genre, their names are ***Duet***.
 
-Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** will prevent the listeners from collecting your IP address and break the correlation attack. This will help prevent you from being tracked.
+Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** will prevent the listeners from collecting your IP address and breaks correlation. This will help prevent you from being tracked.
 
 ### Server Admins
 
 Server admins can contribute to helping prevent user tracking by blocking the explorer probe.  
 If you run a server on the jamulus public network, it is currently being indexed by the explorer instance on **`137.184.43.255`**
 
-Blocking incoming **UDP** traffic from **`137.184.43.255`** will prevent the explorer from indexing your server and breaks the correlation attack. This will protect users on your server from being tracked while they use it.
+Blocking incoming **UDP** traffic from **`137.184.43.255`** will prevent the explorer from indexing your server and breaks correlation. This will protect users on your server from being tracked while they use it.
 
 ---
 
