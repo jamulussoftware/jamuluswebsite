@@ -2,13 +2,13 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
-# Olivier Humbert <trebmuh@librazik.org>, 2022, 2023, 2024.
+# Olivier Humbert <trebmuh@librazik.org>, 2022, 2023, 2024, 2026.
 # Julien Taverna <jujudusud@gmail.com>, 2023, 2024.
 # ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-10-04 13:09+0000\n"
+"PO-Revision-Date: 2026-01-20 20:01+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@librazik.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/installation-for-ios/fr/>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-iOS.md:1
@@ -65,17 +65,13 @@ msgstr "Ce qu'il faut savoir sur iOS"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:20
-#, fuzzy
-#| msgid "If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus. iOS support is just a proof of concept."
 msgid "If you have don't own a PC, we suggest you to buy a [Raspberry Pi](https://www.raspberrypi.org/){: target=\"_blank\" rel=\"noopener noreferrer\" } which is an inexpensive and small device that performs very well with Jamulus."
-msgstr "Si vous ne possédez pas de PC, nous vous suggérons d'acheter un [Raspberry Pi (en anglais)](https://www.raspberrypi.org/){ : target=\"_blank\" rel=\"noopener noreferrer\" } qui est un petit périphérique peu coûteux qui fonctionne très bien avec Jamulus. Le support iOS n'est qu'une preuve de concept."
+msgstr "Si vous ne possédez pas de PC, nous vous suggérons d'acheter un [Raspberry Pi (en anglais)](https://www.raspberrypi.org/){ : target=\"_blank\" rel=\"noopener noreferrer\" } qui est un petit périphérique peu coûteux qui fonctionne très bien avec Jamulus."
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-iOS.md:23
-#, fuzzy
-#| msgid "Jamulus on iOS works quite well if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. If you own an older device which has a Lightning port and not USB-C, you can use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub."
 msgid "Jamulus on iOS works quite well if everything is set up correctly. However, we strongly recommend you use an audio interface and an USB-Ethernet adapter. If you own an older device which has a Lightning port and not USB-C, you can use something like the [Lightning to USB Camera Adapter](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) and a (powered) USB-hub. Bluetooth Headphones do not work well."
-msgstr "Jamulus sur iOS fonctionne plutôt bien si tout est configuré correctement. Cependant, nous vous recommandons vivement d'utiliser une interface audio et un adaptateur USB-Ethernet. Si vous possédez un périphérique plus ancien doté d'un port Lightning et non d'un port USB-C, vous pouvez utiliser quelque chose comme le [Lightning to USB Camera Adapter (en anglais)](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) et un hub USB (alimenté)."
+msgstr "Jamulus sur iOS fonctionne plutôt bien si tout est configuré correctement. Cependant, nous vous recommandons vivement d'utiliser une interface audio et un adaptateur USB-Ethernet. Si vous possédez un périphérique plus ancien doté d'un port Lightning et non d'un port USB-C, vous pouvez utiliser quelque chose comme le [Lightning to USB Camera Adapter (en anglais)](https://www.apple.com/uk/shop/product/MD821ZM/A/lightning-to-usb-camera-adapter) et un hub USB (alimenté). Les écouteurs Bluetooth ne fonctionnent pas bien."
 
 #. type: Bullet: '* '
 #: ../wiki/en/Installation-for-iOS.md:23
@@ -84,34 +80,30 @@ msgstr "Si vous devez utiliser Jamulus sur un réseau sans fil, préférez une c
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-iOS.md:24
-#, fuzzy, no-wrap
-#| msgid "Installation for iOS"
+#, no-wrap
 msgid "Install for iOS (AppStore)"
-msgstr "Installation pour iOS"
+msgstr "Installer pour iOS (AppStore)"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-iOS.md:28
 msgid "Plug in your audio interface into your device"
-msgstr ""
+msgstr "Branchez votre interface audio sur votre périphérique"
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-iOS.md:28
 msgid "Connect a wired internet connection to your device"
-msgstr ""
+msgstr "Connectez une connexion Internet filaire à votre périphérique"
 
 #. type: Bullet: '3. '
 #: ../wiki/en/Installation-for-iOS.md:28
-#, fuzzy
-#| msgid "[Download Jamulus (.ipa) on a PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
 msgid "[Download Jamulus (AppStore)]({{ site.download_ios_app_store_link }}){:.button}"
-msgstr "[Téléchargez Jamulus (.ipa) sur un PC/Mac]({{ site.download_root_link }}{{ site.download_file_names.ios }}){:.button}"
+msgstr "[Téléchargez Jamulus (MacAppStore)]({{ site.download_ios_app_store_link }}){:.button}"
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-iOS.md:29
-#, fuzzy, no-wrap
-#| msgid "Install for iOS (for experienced users only)"
+#, no-wrap
 msgid "Install for iOS manually (for experienced users only)"
-msgstr "Installation pour iOS (pour utilisateurs expérimentées seulement)"
+msgstr "Installation manuelle pour iOS (pour utilisateurs expérimentées seulement)"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:32
@@ -157,10 +149,8 @@ msgstr "Commentaires et développement"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:46
-#, fuzzy
-#| msgid "Our view is that the iOS version is not sufficiently mature to be published on the AppStore. Feel free to help out: Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)."
 msgid "Jamulus does not have a mobile friendly user interface. Feel free to help out: Just head over to the [Jamulus GitHub repo](https://github.com/jamulussoftware/jamulus/)."
-msgstr "Nous pensons que la version iOS n'est pas suffisamment mûre pour être publiée sur l'AppStore. N'hésitez pas à apporter votre aide : il vous suffit de vous rendre sur le [dépôt GitHub de Jamulus (en anglais)](https://github.com/jamulussoftware/jamulus/)."
+msgstr "Jamulus ne dispose pas d'une interface utilisateur adaptée aux appareils mobiles. N'hésitez pas à apporter votre aide : il vous suffit de vous rendre sur le [dépôt GitHub de Jamulus (en anglais)](https://github.com/jamulussoftware/jamulus/)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-iOS.md:48

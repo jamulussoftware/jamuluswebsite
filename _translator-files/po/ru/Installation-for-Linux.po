@@ -5,18 +5,19 @@
 # vanapro1 <law820314@gmail.com>, 2025.
 # Roman Akimov <zoompyc@gmail.com>, 2025.
 # Ахматов Тамерлан <novadapresna@gmail.com>, 2025.
+# Алексей Корн <korn3r@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-10-02 07:02+0000\n"
-"Last-Translator: Ахматов Тамерлан <novadapresna@gmail.com>\n"
+"PO-Revision-Date: 2025-12-19 15:00+0000\n"
+"Last-Translator: Алексей Корн <korn3r@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Installation-for-Linux.md:1
@@ -129,18 +130,18 @@ msgstr "Запустите сценарий установки и установ
 #: ../wiki/en/Installation-for-Linux.md:37
 #, no-wrap
 msgid "sudo ./setup_repo.sh && sudo apt install jamulus\n"
-msgstr ""
+msgstr "sudo ./setup_repo.sh && sudo apt install jamulus\n"
 
 #. type: Title ####
 #: ../wiki/en/Installation-for-Linux.md:41
 #, no-wrap
 msgid "Installing the .deb files manually"
-msgstr ""
+msgstr "Ручная установка файлов .deb"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
 msgid "Download Jamulus for your architecture: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
-msgstr ""
+msgstr "Скачайте Jamulus для вашей архитектуры: [amd64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui }}), [armf]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-armhf }}) or [arm64]({{ site.download_root_link }}{{ site.download_file_names.deb-gui-arm64 }})"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:48
@@ -167,12 +168,12 @@ msgstr "**Обновления:** Если вам нужно обновить Ja
 #: ../wiki/en/Installation-for-Linux.md:51
 #, no-wrap
 msgid "Other distributions"
-msgstr ""
+msgstr "Другие дистрибутивы"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:54
 msgid "For installers on other distributions, see their package managers and [Repology](https://repology.org/project/jamulus/versions). If an up-to-date version of Jamulus is not included in your distribution, you can [compile Jamulus from source](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md). Note also the contributed [installation scripts](https://github.com/jamulussoftware/installscripts)."
-msgstr ""
+msgstr "Для получения установщиков для других дистрибутивов, смотрите их пакетные менеджеры и [Repology](https://repology.org/project/jamulus/versions). Если актуальная версия Jamulus не поставляется с вашим дистрибутивом, вы можете [собрать Jamulus из исходных кодов](https://github.com/jamulussoftware/jamulus/blob/main/COMPILING.md)."
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:55
@@ -183,23 +184,23 @@ msgstr "Настройте ваше оборудование"
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:60
 msgid "The Jamulus Client needs to connect to a running [JACK](https://jackaudio.org/) server in order to start. You need to find out which is the low-latency sound server for your distribution.  - If your distribution uses [JACK](https://jackaudio.org/), see how to [configure JACK with QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - If your distribution uses PipeWire, see how to [configure PipeWire](Installation-for-Linux#configure-pipewire)."
-msgstr ""
+msgstr "Для запуска клиент Jamulus должен подключиться к запущенному серверу  [JACK](https://jackaudio.org/).Вам нужно выяснить какой звуковой сервер с низкой задержкой используется вашим дистрибутивом.  - Если ваш дистрибутив использует [JACK](https://jackaudio.org/), смотрите как [настроить JACK с помощью QjackCtl](Installation-for-Linux#configure-jack-with-qjackctl).  - Если ваш дистрибутив использует PipeWire, смотрите как [настроить PipeWire](Installation-for-Linux#configure-pipewire)."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:61
 #, no-wrap
 msgid "Configure JACK with QjackCtl"
-msgstr ""
+msgstr "Настроить JACK с помощью QjackCtl"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:64
 msgid "To run a [JACK](https://jackaudio.org/) server, the recommended method is to use `QjackCtl`."
-msgstr ""
+msgstr "Рекомендуемый способ запуска сервера [JACK](https://jackaudio.org/) - с помощью `QjackCtl`."
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Installation-for-Linux.md:67
 msgid "Launch QjackCtl. You will see the **Qt JACK Control utility main page**."
-msgstr ""
+msgstr "Запустите QjackCtl. Вы увидите **главную страницу утилиты Qt JACK Control**."
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Installation-for-Linux.md:67
@@ -214,33 +215,33 @@ msgstr "Выберите нужный звуковой **интерфейс** (�
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
 msgid "Set the **Sample Rate to 48000**."
-msgstr ""
+msgstr "Установите **Частоту дискретизации в 48000**."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Installation-for-Linux.md:71
 msgid "Set the **Frames/Period to 128** and **Periods/Buffer at 2** at first."
-msgstr ""
+msgstr "Сначала установите **Кадры/Период в 128** и **Периоды/Буфер в 2**."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:73
 msgid "Restart JACK for the new settings to take effect and continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
-msgstr ""
+msgstr "Перезапустите JACK чтобы изменения приступили в силу и продолжайте ниже с секции [Запуск Jamulus](Installation-for-Linux#start-jamulus)."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:74
 #, no-wrap
 msgid "Configure PipeWire"
-msgstr ""
+msgstr "Найтройка PipeWire"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:79
 msgid "PipeWire provides its own JACK server. When you launch the Jamulus Client, PipeWire automatically runs a JACK server. However, there are a few parameters to adjust.  You need to set your audio interface to the \"pro-audio\" profile and define PipeWire's \"rate\" and \"quantum\" parameters beforehand.  You can find more information about the configuration in the [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
-msgstr ""
+msgstr "PipeWire предоставляет собственный сервер JACK. Когда вы запускаете клиент Jamulus, PipeWire автоматически запускает сервер JACK. Тем не менее необходимо настроить несколько параметров.  Вам нужно выставить ваш звуковой интерфейс в профиль \"pro-audio\" предварительно настроив параметры PipeWire's \"rate\" и \"quantum\".  Вы можете найти больше информации по настройке на [PipeWire wiki](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Config-JACK#jack-server)."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:83
 msgid "To set up your system: 1. Open `pavucontrol` (the audio mixer) and choose the \"pro-audio\" profile for your sound hardware in the configuration tab.  2. In a terminal use the following two commands to force PipeWire's rate and quantum:"
-msgstr ""
+msgstr "Для настройки системы: 1. Откройте`pavucontrol`(звуковой мишкер) и выберите профиль \"pro-audio\" для вашего звукового оборудования на вкладке настройки.  2. В Терминале используйте следующие две команды для выставления PipeWire's rate и quantum:"
 
 #. type: Fenced code block (bash)
 #: ../wiki/en/Installation-for-Linux.md:83
@@ -249,27 +250,29 @@ msgid ""
 "pw-metadata -n settings 0 clock.force-rate 48000\n"
 "pw-metadata -n settings 0 clock.force-quantum 128\n"
 msgstr ""
+"pw-metadata -n settings 0 clock.force-rate 48000\n"
+"pw-metadata -n settings 0 clock.force-quantum 128\n"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:88
 msgid "After this, continue from the [Start Jamulus](Installation-for-Linux#start-jamulus) section below."
-msgstr ""
+msgstr "После этого, продолжайте ниже с секции [Запуск Jamulus](Installation-for-Linux#start-jamulus)."
 
 #. type: Title ###
 #: ../wiki/en/Installation-for-Linux.md:89
 #, no-wrap
 msgid "Start Jamulus"
-msgstr ""
+msgstr "Запуск Jamulus"
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:92
 msgid "With JACK or PipeWire configured, launch Jamulus."
-msgstr ""
+msgstr "Когда JACK или PipeWire настроены, запустите Jamulus."
 
 #. type: Plain text
 #: ../wiki/en/Installation-for-Linux.md:94
 msgid "If you have any problems, first check [the troubleshooting page](Client-Troubleshooting)."
-msgstr ""
+msgstr "В случае возникновения проблем, обратитесь к [странице устранения неполадок](Client-Troubleshooting)."
 
 #. type: Title ##
 #: ../wiki/en/Installation-for-Linux.md:95
