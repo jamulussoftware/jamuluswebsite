@@ -29,7 +29,7 @@ Jamulus (mostly the GUI-Client, not the headless server) is included in the main
 There is a [request to include Jamulus for Android in F-Droid](https://gitlab.com/fdroid/rfp/-/issues/2011). However, compiling Qt is a bigger task, which is why it is probably not yet available.
 
 ## iOS
-Since distributing on iOS is difficult, there is no known distribution available. It might be possible to put the app on TestFlight.
+Jamulus is available as official build on the [AppStore](https://apps.apple.com/us/app/jamulus/id6654925705). There might be other Jamulus compatible Apps around.
 
 ## Docker
 grundic created a [Docker image](https://github.com/grundic/jamulus-docker) which might or might not be outdated.
