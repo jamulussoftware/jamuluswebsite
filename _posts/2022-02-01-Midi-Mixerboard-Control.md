@@ -12,11 +12,14 @@ In this article Windows is used as an example, however it will be possible to pe
 <!--more-->
 
 ## What do you need?
-1. Jamulus with JACK support (not the standard ASIO version if you are using Windows), you can [download the Jamulus JACK version for Windows here]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})).
+1. Jamulus with JACK support (not the standard ASIO version if you are using Windows, _but see the note below regarding Jamulus versions 3.12.0 onwards_), you can [download the Jamulus JACK version for Windows here]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }})).
 2. You need an audio device with ASIO support or you can use a universal ASIO driver like ASIO4ALL.
 3. You need a MIDI Control Surface. Many different models are available. I am using a Worlde EasyControl 9.
  ![worlde-easycontrol-9](https://user-images.githubusercontent.com/13550012/152056661-a446f24e-0598-4164-bc0f-a2510ab33c5e.png)
 4. JACK for Windows [get it from the JACK audio page](https://jackaudio.org/downloads/).
+
+### Update for Jamulus 3.12.0 on Windows
+The ASIO version of Jamulus 3.12.0 for Windows has introduced native support for MIDI devices without the need for JACK. If using 3.12.0 or later on Windows, you can skip all the sections below that relate to JACK. [See here](/wiki/Tips-Tricks-More#using---ctrlmidich-for-midi-controllers) for more details.
 
 ### What do you need to know?
 You need to know the MIDI Control Change numbers which are assigned to the buttons/faders/knobs of your MIDI Control Surface device. For the device I use, the setup is:
