@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# Olivier Humbert <trebmuh@librazik.org>, 2023.
+# Olivier Humbert <trebmuh@librazik.org>, 2023, 2026.
 # Julien Taverna <jujudusud@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-10-04 13:09+0000\n"
+"PO-Revision-Date: 2026-02-03 21:51+0000\n"
 "Last-Translator: Olivier Humbert <trebmuh@librazik.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -109,7 +109,7 @@ msgstr "Support des enregistrements DNS SRV"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:36
 msgid "Recent versions of Jamulus support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record) for automatically finding the port number to use to connect to a Directory or Server. This allows just the hostname to be specified, without the port number. See [this page](DNS-SRV-Support) for details and applicable version numbers."
-msgstr ""
+msgstr "Les versions récentes de Jamulus prennent en charge les [enregistrements DNS SRV (enregistrements de \"service\")](https://fr.wikipedia.org/wiki/Enregistrement_de_service) pour trouver automatiquement le numéro de port à utiliser pour se connecter à un répertoire ou à un serveur. Cela permet de spécifier uniquement le nom d'hôte, sans le numéro de port. Consultez [cette page](DNS-SRV-Support) pour plus de détails et les numéros de version applicables."
 
 #~ msgid "Jamulus Clients support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record). If a Client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus Clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record."
 #~ msgstr "Les clients Jamulus prennent en charge les [enregistrements DNS SRV (enregistrements \"service\")](https://en.wikipedia.org/wiki/SRV_record) (en anglais). Si un client trouve un enregistrement SRV associé au nom de domaine indiqué dans la fenêtre de connexion, il essaiera de se connecter à l'hôte et au port du point de terminaison indiqués dans l'enregistrement SRV. Ce processus est similaire à la redirection HTTP dans un navigateur Web, mais il se déroule entre les clients Jamulus et le serveur DNS. Le serveur Jamulus n'est pas impliqué dans cette interaction. Les serveurs Jamulus se contentent d'écouter les connexions sur le même port que celui indiqué dans l'enregistrement SRV."

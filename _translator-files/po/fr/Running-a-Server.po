@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Julien Taverna <please@seeGitHubOrWeblate.local>, 2022.
 # Olivier Humbert <please@seeGitHubOrWeblate.local>, 2022.
-# Olivier Humbert <trebmuh@librazik.org>, 2022, 2023.
-# Julien Taverna <jujudusud@gmail.com>, 2023.
+# Olivier Humbert <trebmuh@librazik.org>, 2022, 2023, 2026.
+# Julien Taverna <jujudusud@gmail.com>, 2023, 2026.
 # ann0see <20726856+ann0see@users.noreply.github.com>, 2023.
-# Olivier Humbert <trebmuh@librazik.org>, 2025.
+# Olivier Humbert <trebmuh@librazik.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-10-04 13:09+0000\n"
-"Last-Translator: Olivier Humbert <trebmuh@librazik.org>\n"
+"PO-Revision-Date: 2026-02-03 21:53+0000\n"
+"Last-Translator: Julien Taverna <jujudusud@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/running-a-server/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.14-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -411,7 +411,7 @@ msgstr "**Pour l'interface graphique** (toutes plateformes)\n"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:146
 msgid "Any settings made using the graphical interface will be stored in the `Jamulusserver.ini` file. (Do **not** edit this file by hand!) However, some options are not available in the GUI and need to be set using the command line. For more information, see [Servers on the desktop](#servers-on-the-desktop)."
-msgstr "Tout réglage effectué en utilisant l'interface graphique sera stocké dans le fichier `Jamulusserver.ini`. (Ne **pas** éditer ce fichier à la main !) Cependant, certaines options ne sont pas disponibles dans l'interface graphique et doivent être définies en utilisant la ligne de commande. Pour plus d'informations, voir [Serveurs sur le bureau](#serveurs-sur-le-bureau)"
+msgstr "Tout réglage effectué en utilisant l'interface graphique sera stocké dans le fichier `Jamulusserver.ini`. (Ne **pas** éditer ce fichier à la main !) Cependant, certaines options ne sont pas disponibles dans l'interface graphique et doivent être définies en utilisant la ligne de commande. Pour plus d'informations, voir [Serveurs sur le bureau](#serveurs-sur-le-bureau)."
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:149
@@ -422,7 +422,7 @@ msgstr "Configuration minimale pour fonctionner en mode enregistré"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:153
 msgid "You can run a headless Server on Linux using systemd (with `systemctl`), which is covered in other sections.  You can also run a Server directly from the command line. Enter the following command to [run a Registered Server](#server-modes):"
-msgstr "Vous pouvez faire tourner un serveur sans affichage sous Linux en utilisant systemd (avec `systemctl`), ce qui est couvert dans d'autres sections.  Vous pouvez également exécuter un serveur directement depuis la ligne de commande. Entrez la commande suivante pour [lancer un serveur enregistré](#modes-du-serveur) :"
+msgstr "Vous pouvez faire tourner un serveur sans affichage sous Linux en utilisant systemd (avec `systemctl`), ce qui est couvert dans d'autres sections.  Vous pouvez également exécuter un serveur directement depuis la ligne de commande. Entrez la commande suivante pour [lancer un serveur enregistré](#modes-du-serveur) :"
 
 #. type: Fenced code block
 #: ../wiki/en/Running-a-Server.md:154
@@ -445,7 +445,7 @@ msgstr "Voir le tableau ci-dessous pour les valeurs de `hostname:port`."
 #: ../wiki/en/Running-a-Server.md:163
 #, no-wrap
 msgid "**Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Server mode-related options](#server-mode-related-options) for more information on the country code. \n"
-msgstr "**Note** : les caractères points-virgules et nouvelles lignes ne sont pas autorisés dans `[nomdeserveur]` et `[ville]` dans l'argument `--serverinfo`. Voir les [options liées au mode serveur](#options-liées-au-mode-serveur) pour plus d'informations sur le code pays. \n"
+msgstr "**Note** : les caractères points-virgules et nouvelles lignes ne sont pas autorisés dans `[nomdeserveur]` et `[ville]` dans l'argument `--serverinfo`. Voir les [options liées au mode serveur](#options-liées-au-mode-serveur) pour plus d'informations sur le code pays. \n"
 
 #. type: Title ###
 #: ../wiki/en/Running-a-Server.md:164
@@ -506,7 +506,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:187
 msgid "Recent versions of Jamulus support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record) for automatically finding the port number to use to connect to a Directory or Server. This allows just the hostname to be specified, without the port number. See [this page](DNS-SRV-Support) for details and applicable version numbers."
-msgstr ""
+msgstr "Les versions récentes de Jamulus prennent en charge les [enregistrements DNS SRV (enregistrements de \"service\")](https://fr.wikipedia.org/wiki/Enregistrement_de_service) pour trouver automatiquement le numéro de port à utiliser pour se connecter à un répertoire ou à un serveur. Cela permet de spécifier uniquement le nom d'hôte, sans le numéro de port. Consultez [cette page](DNS-SRV-Support) pour plus de détails et les numéros de version applicables."
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:188
@@ -610,7 +610,7 @@ msgstr "`-d ou --discononquit`"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:224
 msgid "Normally, when a Server is stopped or restarted, any Clients that have not pressed their **Disconnect** buttons will automatically re-establish the connection when the Server returns. This option forces Clients to manually re-establish their connections to the Server in this scenario."
-msgstr "Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton \"Déconnecter\" rétabliront automatiquement la connexion lorsque le serveur sera de retour. Cette option oblige les clients à rétablir manuellement leur connexion au serveur dans ce scénario."
+msgstr "Normalement, lorsqu'un serveur est arrêté ou redémarré, tous les clients qui n'ont pas utilisé leur bouton **Déconnecter** rétabliront automatiquement la connexion lorsque le serveur sera de retour. Cette option oblige les clients à rétablir manuellement leur connexion au serveur dans ce scénario."
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:225
@@ -621,7 +621,7 @@ msgstr "`-F ou --fastupdate`"
 #. type: Plain text
 #: ../wiki/en/Running-a-Server.md:227
 msgid "Reduces latency if Clients connect with the **Small Network Buffers** option. Requires faster CPU to avoid dropouts, and more bandwidth to enabled Clients."
-msgstr "Réduit la latence si les clients se connectent avec l'option \"petits tampons de réseau\". Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés."
+msgstr "Réduit la latence si les clients se connectent avec l'option **petits tampons de réseau**. Nécessite un processeur plus rapide pour éviter les pertes de données, et une bande passante plus large pour les clients activés."
 
 #. type: Title #####
 #: ../wiki/en/Running-a-Server.md:228
