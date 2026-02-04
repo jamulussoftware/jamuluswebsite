@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
-# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2023.
+# ignotus <ignotus666@users.noreply.hosted.weblate.org>, 2023, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2023-08-08 08:21+0000\n"
+"PO-Revision-Date: 2026-02-04 13:01+0000\n"
 "Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.16-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -42,7 +42,7 @@ msgstr "Ejecutar un Servidor No Registrado"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr "{% include breadcrumb.html root=\"Más\" branch1=\"Administrar un Servidor\" branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Administrar un Servidor\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:13
@@ -108,7 +108,7 @@ msgstr "Soporte para registro DNS SRV"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:36
 msgid "Recent versions of Jamulus support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record) for automatically finding the port number to use to connect to a Directory or Server. This allows just the hostname to be specified, without the port number. See [this page](DNS-SRV-Support) for details and applicable version numbers."
-msgstr ""
+msgstr "Versiones recientes de Jamulus ofrecen soporte para [registros DNS SRV (registros de \"servicio\")](https://en.wikipedia.org/wiki/SRV_record) para encontrar automáticamente el número de puerto a utilizar para conectarse a un Directorio o Servidor. Esto permite especificar solamente el hostname, sin el número de puerto. Consulta [esta página](DNS-SRV-Support) para más detalles y las versiones aplicables."
 
 #~ msgid "Jamulus Clients support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record). If a Client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus Clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record."
 #~ msgstr "Los Clientes Jamulus admiten [registros DNS SRV (registros de \"servicio\")](https://en.wikipedia.org/wiki/SRV_record). Si un Cliente encuentra un registro SRV asociado con el nombre de dominio indicado en la ventana de Conexión, intentará conectarse al host y puerto del punto final indicados en el registro SRV. Este proceso es similar a la redirección HTTP en un navegador web, solo que se produce entre los Clientes Jamulus y el servidor DNS. El Servidor Jamulus no participa en esta interacción. Los Servidores Jamulus se limitan a escuchar las conexiones en el mismo puerto que figura en el registro SRV."
