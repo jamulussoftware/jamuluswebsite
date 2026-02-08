@@ -22,8 +22,6 @@ Upgrading? You may want to [back up your configuration](Software-Manual#backing-
 1. **Run Jamulus**. Now you should be able to use Jamulus just like any other application.
 1. **Set up your sound card**. When you're done, you need to set up your audio hardware. And if you are using ASIO4ALL, have a look at how to set that up below.
 
-_Please note that you are not permitted to redistribute this binary without acquiring a [licence agreement from Steinberg](https://www.steinberg.net/developers/)._
-
 **Note:** If you don't want to use ASIO or prefer [JACK on Windows](https://jackaudio.org/faq/jack_on_windows.html), you can also use the [JACK version of Jamulus]({{ site.download_root_link }}{{ site.download_file_names.windows-jack }}). You can find old (legacy) versions supporting outdated operating systems on the [GitHub release page](https://github.com/jamulussoftware/jamulus/releases).
 
 ***
