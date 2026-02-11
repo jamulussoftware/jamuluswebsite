@@ -82,15 +82,9 @@ Here is the script:
 
 ### Using `--ctrlmidich` for MIDI controllers
 
-The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a connected MIDI controller. This feature is available from version 3.7.0 on macOS, Linux, and the JACK version of Jamulus for Windows. From Jamulus 3.12.0 onwards, it is also available for the non-JACK (ASIO) Windows version.  To enable this feature, Jamulus must be launched with the `--ctrlmidich` command-line option.
+MIDI controller parameters can be set using the `--ctrlmidich` command-line option. Bear in mind that when used it will overwrite any values set previously via the GUI. Any values not set in the command line will be reverted to defaults (0 for offset/first MIDI CC and 1 for count).
 
-When this option is used on the command line, Jamulus will prepend a channel number to each Client name, which can be used to control the channel using MIDI CC numbers. In Jamulus version 3.12.0 onwards, when connected to a server of at least version 3.5.5, your own fader will always be given channel 0, and so will appear first when sorted by channel or when "Own Fader First" is enabled.
-
-*Tip*: With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. To keep the fader strips following a numerical order, go to "View" on the top menu bar and switch to "Sort by Channel" (or type `Ctrl+E`).
-
-When using JACK or macOS, make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), Audio/MIDI Setup (macOS) or whatever you use for managing connections). In Linux you may need to install and launch `a2jmidid` so your device shows up in the MIDI tab in Qjackctl.  For non-JACK Windows, Jamulus will find the MIDI device(s) automatically, but see the `d` option below if more than one MIDI device is connected.
-
-`--ctrlmidich` takes a single argument.  If you omit it, the parameter is ignored.  There are two formats for the argument:
+`--ctrlmidich` takes a single argument. If you omit it, the parameter is ignored. There are two formats for the argument:
 
 1. The legacy definition has one or two numbers in the format:
 
@@ -100,7 +94,7 @@ When using JACK or macOS, make sure you connect your MIDI device's output port t
 
    * `MIDI channel` is required or else the parameter argument is ignored and the feature is not active.  `0` means "any channel", `1`-`16` listen only to MIDI messages on the specified MIDI channel.
 
-   * `offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader (default 70, which matches the Behringer X-Touch defaults), with all MIDI CCs after that being used; must be a number or else the long form is used.
+   * `offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader, with all MIDI CCs after that being used; must be a number or else the long form is used.
 
      For example
 
@@ -108,7 +102,7 @@ When using JACK or macOS, make sure you connect your MIDI device's output port t
      --ctrlmidich "0"
      ```
 
-     would listen on all MIDI channels and use MIDI controller 70 to control Jamulus channel 0 fader and so on.  Here's another example:
+     would listen on all MIDI channels and use MIDI controller 0 to control Jamulus channel 0 fader and so on.  Here's another example:
 
      ```
      --ctrlmidich "2;50"
@@ -122,7 +116,7 @@ When using JACK or macOS, make sure you connect your MIDI device's output port t
    [MIDI channel];[control letter][offset](*[count])(;...)
    ```
 
-   * `MIDI channel` is required or else the parameter argument is ignored and the feature is not active.  `0` means "any channel", `1`-`16` listen only to MIDI messages on the specified MIDI channel.
+   * `MIDI channel`
 
    * `control letter` defines which Jamulus Control the MIDI controller number is assigned to:
 
@@ -182,8 +176,6 @@ When using JACK or macOS, make sure you connect your MIDI device's output port t
 	Note that if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.
 
 	On macOS, Linux or Windows with JACK, the `d` option is accepted if given, but ignored.
-
-*Note*: Jamulus does not provide feedback on the on/off state of buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself, that is, buttons on your MIDI controller need to be set to "toggle" mode. This means that when pressed to 'turn on' a control, it must send a MIDI CC number with a value >=64, and to 'turn off' the control it must send the same CC number with a value <64. You can read your controller's manual to find out how to set this.
 
 ## For Server admins
 

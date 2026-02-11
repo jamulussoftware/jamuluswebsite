@@ -173,7 +173,7 @@ Sorts by the instrument or city someone has in their profile, along with their n
 * Sort by Group<br/>
 Where the fader group feature is in use, this sorts in ascending group number from left to right (and within that, by name), with any ungrouped channels off to the right.
 * Sort by Channel<br/>
-Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.
+Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [MIDI control](#midi-control)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.
 Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).
 
 ### View > Chat
@@ -337,6 +337,28 @@ Attempts to detect audio feedback loops or loud noise in the first three seconds
 Controls the relative levels of the left and right local audio channels. For a mono signal
 it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and
 an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic.
+
+## MIDI Control
+
+<figure><img src="{% include img/en-screenshots/settings-midi.inc %}" style="border: 5px solid grey;" loading="lazy" alt="Image of MIDI control window"></figure>
+
+The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a connected MIDI controller. This feature is available from version 3.7.0 on macOS, Linux, and the JACK version of Jamulus for Windows. From Jamulus 3.12.0 onwards, it is also available for the non-JACK (ASIO) Windows version. To enable this feature and open a MIDI-in port, activate the "MIDI-in" checkbox.
+
+When using Linux or macOS, make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), Audio/MIDI Setup (macOS) or whatever you use for managing connections). If using QjackCtl in Linux you may need to install and launch `a2jmidid` so your device shows up in the MIDI tab. For non-JACK Windows, Jamulus will find the MIDI device(s) automatically, but [see the `d` command line option](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers) if more than one MIDI device is connected.
+
+There is one global MIDI channel parameter (0-16) and two parameters you can set for each item controlled: First MIDI CC and consecutive CC numbers (count). First set the channel you want Jamulus to listen on (0 for all channels). Then, for each item you want to control (volume fader, pan, solo, mute), set the first MIDI CC (CC number to start from) and number of consecutive CC numbers (count) you wish to assign to that particular item. You can either type in the MIDI CC values or use the "Learn" button: click on "Learn", actuate the fader/knob/button on your MIDI controller, and the MIDI CC number will be detected and saved.
+
+As an example, a 'First MIDI CC' of 0 and a 'Count' of 8 for volume faders will mean that CC numbers 0 - 7 will control the volume faders for up to 8 mixer channels.
+
+There is one exception that does not require establishing consecutive CC numbers which is the “Mute Myself” parameter - it only requires a single CC number as it is only applied to one’s own audio stream.
+
+*Note*: Jamulus does not provide feedback on the on/off state of buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself, that is, buttons on your MIDI controller need to be set to "toggle" mode. This means that when pressed to 'turn on' a control, it must send a MIDI CC number with a value >=64, and to 'turn off' the control it must send the same CC number with a value <64. You can read your controller's manual to find out how to set this.
+
+When MIDI is enabled, Jamulus will prepend a channel number to each Client name, which can be used to control the channel using MIDI CC numbers. In Jamulus version 3.12.0 onwards, when connected to a server of at least version 3.5.5, your own fader will always be given channel 0, and so will appear first when sorted by channel or when "Own Fader First" is enabled.
+
+*Tip*: With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. To keep the fader strips following a numerical order, go to "View" on the top menu bar and switch to "Sort by Channel" (or type `Ctrl+E`).
+
+
 
 # Backing up Jamulus
 
