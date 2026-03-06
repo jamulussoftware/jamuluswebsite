@@ -82,7 +82,7 @@ Here is the script:
 
 ### Using `--ctrlmidich` for MIDI controllers
 
-MIDI controller parameters can be set using the `--ctrlmidich` command-line option. Bear in mind that when used it will overwrite any values set previously via the GUI. Any values not set in the command line will be reverted to defaults (0 for offset/first MIDI CC and 1 for count).
+MIDI controller parameters can be set using the `--ctrlmidich` command-line option. Bear in mind that when used, specified control parameters will overwrite any values set previously using the GUI. Any controls not set in the command line will be disabled, though their values will be preserved.
 
 `--ctrlmidich` takes a single argument. If you omit it, the parameter is ignored. There are two formats for the argument:
 
@@ -92,7 +92,7 @@ MIDI controller parameters can be set using the `--ctrlmidich` command-line opti
    [MIDI channel];[offset for first fader]
    ```
 
-   * `MIDI channel` is required or else the parameter argument is ignored and the feature is not active.  `0` means "any channel", `1`-`16` listen only to MIDI messages on the specified MIDI channel.
+   * `MIDI channel` is required or else the parameter argument is ignored and the feature is not active. `0` means "any channel", `1`-`16` listen only to MIDI messages on the specified MIDI channel.
 
    * `offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader, with all MIDI CCs after that being used; must be a number or else the long form is used.
 
@@ -116,7 +116,7 @@ MIDI controller parameters can be set using the `--ctrlmidich` command-line opti
    [MIDI channel];[control letter][offset](*[count])(;...)
    ```
 
-   * `MIDI channel`
+   * `MIDI channel` is required or else the parameter argument is ignored and the feature is not active. `0` means "any channel", `1`-`16` listen only to MIDI messages on the specified MIDI channel.
 
    * `control letter` defines which Jamulus Control the MIDI controller number is assigned to:
 
@@ -143,17 +143,19 @@ MIDI controller parameters can be set using the `--ctrlmidich` command-line opti
    --ctrlmidich "0;f0*8;p16*8;s32*8;m48*8"
    ```
 
-   * Two additional `control letter` values are available:
+   * Three additional `control letter` values are available:
 
      1. `o` controls Mute Myself and has a single `offset` (i.e. `count` is ignored and taken as 1).
 
-     2. `d` is an option on Windows non-JACK Jamulus to specify a particular MIDI input device by name -- without this, all devices will be assigned to Jamulus; with it, only the specified device will be used.  For example:
+     2. `u` enables `MIDI Pick-up Mode` for the fader and pan controls.
+
+     3. `d` is an option to specify a particular MIDI input device by name -- without this, it is up to the user to make connections with a connection manager or by other means, and on Windows non-JACK Jamulus all devices will be assigned to Jamulus; with it, only the specified device will be used. For example:
 
         ```
         --ctrlmidich "1;f0*8;dnanoKontrol"
         ```
 
-        would listen for CC0 through CC7 on MIDI channel 1 from a MIDI device called "nanoKontrol".  Remember to wrap the whole of the `--ctrlmidich` argument in double quotes and you will have no problems with device names containing spaces.
+        would listen for CC0 through CC7 on MIDI channel 1 from a MIDI device called "nanoKontrol". Remember to wrap the whole of the `--ctrlmidich` argument in double quotes and you will have no problems with device names containing spaces.
 
         In order to discover the correct device name to use, start Jamulus from the command line with `--ctrlmidich` and observe the output. Jamulus will list all discovered MIDI devices:
 
@@ -173,9 +175,9 @@ MIDI controller parameters can be set using the `--ctrlmidich` command-line opti
           1: Keystation Mini 32 (ignored)
         ```
 
-	Note that if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.
+	Note that for Windows non-JACK Jamulus if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.
 
-	On macOS, Linux or Windows with JACK, the `d` option is accepted if given, but ignored.
+	For more information about using MIDI devices with Jamulus, see the [MIDI control](Software-Manual#midi-control) section in the Software Manual.
 
 ## For Server admins
 
