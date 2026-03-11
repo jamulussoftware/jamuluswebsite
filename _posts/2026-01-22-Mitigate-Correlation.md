@@ -74,7 +74,7 @@ Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** 
 
 ### Server Admins
 
-Server admins can contribute to helping prevent user tracking by blocking the explorer probe.  
+Server admins can decide to prevent user tracking by blocking the explorer probe.  
 If you run a server on the jamulus public network, it is currently being indexed by the explorer instance on **`137.184.43.255`**
 
 Blocking incoming **UDP** traffic from **`137.184.43.255`** will prevent the explorer from indexing your server and breaks correlation. This will protect users on your server from being tracked while they use it.
