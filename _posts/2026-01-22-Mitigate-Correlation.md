@@ -38,11 +38,11 @@ Anyone can run an explorer instance. An explorer queries each genres Directory S
 Anyone can run Servers **and** explorer instances.  
 Using IPs captured by a Server, one can correlate **when an IP address stops pinging** &lpar;ie; just connected to a Server&rpar; and **when a new client joined a Server** &lpar;username data from explorer query directly to a Jamulus Server&rpar; to produce an IP&lt;&dash;&gt;username mapping. The IP address can then be processed to provide geolocation data. From this one can determine the approximate location of a specific user even if no location was set in the users profile.
 
-## Current Correlation (as of 2026-02-02)
+## Current Correlation (as of 2026-03-11)
 
 ### Listeners
 
-There are seven Servers on public Jamulus space, one in each genre. They are named ***Duet***, and have a userlimit set at two. They all share the same IP and each sit on different ports.  
+There are currently seven known Servers on public Jamulus space, one in each genre. They are hosted on [DigitalOcean](https://digitalocean.com) instances. They are named ***Duet***, and have a userlimit set at two. They all share the same IP and each sit on different ports.  
 These Servers are &ldquo;listening&rdquo; for pings from clients, and packet capturing them to get the IP addresses of user clients.
 
 ```
@@ -59,10 +59,8 @@ Choral/Barbershop   Duet   24.199.107.192:22127
 
 ### User Data
 
-There is an explorer instance collecting lists of Servers and users running from **`137.184.43.255`**  
+There is an explorer instance collecting lists of Servers and users running from **`137.184.43.255`**. It is hosted on a [DigitalOcean](https://digitalocean.com) instance.  
 IP addresses of users collected from the listeners are being correlated with join events derived from the explorer instance to produce IP&lt;&dash;&gt;username mappings. IP addresses are processed to provide geolocation data of users. This geolocation data is being collected **and** displayed without express permission of users, and with no means to opt in or out.
-
-**This data is also being fed into AI for various analyses**, again with no express permission, and no means to opt in or out.
 
 ## Mitigations
 
