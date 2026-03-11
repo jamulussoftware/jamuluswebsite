@@ -36,14 +36,14 @@ Anyone can run an explorer instance. An explorer queries each genres directory S
 ### Correlation
 
 Anyone can run Servers **and** explorer instances.  
-Using IPs captured by a Server, one can correlate **when an IP address stops pinging** &lpar;ie; just connected to a Server&rpar; and **when a new client joined a Server** &lpar;username data from explorer query directly to a Jamulus Server&rpar; to produce an IP&lt;&dash;&gt;username mapping. The IP address can then be processed to provide geolocation data. From this one can determine the approximate location of a specific user even if no location was set in the users' profile.
+Using IPs captured by a Server, one can correlate **when an IP address stops pinging** &lpar;ie; just connected to a Server&rpar; and **when a new client joined a Server** &lpar;username data from explorer query directly to a Jamulus Server&rpar; to produce an IP&lt;&dash;&gt;username mapping. The IP address can then be processed to provide geolocation data. From this one can determine the approximate location of a specific user even if no location was set in the users profile.
 
 ## Current Correlation (as of 2026-02-02)
 
 ### Listeners
 
 There are seven Servers on public Jamulus space, one in each genre. They are named ***Duet***, and have a userlimit set at two. They all share the same IP and each sit on different ports.  
-These Servers are &ldquo;listening&rdquo; for pings from clients, and packet capturing them to get the IP addresses of users clients.
+These Servers are &ldquo;listening&rdquo; for pings from clients, and packet capturing them to get the IP addresses of user clients.
 
 ```
 Genre               Name   IP:port
