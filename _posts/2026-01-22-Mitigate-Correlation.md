@@ -20,23 +20,23 @@ This document will attempt to summarize the problem, and provide mitigations for
 
 ### Pings
 
-When a user attempts to connect to a server, they open the Connect dialog window. The client will **start** sending &ldquo;pings&rdquo; to every Server listed in that genre to report delay latency &lpar;basically network distance&rpar; to those Servers.
+When a user attempts to connect to a Server, they open the Connect dialog window. The client will **start** sending &ldquo;pings&rdquo; to every Server listed in that genre to report delay latency &lpar;basically network distance&rpar; to those Servers.
 
 Anyone running a Server can capture those &ldquo;pings&rdquo; using tools like `tcpdump` or `tshark/wireshark` and view the IP addresses of the clients that are sending them.  
 **No username data is sent.** This is part of the Jamulus protocol, by design, to maintain a level of privacy and prevent others from finding the IP addresses of specific users.
 
 ### Join Events
 
-A user will either select a Server from the list, or type in a Server address:port, click Connect or hit Enter, and the client will then attempt to connect to the server. At this point the client **stops** sending the &ldquo;pings&rdquo; and the client typically completes the connection to the server.
+A user will either select a Server from the list, or type in a Server address:port, click Connect or hit Enter, and the client will then attempt to connect to the Server. At this point the client **stops** sending the &ldquo;pings&rdquo; and the client typically completes the connection to the Server.
 
-Each genre has a directory server. The purpose of the directory Server is to provide clients with a listing of Servers registered to it, and the users connected to each server. This is public data, and viewed in the Connect dialog window, and available through a number of websites, like [explorer.jamulus.io](https://explorer.jamulus.io) or [jamulusjams.com](https://jamulusjams.com).
+Each genre has a directory Server. The purpose of the directory Server is to provide clients with a listing of Servers registered to it, and the users connected to each Server. This is public data, and viewed in the Connect dialog window, and available through a number of websites, like [explorer.jamulus.io](https://explorer.jamulus.io), [jamulusjams.com](https://jamulusjams.com), or [jamscout.de](https://jamscout.de).
 
 Anyone can run an explorer instance. An explorer queries each genres directory Server to get a list of Servers, then queries each Server directly to get a list of connected users. This is public data. **There is no IP address information on users, just the user profile data**. Again this is by design to prevent IP&lt;&dash;&gt;username mapping.  This data can also be saved for later processing.
 
 ### Correlation
 
 Anyone can run Servers **and** explorer instances.  
-Using IPs captured by a server, one can correlate **when an IP address stops pinging** &lpar;ie; just connected to a server&rpar; and **when a new client joined a server** &lpar;username data from explorer query directly to a jamulus server&rpar; to produce an IP&lt;&dash;&gt;username mapping. The IP address can then be processed to provide geolocation data. From this one can determine the approximate location of a specific user even if no location was set in the users' profile.
+Using IPs captured by a Server, one can correlate **when an IP address stops pinging** &lpar;ie; just connected to a Server&rpar; and **when a new client joined a Server** &lpar;username data from explorer query directly to a Jamulus Server&rpar; to produce an IP&lt;&dash;&gt;username mapping. The IP address can then be processed to provide geolocation data. From this one can determine the approximate location of a specific user even if no location was set in the users' profile.
 
 ## Current Correlation (as of 2026-02-02)
 
@@ -75,7 +75,7 @@ Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** 
 ### Server Admins
 
 Server admins can decide to prevent user tracking by blocking the explorer probe.  
-If you run a Server on the jamulus public network, it is currently being indexed by the explorer instance on **`137.184.43.255`**
+If you run a Server on the Jamulus public network, it is currently being indexed by the explorer instance on **`137.184.43.255`**
 
 Blocking incoming **UDP** traffic from **`137.184.43.255`** will prevent the explorer from indexing your Server and breaks correlation. This will disable user tracking on your Server from the blocked Server.
 
