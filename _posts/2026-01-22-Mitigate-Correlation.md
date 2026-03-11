@@ -38,7 +38,7 @@ Anyone can run an explorer instance. An explorer queries each genres directory s
 Anyone can run servers **and** explorer instances.  
 Using IPs captured by a server, one can correlate **when an IP address stops pinging** &lpar;ie; just connected to a server&rpar; and **when a new client joined a server** &lpar;username data from explorer query directly to a jamulus server&rpar; to produce an IP&lt;&dash;&gt;username mapping. The IP address can then be processed to provide geolocation data. From this one can determine the approximate location of a specific user even if no location was set in the users' profile.
 
-## Current Correlation (as of 20260202)
+## Current Correlation (as of 2026-02-02)
 
 ### Listeners
 
