@@ -242,111 +242,102 @@ msgstr "使用 `ctrlmidich` 处理 MIDI 控制器"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:86
-msgid "The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a connected MIDI controller. This feature is available from version 3.7.0 on macOS, Linux, and the JACK version of Jamulus for Windows. From Jamulus 3.12.0 onwards, it is also available for the non-JACK (ASIO) Windows version.  To enable this feature, Jamulus must be launched with the `--ctrlmidich` command-line option."
-msgstr "可以使用连接的 MIDI 控制器来控制客户端混音器窗口条中的音量推子、声相控制以及静音和独奏按钮。这个特性在 macOS、Linux 上 的 3. 7.0 版本和 Jamulus for Windows 的 JACK 版本中都有。从 Jamulus 3.12.0 开始，它也可用于 non-JACK (ASIO) Windows 版本。要启用此功能，必须使用 `-ctrl midh ' 命令行选项启动 Jamulus。"
+msgid "MIDI controller parameters can be set using the `--ctrlmidich` command-line option. Bear in mind that when used, specified control parameters will overwrite any values set previously using the GUI. Any controls not set in the command line will be disabled, though their values will be preserved."
+msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:88
-msgid "When this option is used on the command line, Jamulus will prepend a channel number to each Client name, which can be used to control the channel using MIDI CC numbers. In Jamulus version 3.12.0 onwards, when connected to a server of at least version 3.5.5, your own fader will always be given channel 0, and so will appear first when sorted by channel or when \"Own Fader First\" is enabled."
-msgstr "当在命令行上使用这个选项时，Jamulus将在每个客户端名称前添加一个通道号，可以使用MIDI CC号来控制通道。在Jamulus版本3.12.0以后，当连接到至少版本3.5.5的服务器时，您自己的推子将总是被给予通道0，因此当按通道排序时或当“自己的推子优先”被启用时，它将首先出现。"
-
-#. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:90
-#, no-wrap
-msgid "*Tip*: With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. To keep the fader strips following a numerical order, go to \"View\" on the top menu bar and switch to \"Sort by Channel\" (or type `Ctrl+E`).\n"
-msgstr "*提示*：默认设置下，当一些用户离开而其他用户加入时，他们的左右GUI 中的排列可能不再遵循数字顺序，因此更难知道 MIDI 控制器上的每个物理推子/旋钮对应的是谁。要使推子条带保持数字顺序，请转到顶部菜单栏上的“查看”并切换到“按通道排序”(或键入“Ctrl+E ”)。\n"
-
-#. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:92
-msgid "When using JACK or macOS, make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), Audio/MIDI Setup (macOS) or whatever you use for managing connections). In Linux you may need to install and launch `a2jmidid` so your device shows up in the MIDI tab in Qjackctl.  For non-JACK Windows, Jamulus will find the MIDI device(s) automatically, but see the `d` option below if more than one MIDI device is connected."
-msgstr "使用JACK或macOS时，请确保将MIDI设备的输出端口连接到Jamulus MIDI输入端口(QjackCtl (Linux/Windows)、Audio/MIDI Setup (macOS)或任何用于管理连接的端口)。在Linux中，您可能需要安装并启动 `a2jmidid`,这样您的设备就会显示在Qjackctl的MIDI标签中。对于非插孔窗口，Jamulus将自动查找MIDI设备，但是如果连接了多个MIDI设备，请参见下面的“d”选项。"
-
-#. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:94
-msgid "`--ctrlmidich` takes a single argument.  If you omit it, the parameter is ignored.  There are two formats for the argument:"
+#, fuzzy
+#| msgid "`--ctrlmidich` takes a single argument.  If you omit it, the parameter is ignored.  There are two formats for the argument:"
+msgid "`--ctrlmidich` takes a single argument. If you omit it, the parameter is ignored. There are two formats for the argument:"
 msgstr "`-ctrl midch `采用单个参数。如果省略，该参数将被忽略。该参数有两种格式："
 
 #. type: Bullet: '1. '
-#: ../wiki/en/Tips-Tricks-More.md:96
+#: ../wiki/en/Tips-Tricks-More.md:90
 msgid "The legacy definition has one or two numbers in the format:"
 msgstr "传统定义有一个或两个数字，格式如下："
 
 #. type: Fenced code block
-#: ../wiki/en/Tips-Tricks-More.md:97
+#: ../wiki/en/Tips-Tricks-More.md:91
 #, no-wrap
 msgid "   [MIDI channel];[offset for first fader]\n"
 msgstr "   [MIDI 通道];[第一个推子的偏移]\n"
 
 #. type: Bullet: '   * '
-#: ../wiki/en/Tips-Tricks-More.md:102 ../wiki/en/Tips-Tricks-More.md:126
-msgid "`MIDI channel` is required or else the parameter argument is ignored and the feature is not active.  `0` means \"any channel\", `1`-`16` listen only to MIDI messages on the specified MIDI channel."
+#: ../wiki/en/Tips-Tricks-More.md:96 ../wiki/en/Tips-Tricks-More.md:120
+#, fuzzy
+#| msgid "`MIDI channel` is required or else the parameter argument is ignored and the feature is not active.  `0` means \"any channel\", `1`-`16` listen only to MIDI messages on the specified MIDI channel."
+msgid "`MIDI channel` is required or else the parameter argument is ignored and the feature is not active. `0` means \"any channel\", `1`-`16` listen only to MIDI messages on the specified MIDI channel."
 msgstr "`MIDI channel`是必需的，否则参数变量将被忽略，该功能不可用。`0`表示“任何通道”，`1`到`16`只听指定MIDI通道上的MIDI信息。"
 
 #. type: Bullet: '   * '
-#: ../wiki/en/Tips-Tricks-More.md:104
-msgid "`offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader (default 70, which matches the Behringer X-Touch defaults), with all MIDI CCs after that being used; must be a number or else the long form is used."
+#: ../wiki/en/Tips-Tricks-More.md:98
+#, fuzzy
+#| msgid "`offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader (default 70, which matches the Behringer X-Touch defaults), with all MIDI CCs after that being used; must be a number or else the long form is used."
+msgid "`offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader, with all MIDI CCs after that being used; must be a number or else the long form is used."
 msgstr "`第一个推子的偏移`是用于控制Jamulus通道推子的第一个MIDI CC(默认为70，与百灵达X-Touch默认设置相匹配)，之后的所有MIDI CC都将被使用；必须是一个数字，否则将使用长格式。"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:106
+#: ../wiki/en/Tips-Tricks-More.md:100
 #, no-wrap
 msgid "     For example\n"
 msgstr "     例如\n"
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:104
+#, no-wrap
+msgid ""
+"     ```\n"
+"     --ctrlmidich \"0\"\n"
+"     ```\n"
+msgstr ""
+"     ```\n"
+"     --ctrlmidich \"0\"\n"
+"     ```\n"
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:106
+#, fuzzy, no-wrap
+#| msgid "     would listen on all MIDI channels and use MIDI controller 70 to control Jamulus channel 0 fader and so on.  Here's another example:\n"
+msgid "     would listen on all MIDI channels and use MIDI controller 0 to control Jamulus channel 0 fader and so on.  Here's another example:\n"
+msgstr "     将在所有MIDI通道上收听，并使用MIDI控制器70来控制Jamulus通道0衰减器等等。这是另一个例子:\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:110
 #, no-wrap
 msgid ""
 "     ```\n"
-"     --ctrlmidich \"0\"\n"
+"     --ctrlmidich \"2;50\"\n"
 "     ```\n"
 msgstr ""
 "     ```\n"
-"     --ctrlmidich \"0\"\n"
+"     --ctrlmidich \"2;50\"\n"
 "     ```\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:112
 #, no-wrap
-msgid "     would listen on all MIDI channels and use MIDI controller 70 to control Jamulus channel 0 fader and so on.  Here's another example:\n"
-msgstr "     将在所有MIDI通道上收听，并使用MIDI控制器70来控制Jamulus通道0衰减器等等。这是另一个例子:\n"
-
-#. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:116
-#, no-wrap
-msgid ""
-"     ```\n"
-"     --ctrlmidich \"2;50\"\n"
-"     ```\n"
-msgstr ""
-"     ```\n"
-"     --ctrlmidich \"2;50\"\n"
-"     ```\n"
-
-#. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:118
-#, no-wrap
 msgid "     This would listen on MIDI channel 2 and use MIDI controller 50 to control Jamulus channel 0 fader and so on.\n"
 msgstr "     这将监听MIDI通道2，并使用MIDI控制器50来控制Jamulus通道0的音量控制器等等。\n"
 
 #. type: Bullet: '2. '
-#: ../wiki/en/Tips-Tricks-More.md:120
+#: ../wiki/en/Tips-Tricks-More.md:114
 msgid "The long form is a sequence of offsets and counts for various controllers:"
 msgstr "长格式是各种控制器的偏移和计数序列："
 
 #. type: Fenced code block
-#: ../wiki/en/Tips-Tricks-More.md:121
+#: ../wiki/en/Tips-Tricks-More.md:115
 #, no-wrap
 msgid "   [MIDI channel];[control letter][offset](*[count])(;...)\n"
 msgstr "   [MIDI 通道];[控制字母][偏移](*[计数])(;...)\n"
 
 #. type: Bullet: '   * '
-#: ../wiki/en/Tips-Tricks-More.md:128
+#: ../wiki/en/Tips-Tricks-More.md:122
 msgid "`control letter` defines which Jamulus Control the MIDI controller number is assigned to:"
 msgstr "`control letter` 定义MIDI控制器编号分配给哪个Jamulus控件:"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:135
+#: ../wiki/en/Tips-Tricks-More.md:129
 #, no-wrap
 msgid ""
 "     | control letter | Jamulus Control |\n"
@@ -364,56 +355,65 @@ msgstr ""
 "     | `m` | 静音  |\n"
 
 #. type: Bullet: '   * '
-#: ../wiki/en/Tips-Tricks-More.md:137
+#: ../wiki/en/Tips-Tricks-More.md:131
 msgid "`offset` is the base MIDI CC number for the control."
 msgstr "`offset` 是控件的基本MIDI CC号。"
 
 #. type: Bullet: '   * '
-#: ../wiki/en/Tips-Tricks-More.md:139
+#: ../wiki/en/Tips-Tricks-More.md:133
 msgid "`count` is the number of CC values for the control, defaulting to 1 (i.e. the number Jamulus channels that can be controlled)."
 msgstr "`count`是控件CC值的数量，默认为1(即可以控制的Jamulus通道的数量)。"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:141
+#: ../wiki/en/Tips-Tricks-More.md:135
 #, no-wrap
 msgid "   An example for a Korg nanoKONTROL2 using eight sliders starting at MIDI CC 0 to control faders and eight knobs starting at MIDI CC 16 to control pan, on any MIDI channnel, for eight Jamulus channels would be\n"
 msgstr "   Korg nanoKONTROL2的一个示例是，在任何MIDI通道上，使用从MIDI CC 0开始的八个滑块来控制推子，使用从MIDI CC 16开始的八个旋钮来控制声相，用于八个Jamulus通道\n"
 
 #. type: Fenced code block
-#: ../wiki/en/Tips-Tricks-More.md:142
+#: ../wiki/en/Tips-Tricks-More.md:136
 #, no-wrap
 msgid "   --ctrlmidich \"0;f0*8;p16*8\"\n"
 msgstr "   --ctrlmidich \"0;f0*8;p16*8\"\n"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:147
+#: ../wiki/en/Tips-Tricks-More.md:141
 #, no-wrap
 msgid "   Enhancing this to add eight Solo buttons starting at CC 32, and eight Mute buttons starting at CC 48 would give:\n"
 msgstr "   增强这一点，从CC 32开始添加八个独奏按钮，从CC 48开始添加八个静音按钮，将给出:\n"
 
 #. type: Fenced code block
-#: ../wiki/en/Tips-Tricks-More.md:148
+#: ../wiki/en/Tips-Tricks-More.md:142
 #, no-wrap
 msgid "   --ctrlmidich \"0;f0*8;p16*8;s32*8;m48*8\"\n"
 msgstr "   --ctrlmidich \"0;f0*8;p16*8;s32*8;m48*8\"\n"
 
 #. type: Bullet: '   * '
-#: ../wiki/en/Tips-Tricks-More.md:153
-msgid "Two additional `control letter` values are available:"
+#: ../wiki/en/Tips-Tricks-More.md:147
+#, fuzzy
+#| msgid "Two additional `control letter` values are available:"
+msgid "Three additional `control letter` values are available:"
 msgstr "有两个额外的`control letter`值可用:"
 
 #. type: Bullet: '     1. '
-#: ../wiki/en/Tips-Tricks-More.md:155
+#: ../wiki/en/Tips-Tricks-More.md:149
 msgid "`o` controls Mute Myself and has a single `offset` (i.e. `count` is ignored and taken as 1)."
 msgstr "` o `控制我自己静音，并有一个单独的 `offset`(即`count` 被忽略并被视为1)。"
 
 #. type: Bullet: '     2. '
-#: ../wiki/en/Tips-Tricks-More.md:157
-msgid "`d` is an option on Windows non-JACK Jamulus to specify a particular MIDI input device by name -- without this, all devices will be assigned to Jamulus; with it, only the specified device will be used.  For example:"
+#: ../wiki/en/Tips-Tricks-More.md:151
+msgid "`u` enables `MIDI Pick-up Mode` for the fader and pan controls."
+msgstr ""
+
+#. type: Bullet: '     3. '
+#: ../wiki/en/Tips-Tricks-More.md:153
+#, fuzzy
+#| msgid "`d` is an option on Windows non-JACK Jamulus to specify a particular MIDI input device by name -- without this, all devices will be assigned to Jamulus; with it, only the specified device will be used.  For example:"
+msgid "`d` is an option to specify a particular MIDI input device by name -- without this, it is up to the user to make connections with a connection manager or by other means, and on Windows non-JACK Jamulus all devices will be assigned to Jamulus; with it, only the specified device will be used. For example:"
 msgstr "`d`是Windows non-JACK Jamulus上的一个选项，用来指定一个特定的MIDI输入设备的名称——如果没有这个选项，所有的设备都将被分配给Jamulus；有了它，只有指定的设备将被使用。例如:"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:161
+#: ../wiki/en/Tips-Tricks-More.md:157
 #, no-wrap
 msgid ""
 "        ```\n"
@@ -425,19 +425,20 @@ msgstr ""
 "        ```\n"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:163
-#, no-wrap
-msgid "        would listen for CC0 through CC7 on MIDI channel 1 from a MIDI device called \"nanoKontrol\".  Remember to wrap the whole of the `--ctrlmidich` argument in double quotes and you will have no problems with device names containing spaces.\n"
+#: ../wiki/en/Tips-Tricks-More.md:159
+#, fuzzy, no-wrap
+#| msgid "        would listen for CC0 through CC7 on MIDI channel 1 from a MIDI device called \"nanoKontrol\".  Remember to wrap the whole of the `--ctrlmidich` argument in double quotes and you will have no problems with device names containing spaces.\n"
+msgid "        would listen for CC0 through CC7 on MIDI channel 1 from a MIDI device called \"nanoKontrol\". Remember to wrap the whole of the `--ctrlmidich` argument in double quotes and you will have no problems with device names containing spaces.\n"
 msgstr "        将从名为“nanoKontrol”的MIDI设备监听MIDI通道1上的CC0到CC7。请记住将整个`--ctrlmidh`参数用双引号括起来，这样就不会出现设备名称包含空格的问题。\n"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:165
+#: ../wiki/en/Tips-Tricks-More.md:161
 #, no-wrap
 msgid "        In order to discover the correct device name to use, start Jamulus from the command line with `--ctrlmidich` and observe the output. Jamulus will list all discovered MIDI devices:\n"
 msgstr "        为了发现要使用的正确设备名，从命令行用`-ctrlmidch`启动Jamulus并观察输出。Jamulus将列出所有发现的MIDI设备：\n"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:173
+#: ../wiki/en/Tips-Tricks-More.md:169
 #, no-wrap
 msgid ""
 "        ```\n"
@@ -455,91 +456,86 @@ msgstr ""
 "        - MIDI devices found: 2\n"
 "          0: nanoKONTROL2\n"
 "          1: Keystation Mini 32\n"
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:177
+#, no-wrap
+msgid ""
+"        C:\\Users\\Me>\"C:\\Program Files\\Jamulus\\Jamulus\" --ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\"\n"
+"        - MIDI controller settings: 1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\n"
+"        - allocated port number: 22134\n"
+"        - MIDI devices found: 2\n"
+"          0: nanoKONTROL2\n"
+"          1: Keystation Mini 32 (ignored)\n"
+"        ```\n"
+msgstr ""
+"        C:\\Users\\Me>\"C:\\Program Files\\Jamulus\\Jamulus\" --ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\"\n"
+"        - MIDI controller settings: 1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\n"
+"        - allocated port number: 22134\n"
+"        - MIDI devices found: 2\n"
+"          0: nanoKONTROL2\n"
+"          1: Keystation Mini 32 (ignored)\n"
+"        ```\n"
+
+#. type: Plain text
+#: ../wiki/en/Tips-Tricks-More.md:179
+#, fuzzy, no-wrap
+#| msgid "\tNote that if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.\n"
+msgid "\tNote that for Windows non-JACK Jamulus if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.\n"
+msgstr "\t请注意，如果只连接了一个MIDI设备，则不需要“d”选项，因为Jamulus会自动使用该设备。\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:181
 #, no-wrap
-msgid ""
-"        C:\\Users\\Me>\"C:\\Program Files\\Jamulus\\Jamulus\" --ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\"\n"
-"        - MIDI controller settings: 1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\n"
-"        - allocated port number: 22134\n"
-"        - MIDI devices found: 2\n"
-"          0: nanoKONTROL2\n"
-"          1: Keystation Mini 32 (ignored)\n"
-"        ```\n"
+msgid "\tFor more information about using MIDI devices with Jamulus, see the [MIDI control](Software-Manual#midi-control) section in the Software Manual.\n"
 msgstr ""
-"        C:\\Users\\Me>\"C:\\Program Files\\Jamulus\\Jamulus\" --ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\"\n"
-"        - MIDI controller settings: 1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\n"
-"        - allocated port number: 22134\n"
-"        - MIDI devices found: 2\n"
-"          0: nanoKONTROL2\n"
-"          1: Keystation Mini 32 (ignored)\n"
-"        ```\n"
-
-#. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:183
-#, no-wrap
-msgid "\tNote that if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.\n"
-msgstr "\t请注意，如果只连接了一个MIDI设备，则不需要“d”选项，因为Jamulus会自动使用该设备。\n"
-
-#. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:185
-#, no-wrap
-msgid "\tOn macOS, Linux or Windows with JACK, the `d` option is accepted if given, but ignored.\n"
-msgstr "\t在带有JACK的macOS、Linux或Windows上，如果给定了' d '选项，则接受该选项，但忽略该选项。\n"
-
-#. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:187
-#, no-wrap
-msgid "*Note*: Jamulus does not provide feedback on the on/off state of buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself, that is, buttons on your MIDI controller need to be set to \"toggle\" mode. This means that when pressed to 'turn on' a control, it must send a MIDI CC number with a value >=64, and to 'turn off' the control it must send the same CC number with a value <64. You can read your controller's manual to find out how to set this.\n"
-msgstr "*注意*：Jamulus 不提供有关按钮开/关状态的反馈，这意味着您的控制器必须保持跟踪并将 LED（如果有）切换为“开”或“关”本身，也就是说，MIDI 控制器上的按钮需要设置为“切换”模式。这意味着当按下按钮以“打开”控制时，它必须发送一个值 >= 64 的 MIDI CC 编号，而要“关闭”控制时，它必须发送相同的 CC 编号且值 < 64。您可以阅读控制器的手册以了解如何进行此设置。\n"
 
 #. type: Title ##
-#: ../wiki/en/Tips-Tricks-More.md:188
+#: ../wiki/en/Tips-Tricks-More.md:182
 #, no-wrap
 msgid "For Server admins"
 msgstr "对于服务器管理员"
 
 #. type: Title ###
-#: ../wiki/en/Tips-Tricks-More.md:190
+#: ../wiki/en/Tips-Tricks-More.md:184
 #, no-wrap
 msgid "Converting a Registered Server to an Unregistered one on the fly"
 msgstr "动态地将注册服务器转换为未注册服务器"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:193
+#: ../wiki/en/Tips-Tricks-More.md:187
 msgid "You can run as a Registered Server long enough for people to connect, then go \"private\" (Unregistered) by setting the Directory to \"none\" in the Server GUI. Musicians will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)"
 msgstr "您可以作为已注册服务器运行足够长的时间以供人们连接，然后通过在服务器 GUI 中将目录设置为“无”来转为“私人”（未注册）。音乐家将仍然连接到服务器，直到他们断开连接。（感谢 [David Savinkoff](https://github.com/DavidSavinkoff) 提供此提示！）"
 
 #. type: Title ###
-#: ../wiki/en/Tips-Tricks-More.md:194
+#: ../wiki/en/Tips-Tricks-More.md:188
 #, no-wrap
 msgid "Remote management of recordings"
 msgstr "远程管理录音"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:197
+#: ../wiki/en/Tips-Tricks-More.md:191
 msgid "Jamulus user [vdellamea](https://github.com/vdellamea) has written a [web-based remote tool](https://github.com/vdellamea/jamulus-server-remote) for starting and stopping recordings on Linux Servers, allowing you to then download them from your browser. See also [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter) by [pljones](https://github.com/pljones), which also includes a Server recording recovery script."
 msgstr "Jamulus 用户 [vdellamea](https://github.com/vdellamea) 编写了一个 [基于 Web 的远程工具](https://github.com/vdellamea/jamulus-server-remote) 用于在 Linux 上启动和停止录制服务器，允许您从浏览器下载它们。另请参阅 [pljones](https://github.com/pljones) 的 [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter)，其中还包括一个服务器录制恢复脚本。"
 
 #. type: Title ###
-#: ../wiki/en/Tips-Tricks-More.md:198
+#: ../wiki/en/Tips-Tricks-More.md:192
 #, no-wrap
 msgid "Making a Server status page"
 msgstr "制作服务器状态页面"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:201
+#: ../wiki/en/Tips-Tricks-More.md:195
 msgid "With the `-m` command line argument, Server statistics can be generated to be put on a web page."
 msgstr "使用 `-m` 命令行参数，可以生成服务器统计信息以放在网页上。"
 
 #. type: Plain text
-#: ../wiki/en/Tips-Tricks-More.md:203
+#: ../wiki/en/Tips-Tricks-More.md:197
 msgid "Here is an example php script using the Server status file to display the current Server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):"
 msgstr "下面是一个使用服务器状态文件在 html 页面上显示当前服务器状态的示例 php 脚本(假设使用以下命令行参数:'-m /var/www/stat1.dat'):"
 
 #. type: Fenced code block
-#: ../wiki/en/Tips-Tricks-More.md:204
+#: ../wiki/en/Tips-Tricks-More.md:198
 #, no-wrap
 msgid ""
 "<?php\n"
@@ -569,6 +565,27 @@ msgstr ""
 "}\n"
 "?>\n"
 "<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
+
+#~ msgid "The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a connected MIDI controller. This feature is available from version 3.7.0 on macOS, Linux, and the JACK version of Jamulus for Windows. From Jamulus 3.12.0 onwards, it is also available for the non-JACK (ASIO) Windows version.  To enable this feature, Jamulus must be launched with the `--ctrlmidich` command-line option."
+#~ msgstr "可以使用连接的 MIDI 控制器来控制客户端混音器窗口条中的音量推子、声相控制以及静音和独奏按钮。这个特性在 macOS、Linux 上 的 3. 7.0 版本和 Jamulus for Windows 的 JACK 版本中都有。从 Jamulus 3.12.0 开始，它也可用于 non-JACK (ASIO) Windows 版本。要启用此功能，必须使用 `-ctrl midh ' 命令行选项启动 Jamulus。"
+
+#~ msgid "When this option is used on the command line, Jamulus will prepend a channel number to each Client name, which can be used to control the channel using MIDI CC numbers. In Jamulus version 3.12.0 onwards, when connected to a server of at least version 3.5.5, your own fader will always be given channel 0, and so will appear first when sorted by channel or when \"Own Fader First\" is enabled."
+#~ msgstr "当在命令行上使用这个选项时，Jamulus将在每个客户端名称前添加一个通道号，可以使用MIDI CC号来控制通道。在Jamulus版本3.12.0以后，当连接到至少版本3.5.5的服务器时，您自己的推子将总是被给予通道0，因此当按通道排序时或当“自己的推子优先”被启用时，它将首先出现。"
+
+#, no-wrap
+#~ msgid "*Tip*: With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. To keep the fader strips following a numerical order, go to \"View\" on the top menu bar and switch to \"Sort by Channel\" (or type `Ctrl+E`).\n"
+#~ msgstr "*提示*：默认设置下，当一些用户离开而其他用户加入时，他们的左右GUI 中的排列可能不再遵循数字顺序，因此更难知道 MIDI 控制器上的每个物理推子/旋钮对应的是谁。要使推子条带保持数字顺序，请转到顶部菜单栏上的“查看”并切换到“按通道排序”(或键入“Ctrl+E ”)。\n"
+
+#~ msgid "When using JACK or macOS, make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), Audio/MIDI Setup (macOS) or whatever you use for managing connections). In Linux you may need to install and launch `a2jmidid` so your device shows up in the MIDI tab in Qjackctl.  For non-JACK Windows, Jamulus will find the MIDI device(s) automatically, but see the `d` option below if more than one MIDI device is connected."
+#~ msgstr "使用JACK或macOS时，请确保将MIDI设备的输出端口连接到Jamulus MIDI输入端口(QjackCtl (Linux/Windows)、Audio/MIDI Setup (macOS)或任何用于管理连接的端口)。在Linux中，您可能需要安装并启动 `a2jmidid`,这样您的设备就会显示在Qjackctl的MIDI标签中。对于非插孔窗口，Jamulus将自动查找MIDI设备，但是如果连接了多个MIDI设备，请参见下面的“d”选项。"
+
+#, no-wrap
+#~ msgid "\tOn macOS, Linux or Windows with JACK, the `d` option is accepted if given, but ignored.\n"
+#~ msgstr "\t在带有JACK的macOS、Linux或Windows上，如果给定了' d '选项，则接受该选项，但忽略该选项。\n"
+
+#, no-wrap
+#~ msgid "*Note*: Jamulus does not provide feedback on the on/off state of buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself, that is, buttons on your MIDI controller need to be set to \"toggle\" mode. This means that when pressed to 'turn on' a control, it must send a MIDI CC number with a value >=64, and to 'turn off' the control it must send the same CC number with a value <64. You can read your controller's manual to find out how to set this.\n"
+#~ msgstr "*注意*：Jamulus 不提供有关按钮开/关状态的反馈，这意味着您的控制器必须保持跟踪并将 LED（如果有）切换为“开”或“关”本身，也就是说，MIDI 控制器上的按钮需要设置为“切换”模式。这意味着当按下按钮以“打开”控制时，它必须发送一个值 >= 64 的 MIDI CC 编号，而要“关闭”控制时，它必须发送相同的 CC 编号且值 < 64。您可以阅读控制器的手册以了解如何进行此设置。\n"
 
 #~ msgid "The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a MIDI controller by using the `--ctrlmidich` parameter (note: only available for use with macOS and Linux using Jamulus version 3.7.0 or higher, and on Windows using the Jamulus version with JACK support). To enable this feature, Jamulus must be launched with `--ctrlmidich`. There is one global MIDI channel parameter (1-16) and two parameters you can set for each item controlled: `offset` and `consecutive CC numbers`. Set the first parameter to the channel you want Jamulus to listen on (0 for all channels) and then specify the items you want to control (f = volume fader; p = pan; m = mute; s = solo; o = mute myself) with the offset (CC number to start from) and number of consecutive CC numbers. There is one exception that does not require establishing consecutive CC numbers which is the \"Mute Myself\" command - it only requires a single CC number as it is only applied to one's own audio stream. Take the following example:"
 #~ msgstr "客户端混音器窗口条中的音量推子、平移控制和静音和独奏按钮可以使用 MIDI 控制器通过使用 `--ctrlmidich` 参数进行控制(注意:仅适用于使用 Jamulus 版本 3.7.0 的 macOS 和 Linux或更高版本，在 Windows 上使用支持 JACK 的 Jamulus 版本)。要启用此功能，必须使用 --ctrlmidich 启动 Jamulus。有一个全局 MIDI 通道参数 (1-16)，您可以为每个受控项目设置两个参数:`offset` 和 `consecutive CC numbers`。将第一个参数设置为您希望 Jamulus 收听的通道(所有通道为 0)，然后指定您要控制的项目(f = 音量推子;p = 平移;m = 静音;s = 独奏;o = 自己静音) 带有偏移量(开始的 CC 编号)和连续 CC 编号的数量。有一个例外不需要建立连续的 CC 编号，即“静音我自己”命令——它只需要一个 CC 编号，因为它只应用于自己的音频流。举个例子:"

@@ -17,28 +17,30 @@ msgstr ""
 "X-Generator: Weblate 5.16-dev\n"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Include-Client-Commands.md:3
+#: ../wiki/en/Include-Client-Commands.md:6
 msgid "`-M` or `--mutestream` Prevent others on a server from hearing what I play"
 msgstr "`-M` 또는 `--mutestream` 서버의 다른 사용자들이 내가 연주하는 것을 듣지 못하도록 차단하기"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Include-Client-Commands.md:3
+#: ../wiki/en/Include-Client-Commands.md:6
 msgid "`--mutemyown` Prevent me from hearing what I play in the server mix (headless only)"
 msgstr "`--mutemyown` 서버 믹스에서 내가 연주하는 것을 듣지 못하도록 차단하기 (헤드리스만 해당)"
 
 #. type: Bullet: '-  '
-#: ../wiki/en/Include-Client-Commands.md:3
+#: ../wiki/en/Include-Client-Commands.md:6
 msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
 msgstr "`-c` 또는 `--connect` 시작 시 지정된 서버 주소에 연결하고, `address[:port]` 형식 지정"
 
 #. type: Bullet: '-  '
-#: ../wiki/en/Include-Client-Commands.md:4
+#: ../wiki/en/Include-Client-Commands.md:6
 msgid "`-j` or `--nojackconnect` Disable auto JACK connections"
 msgstr "`-j` 또는 `--nojackconnect` 자동 JACK 연결 비활성화"
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
-msgid "`--ctrlmidich` MIDI channel to listen on, Jamulus control + MIDI control number and count of consecutive CC numbers (or Jamulus channels), device selection option. Format: `channel[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;dDeviceName]` See [Tips & Tricks](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)."
+#, fuzzy
+#| msgid "`--ctrlmidich` MIDI channel to listen on, Jamulus control + MIDI control number and count of consecutive CC numbers (or Jamulus channels), device selection option. Format: `channel[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;dDeviceName]` See [Tips & Tricks](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)."
+msgid "`--ctrlmidich` MIDI channel to listen on, Jamulus control + MIDI control number and count of consecutive CC numbers (or Jamulus channels), pick-up mode, device selection option. Format: `channel[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;u][;dDeviceName]` See [Tips & Tricks](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)."
 msgstr "`--ctrlmidich` 청취할 MIDI 채널, Jamulus 제어 + MIDI 제어 번호 및 연속된 CC 번호(또는 Jamulus 채널)의 개수, 장치 선택 옵션입니다. 형식: `channel[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;dDeviceName]` [팁 & 요령](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)을 참조하세요."
 
 #. type: Bullet: '- '

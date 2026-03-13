@@ -442,7 +442,19 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:178
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "* No user sorting<br/>\n"
+#| "This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.\n"
+#| "* Sort by Name<br/>\n"
+#| "Sorts by the name someone has chosen in their profile.\n"
+#| "* Sort by Instrument / City<br/>\n"
+#| "Sorts by the instrument or city someone has in their profile, along with their name.\n"
+#| "* Sort by Group<br/>\n"
+#| "Where the fader group feature is in use, this sorts in ascending group number from left to right (and within that, by name), with any ungrouped channels off to the right.\n"
+#| "* Sort by Channel<br/>\n"
+#| "Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
+#| "Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
 msgid ""
 "* No user sorting<br/>\n"
 "This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.\n"
@@ -453,7 +465,7 @@ msgid ""
 "* Sort by Group<br/>\n"
 "Where the fader group feature is in use, this sorts in ascending group number from left to right (and within that, by name), with any ungrouped channels off to the right.\n"
 "* Sort by Channel<br/>\n"
-"Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
+"Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [MIDI control](#midi-control)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
 "Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
 msgstr ""
 "* Pas de tri par utilisateur<br/>\n"
@@ -846,81 +858,160 @@ msgstr "Balance d'entrée"
 msgid "Controls the relative levels of the left and right local audio channels. For a mono signal it acts as a pan between the two channels. For example, if a microphone is connected to the right input channel and an instrument is connected to the left input channel which is much louder than the microphone, move the audio fader to increase the relative volume of the mic."
 msgstr "Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. Pour un signal mono, il agit comme un panoramique entre les deux canaux. Par exemple, si un microphone est connecté au canal d'entrée droit et qu'un instrument est connecté au canal d'entrée gauche qui est beaucoup plus fort que le microphone, déplacez le chariot audio pour augmenter le volume relatif du microphone."
 
-#. type: Title #
+#. type: Title ##
 #: ../wiki/en/Software-Manual.md:341
+#, no-wrap
+msgid "MIDI Control"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:344
+#, fuzzy, no-wrap
+#| msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>\n"
+msgid "<figure><img src=\"{% include img/en-screenshots/settings-midi.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of MIDI control window\"></figure>\n"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de profil\"></figure>\n"
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:346
+msgid "The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a connected MIDI controller. This feature is available from version 3.7.0 on macOS, Linux, and the JACK version of Jamulus for Windows. From Jamulus 3.12.0 onwards, it is also available for the non-JACK (ASIO) Windows version. To enable this feature and open a MIDI-in port, activate the \"MIDI-in\" checkbox."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:347
+#, fuzzy, no-wrap
+#| msgid "Audio Device"
+msgid "MIDI Device"
+msgstr "Périphérique audio"
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:350
+msgid "With MIDI-in enabled, Jamulus will detect the MIDI devices available for connection and list them in the 'MIDI Device' dropdown menu. Select the device you wish to connect to Jamulus. The non-JACK Windows version of Jamulus will automatically connect to all available MIDI devices if none have been selected previously or a saved device is not present. To connect to a single device, select it from the dropdown."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:351
+#, no-wrap
+msgid "MIDI parameters"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:354
+msgid "There is one global MIDI channel parameter (0-16) and two parameters you can set for each item controlled: First MIDI CC and consecutive CC numbers (count). First set the channel you want Jamulus to listen on (0 for all channels). Then, for each item you want to control (volume fader, pan, solo, mute), set the first MIDI CC (CC number to start from) and number of consecutive CC numbers (count) you wish to assign to that particular item. You can either type in the MIDI CC values or use the \"Learn\" button: click on \"Learn\", actuate the fader/knob/button on your MIDI controller, and the MIDI CC number will be detected and saved."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:356
+msgid "As an example, a 'First MIDI CC' of 0 and a 'Count' of 8 for volume faders will mean that CC numbers 0 - 7 will control the volume faders for up to 8 mixer channels."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:358
+msgid "There is one exception that does not require establishing consecutive CC numbers which is the “Mute Myself” parameter - it only requires a single CC number as it is only applied to one’s own audio stream."
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Software-Manual.md:359
+#, no-wrap
+msgid "Pick-up Mode"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:362
+msgid "When enabled, fader and pan controls will wait for your physical controller to match their value before moving. This prevents sudden jumps when they are out of sync."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:365
+#, no-wrap
+msgid "*Note*: Jamulus does not provide feedback on the on/off state of buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself, that is, buttons on your MIDI controller need to be set to \"toggle\" mode. This means that when pressed to 'turn on' a control, it must send a MIDI CC number with a value >=64, and to 'turn off' the control it must send the same CC number with a value <64. You can read your controller's manual to find out how to set this.\n"
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:367
+msgid "When MIDI is enabled, Jamulus will prepend a channel number to each Client name, which can be used to control the channel using MIDI CC numbers. In Jamulus version 3.12.0 onwards, when connected to a server of at least version 3.5.5, your own fader will always be given channel 0, and so will appear first when sorted by channel or when \"Own Fader First\" is enabled."
+msgstr ""
+
+#. type: Plain text
+#: ../wiki/en/Software-Manual.md:369
+#, no-wrap
+msgid "*Tip*: With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. To keep the fader strips following a numerical order, go to \"View\" on the top menu bar and switch to \"Sort by Channel\" (or type `Ctrl+E`).\n"
+msgstr ""
+
+#. type: Title #
+#: ../wiki/en/Software-Manual.md:370
 #, no-wrap
 msgid "Backing up Jamulus"
 msgstr "Sauvegarde de Jamulus"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:345
+#: ../wiki/en/Software-Manual.md:374
 msgid "{% include_relative Include-Backing-Up.md %} * You can save and load different mixer settings using [Load/Save Mixer Channels Setup](Software-Manual#file--loadsave-mixer-channels-setup) and store those files wherever you want."
 msgstr "{% include_relative Include-Backing-Up.md %} * Vous pouvez sauvegarder et charger différents réglages du mélangeur en utilisant [charger/sauvegarder la configuration des canaux du mixeur](Software-Manual#fichier--chargersauvegarder-la-configuration-des-canaux-du-mixeur) et stocker ces fichiers où vous voulez."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:347
+#: ../wiki/en/Software-Manual.md:376
 #, no-wrap
 msgid "**Note for macOS users:** As of Jamulus 3.8.1, we have a signed installer. This will store the settings in\n"
 msgstr "**Note pour les utilisateurs de macOS :** à partir de Jamulus 3.8.1, nous avons un installateur signé. Celui-ci stockera les paramètres dans\n"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:347
+#: ../wiki/en/Software-Manual.md:376
 #, no-wrap
 msgid "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 msgstr "$HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/\n"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:351
+#: ../wiki/en/Software-Manual.md:380
 #, no-wrap
 msgid "Command Line Options"
 msgstr "Options de la ligne de commande"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:354
+#: ../wiki/en/Software-Manual.md:383
 msgid "Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system."
 msgstr "La plupart des fonctions courantes de Jamulus peuvent être paramétrées à l'aide de l'interface graphique, mais ces fonctions et d'autres peuvent également être paramétrées à l'aide d'options données dans une fenêtre de terminal. La manière exacte de procéder dépend de votre système d'exploitation."
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:356
+#: ../wiki/en/Software-Manual.md:385
 #, no-wrap
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose \"Properties\" > Target. Add the necessary arguments to Jamulus.exe:\n"
 msgstr "Par exemple, sous Windows, pour utiliser un fichier de paramètres spécifique, faites un clic droit sur le raccourci de Jamulus et choisissez \"Propriétés\" > Cible. Ajoutez les arguments nécessaires à Jamulus.exe :\n"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:357
+#: ../wiki/en/Software-Manual.md:386
 #, no-wrap
 msgid " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\path\\to\\myinifile.ini\"\n"
 msgstr " \"C:\\Program Files\\Jamulus\\Jamulus.exe\" --inifile \"C:\\chemin\\vers\\monfichierini.ini\"\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:362
+#: ../wiki/en/Software-Manual.md:391
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "Pour macOS, démarrez une fenêtre de Terminal et exécutez Jamulus avec les options souhaitées comme ceci :"
 
 #. type: Fenced code block (shell)
-#: ../wiki/en/Software-Manual.md:363
+#: ../wiki/en/Software-Manual.md:392
 #, no-wrap
 msgid " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/path/to/myinifile.ini\"\n"
 msgstr " /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile \"/chemin/vers/monfichierini.ini\"\n"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:368
+#: ../wiki/en/Software-Manual.md:397
 msgid "{% include_relative Include-Client-Commands.md %}"
 msgstr "{% include_relative Include-Client-Commands.md %}"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:370
+#: ../wiki/en/Software-Manual.md:399
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Title #
-#: ../wiki/en/Software-Manual.md:371
+#: ../wiki/en/Software-Manual.md:400
 #, no-wrap
 msgid "Controlling the Client via API"
 msgstr "Contrôle du client via l'API"
 
 #. type: Plain text
-#: ../wiki/en/Software-Manual.md:373
+#: ../wiki/en/Software-Manual.md:402
 msgid "In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 msgstr "En plus de la ligne de commande, Jamulus peut être contrôlé à l'aide d'une API. Ceci est utile pour les cas d'utilisation avancés - par exemple, lorsqu'il n'y a pas d'interface graphique, ou lorsqu'une autre application doit interagir avec Jamulus. Veuillez noter que l'API est encore expérimentale. Des informations sur l'[API JSON-RPC peuvent être trouvées dans le dépôt principal (en anglais)](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)."
 
