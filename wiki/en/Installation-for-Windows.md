@@ -33,7 +33,7 @@ Jamulus can use [ASIO](https://en.wikipedia.org/wiki/Audio_Stream_Input/Output).
 * If you have an external sound card/audio interface, use its official ASIO driver if you can (they usually provide the best quality).
 * If you don't have an external sound card, you will probably not have an ASIO driver so will need to install a generic one like ASIO4ALL:
 
-[ASIO4ALL v2.16 Download](https://asio4all.org/downloads/ASIO4ALL_2_16.exe){: .button target="_blank" rel="noopener noreferrer"}
+[ASIO4ALL v2.17 Download](https://asio4all.org/downloads/ASIO4ALL_2_17.exe){: .button target="_blank" rel="noopener noreferrer"}
 
 [ASIO4ALL website](https://www.asio4all.org/){: target="_blank" rel="noopener noreferrer"}
 
