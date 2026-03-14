@@ -42,41 +42,44 @@ Using IPs captured by a Server, one can correlate **when an IP address stops pin
 
 ### Listeners
 
-There are currently seven known Servers on public Jamulus space, one in each genre. They are hosted on [DigitalOcean](https://digitalocean.com) instances. They are named ***Duet***, and have a userlimit set at two. They all share the same IP and each sit on different ports.  
+There are currently fourteen known Servers on public Jamulus space, two in each genre. They are hosted on [DigitalOcean](https://digitalocean.com) and [Oracle Cloud](https://oracle.com) instances. They are named ***Duet*** and ***Jamulus on 22x24***, and have a userlimit set at two. They all share the same IP and each sit on different ports.  
 These Servers are &ldquo;listening&rdquo; for pings from clients, and packet capturing them to get the IP addresses of user clients.
 
 ```
-Genre               Name   IP:port
+Genre               Name               IP:port
 
-Any Genre1          Duet   24.199.107.192:22121
-Any Genre2          Duet   24.199.107.192:22122
-Any Genre3          Duet   24.199.107.192:22123
-Rock                Duet   24.199.107.192:22124
-Jazz                Duet   24.199.107.192:22125
-Classical/Folk      Duet   24.199.107.192:22126
-Choral/Barbershop   Duet   24.199.107.192:22127
+Any Genre1          Duet               24.199.107.192:22121
+                    Jamulus on 22124   89.168.107.178:22155
+Any Genre2          Duet               24.199.107.192:22122
+                    Jamulus on 22224   89.168.107.178:22156
+Any Genre3          Duet               24.199.107.192:22123
+                    Jamulus on 22624   89.168.107.178:22157
+Rock                Duet               24.199.107.192:22124
+                    Jamulus on 22424   89.168.107.178:22158
+Jazz                Duet               24.199.107.192:22125
+                    Jamulus on 22324   89.168.107.178:22159
+Classical/Folk      Duet               24.199.107.192:22126
+                    Jamulus on 22524   89.168.107.178:22160
+Choral/Barbershop   Duet               24.199.107.192:22127
+                    Jamulus on 22724   89.168.107.178:22161
 ```
 
 ### User Data
 
-There is an explorer instance collecting lists of Servers and users running from **`137.184.43.255`**. It is hosted on a [DigitalOcean](https://digitalocean.com) instance.  
+There are explorer instances collecting lists of Servers and users running from **`137.184.43.255`** and **`89.168.107.178`**. They are hosted on [DigitalOcean](https://digitalocean.com) and [Oracle Cloud](https://oracle.com) instances.  
 IP addresses of users collected from the listeners are being correlated with join events derived from the explorer instance to produce IP&lt;&dash;&gt;username mappings. IP addresses are processed to provide geolocation data of users. This geolocation data is being collected **and** displayed without express permission of users, and with no means to opt in or out.
 
 ## Mitigations
 
 ### Clients
 
-When you open the Connect dialog window your client starts sending pings to every Server in the list. **`24.199.107.192`** is the IP address of one of those Servers. A Server using **`24.199.107.192`** exists on each genre, their names are ***Duet***.
+When you open the Connect dialog window your client starts sending pings to every Server in the list. **`24.199.107.192`** and **`89.168.107.178`** are one the IP addresses of one of those Servers. A Server using **`24.199.107.192`** and **`89.168.107.178`** exists on each genre, their names are ***Duet*** and ***Jamulus on 22x24***.
 
-Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** will prevent the listeners from collecting your IP address and breaks correlation. This will help prevent you from being tracked.
+Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** and **`89.168.107.178`** will prevent the listeners from collecting your IP address and breaks correlation. This will help prevent you from being tracked.
 
 ### Server Admins
 
 Server admins can decide to prevent user tracking by blocking the explorer probe.  
 If you run a Server on the Jamulus public network, it is currently being indexed by the explorer instance on **`137.184.43.255`**
 
-Blocking incoming **UDP** traffic from **`137.184.43.255`** will prevent the explorer from indexing your Server and breaks correlation. This will disable user tracking on your Server from the blocked Server.
-
----
-
-Updated information can be found here: [https://jamulusjams.com/block-user-tracking.html](https://jamulusjams.com/block-user-tracking.html)
+Blocking incoming **UDP** traffic from **`137.184.43.255`** and **`89.168.107.178`** will prevent the explorer from indexing your Server and breaks correlation. This will disable user tracking on your Server from the blocked Server.
