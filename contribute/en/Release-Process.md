@@ -246,15 +246,22 @@ Upload all the files. Then in the SourceForge web UI, for each of the files uplo
 
 ## Website: check links
 
-We have used [linkcheck](https://github.com/filiph/linkcheck) in the past.
+We have used [linkcheck](https://github.com/filiph/linkcheck) in the past
+to check the links on the local website.
+This is now available as a Docker image, so you can run it without installing it directly.
 
+Run the following commands from a terminal:
 ```
 $ git clone https://github.com/jamulussoftware/jamuluswebsite.git
 $ cd jamuluswebsite
 $ git checkout next-release
 $ _po4a-tools/po4a-create-all-targets.sh
 $ bundle exec jekyll serve
-$ linkcheck --no-warnings http://localhost:4000 > linkcheck.log
+```
+Note the IP (or use localhost) and port number `jekyll` is using.
+Then, in another terminal, run the following, replacing `<host>` and `<port>` with the appropriate values:
+```
+$ docker run --network host --rm tennox/linkcheck http://<host>:<port>/ > linkcheck.log
 ```
 
 ## Release checklist (for a full release)
