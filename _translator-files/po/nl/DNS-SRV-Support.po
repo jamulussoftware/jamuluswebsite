@@ -6,186 +6,186 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2026-02-03 21:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-03-21 19:09+0000\n"
+"Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/DNS-SRV-Support.md:1
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "nl"
 
 #. type: Yaml Front Matter Hash Value: layout
 #: ../wiki/en/DNS-SRV-Support.md:1
 #, no-wrap
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 #. type: Yaml Front Matter Hash Value: permalink
 #: ../wiki/en/DNS-SRV-Support.md:1
 #, no-wrap
 msgid "/wiki/DNS-SRV-Support"
-msgstr ""
+msgstr "/wiki/DNS-SRV-Support"
 
 #. type: Title #
 #: ../wiki/en/DNS-SRV-Support.md:1 ../wiki/en/DNS-SRV-Support.md:10
 #, no-wrap
 msgid "DNS SRV Record Support"
-msgstr ""
+msgstr "Ondersteuning voor DNS SRV-records"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr ""
+msgstr "{% include breadcrumb.html root=\"Meer\" branch1=\"Serverbeheerdershandleiding\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Title ####
 #: ../wiki/en/DNS-SRV-Support.md:12
 #, no-wrap
 msgid "Background - connecting to a Server or Directory"
-msgstr ""
+msgstr "Achtergrond - verbinding maken met een server of adresboek"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:15
 msgid "The default UDP port on which a Jamulus Server or Directory listens is **22124**. Normally, when a Client or a Server is given a plain hostname or an IP address to connect to, such as `198.51.100.46` or `jamulus.example.com`, it will use `22124` as the destination port number."
-msgstr ""
+msgstr "De standaard UDP-poort waarop een Jamulus server of adresboek luistert, is **22124**. Normaal gesproken, wanneer een client of server een eenvoudige hostnaam of een IP-adres krijgt om verbinding mee te maken, zoals `198.51.100.46` of `jamulus.example.com`, zal deze `22124` als bestemmingspoortnummer gebruiken."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:17
 msgid "Since a single Jamulus Server only provides a single \"room\", and a single Jamulus Directory only provides a single \"list\", it is often useful to run multiple Jamulus Server or Directory instances on a single host, sharing one IP address. In order to do this, the instances must each be made to listen on a different UDP port. This is done by specifying the port number on the command line, using `-p NNNNN` or `--port NNNNN`."
-msgstr ""
+msgstr "Omdat een enkele Jamulus server slechts één \"kamer\" biedt en een enkele Jamulus adresboek slechts één \"lijst\", is het vaak handig om meerdere Jamulus server- of adresboek-instanties op één host te draaien, die één IP-adres delen. Om dit te doen, moeten de instanties elk luisteren op een andere UDP-poort. Dit kan door het poortnummer op de commandoregel op te geven met `-p NNNNN` of `--port NNNNN`."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:19
 msgid "If such a Server is registered with a Directory, such as the standard Jamulus Directories, e.g. **Any Genre 1**, the port number in use is automatically detected by the Directory at registration time, and stored in the list which is sent to a Client. The user's Jamulus Client can then connect to the Server in the normal way from the list in the Connect Dialog."
-msgstr ""
+msgstr "Als een dergelijke server is geregistreerd bij een adresboek, zoals de standaard Jamulus-adresboeken, bijvoorbeeld **Ieder Genre 1**, wordt het gebruikte poortnummer automatisch door de adresboek gedetecteerd tijdens de registratie en opgeslagen in de lijst die naar een client wordt verzonden. De Jamulus-client van de gebruiker kan vervolgens op de gebruikelijke manier verbinding maken met de server via de lijst in het verbindingsdialoogvenster."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:21
 msgid "However, a Jamulus instance wanting to connect _directly_ to a Server or Directory by IP or hostname must know the port number to use. This can be specified after the IP address or hostname, such as `198.51.100.46:22123` or `jamulus.example.com:22120`. Such port numbers are not very memorable, so it's often necessary to look them up! The solution is for the server operator to publish the port number using an SRV record in DNS."
-msgstr ""
+msgstr "Een Jamulus-instantie die _rechtstreeks_ verbinding wil maken met een server of adresboek via IP-adres of hostnaam, moet echter het te gebruiken poortnummer kennen. Dit kan na het IP-adres of de hostnaam worden opgegeven, bijvoorbeeld `198.51.100.46:22123` of `jamulus.example.com:22120`. Dergelijke poortnummers zijn niet erg makkelijk te onthouden, dus het is vaak nodig om ze op te zoeken! De oplossing is dat de serverbeheerder het poortnummer publiceert met behulp van een SRV-record in DNS."
 
 #. type: Title ####
 #: ../wiki/en/DNS-SRV-Support.md:22
 #, no-wrap
 msgid "Using DNS SRV to publish port numbers"
-msgstr ""
+msgstr "DNS SRV gebruiken om poortnummers te publiceren"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:25
 msgid "A [DNS SRV record (\"service\" record)](https://en.wikipedia.org/wiki/SRV_record) is a special DNS record that can be used to publish the port number and hostname that should be used to connect to a particular service."
-msgstr ""
+msgstr "Een [DNS SRV-record (\"service\"-record)](https://en.wikipedia.org/wiki/SRV_record) is een speciaal DNS-record dat kan worden gebruikt om het poortnummer en de hostnaam te publiceren waarmee verbinding moet worden gemaakt met een bepaalde service."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:27
 msgid "Recent versions of Jamulus Clients and Servers are able to make use of such records. Depending on the version of Jamulus (see below), if it finds a DNS SRV record associated with the domain name given, it will try to connect to the endpoint host and port listed in the SRV record. The user does not have to specify the port number explicitly."
-msgstr ""
+msgstr "Recente versies van Jamulus Clients en Servers kunnen gebruikmaken van dergelijke records. Afhankelijk van de Jamulus-versie (zie hieronder), zal het, indien een DNS SRV-record wordt gevonden dat is gekoppeld aan de opgegeven domeinnaam, proberen verbinding te maken met de host en poort die in het SRV-record worden vermeld. De gebruiker hoeft het poortnummer niet expliciet op te geven."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:29
 msgid "If no SRV records are found on the DNS server for the hostname given, Jamulus will attempt to connect to the Directory or Server address on the default port number `22124`."
-msgstr ""
+msgstr "Als er geen SRV-records worden gevonden op de DNS-server voor de opgegeven hostnaam, zal Jamulus proberen verbinding te maken met het adres van de adresboek of server op het standaardpoortnummer `22124`."
 
 #. type: Title ####
 #: ../wiki/en/DNS-SRV-Support.md:30
 #, no-wrap
 msgid "Jamulus versions supporting SRV"
-msgstr ""
+msgstr "Jamulus-versies die SRV ondersteunen"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:33
 msgid "Clients with version **3.10.0** or later support SRV records for a hostname given in the following contexts:"
-msgstr ""
+msgstr "Clients met versie **3.10.0** of later ondersteunen SRV-records voor een hostnaam in de volgende contexten:"
 
 #. type: Bullet: '* '
 #: ../wiki/en/DNS-SRV-Support.md:36
 msgid "In the Connect dialog as \"Server Address\"."
-msgstr ""
+msgstr "In het dialoogvenster \"Verbinden\" kun je \"Serveradres\" invoeren."
 
 #. type: Bullet: '* '
 #: ../wiki/en/DNS-SRV-Support.md:36
 msgid "On the command line with `-c`, to specify immediate direct connection to a Server."
-msgstr ""
+msgstr "Gebruik op de opdrachtregel met de optie `-c` om een directe verbinding met een server te specificeren."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:38
 msgid "In addition to the above, both Clients and Servers with version **3.12.0** or later also support SRV records for a hostname given to specify a Directory, in the following contexts:"
-msgstr ""
+msgstr "Naast het bovenstaande ondersteunen zowel clients als servers met versie **3.12.0** of later ook SRV-records voor een hostnaam die wordt gebruikt om een adresboek te specificeren, in de volgende contexten:"
 
 #. type: Bullet: '* '
 #: ../wiki/en/DNS-SRV-Support.md:42
 msgid "Server: `-e` or `--directoryaddress` option on the command line."
-msgstr ""
+msgstr "Server: gebruik de optie `-e` of `--directoryaddress` met de opdrachtregel."
 
 #. type: Bullet: '* '
 #: ../wiki/en/DNS-SRV-Support.md:42
 msgid "Server: (GUI) in the \"Custom Directory address\" setting under \"Options\"."
-msgstr ""
+msgstr "Server: (GUI) in de instelling \"Eigen adresboek adres\" onder \"Opties\"."
 
 #. type: Bullet: '* '
 #: ../wiki/en/DNS-SRV-Support.md:42
 msgid "Client: (GUI) in the list of custom Directories under \"Advanced Setup\" in \"Settings\"."
-msgstr ""
+msgstr "Client: (GUI) in de lijst met eigen adresboeken onder \"Geavanceerde instellingen\" in \"Instellingen\"."
 
 #. type: Title ####
 #: ../wiki/en/DNS-SRV-Support.md:43
 #, no-wrap
 msgid "Creating DNS SRV records"
-msgstr ""
+msgstr "DNS SRV-records aanmaken"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:46
 msgid "SRV records are created by the administrator of the DNS domain being used to host the Jamulus Server. The SRV records are added through the administration portal (or API if available) of the domain's DNS hosting service. The format of the SRV record entry can vary by DNS hosting service but will generally look something like this:"
-msgstr ""
+msgstr "SRV-records worden aangemaakt door de beheerder van het DNS-domein dat wordt gebruikt om de Jamulus-server te hosten. De SRV-records worden toegevoegd via het beheerdersportaal (of de API, indien beschikbaar) van de DNS-hostingprovider van het domein. De opmaak van de SRV-recordvermelding kan variëren per DNS-hostingprovider, maar ziet er over het algemeen ongeveer zo uit:"
 
 #. type: Fenced code block
 #: ../wiki/en/DNS-SRV-Support.md:47
 #, no-wrap
 msgid "  _service._proto.name. ttl IN SRV priority weight port target.\n"
-msgstr ""
+msgstr "  _service._proto.name. ttl IN SRV priority weight port target.\n"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:52
 msgid "Note that the `name` and `target` hostnames may either be the same or different. `name` is the hostname the user will use without a port number for SRV lookup, and `target` is the hostname the Jamulus will use together with the discovered port number in order to connect to the Jamulus Server or Directory."
-msgstr ""
+msgstr "Houd er rekening mee dat de hostnamen `name` en `target` hetzelfde of verschillend kunnen zijn. `name` is de hostnaam die de gebruiker zonder poortnummer gebruikt voor SRV-lookup, en `target` is de hostnaam die Jamulus samen met het gevonden poortnummer gebruikt om verbinding te maken met de Jamulus-server of -adresboek."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:54
 msgid "In the case of Jamulus, the `service` must be `jamulus` and the `proto` must be `udp`, so the record will look like this (for a port number of `12345`):"
-msgstr ""
+msgstr "In het geval van Jamulus moet de `service` `jamulus` zijn en de `proto` `udp`, dus het record zal er als volgt uitzien (voor poortnummer `12345`):"
 
 #. type: Fenced code block
 #: ../wiki/en/DNS-SRV-Support.md:55
 #, no-wrap
 msgid "  _jamulus._udp.myserver.example.com. 60 IN SRV 0 5 12345 myhost.example.com.\n"
-msgstr ""
+msgstr "  _jamulus._udp.myserver.example.com. 60 IN SRV 0 5 12345 myhost.example.com.\n"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:60
 msgid "This technique allows you to host many Jamulus Servers or Directories at different ports on a single host with different hostnames by giving each its own SRV record. This avoids having to give your users the port number, which may be less memorable than a name. In the above example, the user will specify `myserver.example.com` and Jamulus will then connect to `myhost.example.com:12345`."
-msgstr ""
+msgstr "Met deze techniek kun je meerdere Jamulus-servers of -adresboeken op verschillende poorten op één host hosten met verschillende hostnamen door elk een eigen SRV-record te geven. Dit voorkomt dat je de gebruikers het poortnummer hoeft te geven, wat mogelijk minder gemakkelijk te onthouden is dan een naam. In het bovenstaande voorbeeld geeft de gebruiker `myserver.example.com` op en Jamulus maakt vervolgens verbinding met `myhost.example.com:12345`."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:62
 msgid "See the documentation of your DNS provider for instructions on creating an SRV record."
-msgstr ""
+msgstr "Raadpleeg de documentatie van jouw DNS-provider voor instructies over het aanmaken van een SRV-record."
 
 #. type: Title ####
 #: ../wiki/en/DNS-SRV-Support.md:63
 #, no-wrap
 msgid "Example - SRV records for the main Jamulus public Directories"
-msgstr ""
+msgstr "Voorbeeld - SRV-records voor de belangrijkste openbare Jamulus-adresboeken"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:66
 msgid "In the `jamulus.io` domain, SRV records have been created to specify the correct port for each of the standard public Directories:"
-msgstr ""
+msgstr "In het domein `jamulus.io` zijn SRV-records aangemaakt om de juiste poort voor elk van de standaard openbare adresboeken te specificeren:"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:76
@@ -201,13 +201,22 @@ msgid ""
 "| `classical.jamulus.io` | `_jamulus._udp.classical.jamulus.io. 60 IN SRV 0 0 22524 classical.jamulus.io.` | `classical.jamulus.io:22524` |\n"
 "| `choral.jamulus.io`    | `_jamulus._udp.choral.jamulus.io. 60 IN SRV 0 0 22724 choral.jamulus.io.`       | `choral.jamulus.io:22724`   |\n"
 msgstr ""
+"| DIRECTORY              | DNS SRV RECORD                                                                  | JAMULUS SERVER               |\n"
+"| ---------------------- | ------------------------------------------------------------------------------- | ---------------------------- |\n"
+"| `anygenre1.jamulus.io` | `_jamulus._udp.anygenre1.jamulus.io. 60 IN SRV 0 0 22124 anygenre1.jamulus.io.` | `anygenre1.jamulus.io:22124` |\n"
+"| `anygenre2.jamulus.io` | `_jamulus._udp.anygenre2.jamulus.io. 60 IN SRV 0 0 22224 anygenre2.jamulus.io.` | `anygenre2.jamulus.io:22224` |\n"
+"| `anygenre3.jamulus.io` | `_jamulus._udp.anygenre3.jamulus.io. 60 IN SRV 0 0 22624 anygenre3.jamulus.io.` | `anygenre3.jamulus.io:22624` |\n"
+"| `rock.jamulus.io`      | `_jamulus._udp.rock.jamulus.io. 60 IN SRV 0 0 22424 rock.jamulus.io.`           | `rock.jamulus.io:22424`      |\n"
+"| `jazz.jamulus.io`      | `_jamulus._udp.jazz.jamulus.io. 60 IN SRV 0 0 22324 jazz.jamulus.io.`           | `jazz.jamulus.io:22324`      |\n"
+"| `classical.jamulus.io` | `_jamulus._udp.classical.jamulus.io. 60 IN SRV 0 0 22524 classical.jamulus.io.` | `classical.jamulus.io:22524` |\n"
+"| `choral.jamulus.io`    | `_jamulus._udp.choral.jamulus.io. 60 IN SRV 0 0 22724 choral.jamulus.io.`       | `choral.jamulus.io:22724`   |\n"
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:78
 msgid "This means that a Jamulus Server of version **3.12.0** or later can just give the hostname of the Directory to the `-e` or `--directoryaddress` option, without needing to find and specify the port number."
-msgstr ""
+msgstr "Dit betekent dat een Jamulus Server van versie **3.12.0** of later de hostnaam van het adresboek kan doorgeven aan de optie `-e` of `--directoryaddress`, zonder dat het nodig is om het poortnummer te zoeken en te specificeren."
 
 #. type: Plain text
 #: ../wiki/en/DNS-SRV-Support.md:79
 msgid "A server administrator can use the same technique to publish an SRV record for his own Server or Directory."
-msgstr ""
+msgstr "Een serverbeheerder kan dezelfde techniek gebruiken om een SRV-record voor zijn eigen server of adresboek te publiceren."
