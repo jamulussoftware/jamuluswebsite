@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This script updates/creates .po files for every language
-# po4a >= 0.63 is required, see https://github.com/mquinson/po4a/releases
+# po4a >= 0.68 is required, see https://github.com/mquinson/po4a/releases
 # You can set the following variables:
 # SRC_DIR: directory for the original documents in English. Files in sub-directories within SRC_DIR are also detected.
 # PO_DIR: directory where the .po files are stored

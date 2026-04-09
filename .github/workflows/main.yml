@@ -9,15 +9,15 @@ jobs:
       contents: write
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
 # Retrieve po4a installation cache or create it if not found:
       - name: Check for po4a cache
-        uses: actions/cache@v3
+        uses: actions/cache@v5
         id: cache-po4a
         with:
           path: "~/po4a"
-          key: ${{ runner.os }}-po4a-0.68
+          key: ${{ runner.os }}-po4a-${{ hashFiles('_po4a-tools/po4a-cache.sh') }}
       - name: Install or retrieve po4a from cache
         env:
           CACHE_HIT: ${{steps.cache-po4a.outputs.cache-hit}}
@@ -26,7 +26,7 @@ jobs:
         run: ./_po4a-tools/po4a-cache.sh
 
 # Paths changes filter. If there's been a change to any files defined in the filter, the step (update .po files) runs:
-      - uses: dorny/paths-filter@v3
+      - uses: dorny/paths-filter@v4
         id: filter
         with:
           base: ${{ github.ref }}
@@ -40,7 +40,7 @@ jobs:
 # This step only runs if a PR is merged:
       - name: Push changes to repo if action triggered on:push and .po files need updating
         if: ${{ steps.filter.outputs.src_files_changed == 'true' }}
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           default_author: github_actions
           message: 'AUTO: Update .po files'
@@ -109,9 +109,9 @@ jobs:
       contents: write
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: ${{ github.sha }} update from release
-        uses: devmasx/merge-branch@v1.3.1
+        uses: devmasx/merge-branch@v1.4.0
         with:
           type: now
           from_branch: release
