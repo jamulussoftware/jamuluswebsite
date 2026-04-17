@@ -6,10 +6,11 @@
 # Olivier Humbert <trebmuh@librazik.org>, 2022, 2023, 2024, 2025, 2026.
 # Julien Taverna <jujudusud@gmail.com>, 2023, 2024, 2025, 2026.
 # Olivier Humbert <trebmuh@librazik.org>, 2025, 2026.
+# cosas <f0rhum@free.fr>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-02-03 21:54+0000\n"
+"PO-Revision-Date: 2026-03-22 12:35+0000\n"
 "Last-Translator: Julien Taverna <jujudusud@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/software-manual/fr/>\n"
 "Language: fr\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 "X-Language: fr_FR\n"
 "X-Source-Language: en_150\n"
 
@@ -290,7 +291,7 @@ msgstr "Le VU-mètre indique le niveau d'entrée sur le serveur, c'est-à-dire l
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:109
 msgid "If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset)."
-msgstr "Si vous avez réglé votre canal audio sur Stéréo ou Sortie stéréo dans vos paramètres, vous verrez également un contrôle de panoramique (MAJ-cliquer pour le réinitialiser)."
+msgstr "Si vous avez réglé votre canal audio sur stéréo ou sortie stéréo dans vos paramètres, vous verrez également un contrôle de panoramique (MAJ-clic pour le réinitialiser)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:111
@@ -442,19 +443,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:178
-#, fuzzy, no-wrap
-#| msgid ""
-#| "* No user sorting<br/>\n"
-#| "This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.\n"
-#| "* Sort by Name<br/>\n"
-#| "Sorts by the name someone has chosen in their profile.\n"
-#| "* Sort by Instrument / City<br/>\n"
-#| "Sorts by the instrument or city someone has in their profile, along with their name.\n"
-#| "* Sort by Group<br/>\n"
-#| "Where the fader group feature is in use, this sorts in ascending group number from left to right (and within that, by name), with any ungrouped channels off to the right.\n"
-#| "* Sort by Channel<br/>\n"
-#| "Where Jamulus channel controls (fader, mute, solo, etc) are being controlled by MIDI (see [Using --ctrlmidich for MIDI controllers](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)), this sorts by the channel number to help ensure a stable sort order that aligns with MIDI hardware controls.\n"
-#| "Note that in Jamulus clients before version 3.12.0, channel numbers are assigned directly by the server. Clients from 3.12.0 onwards manage their own channel number assignments and always assign channel 0 to the local user (provided the server version is at least 3.5.5).\n"
+#, no-wrap
 msgid ""
 "* No user sorting<br/>\n"
 "This does not take any user details into account when sorting.  It sorts by the order channels join the current server as described further up, with new channels being added to the right-hand end.\n"
@@ -477,7 +466,7 @@ msgstr ""
 "* Trier par groupe<br/>\n"
 "Lorsque la fonction de groupe de chariots est utilisée, le tri se fait par numéro de groupe croissante de gauche à droite (et à l'intérieur de celui-ci, par nom), avec tous les canaux non groupés à droite.\n"
 "* Trier par canal<br/>\n"
-"Lorsque les contrôles de canaux de Jamulus (fader, mute, solo, etc) sont contrôlés par MIDI (voir [Utiliser --ctrlmidich pour les contrôleurs MIDI](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)), ceci permet de trier par numéro de canal afin d'assurer un ordre de tri stable qui s'aligne sur les contrôles matériels MIDI.\n"
+"Lorsque les contrôles de canaux de Jamulus (chariot, muet, solo, etc) sont contrôlés par MIDI (voir [Contrôle MIDI](#midi-control)), ceci permet de trier par numéro de canal afin d'assurer un ordre de tri stable qui s'aligne sur les contrôles matériels MIDI.\n"
 "Notez que dans les clients Jamulus antérieurs à la version 3.12.0, les numéros de canaux sont attribués directement par le serveur. Les clients à partir de la version 3.12.0 gèrent leurs propres numéros de canaux et attribuent toujours le canal 0 à l'utilisateur local (à condition que la version du serveur soit au moins la 3.5.5).\n"
 
 #. type: Title ###
@@ -862,80 +851,78 @@ msgstr "Contrôle les niveaux relatifs des canaux audio locaux gauche et droit. 
 #: ../wiki/en/Software-Manual.md:341
 #, no-wrap
 msgid "MIDI Control"
-msgstr ""
+msgstr "Contrôle MIDI"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:344
-#, fuzzy, no-wrap
-#| msgid "<figure><img src=\"{% include img/en-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of a profile window\"></figure>\n"
+#, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/settings-midi.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image of MIDI control window\"></figure>\n"
-msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-profile.inc %}\" style=\"border: 5px solid grey;\" loading=\"lazy\" alt=\"Image de la fenêtre de profil\"></figure>\n"
+msgstr "<figure><img src=\"{% include img/fr-screenshots/settings-midi.inc %}\" style=\"border: 5px solid grey ;\" loading=\"lazy\" alt=\"Image de la fenêtre de contrôle MIDI\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:346
 msgid "The volume fader, pan control and mute and solo buttons in the Client's mixer window strips can be controlled using a connected MIDI controller. This feature is available from version 3.7.0 on macOS, Linux, and the JACK version of Jamulus for Windows. From Jamulus 3.12.0 onwards, it is also available for the non-JACK (ASIO) Windows version. To enable this feature and open a MIDI-in port, activate the \"MIDI-in\" checkbox."
-msgstr ""
+msgstr "Les chariots et boutons de volume, contrôle de panoramique, muet et solo des tranches dans la fenêtre du mixeur du Client peuvent être pilotés à l'aide d'un contrôleur MIDI connecté. Cette fonctionnalité est disponible depuis la version 3.7.0 sur macOS, Linux et la version JACKifiée de Jamulus pour Windows. Depuis la version 3.12.0 c'est aussi disponible pour la version non-JACK (ASIO) pour Windows. Pour l'activer et ouvrir un port d'entrée MIDI, cochez la case Midi-in."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:347
-#, fuzzy, no-wrap
-#| msgid "Audio Device"
+#, no-wrap
 msgid "MIDI Device"
-msgstr "Périphérique audio"
+msgstr "Périphérique MIDI"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:350
 msgid "With MIDI-in enabled, Jamulus will detect the MIDI devices available for connection and list them in the 'MIDI Device' dropdown menu. Select the device you wish to connect to Jamulus. The non-JACK Windows version of Jamulus will automatically connect to all available MIDI devices if none have been selected previously or a saved device is not present. To connect to a single device, select it from the dropdown."
-msgstr ""
+msgstr "Lorsque l'entrée MIDI est activée, Jamulus détecte les périphériques disponibles pour connexion et les affiche dans la liste 'Périphérique MIDI'. Choisissez le périphérique que vous désirez connecter à Jamulus. La version non JACKifiée pour Windows se connecte automatiquement à tous les périphérique disponibles si aucun n'a précédemment été sélectionné, ou si un périphérique enregistré est absent. Pour connecter un périphérique particulier, choisissez-le dans la liste."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:351
 #, no-wrap
 msgid "MIDI parameters"
-msgstr ""
+msgstr "Paramètres MIDI"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:354
 msgid "There is one global MIDI channel parameter (0-16) and two parameters you can set for each item controlled: First MIDI CC and consecutive CC numbers (count). First set the channel you want Jamulus to listen on (0 for all channels). Then, for each item you want to control (volume fader, pan, solo, mute), set the first MIDI CC (CC number to start from) and number of consecutive CC numbers (count) you wish to assign to that particular item. You can either type in the MIDI CC values or use the \"Learn\" button: click on \"Learn\", actuate the fader/knob/button on your MIDI controller, and the MIDI CC number will be detected and saved."
-msgstr ""
+msgstr "Il y a un paramètre canal MIDI global (0-16) et deux paramètres pour chaque élément contrôlé : le premier MIDI CC et les CC consécutifs (décompte). Réglez d'abord le canal que vous voulez que Jamulus écoute (0 pour tous les canaux). Puis, pour chaque élément que vous désirez contrôler (chariot de volume, panoramique, solo, sourdine), indiquez le premier CC MIDI (numéro CC de début) et le nombre de CC consécutifs (décompte) que vous voulez assigner à cet élément particulier. Vous pouvez soit saisir les valeurs CC MIDI, soit utiliser le bouton \"Apprendre\" : cliquer sur \"Apprendre\", actionnez le chariot/potard/bouton sur votre contrôleur MIDI, et le numéro de CC MIDI sera détecté et sauvegardé."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:356
 msgid "As an example, a 'First MIDI CC' of 0 and a 'Count' of 8 for volume faders will mean that CC numbers 0 - 7 will control the volume faders for up to 8 mixer channels."
-msgstr ""
+msgstr "À titre d'exemple, un 'premier CC MIDI' à 0 et un 'Nombre' de 8 chariots de volume signifie que les CC numéro 0 à 7 piloteront les chariots de volume jusqu'à 8 canaux du mixeur."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:358
 msgid "There is one exception that does not require establishing consecutive CC numbers which is the “Mute Myself” parameter - it only requires a single CC number as it is only applied to one’s own audio stream."
-msgstr ""
+msgstr "Il existe une exception qui ne nécessite pas de définir des numéros CC consécutifs : il s'agit du paramètre \"Me mettre en sourdine\" - qui ne nécessite qu'un seul numéro CC, car il s'applique uniquement à son propre flux audio."
 
 #. type: Title ###
 #: ../wiki/en/Software-Manual.md:359
 #, no-wrap
 msgid "Pick-up Mode"
-msgstr ""
+msgstr "Mode reprise"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:362
 msgid "When enabled, fader and pan controls will wait for your physical controller to match their value before moving. This prevents sudden jumps when they are out of sync."
-msgstr ""
+msgstr "Lorsqu'activé, les contrôles de chariot et de panoramique attendront que la position du contrôleur physique rejoigne celle du logiciel avant de bouger. Ceci empêche les changements brusques qui peuvent se produire quand les contrôles se désynchronisent."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:365
 #, no-wrap
 msgid "*Note*: Jamulus does not provide feedback on the on/off state of buttons, meaning that your controller must keep track and toggle LEDs (if any) to 'on' or 'off' itself, that is, buttons on your MIDI controller need to be set to \"toggle\" mode. This means that when pressed to 'turn on' a control, it must send a MIDI CC number with a value >=64, and to 'turn off' the control it must send the same CC number with a value <64. You can read your controller's manual to find out how to set this.\n"
-msgstr ""
+msgstr "*Note* : Jamulus ne fournit pas de retour de l'état on/off des boutons, c'est à dire que c'est à votre contrôleur lui-même de suivre et commuter les éventuelles DELs à 'allumé' ou 'éteint'. Autrement dit, les boutons de votre contrôleur MIDI doivent être positionnés en mode \"Bascule\". Ceci signifie que lors d'un appui pour 'mettre en marche' un bouton, il doit envoyer un numéro de MIDI CC avec une valeur ≥64, et que pour 'arrêter le contrôle', il doit envoyer le même numéro de CC avec une valeur <64. Référez-vous au manuel de votre contrôleur pour paramétrer ce comportement.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:367
 msgid "When MIDI is enabled, Jamulus will prepend a channel number to each Client name, which can be used to control the channel using MIDI CC numbers. In Jamulus version 3.12.0 onwards, when connected to a server of at least version 3.5.5, your own fader will always be given channel 0, and so will appear first when sorted by channel or when \"Own Fader First\" is enabled."
-msgstr ""
+msgstr "Quand MIDI est activé, Jamulus assigne en préfixe un n° de canal à chaque nom de Client, nom qui peut alors être utilisé pour contrôler le canal qui utilise les CC MIDI. Depuis Jamulus 3.12.0, quand on est connecté à un serveur de version au moins 3.5.5, votre propre chariot se verra toujours attribué le canal 0 et apparaîtra ainsi en premier quand le tri est défini par canal, ou quand l'option \"Mon chariot en premier\" est activée."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:369
 #, no-wrap
 msgid "*Tip*: With default settings, when some users leave and others join, their left-right arrangement in the GUI may cease to follow a numerical order, making it more difficult to know who each physical fader/knob on your MIDI controller corresponds to. To keep the fader strips following a numerical order, go to \"View\" on the top menu bar and switch to \"Sort by Channel\" (or type `Ctrl+E`).\n"
-msgstr ""
+msgstr "*Astuce* : avec les réglages par défaut, lors de l'arrivée ou du départ d'utilisateurs, leur disposition gauche-droite dans l'IGU peut cesser de suivre l'ordre numérique, ce qui peut rendre difficile de savoir à qui correspond tel ou tel chariot/bouton physique de contrôleur MIDI. Pour garder les tranches de console dans l'ordre numérique, rendez-vous dans \"Affichage\" dans la barre de menu et basculez vers \"Trier par canal\" (ou utilisez le raccourci `Ctrl+E`).\n"
 
 #. type: Title #
 #: ../wiki/en/Software-Manual.md:370

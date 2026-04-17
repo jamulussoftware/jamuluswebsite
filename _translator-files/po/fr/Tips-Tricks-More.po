@@ -5,19 +5,19 @@
 # Olivier Humbert <redacted@invalid.local>, 2022.
 # Olivier Humbert <trebmuh@librazik.org>, 2022, 2023, 2024, 2025, 2026.
 # Julien Taverna <jujudusud@gmail.com>, 2023, 2025, 2026.
-# cosas <f0rhum@free.fr>, 2024.
+# cosas <f0rhum@free.fr>, 2024, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-02-03 21:54+0000\n"
-"Last-Translator: Julien Taverna <jujudusud@gmail.com>\n"
+"PO-Revision-Date: 2026-03-20 18:10+0000\n"
+"Last-Translator: Olivier Humbert <trebmuh@librazik.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jamulus/tips-tricks-more/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Tips-Tricks-More.md:1
@@ -242,14 +242,12 @@ msgstr "Utilisation de `--ctrlmidich`pour les contrôleurs MIDI"
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:86
 msgid "MIDI controller parameters can be set using the `--ctrlmidich` command-line option. Bear in mind that when used, specified control parameters will overwrite any values set previously using the GUI. Any controls not set in the command line will be disabled, though their values will be preserved."
-msgstr ""
+msgstr "On peut régler les paramètres du contrôleur MIDI en utilisant l'option de ligne de commande `--ctrlmidich`. Gardez à l'esprit que cette méthode prévaut sur les valeurs définies dans l'IU graphique. Tout contrôle non défini par la ligne de commande sera désactivé, mais ses valeurs seront préservées."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:88
-#, fuzzy
-#| msgid "`--ctrlmidich` takes a single argument.  If you omit it, the parameter is ignored.  There are two formats for the argument:"
 msgid "`--ctrlmidich` takes a single argument. If you omit it, the parameter is ignored. There are two formats for the argument:"
-msgstr "`--ctrlmidich` prend un seul argument.  Si vous l'omettez, le paramètre est ignoré.  Il existe deux formats pour l'argument :"
+msgstr "`--ctrlmidich` prend un seul argument. Si vous l'omettez, le paramètre est ignoré. Il existe deux formats pour l'argument :"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Tips-Tricks-More.md:90
@@ -264,17 +262,13 @@ msgstr "   [canal MIDI];[décalage pour le premier chariot]\n"
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:96 ../wiki/en/Tips-Tricks-More.md:120
-#, fuzzy
-#| msgid "`MIDI channel` is required or else the parameter argument is ignored and the feature is not active.  `0` means \"any channel\", `1`-`16` listen only to MIDI messages on the specified MIDI channel."
 msgid "`MIDI channel` is required or else the parameter argument is ignored and the feature is not active. `0` means \"any channel\", `1`-`16` listen only to MIDI messages on the specified MIDI channel."
-msgstr "`MIDI channel` est requis, sinon le paramètre est ignoré et la fonction n'est pas active.  `0` signifie « n'importe quel canal », `1`-`16` n'écoute que les messages MIDI sur le canal MIDI spécifié."
+msgstr "`MIDI channel` est requis, sinon le paramètre est ignoré et la fonction n'est pas active. `0` signifie « n'importe quel canal », `1`-`16` n'écoute que les messages MIDI sur le canal MIDI spécifié."
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:98
-#, fuzzy
-#| msgid "`offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader (default 70, which matches the Behringer X-Touch defaults), with all MIDI CCs after that being used; must be a number or else the long form is used."
 msgid "`offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader, with all MIDI CCs after that being used; must be a number or else the long form is used."
-msgstr "`offset for first fader` est le premier CC MIDI à utiliser pour contrôler le chariot d'un canal Jamulus (70 par défaut, ce qui correspond aux valeurs par défaut du Behringer X-Touch), tous les CC MIDI suivants étant utilisés ; il doit s'agir d'un nombre, sinon la forme longue est utilisée."
+msgstr "`offset for first fader` est le premier CC MIDI à utiliser pour contrôler le chariot d'un canal Jamulus, tous les CC MIDI suivants étant utilisés ; il doit s'agir d'un nombre, sinon la forme longue est utilisée."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:100
@@ -296,10 +290,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:106
-#, fuzzy, no-wrap
-#| msgid "     would listen on all MIDI channels and use MIDI controller 70 to control Jamulus channel 0 fader and so on.  Here's another example:\n"
+#, no-wrap
 msgid "     would listen on all MIDI channels and use MIDI controller 0 to control Jamulus channel 0 fader and so on.  Here's another example:\n"
-msgstr "     écoutera tous les canaux MIDI et utilisera le contrôleur MIDI 70 pour contrôler le chariot du canal 0 de Jamulus et ainsi de suite.  Voici un autre exemple :\n"
+msgstr "     écoutera tous les canaux MIDI et utilisera le contrôleur MIDI 0 pour contrôler le chariot du canal 0 de Jamulus et ainsi de suite.  Voici un autre exemple :\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:110
@@ -389,10 +382,8 @@ msgstr "   --ctrlmidich \"0;f0*8;p16*8;s32*8;m48*8\"\n"
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:147
-#, fuzzy
-#| msgid "Two additional `control letter` values are available:"
 msgid "Three additional `control letter` values are available:"
-msgstr "Deux valeurs supplémentaires de « lettre de contrôle » sont disponibles :"
+msgstr "`Trois valeurs supplémentaires de `lettre de contrôle` sont disponibles :"
 
 #. type: Bullet: '     1. '
 #: ../wiki/en/Tips-Tricks-More.md:149
@@ -402,14 +393,12 @@ msgstr "`o` contrôle Me Silencer et a un seul `offset` (c'est-à-dire que `coun
 #. type: Bullet: '     2. '
 #: ../wiki/en/Tips-Tricks-More.md:151
 msgid "`u` enables `MIDI Pick-up Mode` for the fader and pan controls."
-msgstr ""
+msgstr "`u` active `le mode de reprise MIDI` pour les contrôles de chariot et de panoramique."
 
 #. type: Bullet: '     3. '
 #: ../wiki/en/Tips-Tricks-More.md:153
-#, fuzzy
-#| msgid "`d` is an option on Windows non-JACK Jamulus to specify a particular MIDI input device by name -- without this, all devices will be assigned to Jamulus; with it, only the specified device will be used.  For example:"
 msgid "`d` is an option to specify a particular MIDI input device by name -- without this, it is up to the user to make connections with a connection manager or by other means, and on Windows non-JACK Jamulus all devices will be assigned to Jamulus; with it, only the specified device will be used. For example:"
-msgstr "`d` est une option sur Jamulus Windows non-JACK pour spécifier un périphérique d'entrée MIDI particulier par son nom -- sans cette option, tous les périphériques seront assignés à Jamulus ; avec cette option, seul le périphérique spécifié sera utilisé. Par exemple :"
+msgstr "`d` est une option pour définir un périphérique d'entrée MIDI particulier par son nom -- sans cette option, il incombe à l'utilisateur d'établir les connexions à l'aide d'un gestionnaire de connexions ou autre moyen, et sous Windows dans la version non-JACK de Jamulus, tous les périphériques seront attribués à Jamulus ; avec uniquement le périphérique spécifié qui sera utilisé. Par exemple :"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:157
@@ -425,10 +414,9 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:159
-#, fuzzy, no-wrap
-#| msgid "        would listen for CC0 through CC7 on MIDI channel 1 from a MIDI device called \"nanoKontrol\".  Remember to wrap the whole of the `--ctrlmidich` argument in double quotes and you will have no problems with device names containing spaces.\n"
+#, no-wrap
 msgid "        would listen for CC0 through CC7 on MIDI channel 1 from a MIDI device called \"nanoKontrol\". Remember to wrap the whole of the `--ctrlmidich` argument in double quotes and you will have no problems with device names containing spaces.\n"
-msgstr "        écoutera les CC0 à CC7 sur le canal MIDI 1 à partir d'un périphérique MIDI appelé « nanoKontrol ».  N'oubliez pas de mettre tout l'argument `--ctrlmidich` entre guillemets et vous n'aurez aucun problème avec les noms de périphériques contenant des espaces.\n"
+msgstr "        écoutera les CC0 à CC7 sur le canal MIDI 1 à partir d'un périphérique MIDI appelé « nanoKontrol ». N'oubliez pas de mettre tout l'argument `--ctrlmidich` entre guillemets-doubles et vous n'aurez aucun problème avec les noms de périphériques contenant des espaces.\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:161
@@ -478,16 +466,15 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:179
-#, fuzzy, no-wrap
-#| msgid "\tNote that if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.\n"
+#, no-wrap
 msgid "\tNote that for Windows non-JACK Jamulus if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.\n"
-msgstr "\tNotez que si un seul périphérique MIDI est connecté, l'option `d` n'est pas nécessaire, car Jamulus utilisera le périphérique automatiquement.\n"
+msgstr "\tNotez que pour la version Windows non-JACK de Jamulus, si un seul périphérique MIDI est connecté, l'option `d` n'est pas nécessaire, car Jamulus utilisera le périphérique automatiquement.\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:181
 #, no-wrap
 msgid "\tFor more information about using MIDI devices with Jamulus, see the [MIDI control](Software-Manual#midi-control) section in the Software Manual.\n"
-msgstr ""
+msgstr "\tPour plus d'informations sur l'utilisation de périphériques MIDI avec Jamulus, voir la section [MIDI control](Software-Manual#midi-control) dans le Guide d'Utilisation.\n"
 
 #. type: Title ##
 #: ../wiki/en/Tips-Tricks-More.md:182

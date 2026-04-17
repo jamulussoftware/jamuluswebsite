@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-02-03 21:55+0000\n"
+"PO-Revision-Date: 2026-03-20 18:09+0000\n"
 "Last-Translator: Henk De Groot <weblate@hdegroot.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Client-Commands.md:6
@@ -37,10 +37,8 @@ msgstr "`-j` of `--nojackconnect` Schakel automatisch JACK verbindingen uit"
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
-#, fuzzy
-#| msgid "`--ctrlmidich` MIDI channel to listen on, Jamulus control + MIDI control number and count of consecutive CC numbers (or Jamulus channels), device selection option. Format: `channel[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;dDeviceName]` See [Tips & Tricks](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)."
 msgid "`--ctrlmidich` MIDI channel to listen on, Jamulus control + MIDI control number and count of consecutive CC numbers (or Jamulus channels), pick-up mode, device selection option. Format: `channel[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;u][;dDeviceName]` See [Tips & Tricks](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers)."
-msgstr "`--ctrlmidich` MIDI kanaal om naar te luisteren, Jamulus control + MIDI control nummer en opeenvolgend aantal CC nummers (of Jamulus kanalen), optie voor apparaatselectie. Formaat: `kanaa[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;dApparaatnaam]` Zie [Tips & trucs](Tips-Tricks-More#gebruik---ctrlmidich-voor-midi-controllers)."
+msgstr "`--ctrlmidich` MIDI kanaal om naar te luisteren, Jamulus control + MIDI control nummer en opeenvolgend aantal CC nummers (of Jamulus kanalen), volgstand-modus, optie voor apparaatselectie. Formaat: `kanaa[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][:u][;dApparaatnaam]` Zie [Tips & trucs](Tips-Tricks-More#gebruik---ctrlmidich-voor-midi-controllers)."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Include-Client-Commands.md:6
