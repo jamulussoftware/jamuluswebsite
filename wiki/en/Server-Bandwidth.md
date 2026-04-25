@@ -11,22 +11,24 @@ permalink: "/wiki/Server-Bandwidth"
 
 The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:
 * Channels : stereo/mono
-* Quality : high/medium/low
-* Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms
+* Quality : high/medium/low/max
+* Audio buffer duration : 2.67 ms (64 samples), 5.33 ms (128 samples), 10.67 ms (256 samples)
 
 With the following units
 * ms : milliseconds
 * Kbit/s : Kilo-bits per second (Reminder : 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)
 * Mbit/s : Mega-bits per second
 
-| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |
-| --------- | ------ | -------- | -------- | -------- | -------- |
-| Stereo    | High   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |
-| Stereo    | Medium | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |
-| Stereo    | Low    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |
-| Mono      | High   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|
-| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |
-| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |
+| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) |
+| --------- | ------ | -------- | -------- | -------- |
+| Stereo    | Max    | 2004 Kbit/s | 1770 Kbit/s | 1654 Kbit/s |
+| Stereo    | High   | 906 Kbit/s  | 729 Kbit/s  | 613 Kbit/s  |
+| Stereo    | Medium | 678 Kbit/s  | 447 Kbit/s  | 331 Kbit/s  |
+| Stereo    | Low    | 612 Kbit/s  | 375 Kbit/s  | 259 Kbit/s  |
+| Mono      | Max    | 1236 Kbit/s | 1002 Kbit/s | 886 Kbit/s  |
+| Mono      | High   | 684 Kbit/s  | 480 Kbit/s  | 364 Kbit/s  |
+| Mono      | Medium | 600 Kbit/s  | 369 Kbit/s  | 253 Kbit/s  |
+| Mono      | Low    | 540 Kbit/s  | 309 Kbit/s  | 193 Kbit/s  |
 
 ## Network bandwidth
 
