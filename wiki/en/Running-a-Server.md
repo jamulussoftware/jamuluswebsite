@@ -33,7 +33,7 @@ Using a public Server might introduce you to strangers. If you want an undisturb
 
 Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed.
 
-However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It can work fine to have less than 5 players on a slower-speed home connection. You can read more about network requirements at [different quality settings here](Server-Bandwidth).
+However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It can work fine to have less than 5 players on a slower-speed home connection. A wireless internet connection is not recommended for a server in your home, while a fiber connection should work well. You can read more about network requirements at [different quality settings here](Server-Bandwidth).
 
 Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems.
 
