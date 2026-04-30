@@ -11,7 +11,7 @@ permalink: "/wiki/Server-Bandwidth"
 
 The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of:
 * Channels : stereo/mono
-* Quality : high/medium/low/max
+* Quality : max/high/medium/low
 * Audio buffer duration : 2.67 ms (64 samples), 5.33 ms (128 samples), 10.67 ms (256 samples)
 
 With the following units
