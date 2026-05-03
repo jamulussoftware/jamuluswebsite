@@ -327,7 +327,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
     - [ ] Check the update notice is displayed correctly
     - [ ] Revert the update notification Server to the previous release
   - [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
-  - [ ] [Upload the artifacts to SourceForge and set defaults](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
+  - [ ] [Check that binaries have been auto-uploaded to SourceForge](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
   - [ ] Update download links on the website by editing `_config.yml` in `next-release`
   - [ ] Disable branch protection rule of the `release` branch by clicking on "Edit" on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches) and adding a `_` behind `release`.  
   - [ ] Publish Website release by **squashing** and merging `next-release` into `release`
