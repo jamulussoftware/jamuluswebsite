@@ -1,15 +1,15 @@
 
-[commento]: # (Questo è un file di inclusione da utilizzare in più
-documenti)
+[commento]: # (Questo è un file di inclusione da utilizzare in più documenti)
 
 - `-h` or `--help` Visualizza il testo della guida
-- `-i` or `--inifile` Set location of initialization file (overrides
-  default. On macOS simply provide a filename only, since config files can
-  only be read from
-  `/Users/<username>/Library/Containers/app.jamulussoftware.Jamulus/Data/`.
-  For the server replace `app.jamulussoftware.Jamulus` with
-  `app.jamulussoftware.JamulusServer`. Turn on "Show Library folder" in
-  "Show view options" in Finder to see this folder.)
+- `-i` o `--inifile` Imposta la posizione del file di inizializzazione
+  (sovrascrive l'impostazione predefinita. Su macOS basta fornire solo un
+  nome file, poiché i file di configurazione possono essere letti solo da
+  `/Users/<nomeutente>/Library/Containers/app.jamulussoftware.Jamulus/Data/`.
+  Per il server, sostituire`app.jamulussoftware.Jamulus` con
+  `app.jamulussoftware.JamulusServer`. Attivare "Mostra cartella Libreria"
+  in "Mostra opzioni di visualizzazione" nel Finder per visualizzare questa
+  cartella.)
 - `-n` or `--nogui` Disabilita la GUI (usato per essere lanciato senza
   interfaccia grafica)
 - `-p` or `--port` Imposta la porta UDP del server. Di default è 22124
@@ -21,8 +21,8 @@ documenti)
 - `--jsonrpcsecretfile` Obbligatorio quando si utilizza
   `--jsonrpcport`. Imposta il percorso di un file di testo contenente una
   stringa di autenticazione per ottenere l'accesso all'API JSON-RPC.
-- `--jsonrpcbindip` The IP address the JSON-RPC server should bind
-  to. (optional, defaults to 127.0.0.1)
+- `--jsonrpcbindip`L'indirizzo IP a cui il server JSON-RPC deve
+  collegarsi. (facoltativo, il valore predefinito è 127.0.0.1)
 - `-Q` o `--qos` Imposta il byte del campo DS della qualità del servizio. Il
   valore predefinito è 128 (DSCP/CS4). Il QoS è ignorato da Windows. Per
   abilitarlo, [vedere questa pagina](QOS-Windows)

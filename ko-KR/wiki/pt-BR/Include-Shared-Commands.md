@@ -1,5 +1,5 @@
 
-[comment]: # (This is an include file for use in multiple documents)
+[comment]: # (Este é um arquivo de incluir para uso em múltiplos documentos)
 
 - `-h` or `--help` Display help text
 - `-i` or `--inifile` Set location of initialization file (overrides

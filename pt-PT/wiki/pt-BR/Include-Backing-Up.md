@@ -1,4 +1,4 @@
-<!-- NOTE: This must apply to both Client and Server, and all operating systems -->
+<!-- NOTA: Isso deve aplicar-se a ambos Cliente e Servidor, e todos os sistemas operacionais -->
 
 Once installed and running, you may want to keep a copy of your
 settings. Having a backup is always a good idea, and settings files are not

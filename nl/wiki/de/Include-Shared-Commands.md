@@ -1,6 +1,5 @@
 
-[Kommentar]: # (Dies ist eine Include-Datei zur Verwendung in mehreren
-Dokumenten)
+[Kommentar]: # (Dies ist eine Include-Datei zur Verwendung in mehreren Dokumenten)
 
 - `-h` oder `--help` Hilfetext anzeigen
 - `-i` oder `--inifile` Setzt Speicherort der ini-Datei (überschreibt

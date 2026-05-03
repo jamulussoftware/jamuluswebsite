@@ -5,8 +5,10 @@
 -  `-c` ou `--connect` Se connecter à l'adresse du serveur donné au
    démarrage, format `adresse[:port]`
 -  `-j` ou `--nojackconnect` Désactive l'auto-connexion de JACK
--  `--ctrlmidich` Canal du contrôleur MIDI à écouter, décalage du numéro de
-   contrôle et numéros CC consécutifs (canaux) et numéro CC me
-   silencer. Format : `canal[;f*][;p*][;s*][;m*][;o]` Voir [Trucs et
-   astuces](Tips-Tricks-More#utilisation-de-ctrlmidich-pour-les-contrôleurs-midi)
+-  `--ctrlmidich` Canal MIDI à écouter, les contrôles de Jamulus + numéro de
+   contrôle MIDI et le décompte de numéros CC consécutifs (ou canaux
+   Jamulus), mode reprise, option de sélection de périphérique. Format :
+   `canal[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;u][;dDeviceName]` Voir
+   [Trucs et
+   astuces](Tips-Tricks-More#utilisation-de---ctrlmidich-pour-les-contrôleurs-midi).
 - `--clientname` Titre de la fenêtre et nom du client JACK

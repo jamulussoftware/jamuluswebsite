@@ -1,4 +1,4 @@
-<!-- NOTE: This must apply to both Client and Server, and all operating systems -->
+<!-- NOTA: isto deve-se aplicar a ambos, Cliente e Servidor, e para todos os sistemas operativos -->
 
 Once installed and running, you may want to keep a copy of your
 settings. Having a backup is always a good idea, and settings files are not
@@ -17,8 +17,9 @@ where they live and copy the files to another location:
 If you used the `--inifile` parameter to save an inifile to a different
 location, don't forget to also backup these files.  **Points to note**
 
-* Do not back up or restore settings files when Jamulus is running.
-* It is not recommended to manually edit settings files (they're not
-  designed for that).
+* Não realize a cópia de segurança ou restaure os ficheiros das definições
+  quando o Jamulus estiver em execução.
+* Não é recomendável editar manualmente os ficheiros das definições (eles
+  não foram projetados para isso).
 * You can revert all settings to their defaults by just deleting the
   settings file (after closing Jamulus).

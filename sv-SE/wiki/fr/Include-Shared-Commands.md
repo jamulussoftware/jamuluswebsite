@@ -1,6 +1,5 @@
 
-[comment]: # (Il s'agit d'un fichier d'inclusion à utiliser dans plusieurs
-documents)
+[comment]: # (Il s'agit d'un fichier d'inclusion à utiliser dans plusieurs documents)
 
 - `-h` ou `--help` Afficher le texte d'aide
 - `-i` ou `--inifile` paramètre l'emplacement du fichier d'initialisation

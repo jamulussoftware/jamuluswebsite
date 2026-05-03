@@ -5,8 +5,10 @@
 -  `-c` of `--connect` Verbind met het opgegeven serveradres bij het
    opstarten, formaat `adres[:poort]`
 -  `-j` of `--nojackconnect` Schakel automatisch JACK verbindingen uit
--  `--ctrlmidich` MIDI controller kanaal om naar te luisteren, control
-   nummer offset en opeenvolgend CC nummers (kanalen) en demp mijzelf CC
-   nummer. Formaat: `kanaal[;f*][;p*][;s*][;m*][;o]` Zie [Tips &
-   trucs](Tips-Tricks-More#ctrlmidich-gebruiken-voor-midi-controllers)
+-  `--ctrlmidich` MIDI kanaal om naar te luisteren, Jamulus control + MIDI
+   control nummer en opeenvolgend aantal CC nummers (of Jamulus kanalen),
+   volgstand-modus, optie voor apparaatselectie. Formaat:
+   `kanaa[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][:u][;dApparaatnaam]` Zie
+   [Tips &
+   trucs](Tips-Tricks-More#gebruik---ctrlmidich-voor-midi-controllers).
 - `--clientname` Venster titel en JACK client naam
