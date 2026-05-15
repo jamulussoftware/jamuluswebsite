@@ -250,6 +250,7 @@ Start the Jamulus Server graphical user interface in the minimized window state.
 
 ##### `--noraw`
 Disable raw audio transmission. For bandwidth limited server connections like slow home connections < 10MBit upstream
+
 ### Other options
 
 {% include_relative Include-Shared-Commands.md %}
