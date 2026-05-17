@@ -224,25 +224,43 @@ Make sure `ChangeLog` contains the right version for the planned release - this 
 - Verify manually (`git diff`) & edit as necessary
 - Commit & push
 
-## Upload binaries to SourceForge
-
-**NOTE**: As of Sept 2023 we have a webhook set to transfer the downloads automatically to SourceForge on GitHub release. Check to see whether that's worked before following the steps below! 
+## SourceForge
 
 You will need an authorised SourceForge account.
 
-`sftp [your_accountname]@frs.sourceforge.net`
+#### NOTE!
 
-`cd /home/pfs/project/l/ll/llcon`
+As of Sept 2023 we have a webhook set to transfer the downloads automatically to SourceForge on GitHub release.
+Before following the upload steps below check to see whether that's worked!  The steps in the UI are still required.
 
+---
+
+```
+sftp [your_accountname]@frs.sourceforge.net
+cd /home/pfs/project/l/ll/llcon
+```
 then you'll see "Jamulus" and "OldFiles" directories. "Jamulus" is the releases, one directory per release.
-
 ```
 cd Jamulus
 mkdir 3.7.0
 cd 3.7.0
 ```
+Upload all the files.
 
-Upload all the files. Then in the SourceForge web UI, for each of the files uploaded, click the ℹ️ icon next to the file (in Files in the admin tools) and set it as "Default for (appropriate) platform)" Note that unsetting the default to "none" automatically picks the newest, so don't do that -- explicitly set the default when the release announcement is posted. Also note that legacy Mac, Headless and WinJACK users will need to just find those links on their own.
+---
+
+Then in the SourceForge web UI, for each of
+`jamulus_3.7.0_mac.dmg`,
+`jamulus_3.7.0_win.exe`,
+`jamulus_3.7.0_ubuntu_amd64.deb`,
+`jamulus_3.7.0_android.apk`,
+`jamulus_3.7.0_iOSUnsigned.ipa`
+and `Release 3.7.0 (r3_7_0) source code.zip`,
+click the ℹ️ icon next to the file (in Files in the admin tools) and set it as "Default for (appropriate) platform".
+
+Note that unsetting the default to "none" automatically picks the newest, so don't do that -- explicitly set the default when the release announcement is posted.
+
+Also note that legacy Mac, Headless and WinJACK users will need to just find those links on their own.
 
 ## Website: check links
 
@@ -327,7 +345,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
     - [ ] Check the update notice is displayed correctly
     - [ ] Revert the update notification Server to the previous release
   - [ ] [Force tag that tag as `latest` and push.](https://jamulus.io/contribute/Release-Process#if-this-is-a-proper-release-move-the-latest-tag)
-  - [ ] [Check that binaries have been auto-uploaded to SourceForge](https://jamulus.io/contribute/Release-Process#upload-binaries-to-sourceforge).
+  - [ ] [Check that binaries have been auto-uploaded to SourceForge](https://jamulus.io/contribute/Release-Process#sourceforge).
   - [ ] Update download links on the website by editing `_config.yml` in `next-release`
   - [ ] Disable branch protection rule of the `release` branch by clicking on "Edit" on the [Branches page](https://github.com/jamulussoftware/jamuluswebsite/settings/branches) and adding a `_` behind `release`.  
   - [ ] Publish Website release by **squashing** and merging `next-release` into `release`
