@@ -175,13 +175,13 @@ To register with one of the Directories built into the Jamulus Client, replace `
 
 | Genre |   `hostname:port`  |
 |-----------|------------------|
-|**Any Genre 1** |`anygenre1.jamulus.io:22124`|
-|**Any Genre 2** |`anygenre2.jamulus.io:22224`|
-|**Any Genre 3** |`anygenre3.jamulus.io:22624`|
-|**Genre Rock** |`rock.jamulus.io:22424`|
-|**Genre Jazz** |`jazz.jamulus.io:22324`|
-|**Genre Classical/Folk** |`classical.jamulus.io:22524`|
-|**Genre Choral/Barbershop** |`choral.jamulus.io:22724`|
+|**Any Genre 1** |`anygenre1.jamulus.app:22124`|
+|**Any Genre 2** |`anygenre2.jamulus.app:22224`|
+|**Any Genre Asia** |`asia.jamulus.app:22624`|
+|**Genre Rock** |`rock.jamulus.app:22424`|
+|**Genre Jazz** |`jazz.jamulus.app:22324`|
+|**Genre Classical/Folk** |`classical.jamulus.app:22524`|
+|**Genre Choral/Barbershop** |`choral.jamulus.app:22724`|
 
 Recent versions of Jamulus support [DNS SRV records ("service" records)](https://en.wikipedia.org/wiki/SRV_record) for automatically finding the port number to use to connect to a Directory or Server. This allows just the hostname to be specified, without the port number. See [this page](DNS-SRV-Support) for details and applicable version numbers.
 
