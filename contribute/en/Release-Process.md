@@ -359,7 +359,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
 - [ ] Create a milestone for the next minor release in jamulus and jamuluswebsite repos
 - [ ] Change the [Project Tracking Board](https://github.com/orgs/jamulussoftware/projects/5/views/5) to the next release (i.e. change the filter and save the change)
 - [ ] Close the release milestone in both jamulus and jamuluswebsite repos
-- [ ] Update this template in https://jamulus.io/contribute/Release-Process with any improvements if needed.
+- [ ] If needed, make any improvements to the "Release Checklist" in the [source of this document](https://github.com/jamulussoftware/jamuluswebsite/blob/release/contribute/en/Release-Process.md?plain=1).
 - [ ] Unpin and close this issue
 - [ ] Determine if a release retrospective is needed, create on Discussions if required
 ~~~
