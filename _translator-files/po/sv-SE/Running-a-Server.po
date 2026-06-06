@@ -711,101 +711,114 @@ msgstr "`-z eller --startminimized`"
 msgid "Start the Jamulus Server graphical user interface in the minimized window state."
 msgstr "Starta det grafiska användargränssnittet för Jamulus Server i det minimerade fönstertillståndet."
 
-#. type: Title ###
+#. type: Title #####
 #: ../wiki/en/Running-a-Server.md:251
+#, fuzzy, no-wrap
+#| msgid "`--norecord`"
+msgid "`--noraw`"
+msgstr "`--norecord`"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:253
+#, no-wrap
+msgid "Disable raw audio transmission. For bandwidth limited server connections like slow home connections < 10MBit upstream\n"
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:254
 #, no-wrap
 msgid "Other options"
 msgstr "Andra alternativ"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:254
+#: ../wiki/en/Running-a-Server.md:257
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:255
+#: ../wiki/en/Running-a-Server.md:258
 #, no-wrap
 msgid "Controlling the Server via API"
 msgstr "Styr servern via API"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:258
+#: ../wiki/en/Running-a-Server.md:261
 msgid "Jamulus can be controlled via an experimental API which is subject to changes. You can find the [JSON-RPC API documented in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md). JSON-RPC allows you to control some features like changing the welcome message or starting recordings in headless mode from authenticated external applications. It works while the server is running."
 msgstr "Jamulus kan styras via ett experimentellt API som kan ändras. Du kan hitta [JSON-RPC API dokumenterat i huvudarkivet](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md). JSON-RPC låter dig styra vissa funktioner som att ändra välkomstmeddelandet eller starta inspelningar i huvudlöst läge från autentiserade externa applikationer. Det fungerar medan servern är igång."
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:261
+#: ../wiki/en/Running-a-Server.md:264
 #, no-wrap
 msgid "Recording"
 msgstr "Inspelning"
 
 #. type: Title #####
-#: ../wiki/en/Running-a-Server.md:263
+#: ../wiki/en/Running-a-Server.md:266
 #, no-wrap
 msgid "`-R or --recording`"
 msgstr "`-R eller --recording`"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:265
+#: ../wiki/en/Running-a-Server.md:268
 msgid "Set Server recording directory. By default, the Server will record when a session is active."
 msgstr "Ställ in serverinspelningskatalog. Som standard kommer servern att spela in när en session är aktiv."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:267
+#: ../wiki/en/Running-a-Server.md:270
 #, no-wrap
 msgid "**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file, but be aware that doing could be a security risk.\n"
 msgstr "**Obs:** Du måste spara inspelningar till en sökväg _utanför_ av jamulus-hemkatalogen, eller ta bort `ProtectHome=true` från din systemd-enhetsfil, men var medveten om att det kan vara en säkerhetsrisk.\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:269
+#: ../wiki/en/Running-a-Server.md:272
 msgid "Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
 msgstr "Inspelningar är per spår i [Audacity](https://www.audacityteam.org/) `.lof`-format och [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Öppna respektive filer för att lyssna på dem i dessa applikationer."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:271
+#: ../wiki/en/Running-a-Server.md:274
 #, no-wrap
 msgid "**Note:** When your Server is recording, Clients display a red banner message that the session is being recorded.\n"
 msgstr "**Obs!** När din server spelar in visar klienter ett rött bannermeddelande om att sessionen spelas in.\n"
 
 #. type: Title #####
-#: ../wiki/en/Running-a-Server.md:272
+#: ../wiki/en/Running-a-Server.md:275
 #, no-wrap
 msgid "`--norecord`"
 msgstr "`--norecord`"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:274
+#: ../wiki/en/Running-a-Server.md:277
 msgid "Set server not to record by default when recording is configured."
 msgstr "Ställ in servern att inte spela in som standard när inspelning är konfigurerad."
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:276
+#: ../wiki/en/Running-a-Server.md:279
 #, no-wrap
 msgid "Controlling Recording"
 msgstr "Styra inspelning"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:279
+#: ../wiki/en/Running-a-Server.md:282
 msgid "Recording starts once the first person connects to the Server, and stops when the last person leaves."
 msgstr "Inspelningen startar när den första personen ansluter till servern och slutar när den sista personen lämnar."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:281
+#: ../wiki/en/Running-a-Server.md:284
 msgid "If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording on/off. If [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) is enabled, you will also be able to manage the server in a way comparable to the GUI. Please see the (experimental) [JSON-RPC documentation on the recorder](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
 msgstr "Om servern tar emot en SIGUSR1-signal under en inspelning kommer den att starta en ny inspelning i en ny katalog. SIGUSR2 växlar inspelning på/av. Om [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) är aktiverat kommer du också att kunna hantera servern på ett sätt som är jämförbart med det grafiska användargränssnittet . Se den (experimentella) [JSON-RPC-dokumentationen på inspelaren](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:284
+#: ../wiki/en/Running-a-Server.md:287
 msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`)."
 msgstr "För att skicka dessa signaler med systemd, skapa följande två `.service`-filer i `/etc/systemd/system`, kalla dem något lämpligt (t.ex. `jamulusTogglerec.service`)."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:286
+#: ../wiki/en/Running-a-Server.md:289
 msgid "To turn recording on or off (depending on the current state):"
 msgstr "Så här slår du på eller av inspelning (beroende på aktuellt läge):"
 
 #. type: Fenced code block
-#: ../wiki/en/Running-a-Server.md:287
+#: ../wiki/en/Running-a-Server.md:290
 #, no-wrap
 msgid ""
 " [Unit]\n"
@@ -825,12 +838,12 @@ msgstr ""
 " ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:298
+#: ../wiki/en/Running-a-Server.md:301
 msgid "To start a new recording:"
 msgstr "För att starta en ny inspelning:"
 
 #. type: Fenced code block
-#: ../wiki/en/Running-a-Server.md:299
+#: ../wiki/en/Running-a-Server.md:302
 #, no-wrap
 msgid ""
 " [Unit]\n"
@@ -850,148 +863,148 @@ msgstr ""
 " ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:310
+#: ../wiki/en/Running-a-Server.md:313
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example."
 msgstr "_Obs: Jamulus-tjänstens namn i `ExecStart`-raden måste vara detsamma som `.service`-filnamnet som används av systemd för att styra din Jamulus-server. Som standard, om du använder `.deb`-filerna från förvaret, är det `jamulus-headless`, som i det här exemplet."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:312
+#: ../wiki/en/Running-a-Server.md:315
 msgid "Run `sudo systemctl daemon-reload` to register them for first use."
 msgstr "Kör `sudo systemctl daemon-reload` för att registrera dem för första användning."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:314
+#: ../wiki/en/Running-a-Server.md:317
 msgid "Now you can run these with the `systemctl` command, for example:"
 msgstr "Nu kan du köra dessa med kommandot `systemctl`, till exempel:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:316
+#: ../wiki/en/Running-a-Server.md:319
 msgid "`sudo systemctl start jamulusTogglerec`"
 msgstr "`sudo systemctl start jamulusTogglerec`"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:318
+#: ../wiki/en/Running-a-Server.md:321
 msgid "You can see the result of these commands if you run `systemctl status jamulus-headless` (or the respective service name you specified manually). You can also view your (sys)log."
 msgstr "Du kan se resultatet av dessa kommandon om du kör `systemctl status jamulus-headless` (eller respektive tjänstnamn du angav manuellt). Du kan också se din (sys)logg."
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:321
+#: ../wiki/en/Running-a-Server.md:324
 #, no-wrap
 msgid "Adding metadata to the Server"
 msgstr "Lägga till metadata till servern"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:324
+#: ../wiki/en/Running-a-Server.md:327
 msgid "You can add metadata to the welcome message of a Server to add additional, hidden information like contact information or policy requests for bots (this is comparable to [robots.txt](https://en.wikipedia.org/wiki/Robots.txt)). See the [Community Knowledge Base entry about metadata](/kb/2023/07/30/Server-Metadata.html) for more information."
 msgstr "Du kan lägga till metadata i välkomstmeddelandet från en server för att lägga till ytterligare, dold information som kontaktinformation eller policyförfrågningar för botar (detta är jämförbart med [robots.txt](https://en.wikipedia.org/wiki/Robots. Text)). Se [Community Knowledge Base-posten om metadata](/kb/2023/07/30/Server-Metadata.html) för mer information."
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:327
+#: ../wiki/en/Running-a-Server.md:330
 #, no-wrap
 msgid "Servers on the desktop"
 msgstr "Servrar på skrivbordet"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:330
+#: ../wiki/en/Running-a-Server.md:333
 msgid "Jamulus can run in Server mode in the graphical environment of a computer. This gives you a graphical user interface to control most of the settings. To do this, first [install Jamulus for your platform](Getting-Started), then do one of the following:"
 msgstr "Jamulus kan köras i serverläge i en dators grafiska miljö. Detta ger dig ett grafiskt användargränssnitt för att kontrollera de flesta inställningarna. För att göra detta, först [installera Jamulus för din plattform](Getting-Started), gör sedan något av följande:"
 
 #. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:332
+#: ../wiki/en/Running-a-Server.md:335
 msgid "**Windows users** - Use the \"Jamulus Server\" icon in the Windows Start menu. If you want the Server to start automatically when you start Windows, check the box for this option."
 msgstr "**Windows-användare** - Använd ikonen \"Jamulus Server\" i Windows Start-meny. Om du vill att servern ska starta automatiskt när du startar Windows, markera rutan för det här alternativet."
 
 #. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:334
+#: ../wiki/en/Running-a-Server.md:337
 msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications."
 msgstr "**macOS-användare** - Dubbelklicka på ikonen \"Jamulus Server\" i Applikationer."
 
 #. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:336
+#: ../wiki/en/Running-a-Server.md:339
 msgid "**Linux users** - Launch the \"Jamulus Server\" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return."
 msgstr "**Linux-användare** - Starta genvägen \"Jamulus Server\". Eller så kan du öppna ett terminalfönster (`CTRL+ALT+t` på Debian och relaterade distros), skriv `jamulus -s` och tryck på retur."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:338
+#: ../wiki/en/Running-a-Server.md:341
 msgid "While most common functions in Jamulus can be set using the GUI, others can only be set using options given in a terminal window when the Server is launched. Exactly how you do this will depend on your operating system."
 msgstr "Medan de vanligaste funktionerna i Jamulus kan ställas in med GUI, kan andra endast ställas in med alternativ som ges i ett terminalfönster när servern startas. Exakt hur du gör detta beror på ditt operativsystem."
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:340
+#: ../wiki/en/Running-a-Server.md:343
 #, no-wrap
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose **Properties** > **Target**. Add the necessary arguments to Jamulus.exe:\n"
 msgstr "Till exempel i Windows, för att använda en specifik inställningsfil, högerklicka på Jamulus-genvägen och välj **Egenskaper** > **Mål**. Lägg till de nödvändiga argumenten till Jamulus.exe:\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:342
+#: ../wiki/en/Running-a-Server.md:345
 #, no-wrap
 msgid " `\"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100`\n"
 msgstr " `\"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100`\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:344
+#: ../wiki/en/Running-a-Server.md:347
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "För macOS, starta ett terminalfönster och kör Jamulus med önskade alternativ så här:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:346
+#: ../wiki/en/Running-a-Server.md:349
 #, no-wrap
 msgid " `/Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100`\n"
 msgstr " `/Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100`\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:348
+#: ../wiki/en/Running-a-Server.md:351
 #, no-wrap
 msgid "**Note** Command line options will set the Server’s defaults at startup. You can override them while the Server is running using their corresponding GUI controls.\n"
 msgstr "**Obs** Kommandoradsalternativ kommer att ställa in serverns standardinställningar vid start. Du kan åsidosätta dem medan servern körs med deras motsvarande GUI-kontroller.\n"
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:349
+#: ../wiki/en/Running-a-Server.md:352
 #, no-wrap
 msgid "The Server status icon"
 msgstr "Serverstatusikonen"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:352
+#: ../wiki/en/Running-a-Server.md:355
 msgid "When a Server is running in GUI mode, the operating system will show an icon in the system tray or status area that indicates whether the Server has connections:"
 msgstr "När en server körs i GUI-läge kommer operativsystemet att visa en ikon i systemfältet eller statusområdet som indikerar om servern har anslutningar:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:354
+#: ../wiki/en/Running-a-Server.md:357
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty\n"
 msgstr "<figure><img src=\"{% include img/sv-SE-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Bild av Jamulus Server-ikonen\"></figure> Servern är tom\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:356
+#: ../wiki/en/Running-a-Server.md:359
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied\n"
 msgstr "<figure><img src=\"{% include img/sv-SE-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Bild av Jamulus Server-ikonen\"></figure> Servern är upptagen\n"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:359
+#: ../wiki/en/Running-a-Server.md:362
 #, no-wrap
 msgid "Backing up the Server"
 msgstr "Säkerhetskopiera servern"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:362
+#: ../wiki/en/Running-a-Server.md:365
 msgid "{% include_relative Include-Backing-Up.md %}"
 msgstr "{% include_relative Include-Backing-Up.md %}"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Running-a-Server.md:364
+#: ../wiki/en/Running-a-Server.md:367
 msgid "Headless Servers do not use `.ini` files. All configuration is given as command line options. If you are running a Server in GUI mode, after reading any command line options on start, it will store its configuration in the `Jamulusserver.ini` file."
 msgstr "Huvudlösa servrar använder inte `.ini`-filer. All konfiguration ges som kommandoradsalternativ. Om du kör en server i GUI-läge, efter att ha läst alla kommandoradsalternativ vid start, kommer den att lagra sin konfiguration i filen `Jamulusserver.ini`."
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:365
+#: ../wiki/en/Running-a-Server.md:368
 #, no-wrap
 msgid "Troubleshooting"
 msgstr "Felsökning"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:367
+#: ../wiki/en/Running-a-Server.md:370
 msgid "If you are having other problems, [see this guide](Server-Troubleshooting)."
 msgstr "Om du har andra problem, [se den här guiden](Server-Troubleshooting)."
 

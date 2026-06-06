@@ -56,7 +56,9 @@ msgstr "오디오 대역폭"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
-msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+#, fuzzy
+#| msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : max/high/medium/low * Audio buffer duration : 2.67 ms (64 samples), 5.33 ms (128 samples), 10.67 ms (256 samples)"
 msgstr "오디오 설정은 필요한 네트워크 대역폭에 영향을 미칩니다. 아래 표에는 구성과 관련된 네트워크 요구 사항이 요약되어 있습니다. * 채널: 스테레오/모노 * 음질: 높음/중간/낮음 * 오디오 버퍼 지속 시간: 2.67ms, 5.33ms, 10.67ms, 21.33ms"
 
 #. type: Plain text
@@ -65,17 +67,28 @@ msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per sec
 msgstr "단위는 다음과 같습니다. * ms : 밀리초 * Kbit/s : 초당 킬로비트 (리마인더: 1 Mbit/s = 1024 Kbit/s, 1 KByte/s = 8 Kbit/s)  * Mbit/s : 초당 메가비트"
 
 #. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:30
-#, no-wrap
+#: ../wiki/en/Server-Bandwidth.md:32
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
+#| "| --------- | ------ | -------- | -------- | -------- | -------- |\n"
+#| "| Stereo    | High   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
+#| "| Stereo    | Medium | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
+#| "| Stereo    | Low    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
+#| "| Mono      | High   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
+#| "| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
+#| "| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 msgid ""
-"| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
-"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
-"| Stereo    | High   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
-"| Stereo    | Medium | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
-"| Stereo    | Low    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
-"| Mono      | High   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
-"| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
-"| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
+"| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) |\n"
+"| --------- | ------ | -------- | -------- | -------- |\n"
+"| Stereo    | Max    | 2004 Kbit/s | 1770 Kbit/s | 1654 Kbit/s |\n"
+"| Stereo    | High   | 906 Kbit/s  | 729 Kbit/s  | 613 Kbit/s  |\n"
+"| Stereo    | Medium | 678 Kbit/s  | 447 Kbit/s  | 331 Kbit/s  |\n"
+"| Stereo    | Low    | 612 Kbit/s  | 375 Kbit/s  | 259 Kbit/s  |\n"
+"| Mono      | Max    | 1236 Kbit/s | 1002 Kbit/s | 886 Kbit/s  |\n"
+"| Mono      | High   | 684 Kbit/s  | 480 Kbit/s  | 364 Kbit/s  |\n"
+"| Mono      | Medium | 600 Kbit/s  | 369 Kbit/s  | 253 Kbit/s  |\n"
+"| Mono      | Low    | 540 Kbit/s  | 309 Kbit/s  | 193 Kbit/s  |\n"
 msgstr ""
 "| 채널     | 음질 | 대역폭 (버퍼용 : 2.67 ms) |  대역폭 (버퍼용 : 5.33 ms) | 대역폭 (버퍼용 : 10.67 ms) | 대역폭 (버퍼용 : 21.33 ms) |\n"
 "| -------- | ---- | -------- | -------- | -------- | -------- |\n"
@@ -87,13 +100,13 @@ msgstr ""
 "| 모노     | 낮음 | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 
 #. type: Title ##
-#: ../wiki/en/Server-Bandwidth.md:31
+#: ../wiki/en/Server-Bandwidth.md:33
 #, no-wrap
 msgid "Network bandwidth"
 msgstr "네트워크 대역폭"
 
 #. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:38
+#: ../wiki/en/Server-Bandwidth.md:40
 #, no-wrap
 msgid ""
 "There is one upstream (musician sending to the Server) and one downstream (server sending back the mix to the musician)\n"
@@ -109,7 +122,7 @@ msgstr ""
 "</figure>\n"
 
 #. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:40
+#: ../wiki/en/Server-Bandwidth.md:42
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
 msgstr "또한 평균 ADSL2 전송 속도는 다운스트림의 경우 10Mbit/s이고 업스트림의 경우 1Mbit/s입니다. 실제 성능은 다운로드 속도에 대해 [이론적으로 0.3km에서 24Mbit/s에서 5.2km에서 1.5Mbit/s](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) 제공자까지의 거리에 따라 다릅니다. ."
 

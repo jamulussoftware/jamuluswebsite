@@ -715,101 +715,114 @@ msgstr "`-z 或 --startminimized`"
 msgid "Start the Jamulus Server graphical user interface in the minimized window state."
 msgstr "以最小化窗口状态启动 Jamulus 服务器图形界面。"
 
-#. type: Title ###
+#. type: Title #####
 #: ../wiki/en/Running-a-Server.md:251
+#, fuzzy, no-wrap
+#| msgid "`--norecord`"
+msgid "`--noraw`"
+msgstr "`--norecord`"
+
+#. type: Plain text
+#: ../wiki/en/Running-a-Server.md:253
+#, no-wrap
+msgid "Disable raw audio transmission. For bandwidth limited server connections like slow home connections < 10MBit upstream\n"
+msgstr ""
+
+#. type: Title ###
+#: ../wiki/en/Running-a-Server.md:254
 #, no-wrap
 msgid "Other options"
 msgstr "其他选项"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:254
+#: ../wiki/en/Running-a-Server.md:257
 msgid "{% include_relative Include-Shared-Commands.md %}"
 msgstr "{% include_relative Include-Shared-Commands.md %}"
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:255
+#: ../wiki/en/Running-a-Server.md:258
 #, no-wrap
 msgid "Controlling the Server via API"
 msgstr "通过 API 控制服务器"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:258
+#: ../wiki/en/Running-a-Server.md:261
 msgid "Jamulus can be controlled via an experimental API which is subject to changes. You can find the [JSON-RPC API documented in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md). JSON-RPC allows you to control some features like changing the welcome message or starting recordings in headless mode from authenticated external applications. It works while the server is running."
 msgstr "Jamulus 可以通过一个实验性的、可能会发生变化的 API 进行控制。您可以在[主存储库中找到记录的 JSON-RPC API](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md)。JSON-RPC 允许您控制一些功能，例如更改欢迎消息或从经过身份验证的外部应用程序以无头模式启动录音。它在服务器运行时起作用。"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:261
+#: ../wiki/en/Running-a-Server.md:264
 #, no-wrap
 msgid "Recording"
 msgstr "录音"
 
 #. type: Title #####
-#: ../wiki/en/Running-a-Server.md:263
+#: ../wiki/en/Running-a-Server.md:266
 #, no-wrap
 msgid "`-R or --recording`"
 msgstr "`-R 或 --recording`"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:265
+#: ../wiki/en/Running-a-Server.md:268
 msgid "Set Server recording directory. By default, the Server will record when a session is active."
 msgstr "设置服务器的录音目录。默认情况下，当会话处于活动状态时，服务器将进行录音。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:267
+#: ../wiki/en/Running-a-Server.md:270
 #, no-wrap
 msgid "**Note:** You will need to save recordings to a path _outside_ of the jamulus home directory, or remove `ProtectHome=true` from your systemd unit file, but be aware that doing could be a security risk.\n"
 msgstr "**注意:** 您需要将录音内容保存到 Jamulus 主目录之外的路径，或者从您的 systemd 单元文件中删除 `ProtectHome=true` ，但请注意，这样做可能存在安全风险。\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:269
+#: ../wiki/en/Running-a-Server.md:272
 msgid "Recordings are per track in [Audacity](https://www.audacityteam.org/) `.lof` format and [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp`. Open the respective files to listen to them in those applications."
 msgstr "录音内容为每条音轨的 [Audacity](https://www.audacityteam.org/) `.lof` 格式和 [REAPER](https://en.wikipedia.org/wiki/REAPER) `.rpp` 格式。在相应的应用程序中打开这些文件以播放它们。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:271
+#: ../wiki/en/Running-a-Server.md:274
 #, no-wrap
 msgid "**Note:** When your Server is recording, Clients display a red banner message that the session is being recorded.\n"
 msgstr "**注意:** 当您的服务器正在录音时，客户端会显示一条红色横幅消息，表明会话正在录音。\n"
 
 #. type: Title #####
-#: ../wiki/en/Running-a-Server.md:272
+#: ../wiki/en/Running-a-Server.md:275
 #, no-wrap
 msgid "`--norecord`"
 msgstr "`--norecord`"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:274
+#: ../wiki/en/Running-a-Server.md:277
 msgid "Set server not to record by default when recording is configured."
 msgstr "在配置录音时，默认设置服务器不进行录音。"
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:276
+#: ../wiki/en/Running-a-Server.md:279
 #, no-wrap
 msgid "Controlling Recording"
 msgstr "控制录音"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:279
+#: ../wiki/en/Running-a-Server.md:282
 msgid "Recording starts once the first person connects to the Server, and stops when the last person leaves."
 msgstr "录音在第一个人连接到服务器时开始，并在最后一个人离开时停止。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:281
+#: ../wiki/en/Running-a-Server.md:284
 msgid "If the Server receives a SIGUSR1 signal during a recording, it will start a new recording in a new directory. SIGUSR2 will toggle recording on/off. If [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) is enabled, you will also be able to manage the server in a way comparable to the GUI. Please see the (experimental) [JSON-RPC documentation on the recorder](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)."
 msgstr "如果服务器在录音过程中收到 SIGUSR1 信号，它将在新目录中开始新的录音。SIGUSR2 将切换录音的开/关。如果启用了 [JSON-RPC](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md) ，您还能够以类似于图形用户界面的方式管理服务器。请参阅（实验性的）关于录音器的 [JSON-RPC 文档](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md#jamulusserverstartrecording)。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:284
+#: ../wiki/en/Running-a-Server.md:287
 msgid "To send these signals using systemd, create the following two `.service` files in `/etc/systemd/system`, calling them something appropriate (e.g. `jamulusTogglerec.service`)."
 msgstr "要使用 systemd 发送这些信号，请在 `/etc/systemd/system` 中创建以下两个 `.service` 文件，将它们命名为适当的名称(例如 `jamulusTogglerec.service`)。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:286
+#: ../wiki/en/Running-a-Server.md:289
 msgid "To turn recording on or off (depending on the current state):"
 msgstr "要打开或关闭录音（取决于当前状态）："
 
 #. type: Fenced code block
-#: ../wiki/en/Running-a-Server.md:287
+#: ../wiki/en/Running-a-Server.md:290
 #, no-wrap
 msgid ""
 " [Unit]\n"
@@ -829,12 +842,12 @@ msgstr ""
 " ExecStart=/bin/systemctl kill -s SIGUSR2 jamulus-headless\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:298
+#: ../wiki/en/Running-a-Server.md:301
 msgid "To start a new recording:"
 msgstr "要开始新的录音："
 
 #. type: Fenced code block
-#: ../wiki/en/Running-a-Server.md:299
+#: ../wiki/en/Running-a-Server.md:302
 #, no-wrap
 msgid ""
 " [Unit]\n"
@@ -854,148 +867,148 @@ msgstr ""
 " ExecStart=/bin/systemctl kill -s SIGUSR1 jamulus-headless\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:310
+#: ../wiki/en/Running-a-Server.md:313
 msgid "_Note: The Jamulus service name in the `ExecStart` line needs to be the same as the `.service` file name used by systemd to control your Jamulus Server. By default, if you use the `.deb` files from the repository, it is `jamulus-headless`, as in this example."
 msgstr "_注意：`ExecStart` 行中的 Jamulus 服务名称需要与 systemd 用于控制您的 Jamulus 服务器的 `.service` 文件名相同。默认情况下，如果您使用存储库中的 `.deb` 文件，它是 `jamulus-headless`，如本例所示。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:312
+#: ../wiki/en/Running-a-Server.md:315
 msgid "Run `sudo systemctl daemon-reload` to register them for first use."
 msgstr "运行 `sudo systemctl daemon-reload` 以注册它们以供首次使用。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:314
+#: ../wiki/en/Running-a-Server.md:317
 msgid "Now you can run these with the `systemctl` command, for example:"
 msgstr "现在您可以使用 `systemctl` 命令运行这些命令，例如:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:316
+#: ../wiki/en/Running-a-Server.md:319
 msgid "`sudo systemctl start jamulusTogglerec`"
 msgstr "`sudo systemctl start jamulusTogglerec`"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:318
+#: ../wiki/en/Running-a-Server.md:321
 msgid "You can see the result of these commands if you run `systemctl status jamulus-headless` (or the respective service name you specified manually). You can also view your (sys)log."
 msgstr "如果您运行 `systemctl status jamulus-headless` （或者您手动指定的相应服务名称），您可以看到这些命令的结果。您还可以查看您的（系统）日志。"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:321
+#: ../wiki/en/Running-a-Server.md:324
 #, no-wrap
 msgid "Adding metadata to the Server"
 msgstr "向服务器添加元数据"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:324
+#: ../wiki/en/Running-a-Server.md:327
 msgid "You can add metadata to the welcome message of a Server to add additional, hidden information like contact information or policy requests for bots (this is comparable to [robots.txt](https://en.wikipedia.org/wiki/Robots.txt)). See the [Community Knowledge Base entry about metadata](/kb/2023/07/30/Server-Metadata.html) for more information."
 msgstr "您可以向服务器的欢迎消息中添加元数据，以添加额外的隐藏信息，如联系信息或对机器人的策略请求(这类似于 [robots.txt](https://en.wikipedia.org/wiki/Robots.txt)) (英文维基百科)。有关更多信息，请参阅 [关于元数据的社区知识库条目](/kb/2023/07/30/Server-Metadata.html)。"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:327
+#: ../wiki/en/Running-a-Server.md:330
 #, no-wrap
 msgid "Servers on the desktop"
 msgstr "桌面上的服务器"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:330
+#: ../wiki/en/Running-a-Server.md:333
 msgid "Jamulus can run in Server mode in the graphical environment of a computer. This gives you a graphical user interface to control most of the settings. To do this, first [install Jamulus for your platform](Getting-Started), then do one of the following:"
 msgstr "Jamulus 可以在计算机的图形环境中以服务器模式运行。这为您提供了一个图形用户界面来控制大多数设置。要做到这一点，首先[为您的平台安装 Jamulus](Getting-Started) ，然后执行以下操作之一："
 
 #. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:332
+#: ../wiki/en/Running-a-Server.md:335
 msgid "**Windows users** - Use the \"Jamulus Server\" icon in the Windows Start menu. If you want the Server to start automatically when you start Windows, check the box for this option."
 msgstr "**Windows 用户** - 使用 Windows 开始菜单中的 \"Jamulus 服务器\" 图标。如果您希望服务器在 Windows 启动时自动启动，请勾选此选项的复选框。"
 
 #. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:334
+#: ../wiki/en/Running-a-Server.md:337
 msgid "**macOS users** - Double-click the \"Jamulus Server\" icon in Applications."
 msgstr "**macOS 用户** - 双击应用程序中的 \"Jamulus 服务器\" 图标。"
 
 #. type: Bullet: '* '
-#: ../wiki/en/Running-a-Server.md:336
+#: ../wiki/en/Running-a-Server.md:339
 msgid "**Linux users** - Launch the \"Jamulus Server\" shortcut. Or you can open a terminal window (`CTRL+ALT+t` on Debian and related distros), type `jamulus -s` and hit return."
 msgstr "**Linux 用户** - 启动“Jamulus 服务器”快捷方式。或者你可以打开一个终端窗口(Debian 和相关发行版上的`CTRL+ALT+t`)，输入`jamulus -s` 然后回车。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:338
+#: ../wiki/en/Running-a-Server.md:341
 msgid "While most common functions in Jamulus can be set using the GUI, others can only be set using options given in a terminal window when the Server is launched. Exactly how you do this will depend on your operating system."
 msgstr "虽然 Jamulus 中的大多数常见功能可以使用图形界面（GUI）进行设置，但其他一些功能只能在服务器启动时在终端窗口中使用给定的选项进行设置。具体的操作方式将取决于您的操作系统。"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:340
+#: ../wiki/en/Running-a-Server.md:343
 #, no-wrap
 msgid "For example on Windows, to use a specific settings file, right-click on the Jamulus shortcut and choose **Properties** > **Target**. Add the necessary arguments to Jamulus.exe:\n"
 msgstr "例如在 Windows 上，要使用特定的设置文件，请右键单击 Jamulus 快捷方式并选择**属性**>**目标**。将必要的参数添加到 Jamulus.exe:\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:342
+#: ../wiki/en/Running-a-Server.md:345
 #, no-wrap
 msgid " `\"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100`\n"
 msgstr " `\"C:\\Program Files\\Jamulus\\Jamulus.exe\" --serverbindip 192.168.0.100`\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:344
+#: ../wiki/en/Running-a-Server.md:347
 msgid "For macOS, start a Terminal window and run Jamulus with the desired options like this:"
 msgstr "对于 macOS，启动终端窗口并使用所需的选项运行 Jamulus，如下所示:"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:346
+#: ../wiki/en/Running-a-Server.md:349
 #, no-wrap
 msgid " `/Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100`\n"
 msgstr " `/Applications/Jamulus.app/Contents/MacOS/Jamulus --serverbindip 192.168.0.100`\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:348
+#: ../wiki/en/Running-a-Server.md:351
 #, no-wrap
 msgid "**Note** Command line options will set the Server’s defaults at startup. You can override them while the Server is running using their corresponding GUI controls.\n"
 msgstr "**注意** 命令行选项将在启动时设置服务器的默认值。在服务器运行时，您可以使用其相应的图形用户界面控件覆盖它们。\n"
 
 #. type: Title ###
-#: ../wiki/en/Running-a-Server.md:349
+#: ../wiki/en/Running-a-Server.md:352
 #, no-wrap
 msgid "The Server status icon"
 msgstr "服务器状态图标"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:352
+#: ../wiki/en/Running-a-Server.md:355
 msgid "When a Server is running in GUI mode, the operating system will show an icon in the system tray or status area that indicates whether the Server has connections:"
 msgstr "当服务器在图形用户界面模式下运行时，操作系统将在系统托盘或状态栏中显示一个图标，指示服务器是否有连接："
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:354
+#: ../wiki/en/Running-a-Server.md:357
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is empty\n"
 msgstr "<figure><img src=\"{% include img/zh-CN-screenshots/server-inactive.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Jamulus 服务器图标的图片\"></figure> 服务器为空\n"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:356
+#: ../wiki/en/Running-a-Server.md:359
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of the Jamulus Server icon\"></figure> The Server is occupied\n"
 msgstr "<figure><img src=\"{% include img/zh-CN-screenshots/server-active.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Jamulus 服务器图标图片\"></figure> 服务器被占用\n"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:359
+#: ../wiki/en/Running-a-Server.md:362
 #, no-wrap
 msgid "Backing up the Server"
 msgstr "备份服务器"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:362
+#: ../wiki/en/Running-a-Server.md:365
 msgid "{% include_relative Include-Backing-Up.md %}"
 msgstr "{% include_relative Include-Backing-Up.md %}"
 
 #. type: Bullet: '- '
-#: ../wiki/en/Running-a-Server.md:364
+#: ../wiki/en/Running-a-Server.md:367
 msgid "Headless Servers do not use `.ini` files. All configuration is given as command line options. If you are running a Server in GUI mode, after reading any command line options on start, it will store its configuration in the `Jamulusserver.ini` file."
 msgstr "无头服务器不使用 `.ini` 文件。所有配置都作为命令行选项给出。如果您以图形用户界面模式运行服务器，在启动时读取任何命令行选项后，它将把配置存储在 `Jamulusserver.ini` 文件中。"
 
 #. type: Title ##
-#: ../wiki/en/Running-a-Server.md:365
+#: ../wiki/en/Running-a-Server.md:368
 #, no-wrap
 msgid "Troubleshooting"
 msgstr "故障排除"
 
 #. type: Plain text
-#: ../wiki/en/Running-a-Server.md:367
+#: ../wiki/en/Running-a-Server.md:370
 msgid "If you are having other problems, [see this guide](Server-Troubleshooting)."
 msgstr "如果您遇到其他问题，[请参阅本指南](Server-Troubleshooting)。"
 

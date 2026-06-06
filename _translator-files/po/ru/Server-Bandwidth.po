@@ -53,7 +53,9 @@ msgstr "Пропускная способность аудиосистемы"
 
 #. type: Plain text
 #: ../wiki/en/Server-Bandwidth.md:16
-msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+#, fuzzy
+#| msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : high/medium/low * Audio buffer duration : 2.67 ms, 5.33 ms, 10.67 ms, 21.33 ms"
+msgid "The audio settings have an impact on the required network bandwidth. The table below summarises network requirements with respect to the configuration of: * Channels : stereo/mono * Quality : max/high/medium/low * Audio buffer duration : 2.67 ms (64 samples), 5.33 ms (128 samples), 10.67 ms (256 samples)"
 msgstr "Настройки звука влияют на требуемую пропускную способность сети. В таблице ниже приведены требования к сети в зависимости от конфигурации: * Каналы: стерео/моно * Качество: высокое/среднее/низкое * Продолжительность звукового буфера: 2,67 мс, 5,33 мс, 10,67 мс, 21,33 мс"
 
 #. type: Plain text
@@ -62,17 +64,28 @@ msgid "With the following units * ms : milliseconds * Kbit/s : Kilo-bits per sec
 msgstr "Со следующими единицами измерения * мс : миллисекунды * Кбит/с : Килобит в секунду (напоминание: 1 Мбит/с = 1024 Кбит/с, 1 Кбайт/с = 8 Кбит/с) * Мбит/с : Мегабит в секунду"
 
 #. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:30
-#, no-wrap
+#: ../wiki/en/Server-Bandwidth.md:32
+#, fuzzy, no-wrap
+#| msgid ""
+#| "| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
+#| "| --------- | ------ | -------- | -------- | -------- | -------- |\n"
+#| "| Stereo    | High   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
+#| "| Stereo    | Medium | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
+#| "| Stereo    | Low    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
+#| "| Mono      | High   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
+#| "| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
+#| "| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
 msgid ""
-"| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) | Bandwidth (for buffer : 21.33 ms) |\n"
-"| --------- | ------ | -------- | -------- | -------- | -------- |\n"
-"| Stereo    | High   | 894 Kbit/s | 657 Kbit/s | 541 Kbit/s | 483 Kbit/s |\n"
-"| Stereo    | Medium | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s |\n"
-"| Stereo    | Low    | 606 Kbit/s | 372 Kbit/s | 256 Kbit/s | 198 Kbit/s |\n"
-"| Mono      | High   | 672 Kbit/s | 444 Kbit/s | 328 Kbit/s | 270 Kbit/s 8|\n"
-"| Mono      | Medium | 594 Kbit/s | 366 Kbit/s | 250 Kbit/s | 192 Kbit/s |\n"
-"| Mono      | Low    | 534 Kbit/s | 306 Kbit/s | 190 Kbit/s | 132 Kbit/s |\n"
+"| Channels  | Quality | Bandwidth (for buffer : 2.67 ms) |  Bandwidth (for buffer : 5.33 ms) | Bandwidth (for buffer : 10.67 ms) |\n"
+"| --------- | ------ | -------- | -------- | -------- |\n"
+"| Stereo    | Max    | 2004 Kbit/s | 1770 Kbit/s | 1654 Kbit/s |\n"
+"| Stereo    | High   | 906 Kbit/s  | 729 Kbit/s  | 613 Kbit/s  |\n"
+"| Stereo    | Medium | 678 Kbit/s  | 447 Kbit/s  | 331 Kbit/s  |\n"
+"| Stereo    | Low    | 612 Kbit/s  | 375 Kbit/s  | 259 Kbit/s  |\n"
+"| Mono      | Max    | 1236 Kbit/s | 1002 Kbit/s | 886 Kbit/s  |\n"
+"| Mono      | High   | 684 Kbit/s  | 480 Kbit/s  | 364 Kbit/s  |\n"
+"| Mono      | Medium | 600 Kbit/s  | 369 Kbit/s  | 253 Kbit/s  |\n"
+"| Mono      | Low    | 540 Kbit/s  | 309 Kbit/s  | 193 Kbit/s  |\n"
 msgstr ""
 "| Каналы | Качество | Пропускная способность (для буфера : 2,67 мс) | Пропускная способность (для буфера : 5,33 мс) | Пропускная способность (для буфера : 10,67 мс) | Пропускная способность (для буфера : 21,33 мс)|\n"
 "| --------- | ------ | -------- | -------- | -------- | -------- |\n"
@@ -84,13 +97,13 @@ msgstr ""
 "| Моно | Низкий | 534 Кбит/с | 306 Кбит/с | 190 Кбит/с | 132 Кбит/с |\n"
 
 #. type: Title ##
-#: ../wiki/en/Server-Bandwidth.md:31
+#: ../wiki/en/Server-Bandwidth.md:33
 #, no-wrap
 msgid "Network bandwidth"
 msgstr "Пропускная способность сети"
 
 #. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:38
+#: ../wiki/en/Server-Bandwidth.md:40
 #, no-wrap
 msgid ""
 "There is one upstream (musician sending to the Server) and one downstream (server sending back the mix to the musician)\n"
@@ -106,6 +119,6 @@ msgstr ""
 "</figure>\n"
 
 #. type: Plain text
-#: ../wiki/en/Server-Bandwidth.md:40
+#: ../wiki/en/Server-Bandwidth.md:42
 msgid "Note also that mean ADSL2 transfer rate is 10 Mbit/s for downstream and 1 Mbit/s for upstream. The actual performance depends on distance to the provider, which may [theoretically range from 24 Mbit/s at 0.3 km to 1.5 Mbit/s at 5.2 km](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) for download rate."
 msgstr "Отметим также, что средняя скорость передачи данных ADSL2 составляет 10 Мбит/с для нисходящего потока и 1 Мбит/с для восходящего. Фактическая производительность зависит от расстояния до провайдера, которое может [теоретически варьироваться от 24 Мбит/с на расстоянии 0,3 км до 1,5 Мбит/с на расстоянии 5,2 км](https://en.wikipedia.org/wiki/Asymmetric_digital_subscriber_line) для скорости загрузки."
