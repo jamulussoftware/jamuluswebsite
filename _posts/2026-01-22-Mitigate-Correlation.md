@@ -42,19 +42,19 @@ Using IPs captured by a Server, one can correlate **when an IP address stops pin
 
 ### Listeners
 
-There are currently seven known Servers on public Jamulus space, one in each genre. They are hosted on [DigitalOcean](https://digitalocean.com) instances. They are named ***Duet***, and have a userlimit set at two. They all share the same IP and each sit on different ports.  
+There are currently seven known Servers on public Jamulus space, one in each genre. They are hosted on [DigitalOcean](https://digitalocean.com) instances. They are named ***Trio***, and have a userlimit set at three. They all share the same IP and each sit on different ports.  
 These Servers are &ldquo;listening&rdquo; for pings from clients, and packet capturing them to get the IP addresses of user clients.
 
 ```
 Genre               Name   IP:port
 
-Any Genre1          Duet   24.199.107.192:22121
-Any Genre2          Duet   24.199.107.192:22122
-Any Genre3          Duet   24.199.107.192:22123
-Rock                Duet   24.199.107.192:22124
-Jazz                Duet   24.199.107.192:22125
-Classical/Folk      Duet   24.199.107.192:22126
-Choral/Barbershop   Duet   24.199.107.192:22127
+Any Genre1          Trio   24.199.107.192:22121
+Any Genre2          Trio   24.199.107.192:22122
+Any Genre3          Trio   24.199.107.192:22123
+Rock                Trio   24.199.107.192:22124
+Jazz                Trio   24.199.107.192:22125
+Classical/Folk      Trio   24.199.107.192:22126
+Choral/Barbershop   Trio   24.199.107.192:22127
 ```
 
 ### User Data
@@ -66,7 +66,7 @@ IP addresses of users collected from the listeners are being correlated with joi
 
 ### Clients
 
-When you open the Connect dialog window your client starts sending pings to every Server in the list. **`24.199.107.192`** is the IP address of one of those Servers. A Server using **`24.199.107.192`** exists on each genre, their names are ***Duet***.
+When you open the Connect dialog window your client starts sending pings to every Server in the list. **`24.199.107.192`** is the IP address of one of those Servers. A Server using **`24.199.107.192`** exists on each genre, their names are ***Trio***.
 
 Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** will prevent the listeners from collecting your IP address and breaks correlation. This will help prevent you from being tracked.
 
