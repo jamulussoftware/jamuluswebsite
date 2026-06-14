@@ -29,7 +29,7 @@ Anyone running a Server can capture those &ldquo;pings&rdquo; using tools like `
 
 A user will either select a Server from the list, or type in a Server address:port, click Connect or hit Enter, and the client will then attempt to connect to the Server. At this point the client **stops** sending the &ldquo;pings&rdquo; and the client typically completes the connection to the Server.
 
-Each genre has a Directory Server. The purpose of the Directory Server is to provide clients with a listing of Servers registered to it, and the users connected to each Server. This is public data, and viewed in the Connect dialog window, and available through a number of websites, like [explorer.jamulus.io](https://explorer.jamulus.io), [jamulusjams.com](https://jamulusjams.com), or [jamscout.de](https://jamscout.de).
+Each genre has a Directory Server. The purpose of the Directory Server is to provide clients with a listing of Servers registered to it, and the users connected to each Server. This is public data, and viewed in the Connect dialog window, and available through a number of websites, like [explorer.jamulus.io](https://explorer.jamulus.io), [jamulusjams.com](https://jamulusjams.com), [jamscout.de](https://jamscout.de), or [jamulus.haggy.org](https://jamulus.haggy.org).
 
 Anyone can run an explorer instance. An explorer queries each genres Directory Server to get a list of Servers, then queries each Server directly to get a list of connected users. This is public data. **There is no IP address information on users, just the user profile data**. Again this is by design to prevent IP&lt;&dash;&gt;username mapping.  This data can also be saved for later processing.
 
