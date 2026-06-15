@@ -38,7 +38,7 @@ Anyone can run an explorer instance. An explorer queries each genres Directory S
 Anyone can run Servers **and** explorer instances.  
 Using IPs captured by a Server, one can correlate **when an IP address stops pinging** &lpar;ie; just connected to a Server&rpar; and **when a new client joined a Server** &lpar;username data from explorer query directly to a Jamulus Server&rpar; to produce an IP&lt;&dash;&gt;username mapping. The IP address can then be processed to provide geolocation data. From this one can determine the approximate location of a specific user.
 
-## Current Correlation (as of 2026-03-11)
+## Current Correlation (as of 2026-06-14)
 
 ### Listeners
 
@@ -59,7 +59,7 @@ Choral/Barbershop   Trio   24.199.107.192:22127
 
 ### User Data
 
-There is an explorer instance collecting lists of Servers and users running from **`137.184.43.255`**. It is hosted on a [DigitalOcean](https://digitalocean.com) instance.  
+There are explorer instances collecting lists of Servers and users running from **`137.184.43.255`**, and **`134.199.209.51`**. They are hosted on [DigitalOcean](https://digitalocean.com) instances.  
 IP addresses of users collected from the listeners are being correlated with join events derived from the explorer instance to produce IP&lt;&dash;&gt;username mappings. IP addresses are processed to provide geolocation data of users. This geolocation data is being collected **and** displayed without express permission of users, and with no means to opt in or out.
 
 ## Mitigations
@@ -73,10 +73,8 @@ Blocking outgoing **UDP** traffic on your DAW or router to **`24.199.107.192`** 
 ### Server Admins
 
 Server admins can decide to prevent user tracking by blocking the explorer probe.  
-If you run a Server on the Jamulus public network, it is currently being indexed by the explorer instances on **`137.184.43.255`** and **`89.168.107.178`**.
+If you run a Server on the Jamulus public network, it is currently being indexed by the explorer instances on **`137.184.43.255`**, and **`134.199.209.51`**.
 
-Blocking incoming and outgoing **UDP** traffic from **`137.184.43.255`** will prevent the explorer from indexing your Server and breaks correlation. This will disable user tracking on your Server from the blocked Server.
+Blocking incoming and outgoing **UDP** traffic from **`137.184.43.255`** and **`134.199.209.51`** will prevent the explorer from indexing your Server and breaks correlation. This will disable user tracking on your Server from the blocked Server.
 
 ---
-
-Updated information can be found here: [https://jamulusjams.com/block-user-tracking.html](https://jamulusjams.com/block-user-tracking.html)
