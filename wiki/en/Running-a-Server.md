@@ -365,6 +365,30 @@ When a Server is running in GUI mode, the operating system will show an icon in 
 
 - Headless Servers do not use `.ini` files. All configuration is given as command line options. If you are running a Server in GUI mode, after reading any command line options on start, it will store its configuration in the `Jamulusserver.ini` file.
 
+## Increasing the UDP receive buffer (Linux)
+
+The Linux kernel's default UDP receive buffer (~208 KB) can be exhausted on a busy Server, causing the kernel to **silently drop incoming packets**. The result is complete audio interruptions for connected Clients — symptoms that look like a network problem but originate on the Server itself.
+
+This is especially likely with five or more simultaneous players. Increasing the buffer to 4 MB costs nothing and prevents it:
+
+~~~
+sudo sysctl -w net.core.rmem_max=4194304 net.core.rmem_default=4194304
+printf 'net.core.rmem_max=4194304\nnet.core.rmem_default=4194304\n' | sudo tee /etc/sysctl.d/99-jamulus.conf
+sudo systemctl restart jamulus-headless
+~~~
+
+Restart the Server after running these commands so that the new socket picks up the larger buffer. The setting in `/etc/sysctl.d/` persists across reboots.
+
+To verify the buffer is not being overwhelmed during a session, find your Server's port in hexadecimal (e.g. the default port 22124 = `565C`) and check the drop counter:
+
+~~~
+grep -i ':565C' /proc/net/udp | awk '{print $2, $NF}'
+~~~
+
+The last number is the drop count. It should be near 0 immediately after restart and remain low during normal use. You can convert your port to hex with `printf '%X\n' <port>`.
+
+---
+
 ## Troubleshooting
 
 If you are having other problems, [see this guide](Server-Troubleshooting).
