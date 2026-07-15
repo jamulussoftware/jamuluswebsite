@@ -369,7 +369,7 @@ When a Server is running in GUI mode, the operating system will show an icon in 
 
 The Linux kernel's default UDP receive buffer (~208 KB) can be exhausted on a busy Server, causing the kernel to **silently drop incoming packets**. The result is complete audio interruptions for connected Clients — symptoms that look like a network problem but originate on the Server itself.
 
-This is especially likely with five or more simultaneous players. Increasing the buffer to 4 MB costs nothing and prevents it:
+This is especially likely with five or more simultaneous players. Increasing the buffer to 4 MB prevents it:
 
 ~~~
 sudo sysctl -w net.core.rmem_max=4194304 net.core.rmem_default=4194304
