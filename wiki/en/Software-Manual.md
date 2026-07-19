@@ -328,6 +328,12 @@ that user was already stored. You can set all users in an occupied server to thi
 
 Increases the gain from your device. Use this if your device delivers a gain that is too quiet for Jamulus.
 
+### Reverb Preset
+
+This lets you select a preset for the builtin reverb.
+It comes with five presets: `Subtle`, `Stadium`, `Cupboard`, `Dark` and `Halves`
+Jamulus uses [MVerb](https://github.com/martineastwood/mverb), a professional grade open source reverb by Martin Eastwood. The presets were ported from the VST plugin version.
+
 ### Feedback Protection
 
 Attempts to detect audio feedback loops or loud noise in the first three seconds after you connected to a server. Once detected, this feature will show a message and activate the "Mute Myself" button to mute you in your own mix.
