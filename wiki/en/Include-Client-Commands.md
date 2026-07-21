@@ -1,6 +1,6 @@
 - `-M` or `--mutestream`  Prevent others on a server from hearing what I play
 - `--mutemyown` Prevent me from hearing what I play in the server mix (headless only)
--  `-c` or `--connect`  Connect to given server address on startup, format `address[:port]`. `-c` connects directly, so the server's port must already be reachable from your computer — you may need to open it in the router, cloud firewall/security group, and/or OS firewall. (Selecting a server from the directory list in the GUI opens the port for you; `-c` does not, whether or not the server is listed.)
+-  `-c` or `--connect`  Connect to given server address on startup, format `address[:port]`. `-c` connects directly, so the server's port must already be reachable from your computer — the server's operator may need to open the port in the router, cloud firewall/security group, and/or OS firewall. (Selecting a server from the directory list in the GUI opens the port for you; `-c` does not, whether or not the server is listed.)
 -  `-j` or `--nojackconnect`  Disable auto JACK connections
 -  `--ctrlmidich`  MIDI channel to listen on, Jamulus control + MIDI control number and count of consecutive CC numbers (or Jamulus channels), pick-up mode, device selection option. Format: `channel[;fn[*n]][;pn[*n]][;sn[*n]][;mn[*n]][;on][;u][;dDeviceName]` See [Tips & Tricks](Tips-Tricks-More#using---ctrlmidich-for-midi-controllers).
 - `--clientname`  Window title and JACK client name
