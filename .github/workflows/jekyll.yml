@@ -62,7 +62,7 @@ jobs:
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --future"
+          jekyll/builder:4.4.1 /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && bundle install && bundle exec jekyll build --future"
       - name: Zip Website
         if: ${{ github.event_name == 'pull_request' }}
         run: zip -r ${{ github.workspace }}/website.zip _site/*
