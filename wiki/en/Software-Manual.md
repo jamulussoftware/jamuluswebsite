@@ -103,7 +103,7 @@ The button that follows the field allows the current entry to be removed from th
 The audio mixer screen shows each user connected to the server (including yourself).
 The faders allow you to adjust the level of what you hear without affecting what others hear.
 
-The VU meter shows the input level at the server - that is, the sound being sent.
+The VU meter shows the input level at the server — that is, the sound being sent.
 
 If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset).
 
@@ -148,7 +148,7 @@ Closes all the windows and exits the application.
 
 ### Edit > Clear All Stored Solo/Mute Settings
 
-Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins - or you join a server where they are playing - the settings will automatically be applied.  Use this command to clear _all_ these stored settings.
+Whenever you Solo or Mute a channel, Jamulus remembers these settings. Even if that person leaves and rejoins — or you join a server where they are playing — the settings will automatically be applied.  Use this command to clear _all_ these stored settings.
 
 ### Edit > Set All Faders to New Client Level
 
@@ -350,11 +350,11 @@ With MIDI-in enabled, Jamulus will detect the MIDI devices available for connect
 
 ### MIDI parameters
 
-There is one global MIDI channel parameter (0-16) and two parameters you can set for each item controlled: First MIDI CC and consecutive CC numbers (count). First set the channel you want Jamulus to listen on (0 for all channels). Then, for each item you want to control (volume fader, pan, solo, mute), set the first MIDI CC (CC number to start from) and number of consecutive CC numbers (count) you wish to assign to that particular item. You can either type in the MIDI CC values or use the "Learn" button: click on "Learn", actuate the fader/knob/button on your MIDI controller, and the MIDI CC number will be detected and saved.
+There is one global MIDI channel parameter (0–16) and two parameters you can set for each item controlled: First MIDI CC and consecutive CC numbers (count). First set the channel you want Jamulus to listen on (0 for all channels). Then, for each item you want to control (volume fader, pan, solo, mute), set the first MIDI CC (CC number to start from) and number of consecutive CC numbers (count) you wish to assign to that particular item. You can either type in the MIDI CC values or use the "Learn" button: click on "Learn", actuate the fader/knob/button on your MIDI controller, and the MIDI CC number will be detected and saved.
 
-As an example, a 'First MIDI CC' of 0 and a 'Count' of 8 for volume faders will mean that CC numbers 0 - 7 will control the volume faders for up to 8 mixer channels.
+As an example, a 'First MIDI CC' of 0 and a 'Count' of 8 for volume faders will mean that CC numbers 0–7 will control the volume faders for up to 8 mixer channels.
 
-There is one exception that does not require establishing consecutive CC numbers which is the “Mute Myself” parameter - it only requires a single CC number as it is only applied to one’s own audio stream.
+There is one exception that does not require establishing consecutive CC numbers which is the “Mute Myself” parameter — it only requires a single CC number as it is only applied to one’s own audio stream.
 
 ### Pick-up Mode
 
@@ -399,4 +399,4 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
 
 # Controlling the Client via API
 
-In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases - for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).
+In addition to the CLI, Jamulus can be controlled using an API. This is beneficial for advanced use cases — for example, where there is no GUI, or another application needs to interact with Jamulus. Please note that the API is still experimental. Information on the [JSON-RPC API can be found in the main repository](https://github.com/jamulussoftware/jamulus/blob/main/docs/JSON-RPC.md).

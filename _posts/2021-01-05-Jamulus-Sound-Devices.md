@@ -19,11 +19,11 @@ Just [edit this page and wait for an approval](https://github.com/jamulussoftwar
 
 ## Audio devices known to work with Jamulus
 
-**NOTE** the device must have a sample rate of *48 kHz (DVD quality)* - which many devices do.
+**NOTE** the device must have a sample rate of *48 kHz (DVD quality)* — which many devices do.
 
 Additionally, it should _allow you to listen to the computer’s audio signal_. [See this explanation](https://jamulus.io/wiki/FAQ#why-should-i-not-listen-to-my-own-signal). This may or may not be significant depending on the instrument you play.
  
-On Windows, it’s recommended to choose a device with a *native ASIO driver* - not ASIO4ALL (or other generic ASIO drivers).
+On Windows, it’s recommended to choose a device with a *native ASIO driver* — not ASIO4ALL (or other generic ASIO drivers).
 
 ---
 
@@ -199,7 +199,7 @@ The ART USBMIX4 appears to be a re-branded [Ammoon AGM04](https://www.ammoon.com
 
 **[Behringer XENYX series](https://www.behringer.com/series.html?category=R-BEHRINGER-XENYXSERIES)**, USB digital audio interfaces
 
-**Windows**: 😐 Doesn't work great. The [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) does not appear to be very good. Audio latency with this "unsupported" driver seems poor - not better than ASIO4ALL.
+**Windows**: 😐 Doesn't work great. The [Behringer ASIO Driver](http://www.behringerdownload.de/_software/BEHRINGER_2902_X64_2.8.40.zip) does not appear to be very good. Audio latency with this "unsupported" driver seems poor — not better than ASIO4ALL.
 
 **macOS**: ✅ Works great.
 
@@ -294,7 +294,7 @@ _More testing required._
 
 **[Roland TD-27](https://www.roland.com/uk/products/td-27/)** USB drum sound module 
 
-**Windows**: ✅ Works. The local master signal is always routed to the Headphones. Using JACK is neccessary to change the signal-routing so that you hear your signal on the headphones - not the local signal of the drum module:
+**Windows**: ✅ Works. The local master signal is always routed to the Headphones. Using JACK is neccessary to change the signal-routing so that you hear your signal on the headphones — not the local signal of the drum module:
 Configuration Changes: On the TD27 open: SYSTEM -> USB-AUDIO: Driver Mode VENDOR
                                          SYSTEM -> OUTPUT -> PAD MAS: remove any pad signal from MASTER(L+R);
                                                              PAD DIR: add desired(all) pad signals to DIRECT(1/2)
@@ -447,7 +447,7 @@ Sounds great, can achieve 32 frame buffer and works on *Windows* and *Linux*.
 
 **Windows**: ❓ Should work.
 
-**macOS**: ✅ Works well. Not yet tested on Big Sur. Assign the individual inputs in Jamulus or the corresponding inputs to a stereo auxiliary mix (to be patched in "Universal Control") if more than two channels. Use outputs 17-18 to monitor the Jamulus mix.  
+**macOS**: ✅ Works well. Not yet tested on Big Sur. Assign the individual inputs in Jamulus or the corresponding inputs to a stereo auxiliary mix (to be patched in "Universal Control") if more than two channels. Use outputs 17–18 to monitor the Jamulus mix.  
 
 **Linux**: ❓ Not tested. This device may (or may not) work, see [this post](https://forums.presonus.com/viewtopic.php?f=67&t=2717).
 

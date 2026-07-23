@@ -149,7 +149,7 @@ MIDI controller parameters can be set using the `--ctrlmidich` command-line opti
 
      2. `u` enables `MIDI Pick-up Mode` for the fader and pan controls.
 
-     3. `d` is an option to specify a particular MIDI input device by name -- without this, it is up to the user to make connections with a connection manager or by other means, and on Windows non-JACK Jamulus all devices will be assigned to Jamulus; with it, only the specified device will be used. For example:
+     3. `d` is an option to specify a particular MIDI input device by name — without this, it is up to the user to make connections with a connection manager or by other means, and on Windows non-JACK Jamulus all devices will be assigned to Jamulus; with it, only the specified device will be used. For example:
 
         ```
         --ctrlmidich "1;f0*8;dnanoKontrol"

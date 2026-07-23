@@ -217,7 +217,7 @@ $ git status
 
 Make sure there are no pending changes shown by `git status`.
 
-Make sure `ChangeLog` contains the right version for the planned release - this is "the release version number will be" number.  If not, update it and commit the change.
+Make sure `ChangeLog` contains the right version for the planned release — this is "the release version number will be" number.  If not, update it and commit the change.
 
 - Run `./tools/changelog-helper.sh add-missing-entries` to scan Git history and Github milestone for PRs and to auto-add them to the changelog.
 - Run `./tools/changelog-helper.sh group-entries` to group all entries for the current release
@@ -242,7 +242,7 @@ mkdir 3.7.0
 cd 3.7.0
 ```
 
-Upload all the files. Then in the SourceForge web UI, for each of the files uploaded, click the ℹ️ icon next to the file (in Files in the admin tools) and set it as "Default for (appropriate) platform)" Note that unsetting the default to "none" automatically picks the newest, so don't do that -- explicitly set the default when the release announcement is posted. Also note that legacy Mac, Headless and WinJACK users will need to just find those links on their own.
+Upload all the files. Then in the SourceForge web UI, for each of the files uploaded, click the ℹ️ icon next to the file (in Files in the admin tools) and set it as "Default for (appropriate) platform)" Note that unsetting the default to "none" automatically picks the newest, so don't do that — explicitly set the default when the release announcement is posted. Also note that legacy Mac, Headless and WinJACK users will need to just find those links on their own.
 
 ## Website: check links
 
@@ -320,7 +320,7 @@ Current state: <!-- Planning|Translations (beta)|Code freeze (rc)|Released -->
   - [ ] Update the version number in `Jamulus.pro` and add the release date to the Changelog header and commit.
   - [ ] Wait for the release build to complete.
   - [ ] Push the release to [ann0see/jamulussign](https://github.com/ann0see/jamulussign/) for macOS signing and upload signed binary [from the signing repo](https://github.com/ann0see/jamulussign/releases) repo [to the official one](https://github.com/jamulussoftware/jamulus/releases).
-  - [ ] Do a smoke test for Windows/Mac/Linux -- Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
+  - [ ] Do a smoke test for Windows/Mac/Linux — Do the binaries start/connect properly? Can earlier Jamulus versions properly connect to a server based on the new release?
   - [ ] Do a smoke test of the upgrade notification (do this _very quickly_)
     - [ ] Install the release build on _one_ of the update notification Servers
     - [ ] Run the _previous release_ (not an intermediate) build of GUI Client and Server
@@ -389,6 +389,6 @@ Thanks to everyone who did their part to make this release happen:
 
 
 This Discussion thread will be locked in order to keep things organized.
-Feedback, questions or suspected bug reports are appreciated nevertheless -- please start a new [Discussion on Github](https://github.com/jamulussoftware/jamulus/discussions/new) for them.
+Feedback, questions or suspected bug reports are appreciated nevertheless — please start a new [Discussion on Github](https://github.com/jamulussoftware/jamulus/discussions/new) for them.
 
 ~~~

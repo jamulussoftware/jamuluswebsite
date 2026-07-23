@@ -32,7 +32,7 @@ In order to make these automated processes happen, there are a series of scripts
 These are contained in the `_po4a-tools/` folder and there are 5 of them:
 
 **po4a-update-templates.sh**:
-When a source .md file in English is edited, this script will update its .po file counterparts in every language, adding/removing/changing the relevant strings as applicable. If a new file has been added, it will create the corresponding new .po file. Similarly, if a new language is added (also automated - more on this later), it will populate the new language folder with all the appropriate .po files. In short, this script will update/create all the relevant .po files in every language folder contained in `_translator-files/po/`.
+When a source .md file in English is edited, this script will update its .po file counterparts in every language, adding/removing/changing the relevant strings as applicable. If a new file has been added, it will create the corresponding new .po file. Similarly, if a new language is added (also automated — more on this later), it will populate the new language folder with all the appropriate .po files. In short, this script will update/create all the relevant .po files in every language folder contained in `_translator-files/po/`.
 
 **po4a-create-all-targets.sh**:
 This script takes all the .po files in `_translator-files/po/*LANG*/` and uses them to generate the target translated .md files ready to be deployed. These target files are not stored in the repository, but are created via a GitHub action (which calls this script) just prior to deploying the website or zipping and uploading it (more on this later). This script also triggers the next one before exiting (`po4a-stats.sh`).
@@ -50,12 +50,12 @@ Triggered when a new language is added. First it creates a folder for the new la
 
 These are contained in `.github/workflows/` and among other things, they automate the execution of the appropriate po4a scripts depending on the event that triggers them.
 
-The website repository operates with two branches - 'release', which is the source for the live website, and 'next-release', which is where changes to the documentation happen in between releases of the Jamulus application. These different functions are relevant when it comes to how the GitHub actions scripts behave, explained as follows:
+The website repository operates with two branches — 'release', which is the source for the live website, and 'next-release', which is where changes to the documentation happen in between releases of the Jamulus application. These different functions are relevant when it comes to how the GitHub actions scripts behave, explained as follows:
 
 **main.yml**:
 This script is triggered by 'push' events to the 'release' branch only. This is a summary of what it does:
 
-1- Checks whether po4a and its dependencies have been previously cached. If they have, it retrieves the cache, and if not, it performs the installation and creates the cache so it is available in future - this step is shared by all three GH actions scripts and is what is in the `po4a-cache.sh` script. The po4a installation is necessary to run the po4a scripts later in the workflow. A po4a .deb file is stored in the 'assets' jamulus repository as a recent version is required that is not available from any official repositories.
+1- Checks whether po4a and its dependencies have been previously cached. If they have, it retrieves the cache, and if not, it performs the installation and creates the cache so it is available in future — this step is shared by all three GH actions scripts and is what is in the `po4a-cache.sh` script. The po4a installation is necessary to run the po4a scripts later in the workflow. A po4a .deb file is stored in the 'assets' jamulus repository as a recent version is required that is not available from any official repositories.
 
 2- dorny/paths-filter@v2 checks whether the commits being pushed contain any changes to English files in `wiki/en/`. If so, `po4a-update-templates.sh` is run to update/add the .po files for all languages.
 
@@ -86,14 +86,14 @@ This script is for adding a new language. It is triggered when an issue is opene
 
 8- Creates the target files with `po4a-create-all-targets.sh` and the 'Statistics' file.
 
-9- Builds the site but doesn't deploy nor zip/upload it - this and the previous step are just a check to verify that it builds properly.
+9- Builds the site but doesn't deploy nor zip/upload it — this and the previous step are just a check to verify that it builds properly.
 
 **jekyll.yml**:
 This is the more complex script. A distinction between 'pull request' and 'push' events will be made to better understand the flow of steps for each case:
 
 - **Pull Request events**. Applicable to both 'release' and 'next-release'; the steps are the same for both assuming the same PR content:
 
-    1- dorny/paths-filter@v2 checks if English source files have changed/been added (but doesn't determine whether the script exits or not - see below).
+    1- dorny/paths-filter@v2 checks if English source files have changed/been added (but doesn't determine whether the script exits or not — see below).
 
     2- Checks po4a cache (as above).
 

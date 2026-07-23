@@ -5,7 +5,7 @@ lang: "en"
 permalink: "/wiki/Getting-Started"
 ---
 
-# Setup - getting started with Jamulus
+# Setup — getting started with Jamulus
 
 To get the best from Jamulus, at a minimum you will need:
 

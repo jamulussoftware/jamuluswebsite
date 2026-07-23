@@ -11,7 +11,7 @@ permalink: "/wiki/QOS-Windows"
 
 Jamulus uses Quality of Service (QoS) to mitigate network jitter delays.
 
-If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16-18.  Jamulus sets the DS Field byte to 128 (or 0x80) to select DSCP/CS4 in an IPv4 or IPv6 packet header. Other byte values can be set using the -Q option, e.g. -Q [0..255].  However, most people will have no need to do this.
+If you want to explore the effect of non-default settings, see [RFC4594](https://datatracker.ietf.org/doc/html/rfc4594) pages 16–18.  Jamulus sets the DS Field byte to 128 (or 0x80) to select DSCP/CS4 in an IPv4 or IPv6 packet header. Other byte values can be set using the -Q option, e.g. -Q [0..255].  However, most people will have no need to do this.
 
 Jamulus' QoS settings (including the default) are set to 0 on recent Windows and macOS because of the operating system. To use QoS on Windows, follow these instructions. Note that you may need to repeat this procedure every time Jamulus is updated.
 

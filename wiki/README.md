@@ -14,7 +14,7 @@ The translated files are created via a GitHub action right before the website is
 
 ### Using po4a locally to update templates/create translated .md files
 
-In order to run the `po4a-update-templates.sh` and `po4a-create-all-targets.sh` scripts locally, you will need to do so on a Linux distro with `po4a` installed. The minimum version required is 0.63, which may not be available from official repos. An unofficial .deb package is available [here](https://github.com/jamulussoftware/assets/tree/main/po4a). You can also compile it yourself - visit [its GitHub page](https://github.com/mquinson/po4a) and follow the instructions there on compiling po4a.
+In order to run the `po4a-update-templates.sh` and `po4a-create-all-targets.sh` scripts locally, you will need to do so on a Linux distro with `po4a` installed. The minimum version required is 0.63, which may not be available from official repos. An unofficial .deb package is available [here](https://github.com/jamulussoftware/assets/tree/main/po4a). You can also compile it yourself — visit [its GitHub page](https://github.com/mquinson/po4a) and follow the instructions there on compiling po4a.
 
 ### Notes:
 

@@ -22,7 +22,7 @@ permalink: "/wiki/FAQ"
 
 ### Is there a metronome, synchronization, or some other way of keeping in time?
 
-No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30-50 ms.
+No. Musicians on a Jamulus Server play in real time together as they would in person. If you want a time signal, there are shared metronome solutions on the Internet you can try. But it’s probably best to just minimise latency so nobody has an overall delay more than about 30–50 ms.
 
 Bear in mind also that all participants should follow [The Golden Rule](/wiki/Client-Troubleshooting#you-all-sound-ok-but-its-difficult-to-keep-together) which will also determine whether you can play in time properly.
 

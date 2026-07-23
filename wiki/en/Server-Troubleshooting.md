@@ -19,7 +19,7 @@ permalink: "/wiki/Server-Troubleshooting"
 
 </details>
 
-## Servers - Registered
+## Servers — Registered
 
 ### Why doesn't my Server show up in the list? Why isn't it registering?
 
@@ -29,7 +29,7 @@ If you are seeing a message that says the Server is full, you will need to wait 
 
 You can verify that your Server is listed in the relevant genre by [checking it here](https://explorer.jamulus.io/).
 
-## Servers - Unregistered
+## Servers — Unregistered
 
 ### I'm running my Client on the same machine/network as my Server but I can't connect to it
 
@@ -37,14 +37,14 @@ Connect your Client to `localhost` or `127.0.0.1`. If you're running the Client 
 
 ### What address do I give to people so that they can connect to my Server?
 
-This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change - see the note on "dynamic DNS" in [this guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it).
+This should be your **public** IP address (find that with [Google](https://www.google.com/search?q=whatsmyip)). Connect your **own** Jamulus Client to the **local** IP address of your Server (`localhost` or `127.0.0.1` if it's on the same machine as your Client). Note that your public IP address can change — see the note on "dynamic DNS" in [this guide](Unregistered-Servers#dynamic-dns-and-why-you-will-probably-need-it).
 
 
 ### What port numbers can I use?
 
 You can set your Server to listen on a custom port with the `--port` option. If you do this, you will need to tell people which port to connect on. They will need to append the port number to the address of your Server in the format `[serverAddress]:[portNumber]`.
 
-### Nobody can connect to my Server - but I can connect locally
+### Nobody can connect to my Server — but I can connect locally
 
 First of all, make sure you've enabled [port forwarding](Unregistered-Servers#port-forwarding). If you still don't see your server from outside of your local network, you may have issues with your Internet Service Provider (ISP).
 

@@ -9,7 +9,7 @@ permalink: "/wiki/DNS-SRV-Support"
 
 # DNS SRV Record Support
 
-#### Background - connecting to a Server or Directory
+#### Background — connecting to a Server or Directory
 
 The default UDP port on which a Jamulus Server or Directory listens is **22124**. Normally, when a Client or a Server is given a plain hostname or an IP address to connect to, such as `198.51.100.46` or `jamulus.example.com`, it will use `22124` as the destination port number.
 
@@ -60,7 +60,7 @@ This technique allows you to host many Jamulus Servers or Directories at differe
 
 See the documentation of your DNS provider for instructions on creating an SRV record.
 
-#### Example - SRV records for the main Jamulus public Directories
+#### Example — SRV records for the main Jamulus public Directories
 
 In the `jamulus.io` domain, SRV records have been created to specify the correct port for each of the standard public Directories:
 

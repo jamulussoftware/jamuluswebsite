@@ -50,7 +50,7 @@ Ensure the Sample Rate is set to 48000, the driver is portaudio, Frames/Period i
 
 Now connect to any server.
 
-Afterwards - if needed click on the "ASIO OFF" button to turn ASIO on in ASIO Bridge. Unfortunately the button is labelled in a confusing way.
+Afterwards — if needed click on the "ASIO OFF" button to turn ASIO on in ASIO Bridge. Unfortunately the button is labelled in a confusing way.
 
 Next, you can minimise ASIO Bridge to the taskbar and open the Graph in Qjackctl. This button is at the bottom right:
 

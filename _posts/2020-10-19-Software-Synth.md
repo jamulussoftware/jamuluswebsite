@@ -66,7 +66,7 @@ Let's have a look at the workflow.
 
 ![QJackctl connect synth to Jamulus](https://user-images.githubusercontent.com/20726856/101958961-ad4d6b80-3c04-11eb-86cd-24e7efa6fe00.png))
 
-There is one last step. In your local connection setup, you might see that the setBfree synth output (left) is not only connected to the Jamulus input (right), but also to `system`. `System` would be your speakers or headphones, but what you want to listen to is just the output from Jamulus, not the direct sound from setBfree also at the same time (not exactly - they'd be separated by a small time lag). So now you must disconnect setBfree from "system". That way you will hear the audio coming from the Jamulus server (yours and that of whoever you are playing with) and will avoid an echo or flanger effect.
+There is one last step. In your local connection setup, you might see that the setBfree synth output (left) is not only connected to the Jamulus input (right), but also to `system`. `System` would be your speakers or headphones, but what you want to listen to is just the output from Jamulus, not the direct sound from setBfree also at the same time (not exactly — they'd be separated by a small time lag). So now you must disconnect setBfree from "system". That way you will hear the audio coming from the Jamulus server (yours and that of whoever you are playing with) and will avoid an echo or flanger effect.
 
 Now you're done.
 

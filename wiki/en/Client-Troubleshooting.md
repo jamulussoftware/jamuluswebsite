@@ -42,9 +42,9 @@ You can test whether you are hearing your signal correctly by doing the followin
 3. Click the "Mute" button under your Jamulus name/slider in the main Jamulus mixer window (**NOT** the "Mute Myself" button on the left).
 4. Clap your hands again.
 
-If you hear two claps after step 2, or any claps after step 4, then you are **not** obeying Rule Number One - you have your local audio enabled and should disable it.
+If you hear two claps after step 2, or any claps after step 4, then you are **not** obeying Rule Number One — you have your local audio enabled and should disable it.
 
-Exactly how you avoid listening to your direct signal will depend on your individual setup - your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options. **If you are still having problems**, try asking on the [forum](https://github.com/jamulussoftware/jamulus/discussions).
+Exactly how you avoid listening to your direct signal will depend on your individual setup — your sound interface, mixing desk, headphone connection point, etc. For example, some audio interfaces have "monitor" buttons (turn these off), or similar options. **If you are still having problems**, try asking on the [forum](https://github.com/jamulussoftware/jamulus/discussions).
 
 Be aware that while listening to the Server's signal will ensure you will be in sync with other musicians, you may also experience problems if your overall latency (indicated by the "Delay" light in Jamulus) is not green or at least yellow most of the time. Consult the [User Manual](/wiki/Software-Manual) to understand how to adjust your setup to help with this.
 

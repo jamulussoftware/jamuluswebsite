@@ -65,7 +65,7 @@ Try not to sound like a robot. Write conversationally, as if you were talking to
 
 ## Capitalisation and references
 
-Headings use sentence case "This is a heading" unless delineated (e.g. "Look - This is a heading").
+Headings use sentence case "This is a heading" unless delineated (e.g. "Look — This is a heading").
 
 Nouns use lower case unless they have a formal definition in this style guide (e.g. "Directory", "Fader") or refer to specific Jamulus features (e.g. "Audio Alerts", "Jitter Buffer"). The only exception to this is the word "person" or "people" which can remain in lower case.
 
