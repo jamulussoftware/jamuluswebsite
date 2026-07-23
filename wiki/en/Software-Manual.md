@@ -331,8 +331,8 @@ Increases the gain from your device. Use this if your device delivers a gain tha
 ### Reverb Preset
 
 This lets you select a preset for the builtin reverb.
-It comes with five presets: `Subtle`, `Stadium`, `Cupboard`, `Dark` and `Halves`
-Jamulus uses [MVerb](https://github.com/martineastwood/mverb), a professional grade open source reverb by Martin Eastwood. The presets were ported from the VST plugin version.
+It comes with presets: `Subtle`, `Stadium`, `Cupboard`, `Dark`, `Halves`, `Drum Room` and `Club`
+Jamulus [uses MVerb](https://github.com/martineastwood/mverb), a professional grade open source reverb by Martin Eastwood. Some presets were ported from the VST plugin version.
 
 ### Feedback Protection
 
