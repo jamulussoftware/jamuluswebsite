@@ -15,5 +15,7 @@ Docs: [README.md](README.md) (workflow, translation process, branch targeting), 
 
 ## Submit
 
-- Target `next-release` if the change needs translation, `release` if not (README's workflow section explains which).
+- Branch targeting is genuinely case by case (maintainers' own assessment) — there's no reliable rule like "translated content → next-release." Mechanically: a merge to `release` publishes to production immediately and is auto-merged forward into `next-release` (see `.github/workflows/main.yml`); `next-release` only reaches production later, when a maintainer opens a release PR and squashes it into `release`. So the real question is "should this go live right now, or wait for the next release cutover?", not what kind of file you touched — `contribute/en/` and `_posts/` changes have gone directly to `release` in some PRs and to `next-release` in others.
+- Before opening the PR, check recent precedent for files like the ones you're touching, e.g. `gh pr list --repo jamulussoftware/jamuluswebsite --base release --state merged --limit 30 --json title,files` and the same with `--base next-release`. If you still can't tell, say so explicitly in the PR description and let a maintainer redirect it rather than guessing silently.
+- When truly unsure and precedent doesn't settle it, default to `next-release` — an off-base call there is cheap to correct before it ever goes live, unlike one on `release`.
 - Fill out the PR template checklist.
