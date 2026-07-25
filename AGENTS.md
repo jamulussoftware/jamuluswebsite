@@ -1,21 +1,24 @@
-# Jamulus Website — Agent Instructions
+# Jamulus Website - Agent Instructions
 
-Content repo for jamulus.io (wiki/docs). English is the source of truth — edits land in English first, then flow to other languages via Weblate/po4a.
+Content repo for jamulus.io. English is the source of truth: edits land in English first, then flow to other languages via Weblate/po4a.
 
-Docs: [README.md](README.md) (workflow, translation process, branch targeting), [Style and Tone guide](https://jamulus.io/contribute/Style-and-Tone) (voice, terminology, capitalisation — applies to agents without exception).
+Read first: [README.md](README.md) (workflow, translation, branches) and the [Style and Tone guide](https://jamulus.io/contribute/Style-and-Tone) (voice, terminology, spelling). The guide governs; this file does not restate or override it.
+
+## Changes
+
+This is documentation, not code. The bar is: **is this better than what is there now?** Not complete, not final - better. A page that answers a reader's question one step sooner is worth submitting on its own.
+
+- One logical improvement per PR. Open several small PRs rather than one large one, and keep each reviewable.
+- Never hold a documentation fix behind a code change. Pages ship on their own schedule.
+- If you cannot tell whether your version is better, say so in the PR description instead of guessing.
 
 ## Rules
 
-- Smallest possible PRs: one logical change each.
-- Edit English source `.md` files only — never hand-edit translated-language files or `.po` files; those belong to translators via Weblate.
-- **Punctuation**: follow the Punctuation section in Style-and-Tone.md (dash/hyphen choice, curly vs. straight quotes, ellipsis). Word/Google Docs autocorrect and some LLM output insert curly characters by default even inside code — before opening a PR, check your diff specifically for stray curly quotes/dashes near any code span, CLI example, or other machine-parsed value.
-- Prefer hedged phrasing over absolute claims where the claim isn't a hard limit (e.g. "discouraged" over "not recommended", "up to N" over "less than N") — follows the guide's "give solutions first, avoid overly stylised language" principle.
+- Edit English source `.md` files only. Never hand-edit translated files or `.po` files - those belong to translators via Weblate.
+- Plain ASCII (`-` `'` `"`) inside anything parsed or copy-pasted: code, CLI flags, URLs, frontmatter, dates, versions. Autocorrect and LLM output break this by default; check your diff.
 - British English spelling (colour, minimise, centre).
-- Match established terminology exactly: Server/Client (capitalised = a Jamulus app instance) vs. server/client (lowercase = the physical/cloud machine); "person" not "musician"; "sound card" vs. "audio interface" — full list in Style-and-Tone.md.
 
-## Submit
+## Submitting
 
-- Branch targeting is genuinely case by case (maintainers' own assessment) — there's no reliable rule like "translated content → next-release." Mechanically: a merge to `release` publishes to production immediately and is auto-merged forward into `next-release` (see `.github/workflows/main.yml`); `next-release` only reaches production later, when a maintainer opens a release PR and squashes it into `release`. So the real question is "should this go live right now, or wait for the next release cutover?", not what kind of file you touched — `contribute/en/` and `_posts/` changes have gone directly to `release` in some PRs and to `next-release` in others.
-- Before opening the PR, check recent precedent for files like the ones you're touching, e.g. `gh pr list --repo jamulussoftware/jamuluswebsite --base release --state merged --limit 30 --json title,files` and the same with `--base next-release`. If you still can't tell, say so explicitly in the PR description and let a maintainer redirect it rather than guessing silently.
-- When truly unsure and precedent doesn't settle it, default to `next-release` — an off-base call there is cheap to correct before it ever goes live, unlike one on `release`.
+- Branch: `release` publishes immediately and merges forward; `next-release` waits for the next release cutover. Ask "should this be live now?", not "what file did I touch?". Check precedent for similar files in recent merged PRs. If unsure, use `next-release` - a wrong call there is cheap to correct.
 - Fill out the PR template checklist.

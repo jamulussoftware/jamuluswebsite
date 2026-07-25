@@ -101,21 +101,6 @@ Jamulus is "Free and Open Source (FOSS)" (not "free software" or "open source")
 
 "Server List" This is the list of Servers maintained by a Directory.  A Server registers with a Directory to be _listed_ in that Directory’s _server list_.
 
-## Punctuation
-
-One governing question for every dash, quote, or ellipsis: is this character doing a job a parser depends on, or is it doing prose work for a human reader? Machine-context wins every time; only prose gets the fancier character.
-
-Never use a curly/typographic character inside a code span or fenced code block, an HTML attribute, YAML frontmatter, a CLI flag, a Markdown list/checkbox bullet, an ISO 8601 date (`2021-03-17`), a version/build string (`3.7.0dev-123456`), a URL, or anything meant to be copied and pasted verbatim (a shell command, a JSON snippet, a config value). In all of these, a smart quote, em-dash, or en-dash is either a parser error or a silent corruption of a value the reader will paste elsewhere. Plain ASCII `-`, `'`, `"` only.
-
-Everywhere else — prose meant to be read, not executed — use the correct typographic character:
-
-- **Hyphen (`-`)**: compound modifiers only (`low-bandwidth`, `text-wrapping`). If you can mentally replace it with "to" or read it as a parenthetical break, it isn't a hyphen's job.
-- **En dash (`–`), no surrounding spaces**: numeric ranges (`0–16`, `30–50 ms`, `pages 16–18`).
-- **En dash (`–`), with spaces**: a "Title – Subtitle" page title, matching the existing pattern in `Command-Line-Options.md`, `Privacy-Statement.md`, and `2020-03-28-Server-Rpi.md`.
-- **Em dash (`—`), with spaces on both sides**: a parenthetical aside, appositive, or sentence interruption — matches the site's own pre-existing usage (`misc/1-index.md`). Never use a doubled hyphen (`--`) as a substitute; it's a typewriter-era workaround, not a typographic period.
-- **Curly quotes/apostrophes (`’ “ ”`)**: prose, including quoted UI labels read by a human (`click "Learn"`) — never a value the reader is meant to type or paste.
-- **Ellipsis**: use the single `…` character in narrative prose. Exception — when quoting an app's literal UI string that itself ends in three dots (`"File > Connection Setup..."`, `"My Profile..."`), reproduce it exactly; don't "correct" a real menu label.
-
 ## Units
 
 We use the following abbreviations:
