@@ -10,6 +10,8 @@ permalink: "/contribute/Style-and-Tone"
 
 While contributing to Jamulus or the website, you should also keep style and tone in mind. Have a look at the following guidelines.
 
+These guidelines apply to every contribution, including work drafted with AI assistance. The `AGENTS.md` file in the website repository points automated contributors here rather than repeating them, so this page stays the single source of truth.
+
 **Note:** It is very important to thoroughly proofread content before submitting it, as any corrections made later have a knock-on effect on translations.
 
 <details markdown="1">
@@ -100,6 +102,16 @@ Jamulus is "Free and Open Source (FOSS)" (not "free software" or "open source")
 "Registration" When a Server is configured in Registered mode, it will be _listed_ when successfully registered by a Directory. Note that if a Directory is full, a Registered Server will not be _listed_ because it has not been successfully _registered_. Note in this case we prefer to say, "Register with a Directory".
 
 "Server List" This is the list of Servers maintained by a Directory.  A Server registers with a Directory to be _listed_ in that Directory’s _server list_.
+
+## Punctuation
+
+Content here is written for people, but parts of it are read by tools as well. Keep the two apart.
+
+Inside anything a reader will copy or a tool will parse - code spans and fenced blocks, command-line flags, URLs, file paths, YAML frontmatter, HTML attributes, dates and version strings - use plain ASCII `-`, `'` and `"` only. A curly quote or a long dash pasted into a shell command, a config file or a search box is not the character the tool expects, and it fails in ways the reader cannot see. Word processors and AI writing tools insert those characters automatically, so check your work before submitting.
+
+In prose, plain ASCII is the safe default and most pages already use it. Where a typographic character genuinely helps the reader it is acceptable, but it is never required. Do not convert a page from one style to the other as a change of its own: that produces a large diff with no benefit to the reader, and churn for translators.
+
+When quoting a literal label from the app, reproduce it exactly, including any trailing dots ("File > Connection Setup..."). Do not correct a real menu label.
 
 ## Units
 

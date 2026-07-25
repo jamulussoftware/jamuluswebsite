@@ -15,7 +15,7 @@ This is documentation, not code. The bar is: **is this better than what is there
 ## Rules
 
 - Edit English source `.md` files only. Never hand-edit translated files or `.po` files - those belong to translators via Weblate.
-- Plain ASCII (`-` `'` `"`) inside anything parsed or copy-pasted: code, CLI flags, URLs, frontmatter, dates, versions. Autocorrect and LLM output break this by default; check your diff.
+- Plain ASCII (`-` `'` `"`) inside anything parsed or copy-pasted: code, CLI flags, URLs, frontmatter, dates, versions. Autocorrect and LLM output break this by default; check your diff. See the Punctuation section of the Style and Tone guide.
 - British English spelling (colour, minimise, centre).
 
 ## Submitting
