@@ -24,7 +24,7 @@ jobs:
         run: |
           # The exact username of the Weblate bot (e.g., 'weblate', 'app/weblate')
           # You may need to check a previous Weblate PR to confirm the exact author name.
-          WEBLATE_AUTHOR="app/weblate" 
+          WEBLATE_AUTHOR="weblate" 
           
           echo "Checking $REPO for open PRs from $WEBLATE_AUTHOR..."
           
