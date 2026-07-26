@@ -1,0 +1,40 @@
+name: Block EN Merges on Active Weblate PRs
+
+on:
+  pull_request:
+    # Triggers the check only when source documentation is modified.
+    # Adjust these paths based on where the English source files live in the repo.
+    paths:
+      - '**/*.md'
+      - '_pages/**'
+      - '_posts/**'
+
+jobs:
+  check-weblate:
+    name: Evaluate Weblate PR Status
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+
+    steps:
+      - name: Check for open Weblate pull requests
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          # The exact username of the Weblate bot (e.g., 'weblate', 'app/weblate')
+          # You may need to check a previous Weblate PR to confirm the exact author name.
+          WEBLATE_AUTHOR="app/weblate" 
+          
+          echo "Checking $REPO for open PRs from $WEBLATE_AUTHOR..."
+          
+          # Query GitHub API for open PRs from the bot, output as JSON, and count the array length
+          OPEN_PRS=$(gh pr list --repo "$REPO" --state open --author "$WEBLATE_AUTHOR" --json number -q '. | length')
+          
+          if [ "$OPEN_PRS" -gt 0 ]; then
+            echo "::error::Found $OPEN_PRS open Weblate PR(s). Merging changes to English documentation is blocked to prevent po4a translation conflicts."
+            exit 1
+          else
+            echo "No open Weblate PRs detected. Safe to proceed."
+            exit 0
+          fi
