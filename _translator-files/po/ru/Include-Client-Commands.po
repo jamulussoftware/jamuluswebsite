@@ -27,8 +27,8 @@ msgstr "`--mutemyown` Запрещает мне слышать то, что я �
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
-msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
-msgstr "`-c` или `--connect` Подключение к заданному адресу сервера при запуске, формат `адрес[:порт]`"
+msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`. `-c` connects directly, so the server's port must already be reachable from your computer - the server's operator may need to open the port in the router, cloud firewall/security group, and/or OS firewall. (Selecting a server from the directory list in the GUI opens the port for you; `-c` does not, whether or not the server is listed.)"
+msgstr ""
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
@@ -46,3 +46,6 @@ msgstr "`--ctrlmidich` MIDI-канал для прослушивания, упр
 #: ../wiki/en/Include-Client-Commands.md:6
 msgid "`--clientname` Window title and JACK client name"
 msgstr "`--clientname` Заголовок окна и имя клиента JACK"
+
+#~ msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
+#~ msgstr "`-c` или `--connect` Подключение к заданному адресу сервера при запуске, формат `адрес[:порт]`"

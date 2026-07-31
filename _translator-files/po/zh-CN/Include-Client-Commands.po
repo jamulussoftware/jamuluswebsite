@@ -30,8 +30,8 @@ msgstr "`--mutemyown` 阻止我听到我在服务器混音中播放的内容(仅
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
-msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
-msgstr "`-c` 或 `--connect` 在启动时连接到给定的服务器地址，格式为 `address[:port]`"
+msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`. `-c` connects directly, so the server's port must already be reachable from your computer - the server's operator may need to open the port in the router, cloud firewall/security group, and/or OS firewall. (Selecting a server from the directory list in the GUI opens the port for you; `-c` does not, whether or not the server is listed.)"
+msgstr ""
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
@@ -49,3 +49,6 @@ msgstr "`--ctrlmidich` 要收听的 MIDI 通道，Jamulus 控制 + MIDI 控制�
 #: ../wiki/en/Include-Client-Commands.md:6
 msgid "`--clientname` Window title and JACK client name"
 msgstr "`--clientname`窗口标题和 JACK 客户端名称"
+
+#~ msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
+#~ msgstr "`-c` 或 `--connect` 在启动时连接到给定的服务器地址，格式为 `address[:port]`"

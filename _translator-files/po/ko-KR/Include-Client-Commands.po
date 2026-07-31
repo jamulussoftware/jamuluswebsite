@@ -28,8 +28,8 @@ msgstr "`--mutemyown` 서버 믹스에서 내가 연주하는 것을 듣지 못�
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
-msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
-msgstr "`-c` 또는 `--connect` 시작 시 지정된 서버 주소에 연결하고, `address[:port]` 형식 지정"
+msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`. `-c` connects directly, so the server's port must already be reachable from your computer - the server's operator may need to open the port in the router, cloud firewall/security group, and/or OS firewall. (Selecting a server from the directory list in the GUI opens the port for you; `-c` does not, whether or not the server is listed.)"
+msgstr ""
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
@@ -47,3 +47,6 @@ msgstr "`--ctrlmidich` 청취할 MIDI 채널, Jamulus 제어 + MIDI 제어 번�
 #: ../wiki/en/Include-Client-Commands.md:6
 msgid "`--clientname` Window title and JACK client name"
 msgstr "`--clientname` 창 제목 및 JACK 클라이언트 이름"
+
+#~ msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
+#~ msgstr "`-c` 또는 `--connect` 시작 시 지정된 서버 주소에 연결하고, `address[:port]` 형식 지정"

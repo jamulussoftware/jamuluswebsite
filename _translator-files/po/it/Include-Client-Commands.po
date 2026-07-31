@@ -29,8 +29,8 @@ msgstr "`--mutemyown` Impedisce di sentire ciò che suono nel mix del server (so
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
-msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
-msgstr "`-c` o `--connect` Connetti a un determinato indirizzo del server all'avvio, in formato `indirizzo[:porta]`"
+msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`. `-c` connects directly, so the server's port must already be reachable from your computer - the server's operator may need to open the port in the router, cloud firewall/security group, and/or OS firewall. (Selecting a server from the directory list in the GUI opens the port for you; `-c` does not, whether or not the server is listed.)"
+msgstr ""
 
 #. type: Bullet: '-  '
 #: ../wiki/en/Include-Client-Commands.md:6
@@ -48,3 +48,6 @@ msgstr "`--ctrlmidich` Canale MIDI su cui ascoltare, controllo Jamulus + numero 
 #: ../wiki/en/Include-Client-Commands.md:6
 msgid "`--clientname` Window title and JACK client name"
 msgstr "`--clientname` Titolo della finestra e nome del client JACK"
+
+#~ msgid "`-c` or `--connect` Connect to given server address on startup, format `address[:port]`"
+#~ msgstr "`-c` o `--connect` Connetti a un determinato indirizzo del server all'avvio, in formato `indirizzo[:porta]`"
