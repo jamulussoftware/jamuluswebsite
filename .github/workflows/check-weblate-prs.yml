@@ -8,7 +8,7 @@ on:
 jobs:
   check-weblate:
     name: Evaluate Weblate PR Status
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     permissions:
       pull-requests: read
 
@@ -18,13 +18,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
         run: |
-          # The exact username of the Weblate bot (e.g., 'weblate', 'app/weblate')
-          # You may need to check a previous Weblate PR to confirm the exact author name.
           WEBLATE_AUTHOR="weblate" 
           
           echo "Checking $REPO for open PRs from $WEBLATE_AUTHOR..."
           
-          # Query GitHub API for open PRs from the bot, output as JSON, and count the array length
           OPEN_PRS=$(gh pr list --repo "$REPO" --state open --author "$WEBLATE_AUTHOR" --json number -q '. | length')
           
           if [ "$OPEN_PRS" -gt 0 ]; then
