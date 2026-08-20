@@ -33,7 +33,7 @@ Using a public Server might introduce you to strangers. If you want an undisturb
 
 Usually, problems are on the _Client_ side and should be fixed there. Have a look at the [Troubleshooting page](/wiki/Client-Troubleshooting) if needed.
 
-However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It's usually fine to have less than 5 players on a slower-speed home connection (eg 10 Mbit/s down and 1 Mbit/s up). You can read more about network requirements at [different quality settings here](Server-Bandwidth).
+However, various problems can also arise when setting up Servers - especially when run on a low-bandwidth home connection. It can work to have less than 5 players on a slower-speed home connection. A wireless internet connection is discouraged for a server in your home, while a fiber connection should work well. You can read more about network requirements at [different quality settings here](Server-Bandwidth).
 
 Consider using a cloud host, not your home internet connection, to get better ping times if you're having problems.
 
@@ -364,6 +364,48 @@ When a Server is running in GUI mode, the operating system will show an icon in 
 {% include_relative Include-Backing-Up.md %}
 
 - Headless Servers do not use `.ini` files. All configuration is given as command line options. If you are running a Server in GUI mode, after reading any command line options on start, it will store its configuration in the `Jamulusserver.ini` file.
+
+## Increasing the UDP receive buffer (Linux)
+
+The Linux kernel's default UDP receive buffer (~208 KB) can be exhausted on a busy Server, causing the kernel to **silently drop incoming packets**. The result is complete audio interruptions for connected Clients — symptoms that look like a network problem but originate on the Server itself.
+
+This is especially likely with five or more simultaneous players. Increasing the buffer to 4 MB prevents it:
+
+~~~
+sudo sysctl -w net.core.rmem_max=4194304 net.core.rmem_default=4194304
+printf 'net.core.rmem_max=4194304\nnet.core.rmem_default=4194304\n' | sudo tee /etc/sysctl.d/99-jamulus.conf
+sudo systemctl restart jamulus-headless
+~~~
+
+Restart the Server after running these commands so that the new socket picks up the larger buffer. The setting in `/etc/sysctl.d/` persists across reboots.
+
+To verify the buffer is not being overwhelmed during a session, find your Server's port in hexadecimal (e.g. the default port 22124 = `566C`) and check the drop counter:
+
+~~~
+grep -i ':566C' /proc/net/udp | awk '{print $2, $NF}'
+~~~
+
+The last number is the drop count. It should be near 0 immediately after restart and remain low during normal use. You can convert your port to hex with `printf '%X\n' <port>`.
+
+## Background services and out-of-memory kills (Linux)
+
+A second Server-side fault produces the same symptom as an exhausted receive buffer: brief audio interruptions for everyone connected, with no packet loss and a Server that looks completely healthy. Here the cause is memory rather than networking. When a background service grows large enough that the kernel's out-of-memory killer has to intervene, the kernel stalls other processes while it reclaims memory — and on a small instance that stall is long enough to interrupt audio. Measured on a 458 MB single-core cloud Server, each event blocked the Jamulus audio thread for **2 to 3 seconds**, with nothing in the Jamulus log and the service `active (running)` throughout. This is the concrete reason for the 1 GB memory minimum recommended above: Servers with 1 GB or more recorded no out-of-memory events at all, while Servers below 512 MB accumulated hundreds.
+
+The usual culprit on Ubuntu cloud images is `fwupd`, the firmware update service, which is enabled by default and can grow to around 145 MB. A cloud or virtual Server has no firmware for it to update, so it is safe to disable there. To check whether this has been happening:
+
+~~~
+journalctl | grep "Out of memory: Killed process"
+~~~
+
+Any output means the kernel has been killing processes on this machine, and your Clients will have heard it. The last field on each line names the process that was killed. If it is `fwupd`, disable it:
+
+~~~
+sudo systemctl mask fwupd.service fwupd-refresh.service fwupd-refresh.timer
+~~~
+
+Masking takes effect immediately, does not require restarting Jamulus, and persists across reboots. On a physical Server, where firmware updates are useful, leave `fwupd` alone and add memory instead.
+
+---
 
 ## Troubleshooting
 
