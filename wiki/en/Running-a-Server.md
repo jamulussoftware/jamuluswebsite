@@ -387,6 +387,24 @@ grep -i ':565C' /proc/net/udp | awk '{print $2, $NF}'
 
 The last number is the drop count. It should be near 0 immediately after restart and remain low during normal use. You can convert your port to hex with `printf '%X\n' <port>`.
 
+## Background services and out-of-memory kills (Linux)
+
+A second Server-side fault produces the same symptom as an exhausted receive buffer: brief audio interruptions for everyone connected, with no packet loss and a Server that looks completely healthy. Here the cause is memory rather than networking. When a background service grows large enough that the kernel's out-of-memory killer has to intervene, the kernel stalls other processes while it reclaims memory — and on a small instance that stall is long enough to interrupt audio. Measured on a 458 MB single-core cloud Server, each event blocked the Jamulus audio thread for **2 to 3 seconds**, with nothing in the Jamulus log and the service `active (running)` throughout. This is the concrete reason for the 1 GB memory minimum recommended above: Servers with 1 GB or more recorded no out-of-memory events at all, while Servers below 512 MB accumulated hundreds.
+
+The usual culprit on Ubuntu cloud images is `fwupd`, the firmware update service, which is enabled by default and can grow to around 145 MB. A cloud or virtual Server has no firmware for it to update, so it is safe to disable there. To check whether this has been happening:
+
+~~~
+journalctl | grep "Out of memory: Killed process"
+~~~
+
+Any output means the kernel has been killing processes on this machine, and your Clients will have heard it. The last field on each line names the process that was killed. If it is `fwupd`, disable it:
+
+~~~
+sudo systemctl mask fwupd.service fwupd-refresh.service fwupd-refresh.timer
+~~~
+
+Masking takes effect immediately, does not require restarting Jamulus, and persists across reboots. On a physical Server, where firmware updates are useful, leave `fwupd` alone and add memory instead.
+
 ---
 
 ## Troubleshooting
