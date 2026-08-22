@@ -224,8 +224,20 @@ This turns on a sound alert for when someone joins a Server, or when receiving a
 
 ### Audio Device
 
+What you see here depends on your operating system. On macOS there are two menus, "Input Device" and "Output Device", described below. On every other platform there is a single "Audio Device" menu.
+
 Under the Windows operating system the ASIO driver (sound card) can be selected using Jamulus. If the selected ASIO
-driver is not valid an error message is shown and the previous valid driver is selected. Under macOS the input and output hardware can be selected.
+driver is not valid an error message is shown and the previous valid driver is selected.
+
+### Input and output devices on macOS
+
+On macOS you choose your sound hardware in two menus rather than one. "Input Device" sets what Jamulus listens to, and "Output Device" sets what you hear through. They don't have to be the same piece of hardware, so you can play through an audio interface and listen through your computer's built-in output if you prefer.
+
+Each menu only lists hardware that can do that job, so a pair of speakers won't show up under "Input Device".
+
+Choose "System Default In Device" or "System Default Out Device" to use whatever is set in the macOS Sound settings when Jamulus starts.
+
+Changing one of the menus leaves the other one alone, along with its channel mapping.
 
 ### Input/output channel mapping
 
