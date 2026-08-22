@@ -231,6 +231,8 @@ driver is not valid an error message is shown and the previous valid driver is s
 
 ### Input and output devices on macOS
 
+<figure><img src="{% include img/en-screenshots/input-output-devices-macos.inc %}" style="float:left; margin-right:10px; margin-bottom:20px;" loading="lazy" alt="Image of the input and output device menus on macOS"></figure>
+
 On macOS you choose your sound hardware in two menus rather than one. "Input Device" sets what Jamulus listens to, and "Output Device" sets what you hear through. They don't have to be the same piece of hardware, so you can play through an audio interface and listen through your computer's built-in output if you prefer.
 
 Each menu only lists hardware that can do that job, so a pair of speakers won't show up under "Input Device".
