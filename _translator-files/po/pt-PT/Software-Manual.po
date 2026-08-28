@@ -9,15 +9,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2026-02-03 21:52+0000\n"
-"Last-Translator: ignotus <ignotus666@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-06-28 07:01+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: LANGUAGE <please@seeGitHubOrWeblate.local>\n"
 "Language: pt-PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Software-Manual.md:1
@@ -52,7 +52,7 @@ msgstr " {:.no_toc}\n"
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:11
 msgid "This manual documents the Jamulus Client application for use by musicians and singers using the software to connect to a server."
-msgstr ""
+msgstr "Este manual documenta a aplicação Cliente Jamulus para uso por músicos e cantores que usam o software para conectar-se a um servidor."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:13
@@ -86,7 +86,7 @@ msgstr "</details>\n"
 #: ../wiki/en/Software-Manual.md:21
 #, no-wrap
 msgid "Main Window"
-msgstr ""
+msgstr "Janela Principal"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:28
@@ -102,43 +102,43 @@ msgstr ""
 #: ../wiki/en/Software-Manual.md:29
 #, no-wrap
 msgid "Ping, Delay and Jitter"
-msgstr ""
+msgstr "Ping, Atraso e Tremor"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:32
 #, no-wrap
 msgid "**Ping** shows your network latency in milliseconds, the lower the better. Ping time contributes to overall delay (see below). The most probable cause of a high ping is that your distance to the server is too large.\n"
-msgstr ""
+msgstr "**Ping** mostra a latência da rede em milissegundos, quanto menor, melhor. O tempo de ping contribui para o atraso geral (veja abaixo). A causa mais provável de um ping alto é que a sua distância para o servidor é muito grande.\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:34
 #, no-wrap
 msgid "**Delay** shows overall latency calculated from the current ping time and the delay introduced by the current audio buffer settings. The LEDs show the status of this as:\n"
-msgstr ""
+msgstr "**Atraso** mostra a latência geral calculada a partir do tempo de ping atual e o atraso introduzido pelas configurações atuais do buffer de áudio. Os LEDs mostram o estado disso como:\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:36
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a green LED symbol\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/pt-BR-screenshots/led-green.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED verde\"></figure>\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:38
 #, no-wrap
 msgid "**Green** - The delay is perfect for a jam session\n"
-msgstr ""
+msgstr "**Verde** - O delay é perfeito para uma jam session\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:40
 #, no-wrap
 msgid "<figure><img src=\"{% include img/en-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Image of a yellow LED symbol\"></figure>\n"
-msgstr ""
+msgstr "<figure><img src=\"{% include img/pt-BR-screenshots/led-yellow.inc %}\" style=\"float:left; margin-right:10px;\" loading=\"lazy\" alt=\"Imagem de um símbolo de LED amarelo\"></figure\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:42
 #, no-wrap
 msgid "**Yellow** - A session is still possible but it may be harder to play\n"
-msgstr ""
+msgstr "**Amarelo** - Uma sessão ainda é possível, mas pode ser mais difícil de tocar\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:44
@@ -150,88 +150,88 @@ msgstr ""
 #: ../wiki/en/Software-Manual.md:46
 #, no-wrap
 msgid "**Red** - The delay is too large for jamming\n"
-msgstr ""
+msgstr "**Vermelho** - O atraso é muito grande para tocar\n"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:48
 #, no-wrap
 msgid "**Jitter** shows the current audio/streaming status. If the light is **red**, the audio stream is interrupted. This is caused by one of the following problems:\n"
-msgstr ""
+msgstr "**Jitter** mostra o estado atual de áudio/streaming. Se a luz estiver **vermelha**, o fluxo de áudio será interrompido. Isto é causado por um dos seguintes problemas:\n"
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 msgid "The network jitter buffer is not large enough for the current network/audio interface jitter."
-msgstr ""
+msgstr "O jitter buffer da rede não é grande o suficiente para o jitter atual da interface de rede/áudio."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 msgid "The sound card's buffer delay (buffer size) is too small (see Settings window)."
-msgstr ""
+msgstr "O atraso do buffer (tamanho do buffer) da placa de som é demasiado pequeno (verificar janela das Definições)."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 msgid "The upload or download stream rate is too high for your internet bandwidth."
-msgstr ""
+msgstr "A taxa de envios ou descargas é elevada demais para a sua largura de banda da Internet."
 
 #. type: Bullet: '- '
 #: ../wiki/en/Software-Manual.md:53
 msgid "The CPU of the Client or server is at 100%."
-msgstr ""
+msgstr "A CPU do cliente ou servidor está em 100%."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:54
 #, no-wrap
 msgid "Input"
-msgstr ""
+msgstr "Entrada"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:58
 msgid "Shows the level of the two stereo channels for your audio input.  Make sure not to clip the input signal to avoid distortions of your sound (the LEDs will indicate clipping when it occurs)."
-msgstr ""
+msgstr "Mostrar o nível de dois canais estéreis da sua entrada de áudio. Tenha certeza de não grampear o sinal de entrada para evitar distorções no som (os LEDs vão indicar o grampeamento quando ele ocorrer)."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:59
 #, no-wrap
 msgid "Mute Myself button"
-msgstr ""
+msgstr "Botão Silenciar-me"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:62
 msgid "Cuts your audio stream to the server so that you will be able to hear yourself and see your own input levels, but other musicians will not. Be aware that other musicians will not know if you have muted yourself."
-msgstr ""
+msgstr "Corta a transmissão de áudio para o servidor para que possa ouvir-se e ver os seus próprios níveis de entrada, mas outros músicos não. Esteja ciente de que outros músicos não saberão se se silenciou."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:63
 #, no-wrap
 msgid "Reverb effect"
-msgstr ""
+msgstr "Efeito reverb"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:69
 msgid "Adds reverb to your local mono audio channel, or to both channels in stereo mode.  The mono channel selection and the reverberation level can be modified. For example, if a microphone signal is fed in to the right audio channel of the sound card and a reverb effect needs to be applied, set the channel selector to the right and move the fader upwards until the desired reverb level is reached."
-msgstr ""
+msgstr "Adicionar reverb no seu canal de áudio local mono, ou nos dois canais com modo estéreo. A seleção do canal mono e o nível de reverbação podem ser modificados. Por exemplo, se um sinal de um microfone é posto no canal de áudio direito da carta de som e o efeito reverb tem que ser aplicado, defina o seletor de canais para o direito e mova o fader para cima até que o nível de reverb desejado seja atingido."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:70
 #, no-wrap
 msgid "Chat"
-msgstr ""
+msgstr "Chat"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:75
 msgid "Opens the chat window. Text entered is sent to all connected Clients. If a new chat message arrives and the Chat dialogue is not already open, it will open automatically for all Clients. See Settings to optionally turn on a sound alert when a new chat message arrives."
-msgstr ""
+msgstr "Abre a janela de chat. O texto digitado é enviado para todos os Clientes conectados. Se uma nova mensagem do chat chega e o diálogo por chat não está aberto, ele vai abrir automaticamente pera todos os Clientes. Veja as configurações para selecionar se quer ligar um som de alerta quando uma nova mensagem de chat chegar."
 
 #. type: Title ##
 #: ../wiki/en/Software-Manual.md:76
 #, no-wrap
 msgid "Connect/disconnect button"
-msgstr ""
+msgstr "Botão conectar/desconectar"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:81
 msgid "Opens a dialogue where you can select a server to connect to. If you are connected, pressing this button will end the session.  You can also open the dialogue using \"File&gt;Connection Setup...\". This will leave you connected to any current session until you join another."
-msgstr ""
+msgstr "Abre um diálogo onde pode selecionar um servidor para se conectar. Se estiver conectado, pressionar este botão a sessão vai encerrar a sessão. Pode sempre abrir o diálogo usando \"File&gt;Connection Setup...\". Isto vai deixá-lo conectado em qualquer sessão atual até entrar noutra."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:83
@@ -247,7 +247,7 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:88
 msgid "Click on the Server you want to join and press the Connect button to connect to it. Alternatively, double-click on the server name."
-msgstr ""
+msgstr "Clique no servidor que quiser entrar e pressione o botão Conectar para conectar nele. Alternativamente, clicar duas vezes no nome do servidor."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:92
@@ -263,7 +263,7 @@ msgstr ""
 #: ../wiki/en/Software-Manual.md:99
 #, no-wrap
 msgid "Server audio mixer"
-msgstr ""
+msgstr "Mixer de áudio do servidor"
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:102
@@ -274,22 +274,22 @@ msgstr ""
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:105
 msgid "The audio mixer screen shows each user connected to the server (including yourself).  The faders allow you to adjust the level of what you hear without affecting what others hear."
-msgstr ""
+msgstr "O ecrã do mixer de áudio mostra cada utilizador conectado no servidor (incluindo você mesmo). Os campos permitem que ajuste o nível do que ouve sem afetar o que os outros ouvem."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:107
 msgid "The VU meter shows the input level at the server - that is, the sound being sent."
-msgstr ""
+msgstr "O medidor de VU mostra o nível de entrada no servidor - isto é, o som que está a ser enviado."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:109
 msgid "If you have set your Audio Channel to Stereo or Stereo Out in your Settings, you will also see a pan control (shift-click to reset)."
-msgstr ""
+msgstr "Se definiu o seu Canal de Áudio para Estéreo ou Saída Estéreo nas suas configurações, também verá um controlo de pan (click-shift para resetar)."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:111
 msgid "If you see a \"mute\" icon above a user, it means that person cannot hear you. Either they have muted you, soloed one or more users not including you, or have set your fader in their mix to zero."
-msgstr ""
+msgstr "Se vir um ícone de \"mudo\" acima de um utilizador, significa que essa pessoa não o consegue ouvir. Ou ela silenciou-o, pôs um ou mais utilizadores, sem incluir a si, em solo, ou zerou o fader da mixagem."
 
 #. type: Plain text
 #: ../wiki/en/Software-Manual.md:116

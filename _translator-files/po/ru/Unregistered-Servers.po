@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Maksim_220 Кабанов <law820314@gmail.com>, 2025.
 # vanapro1 <law820314@gmail.com>, 2025, 2026.
+# Andrei Stepanov <adem4ik@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2026-02-03 21:51+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-06-03 04:01+0000\n"
+"Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 2026.6\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Unregistered-Servers.md:1
@@ -43,7 +44,7 @@ msgstr "Запуск незарегистрированного сервера"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:9
 msgid "{% include breadcrumb.html root=\"More\" branch1=\"Server Administration\" branch1-url=\"Running-a-Server\" %}"
-msgstr "{% include breadcrumb.html root=\"More\" branch1=\"Администрирование сервера\" branch1-url=\"Running-a-Server\" %}"
+msgstr "{% include breadcrumb.html root=\"Ещё\" branch1=\"Администрирование сервера\" branch1-url=\"Running-a-Server\" %}"
 
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:13
@@ -109,7 +110,7 @@ msgstr "Поддержка SRV-записей DNS"
 #. type: Plain text
 #: ../wiki/en/Unregistered-Servers.md:36
 msgid "Recent versions of Jamulus support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record) for automatically finding the port number to use to connect to a Directory or Server. This allows just the hostname to be specified, without the port number. See [this page](DNS-SRV-Support) for details and applicable version numbers."
-msgstr ""
+msgstr "Последние версии Jamulus поддерживают [DNS SRV-записи (записи служб)](https://en.wikipedia.org/wiki/SRV_record) для автоматического определения номера порта, используемого для подключения к каталогу или серверу. Это позволяет указывать только имя хоста без номера порта. Подробности и применимые номера версий смотрите на [этой странице(DNS-SRV-Support)."
 
 #~ msgid "Jamulus Clients support [DNS SRV records (\"service\" records)](https://en.wikipedia.org/wiki/SRV_record). If a Client finds an SRV record associated with the domain name given in the Connect window, it will try to connect to the endpoint host and port listed in the SRV record. This process is similar to HTTP redirection in a web browser, only it's between Jamulus Clients and the DNS server. The Jamulus Server is not involved in this interaction. Jamulus Servers just listen for connections on the same port listed in the SRV record."
 #~ msgstr "Клиенты Jamulus поддерживают [DNS SRV-записи (\"служебные\" записи)](https://en.wikipedia.org/wiki/SRV_record). Если клиент находит SRV-запись, связанную с доменным именем, указанным в окне Connect, он попытается подключиться к хосту и порту конечной точки, указанным в SRV-записи. Этот процесс похож на HTTP-переадресацию в веб-браузере, только он происходит между клиентами Jamulus и DNS-сервером. Сервер Jamulus не участвует в этом взаимодействии. Серверы Jamulus просто прослушивают соединения на том же порту, который указан в SRV-записи."

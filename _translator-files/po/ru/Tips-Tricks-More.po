@@ -5,18 +5,19 @@
 # vanapro1 <law820314@gmail.com>, 2025, 2026.
 # Roman Akimov <zoompyc@gmail.com>, 2025, 2026.
 # Ахматов Тамерлан <novadapresna@gmail.com>, 2025, 2026.
+# Andrei Stepanov <adem4ik@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2026-02-03 21:55+0000\n"
-"Last-Translator: Roman Akimov <zoompyc@gmail.com>\n"
+"PO-Revision-Date: 2026-06-03 04:01+0000\n"
+"Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 2026.6\n"
 
 #. type: Yaml Front Matter Hash Value: lang
 #: ../wiki/en/Tips-Tricks-More.md:1
@@ -136,23 +137,23 @@ msgstr "Вы также можете использовать [VoiceMeeter](http
 #: ../wiki/en/Tips-Tricks-More.md:38
 #, no-wrap
 msgid "Recording Jamulus on Windows with Reaper"
-msgstr ""
+msgstr "Запись Jamulus в Windows с помощью Reaper"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:41
 msgid "Jamulus user [Rob Durkin](https://sourceforge.net/u/bentwrench/profile/) has written a [guide to recording the output of Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (Google Doc) using the ReaRoute add-on for [Reaper](https://www.reaper.fm/)."
-msgstr ""
+msgstr "Пользователь Jamulus [Роб Дуркин](https://sourceforge.net/u/bentwrench/profile/) написал [руководство по записи вывода Jamulus](https://docs.google.com/document/d/1tENfNKTWHasuTg33OdLLEo4-OOhWJolOo42ffSARxhY/edit) (документ Google) с использованием дополнения ReaRoute для [Reaper](https://www.reaper.fm/)."
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:42
 #, no-wrap
 msgid "Sharing song/chord sheets"
-msgstr ""
+msgstr "Совместное использование текстов песен/аккордов"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:45
 msgid "Jamulus user [BTDT](https://sourceforge.net/u/btdt/profile/) has written a system called [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages), a web application that allows a \"Jam leader\" to push song sheets (in PDF format) to \"Jammers\" in real time using standard web browsers."
-msgstr ""
+msgstr "Пользователь Jamulus [BTDT](https://sourceforge.net/u/btdt/profile/) написал систему под названием [305keepers](https://github.com/keepers305/Song-Sheet-Sharing-Web-Pages) — веб-приложение, которое позволяет «лидеру джема» отправлять тексты песен (в формате PDF) «джеммерам» в реальном времени с помощью стандартных веб-браузеров."
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:46
@@ -173,12 +174,12 @@ msgstr "Поэтому этот скрипт включает в себя сам
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:53
 msgid "Finally I start Jamulus automatically connecting to the Directory."
-msgstr ""
+msgstr "Наконец, я запускаю Jamulus, автоматически подключающийся к каталогу."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:55
 msgid "Here is the script:"
-msgstr ""
+msgstr "Вот скрипт:"
 
 #. type: Fenced code block
 #: ../wiki/en/Tips-Tricks-More.md:57
@@ -208,22 +209,45 @@ msgid ""
 " jack_connect Jamulus:'output left' system:playback_1\n"
 " jack_connect Jamulus:'output right' system:playback_2\n"
 msgstr ""
+" amixer sset 'Mic' capture 30% cap\n"
+" amixer sset 'Mic' playback 0%\n"
+" amixer sset 'Line' playback 60% unmute\n"
+" amixer sset 'Audigy Analog/Digital Output Jack' unmute\n"
+" amixer sset 'Analog Mix' capture 100%\n"
+" amixer sset 'Analog Mix' playback 0%\n"
+" amixer sset 'Wave' 100%\n"
+" amixer sset 'Master' capture 100% cap\n"
+" amixer sset 'Master' playback 100%\n"
+" amixer sset 'Master' playback 100%\n"
+" amixer sset 'PCM' playback 100%\n"
+" amixer sset 'PCM' capture 0%\n"
+" guitarix &\n"
+" /home/corrados/llcon/Jamulus -c myJamulusServer.domain.com &\n"
+" sleep 3\n"
+" jack_disconnect system:capture_1 Jamulus:'input left'\n"
+" jack_disconnect system:capture_2 Jamulus:'input right'\n"
+" jack_connect system:capture_1 gx_head_amp:in_0\n"
+" jack_connect gx_head_amp:out_0 gx_head_fx:in_0\n"
+" jack_connect gx_head_fx:out_0 Jamulus:'input left'\n"
+" jack_connect gx_head_fx:out_1 Jamulus:'input right'\n"
+" jack_connect Jamulus:'output left' system:playback_1\n"
+" jack_connect Jamulus:'output right' system:playback_2\n"
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:83
 #, no-wrap
 msgid "Using `--ctrlmidich` for MIDI controllers"
-msgstr ""
+msgstr "Использование `--ctrlmidich` для MIDI-контроллеров"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:86
 msgid "MIDI controller parameters can be set using the `--ctrlmidich` command-line option. Bear in mind that when used, specified control parameters will overwrite any values set previously using the GUI. Any controls not set in the command line will be disabled, though their values will be preserved."
-msgstr ""
+msgstr "Параметры MIDI-контроллера можно задать с помощью параметра командной строки `--ctrlmidich`. Имейте в виду, что при использовании указанные параметры управления перезапишут любые значения, установленные ранее через графический интерфейс. Любые элементы управления, не заданные в командной строке, будут отключены, хотя их значения сохранятся."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:88
 msgid "`--ctrlmidich` takes a single argument. If you omit it, the parameter is ignored. There are two formats for the argument:"
-msgstr ""
+msgstr "`--ctrlmidich` принимает один аргумент. Если его опустить, параметр игнорируется. Существует два формата аргумента:"
 
 #. type: Bullet: '1. '
 #: ../wiki/en/Tips-Tricks-More.md:90
@@ -234,23 +258,23 @@ msgstr "Устаревшее определение содержит одно и
 #: ../wiki/en/Tips-Tricks-More.md:91
 #, no-wrap
 msgid "   [MIDI channel];[offset for first fader]\n"
-msgstr ""
+msgstr "   [MIDI-канал];[смещение для первого фейдера]\n"
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:96 ../wiki/en/Tips-Tricks-More.md:120
 msgid "`MIDI channel` is required or else the parameter argument is ignored and the feature is not active. `0` means \"any channel\", `1`-`16` listen only to MIDI messages on the specified MIDI channel."
-msgstr ""
+msgstr "`MIDI-канал` обязателен, иначе аргумент параметра игнорируется, и функция не активна. `0` означает «любой канал», `1`–`16` — прослушивать только MIDI-сообщения на указанном MIDI-канале."
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:98
 msgid "`offset for first fader` is the first MIDI CC to use to control a Jamulus Channel fader, with all MIDI CCs after that being used; must be a number or else the long form is used."
-msgstr ""
+msgstr "`смещение для первого фейдера` — это первый MIDI CC, используемый для управления фейдером канала Jamulus, при этом используются все последующие MIDI CC; должно быть числом, иначе используется длинная форма."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:100
 #, no-wrap
 msgid "     For example\n"
-msgstr ""
+msgstr "     Например\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:104
@@ -260,12 +284,15 @@ msgid ""
 "     --ctrlmidich \"0\"\n"
 "     ```\n"
 msgstr ""
+"     ```\n"
+"     --ctrlmidich \"0\"\n"
+"     ```\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:106
 #, no-wrap
 msgid "     would listen on all MIDI channels and use MIDI controller 0 to control Jamulus channel 0 fader and so on.  Here's another example:\n"
-msgstr ""
+msgstr "     будет прослушивать все MIDI-каналы и использовать MIDI-контроллер 0 для управления фейдером канала 0 Jamulus и так далее. Вот другой пример:\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:110
@@ -275,28 +302,31 @@ msgid ""
 "     --ctrlmidich \"2;50\"\n"
 "     ```\n"
 msgstr ""
+"     ```\n"
+"     --ctrlmidich \"2;50\"\n"
+"     ```\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:112
 #, no-wrap
 msgid "     This would listen on MIDI channel 2 and use MIDI controller 50 to control Jamulus channel 0 fader and so on.\n"
-msgstr ""
+msgstr "     Это будет прослушивать MIDI-канал 2 и использовать MIDI-контроллер 50 для управления фейдером канала 0 Jamulus и так далее.\n"
 
 #. type: Bullet: '2. '
 #: ../wiki/en/Tips-Tricks-More.md:114
 msgid "The long form is a sequence of offsets and counts for various controllers:"
-msgstr ""
+msgstr "Длинная форма представляет собой последовательность смещений и количеств для различных контроллеров:"
 
 #. type: Fenced code block
 #: ../wiki/en/Tips-Tricks-More.md:115
 #, no-wrap
 msgid "   [MIDI channel];[control letter][offset](*[count])(;...)\n"
-msgstr ""
+msgstr "   [MIDI-канал];[буква управления][смещение](*[количество])(;...)\n"
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:122
 msgid "`control letter` defines which Jamulus Control the MIDI controller number is assigned to:"
-msgstr ""
+msgstr "`буква управления` определяет, какому элементу управления Jamulus назначен номер MIDI-контроллера:"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:129
@@ -309,60 +339,66 @@ msgid ""
 "     | `s` | Solo  |\n"
 "     | `m` | Mute  |\n"
 msgstr ""
+"     | буква управления | Элемент управления Jamulus |\n"
+"     |--------:|---------|\n"
+"     | `f` | Фейдер |\n"
+"     | `p` | Панорама |\n"
+"     | `s` | Соло |\n"
+"     | `m` | Отключение звука |\n"
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:131
 msgid "`offset` is the base MIDI CC number for the control."
-msgstr ""
+msgstr "`смещение` — это базовый номер MIDI CC для элемента управления."
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:133
 msgid "`count` is the number of CC values for the control, defaulting to 1 (i.e. the number Jamulus channels that can be controlled)."
-msgstr ""
+msgstr "`количество` — это количество значений CC для элемента управления, по умолчанию 1 (то есть количество каналов Jamulus, которыми можно управлять)."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:135
 #, no-wrap
 msgid "   An example for a Korg nanoKONTROL2 using eight sliders starting at MIDI CC 0 to control faders and eight knobs starting at MIDI CC 16 to control pan, on any MIDI channnel, for eight Jamulus channels would be\n"
-msgstr ""
+msgstr "   Пример для Korg nanoKONTROL2 с использованием восьми слайдеров, начинающихся с MIDI CC 0 для управления фейдерами, и восьми ручек, начинающихся с MIDI CC 16 для управления панорамой, на любом MIDI-канале, для восьми каналов Jamulus:\n"
 
 #. type: Fenced code block
 #: ../wiki/en/Tips-Tricks-More.md:136
 #, no-wrap
 msgid "   --ctrlmidich \"0;f0*8;p16*8\"\n"
-msgstr ""
+msgstr "   --ctrlmidich \"0;f0*8;p16*8\"\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:141
 #, no-wrap
 msgid "   Enhancing this to add eight Solo buttons starting at CC 32, and eight Mute buttons starting at CC 48 would give:\n"
-msgstr ""
+msgstr "   Дополнение этого восемью кнопками соло, начинающимися с CC 32, и восемью кнопками отключения звука, начинающимися с CC 48, даст:\n"
 
 #. type: Fenced code block
 #: ../wiki/en/Tips-Tricks-More.md:142
 #, no-wrap
 msgid "   --ctrlmidich \"0;f0*8;p16*8;s32*8;m48*8\"\n"
-msgstr ""
+msgstr "   --ctrlmidich \"0;f0*8;p16*8;s32*8;m48*8\"\n"
 
 #. type: Bullet: '   * '
 #: ../wiki/en/Tips-Tricks-More.md:147
 msgid "Three additional `control letter` values are available:"
-msgstr ""
+msgstr "Доступны три дополнительных значения `буква управления`:"
 
 #. type: Bullet: '     1. '
 #: ../wiki/en/Tips-Tricks-More.md:149
 msgid "`o` controls Mute Myself and has a single `offset` (i.e. `count` is ignored and taken as 1)."
-msgstr ""
+msgstr "`o` управляет функцией «Отключить себя» и имеет одно `смещение` (т.е. `количество` игнорируется и принимается равным 1)."
 
 #. type: Bullet: '     2. '
 #: ../wiki/en/Tips-Tricks-More.md:151
 msgid "`u` enables `MIDI Pick-up Mode` for the fader and pan controls."
-msgstr ""
+msgstr "`u` включает `Режим подхвата MIDI` для элементов управления фейдером и панорамой."
 
 #. type: Bullet: '     3. '
 #: ../wiki/en/Tips-Tricks-More.md:153
 msgid "`d` is an option to specify a particular MIDI input device by name -- without this, it is up to the user to make connections with a connection manager or by other means, and on Windows non-JACK Jamulus all devices will be assigned to Jamulus; with it, only the specified device will be used. For example:"
-msgstr ""
+msgstr "`d` — это параметр для указания конкретного MIDI-входного устройства по имени; без него пользователь должен устанавливать соединения с помощью менеджера подключений или другими способами, а в не-JACK версии Jamulus для Windows все устройства будут назначены Jamulus; с ним будет использоваться только указанное устройство. Например:"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:157
@@ -372,18 +408,21 @@ msgid ""
 "        --ctrlmidich \"1;f0*8;dnanoKontrol\"\n"
 "        ```\n"
 msgstr ""
+"        ```\n"
+"        --ctrlmidich \"1;f0*8;dnanoKontrol\"\n"
+"        ```\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:159
 #, no-wrap
 msgid "        would listen for CC0 through CC7 on MIDI channel 1 from a MIDI device called \"nanoKontrol\". Remember to wrap the whole of the `--ctrlmidich` argument in double quotes and you will have no problems with device names containing spaces.\n"
-msgstr ""
+msgstr "        будет прослушивать CC0–CC7 на MIDI-канале 1 от MIDI-устройства с именем «nanoKontrol». Не забудьте заключить весь аргумент `--ctrlmidich` в двойные кавычки, и у вас не будет проблем с именами устройств, содержащими пробелы.\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:161
 #, no-wrap
 msgid "        In order to discover the correct device name to use, start Jamulus from the command line with `--ctrlmidich` and observe the output. Jamulus will list all discovered MIDI devices:\n"
-msgstr ""
+msgstr "        Чтобы узнать правильное имя устройства для использования, запустите Jamulus из командной строки с `--ctrlmidich` и посмотрите вывод. Jamulus перечислит все обнаруженные MIDI-устройства:\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:169
@@ -397,6 +436,13 @@ msgid ""
 "          0: nanoKONTROL2\n"
 "          1: Keystation Mini 32\n"
 msgstr ""
+"        ```\n"
+"        C:\\Users\\Me>\"C:\\Program Files\\Jamulus\\Jamulus\" --ctrlmidich \"0\"\n"
+"        - Настройки MIDI-контроллера: 0\n"
+"        - выделенный номер порта: 22134\n"
+"        - обнаружено MIDI-устройств: 2\n"
+"          0: nanoKONTROL2\n"
+"          1: Keystation Mini 32\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:177
@@ -410,62 +456,69 @@ msgid ""
 "          1: Keystation Mini 32 (ignored)\n"
 "        ```\n"
 msgstr ""
+"        C:\\Users\\Me>\"C:\\Program Files\\Jamulus\\Jamulus\" --ctrlmidich \"1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\"\n"
+"        - Настройки MIDI-контроллера: 1;f0*8;p16*8;s32*8;m48*8;dnanoKONTROL2\n"
+"        - выделенный номер порта: 22134\n"
+"        - обнаружено MIDI-устройств: 2\n"
+"          0: nanoKONTROL2\n"
+"          1: Keystation Mini 32 (игнорируется)\n"
+"        ```\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:179
 #, no-wrap
 msgid "\tNote that for Windows non-JACK Jamulus if only one MIDI device is connected, the `d` option is not necessary, as Jamulus will use the device automatically.\n"
-msgstr ""
+msgstr "\tОбратите внимание, что для не-JACK версии Jamulus в Windows, если подключено только одно MIDI-устройство, параметр `d` не требуется, так как Jamulus будет использовать это устройство автоматически.\n"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:181
 #, no-wrap
 msgid "\tFor more information about using MIDI devices with Jamulus, see the [MIDI control](Software-Manual#midi-control) section in the Software Manual.\n"
-msgstr ""
+msgstr "\tДля получения дополнительной информации об использовании MIDI-устройств с Jamulus см. раздел [MIDI-управление](Software-Manual#midi-control) в Руководстве пользователя.\n"
 
 #. type: Title ##
 #: ../wiki/en/Tips-Tricks-More.md:182
 #, no-wrap
 msgid "For Server admins"
-msgstr ""
+msgstr "Для администраторов сервера"
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:184
 #, no-wrap
 msgid "Converting a Registered Server to an Unregistered one on the fly"
-msgstr ""
+msgstr "Преобразование зарегистрированного сервера в незарегистрированный на лету"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:187
 msgid "You can run as a Registered Server long enough for people to connect, then go \"private\" (Unregistered) by setting the Directory to \"none\" in the Server GUI. Musicians will still be connected to the Server until they disconnect. (Thanks to [David Savinkoff](https://github.com/DavidSavinkoff) for this tip!)"
-msgstr ""
+msgstr "Вы можете работать как зарегистрированный сервер достаточно долго, чтобы люди могли подключиться, а затем перейти в «частный» (незарегистрированный) режим, установив для каталога значение «none» в графическом интерфейсе сервера. Музыканты останутся подключёнными к серверу до тех пор, пока не отключатся. (Спасибо [Дэвиду Савинкоффу](https://github.com/DavidSavinkoff) за этот совет!)"
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:188
 #, no-wrap
 msgid "Remote management of recordings"
-msgstr ""
+msgstr "Удалённое управление записями"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:191
 msgid "Jamulus user [vdellamea](https://github.com/vdellamea) has written a [web-based remote tool](https://github.com/vdellamea/jamulus-server-remote) for starting and stopping recordings on Linux Servers, allowing you to then download them from your browser. See also [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter) by [pljones](https://github.com/pljones), which also includes a Server recording recovery script."
-msgstr ""
+msgstr "Пользователь Jamulus [vdellamea](https://github.com/vdellamea) написал [веб-инструмент удалённого управления](https://github.com/vdellamea/jamulus-server-remote) для запуска и остановки записи на серверах Linux, позволяющий затем загружать записи из браузера. См. также [Jamulus Jam Exporter](https://github.com/pljones/jamulus-jamexporter) от [pljones](https://github.com/pljones), который также включает скрипт восстановления записи сервера."
 
 #. type: Title ###
 #: ../wiki/en/Tips-Tricks-More.md:192
 #, no-wrap
 msgid "Making a Server status page"
-msgstr ""
+msgstr "Создание страницы состояния сервера"
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:195
 msgid "With the `-m` command line argument, Server statistics can be generated to be put on a web page."
-msgstr ""
+msgstr "С помощью аргумента командной строки `-m` можно генерировать статистику сервера для размещения на веб-странице."
 
 #. type: Plain text
 #: ../wiki/en/Tips-Tricks-More.md:197
 msgid "Here is an example php script using the Server status file to display the current Server status on a html page (assuming the following command line argument to be used: `-m /var/www/stat1.dat`):"
-msgstr ""
+msgstr "Вот пример php-скрипта, использующего файл состояния сервера для отображения текущего состояния сервера на html-странице (предполагается использование следующего аргумента командной строки: `-m /var/www/stat1.dat`):"
 
 #. type: Fenced code block
 #: ../wiki/en/Tips-Tricks-More.md:198
@@ -485,6 +538,19 @@ msgid ""
 "?>\n"
 "<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
 msgstr ""
+"<?php\n"
+"function loadserverstat ( $statfilename )\n"
+"{\n"
+"   $datei = fopen ( $statfilename, \"r\" );\n"
+"   while ( !feof ( $datei ) )\n"
+"   {\n"
+"          $buffer = fgets ( $datei, 4096 );\n"
+"          echo $buffer;\n"
+"   }\n"
+"   fclose($datei);\n"
+"}\n"
+"?>\n"
+"<?php loadserverstat ( \"stat1.dat\" ); ?>\n"
 
 #~ msgid "When using JACK or macOS, make sure you connect your MIDI device's output port to the Jamulus MIDI in port (QjackCtl (Linux/Windows), Audio/MIDI Setup (macOS) or whatever you use for managing connections). In Linux you may need to install and launch `a2jmidid` so your device shows up in the MIDI tab in Qjackctl.  For non-JACK Windows, Jamulus will find the MIDI device(s) automatically, but see the `d` option below if more than one MIDI device is connected."
 #~ msgstr "При использовании JACK или macOS убедитесь, что вы подключили выходной порт вашего MIDI-устройства к входному MIDI-порту Jamulus (с помощью QjackCtl (для Linux/Windows), Audio/MIDI Setup (для macOS) или любой другой программы, которую вы используете для управления соединениями). В Linux вам может потребоваться установить и запустить `a2jmidid`, чтобы ваше устройство появилось во вкладке MIDI в Qjackctl. В Windows без использования JACK Jamulus автоматически найдёт MIDI-устройства, но если подключено более одного MIDI-устройства, см. опцию `d` ниже."
