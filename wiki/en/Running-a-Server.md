@@ -82,7 +82,7 @@ To run a headless server on Linux, the following steps assume you are familiar w
     sudo systemctl enable jamulus-headless
     ```
 
-1. Add your desired [command line options](Running-a-Server#configuration-options) to the `ExecStart` line in the systemd service file:
+1. Add your desired [configuration options](Running-a-Server#configuration-options) to the `ExecStart` line in the systemd service file:
 
     ```
     sudo systemctl edit --full jamulus-headless
@@ -161,7 +161,17 @@ See the table below for `hostname:port` values.
 
 **Note**: Semicolon and newline characters are not allowed in `[name]` and `[city]` within the `--serverinfo` argument. See the [Server mode-related options](#server-mode-related-options) for more information on the country code. 
 
-### Server mode-related options
+### Server Command Line Options
+
+### Shared commands
+
+{% include_relative Include-Shared-Commands.md %}
+
+### Server only commands
+
+{% include_relative Include-Server-Commands.md %}
+
+### Server mode related options
 
 ##### `-e or --directoryaddress`
 
@@ -250,10 +260,6 @@ Start the Jamulus Server graphical user interface in the minimized window state.
 
 ##### `--noraw`
 Disable raw audio transmission. For bandwidth limited server connections like slow home connections < 10MBit upstream
-
-### Other options
-
-{% include_relative Include-Shared-Commands.md %}
 
 ### Controlling the Server via API
 

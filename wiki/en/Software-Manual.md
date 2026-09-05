@@ -377,7 +377,7 @@ When MIDI is enabled, Jamulus will prepend a channel number to each Client name,
 $HOME/Library/Containers/app.jamulussoftware.Jamulus/Data/.config/Jamulus/
 ```
 
-# Command Line Options
+# Client Command Line Options
 
 Most common functions in Jamulus can be set using the GUI, but these and others can also be set using options given in a terminal window. Exactly how you do this will depend on your operating system.
 
@@ -393,9 +393,11 @@ For macOS, start a Terminal window and run Jamulus with the desired options like
  /Applications/Jamulus.app/Contents/MacOS/Jamulus --inifile "/path/to/myinifile.ini"
 ```
 
+{% include_relative Include-Shared-Commands.md %}
+
 {% include_relative Include-Client-Commands.md %}
 
-{% include_relative Include-Shared-Commands.md %}
+Server options are listed in [Running a Server](Running-a-Server#configuration-options).
 
 # Controlling the Client via API
 
